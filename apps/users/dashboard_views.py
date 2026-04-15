@@ -1,7 +1,7 @@
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import redirect, render
+from django.shortcuts import get_object_or_404, redirect, render
 
 from .forms import TrainerLoginForm, CreateClientForm, AssignWorkoutPlanForm
 from .models import User
@@ -11,13 +11,13 @@ from .serializers import ClientCreateSerializer, AssignWorkoutPlanSerializer
 def landing_page(request):
     if request.user.is_authenticated:
         if getattr(request.user, "role", "") == User.TRAINER:
-            return redirect("trainer-dashboard")
+            return redirect("trainer-dashboard-home")
     return render(request, "landing.html")
 
 
 def trainer_login_page(request):
     if request.user.is_authenticated and getattr(request.user, "role", "") == User.TRAINER:
-        return redirect("trainer-dashboard")
+        return redirect("trainer-dashboard-home")
 
     form = TrainerLoginForm(request.POST or None)
 
@@ -33,7 +33,7 @@ def trainer_login_page(request):
             messages.error(request, "This login is for trainers only.")
         else:
             login(request, user)
-            return redirect("trainer-dashboard")
+            return redirect("trainer-dashboard-home")
 
     return render(request, "auth/trainer_login.html", {"form": form})
 
@@ -48,12 +48,16 @@ def _trainer_required(request):
     return request.user.role == User.TRAINER and hasattr(request.user, "trainer_profile")
 
 
+def _get_trainer_clients(request):
+    return User.objects.filter(
+        role=User.CLIENT,
+        client_profile__trainer=request.user.trainer_profile
+    ).select_related("client_profile", "client_profile__assigned_workout_plan").order_by("username")
+
+
 def _dashboard_context(request, page_title):
     trainer_profile = request.user.trainer_profile
-    clients = User.objects.filter(
-        role=User.CLIENT,
-        client_profile__trainer=trainer_profile
-    ).select_related("client_profile", "client_profile__assigned_workout_plan").order_by("username")
+    clients = _get_trainer_clients(request)
 
     assign_forms = {
         client.id: AssignWorkoutPlanForm(
@@ -74,6 +78,15 @@ def _dashboard_context(request, page_title):
 
 
 @login_required
+def trainer_dashboard_home(request):
+    if not _trainer_required(request):
+        return redirect("landing-page")
+
+    context = _dashboard_context(request, "Dashboard")
+    return render(request, "dashboard/dashboard_home.html", context)
+
+
+@login_required
 def trainer_dashboard(request):
     if not _trainer_required(request):
         return redirect("landing-page")
@@ -83,12 +96,26 @@ def trainer_dashboard(request):
 
 
 @login_required
-def trainer_dashboard_home(request):
+def trainer_client_detail_page(request, client_id):
     if not _trainer_required(request):
         return redirect("landing-page")
 
-    context = _dashboard_context(request, "Dashboard")
-    return render(request, "dashboard/dashboard_home.html", context)
+    client = get_object_or_404(
+        User.objects.select_related("client_profile", "client_profile__assigned_workout_plan"),
+        id=client_id,
+        role=User.CLIENT,
+        client_profile__trainer=request.user.trainer_profile,
+    )
+
+    context = _dashboard_context(request, "Client Details")
+    context.update({
+        "client": client,
+        "client_assign_form": AssignWorkoutPlanForm(
+            trainer_user=request.user,
+            initial={"client_user_id": client.id}
+        ),
+    })
+    return render(request, "dashboard/client_detail.html", context)
 
 
 @login_required
@@ -190,4 +217,4 @@ def dashboard_assign_workout_plan(request):
             else:
                 messages.error(request, str(errors))
 
-    return redirect("trainer-dashboard")
+    return redirect("trainer-client-detail", client_id=form.cleaned_data["client_user_id"])

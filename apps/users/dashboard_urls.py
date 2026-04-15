@@ -6,6 +6,7 @@ from .dashboard_views import (
     trainer_logout_page,
     trainer_dashboard,
     trainer_dashboard_home,
+    trainer_client_detail_page,
     trainer_workout_plans_page,
     trainer_nutrition_plans_page,
     trainer_settings_page,
@@ -14,21 +15,19 @@ from .dashboard_views import (
 )
 
 urlpatterns = [
-    # Landing + Auth
     path("", landing_page, name="landing-page"),
     path("portal/login/", trainer_login_page, name="trainer-login-page"),
     path("portal/logout/", trainer_logout_page, name="trainer-logout-page"),
 
-    # Dashboard pages
     path("dashboard/", trainer_dashboard_home, name="trainer-dashboard-home"),
     path("dashboard/clients/", trainer_dashboard, name="trainer-dashboard"),
+    path("dashboard/clients/<int:client_id>/", trainer_client_detail_page, name="trainer-client-detail"),
     path("dashboard/create-client/", dashboard_create_client, name="dashboard-create-client"),
     path("dashboard/assign-workout-plan/", dashboard_assign_workout_plan, name="dashboard-assign-workout-plan"),
     path("dashboard/workout-plans/", trainer_workout_plans_page, name="trainer-workout-plans-page"),
     path("dashboard/nutrition-plans/", trainer_nutrition_plans_page, name="trainer-nutrition-plans-page"),
     path("dashboard/settings/", trainer_settings_page, name="trainer-settings-page"),
 
-    # Password reset
     path(
         "portal/password-reset/",
         auth_views.PasswordResetView.as_view(
