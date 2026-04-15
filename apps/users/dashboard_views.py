@@ -17,9 +17,12 @@ from .dashboard_client_views import (
     dashboard_assign_workout_plan,
 )
 
-from .dashboard_workout_views import (
+from .dashboard_workout_page_views import (
     trainer_workout_plans_page,
     trainer_workout_plan_detail_page,
+)
+
+from .dashboard_workout_action_views import (
     dashboard_create_exercise_library_item,
     dashboard_create_workout_plan,
     dashboard_delete_workout_plan,
