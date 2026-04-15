@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Trainer Login | GymFlow{% endblock %}
+
+{% block content %}
+<div class="container" style="min-height:100vh;display:grid;place-items:center;padding:32px 0;">
+    <div class="glass" style="width:min(520px,100%);padding:32px;">
+        <div style="font-size:30px;font-weight:800;margin-bottom:6px;">Trainer Portal</div>
+        <div class="muted" style="margin-bottom:24px;">Log in to manage clients and assign training plans.</div>
+
+        {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                    <div class="message {% if message.tags == 'error' %}error{% else %}success{% endif %}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <form method="post" style="display:grid;gap:16px;">
+            {% csrf_token %}
+
+            <div>
+                <label class="label">Username</label>
+                <input class="input" type="text" name="username" value="{{ form.username.value|default:'' }}" placeholder="Enter username">
+            </div>
+
+            <div>
+                <label class="label">Password</label>
+                <input class="input" type="password" name="password" placeholder="Enter password">
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;">Log In</button>
+        </form>
+
+        <div style="margin-top:16px;">
+            <a href="{% url 'landing-page' %}" class="muted">← Back to landing page</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

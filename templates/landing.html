@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}GymFlow | Coaching Platform{% endblock %}
+
+{% block content %}
+<div class="container" style="padding: 40px 0 60px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0 32px;">
+        <div style="font-size:28px;font-weight:800;">GymFlow</div>
+        <a href="{% url 'trainer-login-page' %}" class="btn btn-secondary">Trainer Login</a>
+    </div>
+
+    <div class="glass" style="padding:48px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:28px;align-items:center;">
+        <div>
+            <div style="display:inline-block;padding:8px 12px;border-radius:999px;background:rgba(77,163,255,0.16);border:1px solid rgba(77,163,255,0.28);font-size:13px;">
+                Better than messy PT workflows
+            </div>
+
+            <h1 style="font-size:56px;line-height:1.02;margin:18px 0 14px;">
+                A cleaner coaching platform for trainers and clients.
+            </h1>
+
+            <p class="muted" style="font-size:18px;line-height:1.7;max-width:720px;">
+                Assign workouts, manage clients, and deliver a smoother mobile experience than clunky old coaching apps.
+            </p>
+
+            <div style="display:flex;gap:14px;margin-top:28px;flex-wrap:wrap;">
+                <a href="{% url 'trainer-login-page' %}" class="btn btn-primary">Open Trainer Portal</a>
+                <a href="#features" class="btn btn-secondary">See Features</a>
+            </div>
+        </div>
+
+        <div class="glass" style="padding:24px;">
+            <div style="font-size:20px;font-weight:700;margin-bottom:14px;">What GymFlow gives PTs</div>
+            <div style="display:grid;gap:12px;">
+                <div class="glass" style="padding:16px;">Client management</div>
+                <div class="glass" style="padding:16px;">Workout assignment</div>
+                <div class="glass" style="padding:16px;">Modern client app</div>
+                <div class="glass" style="padding:16px;">Nutrition and onboarding next</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="features" style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px;">
+        <div class="glass" style="padding:24px;">
+            <div style="font-size:20px;font-weight:700;margin-bottom:8px;">Trainer-first workflow</div>
+            <div class="muted">Create clients and assign plans without bouncing around different tools.</div>
+        </div>
+        <div class="glass" style="padding:24px;">
+            <div style="font-size:20px;font-weight:700;margin-bottom:8px;">Client mobile experience</div>
+            <div class="muted">Clients log workouts, view plans, and track previous performance on their phone.</div>
+        </div>
+        <div class="glass" style="padding:24px;">
+            <div style="font-size:20px;font-weight:700;margin-bottom:8px;">Built to expand</div>
+            <div class="muted">Custom splits, nutrition plans, onboarding forms, and PT websites can all sit on this foundation.</div>
+        </div>
+    </div>
+</div>
+{% endblock %}

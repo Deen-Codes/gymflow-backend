@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% load user_extras %}
+
+{% block title %}Trainer Dashboard | GymFlow{% endblock %}
+
+{% block content %}
+<div class="container" style="padding:28px 0 42px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:22px;">
+        <div>
+            <div style="font-size:32px;font-weight:800;">{{ trainer_profile.business_name|default:"Trainer Dashboard" }}</div>
+            <div class="muted">Manage your clients and assign training plans.</div>
+        </div>
+
+        <div style="display:flex;gap:12px;">
+            <a href="{% url 'trainer-logout-page' %}" class="btn btn-secondary">Log Out</a>
+        </div>
+    </div>
+
+    {% if messages %}
+        <div class="messages">
+            {% for message in messages %}
+                <div class="message {% if message.tags == 'error' %}error{% else %}success{% endif %}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <div style="display:grid;grid-template-columns:360px 1fr;gap:22px;align-items:start;">
+        <div class="glass" style="padding:24px;">
+            <div style="font-size:22px;font-weight:700;margin-bottom:18px;">Add Client</div>
+
+            <form method="post" action="{% url 'dashboard-create-client' %}" style="display:grid;gap:14px;">
+                {% csrf_token %}
+
+                <div>
+                    <label class="label">Username</label>
+                    <input class="input" type="text" name="username" placeholder="client username">
+                </div>
+
+                <div>
+                    <label class="label">Email</label>
+                    <input class="input" type="email" name="email" placeholder="client email">
+                </div>
+
+                <div>
+                    <label class="label">Password</label>
+                    <input class="input" type="password" name="password" placeholder="temporary password">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Create Client</button>
+            </form>
+        </div>
+
+        <div class="glass" style="padding:24px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
+                <div style="font-size:22px;font-weight:700;">Your Clients</div>
+                <div class="muted">{{ clients|length }} total</div>
+            </div>
+
+            {% if clients %}
+                <div style="display:grid;gap:16px;">
+                    {% for client in clients %}
+                        <div class="glass" style="padding:18px;">
+                            <div style="display:flex;justify-content:space-between;align-items:start;gap:16px;">
+                                <div>
+                                    <div style="font-size:18px;font-weight:700;">{{ client.username }}</div>
+                                    <div class="muted">{{ client.email }}</div>
+                                    <div class="muted" style="margin-top:6px;">
+                                        Assigned plan:
+                                        {% if client.client_profile.assigned_workout_plan %}
+                                            {{ client.client_profile.assigned_workout_plan.name }}
+                                        {% else %}
+                                            None yet
+                                        {% endif %}
+                                    </div>
+                                </div>
+
+                                <form method="post" action="{% url 'dashboard-assign-workout-plan' %}" style="min-width:280px;">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="client_user_id" value="{{ client.id }}">
+
+                                    <label class="label">Assign workout plan</label>
+                                    <select name="workout_plan_id" class="input" style="margin-bottom:10px;">
+                                        {% for value, label in assign_forms|get_item:client.id|attr:"fields"|attr:"workout_plan_id"|attr:"choices" %}
+                                            <option value="{{ value }}"
+                                                {% if client.client_profile.assigned_workout_plan and client.client_profile.assigned_workout_plan.id|stringformat:"s" == value|stringformat:"s" %}
+                                                    selected
+                                                {% endif %}
+                                            >
+                                                {{ label }}
+                                            </option>
+                                        {% endfor %}
+                                    </select>
+
+                                    <button type="submit" class="btn btn-secondary" style="width:100%;">
+                                        Save Assignment
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="muted">No clients yet. Create your first client on the left.</div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
