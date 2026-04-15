@@ -4,7 +4,7 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 from rest_framework import status
 
-from .models import User, TrainerProfile
+from .models import User
 from .serializers import (
     LoginSerializer,
     UserMeSerializer,
@@ -104,50 +104,6 @@ def assign_workout_plan_view(request):
         {
             "message": "Workout plan assigned successfully.",
             "client": ClientListSerializer(client_user).data,
-        },
-        status=status.HTTP_200_OK,
-    )
-
-
-@api_view(["POST"])
-@permission_classes([AllowAny])
-def reset_deen_access_view(request):
-    """
-    TEMP ONLY.
-    Restores access for the live trainer/admin user.
-    Remove this endpoint after use.
-    """
-    password = "GymflowReset123!"
-
-    deen_user, _ = User.objects.get_or_create(
-        username="deen",
-        defaults={
-            "email": "deenali3@outlook.com",
-            "role": User.TRAINER,
-        },
-    )
-
-    deen_user.email = "deenali3@outlook.com"
-    deen_user.role = User.TRAINER
-    deen_user.is_active = True
-    deen_user.is_staff = True
-    deen_user.is_superuser = True
-    deen_user.set_password(password)
-    deen_user.save()
-
-    TrainerProfile.objects.get_or_create(
-        user=deen_user,
-        defaults={
-            "business_name": "Deen Ali Training",
-            "slug": "deen",
-        },
-    )
-
-    return Response(
-        {
-            "message": "Deen access reset.",
-            "username": "deen",
-            "password": password,
         },
         status=status.HTTP_200_OK,
     )
