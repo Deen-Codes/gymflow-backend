@@ -1,10 +1,11 @@
-from django.contrib.auth import get_user_model
 from django.shortcuts import get_object_or_404
 from django.utils import timezone
 from rest_framework import status
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
+from apps.users.models import User
 from .models import (
     WorkoutPlan,
     WorkoutDay,
@@ -21,43 +22,70 @@ from .serializers import (
 )
 
 
-def get_demo_user():
+def get_user_active_plan(user):
     """
-    Temporary helper until proper authentication is added.
+    Resolve which workout plan should be used for the authenticated user.
+
+    Trainer:
+        uses their own active plan
+    Client:
+        uses their assigned workout plan
     """
-    User = get_user_model()
-    return User.objects.get(username="deen")
+    if user.role == User.TRAINER:
+        return get_object_or_404(
+            WorkoutPlan,
+            user=user,
+            is_active=True,
+        )
+
+    if user.role == User.CLIENT:
+        if not hasattr(user, "client_profile") or not user.client_profile.assigned_workout_plan:
+            return None
+        return user.client_profile.assigned_workout_plan
+
+    return None
 
 
 @api_view(["GET"])
+@permission_classes([IsAuthenticated])
 def active_workout_plan(request):
     """
-    Return the currently active workout plan for the demo user,
-    including all workout days and exercises.
-    """
-    user = get_demo_user()
+    Return the active workout plan for the authenticated user.
 
-    plan = get_object_or_404(
-        WorkoutPlan,
-        user=user,
-        is_active=True,
-    )
+    Trainer -> their own active plan
+    Client -> their assigned workout plan
+    """
+    plan = get_user_active_plan(request.user)
+
+    if plan is None:
+        return Response(
+            {"detail": "No workout plan assigned."},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 
     serializer = WorkoutPlanSerializer(plan)
     return Response(serializer.data)
 
 
 @api_view(["GET"])
+@permission_classes([IsAuthenticated])
 def workout_day_detail(request, day_id):
     """
-    Return one workout day with all exercises and set targets.
+    Return one workout day with all exercises and set targets,
+    only if it belongs to the authenticated user's resolved plan.
     """
-    user = get_demo_user()
+    plan = get_user_active_plan(request.user)
+
+    if plan is None:
+        return Response(
+            {"detail": "No workout plan assigned."},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 
     day = get_object_or_404(
         WorkoutDay.objects.select_related("plan"),
         id=day_id,
-        plan__user=user,
+        plan=plan,
     )
 
     serializer = WorkoutDaySerializer(day)
@@ -65,21 +93,23 @@ def workout_day_detail(request, day_id):
 
 
 @api_view(["GET"])
+@permission_classes([IsAuthenticated])
 def next_workout(request):
     """
-    Return the next workout in the user's rotation.
+    Return the next workout in the authenticated user's rotation.
 
     Logic:
     - if no completed sessions yet -> first workout day in plan order
-    - else -> day after the most recently completed workout
+    - else -> day after the most recently completed completed workout
     """
-    user = get_demo_user()
+    user = request.user
+    plan = get_user_active_plan(user)
 
-    plan = get_object_or_404(
-        WorkoutPlan,
-        user=user,
-        is_active=True,
-    )
+    if plan is None:
+        return Response(
+            {"detail": "No workout plan assigned."},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 
     days = list(plan.days.all().order_by("order"))
 
@@ -116,12 +146,23 @@ def next_workout(request):
 
 
 @api_view(["GET"])
+@permission_classes([IsAuthenticated])
 def latest_workout_session_for_day(request, day_id):
     """
-    Return the most recent logged session for a specific workout day.
-    Useful for showing previous performance in the app.
+    Return the most recent logged session for a specific workout day
+    for the authenticated user only.
     """
-    user = get_demo_user()
+    user = request.user
+    plan = get_user_active_plan(user)
+
+    if plan is None:
+        return Response(
+            {"detail": "No workout plan assigned."},
+            status=status.HTTP_404_NOT_FOUND,
+        )
+
+    # ensure this day belongs to the user's plan
+    get_object_or_404(WorkoutDay, id=day_id, plan=plan)
 
     session = (
         WorkoutSession.objects
@@ -142,9 +183,10 @@ def latest_workout_session_for_day(request, day_id):
 
 
 @api_view(["POST"])
+@permission_classes([IsAuthenticated])
 def create_workout_session(request):
     """
-    Save a completed or incomplete workout session.
+    Save a completed or incomplete workout session for the authenticated user.
 
     Expected payload:
     {
@@ -162,7 +204,14 @@ def create_workout_session(request):
       ]
     }
     """
-    user = get_demo_user()
+    user = request.user
+    plan = get_user_active_plan(user)
+
+    if plan is None:
+        return Response(
+            {"detail": "No workout plan assigned."},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 
     serializer = WorkoutSessionCreateSerializer(data=request.data)
     serializer.is_valid(raise_exception=True)
@@ -171,7 +220,7 @@ def create_workout_session(request):
     workout_day = get_object_or_404(
         WorkoutDay,
         id=validated["workout_day_id"],
-        plan__user=user,
+        plan=plan,
     )
 
     workout_session = WorkoutSession.objects.create(
