@@ -2,29 +2,46 @@
 
 {% block dashboard_content %}
 <div style="display:grid;grid-template-columns:420px 1fr;gap:22px;align-items:start;">
-    <div class="glass" style="padding:24px;">
-        <div style="font-size:22px;font-weight:700;margin-bottom:18px;">Create Exercise Preset</div>
+    <div style="display:grid;gap:22px;">
+        <div class="glass" style="padding:24px;">
+            <div style="font-size:22px;font-weight:700;margin-bottom:18px;">Create Exercise Preset</div>
 
-        <form method="post" action="{% url 'dashboard-create-exercise-library-item' %}" style="display:grid;gap:14px;">
-            {% csrf_token %}
+            <form method="post" action="{% url 'dashboard-create-exercise-library-item' %}" style="display:grid;gap:14px;">
+                {% csrf_token %}
 
-            <div>
-                <label class="label">Exercise Name</label>
-                <input class="input" type="text" name="name" placeholder="e.g. Incline Dumbbell Press">
-            </div>
+                <div>
+                    <label class="label">Exercise Name</label>
+                    <input class="input" type="text" name="name" placeholder="e.g. Incline Dumbbell Press">
+                </div>
 
-            <div>
-                <label class="label">Tutorial Video URL</label>
-                <input class="input" type="url" name="video_url" placeholder="https://youtube.com/...">
-            </div>
+                <div>
+                    <label class="label">Tutorial Video URL</label>
+                    <input class="input" type="url" name="video_url" placeholder="https://youtube.com/...">
+                </div>
 
-            <div>
-                <label class="label">Coaching Notes</label>
-                <textarea class="input" name="coaching_notes" rows="5" placeholder="Form cues, setup tips, tempo, range of motion..."></textarea>
-            </div>
+                <div>
+                    <label class="label">Coaching Notes</label>
+                    <textarea class="input" name="coaching_notes" rows="5" placeholder="Form cues, setup tips, tempo, range of motion..."></textarea>
+                </div>
 
-            <button type="submit" class="btn btn-primary">Create Exercise Preset</button>
-        </form>
+                <button type="submit" class="btn btn-primary">Create Exercise Preset</button>
+            </form>
+        </div>
+
+        <div class="glass" style="padding:24px;">
+            <div style="font-size:22px;font-weight:700;margin-bottom:18px;">Create Workout Plan</div>
+
+            <form method="post" action="{% url 'dashboard-create-workout-plan' %}" style="display:grid;gap:14px;">
+                {% csrf_token %}
+
+                <div>
+                    <label class="label">Plan Name</label>
+                    <input class="input" type="text" name="name" placeholder="e.g. Upper Lower Phase 1">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Create Workout Plan</button>
+            </form>
+        </div>
     </div>
 
     <div style="display:grid;gap:22px;">
@@ -36,31 +53,31 @@
 
             {% if exercise_library %}
                 <div style="display:grid;gap:14px;">
-{% for exercise in exercise_library %}
-    <div class="glass" style="padding:22px;">
-        <div style="font-size:18px;font-weight:800;margin-bottom:14px;">
-            {{ exercise.name }}
-        </div>
+                    {% for exercise in exercise_library %}
+                        <div class="glass" style="padding:22px;">
+                            <div style="font-size:18px;font-weight:800;margin-bottom:14px;">
+                                {{ exercise.name }}
+                            </div>
 
-        {% if exercise.video_url %}
-            <div style="margin-bottom:16px;">
-                <a href="{{ exercise.video_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                    Watch Demo
-                </a>
-            </div>
-        {% endif %}
+                            {% if exercise.video_url %}
+                                <div style="margin-bottom:16px;">
+                                    <a href="{{ exercise.video_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                        Watch Demo
+                                    </a>
+                                </div>
+                            {% endif %}
 
-        {% if exercise.coaching_notes %}
-            <div class="muted" style="line-height:1.6;">
-                {{ exercise.coaching_notes }}
-            </div>
-        {% else %}
-            <div class="muted">
-                No coaching notes added yet.
-            </div>
-        {% endif %}
-    </div>
-{% endfor %}
+                            {% if exercise.coaching_notes %}
+                                <div class="muted" style="line-height:1.6;">
+                                    {{ exercise.coaching_notes }}
+                                </div>
+                            {% else %}
+                                <div class="muted">
+                                    No coaching notes added yet.
+                                </div>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
                 </div>
             {% else %}
                 <div class="muted">
@@ -70,10 +87,33 @@
         </div>
 
         <div class="glass" style="padding:24px;">
-            <div style="font-size:22px;font-weight:700;margin-bottom:14px;">Workout Plan Templates</div>
-            <div class="muted">
-                Next we’ll build reusable workout plan templates using these exercise presets, so you can assign them to clients or create client-specific versions.
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
+                <div style="font-size:22px;font-weight:700;">Workout Plan Templates</div>
+                <div class="muted">{{ workout_plans|length }} total</div>
             </div>
+
+            {% if workout_plans %}
+                <div style="display:grid;gap:14px;">
+                    {% for plan in workout_plans %}
+                        <a href="{% url 'trainer-workout-plan-detail' plan.id %}" class="glass" style="padding:18px;display:block;">
+                            <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;">
+                                <div>
+                                    <div style="font-size:18px;font-weight:800;margin-bottom:6px;">{{ plan.name }}</div>
+                                    <div class="muted">{{ plan.days.count }} day{{ plan.days.count|pluralize }}</div>
+                                </div>
+
+                                <div class="btn btn-secondary" style="pointer-events:none;">
+                                    Open
+                                </div>
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="muted">
+                    No workout plan templates yet. Create your first one on the left.
+                </div>
+            {% endif %}
         </div>
     </div>
 </div>

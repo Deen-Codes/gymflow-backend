@@ -8,11 +8,15 @@ from .dashboard_views import (
     trainer_dashboard_home,
     trainer_client_detail_page,
     trainer_workout_plans_page,
+    trainer_workout_plan_detail_page,
     trainer_nutrition_plans_page,
     trainer_settings_page,
     dashboard_create_client,
     dashboard_assign_workout_plan,
     dashboard_create_exercise_library_item,
+    dashboard_create_workout_plan,
+    dashboard_create_workout_day,
+    dashboard_add_exercise_to_day,
 )
 
 urlpatterns = [
@@ -23,10 +27,17 @@ urlpatterns = [
     path("dashboard/", trainer_dashboard_home, name="trainer-dashboard-home"),
     path("dashboard/clients/", trainer_dashboard, name="trainer-dashboard"),
     path("dashboard/clients/<int:client_id>/", trainer_client_detail_page, name="trainer-client-detail"),
+
     path("dashboard/create-client/", dashboard_create_client, name="dashboard-create-client"),
     path("dashboard/assign-workout-plan/", dashboard_assign_workout_plan, name="dashboard-assign-workout-plan"),
+
     path("dashboard/workout-plans/", trainer_workout_plans_page, name="trainer-workout-plans-page"),
     path("dashboard/workout-plans/create-exercise/", dashboard_create_exercise_library_item, name="dashboard-create-exercise-library-item"),
+    path("dashboard/workout-plans/create/", dashboard_create_workout_plan, name="dashboard-create-workout-plan"),
+    path("dashboard/workout-plans/<int:plan_id>/", trainer_workout_plan_detail_page, name="trainer-workout-plan-detail"),
+    path("dashboard/workout-plans/<int:plan_id>/create-day/", dashboard_create_workout_day, name="dashboard-create-workout-day"),
+    path("dashboard/workout-plans/<int:plan_id>/add-exercise/", dashboard_add_exercise_to_day, name="dashboard-add-exercise-to-day"),
+
     path("dashboard/nutrition-plans/", trainer_nutrition_plans_page, name="trainer-nutrition-plans-page"),
     path("dashboard/settings/", trainer_settings_page, name="trainer-settings-page"),
 

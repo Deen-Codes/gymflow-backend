@@ -8,10 +8,19 @@ from .forms import (
     CreateClientForm,
     AssignWorkoutPlanForm,
     CreateExerciseLibraryItemForm,
+    CreateWorkoutPlanForm,
+    CreateWorkoutDayForm,
+    AddExerciseToDayForm,
 )
 from .models import User
 from .serializers import ClientCreateSerializer, AssignWorkoutPlanSerializer
-from apps.workouts.models import WorkoutPlan, ExerciseLibraryItem
+from apps.workouts.models import (
+    WorkoutPlan,
+    WorkoutDay,
+    Exercise,
+    ExerciseSetTarget,
+    ExerciseLibraryItem,
+)
 
 
 def landing_page(request):
@@ -85,6 +94,7 @@ def _dashboard_context(request, page_title):
         "workout_plans": workout_plans,
         "exercise_library": exercise_library,
         "exercise_library_form": CreateExerciseLibraryItemForm(),
+        "create_workout_plan_form": CreateWorkoutPlanForm(),
     }
 
 
@@ -136,6 +146,36 @@ def trainer_workout_plans_page(request):
 
     context = _dashboard_context(request, "Workout Plans")
     return render(request, "dashboard/dashboard_workout_plans.html", context)
+
+
+@login_required
+def trainer_workout_plan_detail_page(request, plan_id):
+    if not _trainer_required(request):
+        return redirect("landing-page")
+
+    plan = get_object_or_404(
+        WorkoutPlan.objects.prefetch_related("days__exercises__sets"),
+        id=plan_id,
+        user=request.user,
+    )
+
+    days = plan.days.all().order_by("order")
+    add_exercise_forms = {
+        day.id: AddExerciseToDayForm(
+            trainer_user=request.user,
+            initial={"workout_day_id": day.id}
+        )
+        for day in days
+    }
+
+    context = _dashboard_context(request, f"Plan: {plan.name}")
+    context.update({
+        "plan": plan,
+        "days": days,
+        "create_day_form": CreateWorkoutDayForm(),
+        "add_exercise_forms": add_exercise_forms,
+    })
+    return render(request, "dashboard/workout_plan_detail.html", context)
 
 
 @login_required
@@ -256,3 +296,106 @@ def dashboard_create_exercise_library_item(request):
 
     messages.success(request, "Exercise preset created successfully.")
     return redirect("trainer-workout-plans-page")
+
+
+@login_required
+def dashboard_create_workout_plan(request):
+    if not _trainer_required(request):
+        return redirect("landing-page")
+
+    if request.method != "POST":
+        return redirect("trainer-workout-plans-page")
+
+    form = CreateWorkoutPlanForm(request.POST)
+
+    if not form.is_valid():
+        for _, errors in form.errors.items():
+            for error in errors:
+                messages.error(request, error)
+        return redirect("trainer-workout-plans-page")
+
+    plan = WorkoutPlan.objects.create(
+        user=request.user,
+        name=form.cleaned_data["name"],
+        is_active=True,
+    )
+
+    messages.success(request, "Workout plan created successfully.")
+    return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+
+@login_required
+def dashboard_create_workout_day(request, plan_id):
+    if not _trainer_required(request):
+        return redirect("landing-page")
+
+    plan = get_object_or_404(WorkoutPlan, id=plan_id, user=request.user)
+
+    if request.method != "POST":
+        return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+    form = CreateWorkoutDayForm(request.POST)
+
+    if not form.is_valid():
+        for _, errors in form.errors.items():
+            for error in errors:
+                messages.error(request, error)
+        return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+    WorkoutDay.objects.create(
+        plan=plan,
+        title=form.cleaned_data["title"],
+        order=form.cleaned_data["order"],
+    )
+
+    messages.success(request, "Workout day added successfully.")
+    return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+
+@login_required
+def dashboard_add_exercise_to_day(request, plan_id):
+    if not _trainer_required(request):
+        return redirect("landing-page")
+
+    plan = get_object_or_404(WorkoutPlan, id=plan_id, user=request.user)
+
+    if request.method != "POST":
+        return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+    form = AddExerciseToDayForm(request.POST, trainer_user=request.user)
+
+    if not form.is_valid():
+        for _, errors in form.errors.items():
+            for error in errors:
+                messages.error(request, error)
+        return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+    workout_day = get_object_or_404(
+        WorkoutDay,
+        id=form.cleaned_data["workout_day_id"],
+        plan=plan,
+    )
+
+    library_item = get_object_or_404(
+        ExerciseLibraryItem,
+        id=form.cleaned_data["exercise_library_item_id"],
+        user=request.user,
+    )
+
+    exercise = Exercise.objects.create(
+        workout_day=workout_day,
+        name=library_item.name,
+        label=form.cleaned_data["label"],
+        order=form.cleaned_data["order"],
+        superset_group=form.cleaned_data["superset_group"] or None,
+    )
+
+    for set_number in range(1, form.cleaned_data["set_count"] + 1):
+        ExerciseSetTarget.objects.create(
+            exercise=exercise,
+            set_number=set_number,
+            reps=form.cleaned_data["reps"],
+        )
+
+    messages.success(request, "Exercise added to workout day successfully.")
+    return redirect("trainer-workout-plan-detail", plan_id=plan.id)

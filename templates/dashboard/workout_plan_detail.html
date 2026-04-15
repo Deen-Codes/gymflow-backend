@@ -1,0 +1,131 @@
+{% extends "dashboard/dashboard_shell.html" %}
+{% load user_extras %}
+
+{% block dashboard_content %}
+<div style="display:grid;gap:22px;">
+    <div>
+        <a href="{% url 'trainer-workout-plans-page' %}" class="muted">← Back to workout plans</a>
+    </div>
+
+    <div class="glass" style="padding:24px;">
+        <div style="font-size:30px;font-weight:800;">{{ plan.name }}</div>
+        <div class="muted" style="margin-top:6px;">
+            Build out this plan with days, then add exercise presets into each day.
+        </div>
+    </div>
+
+    <div class="glass" style="padding:24px;">
+        <div style="font-size:22px;font-weight:700;margin-bottom:18px;">Add Workout Day</div>
+
+        <form method="post" action="{% url 'dashboard-create-workout-day' plan.id %}" style="display:grid;grid-template-columns:1fr 160px 180px;gap:14px;align-items:end;">
+            {% csrf_token %}
+
+            <div>
+                <label class="label">Day Title</label>
+                <input class="input" type="text" name="title" placeholder="e.g. Upper">
+            </div>
+
+            <div>
+                <label class="label">Order</label>
+                <input class="input" type="number" name="order" min="1" placeholder="1">
+            </div>
+
+            <div>
+                <button type="submit" class="btn btn-primary" style="width:100%;">Add Day</button>
+            </div>
+        </form>
+    </div>
+
+    {% if days %}
+        <div style="display:grid;gap:22px;">
+            {% for day in days %}
+                <div class="glass" style="padding:24px;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
+                        <div>
+                            <div style="font-size:24px;font-weight:800;">{{ day.title }}</div>
+                            <div class="muted">Order {{ day.order }}</div>
+                        </div>
+                    </div>
+
+                    <div class="glass" style="padding:20px;margin-bottom:18px;">
+                        <div style="font-size:18px;font-weight:700;margin-bottom:14px;">Add Exercise To {{ day.title }}</div>
+
+                        <form method="post" action="{% url 'dashboard-add-exercise-to-day' plan.id %}" style="display:grid;grid-template-columns:1.3fr 100px 100px 120px 100px 140px 160px;gap:12px;align-items:end;">
+                            {% csrf_token %}
+                            <input type="hidden" name="workout_day_id" value="{{ day.id }}">
+
+                            <div>
+                                <label class="label">Exercise</label>
+                                {{ add_exercise_forms|get_item:day.id|get_field:"exercise_library_item_id" }}
+                            </div>
+
+                            <div>
+                                <label class="label">Label</label>
+                                <input class="input" type="text" name="label" placeholder="A">
+                            </div>
+
+                            <div>
+                                <label class="label">Order</label>
+                                <input class="input" type="number" name="order" min="1" placeholder="1">
+                            </div>
+
+                            <div>
+                                <label class="label">Superset</label>
+                                <input class="input" type="number" name="superset_group" min="1" placeholder="Optional">
+                            </div>
+
+                            <div>
+                                <label class="label">Sets</label>
+                                <input class="input" type="number" name="set_count" min="1" max="10" placeholder="3">
+                            </div>
+
+                            <div>
+                                <label class="label">Reps</label>
+                                <input class="input" type="text" name="reps" placeholder="8-12">
+                            </div>
+
+                            <div>
+                                <button type="submit" class="btn btn-primary" style="width:100%;">Add Exercise</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    {% if day.exercises.all %}
+                        <div style="display:grid;gap:14px;">
+                            {% for exercise in day.exercises.all|dictsort:"order" %}
+                                <div class="glass" style="padding:18px;">
+                                    <div style="display:flex;justify-content:space-between;align-items:start;gap:16px;">
+                                        <div>
+                                            <div style="font-size:18px;font-weight:800;">
+                                                {{ exercise.label }} — {{ exercise.name }}
+                                            </div>
+                                            <div class="muted" style="margin-top:6px;">
+                                                Order {{ exercise.order }}
+                                                {% if exercise.superset_group %}
+                                                    · Superset {{ exercise.superset_group }}
+                                                {% endif %}
+                                            </div>
+                                        </div>
+
+                                        <div class="glass" style="padding:10px 14px;">
+                                            {% for set_target in exercise.sets.all|dictsort:"set_number" %}
+                                                <div>Set {{ set_target.set_number }}: {{ set_target.reps }}</div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <div class="muted">No exercises in this day yet.</div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="glass" style="padding:24px;">
+            <div class="muted">No days yet. Add your first day above.</div>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}
