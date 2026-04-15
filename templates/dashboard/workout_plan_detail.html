@@ -13,10 +13,25 @@
     </div>
 
     <div class="glass" style="padding:24px;">
-        <div style="font-size:30px;font-weight:800;">{{ plan.name }}</div>
-        <div class="muted" style="margin-top:6px;">
-            Build out this plan with days, then add exercise presets into each day.
+        <div style="display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;">
+            <div style="flex:1;min-width:280px;">
+                <div style="font-size:30px;font-weight:800;margin-bottom:8px;">{{ plan.name }}</div>
+                <div class="muted">Build out this plan with days, then add exercise presets into each day.</div>
+            </div>
         </div>
+
+        <form method="post" action="{% url 'dashboard-update-workout-plan' plan.id %}" style="display:grid;grid-template-columns:1fr 180px;gap:14px;align-items:end;margin-top:18px;">
+            {% csrf_token %}
+
+            <div>
+                <label class="label">Edit Plan Name</label>
+                <input class="input" type="text" name="name" value="{{ plan.name }}">
+            </div>
+
+            <div>
+                <button type="submit" class="btn btn-primary" style="width:100%;">Save Plan</button>
+            </div>
+        </form>
     </div>
 
     <div class="glass" style="padding:24px;">
@@ -46,7 +61,7 @@
             {% for day in days %}
                 <div class="glass" style="padding:24px;">
                     <div style="display:flex;justify-content:space-between;align-items:start;gap:16px;margin-bottom:18px;flex-wrap:wrap;">
-                        <div>
+                        <div style="flex:1;min-width:280px;">
                             <div style="font-size:24px;font-weight:800;">{{ day.title }}</div>
                             <div class="muted">Order {{ day.order }}</div>
                         </div>
@@ -56,6 +71,24 @@
                             <button type="submit" class="btn btn-secondary">Delete Day</button>
                         </form>
                     </div>
+
+                    <form method="post" action="{% url 'dashboard-update-workout-day' plan.id day.id %}" style="display:grid;grid-template-columns:1fr 160px 180px;gap:14px;align-items:end;margin-bottom:18px;">
+                        {% csrf_token %}
+
+                        <div>
+                            <label class="label">Edit Day Title</label>
+                            <input class="input" type="text" name="title" value="{{ day.title }}">
+                        </div>
+
+                        <div>
+                            <label class="label">Edit Order</label>
+                            <input class="input" type="number" name="order" min="1" value="{{ day.order }}">
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-primary" style="width:100%;">Save Day</button>
+                        </div>
+                    </form>
 
                     <div class="glass" style="padding:20px;margin-bottom:18px;">
                         <div style="font-size:18px;font-weight:700;margin-bottom:14px;">Add Exercise To {{ day.title }}</div>
@@ -104,7 +137,7 @@
                         <div style="display:grid;gap:14px;">
                             {% for exercise in day.exercises.all|dictsort:"order" %}
                                 <div class="glass" style="padding:18px;">
-                                    <div style="display:flex;justify-content:space-between;align-items:start;gap:16px;flex-wrap:wrap;">
+                                    <div style="display:flex;justify-content:space-between;align-items:start;gap:16px;flex-wrap:wrap;margin-bottom:14px;">
                                         <div>
                                             <div style="font-size:18px;font-weight:800;">
                                                 {{ exercise.label }} — {{ exercise.name }}
@@ -117,18 +150,49 @@
                                             </div>
                                         </div>
 
-                                        <div style="display:flex;gap:12px;align-items:start;flex-wrap:wrap;">
-                                            <div class="glass" style="padding:10px 14px;">
-                                                {% for set_target in exercise.sets.all|dictsort:"set_number" %}
-                                                    <div>Set {{ set_target.set_number }}: {{ set_target.reps }}</div>
-                                                {% endfor %}
-                                            </div>
+                                        <form method="post" action="{% url 'dashboard-delete-exercise' plan.id exercise.id %}" onsubmit="return confirm('Delete this exercise from the day?');">
+                                            {% csrf_token %}
+                                            <button type="submit" class="btn btn-secondary">Delete</button>
+                                        </form>
+                                    </div>
 
-                                            <form method="post" action="{% url 'dashboard-delete-exercise' plan.id exercise.id %}" onsubmit="return confirm('Delete this exercise from the day?');">
-                                                {% csrf_token %}
-                                                <button type="submit" class="btn btn-secondary">Delete</button>
-                                            </form>
+                                    <form method="post" action="{% url 'dashboard-update-exercise' plan.id exercise.id %}" style="display:grid;grid-template-columns:100px 100px 120px 100px 140px 180px;gap:12px;align-items:end;">
+                                        {% csrf_token %}
+
+                                        <div>
+                                            <label class="label">Label</label>
+                                            <input class="input" type="text" name="label" value="{{ exercise.label }}">
                                         </div>
+
+                                        <div>
+                                            <label class="label">Order</label>
+                                            <input class="input" type="number" name="order" min="1" value="{{ exercise.order }}">
+                                        </div>
+
+                                        <div>
+                                            <label class="label">Superset</label>
+                                            <input class="input" type="number" name="superset_group" min="1" value="{{ exercise.superset_group|default_if_none:'' }}">
+                                        </div>
+
+                                        <div>
+                                            <label class="label">Sets</label>
+                                            <input class="input" type="number" name="set_count" min="1" max="10" value="{{ exercise.sets.count }}">
+                                        </div>
+
+                                        <div>
+                                            <label class="label">Reps</label>
+                                            <input class="input" type="text" name="reps" value="{% with first_set=exercise.sets.all|dictsort:'set_number'|first %}{% if first_set %}{{ first_set.reps }}{% endif %}{% endwith %}">
+                                        </div>
+
+                                        <div>
+                                            <button type="submit" class="btn btn-primary" style="width:100%;">Save Exercise</button>
+                                        </div>
+                                    </form>
+
+                                    <div style="margin-top:14px;" class="muted">
+                                        {% for set_target in exercise.sets.all|dictsort:"set_number" %}
+                                            <div>Set {{ set_target.set_number }}: {{ set_target.reps }}</div>
+                                        {% endfor %}
                                     </div>
                                 </div>
                             {% endfor %}

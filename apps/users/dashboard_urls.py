@@ -15,10 +15,13 @@ from .dashboard_views import (
     dashboard_assign_workout_plan,
     dashboard_create_exercise_library_item,
     dashboard_create_workout_plan,
+    dashboard_update_workout_plan,
     dashboard_delete_workout_plan,
     dashboard_create_workout_day,
+    dashboard_update_workout_day,
     dashboard_delete_workout_day,
     dashboard_add_exercise_to_day,
+    dashboard_update_exercise,
     dashboard_delete_exercise,
 )
 
@@ -38,10 +41,13 @@ urlpatterns = [
     path("dashboard/workout-plans/create-exercise/", dashboard_create_exercise_library_item, name="dashboard-create-exercise-library-item"),
     path("dashboard/workout-plans/create/", dashboard_create_workout_plan, name="dashboard-create-workout-plan"),
     path("dashboard/workout-plans/<int:plan_id>/", trainer_workout_plan_detail_page, name="trainer-workout-plan-detail"),
+    path("dashboard/workout-plans/<int:plan_id>/update/", dashboard_update_workout_plan, name="dashboard-update-workout-plan"),
     path("dashboard/workout-plans/<int:plan_id>/delete/", dashboard_delete_workout_plan, name="dashboard-delete-workout-plan"),
     path("dashboard/workout-plans/<int:plan_id>/create-day/", dashboard_create_workout_day, name="dashboard-create-workout-day"),
+    path("dashboard/workout-plans/<int:plan_id>/days/<int:day_id>/update/", dashboard_update_workout_day, name="dashboard-update-workout-day"),
     path("dashboard/workout-plans/<int:plan_id>/days/<int:day_id>/delete/", dashboard_delete_workout_day, name="dashboard-delete-workout-day"),
     path("dashboard/workout-plans/<int:plan_id>/add-exercise/", dashboard_add_exercise_to_day, name="dashboard-add-exercise-to-day"),
+    path("dashboard/workout-plans/<int:plan_id>/exercises/<int:exercise_id>/update/", dashboard_update_exercise, name="dashboard-update-exercise"),
     path("dashboard/workout-plans/<int:plan_id>/exercises/<int:exercise_id>/delete/", dashboard_delete_exercise, name="dashboard-delete-exercise"),
 
     path("dashboard/nutrition-plans/", trainer_nutrition_plans_page, name="trainer-nutrition-plans-page"),

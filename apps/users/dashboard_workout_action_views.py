@@ -6,8 +6,11 @@ from .dashboard_helpers import trainer_required
 from .forms import (
     CreateExerciseLibraryItemForm,
     CreateWorkoutPlanForm,
+    UpdateWorkoutPlanForm,
     CreateWorkoutDayForm,
+    UpdateWorkoutDayForm,
     AddExerciseToDayForm,
+    UpdateExerciseForm,
 )
 from apps.workouts.models import (
     WorkoutPlan,
@@ -20,9 +23,6 @@ from apps.workouts.models import (
 
 @login_required
 def dashboard_create_exercise_library_item(request):
-    """
-    Create a reusable exercise preset owned by the trainer.
-    """
     if not trainer_required(request):
         return redirect("landing-page")
 
@@ -50,9 +50,6 @@ def dashboard_create_exercise_library_item(request):
 
 @login_required
 def dashboard_create_workout_plan(request):
-    """
-    Create a reusable workout plan template for the trainer.
-    """
     if not trainer_required(request):
         return redirect("landing-page")
 
@@ -78,10 +75,32 @@ def dashboard_create_workout_plan(request):
 
 
 @login_required
+def dashboard_update_workout_plan(request, plan_id):
+    if not trainer_required(request):
+        return redirect("landing-page")
+
+    plan = get_object_or_404(WorkoutPlan, id=plan_id, user=request.user)
+
+    if request.method != "POST":
+        return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+    form = UpdateWorkoutPlanForm(request.POST)
+
+    if not form.is_valid():
+        for _, errors in form.errors.items():
+            for error in errors:
+                messages.error(request, error)
+        return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+    plan.name = form.cleaned_data["name"]
+    plan.save()
+
+    messages.success(request, "Workout plan updated successfully.")
+    return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+
+@login_required
 def dashboard_delete_workout_plan(request, plan_id):
-    """
-    Delete a trainer-owned workout plan template.
-    """
     if not trainer_required(request):
         return redirect("landing-page")
 
@@ -99,9 +118,6 @@ def dashboard_delete_workout_plan(request, plan_id):
 
 @login_required
 def dashboard_create_workout_day(request, plan_id):
-    """
-    Add a workout day to a trainer-owned workout plan template.
-    """
     if not trainer_required(request):
         return redirect("landing-page")
 
@@ -129,10 +145,34 @@ def dashboard_create_workout_day(request, plan_id):
 
 
 @login_required
+def dashboard_update_workout_day(request, plan_id, day_id):
+    if not trainer_required(request):
+        return redirect("landing-page")
+
+    plan = get_object_or_404(WorkoutPlan, id=plan_id, user=request.user)
+    day = get_object_or_404(WorkoutDay, id=day_id, plan=plan)
+
+    if request.method != "POST":
+        return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+    form = UpdateWorkoutDayForm(request.POST)
+
+    if not form.is_valid():
+        for _, errors in form.errors.items():
+            for error in errors:
+                messages.error(request, error)
+        return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+    day.title = form.cleaned_data["title"]
+    day.order = form.cleaned_data["order"]
+    day.save()
+
+    messages.success(request, "Workout day updated successfully.")
+    return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+
+@login_required
 def dashboard_delete_workout_day(request, plan_id, day_id):
-    """
-    Delete a workout day from a trainer-owned plan.
-    """
     if not trainer_required(request):
         return redirect("landing-page")
 
@@ -151,10 +191,6 @@ def dashboard_delete_workout_day(request, plan_id, day_id):
 
 @login_required
 def dashboard_add_exercise_to_day(request, plan_id):
-    """
-    Add a trainer-owned exercise preset into a specific day within a trainer-owned plan.
-    This stores the exercise name in the plan so it remains stable even if the preset changes later.
-    """
     if not trainer_required(request):
         return redirect("landing-page")
 
@@ -203,10 +239,51 @@ def dashboard_add_exercise_to_day(request, plan_id):
 
 
 @login_required
+def dashboard_update_exercise(request, plan_id, exercise_id):
+    if not trainer_required(request):
+        return redirect("landing-page")
+
+    plan = get_object_or_404(WorkoutPlan, id=plan_id, user=request.user)
+    exercise = get_object_or_404(
+        Exercise.objects.select_related("workout_day", "workout_day__plan").prefetch_related("sets"),
+        id=exercise_id,
+        workout_day__plan=plan,
+    )
+
+    if request.method != "POST":
+        return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+    form = UpdateExerciseForm(request.POST)
+
+    if not form.is_valid():
+        for _, errors in form.errors.items():
+            for error in errors:
+                messages.error(request, error)
+        return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+    exercise.label = form.cleaned_data["label"]
+    exercise.order = form.cleaned_data["order"]
+    exercise.superset_group = form.cleaned_data["superset_group"] or None
+    exercise.save()
+
+    new_set_count = form.cleaned_data["set_count"]
+    reps_value = form.cleaned_data["reps"]
+
+    exercise.sets.all().delete()
+
+    for set_number in range(1, new_set_count + 1):
+        ExerciseSetTarget.objects.create(
+            exercise=exercise,
+            set_number=set_number,
+            reps=reps_value,
+        )
+
+    messages.success(request, "Exercise updated successfully.")
+    return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+
+@login_required
 def dashboard_delete_exercise(request, plan_id, exercise_id):
-    """
-    Delete an exercise from a trainer-owned workout day.
-    """
     if not trainer_required(request):
         return redirect("landing-page")
 

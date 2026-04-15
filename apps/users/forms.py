@@ -1,6 +1,6 @@
 from django import forms
 from .models import User
-from apps.workouts.models import WorkoutPlan, ExerciseLibraryItem, WorkoutDay
+from apps.workouts.models import WorkoutPlan, ExerciseLibraryItem
 
 
 class TrainerLoginForm(forms.Form):
@@ -38,7 +38,16 @@ class CreateWorkoutPlanForm(forms.Form):
     name = forms.CharField(max_length=255)
 
 
+class UpdateWorkoutPlanForm(forms.Form):
+    name = forms.CharField(max_length=255)
+
+
 class CreateWorkoutDayForm(forms.Form):
+    title = forms.CharField(max_length=100)
+    order = forms.IntegerField(min_value=1)
+
+
+class UpdateWorkoutDayForm(forms.Form):
     title = forms.CharField(max_length=100)
     order = forms.IntegerField(min_value=1)
 
@@ -60,3 +69,11 @@ class AddExerciseToDayForm(forms.Form):
             self.fields["exercise_library_item_id"].choices = [
                 (exercise.id, exercise.name) for exercise in exercises
             ]
+
+
+class UpdateExerciseForm(forms.Form):
+    label = forms.CharField(max_length=10)
+    order = forms.IntegerField(min_value=1)
+    superset_group = forms.IntegerField(required=False, min_value=1)
+    set_count = forms.IntegerField(min_value=1, max_value=10)
+    reps = forms.CharField(max_length=20)
