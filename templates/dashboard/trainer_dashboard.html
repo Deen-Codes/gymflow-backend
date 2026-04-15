@@ -81,7 +81,7 @@
                                     <input type="hidden" name="client_user_id" value="{{ client.id }}">
 
                                     <label class="label">Assign workout plan</label>
-                                    {{ assign_forms|get_item:client.id|attr:"workout_plan_id" }}
+                                    {{ assign_forms|get_item:client.id|get_field:"workout_plan_id" }}
 
                                     <div style="margin-top:10px;">
                                         <button type="submit" class="btn btn-secondary" style="width:100%;">
