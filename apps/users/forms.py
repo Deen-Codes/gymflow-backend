@@ -26,3 +26,9 @@ class AssignWorkoutPlanForm(forms.Form):
             self.fields["workout_plan_id"].choices = [
                 (plan.id, plan.name) for plan in plans
             ]
+
+
+class CreateExerciseLibraryItemForm(forms.Form):
+    name = forms.CharField(max_length=255)
+    video_url = forms.URLField(required=False)
+    coaching_notes = forms.CharField(required=False, widget=forms.Textarea)

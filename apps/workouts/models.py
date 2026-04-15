@@ -61,3 +61,21 @@ class SetPerformance(models.Model):
     set_number = models.IntegerField()
     weight = models.CharField(max_length=20, blank=True)
     reps = models.CharField(max_length=20, blank=True)
+
+
+class ExerciseLibraryItem(models.Model):
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name="exercise_library_items",
+    )
+    name = models.CharField(max_length=255)
+    video_url = models.URLField(blank=True)
+    coaching_notes = models.TextField(blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["name"]
+
+    def __str__(self):
+        return self.name

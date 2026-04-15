@@ -1,10 +1,74 @@
 {% extends "dashboard/dashboard_shell.html" %}
 
 {% block dashboard_content %}
-<div class="glass" style="padding:24px;">
-    <div style="font-size:22px;font-weight:700;margin-bottom:14px;">Workout Plans</div>
-    <div class="muted">
-        This is where your reusable workout plan presets will live. Next we can build the workout plan library here.
+<div style="display:grid;grid-template-columns:420px 1fr;gap:22px;align-items:start;">
+    <div class="glass" style="padding:24px;">
+        <div style="font-size:22px;font-weight:700;margin-bottom:18px;">Create Exercise Preset</div>
+
+        <form method="post" action="{% url 'dashboard-create-exercise-library-item' %}" style="display:grid;gap:14px;">
+            {% csrf_token %}
+
+            <div>
+                <label class="label">Exercise Name</label>
+                <input class="input" type="text" name="name" placeholder="e.g. Incline Dumbbell Press">
+            </div>
+
+            <div>
+                <label class="label">Tutorial Video URL</label>
+                <input class="input" type="url" name="video_url" placeholder="https://youtube.com/...">
+            </div>
+
+            <div>
+                <label class="label">Coaching Notes</label>
+                <textarea class="input" name="coaching_notes" rows="5" placeholder="Form cues, setup tips, tempo, range of motion..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Create Exercise Preset</button>
+        </form>
+    </div>
+
+    <div style="display:grid;gap:22px;">
+        <div class="glass" style="padding:24px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
+                <div style="font-size:22px;font-weight:700;">Exercise Library</div>
+                <div class="muted">{{ exercise_library|length }} total</div>
+            </div>
+
+            {% if exercise_library %}
+                <div style="display:grid;gap:14px;">
+                    {% for exercise in exercise_library %}
+                        <div class="glass" style="padding:18px;">
+                            <div style="font-size:18px;font-weight:800;margin-bottom:8px;">{{ exercise.name }}</div>
+
+                            {% if exercise.video_url %}
+                                <div style="margin-bottom:10px;">
+                                    <a href="{{ exercise.video_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                        Watch Demo
+                                    </a>
+                                </div>
+                            {% endif %}
+
+                            {% if exercise.coaching_notes %}
+                                <div class="muted">{{ exercise.coaching_notes }}</div>
+                            {% else %}
+                                <div class="muted">No coaching notes added yet.</div>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="muted">
+                    No exercise presets yet. Create your first one on the left.
+                </div>
+            {% endif %}
+        </div>
+
+        <div class="glass" style="padding:24px;">
+            <div style="font-size:22px;font-weight:700;margin-bottom:14px;">Workout Plan Templates</div>
+            <div class="muted">
+                Next we’ll build reusable workout plan templates using these exercise presets, so you can assign them to clients or create client-specific versions.
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}

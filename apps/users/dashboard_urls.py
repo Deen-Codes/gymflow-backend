@@ -12,6 +12,7 @@ from .dashboard_views import (
     trainer_settings_page,
     dashboard_create_client,
     dashboard_assign_workout_plan,
+    dashboard_create_exercise_library_item,
 )
 
 urlpatterns = [
@@ -25,6 +26,7 @@ urlpatterns = [
     path("dashboard/create-client/", dashboard_create_client, name="dashboard-create-client"),
     path("dashboard/assign-workout-plan/", dashboard_assign_workout_plan, name="dashboard-assign-workout-plan"),
     path("dashboard/workout-plans/", trainer_workout_plans_page, name="trainer-workout-plans-page"),
+    path("dashboard/workout-plans/create-exercise/", dashboard_create_exercise_library_item, name="dashboard-create-exercise-library-item"),
     path("dashboard/nutrition-plans/", trainer_nutrition_plans_page, name="trainer-nutrition-plans-page"),
     path("dashboard/settings/", trainer_settings_page, name="trainer-settings-page"),
 

@@ -3,9 +3,15 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404, redirect, render
 
-from .forms import TrainerLoginForm, CreateClientForm, AssignWorkoutPlanForm
+from .forms import (
+    TrainerLoginForm,
+    CreateClientForm,
+    AssignWorkoutPlanForm,
+    CreateExerciseLibraryItemForm,
+)
 from .models import User
 from .serializers import ClientCreateSerializer, AssignWorkoutPlanSerializer
+from apps.workouts.models import WorkoutPlan, ExerciseLibraryItem
 
 
 def landing_page(request):
@@ -58,6 +64,8 @@ def _get_trainer_clients(request):
 def _dashboard_context(request, page_title):
     trainer_profile = request.user.trainer_profile
     clients = _get_trainer_clients(request)
+    workout_plans = WorkoutPlan.objects.filter(user=request.user).order_by("name")
+    exercise_library = ExerciseLibraryItem.objects.filter(user=request.user).order_by("name")
 
     assign_forms = {
         client.id: AssignWorkoutPlanForm(
@@ -74,6 +82,9 @@ def _dashboard_context(request, page_title):
         "create_client_form": CreateClientForm(),
         "assign_forms": assign_forms,
         "client_count": clients.count(),
+        "workout_plans": workout_plans,
+        "exercise_library": exercise_library,
+        "exercise_library_form": CreateExerciseLibraryItemForm(),
     }
 
 
@@ -218,3 +229,30 @@ def dashboard_assign_workout_plan(request):
                 messages.error(request, str(errors))
 
     return redirect("trainer-client-detail", client_id=form.cleaned_data["client_user_id"])
+
+
+@login_required
+def dashboard_create_exercise_library_item(request):
+    if not _trainer_required(request):
+        return redirect("landing-page")
+
+    if request.method != "POST":
+        return redirect("trainer-workout-plans-page")
+
+    form = CreateExerciseLibraryItemForm(request.POST)
+
+    if not form.is_valid():
+        for _, errors in form.errors.items():
+            for error in errors:
+                messages.error(request, error)
+        return redirect("trainer-workout-plans-page")
+
+    ExerciseLibraryItem.objects.create(
+        user=request.user,
+        name=form.cleaned_data["name"],
+        video_url=form.cleaned_data["video_url"],
+        coaching_notes=form.cleaned_data["coaching_notes"],
+    )
+
+    messages.success(request, "Exercise preset created successfully.")
+    return redirect("trainer-workout-plans-page")
