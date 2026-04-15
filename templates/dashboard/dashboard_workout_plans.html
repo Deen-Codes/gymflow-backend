@@ -36,25 +36,31 @@
 
             {% if exercise_library %}
                 <div style="display:grid;gap:14px;">
-                    {% for exercise in exercise_library %}
-                        <div class="glass" style="padding:18px;">
-                            <div style="font-size:18px;font-weight:800;margin-bottom:8px;">{{ exercise.name }}</div>
+{% for exercise in exercise_library %}
+    <div class="glass" style="padding:22px;">
+        <div style="font-size:18px;font-weight:800;margin-bottom:14px;">
+            {{ exercise.name }}
+        </div>
 
-                            {% if exercise.video_url %}
-                                <div style="margin-bottom:10px;">
-                                    <a href="{{ exercise.video_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                                        Watch Demo
-                                    </a>
-                                </div>
-                            {% endif %}
+        {% if exercise.video_url %}
+            <div style="margin-bottom:16px;">
+                <a href="{{ exercise.video_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    Watch Demo
+                </a>
+            </div>
+        {% endif %}
 
-                            {% if exercise.coaching_notes %}
-                                <div class="muted">{{ exercise.coaching_notes }}</div>
-                            {% else %}
-                                <div class="muted">No coaching notes added yet.</div>
-                            {% endif %}
-                        </div>
-                    {% endfor %}
+        {% if exercise.coaching_notes %}
+            <div class="muted" style="line-height:1.6;">
+                {{ exercise.coaching_notes }}
+            </div>
+        {% else %}
+            <div class="muted">
+                No coaching notes added yet.
+            </div>
+        {% endif %}
+    </div>
+{% endfor %}
                 </div>
             {% else %}
                 <div class="muted">
