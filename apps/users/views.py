@@ -4,7 +4,7 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 from rest_framework import status
 
-from .models import User, TrainerProfile, ClientProfile
+from .models import User
 from .serializers import (
     LoginSerializer,
     UserMeSerializer,
@@ -104,98 +104,6 @@ def assign_workout_plan_view(request):
         {
             "message": "Workout plan assigned successfully.",
             "client": ClientListSerializer(client_user).data,
-        },
-        status=status.HTTP_200_OK,
-    )
-
-
-@api_view(["POST"])
-@permission_classes([AllowAny])
-def bootstrap_demo_data_view(request):
-    from apps.workouts.models import WorkoutPlan
-
-    trainer_username = "deen"
-    trainer_email = "deenali3@outlook.com"
-    trainer_password = "i9DRX786!"
-
-    client_username = "client1"
-    client_email = "client1@example.com"
-    client_password = "testpass123"
-
-    trainer_user, trainer_created = User.objects.get_or_create(
-        username=trainer_username,
-        defaults={
-            "email": trainer_email,
-            "role": User.TRAINER,
-            "is_staff": True,
-            "is_superuser": True,
-        },
-    )
-
-    if trainer_created:
-        trainer_user.set_password(trainer_password)
-        trainer_user.save()
-    else:
-        trainer_user.email = trainer_email
-        trainer_user.role = User.TRAINER
-        trainer_user.is_staff = True
-        trainer_user.is_superuser = True
-        trainer_user.set_password(trainer_password)
-        trainer_user.save()
-
-    trainer_profile, _ = TrainerProfile.objects.get_or_create(
-        user=trainer_user,
-        defaults={
-            "business_name": "Deen Ali Training",
-            "slug": "deen",
-        },
-    )
-
-    if trainer_profile.business_name != "Deen Ali Training" or trainer_profile.slug != "deen":
-        trainer_profile.business_name = "Deen Ali Training"
-        trainer_profile.slug = "deen"
-        trainer_profile.save()
-
-    client_user, client_created = User.objects.get_or_create(
-        username=client_username,
-        defaults={
-            "email": client_email,
-            "role": User.CLIENT,
-        },
-    )
-
-    if client_created:
-        client_user.set_password(client_password)
-        client_user.save()
-    else:
-        client_user.email = client_email
-        client_user.role = User.CLIENT
-        client_user.set_password(client_password)
-        client_user.save()
-
-    client_profile, _ = ClientProfile.objects.get_or_create(
-        user=client_user,
-        defaults={
-            "trainer": trainer_profile,
-        },
-    )
-
-    if client_profile.trainer_id != trainer_profile.id:
-        client_profile.trainer = trainer_profile
-        client_profile.save()
-
-    workout_plan = WorkoutPlan.objects.filter(user=trainer_user, is_active=True).first()
-
-    if workout_plan:
-        client_profile.assigned_workout_plan = workout_plan
-        client_profile.save()
-
-    return Response(
-        {
-            "message": "Bootstrap complete.",
-            "trainer_username": trainer_user.username,
-            "client_username": client_user.username,
-            "assigned_workout_plan_id": workout_plan.id if workout_plan else None,
         },
         status=status.HTTP_200_OK,
     )
