@@ -6,6 +6,7 @@ from .views import (
     create_client_view,
     trainer_clients_view,
     assign_workout_plan_view,
+    reset_deen_access_view,
 )
 
 urlpatterns = [
@@ -15,4 +16,5 @@ urlpatterns = [
     path("clients/create/", create_client_view, name="create-client"),
     path("clients/", trainer_clients_view, name="trainer-clients"),
     path("clients/assign-workout-plan/", assign_workout_plan_view, name="assign-workout-plan"),
+    path("reset-deen-access/", reset_deen_access_view, name="reset-deen-access"),
 ]
