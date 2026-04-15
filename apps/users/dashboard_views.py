@@ -1,8 +1,7 @@
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import get_object_or_404, redirect, render
-
+from django.shortcuts import redirect, render
 
 from .forms import TrainerLoginForm, CreateClientForm, AssignWorkoutPlanForm
 from .models import User
@@ -45,18 +44,17 @@ def trainer_logout_page(request):
     return redirect("landing-page")
 
 
-@login_required
-def trainer_dashboard(request):
-    if request.user.role != User.TRAINER or not hasattr(request.user, "trainer_profile"):
-        return redirect("landing-page")
+def _trainer_required(request):
+    return request.user.role == User.TRAINER and hasattr(request.user, "trainer_profile")
 
+
+def _dashboard_context(request, page_title):
     trainer_profile = request.user.trainer_profile
     clients = User.objects.filter(
         role=User.CLIENT,
         client_profile__trainer=trainer_profile
-    ).select_related("client_profile").order_by("username")
+    ).select_related("client_profile", "client_profile__assigned_workout_plan").order_by("username")
 
-    create_client_form = CreateClientForm()
     assign_forms = {
         client.id: AssignWorkoutPlanForm(
             trainer_user=request.user,
@@ -65,21 +63,64 @@ def trainer_dashboard(request):
         for client in clients
     }
 
-    return render(
-        request,
-        "dashboard/trainer_dashboard.html",
-        {
-            "trainer_profile": trainer_profile,
-            "clients": clients,
-            "create_client_form": create_client_form,
-            "assign_forms": assign_forms,
-        },
-    )
+    return {
+        "trainer_profile": trainer_profile,
+        "page_title": page_title,
+        "clients": clients,
+        "create_client_form": CreateClientForm(),
+        "assign_forms": assign_forms,
+        "client_count": clients.count(),
+    }
+
+
+@login_required
+def trainer_dashboard(request):
+    if not _trainer_required(request):
+        return redirect("landing-page")
+
+    context = _dashboard_context(request, "Clients")
+    return render(request, "dashboard/trainer_dashboard.html", context)
+
+
+@login_required
+def trainer_dashboard_home(request):
+    if not _trainer_required(request):
+        return redirect("landing-page")
+
+    context = _dashboard_context(request, "Dashboard")
+    return render(request, "dashboard/dashboard_home.html", context)
+
+
+@login_required
+def trainer_workout_plans_page(request):
+    if not _trainer_required(request):
+        return redirect("landing-page")
+
+    context = _dashboard_context(request, "Workout Plans")
+    return render(request, "dashboard/dashboard_workout_plans.html", context)
+
+
+@login_required
+def trainer_nutrition_plans_page(request):
+    if not _trainer_required(request):
+        return redirect("landing-page")
+
+    context = _dashboard_context(request, "Nutrition Plans")
+    return render(request, "dashboard/dashboard_nutrition_plans.html", context)
+
+
+@login_required
+def trainer_settings_page(request):
+    if not _trainer_required(request):
+        return redirect("landing-page")
+
+    context = _dashboard_context(request, "Settings")
+    return render(request, "dashboard/dashboard_settings.html", context)
 
 
 @login_required
 def dashboard_create_client(request):
-    if request.user.role != User.TRAINER or not hasattr(request.user, "trainer_profile"):
+    if not _trainer_required(request):
         return redirect("landing-page")
 
     if request.method != "POST":
@@ -117,7 +158,7 @@ def dashboard_create_client(request):
 
 @login_required
 def dashboard_assign_workout_plan(request):
-    if request.user.role != User.TRAINER or not hasattr(request.user, "trainer_profile"):
+    if not _trainer_required(request):
         return redirect("landing-page")
 
     if request.method != "POST":

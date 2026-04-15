@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page_title }} | GymFlow{% endblock %}
+
+{% block content %}
+<div style="display:grid;grid-template-columns:280px 1fr;min-height:100vh;">
+    <aside style="border-right:1px solid rgba(255,255,255,0.08);padding:28px 20px;background:rgba(0,0,0,0.12);">
+        <div style="font-size:34px;font-weight:800;margin-bottom:6px;">GymFlow</div>
+        <div class="muted" style="margin-bottom:26px;">{{ trainer_profile.business_name }}</div>
+
+        <nav style="display:grid;gap:10px;">
+            <a href="{% url 'trainer-dashboard-home' %}"
+               class="glass"
+               style="padding:14px 16px;{% if request.resolver_match.url_name == 'trainer-dashboard-home' %}outline:2px solid rgba(77,163,255,0.55);background:rgba(77,163,255,0.10);{% endif %}">
+                Dashboard
+            </a>
+
+            <a href="{% url 'trainer-dashboard' %}"
+               class="glass"
+               style="padding:14px 16px;{% if request.resolver_match.url_name == 'trainer-dashboard' %}outline:2px solid rgba(77,163,255,0.55);background:rgba(77,163,255,0.10);{% endif %}">
+                Clients
+            </a>
+
+            <a href="{% url 'trainer-workout-plans-page' %}"
+               class="glass"
+               style="padding:14px 16px;{% if request.resolver_match.url_name == 'trainer-workout-plans-page' %}outline:2px solid rgba(77,163,255,0.55);background:rgba(77,163,255,0.10);{% endif %}">
+                Workout Plans
+            </a>
+
+            <a href="{% url 'trainer-nutrition-plans-page' %}"
+               class="glass"
+               style="padding:14px 16px;{% if request.resolver_match.url_name == 'trainer-nutrition-plans-page' %}outline:2px solid rgba(77,163,255,0.55);background:rgba(77,163,255,0.10);{% endif %}">
+                Nutrition Plans
+            </a>
+
+            <a href="{% url 'trainer-settings-page' %}"
+               class="glass"
+               style="padding:14px 16px;{% if request.resolver_match.url_name == 'trainer-settings-page' %}outline:2px solid rgba(77,163,255,0.55);background:rgba(77,163,255,0.10);{% endif %}">
+                Settings
+            </a>
+        </nav>
+
+        <div style="margin-top:26px;">
+            <a href="{% url 'trainer-logout-page' %}" class="btn btn-secondary" style="width:100%;display:block;text-align:center;">
+                Log Out
+            </a>
+        </div>
+    </aside>
+
+    <main style="padding:28px;">
+        <div style="display:flex;justify-content:space-between;align-items:start;gap:18px;margin-bottom:22px;">
+            <div>
+                <div style="font-size:38px;font-weight:800;">{{ page_title }}</div>
+                <div class="muted">Manage your coaching business from one place.</div>
+            </div>
+        </div>
+
+        {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                    <div class="message {% if message.tags == 'error' %}error{% else %}success{% endif %}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        {% block dashboard_content %}{% endblock %}
+    </main>
+</div>
+{% endblock %}

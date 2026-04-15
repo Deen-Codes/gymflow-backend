@@ -1,0 +1,27 @@
+{% extends "dashboard/dashboard_shell.html" %}
+
+{% block dashboard_content %}
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:22px;">
+    <div class="glass" style="padding:22px;">
+        <div class="muted" style="margin-bottom:8px;">Clients</div>
+        <div style="font-size:36px;font-weight:800;">{{ client_count }}</div>
+    </div>
+
+    <div class="glass" style="padding:22px;">
+        <div class="muted" style="margin-bottom:8px;">Workout Plans</div>
+        <div style="font-size:36px;font-weight:800;">Coming soon</div>
+    </div>
+
+    <div class="glass" style="padding:22px;">
+        <div class="muted" style="margin-bottom:8px;">Nutrition Plans</div>
+        <div style="font-size:36px;font-weight:800;">Coming soon</div>
+    </div>
+</div>
+
+<div class="glass" style="padding:24px;">
+    <div style="font-size:22px;font-weight:700;margin-bottom:14px;">Welcome</div>
+    <div class="muted">
+        This is your trainer control center. Use the sidebar to manage clients, build workout presets, and add nutrition plans.
+    </div>
+</div>
+{% endblock %}
