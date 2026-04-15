@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: gymflow-api
+    runtime: python
+    plan: free
+    buildCommand: ./build.sh
+    startCommand: gunicorn config.asgi:application -k uvicorn.workers.UvicornWorker
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALLOWED_HOSTS
+        value: gymflow-api.onrender.com
+
+databases:
+  - name: gymflow-db
+    plan: free
