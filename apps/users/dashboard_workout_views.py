@@ -124,6 +124,26 @@ def dashboard_create_workout_plan(request):
 
 
 @login_required
+def dashboard_delete_workout_plan(request, plan_id):
+    """
+    Delete a trainer-owned workout plan template.
+    """
+    if not trainer_required(request):
+        return redirect("landing-page")
+
+    plan = get_object_or_404(WorkoutPlan, id=plan_id, user=request.user)
+
+    if request.method != "POST":
+        return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+    plan_name = plan.name
+    plan.delete()
+
+    messages.success(request, f'Workout plan "{plan_name}" deleted successfully.')
+    return redirect("trainer-workout-plans-page")
+
+
+@login_required
 def dashboard_create_workout_day(request, plan_id):
     """
     Add a workout day to a trainer-owned workout plan template.
@@ -151,6 +171,27 @@ def dashboard_create_workout_day(request, plan_id):
     )
 
     messages.success(request, "Workout day added successfully.")
+    return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+
+@login_required
+def dashboard_delete_workout_day(request, plan_id, day_id):
+    """
+    Delete a workout day from a trainer-owned plan.
+    """
+    if not trainer_required(request):
+        return redirect("landing-page")
+
+    plan = get_object_or_404(WorkoutPlan, id=plan_id, user=request.user)
+    day = get_object_or_404(WorkoutDay, id=day_id, plan=plan)
+
+    if request.method != "POST":
+        return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+    day_title = day.title
+    day.delete()
+
+    messages.success(request, f'Workout day "{day_title}" deleted successfully.')
     return redirect("trainer-workout-plan-detail", plan_id=plan.id)
 
 
@@ -204,4 +245,29 @@ def dashboard_add_exercise_to_day(request, plan_id):
         )
 
     messages.success(request, "Exercise added to workout day successfully.")
+    return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+
+@login_required
+def dashboard_delete_exercise(request, plan_id, exercise_id):
+    """
+    Delete an exercise from a trainer-owned workout day.
+    """
+    if not trainer_required(request):
+        return redirect("landing-page")
+
+    plan = get_object_or_404(WorkoutPlan, id=plan_id, user=request.user)
+    exercise = get_object_or_404(
+        Exercise.objects.select_related("workout_day", "workout_day__plan"),
+        id=exercise_id,
+        workout_day__plan=plan,
+    )
+
+    if request.method != "POST":
+        return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+    exercise_name = exercise.name
+    exercise.delete()
+
+    messages.success(request, f'Exercise "{exercise_name}" deleted successfully.')
     return redirect("trainer-workout-plan-detail", plan_id=plan.id)

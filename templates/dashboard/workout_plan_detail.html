@@ -3,8 +3,13 @@
 
 {% block dashboard_content %}
 <div style="display:grid;gap:22px;">
-    <div>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
         <a href="{% url 'trainer-workout-plans-page' %}" class="muted">← Back to workout plans</a>
+
+        <form method="post" action="{% url 'dashboard-delete-workout-plan' plan.id %}" onsubmit="return confirm('Delete this workout plan? This cannot be undone.');">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-secondary">Delete Plan</button>
+        </form>
     </div>
 
     <div class="glass" style="padding:24px;">
@@ -40,11 +45,16 @@
         <div style="display:grid;gap:22px;">
             {% for day in days %}
                 <div class="glass" style="padding:24px;">
-                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
+                    <div style="display:flex;justify-content:space-between;align-items:start;gap:16px;margin-bottom:18px;flex-wrap:wrap;">
                         <div>
                             <div style="font-size:24px;font-weight:800;">{{ day.title }}</div>
                             <div class="muted">Order {{ day.order }}</div>
                         </div>
+
+                        <form method="post" action="{% url 'dashboard-delete-workout-day' plan.id day.id %}" onsubmit="return confirm('Delete this day and all its exercises?');">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-secondary">Delete Day</button>
+                        </form>
                     </div>
 
                     <div class="glass" style="padding:20px;margin-bottom:18px;">
@@ -94,7 +104,7 @@
                         <div style="display:grid;gap:14px;">
                             {% for exercise in day.exercises.all|dictsort:"order" %}
                                 <div class="glass" style="padding:18px;">
-                                    <div style="display:flex;justify-content:space-between;align-items:start;gap:16px;">
+                                    <div style="display:flex;justify-content:space-between;align-items:start;gap:16px;flex-wrap:wrap;">
                                         <div>
                                             <div style="font-size:18px;font-weight:800;">
                                                 {{ exercise.label }} — {{ exercise.name }}
@@ -107,10 +117,17 @@
                                             </div>
                                         </div>
 
-                                        <div class="glass" style="padding:10px 14px;">
-                                            {% for set_target in exercise.sets.all|dictsort:"set_number" %}
-                                                <div>Set {{ set_target.set_number }}: {{ set_target.reps }}</div>
-                                            {% endfor %}
+                                        <div style="display:flex;gap:12px;align-items:start;flex-wrap:wrap;">
+                                            <div class="glass" style="padding:10px 14px;">
+                                                {% for set_target in exercise.sets.all|dictsort:"set_number" %}
+                                                    <div>Set {{ set_target.set_number }}: {{ set_target.reps }}</div>
+                                                {% endfor %}
+                                            </div>
+
+                                            <form method="post" action="{% url 'dashboard-delete-exercise' plan.id exercise.id %}" onsubmit="return confirm('Delete this exercise from the day?');">
+                                                {% csrf_token %}
+                                                <button type="submit" class="btn btn-secondary">Delete</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
