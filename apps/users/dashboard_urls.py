@@ -7,6 +7,7 @@ from .dashboard_views import (
     trainer_dashboard,
     dashboard_create_client,
     dashboard_assign_workout_plan,
+    test_email_page,
 )
 
 urlpatterns = [
@@ -16,6 +17,7 @@ urlpatterns = [
     path("dashboard/", trainer_dashboard, name="trainer-dashboard"),
     path("dashboard/create-client/", dashboard_create_client, name="dashboard-create-client"),
     path("dashboard/assign-workout-plan/", dashboard_assign_workout_plan, name="dashboard-assign-workout-plan"),
+    path("portal/test-email/", test_email_page, name="test-email-page"),
 
     path(
         "portal/password-reset/",
