@@ -4,7 +4,7 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 from rest_framework import status
 
-from .models import User, TrainerProfile, ClientProfile
+from .models import User
 from .serializers import (
     LoginSerializer,
     UserMeSerializer,
@@ -104,56 +104,6 @@ def assign_workout_plan_view(request):
         {
             "message": "Workout plan assigned successfully.",
             "client": ClientListSerializer(client_user).data,
-        },
-        status=status.HTTP_200_OK,
-    )
-
-
-@api_view(["POST"])
-@permission_classes([AllowAny])
-def debug_reset_live_users_view(request):
-    """
-    TEMP ONLY.
-    Resets live admin/trainer user and shows current users.
-    Remove after use.
-    """
-    deen_password = "CHANGE_THIS_NOW_123!"
-
-    deen_user, _ = User.objects.get_or_create(
-        username="deen",
-        defaults={
-            "email": "deenali3@outlook.com",
-            "role": User.TRAINER,
-        },
-    )
-
-    deen_user.email = "deenali3@outlook.com"
-    deen_user.role = User.TRAINER
-    deen_user.is_staff = True
-    deen_user.is_superuser = True
-    deen_user.set_password(deen_password)
-    deen_user.save()
-
-    trainer_profile, _ = TrainerProfile.objects.get_or_create(
-        user=deen_user,
-        defaults={
-            "business_name": "Deen Ali Training",
-            "slug": "deen",
-        },
-    )
-
-    users = list(
-        User.objects.all().order_by("id").values(
-            "id", "username", "email", "role", "is_staff", "is_superuser"
-        )
-    )
-
-    return Response(
-        {
-            "message": "Live users reset complete.",
-            "deen_password": deen_password,
-            "trainer_profile_id": trainer_profile.id,
-            "users": users,
         },
         status=status.HTTP_200_OK,
     )
