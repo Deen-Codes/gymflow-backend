@@ -81,21 +81,13 @@
                                     <input type="hidden" name="client_user_id" value="{{ client.id }}">
 
                                     <label class="label">Assign workout plan</label>
-                                    <select name="workout_plan_id" class="input" style="margin-bottom:10px;">
-                                        {% for value, label in assign_forms|get_item:client.id|attr:"fields"|attr:"workout_plan_id"|attr:"choices" %}
-                                            <option value="{{ value }}"
-                                                {% if client.client_profile.assigned_workout_plan and client.client_profile.assigned_workout_plan.id|stringformat:"s" == value|stringformat:"s" %}
-                                                    selected
-                                                {% endif %}
-                                            >
-                                                {{ label }}
-                                            </option>
-                                        {% endfor %}
-                                    </select>
+                                    {{ assign_forms|get_item:client.id|attr:"workout_plan_id" }}
 
-                                    <button type="submit" class="btn btn-secondary" style="width:100%;">
-                                        Save Assignment
-                                    </button>
+                                    <div style="margin-top:10px;">
+                                        <button type="submit" class="btn btn-secondary" style="width:100%;">
+                                            Save Assignment
+                                        </button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
