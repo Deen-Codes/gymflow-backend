@@ -19,20 +19,16 @@ urlpatterns = [
     path("portal/login/", trainer_login_page, name="trainer-login-page"),
     path("portal/logout/", trainer_logout_page, name="trainer-logout-page"),
 
-    # Dashboard core
-    path("dashboard/", trainer_dashboard, name="trainer-dashboard"),
-    path("dashboard/home/", trainer_dashboard_home, name="trainer-dashboard-home"),
-
-    # Clients actions (already working)
+    # Dashboard pages
+    path("dashboard/", trainer_dashboard_home, name="trainer-dashboard-home"),
+    path("dashboard/clients/", trainer_dashboard, name="trainer-dashboard"),
     path("dashboard/create-client/", dashboard_create_client, name="dashboard-create-client"),
     path("dashboard/assign-workout-plan/", dashboard_assign_workout_plan, name="dashboard-assign-workout-plan"),
-
-    # New sidebar pages
     path("dashboard/workout-plans/", trainer_workout_plans_page, name="trainer-workout-plans-page"),
     path("dashboard/nutrition-plans/", trainer_nutrition_plans_page, name="trainer-nutrition-plans-page"),
     path("dashboard/settings/", trainer_settings_page, name="trainer-settings-page"),
 
-    # Password reset (KEEPING EXACTLY AS YOU HAD)
+    # Password reset
     path(
         "portal/password-reset/",
         auth_views.PasswordResetView.as_view(
