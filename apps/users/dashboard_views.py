@@ -22,8 +22,11 @@ from .dashboard_workout_views import (
     trainer_workout_plan_detail_page,
     dashboard_create_exercise_library_item,
     dashboard_create_workout_plan,
+    dashboard_delete_workout_plan,
     dashboard_create_workout_day,
+    dashboard_delete_workout_day,
     dashboard_add_exercise_to_day,
+    dashboard_delete_exercise,
 )
 
 __all__ = [
@@ -41,6 +44,9 @@ __all__ = [
     "dashboard_assign_workout_plan",
     "dashboard_create_exercise_library_item",
     "dashboard_create_workout_plan",
+    "dashboard_delete_workout_plan",
     "dashboard_create_workout_day",
+    "dashboard_delete_workout_day",
     "dashboard_add_exercise_to_day",
+    "dashboard_delete_exercise",
 ]
