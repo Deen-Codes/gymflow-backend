@@ -2,9 +2,7 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404, redirect, render
-from django.conf import settings
-from django.core.mail import send_mail
-from django.http import HttpResponse
+
 
 from .forms import TrainerLoginForm, CreateClientForm, AssignWorkoutPlanForm
 from .models import User
@@ -152,17 +150,3 @@ def dashboard_assign_workout_plan(request):
                 messages.error(request, str(errors))
 
     return redirect("trainer-dashboard")
-
-
-def test_email_page(request):
-    try:
-        send_mail(
-            subject="GymFlow test email",
-            message="This is a test email from GymFlow.",
-            from_email=settings.DEFAULT_FROM_EMAIL,
-            recipient_list=["deenali3@outlook.com"],
-            fail_silently=False,
-        )
-        return HttpResponse("Test email sent")
-    except Exception as e:
-        return HttpResponse(f"Email error: {type(e).__name__}: {e}", status=500)
