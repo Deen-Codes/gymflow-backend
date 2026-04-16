@@ -31,43 +31,45 @@
     </div>
 
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start;">
-        <div class="glass" style="padding:24px;">
-            <div style="font-size:22px;font-weight:700;margin-bottom:16px;">Assigned Workout Plan</div>
+        {% if assigned_plan %}
+    <a href="{% url 'trainer-workout-plan-detail' assigned_plan.id %}" class="glass" style="padding:24px;display:block;">
+        <div style="font-size:22px;font-weight:700;margin-bottom:16px;">Assigned Workout Plan</div>
 
-            {% if assigned_plan %}
-                <div style="font-size:18px;font-weight:700;margin-bottom:8px;">
-                    <a href="{% url 'trainer-workout-plan-detail' assigned_plan.id %}">
-                        {{ assigned_plan.name }}
-                    </a>
-                </div>
+        <div style="font-size:18px;font-weight:700;margin-bottom:8px;">
+            {{ assigned_plan.name }}
+        </div>
 
-                <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;">
-                    {% if assigned_plan.is_template %}
-                        <div class="glass" style="padding:8px 12px;">
-                            Shared Template
-                        </div>
-                    {% else %}
-                        <div class="glass" style="padding:8px 12px;">
-                            Client-Specific Version
-                        </div>
-                    {% endif %}
-
-                    {% if assigned_plan.source_template %}
-                        <div class="glass" style="padding:8px 12px;">
-                            Based on: {{ assigned_plan.source_template.name }}
-                        </div>
-                    {% endif %}
-                </div>
-
-                <div class="muted">
-                    This client currently has a workout plan assigned. Click the plan name to open and edit it.
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;">
+            {% if assigned_plan.is_template %}
+                <div class="glass" style="padding:8px 12px;">
+                    Shared Template
                 </div>
             {% else %}
-                <div class="muted">
-                    No workout plan assigned yet.
+                <div class="glass" style="padding:8px 12px;">
+                    Client-Specific Version
+                </div>
+            {% endif %}
+
+            {% if assigned_plan.source_template %}
+                <div class="glass" style="padding:8px 12px;">
+                    Based on: {{ assigned_plan.source_template.name }}
                 </div>
             {% endif %}
         </div>
+
+        <div class="muted">
+            This client currently has a workout plan assigned. Click anywhere in this card to open and edit it.
+        </div>
+    </a>
+{% else %}
+    <div class="glass" style="padding:24px;">
+        <div style="font-size:22px;font-weight:700;margin-bottom:16px;">Assigned Workout Plan</div>
+
+        <div class="muted">
+            No workout plan assigned yet.
+        </div>
+    </div>
+{% endif %}
 
         <div class="glass" style="padding:24px;">
             <div style="font-size:22px;font-weight:700;margin-bottom:16px;">Assign Workout Plan</div>
