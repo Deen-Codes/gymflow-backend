@@ -1,11 +1,13 @@
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.db import transaction
 from django.shortcuts import get_object_or_404, redirect, render
 
 from .dashboard_helpers import trainer_required, dashboard_context
 from .forms import CreateClientForm, AssignWorkoutPlanForm
 from .models import User
-from .serializers import ClientCreateSerializer, AssignWorkoutPlanSerializer
+from .serializers import ClientCreateSerializer
+from apps.workouts.models import WorkoutPlan, WorkoutDay, Exercise, ExerciseSetTarget
 
 
 @login_required
@@ -35,9 +37,12 @@ def trainer_client_detail_page(request, client_id):
         client_profile__trainer=request.user.trainer_profile,
     )
 
+    assigned_plan = getattr(client.client_profile, "assigned_workout_plan", None)
+
     context = dashboard_context(request, "Client Details")
     context.update({
         "client": client,
+        "assigned_plan": assigned_plan,
         "client_assign_form": AssignWorkoutPlanForm(
             trainer_user=request.user,
             initial={"client_user_id": client.id}
@@ -91,7 +96,7 @@ def dashboard_create_client(request):
 def dashboard_assign_workout_plan(request):
     """
     Assign a trainer-owned workout plan to a trainer-owned client.
-    Redirect back to the client detail page after saving.
+    Optionally create a client-specific copy before assigning.
     """
     if not trainer_required(request):
         return redirect("landing-page")
@@ -107,22 +112,67 @@ def dashboard_assign_workout_plan(request):
                 messages.error(request, error)
         return redirect("trainer-dashboard")
 
-    serializer = AssignWorkoutPlanSerializer(
-        data={
-            "client_user_id": form.cleaned_data["client_user_id"],
-            "workout_plan_id": form.cleaned_data["workout_plan_id"],
-        }
+    client_user = get_object_or_404(
+        User.objects.select_related("client_profile"),
+        id=form.cleaned_data["client_user_id"],
+        role=User.CLIENT,
+        client_profile__trainer=request.user.trainer_profile,
     )
 
-    if serializer.is_valid():
-        serializer.assign(request.user)
-        messages.success(request, "Workout plan assigned successfully.")
-    else:
-        for _, errors in serializer.errors.items():
-            if isinstance(errors, list):
-                for error in errors:
-                    messages.error(request, str(error))
-            else:
-                messages.error(request, str(errors))
+    selected_plan = get_object_or_404(
+        WorkoutPlan.objects.prefetch_related("days__exercises__sets"),
+        id=form.cleaned_data["workout_plan_id"],
+        user=request.user,
+        is_template=True,
+    )
 
-    return redirect("trainer-client-detail", client_id=form.cleaned_data["client_user_id"])
+    create_client_specific_copy = form.cleaned_data["create_client_specific_copy"]
+
+    if create_client_specific_copy:
+        with transaction.atomic():
+            copied_plan = WorkoutPlan.objects.create(
+                user=request.user,
+                name=f"{selected_plan.name} - {client_user.username}",
+                is_active=selected_plan.is_active,
+                is_template=False,
+                source_template=selected_plan,
+                client=client_user,
+            )
+
+            for day in selected_plan.days.all().order_by("order"):
+                copied_day = WorkoutDay.objects.create(
+                    plan=copied_plan,
+                    title=day.title,
+                    order=day.order,
+                )
+
+                for exercise in day.exercises.all().order_by("order"):
+                    copied_exercise = Exercise.objects.create(
+                        workout_day=copied_day,
+                        name=exercise.name,
+                        label=exercise.label,
+                        order=exercise.order,
+                        superset_group=exercise.superset_group,
+                    )
+
+                    for set_target in exercise.sets.all().order_by("set_number"):
+                        ExerciseSetTarget.objects.create(
+                            exercise=copied_exercise,
+                            set_number=set_target.set_number,
+                            reps=set_target.reps,
+                        )
+
+            client_user.client_profile.assigned_workout_plan = copied_plan
+            client_user.client_profile.save()
+
+        messages.success(
+            request,
+            f'Created a client-specific version of "{selected_plan.name}" for {client_user.username}.',
+        )
+    else:
+        client_user.client_profile.assigned_workout_plan = selected_plan
+        client_user.client_profile.save()
+
+        messages.success(request, "Workout plan assigned successfully.")
+
+    return redirect("trainer-client-detail", client_id=client_user.id)

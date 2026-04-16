@@ -7,6 +7,23 @@ class WorkoutPlan(models.Model):
     name = models.CharField(max_length=255)
     is_active = models.BooleanField(default=True)
 
+    # Template vs client-specific versioning
+    is_template = models.BooleanField(default=True)
+    source_template = models.ForeignKey(
+        "self",
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name="client_versions",
+    )
+    client = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        null=True,
+        blank=True,
+        on_delete=models.CASCADE,
+        related_name="client_specific_workout_plans",
+    )
+
     def __str__(self):
         return self.name
 
@@ -45,7 +62,7 @@ class WorkoutSession(models.Model):
     workout_day = models.ForeignKey(WorkoutDay, on_delete=models.CASCADE)
     completed_at = models.DateTimeField(auto_now_add=True)
     duration = models.IntegerField(default=0)
-    is_complete = models.BooleanField(default=True)  # ✅ ADD THIS
+    is_complete = models.BooleanField(default=True)
 
     def __str__(self):
         return f"{self.user} - {self.workout_day}"

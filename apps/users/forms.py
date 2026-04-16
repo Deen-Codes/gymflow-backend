@@ -17,12 +17,17 @@ class CreateClientForm(forms.Form):
 class AssignWorkoutPlanForm(forms.Form):
     client_user_id = forms.IntegerField(widget=forms.HiddenInput)
     workout_plan_id = forms.ChoiceField(choices=[])
+    create_client_specific_copy = forms.BooleanField(required=False)
 
     def __init__(self, *args, trainer_user=None, **kwargs):
         super().__init__(*args, **kwargs)
 
         if trainer_user is not None:
-            plans = WorkoutPlan.objects.filter(user=trainer_user).order_by("name")
+            plans = WorkoutPlan.objects.filter(
+                user=trainer_user,
+                is_template=True,
+            ).order_by("name")
+
             self.fields["workout_plan_id"].choices = [
                 (plan.id, plan.name) for plan in plans
             ]

@@ -29,10 +29,29 @@
         <div class="glass" style="padding:24px;">
             <div style="font-size:22px;font-weight:700;margin-bottom:16px;">Assigned Workout Plan</div>
 
-            {% if client.client_profile.assigned_workout_plan %}
+            {% if assigned_plan %}
                 <div style="font-size:18px;font-weight:700;margin-bottom:8px;">
-                    {{ client.client_profile.assigned_workout_plan.name }}
+                    {{ assigned_plan.name }}
                 </div>
+
+                <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;">
+                    {% if assigned_plan.is_template %}
+                        <div class="glass" style="padding:8px 12px;">
+                            Shared Template
+                        </div>
+                    {% else %}
+                        <div class="glass" style="padding:8px 12px;">
+                            Client-Specific Version
+                        </div>
+                    {% endif %}
+
+                    {% if assigned_plan.source_template %}
+                        <div class="glass" style="padding:8px 12px;">
+                            Based on: {{ assigned_plan.source_template.name }}
+                        </div>
+                    {% endif %}
+                </div>
+
                 <div class="muted">
                     This client currently has a workout plan assigned.
                 </div>
@@ -53,6 +72,15 @@
                 <div>
                     <label class="label">Workout plan</label>
                     {{ client_assign_form|get_field:"workout_plan_id" }}
+                </div>
+
+                <label style="display:flex;align-items:center;gap:10px;">
+                    <input type="checkbox" name="create_client_specific_copy">
+                    <span>Create client-specific version before assigning</span>
+                </label>
+
+                <div class="muted">
+                    Use this when you want to customise the plan later for only this client without changing the original template.
                 </div>
 
                 <button type="submit" class="btn btn-primary">Save Assignment</button>
