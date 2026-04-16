@@ -55,34 +55,48 @@
                 <div style="display:grid;gap:14px;">
                     {% for exercise in exercise_library %}
                         <div class="glass" style="padding:22px;">
-                            <div style="display:flex;justify-content:space-between;align-items:start;gap:14px;flex-wrap:wrap;margin-bottom:14px;">
-                                <div style="font-size:18px;font-weight:800;">
-                                    {{ exercise.name }}
-                                </div>
-
-                                <form method="post" action="{% url 'dashboard-duplicate-exercise-library-item' exercise.id %}">
-                                    {% csrf_token %}
-                                    <button type="submit" class="btn btn-secondary">Duplicate</button>
-                                </form>
+                            <div style="font-size:18px;font-weight:800;margin-bottom:14px;">
+                                {{ exercise.name }}
                             </div>
 
-                            {% if exercise.video_url %}
-                                <div style="margin-bottom:16px;">
-                                    <a href="{{ exercise.video_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                                        Watch Demo
-                                    </a>
-                                </div>
-                            {% endif %}
+                            <form method="post" action="{% url 'dashboard-update-exercise-library-item' exercise.id %}" style="display:grid;gap:12px;margin-bottom:14px;">
+                                {% csrf_token %}
 
-                            {% if exercise.coaching_notes %}
-                                <div class="muted" style="line-height:1.6;">
-                                    {{ exercise.coaching_notes }}
+                                <div>
+                                    <label class="label">Exercise Name</label>
+                                    <input class="input" type="text" name="name" value="{{ exercise.name }}">
                                 </div>
-                            {% else %}
-                                <div class="muted">
-                                    No coaching notes added yet.
+
+                                <div>
+                                    <label class="label">Tutorial Video URL</label>
+                                    <input class="input" type="url" name="video_url" value="{{ exercise.video_url }}">
                                 </div>
-                            {% endif %}
+
+                                <div>
+                                    <label class="label">Coaching Notes</label>
+                                    <textarea class="input" name="coaching_notes" rows="4">{{ exercise.coaching_notes }}</textarea>
+                                </div>
+
+                                <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                                    <button type="submit" class="btn btn-primary">Save Preset</button>
+                            </form>
+
+                                    <form method="post" action="{% url 'dashboard-duplicate-exercise-library-item' exercise.id %}">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-secondary">Duplicate</button>
+                                    </form>
+
+                                    <form method="post" action="{% url 'dashboard-delete-exercise-library-item' exercise.id %}" onsubmit="return confirm('Delete this exercise preset?');">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-secondary">Delete</button>
+                                    </form>
+
+                                    {% if exercise.video_url %}
+                                        <a href="{{ exercise.video_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                            Watch Demo
+                                        </a>
+                                    {% endif %}
+                                </div>
                         </div>
                     {% endfor %}
                 </div>

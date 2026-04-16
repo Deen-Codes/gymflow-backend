@@ -49,6 +49,64 @@ def dashboard_create_exercise_library_item(request):
 
 
 @login_required
+def dashboard_update_exercise_library_item(request, exercise_id):
+    """
+    Update a trainer-owned exercise preset from the exercise library.
+    """
+    if not trainer_required(request):
+        return redirect("landing-page")
+
+    exercise = get_object_or_404(
+        ExerciseLibraryItem,
+        id=exercise_id,
+        user=request.user,
+    )
+
+    if request.method != "POST":
+        return redirect("trainer-workout-plans-page")
+
+    form = CreateExerciseLibraryItemForm(request.POST)
+
+    if not form.is_valid():
+        for _, errors in form.errors.items():
+            for error in errors:
+                messages.error(request, error)
+        return redirect("trainer-workout-plans-page")
+
+    exercise.name = form.cleaned_data["name"]
+    exercise.video_url = form.cleaned_data["video_url"]
+    exercise.coaching_notes = form.cleaned_data["coaching_notes"]
+    exercise.save()
+
+    messages.success(request, f'Exercise preset "{exercise.name}" updated successfully.')
+    return redirect("trainer-workout-plans-page")
+
+
+@login_required
+def dashboard_delete_exercise_library_item(request, exercise_id):
+    """
+    Delete a trainer-owned exercise preset from the exercise library.
+    """
+    if not trainer_required(request):
+        return redirect("landing-page")
+
+    exercise = get_object_or_404(
+        ExerciseLibraryItem,
+        id=exercise_id,
+        user=request.user,
+    )
+
+    if request.method != "POST":
+        return redirect("trainer-workout-plans-page")
+
+    exercise_name = exercise.name
+    exercise.delete()
+
+    messages.success(request, f'Exercise preset "{exercise_name}" deleted successfully.')
+    return redirect("trainer-workout-plans-page")
+
+
+@login_required
 def dashboard_duplicate_exercise_library_item(request, exercise_id):
     """
     Duplicate a trainer-owned exercise preset so it can be quickly tweaked.

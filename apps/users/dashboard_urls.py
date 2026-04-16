@@ -14,6 +14,8 @@ from .dashboard_views import (
     dashboard_create_client,
     dashboard_assign_workout_plan,
     dashboard_create_exercise_library_item,
+    dashboard_update_exercise_library_item,
+    dashboard_delete_exercise_library_item,
     dashboard_duplicate_exercise_library_item,
     dashboard_create_workout_plan,
     dashboard_duplicate_workout_plan,
@@ -41,6 +43,8 @@ urlpatterns = [
 
     path("dashboard/workout-plans/", trainer_workout_plans_page, name="trainer-workout-plans-page"),
     path("dashboard/workout-plans/create-exercise/", dashboard_create_exercise_library_item, name="dashboard-create-exercise-library-item"),
+    path("dashboard/workout-plans/exercises/<int:exercise_id>/update/", dashboard_update_exercise_library_item, name="dashboard-update-exercise-library-item"),
+    path("dashboard/workout-plans/exercises/<int:exercise_id>/delete/", dashboard_delete_exercise_library_item, name="dashboard-delete-exercise-library-item"),
     path("dashboard/workout-plans/exercises/<int:exercise_id>/duplicate/", dashboard_duplicate_exercise_library_item, name="dashboard-duplicate-exercise-library-item"),
     path("dashboard/workout-plans/create/", dashboard_create_workout_plan, name="dashboard-create-workout-plan"),
     path("dashboard/workout-plans/<int:plan_id>/", trainer_workout_plan_detail_page, name="trainer-workout-plan-detail"),
