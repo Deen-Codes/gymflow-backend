@@ -2,6 +2,7 @@ from django import forms
 from .models import User
 from apps.workouts.models import WorkoutPlan, ExerciseLibraryItem
 from apps.nutrition.models import NutritionPlan, FoodLibraryItem
+from apps.progress.models import CheckInForm, CheckInQuestion
 
 
 class TrainerLoginForm(forms.Form):
@@ -164,3 +165,38 @@ class AddFoodToNutritionMealForm(forms.Form):
             self.fields["food_library_item_id"].choices = [
                 (food.id, food.name) for food in foods
             ]
+
+
+class CreateCheckInFormForm(forms.Form):
+    name = forms.CharField(max_length=255)
+    form_type = forms.ChoiceField(choices=CheckInForm.FORM_TYPE_CHOICES)
+
+
+class UpdateCheckInFormForm(forms.Form):
+    name = forms.CharField(max_length=255)
+    form_type = forms.ChoiceField(choices=CheckInForm.FORM_TYPE_CHOICES)
+    is_active = forms.BooleanField(required=False)
+
+
+class CreateCheckInQuestionForm(forms.Form):
+    question_text = forms.CharField(max_length=255)
+    question_type = forms.ChoiceField(choices=CheckInQuestion.QUESTION_TYPE_CHOICES)
+    is_required = forms.BooleanField(required=False)
+    order = forms.IntegerField(min_value=1)
+    dropdown_options = forms.CharField(
+        required=False,
+        widget=forms.Textarea(attrs={"rows": 3}),
+        help_text="For dropdown questions only. Put one option per line.",
+    )
+
+
+class UpdateCheckInQuestionForm(forms.Form):
+    question_text = forms.CharField(max_length=255)
+    question_type = forms.ChoiceField(choices=CheckInQuestion.QUESTION_TYPE_CHOICES)
+    is_required = forms.BooleanField(required=False)
+    order = forms.IntegerField(min_value=1)
+    dropdown_options = forms.CharField(
+        required=False,
+        widget=forms.Textarea(attrs={"rows": 3}),
+        help_text="For dropdown questions only. Put one option per line.",
+    )

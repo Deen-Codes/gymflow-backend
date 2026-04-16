@@ -1,0 +1,167 @@
+{% extends "dashboard/dashboard_shell.html" %}
+{% load user_extras %}
+
+{% block dashboard_content %}
+<div style="display:grid;gap:22px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
+        <a href="{% url 'trainer-checkin-forms-page' %}" class="muted">← Back to check-in forms</a>
+
+        <form method="post" action="{% url 'dashboard-delete-checkin-form' checkin_form.id %}" onsubmit="return confirm('Delete this check-in form? This cannot be undone.');">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-secondary">Delete Form</button>
+        </form>
+    </div>
+
+    <div class="glass" style="padding:24px;">
+        <div style="font-size:30px;font-weight:800;margin-bottom:8px;">{{ checkin_form.name }}</div>
+        <div class="muted">
+            Build and manage questions for this {{ checkin_form.get_form_type_display|lower }} check-in form.
+        </div>
+    </div>
+
+    <div class="glass" style="padding:24px;">
+        <form method="post" action="{% url 'dashboard-update-checkin-form' checkin_form.id %}" style="display:grid;gap:14px;">
+            {% csrf_token %}
+
+            <div>
+                <label class="label">Form Name</label>
+                <input class="input" type="text" name="name" value="{{ checkin_form.name }}">
+            </div>
+
+            <div>
+                <label class="label">Form Type</label>
+                <select class="input" name="form_type">
+                    <option value="onboarding" {% if checkin_form.form_type == "onboarding" %}selected{% endif %}>Onboarding</option>
+                    <option value="daily" {% if checkin_form.form_type == "daily" %}selected{% endif %}>Daily</option>
+                    <option value="weekly" {% if checkin_form.form_type == "weekly" %}selected{% endif %}>Weekly</option>
+                </select>
+            </div>
+
+            <label style="display:flex;align-items:center;gap:10px;">
+                <input type="checkbox" name="is_active" {% if checkin_form.is_active %}checked{% endif %}>
+                <span>Active</span>
+            </label>
+
+            <button type="submit" class="btn btn-primary">Save Form</button>
+        </form>
+    </div>
+
+    <div class="glass" style="padding:24px;">
+        <div style="font-size:22px;font-weight:700;margin-bottom:18px;">Add Question</div>
+
+        <form method="post" action="{% url 'dashboard-create-checkin-question' checkin_form.id %}" style="display:grid;gap:14px;">
+            {% csrf_token %}
+
+            <div>
+                <label class="label">Question Text</label>
+                <input class="input" type="text" name="question_text" placeholder="e.g. How was your sleep this week?">
+            </div>
+
+            <div style="display:grid;grid-template-columns:1fr 160px 160px;gap:12px;">
+                <div>
+                    <label class="label">Question Type</label>
+                    <select class="input" name="question_type">
+                        <option value="short_text">Short Text</option>
+                        <option value="long_text">Long Text</option>
+                        <option value="number">Number</option>
+                        <option value="yes_no">Yes / No</option>
+                        <option value="dropdown">Dropdown</option>
+                        <option value="photo">Photo Upload</option>
+                        <option value="video">Video Upload</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="label">Order</label>
+                    <input class="input" type="number" name="order" min="1" placeholder="1">
+                </div>
+
+                <div style="display:flex;align-items:end;">
+                    <label style="display:flex;align-items:center;gap:10px;">
+                        <input type="checkbox" name="is_required">
+                        <span>Required</span>
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <label class="label">Dropdown Options</label>
+                <textarea class="input" name="dropdown_options" rows="4" placeholder="Only for dropdown questions. Put one option per line."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add Question</button>
+        </form>
+    </div>
+
+    {% if checkin_form.questions.all %}
+        <div style="display:grid;gap:18px;">
+            {% for question in checkin_form.questions.all %}
+                <div class="glass" style="padding:24px;">
+                    <div style="display:flex;justify-content:space-between;align-items:start;gap:16px;flex-wrap:wrap;margin-bottom:16px;">
+                        <div>
+                            <div style="font-size:18px;font-weight:800;">{{ question.question_text }}</div>
+                            <div class="muted">
+                                {{ question.get_question_type_display }} · Order {{ question.order }}
+                                {% if question.is_required %}· Required{% endif %}
+                            </div>
+                        </div>
+
+                        <form method="post" action="{% url 'dashboard-delete-checkin-question' checkin_form.id question.id %}" onsubmit="return confirm('Delete this question?');">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-secondary">Delete</button>
+                        </form>
+                    </div>
+
+                    <form method="post" action="{% url 'dashboard-update-checkin-question' checkin_form.id question.id %}" style="display:grid;gap:14px;">
+                        {% csrf_token %}
+
+                        <div>
+                            <label class="label">Question Text</label>
+                            <input class="input" type="text" name="question_text" value="{{ question.question_text }}">
+                        </div>
+
+                        <div style="display:grid;grid-template-columns:1fr 160px 160px;gap:12px;">
+                            <div>
+                                <label class="label">Question Type</label>
+                                <select class="input" name="question_type">
+                                    <option value="short_text" {% if question.question_type == "short_text" %}selected{% endif %}>Short Text</option>
+                                    <option value="long_text" {% if question.question_type == "long_text" %}selected{% endif %}>Long Text</option>
+                                    <option value="number" {% if question.question_type == "number" %}selected{% endif %}>Number</option>
+                                    <option value="yes_no" {% if question.question_type == "yes_no" %}selected{% endif %}>Yes / No</option>
+                                    <option value="dropdown" {% if question.question_type == "dropdown" %}selected{% endif %}>Dropdown</option>
+                                    <option value="photo" {% if question.question_type == "photo" %}selected{% endif %}>Photo Upload</option>
+                                    <option value="video" {% if question.question_type == "video" %}selected{% endif %}>Video Upload</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="label">Order</label>
+                                <input class="input" type="number" name="order" min="1" value="{{ question.order }}">
+                            </div>
+
+                            <div style="display:flex;align-items:end;">
+                                <label style="display:flex;align-items:center;gap:10px;">
+                                    <input type="checkbox" name="is_required" {% if question.is_required %}checked{% endif %}>
+                                    <span>Required</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="label">Dropdown Options</label>
+                            <textarea class="input" name="dropdown_options" rows="4">{% for option in question.options.all %}{{ option.value }}{% if not forloop.last %}
+{% endif %}{% endfor %}</textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Save Question</button>
+                    </form>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="glass" style="padding:24px;">
+            <div class="muted">No questions yet. Add your first question above.</div>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

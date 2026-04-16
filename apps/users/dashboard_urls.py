@@ -11,6 +11,8 @@ from .dashboard_views import (
     trainer_workout_plan_detail_page,
     trainer_nutrition_plans_page,
     trainer_nutrition_plan_detail_page,
+    trainer_checkin_forms_page,
+    trainer_checkin_form_detail_page,
     trainer_settings_page,
     dashboard_create_client,
     dashboard_delete_client,
@@ -43,6 +45,12 @@ from .dashboard_views import (
     dashboard_delete_nutrition_meal,
     dashboard_add_food_to_nutrition_meal,
     dashboard_delete_nutrition_meal_item,
+    dashboard_create_checkin_form,
+    dashboard_update_checkin_form,
+    dashboard_delete_checkin_form,
+    dashboard_create_checkin_question,
+    dashboard_update_checkin_question,
+    dashboard_delete_checkin_question,
 )
 
 urlpatterns = [
@@ -91,6 +99,15 @@ urlpatterns = [
     path("dashboard/nutrition-plans/<int:plan_id>/meals/<int:meal_id>/delete/", dashboard_delete_nutrition_meal, name="dashboard-delete-nutrition-meal"),
     path("dashboard/nutrition-plans/<int:plan_id>/meal-items/create/", dashboard_add_food_to_nutrition_meal, name="dashboard-add-food-to-nutrition-meal"),
     path("dashboard/nutrition-plans/<int:plan_id>/meal-items/<int:item_id>/delete/", dashboard_delete_nutrition_meal_item, name="dashboard-delete-nutrition-meal-item"),
+
+    path("dashboard/checkin-forms/", trainer_checkin_forms_page, name="trainer-checkin-forms-page"),
+    path("dashboard/checkin-forms/create/", dashboard_create_checkin_form, name="dashboard-create-checkin-form"),
+    path("dashboard/checkin-forms/<int:form_id>/", trainer_checkin_form_detail_page, name="trainer-checkin-form-detail"),
+    path("dashboard/checkin-forms/<int:form_id>/update/", dashboard_update_checkin_form, name="dashboard-update-checkin-form"),
+    path("dashboard/checkin-forms/<int:form_id>/delete/", dashboard_delete_checkin_form, name="dashboard-delete-checkin-form"),
+    path("dashboard/checkin-forms/<int:form_id>/questions/create/", dashboard_create_checkin_question, name="dashboard-create-checkin-question"),
+    path("dashboard/checkin-forms/<int:form_id>/questions/<int:question_id>/update/", dashboard_update_checkin_question, name="dashboard-update-checkin-question"),
+    path("dashboard/checkin-forms/<int:form_id>/questions/<int:question_id>/delete/", dashboard_delete_checkin_question, name="dashboard-delete-checkin-question"),
 
     path("dashboard/settings/", trainer_settings_page, name="trainer-settings-page"),
 

@@ -61,6 +61,20 @@ from .dashboard_nutrition_action_views import (
     dashboard_delete_nutrition_meal_item,
 )
 
+from .dashboard_checkin_page_views import (
+    trainer_checkin_forms_page,
+    trainer_checkin_form_detail_page,
+)
+
+from .dashboard_checkin_action_views import (
+    dashboard_create_checkin_form,
+    dashboard_update_checkin_form,
+    dashboard_delete_checkin_form,
+    dashboard_create_checkin_question,
+    dashboard_update_checkin_question,
+    dashboard_delete_checkin_question,
+)
+
 __all__ = [
     "landing_page",
     "trainer_login_page",
@@ -72,6 +86,8 @@ __all__ = [
     "trainer_workout_plan_detail_page",
     "trainer_nutrition_plans_page",
     "trainer_nutrition_plan_detail_page",
+    "trainer_checkin_forms_page",
+    "trainer_checkin_form_detail_page",
     "trainer_settings_page",
     "dashboard_create_client",
     "dashboard_delete_client",
@@ -104,4 +120,10 @@ __all__ = [
     "dashboard_delete_nutrition_meal",
     "dashboard_add_food_to_nutrition_meal",
     "dashboard_delete_nutrition_meal_item",
+    "dashboard_create_checkin_form",
+    "dashboard_update_checkin_form",
+    "dashboard_delete_checkin_form",
+    "dashboard_create_checkin_question",
+    "dashboard_update_checkin_question",
+    "dashboard_delete_checkin_question",
 ]

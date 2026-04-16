@@ -17,20 +17,26 @@
 
             <a href="{% url 'trainer-dashboard' %}"
                class="glass"
-               style="padding:14px 16px;{% if request.resolver_match.url_name == 'trainer-dashboard' %}outline:2px solid rgba(77,163,255,0.55);background:rgba(77,163,255,0.10);{% endif %}">
+               style="padding:14px 16px;{% if request.resolver_match.url_name == 'trainer-dashboard' or request.resolver_match.url_name == 'trainer-client-detail' %}outline:2px solid rgba(77,163,255,0.55);background:rgba(77,163,255,0.10);{% endif %}">
                 Clients
             </a>
 
             <a href="{% url 'trainer-workout-plans-page' %}"
                class="glass"
-               style="padding:14px 16px;{% if request.resolver_match.url_name == 'trainer-workout-plans-page' %}outline:2px solid rgba(77,163,255,0.55);background:rgba(77,163,255,0.10);{% endif %}">
+               style="padding:14px 16px;{% if request.resolver_match.url_name == 'trainer-workout-plans-page' or request.resolver_match.url_name == 'trainer-workout-plan-detail' %}outline:2px solid rgba(77,163,255,0.55);background:rgba(77,163,255,0.10);{% endif %}">
                 Workout Plans
             </a>
 
             <a href="{% url 'trainer-nutrition-plans-page' %}"
                class="glass"
-               style="padding:14px 16px;{% if request.resolver_match.url_name == 'trainer-nutrition-plans-page' %}outline:2px solid rgba(77,163,255,0.55);background:rgba(77,163,255,0.10);{% endif %}">
+               style="padding:14px 16px;{% if request.resolver_match.url_name == 'trainer-nutrition-plans-page' or request.resolver_match.url_name == 'trainer-nutrition-plan-detail' %}outline:2px solid rgba(77,163,255,0.55);background:rgba(77,163,255,0.10);{% endif %}">
                 Nutrition Plans
+            </a>
+
+            <a href="{% url 'trainer-checkin-forms-page' %}"
+               class="glass"
+               style="padding:14px 16px;{% if request.resolver_match.url_name == 'trainer-checkin-forms-page' or request.resolver_match.url_name == 'trainer-checkin-form-detail' %}outline:2px solid rgba(77,163,255,0.55);background:rgba(77,163,255,0.10);{% endif %}">
+                Check-In Forms
             </a>
 
             <a href="{% url 'trainer-settings-page' %}"
