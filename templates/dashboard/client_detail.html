@@ -32,44 +32,44 @@
 
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start;">
         {% if assigned_plan %}
-    <a href="{% url 'trainer-workout-plan-detail' assigned_plan.id %}" class="glass" style="padding:24px;display:block;">
-        <div style="font-size:22px;font-weight:700;margin-bottom:16px;">Assigned Workout Plan</div>
+            <a href="{% url 'trainer-workout-plan-detail' assigned_plan.id %}" class="glass" style="padding:24px;display:block;">
+                <div style="font-size:22px;font-weight:700;margin-bottom:16px;">Assigned Workout Plan</div>
 
-        <div style="font-size:18px;font-weight:700;margin-bottom:8px;">
-            {{ assigned_plan.name }}
-        </div>
-
-        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;">
-            {% if assigned_plan.is_template %}
-                <div class="glass" style="padding:8px 12px;">
-                    Shared Template
+                <div style="font-size:18px;font-weight:700;margin-bottom:8px;">
+                    {{ assigned_plan.name }}
                 </div>
-            {% else %}
-                <div class="glass" style="padding:8px 12px;">
-                    Client-Specific Version
+
+                <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;">
+                    {% if assigned_plan.is_template %}
+                        <div class="glass" style="padding:8px 12px;">
+                            Shared Template
+                        </div>
+                    {% else %}
+                        <div class="glass" style="padding:8px 12px;">
+                            Client-Specific Version
+                        </div>
+                    {% endif %}
+
+                    {% if assigned_plan.source_template %}
+                        <div class="glass" style="padding:8px 12px;">
+                            Based on: {{ assigned_plan.source_template.name }}
+                        </div>
+                    {% endif %}
                 </div>
-            {% endif %}
 
-            {% if assigned_plan.source_template %}
-                <div class="glass" style="padding:8px 12px;">
-                    Based on: {{ assigned_plan.source_template.name }}
+                <div class="muted">
+                    This client currently has a workout plan assigned. Click anywhere in this card to open and edit it.
                 </div>
-            {% endif %}
-        </div>
+            </a>
+        {% else %}
+            <div class="glass" style="padding:24px;">
+                <div style="font-size:22px;font-weight:700;margin-bottom:16px;">Assigned Workout Plan</div>
 
-        <div class="muted">
-            This client currently has a workout plan assigned. Click anywhere in this card to open and edit it.
-        </div>
-    </a>
-{% else %}
-    <div class="glass" style="padding:24px;">
-        <div style="font-size:22px;font-weight:700;margin-bottom:16px;">Assigned Workout Plan</div>
-
-        <div class="muted">
-            No workout plan assigned yet.
-        </div>
-    </div>
-{% endif %}
+                <div class="muted">
+                    No workout plan assigned yet.
+                </div>
+            </div>
+        {% endif %}
 
         <div class="glass" style="padding:24px;">
             <div style="font-size:22px;font-weight:700;margin-bottom:16px;">Assign Workout Plan</div>
@@ -98,18 +98,76 @@
     </div>
 
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start;">
-        <div class="glass" style="padding:24px;">
-            <div style="font-size:22px;font-weight:700;margin-bottom:14px;">Nutrition</div>
-            <div class="muted">
-                Nutrition plan assignment can go here next.
+        {% if assigned_nutrition_plan %}
+            <a href="{% url 'trainer-nutrition-plan-detail' assigned_nutrition_plan.id %}" class="glass" style="padding:24px;display:block;">
+                <div style="font-size:22px;font-weight:700;margin-bottom:16px;">Assigned Nutrition Plan</div>
+
+                <div style="font-size:18px;font-weight:700;margin-bottom:8px;">
+                    {{ assigned_nutrition_plan.name }}
+                </div>
+
+                <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;">
+                    {% if assigned_nutrition_plan.is_template %}
+                        <div class="glass" style="padding:8px 12px;">
+                            Shared Template
+                        </div>
+                    {% else %}
+                        <div class="glass" style="padding:8px 12px;">
+                            Client-Specific Version
+                        </div>
+                    {% endif %}
+
+                    {% if assigned_nutrition_plan.source_template %}
+                        <div class="glass" style="padding:8px 12px;">
+                            Based on: {{ assigned_nutrition_plan.source_template.name }}
+                        </div>
+                    {% endif %}
+                </div>
+
+                <div class="muted">
+                    This client currently has a nutrition plan assigned. Click anywhere in this card to open and edit it.
+                </div>
+            </a>
+        {% else %}
+            <div class="glass" style="padding:24px;">
+                <div style="font-size:22px;font-weight:700;margin-bottom:16px;">Assigned Nutrition Plan</div>
+
+                <div class="muted">
+                    No nutrition plan assigned yet.
+                </div>
             </div>
-        </div>
+        {% endif %}
 
         <div class="glass" style="padding:24px;">
-            <div style="font-size:22px;font-weight:700;margin-bottom:14px;">Progress</div>
-            <div class="muted">
-                Client check-ins, workout history, and progress stats can go here later.
-            </div>
+            <div style="font-size:22px;font-weight:700;margin-bottom:16px;">Assign Nutrition Plan</div>
+
+            <form method="post" action="{% url 'dashboard-assign-nutrition-plan' %}" style="display:grid;gap:14px;">
+                {% csrf_token %}
+                <input type="hidden" name="client_user_id" value="{{ client.id }}">
+
+                <div>
+                    <label class="label">Nutrition plan</label>
+                    {{ client_nutrition_assign_form|get_field:"nutrition_plan_id" }}
+                </div>
+
+                <label style="display:flex;align-items:center;gap:10px;">
+                    <input type="checkbox" name="create_client_specific_copy">
+                    <span>Create client-specific version before assigning</span>
+                </label>
+
+                <div class="muted">
+                    Use this when you want to customise the nutrition plan later for only this client without changing the original template.
+                </div>
+
+                <button type="submit" class="btn btn-primary">Save Assignment</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="glass" style="padding:24px;">
+        <div style="font-size:22px;font-weight:700;margin-bottom:14px;">Progress</div>
+        <div class="muted">
+            Client check-ins, workout history, body stats, and progress data can go here later.
         </div>
     </div>
 </div>

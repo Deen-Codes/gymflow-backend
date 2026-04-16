@@ -1,11 +1,14 @@
 from .forms import (
     CreateClientForm,
     AssignWorkoutPlanForm,
+    AssignNutritionPlanForm,
     CreateExerciseLibraryItemForm,
     CreateWorkoutPlanForm,
+    CreateNutritionPlanForm,
 )
 from .models import User
 from apps.workouts.models import WorkoutPlan, ExerciseLibraryItem
+from apps.nutrition.models import NutritionPlan
 
 
 def trainer_required(request):
@@ -24,7 +27,8 @@ def get_trainer_clients(request):
         client_profile__trainer=request.user.trainer_profile
     ).select_related(
         "client_profile",
-        "client_profile__assigned_workout_plan"
+        "client_profile__assigned_workout_plan",
+        "client_profile__assigned_nutrition_plan",
     ).order_by("username")
 
 
@@ -37,9 +41,18 @@ def dashboard_context(request, page_title):
     clients = get_trainer_clients(request)
     workout_plans = WorkoutPlan.objects.filter(user=request.user).order_by("name")
     exercise_library = ExerciseLibraryItem.objects.filter(user=request.user).order_by("name")
+    nutrition_plans = NutritionPlan.objects.filter(user=request.user).order_by("name")
 
     assign_forms = {
         client.id: AssignWorkoutPlanForm(
+            trainer_user=request.user,
+            initial={"client_user_id": client.id}
+        )
+        for client in clients
+    }
+
+    nutrition_assign_forms = {
+        client.id: AssignNutritionPlanForm(
             trainer_user=request.user,
             initial={"client_user_id": client.id}
         )
@@ -52,9 +65,12 @@ def dashboard_context(request, page_title):
         "clients": clients,
         "create_client_form": CreateClientForm(),
         "assign_forms": assign_forms,
+        "nutrition_assign_forms": nutrition_assign_forms,
         "client_count": clients.count(),
         "workout_plans": workout_plans,
         "exercise_library": exercise_library,
         "exercise_library_form": CreateExerciseLibraryItemForm(),
         "create_workout_plan_form": CreateWorkoutPlanForm(),
+        "nutrition_plans": nutrition_plans,
+        "create_nutrition_plan_form": CreateNutritionPlanForm(),
     }

@@ -40,6 +40,13 @@ class ClientProfile(models.Model):
         blank=True,
         related_name="assigned_clients"
     )
+    assigned_nutrition_plan = models.ForeignKey(
+        "nutrition.NutritionPlan",
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name="assigned_clients"
+    )
 
     def __str__(self):
         return self.user.username

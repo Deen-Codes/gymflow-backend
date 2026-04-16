@@ -4,10 +4,11 @@ from django.db import transaction
 from django.shortcuts import get_object_or_404, redirect, render
 
 from .dashboard_helpers import trainer_required, dashboard_context
-from .forms import CreateClientForm, AssignWorkoutPlanForm
+from .forms import CreateClientForm, AssignWorkoutPlanForm, AssignNutritionPlanForm
 from .models import User
 from .serializers import ClientCreateSerializer
 from apps.workouts.models import WorkoutPlan, WorkoutDay, Exercise, ExerciseSetTarget
+from apps.nutrition.models import NutritionPlan
 
 
 @login_required
@@ -31,19 +32,29 @@ def trainer_client_detail_page(request, client_id):
         return redirect("landing-page")
 
     client = get_object_or_404(
-        User.objects.select_related("client_profile", "client_profile__assigned_workout_plan"),
+        User.objects.select_related(
+            "client_profile",
+            "client_profile__assigned_workout_plan",
+            "client_profile__assigned_nutrition_plan",
+        ),
         id=client_id,
         role=User.CLIENT,
         client_profile__trainer=request.user.trainer_profile,
     )
 
     assigned_plan = getattr(client.client_profile, "assigned_workout_plan", None)
+    assigned_nutrition_plan = getattr(client.client_profile, "assigned_nutrition_plan", None)
 
     context = dashboard_context(request, "Client Details")
     context.update({
         "client": client,
         "assigned_plan": assigned_plan,
+        "assigned_nutrition_plan": assigned_nutrition_plan,
         "client_assign_form": AssignWorkoutPlanForm(
+            trainer_user=request.user,
+            initial={"client_user_id": client.id}
+        ),
+        "client_nutrition_assign_form": AssignNutritionPlanForm(
             trainer_user=request.user,
             initial={"client_user_id": client.id}
         ),
@@ -179,10 +190,78 @@ def dashboard_assign_workout_plan(request):
 
 
 @login_required
+def dashboard_assign_nutrition_plan(request):
+    """
+    Assign a trainer-owned nutrition plan to a trainer-owned client.
+    Optionally create a client-specific copy before assigning.
+    """
+    if not trainer_required(request):
+        return redirect("landing-page")
+
+    if request.method != "POST":
+        return redirect("trainer-dashboard")
+
+    form = AssignNutritionPlanForm(request.POST, trainer_user=request.user)
+
+    if not form.is_valid():
+        for _, errors in form.errors.items():
+            for error in errors:
+                messages.error(request, error)
+        return redirect("trainer-dashboard")
+
+    client_user = get_object_or_404(
+        User.objects.select_related("client_profile"),
+        id=form.cleaned_data["client_user_id"],
+        role=User.CLIENT,
+        client_profile__trainer=request.user.trainer_profile,
+    )
+
+    selected_plan = get_object_or_404(
+        NutritionPlan,
+        id=form.cleaned_data["nutrition_plan_id"],
+        user=request.user,
+        is_template=True,
+    )
+
+    create_client_specific_copy = form.cleaned_data["create_client_specific_copy"]
+
+    if create_client_specific_copy:
+        with transaction.atomic():
+            copied_plan = NutritionPlan.objects.create(
+                user=request.user,
+                name=f"{selected_plan.name} - {client_user.username}",
+                calories_target=selected_plan.calories_target,
+                protein_target=selected_plan.protein_target,
+                carbs_target=selected_plan.carbs_target,
+                fats_target=selected_plan.fats_target,
+                notes=selected_plan.notes,
+                is_active=selected_plan.is_active,
+                is_template=False,
+                source_template=selected_plan,
+                client=client_user,
+            )
+
+            client_user.client_profile.assigned_nutrition_plan = copied_plan
+            client_user.client_profile.save()
+
+        messages.success(
+            request,
+            f'Created a client-specific version of "{selected_plan.name}" for {client_user.username}.',
+        )
+    else:
+        client_user.client_profile.assigned_nutrition_plan = selected_plan
+        client_user.client_profile.save()
+
+        messages.success(request, "Nutrition plan assigned successfully.")
+
+    return redirect("trainer-client-detail", client_id=client_user.id)
+
+
+@login_required
 def dashboard_delete_client(request, client_id):
     """
     Delete a trainer-owned client account.
-    Client-specific workout plans linked to that client will also be removed automatically.
+    Client-specific workout/nutrition plans linked to that client will also be removed automatically.
     """
     if not trainer_required(request):
         return redirect("landing-page")

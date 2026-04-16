@@ -17,18 +17,6 @@ def trainer_dashboard_home(request):
 
 
 @login_required
-def trainer_nutrition_plans_page(request):
-    """
-    Placeholder page for reusable nutrition presets.
-    """
-    if not trainer_required(request):
-        return redirect("landing-page")
-
-    context = dashboard_context(request, "Nutrition Plans")
-    return render(request, "dashboard/dashboard_nutrition_plans.html", context)
-
-
-@login_required
 def trainer_settings_page(request):
     """
     Placeholder page for trainer/business/account settings.

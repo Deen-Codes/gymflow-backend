@@ -10,6 +10,7 @@ from .dashboard_views import (
     trainer_workout_plans_page,
     trainer_workout_plan_detail_page,
     trainer_nutrition_plans_page,
+    trainer_nutrition_plan_detail_page,
     trainer_settings_page,
     dashboard_create_client,
     dashboard_delete_client,
@@ -28,6 +29,11 @@ from .dashboard_views import (
     dashboard_add_exercise_to_day,
     dashboard_update_exercise,
     dashboard_delete_exercise,
+    dashboard_create_nutrition_plan,
+    dashboard_update_nutrition_plan,
+    dashboard_delete_nutrition_plan,
+    dashboard_duplicate_nutrition_plan,
+    dashboard_assign_nutrition_plan,
 )
 
 urlpatterns = [
@@ -42,6 +48,7 @@ urlpatterns = [
 
     path("dashboard/create-client/", dashboard_create_client, name="dashboard-create-client"),
     path("dashboard/assign-workout-plan/", dashboard_assign_workout_plan, name="dashboard-assign-workout-plan"),
+    path("dashboard/assign-nutrition-plan/", dashboard_assign_nutrition_plan, name="dashboard-assign-nutrition-plan"),
 
     path("dashboard/workout-plans/", trainer_workout_plans_page, name="trainer-workout-plans-page"),
     path("dashboard/workout-plans/create-exercise/", dashboard_create_exercise_library_item, name="dashboard-create-exercise-library-item"),
@@ -61,6 +68,12 @@ urlpatterns = [
     path("dashboard/workout-plans/<int:plan_id>/exercises/<int:exercise_id>/delete/", dashboard_delete_exercise, name="dashboard-delete-exercise"),
 
     path("dashboard/nutrition-plans/", trainer_nutrition_plans_page, name="trainer-nutrition-plans-page"),
+    path("dashboard/nutrition-plans/create/", dashboard_create_nutrition_plan, name="dashboard-create-nutrition-plan"),
+    path("dashboard/nutrition-plans/<int:plan_id>/", trainer_nutrition_plan_detail_page, name="trainer-nutrition-plan-detail"),
+    path("dashboard/nutrition-plans/<int:plan_id>/update/", dashboard_update_nutrition_plan, name="dashboard-update-nutrition-plan"),
+    path("dashboard/nutrition-plans/<int:plan_id>/delete/", dashboard_delete_nutrition_plan, name="dashboard-delete-nutrition-plan"),
+    path("dashboard/nutrition-plans/<int:plan_id>/duplicate/", dashboard_duplicate_nutrition_plan, name="dashboard-duplicate-nutrition-plan"),
+
     path("dashboard/settings/", trainer_settings_page, name="trainer-settings-page"),
 
     path(

@@ -1,6 +1,7 @@
 from django import forms
 from .models import User
 from apps.workouts.models import WorkoutPlan, ExerciseLibraryItem
+from apps.nutrition.models import NutritionPlan
 
 
 class TrainerLoginForm(forms.Form):
@@ -29,6 +30,25 @@ class AssignWorkoutPlanForm(forms.Form):
             ).order_by("name")
 
             self.fields["workout_plan_id"].choices = [
+                (plan.id, plan.name) for plan in plans
+            ]
+
+
+class AssignNutritionPlanForm(forms.Form):
+    client_user_id = forms.IntegerField(widget=forms.HiddenInput)
+    nutrition_plan_id = forms.ChoiceField(choices=[])
+    create_client_specific_copy = forms.BooleanField(required=False)
+
+    def __init__(self, *args, trainer_user=None, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        if trainer_user is not None:
+            plans = NutritionPlan.objects.filter(
+                user=trainer_user,
+                is_template=True,
+            ).order_by("name")
+
+            self.fields["nutrition_plan_id"].choices = [
                 (plan.id, plan.name) for plan in plans
             ]
 
@@ -82,3 +102,21 @@ class UpdateExerciseForm(forms.Form):
     superset_group = forms.IntegerField(required=False, min_value=1)
     set_count = forms.IntegerField(min_value=1, max_value=10)
     reps = forms.CharField(max_length=20)
+
+
+class CreateNutritionPlanForm(forms.Form):
+    name = forms.CharField(max_length=255)
+    calories_target = forms.IntegerField(min_value=0)
+    protein_target = forms.IntegerField(min_value=0)
+    carbs_target = forms.IntegerField(min_value=0)
+    fats_target = forms.IntegerField(min_value=0)
+    notes = forms.CharField(required=False, widget=forms.Textarea)
+
+
+class UpdateNutritionPlanForm(forms.Form):
+    name = forms.CharField(max_length=255)
+    calories_target = forms.IntegerField(min_value=0)
+    protein_target = forms.IntegerField(min_value=0)
+    carbs_target = forms.IntegerField(min_value=0)
+    fats_target = forms.IntegerField(min_value=0)
+    notes = forms.CharField(required=False, widget=forms.Textarea)

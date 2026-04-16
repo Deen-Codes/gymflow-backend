@@ -6,7 +6,6 @@ from .dashboard_auth_views import (
 
 from .dashboard_page_views import (
     trainer_dashboard_home,
-    trainer_nutrition_plans_page,
     trainer_settings_page,
 )
 
@@ -40,6 +39,19 @@ from .dashboard_workout_action_views import (
     dashboard_delete_exercise,
 )
 
+from .dashboard_nutrition_page_views import (
+    trainer_nutrition_plans_page,
+    trainer_nutrition_plan_detail_page,
+)
+
+from .dashboard_nutrition_action_views import (
+    dashboard_create_nutrition_plan,
+    dashboard_update_nutrition_plan,
+    dashboard_delete_nutrition_plan,
+    dashboard_duplicate_nutrition_plan,
+    dashboard_assign_nutrition_plan,
+)
+
 __all__ = [
     "landing_page",
     "trainer_login_page",
@@ -50,6 +62,7 @@ __all__ = [
     "trainer_workout_plans_page",
     "trainer_workout_plan_detail_page",
     "trainer_nutrition_plans_page",
+    "trainer_nutrition_plan_detail_page",
     "trainer_settings_page",
     "dashboard_create_client",
     "dashboard_delete_client",
@@ -68,4 +81,9 @@ __all__ = [
     "dashboard_add_exercise_to_day",
     "dashboard_update_exercise",
     "dashboard_delete_exercise",
+    "dashboard_create_nutrition_plan",
+    "dashboard_update_nutrition_plan",
+    "dashboard_delete_nutrition_plan",
+    "dashboard_duplicate_nutrition_plan",
+    "dashboard_assign_nutrition_plan",
 ]
