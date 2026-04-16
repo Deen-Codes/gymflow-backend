@@ -6,10 +6,17 @@
     <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
         <a href="{% url 'trainer-workout-plans-page' %}" class="muted">← Back to workout plans</a>
 
-        <form method="post" action="{% url 'dashboard-delete-workout-plan' plan.id %}" onsubmit="return confirm('Delete this workout plan? This cannot be undone.');">
-            {% csrf_token %}
-            <button type="submit" class="btn btn-secondary">Delete Plan</button>
-        </form>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <form method="post" action="{% url 'dashboard-duplicate-workout-plan' plan.id %}">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-secondary">Duplicate Plan</button>
+            </form>
+
+            <form method="post" action="{% url 'dashboard-delete-workout-plan' plan.id %}" onsubmit="return confirm('Delete this workout plan? This cannot be undone.');">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-secondary">Delete Plan</button>
+            </form>
+        </div>
     </div>
 
     <div class="glass" style="padding:24px;">

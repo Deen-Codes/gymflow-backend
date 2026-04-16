@@ -49,6 +49,34 @@ def dashboard_create_exercise_library_item(request):
 
 
 @login_required
+def dashboard_duplicate_exercise_library_item(request, exercise_id):
+    """
+    Duplicate a trainer-owned exercise preset so it can be quickly tweaked.
+    """
+    if not trainer_required(request):
+        return redirect("landing-page")
+
+    exercise = get_object_or_404(
+        ExerciseLibraryItem,
+        id=exercise_id,
+        user=request.user,
+    )
+
+    if request.method != "POST":
+        return redirect("trainer-workout-plans-page")
+
+    ExerciseLibraryItem.objects.create(
+        user=request.user,
+        name=f"{exercise.name} Copy",
+        video_url=exercise.video_url,
+        coaching_notes=exercise.coaching_notes,
+    )
+
+    messages.success(request, f'Exercise preset "{exercise.name}" duplicated successfully.')
+    return redirect("trainer-workout-plans-page")
+
+
+@login_required
 def dashboard_create_workout_plan(request):
     if not trainer_required(request):
         return redirect("landing-page")
@@ -72,6 +100,57 @@ def dashboard_create_workout_plan(request):
 
     messages.success(request, "Workout plan created successfully.")
     return redirect("trainer-workout-plan-detail", plan_id=plan.id)
+
+
+@login_required
+def dashboard_duplicate_workout_plan(request, plan_id):
+    """
+    Duplicate a full trainer-owned workout plan template, including days,
+    exercises, and set targets.
+    """
+    if not trainer_required(request):
+        return redirect("landing-page")
+
+    source_plan = get_object_or_404(
+        WorkoutPlan.objects.prefetch_related("days__exercises__sets"),
+        id=plan_id,
+        user=request.user,
+    )
+
+    if request.method != "POST":
+        return redirect("trainer-workout-plan-detail", plan_id=source_plan.id)
+
+    new_plan = WorkoutPlan.objects.create(
+        user=request.user,
+        name=f"{source_plan.name} Copy",
+        is_active=source_plan.is_active,
+    )
+
+    for day in source_plan.days.all().order_by("order"):
+        new_day = WorkoutDay.objects.create(
+            plan=new_plan,
+            title=day.title,
+            order=day.order,
+        )
+
+        for exercise in day.exercises.all().order_by("order"):
+            new_exercise = Exercise.objects.create(
+                workout_day=new_day,
+                name=exercise.name,
+                label=exercise.label,
+                order=exercise.order,
+                superset_group=exercise.superset_group,
+            )
+
+            for set_target in exercise.sets.all().order_by("set_number"):
+                ExerciseSetTarget.objects.create(
+                    exercise=new_exercise,
+                    set_number=set_target.set_number,
+                    reps=set_target.reps,
+                )
+
+    messages.success(request, f'Workout plan "{source_plan.name}" duplicated successfully.')
+    return redirect("trainer-workout-plan-detail", plan_id=new_plan.id)
 
 
 @login_required

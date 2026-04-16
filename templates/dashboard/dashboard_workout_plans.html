@@ -55,8 +55,15 @@
                 <div style="display:grid;gap:14px;">
                     {% for exercise in exercise_library %}
                         <div class="glass" style="padding:22px;">
-                            <div style="font-size:18px;font-weight:800;margin-bottom:14px;">
-                                {{ exercise.name }}
+                            <div style="display:flex;justify-content:space-between;align-items:start;gap:14px;flex-wrap:wrap;margin-bottom:14px;">
+                                <div style="font-size:18px;font-weight:800;">
+                                    {{ exercise.name }}
+                                </div>
+
+                                <form method="post" action="{% url 'dashboard-duplicate-exercise-library-item' exercise.id %}">
+                                    {% csrf_token %}
+                                    <button type="submit" class="btn btn-secondary">Duplicate</button>
+                                </form>
                             </div>
 
                             {% if exercise.video_url %}
@@ -95,18 +102,25 @@
             {% if workout_plans %}
                 <div style="display:grid;gap:14px;">
                     {% for plan in workout_plans %}
-                        <a href="{% url 'trainer-workout-plan-detail' plan.id %}" class="glass" style="padding:18px;display:block;">
-                            <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;">
-                                <div>
+                        <div class="glass" style="padding:18px;">
+                            <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
+                                <a href="{% url 'trainer-workout-plan-detail' plan.id %}" style="display:block;flex:1;min-width:220px;">
                                     <div style="font-size:18px;font-weight:800;margin-bottom:6px;">{{ plan.name }}</div>
                                     <div class="muted">{{ plan.days.count }} day{{ plan.days.count|pluralize }}</div>
-                                </div>
+                                </a>
 
-                                <div class="btn btn-secondary" style="pointer-events:none;">
-                                    Open
+                                <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                                    <form method="post" action="{% url 'dashboard-duplicate-workout-plan' plan.id %}">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-secondary">Duplicate</button>
+                                    </form>
+
+                                    <a href="{% url 'trainer-workout-plan-detail' plan.id %}" class="btn btn-secondary">
+                                        Open
+                                    </a>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     {% endfor %}
                 </div>
             {% else %}

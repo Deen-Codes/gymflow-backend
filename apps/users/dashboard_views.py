@@ -24,7 +24,9 @@ from .dashboard_workout_page_views import (
 
 from .dashboard_workout_action_views import (
     dashboard_create_exercise_library_item,
+    dashboard_duplicate_exercise_library_item,
     dashboard_create_workout_plan,
+    dashboard_duplicate_workout_plan,
     dashboard_update_workout_plan,
     dashboard_delete_workout_plan,
     dashboard_create_workout_day,
@@ -49,7 +51,9 @@ __all__ = [
     "dashboard_create_client",
     "dashboard_assign_workout_plan",
     "dashboard_create_exercise_library_item",
+    "dashboard_duplicate_exercise_library_item",
     "dashboard_create_workout_plan",
+    "dashboard_duplicate_workout_plan",
     "dashboard_update_workout_plan",
     "dashboard_delete_workout_plan",
     "dashboard_create_workout_day",
