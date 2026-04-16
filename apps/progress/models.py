@@ -59,6 +59,9 @@ class CheckInQuestion(models.Model):
     is_required = models.BooleanField(default=False)
     order = models.IntegerField(default=1)
 
+    field_key = models.CharField(max_length=100, blank=True)
+    is_system_question = models.BooleanField(default=False)
+
     class Meta:
         ordering = ["order", "id"]
 

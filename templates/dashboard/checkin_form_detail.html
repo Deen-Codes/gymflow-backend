@@ -99,17 +99,26 @@
                 <div class="glass" style="padding:24px;">
                     <div style="display:flex;justify-content:space-between;align-items:start;gap:16px;flex-wrap:wrap;margin-bottom:16px;">
                         <div>
-                            <div style="font-size:18px;font-weight:800;">{{ question.question_text }}</div>
-                            <div class="muted">
+                            <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+                                <div style="font-size:18px;font-weight:800;">{{ question.question_text }}</div>
+                                {% if question.is_system_question %}
+                                    <div class="glass" style="padding:6px 10px;">System Required</div>
+                                {% endif %}
+                            </div>
+
+                            <div class="muted" style="margin-top:6px;">
                                 {{ question.get_question_type_display }} · Order {{ question.order }}
                                 {% if question.is_required %}· Required{% endif %}
+                                {% if question.field_key %}· Key: {{ question.field_key }}{% endif %}
                             </div>
                         </div>
 
-                        <form method="post" action="{% url 'dashboard-delete-checkin-question' checkin_form.id question.id %}" onsubmit="return confirm('Delete this question?');">
-                            {% csrf_token %}
-                            <button type="submit" class="btn btn-secondary">Delete</button>
-                        </form>
+                        {% if not question.is_system_question %}
+                            <form method="post" action="{% url 'dashboard-delete-checkin-question' checkin_form.id question.id %}" onsubmit="return confirm('Delete this question?');">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-secondary">Delete</button>
+                            </form>
+                        {% endif %}
                     </div>
 
                     <form method="post" action="{% url 'dashboard-update-checkin-question' checkin_form.id question.id %}" style="display:grid;gap:14px;">
@@ -123,7 +132,7 @@
                         <div style="display:grid;grid-template-columns:1fr 160px 160px;gap:12px;">
                             <div>
                                 <label class="label">Question Type</label>
-                                <select class="input" name="question_type">
+                                <select class="input" name="question_type" {% if question.is_system_question %}disabled{% endif %}>
                                     <option value="short_text" {% if question.question_type == "short_text" %}selected{% endif %}>Short Text</option>
                                     <option value="long_text" {% if question.question_type == "long_text" %}selected{% endif %}>Long Text</option>
                                     <option value="number" {% if question.question_type == "number" %}selected{% endif %}>Number</option>
@@ -132,6 +141,9 @@
                                     <option value="photo" {% if question.question_type == "photo" %}selected{% endif %}>Photo Upload</option>
                                     <option value="video" {% if question.question_type == "video" %}selected{% endif %}>Video Upload</option>
                                 </select>
+                                {% if question.is_system_question %}
+                                    <input type="hidden" name="question_type" value="{{ question.question_type }}">
+                                {% endif %}
                             </div>
 
                             <div>
@@ -141,9 +153,12 @@
 
                             <div style="display:flex;align-items:end;">
                                 <label style="display:flex;align-items:center;gap:10px;">
-                                    <input type="checkbox" name="is_required" {% if question.is_required %}checked{% endif %}>
+                                    <input type="checkbox" name="is_required" {% if question.is_required %}checked{% endif %} {% if question.is_system_question %}disabled{% endif %}>
                                     <span>Required</span>
                                 </label>
+                                {% if question.is_system_question %}
+                                    <input type="hidden" name="is_required" value="on">
+                                {% endif %}
                             </div>
                         </div>
 
