@@ -146,8 +146,7 @@
 }
 
 .dashboard-main--flush .dashboard-topbar,
-.dashboard-main--flush .messages,
-.dashboard-main--flush .dashboard-content {
+.dashboard-main--flush .messages {
     display: none;
 }
 
