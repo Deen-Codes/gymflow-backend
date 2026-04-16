@@ -1,0 +1,68 @@
+{% extends "dashboard/dashboard_shell.html" %}
+
+{% block dashboard_content %}
+<div style="display:grid;gap:22px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
+        <a href="{% url 'trainer-nutrition-plans-page' %}" class="muted">← Back to nutrition plans</a>
+
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <form method="post" action="{% url 'dashboard-duplicate-nutrition-plan' nutrition_plan.id %}">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-secondary">Duplicate Plan</button>
+            </form>
+
+            <form method="post" action="{% url 'dashboard-delete-nutrition-plan' nutrition_plan.id %}" onsubmit="return confirm('Delete this nutrition plan? This cannot be undone.');">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-secondary">Delete Plan</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="glass" style="padding:24px;">
+        <div style="font-size:30px;font-weight:800;margin-bottom:8px;">{{ nutrition_plan.name }}</div>
+        <div class="muted">
+            Set nutrition targets and coaching notes for this plan.
+        </div>
+    </div>
+
+    <div class="glass" style="padding:24px;">
+        <form method="post" action="{% url 'dashboard-update-nutrition-plan' nutrition_plan.id %}" style="display:grid;gap:14px;">
+            {% csrf_token %}
+
+            <div>
+                <label class="label">Plan Name</label>
+                <input class="input" type="text" name="name" value="{{ nutrition_plan.name }}">
+            </div>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+                <div>
+                    <label class="label">Calories</label>
+                    <input class="input" type="number" name="calories_target" min="0" value="{{ nutrition_plan.calories_target }}">
+                </div>
+                <div>
+                    <label class="label">Protein (g)</label>
+                    <input class="input" type="number" name="protein_target" min="0" value="{{ nutrition_plan.protein_target }}">
+                </div>
+            </div>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+                <div>
+                    <label class="label">Carbs (g)</label>
+                    <input class="input" type="number" name="carbs_target" min="0" value="{{ nutrition_plan.carbs_target }}">
+                </div>
+                <div>
+                    <label class="label">Fats (g)</label>
+                    <input class="input" type="number" name="fats_target" min="0" value="{{ nutrition_plan.fats_target }}">
+                </div>
+            </div>
+
+            <div>
+                <label class="label">Coach Notes</label>
+                <textarea class="input" name="notes" rows="8">{{ nutrition_plan.notes }}</textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Save Nutrition Plan</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
