@@ -14,6 +14,7 @@ from .dashboard_client_views import (
     trainer_dashboard,
     trainer_client_detail_page,
     dashboard_create_client,
+    dashboard_delete_client,
     dashboard_assign_workout_plan,
 )
 
@@ -51,6 +52,7 @@ __all__ = [
     "trainer_nutrition_plans_page",
     "trainer_settings_page",
     "dashboard_create_client",
+    "dashboard_delete_client",
     "dashboard_assign_workout_plan",
     "dashboard_create_exercise_library_item",
     "dashboard_update_exercise_library_item",

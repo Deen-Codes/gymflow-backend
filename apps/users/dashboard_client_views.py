@@ -176,3 +176,29 @@ def dashboard_assign_workout_plan(request):
         messages.success(request, "Workout plan assigned successfully.")
 
     return redirect("trainer-client-detail", client_id=client_user.id)
+
+
+@login_required
+def dashboard_delete_client(request, client_id):
+    """
+    Delete a trainer-owned client account.
+    Client-specific workout plans linked to that client will also be removed automatically.
+    """
+    if not trainer_required(request):
+        return redirect("landing-page")
+
+    client = get_object_or_404(
+        User,
+        id=client_id,
+        role=User.CLIENT,
+        client_profile__trainer=request.user.trainer_profile,
+    )
+
+    if request.method != "POST":
+        return redirect("trainer-client-detail", client_id=client.id)
+
+    client_username = client.username
+    client.delete()
+
+    messages.success(request, f'Client "{client_username}" deleted successfully.')
+    return redirect("trainer-dashboard")

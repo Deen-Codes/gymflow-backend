@@ -12,6 +12,7 @@ from .dashboard_views import (
     trainer_nutrition_plans_page,
     trainer_settings_page,
     dashboard_create_client,
+    dashboard_delete_client,
     dashboard_assign_workout_plan,
     dashboard_create_exercise_library_item,
     dashboard_update_exercise_library_item,
@@ -37,6 +38,7 @@ urlpatterns = [
     path("dashboard/", trainer_dashboard_home, name="trainer-dashboard-home"),
     path("dashboard/clients/", trainer_dashboard, name="trainer-dashboard"),
     path("dashboard/clients/<int:client_id>/", trainer_client_detail_page, name="trainer-client-detail"),
+    path("dashboard/clients/<int:client_id>/delete/", dashboard_delete_client, name="dashboard-delete-client"),
 
     path("dashboard/create-client/", dashboard_create_client, name="dashboard-create-client"),
     path("dashboard/assign-workout-plan/", dashboard_assign_workout_plan, name="dashboard-assign-workout-plan"),

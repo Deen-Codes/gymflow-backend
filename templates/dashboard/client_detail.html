@@ -3,8 +3,13 @@
 
 {% block dashboard_content %}
 <div style="display:grid;gap:22px;">
-    <div>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
         <a href="{% url 'trainer-dashboard' %}" class="muted">← Back to clients</a>
+
+        <form method="post" action="{% url 'dashboard-delete-client' client.id %}" onsubmit="return confirm('Delete this client? This cannot be undone.');">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-secondary">Delete Client</button>
+        </form>
     </div>
 
     <div class="glass" style="padding:24px;">
@@ -31,7 +36,9 @@
 
             {% if assigned_plan %}
                 <div style="font-size:18px;font-weight:700;margin-bottom:8px;">
-                    {{ assigned_plan.name }}
+                    <a href="{% url 'trainer-workout-plan-detail' assigned_plan.id %}">
+                        {{ assigned_plan.name }}
+                    </a>
                 </div>
 
                 <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;">
@@ -53,7 +60,7 @@
                 </div>
 
                 <div class="muted">
-                    This client currently has a workout plan assigned.
+                    This client currently has a workout plan assigned. Click the plan name to open and edit it.
                 </div>
             {% else %}
                 <div class="muted">
