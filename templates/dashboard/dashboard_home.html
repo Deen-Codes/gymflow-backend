@@ -1,417 +1,121 @@
 {% extends "dashboard/dashboard_shell.html" %}
+{% load static %}
 
 {% block extra_head %}
-<style>
-    .launcher-wrap {
-        --launcher-bg: #0d1320;
-        --launcher-bg-2: #121a2b;
-        --launcher-panel: rgba(255,255,255,0.06);
-        --launcher-panel-hover: rgba(255,255,255,0.10);
-        --launcher-stroke: rgba(255,255,255,0.10);
-        --launcher-stroke-strong: rgba(255,255,255,0.18);
-        --launcher-text: #f5f7fb;
-        --launcher-muted: #9eabc2;
-        --launcher-accent: #5ea2ff;
-        --launcher-shadow: 0 18px 40px rgba(0,0,0,0.26);
-        --launcher-topbar: rgba(255,255,255,0.04);
-
-        background:
-            radial-gradient(circle at top left, rgba(94,162,255,0.16), transparent 32%),
-            radial-gradient(circle at bottom right, rgba(96,238,186,0.08), transparent 26%),
-            linear-gradient(145deg, var(--launcher-bg), var(--launcher-bg-2));
-        border: 1px solid rgba(255,255,255,0.06);
-        border-radius: 28px;
-        box-shadow: var(--launcher-shadow);
-        padding: 22px;
-        color: var(--launcher-text);
-        min-height: calc(100vh - 190px);
-        position: relative;
-        overflow: hidden;
-    }
-
-    .launcher-wrap.light-theme {
-        --launcher-bg: #f7fbff;
-        --launcher-bg-2: #eef4fb;
-        --launcher-panel: rgba(255,255,255,0.72);
-        --launcher-panel-hover: rgba(255,255,255,0.92);
-        --launcher-stroke: rgba(20,34,58,0.10);
-        --launcher-stroke-strong: rgba(20,34,58,0.16);
-        --launcher-text: #162033;
-        --launcher-muted: #6b7d97;
-        --launcher-accent: #3f88ef;
-        --launcher-shadow: 0 18px 40px rgba(39, 68, 115, 0.10);
-        --launcher-topbar: rgba(255,255,255,0.68);
-    }
-
-    .launcher-topbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 16px;
-        flex-wrap: wrap;
-        margin-bottom: 22px;
-        padding: 14px 16px;
-        border: 1px solid var(--launcher-stroke);
-        background: var(--launcher-topbar);
-        border-radius: 20px;
-        backdrop-filter: blur(10px);
-    }
-
-    .launcher-topbar-left {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-    }
-
-    .launcher-title {
-        font-size: 28px;
-        font-weight: 800;
-        letter-spacing: -0.03em;
-        color: var(--launcher-text);
-    }
-
-    .launcher-subtitle {
-        font-size: 14px;
-        color: var(--launcher-muted);
-    }
-
-    .launcher-actions {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
-
-    .launcher-chip {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        height: 42px;
-        padding: 0 14px;
-        border-radius: 14px;
-        border: 1px solid var(--launcher-stroke);
-        background: rgba(255,255,255,0.04);
-        color: var(--launcher-text);
-        font-size: 13px;
-        font-weight: 700;
-        cursor: pointer;
-        transition: 0.18s ease;
-    }
-
-    .launcher-chip:hover {
-        transform: translateY(-1px);
-        border-color: var(--launcher-stroke-strong);
-        background: rgba(255,255,255,0.08);
-    }
-
-    .launcher-chip.primary {
-        background: linear-gradient(180deg, var(--launcher-accent), #3d84f0);
-        border-color: transparent;
-        color: white;
-        box-shadow: 0 12px 26px rgba(70, 135, 243, 0.26);
-    }
-
-    .launcher-grid {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 18px;
-    }
-
-    .launcher-card {
-        position: relative;
-        min-height: 215px;
-        border-radius: 24px;
-        border: 1px solid var(--launcher-stroke);
-        background: var(--launcher-panel);
-        backdrop-filter: blur(10px);
-        padding: 20px;
-        overflow: hidden;
-        transition:
-            transform 0.22s ease,
-            border-color 0.22s ease,
-            background 0.22s ease,
-            box-shadow 0.22s ease;
-    }
-
-    .launcher-card::after {
-        content: "";
-        position: absolute;
-        inset: auto -40px -55px auto;
-        width: 140px;
-        height: 140px;
-        border-radius: 999px;
-        background: radial-gradient(circle, rgba(94,162,255,0.18), transparent 68%);
-        pointer-events: none;
-        transition: transform 0.25s ease, opacity 0.25s ease;
-        opacity: 0.75;
-    }
-
-    .launcher-card:hover {
-        transform: translateY(-6px) scale(1.01);
-        border-color: var(--launcher-stroke-strong);
-        background: var(--launcher-panel-hover);
-        box-shadow: 0 20px 42px rgba(0,0,0,0.16);
-    }
-
-    .launcher-card:hover::after {
-        transform: scale(1.08);
-        opacity: 1;
-    }
-
-    .launcher-card-link {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        color: inherit;
-        text-decoration: none;
-    }
-
-    .launcher-card-icon {
-        width: 56px;
-        height: 56px;
-        border-radius: 18px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 25px;
-        border: 1px solid var(--launcher-stroke);
-        background: rgba(255,255,255,0.07);
-        color: var(--launcher-text);
-        margin-bottom: 18px;
-        transition: 0.2s ease;
-    }
-
-    .launcher-card:hover .launcher-card-icon {
-        transform: translateY(-2px);
-        border-color: rgba(255,255,255,0.24);
-        background: rgba(255,255,255,0.11);
-    }
-
-    .launcher-card-title {
-        font-size: 22px;
-        font-weight: 800;
-        letter-spacing: -0.03em;
-        margin-bottom: 8px;
-        color: var(--launcher-text);
-    }
-
-    .launcher-card-summary {
-        font-size: 14px;
-        line-height: 1.55;
-        color: var(--launcher-muted);
-        max-width: 34ch;
-    }
-
-    .launcher-card-hover {
-        margin-top: auto;
-        padding-top: 16px;
-        font-size: 13px;
-        color: var(--launcher-text);
-        opacity: 0;
-        transform: translateY(10px);
-        transition: 0.22s ease;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-    }
-
-    .launcher-card:hover .launcher-card-hover {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    .launcher-card-hint {
-        color: var(--launcher-muted);
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0.02em;
-        text-transform: uppercase;
-    }
-
-    .launcher-card-arrow {
-        width: 34px;
-        height: 34px;
-        border-radius: 12px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid var(--launcher-stroke);
-        background: rgba(255,255,255,0.08);
-        font-size: 16px;
-    }
-
-    .launcher-help {
-        margin-top: 18px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        color: var(--launcher-muted);
-        font-size: 13px;
-    }
-
-    .launcher-help-dot {
-        width: 8px;
-        height: 8px;
-        border-radius: 999px;
-        background: var(--launcher-accent);
-    }
-
-    @media (max-width: 1180px) {
-        .launcher-grid {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-    }
-
-    @media (max-width: 760px) {
-        .launcher-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .launcher-wrap {
-            min-height: auto;
-        }
-    }
-</style>
+<link rel="stylesheet" href="{% static 'css/dashboard-launcher.css' %}">
 {% endblock %}
 
 {% block dashboard_content %}
-<div id="launcherWrap" class="launcher-wrap">
-    <div class="launcher-topbar">
-        <div class="launcher-topbar-left">
-            <div class="launcher-title">GymFlow Launcher</div>
-            <div class="launcher-subtitle">
-                Open a workspace, manage your coaching system, and jump straight into action.
+<div class="launcher-page">
+    <div id="launcherWrap" class="launcher-wrap">
+        <div class="launcher-shell">
+            <div class="launcher-topbar">
+                <div class="launcher-topbar-left">
+                    <div class="launcher-title">GymFlow Launcher</div>
+                    <div class="launcher-subtitle">
+                        Open a workspace, manage your coaching system, and jump straight into action.
+                    </div>
+                </div>
+
+                <div class="launcher-actions">
+                    <a href="{% url 'trainer-dashboard' %}" class="launcher-chip primary">＋ Add Client</a>
+                    <a href="{% url 'trainer-workout-plans-page' %}" class="launcher-chip">＋ Workout Plan</a>
+                    <a href="{% url 'trainer-nutrition-plans-page' %}" class="launcher-chip">＋ Nutrition Plan</a>
+                    <button type="button" class="launcher-chip" title="Shortcuts and quick guidance">⌘ Help</button>
+                </div>
+            </div>
+
+            <div class="launcher-grid">
+                <div class="launcher-card">
+                    <a href="{% url 'trainer-dashboard' %}" class="launcher-card-link">
+                        <div class="launcher-card-icon">◯</div>
+                        <div class="launcher-card-title">Clients</div>
+                        <div class="launcher-card-summary">
+                            Open client management, assign plans, view client details, and keep your roster organised.
+                        </div>
+                        <div class="launcher-card-hover">
+                            <span class="launcher-card-hint">Open workspace</span>
+                            <span class="launcher-card-arrow">→</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="launcher-card">
+                    <a href="{% url 'trainer-workout-plans-page' %}" class="launcher-card-link">
+                        <div class="launcher-card-icon">⌁</div>
+                        <div class="launcher-card-title">Workouts</div>
+                        <div class="launcher-card-summary">
+                            Build training plans, organise exercise presets, and manage program structure for clients.
+                        </div>
+                        <div class="launcher-card-hover">
+                            <span class="launcher-card-hint">Open workspace</span>
+                            <span class="launcher-card-arrow">→</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="launcher-card">
+                    <a href="{% url 'trainer-nutrition-plans-page' %}" class="launcher-card-link">
+                        <div class="launcher-card-icon">◌</div>
+                        <div class="launcher-card-title">Nutrition</div>
+                        <div class="launcher-card-summary">
+                            Create nutrition plans, build meals, manage foods, and structure your coaching nutrition flow.
+                        </div>
+                        <div class="launcher-card-hover">
+                            <span class="launcher-card-hint">Open workspace</span>
+                            <span class="launcher-card-arrow">→</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="launcher-card">
+                    <a href="{% url 'trainer-checkin-forms-page' %}" class="launcher-card-link">
+                        <div class="launcher-card-icon">☑</div>
+                        <div class="launcher-card-title">Check-Ins</div>
+                        <div class="launcher-card-summary">
+                            Build onboarding, daily, and weekly forms that feed client progress and keep your system structured.
+                        </div>
+                        <div class="launcher-card-hover">
+                            <span class="launcher-card-hint">Open workspace</span>
+                            <span class="launcher-card-arrow">→</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="launcher-card">
+                    <a href="{% url 'trainer-settings-page' %}" class="launcher-card-link">
+                        <div class="launcher-card-icon">⚙</div>
+                        <div class="launcher-card-title">Settings</div>
+                        <div class="launcher-card-summary">
+                            Manage business preferences, account behaviour, and future platform options from one place.
+                        </div>
+                        <div class="launcher-card-hover">
+                            <span class="launcher-card-hint">Open workspace</span>
+                            <span class="launcher-card-arrow">→</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="launcher-card">
+                    <a href="{% url 'trainer-dashboard-home' %}" class="launcher-card-link">
+                        <div class="launcher-card-icon">◔</div>
+                        <div class="launcher-card-title">Recent Activity</div>
+                        <div class="launcher-card-summary">
+                            A future live feed for assignments, updates, check-ins, and key actions across your coaching system.
+                        </div>
+                        <div class="launcher-card-hover">
+                            <span class="launcher-card-hint">Activity hub</span>
+                            <span class="launcher-card-arrow">→</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="launcher-help">
+                <span class="launcher-help-dot"></span>
+                <span>Hover cards for a richer preview. Click any workspace to jump straight into that part of GymFlow.</span>
             </div>
         </div>
-
-        <div class="launcher-actions">
-            <a href="{% url 'trainer-dashboard' %}" class="launcher-chip primary">＋ Add Client</a>
-            <a href="{% url 'trainer-workout-plans-page' %}" class="launcher-chip">＋ Workout Plan</a>
-            <a href="{% url 'trainer-nutrition-plans-page' %}" class="launcher-chip">＋ Nutrition Plan</a>
-            <button type="button" id="launcherThemeToggle" class="launcher-chip">◐ Toggle Theme</button>
-            <button type="button" class="launcher-chip" title="Shortcuts and quick guidance">
-                ⌘ Help
-            </button>
-        </div>
-    </div>
-
-    <div class="launcher-grid">
-        <div class="launcher-card">
-            <a href="{% url 'trainer-dashboard' %}" class="launcher-card-link">
-                <div class="launcher-card-icon">◯</div>
-                <div class="launcher-card-title">Clients</div>
-                <div class="launcher-card-summary">
-                    Open client management, assign plans, view client details, and keep your roster organised.
-                </div>
-                <div class="launcher-card-hover">
-                    <span class="launcher-card-hint">Open workspace</span>
-                    <span class="launcher-card-arrow">→</span>
-                </div>
-            </a>
-        </div>
-
-        <div class="launcher-card">
-            <a href="{% url 'trainer-workout-plans-page' %}" class="launcher-card-link">
-                <div class="launcher-card-icon">⌁</div>
-                <div class="launcher-card-title">Workouts</div>
-                <div class="launcher-card-summary">
-                    Build training plans, organise exercise presets, and manage program structure for clients.
-                </div>
-                <div class="launcher-card-hover">
-                    <span class="launcher-card-hint">Open workspace</span>
-                    <span class="launcher-card-arrow">→</span>
-                </div>
-            </a>
-        </div>
-
-        <div class="launcher-card">
-            <a href="{% url 'trainer-nutrition-plans-page' %}" class="launcher-card-link">
-                <div class="launcher-card-icon">◌</div>
-                <div class="launcher-card-title">Nutrition</div>
-                <div class="launcher-card-summary">
-                    Create nutrition plans, build meals, manage foods, and structure your coaching nutrition flow.
-                </div>
-                <div class="launcher-card-hover">
-                    <span class="launcher-card-hint">Open workspace</span>
-                    <span class="launcher-card-arrow">→</span>
-                </div>
-            </a>
-        </div>
-
-        <div class="launcher-card">
-            <a href="{% url 'trainer-checkin-forms-page' %}" class="launcher-card-link">
-                <div class="launcher-card-icon">☑</div>
-                <div class="launcher-card-title">Check-Ins</div>
-                <div class="launcher-card-summary">
-                    Build onboarding, daily, and weekly forms that feed client progress and keep your system structured.
-                </div>
-                <div class="launcher-card-hover">
-                    <span class="launcher-card-hint">Open workspace</span>
-                    <span class="launcher-card-arrow">→</span>
-                </div>
-            </a>
-        </div>
-
-        <div class="launcher-card">
-            <a href="{% url 'trainer-settings-page' %}" class="launcher-card-link">
-                <div class="launcher-card-icon">⚙</div>
-                <div class="launcher-card-title">Settings</div>
-                <div class="launcher-card-summary">
-                    Manage business preferences, account behaviour, and future platform options from one place.
-                </div>
-                <div class="launcher-card-hover">
-                    <span class="launcher-card-hint">Open workspace</span>
-                    <span class="launcher-card-arrow">→</span>
-                </div>
-            </a>
-        </div>
-
-        <div class="launcher-card">
-            <a href="{% url 'trainer-dashboard-home' %}" class="launcher-card-link">
-                <div class="launcher-card-icon">◔</div>
-                <div class="launcher-card-title">Recent Activity</div>
-                <div class="launcher-card-summary">
-                    A future live feed for assignments, updates, check-ins, and key actions across your coaching system.
-                </div>
-                <div class="launcher-card-hover">
-                    <span class="launcher-card-hint">Activity hub</span>
-                    <span class="launcher-card-arrow">→</span>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <div class="launcher-help">
-        <span class="launcher-help-dot"></span>
-        <span>
-            Hover cards for a richer preview. Click any workspace to jump straight into that part of GymFlow.
-        </span>
     </div>
 </div>
-
-<script>
-    (function () {
-        const wrap = document.getElementById("launcherWrap");
-        const toggle = document.getElementById("launcherThemeToggle");
-        const storageKey = "gymflow-launcher-theme";
-
-        function applyTheme(theme) {
-            if (theme === "light") {
-                wrap.classList.add("light-theme");
-            } else {
-                wrap.classList.remove("light-theme");
-            }
-        }
-
-        const savedTheme = localStorage.getItem(storageKey) || "dark";
-        applyTheme(savedTheme);
-
-        toggle.addEventListener("click", function () {
-            const nextTheme = wrap.classList.contains("light-theme") ? "dark" : "light";
-            localStorage.setItem(storageKey, nextTheme);
-            applyTheme(nextTheme);
-        });
-    })();
-</script>
 {% endblock %}

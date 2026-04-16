@@ -1,0 +1,257 @@
+.launcher-page {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top left, rgba(94,162,255,0.16), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(96,238,186,0.08), transparent 26%),
+        linear-gradient(145deg, #0d1320, #121a2b);
+    color: #f5f7fb;
+    padding: 24px;
+}
+
+.launcher-wrap {
+    min-height: calc(100vh - 48px);
+    border-radius: 0;
+    color: #f5f7fb;
+    position: relative;
+    overflow: hidden;
+}
+
+.launcher-shell {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.launcher-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 14px 16px;
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(255,255,255,0.04);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.launcher-topbar-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.launcher-title {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #f5f7fb;
+}
+
+.launcher-subtitle {
+    font-size: 14px;
+    color: #9eabc2;
+}
+
+.launcher-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.launcher-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 42px;
+    padding: 0 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(255,255,255,0.04);
+    color: #f5f7fb;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.18s ease;
+}
+
+.launcher-chip:hover {
+    transform: translateY(-1px);
+    border-color: rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.08);
+}
+
+.launcher-chip.primary {
+    background: linear-gradient(180deg, #5ea2ff, #3d84f0);
+    border-color: transparent;
+    color: white;
+    box-shadow: 0 12px 26px rgba(70, 135, 243, 0.26);
+}
+
+.launcher-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    flex: 1;
+}
+
+.launcher-card {
+    position: relative;
+    min-height: 215px;
+    border-radius: 24px;
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    overflow: hidden;
+    transition:
+        transform 0.22s ease,
+        border-color 0.22s ease,
+        background 0.22s ease,
+        box-shadow 0.22s ease;
+}
+
+.launcher-card::after {
+    content: "";
+    position: absolute;
+    inset: auto -40px -55px auto;
+    width: 140px;
+    height: 140px;
+    border-radius: 999px;
+    background: radial-gradient(circle, rgba(94,162,255,0.18), transparent 68%);
+    pointer-events: none;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+    opacity: 0.75;
+}
+
+.launcher-card:hover {
+    transform: translateY(-6px) scale(1.01);
+    border-color: rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.10);
+    box-shadow: 0 20px 42px rgba(0,0,0,0.16);
+}
+
+.launcher-card:hover::after {
+    transform: scale(1.08);
+    opacity: 1;
+}
+
+.launcher-card-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.launcher-card-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(255,255,255,0.07);
+    color: #f5f7fb;
+    margin-bottom: 18px;
+    transition: 0.2s ease;
+}
+
+.launcher-card:hover .launcher-card-icon {
+    transform: translateY(-2px);
+    border-color: rgba(255,255,255,0.24);
+    background: rgba(255,255,255,0.11);
+}
+
+.launcher-card-title {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+    color: #f5f7fb;
+}
+
+.launcher-card-summary {
+    font-size: 14px;
+    line-height: 1.55;
+    color: #9eabc2;
+    max-width: 34ch;
+}
+
+.launcher-card-hover {
+    margin-top: auto;
+    padding-top: 16px;
+    font-size: 13px;
+    color: #f5f7fb;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.22s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.launcher-card:hover .launcher-card-hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.launcher-card-hint {
+    color: #9eabc2;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.launcher-card-arrow {
+    width: 34px;
+    height: 34px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(255,255,255,0.08);
+    font-size: 16px;
+}
+
+.launcher-help {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #9eabc2;
+    font-size: 13px;
+}
+
+.launcher-help-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: #5ea2ff;
+}
+
+@media (max-width: 1180px) {
+    .launcher-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 760px) {
+    .launcher-page {
+        padding: 14px;
+    }
+
+    .launcher-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .launcher-wrap {
+        min-height: auto;
+    }
+}

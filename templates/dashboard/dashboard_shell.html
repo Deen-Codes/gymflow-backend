@@ -3,74 +3,68 @@
 {% block title %}{{ page_title }} | GymFlow{% endblock %}
 
 {% block content %}
-<div style="min-height:100vh;background:linear-gradient(180deg,#f7faff 0%,#eef3f8 100%);">
-    <div style="display:grid;grid-template-columns:88px 220px 1fr;min-height:100vh;">
+<div class="dashboard-app">
+    <div class="dashboard-layout">
 
-        <!-- Icon Rail -->
-        <aside style="background:#ffffff;border-right:1px solid var(--stroke);padding:18px 14px;display:flex;flex-direction:column;align-items:center;gap:14px;">
-            <div style="width:44px;height:44px;border-radius:14px;background:linear-gradient(180deg,var(--blue),var(--blue-strong));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:18px;box-shadow:var(--shadow-sm);">
-                H
-            </div>
+        <aside class="dashboard-icon-rail">
+            <div class="dashboard-brand-icon">H</div>
 
-            <div style="display:grid;gap:10px;width:100%;margin-top:8px;">
+            <div class="dashboard-icon-nav">
                 <a href="{% url 'trainer-dashboard-home' %}"
                    title="Dashboard"
-                   style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:12px 8px;border-radius:16px;border:1px solid {% if request.resolver_match.url_name == 'trainer-dashboard-home' %}#cfe0fb{% else %}transparent{% endif %};background:{% if request.resolver_match.url_name == 'trainer-dashboard-home' %}var(--blue-soft){% else %}transparent{% endif %};color:{% if request.resolver_match.url_name == 'trainer-dashboard-home' %}var(--blue-strong){% else %}var(--text-soft){% endif %};font-size:11px;font-weight:600;">
-                    <span style="font-size:18px;">⌂</span>
+                   class="dashboard-icon-link {% if request.resolver_match.url_name == 'trainer-dashboard-home' %}active{% endif %}">
+                    <span class="dashboard-icon-symbol">⌂</span>
                     <span>Home</span>
                 </a>
 
                 <a href="{% url 'trainer-dashboard' %}"
                    title="Clients"
-                   style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:12px 8px;border-radius:16px;border:1px solid {% if request.resolver_match.url_name == 'trainer-dashboard' or request.resolver_match.url_name == 'trainer-client-detail' %}#cfe0fb{% else %}transparent{% endif %};background:{% if request.resolver_match.url_name == 'trainer-dashboard' or request.resolver_match.url_name == 'trainer-client-detail' %}var(--blue-soft){% else %}transparent{% endif %};color:{% if request.resolver_match.url_name == 'trainer-dashboard' or request.resolver_match.url_name == 'trainer-client-detail' %}var(--blue-strong){% else %}var(--text-soft){% endif %};font-size:11px;font-weight:600;">
-                    <span style="font-size:18px;">◯</span>
+                   class="dashboard-icon-link {% if request.resolver_match.url_name == 'trainer-dashboard' or request.resolver_match.url_name == 'trainer-client-detail' %}active{% endif %}">
+                    <span class="dashboard-icon-symbol">◯</span>
                     <span>Clients</span>
                 </a>
 
                 <a href="{% url 'trainer-workout-plans-page' %}"
                    title="Workout Plans"
-                   style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:12px 8px;border-radius:16px;border:1px solid {% if request.resolver_match.url_name == 'trainer-workout-plans-page' or request.resolver_match.url_name == 'trainer-workout-plan-detail' %}#cfe0fb{% else %}transparent{% endif %};background:{% if request.resolver_match.url_name == 'trainer-workout-plans-page' or request.resolver_match.url_name == 'trainer-workout-plan-detail' %}var(--blue-soft){% else %}transparent{% endif %};color:{% if request.resolver_match.url_name == 'trainer-workout-plans-page' or request.resolver_match.url_name == 'trainer-workout-plan-detail' %}var(--blue-strong){% else %}var(--text-soft){% endif %};font-size:11px;font-weight:600;">
-                    <span style="font-size:18px;">⌁</span>
+                   class="dashboard-icon-link {% if request.resolver_match.url_name == 'trainer-workout-plans-page' or request.resolver_match.url_name == 'trainer-workout-plan-detail' %}active{% endif %}">
+                    <span class="dashboard-icon-symbol">⌁</span>
                     <span>Workout</span>
                 </a>
 
                 <a href="{% url 'trainer-nutrition-plans-page' %}"
                    title="Nutrition Plans"
-                   style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:12px 8px;border-radius:16px;border:1px solid {% if request.resolver_match.url_name == 'trainer-nutrition-plans-page' or request.resolver_match.url_name == 'trainer-nutrition-plan-detail' %}#cfe0fb{% else %}transparent{% endif %};background:{% if request.resolver_match.url_name == 'trainer-nutrition-plans-page' or request.resolver_match.url_name == 'trainer-nutrition-plan-detail' %}var(--blue-soft){% else %}transparent{% endif %};color:{% if request.resolver_match.url_name == 'trainer-nutrition-plans-page' or request.resolver_match.url_name == 'trainer-nutrition-plan-detail' %}var(--blue-strong){% else %}var(--text-soft){% endif %};font-size:11px;font-weight:600;">
-                    <span style="font-size:18px;">○</span>
+                   class="dashboard-icon-link {% if request.resolver_match.url_name == 'trainer-nutrition-plans-page' or request.resolver_match.url_name == 'trainer-nutrition-plan-detail' %}active{% endif %}">
+                    <span class="dashboard-icon-symbol">○</span>
                     <span>Nutrition</span>
                 </a>
 
                 <a href="{% url 'trainer-checkin-forms-page' %}"
                    title="Check-In Forms"
-                   style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:12px 8px;border-radius:16px;border:1px solid {% if request.resolver_match.url_name == 'trainer-checkin-forms-page' or request.resolver_match.url_name == 'trainer-checkin-form-detail' %}#cfe0fb{% else %}transparent{% endif %};background:{% if request.resolver_match.url_name == 'trainer-checkin-forms-page' or request.resolver_match.url_name == 'trainer-checkin-form-detail' %}var(--blue-soft){% else %}transparent{% endif %};color:{% if request.resolver_match.url_name == 'trainer-checkin-forms-page' or request.resolver_match.url_name == 'trainer-checkin-form-detail' %}var(--blue-strong){% else %}var(--text-soft){% endif %};font-size:11px;font-weight:600;">
-                    <span style="font-size:18px;">☑</span>
+                   class="dashboard-icon-link {% if request.resolver_match.url_name == 'trainer-checkin-forms-page' or request.resolver_match.url_name == 'trainer-checkin-form-detail' %}active{% endif %}">
+                    <span class="dashboard-icon-symbol">☑</span>
                     <span>Check-In</span>
                 </a>
 
                 <a href="{% url 'trainer-settings-page' %}"
                    title="Settings"
-                   style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:12px 8px;border-radius:16px;border:1px solid {% if request.resolver_match.url_name == 'trainer-settings-page' %}#cfe0fb{% else %}transparent{% endif %};background:{% if request.resolver_match.url_name == 'trainer-settings-page' %}var(--blue-soft){% else %}transparent{% endif %};color:{% if request.resolver_match.url_name == 'trainer-settings-page' %}var(--blue-strong){% else %}var(--text-soft){% endif %};font-size:11px;font-weight:600;">
-                    <span style="font-size:18px;">⚙</span>
+                   class="dashboard-icon-link {% if request.resolver_match.url_name == 'trainer-settings-page' %}active{% endif %}">
+                    <span class="dashboard-icon-symbol">⚙</span>
                     <span>Settings</span>
                 </a>
             </div>
 
-            <div style="margin-top:auto;width:100%;">
-                <a href="{% url 'trainer-logout-page' %}"
-                   class="btn btn-secondary"
-                   style="width:100%;padding:10px 8px;min-height:42px;">
+            <div class="dashboard-rail-footer">
+                <a href="{% url 'trainer-logout-page' %}" class="btn btn-secondary" style="width:100%;padding:10px 8px;min-height:42px;">
                     ↩
                 </a>
             </div>
         </aside>
 
-        <!-- Section Column -->
-        <aside style="background:#f2f6fb;border-right:1px solid var(--stroke);padding:28px 18px;">
-            <div style="font-size:32px;font-weight:800;letter-spacing:-0.03em;margin-bottom:4px;">GymFlow</div>
-            <div class="muted" style="font-size:14px;margin-bottom:28px;">{{ trainer_profile.business_name }}</div>
+        <aside class="dashboard-section-rail">
+            <div class="dashboard-brand-title">GymFlow</div>
+            <div class="dashboard-brand-subtitle">{{ trainer_profile.business_name }}</div>
 
-            <div style="font-size:14px;font-weight:700;margin-bottom:16px;color:var(--text);">
+            <div class="dashboard-section-label">
                 {% if request.resolver_match.url_name == 'trainer-workout-plans-page' or request.resolver_match.url_name == 'trainer-workout-plan-detail' %}
                     Workouts
                 {% elif request.resolver_match.url_name == 'trainer-nutrition-plans-page' or request.resolver_match.url_name == 'trainer-nutrition-plan-detail' %}
@@ -84,44 +78,42 @@
                 {% endif %}
             </div>
 
-            <nav style="display:grid;gap:8px;">
+            <nav class="dashboard-section-nav">
                 <a href="{% url 'trainer-dashboard-home' %}"
-                   style="padding:10px 12px;border-radius:12px;font-size:14px;font-weight:600;color:{% if request.resolver_match.url_name == 'trainer-dashboard-home' %}var(--blue-strong){% else %}var(--text-soft){% endif %};background:{% if request.resolver_match.url_name == 'trainer-dashboard-home' %}#ffffff{% else %}transparent{% endif %};border:1px solid {% if request.resolver_match.url_name == 'trainer-dashboard-home' %}var(--stroke){% else %}transparent{% endif %};">
+                   class="dashboard-section-link {% if request.resolver_match.url_name == 'trainer-dashboard-home' %}active{% endif %}">
                     Overview
                 </a>
 
                 <a href="{% url 'trainer-dashboard' %}"
-                   style="padding:10px 12px;border-radius:12px;font-size:14px;font-weight:600;color:{% if request.resolver_match.url_name == 'trainer-dashboard' or request.resolver_match.url_name == 'trainer-client-detail' %}var(--blue-strong){% else %}var(--text-soft){% endif %};background:{% if request.resolver_match.url_name == 'trainer-dashboard' or request.resolver_match.url_name == 'trainer-client-detail' %}#ffffff{% else %}transparent{% endif %};border:1px solid {% if request.resolver_match.url_name == 'trainer-dashboard' or request.resolver_match.url_name == 'trainer-client-detail' %}var(--stroke){% else %}transparent{% endif %};">
+                   class="dashboard-section-link {% if request.resolver_match.url_name == 'trainer-dashboard' or request.resolver_match.url_name == 'trainer-client-detail' %}active{% endif %}">
                     Client Management
                 </a>
 
                 <a href="{% url 'trainer-workout-plans-page' %}"
-                   style="padding:10px 12px;border-radius:12px;font-size:14px;font-weight:600;color:{% if request.resolver_match.url_name == 'trainer-workout-plans-page' or request.resolver_match.url_name == 'trainer-workout-plan-detail' %}var(--blue-strong){% else %}var(--text-soft){% endif %};background:{% if request.resolver_match.url_name == 'trainer-workout-plans-page' or request.resolver_match.url_name == 'trainer-workout-plan-detail' %}#ffffff{% else %}transparent{% endif %};border:1px solid {% if request.resolver_match.url_name == 'trainer-workout-plans-page' or request.resolver_match.url_name == 'trainer-workout-plan-detail' %}var(--stroke){% else %}transparent{% endif %};">
+                   class="dashboard-section-link {% if request.resolver_match.url_name == 'trainer-workout-plans-page' or request.resolver_match.url_name == 'trainer-workout-plan-detail' %}active{% endif %}">
                     Workout Programs
                 </a>
 
                 <a href="{% url 'trainer-nutrition-plans-page' %}"
-                   style="padding:10px 12px;border-radius:12px;font-size:14px;font-weight:600;color:{% if request.resolver_match.url_name == 'trainer-nutrition-plans-page' or request.resolver_match.url_name == 'trainer-nutrition-plan-detail' %}var(--blue-strong){% else %}var(--text-soft){% endif %};background:{% if request.resolver_match.url_name == 'trainer-nutrition-plans-page' or request.resolver_match.url_name == 'trainer-nutrition-plan-detail' %}#ffffff{% else %}transparent{% endif %};border:1px solid {% if request.resolver_match.url_name == 'trainer-nutrition-plans-page' or request.resolver_match.url_name == 'trainer-nutrition-plan-detail' %}var(--stroke){% else %}transparent{% endif %};">
+                   class="dashboard-section-link {% if request.resolver_match.url_name == 'trainer-nutrition-plans-page' or request.resolver_match.url_name == 'trainer-nutrition-plan-detail' %}active{% endif %}">
                     Nutrition Plans
                 </a>
 
                 <a href="{% url 'trainer-checkin-forms-page' %}"
-                   style="padding:10px 12px;border-radius:12px;font-size:14px;font-weight:600;color:{% if request.resolver_match.url_name == 'trainer-checkin-forms-page' or request.resolver_match.url_name == 'trainer-checkin-form-detail' %}var(--blue-strong){% else %}var(--text-soft){% endif %};background:{% if request.resolver_match.url_name == 'trainer-checkin-forms-page' or request.resolver_match.url_name == 'trainer-checkin-form-detail' %}#ffffff{% else %}transparent{% endif %};border:1px solid {% if request.resolver_match.url_name == 'trainer-checkin-forms-page' or request.resolver_match.url_name == 'trainer-checkin-form-detail' %}var(--stroke){% else %}transparent{% endif %};">
+                   class="dashboard-section-link {% if request.resolver_match.url_name == 'trainer-checkin-forms-page' or request.resolver_match.url_name == 'trainer-checkin-form-detail' %}active{% endif %}">
                     Check-In Builder
                 </a>
             </nav>
         </aside>
 
-        <!-- Main Content -->
-        <main style="padding:24px 28px 32px;">
-            <!-- Top Bar -->
-            <div style="display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:22px;flex-wrap:wrap;">
+        <main class="dashboard-main {% if request.resolver_match.url_name == 'trainer-dashboard-home' %}dashboard-main--flush{% endif %}">
+            <div class="dashboard-topbar">
                 <div>
-                    <div style="font-size:34px;font-weight:800;letter-spacing:-0.03em;">{{ page_title }}</div>
-                    <div class="muted" style="margin-top:4px;">Manage your coaching business from one place.</div>
+                    <div class="dashboard-page-title">{{ page_title }}</div>
+                    <div class="dashboard-page-subtitle">Manage your coaching business from one place.</div>
                 </div>
 
-                <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+                <div class="dashboard-top-actions">
                     <a href="{% url 'dashboard-create-client' %}" class="btn btn-secondary" style="pointer-events:none;opacity:0.55;">
                         + Add Client
                     </a>
@@ -144,7 +136,7 @@
                 </div>
             {% endif %}
 
-            <div style="display:grid;gap:22px;">
+            <div class="dashboard-content">
                 {% block dashboard_content %}{% endblock %}
             </div>
         </main>
