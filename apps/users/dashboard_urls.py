@@ -15,6 +15,7 @@ from .dashboard_views import (
     dashboard_create_client,
     dashboard_delete_client,
     dashboard_assign_workout_plan,
+    dashboard_assign_nutrition_plan,
     dashboard_create_exercise_library_item,
     dashboard_update_exercise_library_item,
     dashboard_delete_exercise_library_item,
@@ -33,7 +34,15 @@ from .dashboard_views import (
     dashboard_update_nutrition_plan,
     dashboard_delete_nutrition_plan,
     dashboard_duplicate_nutrition_plan,
-    dashboard_assign_nutrition_plan,
+    dashboard_create_food_library_item,
+    dashboard_update_food_library_item,
+    dashboard_delete_food_library_item,
+    dashboard_duplicate_food_library_item,
+    dashboard_create_nutrition_meal,
+    dashboard_update_nutrition_meal,
+    dashboard_delete_nutrition_meal,
+    dashboard_add_food_to_nutrition_meal,
+    dashboard_delete_nutrition_meal_item,
 )
 
 urlpatterns = [
@@ -69,10 +78,19 @@ urlpatterns = [
 
     path("dashboard/nutrition-plans/", trainer_nutrition_plans_page, name="trainer-nutrition-plans-page"),
     path("dashboard/nutrition-plans/create/", dashboard_create_nutrition_plan, name="dashboard-create-nutrition-plan"),
+    path("dashboard/nutrition-plans/foods/create/", dashboard_create_food_library_item, name="dashboard-create-food-library-item"),
+    path("dashboard/nutrition-plans/foods/<int:food_id>/update/", dashboard_update_food_library_item, name="dashboard-update-food-library-item"),
+    path("dashboard/nutrition-plans/foods/<int:food_id>/delete/", dashboard_delete_food_library_item, name="dashboard-delete-food-library-item"),
+    path("dashboard/nutrition-plans/foods/<int:food_id>/duplicate/", dashboard_duplicate_food_library_item, name="dashboard-duplicate-food-library-item"),
     path("dashboard/nutrition-plans/<int:plan_id>/", trainer_nutrition_plan_detail_page, name="trainer-nutrition-plan-detail"),
     path("dashboard/nutrition-plans/<int:plan_id>/update/", dashboard_update_nutrition_plan, name="dashboard-update-nutrition-plan"),
     path("dashboard/nutrition-plans/<int:plan_id>/delete/", dashboard_delete_nutrition_plan, name="dashboard-delete-nutrition-plan"),
     path("dashboard/nutrition-plans/<int:plan_id>/duplicate/", dashboard_duplicate_nutrition_plan, name="dashboard-duplicate-nutrition-plan"),
+    path("dashboard/nutrition-plans/<int:plan_id>/meals/create/", dashboard_create_nutrition_meal, name="dashboard-create-nutrition-meal"),
+    path("dashboard/nutrition-plans/<int:plan_id>/meals/<int:meal_id>/update/", dashboard_update_nutrition_meal, name="dashboard-update-nutrition-meal"),
+    path("dashboard/nutrition-plans/<int:plan_id>/meals/<int:meal_id>/delete/", dashboard_delete_nutrition_meal, name="dashboard-delete-nutrition-meal"),
+    path("dashboard/nutrition-plans/<int:plan_id>/meal-items/create/", dashboard_add_food_to_nutrition_meal, name="dashboard-add-food-to-nutrition-meal"),
+    path("dashboard/nutrition-plans/<int:plan_id>/meal-items/<int:item_id>/delete/", dashboard_delete_nutrition_meal_item, name="dashboard-delete-nutrition-meal-item"),
 
     path("dashboard/settings/", trainer_settings_page, name="trainer-settings-page"),
 

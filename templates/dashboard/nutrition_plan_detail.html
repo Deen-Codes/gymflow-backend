@@ -1,4 +1,5 @@
 {% extends "dashboard/dashboard_shell.html" %}
+{% load user_extras %}
 
 {% block dashboard_content %}
 <div style="display:grid;gap:22px;">
@@ -21,7 +22,7 @@
     <div class="glass" style="padding:24px;">
         <div style="font-size:30px;font-weight:800;margin-bottom:8px;">{{ nutrition_plan.name }}</div>
         <div class="muted">
-            Set nutrition targets and coaching notes for this plan.
+            Set nutrition targets, create meals, and add foods into each meal.
         </div>
     </div>
 
@@ -64,5 +65,127 @@
             <button type="submit" class="btn btn-primary">Save Nutrition Plan</button>
         </form>
     </div>
+
+    <div class="glass" style="padding:24px;">
+        <div style="font-size:22px;font-weight:700;margin-bottom:18px;">Add Meal</div>
+
+        <form method="post" action="{% url 'dashboard-create-nutrition-meal' nutrition_plan.id %}" style="display:grid;grid-template-columns:1fr 160px 180px;gap:14px;align-items:end;">
+            {% csrf_token %}
+
+            <div>
+                <label class="label">Meal Title</label>
+                <input class="input" type="text" name="title" placeholder="e.g. Meal 1 / Pre Workout / Post Workout">
+            </div>
+
+            <div>
+                <label class="label">Order</label>
+                <input class="input" type="number" name="order" min="1" placeholder="1">
+            </div>
+
+            <div>
+                <button type="submit" class="btn btn-primary" style="width:100%;">Add Meal</button>
+            </div>
+        </form>
+    </div>
+
+    {% if meals %}
+        <div style="display:grid;gap:22px;">
+            {% for meal in meals %}
+                <div class="glass" style="padding:24px;">
+                    <div style="display:flex;justify-content:space-between;align-items:start;gap:16px;margin-bottom:18px;flex-wrap:wrap;">
+                        <div style="flex:1;min-width:280px;">
+                            <div style="font-size:24px;font-weight:800;">{{ meal.title }}</div>
+                            <div class="muted">Order {{ meal.order }}</div>
+                        </div>
+
+                        <form method="post" action="{% url 'dashboard-delete-nutrition-meal' nutrition_plan.id meal.id %}" onsubmit="return confirm('Delete this meal and all foods inside it?');">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-secondary">Delete Meal</button>
+                        </form>
+                    </div>
+
+                    <form method="post" action="{% url 'dashboard-update-nutrition-meal' nutrition_plan.id meal.id %}" style="display:grid;grid-template-columns:1fr 160px 180px;gap:14px;align-items:end;margin-bottom:18px;">
+                        {% csrf_token %}
+
+                        <div>
+                            <label class="label">Edit Meal Title</label>
+                            <input class="input" type="text" name="title" value="{{ meal.title }}">
+                        </div>
+
+                        <div>
+                            <label class="label">Edit Order</label>
+                            <input class="input" type="number" name="order" min="1" value="{{ meal.order }}">
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-primary" style="width:100%;">Save Meal</button>
+                        </div>
+                    </form>
+
+                    <div class="glass" style="padding:20px;margin-bottom:18px;">
+                        <div style="font-size:18px;font-weight:700;margin-bottom:14px;">Add Food To {{ meal.title }}</div>
+
+                        <form method="post" action="{% url 'dashboard-add-food-to-nutrition-meal' nutrition_plan.id %}" style="display:grid;grid-template-columns:1.5fr 140px 120px 180px;gap:12px;align-items:end;">
+                            {% csrf_token %}
+                            <input type="hidden" name="meal_id" value="{{ meal.id }}">
+
+                            <div>
+                                <label class="label">Food</label>
+                                {{ add_food_forms|get_item:meal.id|get_field:"food_library_item_id" }}
+                            </div>
+
+                            <div>
+                                <label class="label">Grams</label>
+                                <input class="input" type="number" step="0.01" name="grams" min="0.01" placeholder="150">
+                            </div>
+
+                            <div>
+                                <label class="label">Order</label>
+                                <input class="input" type="number" name="order" min="1" placeholder="1">
+                            </div>
+
+                            <div>
+                                <button type="submit" class="btn btn-primary" style="width:100%;">Add Food</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    {% if meal.items.all %}
+                        <div style="display:grid;gap:14px;">
+                            {% for item in meal.items.all %}
+                                <div class="glass" style="padding:18px;">
+                                    <div style="display:flex;justify-content:space-between;align-items:start;gap:16px;flex-wrap:wrap;">
+                                        <div>
+                                            <div style="font-size:18px;font-weight:800;margin-bottom:6px;">
+                                                {{ item.food_name }}
+                                            </div>
+                                            <div class="muted">
+                                                {{ item.grams }}g ·
+                                                {{ item.calories|floatformat:1 }} kcal ·
+                                                P {{ item.protein|floatformat:1 }}g ·
+                                                C {{ item.carbs|floatformat:1 }}g ·
+                                                F {{ item.fats|floatformat:1 }}g
+                                            </div>
+                                        </div>
+
+                                        <form method="post" action="{% url 'dashboard-delete-nutrition-meal-item' nutrition_plan.id item.id %}" onsubmit="return confirm('Remove this food from the meal?');">
+                                            {% csrf_token %}
+                                            <button type="submit" class="btn btn-secondary">Delete</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <div class="muted">No foods in this meal yet.</div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="glass" style="padding:24px;">
+            <div class="muted">No meals yet. Add your first meal above.</div>
+        </div>
+    {% endif %}
 </div>
 {% endblock %}

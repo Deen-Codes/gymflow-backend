@@ -2,88 +2,207 @@
 
 {% block dashboard_content %}
 <div style="display:grid;grid-template-columns:420px 1fr;gap:22px;align-items:start;">
-    <div class="glass" style="padding:24px;">
-        <div style="font-size:22px;font-weight:700;margin-bottom:18px;">Create Nutrition Plan</div>
+    <div style="display:grid;gap:22px;">
+        <div class="glass" style="padding:24px;">
+            <div style="font-size:22px;font-weight:700;margin-bottom:18px;">Create Nutrition Plan</div>
 
-        <form method="post" action="{% url 'dashboard-create-nutrition-plan' %}" style="display:grid;gap:14px;">
-            {% csrf_token %}
+            <form method="post" action="{% url 'dashboard-create-nutrition-plan' %}" style="display:grid;gap:14px;">
+                {% csrf_token %}
 
-            <div>
-                <label class="label">Plan Name</label>
-                <input class="input" type="text" name="name" placeholder="e.g. Fat Loss Phase 1">
-            </div>
-
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
                 <div>
-                    <label class="label">Calories</label>
-                    <input class="input" type="number" name="calories_target" min="0" placeholder="2200">
+                    <label class="label">Plan Name</label>
+                    <input class="input" type="text" name="name" placeholder="e.g. Fat Loss Phase 1">
                 </div>
+
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+                    <div>
+                        <label class="label">Calories</label>
+                        <input class="input" type="number" name="calories_target" min="0" placeholder="2200">
+                    </div>
+                    <div>
+                        <label class="label">Protein (g)</label>
+                        <input class="input" type="number" name="protein_target" min="0" placeholder="180">
+                    </div>
+                </div>
+
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+                    <div>
+                        <label class="label">Carbs (g)</label>
+                        <input class="input" type="number" name="carbs_target" min="0" placeholder="200">
+                    </div>
+                    <div>
+                        <label class="label">Fats (g)</label>
+                        <input class="input" type="number" name="fats_target" min="0" placeholder="70">
+                    </div>
+                </div>
+
                 <div>
-                    <label class="label">Protein (g)</label>
-                    <input class="input" type="number" name="protein_target" min="0" placeholder="180">
+                    <label class="label">Coach Notes</label>
+                    <textarea class="input" name="notes" rows="6" placeholder="Meal timing, water goal, food quality notes, flexibility guidance..."></textarea>
                 </div>
-            </div>
 
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-                <div>
-                    <label class="label">Carbs (g)</label>
-                    <input class="input" type="number" name="carbs_target" min="0" placeholder="200">
-                </div>
-                <div>
-                    <label class="label">Fats (g)</label>
-                    <input class="input" type="number" name="fats_target" min="0" placeholder="70">
-                </div>
-            </div>
-
-            <div>
-                <label class="label">Coach Notes</label>
-                <textarea class="input" name="notes" rows="6" placeholder="Meal timing, water goal, food quality notes, flexibility guidance..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Create Nutrition Plan</button>
-        </form>
-    </div>
-
-    <div class="glass" style="padding:24px;">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
-            <div style="font-size:22px;font-weight:700;">Nutrition Plan Templates</div>
-            <div class="muted">{{ nutrition_plans|length }} total</div>
+                <button type="submit" class="btn btn-primary">Create Nutrition Plan</button>
+            </form>
         </div>
 
-        {% if nutrition_plans %}
-            <div style="display:grid;gap:14px;">
-                {% for plan in nutrition_plans %}
-                    <div class="glass" style="padding:18px;">
-                        <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
-                            <a href="{% url 'trainer-nutrition-plan-detail' plan.id %}" style="display:block;flex:1;min-width:220px;">
-                                <div style="font-size:18px;font-weight:800;margin-bottom:6px;">{{ plan.name }}</div>
-                                <div class="muted">
-                                    {{ plan.calories_target }} kcal ·
-                                    P {{ plan.protein_target }}g ·
-                                    C {{ plan.carbs_target }}g ·
-                                    F {{ plan.fats_target }}g
+        <div class="glass" style="padding:24px;">
+            <div style="font-size:22px;font-weight:700;margin-bottom:18px;">Create Food Preset</div>
+
+            <form method="post" action="{% url 'dashboard-create-food-library-item' %}" style="display:grid;gap:14px;">
+                {% csrf_token %}
+
+                <div>
+                    <label class="label">Food Name</label>
+                    <input class="input" type="text" name="name" placeholder="e.g. Chicken Breast">
+                </div>
+
+                <div>
+                    <label class="label">Reference Grams</label>
+                    <input class="input" type="number" step="0.01" name="reference_grams" min="0.01" placeholder="100">
+                </div>
+
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+                    <div>
+                        <label class="label">Calories</label>
+                        <input class="input" type="number" step="0.01" name="calories" min="0" placeholder="165">
+                    </div>
+                    <div>
+                        <label class="label">Protein (g)</label>
+                        <input class="input" type="number" step="0.01" name="protein" min="0" placeholder="31">
+                    </div>
+                </div>
+
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+                    <div>
+                        <label class="label">Carbs (g)</label>
+                        <input class="input" type="number" step="0.01" name="carbs" min="0" placeholder="0">
+                    </div>
+                    <div>
+                        <label class="label">Fats (g)</label>
+                        <input class="input" type="number" step="0.01" name="fats" min="0" placeholder="3.6">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Create Food Preset</button>
+            </form>
+        </div>
+    </div>
+
+    <div style="display:grid;gap:22px;">
+        <div class="glass" style="padding:24px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
+                <div style="font-size:22px;font-weight:700;">Food Library</div>
+                <div class="muted">{{ food_library|length }} total</div>
+            </div>
+
+            {% if food_library %}
+                <div style="display:grid;gap:14px;">
+                    {% for food in food_library %}
+                        <div class="glass" style="padding:22px;">
+                            <div style="font-size:18px;font-weight:800;margin-bottom:14px;">
+                                {{ food.name }}
+                            </div>
+
+                            <form method="post" action="{% url 'dashboard-update-food-library-item' food.id %}" style="display:grid;gap:12px;">
+                                {% csrf_token %}
+
+                                <div>
+                                    <label class="label">Food Name</label>
+                                    <input class="input" type="text" name="name" value="{{ food.name }}">
                                 </div>
-                            </a>
 
-                            <div style="display:flex;gap:10px;flex-wrap:wrap;">
-                                <form method="post" action="{% url 'dashboard-duplicate-nutrition-plan' plan.id %}">
-                                    {% csrf_token %}
-                                    <button type="submit" class="btn btn-secondary">Duplicate</button>
-                                </form>
+                                <div>
+                                    <label class="label">Reference Grams</label>
+                                    <input class="input" type="number" step="0.01" name="reference_grams" min="0.01" value="{{ food.reference_grams }}">
+                                </div>
 
-                                <a href="{% url 'trainer-nutrition-plan-detail' plan.id %}" class="btn btn-secondary">
-                                    Open
+                                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+                                    <div>
+                                        <label class="label">Calories</label>
+                                        <input class="input" type="number" step="0.01" name="calories" min="0" value="{{ food.calories }}">
+                                    </div>
+                                    <div>
+                                        <label class="label">Protein (g)</label>
+                                        <input class="input" type="number" step="0.01" name="protein" min="0" value="{{ food.protein }}">
+                                    </div>
+                                </div>
+
+                                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+                                    <div>
+                                        <label class="label">Carbs (g)</label>
+                                        <input class="input" type="number" step="0.01" name="carbs" min="0" value="{{ food.carbs }}">
+                                    </div>
+                                    <div>
+                                        <label class="label">Fats (g)</label>
+                                        <input class="input" type="number" step="0.01" name="fats" min="0" value="{{ food.fats }}">
+                                    </div>
+                                </div>
+
+                                <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                                    <button type="submit" class="btn btn-primary">Save Food</button>
+                            </form>
+
+                                    <form method="post" action="{% url 'dashboard-duplicate-food-library-item' food.id %}">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-secondary">Duplicate</button>
+                                    </form>
+
+                                    <form method="post" action="{% url 'dashboard-delete-food-library-item' food.id %}" onsubmit="return confirm('Delete this food preset?');">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-secondary">Delete</button>
+                                    </form>
+                                </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="muted">
+                    No food presets yet. Create your first one on the left.
+                </div>
+            {% endif %}
+        </div>
+
+        <div class="glass" style="padding:24px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
+                <div style="font-size:22px;font-weight:700;">Nutrition Plan Templates</div>
+                <div class="muted">{{ nutrition_plans|length }} total</div>
+            </div>
+
+            {% if nutrition_plans %}
+                <div style="display:grid;gap:14px;">
+                    {% for plan in nutrition_plans %}
+                        <div class="glass" style="padding:18px;">
+                            <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
+                                <a href="{% url 'trainer-nutrition-plan-detail' plan.id %}" style="display:block;flex:1;min-width:220px;">
+                                    <div style="font-size:18px;font-weight:800;margin-bottom:6px;">{{ plan.name }}</div>
+                                    <div class="muted">
+                                        {{ plan.calories_target }} kcal ·
+                                        P {{ plan.protein_target }}g ·
+                                        C {{ plan.carbs_target }}g ·
+                                        F {{ plan.fats_target }}g
+                                    </div>
                                 </a>
+
+                                <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                                    <form method="post" action="{% url 'dashboard-duplicate-nutrition-plan' plan.id %}">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-secondary">Duplicate</button>
+                                    </form>
+
+                                    <a href="{% url 'trainer-nutrition-plan-detail' plan.id %}" class="btn btn-secondary">
+                                        Open
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                {% endfor %}
-            </div>
-        {% else %}
-            <div class="muted">
-                No nutrition plan templates yet. Create your first one on the left.
-            </div>
-        {% endif %}
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="muted">
+                    No nutrition plan templates yet. Create your first one on the left.
+                </div>
+            {% endif %}
+        </div>
     </div>
 </div>
 {% endblock %}

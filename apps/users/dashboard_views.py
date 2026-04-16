@@ -15,6 +15,7 @@ from .dashboard_client_views import (
     dashboard_create_client,
     dashboard_delete_client,
     dashboard_assign_workout_plan,
+    dashboard_assign_nutrition_plan,
 )
 
 from .dashboard_workout_page_views import (
@@ -49,7 +50,15 @@ from .dashboard_nutrition_action_views import (
     dashboard_update_nutrition_plan,
     dashboard_delete_nutrition_plan,
     dashboard_duplicate_nutrition_plan,
-    dashboard_assign_nutrition_plan,
+    dashboard_create_food_library_item,
+    dashboard_update_food_library_item,
+    dashboard_delete_food_library_item,
+    dashboard_duplicate_food_library_item,
+    dashboard_create_nutrition_meal,
+    dashboard_update_nutrition_meal,
+    dashboard_delete_nutrition_meal,
+    dashboard_add_food_to_nutrition_meal,
+    dashboard_delete_nutrition_meal_item,
 )
 
 __all__ = [
@@ -67,6 +76,7 @@ __all__ = [
     "dashboard_create_client",
     "dashboard_delete_client",
     "dashboard_assign_workout_plan",
+    "dashboard_assign_nutrition_plan",
     "dashboard_create_exercise_library_item",
     "dashboard_update_exercise_library_item",
     "dashboard_delete_exercise_library_item",
@@ -85,5 +95,13 @@ __all__ = [
     "dashboard_update_nutrition_plan",
     "dashboard_delete_nutrition_plan",
     "dashboard_duplicate_nutrition_plan",
-    "dashboard_assign_nutrition_plan",
+    "dashboard_create_food_library_item",
+    "dashboard_update_food_library_item",
+    "dashboard_delete_food_library_item",
+    "dashboard_duplicate_food_library_item",
+    "dashboard_create_nutrition_meal",
+    "dashboard_update_nutrition_meal",
+    "dashboard_delete_nutrition_meal",
+    "dashboard_add_food_to_nutrition_meal",
+    "dashboard_delete_nutrition_meal_item",
 ]

@@ -1,7 +1,7 @@
 from django import forms
 from .models import User
 from apps.workouts.models import WorkoutPlan, ExerciseLibraryItem
-from apps.nutrition.models import NutritionPlan
+from apps.nutrition.models import NutritionPlan, FoodLibraryItem
 
 
 class TrainerLoginForm(forms.Form):
@@ -120,3 +120,47 @@ class UpdateNutritionPlanForm(forms.Form):
     carbs_target = forms.IntegerField(min_value=0)
     fats_target = forms.IntegerField(min_value=0)
     notes = forms.CharField(required=False, widget=forms.Textarea)
+
+
+class CreateFoodLibraryItemForm(forms.Form):
+    name = forms.CharField(max_length=255)
+    reference_grams = forms.FloatField(min_value=0.01)
+    calories = forms.FloatField(min_value=0)
+    protein = forms.FloatField(min_value=0)
+    carbs = forms.FloatField(min_value=0)
+    fats = forms.FloatField(min_value=0)
+
+
+class UpdateFoodLibraryItemForm(forms.Form):
+    name = forms.CharField(max_length=255)
+    reference_grams = forms.FloatField(min_value=0.01)
+    calories = forms.FloatField(min_value=0)
+    protein = forms.FloatField(min_value=0)
+    carbs = forms.FloatField(min_value=0)
+    fats = forms.FloatField(min_value=0)
+
+
+class CreateNutritionMealForm(forms.Form):
+    title = forms.CharField(max_length=100)
+    order = forms.IntegerField(min_value=1)
+
+
+class UpdateNutritionMealForm(forms.Form):
+    title = forms.CharField(max_length=100)
+    order = forms.IntegerField(min_value=1)
+
+
+class AddFoodToNutritionMealForm(forms.Form):
+    meal_id = forms.IntegerField(widget=forms.HiddenInput)
+    food_library_item_id = forms.ChoiceField(choices=[])
+    grams = forms.FloatField(min_value=0.01)
+    order = forms.IntegerField(min_value=1)
+
+    def __init__(self, *args, trainer_user=None, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        if trainer_user is not None:
+            foods = FoodLibraryItem.objects.filter(user=trainer_user).order_by("name")
+            self.fields["food_library_item_id"].choices = [
+                (food.id, food.name) for food in foods
+            ]
