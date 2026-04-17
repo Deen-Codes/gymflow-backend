@@ -1,0 +1,129 @@
+<div class="client-workspace">
+    <div class="client-workspace-top">
+        <div class="client-workspace-search-wrap">
+            <input
+                type="text"
+                id="clientSearchInput"
+                class="client-workspace-search"
+                placeholder="Search clients by username or email..."
+            >
+        </div>
+
+        <div class="client-workspace-actions">
+            <a href="{% url 'trainer-dashboard' %}" class="btn btn-secondary">Open full Clients page</a>
+        </div>
+    </div>
+
+    <div class="client-action-card">
+        <button type="button" class="client-action-toggle" id="clientActionToggle">
+            <div>
+                <div class="client-action-title">Action Needed</div>
+                <div class="client-action-subtitle">Quick PT tasks that need attention.</div>
+            </div>
+            <span class="client-action-chevron" id="clientActionChevron">▾</span>
+        </button>
+
+        <div class="client-action-body" id="clientActionBody">
+            <div class="client-action-grid">
+                <div class="client-action-block">
+                    <div class="client-action-block-title">Missing workout plan</div>
+                    <div class="client-action-list">
+                        {% for client in clients %}
+                            {% if not client.client_profile.assigned_workout_plan %}
+                                <a href="{% url 'trainer-client-detail' client.id %}" class="client-action-item">
+                                    {{ client.username }}
+                                </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="client-action-block">
+                    <div class="client-action-block-title">Missing nutrition plan</div>
+                    <div class="client-action-list">
+                        {% for client in clients %}
+                            {% if client.client_profile.assigned_nutrition_plan %}
+                            {% else %}
+                                <a href="{% url 'trainer-client-detail' client.id %}" class="client-action-item">
+                                    {{ client.username }}
+                                </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="client-action-block">
+                    <div class="client-action-block-title">Quick summary</div>
+                    <div class="client-summary-metrics">
+                        <div class="client-summary-metric">
+                            <span class="client-summary-metric-label">Total clients</span>
+                            <span class="client-summary-metric-value">{{ client_count }}</span>
+                        </div>
+                    </div>
+                    <div class="client-action-note">
+                        Full progress, workouts, nutrition, and check-ins will live inside each client profile.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="client-database-card">
+        <div class="client-database-header">
+            <div>
+                <div class="client-database-title">Client Database</div>
+                <div class="client-database-subtitle">Search, review, and open client profiles.</div>
+            </div>
+            <div class="client-database-count">{{ client_count }} total</div>
+        </div>
+
+        <div class="client-database-list" id="clientDatabaseList">
+            {% for client in clients %}
+                <a href="{% url 'trainer-client-detail' client.id %}"
+                   class="client-database-item"
+                   data-client-search="{{ client.username|lower }} {{ client.email|lower }}">
+                    <div class="client-database-main">
+                        <div class="client-avatar">{{ client.username|slice:":1"|upper }}</div>
+
+                        <div class="client-database-copy">
+                            <div class="client-database-name">{{ client.username }}</div>
+                            <div class="client-database-email">{{ client.email }}</div>
+                        </div>
+                    </div>
+
+                    <div class="client-database-status">
+                        <div class="client-database-pill {% if client.client_profile.assigned_workout_plan %}is-good{% else %}is-warn{% endif %}">
+                            Workout:
+                            {% if client.client_profile.assigned_workout_plan %}
+                                {{ client.client_profile.assigned_workout_plan.name }}
+                            {% else %}
+                                Not assigned
+                            {% endif %}
+                        </div>
+
+                        <div class="client-database-pill {% if client.client_profile.assigned_nutrition_plan %}is-good{% else %}is-warn{% endif %}">
+                            Nutrition:
+                            {% if client.client_profile.assigned_nutrition_plan %}
+                                {{ client.client_profile.assigned_nutrition_plan.name }}
+                            {% else %}
+                                Not assigned
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="client-database-open">
+                        <span class="client-database-open-button">Open</span>
+                    </div>
+                </a>
+            {% empty %}
+                <div class="client-database-empty">
+                    <div class="client-database-empty-title">No clients yet</div>
+                    <div class="client-database-empty-copy">
+                        Create your first client to start using the database.
+                    </div>
+                    <a href="{% url 'trainer-dashboard' %}" class="btn btn-primary">Open Clients page</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
