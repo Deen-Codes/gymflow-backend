@@ -7,9 +7,9 @@
 
 {% block dashboard_content %}
 <div class="launcher-page">
-    <div id="launcherWrap" class="launcher-wrap">
+    <div class="launcher-wrap">
         <div class="launcher-shell">
-            <div class="launcher-topbar">
+            <div class="launcher-topbar" id="launcherTopbar">
                 <div class="launcher-topbar-left">
                     <div class="launcher-title">GymFlow Launcher</div>
                     <div class="launcher-subtitle">
@@ -18,104 +18,267 @@
                 </div>
 
                 <div class="launcher-actions">
-                    <a href="{% url 'trainer-dashboard' %}" class="launcher-chip primary">＋ Add Client</a>
-                    <a href="{% url 'trainer-workout-plans-page' %}" class="launcher-chip">＋ Workout Plan</a>
-                    <a href="{% url 'trainer-nutrition-plans-page' %}" class="launcher-chip">＋ Nutrition Plan</a>
-                    <button type="button" class="launcher-chip" title="Shortcuts and quick guidance">⌘ Help</button>
+                    <button type="button" class="launcher-chip primary" data-open-panel="clients">＋ Add Client</button>
+                    <button type="button" class="launcher-chip" data-open-panel="workouts">＋ Workout Plan</button>
+                    <button type="button" class="launcher-chip" data-open-panel="nutrition">＋ Nutrition Plan</button>
+                    <button type="button" class="launcher-chip" id="launcherHelpButton">⌘ Help</button>
                 </div>
             </div>
 
-            <div class="launcher-grid">
-                <div class="launcher-card">
-                    <a href="{% url 'trainer-dashboard' %}" class="launcher-card-link">
-                        <div class="launcher-card-icon">◯</div>
-                        <div class="launcher-card-title">Clients</div>
-                        <div class="launcher-card-summary">
-                            Open client management, assign plans, view client details, and keep your roster organised.
+            <div class="launcher-grid" id="launcherGrid">
+                <button type="button" class="launcher-card" data-panel="clients">
+                    <div class="launcher-card-icon">◯</div>
+                    <div class="launcher-card-title">Clients</div>
+                    <div class="launcher-card-summary">
+                        Open client management, assign plans, view client details, and keep your roster organised.
+                    </div>
+                    <div class="launcher-card-hover">
+                        <span class="launcher-card-hint">Open workspace</span>
+                        <span class="launcher-card-arrow">→</span>
+                    </div>
+                </button>
+
+                <button type="button" class="launcher-card" data-panel="workouts">
+                    <div class="launcher-card-icon">⌁</div>
+                    <div class="launcher-card-title">Workouts</div>
+                    <div class="launcher-card-summary">
+                        Build training plans, organise exercise presets, and manage program structure for clients.
+                    </div>
+                    <div class="launcher-card-hover">
+                        <span class="launcher-card-hint">Open workspace</span>
+                        <span class="launcher-card-arrow">→</span>
+                    </div>
+                </button>
+
+                <button type="button" class="launcher-card" data-panel="nutrition">
+                    <div class="launcher-card-icon">◌</div>
+                    <div class="launcher-card-title">Nutrition</div>
+                    <div class="launcher-card-summary">
+                        Create nutrition plans, build meals, manage foods, and structure your coaching nutrition flow.
+                    </div>
+                    <div class="launcher-card-hover">
+                        <span class="launcher-card-hint">Open workspace</span>
+                        <span class="launcher-card-arrow">→</span>
+                    </div>
+                </button>
+
+                <button type="button" class="launcher-card" data-panel="checkins">
+                    <div class="launcher-card-icon">☑</div>
+                    <div class="launcher-card-title">Check-Ins</div>
+                    <div class="launcher-card-summary">
+                        Build onboarding, daily, and weekly forms that feed client progress and keep your system structured.
+                    </div>
+                    <div class="launcher-card-hover">
+                        <span class="launcher-card-hint">Open workspace</span>
+                        <span class="launcher-card-arrow">→</span>
+                    </div>
+                </button>
+
+                <button type="button" class="launcher-card" data-panel="settings">
+                    <div class="launcher-card-icon">⚙</div>
+                    <div class="launcher-card-title">Settings</div>
+                    <div class="launcher-card-summary">
+                        Manage business preferences, account behaviour, and future platform options from one place.
+                    </div>
+                    <div class="launcher-card-hover">
+                        <span class="launcher-card-hint">Open workspace</span>
+                        <span class="launcher-card-arrow">→</span>
+                    </div>
+                </button>
+
+                <button type="button" class="launcher-card" data-panel="activity">
+                    <div class="launcher-card-icon">◔</div>
+                    <div class="launcher-card-title">Recent Activity</div>
+                    <div class="launcher-card-summary">
+                        A future live feed for assignments, updates, check-ins, and key actions across your coaching system.
+                    </div>
+                    <div class="launcher-card-hover">
+                        <span class="launcher-card-hint">Activity hub</span>
+                        <span class="launcher-card-arrow">→</span>
+                    </div>
+                </button>
+            </div>
+
+            <div class="launcher-panel-shell" id="launcherPanelShell" hidden>
+                <div class="launcher-panel-header">
+                    <div>
+                        <div class="launcher-panel-kicker">Workspace</div>
+                        <div class="launcher-panel-title" id="launcherPanelTitle">Clients</div>
+                        <div class="launcher-panel-subtitle" id="launcherPanelSubtitle">
+                            Manage this part of GymFlow from a focused workspace.
                         </div>
-                        <div class="launcher-card-hover">
-                            <span class="launcher-card-hint">Open workspace</span>
-                            <span class="launcher-card-arrow">→</span>
-                        </div>
-                    </a>
+                    </div>
+
+                    <div class="launcher-panel-actions">
+                        <button type="button" class="launcher-chip" id="launcherBackButton">← Back to Launcher</button>
+                    </div>
                 </div>
 
-                <div class="launcher-card">
-                    <a href="{% url 'trainer-workout-plans-page' %}" class="launcher-card-link">
-                        <div class="launcher-card-icon">⌁</div>
-                        <div class="launcher-card-title">Workouts</div>
-                        <div class="launcher-card-summary">
-                            Build training plans, organise exercise presets, and manage program structure for clients.
-                        </div>
-                        <div class="launcher-card-hover">
-                            <span class="launcher-card-hint">Open workspace</span>
-                            <span class="launcher-card-arrow">→</span>
-                        </div>
-                    </a>
-                </div>
+                <div class="launcher-panel-body">
+                    <div class="launcher-panel-sidebar">
+                        <div class="launcher-panel-sidebar-title">Sections</div>
+                        <div class="launcher-panel-sidebar-links" id="launcherPanelSidebarLinks"></div>
+                    </div>
 
-                <div class="launcher-card">
-                    <a href="{% url 'trainer-nutrition-plans-page' %}" class="launcher-card-link">
-                        <div class="launcher-card-icon">◌</div>
-                        <div class="launcher-card-title">Nutrition</div>
-                        <div class="launcher-card-summary">
-                            Create nutrition plans, build meals, manage foods, and structure your coaching nutrition flow.
-                        </div>
-                        <div class="launcher-card-hover">
-                            <span class="launcher-card-hint">Open workspace</span>
-                            <span class="launcher-card-arrow">→</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="launcher-card">
-                    <a href="{% url 'trainer-checkin-forms-page' %}" class="launcher-card-link">
-                        <div class="launcher-card-icon">☑</div>
-                        <div class="launcher-card-title">Check-Ins</div>
-                        <div class="launcher-card-summary">
-                            Build onboarding, daily, and weekly forms that feed client progress and keep your system structured.
-                        </div>
-                        <div class="launcher-card-hover">
-                            <span class="launcher-card-hint">Open workspace</span>
-                            <span class="launcher-card-arrow">→</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="launcher-card">
-                    <a href="{% url 'trainer-settings-page' %}" class="launcher-card-link">
-                        <div class="launcher-card-icon">⚙</div>
-                        <div class="launcher-card-title">Settings</div>
-                        <div class="launcher-card-summary">
-                            Manage business preferences, account behaviour, and future platform options from one place.
-                        </div>
-                        <div class="launcher-card-hover">
-                            <span class="launcher-card-hint">Open workspace</span>
-                            <span class="launcher-card-arrow">→</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="launcher-card">
-                    <a href="{% url 'trainer-dashboard-home' %}" class="launcher-card-link">
-                        <div class="launcher-card-icon">◔</div>
-                        <div class="launcher-card-title">Recent Activity</div>
-                        <div class="launcher-card-summary">
-                            A future live feed for assignments, updates, check-ins, and key actions across your coaching system.
-                        </div>
-                        <div class="launcher-card-hover">
-                            <span class="launcher-card-hint">Activity hub</span>
-                            <span class="launcher-card-arrow">→</span>
-                        </div>
-                    </a>
+                    <div class="launcher-panel-content">
+                        <div class="launcher-panel-placeholder" id="launcherPanelContent"></div>
+                    </div>
                 </div>
             </div>
 
-            <div class="launcher-help">
+            <div class="launcher-help" id="launcherHelpText">
                 <span class="launcher-help-dot"></span>
-                <span>Hover cards for a richer preview. Click any workspace to jump straight into that part of GymFlow.</span>
+                <span>
+                    Click any workspace card to expand it. Later we’ll load the full system tools directly into these panels.
+                </span>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    (function () {
+        const grid = document.getElementById("launcherGrid");
+        const cards = Array.from(document.querySelectorAll(".launcher-card"));
+        const panelShell = document.getElementById("launcherPanelShell");
+        const panelTitle = document.getElementById("launcherPanelTitle");
+        const panelSubtitle = document.getElementById("launcherPanelSubtitle");
+        const panelContent = document.getElementById("launcherPanelContent");
+        const panelLinks = document.getElementById("launcherPanelSidebarLinks");
+        const backButton = document.getElementById("launcherBackButton");
+        const helpText = document.getElementById("launcherHelpText");
+        const helpButton = document.getElementById("launcherHelpButton");
+        const quickOpenButtons = document.querySelectorAll("[data-open-panel]");
+
+        const workspaceData = {
+            clients: {
+                title: "Clients",
+                subtitle: "Client management, assignments, and detail views will live here.",
+                links: ["All Clients", "Client Profiles", "Assignments", "Progress Snapshot"],
+                content: `
+                    <div class="launcher-placeholder-title">Clients workspace</div>
+                    <div class="launcher-placeholder-copy">
+                        This expanded panel will hold your client list, client detail views, assignment tools, and progress summary tools.
+                    </div>
+                    <div class="launcher-placeholder-actions">
+                        <a href="{% url 'trainer-dashboard' %}" class="btn btn-primary">Open current Clients page</a>
+                    </div>
+                `
+            },
+            workouts: {
+                title: "Workouts",
+                subtitle: "Workout plan building and program tools will live here.",
+                links: ["Plan Templates", "Exercise Library", "Program Builder", "Client Versions"],
+                content: `
+                    <div class="launcher-placeholder-title">Workouts workspace</div>
+                    <div class="launcher-placeholder-copy">
+                        This is where the workout builder will later expand into a full window, including plan templates, day structure, and exercise management.
+                    </div>
+                    <div class="launcher-placeholder-actions">
+                        <a href="{% url 'trainer-workout-plans-page' %}" class="btn btn-primary">Open current Workouts page</a>
+                    </div>
+                `
+            },
+            nutrition: {
+                title: "Nutrition",
+                subtitle: "Nutrition plans, foods, and meal structure will live here.",
+                links: ["Nutrition Templates", "Food Library", "Meals", "Client Versions"],
+                content: `
+                    <div class="launcher-placeholder-title">Nutrition workspace</div>
+                    <div class="launcher-placeholder-copy">
+                        This expanded panel will later contain your full nutrition workflow including templates, meals, food assignment, and client-specific versions.
+                    </div>
+                    <div class="launcher-placeholder-actions">
+                        <a href="{% url 'trainer-nutrition-plans-page' %}" class="btn btn-primary">Open current Nutrition page</a>
+                    </div>
+                `
+            },
+            checkins: {
+                title: "Check-Ins",
+                subtitle: "Onboarding, daily, and weekly check-in builders will live here.",
+                links: ["Onboarding Forms", "Daily Check-Ins", "Weekly Check-Ins", "Required Questions"],
+                content: `
+                    <div class="launcher-placeholder-title">Check-Ins workspace</div>
+                    <div class="launcher-placeholder-copy">
+                        This is where your check-in system will later live in a focused panel, including onboarding forms, weekly check-ins, and required app questions.
+                    </div>
+                    <div class="launcher-placeholder-actions">
+                        <a href="{% url 'trainer-checkin-forms-page' %}" class="btn btn-primary">Open current Check-Ins page</a>
+                    </div>
+                `
+            },
+            settings: {
+                title: "Settings",
+                subtitle: "Business preferences and dashboard settings will live here.",
+                links: ["Brand Settings", "Appearance", "Notifications", "Account"],
+                content: `
+                    <div class="launcher-placeholder-title">Settings workspace</div>
+                    <div class="launcher-placeholder-copy">
+                        This expanded panel will later hold theme options, business details, account preferences, and future platform controls.
+                    </div>
+                    <div class="launcher-placeholder-actions">
+                        <a href="{% url 'trainer-settings-page' %}" class="btn btn-primary">Open current Settings page</a>
+                    </div>
+                `
+            },
+            activity: {
+                title: "Recent Activity",
+                subtitle: "A live feed of updates and actions will live here.",
+                links: ["Assignments", "Check-Ins", "Nutrition Updates", "Workout Updates"],
+                content: `
+                    <div class="launcher-placeholder-title">Recent Activity workspace</div>
+                    <div class="launcher-placeholder-copy">
+                        This panel is reserved for a future activity feed showing recent assignments, check-ins, plan updates, and other system events.
+                    </div>
+                `
+            }
+        };
+
+        function openPanel(panelKey) {
+            const data = workspaceData[panelKey];
+            if (!data) return;
+
+            grid.hidden = true;
+            helpText.hidden = true;
+            panelShell.hidden = false;
+
+            panelTitle.textContent = data.title;
+            panelSubtitle.textContent = data.subtitle;
+            panelContent.innerHTML = data.content;
+
+            panelLinks.innerHTML = "";
+            data.links.forEach(function (item) {
+                const link = document.createElement("button");
+                link.type = "button";
+                link.className = "launcher-panel-side-link";
+                link.textContent = item;
+                panelLinks.appendChild(link);
+            });
+        }
+
+        function closePanel() {
+            panelShell.hidden = true;
+            grid.hidden = false;
+            helpText.hidden = false;
+        }
+
+        cards.forEach(function (card) {
+            card.addEventListener("click", function () {
+                openPanel(card.dataset.panel);
+            });
+        });
+
+        quickOpenButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                openPanel(button.dataset.openPanel);
+            });
+        });
+
+        backButton.addEventListener("click", closePanel);
+
+        helpButton.addEventListener("click", function () {
+            alert("Click a workspace card to expand it. Later, each panel will hold the real tools directly inside this dashboard.");
+        });
+    })();
+</script>
 {% endblock %}

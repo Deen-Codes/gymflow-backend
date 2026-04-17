@@ -1,26 +1,25 @@
 .launcher-page {
     min-height: 100vh;
     background:
-        radial-gradient(circle at top left, rgba(94,162,255,0.16), transparent 32%),
-        radial-gradient(circle at bottom right, rgba(96,238,186,0.08), transparent 26%),
+        radial-gradient(circle at top left, rgba(94, 162, 255, 0.16), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(96, 238, 186, 0.08), transparent 26%),
         linear-gradient(145deg, #0d1320, #121a2b);
     color: #f5f7fb;
-    padding: 24px;
+    padding: 0;
 }
 
 .launcher-wrap {
-    min-height: calc(100vh - 48px);
-    border-radius: 0;
+    min-height: 100vh;
     color: #f5f7fb;
-    position: relative;
     overflow: hidden;
 }
 
 .launcher-shell {
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 22px;
+    padding: 18px;
 }
 
 .launcher-topbar {
@@ -30,8 +29,8 @@
     gap: 16px;
     flex-wrap: wrap;
     padding: 14px 16px;
-    border: 1px solid rgba(255,255,255,0.10);
-    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.04);
     border-radius: 20px;
     backdrop-filter: blur(10px);
 }
@@ -68,8 +67,8 @@
     height: 42px;
     padding: 0 14px;
     border-radius: 14px;
-    border: 1px solid rgba(255,255,255,0.10);
-    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.04);
     color: #f5f7fb;
     font-size: 13px;
     font-weight: 700;
@@ -79,8 +78,8 @@
 
 .launcher-chip:hover {
     transform: translateY(-1px);
-    border-color: rgba(255,255,255,0.18);
-    background: rgba(255,255,255,0.08);
+    border-color: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .launcher-chip.primary {
@@ -94,15 +93,14 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 18px;
-    flex: 1;
 }
 
 .launcher-card {
     position: relative;
     min-height: 215px;
     border-radius: 24px;
-    border: 1px solid rgba(255,255,255,0.10);
-    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(10px);
     padding: 20px;
     overflow: hidden;
@@ -111,6 +109,8 @@
         border-color 0.22s ease,
         background 0.22s ease,
         box-shadow 0.22s ease;
+    text-align: left;
+    color: inherit;
 }
 
 .launcher-card::after {
@@ -120,7 +120,7 @@
     width: 140px;
     height: 140px;
     border-radius: 999px;
-    background: radial-gradient(circle, rgba(94,162,255,0.18), transparent 68%);
+    background: radial-gradient(circle, rgba(94, 162, 255, 0.18), transparent 68%);
     pointer-events: none;
     transition: transform 0.25s ease, opacity 0.25s ease;
     opacity: 0.75;
@@ -128,22 +128,14 @@
 
 .launcher-card:hover {
     transform: translateY(-6px) scale(1.01);
-    border-color: rgba(255,255,255,0.18);
-    background: rgba(255,255,255,0.10);
-    box-shadow: 0 20px 42px rgba(0,0,0,0.16);
+    border-color: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 20px 42px rgba(0, 0, 0, 0.16);
 }
 
 .launcher-card:hover::after {
     transform: scale(1.08);
     opacity: 1;
-}
-
-.launcher-card-link {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    color: inherit;
-    text-decoration: none;
 }
 
 .launcher-card-icon {
@@ -154,8 +146,8 @@
     align-items: center;
     justify-content: center;
     font-size: 25px;
-    border: 1px solid rgba(255,255,255,0.10);
-    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.07);
     color: #f5f7fb;
     margin-bottom: 18px;
     transition: 0.2s ease;
@@ -163,8 +155,8 @@
 
 .launcher-card:hover .launcher-card-icon {
     transform: translateY(-2px);
-    border-color: rgba(255,255,255,0.24);
-    background: rgba(255,255,255,0.11);
+    border-color: rgba(255, 255, 255, 0.24);
+    background: rgba(255, 255, 255, 0.11);
 }
 
 .launcher-card-title {
@@ -183,7 +175,7 @@
 }
 
 .launcher-card-hover {
-    margin-top: auto;
+    margin-top: 18px;
     padding-top: 16px;
     font-size: 13px;
     color: #f5f7fb;
@@ -216,8 +208,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(255,255,255,0.10);
-    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.08);
     font-size: 16px;
 }
 
@@ -236,14 +228,149 @@
     background: #5ea2ff;
 }
 
+.launcher-panel-shell {
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 26px;
+    min-height: calc(100vh - 160px);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+.launcher-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.launcher-panel-kicker {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #9eabc2;
+    margin-bottom: 8px;
+}
+
+.launcher-panel-title {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #f5f7fb;
+}
+
+.launcher-panel-subtitle {
+    font-size: 14px;
+    color: #9eabc2;
+    margin-top: 6px;
+}
+
+.launcher-panel-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.launcher-panel-body {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    min-height: 620px;
+}
+
+.launcher-panel-sidebar {
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.launcher-panel-sidebar-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #9eabc2;
+    margin-bottom: 14px;
+}
+
+.launcher-panel-sidebar-links {
+    display: grid;
+    gap: 10px;
+}
+
+.launcher-panel-side-link {
+    width: 100%;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.04);
+    color: #f5f7fb;
+    border-radius: 14px;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.18s ease;
+}
+
+.launcher-panel-side-link:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+.launcher-panel-content {
+    padding: 24px;
+}
+
+.launcher-panel-placeholder {
+    border: 1px dashed rgba(255, 255, 255, 0.14);
+    border-radius: 24px;
+    min-height: 100%;
+    padding: 28px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.launcher-placeholder-title {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 10px;
+    color: #f5f7fb;
+}
+
+.launcher-placeholder-copy {
+    color: #9eabc2;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 60ch;
+    margin-bottom: 20px;
+}
+
+.launcher-placeholder-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
 @media (max-width: 1180px) {
     .launcher-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .launcher-panel-body {
+        grid-template-columns: 1fr;
+    }
+
+    .launcher-panel-sidebar {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
 }
 
 @media (max-width: 760px) {
-    .launcher-page {
+    .launcher-shell {
         padding: 14px;
     }
 
@@ -251,7 +378,7 @@
         grid-template-columns: 1fr;
     }
 
-    .launcher-wrap {
-        min-height: auto;
+    .launcher-panel-title {
+        font-size: 28px;
     }
 }
