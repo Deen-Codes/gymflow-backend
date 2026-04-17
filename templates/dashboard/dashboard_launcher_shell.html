@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page_title }} | GymFlow{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/dashboard-launcher.css' %}">
+{% endblock %}
+
+{% block content %}
+<main class="dashboard-launcher-main">
+    {% if messages %}
+        <div class="dashboard-launcher-messages">
+            <div class="messages">
+                {% for message in messages %}
+                    <div class="message {% if message.tags == 'error' %}error{% else %}success{% endif %}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+
+    {% block launcher_content %}{% endblock %}
+</main>
+{% endblock %}

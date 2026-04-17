@@ -1,3 +1,21 @@
+.dashboard-launcher-main {
+    min-height: 100vh;
+}
+
+.dashboard-launcher-messages {
+    position: fixed;
+    top: 14px;
+    left: 14px;
+    right: 14px;
+    z-index: 20;
+    pointer-events: none;
+}
+
+.dashboard-launcher-messages .messages {
+    max-width: 680px;
+    pointer-events: auto;
+}
+
 .launcher-page {
     min-height: 100vh;
     background:

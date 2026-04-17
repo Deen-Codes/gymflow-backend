@@ -1,15 +1,11 @@
-{% extends "dashboard/dashboard_shell.html" %}
+{% extends "dashboard/dashboard_launcher_shell.html" %}
 {% load static %}
 
-{% block extra_head %}
-<link rel="stylesheet" href="{% static 'css/dashboard-launcher.css' %}">
-{% endblock %}
-
-{% block dashboard_content %}
+{% block launcher_content %}
 <div class="launcher-page">
     <div class="launcher-wrap">
         <div class="launcher-shell">
-            <div class="launcher-topbar" id="launcherTopbar">
+            <div class="launcher-topbar">
                 <div class="launcher-topbar-left">
                     <div class="launcher-title">GymFlow Launcher</div>
                     <div class="launcher-subtitle">
@@ -129,7 +125,7 @@
             <div class="launcher-help" id="launcherHelpText">
                 <span class="launcher-help-dot"></span>
                 <span>
-                    Click any workspace card to expand it. Later we’ll load the full system tools directly into these panels.
+                    Click any workspace card to expand it. Next we’ll wire the real tools into these panels.
                 </span>
             </div>
         </div>
@@ -137,148 +133,148 @@
 </div>
 
 <script>
-    (function () {
-        const grid = document.getElementById("launcherGrid");
-        const cards = Array.from(document.querySelectorAll(".launcher-card"));
-        const panelShell = document.getElementById("launcherPanelShell");
-        const panelTitle = document.getElementById("launcherPanelTitle");
-        const panelSubtitle = document.getElementById("launcherPanelSubtitle");
-        const panelContent = document.getElementById("launcherPanelContent");
-        const panelLinks = document.getElementById("launcherPanelSidebarLinks");
-        const backButton = document.getElementById("launcherBackButton");
-        const helpText = document.getElementById("launcherHelpText");
-        const helpButton = document.getElementById("launcherHelpButton");
-        const quickOpenButtons = document.querySelectorAll("[data-open-panel]");
+(function () {
+    const grid = document.getElementById("launcherGrid");
+    const cards = Array.from(document.querySelectorAll(".launcher-card"));
+    const panelShell = document.getElementById("launcherPanelShell");
+    const panelTitle = document.getElementById("launcherPanelTitle");
+    const panelSubtitle = document.getElementById("launcherPanelSubtitle");
+    const panelContent = document.getElementById("launcherPanelContent");
+    const panelLinks = document.getElementById("launcherPanelSidebarLinks");
+    const backButton = document.getElementById("launcherBackButton");
+    const helpText = document.getElementById("launcherHelpText");
+    const helpButton = document.getElementById("launcherHelpButton");
+    const quickOpenButtons = document.querySelectorAll("[data-open-panel]");
 
-        const workspaceData = {
-            clients: {
-                title: "Clients",
-                subtitle: "Client management, assignments, and detail views will live here.",
-                links: ["All Clients", "Client Profiles", "Assignments", "Progress Snapshot"],
-                content: `
-                    <div class="launcher-placeholder-title">Clients workspace</div>
-                    <div class="launcher-placeholder-copy">
-                        This expanded panel will hold your client list, client detail views, assignment tools, and progress summary tools.
-                    </div>
-                    <div class="launcher-placeholder-actions">
-                        <a href="{% url 'trainer-dashboard' %}" class="btn btn-primary">Open current Clients page</a>
-                    </div>
-                `
-            },
-            workouts: {
-                title: "Workouts",
-                subtitle: "Workout plan building and program tools will live here.",
-                links: ["Plan Templates", "Exercise Library", "Program Builder", "Client Versions"],
-                content: `
-                    <div class="launcher-placeholder-title">Workouts workspace</div>
-                    <div class="launcher-placeholder-copy">
-                        This is where the workout builder will later expand into a full window, including plan templates, day structure, and exercise management.
-                    </div>
-                    <div class="launcher-placeholder-actions">
-                        <a href="{% url 'trainer-workout-plans-page' %}" class="btn btn-primary">Open current Workouts page</a>
-                    </div>
-                `
-            },
-            nutrition: {
-                title: "Nutrition",
-                subtitle: "Nutrition plans, foods, and meal structure will live here.",
-                links: ["Nutrition Templates", "Food Library", "Meals", "Client Versions"],
-                content: `
-                    <div class="launcher-placeholder-title">Nutrition workspace</div>
-                    <div class="launcher-placeholder-copy">
-                        This expanded panel will later contain your full nutrition workflow including templates, meals, food assignment, and client-specific versions.
-                    </div>
-                    <div class="launcher-placeholder-actions">
-                        <a href="{% url 'trainer-nutrition-plans-page' %}" class="btn btn-primary">Open current Nutrition page</a>
-                    </div>
-                `
-            },
-            checkins: {
-                title: "Check-Ins",
-                subtitle: "Onboarding, daily, and weekly check-in builders will live here.",
-                links: ["Onboarding Forms", "Daily Check-Ins", "Weekly Check-Ins", "Required Questions"],
-                content: `
-                    <div class="launcher-placeholder-title">Check-Ins workspace</div>
-                    <div class="launcher-placeholder-copy">
-                        This is where your check-in system will later live in a focused panel, including onboarding forms, weekly check-ins, and required app questions.
-                    </div>
-                    <div class="launcher-placeholder-actions">
-                        <a href="{% url 'trainer-checkin-forms-page' %}" class="btn btn-primary">Open current Check-Ins page</a>
-                    </div>
-                `
-            },
-            settings: {
-                title: "Settings",
-                subtitle: "Business preferences and dashboard settings will live here.",
-                links: ["Brand Settings", "Appearance", "Notifications", "Account"],
-                content: `
-                    <div class="launcher-placeholder-title">Settings workspace</div>
-                    <div class="launcher-placeholder-copy">
-                        This expanded panel will later hold theme options, business details, account preferences, and future platform controls.
-                    </div>
-                    <div class="launcher-placeholder-actions">
-                        <a href="{% url 'trainer-settings-page' %}" class="btn btn-primary">Open current Settings page</a>
-                    </div>
-                `
-            },
-            activity: {
-                title: "Recent Activity",
-                subtitle: "A live feed of updates and actions will live here.",
-                links: ["Assignments", "Check-Ins", "Nutrition Updates", "Workout Updates"],
-                content: `
-                    <div class="launcher-placeholder-title">Recent Activity workspace</div>
-                    <div class="launcher-placeholder-copy">
-                        This panel is reserved for a future activity feed showing recent assignments, check-ins, plan updates, and other system events.
-                    </div>
-                `
-            }
-        };
-
-        function openPanel(panelKey) {
-            const data = workspaceData[panelKey];
-            if (!data) return;
-
-            grid.hidden = true;
-            helpText.hidden = true;
-            panelShell.hidden = false;
-
-            panelTitle.textContent = data.title;
-            panelSubtitle.textContent = data.subtitle;
-            panelContent.innerHTML = data.content;
-
-            panelLinks.innerHTML = "";
-            data.links.forEach(function (item) {
-                const link = document.createElement("button");
-                link.type = "button";
-                link.className = "launcher-panel-side-link";
-                link.textContent = item;
-                panelLinks.appendChild(link);
-            });
+    const workspaceData = {
+        clients: {
+            title: "Clients",
+            subtitle: "Client management, assignments, and detail views will live here.",
+            links: ["All Clients", "Client Profiles", "Assignments", "Progress Snapshot"],
+            content: `
+                <div class="launcher-placeholder-title">Clients workspace</div>
+                <div class="launcher-placeholder-copy">
+                    This expanded panel will hold your client list, client detail views, assignment tools, and progress summary tools.
+                </div>
+                <div class="launcher-placeholder-actions">
+                    <a href="/dashboard/clients/" class="btn btn-primary">Open current Clients page</a>
+                </div>
+            `
+        },
+        workouts: {
+            title: "Workouts",
+            subtitle: "Workout plan building and program tools will live here.",
+            links: ["Plan Templates", "Exercise Library", "Program Builder", "Client Versions"],
+            content: `
+                <div class="launcher-placeholder-title">Workouts workspace</div>
+                <div class="launcher-placeholder-copy">
+                    This is where the workout builder will expand into a full window, including plan templates, day structure, and exercise management.
+                </div>
+                <div class="launcher-placeholder-actions">
+                    <a href="/dashboard/workout-plans/" class="btn btn-primary">Open current Workouts page</a>
+                </div>
+            `
+        },
+        nutrition: {
+            title: "Nutrition",
+            subtitle: "Nutrition plans, foods, and meal structure will live here.",
+            links: ["Nutrition Templates", "Food Library", "Meals", "Client Versions"],
+            content: `
+                <div class="launcher-placeholder-title">Nutrition workspace</div>
+                <div class="launcher-placeholder-copy">
+                    This expanded panel will contain your nutrition workflow including templates, meals, food assignment, and client-specific versions.
+                </div>
+                <div class="launcher-placeholder-actions">
+                    <a href="/dashboard/nutrition-plans/" class="btn btn-primary">Open current Nutrition page</a>
+                </div>
+            `
+        },
+        checkins: {
+            title: "Check-Ins",
+            subtitle: "Onboarding, daily, and weekly check-in builders will live here.",
+            links: ["Onboarding Forms", "Daily Check-Ins", "Weekly Check-Ins", "Required Questions"],
+            content: `
+                <div class="launcher-placeholder-title">Check-Ins workspace</div>
+                <div class="launcher-placeholder-copy">
+                    This is where your check-in system will live in a focused panel, including onboarding forms, weekly check-ins, and required app questions.
+                </div>
+                <div class="launcher-placeholder-actions">
+                    <a href="/dashboard/checkin-forms/" class="btn btn-primary">Open current Check-Ins page</a>
+                </div>
+            `
+        },
+        settings: {
+            title: "Settings",
+            subtitle: "Business preferences and dashboard settings will live here.",
+            links: ["Brand Settings", "Appearance", "Notifications", "Account"],
+            content: `
+                <div class="launcher-placeholder-title">Settings workspace</div>
+                <div class="launcher-placeholder-copy">
+                    This expanded panel will hold theme options, business details, account preferences, and future platform controls.
+                </div>
+                <div class="launcher-placeholder-actions">
+                    <a href="/dashboard/settings/" class="btn btn-primary">Open current Settings page</a>
+                </div>
+            `
+        },
+        activity: {
+            title: "Recent Activity",
+            subtitle: "A live feed of updates and actions will live here.",
+            links: ["Assignments", "Check-Ins", "Nutrition Updates", "Workout Updates"],
+            content: `
+                <div class="launcher-placeholder-title">Recent Activity workspace</div>
+                <div class="launcher-placeholder-copy">
+                    This panel is reserved for a future activity feed showing recent assignments, check-ins, plan updates, and other system events.
+                </div>
+            `
         }
+    };
 
-        function closePanel() {
-            panelShell.hidden = true;
-            grid.hidden = false;
-            helpText.hidden = false;
-        }
+    function openPanel(panelKey) {
+        const data = workspaceData[panelKey];
+        if (!data) return;
 
-        cards.forEach(function (card) {
-            card.addEventListener("click", function () {
-                openPanel(card.dataset.panel);
-            });
+        grid.hidden = true;
+        helpText.hidden = true;
+        panelShell.hidden = false;
+
+        panelTitle.textContent = data.title;
+        panelSubtitle.textContent = data.subtitle;
+        panelContent.innerHTML = data.content;
+
+        panelLinks.innerHTML = "";
+        data.links.forEach(function (item) {
+            const link = document.createElement("button");
+            link.type = "button";
+            link.className = "launcher-panel-side-link";
+            link.textContent = item;
+            panelLinks.appendChild(link);
         });
+    }
 
-        quickOpenButtons.forEach(function (button) {
-            button.addEventListener("click", function () {
-                openPanel(button.dataset.openPanel);
-            });
+    function closePanel() {
+        panelShell.hidden = true;
+        grid.hidden = false;
+        helpText.hidden = false;
+    }
+
+    cards.forEach(function (card) {
+        card.addEventListener("click", function () {
+            openPanel(card.dataset.panel);
         });
+    });
 
-        backButton.addEventListener("click", closePanel);
-
-        helpButton.addEventListener("click", function () {
-            alert("Click a workspace card to expand it. Later, each panel will hold the real tools directly inside this dashboard.");
+    quickOpenButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            openPanel(button.dataset.openPanel);
         });
-    })();
+    });
+
+    backButton.addEventListener("click", closePanel);
+
+    helpButton.addEventListener("click", function () {
+        alert("Click a workspace card to expand it. Next we’ll wire the real tools directly into these panels.");
+    });
+})();
 </script>
 {% endblock %}

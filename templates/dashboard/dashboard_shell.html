@@ -3,10 +3,129 @@
 {% block title %}{{ page_title }} | GymFlow{% endblock %}
 
 {% block content %}
-{% if request.resolver_match.url_name == 'trainer-dashboard-home' %}
-    <main class="dashboard-launcher-main">
-        {% if messages %}
-            <div class="dashboard-launcher-messages">
+<div class="dashboard-app">
+    <div class="dashboard-layout">
+        <aside class="dashboard-icon-rail">
+            <div class="dashboard-brand-icon">H</div>
+
+            <div class="dashboard-icon-nav">
+                <a href="{% url 'trainer-dashboard-home' %}"
+                   title="Dashboard"
+                   class="dashboard-icon-link {% if request.resolver_match.url_name == 'trainer-dashboard-home' %}active{% endif %}">
+                    <span class="dashboard-icon-symbol">⌂</span>
+                    <span>Home</span>
+                </a>
+
+                <a href="{% url 'trainer-dashboard' %}"
+                   title="Clients"
+                   class="dashboard-icon-link {% if request.resolver_match.url_name == 'trainer-dashboard' or request.resolver_match.url_name == 'trainer-client-detail' %}active{% endif %}">
+                    <span class="dashboard-icon-symbol">◯</span>
+                    <span>Clients</span>
+                </a>
+
+                <a href="{% url 'trainer-workout-plans-page' %}"
+                   title="Workout Plans"
+                   class="dashboard-icon-link {% if request.resolver_match.url_name == 'trainer-workout-plans-page' or request.resolver_match.url_name == 'trainer-workout-plan-detail' %}active{% endif %}">
+                    <span class="dashboard-icon-symbol">⌁</span>
+                    <span>Workout</span>
+                </a>
+
+                <a href="{% url 'trainer-nutrition-plans-page' %}"
+                   title="Nutrition Plans"
+                   class="dashboard-icon-link {% if request.resolver_match.url_name == 'trainer-nutrition-plans-page' or request.resolver_match.url_name == 'trainer-nutrition-plan-detail' %}active{% endif %}">
+                    <span class="dashboard-icon-symbol">○</span>
+                    <span>Nutrition</span>
+                </a>
+
+                <a href="{% url 'trainer-checkin-forms-page' %}"
+                   title="Check-In Forms"
+                   class="dashboard-icon-link {% if request.resolver_match.url_name == 'trainer-checkin-forms-page' or request.resolver_match.url_name == 'trainer-checkin-form-detail' %}active{% endif %}">
+                    <span class="dashboard-icon-symbol">☑</span>
+                    <span>Check-In</span>
+                </a>
+
+                <a href="{% url 'trainer-settings-page' %}"
+                   title="Settings"
+                   class="dashboard-icon-link {% if request.resolver_match.url_name == 'trainer-settings-page' %}active{% endif %}">
+                    <span class="dashboard-icon-symbol">⚙</span>
+                    <span>Settings</span>
+                </a>
+            </div>
+
+            <div class="dashboard-rail-footer">
+                <a href="{% url 'trainer-logout-page' %}" class="btn btn-secondary" style="width:100%;padding:10px 8px;min-height:42px;">
+                    ↩
+                </a>
+            </div>
+        </aside>
+
+        <aside class="dashboard-section-rail">
+            <div class="dashboard-brand-title">GymFlow</div>
+            <div class="dashboard-brand-subtitle">{{ trainer_profile.business_name }}</div>
+
+            <div class="dashboard-section-label">
+                {% if request.resolver_match.url_name == 'trainer-workout-plans-page' or request.resolver_match.url_name == 'trainer-workout-plan-detail' %}
+                    Workouts
+                {% elif request.resolver_match.url_name == 'trainer-nutrition-plans-page' or request.resolver_match.url_name == 'trainer-nutrition-plan-detail' %}
+                    Nutrition
+                {% elif request.resolver_match.url_name == 'trainer-checkin-forms-page' or request.resolver_match.url_name == 'trainer-checkin-form-detail' %}
+                    Check-In Forms
+                {% elif request.resolver_match.url_name == 'trainer-dashboard' or request.resolver_match.url_name == 'trainer-client-detail' %}
+                    Clients
+                {% else %}
+                    Dashboard
+                {% endif %}
+            </div>
+
+            <nav class="dashboard-section-nav">
+                <a href="{% url 'trainer-dashboard-home' %}"
+                   class="dashboard-section-link {% if request.resolver_match.url_name == 'trainer-dashboard-home' %}active{% endif %}">
+                    Overview
+                </a>
+
+                <a href="{% url 'trainer-dashboard' %}"
+                   class="dashboard-section-link {% if request.resolver_match.url_name == 'trainer-dashboard' or request.resolver_match.url_name == 'trainer-client-detail' %}active{% endif %}">
+                    Client Management
+                </a>
+
+                <a href="{% url 'trainer-workout-plans-page' %}"
+                   class="dashboard-section-link {% if request.resolver_match.url_name == 'trainer-workout-plans-page' or request.resolver_match.url_name == 'trainer-workout-plan-detail' %}active{% endif %}">
+                    Workout Programs
+                </a>
+
+                <a href="{% url 'trainer-nutrition-plans-page' %}"
+                   class="dashboard-section-link {% if request.resolver_match.url_name == 'trainer-nutrition-plans-page' or request.resolver_match.url_name == 'trainer-nutrition-plan-detail' %}active{% endif %}">
+                    Nutrition Plans
+                </a>
+
+                <a href="{% url 'trainer-checkin-forms-page' %}"
+                   class="dashboard-section-link {% if request.resolver_match.url_name == 'trainer-checkin-forms-page' or request.resolver_match.url_name == 'trainer-checkin-form-detail' %}active{% endif %}">
+                    Check-In Builder
+                </a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-main">
+            <div class="dashboard-topbar">
+                <div>
+                    <div class="dashboard-page-title">{{ page_title }}</div>
+                    <div class="dashboard-page-subtitle">Manage your coaching business from one place.</div>
+                </div>
+
+                <div class="dashboard-top-actions">
+                    <a href="{% url 'dashboard-create-client' %}" class="btn btn-secondary" style="pointer-events:none;opacity:0.55;">
+                        + Add Client
+                    </a>
+                    <a href="{% url 'trainer-workout-plans-page' %}" class="btn btn-secondary">
+                        + Add Workout Plan
+                    </a>
+                    <a href="{% url 'trainer-nutrition-plans-page' %}" class="btn btn-secondary">
+                        + Add Nutrition Plan
+                    </a>
+                </div>
+            </div>
+
+            {% if messages %}
                 <div class="messages">
                     {% for message in messages %}
                         <div class="message {% if message.tags == 'error' %}error{% else %}success{% endif %}">
@@ -14,149 +133,12 @@
                         </div>
                     {% endfor %}
                 </div>
+            {% endif %}
+
+            <div class="dashboard-content">
+                {% block dashboard_content %}{% endblock %}
             </div>
-        {% endif %}
-
-        {% block dashboard_content %}{% endblock %}
-    </main>
-{% else %}
-    <div class="dashboard-app">
-        <div class="dashboard-layout">
-            <aside class="dashboard-icon-rail">
-                <div class="dashboard-brand-icon">H</div>
-
-                <div class="dashboard-icon-nav">
-                    <a href="{% url 'trainer-dashboard-home' %}"
-                       title="Dashboard"
-                       class="dashboard-icon-link {% if request.resolver_match.url_name == 'trainer-dashboard-home' %}active{% endif %}">
-                        <span class="dashboard-icon-symbol">⌂</span>
-                        <span>Home</span>
-                    </a>
-
-                    <a href="{% url 'trainer-dashboard' %}"
-                       title="Clients"
-                       class="dashboard-icon-link {% if request.resolver_match.url_name == 'trainer-dashboard' or request.resolver_match.url_name == 'trainer-client-detail' %}active{% endif %}">
-                        <span class="dashboard-icon-symbol">◯</span>
-                        <span>Clients</span>
-                    </a>
-
-                    <a href="{% url 'trainer-workout-plans-page' %}"
-                       title="Workout Plans"
-                       class="dashboard-icon-link {% if request.resolver_match.url_name == 'trainer-workout-plans-page' or request.resolver_match.url_name == 'trainer-workout-plan-detail' %}active{% endif %}">
-                        <span class="dashboard-icon-symbol">⌁</span>
-                        <span>Workout</span>
-                    </a>
-
-                    <a href="{% url 'trainer-nutrition-plans-page' %}"
-                       title="Nutrition Plans"
-                       class="dashboard-icon-link {% if request.resolver_match.url_name == 'trainer-nutrition-plans-page' or request.resolver_match.url_name == 'trainer-nutrition-plan-detail' %}active{% endif %}">
-                        <span class="dashboard-icon-symbol">○</span>
-                        <span>Nutrition</span>
-                    </a>
-
-                    <a href="{% url 'trainer-checkin-forms-page' %}"
-                       title="Check-In Forms"
-                       class="dashboard-icon-link {% if request.resolver_match.url_name == 'trainer-checkin-forms-page' or request.resolver_match.url_name == 'trainer-checkin-form-detail' %}active{% endif %}">
-                        <span class="dashboard-icon-symbol">☑</span>
-                        <span>Check-In</span>
-                    </a>
-
-                    <a href="{% url 'trainer-settings-page' %}"
-                       title="Settings"
-                       class="dashboard-icon-link {% if request.resolver_match.url_name == 'trainer-settings-page' %}active{% endif %}">
-                        <span class="dashboard-icon-symbol">⚙</span>
-                        <span>Settings</span>
-                    </a>
-                </div>
-
-                <div class="dashboard-rail-footer">
-                    <a href="{% url 'trainer-logout-page' %}" class="btn btn-secondary" style="width:100%;padding:10px 8px;min-height:42px;">
-                        ↩
-                    </a>
-                </div>
-            </aside>
-
-            <aside class="dashboard-section-rail">
-                <div class="dashboard-brand-title">GymFlow</div>
-                <div class="dashboard-brand-subtitle">{{ trainer_profile.business_name }}</div>
-
-                <div class="dashboard-section-label">
-                    {% if request.resolver_match.url_name == 'trainer-workout-plans-page' or request.resolver_match.url_name == 'trainer-workout-plan-detail' %}
-                        Workouts
-                    {% elif request.resolver_match.url_name == 'trainer-nutrition-plans-page' or request.resolver_match.url_name == 'trainer-nutrition-plan-detail' %}
-                        Nutrition
-                    {% elif request.resolver_match.url_name == 'trainer-checkin-forms-page' or request.resolver_match.url_name == 'trainer-checkin-form-detail' %}
-                        Check-In Forms
-                    {% elif request.resolver_match.url_name == 'trainer-dashboard' or request.resolver_match.url_name == 'trainer-client-detail' %}
-                        Clients
-                    {% else %}
-                        Dashboard
-                    {% endif %}
-                </div>
-
-                <nav class="dashboard-section-nav">
-                    <a href="{% url 'trainer-dashboard-home' %}"
-                       class="dashboard-section-link {% if request.resolver_match.url_name == 'trainer-dashboard-home' %}active{% endif %}">
-                        Overview
-                    </a>
-
-                    <a href="{% url 'trainer-dashboard' %}"
-                       class="dashboard-section-link {% if request.resolver_match.url_name == 'trainer-dashboard' or request.resolver_match.url_name == 'trainer-client-detail' %}active{% endif %}">
-                        Client Management
-                    </a>
-
-                    <a href="{% url 'trainer-workout-plans-page' %}"
-                       class="dashboard-section-link {% if request.resolver_match.url_name == 'trainer-workout-plans-page' or request.resolver_match.url_name == 'trainer-workout-plan-detail' %}active{% endif %}">
-                        Workout Programs
-                    </a>
-
-                    <a href="{% url 'trainer-nutrition-plans-page' %}"
-                       class="dashboard-section-link {% if request.resolver_match.url_name == 'trainer-nutrition-plans-page' or request.resolver_match.url_name == 'trainer-nutrition-plan-detail' %}active{% endif %}">
-                        Nutrition Plans
-                    </a>
-
-                    <a href="{% url 'trainer-checkin-forms-page' %}"
-                       class="dashboard-section-link {% if request.resolver_match.url_name == 'trainer-checkin-forms-page' or request.resolver_match.url_name == 'trainer-checkin-form-detail' %}active{% endif %}">
-                        Check-In Builder
-                    </a>
-                </nav>
-            </aside>
-
-            <main class="dashboard-main">
-                <div class="dashboard-topbar">
-                    <div>
-                        <div class="dashboard-page-title">{{ page_title }}</div>
-                        <div class="dashboard-page-subtitle">Manage your coaching business from one place.</div>
-                    </div>
-
-                    <div class="dashboard-top-actions">
-                        <a href="{% url 'dashboard-create-client' %}" class="btn btn-secondary" style="pointer-events:none;opacity:0.55;">
-                            + Add Client
-                        </a>
-                        <a href="{% url 'trainer-workout-plans-page' %}" class="btn btn-secondary">
-                            + Add Workout Plan
-                        </a>
-                        <a href="{% url 'trainer-nutrition-plans-page' %}" class="btn btn-secondary">
-                            + Add Nutrition Plan
-                        </a>
-                    </div>
-                </div>
-
-                {% if messages %}
-                    <div class="messages">
-                        {% for message in messages %}
-                            <div class="message {% if message.tags == 'error' %}error{% else %}success{% endif %}">
-                                {{ message }}
-                            </div>
-                        {% endfor %}
-                    </div>
-                {% endif %}
-
-                <div class="dashboard-content">
-                    {% block dashboard_content %}{% endblock %}
-                </div>
-            </main>
-        </div>
+        </main>
     </div>
-{% endif %}
+</div>
 {% endblock %}
