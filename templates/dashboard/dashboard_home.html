@@ -7,7 +7,7 @@
         <div class="launcher-shell">
             <div class="launcher-topbar" id="launcherTopbar">
                 <div class="launcher-topbar-left">
-                    <div class="launcher-title">GymFlow Launcher</div>
+                    <div class="launcher-title">GymFlow</div>
                     <div class="launcher-subtitle">
                         Open a workspace, manage your coaching system, and jump straight into action.
                     </div>
@@ -108,7 +108,7 @@
                         <div class="workspace-mini-brand">GF</div>
                     </div>
 
-                    <div class="workspace-sidebar-nav" id="workspaceSidebarNav">
+                    <div class="workspace-sidebar-nav">
                         <button type="button" class="workspace-nav-item" data-workspace="clients">
                             <span class="workspace-nav-icon">◯</span>
                             <span class="workspace-nav-label">Clients</span>
@@ -141,7 +141,7 @@
                     </div>
 
                     <div class="workspace-sidebar-bottom">
-                        <button type="button" class="workspace-back-button" id="workspaceBackButton">
+                        <button type="button" class="workspace-back-button" id="workspaceBackButton" title="Back to dashboard" aria-label="Back to dashboard">
                             ←
                         </button>
                     </div>
@@ -161,13 +161,8 @@
                             <div class="workspace-header-actions" id="workspaceHeaderActions"></div>
                         </div>
 
-                        <div class="workspace-body">
-                            <div class="workspace-section-menu">
-                                <div class="workspace-section-menu-title">Sections</div>
-                                <div class="workspace-section-menu-links" id="workspaceSectionLinks"></div>
-                            </div>
-
-                            <div class="workspace-content">
+                        <div class="workspace-body workspace-body--full">
+                            <div class="workspace-content workspace-content--full">
                                 <div class="workspace-content-card" id="workspaceContent"></div>
                             </div>
                         </div>
@@ -188,7 +183,6 @@
     const workspaceTitle = document.getElementById("workspaceTitle");
     const workspaceSubtitle = document.getElementById("workspaceSubtitle");
     const workspaceHeaderActions = document.getElementById("workspaceHeaderActions");
-    const workspaceSectionLinks = document.getElementById("workspaceSectionLinks");
     const workspaceContent = document.getElementById("workspaceContent");
     const workspaceBackButton = document.getElementById("workspaceBackButton");
     const launcherHelpButton = document.getElementById("launcherHelpButton");
@@ -199,28 +193,185 @@
 
     let activeWorkspace = null;
 
+    const clientsWorkspaceHtml = `
+        <div class="client-workspace">
+            <div class="client-workspace-top">
+                <div class="client-workspace-search-wrap">
+                    <input
+                        type="text"
+                        id="clientSearchInput"
+                        class="client-workspace-search"
+                        placeholder="Search clients by username or email..."
+                    >
+                </div>
+
+                <div class="client-workspace-actions">
+                    <a href="/dashboard/clients/" class="btn btn-secondary">Open full Clients page</a>
+                </div>
+            </div>
+
+            <div class="client-action-card">
+                <button type="button" class="client-action-toggle" id="clientActionToggle">
+                    <div>
+                        <div class="client-action-title">Action Needed</div>
+                        <div class="client-action-subtitle">Quick PT tasks that need attention.</div>
+                    </div>
+                    <span class="client-action-chevron" id="clientActionChevron">▾</span>
+                </button>
+
+                <div class="client-action-body" id="clientActionBody">
+                    <div class="client-action-grid">
+                        <div class="client-action-block">
+                            <div class="client-action-block-title">Missing workout plan</div>
+                            {% with missing_workout=0 %}
+                                {% for client in clients %}
+                                    {% if not client.client_profile.assigned_workout_plan %}
+                                        {% if forloop.first %}{% endif %}
+                                    {% endif %}
+                                {% endfor %}
+                            {% endwith %}
+                            <div class="client-action-list">
+                                {% for client in clients %}
+                                    {% if not client.client_profile.assigned_workout_plan %}
+                                        <a href="{% url 'trainer-client-detail' client.id %}" class="client-action-item">
+                                            {{ client.username }}
+                                        </a>
+                                    {% endif %}
+                                {% empty %}
+                                {% endfor %}
+
+                                {% if clients %}
+                                    {% comment %} handled above {% endcomment %}
+                                {% endif %}
+                            </div>
+                            {% if clients %}
+                                {% with has_missing_workout=False %}
+                                    {% for client in clients %}
+                                        {% if not client.client_profile.assigned_workout_plan %}
+                                            {% if forloop.first %}{% endif %}
+                                        {% endif %}
+                                    {% endfor %}
+                                {% endwith %}
+                            {% endif %}
+                        </div>
+
+                        <div class="client-action-block">
+                            <div class="client-action-block-title">Missing nutrition plan</div>
+                            <div class="client-action-list">
+                                {% for client in clients %}
+                                    {% if not client.client_profile.assigned_nutrition_plan %}
+                                        <a href="{% url 'trainer-client-detail' client.id %}" class="client-action-item">
+                                            {{ client.username }}
+                                        </a>
+                                    {% endif %}
+                                {% empty %}
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <div class="client-action-block">
+                            <div class="client-action-block-title">Quick summary</div>
+                            <div class="client-summary-metrics">
+                                <div class="client-summary-metric">
+                                    <span class="client-summary-metric-label">Total clients</span>
+                                    <span class="client-summary-metric-value">{{ client_count }}</span>
+                                </div>
+                                <div class="client-summary-metric">
+                                    <span class="client-summary-metric-label">Workout plans assigned</span>
+                                    <span class="client-summary-metric-value">
+                                        {% for client in clients %}{% if client.client_profile.assigned_workout_plan %}1{% endif %}{% empty %}{% endfor %}
+                                        {{ clients|length }}
+                                    </span>
+                                </div>
+                                <div class="client-summary-metric">
+                                    <span class="client-summary-metric-label">Nutrition plans assigned</span>
+                                    <span class="client-summary-metric-value">
+                                        {% for client in clients %}{% if client.client_profile.assigned_nutrition_plan %}1{% endif %}{% empty %}{% endfor %}
+                                        {{ clients|length }}
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="client-action-note">
+                                Full progress and client-level setup will live inside each client profile.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="client-database-card">
+                <div class="client-database-header">
+                    <div>
+                        <div class="client-database-title">Client Database</div>
+                        <div class="client-database-subtitle">Search, review, and open client profiles.</div>
+                    </div>
+                    <div class="client-database-count">{{ client_count }} total</div>
+                </div>
+
+                <div class="client-database-list" id="clientDatabaseList">
+                    {% for client in clients %}
+                        <a href="{% url 'trainer-client-detail' client.id %}"
+                           class="client-database-item"
+                           data-client-search="{{ client.username|lower }} {{ client.email|lower }}">
+                            <div class="client-database-main">
+                                <div class="client-avatar">{{ client.username|slice:":1"|upper }}</div>
+
+                                <div class="client-database-copy">
+                                    <div class="client-database-name">{{ client.username }}</div>
+                                    <div class="client-database-email">{{ client.email }}</div>
+                                </div>
+                            </div>
+
+                            <div class="client-database-status">
+                                <div class="client-database-pill {% if client.client_profile.assigned_workout_plan %}is-good{% else %}is-warn{% endif %}">
+                                    Workout:
+                                    {% if client.client_profile.assigned_workout_plan %}
+                                        {{ client.client_profile.assigned_workout_plan.name }}
+                                    {% else %}
+                                        Not assigned
+                                    {% endif %}
+                                </div>
+
+                                <div class="client-database-pill {% if client.client_profile.assigned_nutrition_plan %}is-good{% else %}is-warn{% endif %}">
+                                    Nutrition:
+                                    {% if client.client_profile.assigned_nutrition_plan %}
+                                        {{ client.client_profile.assigned_nutrition_plan.name }}
+                                    {% else %}
+                                        Not assigned
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <div class="client-database-open">
+                                <span class="client-database-open-button">Open</span>
+                            </div>
+                        </a>
+                    {% empty %}
+                        <div class="client-database-empty">
+                            <div class="client-database-empty-title">No clients yet</div>
+                            <div class="client-database-empty-copy">
+                                Create your first client to start using the database.
+                            </div>
+                            <a href="/dashboard/clients/" class="btn btn-primary">Open Clients page</a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    `;
+
     const workspaceData = {
         clients: {
             title: "Clients",
-            subtitle: "Client management, assignments, and detail views will live here.",
-            sections: ["All Clients", "Client Profiles", "Assignments", "Progress Snapshot"],
+            subtitle: "Search your database, review action-needed items, and open full client profiles.",
             actions: `
                 <a href="/dashboard/clients/" class="btn btn-primary">Open current Clients page</a>
             `,
-            content: `
-                <div class="workspace-placeholder-title">Clients workspace</div>
-                <div class="workspace-placeholder-copy">
-                    This expanded workspace will hold your client list, client detail views, assignment tools, and progress summary tools.
-                </div>
-                <div class="workspace-placeholder-actions">
-                    <a href="/dashboard/clients/" class="btn btn-primary">Open current Clients page</a>
-                </div>
-            `
+            content: clientsWorkspaceHtml
         },
         workouts: {
             title: "Workouts",
             subtitle: "Workout plan building and program tools will live here.",
-            sections: ["Plan Templates", "Exercise Library", "Program Builder", "Client Versions"],
             actions: `
                 <a href="/dashboard/workout-plans/" class="btn btn-primary">Open current Workouts page</a>
             `,
@@ -237,7 +388,6 @@
         nutrition: {
             title: "Nutrition",
             subtitle: "Nutrition plans, foods, and meal structure will live here.",
-            sections: ["Nutrition Templates", "Food Library", "Meals", "Client Versions"],
             actions: `
                 <a href="/dashboard/nutrition-plans/" class="btn btn-primary">Open current Nutrition page</a>
             `,
@@ -254,7 +404,6 @@
         checkins: {
             title: "Check-Ins",
             subtitle: "Onboarding, daily, and weekly check-in builders will live here.",
-            sections: ["Onboarding Forms", "Daily Check-Ins", "Weekly Check-Ins", "Required Questions"],
             actions: `
                 <a href="/dashboard/checkin-forms/" class="btn btn-primary">Open current Check-Ins page</a>
             `,
@@ -271,7 +420,6 @@
         settings: {
             title: "Settings",
             subtitle: "Business preferences and dashboard settings will live here.",
-            sections: ["Brand Settings", "Appearance", "Notifications", "Account"],
             actions: `
                 <a href="/dashboard/settings/" class="btn btn-primary">Open current Settings page</a>
             `,
@@ -288,7 +436,6 @@
         activity: {
             title: "Recent Activity",
             subtitle: "A live feed of updates and actions will live here.",
-            sections: ["Assignments", "Check-Ins", "Nutrition Updates", "Workout Updates"],
             actions: ``,
             content: `
                 <div class="workspace-placeholder-title">Recent Activity workspace</div>
@@ -301,9 +448,39 @@
 
     function setActiveNav(panelKey) {
         workspaceNavItems.forEach(function (item) {
-            const isActive = item.dataset.workspace === panelKey;
-            item.classList.toggle("active", isActive);
+            item.classList.toggle("active", item.dataset.workspace === panelKey);
         });
+    }
+
+    function bindClientWorkspaceInteractions() {
+        const searchInput = document.getElementById("clientSearchInput");
+        const databaseList = document.getElementById("clientDatabaseList");
+        const databaseItems = databaseList ? Array.from(databaseList.querySelectorAll(".client-database-item")) : [];
+        const actionToggle = document.getElementById("clientActionToggle");
+        const actionBody = document.getElementById("clientActionBody");
+        const actionChevron = document.getElementById("clientActionChevron");
+
+        if (searchInput) {
+            searchInput.addEventListener("input", function () {
+                const query = searchInput.value.trim().toLowerCase();
+
+                databaseItems.forEach(function (item) {
+                    const haystack = item.dataset.clientSearch || "";
+                    const matches = haystack.includes(query);
+                    item.style.display = matches ? "" : "none";
+                });
+            });
+        }
+
+        if (actionToggle && actionBody && actionChevron) {
+            actionToggle.addEventListener("click", function () {
+                const isOpen = actionBody.classList.toggle("is-open");
+                actionChevron.textContent = isOpen ? "▴" : "▾";
+            });
+
+            actionBody.classList.add("is-open");
+            actionChevron.textContent = "▴";
+        }
     }
 
     function renderWorkspace(panelKey) {
@@ -322,19 +499,13 @@
         workspaceHeaderActions.innerHTML = data.actions;
         workspaceContent.innerHTML = data.content;
 
-        workspaceSectionLinks.innerHTML = "";
-        data.sections.forEach(function (section) {
-            const button = document.createElement("button");
-            button.type = "button";
-            button.className = "workspace-section-link";
-            button.textContent = section;
-            workspaceSectionLinks.appendChild(button);
-        });
+        if (panelKey === "clients") {
+            bindClientWorkspaceInteractions();
+        }
     }
 
     function openWorkspace(panelKey) {
         renderWorkspace(panelKey);
-
         launcherWrap.classList.add("workspace-open");
         workspaceMode.hidden = false;
 
@@ -373,7 +544,7 @@
     workspaceBackButton.addEventListener("click", closeWorkspace);
 
     launcherHelpButton.addEventListener("click", function () {
-        alert("Click a workspace card to enter workspace mode. Once open, use the left mini-sidebar to switch between sections.");
+        alert("Click a workspace card to enter workspace mode. Inside Clients, use search to quickly find a client and open their profile.");
     });
 })();
 </script>
