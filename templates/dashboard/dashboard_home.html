@@ -3,9 +3,9 @@
 
 {% block launcher_content %}
 <div class="launcher-page">
-    <div class="launcher-wrap">
+    <div class="launcher-wrap" id="launcherWrap">
         <div class="launcher-shell">
-            <div class="launcher-topbar">
+            <div class="launcher-topbar" id="launcherTopbar">
                 <div class="launcher-topbar-left">
                     <div class="launcher-title">GymFlow Launcher</div>
                     <div class="launcher-subtitle">
@@ -95,38 +95,84 @@
                 </button>
             </div>
 
-            <div class="launcher-panel-shell" id="launcherPanelShell" hidden>
-                <div class="launcher-panel-header">
-                    <div>
-                        <div class="launcher-panel-kicker">Workspace</div>
-                        <div class="launcher-panel-title" id="launcherPanelTitle">Clients</div>
-                        <div class="launcher-panel-subtitle" id="launcherPanelSubtitle">
-                            Manage this part of GymFlow from a focused workspace.
-                        </div>
-                    </div>
-
-                    <div class="launcher-panel-actions">
-                        <button type="button" class="launcher-chip" id="launcherBackButton">← Back to Launcher</button>
-                    </div>
-                </div>
-
-                <div class="launcher-panel-body">
-                    <div class="launcher-panel-sidebar">
-                        <div class="launcher-panel-sidebar-title">Sections</div>
-                        <div class="launcher-panel-sidebar-links" id="launcherPanelSidebarLinks"></div>
-                    </div>
-
-                    <div class="launcher-panel-content">
-                        <div class="launcher-panel-placeholder" id="launcherPanelContent"></div>
-                    </div>
-                </div>
-            </div>
-
             <div class="launcher-help" id="launcherHelpText">
                 <span class="launcher-help-dot"></span>
                 <span>
-                    Click any workspace card to expand it. Next we’ll wire the real tools into these panels.
+                    Click any workspace card to expand it. Switch between workspaces from the mini sidebar once open.
                 </span>
+            </div>
+
+            <div class="workspace-mode" id="workspaceMode" hidden>
+                <aside class="workspace-sidebar">
+                    <div class="workspace-sidebar-top">
+                        <div class="workspace-mini-brand">GF</div>
+                    </div>
+
+                    <div class="workspace-sidebar-nav" id="workspaceSidebarNav">
+                        <button type="button" class="workspace-nav-item" data-workspace="clients">
+                            <span class="workspace-nav-icon">◯</span>
+                            <span class="workspace-nav-label">Clients</span>
+                        </button>
+
+                        <button type="button" class="workspace-nav-item" data-workspace="workouts">
+                            <span class="workspace-nav-icon">⌁</span>
+                            <span class="workspace-nav-label">Workouts</span>
+                        </button>
+
+                        <button type="button" class="workspace-nav-item" data-workspace="nutrition">
+                            <span class="workspace-nav-icon">◌</span>
+                            <span class="workspace-nav-label">Nutrition</span>
+                        </button>
+
+                        <button type="button" class="workspace-nav-item" data-workspace="checkins">
+                            <span class="workspace-nav-icon">☑</span>
+                            <span class="workspace-nav-label">Check-Ins</span>
+                        </button>
+
+                        <button type="button" class="workspace-nav-item" data-workspace="settings">
+                            <span class="workspace-nav-icon">⚙</span>
+                            <span class="workspace-nav-label">Settings</span>
+                        </button>
+
+                        <button type="button" class="workspace-nav-item" data-workspace="activity">
+                            <span class="workspace-nav-icon">◔</span>
+                            <span class="workspace-nav-label">Activity</span>
+                        </button>
+                    </div>
+
+                    <div class="workspace-sidebar-bottom">
+                        <button type="button" class="workspace-back-button" id="workspaceBackButton">
+                            ← Back to Dashboard
+                        </button>
+                    </div>
+                </aside>
+
+                <section class="workspace-main">
+                    <div class="workspace-main-inner" id="workspaceMainInner">
+                        <div class="workspace-header">
+                            <div class="workspace-header-copy">
+                                <div class="workspace-kicker">Workspace</div>
+                                <div class="workspace-title" id="workspaceTitle">Clients</div>
+                                <div class="workspace-subtitle" id="workspaceSubtitle">
+                                    Client management, assignments, and detail views will live here.
+                                </div>
+                            </div>
+
+                            <div class="workspace-header-actions" id="workspaceHeaderActions"></div>
+                        </div>
+
+                        <div class="workspace-body">
+                            <div class="workspace-section-menu">
+                                <div class="workspace-section-menu-title">Sections</div>
+                                <div class="workspace-section-menu-links" id="workspaceSectionLinks"></div>
+                            </div>
+
+                            <div class="workspace-content">
+                                <div class="workspace-content-card" id="workspaceContent"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
@@ -134,29 +180,39 @@
 
 <script>
 (function () {
-    const grid = document.getElementById("launcherGrid");
-    const cards = Array.from(document.querySelectorAll(".launcher-card"));
-    const panelShell = document.getElementById("launcherPanelShell");
-    const panelTitle = document.getElementById("launcherPanelTitle");
-    const panelSubtitle = document.getElementById("launcherPanelSubtitle");
-    const panelContent = document.getElementById("launcherPanelContent");
-    const panelLinks = document.getElementById("launcherPanelSidebarLinks");
-    const backButton = document.getElementById("launcherBackButton");
-    const helpText = document.getElementById("launcherHelpText");
-    const helpButton = document.getElementById("launcherHelpButton");
-    const quickOpenButtons = document.querySelectorAll("[data-open-panel]");
+    const launcherWrap = document.getElementById("launcherWrap");
+    const launcherGrid = document.getElementById("launcherGrid");
+    const launcherHelpText = document.getElementById("launcherHelpText");
+    const workspaceMode = document.getElementById("workspaceMode");
+    const workspaceMainInner = document.getElementById("workspaceMainInner");
+    const workspaceTitle = document.getElementById("workspaceTitle");
+    const workspaceSubtitle = document.getElementById("workspaceSubtitle");
+    const workspaceHeaderActions = document.getElementById("workspaceHeaderActions");
+    const workspaceSectionLinks = document.getElementById("workspaceSectionLinks");
+    const workspaceContent = document.getElementById("workspaceContent");
+    const workspaceBackButton = document.getElementById("workspaceBackButton");
+    const launcherHelpButton = document.getElementById("launcherHelpButton");
+
+    const launcherCards = Array.from(document.querySelectorAll(".launcher-card"));
+    const quickOpenButtons = Array.from(document.querySelectorAll("[data-open-panel]"));
+    const workspaceNavItems = Array.from(document.querySelectorAll(".workspace-nav-item"));
+
+    let activeWorkspace = null;
 
     const workspaceData = {
         clients: {
             title: "Clients",
             subtitle: "Client management, assignments, and detail views will live here.",
-            links: ["All Clients", "Client Profiles", "Assignments", "Progress Snapshot"],
+            sections: ["All Clients", "Client Profiles", "Assignments", "Progress Snapshot"],
+            actions: `
+                <a href="/dashboard/clients/" class="btn btn-primary">Open current Clients page</a>
+            `,
             content: `
-                <div class="launcher-placeholder-title">Clients workspace</div>
-                <div class="launcher-placeholder-copy">
-                    This expanded panel will hold your client list, client detail views, assignment tools, and progress summary tools.
+                <div class="workspace-placeholder-title">Clients workspace</div>
+                <div class="workspace-placeholder-copy">
+                    This expanded workspace will hold your client list, client detail views, assignment tools, and progress summary tools.
                 </div>
-                <div class="launcher-placeholder-actions">
+                <div class="workspace-placeholder-actions">
                     <a href="/dashboard/clients/" class="btn btn-primary">Open current Clients page</a>
                 </div>
             `
@@ -164,13 +220,16 @@
         workouts: {
             title: "Workouts",
             subtitle: "Workout plan building and program tools will live here.",
-            links: ["Plan Templates", "Exercise Library", "Program Builder", "Client Versions"],
+            sections: ["Plan Templates", "Exercise Library", "Program Builder", "Client Versions"],
+            actions: `
+                <a href="/dashboard/workout-plans/" class="btn btn-primary">Open current Workouts page</a>
+            `,
             content: `
-                <div class="launcher-placeholder-title">Workouts workspace</div>
-                <div class="launcher-placeholder-copy">
-                    This is where the workout builder will expand into a full window, including plan templates, day structure, and exercise management.
+                <div class="workspace-placeholder-title">Workouts workspace</div>
+                <div class="workspace-placeholder-copy">
+                    This is where the workout builder will expand into a full workspace, including plan templates, day structure, and exercise management.
                 </div>
-                <div class="launcher-placeholder-actions">
+                <div class="workspace-placeholder-actions">
                     <a href="/dashboard/workout-plans/" class="btn btn-primary">Open current Workouts page</a>
                 </div>
             `
@@ -178,13 +237,16 @@
         nutrition: {
             title: "Nutrition",
             subtitle: "Nutrition plans, foods, and meal structure will live here.",
-            links: ["Nutrition Templates", "Food Library", "Meals", "Client Versions"],
+            sections: ["Nutrition Templates", "Food Library", "Meals", "Client Versions"],
+            actions: `
+                <a href="/dashboard/nutrition-plans/" class="btn btn-primary">Open current Nutrition page</a>
+            `,
             content: `
-                <div class="launcher-placeholder-title">Nutrition workspace</div>
-                <div class="launcher-placeholder-copy">
-                    This expanded panel will contain your nutrition workflow including templates, meals, food assignment, and client-specific versions.
+                <div class="workspace-placeholder-title">Nutrition workspace</div>
+                <div class="workspace-placeholder-copy">
+                    This expanded workspace will contain your nutrition workflow including templates, meals, food assignment, and client-specific versions.
                 </div>
-                <div class="launcher-placeholder-actions">
+                <div class="workspace-placeholder-actions">
                     <a href="/dashboard/nutrition-plans/" class="btn btn-primary">Open current Nutrition page</a>
                 </div>
             `
@@ -192,13 +254,16 @@
         checkins: {
             title: "Check-Ins",
             subtitle: "Onboarding, daily, and weekly check-in builders will live here.",
-            links: ["Onboarding Forms", "Daily Check-Ins", "Weekly Check-Ins", "Required Questions"],
+            sections: ["Onboarding Forms", "Daily Check-Ins", "Weekly Check-Ins", "Required Questions"],
+            actions: `
+                <a href="/dashboard/checkin-forms/" class="btn btn-primary">Open current Check-Ins page</a>
+            `,
             content: `
-                <div class="launcher-placeholder-title">Check-Ins workspace</div>
-                <div class="launcher-placeholder-copy">
-                    This is where your check-in system will live in a focused panel, including onboarding forms, weekly check-ins, and required app questions.
+                <div class="workspace-placeholder-title">Check-Ins workspace</div>
+                <div class="workspace-placeholder-copy">
+                    This is where your check-in system will live in a focused workspace, including onboarding forms, weekly check-ins, and required app questions.
                 </div>
-                <div class="launcher-placeholder-actions">
+                <div class="workspace-placeholder-actions">
                     <a href="/dashboard/checkin-forms/" class="btn btn-primary">Open current Check-Ins page</a>
                 </div>
             `
@@ -206,13 +271,16 @@
         settings: {
             title: "Settings",
             subtitle: "Business preferences and dashboard settings will live here.",
-            links: ["Brand Settings", "Appearance", "Notifications", "Account"],
+            sections: ["Brand Settings", "Appearance", "Notifications", "Account"],
+            actions: `
+                <a href="/dashboard/settings/" class="btn btn-primary">Open current Settings page</a>
+            `,
             content: `
-                <div class="launcher-placeholder-title">Settings workspace</div>
-                <div class="launcher-placeholder-copy">
-                    This expanded panel will hold theme options, business details, account preferences, and future platform controls.
+                <div class="workspace-placeholder-title">Settings workspace</div>
+                <div class="workspace-placeholder-copy">
+                    This expanded workspace will hold theme options, business details, account preferences, and future platform controls.
                 </div>
-                <div class="launcher-placeholder-actions">
+                <div class="workspace-placeholder-actions">
                     <a href="/dashboard/settings/" class="btn btn-primary">Open current Settings page</a>
                 </div>
             `
@@ -220,60 +288,92 @@
         activity: {
             title: "Recent Activity",
             subtitle: "A live feed of updates and actions will live here.",
-            links: ["Assignments", "Check-Ins", "Nutrition Updates", "Workout Updates"],
+            sections: ["Assignments", "Check-Ins", "Nutrition Updates", "Workout Updates"],
+            actions: ``,
             content: `
-                <div class="launcher-placeholder-title">Recent Activity workspace</div>
-                <div class="launcher-placeholder-copy">
-                    This panel is reserved for a future activity feed showing recent assignments, check-ins, plan updates, and other system events.
+                <div class="workspace-placeholder-title">Recent Activity workspace</div>
+                <div class="workspace-placeholder-copy">
+                    This workspace is reserved for a future activity feed showing recent assignments, check-ins, plan updates, and other system events.
                 </div>
             `
         }
     };
 
-    function openPanel(panelKey) {
-        const data = workspaceData[panelKey];
-        if (!data) return;
-
-        grid.hidden = true;
-        helpText.hidden = true;
-        panelShell.hidden = false;
-
-        panelTitle.textContent = data.title;
-        panelSubtitle.textContent = data.subtitle;
-        panelContent.innerHTML = data.content;
-
-        panelLinks.innerHTML = "";
-        data.links.forEach(function (item) {
-            const link = document.createElement("button");
-            link.type = "button";
-            link.className = "launcher-panel-side-link";
-            link.textContent = item;
-            panelLinks.appendChild(link);
+    function setActiveNav(panelKey) {
+        workspaceNavItems.forEach(function (item) {
+            const isActive = item.dataset.workspace === panelKey;
+            item.classList.toggle("active", isActive);
         });
     }
 
-    function closePanel() {
-        panelShell.hidden = true;
-        grid.hidden = false;
-        helpText.hidden = false;
+    function renderWorkspace(panelKey) {
+        const data = workspaceData[panelKey];
+        if (!data) return;
+
+        activeWorkspace = panelKey;
+        setActiveNav(panelKey);
+
+        workspaceMainInner.classList.remove("workspace-content-switch");
+        void workspaceMainInner.offsetWidth;
+        workspaceMainInner.classList.add("workspace-content-switch");
+
+        workspaceTitle.textContent = data.title;
+        workspaceSubtitle.textContent = data.subtitle;
+        workspaceHeaderActions.innerHTML = data.actions;
+        workspaceContent.innerHTML = data.content;
+
+        workspaceSectionLinks.innerHTML = "";
+        data.sections.forEach(function (section) {
+            const button = document.createElement("button");
+            button.type = "button";
+            button.className = "workspace-section-link";
+            button.textContent = section;
+            workspaceSectionLinks.appendChild(button);
+        });
     }
 
-    cards.forEach(function (card) {
+    function openWorkspace(panelKey) {
+        renderWorkspace(panelKey);
+
+        launcherWrap.classList.add("workspace-open");
+        workspaceMode.hidden = false;
+
+        requestAnimationFrame(function () {
+            workspaceMode.classList.add("is-visible");
+        });
+    }
+
+    function closeWorkspace() {
+        launcherWrap.classList.remove("workspace-open");
+        workspaceMode.classList.remove("is-visible");
+
+        setTimeout(function () {
+            workspaceMode.hidden = true;
+        }, 320);
+    }
+
+    launcherCards.forEach(function (card) {
         card.addEventListener("click", function () {
-            openPanel(card.dataset.panel);
+            openWorkspace(card.dataset.panel);
         });
     });
 
     quickOpenButtons.forEach(function (button) {
         button.addEventListener("click", function () {
-            openPanel(button.dataset.openPanel);
+            openWorkspace(button.dataset.openPanel);
         });
     });
 
-    backButton.addEventListener("click", closePanel);
+    workspaceNavItems.forEach(function (item) {
+        item.addEventListener("click", function () {
+            renderWorkspace(item.dataset.workspace);
+        });
+    });
 
-    helpButton.addEventListener("click", function () {
-        alert("Click a workspace card to expand it. Next we’ll wire the real tools directly into these panels.");
+    workspaceBackButton.addEventListener("click", closeWorkspace);
+
+    launcherHelpButton.addEventListener("click", function () {
+        alert("Click a workspace card to enter workspace mode. Once open, use the left mini-sidebar to switch between sections.");
     });
 })();
 </script>
