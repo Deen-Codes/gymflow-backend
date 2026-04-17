@@ -1,0 +1,578 @@
+.dashboard-launcher-main {
+    min-height: 100vh;
+}
+
+.dashboard-launcher-messages {
+    position: fixed;
+    top: 14px;
+    left: 14px;
+    right: 14px;
+    z-index: 30;
+    pointer-events: none;
+}
+
+.dashboard-launcher-messages .messages {
+    max-width: 680px;
+    pointer-events: auto;
+}
+
+.launcher-page {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top left, rgba(94, 162, 255, 0.16), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(96, 238, 186, 0.08), transparent 26%),
+        linear-gradient(145deg, #0d1320, #121a2b);
+    color: #f5f7fb;
+}
+
+.launcher-wrap {
+    min-height: 100vh;
+    color: #f5f7fb;
+    overflow: hidden;
+}
+
+.launcher-shell {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 14px;
+}
+
+.launcher-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 14px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    transition: opacity 0.28s ease, transform 0.28s ease;
+}
+
+.launcher-topbar-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.launcher-title {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #f5f7fb;
+}
+
+.launcher-subtitle {
+    font-size: 14px;
+    color: #9eabc2;
+}
+
+.launcher-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.launcher-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 42px;
+    padding: 0 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.04);
+    color: #f5f7fb;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.18s ease;
+}
+
+.launcher-chip:hover {
+    transform: translateY(-1px);
+    border-color: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.launcher-chip.primary {
+    background: linear-gradient(180deg, #5ea2ff, #3d84f0);
+    border-color: transparent;
+    color: white;
+    box-shadow: 0 12px 26px rgba(70, 135, 243, 0.26);
+}
+
+.launcher-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    transition: opacity 0.30s ease, transform 0.30s ease;
+}
+
+.launcher-card {
+    position: relative;
+    min-height: 215px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    overflow: hidden;
+    transition:
+        transform 0.22s ease,
+        border-color 0.22s ease,
+        background 0.22s ease,
+        box-shadow 0.22s ease,
+        opacity 0.25s ease;
+    text-align: left;
+    color: inherit;
+}
+
+.launcher-card::after {
+    content: "";
+    position: absolute;
+    inset: auto -40px -55px auto;
+    width: 140px;
+    height: 140px;
+    border-radius: 999px;
+    background: radial-gradient(circle, rgba(94, 162, 255, 0.18), transparent 68%);
+    pointer-events: none;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+    opacity: 0.75;
+}
+
+.launcher-card:hover {
+    transform: translateY(-6px) scale(1.01);
+    border-color: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 20px 42px rgba(0, 0, 0, 0.16);
+}
+
+.launcher-card:hover::after {
+    transform: scale(1.08);
+    opacity: 1;
+}
+
+.launcher-card-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.07);
+    color: #f5f7fb;
+    margin-bottom: 18px;
+    transition: 0.2s ease;
+}
+
+.launcher-card:hover .launcher-card-icon {
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.24);
+    background: rgba(255, 255, 255, 0.11);
+}
+
+.launcher-card-title {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+    color: #f5f7fb;
+}
+
+.launcher-card-summary {
+    font-size: 14px;
+    line-height: 1.55;
+    color: #9eabc2;
+    max-width: 34ch;
+}
+
+.launcher-card-hover {
+    margin-top: 18px;
+    padding-top: 16px;
+    font-size: 13px;
+    color: #f5f7fb;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.22s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.launcher-card:hover .launcher-card-hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.launcher-card-hint {
+    color: #9eabc2;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.launcher-card-arrow {
+    width: 34px;
+    height: 34px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.08);
+    font-size: 16px;
+}
+
+.launcher-help {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #9eabc2;
+    font-size: 13px;
+    transition: opacity 0.28s ease, transform 0.28s ease;
+}
+
+.launcher-help-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: #5ea2ff;
+}
+
+.workspace-mode {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    display: grid;
+    grid-template-columns: 92px 1fr;
+    background:
+        radial-gradient(circle at top left, rgba(94, 162, 255, 0.14), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(96, 238, 186, 0.06), transparent 24%),
+        linear-gradient(145deg, #0d1320, #121a2b);
+    opacity: 0;
+    transform: scale(0.985);
+    transition: opacity 0.32s ease, transform 0.32s ease;
+    pointer-events: none;
+}
+
+.workspace-mode.is-visible {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+.workspace-sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 18px 14px;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+}
+
+.workspace-sidebar-top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.workspace-mini-brand {
+    width: 46px;
+    height: 46px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #5ea2ff, #3d84f0);
+    color: white;
+    font-weight: 800;
+    box-shadow: 0 12px 26px rgba(70, 135, 243, 0.24);
+}
+
+.workspace-sidebar-nav {
+    display: grid;
+    gap: 10px;
+}
+
+.workspace-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-height: 74px;
+    border-radius: 18px;
+    border: 1px solid transparent;
+    background: transparent;
+    color: #9eabc2;
+    cursor: pointer;
+    transition: 0.2s ease;
+    padding: 8px;
+}
+
+.workspace-nav-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: #f5f7fb;
+}
+
+.workspace-nav-item.active {
+    background: rgba(94, 162, 255, 0.14);
+    border-color: rgba(94, 162, 255, 0.24);
+    color: #ffffff;
+}
+
+.workspace-nav-icon {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.workspace-nav-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.workspace-sidebar-bottom {
+    margin-top: auto;
+}
+
+.workspace-back-button {
+    width: 100%;
+    min-height: 46px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.04);
+    color: #f5f7fb;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.18s ease;
+    padding: 10px;
+}
+
+.workspace-back-button:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-1px);
+}
+
+.workspace-main {
+    padding: 16px;
+}
+
+.workspace-main-inner {
+    min-height: calc(100vh - 32px);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 28px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(12px);
+}
+
+.workspace-content-switch {
+    animation: workspaceFade 0.25s ease;
+}
+
+@keyframes workspaceFade {
+    from {
+        opacity: 0.65;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.workspace-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.workspace-kicker {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #9eabc2;
+    margin-bottom: 8px;
+}
+
+.workspace-title {
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #f5f7fb;
+}
+
+.workspace-subtitle {
+    font-size: 15px;
+    color: #9eabc2;
+    margin-top: 6px;
+}
+
+.workspace-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.workspace-body {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    min-height: 680px;
+}
+
+.workspace-section-menu {
+    padding: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.workspace-section-menu-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #9eabc2;
+    margin-bottom: 14px;
+}
+
+.workspace-section-menu-links {
+    display: grid;
+    gap: 10px;
+}
+
+.workspace-section-link {
+    width: 100%;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.04);
+    color: #f5f7fb;
+    border-radius: 14px;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.18s ease;
+}
+
+.workspace-section-link:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+.workspace-content {
+    padding: 24px;
+}
+
+.workspace-content-card {
+    min-height: 100%;
+    border-radius: 24px;
+    border: 1px dashed rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 28px;
+}
+
+.workspace-placeholder-title {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 10px;
+    color: #f5f7fb;
+}
+
+.workspace-placeholder-copy {
+    color: #9eabc2;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 60ch;
+    margin-bottom: 20px;
+}
+
+.workspace-placeholder-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.launcher-wrap.workspace-open .launcher-grid,
+.launcher-wrap.workspace-open .launcher-help,
+.launcher-wrap.workspace-open .launcher-topbar {
+    opacity: 0;
+    transform: translateY(-14px) scale(0.985);
+    pointer-events: none;
+}
+
+@media (max-width: 1180px) {
+    .launcher-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .workspace-body {
+        grid-template-columns: 1fr;
+    }
+
+    .workspace-section-menu {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+}
+
+@media (max-width: 860px) {
+    .workspace-mode {
+        grid-template-columns: 1fr;
+    }
+
+    .workspace-sidebar {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding-bottom: 14px;
+    }
+
+    .workspace-sidebar-nav {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .workspace-main {
+        padding: 12px;
+    }
+
+    .workspace-main-inner {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 760px) {
+    .launcher-shell {
+        padding: 12px;
+    }
+
+    .launcher-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .workspace-title {
+        font-size: 30px;
+    }
+
+    .workspace-sidebar-nav {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

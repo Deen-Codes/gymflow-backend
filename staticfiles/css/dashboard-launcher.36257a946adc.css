@@ -1,0 +1,94 @@
+.dashboard-launcher-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 28px 20px 40px;
+}
+
+/* Top bar */
+
+.dashboard-launcher-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.dashboard-launcher-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #f5f7fb;
+}
+
+.dashboard-launcher-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Cards grid */
+
+.dashboard-launcher-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    justify-content: center;
+}
+
+/* Cards */
+
+.dashboard-card {
+    position: relative;
+    border-radius: 18px;
+    padding: 22px;
+    background: linear-gradient(145deg, rgba(25,35,60,0.95), rgba(15,20,35,0.95));
+    border: 1px solid rgba(255,255,255,0.06);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    min-height: 160px;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-4px) scale(1.01);
+    border-color: rgba(90,140,255,0.4);
+}
+
+/* Card content */
+
+.dashboard-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.dashboard-card-desc {
+    font-size: 13px;
+    color: #aab3c5;
+    line-height: 1.4;
+}
+
+/* Workspace expansion */
+
+.workspace-expanded {
+    margin-top: 28px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, rgba(20,30,55,0.95), rgba(12,18,30,0.95));
+    border: 1px solid rgba(255,255,255,0.05);
+    padding: 24px;
+}
+
+/* Smooth animation */
+
+.fade-in {
+    animation: fadeIn 0.25s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

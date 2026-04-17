@@ -17,7 +17,12 @@
     <div class="client-action-card">
         <button type="button" class="client-action-toggle" id="clientActionToggle">
             <div>
-                <div class="client-action-title">Action Needed</div>
+                <div class="client-action-title">
+                    Action Needed
+                    {% if action_needed_count > 0 %}
+                        <span class="client-action-badge">{{ action_needed_count }}</span>
+                    {% endif %}
+                </div>
                 <div class="client-action-subtitle">Quick PT tasks that need attention.</div>
             </div>
             <span class="client-action-chevron" id="clientActionChevron">▾</span>
