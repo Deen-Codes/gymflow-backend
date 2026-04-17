@@ -29,14 +29,18 @@
     min-height: 100vh;
     color: #f5f7fb;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .launcher-shell {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 22px;
-    padding: 14px;
+    gap: 18px;
+    padding: 18px 20px 24px;
+    width: min(1480px, 100%);
+    margin: 0 auto;
 }
 
 .launcher-topbar {
@@ -60,14 +64,14 @@
 }
 
 .launcher-title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 800;
     letter-spacing: -0.03em;
     color: #f5f7fb;
 }
 
 .launcher-subtitle {
-    font-size: 14px;
+    font-size: 13px;
     color: #9eabc2;
 }
 
@@ -110,18 +114,19 @@
 .launcher-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
+    gap: 16px;
     transition: opacity 0.30s ease, transform 0.30s ease;
+    align-content: start;
 }
 
 .launcher-card {
     position: relative;
-    min-height: 215px;
-    border-radius: 24px;
+    min-height: 180px;
+    border-radius: 22px;
     border: 1px solid rgba(255, 255, 255, 0.10);
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(10px);
-    padding: 20px;
+    padding: 18px;
     overflow: hidden;
     transition:
         transform 0.22s ease,
@@ -159,17 +164,17 @@
 }
 
 .launcher-card-icon {
-    width: 56px;
-    height: 56px;
-    border-radius: 18px;
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 22px;
     border: 1px solid rgba(255, 255, 255, 0.10);
     background: rgba(255, 255, 255, 0.07);
     color: #f5f7fb;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     transition: 0.2s ease;
 }
 
@@ -180,7 +185,7 @@
 }
 
 .launcher-card-title {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 800;
     letter-spacing: -0.03em;
     margin-bottom: 8px;
@@ -188,16 +193,16 @@
 }
 
 .launcher-card-summary {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.55;
     color: #9eabc2;
-    max-width: 34ch;
+    max-width: 30ch;
 }
 
 .launcher-card-hover {
-    margin-top: 18px;
-    padding-top: 16px;
-    font-size: 13px;
+    margin-top: 14px;
+    padding-top: 10px;
+    font-size: 12px;
     color: #f5f7fb;
     opacity: 0;
     transform: translateY(10px);
@@ -347,16 +352,22 @@
 }
 
 .workspace-back-button {
-    width: 100%;
+    width: 46px;
+    min-width: 46px;
+    height: 46px;
     min-height: 46px;
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.10);
     background: rgba(255, 255, 255, 0.04);
     color: #f5f7fb;
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 18px;
     cursor: pointer;
     transition: 0.18s ease;
-    padding: 10px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .workspace-back-button:hover {
@@ -365,7 +376,7 @@
 }
 
 .workspace-main {
-    padding: 16px;
+    padding: 12px 16px 12px 10px;
 }
 
 .workspace-main-inner {
@@ -400,7 +411,7 @@
     align-items: start;
     gap: 16px;
     flex-wrap: wrap;
-    padding: 24px;
+    padding: 20px 22px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
