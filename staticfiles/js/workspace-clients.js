@@ -21,12 +21,13 @@ window.initClientsWorkspace = function () {
     }
 
     if (actionToggle && actionBody && actionChevron) {
-        // collapsed by default
-actionBody.classList.remove("is-open");
-actionChevron.textContent = "▾";
+        actionBody.classList.remove("is-open");
+        actionBody.style.display = "none";
+        actionChevron.textContent = "▾";
 
         actionToggle.onclick = function () {
             const isOpen = actionBody.classList.toggle("is-open");
+            actionBody.style.display = isOpen ? "block" : "none";
             actionChevron.textContent = isOpen ? "▴" : "▾";
         };
     }

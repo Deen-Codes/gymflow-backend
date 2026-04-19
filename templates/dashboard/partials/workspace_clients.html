@@ -17,61 +17,54 @@
     <div class="client-action-card">
         <button type="button" class="client-action-toggle" id="clientActionToggle">
             <div>
-                <div class="client-action-title">
-                    Action Needed
-                    {% if action_needed_count > 0 %}
-                        <span class="client-action-badge">{{ action_needed_count }}</span>
-                    {% endif %}
-                </div>
-                <div class="client-action-subtitle">Quick PT tasks that need attention.</div>
-            </div>
+               <div class="client-action-title-row">
+    <div class="client-action-title">Action Needed</div>
+    {% if action_needed_count > 0 %}
+        <span class="client-action-badge">{{ action_needed_count }}</span>
+    {% endif %}
+</div>
             <span class="client-action-chevron" id="clientActionChevron">▾</span>
         </button>
 
         <div class="client-action-body" id="clientActionBody">
             <div class="client-action-grid">
-                <div class="client-action-block">
-                    <div class="client-action-block-title">Missing workout plan</div>
+                {% if missing_workout_clients %}
+                    <div class="client-action-block">
+                 <div class="client-action-block-title">Missing workout plan</div>
                     <div class="client-action-list">
-                        {% for client in clients %}
-                            {% if not client.client_profile.assigned_workout_plan %}
-                                <a href="{% url 'trainer-client-detail' client.id %}" class="client-action-item">
-                                    {{ client.username }}
-                                </a>
-                            {% endif %}
-                        {% endfor %}
-                    </div>
+                    {% for client in missing_workout_clients %}
+                    <a href="{% url 'trainer-client-detail' client.id %}" class="client-action-item">
+                        {{ client.username }}
+                    </a>
+                    {% endfor %}
                 </div>
-
-                <div class="client-action-block">
-                    <div class="client-action-block-title">Missing nutrition plan</div>
-                    <div class="client-action-list">
-                        {% for client in clients %}
-                            {% if client.client_profile.assigned_nutrition_plan %}
-                            {% else %}
-                                <a href="{% url 'trainer-client-detail' client.id %}" class="client-action-item">
-                                    {{ client.username }}
-                                </a>
-                            {% endif %}
-                        {% endfor %}
-                    </div>
                 </div>
+                        {% endif %}
 
-                <div class="client-action-block">
-                    <div class="client-action-block-title">Quick summary</div>
-                    <div class="client-summary-metrics">
-                        <div class="client-summary-metric">
-                            <span class="client-summary-metric-label">Total clients</span>
-                            <span class="client-summary-metric-value">{{ client_count }}</span>
-                        </div>
+                    {% if missing_nutrition_clients %}
+                    <div class="client-action-block">
+                        <div class="client-action-block-title">Missing nutrition plan</div>
+                        <div class="client-action-list">
+                            {% for client in missing_nutrition_clients %}
+                         <a href="{% url 'trainer-client-detail' client.id %}" class="client-action-item">
+                        {{ client.username }}
+                        </a>
+                    {% endfor %}
+                </div>
+             </div>
+                 {% endif %}
+
+                {% if action_needed_count == 0 %}
+             <div class="client-action-empty-state">
+                 <div class="client-action-empty-title">You're all up to date</div>
+                    <div class="client-action-empty-copy">
+                No missing workout plans or nutrition plans right now.
                     </div>
-                    <div class="client-action-note">
-                        Full progress, workouts, nutrition, and check-ins will live inside each client profile.
                     </div>
+                {% endif %}
+                </div>
                 </div>
             </div>
-        </div>
-    </div>
 
     <div class="client-database-card">
         <div class="client-database-header">

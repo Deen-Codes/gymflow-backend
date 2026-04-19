@@ -23,15 +23,19 @@
 
             <div class="launcher-grid" id="launcherGrid">
                 <button type="button" class="launcher-card" data-panel="clients">
-                    <div class="launcher-card-icon">◯</div>
-                    <div class="launcher-card-title">Clients</div>
-                    <div class="launcher-card-summary">
-                        Open client management, assign plans, view client details, and keep your roster organised.
-                    </div>
-                    <div class="launcher-card-hover">
-                        <span class="launcher-card-hint">Open workspace</span>
-                        <span class="launcher-card-arrow">→</span>
-                    </div>
+                    {% if action_needed_count > 0 %}
+                    <span class="launcher-card-badge">{{ action_needed_count }}</span>
+                    {% endif %}
+
+                     <div class="launcher-card-icon">◯</div>
+                        <div class="launcher-card-title">Clients</div>
+                        <div class="launcher-card-summary">
+                            Open client management, assign plans, view client details, and keep your roster organised.
+                        </div>
+                        <div class="launcher-card-hover">
+                            <span class="launcher-card-hint">Open workspace</span>
+                             <span class="launcher-card-arrow">→</span>
+                        </div>
                 </button>
 
                 <button type="button" class="launcher-card" data-panel="workouts">
@@ -110,6 +114,10 @@
                         <button type="button" class="workspace-nav-item" data-workspace="clients">
                             <span class="workspace-nav-icon">◯</span>
                             <span class="workspace-nav-label">Clients</span>
+
+                            {% if action_needed_count > 0 %}
+                            <span class="workspace-nav-badge">{{ action_needed_count }}</span>
+                             {% endif %}
                         </button>
 
                         <button type="button" class="workspace-nav-item" data-workspace="workouts">

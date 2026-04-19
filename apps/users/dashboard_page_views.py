@@ -1,10 +1,7 @@
-from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect, render
 
 from .dashboard_helpers import trainer_required, dashboard_context
-
-User = get_user_model()
 
 
 @login_required
@@ -15,19 +12,20 @@ def trainer_dashboard_home(request):
     if not trainer_required(request):
         return redirect("landing-page")
 
-    clients = (
-        User.objects.filter(
-            role="client",
-            client_profile__trainer=request.user,
-        )
-        .select_related(
+    trainer_profile = request.user.trainer_profile
+
+    context = dashboard_context(request, "Dashboard")
+
+    clients = context.get("clients")
+    if clients is None:
+        clients = trainer_profile.clients.select_related(
             "client_profile",
             "client_profile__assigned_workout_plan",
             "client_profile__assigned_nutrition_plan",
-        )
-        .order_by("username")
-    )
+        ).order_by("username")
 
+    missing_workout_clients = []
+    missing_nutrition_clients = []
     action_needed_count = 0
 
     for client in clients:
@@ -35,18 +33,21 @@ def trainer_dashboard_home(request):
         if not profile:
             continue
 
-        if not profile.assigned_workout_plan:
+        if not getattr(profile, "assigned_workout_plan", None):
+            missing_workout_clients.append(client)
             action_needed_count += 1
 
-        if not profile.assigned_nutrition_plan:
+        if not getattr(profile, "assigned_nutrition_plan", None):
+            missing_nutrition_clients.append(client)
             action_needed_count += 1
 
-    context = dashboard_context(request, "Dashboard")
     context.update(
         {
             "clients": clients,
-            "client_count": clients.count(),
+            "client_count": clients.count() if hasattr(clients, "count") else len(clients),
             "action_needed_count": action_needed_count,
+            "missing_workout_clients": missing_workout_clients,
+            "missing_nutrition_clients": missing_nutrition_clients,
         }
     )
 
