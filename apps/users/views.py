@@ -1,6 +1,9 @@
 from django.contrib.auth import login, logout
+from django.utils.decorators import method_decorator
+from django.views.decorators.csrf import csrf_exempt
 from rest_framework.authtoken.models import Token
-from rest_framework.decorators import api_view, permission_classes
+from rest_framework.decorators import api_view, permission_classes, authentication_classes
+from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 from rest_framework import status
@@ -25,7 +28,14 @@ from .serializers import (
 #   * The iOS client stores `token` in the Keychain and sends it as
 #     `Authorization: Token <key>` on every request.
 # -------------------------------------------------------------------
+# `csrf_exempt` belt-and-suspenders alongside `@api_view`. Mobile clients
+# don't have a CSRF cookie/token, and Django 4.x's tightened CSRF check
+# can reject before DRF's csrf_exempt flag is honored. We also drop
+# SessionAuthentication for this single endpoint — the iOS client never
+# sends a session cookie, so DRF's enforce_csrf path is moot here.
+@csrf_exempt
 @api_view(["POST"])
+@authentication_classes([])
 @permission_classes([AllowAny])
 def login_view(request):
     serializer = LoginSerializer(data=request.data)
@@ -46,7 +56,9 @@ def login_view(request):
     )
 
 
+@csrf_exempt
 @api_view(["POST"])
+@authentication_classes([TokenAuthentication])
 @permission_classes([IsAuthenticated])
 def logout_view(request):
     # Destroy the user's auth token so a stolen token can't be reused
