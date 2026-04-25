@@ -9,11 +9,23 @@ class LoginSerializer(serializers.Serializer):
     password = serializers.CharField(write_only=True)
 
     def validate(self, attrs):
-        user = authenticate(
-            username=attrs["username"],
-            password=attrs["password"],
-        )
+        # Case-insensitive username match. Most users will type "Deen"
+        # or "deen" interchangeably and expect it to work — Django's
+        # default `authenticate()` is case-sensitive, so we resolve to
+        # the canonical stored username first via __iexact, then auth.
+        raw_username = attrs["username"].strip()
+        password = attrs["password"]
 
+        canonical = (
+            User.objects
+            .filter(username__iexact=raw_username)
+            .values_list("username", flat=True)
+            .first()
+        )
+        if canonical is None:
+            raise serializers.ValidationError("Invalid username or password.")
+
+        user = authenticate(username=canonical, password=password)
         if not user:
             raise serializers.ValidationError("Invalid username or password.")
 
