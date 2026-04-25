@@ -1,174 +1,426 @@
 {% extends "dashboard/dashboard_shell.html" %}
-{% load user_extras %}
+{% load static %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/dashboard-clients.css' %}">
+{% endblock %}
 
 {% block dashboard_content %}
-<div style="display:grid;gap:22px;">
-    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
-        <a href="{% url 'trainer-dashboard' %}" class="muted">← Back to clients</a>
+{% csrf_token %}
 
-        <form method="post" action="{% url 'dashboard-delete-client' client.id %}" onsubmit="return confirm('Delete this client? This cannot be undone.');">
-            {% csrf_token %}
-            <button type="submit" class="btn btn-secondary">Delete Client</button>
-        </form>
-    </div>
-
-    <div class="glass" style="padding:24px;">
-        <div style="display:flex;justify-content:space-between;align-items:start;gap:18px;flex-wrap:wrap;">
-            <div>
-                <div style="font-size:30px;font-weight:800;">{{ client.username }}</div>
-                <div class="muted" style="margin-top:6px;">{{ client.email }}</div>
-            </div>
-
-            <div style="display:flex;gap:12px;flex-wrap:wrap;">
-                <div class="glass" style="padding:10px 14px;">
-                    Role: Client
-                </div>
-                <div class="glass" style="padding:10px 14px;">
-                    Trainer: {{ trainer_profile.business_name }}
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start;">
-        {% if assigned_plan %}
-            <a href="{% url 'trainer-workout-plan-detail' assigned_plan.id %}" class="glass" style="padding:24px;display:block;">
-                <div style="font-size:22px;font-weight:700;margin-bottom:16px;">Assigned Workout Plan</div>
-
-                <div style="font-size:18px;font-weight:700;margin-bottom:8px;">
-                    {{ assigned_plan.name }}
-                </div>
-
-                <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;">
-                    {% if assigned_plan.is_template %}
-                        <div class="glass" style="padding:8px 12px;">
-                            Shared Template
-                        </div>
-                    {% else %}
-                        <div class="glass" style="padding:8px 12px;">
-                            Client-Specific Version
-                        </div>
-                    {% endif %}
-
-                    {% if assigned_plan.source_template %}
-                        <div class="glass" style="padding:8px 12px;">
-                            Based on: {{ assigned_plan.source_template.name }}
-                        </div>
-                    {% endif %}
-                </div>
-
-                <div class="muted">
-                    This client currently has a workout plan assigned. Click anywhere in this card to open and edit it.
-                </div>
-            </a>
-        {% else %}
-            <div class="glass" style="padding:24px;">
-                <div style="font-size:22px;font-weight:700;margin-bottom:16px;">Assigned Workout Plan</div>
-
-                <div class="muted">
-                    No workout plan assigned yet.
-                </div>
-            </div>
-        {% endif %}
-
-        <div class="glass" style="padding:24px;">
-            <div style="font-size:22px;font-weight:700;margin-bottom:16px;">Assign Workout Plan</div>
-
-            <form method="post" action="{% url 'dashboard-assign-workout-plan' %}" style="display:grid;gap:14px;">
-                {% csrf_token %}
-                <input type="hidden" name="client_user_id" value="{{ client.id }}">
-
-                <div>
-                    <label class="label">Workout plan</label>
-                    {{ client_assign_form|get_field:"workout_plan_id" }}
-                </div>
-
-                <label style="display:flex;align-items:center;gap:10px;">
-                    <input type="checkbox" name="create_client_specific_copy">
-                    <span>Create client-specific version before assigning</span>
-                </label>
-
-                <div class="muted">
-                    Use this when you want to customise the plan later for only this client without changing the original template.
-                </div>
-
-                <button type="submit" class="btn btn-primary">Save Assignment</button>
-            </form>
-        </div>
-    </div>
-
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start;">
-        {% if assigned_nutrition_plan %}
-            <a href="{% url 'trainer-nutrition-plan-detail' assigned_nutrition_plan.id %}" class="glass" style="padding:24px;display:block;">
-                <div style="font-size:22px;font-weight:700;margin-bottom:16px;">Assigned Nutrition Plan</div>
-
-                <div style="font-size:18px;font-weight:700;margin-bottom:8px;">
-                    {{ assigned_nutrition_plan.name }}
-                </div>
-
-                <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;">
-                    {% if assigned_nutrition_plan.is_template %}
-                        <div class="glass" style="padding:8px 12px;">
-                            Shared Template
-                        </div>
-                    {% else %}
-                        <div class="glass" style="padding:8px 12px;">
-                            Client-Specific Version
-                        </div>
-                    {% endif %}
-
-                    {% if assigned_nutrition_plan.source_template %}
-                        <div class="glass" style="padding:8px 12px;">
-                            Based on: {{ assigned_nutrition_plan.source_template.name }}
-                        </div>
-                    {% endif %}
-                </div>
-
-                <div class="muted">
-                    This client currently has a nutrition plan assigned. Click anywhere in this card to open and edit it.
-                </div>
-            </a>
-        {% else %}
-            <div class="glass" style="padding:24px;">
-                <div style="font-size:22px;font-weight:700;margin-bottom:16px;">Assigned Nutrition Plan</div>
-
-                <div class="muted">
-                    No nutrition plan assigned yet.
-                </div>
-            </div>
-        {% endif %}
-
-        <div class="glass" style="padding:24px;">
-            <div style="font-size:22px;font-weight:700;margin-bottom:16px;">Assign Nutrition Plan</div>
-
-            <form method="post" action="{% url 'dashboard-assign-nutrition-plan' %}" style="display:grid;gap:14px;">
-                {% csrf_token %}
-                <input type="hidden" name="client_user_id" value="{{ client.id }}">
-
-                <div>
-                    <label class="label">Nutrition plan</label>
-                    {{ client_nutrition_assign_form|get_field:"nutrition_plan_id" }}
-                </div>
-
-                <label style="display:flex;align-items:center;gap:10px;">
-                    <input type="checkbox" name="create_client_specific_copy">
-                    <span>Create client-specific version before assigning</span>
-                </label>
-
-                <div class="muted">
-                    Use this when you want to customise the nutrition plan later for only this client without changing the original template.
-                </div>
-
-                <button type="submit" class="btn btn-primary">Save Assignment</button>
-            </form>
-        </div>
-    </div>
-
-    <div class="glass" style="padding:24px;">
-        <div style="font-size:22px;font-weight:700;margin-bottom:14px;">Progress</div>
-        <div class="muted">
-            Client check-ins, workout history, body stats, and progress data can go here later.
-        </div>
-    </div>
+<!-- Top breadcrumb + delete -->
+<div class="client-detail-bar">
+    <a href="{% url 'trainer-dashboard' %}" class="client-detail-back">← Roster</a>
+    <form method="post" action="{% url 'dashboard-delete-client' client.id %}"
+          onsubmit="return confirm('Delete this client? This cannot be undone.');"
+          class="client-detail-delete">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-ghost btn-sm">Delete client</button>
+    </form>
 </div>
+
+<!-- Hero — client identity -->
+<section class="client-hero glass">
+    <div class="client-hero-id">
+        <div class="client-avatar client-avatar--lg">{{ client.username|slice:":1"|upper }}</div>
+        <div>
+            <h1 class="client-hero-name">{{ client.username }}</h1>
+            <div class="client-hero-email">{{ client.email|default:"—" }}</div>
+        </div>
+    </div>
+    <div class="client-hero-meta">
+        <span class="badge">Role · Client</span>
+        <span class="badge">Trainer · {{ trainer_profile.business_name|default:request.user.username }}</span>
+    </div>
+</section>
+
+<!-- 2x2 grid: Workout · Nutrition / Progress · Check-Ins -->
+<section class="client-grid">
+
+    <!-- ============== WORKOUT PLAN ============== -->
+    <div class="client-cell glass">
+        <header class="client-cell-head">
+            <div>
+                <div class="kicker" style="color:var(--accent);">⌁ Workout plan</div>
+                <h2 class="client-cell-title">
+                    {% if assigned_plan %}{{ assigned_plan.name }}{% else %}Not assigned{% endif %}
+                </h2>
+                <div class="client-cell-sub">
+                    {% if assigned_plan %}
+                        {{ assigned_plan.days.count }} day{{ assigned_plan.days.count|pluralize }}
+                        {% if assigned_plan.is_template %}· Shared template{% else %}· Client-specific copy{% endif %}
+                        {% if assigned_plan.source_template %}· Based on {{ assigned_plan.source_template.name }}{% endif %}
+                    {% else %}
+                        Pick a plan from your library, or create a new one.
+                    {% endif %}
+                </div>
+            </div>
+            {% if assigned_plan %}
+                <a href="{% url 'trainer-workout-plan-detail' assigned_plan.id %}" class="btn btn-secondary btn-sm">Open & edit</a>
+            {% endif %}
+        </header>
+
+        <div class="client-cell-body">
+            <form method="post" action="{% url 'dashboard-assign-workout-plan' %}" class="client-cell-form">
+                {% csrf_token %}
+                <input type="hidden" name="client_user_id" value="{{ client.id }}">
+
+                <label class="label">{% if assigned_plan %}Change plan{% else %}Assign a plan{% endif %}</label>
+                <select name="workout_plan_id" class="input">
+                    {% for p in workout_plans %}
+                        <option value="{{ p.id }}" {% if assigned_plan and p.id == assigned_plan.id %}selected{% endif %}>
+                            {{ p.name }} ({{ p.days.count }} day{{ p.days.count|pluralize }})
+                        </option>
+                    {% empty %}
+                        <option value="" disabled selected>No plans yet — create one in Workouts</option>
+                    {% endfor %}
+                </select>
+
+                <label class="client-cell-checkbox">
+                    <input type="checkbox" name="create_client_specific_copy">
+                    <span>Create a client-specific copy first</span>
+                </label>
+                <div class="client-cell-hint">
+                    Use this when you want to tweak the plan only for {{ client.username }} without changing your template.
+                </div>
+
+                <div class="client-cell-actions">
+                    <button type="submit" class="btn btn-primary btn-sm">{% if assigned_plan %}Save change{% else %}Assign{% endif %}</button>
+                    <a href="{% url 'trainer-dashboard-home' %}" class="btn btn-ghost btn-sm">+ Create new plan</a>
+                    {% if assigned_plan %}
+                        <button type="button" class="btn btn-ghost btn-sm client-cell-clear"
+                                data-unassign-url="{% url 'dashboard-unassign-workout-plan' client.id %}"
+                                data-unassign-confirm="Unassign this workout plan from {{ client.username }}?">
+                            Clear
+                        </button>
+                    {% endif %}
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ============== NUTRITION PLAN ============== -->
+    <div class="client-cell glass">
+        <header class="client-cell-head">
+            <div>
+                <div class="kicker" style="color:var(--accent);">◌ Nutrition plan</div>
+                <h2 class="client-cell-title">
+                    {% if assigned_nutrition_plan %}{{ assigned_nutrition_plan.name }}{% else %}Not assigned{% endif %}
+                </h2>
+                <div class="client-cell-sub">
+                    {% if assigned_nutrition_plan %}
+                        {% if assigned_nutrition_plan.is_template %}Shared template{% else %}Client-specific copy{% endif %}
+                        {% if assigned_nutrition_plan.source_template %}· Based on {{ assigned_nutrition_plan.source_template.name }}{% endif %}
+                    {% else %}
+                        Pick a nutrition plan from your library, or create a new one.
+                    {% endif %}
+                </div>
+            </div>
+            {% if assigned_nutrition_plan %}
+                <a href="{% url 'trainer-nutrition-plan-detail' assigned_nutrition_plan.id %}" class="btn btn-secondary btn-sm">Open & edit</a>
+            {% endif %}
+        </header>
+
+        <div class="client-cell-body">
+            <form method="post" action="{% url 'dashboard-assign-nutrition-plan' %}" class="client-cell-form">
+                {% csrf_token %}
+                <input type="hidden" name="client_user_id" value="{{ client.id }}">
+
+                <label class="label">{% if assigned_nutrition_plan %}Change plan{% else %}Assign a plan{% endif %}</label>
+                <select name="nutrition_plan_id" class="input">
+                    {% for p in nutrition_plans %}
+                        <option value="{{ p.id }}" {% if assigned_nutrition_plan and p.id == assigned_nutrition_plan.id %}selected{% endif %}>
+                            {{ p.name }}
+                        </option>
+                    {% empty %}
+                        <option value="" disabled selected>No plans yet — create one in Nutrition</option>
+                    {% endfor %}
+                </select>
+
+                <label class="client-cell-checkbox">
+                    <input type="checkbox" name="create_client_specific_copy">
+                    <span>Create a client-specific copy first</span>
+                </label>
+                <div class="client-cell-hint">
+                    Use this to tweak macros only for {{ client.username }} without changing your template.
+                </div>
+
+                <div class="client-cell-actions">
+                    <button type="submit" class="btn btn-primary btn-sm">{% if assigned_nutrition_plan %}Save change{% else %}Assign{% endif %}</button>
+                    <a href="{% url 'trainer-nutrition-plans-page' %}" class="btn btn-ghost btn-sm">+ Create new plan</a>
+                    {% if assigned_nutrition_plan %}
+                        <button type="button" class="btn btn-ghost btn-sm client-cell-clear"
+                                data-unassign-url="{% url 'dashboard-unassign-nutrition-plan' client.id %}"
+                                data-unassign-confirm="Unassign this nutrition plan from {{ client.username }}?">
+                            Clear
+                        </button>
+                    {% endif %}
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ============== PROGRESS ============== -->
+    <div class="client-cell glass">
+        <header class="client-cell-head">
+            <div>
+                <div class="kicker" style="color:var(--accent);">◔ Progress</div>
+                <h2 class="client-cell-title">Tracking insights</h2>
+                <div class="client-cell-sub">
+                    Weight trend, workout adherence, photo timeline. Pulled from {{ client.username }}'s
+                    check-in submissions and logged sessions.
+                </div>
+            </div>
+        </header>
+
+        <div class="client-cell-body">
+            <!-- Stat tiles -->
+            <div class="client-metric-grid">
+                <div class="client-metric">
+                    <div class="client-metric-label">Latest weight</div>
+                    <div class="client-metric-value">
+                        {% if weight_latest %}{{ weight_latest }}<span> kg</span>{% else %}—{% endif %}
+                    </div>
+                    <div class="client-metric-trend">
+                        {% if weight_chart %}
+                            {{ weight_chart.delta_sign }}{{ weight_chart.delta }} kg vs first
+                        {% elif weight_count == 1 %}
+                            One reading — submit another for a trend
+                        {% else %}
+                            Awaiting first weight check-in
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="client-metric">
+                    <div class="client-metric-label">7-day adherence</div>
+                    <div class="client-metric-value">
+                        {% if adherence %}{{ adherence.pct }}<span>%</span>{% else %}—{% endif %}
+                    </div>
+                    <div class="client-metric-trend">
+                        {% if adherence %}
+                            {{ adherence.actual }} / {{ adherence.expected }} workouts
+                        {% else %}
+                            Assign a plan to track
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="client-metric">
+                    <div class="client-metric-label">Sessions this week</div>
+                    <div class="client-metric-value">{{ sessions_this_week }}</div>
+                    <div class="client-metric-trend">Logged via the iOS app</div>
+                </div>
+
+                <div class="client-metric">
+                    <div class="client-metric-label">Photos</div>
+                    <div class="client-metric-value">{{ recent_photos|length }}</div>
+                    <div class="client-metric-trend">
+                        {% if recent_photos %}Latest: {{ recent_photos.0.submission.submitted_at|date:"j M" }}{% else %}No photos yet{% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weight trend chart -->
+            {% if weight_chart %}
+                <div class="progress-chart-wrap">
+                    <div class="progress-chart-head">
+                        <div class="progress-chart-title">Weight trend</div>
+                        <div class="progress-chart-meta">
+                            {{ weight_chart.n_points }} reading{{ weight_chart.n_points|pluralize }}
+                            ·
+                            <span class="progress-chart-delta {{ weight_chart.delta_class }}">
+                                {{ weight_chart.delta_sign }}{{ weight_chart.delta }} kg
+                            </span>
+                        </div>
+                    </div>
+
+                    <svg class="progress-chart-svg"
+                         viewBox="0 0 {{ weight_chart.width }} {{ weight_chart.height }}"
+                         preserveAspectRatio="none"
+                         aria-label="Weight trend over time">
+                        <path d="{{ weight_chart.area_d }}" class="progress-chart-area" />
+                        <path d="{{ weight_chart.line_d }}" class="progress-chart-line" />
+                        {% for p in weight_chart.points %}
+                            <circle cx="{{ p.x }}" cy="{{ p.y }}" r="2.5" class="progress-chart-dot" />
+                        {% endfor %}
+                    </svg>
+
+                    <div class="progress-chart-axis">
+                        <span>{{ weight_chart.first_date }}</span>
+                        <span class="progress-chart-y">{{ weight_chart.y_min_label }}–{{ weight_chart.y_max_label }} kg</span>
+                        <span>{{ weight_chart.last_date }}</span>
+                    </div>
+                </div>
+            {% else %}
+                <div class="progress-chart-empty">
+                    <div class="progress-chart-empty-mark">📈</div>
+                    <div>
+                        Once {{ client.username }} submits two or more check-ins with weight,
+                        the trend chart appears here.
+                    </div>
+                </div>
+            {% endif %}
+
+            <!-- Photo strip -->
+            {% if recent_photos %}
+                <div class="progress-photos-wrap">
+                    <div class="progress-chart-title">Recent photos</div>
+                    <div class="progress-photos">
+                        {% for p in recent_photos %}
+                            <div class="progress-photo">
+                                <img src="{{ p.value_image.url }}" alt="">
+                                <div class="progress-photo-date">{{ p.submission.submitted_at|date:"j M" }}</div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- ============== CHECK-INS ============== -->
+    <div class="client-cell glass" data-checkin-manager data-client-id="{{ client.id }}">
+        <header class="client-cell-head">
+            <div>
+                <div class="kicker" style="color:var(--accent);">☑ Check-Ins</div>
+                <h2 class="client-cell-title">Forms for {{ client.username }}</h2>
+                <div class="client-cell-sub">
+                    Toggle which forms {{ client.username }} receives, and pick the cadence
+                    for the routine check-in.
+                </div>
+            </div>
+            <a href="{% url 'trainer-checkin-forms-page' %}" class="btn btn-secondary btn-sm">Edit questions →</a>
+        </header>
+
+        <div class="client-cell-body">
+            <div class="checkin-assignments-list">
+                {% for row in checkin_rows %}
+                    <div class="checkin-assignment-row {% if row.is_active %}is-active{% endif %}"
+                         data-form-id="{{ row.form_id }}"
+                         data-form-type="{{ row.form_type }}">
+                        <label class="checkin-assignment-toggle" title="Activate / deactivate for this client">
+                            <input type="checkbox"
+                                   data-role="assignment-active"
+                                   {% if row.is_active %}checked{% endif %}>
+                            <span class="checkin-assignment-toggle-track"></span>
+                        </label>
+
+                        <div class="checkin-assignment-body">
+                            <div class="checkin-assignment-name">
+                                {% if row.form_type == 'onboarding' %}◆ {% endif %}{{ row.form_name }}
+                            </div>
+                            <div class="checkin-assignment-status">
+                                {% if not row.is_active %}
+                                    Off — toggle on to send to {{ client.username }}
+                                {% elif row.last_submitted_at %}
+                                    Last submitted {{ row.last_submitted_at|timesince }} ago
+                                    {% if row.next_due_at %}· next due in {{ row.next_due_at|timeuntil }}{% endif %}
+                                {% elif row.next_due_at %}
+                                    Awaiting first submission · due in {{ row.next_due_at|timeuntil }}
+                                {% else %}
+                                    Active — awaiting first submission
+                                {% endif %}
+                            </div>
+                        </div>
+
+                        {% if row.has_cadence_choice %}
+                            <select class="checkin-assignment-cadence input"
+                                    data-role="assignment-cadence">
+                                {% for slug, label in row.cadence_options %}
+                                    <option value="{{ slug }}" {% if row.cadence == slug %}selected{% endif %}>{{ label }}</option>
+                                {% endfor %}
+                            </select>
+                        {% else %}
+                            <span class="badge checkin-assignment-fixed-cadence">
+                                {% if row.form_type == 'onboarding' %}One-shot
+                                {% elif row.form_type == 'daily' %}Every day
+                                {% endif %}
+                            </span>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    (function () {
+        "use strict";
+        const csrf = document.querySelector('input[name="csrfmiddlewaretoken"]')?.value || "";
+
+        function postForm(url) {
+            const f = document.createElement("form");
+            f.method = "POST";
+            f.action = url;
+            const t = document.createElement("input");
+            t.type = "hidden";
+            t.name = "csrfmiddlewaretoken";
+            t.value = csrf;
+            f.appendChild(t);
+            document.body.appendChild(f);
+            f.submit();
+        }
+
+        document.addEventListener("click", function (event) {
+            const btn = event.target.closest(".client-cell-clear");
+            if (!btn) return;
+            event.preventDefault();
+            const url = btn.dataset.unassignUrl;
+            const msg = btn.dataset.unassignConfirm || "Clear this assignment?";
+            if (!url) return;
+            if (!window.confirm(msg)) return;
+            postForm(url);
+        });
+
+        // -----------------------------------------------------------
+        // Check-In assignment toggles + cadence (Phase 4.5)
+        // -----------------------------------------------------------
+        const checkinManager = document.querySelector("[data-checkin-manager]");
+        if (checkinManager) {
+            const clientId = parseInt(checkinManager.dataset.clientId, 10);
+
+            async function saveAssignment(row) {
+                const formId = parseInt(row.dataset.formId, 10);
+                const activeEl = row.querySelector('[data-role="assignment-active"]');
+                const cadenceEl = row.querySelector('[data-role="assignment-cadence"]');
+                const payload = {
+                    client_id: clientId,
+                    form_id: formId,
+                    is_active: !!activeEl?.checked,
+                };
+                if (cadenceEl) payload.cadence = cadenceEl.value;
+
+                row.classList.toggle("is-active", payload.is_active);
+                try {
+                    const res = await fetch("/api/progress/dashboard/client-assignments/set/", {
+                        method: "POST",
+                        credentials: "same-origin",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "X-CSRFToken": csrf,
+                        },
+                        body: JSON.stringify(payload),
+                    });
+                    if (!res.ok) throw new Error("HTTP " + res.status);
+                    row.classList.add("just-saved");
+                    setTimeout(() => row.classList.remove("just-saved"), 800);
+                } catch (err) {
+                    console.error("Assignment save failed:", err);
+                    row.classList.add("save-error");
+                    setTimeout(() => row.classList.remove("save-error"), 2000);
+                }
+            }
+
+            checkinManager.querySelectorAll(".checkin-assignment-row").forEach(row => {
+                row.querySelector('[data-role="assignment-active"]')
+                    ?.addEventListener("change", () => saveAssignment(row));
+                row.querySelector('[data-role="assignment-cadence"]')
+                    ?.addEventListener("change", () => saveAssignment(row));
+            });
+        }
+    })();
+</script>
 {% endblock %}

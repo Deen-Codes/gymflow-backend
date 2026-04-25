@@ -1,0 +1,374 @@
+{% extends "dashboard/dashboard_shell.html" %}
+{% load static %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/dashboard-site.css' %}">
+{% endblock %}
+
+{% block dashboard_content %}
+{% csrf_token %}
+
+<div class="dashboard-page-head">
+    <div>
+        <div class="dashboard-page-kicker">Workspace · Site</div>
+        <h1 class="dashboard-page-title">Your public landing page</h1>
+        <p class="dashboard-page-subtitle">
+            Edit the sections of your client-acquisition page. The onboarding form is the funnel —
+            anyone who submits it becomes a client in your roster automatically.
+        </p>
+    </div>
+
+    <div class="dashboard-page-actions">
+        <label class="site-publish-toggle">
+            <input type="checkbox" id="site-publish-toggle" {% if site.is_published %}checked{% endif %}>
+            <span class="site-publish-track"></span>
+            <span class="site-publish-label">{% if site.is_published %}Published{% else %}Draft{% endif %}</span>
+        </label>
+        {% if site.is_published and public_url %}
+            <a href="{{ public_url }}" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                View live →
+            </a>
+        {% endif %}
+    </div>
+</div>
+
+<div class="site-builder"
+     data-site-id="{{ site.id }}"
+     data-csrf-token="{{ csrf_token }}">
+
+    <!-- LEFT — outline -->
+    <aside class="site-outline">
+        <div class="site-outline-head">
+            <div class="builder-rail-title">Page outline</div>
+            <div class="site-outline-hint">Drag to reorder. Click to edit.</div>
+        </div>
+
+        <ul class="site-outline-list" data-role="outline-list">
+            {% for s in site_sections %}
+                <li class="site-outline-item {% if not s.is_visible %}is-hidden{% endif %}"
+                    data-section-id="{{ s.id }}"
+                    data-section-type="{{ s.section_type }}">
+                    <span class="site-outline-handle" aria-label="Drag to reorder">⠿</span>
+                    <span class="site-outline-name">{{ s.get_section_type_display }}</span>
+                    {% if s.is_required %}
+                        <span class="site-outline-required" title="Mandatory section">●</span>
+                    {% endif %}
+                    <button type="button" class="site-outline-eye"
+                            data-action="toggle-visibility"
+                            title="{% if s.is_visible %}Visible — click to hide{% else %}Hidden — click to show{% endif %}">
+                        {% if s.is_visible %}◉{% else %}○{% endif %}
+                    </button>
+                    {% if not s.is_required %}
+                        <button type="button" class="site-outline-delete"
+                                data-action="delete-section"
+                                title="Delete this section">✕</button>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+
+        <div class="site-outline-foot">
+            <div class="site-outline-foot-label">Public URL</div>
+            <div class="site-outline-foot-url">
+                {% if public_url %}{{ request.scheme }}://{{ request.get_host }}{{ public_url }}{% else %}Set your URL slug in Settings{% endif %}
+            </div>
+        </div>
+    </aside>
+
+    <!-- CENTER — live preview -->
+    <main class="site-preview">
+        <div class="site-preview-frame"
+             data-role="preview-frame"
+             style="--preview-accent: {{ site.brand_color|default:'#c8ff00' }};">
+            {% for s in site_sections %}
+                <section class="preview-section preview-section--{{ s.section_type }}
+                                {% if not s.is_visible %}preview-hidden{% endif %}"
+                         id="preview-{{ s.id }}">
+                    {% if s.section_type == 'hero' %}
+                        <div class="preview-hero">
+                            <div>
+                                <h1 class="preview-hero-headline" data-field="headline">{{ s.content.headline }}</h1>
+                                <p class="preview-hero-sub" data-field="subheadline">{{ s.content.subheadline }}</p>
+                                <div class="preview-hero-ctas">
+                                    <span class="preview-cta-primary" data-field="primary_cta">{{ s.content.primary_cta|default:'Apply now' }}</span>
+                                    {% if s.content.secondary_cta %}<span class="preview-cta-secondary" data-field="secondary_cta">{{ s.content.secondary_cta }}</span>{% endif %}
+                                </div>
+                            </div>
+                            <div class="preview-hero-photo">
+                                {% if s.content.image_url %}
+                                    <img src="{{ s.content.image_url }}" alt="">
+                                {% else %}
+                                    <div class="preview-hero-photo-placeholder">Hero image</div>
+                                {% endif %}
+                            </div>
+                        </div>
+
+                    {% elif s.section_type == 'about' %}
+                        <h2 class="preview-section-heading" data-field="heading">{{ s.content.heading }}</h2>
+                        <div class="preview-about">
+                            {% if s.content.photo_url %}<img class="preview-about-photo" src="{{ s.content.photo_url }}" alt="">{% endif %}
+                            <p class="preview-about-body" data-field="body">{{ s.content.body }}</p>
+                        </div>
+
+                    {% elif s.section_type == 'services' %}
+                        <h2 class="preview-section-heading" data-field="heading">{{ s.content.heading }}</h2>
+                        <div class="preview-services-grid">
+                            {% for item in s.content.items %}
+                                <div class="preview-service">
+                                    <div class="preview-service-title">{{ item.title }}</div>
+                                    <div class="preview-service-body">{{ item.description }}</div>
+                                </div>
+                            {% endfor %}
+                        </div>
+
+                    {% elif s.section_type == 'pricing' %}
+                        <h2 class="preview-section-heading" data-field="heading">{{ s.content.heading }}</h2>
+                        <p class="preview-onboarding-lede" data-field="lede">{{ s.content.lede }}</p>
+                        {% if pricing_plans %}
+                            <div class="preview-pricing-grid">
+                                {% for tier in pricing_plans %}
+                                    <div class="preview-pricing-card {% if tier.is_featured %}is-featured{% endif %}">
+                                        {% if tier.is_featured %}<div class="preview-pricing-feature-flag">Featured</div>{% endif %}
+                                        <div class="preview-pricing-name">{{ tier.name }}</div>
+                                        <div class="preview-pricing-price">
+                                            {{ tier.price_display }}<span class="preview-pricing-price-interval"> {{ tier.get_interval_display }}</span>
+                                        </div>
+                                        <div class="preview-pricing-desc">{{ tier.description }}</div>
+                                        <div class="preview-pricing-cta">Subscribe</div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            <div class="preview-onboarding-empty">
+                                No tiers yet — add them in
+                                <a href="{% url 'trainer-settings-page' %}">Settings → Pricing</a>.
+                            </div>
+                        {% endif %}
+
+                    {% elif s.section_type == 'testimonials' %}
+                        <h2 class="preview-section-heading" data-field="heading">{{ s.content.heading }}</h2>
+                        <div class="preview-testimonials">
+                            {% for item in s.content.items %}
+                                <div class="preview-testimonial">
+                                    <div class="preview-testimonial-quote">"{{ item.quote }}"</div>
+                                    <div class="preview-testimonial-author">— {{ item.author }}</div>
+                                </div>
+                            {% endfor %}
+                        </div>
+
+                    {% elif s.section_type == 'onboarding' %}
+                        <h2 class="preview-section-heading" data-field="heading">{{ s.content.heading|default:'Apply for coaching' }}</h2>
+                        <p class="preview-onboarding-lede" data-field="lede">{{ s.content.lede }}</p>
+                        <div class="preview-onboarding-stub">
+                            {% if onboarding_form %}
+                                <div class="preview-onboarding-question-list">
+                                    <div class="preview-onboarding-row">Full name <em>required</em></div>
+                                    <div class="preview-onboarding-row">Email <em>required</em></div>
+                                    {% for q in onboarding_form.questions.all|dictsort:"order" %}
+                                        <div class="preview-onboarding-row">
+                                            {{ q.question_text }}
+                                            <em>{{ q.get_question_type_display }}</em>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                                <div class="preview-onboarding-button">{{ s.content.submit_label|default:'Send application' }}</div>
+                                <div class="preview-onboarding-note">
+                                    {{ onboarding_form.questions.count|add:2 }} questions pulled from your Onboarding check-in form.
+                                    Edit those in <a href="{% url 'trainer-checkin-forms-page' %}">Check-Ins</a>.
+                                </div>
+                            {% else %}
+                                <div class="preview-onboarding-empty">
+                                    No onboarding form yet — visit
+                                    <a href="{% url 'trainer-checkin-forms-page' %}">Check-Ins</a>
+                                    to seed one.
+                                </div>
+                            {% endif %}
+                        </div>
+
+                    {% elif s.section_type == 'footer' %}
+                        <div class="preview-footer">
+                            <div class="preview-footer-tagline" data-field="tagline">{{ s.content.tagline }}</div>
+                            <div class="preview-footer-links">
+                                {% if s.content.email %}<span>{{ s.content.email }}</span>{% endif %}
+                                {% if s.content.instagram %}<span>· {{ s.content.instagram }}</span>{% endif %}
+                                {% if s.content.twitter %}<span>· {{ s.content.twitter }}</span>{% endif %}
+                            </div>
+                        </div>
+                    {% endif %}
+                </section>
+            {% endfor %}
+        </div>
+    </main>
+
+    <!-- RIGHT — tabbed library / properties -->
+    <aside class="site-rail">
+
+        <!-- Tab switcher at the top: Library (drag widgets) /
+             Properties (edit the selected section). Clicking a section
+             in the outline auto-switches to Properties. -->
+        <div class="site-rail-tabs">
+            <button type="button" class="site-rail-tab active" data-tab="properties">Properties</button>
+            <button type="button" class="site-rail-tab" data-tab="library">Add section</button>
+        </div>
+
+        <!-- Tab content: Library — drag a chip onto outline OR preview -->
+        <div class="site-rail-tab-panel" data-tab-panel="library" hidden>
+            <div class="site-rail-hint">Drag a section onto the page outline or directly onto the preview.</div>
+            <ul class="site-library-list" data-role="library-list">
+                <li class="site-library-item" data-section-type="hero">
+                    <span class="site-library-icon">▤</span>
+                    <span class="site-library-name">Hero</span>
+                </li>
+                <li class="site-library-item" data-section-type="about">
+                    <span class="site-library-icon">¶</span>
+                    <span class="site-library-name">About</span>
+                </li>
+                <li class="site-library-item" data-section-type="services">
+                    <span class="site-library-icon">▦</span>
+                    <span class="site-library-name">Services</span>
+                </li>
+                <li class="site-library-item" data-section-type="pricing">
+                    <span class="site-library-icon">£</span>
+                    <span class="site-library-name">Pricing</span>
+                </li>
+                <li class="site-library-item" data-section-type="testimonials">
+                    <span class="site-library-icon">"</span>
+                    <span class="site-library-name">Testimonials</span>
+                </li>
+                <li class="site-library-item" data-section-type="onboarding">
+                    <span class="site-library-icon">✎</span>
+                    <span class="site-library-name">Onboarding form</span>
+                </li>
+                <li class="site-library-item" data-section-type="footer">
+                    <span class="site-library-icon">⌐</span>
+                    <span class="site-library-name">Footer</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Tab content: Properties — site overview OR per-section panel -->
+        <div class="site-rail-tab-panel" data-tab-panel="properties">
+
+        <!-- Default panel: site overview -->
+        <div class="site-rail-panel" id="site-overview-panel">
+            <div class="builder-rail-title">Site overview</div>
+            <div class="site-rail-hint">Click a section in the outline to edit its properties.</div>
+
+            <label class="label" style="margin-top:14px;">Brand colour</label>
+            <div class="site-color-row">
+                <input type="color" id="site-brand-color"
+                       value="{{ site.brand_color|default:'#c8ff00' }}"
+                       class="site-color-swatch">
+                <input type="text" id="site-brand-color-text" class="input"
+                       value="{{ site.brand_color|default:'#c8ff00' }}"
+                       maxlength="7" pattern="^#[0-9a-fA-F]{6}$" placeholder="#c8ff00">
+            </div>
+            <div class="settings-hint">Applied to buttons + accents on your public page.</div>
+        </div>
+
+        <!-- One properties panel per section, hidden by default; the JS
+             swaps the visible one when a section is clicked. -->
+        {% for s in site_sections %}
+            <div class="site-rail-panel site-properties-panel"
+                 data-section-id="{{ s.id }}"
+                 data-section-type="{{ s.section_type }}"
+                 hidden>
+
+                <!-- Sticky panel head — back link + section title.
+                     Stays visible even when the form below is scrolled. -->
+                <div class="site-rail-panel-head">
+                    <button type="button" class="site-rail-back"
+                            data-action="back-to-overview">← Site overview</button>
+                    <div class="builder-rail-title">{{ s.get_section_type_display }} — properties</div>
+                </div>
+
+                {% if s.section_type == 'hero' %}
+                    <label class="label">Headline</label>
+                    <input type="text" class="input" data-field="headline" value="{{ s.content.headline }}">
+                    <label class="label">Subheadline</label>
+                    <textarea class="input" rows="3" data-field="subheadline">{{ s.content.subheadline }}</textarea>
+                    <label class="label">Hero image URL</label>
+                    <input type="url" class="input" data-field="image_url" value="{{ s.content.image_url }}" placeholder="https://...">
+                    <label class="label">Primary CTA label</label>
+                    <input type="text" class="input" data-field="primary_cta" value="{{ s.content.primary_cta }}">
+                    <label class="label">Secondary CTA label</label>
+                    <input type="text" class="input" data-field="secondary_cta" value="{{ s.content.secondary_cta }}">
+
+                {% elif s.section_type == 'about' %}
+                    <label class="label">Heading</label>
+                    <input type="text" class="input" data-field="heading" value="{{ s.content.heading }}">
+                    <label class="label">Body</label>
+                    <textarea class="input" rows="6" data-field="body">{{ s.content.body }}</textarea>
+                    <label class="label">Photo URL</label>
+                    <input type="url" class="input" data-field="photo_url" value="{{ s.content.photo_url }}" placeholder="https://...">
+
+                {% elif s.section_type == 'services' %}
+                    <label class="label">Heading</label>
+                    <input type="text" class="input" data-field="heading" value="{{ s.content.heading }}">
+                    <label class="label">Services (one per row)</label>
+                    <div class="site-list-editor" data-field="items">
+                        {% for item in s.content.items %}
+                            <div class="site-list-row">
+                                <input type="text" class="input" data-subfield="title" value="{{ item.title }}" placeholder="Title">
+                                <textarea class="input" rows="2" data-subfield="description" placeholder="Description">{{ item.description }}</textarea>
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                {% elif s.section_type == 'pricing' %}
+                    <label class="label">Heading</label>
+                    <input type="text" class="input" data-field="heading" value="{{ s.content.heading }}">
+                    <label class="label">Lede (intro line)</label>
+                    <textarea class="input" rows="3" data-field="lede">{{ s.content.lede }}</textarea>
+                    <div class="settings-hint" style="margin-top:10px;">
+                        Tier cards are pulled from your <a href="{% url 'trainer-settings-page' %}">Settings → Pricing</a>.
+                        Edit the prices, names, and descriptions there.
+                    </div>
+
+                {% elif s.section_type == 'testimonials' %}
+                    <label class="label">Heading</label>
+                    <input type="text" class="input" data-field="heading" value="{{ s.content.heading }}">
+                    <label class="label">Testimonials (one per row)</label>
+                    <div class="site-list-editor" data-field="items">
+                        {% for item in s.content.items %}
+                            <div class="site-list-row">
+                                <textarea class="input" rows="2" data-subfield="quote" placeholder="Quote">{{ item.quote }}</textarea>
+                                <input type="text" class="input" data-subfield="author" value="{{ item.author }}" placeholder="Author">
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                {% elif s.section_type == 'onboarding' %}
+                    <label class="label">Heading</label>
+                    <input type="text" class="input" data-field="heading" value="{{ s.content.heading }}">
+                    <label class="label">Lede (intro line)</label>
+                    <textarea class="input" rows="3" data-field="lede">{{ s.content.lede }}</textarea>
+                    <label class="label">Submit button label</label>
+                    <input type="text" class="input" data-field="submit_label" value="{{ s.content.submit_label }}">
+                    <div class="settings-hint" style="margin-top:10px;">
+                        The form's questions are pulled from your <a href="{% url 'trainer-checkin-forms-page' %}">Onboarding check-in form</a>.
+                        Edit them there; this section only controls the framing copy.
+                    </div>
+
+                {% elif s.section_type == 'footer' %}
+                    <label class="label">Tagline</label>
+                    <input type="text" class="input" data-field="tagline" value="{{ s.content.tagline }}">
+                    <label class="label">Email</label>
+                    <input type="email" class="input" data-field="email" value="{{ s.content.email }}">
+                    <label class="label">Instagram handle</label>
+                    <input type="text" class="input" data-field="instagram" value="{{ s.content.instagram }}" placeholder="@yourhandle">
+                    <label class="label">Twitter / X handle</label>
+                    <input type="text" class="input" data-field="twitter" value="{{ s.content.twitter }}" placeholder="@yourhandle">
+                {% endif %}
+
+            </div>
+        {% endfor %}
+
+        </div><!-- /properties tab panel -->
+    </aside>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js" defer></script>
+<script src="{% static 'js/workspace-site-builder.js' %}" defer></script>
+{% endblock %}

@@ -1,58 +1,184 @@
 {% extends "base.html" %}
 
-{% block title %}GymFlow | Coaching Platform{% endblock %}
+{% block title %}GymFlow | The coaching platform PTs actually want to use{% endblock %}
 
 {% block content %}
-<div class="container" style="padding: 40px 0 60px;">
-    <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0 32px;">
-        <div style="font-size:28px;font-weight:800;">GymFlow</div>
-        <a href="{% url 'trainer-login-page' %}" class="btn btn-secondary">Trainer Login</a>
-    </div>
+<div class="container" style="padding: 28px 0 80px;">
 
-    <div class="glass" style="padding:48px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:28px;align-items:center;">
+    <header style="display:flex;justify-content:space-between;align-items:center;padding:8px 0 56px;">
+        <div style="display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:-0.01em;">
+            <span style="width:30px;height:30px;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(180deg,var(--accent-strong),var(--accent-deep));color:#0b1100;font-weight:900;box-shadow:0 6px 18px var(--accent-glow);">G</span>
+            <span>GymFlow</span>
+        </div>
+
+        <nav style="display:flex;gap:8px;align-items:center;">
+            <a href="#features" class="btn btn-ghost">Features</a>
+            <a href="#why" class="btn btn-ghost">Why GymFlow</a>
+            <a href="{% url 'trainer-login-page' %}" class="btn btn-secondary">Log in</a>
+            <a href="{% url 'trainer-login-page' %}" class="btn btn-primary">Open dashboard</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="glass" style="padding:64px 56px;display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:center;border-radius:var(--radius-2xl);">
         <div>
-            <div style="display:inline-block;padding:8px 12px;border-radius:999px;background:rgba(77,163,255,0.16);border:1px solid rgba(77,163,255,0.28);font-size:13px;">
-                Better than messy PT workflows
-            </div>
+            <span class="scaffold-hero-eyebrow">Built for personal trainers, not gyms</span>
 
-            <h1 style="font-size:56px;line-height:1.02;margin:18px 0 14px;">
-                A cleaner coaching platform for trainers and clients.
+            <h1 class="h-display" style="margin-top:16px;">
+                The coaching platform PTs<br>
+                <span style="background:linear-gradient(120deg,var(--accent-strong),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent;">actually</span> want to use.
             </h1>
 
-            <p class="muted" style="font-size:18px;line-height:1.7;max-width:720px;">
-                Assign workouts, manage clients, and deliver a smoother mobile experience than clunky old coaching apps.
+            <p style="font-size:18px;line-height:1.65;color:var(--text-soft);margin:22px 0 32px;max-width:560px;">
+                Drag-drop workout and nutrition planners. A check-in builder that doesn't feel like a Google Form.
+                A modern client app that takes Spotify, photo check-ins and progress tracking seriously.
+                One tool, end to end.
             </p>
 
-            <div style="display:flex;gap:14px;margin-top:28px;flex-wrap:wrap;">
-                <a href="{% url 'trainer-login-page' %}" class="btn btn-primary">Open Trainer Portal</a>
-                <a href="#features" class="btn btn-secondary">See Features</a>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                <a href="{% url 'trainer-login-page' %}" class="btn btn-primary">Open the dashboard →</a>
+                <a href="#features" class="btn btn-secondary">See what's inside</a>
+            </div>
+
+            <div style="margin-top:30px;display:flex;gap:18px;color:var(--text-faint);font-size:13px;flex-wrap:wrap;">
+                <span><span class="icon-dot"></span> Live exercise catalog · 800+ moves</span>
+                <span><span class="icon-dot"></span> Open Food Facts macros built in</span>
+                <span><span class="icon-dot"></span> iOS client app</span>
             </div>
         </div>
 
-        <div class="glass" style="padding:24px;">
-            <div style="font-size:20px;font-weight:700;margin-bottom:14px;">What GymFlow gives PTs</div>
-            <div style="display:grid;gap:12px;">
-                <div class="glass" style="padding:16px;">Client management</div>
-                <div class="glass" style="padding:16px;">Workout assignment</div>
-                <div class="glass" style="padding:16px;">Modern client app</div>
-                <div class="glass" style="padding:16px;">Nutrition and onboarding next</div>
+        <div class="glass-strong" style="padding:22px;border-radius:var(--radius-xl);">
+            <div class="kicker" style="margin-bottom:14px;">Right now in your dashboard</div>
+            <div style="display:grid;gap:10px;">
+                <div class="glass" style="padding:14px 16px;display:flex;align-items:center;gap:10px;">
+                    <span style="width:30px;height:30px;border-radius:8px;background:var(--accent-soft);color:var(--accent-strong);display:inline-flex;align-items:center;justify-content:center;font-weight:800;">⌁</span>
+                    <div style="flex:1;">
+                        <div style="font-weight:700;font-size:14px;">Workouts builder</div>
+                        <div style="font-size:12px;color:var(--text-faint);">Drag, drop, snapshot — live</div>
+                    </div>
+                    <span class="badge badge-accent">Phase 1</span>
+                </div>
+
+                <div class="glass" style="padding:14px 16px;display:flex;align-items:center;gap:10px;">
+                    <span style="width:30px;height:30px;border-radius:8px;background:var(--glass-bg-strong);color:var(--text-soft);display:inline-flex;align-items:center;justify-content:center;font-weight:800;">◯</span>
+                    <div style="flex:1;">
+                        <div style="font-weight:700;font-size:14px;">Clients</div>
+                        <div style="font-size:12px;color:var(--text-faint);">Roster, profiles, action inbox</div>
+                    </div>
+                    <span class="badge">Phase 2</span>
+                </div>
+
+                <div class="glass" style="padding:14px 16px;display:flex;align-items:center;gap:10px;">
+                    <span style="width:30px;height:30px;border-radius:8px;background:var(--glass-bg-strong);color:var(--text-soft);display:inline-flex;align-items:center;justify-content:center;font-weight:800;">◌</span>
+                    <div style="flex:1;">
+                        <div style="font-weight:700;font-size:14px;">Nutrition</div>
+                        <div style="font-size:12px;color:var(--text-faint);">Open Food Facts + macros</div>
+                    </div>
+                    <span class="badge">Phase 3</span>
+                </div>
+
+                <div class="glass" style="padding:14px 16px;display:flex;align-items:center;gap:10px;">
+                    <span style="width:30px;height:30px;border-radius:8px;background:var(--glass-bg-strong);color:var(--text-soft);display:inline-flex;align-items:center;justify-content:center;font-weight:800;">☑</span>
+                    <div style="flex:1;">
+                        <div style="font-weight:700;font-size:14px;">Check-Ins</div>
+                        <div style="font-size:12px;color:var(--text-faint);">Onboarding · daily · weekly</div>
+                    </div>
+                    <span class="badge">Phase 4</span>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="features" style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px;">
-        <div class="glass" style="padding:24px;">
-            <div style="font-size:20px;font-weight:700;margin-bottom:8px;">Trainer-first workflow</div>
-            <div class="muted">Create clients and assign plans without bouncing around different tools.</div>
+    <!-- FEATURES -->
+    <section id="features" style="margin-top:64px;">
+        <div style="text-align:center;margin-bottom:36px;">
+            <div class="kicker" style="color:var(--accent);">What's inside</div>
+            <h2 class="h-section" style="margin-top:8px;font-size:36px;">One brain, every coaching surface.</h2>
+            <p class="muted" style="margin-top:8px;max-width:620px;margin-left:auto;margin-right:auto;">
+                Stop bouncing between TrueCoach, MyFitnessPal, Notion and a WhatsApp thread. GymFlow ships the same
+                drag-drop grammar across workouts, nutrition and check-ins, with a client app that doesn't look like 2014.
+            </p>
         </div>
-        <div class="glass" style="padding:24px;">
-            <div style="font-size:20px;font-weight:700;margin-bottom:8px;">Client mobile experience</div>
-            <div class="muted">Clients log workouts, view plans, and track previous performance on their phone.</div>
+
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;">
+            <div class="glass" style="padding:28px;">
+                <div style="width:42px;height:42px;border-radius:12px;background:var(--accent-soft);color:var(--accent-strong);display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;margin-bottom:14px;">⌁</div>
+                <div class="h-section" style="font-size:22px;margin-bottom:8px;">Drag-drop builders</div>
+                <p class="muted" style="line-height:1.6;font-size:14px;">
+                    Workout days, meal plans, check-in forms — all built with the same drag-drop pattern.
+                    Touch-ready so it works on iPad mid-coffee.
+                </p>
+            </div>
+
+            <div class="glass" style="padding:28px;">
+                <div style="width:42px;height:42px;border-radius:12px;background:var(--accent-soft);color:var(--accent-strong);display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;margin-bottom:14px;">◑</div>
+                <div class="h-section" style="font-size:22px;margin-bottom:8px;">Real exercise + food data</div>
+                <p class="muted" style="line-height:1.6;font-size:14px;">
+                    800+ exercises imported from wger with target muscles and equipment. Foods backed by Open Food Facts
+                    so macros pre-fill on scan. No more typing "chicken breast 100g" 40 times.
+                </p>
+            </div>
+
+            <div class="glass" style="padding:28px;">
+                <div style="width:42px;height:42px;border-radius:12px;background:var(--accent-soft);color:var(--accent-strong);display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;margin-bottom:14px;">▣</div>
+                <div class="h-section" style="font-size:22px;margin-bottom:8px;">A client app worth opening</div>
+                <p class="muted" style="line-height:1.6;font-size:14px;">
+                    Native iOS workout logger, in-workout Spotify control strip, photo check-ins, progress timeline.
+                    Designed so clients actually log — not just download and forget.
+                </p>
+            </div>
         </div>
-        <div class="glass" style="padding:24px;">
-            <div style="font-size:20px;font-weight:700;margin-bottom:8px;">Built to expand</div>
-            <div class="muted">Custom splits, nutrition plans, onboarding forms, and PT websites can all sit on this foundation.</div>
+    </section>
+
+    <!-- WHY -->
+    <section id="why" style="margin-top:64px;">
+        <div class="glass" style="padding:48px;display:grid;grid-template-columns:0.9fr 1.1fr;gap:42px;align-items:center;">
+            <div>
+                <div class="kicker" style="color:var(--accent);">Why GymFlow</div>
+                <h2 class="h-section" style="font-size:32px;margin-top:8px;">
+                    Built end-to-end, not glued together.
+                </h2>
+                <p class="muted" style="line-height:1.65;margin-top:12px;">
+                    Most "coaching platforms" are old form-builders with a chat tab. GymFlow is one shared dashboard
+                    architecture from workouts to check-ins, with a real iOS client and a design that respects your
+                    business — not your gym chain's brand.
+                </p>
+            </div>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+                <div class="glass" style="padding:18px;">
+                    <div style="font-weight:800;font-size:24px;color:var(--accent);">800+</div>
+                    <div style="font-size:13px;color:var(--text-soft);margin-top:4px;">Exercises ready on day one (curated + wger)</div>
+                </div>
+                <div class="glass" style="padding:18px;">
+                    <div style="font-weight:800;font-size:24px;color:var(--accent);">3M+</div>
+                    <div style="font-size:13px;color:var(--text-soft);margin-top:4px;">Foods via Open Food Facts (Phase 3)</div>
+                </div>
+                <div class="glass" style="padding:18px;">
+                    <div style="font-weight:800;font-size:24px;color:var(--accent);">1</div>
+                    <div style="font-size:13px;color:var(--text-soft);margin-top:4px;">Drag-drop pattern across every workspace</div>
+                </div>
+                <div class="glass" style="padding:18px;">
+                    <div style="font-weight:800;font-size:24px;color:var(--accent);">iOS</div>
+                    <div style="font-size:13px;color:var(--text-soft);margin-top:4px;">Native client app shipping alongside</div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="margin-top:64px;text-align:center;">
+        <div class="glass-strong" style="padding:56px 32px;border-radius:var(--radius-2xl);">
+            <h2 class="h-section" style="font-size:32px;">Open your dashboard.</h2>
+            <p class="muted" style="margin:10px auto 26px;max-width:520px;">
+                Phase 0 (auth) and Phase 1 (workout builder) are live. Log in to start building.
+            </p>
+            <a href="{% url 'trainer-login-page' %}" class="btn btn-primary">Open dashboard →</a>
+        </div>
+    </section>
+
+    <footer style="margin-top:48px;text-align:center;color:var(--text-faint);font-size:13px;">
+        © GymFlow · Coaching platform · Built for personal trainers
+    </footer>
 </div>
 {% endblock %}

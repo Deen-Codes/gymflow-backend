@@ -32,6 +32,21 @@ def get_trainer_clients(request):
     ).order_by("username")
 
 
+def _action_needed_count(clients):
+    """How many "needs a plan" items across the roster — used by the
+    top-nav Clients pill so the trainer always sees what's outstanding."""
+    n = 0
+    for c in clients:
+        profile = getattr(c, "client_profile", None)
+        if not profile:
+            continue
+        if not getattr(profile, "assigned_workout_plan", None):
+            n += 1
+        if not getattr(profile, "assigned_nutrition_plan", None):
+            n += 1
+    return n
+
+
 def dashboard_context(request, page_title):
     """
     Shared dashboard context used across trainer pages.
@@ -67,6 +82,7 @@ def dashboard_context(request, page_title):
         "assign_forms": assign_forms,
         "nutrition_assign_forms": nutrition_assign_forms,
         "client_count": clients.count(),
+        "action_needed_count": _action_needed_count(clients),
         "workout_plans": workout_plans,
         "exercise_library": exercise_library,
         "exercise_library_form": CreateExerciseLibraryItemForm(),

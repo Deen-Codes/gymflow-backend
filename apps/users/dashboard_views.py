@@ -7,6 +7,23 @@ from .dashboard_auth_views import (
 from .dashboard_page_views import (
     trainer_dashboard_home,
     trainer_settings_page,
+    dashboard_update_profile,
+    dashboard_delete_account,
+    dashboard_check_slug,
+    dashboard_pricing_save,
+    dashboard_pricing_delete,
+)
+
+from .dashboard_hub_views import (
+    trainer_hub_page,
+)
+
+from .dashboard_activity_views import (
+    trainer_activity_page,
+)
+
+from apps.sites.views import (
+    trainer_site_page,
 )
 
 from .dashboard_client_views import (
@@ -16,6 +33,8 @@ from .dashboard_client_views import (
     dashboard_delete_client,
     dashboard_assign_workout_plan,
     dashboard_assign_nutrition_plan,
+    dashboard_unassign_workout_plan,
+    dashboard_unassign_nutrition_plan,
 )
 
 from .dashboard_workout_page_views import (
@@ -79,6 +98,7 @@ __all__ = [
     "landing_page",
     "trainer_login_page",
     "trainer_logout_page",
+    "trainer_hub_page",
     "trainer_dashboard_home",
     "trainer_dashboard",
     "trainer_client_detail_page",
@@ -89,10 +109,19 @@ __all__ = [
     "trainer_checkin_forms_page",
     "trainer_checkin_form_detail_page",
     "trainer_settings_page",
+    "dashboard_update_profile",
+    "dashboard_delete_account",
+    "dashboard_check_slug",
+    "dashboard_pricing_save",
+    "dashboard_pricing_delete",
+    "trainer_activity_page",
+    "trainer_site_page",
     "dashboard_create_client",
     "dashboard_delete_client",
     "dashboard_assign_workout_plan",
     "dashboard_assign_nutrition_plan",
+    "dashboard_unassign_workout_plan",
+    "dashboard_unassign_nutrition_plan",
     "dashboard_create_exercise_library_item",
     "dashboard_update_exercise_library_item",
     "dashboard_delete_exercise_library_item",

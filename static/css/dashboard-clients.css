@@ -1,0 +1,791 @@
+/* ============================================================
+   GymFlow — Clients workspace
+   Inherits all design tokens from base.css.
+   ============================================================ */
+
+/* ---- Action-needed inbox -------------------------------------- */
+
+.clients-inbox {
+    padding: 22px 24px;
+    margin-bottom: 22px;
+}
+
+.clients-inbox-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.clients-inbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 8px;
+}
+
+.clients-inbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: var(--radius-md);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--text);
+    transition: background var(--motion-fast) var(--ease),
+                border-color var(--motion-fast) var(--ease),
+                transform var(--motion-fast) var(--ease);
+}
+
+.clients-inbox-item:hover {
+    background: var(--glass-bg-hover);
+    border-color: var(--accent-line);
+    transform: translateY(-1px);
+}
+
+.clients-inbox-bullet {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    font-weight: 800;
+    font-size: 13px;
+    flex-shrink: 0;
+}
+
+.clients-inbox-text {
+    flex: 1;
+    font-size: 13px;
+    color: var(--text-soft);
+}
+.clients-inbox-text strong { color: var(--text); }
+
+.clients-inbox-arrow {
+    color: var(--text-faint);
+    font-weight: 600;
+}
+
+/* ---- Roster head + search ------------------------------------- */
+
+.clients-roster-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+
+.clients-roster-count {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.clients-roster-count-num {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--text);
+}
+
+.clients-roster-count-label {
+    color: var(--text-soft);
+    font-size: 14px;
+}
+
+.clients-roster-search {
+    width: min(380px, 100%);
+}
+
+/* ---- Client cards grid ---------------------------------------- */
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 14px;
+}
+
+.client-card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 18px;
+    border-radius: var(--radius-xl);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--text);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    transition: background var(--motion-fast) var(--ease),
+                border-color var(--motion-fast) var(--ease),
+                transform var(--motion-fast) var(--ease),
+                box-shadow var(--motion-fast) var(--ease);
+}
+
+.client-card:hover {
+    background: var(--glass-bg-hover);
+    border-color: var(--glass-border-strong);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.client-card-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.client-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--accent), var(--accent-deep));
+    color: #0a0f02;
+    font-weight: 800;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.client-card-id { min-width: 0; flex: 1; }
+
+.client-card-name {
+    font-size: 15px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.client-card-email {
+    font-size: 12px;
+    color: var(--text-faint);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 2px;
+}
+
+.client-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.client-card-foot {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.client-card-cta {
+    color: var(--text-soft);
+    font-size: 13px;
+    font-weight: 600;
+    transition: color var(--motion-fast) var(--ease);
+}
+.client-card:hover .client-card-cta { color: var(--accent-strong); }
+
+/* ---- Empty roster state --------------------------------------- */
+
+.clients-empty {
+    grid-column: 1 / -1;
+    padding: 56px 32px;
+    border-radius: var(--radius-xl);
+    text-align: center;
+    background: var(--glass-bg);
+    border: 1px dashed var(--glass-border-strong);
+}
+
+.clients-empty-mark {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin-bottom: 14px;
+}
+
+.clients-empty h3 {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    margin: 0 0 6px;
+}
+
+.clients-empty p {
+    color: var(--text-soft);
+    margin: 0 auto 18px;
+    max-width: 380px;
+}
+
+.clients-grid-empty-search {
+    margin-top: 14px;
+    padding: 24px;
+    text-align: center;
+    color: var(--text-soft);
+    border-radius: var(--radius-md);
+    border: 1px dashed var(--glass-border-strong);
+    background: var(--glass-bg);
+}
+
+/* ============================================================
+   Client detail — hero + 2x2 cell grid
+   ============================================================ */
+
+.client-detail-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+
+.client-detail-back {
+    color: var(--text-soft);
+    font-size: 13px;
+    font-weight: 600;
+    transition: color var(--motion-fast) var(--ease);
+}
+.client-detail-back:hover { color: var(--text); }
+
+.client-hero {
+    padding: 26px 28px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.client-hero-id {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.client-avatar--lg {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    font-size: 22px;
+}
+
+.client-hero-name {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0;
+}
+
+.client-hero-email {
+    color: var(--text-soft);
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.client-hero-meta {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* ---- 2x2 grid of cells ---------------------------------------- */
+
+.client-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+@media (max-width: 980px) {
+    .client-grid { grid-template-columns: 1fr; }
+}
+
+.client-cell {
+    padding: 22px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.client-cell-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.client-cell-title {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    margin: 6px 0 4px;
+}
+
+.client-cell-sub {
+    color: var(--text-soft);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.client-cell-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.client-cell-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.client-cell-checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-soft);
+    cursor: pointer;
+}
+
+.client-cell-checkbox input {
+    accent-color: var(--accent);
+    width: 16px;
+    height: 16px;
+}
+
+.client-cell-hint {
+    font-size: 12px;
+    color: var(--text-faint);
+    line-height: 1.4;
+}
+
+.client-cell-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 4px;
+}
+
+/* Scaffolded cells get the same chrome but a slightly subdued vibe */
+.client-cell--scaffold .client-metric-value,
+.client-cell--scaffold .client-checkin-text strong { color: var(--text); }
+
+/* ---- Progress metric tiles ------------------------------------ */
+
+.client-metric-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.client-metric {
+    padding: 14px 16px;
+    border-radius: var(--radius-md);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+}
+
+.client-metric-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-faint);
+    font-weight: 700;
+}
+
+.client-metric-value {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    margin: 4px 0 2px;
+    color: var(--text);
+}
+
+.client-metric-value span {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-soft);
+    margin-left: 2px;
+}
+
+.client-metric-trend {
+    font-size: 12px;
+    color: var(--text-soft);
+}
+
+/* ---- Check-in assignment manager (Phase 4.5) ------------------ */
+
+.checkin-assignments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checkin-assignment-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    border-radius: var(--radius-md);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    transition: background var(--motion-fast) var(--ease),
+                border-color var(--motion-fast) var(--ease);
+    flex-wrap: nowrap;
+}
+
+.checkin-assignment-row.is-active {
+    border-color: var(--accent-line);
+    background: rgba(200, 255, 0, 0.04);
+}
+
+.checkin-assignment-row.just-saved {
+    animation: builder-flash 800ms var(--ease);
+}
+
+.checkin-assignment-row.save-error {
+    border-color: var(--red);
+    box-shadow: 0 0 0 1px var(--red) inset;
+}
+
+/* Pill toggle (iOS-style) */
+.checkin-assignment-toggle {
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 22px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.checkin-assignment-toggle input {
+    -webkit-appearance: none;
+    appearance: none;
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.checkin-assignment-toggle-track {
+    position: absolute;
+    inset: 0;
+    border-radius: 999px;
+    background: var(--glass-bg-strong);
+    border: 1px solid var(--glass-border-strong);
+    transition: background var(--motion-fast) var(--ease),
+                border-color var(--motion-fast) var(--ease);
+}
+
+.checkin-assignment-toggle-track::after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 1px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--text-soft);
+    transition: transform var(--motion-fast) var(--ease),
+                background var(--motion-fast) var(--ease);
+}
+
+.checkin-assignment-toggle input:checked ~ .checkin-assignment-toggle-track {
+    background: var(--accent);
+    border-color: var(--accent);
+}
+
+.checkin-assignment-toggle input:checked ~ .checkin-assignment-toggle-track::after {
+    transform: translateX(16px);
+    background: #0a0f02;
+}
+
+.checkin-assignment-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.checkin-assignment-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.checkin-assignment-status {
+    font-size: 12px;
+    color: var(--text-soft);
+    margin-top: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* `width: auto !important` because base.css applies `select { width: 100% }`
+   to every select in the system — without the override the cadence
+   dropdown stretches to fill the row and breaks the flex layout. */
+.checkin-assignment-cadence {
+    width: auto !important;
+    min-width: 140px;
+    padding: 7px 28px 7px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.checkin-assignment-fixed-cadence {
+    flex-shrink: 0;
+}
+
+/* ---- Progress chart + photo strip (Phase 2.5) ----------------- */
+
+.progress-chart-wrap {
+    margin-top: 14px;
+    padding: 16px 18px;
+    border-radius: var(--radius-md);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+}
+
+.progress-chart-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.progress-chart-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.progress-chart-meta {
+    font-size: 12px;
+    color: var(--text-faint);
+}
+
+.progress-chart-delta { font-weight: 700; }
+.progress-chart-delta.is-up   { color: var(--red); }
+.progress-chart-delta.is-down { color: var(--accent-strong); }
+.progress-chart-delta.is-flat { color: var(--text-soft); }
+
+/* SVG sparkline. Stretched 100% wide, fixed height — preserveAspectRatio
+   in the SVG is "none" so the polyline scales nicely with width changes. */
+.progress-chart-svg {
+    width: 100%;
+    height: 90px;
+    display: block;
+    overflow: visible;
+}
+
+.progress-chart-area {
+    fill: var(--accent);
+    fill-opacity: 0.12;
+    stroke: none;
+}
+
+.progress-chart-line {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+}
+
+.progress-chart-dot {
+    fill: var(--bg-deep);
+    stroke: var(--accent);
+    stroke-width: 1.5;
+    vector-effect: non-scaling-stroke;
+}
+
+.progress-chart-axis {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--text-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+}
+
+.progress-chart-y { color: var(--text-soft); }
+
+.progress-chart-empty {
+    margin-top: 14px;
+    padding: 22px 20px;
+    border-radius: var(--radius-md);
+    background: var(--glass-bg);
+    border: 1.5px dashed var(--glass-border-strong);
+    color: var(--text-soft);
+    font-size: 13px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.progress-chart-empty-mark {
+    font-size: 26px;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+/* Photo strip */
+.progress-photos-wrap {
+    margin-top: 14px;
+}
+
+.progress-photos {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 8px;
+}
+
+.progress-photo {
+    position: relative;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--glass-bg-strong);
+    border: 1px solid var(--glass-border);
+}
+
+.progress-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.progress-photo-date {
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    padding: 2px 6px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.55);
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+/* ---- Check-ins summary rows ----------------------------------- */
+
+.client-checkins-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.client-checkin-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: var(--radius-md);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    font-size: 13px;
+    color: var(--text-soft);
+}
+
+.client-checkin-bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--text-mute);
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.client-checkin-text { flex: 1; }
+.client-checkin-text strong { color: var(--text); font-weight: 700; }
+
+.client-checkin-time {
+    font-size: 11px;
+    color: var(--text-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+/* ============================================================
+   Modal — used by "+ Add client"
+   ============================================================ */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+}
+
+.modal[hidden] { display: none !important; }
+
+.modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.modal-card {
+    position: relative;
+    width: min(440px, 100%);
+    padding: 26px 28px 24px;
+    border-radius: var(--radius-xl);
+}
+
+.modal-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.modal-form {
+    display: grid;
+    gap: 14px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 6px;
+}

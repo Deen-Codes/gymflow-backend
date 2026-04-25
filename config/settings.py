@@ -19,11 +19,13 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     "rest_framework",
+    "rest_framework.authtoken",  # Phase 0: token auth for the iOS client
 
     "apps.users",
     "apps.workouts",
     "apps.progress",
     "apps.nutrition",
+    "apps.sites",                # Phase 7: PT landing pages + signups
 ]
 
 
@@ -36,6 +38,12 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+
+    # Phase 7.5 — Rewrite `<slug>.gymflow.com` requests to /p/<slug>/
+    # so the existing public site routing serves them. No-op on the
+    # apex, on reserved subdomains (www, api, app...), and locally
+    # unless /etc/hosts has `<slug>.localhost` entries.
+    "apps.sites.middleware.SubdomainSiteMiddleware",
 ]
 
 
@@ -116,3 +124,23 @@ AUTH_USER_MODEL = "users.User"
 EMAIL_BACKEND = "apps.users.email_backend.ResendEmailBackend"
 RESEND_API_KEY = os.environ.get("RESEND_API_KEY", "")
 DEFAULT_FROM_EMAIL = os.environ.get("DEFAULT_FROM_EMAIL", "onboarding@resend.dev")
+
+
+# -------------------------------------------------------------------
+# DRF — Phase 0: token auth becomes the primary mechanism for the iOS
+# app, while the Django dashboard continues to use the session cookie.
+#
+# Both authentication classes are present so the same endpoints can be
+# called either from the trainer dashboard (session) or from the iOS
+# client (Authorization: Token <key>). Permission default stays
+# IsAuthenticated; per-view AllowAny still works.
+# -------------------------------------------------------------------
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework.authentication.TokenAuthentication",
+        "rest_framework.authentication.SessionAuthentication",
+    ],
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.IsAuthenticated",
+    ],
+}

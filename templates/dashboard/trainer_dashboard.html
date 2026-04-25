@@ -1,73 +1,200 @@
 {% extends "dashboard/dashboard_shell.html" %}
-{% load user_extras %}
+{% load static %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/dashboard-clients.css' %}">
+{% endblock %}
 
 {% block dashboard_content %}
-<div style="display:grid;grid-template-columns:360px 1fr;gap:22px;align-items:start;">
-    <div class="glass" style="padding:24px;">
-        <div style="font-size:22px;font-weight:700;margin-bottom:18px;">Add Client</div>
+{% csrf_token %}
 
-        <form method="post" action="{% url 'dashboard-create-client' %}" style="display:grid;gap:14px;">
-            {% csrf_token %}
-
-            <div>
-                <label class="label">Username</label>
-                <input class="input" type="text" name="username" placeholder="client username">
-            </div>
-
-            <div>
-                <label class="label">Email</label>
-                <input class="input" type="email" name="email" placeholder="client email">
-            </div>
-
-            <div>
-                <label class="label">Password</label>
-                <input class="input" type="password" name="password" placeholder="temporary password">
-            </div>
-
-            <button type="submit" class="btn btn-primary">Create Client</button>
-        </form>
+<div class="dashboard-page-head">
+    <div>
+        <div class="dashboard-page-kicker">Workspace · Clients</div>
+        <h1 class="dashboard-page-title">Your roster</h1>
+        <p class="dashboard-page-subtitle">
+            Search clients, see who's missing a plan, open a profile to assign training and nutrition.
+        </p>
     </div>
 
-    <div class="glass" style="padding:24px;">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
-            <div style="font-size:22px;font-weight:700;">Your Clients</div>
-            <div class="muted">{{ clients|length }} total</div>
-        </div>
-
-        {% if clients %}
-            <div style="display:grid;gap:16px;">
-                {% for client in clients %}
-                    <a href="{% url 'trainer-client-detail' client.id %}" class="glass" style="padding:20px;display:block;">
-                        <div style="display:flex;justify-content:space-between;align-items:start;gap:16px;">
-                            <div>
-                                <div style="font-size:22px;font-weight:800;margin-bottom:6px;">{{ client.username }}</div>
-                                <div class="muted" style="margin-bottom:10px;">{{ client.email }}</div>
-
-                                <div style="display:flex;gap:10px;flex-wrap:wrap;">
-                                    <div class="glass" style="padding:8px 12px;font-size:13px;">
-                                        Role: Client
-                                    </div>
-
-                                    <div class="glass" style="padding:8px 12px;font-size:13px;">
-                                        {% if client.client_profile.assigned_workout_plan %}
-                                            Plan: {{ client.client_profile.assigned_workout_plan.name }}
-                                        {% else %}
-                                            No workout plan
-                                        {% endif %}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="btn btn-secondary" style="pointer-events:none;">
-                                Open
-                            </div>
-                        </div>
-                    </a>
-                {% endfor %}
-            </div>
-        {% else %}
-            <div class="muted">No clients yet. Create your first client on the left.</div>
-        {% endif %}
+    <div class="dashboard-page-actions">
+        <button type="button" class="btn btn-primary" data-action="open-add-client">+ Add client</button>
     </div>
 </div>
+
+<!-- Action-needed inbox: surfaces clients missing a workout / nutrition plan -->
+{% if missing_workout_clients or missing_nutrition_clients %}
+<section class="clients-inbox glass">
+    <div class="clients-inbox-head">
+        <div>
+            <div class="kicker" style="color:var(--accent);">Action needed</div>
+            <h2 class="h-section" style="font-size:20px;margin-top:4px;">
+                {{ action_needed_count }} item{{ action_needed_count|pluralize }}
+                need{% if action_needed_count == 1 %}s{% endif %} attention
+            </h2>
+        </div>
+    </div>
+
+    <div class="clients-inbox-grid">
+        {% for c in missing_workout_clients %}
+            <a href="{% url 'trainer-client-detail' c.id %}" class="clients-inbox-item">
+                <span class="clients-inbox-bullet">⌁</span>
+                <span class="clients-inbox-text">
+                    <strong>{{ c.username }}</strong> needs a workout plan
+                </span>
+                <span class="clients-inbox-arrow">→</span>
+            </a>
+        {% endfor %}
+        {% for c in missing_nutrition_clients %}
+            <a href="{% url 'trainer-client-detail' c.id %}" class="clients-inbox-item">
+                <span class="clients-inbox-bullet">◌</span>
+                <span class="clients-inbox-text">
+                    <strong>{{ c.username }}</strong> needs a nutrition plan
+                </span>
+                <span class="clients-inbox-arrow">→</span>
+            </a>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+<!-- Roster search + grid -->
+<section class="clients-roster">
+    <div class="clients-roster-head">
+        <div class="clients-roster-count">
+            <span class="clients-roster-count-num">{{ client_count }}</span>
+            <span class="clients-roster-count-label">client{{ client_count|pluralize }}</span>
+        </div>
+        <div class="clients-roster-search">
+            <input type="search" id="clients-search" class="input"
+                   placeholder="Search by name or email…"
+                   autocomplete="off"
+                   aria-label="Search clients">
+        </div>
+    </div>
+
+    <div class="clients-grid" id="clients-grid">
+        {% for c in clients %}
+            <a href="{% url 'trainer-client-detail' c.id %}"
+               class="client-card"
+               data-search="{{ c.username|lower }} {{ c.email|lower }}">
+                <div class="client-card-head">
+                    <div class="client-avatar">{{ c.username|slice:":1"|upper }}</div>
+                    <div class="client-card-id">
+                        <div class="client-card-name">{{ c.username }}</div>
+                        <div class="client-card-email">{{ c.email|default:"—" }}</div>
+                    </div>
+                </div>
+
+                <div class="client-card-meta">
+                    {% with profile=c.client_profile %}
+                        {% if profile.assigned_workout_plan %}
+                            <span class="badge badge-accent">⌁ {{ profile.assigned_workout_plan.name|truncatechars:18 }}</span>
+                        {% else %}
+                            <span class="badge badge-red">⌁ No plan</span>
+                        {% endif %}
+                        {% if profile.assigned_nutrition_plan %}
+                            <span class="badge badge-blue">◌ {{ profile.assigned_nutrition_plan.name|truncatechars:18 }}</span>
+                        {% else %}
+                            <span class="badge">◌ No nutrition</span>
+                        {% endif %}
+                    {% endwith %}
+                </div>
+
+                <div class="client-card-foot">
+                    <span class="client-card-cta">Open profile →</span>
+                </div>
+            </a>
+        {% empty %}
+            <div class="clients-empty glass">
+                <div class="clients-empty-mark">◯</div>
+                <h3>No clients yet</h3>
+                <p>Add your first client to start assigning workouts and nutrition plans.</p>
+                <button type="button" class="btn btn-primary" data-action="open-add-client">+ Add your first client</button>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="clients-grid-empty-search" id="clients-empty-search" hidden>
+        No clients match that search.
+    </div>
+</section>
+
+<!-- Add-client modal (hidden by default) -->
+<div class="modal" id="add-client-modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card glass-strong">
+        <div class="modal-head">
+            <div>
+                <div class="kicker" style="color:var(--accent);">New client</div>
+                <h3 class="h-section" style="font-size:22px;margin-top:4px;">Add a client</h3>
+            </div>
+            <button type="button" class="btn btn-ghost btn-sm" data-close>✕</button>
+        </div>
+
+        <form method="post" action="{% url 'dashboard-create-client' %}" class="modal-form">
+            {% csrf_token %}
+            <div>
+                <label class="label">Username</label>
+                <input class="input" type="text" name="username" placeholder="e.g. jane.doe" required>
+            </div>
+            <div>
+                <label class="label">Email</label>
+                <input class="input" type="email" name="email" placeholder="jane@example.com" required>
+            </div>
+            <div>
+                <label class="label">Temporary password</label>
+                <input class="input" type="password" name="password" placeholder="At least 8 characters" minlength="8" required>
+                <div class="faint" style="font-size:12px;margin-top:6px;">
+                    Share this with your client — they can change it later from their app.
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button type="button" class="btn btn-ghost" data-close>Cancel</button>
+                <button type="submit" class="btn btn-primary">Create client</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    (function () {
+        "use strict";
+
+        // Open / close modal
+        const modal = document.getElementById("add-client-modal");
+        function openModal() { if (modal) modal.hidden = false; }
+        function closeModal() { if (modal) modal.hidden = true; }
+
+        document.addEventListener("click", function (event) {
+            const opener = event.target.closest('[data-action="open-add-client"]');
+            if (opener) { event.preventDefault(); openModal(); return; }
+            const closer = event.target.closest("[data-close]");
+            if (closer) { event.preventDefault(); closeModal(); return; }
+        });
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") closeModal();
+        });
+
+        // Live roster filter
+        const search = document.getElementById("clients-search");
+        const cards = Array.from(document.querySelectorAll(".client-card"));
+        const emptyHint = document.getElementById("clients-empty-search");
+
+        if (search) {
+            search.addEventListener("input", function () {
+                const q = (search.value || "").trim().toLowerCase();
+                let visible = 0;
+                cards.forEach(card => {
+                    const hay = card.dataset.search || "";
+                    const match = !q || hay.indexOf(q) !== -1;
+                    card.style.display = match ? "" : "none";
+                    if (match) visible++;
+                });
+                if (emptyHint) emptyHint.hidden = (visible > 0 || cards.length === 0);
+            });
+        }
+    })();
+</script>
 {% endblock %}

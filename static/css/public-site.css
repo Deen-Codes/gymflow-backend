@@ -1,0 +1,501 @@
+/* ============================================================
+   GymFlow — Public PT landing pages.
+   Uses the trainer's --pt-accent CSS variable (set inline in the
+   template from `brand_color`) so each PT's page feels theirs.
+   Inherits the dark-glass body background from base.css.
+   ============================================================ */
+
+.pt-public {
+    color: rgba(255, 255, 255, 0.96);
+    --pt-accent: #c8ff00;
+}
+
+/* ---- Top nav ----------------------------------------------- */
+
+.pt-public-nav {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    background: rgba(8, 11, 17, 0.62);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(28px) saturate(160%);
+    -webkit-backdrop-filter: blur(28px) saturate(160%);
+}
+
+.pt-public-nav-brand {
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+}
+
+.pt-public-nav-cta {
+    background: var(--pt-accent);
+    color: #0a0f02;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    text-decoration: none;
+    transition: filter 140ms;
+}
+.pt-public-nav-cta:hover { filter: brightness(1.05); }
+
+/* ---- Sections ---------------------------------------------- */
+
+.pt-public-section {
+    padding: 80px 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (min-width: 880px) {
+    .pt-public-section { padding: 100px 40px; }
+}
+
+.pt-section-heading {
+    font-size: clamp(28px, 3.4vw, 42px);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    margin: 0 0 28px;
+    line-height: 1.05;
+}
+
+/* ---- Hero -------------------------------------------------- */
+
+.pt-hero {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 48px;
+    align-items: center;
+}
+@media (max-width: 880px) {
+    .pt-hero { grid-template-columns: 1fr; gap: 36px; }
+}
+
+.pt-hero-headline {
+    font-size: clamp(40px, 6.5vw, 78px);
+    line-height: 1.0;
+    letter-spacing: -0.03em;
+    margin: 0 0 22px;
+    font-weight: 800;
+}
+
+.pt-hero-sub {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.66);
+    line-height: 1.55;
+    margin: 0 0 32px;
+    max-width: 560px;
+}
+
+.pt-hero-ctas { display: inline-flex; gap: 12px; flex-wrap: wrap; }
+
+.pt-cta-primary {
+    display: inline-block;
+    background: var(--pt-accent);
+    color: #0a0f02;
+    font-weight: 700;
+    padding: 14px 24px;
+    border-radius: 14px;
+    font-size: 15px;
+    text-decoration: none;
+    transition: transform 140ms, filter 140ms;
+    border: none;
+    cursor: pointer;
+}
+.pt-cta-primary:hover { transform: translateY(-1px); filter: brightness(1.04); }
+
+.pt-cta-secondary {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: rgba(255, 255, 255, 0.92);
+    padding: 14px 22px;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 140ms;
+}
+.pt-cta-secondary:hover { background: rgba(255, 255, 255, 0.08); }
+
+.pt-hero-photo img {
+    width: 100%;
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    aspect-ratio: 4/5;
+    object-fit: cover;
+}
+.pt-hero-photo-placeholder {
+    aspect-ratio: 4/5;
+    border-radius: 22px;
+    border: 1.5px dashed rgba(255, 255, 255, 0.18);
+    display: grid;
+    place-items: center;
+    color: rgba(255, 255, 255, 0.36);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* ---- About -------------------------------------------------- */
+
+.pt-about {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    gap: 36px;
+    align-items: start;
+}
+@media (max-width: 720px) { .pt-about { grid-template-columns: 1fr; } }
+
+.pt-about-photo {
+    width: 100%;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.pt-about-body {
+    font-size: 17px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+/* ---- Services ---------------------------------------------- */
+
+.pt-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+.pt-service {
+    padding: 24px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.pt-service-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--pt-accent);
+}
+.pt-service-body { font-size: 14px; color: rgba(255, 255, 255, 0.7); line-height: 1.6; }
+
+/* ---- Testimonials ------------------------------------------ */
+
+.pt-testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+}
+.pt-testimonial {
+    padding: 24px 26px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.pt-testimonial-quote {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.88);
+    margin-bottom: 12px;
+}
+.pt-testimonial-author { font-size: 13px; color: rgba(255, 255, 255, 0.55); font-weight: 600; }
+
+/* ---- Pricing tiers (Phase 7.7) ----------------------------- */
+
+.pt-pricing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.pt-pricing-card {
+    position: relative;
+    padding: 28px 24px 24px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+.pt-pricing-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.pt-pricing-card.is-featured {
+    border-color: var(--pt-accent);
+    background: rgba(200, 255, 0, 0.06);
+    box-shadow: 0 12px 40px -18px rgba(200, 255, 0, 0.45);
+}
+
+.pt-pricing-flag {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--pt-accent);
+    color: #0a0f02;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 4px 12px;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.pt-pricing-name {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.66);
+}
+
+.pt-pricing-price {
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.98);
+    line-height: 1;
+}
+.pt-pricing-interval {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.55);
+    letter-spacing: 0;
+}
+
+.pt-pricing-desc {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.55;
+    margin: 0;
+    flex: 1;
+}
+
+.pt-pricing-cta {
+    margin-top: 4px;
+    text-align: center;
+    width: 100%;
+}
+
+.pt-pricing-note {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.45);
+    text-align: center;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+/* Selected-plan banner inside the onboarding form */
+.pt-selected-plan {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    background: rgba(200, 255, 0, 0.08);
+    border: 1px solid var(--pt-accent);
+    margin-bottom: 6px;
+}
+.pt-selected-plan-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--pt-accent);
+}
+.pt-selected-plan-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.96);
+}
+.pt-selected-plan-price {
+    margin-left: auto;
+    font-size: 16px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.96);
+}
+.pt-selected-plan-interval {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+/* ---- Onboarding form --------------------------------------- */
+
+.pt-onboarding {
+    max-width: 640px;
+    margin: 0 auto;
+}
+.pt-onboarding-lede {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.66);
+    margin: 0 0 28px;
+    line-height: 1.55;
+}
+
+.pt-onboarding-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.pt-form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.pt-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.78);
+}
+.pt-required { color: var(--pt-accent); margin-left: 2px; }
+
+.pt-input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    padding: 12px 14px;
+    color: rgba(255, 255, 255, 0.96);
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 140ms, background 140ms;
+}
+.pt-input:focus {
+    outline: none;
+    border-color: var(--pt-accent);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+textarea.pt-input { resize: vertical; min-height: 100px; }
+
+.pt-yesno {
+    display: flex;
+    gap: 14px;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 14px;
+}
+.pt-yesno label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+
+.pt-disabled-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    background: rgba(255, 255, 255, 0.02);
+    border-style: dashed;
+}
+
+.pt-onboarding-submit { margin-top: 8px; align-self: flex-start; }
+
+.pt-onboarding-empty {
+    padding: 28px;
+    border-radius: 14px;
+    border: 1.5px dashed rgba(255, 255, 255, 0.16);
+    color: rgba(255, 255, 255, 0.55);
+    text-align: center;
+}
+
+/* ---- Footer ------------------------------------------------ */
+
+.pt-footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.55);
+}
+.pt-footer-tagline { font-weight: 700; color: rgba(255, 255, 255, 0.78); margin-bottom: 8px; }
+.pt-footer-links { font-size: 14px; margin-bottom: 14px; }
+.pt-footer-links a { color: var(--pt-accent); text-decoration: none; }
+.pt-footer-credit { font-size: 12px; color: rgba(255, 255, 255, 0.38); }
+.pt-footer-credit strong { color: var(--pt-accent); font-weight: 700; }
+
+/* ---- Thanks page ------------------------------------------- */
+
+.pt-thanks-wrap {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 32px;
+}
+.pt-thanks-card {
+    width: min(540px, 100%);
+    padding: 48px 36px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+}
+.pt-thanks-mark {
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    background: var(--pt-accent);
+    color: #0a0f02;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+.pt-thanks-title {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0 0 10px;
+}
+.pt-thanks-sub {
+    color: rgba(255, 255, 255, 0.66);
+    margin: 0 0 28px;
+    font-size: 15px;
+    line-height: 1.55;
+}
+.pt-thanks-creds {
+    text-align: left;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 24px;
+}
+.pt-thanks-creds-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--pt-accent);
+    margin-bottom: 12px;
+}
+.pt-thanks-creds-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    font-size: 14px;
+}
+.pt-thanks-creds-row:last-of-type { border-bottom: none; }
+.pt-thanks-creds-row span { color: rgba(255, 255, 255, 0.55); }
+.pt-thanks-creds-row strong { color: rgba(255, 255, 255, 0.96); font-family: ui-monospace, SFMono-Regular, monospace; }
+.pt-thanks-creds-note {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 12px;
+    line-height: 1.5;
+}
+.pt-thanks-back { display: inline-block; }

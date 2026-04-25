@@ -1,4 +1,5 @@
 from django.contrib.auth import login, logout
+from rest_framework.authtoken.models import Token
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
@@ -14,6 +15,16 @@ from .serializers import (
 )
 
 
+# -------------------------------------------------------------------
+# Phase 0 — Token authentication
+#
+# The iOS client needs an auth mechanism that survives app re-installs
+# and process restarts more reliably than HTTPCookieStorage. The login
+# view now issues a DRF auth token alongside the existing session, so:
+#   * The Django dashboard keeps working unchanged (session cookie).
+#   * The iOS client stores `token` in the Keychain and sends it as
+#     `Authorization: Token <key>` on every request.
+# -------------------------------------------------------------------
 @api_view(["POST"])
 @permission_classes([AllowAny])
 def login_view(request):
@@ -23,9 +34,12 @@ def login_view(request):
     user = serializer.validated_data["user"]
     login(request, user)
 
+    token, _ = Token.objects.get_or_create(user=user)
+
     return Response(
         {
             "message": "Login successful.",
+            "token": token.key,
             "user": UserMeSerializer(user).data,
         },
         status=status.HTTP_200_OK,
@@ -35,6 +49,14 @@ def login_view(request):
 @api_view(["POST"])
 @permission_classes([IsAuthenticated])
 def logout_view(request):
+    # Destroy the user's auth token so a stolen token can't be reused
+    # after sign-out. Wrapped in try/except because the user may have
+    # signed in via session only (no token yet).
+    try:
+        request.user.auth_token.delete()
+    except (AttributeError, Token.DoesNotExist):
+        pass
+
     logout(request)
     return Response({"message": "Logout successful."}, status=status.HTTP_200_OK)
 

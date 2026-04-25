@@ -1,0 +1,171 @@
+/* ============================================================
+   GymFlow — Nutrition workspace (drag-drop meal builder).
+   Layered on top of dashboard-workouts.css so the rail / canvas /
+   library shells inherit the same look. This file only adds the
+   nutrition-specific bits: macro-target tiles, food card macro
+   line, and the slightly different planbar layout.
+   ============================================================ */
+
+.nutrition-builder {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* ---- Planbar with embedded macro tiles -------------------- */
+
+.nutrition-planbar {
+    display: grid;
+    grid-template-columns: minmax(180px, 1fr) auto auto;
+    align-items: center;
+    gap: 18px;
+    padding: 14px 18px;
+    border-radius: var(--radius-xl);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+}
+
+.nutrition-target-tiles {
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+}
+
+.nutrition-target {
+    padding: 8px 12px;
+    border-radius: 12px;
+    background: var(--glass-bg-strong);
+    border: 1px solid var(--glass-border-strong);
+    min-width: 90px;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.nutrition-target-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-faint);
+    font-weight: 700;
+}
+
+.nutrition-target-value {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--text);
+    margin-top: 2px;
+}
+
+.nutrition-target-value span {
+    font-size: 11px;
+    color: var(--text-soft);
+    margin-left: 1px;
+    font-weight: 600;
+}
+
+.nutrition-target-of {
+    font-size: 10px;
+    color: var(--text-faint);
+    margin-top: 1px;
+}
+
+/* When a macro hits the target, give it the lime accent */
+.nutrition-target.target-met .nutrition-target-value {
+    color: var(--accent-strong);
+}
+.nutrition-target.target-met {
+    border-color: var(--accent-line);
+    background: var(--accent-soft);
+}
+.nutrition-target.target-over {
+    border-color: rgba(255, 93, 108, 0.45);
+    background: rgba(255, 93, 108, 0.10);
+}
+.nutrition-target.target-over .nutrition-target-value {
+    color: #ffc3ca;
+}
+
+@media (max-width: 1080px) {
+    .nutrition-planbar {
+        grid-template-columns: 1fr;
+    }
+    .nutrition-target-tiles { flex-wrap: wrap; }
+}
+
+/* ---- Food cards in the meal canvas ------------------------ */
+
+.builder-food-card .builder-exercise-targets {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nutrition-macro-line {
+    color: var(--text-soft);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.nutrition-macro-line span[data-role] {
+    color: var(--text);
+    font-weight: 700;
+}
+
+/* ---- Library card — show macros under the name ------------ */
+
+.builder-library-card.builder-food-library-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    padding: 12px 14px;
+}
+
+.builder-food-library-card-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.builder-food-library-card-row .builder-library-card-name { flex: 1; }
+
+.builder-food-library-card-macros {
+    font-size: 11px;
+    color: var(--text-faint);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.builder-food-library-card-macros strong {
+    color: var(--text-soft);
+    font-weight: 700;
+}
+
+/* ---- Targets modal (compact 2x2) -------------------------- */
+
+.targets-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+/* ---- Source banner (cache / library fallback) ------------ */
+
+.builder-source-banner {
+    border-radius: 10px;
+    background: rgba(255, 153, 51, 0.10);
+    border: 1px solid rgba(255, 153, 51, 0.30);
+    color: #ffd2a3;
+    padding: 8px 12px;
+    font-size: 12px;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.builder-source-banner--soft {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: var(--glass-border);
+    color: var(--text-faint);
+    font-weight: 500;
+}

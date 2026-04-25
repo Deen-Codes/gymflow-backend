@@ -1,0 +1,51 @@
+[
+  {"name": "Back Squat",                "muscle_group": "Quads",        "equipment": "Barbell",      "instructions": "Bar on upper traps, brace, descend to parallel or below, drive through mid-foot."},
+  {"name": "Front Squat",               "muscle_group": "Quads",        "equipment": "Barbell",      "instructions": "Elbows up, bar racked on front delts, vertical torso, drive knees forward and out."},
+  {"name": "Goblet Squat",              "muscle_group": "Quads",        "equipment": "Dumbbell",     "instructions": "Hold one dumbbell vertically at chest, sit between hips, drive through whole foot."},
+  {"name": "Bulgarian Split Squat",     "muscle_group": "Quads",        "equipment": "Dumbbell",     "instructions": "Rear foot elevated, lean torso slightly forward, descend until front thigh parallel."},
+  {"name": "Walking Lunge",             "muscle_group": "Quads",        "equipment": "Dumbbell",     "instructions": "Step forward into a long stride, drop back knee toward floor, drive through front heel."},
+  {"name": "Leg Press",                 "muscle_group": "Quads",        "equipment": "Machine",      "instructions": "Feet shoulder-width, lower until thighs near chest without lower-back lift."},
+  {"name": "Leg Extension",             "muscle_group": "Quads",        "equipment": "Machine",      "instructions": "Sit tall, ankles behind pad, extend knees fully, control the eccentric."},
+
+  {"name": "Romanian Deadlift",         "muscle_group": "Hamstrings",   "equipment": "Barbell",      "instructions": "Hinge at hips, soft knees, bar close to legs, feel hamstring stretch then drive hips through."},
+  {"name": "Conventional Deadlift",     "muscle_group": "Posterior Chain", "equipment": "Barbell",   "instructions": "Bar over mid-foot, neutral spine, push the floor away — hips and shoulders rise together."},
+  {"name": "Sumo Deadlift",             "muscle_group": "Posterior Chain", "equipment": "Barbell",   "instructions": "Wide stance, toes turned out, knees track over toes, drive hips forward at lockout."},
+  {"name": "Hip Thrust",                "muscle_group": "Glutes",       "equipment": "Barbell",      "instructions": "Upper back on bench, feet shin-vertical at top, drive hips up, ribs down at top."},
+  {"name": "Glute Bridge",              "muscle_group": "Glutes",       "equipment": "Bodyweight",   "instructions": "Heels close to glutes, brace, drive through heels, full hip extension at top."},
+  {"name": "Lying Leg Curl",            "muscle_group": "Hamstrings",   "equipment": "Machine",      "instructions": "Pad just above heels, curl heels to glutes, control eccentric, no hip lift."},
+  {"name": "Seated Leg Curl",           "muscle_group": "Hamstrings",   "equipment": "Machine",      "instructions": "Sit fully back, curl heels under, control eccentric, no torso swing."},
+  {"name": "Standing Calf Raise",       "muscle_group": "Calves",       "equipment": "Machine",      "instructions": "Full stretch at bottom, drive up onto big toe, brief pause at top."},
+  {"name": "Seated Calf Raise",         "muscle_group": "Calves",       "equipment": "Machine",      "instructions": "Knees bent 90°, full stretch, push up onto balls of feet, control descent."},
+
+  {"name": "Bench Press",               "muscle_group": "Chest",        "equipment": "Barbell",      "instructions": "Arch slightly, retract scapula, lower bar to mid-chest, press up and slightly back."},
+  {"name": "Incline Bench Press",       "muscle_group": "Chest",        "equipment": "Barbell",      "instructions": "30–45° incline, scapula retracted, bar to upper chest, drive bar straight up."},
+  {"name": "Dumbbell Bench Press",      "muscle_group": "Chest",        "equipment": "Dumbbell",     "instructions": "Wrists stacked over elbows, lower with control to chest level, press up and slightly in."},
+  {"name": "Incline Dumbbell Press",    "muscle_group": "Chest",        "equipment": "Dumbbell",     "instructions": "30° incline, full ROM, no flaring elbows past 75°, control the descent."},
+  {"name": "Cable Chest Fly",           "muscle_group": "Chest",        "equipment": "Cable",        "instructions": "Slight forward lean, soft elbows, hug a tree — meet hands in front of chest."},
+  {"name": "Push-Up",                   "muscle_group": "Chest",        "equipment": "Bodyweight",   "instructions": "Plank position, lower chest to floor, elbows ~45°, full lockout at top."},
+
+  {"name": "Pull-Up",                   "muscle_group": "Back",         "equipment": "Bodyweight",   "instructions": "Dead hang, drive elbows down and back, chin over bar, control descent."},
+  {"name": "Lat Pulldown",              "muscle_group": "Back",         "equipment": "Cable",        "instructions": "Lean back ~10°, pull bar to upper chest, drive elbows down, full stretch overhead."},
+  {"name": "Barbell Row",               "muscle_group": "Back",         "equipment": "Barbell",      "instructions": "Hinge to ~45°, neutral spine, row bar to lower chest/upper abs, squeeze scapulae."},
+  {"name": "Single-Arm Dumbbell Row",   "muscle_group": "Back",         "equipment": "Dumbbell",     "instructions": "One knee on bench, neutral spine, row dumbbell to hip, full stretch at bottom."},
+  {"name": "Seated Cable Row",          "muscle_group": "Back",         "equipment": "Cable",        "instructions": "Sit tall, retract scapulae first, pull handle to lower abs, no torso swing."},
+  {"name": "Chest-Supported Row",       "muscle_group": "Back",         "equipment": "Machine",      "instructions": "Chest pinned to pad, row handles to ribs, drive elbows down and back."},
+  {"name": "Face Pull",                 "muscle_group": "Rear Delts",   "equipment": "Cable",        "instructions": "Rope at face height, pull rope ends past ears, external rotation at end range."},
+
+  {"name": "Overhead Press",            "muscle_group": "Shoulders",    "equipment": "Barbell",      "instructions": "Bar at clavicle, brace, press straight up, finish with bar over mid-foot."},
+  {"name": "Seated Dumbbell Press",     "muscle_group": "Shoulders",    "equipment": "Dumbbell",     "instructions": "Back supported, press dumbbells overhead without locking out hard, full ROM."},
+  {"name": "Lateral Raise",             "muscle_group": "Shoulders",    "equipment": "Dumbbell",     "instructions": "Slight forward lean, lead with elbows, raise to shoulder height, control descent."},
+  {"name": "Cable Lateral Raise",       "muscle_group": "Shoulders",    "equipment": "Cable",        "instructions": "Stand side-on to stack, raise handle across body to shoulder height."},
+  {"name": "Rear Delt Fly",             "muscle_group": "Rear Delts",   "equipment": "Dumbbell",     "instructions": "Hinge to torso parallel, slight bend in elbows, raise dumbbells out to sides."},
+
+  {"name": "Barbell Curl",              "muscle_group": "Biceps",       "equipment": "Barbell",      "instructions": "Elbows pinned, curl bar without swinging, full stretch at bottom."},
+  {"name": "Dumbbell Curl",             "muscle_group": "Biceps",       "equipment": "Dumbbell",     "instructions": "Supinate as you curl, elbows still, control the eccentric."},
+  {"name": "Hammer Curl",               "muscle_group": "Biceps",       "equipment": "Dumbbell",     "instructions": "Neutral grip, curl with elbows pinned, brief pause at top."},
+  {"name": "Cable Tricep Pushdown",     "muscle_group": "Triceps",      "equipment": "Cable",        "instructions": "Elbows tucked at sides, push handle down to full lockout, control return."},
+  {"name": "Overhead Tricep Extension", "muscle_group": "Triceps",      "equipment": "Dumbbell",     "instructions": "Dumbbell behind head, elbows narrow, extend overhead, full stretch each rep."},
+  {"name": "Skullcrusher",              "muscle_group": "Triceps",      "equipment": "Barbell",      "instructions": "Bar over forehead, lower behind head, elbows fixed, extend back to start."},
+
+  {"name": "Plank",                     "muscle_group": "Core",         "equipment": "Bodyweight",   "instructions": "Forearms under shoulders, ribs down, glutes squeezed, hold for time."},
+  {"name": "Hanging Leg Raise",         "muscle_group": "Core",         "equipment": "Bodyweight",   "instructions": "Dead hang, posterior pelvic tilt, raise legs to parallel or higher, no swinging."},
+  {"name": "Cable Crunch",              "muscle_group": "Core",         "equipment": "Cable",        "instructions": "Kneel facing stack, rope behind head, crunch ribs toward hips, hips still."}
+]

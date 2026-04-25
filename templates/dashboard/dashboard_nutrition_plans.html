@@ -1,208 +1,431 @@
 {% extends "dashboard/dashboard_shell.html" %}
+{% load static %}
+
+{% comment %}
+    Nutrition workspace — front page for nutrition plans.
+    Mirrors the Workouts workspace layout:
+      • plan strip + planbar with macro target chips
+      • LEFT  rail : meals (Breakfast, Lunch, etc.)
+      • CENTER     : meal canvas (sortable food items, inline grams editor)
+      • RIGHT rail : Open Food Facts catalog + my food library
+{% endcomment %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/dashboard-workouts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dashboard-clients.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dashboard-nutrition.css' %}">
+{% endblock %}
 
 {% block dashboard_content %}
-<div style="display:grid;grid-template-columns:420px 1fr;gap:22px;align-items:start;">
-    <div style="display:grid;gap:22px;">
-        <div class="glass" style="padding:24px;">
-            <div style="font-size:22px;font-weight:700;margin-bottom:18px;">Create Nutrition Plan</div>
+{% csrf_token %}
 
-            <form method="post" action="{% url 'dashboard-create-nutrition-plan' %}" style="display:grid;gap:14px;">
-                {% csrf_token %}
-
-                <div>
-                    <label class="label">Plan Name</label>
-                    <input class="input" type="text" name="name" placeholder="e.g. Fat Loss Phase 1">
-                </div>
-
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-                    <div>
-                        <label class="label">Calories</label>
-                        <input class="input" type="number" name="calories_target" min="0" placeholder="2200">
-                    </div>
-                    <div>
-                        <label class="label">Protein (g)</label>
-                        <input class="input" type="number" name="protein_target" min="0" placeholder="180">
-                    </div>
-                </div>
-
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-                    <div>
-                        <label class="label">Carbs (g)</label>
-                        <input class="input" type="number" name="carbs_target" min="0" placeholder="200">
-                    </div>
-                    <div>
-                        <label class="label">Fats (g)</label>
-                        <input class="input" type="number" name="fats_target" min="0" placeholder="70">
-                    </div>
-                </div>
-
-                <div>
-                    <label class="label">Coach Notes</label>
-                    <textarea class="input" name="notes" rows="6" placeholder="Meal timing, water goal, food quality notes, flexibility guidance..."></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Create Nutrition Plan</button>
-            </form>
-        </div>
-
-        <div class="glass" style="padding:24px;">
-            <div style="font-size:22px;font-weight:700;margin-bottom:18px;">Create Food Preset</div>
-
-            <form method="post" action="{% url 'dashboard-create-food-library-item' %}" style="display:grid;gap:14px;">
-                {% csrf_token %}
-
-                <div>
-                    <label class="label">Food Name</label>
-                    <input class="input" type="text" name="name" placeholder="e.g. Chicken Breast">
-                </div>
-
-                <div>
-                    <label class="label">Reference Grams</label>
-                    <input class="input" type="number" step="0.01" name="reference_grams" min="0.01" placeholder="100">
-                </div>
-
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-                    <div>
-                        <label class="label">Calories</label>
-                        <input class="input" type="number" step="0.01" name="calories" min="0" placeholder="165">
-                    </div>
-                    <div>
-                        <label class="label">Protein (g)</label>
-                        <input class="input" type="number" step="0.01" name="protein" min="0" placeholder="31">
-                    </div>
-                </div>
-
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-                    <div>
-                        <label class="label">Carbs (g)</label>
-                        <input class="input" type="number" step="0.01" name="carbs" min="0" placeholder="0">
-                    </div>
-                    <div>
-                        <label class="label">Fats (g)</label>
-                        <input class="input" type="number" step="0.01" name="fats" min="0" placeholder="3.6">
-                    </div>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Create Food Preset</button>
-            </form>
-        </div>
+<div class="dashboard-page-head">
+    <div>
+        <div class="dashboard-page-kicker">Workspace · Nutrition</div>
+        <h1 class="dashboard-page-title">Build nutrition plans</h1>
+        <p class="dashboard-page-subtitle">
+            Drag foods from the catalog onto a meal — macros pre-fill from the food database.
+            Tweak portions in place; totals recompute live.
+        </p>
     </div>
 
-    <div style="display:grid;gap:22px;">
-        <div class="glass" style="padding:24px;">
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
-                <div style="font-size:22px;font-weight:700;">Food Library</div>
-                <div class="muted">{{ food_library|length }} total</div>
-            </div>
-
-            {% if food_library %}
-                <div style="display:grid;gap:14px;">
-                    {% for food in food_library %}
-                        <div class="glass" style="padding:22px;">
-                            <div style="font-size:18px;font-weight:800;margin-bottom:14px;">
-                                {{ food.name }}
-                            </div>
-
-                            <form method="post" action="{% url 'dashboard-update-food-library-item' food.id %}" style="display:grid;gap:12px;">
-                                {% csrf_token %}
-
-                                <div>
-                                    <label class="label">Food Name</label>
-                                    <input class="input" type="text" name="name" value="{{ food.name }}">
-                                </div>
-
-                                <div>
-                                    <label class="label">Reference Grams</label>
-                                    <input class="input" type="number" step="0.01" name="reference_grams" min="0.01" value="{{ food.reference_grams }}">
-                                </div>
-
-                                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-                                    <div>
-                                        <label class="label">Calories</label>
-                                        <input class="input" type="number" step="0.01" name="calories" min="0" value="{{ food.calories }}">
-                                    </div>
-                                    <div>
-                                        <label class="label">Protein (g)</label>
-                                        <input class="input" type="number" step="0.01" name="protein" min="0" value="{{ food.protein }}">
-                                    </div>
-                                </div>
-
-                                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-                                    <div>
-                                        <label class="label">Carbs (g)</label>
-                                        <input class="input" type="number" step="0.01" name="carbs" min="0" value="{{ food.carbs }}">
-                                    </div>
-                                    <div>
-                                        <label class="label">Fats (g)</label>
-                                        <input class="input" type="number" step="0.01" name="fats" min="0" value="{{ food.fats }}">
-                                    </div>
-                                </div>
-
-                                <div style="display:flex;gap:10px;flex-wrap:wrap;">
-                                    <button type="submit" class="btn btn-primary">Save Food</button>
-                            </form>
-
-                                    <form method="post" action="{% url 'dashboard-duplicate-food-library-item' food.id %}">
-                                        {% csrf_token %}
-                                        <button type="submit" class="btn btn-secondary">Duplicate</button>
-                                    </form>
-
-                                    <form method="post" action="{% url 'dashboard-delete-food-library-item' food.id %}" onsubmit="return confirm('Delete this food preset?');">
-                                        {% csrf_token %}
-                                        <button type="submit" class="btn btn-secondary">Delete</button>
-                                    </form>
-                                </div>
-                        </div>
-                    {% endfor %}
-                </div>
-            {% else %}
-                <div class="muted">
-                    No food presets yet. Create your first one on the left.
-                </div>
-            {% endif %}
-        </div>
-
-        <div class="glass" style="padding:24px;">
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
-                <div style="font-size:22px;font-weight:700;">Nutrition Plan Templates</div>
-                <div class="muted">{{ nutrition_plans|length }} total</div>
-            </div>
-
-            {% if nutrition_plans %}
-                <div style="display:grid;gap:14px;">
-                    {% for plan in nutrition_plans %}
-                        <div class="glass" style="padding:18px;">
-                            <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
-                                <a href="{% url 'trainer-nutrition-plan-detail' plan.id %}" style="display:block;flex:1;min-width:220px;">
-                                    <div style="font-size:18px;font-weight:800;margin-bottom:6px;">{{ plan.name }}</div>
-                                    <div class="muted">
-                                        {{ plan.calories_target }} kcal ·
-                                        P {{ plan.protein_target }}g ·
-                                        C {{ plan.carbs_target }}g ·
-                                        F {{ plan.fats_target }}g
-                                    </div>
-                                </a>
-
-                                <div style="display:flex;gap:10px;flex-wrap:wrap;">
-                                    <form method="post" action="{% url 'dashboard-duplicate-nutrition-plan' plan.id %}">
-                                        {% csrf_token %}
-                                        <button type="submit" class="btn btn-secondary">Duplicate</button>
-                                    </form>
-
-                                    <a href="{% url 'trainer-nutrition-plan-detail' plan.id %}" class="btn btn-secondary">
-                                        Open
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
-            {% else %}
-                <div class="muted">
-                    No nutrition plan templates yet. Create your first one on the left.
-                </div>
-            {% endif %}
-        </div>
+    <div class="dashboard-page-actions">
+        <button type="button" class="btn btn-secondary" data-action="create-nplan">+ New plan</button>
+        {% if nutrition_plan %}
+            <button type="button" class="btn btn-primary" data-action="add-meal">+ Add meal</button>
+        {% endif %}
     </div>
 </div>
+
+{% if nutrition_plan %}
+    <div class="nutrition-builder"
+         data-plan-id="{{ nutrition_plan.id }}"
+         data-csrf-token="{{ csrf_token }}">
+
+        <!-- Plan strip — every nutrition plan as a chip -->
+        <div class="builder-plan-strip">
+            <div class="builder-plan-strip-label">Plans</div>
+            <div class="builder-plan-strip-chips">
+                {% for p in nutrition_plans %}
+                    <a href="{% url 'trainer-nutrition-plan-detail' p.id %}"
+                       class="builder-plan-chip {% if p.id == nutrition_plan.id %}active{% endif %}"
+                       title="{{ p.name }}">
+                        <span class="builder-plan-chip-name">{{ p.name }}</span>
+                        <span class="builder-plan-chip-meta">{{ p.meals.count }} meal{{ p.meals.count|pluralize }}</span>
+                    </a>
+                {% endfor %}
+                <button type="button" class="builder-plan-chip builder-plan-chip--add" data-action="create-nplan" title="Create a new plan">
+                    <span class="builder-plan-chip-name">+ New plan</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Planbar with macro targets -->
+        <div class="nutrition-planbar">
+            <div>
+                <div class="builder-planbar-title">{{ nutrition_plan.name }}</div>
+                <div class="builder-planbar-meta">
+                    {{ meals|length }} meal{{ meals|length|pluralize }}
+                    {% if nutrition_plan.is_template %}· Template{% else %}· Client plan{% endif %}
+                </div>
+            </div>
+
+            <div class="nutrition-target-tiles">
+                <div class="nutrition-target">
+                    <div class="nutrition-target-label">Calories</div>
+                    <div class="nutrition-target-value" data-target-current="calories">0</div>
+                    <div class="nutrition-target-of">/ {{ nutrition_plan.calories_target }}</div>
+                </div>
+                <div class="nutrition-target">
+                    <div class="nutrition-target-label">Protein</div>
+                    <div class="nutrition-target-value" data-target-current="protein">0<span>g</span></div>
+                    <div class="nutrition-target-of">/ {{ nutrition_plan.protein_target }}g</div>
+                </div>
+                <div class="nutrition-target">
+                    <div class="nutrition-target-label">Carbs</div>
+                    <div class="nutrition-target-value" data-target-current="carbs">0<span>g</span></div>
+                    <div class="nutrition-target-of">/ {{ nutrition_plan.carbs_target }}g</div>
+                </div>
+                <div class="nutrition-target">
+                    <div class="nutrition-target-label">Fats</div>
+                    <div class="nutrition-target-value" data-target-current="fats">0<span>g</span></div>
+                    <div class="nutrition-target-of">/ {{ nutrition_plan.fats_target }}g</div>
+                </div>
+            </div>
+
+            <div class="builder-planbar-actions">
+                <button type="button" class="btn btn-secondary btn-sm" data-action="edit-nplan-targets">Edit targets</button>
+                <button type="button" class="btn btn-secondary btn-sm" data-action="rename-nplan">Rename</button>
+                <button type="button" class="btn btn-secondary btn-sm" data-action="duplicate-nplan">Duplicate</button>
+                <button type="button" class="btn btn-ghost btn-sm" data-action="delete-nplan">Delete</button>
+            </div>
+        </div>
+
+        <div class="builder-grid">
+
+            <!-- LEFT RAIL — meal picker -->
+            <aside class="builder-day-rail" id="meal-rail">
+                <div class="builder-rail-head">
+                    <div class="builder-rail-title">Meals</div>
+                    <button type="button" class="builder-icon-btn" data-action="add-meal" title="Add meal">+</button>
+                </div>
+
+                {% for meal in meals %}
+                    <button type="button"
+                            class="builder-day-chip{% if forloop.first %} active{% endif %}"
+                            data-meal-id="{{ meal.id }}">
+                        <span class="builder-day-chip-order">{{ forloop.counter }}</span>
+                        <span class="builder-day-chip-title">{{ meal.title }}</span>
+                        <span class="builder-day-chip-count">{{ meal.items.count }}</span>
+                    </button>
+                {% empty %}
+                    <div class="builder-empty-rail">
+                        No meals yet. Click <strong>+</strong> to add one.
+                    </div>
+                {% endfor %}
+            </aside>
+
+            <!-- CENTER — meal canvas -->
+            <main class="builder-canvas" id="meal-canvas">
+                {% for meal in meals %}
+                    <section class="builder-day-panel{% if forloop.first %} active{% endif %}"
+                             data-meal-id="{{ meal.id }}">
+
+                        <header class="builder-day-header">
+                            <div>
+                                <h2 class="builder-day-title">{{ meal.title }}</h2>
+                                <div class="builder-day-sub">
+                                    <span data-role="item-count">{{ meal.items.count }}</span>
+                                    food{{ meal.items.count|pluralize }}
+                                </div>
+                            </div>
+                            <div class="builder-day-actions">
+                                <button type="button" class="btn btn-secondary btn-sm" data-action="rename-meal">Rename</button>
+                                <button type="button" class="btn btn-ghost btn-sm" data-action="delete-meal">Delete meal</button>
+                            </div>
+                        </header>
+
+                        <ul class="builder-exercise-list" data-role="meal-item-list">
+                            {% for item in meal.items.all|dictsort:"order" %}
+                                <li class="builder-exercise-card builder-food-card"
+                                    data-item-id="{{ item.id }}"
+                                    data-calories="{{ item.calories }}"
+                                    data-protein="{{ item.protein }}"
+                                    data-carbs="{{ item.carbs }}"
+                                    data-fats="{{ item.fats }}"
+                                    data-grams="{{ item.grams }}"
+                                    data-ref-grams="{{ item.reference_grams }}"
+                                    data-cals-per-ref="{% widthratio item.calories item.grams item.reference_grams %}"
+                                    data-prot-per-ref="{% widthratio item.protein item.grams item.reference_grams %}"
+                                    data-carb-per-ref="{% widthratio item.carbs item.grams item.reference_grams %}"
+                                    data-fat-per-ref="{% widthratio item.fats item.grams item.reference_grams %}">
+                                    <div class="builder-exercise-handle" aria-label="Drag to reorder">⠿</div>
+                                    <div class="builder-exercise-body">
+                                        <div class="builder-exercise-name">{{ item.food_name }}</div>
+                                        <div class="builder-exercise-targets">
+                                            <label class="builder-target-field">
+                                                <input type="number" min="1" step="1"
+                                                       data-role="grams-input"
+                                                       class="builder-target-input builder-target-input--num"
+                                                       value="{{ item.grams|floatformat:0 }}">
+                                                <span>g</span>
+                                            </label>
+                                            <span class="nutrition-macro-line">
+                                                <span data-role="cal">{{ item.calories|floatformat:0 }}</span> kcal ·
+                                                P <span data-role="prot">{{ item.protein|floatformat:0 }}</span>g ·
+                                                C <span data-role="carb">{{ item.carbs|floatformat:0 }}</span>g ·
+                                                F <span data-role="fat">{{ item.fats|floatformat:0 }}</span>g
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="builder-exercise-actions">
+                                        <button type="button" class="builder-icon-btn" data-action="delete-meal-item" title="Remove">✕</button>
+                                    </div>
+                                </li>
+                            {% empty %}
+                                <li class="builder-exercise-empty">
+                                    Drag a food from the right panel onto this meal.
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </section>
+                {% endfor %}
+
+                {% if not meals %}
+                    <div class="builder-canvas-empty">
+                        <p>This plan has no meals yet.</p>
+                        <button class="btn btn-primary" data-action="add-meal">+ Add the first meal</button>
+                    </div>
+                {% endif %}
+            </main>
+
+            <!-- RIGHT RAIL — Open Food Facts catalog + my library -->
+            <aside class="builder-library-rail" id="food-rail">
+                <div class="builder-library-tabs">
+                    <button class="builder-library-tab active" data-tab="catalog">Foods</button>
+                    <button class="builder-library-tab" data-tab="library">My library</button>
+                </div>
+
+                <div class="builder-library-search">
+                    <input type="search" id="food-search"
+                           placeholder="Search foods (e.g. brown rice, chicken)…"
+                           autocomplete="off"
+                           aria-label="Search foods">
+                </div>
+
+                <ul class="builder-library-list" id="food-list" data-role="food-list">
+                    <li class="builder-library-empty">Type to search foods.</li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+{% else %}
+    <div class="builder-bootstrap">
+        <div class="builder-bootstrap-mark">◌</div>
+        <h2>Create your first nutrition plan</h2>
+        <p>
+            A nutrition plan groups meals (Breakfast, Lunch, etc.) and each meal holds the foods
+            you assign. Macros pre-fill from the food database when you drag a food in.
+        </p>
+
+        <form class="builder-bootstrap-form" method="post" action="{% url 'dashboard-create-nutrition-plan' %}">
+            {% csrf_token %}
+            <input class="input" type="text" name="name" placeholder="e.g. 2,400 kcal Cut" required>
+            <button type="submit" class="btn btn-primary">Create</button>
+            <input type="hidden" name="calories_target" value="2400">
+            <input type="hidden" name="protein_target" value="180">
+            <input type="hidden" name="carbs_target" value="240">
+            <input type="hidden" name="fats_target" value="80">
+        </form>
+        <div class="faint" style="font-size:12px;margin-top:14px;">Default targets: 2400 kcal · 180p · 240c · 80f. Edit them later in the planbar.</div>
+    </div>
+{% endif %}
+
+<!-- Edit-targets modal -->
+{% if nutrition_plan %}
+<div class="modal" id="targets-modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card glass-strong">
+        <div class="modal-head">
+            <div>
+                <div class="kicker" style="color:var(--accent);">Daily targets</div>
+                <h3 class="h-section" style="font-size:22px;margin-top:4px;">Edit macros — {{ nutrition_plan.name }}</h3>
+            </div>
+            <button type="button" class="btn btn-ghost btn-sm" data-close>✕</button>
+        </div>
+
+        <form method="post" action="{% url 'dashboard-update-nutrition-plan' nutrition_plan.id %}" class="modal-form">
+            {% csrf_token %}
+            <input type="hidden" name="name" value="{{ nutrition_plan.name }}">
+            <input type="hidden" name="notes" value="{{ nutrition_plan.notes }}">
+
+            <div class="targets-grid">
+                <div>
+                    <label class="label">Calories</label>
+                    <input class="input" type="number" name="calories_target" value="{{ nutrition_plan.calories_target }}" min="0">
+                </div>
+                <div>
+                    <label class="label">Protein (g)</label>
+                    <input class="input" type="number" name="protein_target" value="{{ nutrition_plan.protein_target }}" min="0">
+                </div>
+                <div>
+                    <label class="label">Carbs (g)</label>
+                    <input class="input" type="number" name="carbs_target" value="{{ nutrition_plan.carbs_target }}" min="0">
+                </div>
+                <div>
+                    <label class="label">Fats (g)</label>
+                    <input class="input" type="number" name="fats_target" value="{{ nutrition_plan.fats_target }}" min="0">
+                </div>
+            </div>
+
+            <div class="modal-actions">
+                <button type="button" class="btn btn-ghost" data-close>Cancel</button>
+                <button type="submit" class="btn btn-primary">Save targets</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endif %}
+
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js" defer></script>
+<script src="{% static 'js/workspace-nutrition-builder.js' %}" defer></script>
+<script>
+    // -----------------------------------------------------------
+    // Nutrition workspace — page-level button actions
+    // (mirrors the Workouts pattern — uses existing form-POST endpoints)
+    // -----------------------------------------------------------
+    (function () {
+        "use strict";
+
+        const PLAN_ID = {{ nutrition_plan.id|default:"null" }};
+        const PLAN_NAME = "{{ nutrition_plan.name|default:''|escapejs }}";
+        const MEAL_COUNT = {{ meals|length|default:0 }};
+        const csrf = document.querySelector('input[name="csrfmiddlewaretoken"]')?.value || "";
+
+        function postForm(url, fields) {
+            const f = document.createElement("form");
+            f.method = "POST";
+            f.action = url;
+            const t = document.createElement("input");
+            t.type = "hidden"; t.name = "csrfmiddlewaretoken"; t.value = csrf;
+            f.appendChild(t);
+            Object.entries(fields || {}).forEach(([k, v]) => {
+                const i = document.createElement("input");
+                i.type = "hidden"; i.name = k; i.value = v;
+                f.appendChild(i);
+            });
+            document.body.appendChild(f);
+            f.submit();
+        }
+
+        // Modal open/close
+        const modal = document.getElementById("targets-modal");
+        function openModal() { if (modal) modal.hidden = false; }
+        function closeModal() { if (modal) modal.hidden = true; }
+        document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
+
+        document.addEventListener("click", function (event) {
+            const closer = event.target.closest("[data-close]");
+            if (closer) { event.preventDefault(); closeModal(); return; }
+
+            const btn = event.target.closest("[data-action]");
+            if (!btn) return;
+            const action = btn.dataset.action;
+
+            // ---- Plan-level (no current plan needed) ----
+            if (action === "create-nplan") {
+                event.preventDefault();
+                const name = window.prompt("Name for the new nutrition plan?", "New Plan");
+                if (!name) return;
+                postForm("/dashboard/nutrition-plans/create/", {
+                    name,
+                    calories_target: 2400,
+                    protein_target: 180,
+                    carbs_target: 240,
+                    fats_target: 80,
+                    notes: "",
+                });
+                return;
+            }
+
+            if (PLAN_ID === null) return;
+
+            if (action === "edit-nplan-targets") { event.preventDefault(); openModal(); return; }
+
+            if (action === "rename-nplan") {
+                event.preventDefault();
+                const next = window.prompt("Rename plan:", PLAN_NAME);
+                if (!next || next === PLAN_NAME) return;
+                // Need full payload because the form requires all fields.
+                const targetCalories = document.querySelector('input[name="calories_target"]')?.value || 0;
+                const targetProtein = document.querySelector('input[name="protein_target"]')?.value || 0;
+                const targetCarbs = document.querySelector('input[name="carbs_target"]')?.value || 0;
+                const targetFats = document.querySelector('input[name="fats_target"]')?.value || 0;
+                postForm("/dashboard/nutrition-plans/" + PLAN_ID + "/update/", {
+                    name: next,
+                    calories_target: targetCalories,
+                    protein_target: targetProtein,
+                    carbs_target: targetCarbs,
+                    fats_target: targetFats,
+                    notes: "",
+                });
+                return;
+            }
+
+            if (action === "duplicate-nplan") {
+                event.preventDefault();
+                if (!window.confirm('Create a copy of "' + PLAN_NAME + '"?')) return;
+                postForm("/dashboard/nutrition-plans/" + PLAN_ID + "/duplicate/");
+                return;
+            }
+
+            if (action === "delete-nplan") {
+                event.preventDefault();
+                if (!window.confirm('Delete "' + PLAN_NAME + '" and all its meals? This cannot be undone.')) return;
+                postForm("/dashboard/nutrition-plans/" + PLAN_ID + "/delete/");
+                return;
+            }
+
+            if (action === "add-meal") {
+                event.preventDefault();
+                const title = window.prompt("Meal title? (e.g. Breakfast, Lunch)", "Meal " + (MEAL_COUNT + 1));
+                if (!title) return;
+                postForm(
+                    "/dashboard/nutrition-plans/" + PLAN_ID + "/meals/create/",
+                    { title, order: MEAL_COUNT + 1 }
+                );
+                return;
+            }
+
+            if (action === "rename-meal") {
+                event.preventDefault();
+                const panel = btn.closest(".builder-day-panel");
+                if (!panel) return;
+                const mealId = panel.dataset.mealId;
+                const currentTitle = panel.querySelector(".builder-day-title")?.textContent.trim() || "";
+                const orderChip = document.querySelector('.builder-day-chip[data-meal-id="' + mealId + '"] .builder-day-chip-order');
+                const currentOrder = orderChip ? parseInt(orderChip.textContent, 10) || 1 : 1;
+                const next = window.prompt("Rename meal:", currentTitle);
+                if (!next || next === currentTitle) return;
+                postForm(
+                    "/dashboard/nutrition-plans/" + PLAN_ID + "/meals/" + mealId + "/update/",
+                    { title: next, order: currentOrder }
+                );
+                return;
+            }
+
+            if (action === "delete-meal") {
+                event.preventDefault();
+                const panel = btn.closest(".builder-day-panel");
+                if (!panel) return;
+                const mealId = panel.dataset.mealId;
+                const title = panel.querySelector(".builder-day-title")?.textContent.trim() || "this meal";
+                if (!window.confirm('Delete "' + title + '" and all its foods?')) return;
+                postForm("/dashboard/nutrition-plans/" + PLAN_ID + "/meals/" + mealId + "/delete/");
+                return;
+            }
+        });
+    })();
+</script>
 {% endblock %}

@@ -1,0 +1,353 @@
+{% extends "dashboard/dashboard_shell.html" %}
+{% load static %}
+
+{% comment %}
+    Workouts workspace — front page of the dashboard.
+    Renders the drag-drop builder for the active plan, with:
+      • a planbar that lists every plan as a chip you can click to switch
+      • LEFT  rail : the days of the active plan
+      • CENTER     : the day canvas (sortable exercise list)
+      • RIGHT rail : exercise catalog + my library
+
+    Reused for two routes:
+      /dashboard/                      → newest plan auto-selected
+      /dashboard/workout-plans/<id>/   → deep-link to a specific plan
+{% endcomment %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/dashboard-workouts.css' %}">
+{% endblock %}
+
+{% block dashboard_content %}
+{% csrf_token %}
+
+<div class="dashboard-page-head">
+    <div>
+        <div class="dashboard-page-kicker">Workspace · Workouts</div>
+        <h1 class="dashboard-page-title">Build training plans</h1>
+        <p class="dashboard-page-subtitle">
+            Drag exercises from the catalog onto a day, reorder with the handle, swap targets in place.
+            Every catalog drop is snapshotted into your library so future edits never mutate a published plan.
+        </p>
+    </div>
+
+    <div class="dashboard-page-actions">
+        <button type="button" class="btn btn-secondary" data-action="create-plan">+ New plan</button>
+        {% if plan %}
+            <button type="button" class="btn btn-primary" data-action="add-day">+ Add day</button>
+        {% endif %}
+    </div>
+</div>
+
+{% if plan %}
+    <div class="builder"
+         data-plan-id="{{ plan.id }}"
+         data-csrf-token="{{ csrf_token }}">
+
+        <!-- Plan picker — every plan as a chip, active highlighted -->
+        <div class="builder-plan-strip" id="plan-strip">
+            <div class="builder-plan-strip-label">Plans</div>
+            <div class="builder-plan-strip-chips">
+                {% for p in workout_plans %}
+                    <a href="{% url 'trainer-workout-plan-detail' p.id %}"
+                       class="builder-plan-chip {% if p.id == plan.id %}active{% endif %}"
+                       title="{{ p.name }}">
+                        <span class="builder-plan-chip-name">{{ p.name }}</span>
+                        <span class="builder-plan-chip-meta">{{ p.days.count }} day{{ p.days.count|pluralize }}</span>
+                    </a>
+                {% endfor %}
+                <button type="button" class="builder-plan-chip builder-plan-chip--add" data-action="create-plan" title="Create a new plan">
+                    <span class="builder-plan-chip-name">+ New plan</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="builder-planbar">
+            <div>
+                <div class="builder-planbar-title">{{ plan.name }}</div>
+                <div class="builder-planbar-meta">
+                    {{ days|length }} day{{ days|length|pluralize }}
+                    {% if plan.is_template %}· Template{% else %}· Client plan{% endif %}
+                </div>
+            </div>
+
+            <div class="builder-planbar-actions">
+                <button type="button" class="btn btn-secondary btn-sm" data-action="rename-plan">Rename</button>
+                <button type="button" class="btn btn-secondary btn-sm" data-action="duplicate-plan">Duplicate</button>
+                <button type="button" class="btn btn-ghost btn-sm" data-action="delete-plan">Delete</button>
+            </div>
+        </div>
+
+        <div class="builder-grid">
+
+            <!-- ============================================================ -->
+            <!-- LEFT RAIL — day picker                                        -->
+            <!-- ============================================================ -->
+            <aside class="builder-day-rail" id="day-rail">
+                <div class="builder-rail-head">
+                    <div class="builder-rail-title">Days</div>
+                    <button type="button" class="builder-icon-btn" data-action="add-day" title="Add day">+</button>
+                </div>
+
+                {% for day in days %}
+                    <button type="button"
+                            class="builder-day-chip{% if forloop.first %} active{% endif %}"
+                            data-day-id="{{ day.id }}">
+                        <span class="builder-day-chip-order">{{ forloop.counter }}</span>
+                        <span class="builder-day-chip-title">{{ day.title }}</span>
+                        <span class="builder-day-chip-count">{{ day.exercises.count }}</span>
+                    </button>
+                {% empty %}
+                    <div class="builder-empty-rail">
+                        No days yet. Click <strong>+</strong> to add one.
+                    </div>
+                {% endfor %}
+            </aside>
+
+            <!-- ============================================================ -->
+            <!-- CENTER — day canvas                                            -->
+            <!-- ============================================================ -->
+            <main class="builder-canvas" id="day-canvas">
+                {% for day in days %}
+                    <section class="builder-day-panel{% if forloop.first %} active{% endif %}"
+                             data-day-id="{{ day.id }}">
+
+                        <header class="builder-day-header">
+                            <div>
+                                <h2 class="builder-day-title">{{ day.title }}</h2>
+                                <div class="builder-day-sub">
+                                    <span data-role="exercise-count">{{ day.exercises.count }}</span>
+                                    exercise{{ day.exercises.count|pluralize }}
+                                </div>
+                            </div>
+                            <div class="builder-day-actions">
+                                <button type="button" class="btn btn-secondary btn-sm" data-action="rename-day">Rename</button>
+                                <button type="button" class="btn btn-ghost btn-sm" data-action="delete-day">Delete day</button>
+                            </div>
+                        </header>
+
+                        <ul class="builder-exercise-list" data-role="exercise-list">
+                            {% for exercise in day.exercises.all|dictsort:"order" %}
+                                <li class="builder-exercise-card"
+                                    data-exercise-id="{{ exercise.id }}">
+                                    <div class="builder-exercise-handle" aria-label="Drag to reorder">⠿</div>
+                                    <div class="builder-exercise-body">
+                                        <div class="builder-exercise-label">{{ exercise.label }}</div>
+                                        <div class="builder-exercise-name">{{ exercise.name }}</div>
+                                        <div class="builder-exercise-targets">
+                                            <label class="builder-target-field">
+                                                <input type="number" min="1" max="20"
+                                                       data-role="sets-input"
+                                                       class="builder-target-input builder-target-input--num"
+                                                       value="{{ exercise.sets.count|default:3 }}">
+                                                <span>sets</span>
+                                            </label>
+                                            <span class="builder-target-x">×</span>
+                                            <label class="builder-target-field">
+                                                <input type="text"
+                                                       data-role="reps-input"
+                                                       class="builder-target-input builder-target-input--reps"
+                                                       placeholder="8-12"
+                                                       value="{% with first=exercise.sets.first %}{% if first %}{{ first.reps }}{% else %}8-12{% endif %}{% endwith %}">
+                                                <span>reps</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="builder-exercise-actions">
+                                        <button type="button" class="builder-icon-btn" data-action="delete-exercise" title="Remove">✕</button>
+                                    </div>
+                                </li>
+                            {% empty %}
+                                <li class="builder-exercise-empty">
+                                    Drag an exercise from the right panel onto this day.
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </section>
+                {% endfor %}
+
+                {% if not days %}
+                    <div class="builder-canvas-empty">
+                        <p>This plan has no days yet.</p>
+                        <button class="btn btn-primary" data-action="add-day">+ Add the first day</button>
+                    </div>
+                {% endif %}
+            </main>
+
+            <!-- ============================================================ -->
+            <!-- RIGHT RAIL — searchable catalog / library                     -->
+            <!-- ============================================================ -->
+            <aside class="builder-library-rail" id="library-rail">
+                <div class="builder-library-tabs">
+                    <button class="builder-library-tab active" data-tab="catalog">Catalog</button>
+                    <button class="builder-library-tab" data-tab="library">My library</button>
+                </div>
+
+                <div class="builder-library-search">
+                    <input type="search" id="library-search"
+                           placeholder="Search exercises…"
+                           autocomplete="off"
+                           aria-label="Search exercises">
+                </div>
+
+                <div class="builder-library-facets" id="library-facets">
+                    <!-- facet chips populated from /catalog/facets/ -->
+                </div>
+
+                <ul class="builder-library-list" id="library-list" data-role="library-list">
+                    <li class="builder-library-empty">Loading exercises…</li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+{% else %}
+    <div class="builder-bootstrap">
+        <div class="builder-bootstrap-mark">⌁</div>
+        <h2>Create your first workout plan</h2>
+        <p>
+            A plan groups workout days, and each day holds the exercises you assign.
+            Once it exists, you can drag from a catalog of {{ catalog_size|default:"800+" }} exercises
+            (curated + wger) onto any day.
+        </p>
+
+        <form class="builder-bootstrap-form" method="post" action="{% url 'dashboard-create-workout-plan' %}">
+            {% csrf_token %}
+            <input class="input" type="text" name="name" placeholder="e.g. Upper / Lower Split" required>
+            <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+    </div>
+{% endif %}
+
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js" defer></script>
+<script src="{% static 'js/workspace-workout-builder.js' %}" defer></script>
+<script>
+    // -----------------------------------------------------------
+    // Workouts workspace — page-level button actions
+    // -----------------------------------------------------------
+    // Builder JS handles drag-drop API + inline-edit. Plan / day
+    // CRUD still uses the existing form-POST endpoints, submitted
+    // programmatically below for the same redirect + flash flow.
+    // -----------------------------------------------------------
+    (function () {
+        "use strict";
+
+        const PLAN_ID = {{ plan.id|default:"null" }};
+        const PLAN_NAME = "{{ plan.name|default:''|escapejs }}";
+        const DAY_COUNT = {{ days|length|default:0 }};
+        const csrf = document.querySelector('input[name="csrfmiddlewaretoken"]')?.value || "";
+
+        function postForm(url, fields) {
+            const form = document.createElement("form");
+            form.method = "POST";
+            form.action = url;
+            const csrfInput = document.createElement("input");
+            csrfInput.type = "hidden";
+            csrfInput.name = "csrfmiddlewaretoken";
+            csrfInput.value = csrf;
+            form.appendChild(csrfInput);
+            Object.entries(fields || {}).forEach(([k, v]) => {
+                const i = document.createElement("input");
+                i.type = "hidden";
+                i.name = k;
+                i.value = v;
+                form.appendChild(i);
+            });
+            document.body.appendChild(form);
+            form.submit();
+        }
+
+        // data-confirm guards (e.g. plan delete link)
+        document.querySelectorAll("[data-confirm]").forEach(function (el) {
+            el.addEventListener("click", function (e) {
+                if (!window.confirm(el.getAttribute("data-confirm"))) e.preventDefault();
+            });
+        });
+
+        // One delegated handler for every page-level button action
+        document.addEventListener("click", function (event) {
+            const btn = event.target.closest("[data-action]");
+            if (!btn) return;
+            const action = btn.dataset.action;
+
+            // ---- Plan-level actions -------------------------------------
+            if (action === "create-plan") {
+                event.preventDefault();
+                const name = window.prompt("Name for the new plan?", "New Plan");
+                if (!name) return;
+                postForm("/dashboard/workout-plans/create/", { name });
+                return;
+            }
+
+            // ---- Plan-level actions on the active plan ------------------
+            if (PLAN_ID === null) return;
+
+            if (action === "rename-plan") {
+                event.preventDefault();
+                const next = window.prompt("Rename plan:", PLAN_NAME);
+                if (!next || next === PLAN_NAME) return;
+                postForm(
+                    "/dashboard/workout-plans/" + PLAN_ID + "/update/",
+                    { name: next }
+                );
+                return;
+            }
+
+            if (action === "duplicate-plan") {
+                event.preventDefault();
+                if (!window.confirm('Create a copy of "' + PLAN_NAME + '"?')) return;
+                postForm("/dashboard/workout-plans/" + PLAN_ID + "/duplicate/");
+                return;
+            }
+
+            if (action === "delete-plan") {
+                event.preventDefault();
+                if (!window.confirm('Delete "' + PLAN_NAME + '" and all its days + exercises? This cannot be undone.')) return;
+                postForm("/dashboard/workout-plans/" + PLAN_ID + "/delete/");
+                return;
+            }
+
+            // ---- Day-level actions (require a current plan) -------------
+
+            if (action === "add-day") {
+                event.preventDefault();
+                const title = window.prompt("Day title? (e.g. Push, Pull, Legs, Day 1)", "Day " + (DAY_COUNT + 1));
+                if (!title) return;
+                postForm(
+                    "/dashboard/workout-plans/" + PLAN_ID + "/create-day/",
+                    { title, order: DAY_COUNT + 1 }
+                );
+                return;
+            }
+
+            if (action === "rename-day") {
+                event.preventDefault();
+                const panel = btn.closest(".builder-day-panel");
+                if (!panel) return;
+                const dayId = panel.dataset.dayId;
+                const currentTitle = panel.querySelector(".builder-day-title")?.textContent.trim() || "";
+                const orderChip = document.querySelector('.builder-day-chip[data-day-id="' + dayId + '"] .builder-day-chip-order');
+                const currentOrder = orderChip ? parseInt(orderChip.textContent, 10) || 1 : 1;
+                const next = window.prompt("Rename day:", currentTitle);
+                if (!next || next === currentTitle) return;
+                postForm(
+                    "/dashboard/workout-plans/" + PLAN_ID + "/days/" + dayId + "/update/",
+                    { title: next, order: currentOrder }
+                );
+                return;
+            }
+
+            if (action === "delete-day") {
+                event.preventDefault();
+                const panel = btn.closest(".builder-day-panel");
+                if (!panel) return;
+                const dayId = panel.dataset.dayId;
+                const title = panel.querySelector(".builder-day-title")?.textContent.trim() || "this day";
+                if (!window.confirm('Delete "' + title + '" and all its exercises?')) return;
+                postForm("/dashboard/workout-plans/" + PLAN_ID + "/days/" + dayId + "/delete/");
+                return;
+            }
+        });
+    })();
+</script>
+{% endblock %}

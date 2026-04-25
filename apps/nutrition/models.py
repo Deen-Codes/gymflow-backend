@@ -31,6 +31,9 @@ class NutritionPlan(models.Model):
         related_name="client_specific_nutrition_plans",
     )
 
+    # Phase 5: timestamp for the Activity feed.
+    created_at = models.DateTimeField(auto_now_add=True, null=True)
+
     class Meta:
         ordering = ["name"]
 
@@ -39,6 +42,22 @@ class NutritionPlan(models.Model):
 
 
 class FoodLibraryItem(models.Model):
+    """Per-trainer food preset.
+
+    `reference_grams` + macros define the per-portion nutritional values
+    (e.g. "100g of brown rice = 360 kcal / 7p / 75c / 3f"). Phase 3 adds
+    optional `source`, `external_id`, `brand` so the same row can either
+    be a custom item the trainer typed in OR a snapshot of an Open Food
+    Facts product they pulled from search.
+    """
+
+    SOURCE_CUSTOM = "custom"
+    SOURCE_OFF = "off"
+    SOURCE_CHOICES = [
+        (SOURCE_CUSTOM, "Custom"),
+        (SOURCE_OFF, "Open Food Facts"),
+    ]
+
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
@@ -50,10 +69,25 @@ class FoodLibraryItem(models.Model):
     protein = models.FloatField(default=0)
     carbs = models.FloatField(default=0)
     fats = models.FloatField(default=0)
+
+    # Phase 3 metadata
+    source = models.CharField(
+        max_length=20, choices=SOURCE_CHOICES, default=SOURCE_CUSTOM
+    )
+    external_id = models.CharField(max_length=64, blank=True, default="")
+    brand = models.CharField(max_length=255, blank=True, default="")
+
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         ordering = ["name"]
+        constraints = [
+            models.UniqueConstraint(
+                fields=["user", "source", "external_id"],
+                condition=~models.Q(external_id=""),
+                name="unique_food_library_external_per_trainer",
+            ),
+        ]
 
     def __str__(self):
         return self.name

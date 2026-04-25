@@ -1,219 +1,140 @@
 {% extends "dashboard/dashboard_shell.html" %}
-{% load user_extras %}
+{% load static %}
+
+{% block title %}{{ plan.name }} | GymFlow{% endblock %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/workspace-workout-builder.css' %}">
+{% endblock %}
 
 {% block dashboard_content %}
-<div style="display:grid;gap:22px;">
-    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
-        <a href="{% url 'trainer-workout-plans-page' %}" class="muted">← Back to workout plans</a>
+{% csrf_token %}
 
-        <div style="display:flex;gap:12px;flex-wrap:wrap;">
-            <form method="post" action="{% url 'dashboard-duplicate-workout-plan' plan.id %}">
-                {% csrf_token %}
-                <button type="submit" class="btn btn-secondary">Duplicate Plan</button>
-            </form>
+<div class="builder"
+     data-plan-id="{{ plan.id }}"
+     data-csrf-token="{{ csrf_token }}">
 
-            <form method="post" action="{% url 'dashboard-delete-workout-plan' plan.id %}" onsubmit="return confirm('Delete this workout plan? This cannot be undone.');">
-                {% csrf_token %}
-                <button type="submit" class="btn btn-secondary">Delete Plan</button>
-            </form>
+    <header class="builder-header">
+        <div>
+            <h1 class="builder-plan-name">{{ plan.name }}</h1>
+            <div class="builder-plan-sub">{{ days|length }} day{{ days|length|pluralize }}</div>
         </div>
-    </div>
-
-    <div class="glass" style="padding:24px;">
-        <div style="display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;">
-            <div style="flex:1;min-width:280px;">
-                <div style="font-size:30px;font-weight:800;margin-bottom:8px;">{{ plan.name }}</div>
-                <div class="muted">Build out this plan with days, then add exercise presets into each day.</div>
-            </div>
+        <div class="builder-header-actions">
+            <button class="btn btn-secondary" data-action="add-day">+ Add day</button>
+            <a class="btn btn-secondary" href="{% url 'trainer-workout-plans-page' %}">All plans</a>
         </div>
+    </header>
 
-        <form method="post" action="{% url 'dashboard-update-workout-plan' plan.id %}" style="display:grid;grid-template-columns:1fr 180px;gap:14px;align-items:end;margin-top:18px;">
-            {% csrf_token %}
+    <div class="builder-grid">
 
-            <div>
-                <label class="label">Edit Plan Name</label>
-                <input class="input" type="text" name="name" value="{{ plan.name }}">
-            </div>
-
-            <div>
-                <button type="submit" class="btn btn-primary" style="width:100%;">Save Plan</button>
-            </div>
-        </form>
-    </div>
-
-    <div class="glass" style="padding:24px;">
-        <div style="font-size:22px;font-weight:700;margin-bottom:18px;">Add Workout Day</div>
-
-        <form method="post" action="{% url 'dashboard-create-workout-day' plan.id %}" style="display:grid;grid-template-columns:1fr 160px 180px;gap:14px;align-items:end;">
-            {% csrf_token %}
-
-            <div>
-                <label class="label">Day Title</label>
-                <input class="input" type="text" name="title" placeholder="e.g. Upper">
-            </div>
-
-            <div>
-                <label class="label">Order</label>
-                <input class="input" type="number" name="order" min="1" placeholder="1">
-            </div>
-
-            <div>
-                <button type="submit" class="btn btn-primary" style="width:100%;">Add Day</button>
-            </div>
-        </form>
-    </div>
-
-    {% if days %}
-        <div style="display:grid;gap:22px;">
+        <!-- ============================================================ -->
+        <!-- LEFT RAIL — day picker                                        -->
+        <!-- ============================================================ -->
+        <aside class="builder-day-rail" id="day-rail">
             {% for day in days %}
-                <div class="glass" style="padding:24px;">
-                    <div style="display:flex;justify-content:space-between;align-items:start;gap:16px;margin-bottom:18px;flex-wrap:wrap;">
-                        <div style="flex:1;min-width:280px;">
-                            <div style="font-size:24px;font-weight:800;">{{ day.title }}</div>
-                            <div class="muted">Order {{ day.order }}</div>
-                        </div>
-
-                        <form method="post" action="{% url 'dashboard-delete-workout-day' plan.id day.id %}" onsubmit="return confirm('Delete this day and all its exercises?');">
-                            {% csrf_token %}
-                            <button type="submit" class="btn btn-secondary">Delete Day</button>
-                        </form>
-                    </div>
-
-                    <form method="post" action="{% url 'dashboard-update-workout-day' plan.id day.id %}" style="display:grid;grid-template-columns:1fr 160px 180px;gap:14px;align-items:end;margin-bottom:18px;">
-                        {% csrf_token %}
-
-                        <div>
-                            <label class="label">Edit Day Title</label>
-                            <input class="input" type="text" name="title" value="{{ day.title }}">
-                        </div>
-
-                        <div>
-                            <label class="label">Edit Order</label>
-                            <input class="input" type="number" name="order" min="1" value="{{ day.order }}">
-                        </div>
-
-                        <div>
-                            <button type="submit" class="btn btn-primary" style="width:100%;">Save Day</button>
-                        </div>
-                    </form>
-
-                    <div class="glass" style="padding:20px;margin-bottom:18px;">
-                        <div style="font-size:18px;font-weight:700;margin-bottom:14px;">Add Exercise To {{ day.title }}</div>
-
-                        <form method="post" action="{% url 'dashboard-add-exercise-to-day' plan.id %}" style="display:grid;grid-template-columns:1.3fr 100px 100px 120px 100px 140px 160px;gap:12px;align-items:end;">
-                            {% csrf_token %}
-                            <input type="hidden" name="workout_day_id" value="{{ day.id }}">
-
-                            <div>
-                                <label class="label">Exercise</label>
-                                {{ add_exercise_forms|get_item:day.id|get_field:"exercise_library_item_id" }}
-                            </div>
-
-                            <div>
-                                <label class="label">Label</label>
-                                <input class="input" type="text" name="label" placeholder="A">
-                            </div>
-
-                            <div>
-                                <label class="label">Order</label>
-                                <input class="input" type="number" name="order" min="1" placeholder="1">
-                            </div>
-
-                            <div>
-                                <label class="label">Superset</label>
-                                <input class="input" type="number" name="superset_group" min="1" placeholder="Optional">
-                            </div>
-
-                            <div>
-                                <label class="label">Sets</label>
-                                <input class="input" type="number" name="set_count" min="1" max="10" placeholder="3">
-                            </div>
-
-                            <div>
-                                <label class="label">Reps</label>
-                                <input class="input" type="text" name="reps" placeholder="8-12">
-                            </div>
-
-                            <div>
-                                <button type="submit" class="btn btn-primary" style="width:100%;">Add Exercise</button>
-                            </div>
-                        </form>
-                    </div>
-
-                    {% if day.exercises.all %}
-                        <div style="display:grid;gap:14px;">
-                            {% for exercise in day.exercises.all|dictsort:"order" %}
-                                <div class="glass" style="padding:18px;">
-                                    <div style="display:flex;justify-content:space-between;align-items:start;gap:16px;flex-wrap:wrap;margin-bottom:14px;">
-                                        <div>
-                                            <div style="font-size:18px;font-weight:800;">
-                                                {{ exercise.label }} — {{ exercise.name }}
-                                            </div>
-                                            <div class="muted" style="margin-top:6px;">
-                                                Order {{ exercise.order }}
-                                                {% if exercise.superset_group %}
-                                                    · Superset {{ exercise.superset_group }}
-                                                {% endif %}
-                                            </div>
-                                        </div>
-
-                                        <form method="post" action="{% url 'dashboard-delete-exercise' plan.id exercise.id %}" onsubmit="return confirm('Delete this exercise from the day?');">
-                                            {% csrf_token %}
-                                            <button type="submit" class="btn btn-secondary">Delete</button>
-                                        </form>
-                                    </div>
-
-                                    <form method="post" action="{% url 'dashboard-update-exercise' plan.id exercise.id %}" style="display:grid;grid-template-columns:100px 100px 120px 100px 140px 180px;gap:12px;align-items:end;">
-                                        {% csrf_token %}
-
-                                        <div>
-                                            <label class="label">Label</label>
-                                            <input class="input" type="text" name="label" value="{{ exercise.label }}">
-                                        </div>
-
-                                        <div>
-                                            <label class="label">Order</label>
-                                            <input class="input" type="number" name="order" min="1" value="{{ exercise.order }}">
-                                        </div>
-
-                                        <div>
-                                            <label class="label">Superset</label>
-                                            <input class="input" type="number" name="superset_group" min="1" value="{{ exercise.superset_group|default_if_none:'' }}">
-                                        </div>
-
-                                        <div>
-                                            <label class="label">Sets</label>
-                                            <input class="input" type="number" name="set_count" min="1" max="10" value="{{ exercise.sets.count }}">
-                                        </div>
-
-                                        <div>
-                                            <label class="label">Reps</label>
-                                            <input class="input" type="text" name="reps" value="{% with first_set=exercise.sets.all|dictsort:'set_number'|first %}{% if first_set %}{{ first_set.reps }}{% endif %}{% endwith %}">
-                                        </div>
-
-                                        <div>
-                                            <button type="submit" class="btn btn-primary" style="width:100%;">Save Exercise</button>
-                                        </div>
-                                    </form>
-
-                                    <div style="margin-top:14px;" class="muted">
-                                        {% for set_target in exercise.sets.all|dictsort:"set_number" %}
-                                            <div>Set {{ set_target.set_number }}: {{ set_target.reps }}</div>
-                                        {% endfor %}
-                                    </div>
-                                </div>
-                            {% endfor %}
-                        </div>
-                    {% else %}
-                        <div class="muted">No exercises in this day yet.</div>
-                    {% endif %}
+                <button type="button"
+                        class="builder-day-chip{% if forloop.first %} active{% endif %}"
+                        data-day-id="{{ day.id }}">
+                    <span class="builder-day-chip-order">{{ day.order|add:1 }}</span>
+                    <span class="builder-day-chip-title">{{ day.title }}</span>
+                    <span class="builder-day-chip-count">{{ day.exercises.count }}</span>
+                </button>
+            {% empty %}
+                <div class="builder-empty-rail">
+                    No days yet. Click <strong>+ Add day</strong> to start.
                 </div>
             {% endfor %}
-        </div>
-    {% else %}
-        <div class="glass" style="padding:24px;">
-            <div class="muted">No days yet. Add your first day above.</div>
-        </div>
-    {% endif %}
+        </aside>
+
+        <!-- ============================================================ -->
+        <!-- CENTER — day canvas with Sortable exercise list               -->
+        <!-- ============================================================ -->
+        <main class="builder-canvas" id="day-canvas">
+            {% for day in days %}
+                <section class="builder-day-panel{% if forloop.first %} active{% endif %}"
+                         data-day-id="{{ day.id }}">
+
+                    <header class="builder-day-header">
+                        <div>
+                            <h2 class="builder-day-title">{{ day.title }}</h2>
+                            <div class="builder-day-sub">
+                                <span data-role="exercise-count">{{ day.exercises.count }}</span>
+                                exercise{{ day.exercises.count|pluralize }}
+                            </div>
+                        </div>
+                        <div class="builder-day-actions">
+                            <button type="button" class="btn btn-secondary" data-action="rename-day">Rename</button>
+                            <button type="button" class="btn btn-secondary" data-action="delete-day">Delete day</button>
+                        </div>
+                    </header>
+
+                    <ul class="builder-exercise-list" data-role="exercise-list">
+                        {% for exercise in day.exercises.all|dictsort:"order" %}
+                            <li class="builder-exercise-card"
+                                data-exercise-id="{{ exercise.id }}">
+                                <div class="builder-exercise-handle" aria-label="Drag to reorder">⠿</div>
+                                <div class="builder-exercise-body">
+                                    <div class="builder-exercise-label">{{ exercise.label }}</div>
+                                    <div class="builder-exercise-name">{{ exercise.name }}</div>
+                                    <div class="builder-exercise-sets">
+                                        {{ exercise.sets.count }} sets
+                                        {% with first_set=exercise.sets.first %}
+                                            {% if first_set %} • {{ first_set.reps }} reps{% endif %}
+                                        {% endwith %}
+                                    </div>
+                                </div>
+                                <div class="builder-exercise-actions">
+                                    <button type="button" class="builder-icon-btn" data-action="edit-exercise" title="Edit">✎</button>
+                                    <button type="button" class="builder-icon-btn" data-action="delete-exercise" title="Remove">✕</button>
+                                </div>
+                            </li>
+                        {% empty %}
+                            <li class="builder-exercise-empty">
+                                Drag an exercise from the right panel onto this day.
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            {% endfor %}
+
+            {% if not days %}
+                <div class="builder-canvas-empty">
+                    <p>This plan has no days yet.</p>
+                    <button class="btn btn-secondary" data-action="add-day">+ Add the first day</button>
+                </div>
+            {% endif %}
+        </main>
+
+        <!-- ============================================================ -->
+        <!-- RIGHT RAIL — searchable catalog / library                     -->
+        <!-- ============================================================ -->
+        <aside class="builder-library-rail" id="library-rail">
+            <div class="builder-library-tabs">
+                <button class="builder-library-tab active" data-tab="catalog">Catalog</button>
+                <button class="builder-library-tab" data-tab="library">My library</button>
+            </div>
+
+            <div class="builder-library-search">
+                <input type="search" id="library-search"
+                       placeholder="Search exercises…"
+                       autocomplete="off"
+                       aria-label="Search exercises">
+            </div>
+
+            <div class="builder-library-facets" id="library-facets">
+                <!-- facet chips populated from /catalog/facets/ -->
+            </div>
+
+            <ul class="builder-library-list" id="library-list" data-role="library-list">
+                <li class="builder-library-empty">Loading exercises…</li>
+            </ul>
+        </aside>
+
+    </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js"
+        defer></script>
+<script src="{% static 'js/workspace-workout-builder.js' %}" defer></script>
 {% endblock %}

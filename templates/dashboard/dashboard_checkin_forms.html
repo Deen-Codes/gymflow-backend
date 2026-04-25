@@ -1,63 +1,295 @@
 {% extends "dashboard/dashboard_shell.html" %}
+{% load static %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/dashboard-workouts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dashboard-clients.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dashboard-checkins.css' %}">
+{% endblock %}
 
 {% block dashboard_content %}
-<div style="display:grid;grid-template-columns:420px 1fr;gap:22px;align-items:start;">
-    <div class="glass" style="padding:24px;">
-        <div style="font-size:22px;font-weight:700;margin-bottom:18px;">Create Check-In Form</div>
+{% csrf_token %}
 
-        <form method="post" action="{% url 'dashboard-create-checkin-form' %}" style="display:grid;gap:14px;">
-            {% csrf_token %}
-
-            <div>
-                <label class="label">Form Name</label>
-                <input class="input" type="text" name="name" placeholder="e.g. Weekly Check-In">
-            </div>
-
-            <div>
-                <label class="label">Form Type</label>
-                <select class="input" name="form_type">
-                    <option value="onboarding">Onboarding</option>
-                    <option value="daily">Daily</option>
-                    <option value="weekly">Weekly</option>
-                </select>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Create Form</button>
-        </form>
+<div class="dashboard-page-head">
+    <div>
+        <div class="dashboard-page-kicker">Workspace · Check-Ins</div>
+        <h1 class="dashboard-page-title">Onboarding & check-in forms</h1>
+        <p class="dashboard-page-subtitle">
+            You always have three forms — <strong>Onboarding</strong> (one-shot intake),
+            <strong>Daily</strong>, and <strong>Routine</strong>. Edit the questions on each.
+            Choose <em>which clients</em> get each form, and <em>how often</em> the routine
+            runs, on each client's profile.
+        </p>
     </div>
 
-    <div class="glass" style="padding:24px;">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
-            <div style="font-size:22px;font-weight:700;">Check-In Forms</div>
-            <div class="muted">{{ checkin_forms|length }} total</div>
-        </div>
-
-        {% if checkin_forms %}
-            <div style="display:grid;gap:14px;">
-                {% for form in checkin_forms %}
-                    <div class="glass" style="padding:18px;">
-                        <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
-                            <a href="{% url 'trainer-checkin-form-detail' form.id %}" style="display:block;flex:1;min-width:220px;">
-                                <div style="font-size:18px;font-weight:800;margin-bottom:6px;">{{ form.name }}</div>
-                                <div class="muted">
-                                    {{ form.get_form_type_display }} ·
-                                    {% if form.is_active %}Active{% else %}Inactive{% endif %} ·
-                                    {{ form.questions.count }} question{{ form.questions.count|pluralize }}
-                                </div>
-                            </a>
-
-                            <a href="{% url 'trainer-checkin-form-detail' form.id %}" class="btn btn-secondary">
-                                Open
-                            </a>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-        {% else %}
-            <div class="muted">
-                No check-in forms yet. Create your first one on the left.
-            </div>
-        {% endif %}
+    <div class="dashboard-page-actions">
+        <a href="{% url 'trainer-dashboard' %}" class="btn btn-secondary btn-sm">Manage who gets each form →</a>
     </div>
 </div>
+
+{% if active_form %}
+    <div class="checkins-builder"
+         data-form-id="{{ active_form.id }}"
+         data-form-type="{{ active_form.form_type }}"
+         data-csrf-token="{{ csrf_token }}">
+
+        <!-- Forms strip — Onboarding pinned first -->
+        <div class="builder-plan-strip">
+            <div class="builder-plan-strip-label">Forms</div>
+            <div class="builder-plan-strip-chips">
+                {% for f in checkin_forms %}
+                    <a href="{% url 'trainer-checkin-form-detail' f.id %}"
+                       class="builder-plan-chip {% if f.id == active_form.id %}active{% endif %} {% if f.form_type == 'onboarding' %}is-onboarding{% endif %}"
+                       title="{{ f.get_form_type_display }}">
+                        <span class="builder-plan-chip-name">
+                            {% if f.form_type == 'onboarding' %}◆ {% endif %}{{ f.name }}
+                        </span>
+                        <span class="builder-plan-chip-meta">
+                            {{ f.questions.count }} question{{ f.questions.count|pluralize }}
+                        </span>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Planbar -->
+        <div class="builder-planbar">
+            <div>
+                <div class="builder-planbar-title">{{ active_form.name }}</div>
+                <div class="builder-planbar-meta">
+                    {% if active_form.form_type == 'onboarding' %}
+                        One-shot intake · sent once on signup
+                    {% elif active_form.form_type == 'daily' %}
+                        Recurring · every day for assigned clients
+                    {% else %}
+                        Recurring · cadence picked per client (weekly / bi-weekly / monthly)
+                    {% endif %}
+                    · {{ active_form.questions.count }} question{{ active_form.questions.count|pluralize }}
+                </div>
+            </div>
+
+            <div class="builder-planbar-actions">
+                <button type="button" class="btn btn-secondary btn-sm" data-action="rename-form">Rename</button>
+                <a href="{% url 'trainer-dashboard' %}" class="btn btn-ghost btn-sm">Assign to clients →</a>
+            </div>
+        </div>
+
+        <!-- 2-column body: question canvas (left/centre) + type palette (right) -->
+        <div class="checkins-grid">
+
+            <main class="builder-canvas checkins-canvas" id="question-canvas">
+                {% if active_form.form_type == 'onboarding' %}
+                    <div class="checkins-onboarding-banner">
+                        <span class="checkins-onboarding-mark">◆</span>
+                        <div>
+                            <div class="checkins-onboarding-title">Intake form</div>
+                            <div class="checkins-onboarding-sub">
+                                Mandatory baseline questions are pinned and can't be deleted —
+                                they personalise the client's plan in the app. Add custom
+                                questions below by dragging from the right panel.
+                            </div>
+                        </div>
+                    </div>
+                {% elif active_form.form_type == 'routine' %}
+                    <div class="checkins-onboarding-banner">
+                        <span class="checkins-onboarding-mark">↻</span>
+                        <div>
+                            <div class="checkins-onboarding-title">Routine check-in</div>
+                            <div class="checkins-onboarding-sub">
+                                The same questions, run at whatever cadence works per client.
+                                Pick weekly, bi-weekly, or monthly when you assign this form to
+                                a client on their profile.
+                            </div>
+                        </div>
+                    </div>
+                {% elif active_form.form_type == 'daily' %}
+                    <div class="checkins-onboarding-banner">
+                        <span class="checkins-onboarding-mark">●</span>
+                        <div>
+                            <div class="checkins-onboarding-title">Daily check-in</div>
+                            <div class="checkins-onboarding-sub">
+                                Lightweight questions assigned clients fill in every day.
+                                Keep it short — daily friction is real.
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+
+                <ul class="checkins-question-list" data-role="question-list">
+                    {% for q in active_form.questions.all|dictsort:"order" %}
+                        <li class="checkins-question-card{% if q.is_system_question %} is-system{% endif %}"
+                            data-question-id="{{ q.id }}"
+                            data-question-type="{{ q.question_type }}"
+                            data-system="{{ q.is_system_question|yesno:'1,0' }}">
+
+                            <div class="builder-exercise-handle" aria-label="Drag to reorder">⠿</div>
+
+                            <div class="checkins-question-body">
+                                <div class="checkins-question-meta">
+                                    <span class="checkins-type-badge" data-role="type-badge">{{ q.get_question_type_display }}</span>
+                                    {% if q.is_system_question %}
+                                        <span class="badge">Required · system</span>
+                                    {% elif q.is_required %}
+                                        <span class="badge badge-accent">Required</span>
+                                    {% else %}
+                                        <span class="badge">Optional</span>
+                                    {% endif %}
+                                </div>
+
+                                <input type="text"
+                                       class="checkins-question-text"
+                                       data-role="question-text"
+                                       value="{{ q.question_text }}"
+                                       placeholder="Question text…"
+                                       aria-label="Question text">
+
+                                {% if q.question_type == 'dropdown' %}
+                                    <div class="checkins-options-row" data-role="dropdown-chips">
+                                        {% for opt in q.options.all|dictsort:"order" %}
+                                            <span class="checkins-option-chip">
+                                                <input type="text"
+                                                       class="checkins-option-input"
+                                                       data-role="option-input"
+                                                       value="{{ opt.value }}"
+                                                       placeholder="Option"
+                                                       aria-label="Option text">
+                                                <button type="button" class="checkins-option-remove"
+                                                        data-action="remove-option"
+                                                        aria-label="Remove option">×</button>
+                                            </span>
+                                        {% endfor %}
+                                        <button type="button" class="checkins-option-add"
+                                                data-action="add-option">+ Add option</button>
+                                    </div>
+                                {% endif %}
+                            </div>
+
+                            <div class="checkins-question-actions">
+                                {% if not q.is_system_question %}
+                                    <label class="checkins-required-toggle" title="Toggle required">
+                                        <input type="checkbox" data-role="required-toggle" {% if q.is_required %}checked{% endif %}>
+                                        <span>Req</span>
+                                    </label>
+                                    <button type="button" class="builder-icon-btn" data-action="delete-question" title="Remove">✕</button>
+                                {% endif %}
+                            </div>
+                        </li>
+                    {% empty %}
+                        <li class="builder-exercise-empty">
+                            Drag a question type from the right panel onto this form.
+                        </li>
+                    {% endfor %}
+                </ul>
+            </main>
+
+            <!-- Right rail — question type palette -->
+            <aside class="checkins-palette">
+                <div class="checkins-palette-head">
+                    <div class="builder-rail-title">Add a question</div>
+                    <div class="checkins-palette-hint">Drag a type onto the form, then edit the text in place.</div>
+                </div>
+
+                <ul class="checkins-palette-list" data-role="palette">
+                    <li class="checkins-palette-item" data-type="short_text">
+                        <span class="checkins-palette-icon">Aa</span>
+                        <div>
+                            <div class="checkins-palette-name">Short text</div>
+                            <div class="checkins-palette-sub">One-liner answer</div>
+                        </div>
+                    </li>
+                    <li class="checkins-palette-item" data-type="long_text">
+                        <span class="checkins-palette-icon">¶</span>
+                        <div>
+                            <div class="checkins-palette-name">Long text</div>
+                            <div class="checkins-palette-sub">Paragraph answer</div>
+                        </div>
+                    </li>
+                    <li class="checkins-palette-item" data-type="number">
+                        <span class="checkins-palette-icon">123</span>
+                        <div>
+                            <div class="checkins-palette-name">Number</div>
+                            <div class="checkins-palette-sub">Weight, steps, sleep hours…</div>
+                        </div>
+                    </li>
+                    <li class="checkins-palette-item" data-type="yes_no">
+                        <span class="checkins-palette-icon">Y/N</span>
+                        <div>
+                            <div class="checkins-palette-name">Yes / No</div>
+                            <div class="checkins-palette-sub">Adherence, simple toggles</div>
+                        </div>
+                    </li>
+                    <li class="checkins-palette-item" data-type="dropdown">
+                        <span class="checkins-palette-icon">▾</span>
+                        <div>
+                            <div class="checkins-palette-name">Dropdown</div>
+                            <div class="checkins-palette-sub">Multiple choice</div>
+                        </div>
+                    </li>
+                    <li class="checkins-palette-item" data-type="photo">
+                        <span class="checkins-palette-icon">▣</span>
+                        <div>
+                            <div class="checkins-palette-name">Photo</div>
+                            <div class="checkins-palette-sub">Progress shot, body comp</div>
+                        </div>
+                    </li>
+                    <li class="checkins-palette-item" data-type="video">
+                        <span class="checkins-palette-icon">▶</span>
+                        <div>
+                            <div class="checkins-palette-name">Video</div>
+                            <div class="checkins-palette-sub">Form check, technique</div>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+{% endif %}
+
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js" defer></script>
+<script src="{% static 'js/workspace-checkins-builder.js' %}" defer></script>
+<script>
+    // -----------------------------------------------------------
+    // Check-Ins workspace — page-level button actions
+    // -----------------------------------------------------------
+    (function () {
+        "use strict";
+
+        const FORM_ID = {{ active_form.id|default:"null" }};
+        const FORM_NAME = "{{ active_form.name|default:''|escapejs }}";
+        const FORM_TYPE = "{{ active_form.form_type|default:''|escapejs }}";
+        const csrf = document.querySelector('input[name="csrfmiddlewaretoken"]')?.value || "";
+
+        function postForm(url, fields) {
+            const f = document.createElement("form");
+            f.method = "POST";
+            f.action = url;
+            const t = document.createElement("input");
+            t.type = "hidden"; t.name = "csrfmiddlewaretoken"; t.value = csrf;
+            f.appendChild(t);
+            Object.entries(fields || {}).forEach(([k, v]) => {
+                const i = document.createElement("input");
+                i.type = "hidden"; i.name = k; i.value = v;
+                f.appendChild(i);
+            });
+            document.body.appendChild(f);
+            f.submit();
+        }
+
+        // Only one page-level action survives — the form rename. Form
+        // creation/deletion are gone (the 3 forms are fixed).
+        document.addEventListener("click", function (event) {
+            const btn = event.target.closest('[data-action="rename-form"]');
+            if (!btn || FORM_ID === null) return;
+            event.preventDefault();
+            const next = window.prompt("Rename form:", FORM_NAME);
+            if (!next || next === FORM_NAME) return;
+            postForm("/dashboard/checkin-forms/" + FORM_ID + "/update/", {
+                name: next,
+                form_type: FORM_TYPE,
+                is_active: "on",
+            });
+        });
+    })();
+</script>
 {% endblock %}

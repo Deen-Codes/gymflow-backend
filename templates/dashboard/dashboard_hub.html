@@ -1,0 +1,214 @@
+{% extends "dashboard/dashboard_shell.html" %}
+{% load static %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/dashboard-hub.css' %}">
+{% endblock %}
+
+{% block dashboard_content %}
+{% comment %}
+    GymFlow Hub — layout v3.
+    Compact hero: greeting + active-clients stat + inline action chips.
+    Optional setup card.
+    3-column main: workspaces (left) · news+tips stacked (middle) ·
+                   recent activity (right).
+    Goal: fits on a single screen for an established trainer; no scroll.
+{% endcomment %}
+
+<div class="hub" data-hub>
+
+    {# Hero — single line where possible #}
+    <section class="hub-hero">
+        <div class="hub-hero-bg" aria-hidden="true">
+            <span class="hub-hero-orb hub-hero-orb-a"></span>
+            <span class="hub-hero-orb hub-hero-orb-b"></span>
+        </div>
+
+        <div class="hub-hero-inner">
+            <div class="hub-hero-greet">
+                <span class="hub-eyebrow">{{ hub_greeting }}</span>
+                <h1 class="hub-hero-name">{{ hub_first_name }}</h1>
+            </div>
+
+            <div class="hub-hero-stat">
+                <div class="hub-stat-num" data-count-to="{{ hub_headline.active_clients }}">0</div>
+                <div class="hub-stat-label">Active client{{ hub_headline.active_clients|pluralize }}</div>
+            </div>
+
+            <div class="hub-hero-actions">
+                {% if hub_action_chips %}
+                    <div class="hub-eyebrow hub-eyebrow--alert">Action needed · {{ hub_action_total }}</div>
+                    <ul class="hub-action-chips">
+                        {% for chip in hub_action_chips %}
+                            <li>
+                                <a href="{{ chip.url }}" class="hub-action-chip">
+                                    <span class="hub-action-chip-icon" aria-hidden="true">{{ chip.icon }}</span>
+                                    <span class="hub-action-chip-text">{{ chip.title }}</span>
+                                    <span class="hub-action-chip-arrow" aria-hidden="true">→</span>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <div class="hub-action-clear">
+                        <span class="hub-action-clear-mark" aria-hidden="true">✓</span>
+                        <span>You're all caught up.</span>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+    {# Setup checklist — full card while incomplete; tiny dismissable bar when done #}
+    {% if not hub_setup_complete %}
+        <section class="hub-card hub-setup">
+            <div class="hub-setup-head">
+                <div>
+                    <div class="hub-eyebrow">Quick start</div>
+                    <h2 class="hub-card-title">Set up your coaching business</h2>
+                    <p class="hub-card-sub">Six steps to a fully wired GymFlow.</p>
+                </div>
+
+                <div class="hub-setup-ring" data-ring-percent="{{ hub_setup_percent }}">
+                    <svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true">
+                        <circle class="hub-setup-ring-track" cx="32" cy="32" r="28" />
+                        <circle class="hub-setup-ring-fill"  cx="32" cy="32" r="28"
+                                stroke-dasharray="175.93"
+                                stroke-dashoffset="175.93"
+                                data-ring-circumference="175.93" />
+                    </svg>
+                    <div class="hub-setup-ring-text">
+                        <span class="hub-setup-ring-num" data-count-to="{{ hub_setup_done }}">0</span>
+                        <span class="hub-setup-ring-of">/{{ hub_setup_total }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <ol class="hub-setup-list">
+                {% for step in hub_setup_steps %}
+                    <li class="hub-setup-step {% if step.done %}is-done{% endif %}"
+                        style="--i:{{ forloop.counter0 }};">
+                        <span class="hub-setup-mark" aria-hidden="true">
+                            {% if step.done %}✓{% else %}{{ step.n }}{% endif %}
+                        </span>
+                        <div class="hub-setup-step-body">
+                            <div class="hub-setup-step-title">{{ step.title }}</div>
+                            <div class="hub-setup-step-sub">{{ step.sub }}</div>
+                        </div>
+                        <a href="{{ step.url }}" class="hub-setup-step-cta">
+                            {% if step.done %}Edit{% else %}{{ step.cta }}{% endif %} →
+                        </a>
+                    </li>
+                {% endfor %}
+            </ol>
+        </section>
+    {% else %}
+        <section class="hub-card hub-setup hub-setup--complete" data-setup-complete>
+            <span class="hub-setup-complete-mark" aria-hidden="true">✓</span>
+            <div class="hub-setup-complete-body">
+                <div class="hub-setup-complete-title">You're fully set up.</div>
+                <div class="hub-setup-complete-sub">All 6 onboarding steps complete.</div>
+            </div>
+            <a href="{% url 'trainer-site-page' %}" class="hub-cta-secondary">Open Site builder →</a>
+            <button type="button"
+                    class="hub-dismiss"
+                    data-dismiss="setup-complete"
+                    aria-label="Dismiss this notice forever">×</button>
+        </section>
+    {% endif %}
+
+    {# Main row — workspaces · stacked news+tips · activity #}
+    <div class="hub-main">
+
+        <section class="hub-card hub-workspaces">
+            <div class="hub-card-head">
+                <div>
+                    <div class="hub-eyebrow">Workspaces</div>
+                    <h2 class="hub-card-title">Jump back in</h2>
+                </div>
+            </div>
+            <ul class="hub-tile-list">
+                {% for tile in hub_tiles %}
+                    <li>
+                        <a href="{{ tile.url }}"
+                           class="hub-tile hub-tile--{{ tile.tone }}"
+                           style="--i:{{ forloop.counter0 }};">
+                            <span class="hub-tile-icon" aria-hidden="true">{{ tile.icon }}</span>
+                            <div class="hub-tile-body">
+                                <div class="hub-tile-name">{{ tile.name }}</div>
+                                <div class="hub-tile-sub">{{ tile.sub }}</div>
+                            </div>
+                            {% if tile.badge %}
+                                <span class="hub-tile-badge">{{ tile.badge }}</span>
+                            {% endif %}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+
+        <div class="hub-middle-stack">
+
+            <section class="hub-card hub-whats-new">
+                <div class="hub-eyebrow">What's new</div>
+                <h2 class="hub-card-title">{{ hub_whats_new.title }}</h2>
+                <p class="hub-card-sub">{{ hub_whats_new.body }}</p>
+                <a href="{{ hub_whats_new.url }}" class="hub-cta-secondary">{{ hub_whats_new.url_cta }}</a>
+            </section>
+
+            <section class="hub-card hub-tips">
+                <div class="hub-eyebrow">Coaching tips</div>
+                <h2 class="hub-card-title">Make every week count</h2>
+                <ul class="hub-tips-list">
+                    {% for tip in hub_tips %}
+                        <li class="hub-tip" style="--i:{{ forloop.counter0 }};">
+                            <span class="hub-tip-icon" aria-hidden="true">{{ tip.icon }}</span>
+                            <div class="hub-tip-body">
+                                <div class="hub-tip-title">{{ tip.title }}</div>
+                                <div class="hub-tip-text">{{ tip.body }}</div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </section>
+
+        </div>
+
+        <section class="hub-card hub-feed">
+            <div class="hub-card-head">
+                <div>
+                    <div class="hub-eyebrow">Live</div>
+                    <h2 class="hub-card-title">Recent activity</h2>
+                </div>
+                <a href="{% url 'trainer-activity-page' %}" class="hub-card-link">See all →</a>
+            </div>
+
+            {% if hub_recent_events %}
+                <ul class="hub-feed-list">
+                    {% for ev in hub_recent_events %}
+                        <li class="hub-feed-item" style="--i:{{ forloop.counter0 }};">
+                            <span class="hub-feed-icon" aria-hidden="true">{{ ev.icon }}</span>
+                            <div class="hub-feed-body">
+                                <div class="hub-feed-title">{{ ev.title }}</div>
+                                <div class="hub-feed-sub">{{ ev.timestamp|timesince }} ago</div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <div class="hub-feed-empty">
+                    <div class="hub-feed-empty-mark">◔</div>
+                    <div class="hub-feed-empty-title">No activity yet.</div>
+                    <div class="hub-feed-empty-sub">Workouts and check-ins from clients will appear here.</div>
+                </div>
+            {% endif %}
+        </section>
+
+    </div>
+
+</div>
+
+<script src="{% static 'js/dashboard-hub.js' %}" defer></script>
+
+{% endblock %}

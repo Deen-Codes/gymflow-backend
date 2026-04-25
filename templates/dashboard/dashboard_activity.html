@@ -1,0 +1,164 @@
+{% extends "dashboard/dashboard_shell.html" %}
+{% load static %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/dashboard-activity.css' %}">
+{% endblock %}
+
+{% block dashboard_content %}
+
+<div class="dashboard-page-head">
+    <div>
+        <div class="dashboard-page-kicker">Workspace · Activity</div>
+        <h1 class="dashboard-page-title">Coaching feed</h1>
+        <p class="dashboard-page-subtitle">
+            Everything that's happened across your roster — clients added, plans built, forms set up,
+            workouts completed, check-ins submitted. Filter by type, time, or client.
+        </p>
+    </div>
+</div>
+
+<!-- Filter bar -->
+<div class="activity-filter-bar glass">
+    <div class="activity-filter-row">
+        <span class="activity-filter-label">Show</span>
+        <div class="activity-filter-pills">
+            {% for pill in kind_pills %}
+                <a href="?{{ pill.qs }}"
+                   class="activity-pill {% if pill.active %}active{% endif %}">
+                    {{ pill.label }}
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="activity-filter-row">
+        <span class="activity-filter-label">Range</span>
+        <select class="activity-filter-select" id="activity-range">
+            {% for slug, label in time_range_choices %}
+                <option value="{{ slug }}" {% if active_days == slug %}selected{% endif %}>{{ label }}</option>
+            {% endfor %}
+        </select>
+
+        <span class="activity-filter-label" style="margin-left:14px;">Client</span>
+        <select class="activity-filter-select" id="activity-client">
+            <option value="">All clients</option>
+            {% for c in filter_clients %}
+                <option value="{{ c.id }}" {% if active_client_id == c.id %}selected{% endif %}>{{ c.username }}</option>
+            {% endfor %}
+        </select>
+    </div>
+</div>
+
+<div class="activity-grid">
+
+    <!-- LEFT/CENTER — feed -->
+    <main class="activity-main">
+        {% if grouped_events %}
+            {% for bucket_label, bucket_events in grouped_events.items %}
+                <section class="activity-bucket">
+                    <div class="activity-bucket-label">{{ bucket_label }}</div>
+
+                    <div class="activity-bucket-list">
+                        {% for e in bucket_events %}
+                            <a {% if e.link %}href="{{ e.link }}"{% endif %}
+                               class="activity-event glass {% if not e.link %}is-static{% endif %}"
+                               data-kind="{{ e.kind }}">
+                                <span class="activity-event-icon" data-kind="{{ e.kind }}">{{ e.icon }}</span>
+                                <div class="activity-event-body">
+                                    <div class="activity-event-title">{{ e.title }}</div>
+                                    {% if e.subtitle %}
+                                        <div class="activity-event-sub">{{ e.subtitle }}</div>
+                                    {% endif %}
+                                </div>
+                                <div class="activity-event-time" title="{{ e.timestamp|date:'D j M Y, H:i' }}">
+                                    {{ e.timestamp|timesince }} ago
+                                </div>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </section>
+            {% endfor %}
+        {% else %}
+            <div class="activity-empty glass">
+                <div class="activity-empty-mark">◔</div>
+                <h3>No activity in this window</h3>
+                <p>
+                    {% if active_kind != 'all' or active_client_id or active_days != '0' %}
+                        Try widening the time range or clearing the filters.
+                    {% else %}
+                        Once you start adding clients and building plans, the events will land here.
+                        Workouts logged and check-in submissions from your iOS clients will show up
+                        in this feed too.
+                    {% endif %}
+                </p>
+            </div>
+        {% endif %}
+    </main>
+
+    <!-- RIGHT — week summary + next actions -->
+    <aside class="activity-rail">
+        <div class="activity-rail-card glass">
+            <div class="kicker" style="color:var(--accent);">This week</div>
+            <h3 class="activity-rail-title">Last 7 days</h3>
+
+            <div class="activity-stat-grid">
+                <div class="activity-stat">
+                    <div class="activity-stat-value">{{ week_summary.new_clients }}</div>
+                    <div class="activity-stat-label">New clients</div>
+                </div>
+                <div class="activity-stat">
+                    <div class="activity-stat-value">{{ week_summary.plans_created }}</div>
+                    <div class="activity-stat-label">Workout plans</div>
+                </div>
+                <div class="activity-stat">
+                    <div class="activity-stat-value">{{ week_summary.nutrition_plans }}</div>
+                    <div class="activity-stat-label">Nutrition plans</div>
+                </div>
+                <div class="activity-stat">
+                    <div class="activity-stat-value">{{ week_summary.forms_built }}</div>
+                    <div class="activity-stat-label">Forms built</div>
+                </div>
+            </div>
+        </div>
+
+        {% if next_actions %}
+            <div class="activity-rail-card glass">
+                <div class="kicker" style="color:var(--accent);">What's next</div>
+                <h3 class="activity-rail-title">Suggested actions</h3>
+
+                <div class="activity-actions-list">
+                    {% for action in next_actions %}
+                        <a href="{{ action.url }}" class="activity-action">
+                            <div class="activity-action-text">{{ action.title }}</div>
+                            <span class="activity-action-cta">{{ action.cta }} →</span>
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+    </aside>
+</div>
+
+<script>
+    (function () {
+        "use strict";
+
+        // Range / client dropdowns navigate by rebuilding the query
+        // string from current state — keeps every filter independent.
+        function navigate() {
+            const range = document.getElementById("activity-range")?.value || "30";
+            const client = document.getElementById("activity-client")?.value || "";
+            const params = new URLSearchParams(window.location.search);
+            params.set("days", range);
+            if (client) params.set("client", client); else params.delete("client");
+            // Preserve the active kind pill the trainer already has selected.
+            window.location.search = params.toString();
+        }
+
+        document.getElementById("activity-range")?.addEventListener("change", navigate);
+        document.getElementById("activity-client")?.addEventListener("change", navigate);
+    })();
+</script>
+{% endblock %}

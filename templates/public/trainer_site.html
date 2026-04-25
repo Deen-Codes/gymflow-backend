@@ -1,0 +1,188 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ trainer.business_name|default:trainer.user.username }} · Coaching</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/public-site.css' %}">
+    <style>:root { --pt-accent: {{ brand_color }}; }</style>
+</head>
+<body class="pt-public">
+
+<header class="pt-public-nav">
+    <div class="pt-public-nav-brand">{{ trainer.business_name|default:trainer.user.get_full_name|default:trainer.user.username }}</div>
+    <a href="#apply" class="pt-public-nav-cta">Apply →</a>
+</header>
+
+{% for s in sections %}
+    <section class="pt-public-section pt-section--{{ s.section_type }}" id="section-{{ s.id }}">
+
+        {% if s.section_type == 'hero' %}
+            <div class="pt-hero">
+                <div>
+                    <h1 class="pt-hero-headline">{{ s.content.headline }}</h1>
+                    <p class="pt-hero-sub">{{ s.content.subheadline }}</p>
+                    <div class="pt-hero-ctas">
+                        <a href="#apply" class="pt-cta-primary">{{ s.content.primary_cta|default:'Apply now' }}</a>
+                        {% if s.content.secondary_cta %}<a href="#about" class="pt-cta-secondary">{{ s.content.secondary_cta }}</a>{% endif %}
+                    </div>
+                </div>
+                <div class="pt-hero-photo">
+                    {% if s.content.image_url %}
+                        <img src="{{ s.content.image_url }}" alt="">
+                    {% else %}
+                        <div class="pt-hero-photo-placeholder">{{ trainer.business_name|default:trainer.user.username }}</div>
+                    {% endif %}
+                </div>
+            </div>
+
+        {% elif s.section_type == 'about' %}
+            <div id="about">
+                <h2 class="pt-section-heading">{{ s.content.heading }}</h2>
+                <div class="pt-about">
+                    {% if s.content.photo_url %}<img class="pt-about-photo" src="{{ s.content.photo_url }}" alt="">{% endif %}
+                    <p class="pt-about-body">{{ s.content.body }}</p>
+                </div>
+            </div>
+
+        {% elif s.section_type == 'services' %}
+            <h2 class="pt-section-heading">{{ s.content.heading }}</h2>
+            <div class="pt-services">
+                {% for item in s.content.items %}
+                    <div class="pt-service">
+                        <div class="pt-service-title">{{ item.title }}</div>
+                        <div class="pt-service-body">{{ item.description }}</div>
+                    </div>
+                {% endfor %}
+            </div>
+
+        {% elif s.section_type == 'pricing' %}
+            <div id="pay">
+                <h2 class="pt-section-heading">{{ s.content.heading|default:"Coaching plans" }}</h2>
+                {% if s.content.lede %}<p class="pt-onboarding-lede">{{ s.content.lede }}</p>{% endif %}
+
+                {% if pricing_plans %}
+                    <div class="pt-pricing">
+                        {% for tier in pricing_plans %}
+                            <div class="pt-pricing-card {% if tier.is_featured %}is-featured{% endif %}">
+                                {% if tier.is_featured %}<div class="pt-pricing-flag">Most popular</div>{% endif %}
+                                <div class="pt-pricing-name">{{ tier.name }}</div>
+                                <div class="pt-pricing-price">
+                                    {{ tier.price_display }}<span class="pt-pricing-interval"> {{ tier.get_interval_display }}</span>
+                                </div>
+                                {% if tier.description %}
+                                    <p class="pt-pricing-desc">{{ tier.description }}</p>
+                                {% endif %}
+                                <a href="?plan={{ tier.id }}#apply" class="pt-cta-primary pt-pricing-cta">
+                                    Subscribe
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="pt-pricing-note">
+                        Stripe live payments coming soon — for now, choose a tier and complete the
+                        application below; {{ trainer.business_name|default:trainer.user.username }}
+                        will be in touch with payment details.
+                    </div>
+                {% else %}
+                    <div class="pt-onboarding-empty">No pricing tiers set yet.</div>
+                {% endif %}
+            </div>
+
+        {% elif s.section_type == 'testimonials' %}
+            <h2 class="pt-section-heading">{{ s.content.heading }}</h2>
+            <div class="pt-testimonials">
+                {% for item in s.content.items %}
+                    <div class="pt-testimonial">
+                        <div class="pt-testimonial-quote">"{{ item.quote }}"</div>
+                        <div class="pt-testimonial-author">— {{ item.author }}</div>
+                    </div>
+                {% endfor %}
+            </div>
+
+        {% elif s.section_type == 'onboarding' %}
+            <div id="apply" class="pt-onboarding">
+                <h2 class="pt-section-heading">{{ s.content.heading|default:'Apply for coaching' }}</h2>
+                <p class="pt-onboarding-lede">{{ s.content.lede }}</p>
+
+                {% if onboarding_form %}
+                    <form method="post" action="{% url 'public-site-signup' slug=trainer.slug %}" class="pt-onboarding-form">
+                        {% csrf_token %}
+                        {% if selected_plan %}
+                            <input type="hidden" name="__plan_id" value="{{ selected_plan.id }}">
+                            <div class="pt-selected-plan">
+                                <span class="pt-selected-plan-label">Selected plan</span>
+                                <span class="pt-selected-plan-name">{{ selected_plan.name }}</span>
+                                <span class="pt-selected-plan-price">{{ selected_plan.price_display }}<span class="pt-selected-plan-interval"> {{ selected_plan.get_interval_display }}</span></span>
+                            </div>
+                        {% endif %}
+
+                        <div class="pt-form-row">
+                            <label class="pt-label">Full name</label>
+                            <input class="pt-input" type="text" name="__full_name" required>
+                        </div>
+                        <div class="pt-form-row">
+                            <label class="pt-label">Email</label>
+                            <input class="pt-input" type="email" name="__email" required>
+                        </div>
+
+                        {% for q in onboarding_form.questions.all|dictsort:"order" %}
+                            <div class="pt-form-row">
+                                <label class="pt-label">
+                                    {{ q.question_text }}
+                                    {% if q.is_required %}<span class="pt-required">*</span>{% endif %}
+                                </label>
+                                {% if q.question_type == 'short_text' %}
+                                    <input class="pt-input" type="text" name="q_{{ q.id }}" {% if q.is_required %}required{% endif %}>
+                                {% elif q.question_type == 'long_text' %}
+                                    <textarea class="pt-input" name="q_{{ q.id }}" rows="3" {% if q.is_required %}required{% endif %}></textarea>
+                                {% elif q.question_type == 'number' %}
+                                    <input class="pt-input" type="number" step="any" name="q_{{ q.id }}" {% if q.is_required %}required{% endif %}>
+                                {% elif q.question_type == 'yes_no' %}
+                                    <div class="pt-yesno">
+                                        <label><input type="radio" name="q_{{ q.id }}" value="Yes" {% if q.is_required %}required{% endif %}> Yes</label>
+                                        <label><input type="radio" name="q_{{ q.id }}" value="No"> No</label>
+                                    </div>
+                                {% elif q.question_type == 'dropdown' %}
+                                    <select class="pt-input" name="q_{{ q.id }}" {% if q.is_required %}required{% endif %}>
+                                        <option value="" disabled selected>Pick one…</option>
+                                        {% for opt in q.options.all|dictsort:"order" %}
+                                            <option value="{{ opt.value }}">{{ opt.value }}</option>
+                                        {% endfor %}
+                                    </select>
+                                {% elif q.question_type == 'photo' or q.question_type == 'video' %}
+                                    <div class="pt-input pt-disabled-placeholder">Photo/video uploads available in the iOS app after you sign up.</div>
+                                {% else %}
+                                    <input class="pt-input" type="text" name="q_{{ q.id }}">
+                                {% endif %}
+                            </div>
+                        {% endfor %}
+
+                        <button type="submit" class="pt-cta-primary pt-onboarding-submit">{{ s.content.submit_label|default:'Send application' }}</button>
+                    </form>
+                {% else %}
+                    <div class="pt-onboarding-empty">
+                        This trainer hasn't set up their onboarding form yet. Please check back later.
+                    </div>
+                {% endif %}
+            </div>
+
+        {% elif s.section_type == 'footer' %}
+            <div class="pt-footer">
+                <div class="pt-footer-tagline">{{ s.content.tagline }}</div>
+                <div class="pt-footer-links">
+                    {% if s.content.email %}<a href="mailto:{{ s.content.email }}">{{ s.content.email }}</a>{% endif %}
+                    {% if s.content.instagram %}<span>· {{ s.content.instagram }}</span>{% endif %}
+                    {% if s.content.twitter %}<span>· {{ s.content.twitter }}</span>{% endif %}
+                </div>
+                <div class="pt-footer-credit">Powered by <strong>GymFlow</strong></div>
+            </div>
+        {% endif %}
+
+    </section>
+{% endfor %}
+
+</body>
+</html>

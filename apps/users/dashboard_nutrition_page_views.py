@@ -1,70 +1,62 @@
+"""
+Nutrition workspace page views.
+
+Restructure v2: collapses the old "list of plans" page and the
+"plan detail" page into a single Nutrition workspace. The same template
+renders both routes:
+
+    /dashboard/nutrition-plans/         → newest plan auto-selected
+    /dashboard/nutrition-plans/<id>/    → that specific plan in the canvas
+"""
+
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404, redirect, render
 
 from .dashboard_helpers import trainer_required, dashboard_context
 from .forms import (
     UpdateNutritionPlanForm,
-    CreateFoodLibraryItemForm,
-    UpdateFoodLibraryItemForm,
     CreateNutritionMealForm,
     UpdateNutritionMealForm,
-    AddFoodToNutritionMealForm,
 )
-from apps.nutrition.models import NutritionPlan, FoodLibraryItem
+from apps.nutrition.models import NutritionPlan
 
 
-@login_required
-def trainer_nutrition_plans_page(request):
-    """
-    Trainer nutrition plans page.
-    """
-    if not trainer_required(request):
-        return redirect("landing-page")
-
-    context = dashboard_context(request, "Nutrition Plans")
-    context.update({
-        "food_library": FoodLibraryItem.objects.filter(user=request.user).order_by("name"),
-        "create_food_library_item_form": CreateFoodLibraryItemForm(),
-    })
-    return render(request, "dashboard/dashboard_nutrition_plans.html", context)
-
-
-@login_required
-def trainer_nutrition_plan_detail_page(request, plan_id):
-    """
-    Detail page for a single trainer-owned nutrition plan.
-    """
-    if not trainer_required(request):
-        return redirect("landing-page")
-
-    plan = get_object_or_404(
-        NutritionPlan.objects.prefetch_related("meals__items"),
-        id=plan_id,
-        user=request.user,
+def _render_nutrition_workspace(request, plan_id=None):
+    plans_qs = (
+        NutritionPlan.objects
+        .filter(user=request.user)
+        .order_by("-id")
     )
 
-    meals = plan.meals.all().order_by("order")
-    meal_edit_forms = {
-        meal.id: UpdateNutritionMealForm(
-            initial={
-                "title": meal.title,
-                "order": meal.order,
-            }
+    plan = None
+    if plan_id is not None:
+        plan = get_object_or_404(
+            NutritionPlan.objects.prefetch_related("meals__items"),
+            id=plan_id,
+            user=request.user,
         )
-        for meal in meals
-    }
-    add_food_forms = {
-        meal.id: AddFoodToNutritionMealForm(
-            trainer_user=request.user,
-            initial={"meal_id": meal.id}
-        )
-        for meal in meals
-    }
+    else:
+        plan = plans_qs.prefetch_related("meals__items").first()
 
-    context = dashboard_context(request, f"Nutrition: {plan.name}")
+    meals = []
+    meal_edit_forms = {}
+
+    if plan is not None:
+        meals = plan.meals.all().order_by("order")
+        meal_edit_forms = {
+            meal.id: UpdateNutritionMealForm(
+                initial={"title": meal.title, "order": meal.order},
+            )
+            for meal in meals
+        }
+
+    page_title = f"Nutrition: {plan.name}" if plan else "Nutrition"
+    context = dashboard_context(request, page_title)
     context.update({
         "nutrition_plan": plan,
         "meals": meals,
+        "create_meal_form": CreateNutritionMealForm(),
+        "meal_edit_forms": meal_edit_forms,
         "nutrition_plan_edit_form": UpdateNutritionPlanForm(
             initial={
                 "name": plan.name,
@@ -74,9 +66,22 @@ def trainer_nutrition_plan_detail_page(request, plan_id):
                 "fats_target": plan.fats_target,
                 "notes": plan.notes,
             }
-        ),
-        "create_meal_form": CreateNutritionMealForm(),
-        "meal_edit_forms": meal_edit_forms,
-        "add_food_forms": add_food_forms,
+        ) if plan else None,
     })
-    return render(request, "dashboard/nutrition_plan_detail.html", context)
+    return render(request, "dashboard/dashboard_nutrition_plans.html", context)
+
+
+@login_required
+def trainer_nutrition_plans_page(request):
+    """Front of the nutrition workspace — newest plan auto-selected."""
+    if not trainer_required(request):
+        return redirect("landing-page")
+    return _render_nutrition_workspace(request, plan_id=None)
+
+
+@login_required
+def trainer_nutrition_plan_detail_page(request, plan_id):
+    """Deep-link to a specific plan in the nutrition workspace."""
+    if not trainer_required(request):
+        return redirect("landing-page")
+    return _render_nutrition_workspace(request, plan_id=plan_id)

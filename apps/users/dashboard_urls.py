@@ -4,6 +4,7 @@ from .dashboard_views import (
     landing_page,
     trainer_login_page,
     trainer_logout_page,
+    trainer_hub_page,
     trainer_dashboard,
     trainer_dashboard_home,
     trainer_client_detail_page,
@@ -14,10 +15,19 @@ from .dashboard_views import (
     trainer_checkin_forms_page,
     trainer_checkin_form_detail_page,
     trainer_settings_page,
+    dashboard_update_profile,
+    dashboard_delete_account,
+    dashboard_check_slug,
+    dashboard_pricing_save,
+    dashboard_pricing_delete,
+    trainer_activity_page,
+    trainer_site_page,
     dashboard_create_client,
     dashboard_delete_client,
     dashboard_assign_workout_plan,
     dashboard_assign_nutrition_plan,
+    dashboard_unassign_workout_plan,
+    dashboard_unassign_nutrition_plan,
     dashboard_create_exercise_library_item,
     dashboard_update_exercise_library_item,
     dashboard_delete_exercise_library_item,
@@ -58,7 +68,13 @@ urlpatterns = [
     path("portal/login/", trainer_login_page, name="trainer-login-page"),
     path("portal/logout/", trainer_logout_page, name="trainer-logout-page"),
 
-    path("dashboard/", trainer_dashboard_home, name="trainer-dashboard-home"),
+    # Phase 10 — /dashboard/ is now the GymFlow Hub.
+    # Workouts has moved to /dashboard/workouts/ but keeps its original
+    # url-name ("trainer-dashboard-home") so existing {% url %} refs
+    # across templates resolve without a fleet-wide edit.
+    path("dashboard/", trainer_hub_page, name="trainer-hub-page"),
+    path("dashboard/workouts/", trainer_dashboard_home, name="trainer-dashboard-home"),
+
     path("dashboard/clients/", trainer_dashboard, name="trainer-dashboard"),
     path("dashboard/clients/<int:client_id>/", trainer_client_detail_page, name="trainer-client-detail"),
     path("dashboard/clients/<int:client_id>/delete/", dashboard_delete_client, name="dashboard-delete-client"),
@@ -66,7 +82,10 @@ urlpatterns = [
     path("dashboard/create-client/", dashboard_create_client, name="dashboard-create-client"),
     path("dashboard/assign-workout-plan/", dashboard_assign_workout_plan, name="dashboard-assign-workout-plan"),
     path("dashboard/assign-nutrition-plan/", dashboard_assign_nutrition_plan, name="dashboard-assign-nutrition-plan"),
+    path("dashboard/clients/<int:client_id>/unassign-workout/", dashboard_unassign_workout_plan, name="dashboard-unassign-workout-plan"),
+    path("dashboard/clients/<int:client_id>/unassign-nutrition/", dashboard_unassign_nutrition_plan, name="dashboard-unassign-nutrition-plan"),
 
+    # Workouts — list page kept as alias of the home for old bookmarks.
     path("dashboard/workout-plans/", trainer_workout_plans_page, name="trainer-workout-plans-page"),
     path("dashboard/workout-plans/create-exercise/", dashboard_create_exercise_library_item, name="dashboard-create-exercise-library-item"),
     path("dashboard/workout-plans/exercises/<int:exercise_id>/update/", dashboard_update_exercise_library_item, name="dashboard-update-exercise-library-item"),
@@ -109,7 +128,34 @@ urlpatterns = [
     path("dashboard/checkin-forms/<int:form_id>/questions/<int:question_id>/update/", dashboard_update_checkin_question, name="dashboard-update-checkin-question"),
     path("dashboard/checkin-forms/<int:form_id>/questions/<int:question_id>/delete/", dashboard_delete_checkin_question, name="dashboard-delete-checkin-question"),
 
+    # Site (Phase 7) — public landing page editor
+    path("dashboard/site/", trainer_site_page, name="trainer-site-page"),
+
+    # New scaffolds
+    path("dashboard/activity/", trainer_activity_page, name="trainer-activity-page"),
     path("dashboard/settings/", trainer_settings_page, name="trainer-settings-page"),
+    path("dashboard/settings/profile/", dashboard_update_profile, name="dashboard-update-profile"),
+    path("dashboard/settings/check-slug/", dashboard_check_slug, name="dashboard-check-slug"),
+    path("dashboard/settings/pricing/save/", dashboard_pricing_save, name="dashboard-pricing-save"),
+    path("dashboard/settings/pricing/<int:plan_id>/delete/", dashboard_pricing_delete, name="dashboard-pricing-delete"),
+    path("dashboard/settings/delete-account/", dashboard_delete_account, name="dashboard-delete-account"),
+
+    # Logged-in password change (used by the Settings workspace)
+    path(
+        "portal/password-change/",
+        auth_views.PasswordChangeView.as_view(
+            template_name="auth/password_change.html",
+            success_url="/portal/password-change/done/",
+        ),
+        name="password_change",
+    ),
+    path(
+        "portal/password-change/done/",
+        auth_views.PasswordChangeDoneView.as_view(
+            template_name="auth/password_change_done.html",
+        ),
+        name="password_change_done",
+    ),
 
     path(
         "portal/password-reset/",

@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks · {{ trainer.business_name|default:trainer.user.username }}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/public-site.css' %}">
+    <style>:root { --pt-accent: {{ brand_color }}; }</style>
+</head>
+<body class="pt-public">
+
+<div class="pt-thanks-wrap">
+    <div class="pt-thanks-card">
+        <div class="pt-thanks-mark">✓</div>
+        <h1 class="pt-thanks-title">Application sent.</h1>
+        <p class="pt-thanks-sub">
+            {{ trainer.business_name|default:trainer.user.username }} has your application — they'll be in touch shortly.
+        </p>
+
+        <div class="pt-thanks-creds">
+            <div class="pt-thanks-creds-label">Your GymFlow login (save these):</div>
+            <div class="pt-thanks-creds-row"><span>Username</span><strong>{{ client_username }}</strong></div>
+            <div class="pt-thanks-creds-row"><span>Temporary password</span><strong>{{ temp_password }}</strong></div>
+            <div class="pt-thanks-creds-note">
+                Use these to log into the GymFlow client app once your trainer activates your plan.
+                You'll be prompted to change your password on first login.
+            </div>
+        </div>
+
+        <a href="/p/{{ trainer.slug }}/" class="pt-cta-secondary pt-thanks-back">← Back to {{ trainer.business_name|default:trainer.user.username }}</a>
+    </div>
+</div>
+
+</body>
+</html>

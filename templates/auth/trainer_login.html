@@ -4,43 +4,55 @@
 
 {% block content %}
 <div class="container" style="min-height:100vh;display:grid;place-items:center;padding:32px 0;">
-    <div class="glass" style="width:min(520px,100%);padding:32px;">
-        <div style="font-size:30px;font-weight:800;margin-bottom:6px;">Trainer Portal</div>
-        <div class="muted" style="margin-bottom:24px;">Log in to manage clients and assign training plans.</div>
+    <div style="width:min(440px,100%);">
 
-        {% if messages %}
-            <div class="messages">
-                {% for message in messages %}
-                    <div class="message {% if message.tags == 'error' %}error{% else %}success{% endif %}">
-                        {{ message }}
-                    </div>
-                {% endfor %}
-            </div>
-        {% endif %}
+        <div style="text-align:center;margin-bottom:24px;">
+            <a href="{% url 'landing-page' %}" style="display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:-0.01em;">
+                <span style="width:36px;height:36px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(180deg,var(--accent-strong),var(--accent-deep));color:#0b1100;font-weight:900;box-shadow:0 6px 18px var(--accent-glow);">G</span>
+                <span>GymFlow</span>
+            </a>
+        </div>
 
-        <form method="post" style="display:grid;gap:16px;">
-            {% csrf_token %}
+        <div class="glass-strong" style="padding:36px 32px;">
+            <div class="kicker" style="color:var(--accent);">Trainer portal</div>
+            <h1 class="h-section" style="font-size:28px;margin:8px 0 6px;">Welcome back.</h1>
+            <p class="muted" style="margin:0 0 24px;font-size:14px;">Log in to manage clients and build plans.</p>
 
-            <div>
-                <label class="label">Username</label>
-                <input class="input" type="text" name="username" value="{{ form.username.value|default:'' }}" placeholder="Enter username">
-            </div>
+            {% if messages %}
+                <div class="messages">
+                    {% for message in messages %}
+                        <div class="message {% if message.tags == 'error' %}error{% else %}success{% endif %}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
 
-            <div>
-                <label class="label">Password</label>
-                <input class="input" type="password" name="password" placeholder="Enter password">
-            </div>
+            <form method="post" style="display:grid;gap:16px;">
+                {% csrf_token %}
 
-            <button type="submit" class="btn btn-primary" style="width:100%;">Log In</button>
+                <div>
+                    <label class="label">Username</label>
+                    <input class="input" type="text" name="username" value="{{ form.username.value|default:'' }}"
+                           placeholder="Your username" autocomplete="username" autofocus>
+                </div>
 
-            <div style="margin-top:10px;">
-                <a href="{% url 'password_reset' %}" class="muted">Forgot password?</a>
-            </div>
+                <div>
+                    <label class="label">Password</label>
+                    <input class="input" type="password" name="password" placeholder="••••••••" autocomplete="current-password">
+                </div>
 
-        </form>
+                <button type="submit" class="btn btn-primary" style="width:100%;margin-top:6px;">Log in</button>
 
-        <div style="margin-top:16px;">
-            <a href="{% url 'landing-page' %}" class="muted">← Back to landing page</a>
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px;font-size:13px;">
+                    <a href="{% url 'password_reset' %}" class="muted">Forgot password?</a>
+                    <a href="{% url 'landing-page' %}" class="muted">← Back home</a>
+                </div>
+            </form>
+        </div>
+
+        <div style="margin-top:18px;text-align:center;color:var(--text-faint);font-size:12px;">
+            Phase 0 token auth · Phase 1 workout builder · iOS client shipping alongside
         </div>
     </div>
 </div>

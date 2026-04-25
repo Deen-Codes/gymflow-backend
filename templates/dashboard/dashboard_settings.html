@@ -1,10 +1,507 @@
 {% extends "dashboard/dashboard_shell.html" %}
+{% load static %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/dashboard-settings.css' %}">
+{% endblock %}
 
 {% block dashboard_content %}
-<div class="glass" style="padding:24px;">
-    <div style="font-size:22px;font-weight:700;margin-bottom:14px;">Settings</div>
-    <div class="muted">
-        Trainer account settings, business profile, branding, and email preferences can go here later.
+{% csrf_token %}
+
+<script>
+    (function () {
+        "use strict";
+        // Live slug check — fires on input (debounced) against
+        // /dashboard/settings/check-slug/. Renders availability +
+        // clickable suggestion pills inside the slug row.
+        document.addEventListener("DOMContentLoaded", function () {
+            const input = document.getElementById("settings-slug-input");
+            const status = document.getElementById("settings-slug-status");
+            const sugg = document.getElementById("settings-slug-suggestions");
+            if (!input || !status || !sugg) return;
+
+            const original = input.dataset.originalSlug || "";
+
+            let timer = null;
+            function debounce(fn, ms) {
+                return function (...args) {
+                    clearTimeout(timer);
+                    timer = setTimeout(() => fn.apply(this, args), ms);
+                };
+            }
+
+            function clearFeedback() {
+                status.textContent = "";
+                status.className = "settings-slug-status";
+                sugg.innerHTML = "";
+            }
+
+            async function check() {
+                const raw = (input.value || "").trim();
+                if (!raw) {
+                    clearFeedback();
+                    return;
+                }
+                try {
+                    const r = await fetch("/dashboard/settings/check-slug/?slug=" + encodeURIComponent(raw), {
+                        credentials: "same-origin",
+                    });
+                    if (!r.ok) { clearFeedback(); return; }
+                    const data = await r.json();
+
+                    if (data.is_self) {
+                        status.className = "settings-slug-status is-current";
+                        status.textContent = "This is your current slug.";
+                        sugg.innerHTML = "";
+                        return;
+                    }
+                    if (data.available) {
+                        status.className = "settings-slug-status is-available";
+                        status.textContent = `✓ ${data.sanitized} is available — save profile to claim it.`;
+                        sugg.innerHTML = "";
+                        return;
+                    }
+                    // Taken
+                    status.className = "settings-slug-status is-taken";
+                    status.textContent = `${data.sanitized} is taken. Try one of these:`;
+                    sugg.innerHTML = "";
+                    (data.suggestions || []).forEach(s => {
+                        const chip = document.createElement("button");
+                        chip.type = "button";
+                        chip.className = "settings-slug-suggestion";
+                        chip.textContent = s;
+                        chip.addEventListener("click", () => {
+                            input.value = s;
+                            input.dispatchEvent(new Event("input"));
+                        });
+                        sugg.appendChild(chip);
+                    });
+                } catch (_e) {
+                    clearFeedback();
+                }
+            }
+
+            const debouncedCheck = debounce(check, 300);
+            input.addEventListener("input", debouncedCheck);
+            // Run once on first focus so the trainer sees status if
+            // they're considering a slug they've already typed.
+            input.addEventListener("focus", check, { once: true });
+        });
+    })();
+</script>
+
+<div class="dashboard-page-head">
+    <div>
+        <div class="dashboard-page-kicker">Workspace · Settings</div>
+        <h1 class="dashboard-page-title">Settings</h1>
+        <p class="dashboard-page-subtitle">
+            Tune your business profile, password, dashboard appearance, and connected integrations.
+        </p>
     </div>
+
+    <div class="dashboard-page-actions">
+        <a href="{% url 'trainer-logout-page' %}" class="btn btn-secondary btn-sm">Log out</a>
+    </div>
+</div>
+
+<div class="settings-grid">
+
+    <!-- ============== BUSINESS PROFILE ============== -->
+    <section class="settings-section glass">
+        <header class="settings-section-head">
+            <div>
+                <div class="kicker" style="color:var(--accent);">Profile</div>
+                <h2 class="settings-section-title">Business profile</h2>
+                <p class="settings-section-sub">
+                    What clients see in the GymFlow app — your business name and your contact details.
+                </p>
+            </div>
+        </header>
+
+        <form method="post" action="{% url 'dashboard-update-profile' %}" class="settings-form">
+            {% csrf_token %}
+
+            <div class="settings-grid-2">
+                <div>
+                    <label class="label">First name</label>
+                    <input class="input" type="text" name="first_name" value="{{ request.user.first_name }}" autocomplete="given-name">
+                </div>
+                <div>
+                    <label class="label">Last name</label>
+                    <input class="input" type="text" name="last_name" value="{{ request.user.last_name }}" autocomplete="family-name">
+                </div>
+            </div>
+
+            <div>
+                <label class="label">Business name</label>
+                <input class="input" type="text" name="business_name"
+                       value="{{ trainer_profile.business_name }}"
+                       placeholder="e.g. Jared Coaching">
+                <div class="settings-hint">Shown to clients in the app and on your check-in forms.</div>
+            </div>
+
+            <div>
+                <label class="label">Email</label>
+                <input class="input" type="email" name="email" value="{{ request.user.email }}" required>
+                <div class="settings-hint">Used for password resets and the eventual digest emails.</div>
+            </div>
+
+            <div>
+                <label class="label">URL slug</label>
+                <div class="settings-slug-row">
+                    <span class="settings-slug-prefix">gymflow.coach /</span>
+                    <input class="input settings-slug-input" type="text"
+                           id="settings-slug-input"
+                           name="slug"
+                           value="{{ trainer_profile.slug }}"
+                           data-original-slug="{{ trainer_profile.slug }}"
+                           pattern="[a-zA-Z0-9-]+"
+                           autocapitalize="off" autocomplete="off"
+                           placeholder="your-slug">
+                </div>
+
+                <!-- Live feedback: turns lime when the typed slug is
+                     available, amber when taken, with clickable
+                     suggestion pills underneath in that case. -->
+                <div class="settings-slug-status" id="settings-slug-status"></div>
+                <div class="settings-slug-suggestions" id="settings-slug-suggestions"></div>
+
+                <div class="settings-hint">
+                    Letters, numbers, and hyphens only. Becomes your public landing-page URL.
+                    Changing it later breaks any links you've shared.
+                </div>
+
+                <!-- Both URL forms — path-style works everywhere
+                     (incl. local dev), subdomain-style is the cleaner
+                     marketing URL once DNS is wired up. -->
+                {% if trainer_profile.slug %}
+                    <div class="settings-url-pair">
+                        <div class="settings-url-row">
+                            <span class="settings-url-label">Subdomain</span>
+                            <code class="settings-url-value">{{ trainer_profile.slug }}.gymflow.coach</code>
+                            <span class="badge">Phase 7.5 · live</span>
+                        </div>
+                        <div class="settings-url-row">
+                            <span class="settings-url-label">Path-style</span>
+                            <code class="settings-url-value">gymflow.coach/p/{{ trainer_profile.slug }}/</code>
+                            <span class="badge">Always works</span>
+                        </div>
+                        <div class="settings-url-row">
+                            <span class="settings-url-label">Custom domain</span>
+                            <code class="settings-url-value settings-url-muted">your-own-domain.com</code>
+                            <span class="badge">Phase 7.6</span>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="settings-readonly">
+                <div>
+                    <label class="label">Username</label>
+                    <div class="settings-readonly-value">{{ request.user.username }}</div>
+                    <div class="settings-hint" style="margin-top:2px;">Locked — this is how you log in.</div>
+                </div>
+            </div>
+
+            <div class="settings-form-actions">
+                <button type="submit" class="btn btn-primary">Save profile</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- ============== ACCOUNT (security) ============== -->
+    <section class="settings-section glass">
+        <header class="settings-section-head">
+            <div>
+                <div class="kicker" style="color:var(--accent);">Account</div>
+                <h2 class="settings-section-title">Security</h2>
+                <p class="settings-section-sub">Change your password or sign out of this browser session.</p>
+            </div>
+        </header>
+
+        <div class="settings-row-list">
+            <a class="settings-row" href="{% url 'password_change' %}">
+                <div>
+                    <div class="settings-row-title">Change password</div>
+                    <div class="settings-row-sub">Replace your current password with a new one.</div>
+                </div>
+                <span class="settings-row-cta">Change →</span>
+            </a>
+
+            <a class="settings-row" href="{% url 'trainer-logout-page' %}">
+                <div>
+                    <div class="settings-row-title">Log out</div>
+                    <div class="settings-row-sub">End this session — you'll need to log in again.</div>
+                </div>
+                <span class="settings-row-cta">Log out →</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============== PRICING TIERS (Phase 7.7) ============== -->
+    <section class="settings-section glass">
+        <header class="settings-section-head">
+            <div>
+                <div class="kicker" style="color:var(--accent);">Pricing</div>
+                <h2 class="settings-section-title">Coaching tiers</h2>
+                <p class="settings-section-sub">
+                    Set what you charge. Tiers show up on your public Site as Subscribe cards.
+                    Stripe Connect (live payments) lands in Phase 7.7.1 — until then, the buttons
+                    route prospects to your onboarding form so you can take payment manually.
+                </p>
+            </div>
+            <span class="badge">Phase 7.7</span>
+        </header>
+
+        <div class="settings-pricing-list">
+            {% for plan in pricing_plans %}
+                <form method="post" action="{% url 'dashboard-pricing-save' %}" class="settings-pricing-row">
+                    {% csrf_token %}
+                    <input type="hidden" name="plan_id" value="{{ plan.id }}">
+
+                    <div class="settings-pricing-grid">
+                        <div>
+                            <label class="label">Tier name</label>
+                            <input class="input" type="text" name="name" value="{{ plan.name }}" required>
+                        </div>
+                        <div>
+                            <label class="label">Price ({{ plan.currency }})</label>
+                            <input class="input" type="number" name="price" step="0.01" min="0"
+                                   value="{{ plan.price_pennies|stringformat:'d'|slice:':-2' }}.{{ plan.price_pennies|stringformat:'02d'|slice:'-2:' }}">
+                        </div>
+                        <div>
+                            <label class="label">Interval</label>
+                            <select class="input" name="interval">
+                                {% for slug, label in pricing_intervals %}
+                                    <option value="{{ slug }}" {% if plan.interval == slug %}selected{% endif %}>{{ label }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="label">What clients get</label>
+                        <textarea class="input" name="description" rows="2" placeholder="One sentence — what's included in this tier.">{{ plan.description }}</textarea>
+                    </div>
+
+                    <div class="settings-pricing-flags">
+                        <label class="settings-pricing-toggle">
+                            <input type="checkbox" name="is_active" {% if plan.is_active %}checked{% endif %}>
+                            <span>Active</span>
+                        </label>
+                        <label class="settings-pricing-toggle">
+                            <input type="checkbox" name="is_featured" {% if plan.is_featured %}checked{% endif %}>
+                            <span>Featured (highlighted on Site)</span>
+                        </label>
+
+                        <div class="settings-pricing-actions">
+                            <button type="submit" class="btn btn-primary btn-sm">Save tier</button>
+                        </div>
+                    </div>
+                </form>
+
+                <form method="post" action="{% url 'dashboard-pricing-delete' plan.id %}"
+                      class="settings-pricing-delete-form"
+                      onsubmit="return confirm('Delete the &quot;{{ plan.name|escapejs }}&quot; tier? This cannot be undone.');">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-ghost btn-sm">Delete tier</button>
+                </form>
+            {% empty %}
+                <div class="settings-pricing-empty">
+                    No tiers yet — add your first one below.
+                </div>
+            {% endfor %}
+        </div>
+
+        <details class="settings-pricing-add">
+            <summary>+ Add a new tier</summary>
+            <form method="post" action="{% url 'dashboard-pricing-save' %}" class="settings-pricing-row">
+                {% csrf_token %}
+                <input type="hidden" name="plan_id" value="">
+
+                <div class="settings-pricing-grid">
+                    <div>
+                        <label class="label">Tier name</label>
+                        <input class="input" type="text" name="name" placeholder="e.g. Premium" required>
+                    </div>
+                    <div>
+                        <label class="label">Price (GBP)</label>
+                        <input class="input" type="number" name="price" step="0.01" min="0" value="0">
+                    </div>
+                    <div>
+                        <label class="label">Interval</label>
+                        <select class="input" name="interval">
+                            {% for slug, label in pricing_intervals %}
+                                <option value="{{ slug }}" {% if slug == 'monthly' %}selected{% endif %}>{{ label }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label class="label">What clients get</label>
+                    <textarea class="input" name="description" rows="2" placeholder="One sentence — what's included in this tier."></textarea>
+                </div>
+                <div class="settings-pricing-flags">
+                    <label class="settings-pricing-toggle">
+                        <input type="checkbox" name="is_active" checked>
+                        <span>Active</span>
+                    </label>
+                    <label class="settings-pricing-toggle">
+                        <input type="checkbox" name="is_featured">
+                        <span>Featured</span>
+                    </label>
+                    <div class="settings-pricing-actions">
+                        <button type="submit" class="btn btn-primary btn-sm">Add tier</button>
+                    </div>
+                </div>
+            </form>
+        </details>
+    </section>
+
+    <!-- ============== APPEARANCE (scaffold) ============== -->
+    <section class="settings-section glass">
+        <header class="settings-section-head">
+            <div>
+                <div class="kicker" style="color:var(--accent);">Appearance</div>
+                <h2 class="settings-section-title">Theme & density</h2>
+                <p class="settings-section-sub">Right now the dashboard ships in dark glass — additional themes are next.</p>
+            </div>
+            <span class="badge">Coming Phase 6+</span>
+        </header>
+
+        <div class="settings-theme-grid">
+            <label class="settings-theme-card is-active">
+                <input type="radio" name="theme-preview" value="dark" checked disabled>
+                <div class="settings-theme-swatch settings-theme-swatch--dark"></div>
+                <div class="settings-theme-name">Dark glass</div>
+                <div class="settings-theme-sub">Live now</div>
+            </label>
+            <label class="settings-theme-card is-disabled">
+                <input type="radio" name="theme-preview" value="dim" disabled>
+                <div class="settings-theme-swatch settings-theme-swatch--dim"></div>
+                <div class="settings-theme-name">Dim</div>
+                <div class="settings-theme-sub">Coming soon</div>
+            </label>
+            <label class="settings-theme-card is-disabled">
+                <input type="radio" name="theme-preview" value="light" disabled>
+                <div class="settings-theme-swatch settings-theme-swatch--light"></div>
+                <div class="settings-theme-name">Light</div>
+                <div class="settings-theme-sub">Coming soon</div>
+            </label>
+        </div>
+
+        <div class="settings-divider"></div>
+
+        <div>
+            <label class="label">Text size</label>
+            <div class="settings-size-row">
+                <button type="button" class="btn btn-secondary btn-sm is-active" disabled>Comfortable</button>
+                <button type="button" class="btn btn-secondary btn-sm" disabled>Compact</button>
+                <button type="button" class="btn btn-secondary btn-sm" disabled>Larger</button>
+            </div>
+            <div class="settings-hint">Density + larger-text accessibility scaling lands with the theme picker.</div>
+        </div>
+    </section>
+
+    <!-- ============== NOTIFICATIONS (scaffold) ============== -->
+    <section class="settings-section glass">
+        <header class="settings-section-head">
+            <div>
+                <div class="kicker" style="color:var(--accent);">Notifications</div>
+                <h2 class="settings-section-title">Email & in-app alerts</h2>
+                <p class="settings-section-sub">When and how GymFlow nudges you.</p>
+            </div>
+            <span class="badge">Coming Phase 6+</span>
+        </header>
+
+        <div class="settings-toggle-list">
+            <div class="settings-toggle-row">
+                <div>
+                    <div class="settings-row-title">Daily morning digest</div>
+                    <div class="settings-row-sub">Email at 8am summarising what's new across your roster.</div>
+                </div>
+                <span class="settings-disabled-pill">Off</span>
+            </div>
+            <div class="settings-toggle-row">
+                <div>
+                    <div class="settings-row-title">Check-in submitted</div>
+                    <div class="settings-row-sub">Notify me as soon as a client submits a check-in.</div>
+                </div>
+                <span class="settings-disabled-pill">Off</span>
+            </div>
+            <div class="settings-toggle-row">
+                <div>
+                    <div class="settings-row-title">Workout completed</div>
+                    <div class="settings-row-sub">Notify me when a client finishes a workout.</div>
+                </div>
+                <span class="settings-disabled-pill">Off</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== INTEGRATIONS (scaffold) ============== -->
+    <section class="settings-section glass">
+        <header class="settings-section-head">
+            <div>
+                <div class="kicker" style="color:var(--accent);">Integrations</div>
+                <h2 class="settings-section-title">Connected services</h2>
+                <p class="settings-section-sub">Pull data in or push it out — connectors land in upcoming phases.</p>
+            </div>
+        </header>
+
+        <div class="settings-integration-grid">
+            <div class="settings-integration-card">
+                <div class="settings-integration-icon" style="background:rgba(30, 215, 96, 0.18);color:#86efac;">♬</div>
+                <div class="settings-integration-name">Spotify</div>
+                <div class="settings-integration-sub">In-workout music control on iOS.</div>
+                <span class="badge">Phase 6+</span>
+            </div>
+            <div class="settings-integration-card">
+                <div class="settings-integration-icon" style="background:rgba(255, 60, 105, 0.18);color:#ff9ab1;">♥</div>
+                <div class="settings-integration-name">Apple Health</div>
+                <div class="settings-integration-sub">Auto-pull weight, sleep, steps from clients' iPhones.</div>
+                <span class="badge">Phase 7+</span>
+            </div>
+            <div class="settings-integration-card">
+                <div class="settings-integration-icon" style="background:rgba(91, 141, 239, 0.18);color:#c2d4ff;">⌬</div>
+                <div class="settings-integration-name">Calendar</div>
+                <div class="settings-integration-sub">Sync session bookings to Google / Apple Calendar.</div>
+                <span class="badge">Phase 7+</span>
+            </div>
+            <div class="settings-integration-card">
+                <div class="settings-integration-icon" style="background:rgba(91, 141, 239, 0.18);color:#c2d4ff;">$</div>
+                <div class="settings-integration-name">Stripe</div>
+                <div class="settings-integration-sub">Collect client subscriptions through your landing page.</div>
+                <span class="badge">Phase 7</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== DANGER ZONE ============== -->
+    <section class="settings-section settings-danger glass">
+        <header class="settings-section-head">
+            <div>
+                <div class="kicker" style="color:var(--red);">Danger zone</div>
+                <h2 class="settings-section-title">Delete account</h2>
+                <p class="settings-section-sub">
+                    Hard-deletes your trainer account, your business profile, every plan and form
+                    you've built, and your client roster. Irreversible.
+                </p>
+            </div>
+        </header>
+
+        <form method="post" action="{% url 'dashboard-delete-account' %}" class="settings-form"
+              onsubmit="return confirm('This will permanently delete your account and everything in it. Are you absolutely sure?');">
+            {% csrf_token %}
+            <div>
+                <label class="label">Type <strong>delete</strong> to confirm</label>
+                <input class="input" type="text" name="confirm" placeholder='delete' required>
+            </div>
+            <div class="settings-form-actions">
+                <button type="submit" class="btn btn-danger">Permanently delete account</button>
+            </div>
+        </form>
+    </section>
 </div>
 {% endblock %}
