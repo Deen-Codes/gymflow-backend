@@ -9,6 +9,27 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "dev-only-secret-key")
 DEBUG = True
 ALLOWED_HOSTS = ["*"]
 
+# -------------------------------------------------------------------
+# CSRF + proxy trust for Render deploy.
+#
+# Django 4.x requires `CSRF_TRUSTED_ORIGINS` to list HTTPS origins
+# explicitly — without it, every browser POST to a form on the
+# deployed site (including /portal/login/) gets rejected with
+# "CSRF token from POST incorrect."
+#
+# `SECURE_PROXY_SSL_HEADER` tells Django to trust the X-Forwarded-Proto
+# header that Render's load balancer sets, so it knows the request
+# was originally HTTPS even though the inner Gunicorn talks plain HTTP.
+# Without this Django thinks every request is HTTP and the secure
+# cookie + CSRF host-match logic gets confused.
+# -------------------------------------------------------------------
+CSRF_TRUSTED_ORIGINS = [
+    "https://gymflow-api-wxm9.onrender.com",
+    "https://*.gymflow.coach",
+    "https://gymflow.coach",
+]
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
 
 INSTALLED_APPS = [
     "django.contrib.admin",
