@@ -259,6 +259,8 @@ def dashboard_create_food_library_item(request):
     FoodLibraryItem.objects.create(
         user=request.user,
         name=form.cleaned_data["name"],
+        portion_type=form.cleaned_data.get("portion_type") or FoodLibraryItem.PORTION_GRAMS,
+        unit_label=(form.cleaned_data.get("unit_label") or "").strip(),
         reference_grams=form.cleaned_data["reference_grams"],
         calories=form.cleaned_data["calories"],
         protein=form.cleaned_data["protein"],
@@ -293,6 +295,8 @@ def dashboard_update_food_library_item(request, food_id):
         return redirect("trainer-nutrition-plans-page")
 
     food.name = form.cleaned_data["name"]
+    food.portion_type = form.cleaned_data.get("portion_type") or FoodLibraryItem.PORTION_GRAMS
+    food.unit_label = (form.cleaned_data.get("unit_label") or "").strip()
     food.reference_grams = form.cleaned_data["reference_grams"]
     food.calories = form.cleaned_data["calories"]
     food.protein = form.cleaned_data["protein"]

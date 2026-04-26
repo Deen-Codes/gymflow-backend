@@ -49,13 +49,16 @@ from apps.users.models import User
 def _item_payload(item):
     """One food item inside a meal — what the user toggles when ticking."""
     return {
-        "id":       item.id,
-        "name":     item.food_name,
-        "grams":    item.grams,
-        "calories": round(item.calories or 0),
-        "protein":  round(item.protein  or 0),
-        "carbs":    round(item.carbs    or 0),
-        "fats":     round(item.fats     or 0),
+        "id":           item.id,
+        "name":         item.food_name,
+        "grams":        item.grams,
+        "portion_type": item.portion_type,
+        "unit_label":   item.unit_label,
+        "units":        item.units,
+        "calories":     round(item.calories or 0),
+        "protein":      round(item.protein  or 0),
+        "carbs":        round(item.carbs    or 0),
+        "fats":         round(item.fats     or 0),
     }
 
 

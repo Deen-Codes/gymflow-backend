@@ -14,7 +14,7 @@ def landing_page(request):
     """
     if request.user.is_authenticated:
         if getattr(request.user, "role", "") == User.TRAINER:
-            return redirect("trainer-dashboard-home")
+            return redirect("trainer-hub-page")
     return render(request, "landing.html")
 
 
@@ -24,7 +24,7 @@ def trainer_login_page(request):
     Clients should use the mobile app flow instead.
     """
     if request.user.is_authenticated and getattr(request.user, "role", "") == User.TRAINER:
-        return redirect("trainer-dashboard-home")
+        return redirect("trainer-hub-page")
 
     form = TrainerLoginForm(request.POST or None)
 
@@ -40,7 +40,7 @@ def trainer_login_page(request):
             messages.error(request, "This login is for trainers only.")
         else:
             login(request, user)
-            return redirect("trainer-dashboard-home")
+            return redirect("trainer-hub-page")
 
     return render(request, "auth/trainer_login.html", {"form": form})
 

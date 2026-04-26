@@ -124,8 +124,15 @@ class UpdateNutritionPlanForm(forms.Form):
 
 
 class CreateFoodLibraryItemForm(forms.Form):
+    PORTION_CHOICES = [
+        ("grams", "Per gram (weighed)"),
+        ("unit",  "Per unit (eggs, wraps, scoops)"),
+    ]
+
     name = forms.CharField(max_length=255)
-    reference_grams = forms.FloatField(min_value=0.01)
+    portion_type = forms.ChoiceField(choices=PORTION_CHOICES, initial="grams")
+    unit_label = forms.CharField(max_length=40, required=False)
+    reference_grams = forms.FloatField(min_value=0.01, initial=100)
     calories = forms.FloatField(min_value=0)
     protein = forms.FloatField(min_value=0)
     carbs = forms.FloatField(min_value=0)
@@ -133,7 +140,11 @@ class CreateFoodLibraryItemForm(forms.Form):
 
 
 class UpdateFoodLibraryItemForm(forms.Form):
+    PORTION_CHOICES = CreateFoodLibraryItemForm.PORTION_CHOICES
+
     name = forms.CharField(max_length=255)
+    portion_type = forms.ChoiceField(choices=PORTION_CHOICES, initial="grams")
+    unit_label = forms.CharField(max_length=40, required=False)
     reference_grams = forms.FloatField(min_value=0.01)
     calories = forms.FloatField(min_value=0)
     protein = forms.FloatField(min_value=0)

@@ -58,6 +58,16 @@ class FoodLibraryItem(models.Model):
         (SOURCE_OFF, "Open Food Facts"),
     ]
 
+    # Portion mode. Some foods are weighed (rice, chicken) — macros per
+    # `reference_grams`. Some are counted (eggs, wraps, protein scoops)
+    # — macros per 1 unit. `unit_label` carries the noun ("egg", "wrap").
+    PORTION_GRAMS = "grams"
+    PORTION_UNIT  = "unit"
+    PORTION_CHOICES = [
+        (PORTION_GRAMS, "Per gram (weighed)"),
+        (PORTION_UNIT,  "Per unit (eggs, wraps, scoops)"),
+    ]
+
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
@@ -69,6 +79,13 @@ class FoodLibraryItem(models.Model):
     protein = models.FloatField(default=0)
     carbs = models.FloatField(default=0)
     fats = models.FloatField(default=0)
+
+    portion_type = models.CharField(
+        max_length=10,
+        choices=PORTION_CHOICES,
+        default=PORTION_GRAMS,
+    )
+    unit_label = models.CharField(max_length=40, blank=True, default="")
 
     # Phase 3 metadata
     source = models.CharField(
@@ -127,6 +144,19 @@ class NutritionMealItem(models.Model):
     food_name = models.CharField(max_length=255)
     reference_grams = models.FloatField(default=100)
     grams = models.FloatField(default=0)
+
+    # Portion mode snapshot — copied from the FoodLibraryItem at add time
+    # so changing the preset later doesn't retroactively rewrite this
+    # client's planned meals.
+    portion_type = models.CharField(
+        max_length=10,
+        choices=FoodLibraryItem.PORTION_CHOICES,
+        default=FoodLibraryItem.PORTION_GRAMS,
+    )
+    unit_label = models.CharField(max_length=40, blank=True, default="")
+    # Quantity in units (eggs, wraps...). Only meaningful when
+    # portion_type == "unit"; otherwise leave at 0 and use `grams`.
+    units = models.FloatField(default=0)
 
     calories = models.FloatField(default=0)
     protein = models.FloatField(default=0)
