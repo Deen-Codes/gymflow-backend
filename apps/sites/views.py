@@ -279,6 +279,26 @@ def public_site_page(request, slug):
     })
 
 
+def public_manage_subscription(request, slug):
+    """GET /p/<slug>/manage/ — public form where a client can request
+    a Stripe Customer Portal magic link to be emailed to them.
+
+    Phase 7.7.4 — the actual POST submit goes to
+    /p/<slug>/manage/send/ (handled by apps.payments.portal_views),
+    which generates the portal session + sends the email.
+
+    This view just renders the form. Always available regardless of
+    whether the site is published — clients of an unpublished site
+    still need to manage their subscription.
+    """
+    trainer_profile = get_object_or_404(TrainerProfile, slug=slug)
+    site = ensure_site(trainer_profile)
+    return render(request, "public/manage_subscription.html", {
+        "trainer": trainer_profile,
+        "brand_color": site.brand_color or "#c8ff00",
+    })
+
+
 @require_POST
 @csrf_protect
 def public_site_signup(request, slug):

@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage subscription · {{ trainer.business_name|default:trainer.user.username }}</title>
+    {% include "_favicon_links.html" %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/public-site.css' %}">
+    <style>:root { --pt-accent: {{ brand_color }}; }</style>
+</head>
+<body class="pt-public">
+
+<div class="pt-thanks-wrap">
+    <div class="pt-thanks-card">
+        <div class="pt-thanks-mark">£</div>
+        <h1 class="pt-thanks-title">Manage your subscription</h1>
+        <p class="pt-thanks-sub">
+            Enter the email you used at signup. We'll email you a secure link to
+            update your card, view past invoices, or cancel your subscription
+            with <strong>{{ trainer.business_name|default:trainer.user.username }}</strong>.
+        </p>
+
+        {% if messages %}
+            <div class="pt-messages">
+                {% for message in messages %}
+                    <div class="pt-message pt-message--{% if message.tags == 'error' %}error{% else %}ok{% endif %}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <form method="post"
+              action="{% url 'public-manage-subscription-send' slug=trainer.slug %}"
+              class="pt-onboarding-form"
+              style="margin-top:24px;">
+            {% csrf_token %}
+            <div class="pt-form-row">
+                <label class="pt-label">Email</label>
+                <input class="pt-input"
+                       type="email"
+                       name="email"
+                       placeholder="you@example.com"
+                       required
+                       autofocus>
+            </div>
+            <button type="submit" class="pt-cta-primary pt-onboarding-submit">
+                Email me my portal link →
+            </button>
+        </form>
+
+        <p class="pt-thanks-creds-note" style="margin-top:24px;">
+            The link expires in 24 hours and can only be used once. If you don't
+            see it, check your spam folder or ask your trainer to resend.
+        </p>
+
+        <a href="/p/{{ trainer.slug }}/" class="pt-cta-secondary pt-thanks-back" style="margin-top:18px;">
+            ← Back to {{ trainer.business_name|default:trainer.user.username }}'s page
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

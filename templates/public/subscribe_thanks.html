@@ -27,6 +27,11 @@
         </p>
 
         <a href="/p/{{ trainer.slug }}/" class="pt-cta-primary pt-thanks-back">Back to {{ trainer.business_name|default:trainer.user.username }}'s page</a>
+
+        <p class="pt-thanks-creds-note" style="margin-top:24px;font-size:12px;">
+            Need to update your card or cancel later?
+            <a href="{% url 'public-manage-subscription' slug=trainer.slug %}">Manage your subscription →</a>
+        </p>
     </div>
 </div>
 

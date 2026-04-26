@@ -499,3 +499,28 @@ textarea.pt-input { resize: vertical; min-height: 100px; }
     line-height: 1.5;
 }
 .pt-thanks-back { display: inline-block; }
+
+/* Phase 7.7.4 — flash messages on the public manage-subscription page. */
+.pt-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 16px 0 0;
+}
+.pt-message {
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: left;
+}
+.pt-message--ok {
+    background: rgba(205, 255, 0, 0.1);
+    color: rgba(205, 255, 0, 0.95);
+    border: 1px solid rgba(205, 255, 0, 0.25);
+}
+.pt-message--error {
+    background: rgba(255, 93, 108, 0.12);
+    color: #ff8a92;
+    border: 1px solid rgba(255, 93, 108, 0.35);
+}

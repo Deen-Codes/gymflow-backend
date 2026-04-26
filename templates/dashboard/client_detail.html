@@ -105,6 +105,18 @@
                     <button type="submit" class="btn btn-ghost btn-sm">Cancel now</button>
                 </form>
             {% endif %}
+
+            {# Phase 7.7.4 — email the Stripe Customer Portal magic link.
+               Lets the client self-serve card update / cancel without
+               you having to involve Stripe support. #}
+            {% if client.email %}
+                <form method="post" action="{% url 'subscription-email-portal' subscription.id %}"
+                      onsubmit="return confirm('Email a Stripe portal link to {{ client.email|escapejs }}?\n\nThe link is single-use, expires in 24 hours, and lets {{ client.username|escapejs }} update their card, view invoices, or cancel.');"
+                      class="client-sub-form">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-ghost btn-sm">Email portal link to client</button>
+                </form>
+            {% endif %}
         </footer>
     {% endif %}
 </section>
