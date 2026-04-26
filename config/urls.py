@@ -14,6 +14,8 @@ urlpatterns = [
     # Mobile API (iOS client)
     path("api/users/", include("apps.users.urls")),
     path("api/workouts/", include("apps.workouts.urls")),
+    path("api/progress/", include("apps.progress.urls")),
+    path("api/nutrition/", include("apps.nutrition.urls")),
 
     # Dashboard JSON APIs (drag-drop builders + check-ins + sites)
     path("api/workouts/dashboard/", include("apps.workouts.dashboard_api_urls")),
