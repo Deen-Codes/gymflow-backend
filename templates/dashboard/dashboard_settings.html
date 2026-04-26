@@ -239,7 +239,53 @@
         </div>
     </section>
 
-    <!-- ============== PRICING TIERS (Phase 7.7) ============== -->
+    <!-- ============== STRIPE CONNECT ============== -->
+    <section class="settings-section glass">
+        <header class="settings-section-head">
+            <div>
+                <div class="kicker" style="color:var(--accent);">Payments</div>
+                <h2 class="settings-section-title">Stripe Connect</h2>
+                <p class="settings-section-sub">
+                    Connect your Stripe account so clients can subscribe directly through your
+                    public Site. GymFlow handles Checkout + webhooks; payouts land in your
+                    Stripe balance. We take a small platform fee on every subscription.
+                </p>
+            </div>
+            <span class="badge">{% if trainer_profile.stripe_connected %}Connected{% else %}Not connected{% endif %}</span>
+        </header>
+
+        {% if trainer_profile.stripe_connected %}
+            <div class="settings-readonly">
+                <div>
+                    <label class="label">Connected account</label>
+                    <div class="settings-readonly-value" style="font-family: ui-monospace, SFMono-Regular, monospace;">
+                        {{ trainer_profile.stripe_user_id }}
+                    </div>
+                    <div class="settings-hint" style="margin-top:4px;">
+                        Subscriptions to your tiers are routed through this Stripe account.
+                    </div>
+                </div>
+            </div>
+            <form method="post" action="{% url 'stripe-oauth-disconnect' %}" class="settings-form-actions">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-secondary"
+                        onclick="return confirm('Disconnect Stripe? Existing subscriptions stay active in your Stripe account but new Subscribe buttons will stop working until you reconnect.');">
+                    Disconnect Stripe
+                </button>
+            </form>
+        {% else %}
+            <form method="post" action="{% url 'stripe-oauth-connect' %}" class="settings-form-actions">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-primary">Connect with Stripe →</button>
+            </form>
+            <div class="settings-hint" style="margin-top:8px;">
+                You'll be redirected to Stripe to either sign in or create a Stripe account
+                (takes ~2 minutes). On return, Subscribe buttons on your Site go live.
+            </div>
+        {% endif %}
+    </section>
+
+    <!-- ============== PRICING TIERS ============== -->
     <section class="settings-section glass">
         <header class="settings-section-head">
             <div>
@@ -247,8 +293,10 @@
                 <h2 class="settings-section-title">Coaching tiers</h2>
                 <p class="settings-section-sub">
                     Set what you charge. Tiers show up on your public Site as Subscribe cards.
-                    Live Stripe payments are coming soon — until then, the buttons
-                    route prospects to your onboarding form so you can take payment manually.
+                    {% if not trainer_profile.stripe_connected %}
+                        Connect Stripe above to take payments — until then, Subscribe buttons
+                        route prospects to your onboarding form so you can take payment manually.
+                    {% endif %}
                 </p>
             </div>
             <span class="badge">Live</span>

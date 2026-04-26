@@ -22,4 +22,7 @@ urlpatterns = [
     path("api/nutrition/dashboard/", include("apps.nutrition.dashboard_api_urls")),
     path("api/progress/dashboard/", include("apps.progress.dashboard_api_urls")),
     path("api/sites/dashboard/", include("apps.sites.dashboard_api_urls")),
+
+    # Phase 7.7.1 — Stripe Connect (OAuth + Checkout + webhooks)
+    path("payments/", include("apps.payments.urls")),
 ]

@@ -47,7 +47,41 @@ INSTALLED_APPS = [
     "apps.progress",
     "apps.nutrition",
     "apps.sites",                # Phase 7: PT landing pages + signups
+    "apps.payments",             # Phase 7.7.1: Stripe Connect
 ]
+
+
+# -------------------------------------------------------------------
+# Stripe Connect (Phase 7.7.1)
+#
+# All four values are read from env vars on Render. In dev we let
+# them default to empty strings so the app boots without Stripe
+# configured — the Connect button shows a "Set STRIPE_* env vars"
+# warning instead of crashing the dashboard.
+#
+# Required for production:
+#   STRIPE_SECRET_KEY       — sk_live_… or sk_test_…
+#   STRIPE_PUBLISHABLE_KEY  — pk_live_… or pk_test_…
+#   STRIPE_CLIENT_ID        — ca_… (from Connect Settings, NOT API keys)
+#   STRIPE_WEBHOOK_SECRET   — whsec_…  (set when webhooks land next turn)
+#
+# Platform fee: 5% goes to GymFlow on every subscription. Tweak via
+# STRIPE_APPLICATION_FEE_PERCENT (decimal — 5 = 5%).
+# -------------------------------------------------------------------
+STRIPE_SECRET_KEY        = os.environ.get("STRIPE_SECRET_KEY",      "")
+STRIPE_PUBLISHABLE_KEY   = os.environ.get("STRIPE_PUBLISHABLE_KEY", "")
+STRIPE_CLIENT_ID         = os.environ.get("STRIPE_CLIENT_ID",       "")
+STRIPE_WEBHOOK_SECRET    = os.environ.get("STRIPE_WEBHOOK_SECRET",  "")
+STRIPE_APPLICATION_FEE_PERCENT = float(
+    os.environ.get("STRIPE_APPLICATION_FEE_PERCENT", "5")
+)
+
+# Where Stripe redirects the trainer back to after they grant access.
+# Must match a redirect URI registered in your Stripe Connect settings.
+STRIPE_OAUTH_REDIRECT_URI = os.environ.get(
+    "STRIPE_OAUTH_REDIRECT_URI",
+    "https://gymflow-api-wxm9.onrender.com/payments/oauth/callback/",
+)
 
 
 MIDDLEWARE = [

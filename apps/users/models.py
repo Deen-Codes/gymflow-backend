@@ -22,8 +22,18 @@ class TrainerProfile(models.Model):
     business_name = models.CharField(max_length=255, blank=True)
     slug = models.SlugField(unique=True)
 
+    # Phase 7.7.1 — Stripe Connect. Populated after the trainer
+    # completes OAuth at /payments/oauth/connect/. Empty = not
+    # connected. We never store secrets here, only the connected
+    # account ID (acct_…) which is safe to keep in the DB.
+    stripe_user_id = models.CharField(max_length=64, blank=True, default="")
+
     def __str__(self):
         return self.business_name or self.user.username
+
+    @property
+    def stripe_connected(self) -> bool:
+        return bool(self.stripe_user_id)
 
 
 class ClientProfile(models.Model):
