@@ -14,6 +14,7 @@ from .dashboard_checkin_page_views import _ensure_three_forms, _canonical_three
 from apps.workouts.models import WorkoutPlan, WorkoutDay, Exercise, ExerciseSetTarget, WorkoutSession
 from apps.nutrition.models import NutritionPlan
 from apps.progress.models import CheckInForm, ClientCheckInAssignment, CheckInAnswer, CheckInQuestion
+from apps.payments.models import ClientSubscription
 
 
 # -------------------------------------------------------------------
@@ -287,7 +288,58 @@ def trainer_client_detail_page(request, client_id):
     # sessions, photos). All harvesters return None / empty values when
     # there's nothing yet, so the template handles empty states.
     context.update(_build_progress_context(client))
+    # Phase 7.7.3 — subscription state (active sub + lifetime metrics).
+    context.update(_build_subscription_context(client, request.user.trainer_profile))
     return render(request, "dashboard/client_detail.html", context)
+
+
+# -------------------------------------------------------------------
+# Phase 7.7.3 — subscription panel on client detail.
+#
+# Pulls the most recent ClientSubscription for this trainer+client and
+# computes a few display-friendly fields. Webhook keeps the row in sync
+# with Stripe so we don't need to round-trip on every page render.
+# -------------------------------------------------------------------
+def _build_subscription_context(client, trainer_profile):
+    """Return template context for the subscription card.
+
+    Output keys:
+      subscription            : the latest ClientSubscription row, or None.
+      subscription_status_label, subscription_status_tone : badge text/colour.
+      subscription_months_active : whole months between created_at and now.
+    """
+    sub = (
+        ClientSubscription.objects
+        .filter(client=client, trainer=trainer_profile)
+        .select_related("plan")
+        .order_by("-created_at")
+        .first()
+    )
+    if sub is None:
+        return {"subscription": None}
+
+    # Friendly badge tone — kept in Python so the template stays simple.
+    tone_for_status = {
+        ClientSubscription.STATUS_ACTIVE:     "ok",
+        ClientSubscription.STATUS_TRIALING:   "ok",
+        ClientSubscription.STATUS_PAST_DUE:   "warn",
+        ClientSubscription.STATUS_CANCELED:   "muted",
+        ClientSubscription.STATUS_INCOMPLETE: "warn",
+    }
+    label_for_status = dict(ClientSubscription.STATUS_CHOICES)
+
+    months_active = 0
+    if sub.created_at:
+        delta = timezone.now() - sub.created_at
+        # Whole calendar months — close enough for a roster card.
+        months_active = max(0, int(delta.days // 30))
+
+    return {
+        "subscription": sub,
+        "subscription_status_label": label_for_status.get(sub.status, sub.status),
+        "subscription_status_tone": tone_for_status.get(sub.status, "muted"),
+        "subscription_months_active": months_active,
+    }
 
 
 @login_required

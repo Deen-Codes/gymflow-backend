@@ -35,6 +35,80 @@
     </div>
 </section>
 
+{# ====== Phase 7.7.3 — Subscription panel ====== #}
+<section class="client-sub glass">
+    <header class="client-sub-head">
+        <div>
+            <div class="kicker" style="color:var(--accent);">£ Subscription</div>
+            {% if subscription %}
+                <h2 class="client-sub-title">
+                    {{ subscription.plan.name|default:"(deleted plan)" }}
+                </h2>
+                <div class="client-sub-meta">
+                    {% if subscription.plan %}
+                        <span class="client-sub-price">
+                            {{ subscription.plan.price_display }}
+                            <span class="client-sub-interval">{{ subscription.plan.get_interval_display }}</span>
+                        </span>
+                        <span class="client-sub-dot">·</span>
+                    {% endif %}
+                    <span class="client-sub-stat">{{ subscription_months_active }} month{{ subscription_months_active|pluralize }} active</span>
+                    {% if subscription.current_period_end %}
+                        <span class="client-sub-dot">·</span>
+                        {% if subscription.cancel_at_period_end %}
+                            <span class="client-sub-stat client-sub-stat--warn">
+                                Will cancel on {{ subscription.current_period_end|date:"j M Y" }}
+                            </span>
+                        {% else %}
+                            <span class="client-sub-stat">
+                                Renews {{ subscription.current_period_end|date:"j M Y" }}
+                            </span>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            {% else %}
+                <h2 class="client-sub-title client-sub-title--muted">No active subscription</h2>
+                <div class="client-sub-meta">
+                    This client was added manually or hasn't subscribed through the public site yet.
+                </div>
+            {% endif %}
+        </div>
+
+        {% if subscription %}
+            <span class="client-sub-badge client-sub-badge--{{ subscription_status_tone }}">
+                {{ subscription_status_label }}
+            </span>
+        {% endif %}
+    </header>
+
+    {% if subscription and subscription.status != 'canceled' %}
+        <footer class="client-sub-actions">
+            {% if subscription.cancel_at_period_end %}
+                <form method="post" action="{% url 'subscription-resume' subscription.id %}" class="client-sub-form">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-primary btn-sm">Resume subscription</button>
+                </form>
+                <span class="client-sub-actions-help">
+                    Stops the cancellation. Billing continues as normal.
+                </span>
+            {% else %}
+                <form method="post" action="{% url 'subscription-cancel' subscription.id %}"
+                      onsubmit="return confirm('Cancel at the end of the current billing period?\n\n{{ client.username|escapejs }} keeps access until {{ subscription.current_period_end|date:"j M Y" }}, then Stripe stops charging them.\n\nYou can resume any time before that date.');"
+                      class="client-sub-form">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-secondary btn-sm">Cancel at period end</button>
+                </form>
+                <form method="post" action="{% url 'subscription-cancel-now' subscription.id %}"
+                      onsubmit="return confirm('Cancel IMMEDIATELY?\n\nNo prorated refund — Stripe stops billing right now and {{ client.username|escapejs }} loses paid access today. Use only for fraud / emergency cases.\n\nNormally you want \'Cancel at period end\' instead.');"
+                      class="client-sub-form">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-ghost btn-sm">Cancel now</button>
+                </form>
+            {% endif %}
+        </footer>
+    {% endif %}
+</section>
+
 <!-- 2x2 grid: Workout · Nutrition / Progress · Check-Ins -->
 <section class="client-grid">
 
