@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe error · GymFlow</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/public-site.css' %}">
+</head>
+<body class="pt-public">
+
+<div class="pt-thanks-wrap">
+    <div class="pt-thanks-card">
+        <div class="pt-thanks-mark" style="background:#ff5d6c;color:#fff;">!</div>
+        <h1 class="pt-thanks-title">Couldn't start checkout.</h1>
+        <p class="pt-thanks-sub">{{ error|default:"Something went wrong on the way to Stripe." }}</p>
+        <p class="pt-thanks-creds-note">
+            Please try again in a moment, or contact your trainer if this keeps happening.
+        </p>
+        <a href="javascript:history.back()" class="pt-cta-primary pt-thanks-back">Go back</a>
+    </div>
+</div>
+
+</body>
+</html>

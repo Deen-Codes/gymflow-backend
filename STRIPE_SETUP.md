@@ -95,3 +95,61 @@ When you're ready to flip to live mode, swap the test keys in Render
 env vars to live keys (`sk_live_…`, `pk_live_…`, live `ca_…`),
 re-add the redirect URI in live-mode Connect settings, and reconnect
 your Stripe account from the trainer dashboard.
+
+---
+
+## Webhook setup (Phase 7.7.1 batch 2)
+
+The Subscribe button on the public PT site now creates a real Stripe
+Checkout session. When a customer pays, Stripe needs to call back
+into our app via a webhook so we can auto-create their User +
+ClientProfile and record the subscription.
+
+### 9. Add the webhook endpoint in Stripe
+
+In Stripe dashboard → **Developers → Webhooks** → click **Add endpoint**.
+
+- **Endpoint URL:**
+  ```
+  https://gymflow-api-wxm9.onrender.com/payments/webhooks/stripe/
+  ```
+- **Listen to events on:** *Connected accounts* (NOT "Your account" —
+  the events fire on the trainer's connected account).
+- **Events to send:**
+  - `checkout.session.completed`
+  - `customer.subscription.created`
+  - `customer.subscription.updated`
+  - `customer.subscription.deleted`
+  - `invoice.payment_failed`
+
+Click **Add endpoint**. You'll see the new webhook in the list.
+
+### 10. Copy the signing secret
+
+Click into the webhook → reveal the **Signing secret** (`whsec_…`).
+This is what verifies that calls to `/payments/webhooks/stripe/`
+actually came from Stripe and weren't an attacker.
+
+### 11. Add it to Render env
+
+| Key                       | Value                              |
+|---------------------------|------------------------------------|
+| `STRIPE_WEBHOOK_SECRET`   | `whsec_…`                          |
+
+Render will auto-redeploy with the new env. Done.
+
+### 12. Test the full flow
+
+1. Make sure you've **connected Stripe** from your trainer Settings page.
+2. Open your public site at `gymflow.coach/p/<your-slug>/`.
+3. Scroll to your Pricing section and click **Subscribe** on a tier.
+4. You'll be redirected to Stripe Checkout (test mode → use card
+   `4242 4242 4242 4242`, any future expiry, any CVC, any postcode).
+5. Pay → Stripe redirects you back to `/p/<slug>/subscribe/thanks/`.
+6. Within a few seconds, the webhook fires. Check Render logs for
+   `[Stripe webhook] ✅ Subscribed <username> to <plan name>`.
+7. Hop into your trainer dashboard → **Clients** → you should see
+   the new client in your roster.
+
+If the webhook fails, the Stripe webhook log (back in Stripe → Webhooks)
+shows the response body — that's where any errors will surface.

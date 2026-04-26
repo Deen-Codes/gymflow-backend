@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're in · {{ trainer.business_name|default:trainer.user.username }}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/public-site.css' %}">
+</head>
+<body class="pt-public">
+
+<div class="pt-thanks-wrap">
+    <div class="pt-thanks-card">
+        <div class="pt-thanks-mark">✓</div>
+        <h1 class="pt-thanks-title">You're subscribed.</h1>
+        <p class="pt-thanks-sub">
+            {{ trainer.business_name|default:trainer.user.username }} will receive your details and
+            be in touch shortly with your onboarding next steps. You'll also get an email
+            from Stripe with your subscription receipt.
+        </p>
+
+        <p class="pt-thanks-creds-note">
+            Once your trainer sets you up, you'll get login details for the GymFlow iOS app
+            so you can track workouts, log meals, and submit check-ins on the go.
+        </p>
+
+        <a href="/p/{{ trainer.slug }}/" class="pt-cta-primary pt-thanks-back">Back to {{ trainer.business_name|default:trainer.user.username }}'s page</a>
+    </div>
+</div>
+
+</body>
+</html>

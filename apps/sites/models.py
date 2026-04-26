@@ -135,6 +135,13 @@ class PricingPlan(models.Model):
     # Highlight one tier as "Most popular" — purely cosmetic.
     is_featured = models.BooleanField(default=False)
 
+    # Phase 7.7.1 — Stripe Connect. Lazily populated the first time a
+    # client subscribes; we create a Product + Price in the trainer's
+    # connected Stripe account and cache the IDs here so subsequent
+    # subscribers reuse them.
+    stripe_product_id = models.CharField(max_length=64, blank=True, default="")
+    stripe_price_id   = models.CharField(max_length=64, blank=True, default="")
+
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

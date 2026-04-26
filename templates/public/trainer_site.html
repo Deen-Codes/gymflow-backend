@@ -75,17 +75,30 @@
                                 {% if tier.description %}
                                     <p class="pt-pricing-desc">{{ tier.description }}</p>
                                 {% endif %}
-                                <a href="?plan={{ tier.id }}#apply" class="pt-cta-primary pt-pricing-cta">
-                                    Subscribe
-                                </a>
+                                {% if trainer.stripe_connected %}
+                                    <form method="post"
+                                          action="{% url 'public-subscribe-start' slug=trainer.slug plan_id=tier.id %}"
+                                          class="pt-pricing-form">
+                                        {% csrf_token %}
+                                        <button type="submit" class="pt-cta-primary pt-pricing-cta">
+                                            Subscribe
+                                        </button>
+                                    </form>
+                                {% else %}
+                                    <a href="?plan={{ tier.id }}#apply" class="pt-cta-primary pt-pricing-cta">
+                                        Subscribe
+                                    </a>
+                                {% endif %}
                             </div>
                         {% endfor %}
                     </div>
-                    <div class="pt-pricing-note">
-                        Stripe live payments coming soon — for now, choose a tier and complete the
-                        application below; {{ trainer.business_name|default:trainer.user.username }}
-                        will be in touch with payment details.
-                    </div>
+                    {% if not trainer.stripe_connected %}
+                        <div class="pt-pricing-note">
+                            Live payments setup pending — for now, choose a tier and complete the
+                            application below; {{ trainer.business_name|default:trainer.user.username }}
+                            will be in touch with payment details.
+                        </div>
+                    {% endif %}
                 {% else %}
                     <div class="pt-onboarding-empty">No pricing tiers set yet.</div>
                 {% endif %}
