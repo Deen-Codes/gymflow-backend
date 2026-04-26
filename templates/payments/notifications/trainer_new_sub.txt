@@ -1,0 +1,15 @@
+Hi {{ trainer_name }},
+
+Good news — you've got a new client.
+
+  Client: {{ client_display }}
+  Plan:   {{ plan_name }}{% if plan_price_display %} — {{ plan_price_display }} {{ plan_interval }}{% endif %}
+
+GymFlow auto-created their account and recorded the subscription. They'll
+need workout + nutrition plans assigned before the iOS app comes alive
+for them.
+
+Open their profile to get started:
+{{ client_detail_url }}
+
+— GymFlow

@@ -1,0 +1,17 @@
+Hi {{ trainer_name }},
+
+A client's payment just failed:
+
+  Client: {{ client_display }}
+  Plan:   {{ plan_name }}{% if plan_price_display %} — {{ plan_price_display }} {{ plan_interval }}{% endif %}
+
+Stripe will retry automatically over the next few days. If it keeps
+failing, the subscription will eventually cancel itself.
+
+Your move: nudge them to update their card. The fastest way is to email
+them a Stripe portal link from the client profile — there's a button
+on the subscription panel that does it in one click:
+
+{{ client_detail_url }}
+
+— GymFlow

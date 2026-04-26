@@ -36,6 +36,11 @@ from apps.sites.models import PricingPlan
 
 from .models import ClientSubscription
 from .stripe_client import get_stripe, is_configured
+from .notifications import (
+    notify_trainer_new_subscription,
+    notify_trainer_subscription_canceled,
+    notify_trainer_payment_failed,
+)
 
 
 # ----------------------------------------------------------------------
@@ -172,6 +177,7 @@ def _handle_checkout_completed(event):
     sub_id      = _get(session, "subscription", "")
     customer_id = _get(session, "customer", "")
 
+    client_sub = None
     if sub_id:
         # Recurring — fetch the subscription on the connected account
         # so we get the real status + period end.
@@ -181,12 +187,12 @@ def _handle_checkout_completed(event):
                 sub_id,
                 stripe_account=trainer.stripe_user_id,
             )
-            _upsert_subscription_from_stripe(sub, trainer, plan, client)
+            client_sub = _upsert_subscription_from_stripe(sub, trainer, plan, client)
         except Exception as exc:
             print(f"[Stripe webhook] Could not retrieve subscription {sub_id}: {exc}")
     else:
         # Oneshot — create a manual record with status=active and no period_end.
-        ClientSubscription.objects.update_or_create(
+        client_sub, _ = ClientSubscription.objects.update_or_create(
             stripe_subscription_id=f"oneshot_{_get(session, 'id', '')}",
             defaults={
                 "trainer": trainer,
@@ -199,9 +205,17 @@ def _handle_checkout_completed(event):
 
     print(f"[Stripe webhook] ✅ Subscribed {client.username} to {plan.name}")
 
+    # Phase 7.7.5 — ping the trainer that they got a new client.
+    if client_sub is not None:
+        notify_trainer_new_subscription(client_sub)
 
-def _handle_subscription_event(event):
-    """For subscription.created/updated/deleted — keep our row in sync."""
+
+def _handle_subscription_event(event, event_type):
+    """For subscription.created/updated/deleted — keep our row in sync.
+
+    Also pings the trainer when this event represents a final cancellation
+    (event_type == customer.subscription.deleted).
+    """
     sub = _get(_get(event, "data", {}), "object", {})
     sub_id = _get(sub, "id", "")
     if not sub_id:
@@ -226,7 +240,11 @@ def _handle_subscription_event(event):
         print(f"[Stripe webhook] Subscription {sub_id} arrived before checkout — deferring")
         return
 
-    _upsert_subscription_from_stripe(sub, existing.trainer, existing.plan, existing.client)
+    updated = _upsert_subscription_from_stripe(sub, existing.trainer, existing.plan, existing.client)
+
+    # Phase 7.7.5 — final cancellation → ping the trainer.
+    if event_type == "customer.subscription.deleted":
+        notify_trainer_subscription_canceled(updated)
 
 
 def _handle_invoice_failure(event):
@@ -238,6 +256,11 @@ def _handle_invoice_failure(event):
         status=ClientSubscription.STATUS_PAST_DUE,
         updated_at=timezone.now(),
     )
+
+    # Phase 7.7.5 — ping the trainer so they can chase before the client churns.
+    sub = ClientSubscription.objects.filter(stripe_subscription_id=sub_id).first()
+    if sub is not None:
+        notify_trainer_payment_failed(sub)
 
 
 # ----------------------------------------------------------------------
@@ -268,7 +291,7 @@ def stripe_webhook(request):
         "customer.subscription.updated",
         "customer.subscription.deleted",
     ):
-        _handle_subscription_event(event)
+        _handle_subscription_event(event, event_type)
     elif event_type == "invoice.payment_failed":
         _handle_invoice_failure(event)
 

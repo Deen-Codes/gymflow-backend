@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>New client — {{ client_username }}</title>
+</head>
+<body style="margin:0;padding:0;background:#0b0e0a;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#e8eee0;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0b0e0a;padding:40px 16px;">
+        <tr><td align="center">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;background:#161a14;border-radius:18px;padding:36px 32px;">
+                <tr><td>
+                    <div style="display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:#e8eee0;margin-bottom:24px;">
+                        <span style="display:inline-block;width:30px;height:30px;border-radius:9px;background:#CDFF00;color:#0b1100;font-weight:900;text-align:center;line-height:30px;">G</span>
+                        <span>GymFlow</span>
+                    </div>
+
+                    <h1 style="margin:0 0 12px;font-size:24px;font-weight:800;color:#ffffff;letter-spacing:-0.01em;">
+                        New client just subscribed
+                    </h1>
+
+                    <p style="margin:0 0 20px;font-size:15px;line-height:1.65;color:#c4ccba;">
+                        Hi {{ trainer_name }} — <strong style="color:#ffffff;">{{ client_display }}</strong>
+                        just paid for <strong style="color:#ffffff;">{{ plan_name }}</strong>{% if plan_price_display %}
+                        at {{ plan_price_display }} {{ plan_interval }}{% endif %}.
+                        GymFlow has auto-created their account and recorded the subscription.
+                    </p>
+
+                    <p style="margin:0 0 24px;font-size:15px;line-height:1.65;color:#c4ccba;">
+                        Next step: assign them a workout plan, a nutrition plan, and turn on
+                        the check-in forms you want them filling in. Once that's done their
+                        iOS app comes alive.
+                    </p>
+
+                    <p style="margin:24px 0 32px;text-align:center;">
+                        <a href="{{ client_detail_url }}"
+                           style="display:inline-block;background:#CDFF00;color:#0b1100;font-weight:800;padding:14px 26px;border-radius:12px;text-decoration:none;font-size:15px;">
+                            Open {{ client_username }}'s profile →
+                        </a>
+                    </p>
+
+                    <p style="margin:18px 0 0;font-size:11px;color:#5a6354;border-top:1px solid #2a2f24;padding-top:14px;">
+                        Powered by GymFlow · gymflow.coach
+                    </p>
+                </td></tr>
+            </table>
+        </td></tr>
+    </table>
+</body>
+</html>

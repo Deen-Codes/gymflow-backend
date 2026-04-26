@@ -1,0 +1,14 @@
+Hi {{ trainer_name }},
+
+A subscription was just canceled:
+
+  Client: {{ client_display }}
+  Plan:   {{ plan_name }}{% if plan_price_display %} — {{ plan_price_display }} {{ plan_interval }}{% endif %}
+
+The subscription is now ended. They keep their GymFlow account and any
+plans you've assigned, but Stripe is no longer billing them.
+
+If you want to remove them entirely, do it from the client profile page:
+{{ client_detail_url }}
+
+— GymFlow
