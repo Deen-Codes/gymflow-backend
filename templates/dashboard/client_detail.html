@@ -106,9 +106,11 @@
                 </form>
             {% endif %}
 
-            {# Phase 7.7.4 — email the Stripe Customer Portal magic link.
-               Lets the client self-serve card update / cancel without
-               you having to involve Stripe support. #}
+            {% comment %}
+                Phase 7.7.4 — email the Stripe Customer Portal magic link.
+                Lets the client self-serve card update / cancel without
+                you having to involve Stripe support.
+            {% endcomment %}
             {% if client.email %}
                 <form method="post" action="{% url 'subscription-email-portal' subscription.id %}"
                       onsubmit="return confirm('Email a Stripe portal link to {{ client.email|escapejs }}?\n\nThe link is single-use, expires in 24 hours, and lets {{ client.username|escapejs }} update their card, view invoices, or cancel.');"
