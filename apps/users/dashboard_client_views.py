@@ -533,7 +533,20 @@ def dashboard_unassign_nutrition_plan(request, client_id):
 def dashboard_delete_client(request, client_id):
     """
     Delete a trainer-owned client account.
-    Client-specific workout/nutrition plans linked to that client will also be removed automatically.
+
+    Order of operations matters:
+      1. Cancel any active Stripe subscriptions on the trainer's connected
+         account so Stripe stops billing the customer next cycle.
+      2. CASCADE-delete the User row, which wipes:
+           • ClientProfile (OneToOne)
+           • client-specific workout/nutrition plan copies
+           • CheckInAnswer rows + WorkoutSession history
+           • ClientSubscription rows (FK to user, on_delete=CASCADE)
+
+    Stripe cancellation is best-effort — if Stripe rejects (already
+    cancelled, network blip, missing keys) we log it but still delete
+    locally so the trainer isn't stuck with a ghost client they can't
+    remove.
     """
     if not trainer_required(request):
         return redirect("landing-page")
@@ -548,8 +561,61 @@ def dashboard_delete_client(request, client_id):
     if request.method != "POST":
         return redirect("trainer-client-detail", client_id=client.id)
 
+    # ---- Step 1: cancel active Stripe subs (best-effort) -----------
+    # Imported lazily so deleting clients still works on a backend
+    # that's never had Stripe configured.
+    from apps.payments.models import ClientSubscription
+    from apps.payments.stripe_client import get_stripe, is_configured
+
+    trainer_profile = request.user.trainer_profile
+    cancelled_count = 0
+    cancel_errors = []
+
+    open_subs = ClientSubscription.objects.filter(
+        client=client,
+        trainer=trainer_profile,
+    ).exclude(status=ClientSubscription.STATUS_CANCELED)
+
+    if open_subs.exists() and is_configured() and trainer_profile.stripe_user_id:
+        stripe = get_stripe()
+        for sub in open_subs:
+            if not sub.stripe_subscription_id:
+                continue
+            try:
+                # Subscription lives on the trainer's CONNECTED account
+                # — must pass stripe_account so we hit the right scope.
+                stripe.Subscription.delete(
+                    sub.stripe_subscription_id,
+                    stripe_account=trainer_profile.stripe_user_id,
+                )
+                cancelled_count += 1
+            except Exception as exc:        # noqa: BLE001 — surface verbatim
+                cancel_errors.append(f"{sub.stripe_subscription_id}: {exc}")
+                print(f"[delete_client] Stripe cancel warning: {exc}")
+
+    # ---- Step 2: hard delete the user (CASCADE handles the rest) ----
     client_username = client.username
     client.delete()
 
-    messages.success(request, f'Client "{client_username}" deleted successfully.')
+    # ---- Step 3: tell the trainer what happened --------------------
+    if cancelled_count:
+        messages.success(
+            request,
+            f'Client "{client_username}" deleted. '
+            f'{cancelled_count} active Stripe subscription'
+            f'{"s" if cancelled_count != 1 else ""} cancelled.'
+        )
+    else:
+        messages.success(request, f'Client "{client_username}" deleted successfully.')
+
+    if cancel_errors:
+        # Surface non-fatal Stripe errors so the trainer can chase them
+        # manually (e.g. revoke from Stripe dashboard if anything stuck).
+        messages.warning(
+            request,
+            f'Note: {len(cancel_errors)} Stripe cancellation'
+            f'{"s" if len(cancel_errors) != 1 else ""} reported errors. '
+            f'Check the Stripe dashboard if a subscription is still active.',
+        )
+
     return redirect("trainer-dashboard")

@@ -13,7 +13,7 @@
 <div class="client-detail-bar">
     <a href="{% url 'trainer-dashboard' %}" class="client-detail-back">← Roster</a>
     <form method="post" action="{% url 'dashboard-delete-client' client.id %}"
-          onsubmit="return confirm('Delete this client? This cannot be undone.');"
+          onsubmit="return confirm('Delete {{ client.username|escapejs }}?\n\nThis will:\n  • Cancel any active Stripe subscription (no further billing)\n  • Wipe their workout + nutrition assignments\n  • Wipe their check-in answers + photos\n\nThis cannot be undone.');"
           class="client-detail-delete">
         {% csrf_token %}
         <button type="submit" class="btn btn-ghost btn-sm">Delete client</button>
