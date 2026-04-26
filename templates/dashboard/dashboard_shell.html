@@ -14,7 +14,20 @@
 
     <header class="dashboard-topnav">
         <a href="{% url 'trainer-hub-page' %}" class="dashboard-brand" title="Back to GymFlow Hub">
-            <span class="dashboard-brand-mark">G</span>
+            <span class="dashboard-brand-mark" aria-hidden="true">
+                {# Lime G-mark — same glyph as the iOS app icon + favicon. #}
+                <svg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" focusable="false">
+                    <defs>
+                        <mask id="dash-g-mask">
+                            <rect width="180" height="180" fill="white"/>
+                            <circle cx="90" cy="90" r="22" fill="black"/>
+                            <rect x="90" y="78" width="56" height="14" fill="black"/>
+                        </mask>
+                    </defs>
+                    <circle cx="90" cy="90" r="56" fill="currentColor" mask="url(#dash-g-mask)"/>
+                    <rect x="82" y="92" width="50" height="14" fill="currentColor"/>
+                </svg>
+            </span>
             <span>GymFlow</span>
         </a>
 

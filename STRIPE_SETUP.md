@@ -153,3 +153,70 @@ Render will auto-redeploy with the new env. Done.
 
 If the webhook fails, the Stripe webhook log (back in Stripe → Webhooks)
 shows the response body — that's where any errors will surface.
+
+---
+
+## Domain swap — gymflow.coach (Phase 7.7.2)
+
+Once Cloudflare DNS is live and Render has issued a TLS cert for
+`https://gymflow.coach`, you need to repoint Stripe at the new domain
+or OAuth + webhooks will keep firing at the Render URL.
+
+### 13. Add the new redirect URI in Stripe Connect
+
+Stripe → Settings → **Connect Settings** → Redirect URIs → **Add URI**:
+
+```
+https://gymflow.coach/payments/oauth/callback/
+```
+
+Keep the old `https://gymflow-api-wxm9.onrender.com/payments/oauth/callback/`
+URI in the list for now — it doesn't hurt and gives you a fallback if
+DNS goes sideways.
+
+### 14. Tell Render to redirect to the new URL
+
+Render dashboard → gymflow-api → Environment → add (or update):
+
+| Key                         | Value                                                |
+|-----------------------------|------------------------------------------------------|
+| `STRIPE_OAUTH_REDIRECT_URI` | `https://gymflow.coach/payments/oauth/callback/`     |
+
+Save → Render redeploys.
+
+### 15. Reconnect Stripe from the dashboard
+
+The old OAuth grant has the Render URL baked in. After step 14:
+1. Trainer dashboard → Settings → Stripe Connect → **Disconnect**.
+2. Click **Connect with Stripe →**.
+3. Complete the OAuth dance — you'll land back on `gymflow.coach/dashboard/settings/`.
+4. Confirm the badge is back to "Connected" with the same `acct_…` ID.
+
+### 16. Add the webhook destination on the new domain
+
+Stripe → Developers → **Webhooks** → **Add destination**:
+
+- **Endpoint URL:** `https://gymflow.coach/payments/webhooks/stripe/`
+- **Listen to events on:** Connected accounts
+- Same five events:
+  - `checkout.session.completed`
+  - `customer.subscription.created`
+  - `customer.subscription.updated`
+  - `customer.subscription.deleted`
+  - `invoice.payment_failed`
+
+Reveal the new signing secret → copy `whsec_…` → update `STRIPE_WEBHOOK_SECRET`
+on Render. (You can delete the old Render-URL destination once the
+new one is verified working.)
+
+### 17. Update the iOS app
+
+`GymFlow/Services/APIConfig.swift` → set `localOverride` to nil (or to
+`"https://gymflow.coach"`). Rebuild & install on your phone.
+
+### 18. Smoke test the full flow
+
+1. Open `https://gymflow.coach/p/<your-slug>/` in a browser.
+2. Subscribe → pay with `4242 4242 4242 4242`.
+3. Render logs should show the webhook hit on the new path.
+4. iOS app should still log in and load Home.

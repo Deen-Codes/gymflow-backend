@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <title>GymFlow — G Mark (Lime)</title>
+  <defs>
+    <mask id="g-mask">
+      <rect width="180" height="180" fill="white"/>
+      <circle cx="90" cy="90" r="22" fill="black"/>
+      <rect x="90" y="78" width="56" height="14" fill="black"/>
+    </mask>
+  </defs>
+  <circle cx="90" cy="90" r="56" fill="#CDFF00" mask="url(#g-mask)"/>
+  <rect x="82" y="92" width="50" height="14" fill="#CDFF00"/>
+</svg>
