@@ -46,14 +46,34 @@ from rest_framework.response import Response
 from apps.users.models import User
 
 
+def _item_payload(item):
+    """One food item inside a meal — what the user toggles when ticking."""
+    return {
+        "id":       item.id,
+        "name":     item.food_name,
+        "grams":    item.grams,
+        "calories": round(item.calories or 0),
+        "protein":  round(item.protein  or 0),
+        "carbs":    round(item.carbs    or 0),
+        "fats":     round(item.fats     or 0),
+    }
+
+
 def _meal_payload(meal):
-    """Build the per-meal dict from a NutritionMeal + its items."""
+    """Build the per-meal dict from a NutritionMeal + its items.
+
+    `items` is included so the iOS meal-detail sheet can render
+    the breakdown without a second API round-trip. The aggregated
+    totals at the top level let the Home/Nutrition cards stay fast
+    without iterating.
+    """
     totals = meal.items.aggregate(
         cal=Sum("calories"),
         pro=Sum("protein"),
         car=Sum("carbs"),
         fat=Sum("fats"),
     )
+    item_payloads = [_item_payload(i) for i in meal.items.all()]
     return {
         "id":         meal.id,
         "title":      meal.title,
@@ -61,7 +81,8 @@ def _meal_payload(meal):
         "protein":    round(totals["pro"] or 0),
         "carbs":      round(totals["car"] or 0),
         "fats":       round(totals["fat"] or 0),
-        "item_count": meal.items.count(),
+        "item_count": len(item_payloads),
+        "items":      item_payloads,
     }
 
 
