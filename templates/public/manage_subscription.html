@@ -59,6 +59,12 @@
         <a href="/p/{{ trainer.slug }}/" class="pt-cta-secondary pt-thanks-back" style="margin-top:18px;">
             ← Back to {{ trainer.business_name|default:trainer.user.username }}'s page
         </a>
+
+        <p class="pt-thanks-creds-note" style="margin-top:18px;font-size:11px;opacity:0.7;">
+            <a href="{% url 'legal-privacy' %}" style="color:inherit;">Privacy</a>
+            ·
+            <a href="{% url 'legal-terms' %}" style="color:inherit;">Terms</a>
+        </p>
     </div>
 </div>
 

@@ -1,8 +1,19 @@
 from django.contrib import admin
 from django.urls import include, path
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+
+    # Phase #21 — legal pages. Static templates, no DB. Linked from
+    # public-site footer + Stripe Customer Portal "Public business
+    # information" so they're discoverable from anywhere a user pays.
+    path("legal/privacy/",
+         TemplateView.as_view(template_name="legal/privacy.html"),
+         name="legal-privacy"),
+    path("legal/terms/",
+         TemplateView.as_view(template_name="legal/terms.html"),
+         name="legal-terms"),
 
     # Public PT landing pages — Phase 7. Mounted at /p/<slug>/ for now;
     # subdomain routing (jared.gymflow.com) is Phase 7.5.

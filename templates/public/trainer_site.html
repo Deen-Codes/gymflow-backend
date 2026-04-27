@@ -191,7 +191,13 @@
                     {% if s.content.instagram %}<span>· {{ s.content.instagram }}</span>{% endif %}
                     {% if s.content.twitter %}<span>· {{ s.content.twitter }}</span>{% endif %}
                 </div>
-                <div class="pt-footer-credit">Powered by <strong>GymFlow</strong></div>
+                <div class="pt-footer-credit">
+                    Powered by <strong>GymFlow</strong>
+                    ·
+                    <a href="{% url 'legal-privacy' %}" style="color:inherit;opacity:0.7;">Privacy</a>
+                    ·
+                    <a href="{% url 'legal-terms' %}" style="color:inherit;opacity:0.7;">Terms</a>
+                </div>
             </div>
         {% endif %}
 

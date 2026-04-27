@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_head %}
+    <style>
+        .legal-wrap {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 64px 24px 96px;
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .legal-wrap h1 {
+            font-size: 38px;
+            font-weight: 800;
+            letter-spacing: -0.01em;
+            margin: 0 0 8px;
+        }
+        .legal-wrap .legal-eyebrow {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 6px;
+        }
+        .legal-wrap .legal-meta {
+            color: var(--text-faint);
+            font-size: 13px;
+            margin: 0 0 36px;
+        }
+        .legal-wrap h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin: 36px 0 12px;
+            color: var(--text);
+        }
+        .legal-wrap h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin: 22px 0 8px;
+            color: var(--text);
+        }
+        .legal-wrap p,
+        .legal-wrap li {
+            color: var(--text-soft);
+            font-size: 15px;
+        }
+        .legal-wrap ul {
+            padding-left: 22px;
+            margin: 8px 0 16px;
+        }
+        .legal-wrap a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+        .legal-wrap strong { color: var(--text); }
+        .legal-wrap hr {
+            border: 0;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.08);
+            margin: 36px 0;
+        }
+        .legal-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-faint);
+            font-size: 13px;
+            text-decoration: none;
+            margin-bottom: 24px;
+        }
+        .legal-back:hover { color: var(--text); }
+    </style>
+{% endblock %}
+
+{% block content %}
+<div class="legal-wrap">
+    <a href="/" class="legal-back">← Back to GymFlow</a>
+    {% block legal_content %}{% endblock %}
+
+    <hr>
+    <p style="font-size:12px;color:var(--text-faint);">
+        Questions? Email <a href="mailto:hello@gymflow.coach">hello@gymflow.coach</a>.
+        See also our <a href="{% url 'legal-privacy' %}">Privacy Policy</a>
+        and <a href="{% url 'legal-terms' %}">Terms of Service</a>.
+    </p>
+</div>
+{% endblock %}

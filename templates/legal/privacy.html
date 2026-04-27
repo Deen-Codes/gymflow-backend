@@ -1,0 +1,142 @@
+{% extends "legal/_legal_layout.html" %}
+
+{% block title %}Privacy Policy | GymFlow{% endblock %}
+
+{% block legal_content %}
+<div class="legal-eyebrow">Legal</div>
+<h1>Privacy Policy</h1>
+<p class="legal-meta">Effective from 27 April 2026 · gymflow.coach</p>
+
+<p>
+    GymFlow ("we", "our", or "us") is a coaching platform that lets personal
+    trainers manage their clients' workouts, nutrition, and check-ins. This
+    policy explains what personal data we collect, why we collect it, and what
+    rights you have over it. We comply with the UK General Data Protection
+    Regulation (UK GDPR) and the Data Protection Act 2018.
+</p>
+
+<h2>1. Who we are</h2>
+<p>
+    GymFlow is operated from the United Kingdom. The data controller for the
+    information described in this policy is the GymFlow team. You can contact
+    us at <a href="mailto:hello@gymflow.coach">hello@gymflow.coach</a>.
+</p>
+
+<h2>2. What we collect</h2>
+
+<h3>Account information</h3>
+<ul>
+    <li>Name, email address, username, and password (hashed — we never store the plaintext).</li>
+    <li>Your role on the platform (trainer or client) and the trainer–client relationship between users.</li>
+    <li>Optional: profile photo, business name, bio, social handles (trainers only).</li>
+</ul>
+
+<h3>Coaching data</h3>
+<ul>
+    <li>Workout plans, nutrition plans, and check-in forms assigned by trainers.</li>
+    <li>Logged workout sessions, weight measurements, meal consumption, and check-in answers submitted by clients.</li>
+    <li>Progress photos, if you choose to upload them as part of a check-in.</li>
+</ul>
+
+<h3>Payment information</h3>
+<p>
+    We use <strong>Stripe</strong> as our payment processor. Card details are
+    entered directly into Stripe's hosted checkout — they never reach our
+    servers and we cannot see them. We store only the Stripe customer ID,
+    subscription ID, status, and billing dates required to manage your
+    subscription. See <a href="https://stripe.com/privacy" target="_blank" rel="noopener">Stripe's privacy policy</a>.
+</p>
+
+<h3>Email</h3>
+<p>
+    We use <strong>Resend</strong> to deliver transactional emails (magic
+    links, subscription notifications, password resets). Resend processes the
+    email address and message content needed to deliver these messages.
+</p>
+
+<h3>Technical data</h3>
+<ul>
+    <li>IP address, device type, browser, OS — used for security and to debug errors.</li>
+    <li>Session cookies and CSRF cookies required for the dashboard to function.</li>
+</ul>
+
+<h2>3. Why we use it</h2>
+<ul>
+    <li><strong>Deliver the coaching service</strong> — show your trainer the workouts you've logged, deliver plans they've assigned, and route subscription payments to them.</li>
+    <li><strong>Account security</strong> — verify logins, prevent fraud, send password resets.</li>
+    <li><strong>Service operation</strong> — debug errors, prevent abuse, maintain backups.</li>
+    <li><strong>Notifications</strong> — let trainers know when a client subscribes, cancels, or has a failed payment.</li>
+</ul>
+
+<h2>4. Who we share it with</h2>
+<ul>
+    <li><strong>Your trainer</strong> — your check-ins, weight, photos, and workout logs are visible to the trainer you signed up with. That's the entire point of the service.</li>
+    <li><strong>Stripe</strong> — to process payments and manage your subscription.</li>
+    <li><strong>Resend</strong> — to deliver emails.</li>
+    <li><strong>Render</strong> — our hosting provider (the data lives on Render's UK/EU infrastructure).</li>
+    <li><strong>Cloudflare</strong> — DNS, edge caching, and email routing.</li>
+    <li><strong>Law enforcement</strong> — only when legally required.</li>
+</ul>
+<p>We do not sell your data. We don't share it with advertisers.</p>
+
+<h2>5. How long we keep it</h2>
+<p>
+    We keep your data for as long as your account is active. If you delete
+    your account (or your trainer deletes you), we wipe the associated
+    workout/nutrition/check-in data within 30 days. Subscription billing
+    records may be retained longer as required by UK tax law (typically 6
+    years).
+</p>
+
+<h2>6. Your rights</h2>
+<p>Under UK GDPR you have the right to:</p>
+<ul>
+    <li><strong>Access</strong> — get a copy of the personal data we hold about you.</li>
+    <li><strong>Rectify</strong> — correct any inaccurate data.</li>
+    <li><strong>Erase</strong> — request that we delete your data ("right to be forgotten").</li>
+    <li><strong>Object</strong> — to specific uses of your data.</li>
+    <li><strong>Portability</strong> — receive your data in a machine-readable format.</li>
+    <li><strong>Withdraw consent</strong> — at any time, where consent is the legal basis.</li>
+    <li><strong>Complain</strong> — to the UK Information Commissioner's Office (<a href="https://ico.org.uk/" target="_blank" rel="noopener">ico.org.uk</a>) if you believe we've mishandled your data.</li>
+</ul>
+<p>
+    To exercise any of these, email
+    <a href="mailto:hello@gymflow.coach">hello@gymflow.coach</a>.
+    We'll respond within one month.
+</p>
+
+<h2>7. Cookies</h2>
+<p>
+    We use session cookies (to keep you logged in) and CSRF cookies (to
+    protect form submissions from cross-site forgery). We don't use third-party
+    advertising or analytics cookies.
+</p>
+
+<h2>8. International transfers</h2>
+<p>
+    Some of our processors (Stripe, Resend, Cloudflare) operate globally and
+    may transfer data outside the UK/EEA. We rely on Standard Contractual
+    Clauses or equivalent safeguards approved under UK GDPR to protect those
+    transfers.
+</p>
+
+<h2>9. Children</h2>
+<p>
+    GymFlow is not intended for users under 16. We do not knowingly collect
+    data from children. If you believe a child has signed up, contact us and
+    we'll delete the account.
+</p>
+
+<h2>10. Changes to this policy</h2>
+<p>
+    If we make material changes, we'll update the "effective from" date at
+    the top of this page and notify active users by email at least 14 days
+    before the change takes effect.
+</p>
+
+<h2>11. Contact</h2>
+<p>
+    Questions about this policy or about your data?
+    Email <a href="mailto:hello@gymflow.coach">hello@gymflow.coach</a>.
+</p>
+{% endblock %}
