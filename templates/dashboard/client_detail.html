@@ -123,6 +123,97 @@
     {% endif %}
 </section>
 
+{# ====== Phase C.2 / #37 — Recent activity feed ====== #}
+<section class="client-activity glass">
+    <header class="client-activity-head">
+        <div class="kicker" style="color:var(--accent);">◷ Activity · last {{ activity_window_days }} days</div>
+        <h2 class="client-activity-title">What {{ client.username }} has actually been doing</h2>
+        <p class="client-activity-sub">
+            Logged workouts, ticked meals, and submitted check-ins — pulled live from the iOS app.
+        </p>
+    </header>
+
+    <div class="client-activity-grid">
+
+        {# ---- Workouts ---- #}
+        <div class="client-activity-col">
+            <div class="kicker">⌁ Workouts logged</div>
+            {% if activity_workouts %}
+                <ul class="client-activity-list">
+                    {% for row in activity_workouts %}
+                        <li class="client-activity-row">
+                            <div class="client-activity-row-main">
+                                <strong>{{ row.day_name }}</strong>
+                                {% if row.plan_name %}
+                                    <span class="client-activity-meta">· {{ row.plan_name }}</span>
+                                {% endif %}
+                            </div>
+                            <div class="client-activity-row-sub">
+                                {{ row.completed_at|date:"D j M · H:i" }}
+                                · {{ row.set_count }} set{{ row.set_count|pluralize }}
+                                {% if row.duration_min %}· {{ row.duration_min }} min{% endif %}
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <div class="client-activity-empty">No workouts logged in the last {{ activity_window_days }} days.</div>
+            {% endif %}
+        </div>
+
+        {# ---- Meals ---- #}
+        <div class="client-activity-col">
+            <div class="kicker">◌ Meal compliance</div>
+            {% if activity_meal_days %}
+                <ul class="client-activity-list">
+                    {% for day in activity_meal_days %}
+                        <li class="client-activity-row">
+                            <div class="client-activity-row-main">
+                                <strong>{{ day.date|date:"D j M" }}</strong>
+                            </div>
+                            <div class="client-activity-row-sub">
+                                {% for m in day.meals %}
+                                    {{ m.meal_title }} ({{ m.ticked_items }}/{{ m.total_items }})
+                                    {% if not forloop.last %}· {% endif %}
+                                {% endfor %}
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <div class="client-activity-empty">No meals ticked in the last {{ activity_window_days }} days.</div>
+            {% endif %}
+        </div>
+
+        {# ---- Check-ins ---- #}
+        <div class="client-activity-col">
+            <div class="kicker">☑ Check-ins submitted</div>
+            {% if activity_checkins %}
+                <ul class="client-activity-list">
+                    {% for row in activity_checkins %}
+                        <li class="client-activity-row">
+                            <div class="client-activity-row-main">
+                                <strong>{{ row.form_name }}</strong>
+                                <span class="client-activity-meta">· {{ row.form_type|title }}</span>
+                            </div>
+                            <div class="client-activity-row-sub">
+                                {% if row.is_submitted %}
+                                    Submitted {{ row.submitted_at|date:"D j M · H:i" }}
+                                {% else %}
+                                    Started {{ row.started_at|date:"D j M · H:i" }} · still in progress
+                                {% endif %}
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <div class="client-activity-empty">No check-ins submitted in the last {{ activity_window_days }} days.</div>
+            {% endif %}
+        </div>
+
+    </div>
+</section>
+
 <!-- 2x2 grid: Workout · Nutrition / Progress · Check-Ins -->
 <section class="client-grid">
 

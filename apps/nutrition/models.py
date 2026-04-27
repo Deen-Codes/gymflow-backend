@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.db import models
+from django.utils import timezone
 
 
 class NutritionPlan(models.Model):
@@ -170,3 +171,87 @@ class NutritionMealItem(models.Model):
 
     def __str__(self):
         return f"{self.meal.title} - {self.food_name}"
+
+
+# ============================================================
+# Phase C.2 — Server-side meal consumption tracking
+#
+# Replaces the iOS-local UserDefaults `MealConsumptionStore`.
+# Two granularities supported by a single table:
+#
+#   • Item-level tick:  meal_item points at a specific
+#     NutritionMealItem. Used when the client checks individual
+#     foods inside a meal ("ate the chicken but not the rice").
+#
+#   • Meal-level tick:  meal_item is null. Used when the client
+#     marks the whole meal as eaten via the meal-card tick.
+#
+# Why one table and not two:
+#   - Same query shape ("what did this client tick today?")
+#   - Trainer dashboard renders a unified feed; storing both as
+#     rows in one table makes the SQL trivial.
+#   - Conditional UniqueConstraint enforces "no double-tick of the
+#     same item-on-day" without forbidding the meal-level row from
+#     coexisting with item-level rows of the same meal (which is
+#     a legit "I ticked individual items, then also said 'meal done'"
+#     state — though we'd typically dedupe in the iOS layer).
+# ============================================================
+class NutritionMealConsumption(models.Model):
+    client = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name="meal_consumptions",
+    )
+    meal = models.ForeignKey(
+        NutritionMeal,
+        on_delete=models.CASCADE,
+        related_name="consumptions",
+    )
+    # null  → meal-level tick (whole meal marked as eaten)
+    # bound → item-level tick (specific food inside the meal)
+    meal_item = models.ForeignKey(
+        NutritionMealItem,
+        on_delete=models.CASCADE,
+        related_name="consumptions",
+        null=True,
+        blank=True,
+    )
+    # The calendar day the meal was consumed on. Stored as a Date
+    # (not a timestamp) so "today" is unambiguous regardless of which
+    # timezone the client is in or what hour they ticked.
+    consumed_on = models.DateField(default=timezone.now)
+    # When the row was actually written — useful for the trainer's
+    # activity feed ("Sarah ticked breakfast at 7:42am").
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        constraints = [
+            # Don't allow the same item to be ticked twice on the
+            # same day. iOS will get a 200 + the existing row when
+            # POSTing a duplicate (idempotency on the server side
+            # means the iOS client doesn't have to track which ticks
+            # have already been synced).
+            models.UniqueConstraint(
+                fields=["client", "meal_item", "consumed_on"],
+                condition=models.Q(meal_item__isnull=False),
+                name="unique_item_consumption_per_day",
+            ),
+            # And the same meal can only be meal-level ticked once.
+            models.UniqueConstraint(
+                fields=["client", "meal", "consumed_on"],
+                condition=models.Q(meal_item__isnull=True),
+                name="unique_meal_consumption_per_day",
+            ),
+        ]
+        indexes = [
+            # "What did this client log over the last N days?" — the
+            # core query for both the iOS sync endpoint AND the
+            # trainer's activity feed on the client detail page.
+            models.Index(fields=["client", "-consumed_on"]),
+        ]
+        ordering = ["-consumed_on", "-created_at"]
+
+    def __str__(self):
+        if self.meal_item:
+            return f"{self.client.username} ate {self.meal_item.food_name} on {self.consumed_on}"
+        return f"{self.client.username} completed {self.meal.title} on {self.consumed_on}"

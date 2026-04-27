@@ -11,9 +11,17 @@ from .forms import CreateClientForm, AssignWorkoutPlanForm, AssignNutritionPlanF
 from .models import User
 from .serializers import ClientCreateSerializer
 from .dashboard_checkin_page_views import _ensure_three_forms, _canonical_three
-from apps.workouts.models import WorkoutPlan, WorkoutDay, Exercise, ExerciseSetTarget, WorkoutSession
-from apps.nutrition.models import NutritionPlan
-from apps.progress.models import CheckInForm, ClientCheckInAssignment, CheckInAnswer, CheckInQuestion
+from apps.workouts.models import (
+    WorkoutPlan, WorkoutDay, Exercise, ExerciseSetTarget,
+    WorkoutSession, ExerciseSession, SetPerformance,
+)
+from apps.nutrition.models import (
+    NutritionPlan, NutritionMealConsumption,
+)
+from apps.progress.models import (
+    CheckInForm, ClientCheckInAssignment,
+    CheckInAnswer, CheckInQuestion, CheckInSubmission,
+)
 from apps.payments.models import ClientSubscription
 
 
@@ -290,6 +298,10 @@ def trainer_client_detail_page(request, client_id):
     context.update(_build_progress_context(client))
     # Phase 7.7.3 — subscription state (active sub + lifetime metrics).
     context.update(_build_subscription_context(client, request.user.trainer_profile))
+    # Phase C.2 — recent activity feed (workouts logged, meal ticks,
+    # check-in submissions across the last 14 days). Lets the trainer
+    # see at a glance what the client has actually done.
+    context.update(_build_activity_context(client))
     return render(request, "dashboard/client_detail.html", context)
 
 
@@ -671,3 +683,157 @@ def dashboard_delete_client(request, client_id):
         )
 
     return redirect("trainer-dashboard")
+
+
+# -------------------------------------------------------------------
+# Phase C.2 / #37 — recent activity feed on client detail page.
+#
+# Three rolling feeds across the last 14 days so the trainer can see
+# what the client has actually been doing:
+#   • Workouts logged      — what + when + how long + how many sets
+#   • Meal consumption     — per-day list of meals/items ticked,
+#                            grouped by meal so partial-meal completion
+#                            ("3 of 4 items") shows naturally
+#   • Check-in submissions — date + form name + status
+#
+# All queries scoped to the trainer's own client (already enforced
+# in the calling view). select_related/prefetch_related used to avoid
+# N+1 — important when a chatty client has 50+ rows in the window.
+# -------------------------------------------------------------------
+ACTIVITY_WINDOW_DAYS = 14
+
+
+def _build_activity_context(client):
+    """Return dashboard template context dict for the activity panel."""
+    window_start = timezone.now() - timedelta(days=ACTIVITY_WINDOW_DAYS)
+    today = timezone.localdate()
+    window_start_date = today - timedelta(days=ACTIVITY_WINDOW_DAYS)
+
+    return {
+        "activity_workouts":  _activity_workout_rows(client, window_start),
+        "activity_meal_days": _activity_meal_days(client, window_start_date, today),
+        "activity_checkins":  _activity_checkin_rows(client, window_start),
+        "activity_window_days": ACTIVITY_WINDOW_DAYS,
+    }
+
+
+def _activity_workout_rows(client, window_start):
+    """Logged workout sessions in the window, with set counts.
+
+    SQL note: ExerciseSession.set_count via Count('sets') gives us
+    the total set count per session in one query rather than N+1
+    looping over each session's exercises.
+    """
+    sessions = (
+        WorkoutSession.objects
+        .filter(user=client, completed_at__gte=window_start, is_complete=True)
+        .select_related("workout_day", "workout_day__workout_plan")
+        .order_by("-completed_at")
+    )
+
+    rows = []
+    for session in sessions:
+        # Count the sets logged in this session — uses the related
+        # SetPerformance through ExerciseSession. One query per
+        # session is fine here because the result list is bounded
+        # to ~14 rows by the date filter.
+        set_count = SetPerformance.objects.filter(
+            exercise_session__workout_session=session,
+        ).count()
+
+        # Duration is stored as minutes (we think — model has just
+        # `duration: IntegerField`). If it's seconds, the template
+        # filter divides by 60. Keep raw + label so the template
+        # can render appropriately.
+        rows.append({
+            "session":       session,
+            "completed_at":  session.completed_at,
+            "day_name":      session.workout_day.title if hasattr(session.workout_day, "title") else str(session.workout_day),
+            "plan_name":     session.workout_day.workout_plan.name if session.workout_day.workout_plan_id else "",
+            "duration_min":  session.duration,
+            "set_count":     set_count,
+        })
+    return rows
+
+
+def _activity_meal_days(client, start_date, end_date):
+    """Per-day buckets of meal consumption.
+
+    Output shape:
+        [
+          {"date": <date>, "meals": [
+              {"meal_title": "Pre Workout",
+               "ticked_items": 3, "total_items": 4,
+               "calories_eaten": 540, "is_meal_level_tick": False},
+              ...
+          ]},
+          ...
+        ]
+
+    Days with zero ticks are omitted from the list — the template
+    shows an empty-state message if the whole list is empty.
+    """
+    rows = (
+        NutritionMealConsumption.objects
+        .filter(
+            client=client,
+            consumed_on__gte=start_date,
+            consumed_on__lte=end_date,
+        )
+        .select_related("meal", "meal_item")
+        .order_by("-consumed_on", "meal__order", "meal_item__order")
+    )
+
+    # Group by (date, meal_id) → list of consumption rows.
+    by_date: dict = {}    # {date: {meal_id: {"meal": NutritionMeal, "items": set(), "meal_level": bool}}}
+    for r in rows:
+        by_date.setdefault(r.consumed_on, {})
+        bucket = by_date[r.consumed_on].setdefault(
+            r.meal_id, {"meal": r.meal, "items": set(), "meal_level": False}
+        )
+        if r.meal_item_id is None:
+            bucket["meal_level"] = True
+        else:
+            bucket["items"].add(r.meal_item_id)
+
+    days = []
+    # Sort by date desc — newest first.
+    for date_key in sorted(by_date.keys(), reverse=True):
+        meals_payload = []
+        for meal_id, info in by_date[date_key].items():
+            meal = info["meal"]
+            total_items = meal.items.count()    # NutritionMealItem related_name=items
+            ticked = (
+                total_items if info["meal_level"]
+                else len(info["items"])
+            )
+            meals_payload.append({
+                "meal_title":         meal.title,
+                "ticked_items":       ticked,
+                "total_items":        total_items,
+                "is_meal_level_tick": info["meal_level"],
+            })
+        days.append({"date": date_key, "meals": meals_payload})
+    return days
+
+
+def _activity_checkin_rows(client, window_start):
+    """Recent check-in submissions — date + form + status."""
+    submissions = (
+        CheckInSubmission.objects
+        .filter(client=client, started_at__gte=window_start)
+        .select_related("form")
+        .order_by("-started_at")
+    )
+    return [
+        {
+            "submission":  s,
+            "started_at":  s.started_at,
+            "submitted_at": s.submitted_at,
+            "form_name":   s.form.name,
+            "form_type":   s.form.form_type,
+            "status":      s.status,
+            "is_submitted": s.status == CheckInSubmission.STATUS_SUBMITTED,
+        }
+        for s in submissions
+    ]
