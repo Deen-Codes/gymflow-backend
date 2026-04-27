@@ -103,6 +103,33 @@ _STATUS_PRIORITY = {
     "all_caught_up": 2,
 }
 
+# Within the same status (specifically "due_today"), prefer assignments
+# in this order. Onboarding is blocking, so it wins. Routine cadences
+# (weekly/biweekly/monthly) are persistent — a missed weekly should
+# still be surfaced for catch-up — so they outrank daily, which is
+# fire-and-forget (a missed daily just rolls into tomorrow's). Once the
+# routine is submitted it drops out of contention and daily takes over.
+_TYPE_PRIORITY = {
+    "onboarding": 0,
+    "routine":    1,
+    "daily":      2,
+}
+
+
+def _days_overdue(due_at, now):
+    """Whole calendar days between `due_at` and `now`, never negative.
+
+    Used so the iOS card can switch to "overdue, catch up" copy when a
+    routine cadence has slipped past its due date. We measure in local-
+    calendar days (not raw timedelta) so a routine that was due "yesterday
+    at 11pm" reads as "1 day overdue" the moment the clock crosses
+    midnight, rather than waiting another 23 hours.
+    """
+    if due_at is None:
+        return 0
+    delta = (timezone.localtime(now).date() - timezone.localtime(due_at).date()).days
+    return max(delta, 0)
+
 
 @csrf_exempt
 @api_view(["GET"])
@@ -140,6 +167,17 @@ def next_checkin_for_me(request):
         prio_old = _STATUS_PRIORITY[best_status]
         if prio_new < prio_old:
             best_assignment, best_status, best_days, best_due_at = assignment, status, days, due_at
+        elif prio_new == prio_old and status == "due_today":
+            # Both due right now — fall back to form-type priority so a
+            # missed weekly outranks today's daily (the daily can wait
+            # until the persistent routine is caught up).
+            new_type = _TYPE_PRIORITY.get(assignment.form.form_type, 9)
+            old_type = _TYPE_PRIORITY.get(best_assignment.form.form_type, 9)
+            if new_type < old_type:
+                best_assignment, best_status, best_days, best_due_at = assignment, status, days, due_at
+            elif new_type == old_type and due_at is not None and (best_due_at is None or due_at < best_due_at):
+                # Same type → older due_at wins (longer overdue first).
+                best_assignment, best_status, best_days, best_due_at = assignment, status, days, due_at
         elif prio_new == prio_old and status == "due_in_days":
             # Earliest due wins.
             if days is not None and (best_days is None or days < best_days):
@@ -156,6 +194,52 @@ def next_checkin_for_me(request):
         payload["days_until_due"] = best_days
     if best_due_at is not None:
         payload["next_due_at"] = best_due_at.isoformat()
+    # Overdue counter — only meaningful when the assignment is a routine
+    # past its due date. Daily/onboarding don't have a "days late" notion
+    # since they're either submitted or not. iOS uses this to flip the
+    # card into "Weekly check-in overdue" copy.
+    if (
+        best_status == "due_today"
+        and best_assignment.form.form_type == CheckInForm.ROUTINE
+        and best_due_at is not None
+    ):
+        payload["days_overdue"] = _days_overdue(best_due_at, now)
+
+    # New: a list of EVERY currently-due assignment so the iOS Home
+    # screen can render one card per due check-in. Previously the
+    # endpoint only surfaced the highest-priority one, which meant
+    # a daily check-in always hid a same-day weekly. Older iOS builds
+    # still rely on the top-level fields above and ignore this array.
+    due_now = []
+    for assignment in assignments:
+        status, days, due_at = _evaluate_assignment(assignment, now)
+        if status != "due_today":
+            continue
+        item = {
+            "form_id":   assignment.form.id,
+            "form_name": assignment.form.name,
+            "form_type": assignment.form.form_type,
+            "cadence":   assignment.cadence,
+            "next_due_at": due_at.isoformat() if due_at else None,
+        }
+        # Only routines have a meaningful "days overdue" — daily forms
+        # are evaluated by has-it-been-submitted-today, not by a stored
+        # due_at, so reporting overdue days for them would be noise.
+        if assignment.form.form_type == CheckInForm.ROUTINE and due_at is not None:
+            item["days_overdue"] = _days_overdue(due_at, now)
+        due_now.append(item)
+    # Same priority used by the single-best picker — onboarding blocks
+    # everything, then routines (persistent — must be caught up), then
+    # daily (fire-and-forget). Older overdue routines surface first
+    # within the routine bucket.
+    due_now.sort(key=lambda item: (
+        _TYPE_PRIORITY.get(item["form_type"], 9),
+        # Negative `days_overdue` so larger overdue counts sort first;
+        # `next_due_at` only used as a final stable tiebreak.
+        -(item.get("days_overdue") or 0),
+        item["form_id"],
+    ))
+    payload["due_now"] = due_now
 
     return Response(payload)
 
