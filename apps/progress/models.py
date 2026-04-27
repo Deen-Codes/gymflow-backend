@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.db import models
+from django.utils import timezone
 
 
 class CheckInForm(models.Model):
@@ -263,3 +264,59 @@ class ClientCheckInAssignment(models.Model):
 
     def __str__(self):
         return f"{self.client.username} → {self.form.name} ({self.cadence})"
+
+
+# ============================================================
+# Hydration log
+#
+# One row per client per calendar day, tracking the cup count for
+# that day. Backed the previously iOS-local `HomeWaterCard` so:
+#   • Water trophies (8 cups in a day, 7-day hydration streak,
+#     100 days hydrated) can be evaluated server-side from a single
+#     source of truth.
+#   • Multi-device users (phone + iPad) see the same cup count.
+#   • Trainers can eventually surface hydration on the client detail
+#     page if we want.
+#
+# `cups` is an int — the iOS UI is 8 cup-shaped tiles so capping at
+# 8 (or whatever the goal is) makes sense; we leave the column
+# tolerant up to PositiveSmallIntegerField's range in case the goal
+# changes later.
+# ============================================================
+class HydrationLog(models.Model):
+    client = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name="hydration_logs",
+    )
+    logged_on = models.DateField(default=timezone.localdate)
+    cups = models.PositiveSmallIntegerField(default=0)
+
+    # Tracks the user's daily goal at the moment of logging so the
+    # "8 cups in a day" trophy keeps working even if we later change
+    # the default goal globally. Snapshot of the target the user was
+    # working against that day.
+    goal_cups = models.PositiveSmallIntegerField(default=8)
+
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=["client", "logged_on"],
+                name="unique_hydration_per_client_per_day",
+            ),
+        ]
+        indexes = [
+            # "How has this client been hydrating recently?" — both
+            # the iOS sync endpoint and any future trainer dashboard.
+            models.Index(fields=["client", "-logged_on"]),
+        ]
+        ordering = ["-logged_on"]
+
+    def __str__(self):
+        return f"{self.client.username} {self.logged_on}: {self.cups}/{self.goal_cups}"
+
+    @property
+    def goal_met(self) -> bool:
+        return self.cups >= self.goal_cups

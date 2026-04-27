@@ -12,6 +12,10 @@ class User(AbstractUser):
     ]
 
     role = models.CharField(max_length=20, choices=ROLE_CHOICES)
+    # Used by the "Birthday Workout" trophy and (eventually) by any
+    # birthday-aware notifications. Optional — most existing users
+    # haven't supplied this so we never want to require it.
+    date_of_birth = models.DateField(null=True, blank=True)
 
     def __str__(self):
         return f"{self.username} ({self.role})"
@@ -56,6 +60,13 @@ class ClientProfile(models.Model):
         null=True,
         blank=True,
         related_name="assigned_clients"
+    )
+    # Trainer-set goal weight. Powers the "Goal Weight Reached" trophy
+    # and is exposed on the client detail page. Optional — many clients
+    # don't have a fixed kilo target (e.g. recomp goals), so the field
+    # stays nullable.
+    goal_weight_kg = models.DecimalField(
+        max_digits=5, decimal_places=1, null=True, blank=True,
     )
 
     def __str__(self):

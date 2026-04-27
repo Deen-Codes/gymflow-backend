@@ -38,6 +38,7 @@ from .models import (
     CheckInAnswer,
     CheckInSubmission,
     ClientCheckInAssignment,
+    HydrationLog,
 )
 
 
@@ -469,8 +470,103 @@ def submit_form_for_me(request, form_id):
             assignment.next_due_at = now + timedelta(days=days)
         assignment.save(update_fields=["last_submitted_at", "next_due_at"])
 
+    # Trophy evaluation — runs after all answers are saved so the
+    # check-in/photo/weight evaluators see the new data. Imported
+    # lazily to keep apps.progress free of an apps.trophies hard
+    # dependency at module load. Wrapped in try so a buggy evaluator
+    # never fails the submission.
+    newly_earned = []
+    try:
+        from apps.trophies.services import evaluate_and_award
+        for trophy in evaluate_and_award(user):
+            newly_earned.append({
+                "code":     trophy.code,
+                "name":     trophy.name,
+                "rarity":   trophy.rarity,
+                "icon":     trophy.icon,
+                "category": trophy.category,
+            })
+    except Exception as exc:
+        print(f"[trophies] post-checkin evaluation failed: {exc!r}")
+
     return Response({
         "id":           submission.id,
         "submitted_at": submission.submitted_at.isoformat(),
         "status":       "submitted",
+        "newly_earned_trophies": newly_earned,
     }, status=201)
+
+
+# ====================================================================
+# Hydration sync — server-of-record for the iOS HomeWaterCard.
+#
+#   GET  /api/progress/me/hydration/       → today's cups + goal
+#   POST /api/progress/me/hydration/       → set today's cups
+#
+# Only one row per client per day (UniqueConstraint), upserted via
+# update_or_create. Triggers trophy evaluation after a POST so
+# hydration trophies can unlock the moment the user finishes their
+# day's water.
+# ====================================================================
+
+
+@csrf_exempt
+@api_view(["GET", "POST"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def hydration_for_me(request):
+    user = request.user
+    if user.role != User.CLIENT or not hasattr(user, "client_profile"):
+        return Response({"detail": "Not a client."}, status=403)
+
+    today = timezone.localdate()
+
+    if request.method == "GET":
+        log = HydrationLog.objects.filter(client=user, logged_on=today).first()
+        return Response({
+            "logged_on": today.isoformat(),
+            "cups":      log.cups if log else 0,
+            "goal_cups": log.goal_cups if log else 8,
+        })
+
+    # POST — body: {"cups": <int>, "goal_cups": <int> (optional)}
+    try:
+        cups = int(request.data.get("cups", 0))
+    except (TypeError, ValueError):
+        return Response({"detail": "cups must be an integer."}, status=400)
+    cups = max(0, min(cups, 32))   # sanity-cap at 32 to prevent overflow nonsense
+
+    goal_raw = request.data.get("goal_cups")
+    defaults = {"cups": cups}
+    if goal_raw is not None:
+        try:
+            defaults["goal_cups"] = max(1, int(goal_raw))
+        except (TypeError, ValueError):
+            pass
+
+    log, _ = HydrationLog.objects.update_or_create(
+        client=user, logged_on=today, defaults=defaults,
+    )
+
+    # Trophy evaluation — hydration trophies depend on these rows so
+    # we run after the upsert. Wrapped defensively as elsewhere.
+    newly_earned = []
+    try:
+        from apps.trophies.services import evaluate_and_award
+        for trophy in evaluate_and_award(user):
+            newly_earned.append({
+                "code":     trophy.code,
+                "name":     trophy.name,
+                "rarity":   trophy.rarity,
+                "icon":     trophy.icon,
+                "category": trophy.category,
+            })
+    except Exception as exc:
+        print(f"[trophies] post-hydration evaluation failed: {exc!r}")
+
+    return Response({
+        "logged_on": log.logged_on.isoformat(),
+        "cups":      log.cups,
+        "goal_cups": log.goal_cups,
+        "newly_earned_trophies": newly_earned,
+    })

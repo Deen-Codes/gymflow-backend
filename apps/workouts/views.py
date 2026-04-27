@@ -255,5 +255,28 @@ def create_workout_session(request):
                 reps=set_data.get("reps", ""),
             )
 
+    # Trophy evaluation — runs after the session + sets are persisted
+    # so volume/rep/streak evaluators see the new data. Imported lazily
+    # to avoid an apps.workouts → apps.trophies hard dependency at
+    # module load time. Wrapped in a defensive try so a buggy
+    # evaluator can never fail an otherwise-successful workout save.
+    newly_earned = []
+    try:
+        from apps.trophies.services import evaluate_and_award
+        for trophy in evaluate_and_award(user):
+            newly_earned.append({
+                "code":     trophy.code,
+                "name":     trophy.name,
+                "rarity":   trophy.rarity,
+                "icon":     trophy.icon,
+                "category": trophy.category,
+            })
+    except Exception as exc:
+        print(f"[trophies] post-workout evaluation failed: {exc!r}")
+
     response_serializer = WorkoutSessionSerializer(workout_session)
-    return Response(response_serializer.data, status=status.HTTP_201_CREATED)
+    payload = response_serializer.data
+    # Append newly-earned trophies so the iOS workout-complete screen
+    # can reveal them in the same response — no extra round-trip.
+    payload["newly_earned_trophies"] = newly_earned
+    return Response(payload, status=status.HTTP_201_CREATED)

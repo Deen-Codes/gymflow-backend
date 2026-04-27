@@ -103,6 +103,7 @@ INSTALLED_APPS = [
     "apps.nutrition",
     "apps.sites",                # Phase 7: PT landing pages + signups
     "apps.payments",             # Phase 7.7.1: Stripe Connect
+    "apps.trophies",             # Trophies / achievements catalogue
 ]
 
 

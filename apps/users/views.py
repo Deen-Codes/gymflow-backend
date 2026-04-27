@@ -124,10 +124,66 @@ def home_stats_for_me(request):
         .values_list("value_number", flat=True)
         .first()
     )
+
+    # Rolling 7-day target streak — same definition the trophy
+    # evaluators use, so the Home tile and the streak trophies always
+    # agree. Falls back to a default weekly target when the user has
+    # no assigned plan yet.
+    from apps.trophies.streak import compute_active_streak, weekly_target_for
+    weekly_target = weekly_target_for(user)
+    streak = compute_active_streak(user, weekly_target=weekly_target)
+
     payload = {
         "latest_weight_kg": round(float(latest), 1) if latest is not None else None,
+        "active_streak":    streak,
+        "weekly_target":    weekly_target,
     }
     return Response(payload, status=status.HTTP_200_OK)
+
+
+# -------------------------------------------------------------------
+# Profile-completeness gate
+#
+# iOS calls /me/required-actions/ on login and uses the response to
+# decide whether to surface:
+#   1. A "supplemental profile" form for any system-required fields
+#      the user hasn't filled (e.g. existing users without
+#      date_of_birth after we added that requirement).
+#   2. The trainer's onboarding form (if not yet submitted).
+#
+# Once everything's filled, the gate clears and MainTabView appears.
+# -------------------------------------------------------------------
+
+
+@csrf_exempt
+@api_view(["GET"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def required_actions_for_me(request):
+    """What does this user still owe before the app fully unlocks?"""
+    from .profile_schema import missing_required_fields_for, needs_onboarding
+    user = request.user
+    return Response({
+        "needs_onboarding":       needs_onboarding(user),
+        "missing_profile_fields": missing_required_fields_for(user),
+    })
+
+
+@csrf_exempt
+@api_view(["POST"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def profile_update_for_me(request):
+    """Update one or more system-required profile fields. Body is a
+    plain JSON dict of {field_key: value}; iOS POSTs whatever the
+    user filled in the supplemental form."""
+    from .profile_schema import apply_profile_update, missing_required_fields_for
+    user = request.user
+    applied = apply_profile_update(user, request.data or {})
+    return Response({
+        "applied_fields":         applied,
+        "missing_profile_fields": missing_required_fields_for(user),
+    })
 
 
 @api_view(["POST"])
