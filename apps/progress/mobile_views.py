@@ -214,7 +214,12 @@ def form_detail_for_me(request, form_id):
         "id":          form.id,
         "name":        form.name,
         "form_type":   form.form_type,
-        "description": form.description or "",
+        # CheckInForm doesn't actually have a `description` field
+        # (only name + form_type). The iOS Decodable expects the key
+        # to exist though — return empty string so JSON shape stays
+        # stable. If/when we add a description field on the model,
+        # this just starts populating without an iOS change.
+        "description": getattr(form, "description", "") or "",
         "questions": [
             {
                 "id":            q.id,
