@@ -704,15 +704,30 @@ ACTIVITY_WINDOW_DAYS = 14
 
 
 def _build_activity_context(client):
-    """Return dashboard template context dict for the activity panel."""
+    """Return dashboard template context dict for the activity panel.
+
+    Defensive: each sub-feed is wrapped in try/except so a single
+    misbehaving query (e.g. a model not yet migrated, a stale FK
+    reference) returns an empty list rather than 500-ing the whole
+    client detail page. Errors print to the Render log so they're
+    still visible; the trainer just sees an empty section instead of
+    a broken page.
+    """
     window_start = timezone.now() - timedelta(days=ACTIVITY_WINDOW_DAYS)
     today = timezone.localdate()
     window_start_date = today - timedelta(days=ACTIVITY_WINDOW_DAYS)
 
+    def _safe(label, fn):
+        try:
+            return fn()
+        except Exception as exc:        # noqa: BLE001 — surface verbatim
+            print(f"[activity_feed] {label} failed: {exc!r}")
+            return []
+
     return {
-        "activity_workouts":  _activity_workout_rows(client, window_start),
-        "activity_meal_days": _activity_meal_days(client, window_start_date, today),
-        "activity_checkins":  _activity_checkin_rows(client, window_start),
+        "activity_workouts":  _safe("workouts", lambda: _activity_workout_rows(client, window_start)),
+        "activity_meal_days": _safe("meals",    lambda: _activity_meal_days(client, window_start_date, today)),
+        "activity_checkins":  _safe("checkins", lambda: _activity_checkin_rows(client, window_start)),
         "activity_window_days": ACTIVITY_WINDOW_DAYS,
     }
 
@@ -720,14 +735,15 @@ def _build_activity_context(client):
 def _activity_workout_rows(client, window_start):
     """Logged workout sessions in the window, with set counts.
 
-    SQL note: ExerciseSession.set_count via Count('sets') gives us
-    the total set count per session in one query rather than N+1
-    looping over each session's exercises.
+    Note: WorkoutDay's FK to WorkoutPlan is named `plan`, not
+    `workout_plan`. Earlier draft of this code used the wrong name
+    and 500'd the whole client detail page — the WorkoutDay model
+    schema is what's authoritative.
     """
     sessions = (
         WorkoutSession.objects
         .filter(user=client, completed_at__gte=window_start, is_complete=True)
-        .select_related("workout_day", "workout_day__workout_plan")
+        .select_related("workout_day", "workout_day__plan")
         .order_by("-completed_at")
     )
 
@@ -741,15 +757,11 @@ def _activity_workout_rows(client, window_start):
             exercise_session__workout_session=session,
         ).count()
 
-        # Duration is stored as minutes (we think — model has just
-        # `duration: IntegerField`). If it's seconds, the template
-        # filter divides by 60. Keep raw + label so the template
-        # can render appropriately.
         rows.append({
             "session":       session,
             "completed_at":  session.completed_at,
-            "day_name":      session.workout_day.title if hasattr(session.workout_day, "title") else str(session.workout_day),
-            "plan_name":     session.workout_day.workout_plan.name if session.workout_day.workout_plan_id else "",
+            "day_name":      session.workout_day.title,
+            "plan_name":     session.workout_day.plan.name if session.workout_day.plan_id else "",
             "duration_min":  session.duration,
             "set_count":     set_count,
         })
