@@ -60,7 +60,26 @@ RESERVED_SUBDOMAINS = frozenset({
     "support",
     "status",
     "cdn",
+    "billing",   # Stripe Customer Portal — billing.gymflow.coach
 })
+
+
+# Path prefixes that are GLOBAL (shared across all hosts) — leave them
+# alone even when the request arrives on a trainer subdomain. Lets the
+# legal pages, admin, static files, the API, and Stripe routes still
+# work from any host (including subdomains, in case a footer link or
+# Stripe redirect lands there). Without this skip, a request like
+# `deen.gymflow.coach/legal/privacy/` would rewrite to
+# `/p/deen/legal/privacy/` and 404.
+GLOBAL_PATH_PREFIXES = (
+    "/legal/",      # Privacy policy + Terms of service
+    "/static/",     # WhiteNoise-served static assets
+    "/admin/",      # Django admin
+    "/api/",        # mobile API (iOS app)
+    "/payments/",   # Stripe OAuth + webhooks
+    "/portal/",     # password reset URLs
+    "/dashboard/",  # trainer dashboard
+)
 
 
 def _extract_subdomain(host):
@@ -95,6 +114,13 @@ class SubdomainSiteMiddleware(MiddlewareMixin):
         host = request.get_host()
         subdomain = _extract_subdomain(host)
         if not subdomain or subdomain in RESERVED_SUBDOMAINS:
+            return None
+
+        # Skip global paths — let them resolve normally. So the legal
+        # pages, admin, API, Stripe webhooks, and static files all
+        # still work even when the request arrives on a trainer
+        # subdomain like `deen.gymflow.coach/legal/privacy/`.
+        if request.path_info.startswith(GLOBAL_PATH_PREFIXES):
             return None
 
         # Lazy import — middleware is imported at startup, models
