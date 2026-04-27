@@ -26,6 +26,7 @@ import string
 from datetime import datetime, timezone as dt_tz
 
 from django.conf import settings
+from django.db import transaction
 from django.http import HttpResponse, JsonResponse
 from django.utils import timezone
 from django.views.decorators.csrf import csrf_exempt
@@ -140,6 +141,15 @@ def _upsert_subscription_from_stripe(sub_obj, trainer, plan, client) -> ClientSu
 # ----------------------------------------------------------------------
 # Event handlers
 # ----------------------------------------------------------------------
+#
+# All multi-row write paths are wrapped in @transaction.atomic.
+# Reason: this handler creates a User + ClientProfile + ClientSubscription
+# in sequence. A network blip or model-save failure mid-way could
+# leave the database with a User that has no ClientProfile, or a
+# ClientProfile pointing at a Stripe sub we never recorded. With
+# @transaction.atomic the whole block is rolled back on any exception,
+# so we either commit everything or nothing — no orphans.
+@transaction.atomic
 def _handle_checkout_completed(event):
     session = _get(event, "data", {})
     session = _get(session, "object", session)

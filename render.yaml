@@ -16,8 +16,10 @@ services:
       - key: SECRET_KEY
         generateValue: true
 
+      # Comma-separated host list. Leading dot = match all subdomains.
+      # `.gymflow.coach` covers every trainer subdomain plus the apex.
       - key: ALLOWED_HOSTS
-        value: .onrender.com
+        value: .gymflow.coach,.onrender.com
 
 databases:
   - name: gymflow-db

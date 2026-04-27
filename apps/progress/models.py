@@ -72,7 +72,11 @@ class CheckInQuestion(models.Model):
     is_required = models.BooleanField(default=False)
     order = models.IntegerField(default=1)
 
-    field_key = models.CharField(max_length=100, blank=True)
+    # `db_index=True` because the dashboard's progress charts filter
+    # answers by question.field_key (e.g. WEIGHT_FIELD_KEYS) on every
+    # render — without an index that's a sequential scan of every
+    # question row in the trainer's account.
+    field_key = models.CharField(max_length=100, blank=True, db_index=True)
     is_system_question = models.BooleanField(default=False)
 
     class Meta:

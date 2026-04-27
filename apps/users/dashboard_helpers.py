@@ -18,6 +18,46 @@ def trainer_required(request):
     return request.user.role == User.TRAINER and hasattr(request.user, "trainer_profile")
 
 
+def trainer_required_view(view_func):
+    """Decorator equivalent of `if not trainer_required(request): redirect`.
+
+    Replaces the boilerplate that opens nearly every dashboard view:
+
+        @login_required
+        def my_view(request, ...):
+            if not trainer_required(request):
+                return redirect("landing-page")
+            ...
+
+    With:
+
+        @trainer_required_view
+        def my_view(request, ...):
+            ...
+
+    Stacks `@login_required` automatically so callers don't need both —
+    a non-authenticated request goes through Django's standard login
+    flow first, an authenticated-but-not-a-trainer request bounces to
+    the landing page.
+
+    Why a decorator: the inline check is repeated 40+ times across the
+    dashboard view files. Forgetting the check is a security bug
+    (a client could probe trainer-only endpoints by URL guessing).
+    Decorator-as-default makes the safe path the easy path.
+    """
+    from functools import wraps
+    from django.contrib.auth.decorators import login_required
+    from django.shortcuts import redirect
+
+    @wraps(view_func)
+    def wrapper(request, *args, **kwargs):
+        if not trainer_required(request):
+            return redirect("landing-page")
+        return view_func(request, *args, **kwargs)
+
+    return login_required(wrapper)
+
+
 def get_trainer_clients(request):
     """
     Return only clients owned by the logged-in trainer.

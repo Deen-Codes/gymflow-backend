@@ -6,8 +6,31 @@ import dj_database_url
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get("SECRET_KEY", "dev-only-secret-key")
-DEBUG = True
-ALLOWED_HOSTS = ["*"]
+
+# -------------------------------------------------------------------
+# DEBUG — defaults to False (safe). Local devs flip via env var
+# (`DEBUG=true python manage.py runserver`). Render's render.yaml
+# explicitly sets DEBUG=False so production is locked down.
+# -------------------------------------------------------------------
+DEBUG = os.environ.get("DEBUG", "False").lower() in ("true", "1", "yes")
+
+# -------------------------------------------------------------------
+# ALLOWED_HOSTS — env var override with a sensible default that
+# already includes our production domains. Django interprets a
+# leading dot as "this domain and all its subdomains" — so
+# `.gymflow.coach` matches both gymflow.coach itself and every
+# trainer subdomain (deen.gymflow.coach, etc.) without needing
+# a wildcard CNAME on the host header.
+#
+# Format: comma-separated list of hosts.
+#   ALLOWED_HOSTS=.gymflow.coach,.onrender.com,localhost
+# -------------------------------------------------------------------
+_DEFAULT_ALLOWED_HOSTS = "localhost,127.0.0.1,.gymflow.coach,.onrender.com"
+ALLOWED_HOSTS = [
+    h.strip()
+    for h in os.environ.get("ALLOWED_HOSTS", _DEFAULT_ALLOWED_HOSTS).split(",")
+    if h.strip()
+]
 
 # -------------------------------------------------------------------
 # CSRF + proxy trust for Render deploy.
@@ -29,6 +52,38 @@ CSRF_TRUSTED_ORIGINS = [
     "https://gymflow.coach",
 ]
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
+# -------------------------------------------------------------------
+# Production hardening (only enforced when DEBUG is False).
+#
+# Why each one matters:
+#   • SECURE_SSL_REDIRECT — server-side enforce HTTPS. Render's edge
+#     already redirects, but the belt-and-braces redirect catches any
+#     case where a client somehow lands on the inner http origin.
+#   • SECURE_HSTS_*       — tells the browser "always use HTTPS for
+#     this domain for the next year, including subdomains". After the
+#     first visit, browsers refuse to even ATTEMPT http → defeats
+#     SSL-stripping man-in-the-middle attacks.
+#   • SESSION/CSRF_COOKIE_SECURE — cookies only sent over HTTPS, so
+#     a session token can't leak over an accidental http request.
+#   • SECURE_CONTENT_TYPE_NOSNIFF — disables IE/Chrome MIME-sniffing
+#     so a user-uploaded file pretending to be `image/jpeg` can't
+#     be executed as JavaScript by browser auto-detection.
+#   • X_FRAME_OPTIONS — refuse to be embedded in an iframe → blocks
+#     clickjacking attacks where attackers overlay invisible iframes
+#     of our dashboard over their malicious page.
+#
+# All of these are no-ops in DEBUG so local dev runs cleanly over http.
+# -------------------------------------------------------------------
+if not DEBUG:
+    SECURE_SSL_REDIRECT             = True
+    SECURE_HSTS_SECONDS             = 60 * 60 * 24 * 365   # 1 year
+    SECURE_HSTS_INCLUDE_SUBDOMAINS  = True
+    SECURE_HSTS_PRELOAD             = True
+    SESSION_COOKIE_SECURE           = True
+    CSRF_COOKIE_SECURE              = True
+    SECURE_CONTENT_TYPE_NOSNIFF     = True
+    X_FRAME_OPTIONS                 = "DENY"
 
 
 INSTALLED_APPS = [

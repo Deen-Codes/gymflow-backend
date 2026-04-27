@@ -67,8 +67,14 @@ class ClientSubscription(models.Model):
 
     # Mirrors Stripe — kept here so the trainer dashboard can render
     # state without re-hitting the API on every request.
-    stripe_customer_id     = models.CharField(max_length=64, blank=True, default="")
-    stripe_subscription_id = models.CharField(max_length=64, blank=True, default="")
+    #
+    # `db_index=True` on both Stripe IDs because the webhook handler
+    # filters by stripe_subscription_id on EVERY incoming event, and
+    # the customer-portal flow filters by stripe_customer_id. Without
+    # an index those become full-table scans as the subscription
+    # count grows.
+    stripe_customer_id     = models.CharField(max_length=64, blank=True, default="", db_index=True)
+    stripe_subscription_id = models.CharField(max_length=64, blank=True, default="", db_index=True)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default=STATUS_INCOMPLETE)
     current_period_end = models.DateTimeField(null=True, blank=True)
     cancel_at_period_end = models.BooleanField(default=False)
@@ -78,6 +84,14 @@ class ClientSubscription(models.Model):
 
     class Meta:
         ordering = ["-created_at"]
+        indexes = [
+            # Fast lookup of "all active subs for trainer X" — driving
+            # the subscription panel + the email-portal-link search.
+            models.Index(fields=["trainer", "status"]),
+            # Fast lookup of "this client's subscriptions across
+            # trainers" — used by iOS Customer Portal endpoint.
+            models.Index(fields=["client", "-created_at"]),
+        ]
 
     def __str__(self):
         return f"{self.client.username} → {self.trainer} ({self.status})"
