@@ -29,7 +29,7 @@ def _replace_dropdown_options(question, raw_options_text):
         )
 
 
-def _create_question(form, order, question_text, question_type, field_key, *, is_required=True, is_system_question=True, dropdown_options=None):
+def _create_question(form, order, question_text, question_type, field_key, *, is_required=True, is_system_question=True, dropdown_options=None, system_field_key=""):
     question = CheckInQuestion.objects.create(
         form=form,
         question_text=question_text,
@@ -38,6 +38,7 @@ def _create_question(form, order, question_text, question_type, field_key, *, is
         order=order,
         field_key=field_key,
         is_system_question=is_system_question,
+        system_field_key=system_field_key,
     )
 
     if dropdown_options:
@@ -54,7 +55,13 @@ def _create_question(form, order, question_text, question_type, field_key, *, is
 def _create_default_onboarding_questions(checkin_form):
     _create_question(checkin_form, 1, "Full name", CheckInQuestion.SHORT_TEXT, "full_name")
     _create_question(checkin_form, 2, "Email", CheckInQuestion.SHORT_TEXT, "email")
-    _create_question(checkin_form, 3, "Age", CheckInQuestion.NUMBER, "age")
+    # Date of birth replaces the old "Age" question — `system_field_key`
+    # routes the answer into User.date_of_birth automatically. Age is
+    # always derivable from DOB so we don't ask for it separately.
+    _create_question(
+        checkin_form, 3, "Date of birth", CheckInQuestion.DATE, "date_of_birth",
+        system_field_key="date_of_birth",
+    )
     _create_question(checkin_form, 4, "Height (cm)", CheckInQuestion.NUMBER, "height_cm")
     _create_question(checkin_form, 5, "Current weight (kg)", CheckInQuestion.NUMBER, "current_weight")
     _create_question(

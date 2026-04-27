@@ -435,6 +435,20 @@ def submit_form_for_me(request, form_id):
                 continue
             kwargs["value_video"] = uploaded
 
+        elif q.question_type == CheckInQuestion.DATE:
+            # iOS sends "YYYY-MM-DD" strings. Parse defensively —
+            # malformed dates just get dropped rather than failing
+            # the whole submission.
+            raw = (request.data.get(key, "") or "").strip()
+            if not raw:
+                continue
+            try:
+                from datetime import date as _date
+                y, m, d = raw.split("-")
+                kwargs["value_date"] = _date(int(y), int(m), int(d))
+            except (ValueError, AttributeError):
+                continue
+
         else:
             # Unknown question type — skip rather than crash.
             continue
@@ -449,6 +463,14 @@ def submit_form_for_me(request, form_id):
             defaults={k: v for k, v in kwargs.items()
                       if k not in ("submission", "question")},
         )
+
+        # If this question is system-managed, route the answer to the
+        # corresponding User / ClientProfile attribute so the system-
+        # field gate (ProfileSetupView) clears for this user without
+        # them having to fill the same info twice.
+        if q.system_field_key:
+            from apps.users.profile_schema import apply_system_field_from_answer
+            apply_system_field_from_answer(user, q.system_field_key, kwargs)
 
     # ---- Bump the assignment so the Home card refreshes properly ----
     assignment = ClientCheckInAssignment.objects.filter(

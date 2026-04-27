@@ -176,12 +176,21 @@ def required_actions_for_me(request):
 def profile_update_for_me(request):
     """Update one or more system-required profile fields. Body is a
     plain JSON dict of {field_key: value}; iOS POSTs whatever the
-    user filled in the supplemental form."""
-    from .profile_schema import apply_profile_update, missing_required_fields_for
+    user filled in the supplemental form.
+
+    Returns the same shape as `required_actions_for_me` so iOS can
+    use one Decodable for both calls. `applied_fields` is included
+    purely for debugging — iOS doesn't need to read it."""
+    from .profile_schema import (
+        apply_profile_update,
+        missing_required_fields_for,
+        needs_onboarding,
+    )
     user = request.user
     applied = apply_profile_update(user, request.data or {})
     return Response({
         "applied_fields":         applied,
+        "needs_onboarding":       needs_onboarding(user),
         "missing_profile_fields": missing_required_fields_for(user),
     })
 

@@ -44,6 +44,20 @@ SYSTEM_REQUIRED_FIELDS = [
 ]
 
 
+# Routing map for the trainer onboarding form's system-managed
+# questions. When `CheckInQuestion.system_field_key` matches a key
+# here, the answer is automatically written to the named attribute
+# on the User or ClientProfile row. Same payload for both surfaces
+# (onboarding form + ProfileSetupView) — single source of truth.
+SYSTEM_FIELD_TARGETS = {
+    "date_of_birth":   ("user",           "date_of_birth"),
+    # When trainers add a "goal weight" question to onboarding with
+    # system_field_key="goal_weight_kg", the answer flows into
+    # ClientProfile.goal_weight_kg automatically.
+    "goal_weight_kg":  ("client_profile", "goal_weight_kg"),
+}
+
+
 def missing_required_fields_for(user):
     """Return the subset of SYSTEM_REQUIRED_FIELDS the user hasn't
     filled yet. Skips non-clients — trainers don't go through this
@@ -125,3 +139,45 @@ def needs_onboarding(user):
         status="submitted",
         form__form_type="onboarding",
     ).exists()
+
+
+def apply_system_field_from_answer(user, system_field_key, answer_kwargs):
+    """Called from the form-submit handler whenever a CheckInAnswer is
+    saved against a question with `system_field_key` set. Writes the
+    answer's value to the corresponding User/ClientProfile attribute.
+
+    The mapping in SYSTEM_FIELD_TARGETS tells us which row + column to
+    update; the value comes from `answer_kwargs` (the dict that just
+    got persisted onto CheckInAnswer), keyed by which value_X column
+    holds the user's answer. We pick the right column based on what's
+    in the kwargs — no need to switch on question_type again.
+    """
+    target_info = SYSTEM_FIELD_TARGETS.get(system_field_key)
+    if target_info is None:
+        return
+    target_name, attr = target_info
+    if target_name == "user":
+        target_obj = user
+    elif target_name == "client_profile":
+        target_obj = getattr(user, "client_profile", None)
+    else:
+        return
+    if target_obj is None:
+        return
+
+    # Pull the value out of whichever value_X column the submit
+    # handler populated. Order matters — try the most specific first.
+    value = None
+    if "value_date" in answer_kwargs:
+        value = answer_kwargs["value_date"]
+    elif "value_number" in answer_kwargs:
+        value = answer_kwargs["value_number"]
+    elif "value_text" in answer_kwargs and answer_kwargs["value_text"]:
+        value = answer_kwargs["value_text"]
+    elif "value_yes_no" in answer_kwargs:
+        value = answer_kwargs["value_yes_no"]
+    if value is None:
+        return
+
+    setattr(target_obj, attr, value)
+    target_obj.save(update_fields=[attr])

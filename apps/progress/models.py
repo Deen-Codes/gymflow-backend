@@ -52,6 +52,7 @@ class CheckInQuestion(models.Model):
     DROPDOWN = "dropdown"
     PHOTO = "photo"
     VIDEO = "video"
+    DATE = "date"
 
     QUESTION_TYPE_CHOICES = [
         (SHORT_TEXT, "Short Text"),
@@ -61,6 +62,7 @@ class CheckInQuestion(models.Model):
         (DROPDOWN, "Dropdown"),
         (PHOTO, "Photo Upload"),
         (VIDEO, "Video Upload"),
+        (DATE, "Date"),
     ]
 
     form = models.ForeignKey(
@@ -79,6 +81,14 @@ class CheckInQuestion(models.Model):
     # question row in the trainer's account.
     field_key = models.CharField(max_length=100, blank=True, db_index=True)
     is_system_question = models.BooleanField(default=False)
+
+    # When non-empty, this question's answer is automatically applied
+    # to the named attribute on the answering client's User or
+    # ClientProfile row (see `apps.users.profile_schema.SYSTEM_REQUIRED_FIELDS`
+    # for the registry of allowed keys + their target models). Lets us
+    # capture system-required fields like `date_of_birth` directly via
+    # the trainer's onboarding form rather than a separate screen.
+    system_field_key = models.CharField(max_length=80, blank=True, default="")
 
     class Meta:
         ordering = ["order", "id"]
@@ -172,6 +182,7 @@ class CheckInAnswer(models.Model):
     value_image = models.ImageField(upload_to="checkin_answers/photos/", null=True, blank=True)
     value_video = models.FileField(upload_to="checkin_answers/videos/", null=True, blank=True)
     value_yes_no = models.BooleanField(null=True, blank=True)
+    value_date = models.DateField(null=True, blank=True)
     value_option = models.ForeignKey(
         CheckInQuestionOption,
         on_delete=models.SET_NULL,
