@@ -37,6 +37,15 @@ from .dashboard_serializers import (
 )
 
 
+# Module-level flag tracking an in-progress wger sync. Single-process
+# guard so a trainer doesn't accidentally trigger two concurrent
+# imports against the same upstream API. NOT durable across server
+# restarts — that's fine, the import is idempotent so worst case the
+# user just retriggers after a restart.
+_WGER_SYNC_IN_PROGRESS = False
+_WGER_SYNC_LAST_RESULT: dict | None = None
+
+
 # -------------------------------------------------------------------
 # Helpers
 # -------------------------------------------------------------------
@@ -151,6 +160,112 @@ def catalog_facets(request):
         .order_by("equipment")
     )
     return Response({"muscle_groups": muscles, "equipment": equipment})
+
+
+# -------------------------------------------------------------------
+# Wger sync — bulk-import the public exercise catalogue
+#
+# Backed by `apps.workouts.management.commands.import_wger_exercises`.
+# Triggered from a button on the dashboard exercise library page so
+# trainers can refresh the catalogue without shelling into Render.
+# Runs in a background thread because the full import can take 60+
+# seconds (rate-limited to ~50 req/min upstream).
+# -------------------------------------------------------------------
+@api_view(["POST", "GET"])
+@permission_classes([IsAuthenticated])
+def sync_wger_catalog(request):
+    """POST = kick off a background sync (or noop if already running).
+    GET  = return the current sync status + counts.
+
+    Status payload shape:
+        {
+            "in_progress": bool,
+            "current_count": int,    # rows currently in catalog (wger source)
+            "last_result": {         # populated after the most recent run
+                "created": int,
+                "updated": int,
+                "skipped": int,
+                "started_at": iso,
+                "finished_at": iso,
+                "error": str or null
+            } or null
+        }
+    """
+    global _WGER_SYNC_IN_PROGRESS, _WGER_SYNC_LAST_RESULT
+
+    trainer, err = _require_trainer(request)
+    if err:
+        return err
+
+    current_count = ExerciseCatalog.objects.filter(
+        source=ExerciseCatalog.SOURCE_WGER,
+    ).count()
+
+    if request.method == "GET":
+        return Response({
+            "in_progress":   _WGER_SYNC_IN_PROGRESS,
+            "current_count": current_count,
+            "last_result":   _WGER_SYNC_LAST_RESULT,
+        })
+
+    if _WGER_SYNC_IN_PROGRESS:
+        return Response({
+            "in_progress":   True,
+            "current_count": current_count,
+            "last_result":   _WGER_SYNC_LAST_RESULT,
+            "detail":        "Sync already in progress.",
+        })
+
+    # Spawn the import in a background thread. We don't have Celery
+    # set up; threading is fine because this is a one-off long-poll
+    # task that doesn't need to survive a restart (the import is
+    # idempotent).
+    import threading
+    from datetime import datetime, timezone as dt_tz
+
+    def _run_sync():
+        global _WGER_SYNC_IN_PROGRESS, _WGER_SYNC_LAST_RESULT
+        from django.core.management import call_command
+        from io import StringIO
+
+        started_at = datetime.now(dt_tz.utc).isoformat()
+        result = {
+            "created":      0,
+            "updated":      0,
+            "skipped":      0,
+            "started_at":   started_at,
+            "finished_at":  None,
+            "error":        None,
+        }
+        try:
+            buf = StringIO()
+            call_command("import_wger_exercises", stdout=buf, stderr=buf)
+            output = buf.getvalue()
+            # Pull counts out of the management command's final summary
+            # line ("created=X updated=Y skipped=Z seen=N").
+            for token in output.split():
+                if token.startswith("created="):
+                    result["created"] = int(token.split("=", 1)[1])
+                elif token.startswith("updated="):
+                    result["updated"] = int(token.split("=", 1)[1])
+                elif token.startswith("skipped="):
+                    result["skipped"] = int(token.split("=", 1)[1])
+        except Exception as exc:
+            result["error"] = str(exc)[:500]
+        finally:
+            result["finished_at"] = datetime.now(dt_tz.utc).isoformat()
+            _WGER_SYNC_LAST_RESULT = result
+            _WGER_SYNC_IN_PROGRESS = False
+
+    _WGER_SYNC_IN_PROGRESS = True
+    threading.Thread(target=_run_sync, daemon=True).start()
+
+    return Response({
+        "in_progress":   True,
+        "current_count": current_count,
+        "last_result":   _WGER_SYNC_LAST_RESULT,
+        "detail":        "Sync started.",
+    })
 
 
 # -------------------------------------------------------------------

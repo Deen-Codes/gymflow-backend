@@ -36,26 +36,45 @@ SLEEP_BETWEEN_PAGES = 0.4
 
 
 def _fetch_page(offset: int, page_size: int):
+    # Note: dropped the `language=2` filter — that was filtering the
+    # whole exercise to only those with an English translation, which
+    # turned out to silently exclude several hundred otherwise-valid
+    # exercises. We now pull the whole catalogue and pick the best
+    # available translation per record in `_pick_translation`.
     qs = urlencode({
-        "language": LANGUAGE_ENGLISH,
-        "limit": page_size,
+        "limit":  page_size,
         "offset": offset,
-        "status": 2,  # published exercises only
+        "status": 2,    # published exercises only
     })
     url = f"{WGER_BASE}/exerciseinfo/?{qs}"
     request = Request(url, headers={"Accept": "application/json"})
-    with urlopen(request, timeout=20) as response:
+    with urlopen(request, timeout=30) as response:
         return json.loads(response.read().decode("utf-8"))
 
 
-def _english_translation(translations):
-    """wger ships translations[]; pick the English one. Returns
-    (name, description) with HTML stripped from the description."""
-    for t in translations or []:
+def _pick_translation(translations):
+    """Pick a translation for an exercise, preferring English but
+    falling back to whatever else is available. wger sometimes ships
+    exercises with only German or Spanish translations — previously
+    those were silently dropped, which is why earlier imports had
+    fewer rows than the upstream catalogue.
+
+    Returns (name, description) with HTML stripped. Returns
+    ("", "") only if there are zero translations at all (extremely
+    rare — usually a placeholder draft record we wouldn't want anyway).
+    """
+    translations = translations or []
+    # First pass — prefer English.
+    for t in translations:
         if t.get("language") == LANGUAGE_ENGLISH:
             name = (t.get("name") or "").strip()
-            description = _strip_html(t.get("description") or "").strip()
-            return name, description
+            if name:
+                return name, _strip_html(t.get("description") or "").strip()
+    # Second pass — accept any translation with a non-empty name.
+    for t in translations:
+        name = (t.get("name") or "").strip()
+        if name:
+            return name, _strip_html(t.get("description") or "").strip()
     return "", ""
 
 
@@ -145,7 +164,7 @@ class Command(BaseCommand):
                     return
 
                 external_id = str(record.get("id") or "")
-                name, description = _english_translation(record.get("translations"))
+                name, description = _pick_translation(record.get("translations"))
                 if not name:
                     skipped += 1
                     continue

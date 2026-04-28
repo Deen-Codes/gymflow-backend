@@ -17,12 +17,14 @@ from .dashboard_api_views import (
     day_update_exercise,
     library_list,
     library_snapshot_from_catalog,
+    sync_wger_catalog,
 )
 
 
 urlpatterns = [
     path("catalog/", catalog_search, name="dashboard-api-catalog-search"),
     path("catalog/facets/", catalog_facets, name="dashboard-api-catalog-facets"),
+    path("catalog/sync/", sync_wger_catalog, name="dashboard-api-catalog-sync"),
 
     path("library/", library_list, name="dashboard-api-library-list"),
     path(
