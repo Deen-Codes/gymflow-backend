@@ -69,6 +69,13 @@
     gap: 6px;
     flex: 1;
 }
+
+/* Restore the browser's `hidden` semantics — the `display: flex`
+   above otherwise overrides the implicit `display: none` and the
+   "Unit name" field stays visible even when "Grams" is selected. */
+.builder-custom-form-field[hidden] {
+    display: none;
+}
 .builder-custom-form-label {
     font-size: 11px;
     font-weight: 700;
