@@ -63,6 +63,13 @@ def list_trophies_for(user):
     """Return the full catalogue with per-trophy progress + earned-at,
     grouped-friendly for the iOS Trophies tab.
 
+    Crucially, this runs `evaluate_and_award` first so users who
+    completed trophies BEFORE the system was deployed (or before a
+    new evaluator was wired) get retroactively caught up the moment
+    they open their Trophies tab. Without this, the back-catalogue
+    sits permanently locked because the workout/check-in event hooks
+    only fire on new submissions going forward.
+
     Output shape (one entry per trophy in the catalogue):
         {
             "code":        "first_workout",
@@ -76,6 +83,14 @@ def list_trophies_for(user):
             "progress":    {"current": 1, "target": 1},
         }
     """
+    # Retroactive sweep — idempotent, fast (~100 evaluators), runs
+    # quietly. Awards are uniqueness-constrained so a re-run produces
+    # no duplicates.
+    try:
+        evaluate_and_award(user)
+    except Exception as exc:
+        print(f"[trophies] retroactive sweep failed: {exc!r}")
+
     awards_by_trophy_id = {
         a.trophy_id: a for a in
         ClientTrophyAward.objects.filter(user=user).select_related("trophy")
