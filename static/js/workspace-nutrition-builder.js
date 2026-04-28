@@ -429,8 +429,129 @@
         state.searchQuery = event.target.value.trim();
         if (state.activeTab === "library") fetchLibrary();
         else if (state.searchQuery) fetchCatalog();
-        else renderLibraryStatus("Type to search foods.");
+        else fetchCatalog();   // empty query → server returns recent library
     }, 350));
+
+    // -------------------------------------------------------------
+    // Custom food creation — dialog wiring
+    //
+    // The CTA pre-fills the name with whatever's in the search box
+    // so the trainer doesn't retype. On submit we POST to
+    // /library/custom/, the new row comes back shaped like a
+    // library result, and we drop it on top of the rail so it's
+    // immediately draggable into a meal.
+    // -------------------------------------------------------------
+    const customFoodCta    = document.getElementById("custom-food-cta");
+    const customFoodDialog = document.getElementById("custom-food-dialog");
+    const customFoodForm   = document.getElementById("custom-food-form");
+    const customFoodError  = customFoodDialog?.querySelector('[data-role="custom-food-error"]');
+    const unitLabelField   = customFoodDialog?.querySelector('[data-role="unit-label-field"]');
+    const portionTypeSel   = customFoodForm?.querySelector('select[name="portion_type"]');
+    const referenceInput   = customFoodForm?.querySelector('input[name="reference_grams"]');
+
+    function openCustomFoodDialog() {
+        if (!customFoodDialog) return;
+        // Pre-fill name with the search query — saves the trainer
+        // from retyping when they searched "olive oil", didn't find
+        // a clean match, and are now creating it.
+        const nameInput = customFoodForm.querySelector('input[name="name"]');
+        if (nameInput) nameInput.value = state.searchQuery || "";
+        // Reset everything else to defaults.
+        customFoodForm.querySelector('input[name="calories"]').value = "";
+        customFoodForm.querySelector('input[name="protein"]').value = "";
+        customFoodForm.querySelector('input[name="carbs"]').value = "";
+        customFoodForm.querySelector('input[name="fats"]').value = "";
+        customFoodForm.querySelector('input[name="unit_label"]').value = "";
+        if (portionTypeSel) portionTypeSel.value = "grams";
+        if (referenceInput) referenceInput.value = "100";
+        if (unitLabelField) unitLabelField.hidden = true;
+        if (customFoodError) {
+            customFoodError.hidden = true;
+            customFoodError.textContent = "";
+        }
+        customFoodDialog.showModal();
+        // Focus name unless empty (trainer just wants to type a value)
+        nameInput?.focus();
+        if (nameInput?.value) nameInput.select();
+    }
+
+    function closeCustomFoodDialog() {
+        if (customFoodDialog?.open) customFoodDialog.close();
+    }
+
+    customFoodCta?.addEventListener("click", openCustomFoodDialog);
+
+    // Close button + Cancel button + clicking the backdrop
+    customFoodDialog?.addEventListener("click", function (event) {
+        if (event.target.matches('[data-action="close-custom-food"]')) {
+            event.preventDefault();
+            closeCustomFoodDialog();
+            return;
+        }
+        // Backdrop click — the form fills the dialog, so a click on
+        // the dialog itself (not a child) is the backdrop.
+        if (event.target === customFoodDialog) {
+            closeCustomFoodDialog();
+        }
+    });
+
+    // Toggle the unit-label row when the trainer picks the freeform
+    // "Unit" portion type. For named units (tbsp, ml, etc.) the label
+    // is implicit so we hide the field.
+    portionTypeSel?.addEventListener("change", function () {
+        const isFreeform = portionTypeSel.value === "unit";
+        if (unitLabelField) unitLabelField.hidden = !isFreeform;
+        // Sensible default for the reference amount when switching
+        // mode — 100 makes sense for grams (industry standard) but
+        // not for "1 tbsp", "1 cup", etc.
+        if (referenceInput) {
+            referenceInput.value = portionTypeSel.value === "grams" ? "100" : "1";
+        }
+    });
+
+    customFoodForm?.addEventListener("submit", async function (event) {
+        event.preventDefault();
+        if (customFoodError) {
+            customFoodError.hidden = true;
+            customFoodError.textContent = "";
+        }
+        const formData = new FormData(customFoodForm);
+        const payload = {
+            name:            (formData.get("name") || "").trim(),
+            portion_type:    formData.get("portion_type") || "grams",
+            reference_grams: parseFloat(formData.get("reference_grams")) || 0,
+            unit_label:      (formData.get("unit_label") || "").trim(),
+            calories:        parseFloat(formData.get("calories")) || 0,
+            protein:         parseFloat(formData.get("protein")) || 0,
+            carbs:           parseFloat(formData.get("carbs")) || 0,
+            fats:            parseFloat(formData.get("fats")) || 0,
+        };
+        if (!payload.name) {
+            if (customFoodError) {
+                customFoodError.textContent = "Name is required.";
+                customFoodError.hidden = false;
+            }
+            return;
+        }
+
+        try {
+            const created = await api(
+                "POST",
+                "/api/nutrition/dashboard/library/custom/",
+                payload,
+            );
+            closeCustomFoodDialog();
+            // Switch to the library tab so the trainer sees the
+            // freshly-created food + can drag it into a meal.
+            const libraryTab = foodRail?.querySelector('.builder-library-tab[data-tab="library"]');
+            libraryTab?.click();
+        } catch (err) {
+            if (customFoodError) {
+                customFoodError.textContent = `Couldn't save: ${err.message}`;
+                customFoodError.hidden = false;
+            }
+        }
+    });
 
     async function fetchCatalog() {
         renderLibraryStatus("Searching foods…");

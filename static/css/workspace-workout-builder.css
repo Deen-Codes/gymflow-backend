@@ -446,6 +446,157 @@
     text-align: center;
 }
 
+/* ----------------------------------------------------------------
+   "+ Create custom" CTA — pinned just under the search box on
+   both the workout catalog rail and the nutrition food rail.
+   Matches the right-rail visual rhythm (full-width, soft fill,
+   accent-coloured plus glyph) so it looks like a native part of
+   the picker rather than a bolted-on action.
+   ---------------------------------------------------------------- */
+.builder-create-custom-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 9px 12px;
+    margin: 4px 0 8px;
+    background: var(--builder-surface-soft, #f6f7f9);
+    border: 1px dashed var(--builder-border);
+    border-radius: 8px;
+    color: var(--builder-text);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+}
+.builder-create-custom-cta:hover {
+    background: var(--builder-surface);
+    border-color: var(--builder-accent);
+    border-style: solid;
+}
+.builder-create-custom-cta-plus {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--builder-accent);
+    color: var(--builder-accent-on, #fff);
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1;
+}
+
+/* ----------------------------------------------------------------
+   Custom-item creation dialog — used by both the food picker and
+   the exercise picker. Native <dialog> element, centred, with
+   a subtle backdrop.
+   ---------------------------------------------------------------- */
+.builder-custom-dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    background: var(--builder-surface, #fff);
+    color: var(--builder-text);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+    max-width: 480px;
+    width: calc(100% - 32px);
+}
+.builder-custom-dialog::backdrop {
+    background: rgba(8, 10, 14, 0.55);
+    backdrop-filter: blur(2px);
+}
+
+.builder-custom-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 22px 22px 18px;
+}
+.builder-custom-form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.builder-custom-form-header h3 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+.builder-custom-form-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--builder-text-muted);
+    font-size: 18px;
+    line-height: 1;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+.builder-custom-form-close:hover {
+    background: var(--builder-surface-soft);
+    color: var(--builder-text);
+}
+
+.builder-custom-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+.builder-custom-form-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--builder-text-muted);
+    text-transform: uppercase;
+}
+.builder-custom-form-field input,
+.builder-custom-form-field select,
+.builder-custom-form-field textarea {
+    padding: 8px 10px;
+    border: 1px solid var(--builder-border);
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: inherit;
+    background: var(--builder-surface);
+    color: var(--builder-text);
+    box-sizing: border-box;
+}
+.builder-custom-form-field input:focus,
+.builder-custom-form-field select:focus,
+.builder-custom-form-field textarea:focus {
+    outline: 2px solid var(--builder-accent);
+    outline-offset: -1px;
+    border-color: var(--builder-accent);
+}
+.builder-custom-form-row {
+    display: flex;
+    gap: 10px;
+}
+.builder-custom-form-row--macros {
+    flex-wrap: wrap;
+}
+.builder-custom-form-row--macros .builder-custom-form-field {
+    min-width: calc(50% - 5px);
+}
+.builder-custom-form-error {
+    color: #c0392b;
+    font-size: 12px;
+    background: rgba(192, 57, 43, 0.08);
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+.builder-custom-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 4px;
+}
+
 /* Loading state */
 .is-loading {
     opacity: 0.6;

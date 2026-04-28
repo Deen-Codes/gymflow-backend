@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="{% static 'css/dashboard-workouts.css' %}">
     <link rel="stylesheet" href="{% static 'css/dashboard-clients.css' %}">
     <link rel="stylesheet" href="{% static 'css/dashboard-nutrition.css' %}">
+    {# Shared right-rail styling for the picker — defines the
+       Create-custom CTA button and the dialog used by both the
+       food picker and the workout exercise picker. #}
+    <link rel="stylesheet" href="{% static 'css/workspace-workout-builder.css' %}">
 {% endblock %}
 
 {% block dashboard_content %}
@@ -214,10 +218,95 @@
                            aria-label="Search foods">
                 </div>
 
+                <button type="button"
+                        class="builder-create-custom-cta"
+                        id="custom-food-cta"
+                        title="Create a custom food in your library">
+                    <span class="builder-create-custom-cta-plus">+</span>
+                    <span class="builder-create-custom-cta-text">Create custom food</span>
+                </button>
+
                 <ul class="builder-library-list" id="food-list" data-role="food-list">
                     <li class="builder-library-empty">Type to search foods.</li>
                 </ul>
             </aside>
+
+            <!--
+                Custom-food creation dialog. Hidden by default; opens
+                via the "+ Create custom food" CTA. Submitting POSTs
+                to /api/nutrition/dashboard/library/custom/ — see
+                workspace-nutrition-builder.js for the wiring.
+            -->
+            <dialog id="custom-food-dialog" class="builder-custom-dialog">
+                <form method="dialog" id="custom-food-form" class="builder-custom-form">
+                    <header class="builder-custom-form-header">
+                        <h3>Create custom food</h3>
+                        <button type="button"
+                                class="builder-custom-form-close"
+                                data-action="close-custom-food">✕</button>
+                    </header>
+
+                    <label class="builder-custom-form-field">
+                        <span class="builder-custom-form-label">Name</span>
+                        <input type="text" name="name" required maxlength="120"
+                               placeholder="e.g. Olive oil">
+                    </label>
+
+                    <div class="builder-custom-form-row">
+                        <label class="builder-custom-form-field">
+                            <span class="builder-custom-form-label">Per</span>
+                            <input type="number" name="reference_grams"
+                                   value="100" min="0.1" step="0.1" required>
+                        </label>
+                        <label class="builder-custom-form-field">
+                            <span class="builder-custom-form-label">Unit</span>
+                            <select name="portion_type">
+                                <option value="grams" selected>Grams</option>
+                                <option value="ml">Millilitres</option>
+                                <option value="oz">Ounces</option>
+                                <option value="tbsp">Tablespoon</option>
+                                <option value="tsp">Teaspoon</option>
+                                <option value="cup">Cup</option>
+                                <option value="unit">Unit (egg, scoop…)</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <label class="builder-custom-form-field"
+                           data-role="unit-label-field" hidden>
+                        <span class="builder-custom-form-label">Unit name</span>
+                        <input type="text" name="unit_label" maxlength="30"
+                               placeholder="e.g. egg, scoop, slice">
+                    </label>
+
+                    <div class="builder-custom-form-row builder-custom-form-row--macros">
+                        <label class="builder-custom-form-field">
+                            <span class="builder-custom-form-label">kcal</span>
+                            <input type="number" name="calories" min="0" step="1" required>
+                        </label>
+                        <label class="builder-custom-form-field">
+                            <span class="builder-custom-form-label">Protein (g)</span>
+                            <input type="number" name="protein" min="0" step="0.1" required>
+                        </label>
+                        <label class="builder-custom-form-field">
+                            <span class="builder-custom-form-label">Carbs (g)</span>
+                            <input type="number" name="carbs" min="0" step="0.1" required>
+                        </label>
+                        <label class="builder-custom-form-field">
+                            <span class="builder-custom-form-label">Fats (g)</span>
+                            <input type="number" name="fats" min="0" step="0.1" required>
+                        </label>
+                    </div>
+
+                    <div class="builder-custom-form-error" data-role="custom-food-error" hidden></div>
+
+                    <div class="builder-custom-form-actions">
+                        <button type="button" class="btn btn--ghost"
+                                data-action="close-custom-food">Cancel</button>
+                        <button type="submit" class="btn btn--primary">Save food</button>
+                    </div>
+                </form>
+            </dialog>
         </div>
     </div>
 {% else %}

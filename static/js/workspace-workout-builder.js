@@ -394,6 +394,93 @@
         else fetchCatalog();
     }, 200));
 
+    // -------------------------------------------------------------
+    // Custom exercise creation — dialog wiring
+    // Mirror of the food-side builder. Pre-fills the name with the
+    // current search query and POSTs to /library/custom/.
+    // -------------------------------------------------------------
+    const customExerciseCta    = document.getElementById("custom-exercise-cta");
+    const customExerciseDialog = document.getElementById("custom-exercise-dialog");
+    const customExerciseForm   = document.getElementById("custom-exercise-form");
+    const customExerciseError  = customExerciseDialog?.querySelector(
+        '[data-role="custom-exercise-error"]',
+    );
+
+    function openCustomExerciseDialog() {
+        if (!customExerciseDialog) return;
+        const nameInput = customExerciseForm.querySelector('input[name="name"]');
+        if (nameInput) nameInput.value = state.searchQuery || "";
+        // Reset the optional fields so a previous draft doesn't leak.
+        customExerciseForm.querySelector('input[name="muscle_group"]').value = "";
+        customExerciseForm.querySelector('input[name="equipment"]').value = "";
+        customExerciseForm.querySelector('input[name="video_url"]').value = "";
+        customExerciseForm.querySelector('textarea[name="coaching_notes"]').value = "";
+        if (customExerciseError) {
+            customExerciseError.hidden = true;
+            customExerciseError.textContent = "";
+        }
+        customExerciseDialog.showModal();
+        nameInput?.focus();
+        if (nameInput?.value) nameInput.select();
+    }
+
+    function closeCustomExerciseDialog() {
+        if (customExerciseDialog?.open) customExerciseDialog.close();
+    }
+
+    customExerciseCta?.addEventListener("click", openCustomExerciseDialog);
+
+    customExerciseDialog?.addEventListener("click", function (event) {
+        if (event.target.matches('[data-action="close-custom-exercise"]')) {
+            event.preventDefault();
+            closeCustomExerciseDialog();
+            return;
+        }
+        if (event.target === customExerciseDialog) {
+            closeCustomExerciseDialog();
+        }
+    });
+
+    customExerciseForm?.addEventListener("submit", async function (event) {
+        event.preventDefault();
+        if (customExerciseError) {
+            customExerciseError.hidden = true;
+            customExerciseError.textContent = "";
+        }
+        const formData = new FormData(customExerciseForm);
+        const payload = {
+            name:           (formData.get("name") || "").trim(),
+            muscle_group:   (formData.get("muscle_group") || "").trim(),
+            equipment:      (formData.get("equipment") || "").trim(),
+            video_url:      (formData.get("video_url") || "").trim(),
+            coaching_notes: (formData.get("coaching_notes") || "").trim(),
+        };
+        if (!payload.name) {
+            if (customExerciseError) {
+                customExerciseError.textContent = "Name is required.";
+                customExerciseError.hidden = false;
+            }
+            return;
+        }
+        try {
+            await api(
+                "POST",
+                "/api/workouts/dashboard/library/custom/",
+                payload,
+            );
+            closeCustomExerciseDialog();
+            // Switch to "My library" so the trainer sees it and can
+            // drag it onto a workout day.
+            const libraryTab = libraryRail?.querySelector('.builder-library-tab[data-tab="library"]');
+            libraryTab?.click();
+        } catch (err) {
+            if (customExerciseError) {
+                customExerciseError.textContent = `Couldn't save: ${err.message}`;
+                customExerciseError.hidden = false;
+            }
+        }
+    });
+
     async function fetchCatalog() {
         renderLibraryStatus("Loading…");
         try {
