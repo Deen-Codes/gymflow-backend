@@ -294,6 +294,54 @@ def library_list(request):
 
 @api_view(["POST"])
 @permission_classes([IsAuthenticated])
+def library_create_custom(request):
+    """POST /api/workouts/dashboard/library/custom/
+
+    Mirror of the nutrition `library_create_custom` endpoint —
+    creates a from-scratch ExerciseLibraryItem for the trainer
+    (i.e. an exercise that isn't in the global catalog yet). Drives
+    the inline "+ Create custom exercise" form on the workout-day
+    builder. Body shape:
+
+        {
+            "name":           "Cable curl, EZ bar",   (required)
+            "muscle_group":   "Biceps",
+            "equipment":      "Cable machine",
+            "video_url":      "",
+            "coaching_notes": "Keep elbows pinned …"
+        }
+
+    Returns the created item shaped like a `library_list` row so the
+    frontend can drop it directly into the picker.
+    """
+    trainer, err = _require_trainer(request)
+    if err:
+        return err
+
+    body = request.data or {}
+    name = (body.get("name") or "").strip()
+    if not name:
+        return Response({"detail": "Name is required."}, status=status.HTTP_400_BAD_REQUEST)
+
+    item = ExerciseLibraryItem.objects.create(
+        user=trainer,
+        name=name[:255],
+        muscle_group=(body.get("muscle_group") or "").strip()[:64],
+        equipment=(body.get("equipment") or "").strip()[:64],
+        video_url=(body.get("video_url") or "").strip()[:500],
+        coaching_notes=(body.get("coaching_notes") or "").strip(),
+        # source_catalog_item left null → marks this row as a custom
+        # exercise rather than a snapshot of a catalog entry.
+        source_catalog_item=None,
+    )
+    return Response(
+        ExerciseLibraryItemSerializer(item).data,
+        status=status.HTTP_201_CREATED,
+    )
+
+
+@api_view(["POST"])
+@permission_classes([IsAuthenticated])
 def library_snapshot_from_catalog(request):
     """POST /api/workouts/dashboard/library/snapshot/  body: {catalog_id}
 

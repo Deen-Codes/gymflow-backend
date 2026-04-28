@@ -143,6 +143,16 @@ class Command(BaseCommand):
         skipped = 0
         seen = 0
 
+        # Per-page progress so the user sees the import ticking
+        # through rather than staring at a silent terminal for 60s.
+        # Force-flush each line because Render's shell buffers stdout
+        # heavily until newline + flush.
+        def log(msg):
+            self.stdout.write(msg)
+            self.stdout.flush()
+
+        log(f"Fetching wger catalog from {WGER_BASE}/exerciseinfo/ …")
+
         while True:
             try:
                 page = _fetch_page(offset, PAGE_SIZE)
@@ -151,8 +161,15 @@ class Command(BaseCommand):
                 return
 
             results = page.get("results") or []
+            total = page.get("count")
             if not results:
                 break
+
+            log(
+                f"  page offset={offset} got {len(results)} records "
+                f"(total upstream: {total or '?'}) — created={created} "
+                f"updated={updated} skipped={skipped}"
+            )
 
             for record in results:
                 seen += 1

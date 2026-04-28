@@ -178,8 +178,13 @@ def _is_useful_food(item):
     """Filter rules that drop OFF noise:
        - missing or junk name → drop
        - all-zero macros → drop (means OFF has no nutrition data)
+       - non-empty brand → drop (per-trainer policy: only generic /
+         unbranded entries surface in search results; if a trainer
+         needs a branded item they can create it as a custom).
     """
     if not item.get("name"):
+        return False
+    if (item.get("brand") or "").strip():
         return False
     macro_total = (
         (item.get("calories") or 0)
@@ -428,7 +433,34 @@ def food_search(request):
 
     q = (request.query_params.get("q") or "").strip()
     if not q:
-        return Response({"results": [], "source": "off"})
+        # Empty search → show the trainer's recent library so the
+        # picker mirrors the workout catalog tab, which always has
+        # *something* to pick from. Sorted by created_at descending so
+        # the most recently added food appears first; `library_list`-
+        # style payload shape lets the frontend reuse the same row
+        # template.
+        recent = list(
+            FoodLibraryItem.objects.filter(user=trainer)
+            .order_by("-created_at")[:20]
+        )
+        rows = [
+            {
+                "external_id":    f.external_id,
+                "name":           f.name,
+                "brand":          f.brand,
+                "reference_grams": f.reference_grams,
+                "calories":       f.calories,
+                "protein":        f.protein,
+                "carbs":          f.carbs,
+                "fats":           f.fats,
+                "in_library":     True,
+                "library_id":     f.id,
+                "portion_type":   f.portion_type,
+                "unit_label":     f.unit_label,
+            }
+            for f in recent
+        ]
+        return Response({"results": rows, "source": "library"})
 
     cache_key = f"{OFF_CACHE_PREFIX}{q.lower()}"
     try:
@@ -542,6 +574,83 @@ def library_list(request):
         qs = qs.filter(Q(name__icontains=q) | Q(brand__icontains=q))
     qs = qs.order_by("name")
     return Response({"results": FoodLibraryItemSerializer(qs, many=True).data})
+
+
+@api_view(["POST"])
+@permission_classes([IsAuthenticated])
+def library_create_custom(request):
+    """POST /api/nutrition/dashboard/library/custom/
+
+    Create a custom (`source=custom`) food in the trainer's library.
+    Drives the inline "+ Create custom food" form on the dashboard
+    food picker. Body shape:
+
+        {
+            "name":            "Olive oil",                 (required)
+            "portion_type":    "tbsp",                       (one of PORTION_CHOICES)
+            "reference_grams": 1,                            (default 100 for grams, 1 otherwise)
+            "unit_label":      "egg",                        (only for portion_type=unit)
+            "calories":        120,
+            "protein":         0,
+            "carbs":           0,
+            "fats":            14
+        }
+
+    Returns the created `FoodLibraryItem` shaped exactly like
+    `library_list` results so the frontend can drop it straight into
+    the picker without a separate refetch.
+    """
+    trainer, err = _require_trainer(request)
+    if err:
+        return err
+
+    body = request.data or {}
+    name = (body.get("name") or "").strip()
+    if not name:
+        return Response({"detail": "Name is required."}, status=status.HTTP_400_BAD_REQUEST)
+
+    valid_types = {choice[0] for choice in FoodLibraryItem.PORTION_CHOICES}
+    portion_type = body.get("portion_type") or FoodLibraryItem.PORTION_GRAMS
+    if portion_type not in valid_types:
+        return Response(
+            {"detail": f"portion_type must be one of {sorted(valid_types)}."},
+            status=status.HTTP_400_BAD_REQUEST,
+        )
+
+    # Sensible defaults: gram foods reference 100g (industry standard
+    # for nutrition labelling), everything else references 1 of the
+    # named unit. Frontend can override via the form.
+    default_reference = 100.0 if portion_type == FoodLibraryItem.PORTION_GRAMS else 1.0
+    try:
+        reference = float(body.get("reference_grams") or default_reference)
+    except (TypeError, ValueError):
+        reference = default_reference
+
+    def _macro(key):
+        try:
+            return float(body.get(key) or 0)
+        except (TypeError, ValueError):
+            return 0.0
+
+    item = FoodLibraryItem.objects.create(
+        user=trainer,
+        name=name[:255],
+        reference_grams=max(0.001, reference),    # avoid div-by-zero in scaling
+        calories=_macro("calories"),
+        protein=_macro("protein"),
+        carbs=_macro("carbs"),
+        fats=_macro("fats"),
+        portion_type=portion_type,
+        unit_label=(body.get("unit_label") or "").strip()[:40],
+        source=FoodLibraryItem.SOURCE_CUSTOM,
+        external_id="",
+        brand="",
+    )
+
+    return Response(
+        FoodLibraryItemSerializer(item).data,
+        status=status.HTTP_201_CREATED,
+    )
 
 
 # -------------------------------------------------------------------

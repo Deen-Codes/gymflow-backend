@@ -15,6 +15,7 @@ from .dashboard_api_views import (
     day_delete_exercise,
     day_reorder_exercises,
     day_update_exercise,
+    library_create_custom,
     library_list,
     library_snapshot_from_catalog,
     sync_wger_catalog,
@@ -27,6 +28,11 @@ urlpatterns = [
     path("catalog/sync/", sync_wger_catalog, name="dashboard-api-catalog-sync"),
 
     path("library/", library_list, name="dashboard-api-library-list"),
+    path(
+        "library/custom/",
+        library_create_custom,
+        name="dashboard-api-library-create-custom",
+    ),
     path(
         "library/snapshot/",
         library_snapshot_from_catalog,

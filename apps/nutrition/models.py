@@ -59,14 +59,33 @@ class FoodLibraryItem(models.Model):
         (SOURCE_OFF, "Open Food Facts"),
     ]
 
-    # Portion mode. Some foods are weighed (rice, chicken) — macros per
-    # `reference_grams`. Some are counted (eggs, wraps, protein scoops)
-    # — macros per 1 unit. `unit_label` carries the noun ("egg", "wrap").
+    # Portion mode. For weighed foods (rice, chicken) `reference_grams`
+    # carries the actual weight reference. For named non-gram portions
+    # (tbsp, cup, ml, oz) `reference_grams` is repurposed to mean
+    # "reference amount" — e.g. 1 tbsp, 1 cup — and macros are stored
+    # per that unit. The freeform PORTION_UNIT slot is for everything
+    # else (eggs, wraps, scoops, slices) where `unit_label` carries
+    # the noun.
+    #
+    # The column is named `reference_grams` for legacy reasons; we
+    # don't rename it because doing so would cascade across every
+    # serializer / view / migration. The semantic is now "reference
+    # amount in the chosen portion units."
     PORTION_GRAMS = "grams"
+    PORTION_ML    = "ml"
+    PORTION_OUNCE = "oz"
+    PORTION_TBSP  = "tbsp"
+    PORTION_TSP   = "tsp"
+    PORTION_CUP   = "cup"
     PORTION_UNIT  = "unit"
     PORTION_CHOICES = [
-        (PORTION_GRAMS, "Per gram (weighed)"),
-        (PORTION_UNIT,  "Per unit (eggs, wraps, scoops)"),
+        (PORTION_GRAMS, "Grams"),
+        (PORTION_ML,    "Millilitres"),
+        (PORTION_OUNCE, "Ounces"),
+        (PORTION_TBSP,  "Tablespoon"),
+        (PORTION_TSP,   "Teaspoon"),
+        (PORTION_CUP,   "Cup"),
+        (PORTION_UNIT,  "Unit (egg, scoop, slice…)"),
     ]
 
     user = models.ForeignKey(
