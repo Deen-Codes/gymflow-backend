@@ -55,7 +55,7 @@ OFF_TIMEOUT_SEC = 6
 OFF_CACHE_SECONDS = 600  # 10 min — same query won't keep hitting OFF
 # Bumped to v5 — exact-match boost reorders results, so any cached
 # responses from the previous shape would be in the wrong order.
-OFF_CACHE_PREFIX = "off:v5:search:"
+OFF_CACHE_PREFIX = "off:v6:search:"   # bumped to flush bad cache entries from the strict-brand-filter regression
 
 
 # -------------------------------------------------------------------
@@ -178,13 +178,15 @@ def _is_useful_food(item):
     """Filter rules that drop OFF noise:
        - missing or junk name → drop
        - all-zero macros → drop (means OFF has no nutrition data)
-       - non-empty brand → drop (per-trainer policy: only generic /
-         unbranded entries surface in search results; if a trainer
-         needs a branded item they can create it as a custom).
+
+    We don't filter on brand here — every brand string gets blanked
+    out before the response is sent (see `_strip_brand_for_display`)
+    so the UI never shows brand-name baggage, but the underlying OFF
+    record can still surface as a generic food. Combined with
+    `_dedupe_by_name`, the trainer sees one clean "Brown Rice" row
+    rather than twelve branded variants.
     """
     if not item.get("name"):
-        return False
-    if (item.get("brand") or "").strip():
         return False
     macro_total = (
         (item.get("calories") or 0)
@@ -193,6 +195,20 @@ def _is_useful_food(item):
         + (item.get("fats") or 0)
     )
     return macro_total > 0
+
+
+def _strip_brand_for_display(items):
+    """Blank out the `brand` field on every result so the UI shows
+    foods as generic. Mutates a shallow copy and returns the new
+    list. Combined with `_dedupe_by_name`, the trainer sees one
+    "Brown Rice" entry rather than "Tesco Brown Rice", "Tilda Brown
+    Rice", etc."""
+    out = []
+    for item in items or []:
+        copy = dict(item)
+        copy["brand"] = ""
+        out.append(copy)
+    return out
 
 
 def _snapshot_off_into_library(trainer, payload):
@@ -524,6 +540,15 @@ def food_search(request):
             "source": "library",
             "message": "No matches with nutrition data — showing your library instead.",
         })
+
+    # Generic-only display: blank out brand strings on every row so
+    # the trainer sees clean food names, not "Tesco Brown Rice"
+    # baggage. The earlier `_dedupe_by_name` pass has already
+    # collapsed brand variants of the same food, so blanking the
+    # field doesn't lose any signal. Strip BEFORE caching so cache
+    # hits are also already-clean; saves us re-stripping on every
+    # retrieval.
+    normalized = _strip_brand_for_display(normalized)
 
     try:
         cache.set(cache_key, normalized, OFF_CACHE_SECONDS)
