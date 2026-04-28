@@ -122,14 +122,6 @@
                        aria-label="Search exercises">
             </div>
 
-            <button type="button"
-                    class="builder-create-custom-cta"
-                    id="custom-exercise-cta"
-                    title="Create a custom exercise in your library">
-                <span class="builder-create-custom-cta-plus">+</span>
-                <span class="builder-create-custom-cta-text">Create custom exercise</span>
-            </button>
-
             <div class="builder-library-facets" id="library-facets">
                 <!-- facet chips populated from /catalog/facets/ -->
             </div>
@@ -141,62 +133,6 @@
 
     </div>
 </div>
-
-<!--
-    Custom-exercise creation dialog. Hidden until the "+ Create
-    custom exercise" CTA is tapped. POSTs to
-    /api/workouts/dashboard/library/custom/ — see
-    workspace-workout-builder.js.
--->
-<dialog id="custom-exercise-dialog" class="builder-custom-dialog">
-    <form method="dialog" id="custom-exercise-form" class="builder-custom-form">
-        <header class="builder-custom-form-header">
-            <h3>Create custom exercise</h3>
-            <button type="button"
-                    class="builder-custom-form-close"
-                    data-action="close-custom-exercise">✕</button>
-        </header>
-
-        <label class="builder-custom-form-field">
-            <span class="builder-custom-form-label">Name</span>
-            <input type="text" name="name" required maxlength="120"
-                   placeholder="e.g. Cable curl (EZ bar)">
-        </label>
-
-        <div class="builder-custom-form-row">
-            <label class="builder-custom-form-field">
-                <span class="builder-custom-form-label">Muscle group</span>
-                <input type="text" name="muscle_group" maxlength="40"
-                       placeholder="e.g. Biceps">
-            </label>
-            <label class="builder-custom-form-field">
-                <span class="builder-custom-form-label">Equipment</span>
-                <input type="text" name="equipment" maxlength="40"
-                       placeholder="e.g. Cable machine">
-            </label>
-        </div>
-
-        <label class="builder-custom-form-field">
-            <span class="builder-custom-form-label">Video URL (optional)</span>
-            <input type="url" name="video_url" maxlength="500"
-                   placeholder="https://youtu.be/…">
-        </label>
-
-        <label class="builder-custom-form-field">
-            <span class="builder-custom-form-label">Coaching notes (optional)</span>
-            <textarea name="coaching_notes" rows="3"
-                      placeholder="Cues, ranges, common mistakes…"></textarea>
-        </label>
-
-        <div class="builder-custom-form-error" data-role="custom-exercise-error" hidden></div>
-
-        <div class="builder-custom-form-actions">
-            <button type="button" class="btn btn--ghost"
-                    data-action="close-custom-exercise">Cancel</button>
-            <button type="submit" class="btn btn--primary">Save exercise</button>
-        </div>
-    </form>
-</dialog>
 
 <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js"
         defer></script>

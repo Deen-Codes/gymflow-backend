@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="{% static 'css/dashboard-clients.css' %}">
     <link rel="stylesheet" href="{% static 'css/dashboard-nutrition.css' %}">
     {% comment %}
-        Shared right-rail styling for the picker — defines the
-        Create-custom CTA button and the dialog used by both the
-        food picker and the workout exercise picker.
+        Shared dialog styles for the "+ Create custom" header CTAs
+        on both the nutrition and workout pages. Uses dashboard
+        tokens directly so no theme bleed.
     {% endcomment %}
-    <link rel="stylesheet" href="{% static 'css/workspace-workout-builder.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dashboard-picker-shared.css' %}">
 {% endblock %}
 
 {% block dashboard_content %}
@@ -37,6 +37,12 @@
     </div>
 
     <div class="dashboard-page-actions">
+        {# "+ Create food" lives up here next to the other page-level
+           actions rather than in the right rail — feels more native
+           alongside "+ New plan" / "+ Add meal" and matches the workout
+           page's header. Click handler in workspace-nutrition-builder.js
+           targets #custom-food-cta. #}
+        <button type="button" class="btn btn-secondary" id="custom-food-cta">+ Create food</button>
         <button type="button" class="btn btn-secondary" data-action="create-nplan">+ New plan</button>
         {% if nutrition_plan %}
             <button type="button" class="btn btn-primary" data-action="add-meal">+ Add meal</button>
@@ -219,14 +225,6 @@
                            autocomplete="off"
                            aria-label="Search foods">
                 </div>
-
-                <button type="button"
-                        class="builder-create-custom-cta"
-                        id="custom-food-cta"
-                        title="Create a custom food in your library">
-                    <span class="builder-create-custom-cta-plus">+</span>
-                    <span class="builder-create-custom-cta-text">Create custom food</span>
-                </button>
 
                 <ul class="builder-library-list" id="food-list" data-role="food-list">
                     <li class="builder-library-empty">Type to search foods.</li>

@@ -17,6 +17,11 @@
 {% block extra_head %}
     {{ block.super }}
     <link rel="stylesheet" href="{% static 'css/dashboard-workouts.css' %}">
+    {% comment %}
+        Shared dialog styles for the "+ Create custom" header CTAs
+        on both the nutrition and workout pages.
+    {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/dashboard-picker-shared.css' %}">
 {% endblock %}
 
 {% block dashboard_content %}
@@ -33,6 +38,11 @@
     </div>
 
     <div class="dashboard-page-actions">
+        {# "+ Create exercise" lives up here next to the other page-
+           level actions — feels native alongside "+ New plan" /
+           "+ Add day" and matches the nutrition page. Click handler
+           in workspace-workout-builder.js targets #custom-exercise-cta. #}
+        <button type="button" class="btn btn-secondary" id="custom-exercise-cta">+ Create exercise</button>
         <button type="button" class="btn btn-secondary" data-action="create-plan">+ New plan</button>
         {% if plan %}
             <button type="button" class="btn btn-primary" data-action="add-day">+ Add day</button>
@@ -218,6 +228,62 @@
         </form>
     </div>
 {% endif %}
+
+{% comment %}
+    Custom-exercise creation dialog. Hidden by default; opens via
+    the "+ Create exercise" header CTA. POSTs to
+    /api/workouts/dashboard/library/custom/ — see
+    workspace-workout-builder.js for the wiring.
+{% endcomment %}
+<dialog id="custom-exercise-dialog" class="builder-custom-dialog">
+    <form method="dialog" id="custom-exercise-form" class="builder-custom-form">
+        <header class="builder-custom-form-header">
+            <h3>Create custom exercise</h3>
+            <button type="button"
+                    class="builder-custom-form-close"
+                    data-action="close-custom-exercise">✕</button>
+        </header>
+
+        <label class="builder-custom-form-field">
+            <span class="builder-custom-form-label">Name</span>
+            <input type="text" name="name" required maxlength="120"
+                   placeholder="e.g. Cable curl (EZ bar)">
+        </label>
+
+        <div class="builder-custom-form-row">
+            <label class="builder-custom-form-field">
+                <span class="builder-custom-form-label">Muscle group</span>
+                <input type="text" name="muscle_group" maxlength="40"
+                       placeholder="e.g. Biceps">
+            </label>
+            <label class="builder-custom-form-field">
+                <span class="builder-custom-form-label">Equipment</span>
+                <input type="text" name="equipment" maxlength="40"
+                       placeholder="e.g. Cable machine">
+            </label>
+        </div>
+
+        <label class="builder-custom-form-field">
+            <span class="builder-custom-form-label">Video URL (optional)</span>
+            <input type="url" name="video_url" maxlength="500"
+                   placeholder="https://youtu.be/…">
+        </label>
+
+        <label class="builder-custom-form-field">
+            <span class="builder-custom-form-label">Coaching notes (optional)</span>
+            <textarea name="coaching_notes" rows="3"
+                      placeholder="Cues, ranges, common mistakes…"></textarea>
+        </label>
+
+        <div class="builder-custom-form-error" data-role="custom-exercise-error" hidden></div>
+
+        <div class="builder-custom-form-actions">
+            <button type="button" class="btn btn--ghost"
+                    data-action="close-custom-exercise">Cancel</button>
+            <button type="submit" class="btn btn--primary">Save exercise</button>
+        </div>
+    </form>
+</dialog>
 
 <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js" defer></script>
 <script src="{% static 'js/workspace-workout-builder.js' %}" defer></script>

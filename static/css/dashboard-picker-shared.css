@@ -1,0 +1,160 @@
+/*
+    Shared CSS for the Create-custom dialog used by both the
+    nutrition food picker and the workout exercise picker.
+
+    Lives separate from workspace-workout-builder.css (which has
+    its own light-theme :root that bleeds onto the nutrition page
+    when imported there) so this file can be linked from both
+    pages without theming cross-contamination.
+
+    Uses dashboard design tokens (--bg-lift, --text, --accent…)
+    from base.css so it picks up the shared dark theme.
+*/
+
+/* ----------------------------------------------------------------
+   Custom-item creation dialog — used by both pickers.
+   ---------------------------------------------------------------- */
+.builder-custom-dialog {
+    border: 1px solid var(--glass-border-strong);
+    border-radius: var(--radius-md);
+    padding: 0;
+    background: var(--bg-lift);
+    color: var(--text);
+    box-shadow: var(--shadow-lg);
+    max-width: 520px;
+    width: calc(100% - 32px);
+}
+.builder-custom-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(4px);
+}
+
+.builder-custom-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px 24px 20px;
+}
+.builder-custom-form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.builder-custom-form-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+}
+.builder-custom-form-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-faint);
+    font-size: 18px;
+    line-height: 1;
+    padding: 4px 10px;
+    border-radius: var(--radius-xs);
+    transition: background var(--motion-fast) var(--ease),
+                color var(--motion-fast) var(--ease);
+}
+.builder-custom-form-close:hover {
+    background: var(--glass-bg-strong);
+    color: var(--text);
+}
+
+.builder-custom-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+.builder-custom-form-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--text-faint);
+    text-transform: uppercase;
+}
+.builder-custom-form-field input,
+.builder-custom-form-field select,
+.builder-custom-form-field textarea {
+    padding: 10px 12px;
+    border: 1px solid var(--glass-border-strong);
+    border-radius: var(--radius-xs);
+    font-size: 14px;
+    font-family: inherit;
+    background: var(--bg-soft);
+    color: var(--text);
+    box-sizing: border-box;
+    transition: border-color var(--motion-fast) var(--ease);
+}
+.builder-custom-form-field input::placeholder,
+.builder-custom-form-field textarea::placeholder {
+    color: var(--text-mute);
+}
+.builder-custom-form-field input:focus,
+.builder-custom-form-field select:focus,
+.builder-custom-form-field textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px var(--accent-soft);
+}
+.builder-custom-form-field select {
+    /* Native select arrow on dark backgrounds — let the browser
+       handle it but bump the right padding so the arrow has room. */
+    padding-right: 32px;
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, var(--text-soft) 50%),
+                      linear-gradient(-45deg, transparent 50%, var(--text-soft) 50%);
+    background-position: calc(100% - 16px) 50%, calc(100% - 11px) 50%;
+    background-size: 5px 5px;
+    background-repeat: no-repeat;
+}
+.builder-custom-form-row {
+    display: flex;
+    gap: 10px;
+}
+.builder-custom-form-row--macros {
+    flex-wrap: wrap;
+}
+.builder-custom-form-row--macros .builder-custom-form-field {
+    min-width: calc(50% - 5px);
+}
+.builder-custom-form-error {
+    color: var(--red);
+    font-size: 12px;
+    background: rgba(255, 93, 108, 0.10);
+    padding: 8px 10px;
+    border-radius: var(--radius-xs);
+    border: 1px solid rgba(255, 93, 108, 0.32);
+}
+.builder-custom-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 4px;
+}
+.builder-custom-form-actions .btn {
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: var(--radius-xs);
+    border: 1px solid var(--glass-border-strong);
+    background: var(--glass-bg);
+    color: var(--text);
+    cursor: pointer;
+    transition: background var(--motion-fast) var(--ease);
+}
+.builder-custom-form-actions .btn--ghost:hover {
+    background: var(--glass-bg-strong);
+}
+.builder-custom-form-actions .btn--primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg-deep);
+}
+.builder-custom-form-actions .btn--primary:hover {
+    background: var(--accent-strong);
+    border-color: var(--accent-strong);
+}
