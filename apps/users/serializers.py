@@ -38,6 +38,7 @@ class UserMeSerializer(serializers.ModelSerializer):
     trainer_business_name = serializers.SerializerMethodField()
     trainer_id = serializers.SerializerMethodField()
     assigned_workout_plan_id = serializers.SerializerMethodField()
+    display_name = serializers.SerializerMethodField()
 
     class Meta:
         model = User
@@ -46,11 +47,38 @@ class UserMeSerializer(serializers.ModelSerializer):
             "username",
             "email",
             "role",
+            "first_name",
+            "last_name",
+            "display_name",
             "trainer_slug",
             "trainer_business_name",
             "trainer_id",
             "assigned_workout_plan_id",
         ]
+
+    def get_display_name(self, obj):
+        """Best-available human name for greetings + share cards.
+
+        Priority:
+          1. first_name from the onboarding form (the spec wants
+             this to override anything the trainer set).
+          2. Username with `_Client` / `_Trainer` suffix stripped
+             so legacy provisioned accounts ("Deen_Client") still
+             read cleanly until they fill the onboarding form.
+          3. Plain username as a last resort.
+        """
+        if obj.first_name and obj.first_name.strip():
+            return obj.first_name.strip()
+        username = obj.username or ""
+        for suffix in ("_Client", "_Trainer", "_client", "_trainer"):
+            if username.endswith(suffix):
+                return username[: -len(suffix)]
+        # Some legacy usernames split on underscore generally —
+        # "Deen_Smith" → "Deen". Apply only when there's a single
+        # underscore so we don't mangle handles like "ab_cd_ef".
+        if username.count("_") == 1:
+            return username.split("_", 1)[0]
+        return username
 
     def get_trainer_slug(self, obj):
         if obj.role == User.TRAINER and hasattr(obj, "trainer_profile"):

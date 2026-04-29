@@ -71,3 +71,171 @@ class ClientProfile(models.Model):
 
     def __str__(self):
         return self.user.username
+
+
+# ----------------------------------------------------------------------
+# Hub content — DB-backed Changelog + Coaching Tips so we can post
+# updates without redeploying. Both are admin-managed; the trainer
+# hub view picks the latest published rows on every render.
+#
+# Was hardcoded as Python lists in dashboard_hub_views.py — replaced
+# in task #37 with these two tiny models. Kept dead-simple; if either
+# grows audience targeting, scheduling, or rich-text bodies, split
+# into a dedicated `apps.cms` app.
+# ----------------------------------------------------------------------
+
+
+class Changelog(models.Model):
+    """A short "what's new" announcement shown at the top of the
+    trainer Hub. Only the most-recent published entry renders.
+
+    Audience field lets us target trainers vs. clients with different
+    copy when the iOS client also starts reading from a Changelog
+    feed (currently iOS doesn't, but the field future-proofs the
+    model so we don't migrate it later)."""
+
+    AUDIENCE_TRAINERS = "trainers"
+    AUDIENCE_CLIENTS = "clients"
+    AUDIENCE_ALL = "all"
+    AUDIENCE_CHOICES = [
+        (AUDIENCE_TRAINERS, "Trainers"),
+        (AUDIENCE_CLIENTS,  "Clients"),
+        (AUDIENCE_ALL,      "Everyone"),
+    ]
+
+    title = models.CharField(max_length=120)
+    body = models.TextField()
+    audience = models.CharField(
+        max_length=10,
+        choices=AUDIENCE_CHOICES,
+        default=AUDIENCE_TRAINERS,
+    )
+    # Optional CTA link + label. Used by the hub card's "Set up
+    # tiers →" style affordance. Empty = no CTA, just the title +
+    # body.
+    cta_url = models.CharField(max_length=255, blank=True, default="")
+    cta_label = models.CharField(max_length=80, blank=True, default="")
+    # Drafts can sit unpublished while we iterate the copy. Only
+    # `published=True` entries surface on the hub.
+    published = models.BooleanField(default=False)
+    published_at = models.DateTimeField(null=True, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ["-published_at", "-created_at"]
+        verbose_name = "Changelog entry"
+        verbose_name_plural = "Changelog"
+
+    def __str__(self):
+        return f"{self.title} ({'live' if self.published else 'draft'})"
+
+
+class CoachingTip(models.Model):
+    """A short coaching/business tip shown in the Hub's tips card.
+
+    Tips rotate — the hub picks N most recent published entries (or
+    a deterministic per-trainer rotation later). Categories keep
+    them organisable and let us segment if the rotation logic gets
+    smarter ("show finance tips to trainers without Stripe set up",
+    etc.)."""
+
+    CATEGORY_BUSINESS = "business"
+    CATEGORY_PROGRAMMING = "programming"
+    CATEGORY_NUTRITION = "nutrition"
+    CATEGORY_RETENTION = "retention"
+    CATEGORY_MINDSET = "mindset"
+    CATEGORY_CHOICES = [
+        (CATEGORY_BUSINESS,    "Business"),
+        (CATEGORY_PROGRAMMING, "Programming"),
+        (CATEGORY_NUTRITION,   "Nutrition"),
+        (CATEGORY_RETENTION,   "Retention"),
+        (CATEGORY_MINDSET,     "Mindset"),
+    ]
+
+    icon = models.CharField(
+        max_length=8,
+        default="✦",
+        help_text="Single glyph rendered before the tip title. Keep tasteful.",
+    )
+    title = models.CharField(max_length=120)
+    body = models.TextField()
+    category = models.CharField(
+        max_length=20,
+        choices=CATEGORY_CHOICES,
+        default=CATEGORY_BUSINESS,
+    )
+    published = models.BooleanField(default=False)
+    published_at = models.DateTimeField(null=True, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ["-published_at", "-created_at"]
+        verbose_name = "Coaching tip"
+        verbose_name_plural = "Coaching tips"
+
+    def __str__(self):
+        return f"{self.icon} {self.title}"
+
+
+# ----------------------------------------------------------------------
+# Magic-link login (task #25 / L.1.1)
+#
+# One row per outstanding sign-in link. Tokens are URL-safe random
+# strings of ~43 chars (secrets.token_urlsafe(32)) so they're
+# infeasible to guess but short enough to fit in a deep-link URL.
+# Single-use + 10-minute TTL — once `used_at` is stamped or
+# `expires_at` is in the past, the verify endpoint refuses to
+# exchange the token for a session.
+# ----------------------------------------------------------------------
+
+
+class MagicLoginToken(models.Model):
+    DEFAULT_TTL_MINUTES = 10
+
+    user = models.ForeignKey(
+        "users.User",
+        on_delete=models.CASCADE,
+        related_name="magic_login_tokens",
+    )
+    # The opaque token the iOS app receives in the email + sends back
+    # to verify. Indexed unique because that's the lookup column.
+    token = models.CharField(max_length=128, unique=True, db_index=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    # Auto-set on save() if not supplied.
+    expires_at = models.DateTimeField()
+    # Nullable — stamped when the verify endpoint exchanges this
+    # token for a session. Single-use enforcement.
+    used_at = models.DateTimeField(null=True, blank=True)
+    # Optional metadata for security forensics ("link sent from IP X,
+    # used from IP Y, 6 minutes later"). Both columns are best-effort.
+    requested_ip = models.GenericIPAddressField(null=True, blank=True)
+    consumed_ip = models.GenericIPAddressField(null=True, blank=True)
+
+    class Meta:
+        ordering = ["-created_at"]
+        verbose_name = "Magic-login token"
+        verbose_name_plural = "Magic-login tokens"
+
+    def __str__(self):
+        state = "used" if self.used_at else ("expired" if self.is_expired else "live")
+        return f"{self.user.username} · {state}"
+
+    @property
+    def is_expired(self):
+        from django.utils import timezone
+        return self.expires_at <= timezone.now()
+
+    @property
+    def is_consumable(self):
+        return self.used_at is None and not self.is_expired
+
+    def save(self, *args, **kwargs):
+        # Auto-compute expires_at on first save so callers don't need
+        # to know the TTL.
+        if not self.expires_at:
+            from datetime import timedelta
+            from django.utils import timezone
+            self.expires_at = timezone.now() + timedelta(minutes=self.DEFAULT_TTL_MINUTES)
+        super().save(*args, **kwargs)

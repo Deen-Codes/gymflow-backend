@@ -1,4 +1,9 @@
+import secrets
+
+from django.conf import settings
 from django.contrib.auth import login, logout
+from django.core.mail import EmailMultiAlternatives
+from django.template.loader import render_to_string
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.authtoken.models import Token
@@ -8,7 +13,7 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 from rest_framework import status
 
-from .models import User
+from .models import User, MagicLoginToken
 from .serializers import (
     LoginSerializer,
     UserMeSerializer,
@@ -77,6 +82,157 @@ def logout_view(request):
 @permission_classes([IsAuthenticated])
 def me_view(request):
     return Response(UserMeSerializer(request.user).data, status=status.HTTP_200_OK)
+
+
+# -------------------------------------------------------------------
+# Magic-link login (task #25 / L.1.1)
+#
+# Two endpoints:
+#   • POST /api/users/magic-link/request/  {email}
+#       Always returns 200 regardless of whether the email is on
+#       file. Account-existence is leaked otherwise.
+#   • POST /api/users/magic-link/verify/   {token}
+#       Exchanges a single-use token for a DRF auth token + user
+#       payload — same response shape as `login_view`.
+#
+# The link in the email is `gymflow://magic/<token>` (custom URL
+# scheme handled by `GymFlowApp.onOpenURL` on iOS) plus a
+# `https://gymflow.coach/magic/<token>` web fallback for users
+# who tap from a desktop / non-iOS browser.
+# -------------------------------------------------------------------
+
+
+def _magic_link_urls(token):
+    """Return (deep_link, web_link) tuple for the email body.
+
+    `deep_link` opens the iOS app via the registered `gymflow://`
+    custom scheme. `web_link` is a fallback for desktop browsers
+    and the eventual Universal Links setup.
+    """
+    web_base = getattr(settings, "GYMFLOW_WEB_BASE_URL", "https://gymflow.coach")
+    return (
+        f"gymflow://magic/{token}",
+        f"{web_base}/magic/{token}",
+    )
+
+
+def _client_ip(request):
+    """Best-effort client IP for security forensics. Trusts
+    X-Forwarded-For when behind Render's load balancer; falls back
+    to REMOTE_ADDR otherwise."""
+    forwarded = request.META.get("HTTP_X_FORWARDED_FOR", "")
+    if forwarded:
+        return forwarded.split(",")[0].strip()
+    return request.META.get("REMOTE_ADDR")
+
+
+@csrf_exempt
+@api_view(["POST"])
+@authentication_classes([])
+@permission_classes([AllowAny])
+def magic_link_request_view(request):
+    """Send a one-tap sign-in link to `email` if the address is on
+    file. Always responds 200 — the success message is the same
+    whether or not we recognised the email so attackers can't probe
+    for valid accounts via this endpoint."""
+    email = (request.data.get("email") or "").strip().lower()
+    if not email or "@" not in email:
+        return Response(
+            {"detail": "Enter a valid email address."},
+            status=status.HTTP_400_BAD_REQUEST,
+        )
+
+    user = User.objects.filter(email__iexact=email).first()
+    if user is not None:
+        # Generate a random URL-safe token. ~43 chars at entropy 256.
+        token_str = secrets.token_urlsafe(32)
+        record = MagicLoginToken.objects.create(
+            user=user,
+            token=token_str,
+            requested_ip=_client_ip(request),
+        )
+        deep_link, web_link = _magic_link_urls(record.token)
+        try:
+            _send_magic_link_email(user=user, deep_link=deep_link, web_link=web_link)
+        except Exception:
+            # Don't leak email-send failures to the caller — the
+            # attacker shouldn't be able to distinguish "we sent it"
+            # from "we tried and failed". Surface to logs.
+            import logging
+            logging.exception("Magic-link email send failed for %s", email)
+
+    return Response(
+        {"detail": "If that email is on file, a sign-in link is on its way. The link expires in 10 minutes."},
+        status=status.HTTP_200_OK,
+    )
+
+
+@csrf_exempt
+@api_view(["POST"])
+@authentication_classes([])
+@permission_classes([AllowAny])
+def magic_link_verify_view(request):
+    """Exchange a token for a DRF session. On success returns the
+    same shape as `login_view` so iOS can drop it into
+    `currentUser` without translation."""
+    token_str = (request.data.get("token") or "").strip()
+    if not token_str:
+        return Response(
+            {"detail": "Missing token."},
+            status=status.HTTP_400_BAD_REQUEST,
+        )
+
+    record = MagicLoginToken.objects.filter(token=token_str).first()
+    if record is None or not record.is_consumable:
+        # Generic "expired or used" — don't differentiate so
+        # someone holding an old token can't tell whether it ever
+        # existed.
+        return Response(
+            {"detail": "This sign-in link expired or has already been used."},
+            status=status.HTTP_401_UNAUTHORIZED,
+        )
+
+    # Stamp the record before issuing the auth token so a race-
+    # condition double-tap can't redeem twice.
+    from django.utils import timezone
+    record.used_at = timezone.now()
+    record.consumed_ip = _client_ip(request)
+    record.save(update_fields=["used_at", "consumed_ip"])
+
+    user = record.user
+    login(request, user)
+    auth_token, _ = Token.objects.get_or_create(user=user)
+
+    return Response(
+        {
+            "message": "Magic link verified.",
+            "token": auth_token.key,
+            "user": UserMeSerializer(user).data,
+        },
+        status=status.HTTP_200_OK,
+    )
+
+
+def _send_magic_link_email(user, deep_link, web_link):
+    """Render and send the magic-link email via Resend (handled by
+    the existing custom email backend)."""
+    subject = "Your GymFlow sign-in link"
+    context = {
+        "user": user,
+        "deep_link": deep_link,
+        "web_link": web_link,
+        "ttl_minutes": MagicLoginToken.DEFAULT_TTL_MINUTES,
+    }
+    text_body = render_to_string("users/email/magic_link.txt", context)
+    html_body = render_to_string("users/email/magic_link.html", context)
+    msg = EmailMultiAlternatives(
+        subject=subject,
+        body=text_body,
+        from_email=getattr(settings, "DEFAULT_FROM_EMAIL", "GymFlow <hello@gymflow.coach>"),
+        to=[user.email],
+    )
+    msg.attach_alternative(html_body, "text/html")
+    msg.send(fail_silently=False)
 
 
 @api_view(["GET"])

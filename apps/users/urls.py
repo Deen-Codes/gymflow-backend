@@ -9,6 +9,8 @@ from .views import (
     create_client_view,
     trainer_clients_view,
     assign_workout_plan_view,
+    magic_link_request_view,
+    magic_link_verify_view,
 )
 
 urlpatterns = [
@@ -18,6 +20,10 @@ urlpatterns = [
     path("me/home-stats/", home_stats_for_me, name="me-home-stats"),
     path("me/required-actions/", required_actions_for_me, name="me-required-actions"),
     path("me/profile-update/", profile_update_for_me, name="me-profile-update"),
+    # Magic-link sign-in (task #25). Both endpoints are unauthenticated
+    # by design — they're how a logged-out user gets logged in.
+    path("magic-link/request/", magic_link_request_view, name="magic-link-request"),
+    path("magic-link/verify/", magic_link_verify_view, name="magic-link-verify"),
     path("clients/create/", create_client_view, name="create-client"),
     path("clients/", trainer_clients_view, name="trainer-clients"),
     path("clients/assign-workout-plan/", assign_workout_plan_view, name="assign-workout-plan"),

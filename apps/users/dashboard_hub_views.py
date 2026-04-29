@@ -30,7 +30,7 @@ from .dashboard_helpers import (
     get_trainer_clients,
 )
 from .dashboard_activity_views import _collect_events
-from .models import User
+from .models import User, Changelog, CoachingTip
 from apps.workouts.models import WorkoutPlan
 from apps.nutrition.models import NutritionPlan
 from apps.progress.models import CheckInForm, CheckInQuestion, CheckInSubmission
@@ -359,15 +359,39 @@ def trainer_hub_page(request):
     events = _collect_events(trainer, kind="all", since=since, client_filter_id=0)
     context["hub_recent_events"] = events[:8]
 
-    context["hub_tips"] = TIPS
+    # Coaching tips — pull the most recent N published rows from the
+    # CoachingTip model. Falls back to the hardcoded TIPS list when
+    # the table is empty (typical local dev / first-deploy state)
+    # so the hub never renders an empty tips card.
+    db_tips = list(
+        CoachingTip.objects.filter(published=True)
+        .order_by("-published_at", "-created_at")[:3]
+        .values("icon", "title", "body")
+    )
+    context["hub_tips"] = db_tips if db_tips else TIPS
 
-    # Tiny "what's new" line — manual for now, will read from a model later.
-    context["hub_whats_new"] = {
-        "title":   "Pricing tiers + Stripe coming soon",
-        "body":    "Set monthly/weekly/yearly plans on your Site. "
-                   "Live Stripe payments are next on the roadmap.",
-        "url":     reverse("trainer-settings-page"),
-        "url_cta": "Set up tiers →",
-    }
+    # What's new — single most-recent published Changelog entry
+    # targeting trainers (or "all"). Same fallback pattern as tips.
+    latest = (
+        Changelog.objects
+        .filter(published=True, audience__in=[Changelog.AUDIENCE_TRAINERS, Changelog.AUDIENCE_ALL])
+        .order_by("-published_at", "-created_at")
+        .first()
+    )
+    if latest is not None:
+        context["hub_whats_new"] = {
+            "title":   latest.title,
+            "body":    latest.body,
+            "url":     latest.cta_url or "",
+            "url_cta": latest.cta_label or "",
+        }
+    else:
+        context["hub_whats_new"] = {
+            "title":   "Pricing tiers + Stripe coming soon",
+            "body":    "Set monthly/weekly/yearly plans on your Site. "
+                       "Live Stripe payments are next on the roadmap.",
+            "url":     reverse("trainer-settings-page"),
+            "url_cta": "Set up tiers →",
+        }
 
     return render(request, "dashboard/dashboard_hub.html", context)

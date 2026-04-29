@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your GymFlow sign-in link</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f4f4f6; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #f4f4f6; padding: 40px 0;">
+        <tr>
+            <td align="center">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="560" style="max-width: 560px; background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.06);">
+                    <!-- Hero band — lime brand mark + headline -->
+                    <tr>
+                        <td style="background-color: #040711; padding: 40px 32px 32px 32px;">
+                            <div style="font-size: 13px; font-weight: 800; letter-spacing: 2px; color: #C8FF20; margin-bottom: 14px;">GYMFLOW</div>
+                            <h1 style="margin: 0; font-size: 28px; line-height: 1.2; font-weight: 800; color: #ffffff;">Your sign-in link is ready</h1>
+                        </td>
+                    </tr>
+
+                    <!-- Body -->
+                    <tr>
+                        <td style="padding: 32px;">
+                            <p style="margin: 0 0 18px 0; font-size: 15px; line-height: 1.55; color: #1a1c24;">
+                                Tap the button below on the device you want to sign in on. We'll log you in instantly &mdash; no password needed.
+                            </p>
+
+                            <!-- Primary CTA: deep link to the app -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 24px 0;">
+                                <tr>
+                                    <td>
+                                        <a href="{{ deep_link }}" style="display: inline-block; padding: 16px 28px; background-color: #C8FF20; color: #040711; text-decoration: none; font-weight: 800; font-size: 15px; border-radius: 12px;">
+                                            Sign in to GymFlow
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p style="margin: 18px 0 0 0; font-size: 13px; line-height: 1.55; color: #5a5d68;">
+                                The link expires in {{ ttl_minutes }} minutes and can only be used once. If you didn't request this, you can ignore the email &mdash; nothing changes.
+                            </p>
+
+                            <!-- Fallback: plain URL -->
+                            <p style="margin: 28px 0 0 0; font-size: 12px; line-height: 1.55; color: #8a8d96;">
+                                Button not working? Copy and paste this link into your browser:<br>
+                                <a href="{{ web_link }}" style="color: #5a5d68; word-break: break-all;">{{ web_link }}</a>
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style="padding: 24px 32px; background-color: #f9f9fb; font-size: 11px; color: #8a8d96;">
+                            GymFlow &middot; The coaching platform for trainers and clients<br>
+                            Sent because you requested a sign-in link from the app.
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
