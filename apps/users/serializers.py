@@ -39,6 +39,8 @@ class UserMeSerializer(serializers.ModelSerializer):
     trainer_id = serializers.SerializerMethodField()
     assigned_workout_plan_id = serializers.SerializerMethodField()
     display_name = serializers.SerializerMethodField()
+    member_since = serializers.SerializerMethodField()
+    has_avatar = serializers.SerializerMethodField()
 
     class Meta:
         model = User
@@ -54,7 +56,21 @@ class UserMeSerializer(serializers.ModelSerializer):
             "trainer_business_name",
             "trainer_id",
             "assigned_workout_plan_id",
+            "member_since",
+            "has_avatar",
         ]
+
+    def get_member_since(self, obj):
+        # ISO-8601 string of date_joined (Django auth standard).
+        # iOS uses this on the Profile lifetime stats card.
+        return obj.date_joined.isoformat() if obj.date_joined else None
+
+    def get_has_avatar(self, obj):
+        # Cheap boolean so iOS knows whether to render the
+        # avatar circle from the avatar endpoint, vs falling
+        # back to initials. Avoids shipping the b64 blob in
+        # every /me response.
+        return bool(obj.avatar_base64)
 
     def get_display_name(self, obj):
         """Best-available human name for greetings + share cards.

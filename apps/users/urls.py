@@ -3,6 +3,7 @@ from .views import (
     login_view,
     logout_view,
     me_view,
+    startup_for_me,
     home_stats_for_me,
     required_actions_for_me,
     profile_update_for_me,
@@ -13,11 +14,20 @@ from .views import (
     magic_link_verify_view,
 )
 from .sso_views import sso_apple_view, sso_google_view
+from .profile_views import (
+    lifetime_stats_for_me,
+    avatar_for_me,
+    username_check_view,
+    change_username_view,
+    notification_prefs_for_me,
+    delete_account_view,
+)
 
 urlpatterns = [
     path("login/", login_view, name="login"),
     path("logout/", logout_view, name="logout"),
     path("me/", me_view, name="me"),
+    path("me/startup/", startup_for_me, name="me-startup"),
     path("me/home-stats/", home_stats_for_me, name="me-home-stats"),
     path("me/required-actions/", required_actions_for_me, name="me-required-actions"),
     path("me/profile-update/", profile_update_for_me, name="me-profile-update"),
@@ -30,6 +40,16 @@ urlpatterns = [
     # tokens for a DRF auth token + user payload via these.
     path("sso/apple/",  sso_apple_view,  name="sso-apple"),
     path("sso/google/", sso_google_view, name="sso-google"),
+
+    # Profile P.1.1 — wires up the SOON pills on the iOS Profile
+    # tab (lifetime stats, avatar upload, username change,
+    # notification prefs sync, account deletion).
+    path("me/lifetime-stats/",      lifetime_stats_for_me,    name="me-lifetime-stats"),
+    path("me/avatar/",              avatar_for_me,            name="me-avatar"),
+    path("me/username/",            change_username_view,     name="me-username"),
+    path("username/check/",         username_check_view,      name="username-check"),
+    path("me/notification-prefs/",  notification_prefs_for_me, name="me-notification-prefs"),
+    path("me/delete/",              delete_account_view,      name="me-delete"),
     path("clients/create/", create_client_view, name="create-client"),
     path("clients/", trainer_clients_view, name="trainer-clients"),
     path("clients/assign-workout-plan/", assign_workout_plan_view, name="assign-workout-plan"),

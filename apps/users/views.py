@@ -86,6 +86,110 @@ def me_view(request):
 
 
 # -------------------------------------------------------------------
+# Startup composite (task #29 / P.2)
+#
+# iOS used to fan out a dozen individual GETs on cold launch:
+#   /me, /me/home-stats, /me/required-actions, /nutrition/me/today,
+#   /nutrition/me/consumption, /progress/me/hydration,
+#   /progress/me/next-checkin, /workouts/next, /workouts/plan/active,
+#   /trophies/me, etc.
+#
+# Each round-trip carries TLS handshake + a Render cold-start tax.
+# This composite endpoint folds the full launch payload into a
+# single request so the app launches in ~one round-trip instead of
+# twelve.
+#
+# Per-feature endpoints remain — pull-to-refresh and feature-scoped
+# reloads still hit them. Composite is launch-only.
+#
+# Currently inlines: user, home_stats, required_actions.
+# TODO (next session): nutrition.today, nutrition.consumption,
+# progress.hydration, progress.next_checkin, workouts.next,
+# workouts.plan_active, workouts.latest_session_for_next,
+# trophies.me. Each needs the underlying view's data-prep logic
+# imported / extracted into a reusable function. Doing them
+# incrementally so we don't ship a partial endpoint.
+# -------------------------------------------------------------------
+
+
+@api_view(["GET"])
+@permission_classes([IsAuthenticated])
+def startup_for_me(request):
+    """Combined launch payload — `{ user, home_stats, required_actions }`.
+
+    iOS hits this on app launch instead of three separate GETs
+    against /me/, /me/home-stats/, /me/required-actions/. Falls
+    back to the existing per-endpoint flow if this returns 5xx
+    or missing keys, so deploys are safe.
+
+    Each namespace mirrors the shape its standalone endpoint
+    returns — iOS distributes the response into the same view
+    models that consume the standalone endpoints.
+    """
+    from .profile_schema import missing_required_fields_for, needs_onboarding
+    user = request.user
+
+    # ----- user -----
+    user_payload = UserMeSerializer(user).data
+
+    # ----- home_stats (only meaningful for clients) -----
+    home_stats = {
+        "latest_weight_kg": None,
+        "active_streak":    0,
+        "weekly_target":    0,
+    }
+    if user.role == User.CLIENT and hasattr(user, "client_profile"):
+        from apps.progress.models import CheckInAnswer
+        from apps.users.dashboard_client_views import WEIGHT_FIELD_KEYS
+        latest = (
+            CheckInAnswer.objects
+            .filter(
+                submission__client=user,
+                submission__status="submitted",
+                value_number__isnull=False,
+                question__field_key__in=WEIGHT_FIELD_KEYS,
+            )
+            .order_by("-submission__submitted_at")
+            .values_list("value_number", flat=True)
+            .first()
+        )
+        from apps.trophies.streak import compute_active_streak, weekly_target_for
+        weekly_target = weekly_target_for(user)
+        streak = compute_active_streak(user, weekly_target=weekly_target)
+        home_stats = {
+            "latest_weight_kg": round(float(latest), 1) if latest is not None else None,
+            "active_streak":    streak,
+            "weekly_target":    weekly_target,
+        }
+
+    # ----- required_actions -----
+    required_actions = {
+        "needs_onboarding":       needs_onboarding(user),
+        "missing_profile_fields": missing_required_fields_for(user),
+    }
+
+    return Response(
+        {
+            "user":             user_payload,
+            "home_stats":       home_stats,
+            "required_actions": required_actions,
+            # Keys not yet inlined return null so iOS can detect
+            # "this namespace isn't in the composite yet, fall back
+            # to the standalone endpoint" without crashing on
+            # missing keys.
+            "nutrition_today":  None,
+            "nutrition_consumption": None,
+            "hydration":        None,
+            "next_checkin":     None,
+            "workout_next":     None,
+            "workout_plan_active": None,
+            "trophies":         None,
+        },
+        status=status.HTTP_200_OK,
+    )
+
+
+# -------------------------------------------------------------------
 # Magic-link login (task #25 / L.1.1)
 #
 # Two endpoints:

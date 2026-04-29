@@ -28,6 +28,22 @@ class User(AbstractUser):
         max_length=255, null=True, blank=True, unique=True, db_index=True,
     )
 
+    # Profile P.1.1 — avatar stored as base64 directly on the row.
+    # Caps at ~1.4MB after b64 (≈ 1MB raw image), client-side
+    # downsizing in iOS keeps payloads small. Cheap to migrate to
+    # S3 later: replace this column with avatar_url, run a one-shot
+    # migrator. For now, zero external infra and survives redeploys.
+    avatar_base64 = models.TextField(null=True, blank=True)
+
+    # Per-channel notification toggles + quiet hours. JSON to keep
+    # the schema flexible — adding a new channel is a no-op
+    # migration. Shape (defaulted by .get on the iOS side):
+    #   { push_enabled, workout_reminders, check_in_nudges,
+    #     coach_messages, marketing,
+    #     quiet_hours_enabled, quiet_hours_start_min,
+    #     quiet_hours_end_min }
+    notification_prefs = models.JSONField(default=dict, blank=True)
+
     def __str__(self):
         return f"{self.username} ({self.role})"
 

@@ -19,12 +19,12 @@ from django.http import JsonResponse
 from django.shortcuts import redirect, render
 from django.utils.text import slugify
 
-from .dashboard_helpers import trainer_required, dashboard_context
+from .dashboard_helpers import trainer_required, trainer_required_view, dashboard_context
 from .dashboard_workout_page_views import _render_workouts_workspace
 from .models import TrainerProfile
 
 
-@login_required
+@trainer_required_view
 def trainer_dashboard_home(request):
     """
     Front page of the dashboard.
@@ -32,13 +32,10 @@ def trainer_dashboard_home(request):
     Renders the Workouts workspace with the most-recently created plan
     selected. If no plan exists, the template shows a first-run card.
     """
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     return _render_workouts_workspace(request, plan_id=None)
 
 
-@login_required
+@trainer_required_view
 def trainer_settings_page(request):
     """Phase 6 — Settings workspace.
 
@@ -46,8 +43,6 @@ def trainer_settings_page(request):
     pricing tiers, logout. Scaffolded sections: theme, text size,
     notifications, integrations, account deletion.
     """
-    if not trainer_required(request):
-        return redirect("landing-page")
     context = dashboard_context(request, "Settings")
 
     # Pull pricing tiers for the trainer (Phase 7.7). Lazy import so
@@ -63,7 +58,7 @@ def trainer_settings_page(request):
     return render(request, "dashboard/dashboard_settings.html", context)
 
 
-@login_required
+@trainer_required_view
 def dashboard_pricing_save(request):
     """POST /dashboard/settings/pricing/save/
 
@@ -71,8 +66,6 @@ def dashboard_pricing_save(request):
     description, price, interval, is_active, is_featured}. Empty
     plan_id creates a new tier; populated plan_id updates that one.
     """
-    if not trainer_required(request):
-        return redirect("landing-page")
     if request.method != "POST":
         return redirect("trainer-settings-page")
 
@@ -139,11 +132,9 @@ def dashboard_pricing_save(request):
     return redirect("trainer-settings-page")
 
 
-@login_required
+@trainer_required_view
 def dashboard_pricing_delete(request, plan_id):
     """POST /dashboard/settings/pricing/<id>/delete/"""
-    if not trainer_required(request):
-        return redirect("landing-page")
     if request.method != "POST":
         return redirect("trainer-settings-page")
 
@@ -158,7 +149,7 @@ def dashboard_pricing_delete(request, plan_id):
     return redirect("trainer-settings-page")
 
 
-@login_required
+@trainer_required_view
 def dashboard_update_profile(request):
     """POST /dashboard/settings/profile/
 
@@ -166,8 +157,6 @@ def dashboard_update_profile(request):
     TrainerProfile (business_name). Username stays locked — it's how
     the trainer logs in.
     """
-    if not trainer_required(request):
-        return redirect("landing-page")
     if request.method != "POST":
         return redirect("trainer-settings-page")
 
@@ -331,7 +320,7 @@ def dashboard_check_slug(request):
     })
 
 
-@login_required
+@trainer_required_view
 def dashboard_delete_account(request):
     """POST /dashboard/settings/delete-account/
 
@@ -339,8 +328,6 @@ def dashboard_delete_account(request):
     every WorkoutPlan / NutritionPlan / CheckInForm they own, and
     their client roster. Irreversible.
     """
-    if not trainer_required(request):
-        return redirect("landing-page")
     if request.method != "POST":
         return redirect("trainer-settings-page")
 
