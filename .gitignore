@@ -4,3 +4,13 @@ __pycache__/
 db.sqlite3
 .env
 .DS_Store
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.env
+.DS_Store
+*.sqlite3
