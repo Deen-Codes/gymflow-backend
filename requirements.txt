@@ -19,3 +19,7 @@ uvicorn==0.39.0
 whitenoise==6.11.0
 Pillow>=10.0,<12
 stripe>=10.0,<12
+# SSO — Apple + Google identity-token validation. PyJWT decodes the
+# JWTs; the [crypto] extra pulls in `cryptography` which we need for
+# RS256 signature verification against each provider's JWKS.
+PyJWT[crypto]>=2.8,<3

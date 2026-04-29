@@ -17,6 +17,17 @@ class User(AbstractUser):
     # haven't supplied this so we never want to require it.
     date_of_birth = models.DateField(null=True, blank=True)
 
+    # SSO subject identifiers — stable per-provider user id from the
+    # ID token's `sub` claim. Indexed unique so we can look up an
+    # incoming SSO sign-in in O(1). Both nullable because most
+    # existing users authenticate via password / magic-link only.
+    apple_sub = models.CharField(
+        max_length=255, null=True, blank=True, unique=True, db_index=True,
+    )
+    google_sub = models.CharField(
+        max_length=255, null=True, blank=True, unique=True, db_index=True,
+    )
+
     def __str__(self):
         return f"{self.username} ({self.role})"
 

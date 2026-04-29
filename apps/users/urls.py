@@ -12,6 +12,7 @@ from .views import (
     magic_link_request_view,
     magic_link_verify_view,
 )
+from .sso_views import sso_apple_view, sso_google_view
 
 urlpatterns = [
     path("login/", login_view, name="login"),
@@ -24,6 +25,11 @@ urlpatterns = [
     # by design — they're how a logged-out user gets logged in.
     path("magic-link/request/", magic_link_request_view, name="magic-link-request"),
     path("magic-link/verify/", magic_link_verify_view, name="magic-link-verify"),
+
+    # SSO sign-in (task #44). iOS exchanges Apple/Google identity
+    # tokens for a DRF auth token + user payload via these.
+    path("sso/apple/",  sso_apple_view,  name="sso-apple"),
+    path("sso/google/", sso_google_view, name="sso-google"),
     path("clients/create/", create_client_view, name="create-client"),
     path("clients/", trainer_clients_view, name="trainer-clients"),
     path("clients/assign-workout-plan/", assign_workout_plan_view, name="assign-workout-plan"),

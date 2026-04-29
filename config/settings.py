@@ -238,6 +238,22 @@ DEFAULT_FROM_EMAIL = os.environ.get("DEFAULT_FROM_EMAIL", "onboarding@resend.dev
 
 
 # -------------------------------------------------------------------
+# SSO — task L.1.1.1
+#
+# Apple Sign In doesn't need any backend secret — we verify identity
+# tokens against Apple's public JWKS using the iOS bundle ID as the
+# audience. That bundle ID lives in `sso_views.APPLE_AUDIENCE`.
+#
+# Google Sign In needs the iOS OAuth Client ID configured here so
+# the backend can validate `aud` on the ID token. Get this from
+# Google Cloud Console → APIs & Services → Credentials → iOS
+# OAuth client. Format looks like:
+#   1234567890-abcdefg.apps.googleusercontent.com
+# -------------------------------------------------------------------
+GOOGLE_OAUTH_IOS_CLIENT_ID = os.environ.get("GOOGLE_OAUTH_IOS_CLIENT_ID", "")
+
+
+# -------------------------------------------------------------------
 # DRF — Phase 0: token auth becomes the primary mechanism for the iOS
 # app, while the Django dashboard continues to use the session cookie.
 #
