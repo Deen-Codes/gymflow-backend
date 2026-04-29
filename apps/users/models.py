@@ -5,10 +5,17 @@ from django.db import models
 class User(AbstractUser):
     TRAINER = "trainer"
     CLIENT = "client"
+    # E.1 / SOLO MVP — self-serve users on a Solo subscription. They
+    # never have a TrainerProfile linking them to a coach; their
+    # programmes come from the public catalog. Kept distinct from
+    # CLIENT so trainer-side queries (`User.objects.filter(role=CLIENT)`)
+    # don't accidentally enumerate solo accounts.
+    SOLO = "solo"
 
     ROLE_CHOICES = [
         (TRAINER, "Trainer"),
         (CLIENT, "Client"),
+        (SOLO,   "Solo"),
     ]
 
     role = models.CharField(max_length=20, choices=ROLE_CHOICES)
@@ -107,6 +114,106 @@ class ClientProfile(models.Model):
 
     def __str__(self):
         return self.user.username
+
+
+# ----------------------------------------------------------------------
+# E.1 / SOLO MVP — self-serve user profile.
+#
+# Solo users sign up without a trainer; their programme comes from the
+# public catalog and (eventually) the AI PT adapts it weekly. The
+# fields below are everything we capture in the 5-screen onboarding
+# flow — intentionally minimal because every extra field drops
+# completion 5–10% (research-backed).
+#
+# Why a separate model rather than putting the answers on the User
+# row:
+#   1. Keeps the User table tight — these fields only matter for
+#      Solo accounts and shouldn't bloat the row for trainers/clients.
+#   2. Lets the iOS app PATCH the answers later without an unrelated
+#      User serializer touching them.
+#   3. Future AI PT (#59) reads from this model directly — clean
+#      contract.
+# ----------------------------------------------------------------------
+
+
+class SoloProfile(models.Model):
+    """Solo user's onboarding answers + subscription state."""
+
+    # Goal multi-select. Stored as JSON so adding/removing options is
+    # a no-op migration. iOS posts a list of strings from a fixed
+    # vocabulary: build_muscle, lose_fat, get_stronger, stay_consistent,
+    # train_for_sport.
+    GOAL_CHOICES = [
+        ("build_muscle",     "Build muscle"),
+        ("lose_fat",         "Lose fat"),
+        ("get_stronger",     "Get stronger"),
+        ("stay_consistent",  "Stay consistent"),
+        ("train_for_sport",  "Train for a sport"),
+    ]
+
+    EXPERIENCE_CHOICES = [
+        ("just_starting",    "Just starting"),
+        ("under_one_year",   "0–1 year"),
+        ("one_to_three",     "1–3 years"),
+        ("three_plus",       "3+ years"),
+    ]
+
+    EQUIPMENT_CHOICES = [
+        ("full_gym",         "Full gym"),
+        ("home_with_weights","Home with weights"),
+        ("bodyweight_only",  "Bodyweight only"),
+        ("mixed",            "Mixed"),
+    ]
+
+    # Subscription tier. Drives feature gating across iOS + backend.
+    TIER_FREE = "free"
+    TIER_PRO = "pro"
+    TIER_PRO_AI = "pro_ai"
+    TIER_CHOICES = [
+        (TIER_FREE,   "Free"),
+        (TIER_PRO,    "Pro"),
+        (TIER_PRO_AI, "Pro AI"),
+    ]
+
+    user = models.OneToOneField(
+        User, on_delete=models.CASCADE, related_name="solo_profile",
+    )
+
+    goals      = models.JSONField(default=list, blank=True)
+    experience = models.CharField(max_length=20, choices=EXPERIENCE_CHOICES, blank=True, default="")
+    equipment  = models.CharField(max_length=20, choices=EQUIPMENT_CHOICES, blank=True, default="")
+    days_per_week = models.PositiveSmallIntegerField(default=3)
+
+    # Subscription — defaults to free; SOLO-03 (Stripe billing) flips
+    # this when a Checkout session completes. `tier_active_until` is
+    # null while on free or while a paid sub is current; populated
+    # only when a sub has been cancelled but is still in its paid-
+    # through window.
+    tier               = models.CharField(max_length=10, choices=TIER_CHOICES, default=TIER_FREE)
+    tier_active_until  = models.DateTimeField(null=True, blank=True)
+    trial_started_at   = models.DateTimeField(null=True, blank=True)
+    trial_ends_at      = models.DateTimeField(null=True, blank=True)
+
+    # Stripe subscription ID — never store the secret, only the public
+    # ID that lets us look up + cancel via the Stripe API. Empty when
+    # on free.
+    stripe_subscription_id = models.CharField(max_length=64, blank=True, default="")
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"Solo {self.user.username} ({self.tier})"
+
+    @property
+    def has_ai_access(self) -> bool:
+        """True iff the user is on Pro AI (paid or in trial)."""
+        return self.tier == self.TIER_PRO_AI
+
+    @property
+    def has_pro_access(self) -> bool:
+        """True iff the user has Pro OR Pro AI."""
+        return self.tier in (self.TIER_PRO, self.TIER_PRO_AI)
 
 
 # ----------------------------------------------------------------------

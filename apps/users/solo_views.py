@@ -1,0 +1,274 @@
+"""
+E.1 / SOLO MVP — Solo signup + onboarding endpoints.
+
+Three endpoints:
+
+  • POST /api/users/solo/signup/      {email, goals[], experience,
+                                        equipment, days_per_week,
+                                        full_name?}
+        Creates a SOLO User + SoloProfile in one shot, then sends
+        a magic-link email so the user can finish auth on their
+        own device. Idempotent on email — a re-submission for an
+        existing email refreshes the SoloProfile answers and
+        re-sends the link rather than 400ing.
+
+  • PATCH /api/users/solo/onboarding/ (token-auth)
+        Updates the answers post-signup if the user wants to tweak
+        them. Same field set as signup, all optional.
+
+  • GET   /api/users/solo/me/         (token-auth)
+        Returns {tier, has_ai_access, has_pro_access, goals,
+        experience, equipment, days_per_week, trial_ends_at}.
+        iOS reads this on launch to gate Pro / Pro AI features.
+
+Design note: signup deliberately doesn't return an auth token. The
+iOS client doesn't authenticate until the user taps the email link
+— this keeps the password-less mental model intact AND prevents
+account-takeover via signup spam (the real owner gets the link,
+not the spammer who typed their email).
+"""
+import secrets
+import logging
+
+from django.utils import timezone
+from django.views.decorators.csrf import csrf_exempt
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.decorators import (
+    api_view,
+    authentication_classes,
+    permission_classes,
+)
+from rest_framework.permissions import AllowAny, IsAuthenticated
+from rest_framework.response import Response
+from rest_framework import status
+
+from .models import User, MagicLoginToken, SoloProfile
+
+logger = logging.getLogger(__name__)
+
+
+# --------------------------------------------------------------------
+# Validation helpers
+# --------------------------------------------------------------------
+_VALID_GOALS = {choice for choice, _ in SoloProfile.GOAL_CHOICES}
+_VALID_EXPERIENCE = {choice for choice, _ in SoloProfile.EXPERIENCE_CHOICES}
+_VALID_EQUIPMENT = {choice for choice, _ in SoloProfile.EQUIPMENT_CHOICES}
+
+
+def _clean_goals(raw):
+    """Filter to known goals, dedup, cap at 5."""
+    if not isinstance(raw, list):
+        return []
+    cleaned = []
+    seen = set()
+    for g in raw:
+        if not isinstance(g, str):
+            continue
+        v = g.strip().lower()
+        if v in _VALID_GOALS and v not in seen:
+            cleaned.append(v)
+            seen.add(v)
+        if len(cleaned) >= 5:
+            break
+    return cleaned
+
+
+def _clean_choice(raw, valid_set):
+    if not isinstance(raw, str):
+        return ""
+    v = raw.strip().lower()
+    return v if v in valid_set else ""
+
+
+def _clean_days(raw):
+    try:
+        n = int(raw)
+    except (TypeError, ValueError):
+        return 3
+    return max(1, min(7, n))
+
+
+def _username_from_email(email: str) -> str:
+    """Strip the @domain off, sanitise, fall back to a random suffix
+    on collision."""
+    base = "".join(
+        ch for ch in email.split("@", 1)[0].lower()
+        if ch.isalnum() or ch == "_"
+    )[:24]
+    if not base:
+        base = "solo"
+    candidate = base
+    n = 1
+    while User.objects.filter(username=candidate).exists():
+        n += 1
+        candidate = f"{base}{n}"
+        if n > 999:
+            candidate = f"{base}-{secrets.token_hex(3)}"
+            break
+    return candidate
+
+
+# --------------------------------------------------------------------
+# Endpoints
+# --------------------------------------------------------------------
+@csrf_exempt
+@api_view(["POST"])
+@authentication_classes([])
+@permission_classes([AllowAny])
+def solo_signup_view(request):
+    """Create (or update) a Solo user + email a magic-link.
+
+    Always returns 200 if the input is well-formed — never leaks
+    "this email already exists" because that's a privacy footgun.
+    """
+    data = request.data or {}
+
+    email = (data.get("email") or "").strip().lower()
+    if not email or "@" not in email:
+        return Response(
+            {"detail": "Enter a valid email address."},
+            status=status.HTTP_400_BAD_REQUEST,
+        )
+
+    goals       = _clean_goals(data.get("goals"))
+    experience  = _clean_choice(data.get("experience"), _VALID_EXPERIENCE)
+    equipment   = _clean_choice(data.get("equipment"),  _VALID_EQUIPMENT)
+    days        = _clean_days(data.get("days_per_week"))
+    full_name   = (data.get("full_name") or "").strip()[:120]
+
+    # Idempotent on email — find OR create. We never silently demote
+    # an existing TRAINER/CLIENT to SOLO, only set SOLO on fresh
+    # accounts or update an existing SOLO.
+    user = User.objects.filter(email__iexact=email).first()
+    is_new = user is None
+
+    if is_new:
+        user = User.objects.create(
+            username=_username_from_email(email),
+            email=email,
+            role=User.SOLO,
+        )
+        # Random unusable password — the user authenticates via magic
+        # link, never types one. Setting an unusable password (rather
+        # than `None`) lets `user.set_unusable_password()` semantics
+        # stand and keeps Django's auth signals happy.
+        user.set_unusable_password()
+        if full_name:
+            parts = full_name.split(maxsplit=1)
+            user.first_name = parts[0][:30]
+            if len(parts) == 2:
+                user.last_name = parts[1][:30]
+        user.save()
+
+    # Update / create the SoloProfile. Only refresh fields that the
+    # caller actually supplied — partial signups (just email) don't
+    # wipe previously stored answers.
+    profile, _ = SoloProfile.objects.get_or_create(user=user)
+    if goals:
+        profile.goals = goals
+    if experience:
+        profile.experience = experience
+    if equipment:
+        profile.equipment = equipment
+    if days:
+        profile.days_per_week = days
+    profile.save()
+
+    # Send the magic link unconditionally on signup — this is how the
+    # user logs in. Reusing the same token plumbing as the regular
+    # magic-link path so the deep-link / web-bridge / email template
+    # all stay single-sourced.
+    try:
+        from .views import _send_magic_link_email, _magic_link_urls, _client_ip
+        record = MagicLoginToken.objects.create(
+            user=user,
+            token=secrets.token_urlsafe(32),
+            requested_ip=_client_ip(request),
+        )
+        deep_link, web_link = _magic_link_urls(record.token)
+        _send_magic_link_email(user=user, deep_link=deep_link, web_link=web_link)
+    except Exception:
+        logger.exception("Solo signup magic-link send failed for %s", email)
+
+    return Response(
+        {
+            "detail": (
+                "Check your email — we sent a one-tap sign-in link. "
+                "It expires in 10 minutes."
+            ),
+            "is_new": is_new,
+        },
+        status=status.HTTP_200_OK,
+    )
+
+
+@csrf_exempt
+@api_view(["PATCH"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def solo_onboarding_update_view(request):
+    """Partial update of the SoloProfile answers post-signup."""
+    user = request.user
+    if user.role != User.SOLO:
+        return Response(
+            {"detail": "Solo onboarding is only available to Solo accounts."},
+            status=status.HTTP_403_FORBIDDEN,
+        )
+
+    profile, _ = SoloProfile.objects.get_or_create(user=user)
+    data = request.data or {}
+
+    if "goals" in data:
+        profile.goals = _clean_goals(data["goals"])
+    if "experience" in data:
+        profile.experience = _clean_choice(data["experience"], _VALID_EXPERIENCE)
+    if "equipment" in data:
+        profile.equipment = _clean_choice(data["equipment"], _VALID_EQUIPMENT)
+    if "days_per_week" in data:
+        profile.days_per_week = _clean_days(data["days_per_week"])
+    profile.save()
+
+    return Response(_solo_payload(profile))
+
+
+@csrf_exempt
+@api_view(["GET"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def solo_me_view(request):
+    """Return the caller's solo profile + entitlement flags. Returns
+    a default-ish payload for non-solo users so iOS can call this
+    unconditionally on launch without 403-handling everywhere."""
+    user = request.user
+    if user.role != User.SOLO:
+        return Response({
+            "is_solo":         False,
+            "tier":            None,
+            "has_ai_access":   False,
+            "has_pro_access":  False,
+            "goals":           [],
+            "experience":      "",
+            "equipment":       "",
+            "days_per_week":   0,
+            "trial_ends_at":   None,
+        })
+
+    profile, _ = SoloProfile.objects.get_or_create(user=user)
+    payload = _solo_payload(profile)
+    payload["is_solo"] = True
+    return Response(payload)
+
+
+def _solo_payload(profile: SoloProfile) -> dict:
+    """Shared serialisation shape used by `solo_me_view` +
+    `solo_onboarding_update_view`."""
+    return {
+        "tier":             profile.tier,
+        "has_ai_access":    profile.has_ai_access,
+        "has_pro_access":   profile.has_pro_access,
+        "goals":            profile.goals,
+        "experience":       profile.experience,
+        "equipment":        profile.equipment,
+        "days_per_week":    profile.days_per_week,
+        "trial_ends_at":    profile.trial_ends_at.isoformat() if profile.trial_ends_at else None,
+    }

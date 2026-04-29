@@ -14,6 +14,11 @@ from .views import (
     magic_link_verify_view,
 )
 from .sso_views import sso_apple_view, sso_google_view
+from .solo_views import (
+    solo_signup_view,
+    solo_onboarding_update_view,
+    solo_me_view,
+)
 from .profile_views import (
     lifetime_stats_for_me,
     avatar_for_me,
@@ -40,6 +45,12 @@ urlpatterns = [
     # tokens for a DRF auth token + user payload via these.
     path("sso/apple/",  sso_apple_view,  name="sso-apple"),
     path("sso/google/", sso_google_view, name="sso-google"),
+
+    # SOLO MVP (task #53 — E.1). Self-serve signup + entitlement
+    # endpoint that gates Pro/Pro AI features on iOS.
+    path("solo/signup/",     solo_signup_view,             name="solo-signup"),
+    path("solo/onboarding/", solo_onboarding_update_view,  name="solo-onboarding"),
+    path("solo/me/",         solo_me_view,                 name="solo-me"),
 
     # Profile P.1.1 — wires up the SOON pills on the iOS Profile
     # tab (lifetime stats, avatar upload, username change,
