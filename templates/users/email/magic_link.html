@@ -1,69 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <meta name="supported-color-schemes" content="dark light">
     <title>Your GymFlow sign-in link</title>
+    <!--
+        Bulletproof magic-link email — matched to the in-app dark
+        + lime aesthetic. Gold-standard pattern (Linear / Vercel /
+        Stripe / Cal.com): one button, two sentences, dark-mode-
+        native colours.
+
+        Why explicit `!important` on the lime CTA: Gmail's dark
+        mode and Outlook's auto-invert silently re-tint anything
+        bright; without the override, the lime button renders as
+        dark green and breaks the visual. Tested against Apple
+        Mail, Gmail (web + iOS), Outlook (Mac + iOS), Spark.
+    -->
 </head>
-<body style="margin: 0; padding: 0; background-color: #f4f4f6; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #f4f4f6; padding: 40px 0;">
+<body style="margin:0; padding:0; background-color:#040711; color:#ffffff; font-family:-apple-system,BlinkMacSystemFont,'SF Pro','Segoe UI',Roboto,Helvetica,Arial,sans-serif; -webkit-font-smoothing:antialiased;">
+
+    <!-- Wrapper — dark backdrop fills the whole canvas. -->
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+           style="background-color:#040711; padding:48px 16px;">
         <tr>
             <td align="center">
-                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="560" style="max-width: 560px; background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.06);">
-                    <!-- Hero band — lime brand mark + headline -->
+
+                <!-- Card — same dark base, hairline border. Sits 520
+                     wide so it reads as a card on desktop and full-
+                     width on mobile after the wrapper padding. -->
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="520"
+                       style="max-width:520px; width:100%; background-color:#040711; border:1px solid rgba(255,255,255,0.08); border-radius:20px; overflow:hidden;">
+
+                    <!-- Brand mark — small uppercase wordmark, lime,
+                         left-aligned. Matches the app's eyebrow style. -->
                     <tr>
-                        <td style="background-color: #040711; padding: 40px 32px 32px 32px;">
-                            <div style="font-size: 13px; font-weight: 800; letter-spacing: 2px; color: #C8FF20; margin-bottom: 14px;">GYMFLOW</div>
-                            <h1 style="margin: 0; font-size: 28px; line-height: 1.2; font-weight: 800; color: #ffffff;">Your sign-in link is ready</h1>
+                        <td style="padding:36px 32px 0 32px;">
+                            <span style="display:inline-block; font-size:11px; font-weight:800; letter-spacing:2.4px; color:#C8FF20 !important;">GYMFLOW</span>
                         </td>
                     </tr>
 
-                    <!-- Body -->
+                    <!-- Headline — single bold line. -->
                     <tr>
-                        <td style="padding: 32px;">
-                            <p style="margin: 0 0 18px 0; font-size: 15px; line-height: 1.55; color: #1a1c24;">
-                                Tap the button below on the device you want to sign in on. We'll log you in instantly &mdash; no password needed.
-                            </p>
+                        <td style="padding:14px 32px 12px 32px;">
+                            <h1 style="margin:0; font-size:30px; line-height:1.15; font-weight:800; color:#ffffff !important; letter-spacing:-0.4px;">
+                                Sign in to GymFlow
+                            </h1>
+                        </td>
+                    </tr>
 
-                            <!-- Primary CTA: web URL that bridges to the app.
-                                 Pointing the button at the web URL rather
-                                 than the raw `gymflow://` scheme means
-                                 Gmail / Outlook / etc. can't rewrite the
-                                 link, AND non-iOS visitors get a friendly
-                                 fallback page instead of a "scheme
-                                 unrecognised" error. The bridge view at
-                                 /magic/<token>/ detects iOS and meta-
-                                 refreshes into the app. -->
-                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 24px 0;">
+                    <!-- Body — exactly two sentences, no fluff. -->
+                    <tr>
+                        <td style="padding:0 32px 28px 32px;">
+                            <p style="margin:0; font-size:15px; line-height:1.55; color:rgba(255,255,255,0.72) !important;">
+                                Tap the button below on your iPhone to log in. No password, no extra steps.
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Bulletproof CTA — table-wrapped anchor with
+                         the lime explicitly tagged so dark-mode
+                         clients can't repaint it. -->
+                    <tr>
+                        <td style="padding:0 32px 28px 32px;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                                 <tr>
-                                    <td>
-                                        <a href="{{ web_link }}" style="display: inline-block; padding: 16px 28px; background-color: #C8FF20; color: #040711; text-decoration: none; font-weight: 800; font-size: 15px; border-radius: 12px;">
+                                    <td bgcolor="#C8FF20" align="center"
+                                        style="background-color:#C8FF20 !important; border-radius:14px; mso-padding-alt:0;">
+                                        <a href="{{ web_link }}"
+                                           style="display:block; padding:18px 24px; font-size:16px; font-weight:800; line-height:1; color:#040711 !important; text-decoration:none; border-radius:14px; letter-spacing:0.2px;">
                                             Sign in to GymFlow
                                         </a>
                                     </td>
                                 </tr>
                             </table>
+                        </td>
+                    </tr>
 
-                            <p style="margin: 18px 0 0 0; font-size: 13px; line-height: 1.55; color: #5a5d68;">
-                                The link expires in {{ ttl_minutes }} minutes and can only be used once. If you didn't request this, you can ignore the email &mdash; nothing changes.
+                    <!-- TTL + ignore-if-not-you. Single-line clauses,
+                         tight typography. -->
+                    <tr>
+                        <td style="padding:0 32px 24px 32px;">
+                            <p style="margin:0 0 4px 0; font-size:13px; line-height:1.55; color:rgba(255,255,255,0.55) !important;">
+                                The link expires in {{ ttl_minutes }} minutes and works once.
                             </p>
-
-                            <!-- Fallback: plain URL -->
-                            <p style="margin: 28px 0 0 0; font-size: 12px; line-height: 1.55; color: #8a8d96;">
-                                Button not working? Copy and paste this link into your browser:<br>
-                                <a href="{{ web_link }}" style="color: #5a5d68; word-break: break-all;">{{ web_link }}</a>
+                            <p style="margin:0; font-size:13px; line-height:1.55; color:rgba(255,255,255,0.55) !important;">
+                                Didn't ask for this? Ignore the email — nothing changes on your account.
                             </p>
                         </td>
                     </tr>
 
-                    <!-- Footer -->
+                    <!-- Plain-URL fallback — only shown if the
+                         button breaks. Tiny, lowercase, clearly
+                         secondary. -->
                     <tr>
-                        <td style="padding: 24px 32px; background-color: #f9f9fb; font-size: 11px; color: #8a8d96;">
-                            GymFlow &middot; The coaching platform for trainers and clients<br>
-                            Sent because you requested a sign-in link from the app.
+                        <td style="padding:0 32px 32px 32px; border-top:1px solid rgba(255,255,255,0.08); padding-top:20px;">
+                            <p style="margin:0; font-size:11px; line-height:1.55; color:rgba(255,255,255,0.40) !important;">
+                                Button not working? Paste this link into your browser:
+                            </p>
+                            <p style="margin:6px 0 0 0; font-size:11px; line-height:1.4; color:rgba(255,255,255,0.55) !important; word-break:break-all;">
+                                <a href="{{ web_link }}" style="color:rgba(255,255,255,0.65) !important; text-decoration:underline;">{{ web_link }}</a>
+                            </p>
                         </td>
                     </tr>
                 </table>
+
+                <!-- Footer outside the card — kept faint so the
+                     card carries the visual weight. -->
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="520"
+                       style="max-width:520px; width:100%;">
+                    <tr>
+                        <td align="center" style="padding:20px 16px 0 16px;">
+                            <p style="margin:0; font-size:11px; line-height:1.6; color:rgba(255,255,255,0.35) !important;">
+                                GymFlow &middot; Coaching for trainers and clients<br>
+                                Sent because you requested a sign-in link from the app.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
             </td>
         </tr>
     </table>

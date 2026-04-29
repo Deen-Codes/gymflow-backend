@@ -217,7 +217,10 @@ def magic_link_verify_view(request):
 def _send_magic_link_email(user, deep_link, web_link):
     """Render and send the magic-link email via Resend (handled by
     the existing custom email backend)."""
-    subject = "Your GymFlow sign-in link"
+    # Subject line follows the Linear / Slack pattern — "[Brand]
+    # sign-in link". Easier to spot in a packed inbox than a
+    # generic "your link" framing.
+    subject = "GymFlow sign-in link"
     context = {
         "user": user,
         "deep_link": deep_link,
