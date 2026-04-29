@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in to GymFlow</title>
+    {% if is_ios %}
+    <!-- Auto-redirect iOS visitors into the app via the custom URL
+         scheme. Triggered immediately on page load; if it fails
+         (older iOS, custom-scheme blocking), the visible button
+         below provides a manual fallback. -->
+    <meta http-equiv="refresh" content="0; url={{ deep_link }}">
+    <script>
+        // Belt + braces — also kick the redirect via JS so any
+        // browser that ignores the meta refresh still launches
+        // the app.
+        window.location.replace("{{ deep_link }}");
+    </script>
+    {% endif %}
+    <style>
+        :root {
+            --bg-deepest: #040711;
+            --bg-deeper:  #15171f;
+            --accent:     #C8FF20;
+            --text:       #ffffff;
+            --text-mute:  rgba(255, 255, 255, 0.62);
+            --glass:      rgba(255, 255, 255, 0.06);
+            --border:     rgba(255, 255, 255, 0.10);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body {
+            height: 100%;
+            background: var(--bg-deepest);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            background:
+                radial-gradient(circle at 20% -10%, rgba(200, 255, 32, 0.10), transparent 50%),
+                radial-gradient(circle at 80% 110%, rgba(112, 191, 255, 0.06), transparent 50%),
+                var(--bg-deepest);
+        }
+        .card {
+            max-width: 440px;
+            width: 100%;
+            text-align: center;
+            background: var(--glass);
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            padding: 40px 28px;
+        }
+        .eyebrow {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: var(--accent);
+            margin-bottom: 16px;
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 14px;
+        }
+        p {
+            font-size: 15px;
+            line-height: 1.55;
+            color: var(--text-mute);
+            margin-bottom: 22px;
+        }
+        .cta {
+            display: inline-block;
+            padding: 16px 28px;
+            background: var(--accent);
+            color: var(--bg-deepest);
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 15px;
+            border-radius: 14px;
+            box-shadow: 0 12px 32px rgba(200, 255, 32, 0.22);
+        }
+        .footer {
+            margin-top: 28px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.40);
+        }
+        .ttl {
+            display: inline-block;
+            margin-top: 18px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.40);
+        }
+    </style>
+</head>
+<body>
+    <main class="card">
+        {% if is_ios %}
+            <div class="eyebrow">SIGNING YOU IN</div>
+            <h1>Opening GymFlow…</h1>
+            <p>If the app doesn't open automatically, tap the button below.</p>
+            <a class="cta" href="{{ deep_link }}">Open GymFlow</a>
+            <div class="ttl">Link expires in {{ ttl_minutes }} minutes.</div>
+        {% else %}
+            <div class="eyebrow">FOR YOUR PHONE</div>
+            <h1>Open this link on your phone</h1>
+            <p>Sign-in links work inside the GymFlow app. Forward this email to yourself on your phone, or open it in the iOS Mail / Gmail app on the device with the app installed.</p>
+            <p>Don't have GymFlow yet? It's a free download on the App Store — search "GymFlow" or visit gymflow.coach.</p>
+            <div class="ttl">Link expires in {{ ttl_minutes }} minutes.</div>
+        {% endif %}
+
+        <div class="footer">
+            GymFlow · The coaching platform for trainers and clients
+        </div>
+    </main>
+</body>
+</html>

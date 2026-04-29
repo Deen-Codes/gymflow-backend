@@ -25,11 +25,19 @@
                                 Tap the button below on the device you want to sign in on. We'll log you in instantly &mdash; no password needed.
                             </p>
 
-                            <!-- Primary CTA: deep link to the app -->
+                            <!-- Primary CTA: web URL that bridges to the app.
+                                 Pointing the button at the web URL rather
+                                 than the raw `gymflow://` scheme means
+                                 Gmail / Outlook / etc. can't rewrite the
+                                 link, AND non-iOS visitors get a friendly
+                                 fallback page instead of a "scheme
+                                 unrecognised" error. The bridge view at
+                                 /magic/<token>/ detects iOS and meta-
+                                 refreshes into the app. -->
                             <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 24px 0;">
                                 <tr>
                                     <td>
-                                        <a href="{{ deep_link }}" style="display: inline-block; padding: 16px 28px; background-color: #C8FF20; color: #040711; text-decoration: none; font-weight: 800; font-size: 15px; border-radius: 12px;">
+                                        <a href="{{ web_link }}" style="display: inline-block; padding: 16px 28px; background-color: #C8FF20; color: #040711; text-decoration: none; font-weight: 800; font-size: 15px; border-radius: 12px;">
                                             Sign in to GymFlow
                                         </a>
                                     </td>

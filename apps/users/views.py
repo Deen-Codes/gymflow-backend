@@ -3,6 +3,7 @@ import secrets
 from django.conf import settings
 from django.contrib.auth import login, logout
 from django.core.mail import EmailMultiAlternatives
+from django.shortcuts import render
 from django.template.loader import render_to_string
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
@@ -233,6 +234,41 @@ def _send_magic_link_email(user, deep_link, web_link):
     )
     msg.attach_alternative(html_body, "text/html")
     msg.send(fail_silently=False)
+
+
+def magic_link_web_handler(request, token):
+    """Web-side handler for `https://gymflow.coach/magic/<token>`.
+
+    Why this exists: the email's primary CTA points at
+    `gymflow://magic/<token>` (custom URL scheme that launches the
+    iOS app directly). But Gmail and a few other email clients
+    silently rewrite custom schemes to https:// before exposing
+    them as clickable, sending users to the gymflow.coach web URL
+    instead. Without this view that's a 404.
+
+    Strategy:
+      • iOS visitor — render a tiny bridge page with a meta
+        refresh to `gymflow://magic/<token>` so the app opens
+        seamlessly. Falls back to a tap-to-open button if the
+        meta refresh is blocked.
+      • Anyone else — friendly "open this on your phone" page
+        with App Store guidance. We don't try to authenticate
+        web-side because the iOS app is the only client.
+
+    The token isn't validated here — that's the verify endpoint's
+    job. We just route the user back to the right place.
+    """
+    user_agent = request.META.get("HTTP_USER_AGENT", "").lower()
+    is_ios = ("iphone" in user_agent) or ("ipad" in user_agent) or ("ipod" in user_agent)
+    return render(
+        request,
+        "users/magic_link_bridge.html",
+        {
+            "deep_link": f"gymflow://magic/{token}",
+            "is_ios": is_ios,
+            "ttl_minutes": MagicLoginToken.DEFAULT_TTL_MINUTES,
+        },
+    )
 
 
 @api_view(["GET"])

@@ -3,10 +3,10 @@ Sign in to GymFlow
 
 Tap this link on the device you want to sign in on:
 
-  {{ deep_link }}
+  {{ web_link }}
 
-(Or open the web fallback if the app isn't installed:
-  {{ web_link }})
+(Opens the GymFlow app automatically on iOS. On other devices it'll
+guide you to install the app first.)
 
 The link expires in {{ ttl_minutes }} minutes and can only be used once.
 

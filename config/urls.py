@@ -2,8 +2,20 @@ from django.contrib import admin
 from django.urls import include, path
 from django.views.generic import TemplateView
 
+from apps.users.views import magic_link_web_handler
+
 urlpatterns = [
     path("admin/", admin.site.urls),
+
+    # Magic-link web handler — the email's lime CTA points at
+    # gymflow://magic/<token> for direct app launch, but several
+    # email clients (Gmail in particular) rewrite custom schemes
+    # to https:// for safety. This route catches those rewrites,
+    # detects iOS, and redirects to the deep link so the app
+    # opens. Non-iOS visitors get a friendly "open this on your
+    # phone" page with App Store guidance.
+    path("magic/<str:token>/", magic_link_web_handler, name="magic-link-web"),
+    path("magic/<str:token>",  magic_link_web_handler),  # trailing-slash optional
 
     # Phase #21 — legal pages. Static templates, no DB. Linked from
     # public-site footer + Stripe Customer Portal "Public business
