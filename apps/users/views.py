@@ -298,6 +298,40 @@ def _build_trophies(user):
     return {"trophies": list_trophies_for(user)}
 
 
+def _build_solo(user):
+    """SOLO MVP — entitlement payload. Mirrors /api/users/solo/me/.
+    iOS reads this on launch to decide whether to render Solo-mode
+    screens, gate Pro features, etc."""
+    from .models import SoloProfile
+
+    is_solo = (user.role == User.SOLO)
+    if not is_solo:
+        return {
+            "is_solo":         False,
+            "tier":            None,
+            "has_ai_access":   False,
+            "has_pro_access":  False,
+            "goals":           [],
+            "experience":      "",
+            "equipment":       "",
+            "days_per_week":   0,
+            "trial_ends_at":   None,
+        }
+
+    profile, _ = SoloProfile.objects.get_or_create(user=user)
+    return {
+        "is_solo":         True,
+        "tier":            profile.tier,
+        "has_ai_access":   profile.has_ai_access,
+        "has_pro_access":  profile.has_pro_access,
+        "goals":           profile.goals,
+        "experience":      profile.experience,
+        "equipment":       profile.equipment,
+        "days_per_week":   profile.days_per_week,
+        "trial_ends_at":   profile.trial_ends_at.isoformat() if profile.trial_ends_at else None,
+    }
+
+
 @api_view(["GET"])
 @permission_classes([IsAuthenticated])
 def startup_for_me(request):
@@ -332,6 +366,7 @@ def startup_for_me(request):
             "workout_next":          _safely(lambda: _build_workout_next(user)),
             "workout_plan_active":   _safely(lambda: _build_workout_plan_active(user)),
             "trophies":              _safely(lambda: _build_trophies(user)),
+            "solo":                  _safely(lambda: _build_solo(user)),
         },
         status=status.HTTP_200_OK,
     )

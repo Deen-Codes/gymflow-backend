@@ -130,6 +130,62 @@ class FoodLibraryItem(models.Model):
         return self.name
 
 
+# ----------------------------------------------------------------------
+# SOLO-only nutrition tracking (N.1.1)
+#
+# Solo users don't have a trainer-built meal plan. They log foods
+# ad-hoc against macro targets (the MyFitnessPal pattern). This model
+# is intentionally separate from NutritionMeal/NutritionMealItem
+# (which are plan-template rows) so the trainer-coded surface stays
+# untouched.
+#
+# A row = "I ate X grams of food Y on date Z."
+# ----------------------------------------------------------------------
+
+
+class SoloFoodLogEntry(models.Model):
+    """One logged food a Solo user ate on one day."""
+
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name="solo_food_log",
+    )
+
+    # Either a FoodLibraryItem reference (typed once, reused) OR an
+    # ad-hoc snapshot (the user typed in a one-off food). When `food`
+    # is set, name + macros are derived from it; when null, the
+    # snapshot fields below carry the data.
+    food = models.ForeignKey(
+        "FoodLibraryItem",
+        on_delete=models.SET_NULL,
+        null=True, blank=True,
+        related_name="solo_log_entries",
+    )
+
+    # Snapshot fields — populated whenever a row is created so the
+    # log stays valid even if the FoodLibraryItem is later deleted.
+    # If `food` is null, these are the only source of truth.
+    name        = models.CharField(max_length=255)
+    portion     = models.FloatField(default=100)   # in the food's portion units
+    calories    = models.FloatField(default=0)
+    protein     = models.FloatField(default=0)
+    carbs       = models.FloatField(default=0)
+    fats        = models.FloatField(default=0)
+
+    consumed_on = models.DateField(db_index=True)
+    created_at  = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["-consumed_on", "-created_at"]
+        indexes = [
+            models.Index(fields=["user", "consumed_on"]),
+        ]
+
+    def __str__(self):
+        return f"{self.user_id} — {self.name} ({self.consumed_on})"
+
+
 class NutritionMeal(models.Model):
     nutrition_plan = models.ForeignKey(
         NutritionPlan,

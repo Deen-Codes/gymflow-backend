@@ -24,6 +24,27 @@ class WorkoutPlan(models.Model):
         related_name="client_specific_workout_plans",
     )
 
+    # SOLO-02 — the public programmes catalog Solo users browse and
+    # self-assign. When True, this plan is visible to ALL solo users
+    # under /api/solo/programmes/ regardless of `user`. Assignment
+    # deep-clones the plan into a per-user instance (with the new
+    # plan's `source_template` set to this row), so the catalog row
+    # stays read-only and can be edited centrally without affecting
+    # already-assigned users.
+    #
+    # `programme_meta` is a small JSON blob the catalog filter uses:
+    #   {
+    #     "goals":         ["build_muscle", "get_stronger"],
+    #     "experience":    "one_to_three",
+    #     "equipment":     "full_gym",
+    #     "days_per_week": 4,
+    #     "weeks":         6,
+    #     "tagline":       "Push Pull Legs split",
+    #     "summary":       "Classic 4-day hypertrophy programme...",
+    #   }
+    is_solo_template = models.BooleanField(default=False, db_index=True)
+    programme_meta   = models.JSONField(blank=True, default=dict)
+
     # Phase 5: timestamp so the Activity feed can show plan-created events.
     created_at = models.DateTimeField(auto_now_add=True, null=True)
 

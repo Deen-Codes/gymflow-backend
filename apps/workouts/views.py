@@ -32,6 +32,8 @@ def get_user_active_plan(user):
         uses their own active plan
     Client:
         uses their assigned workout plan
+    Solo (E.1):
+        uses the programme they picked from the catalog
     """
     if user.role == User.TRAINER:
         return get_object_or_404(
@@ -44,6 +46,11 @@ def get_user_active_plan(user):
         if not hasattr(user, "client_profile") or not user.client_profile.assigned_workout_plan:
             return None
         return user.client_profile.assigned_workout_plan
+
+    if user.role == User.SOLO:
+        if not hasattr(user, "solo_profile") or not user.solo_profile.assigned_workout_plan:
+            return None
+        return user.solo_profile.assigned_workout_plan
 
     return None
 

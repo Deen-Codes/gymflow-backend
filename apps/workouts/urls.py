@@ -6,6 +6,11 @@ from .views import (
     latest_workout_session_for_day,
     create_workout_session,
 )
+from .solo_catalog_views import (
+    solo_programmes_list,
+    solo_programmes_assign,
+    solo_programmes_create_custom,
+)
 
 urlpatterns = [
     path("plan/active/", active_workout_plan, name="active_workout_plan"),
@@ -13,4 +18,10 @@ urlpatterns = [
     path("next/", next_workout, name="next_workout"),
     path("days/<int:day_id>/latest-session/", latest_workout_session_for_day, name="latest_workout_session_for_day"),
     path("sessions/create/", create_workout_session, name="create_workout_session"),
+
+    # SOLO-02 — public programmes catalog. List is open to any
+    # authenticated user (PT or solo); assign is solo-only.
+    path("solo/programmes/",                       solo_programmes_list,   name="solo-programmes-list"),
+    path("solo/programmes/<int:programme_id>/assign/", solo_programmes_assign, name="solo-programmes-assign"),
+    path("solo/programmes/custom/",                solo_programmes_create_custom, name="solo-programmes-create"),
 ]

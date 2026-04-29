@@ -18,6 +18,7 @@ from .solo_views import (
     solo_signup_view,
     solo_onboarding_update_view,
     solo_me_view,
+    solo_convert_view,
 )
 from .profile_views import (
     lifetime_stats_for_me,
@@ -51,6 +52,7 @@ urlpatterns = [
     path("solo/signup/",     solo_signup_view,             name="solo-signup"),
     path("solo/onboarding/", solo_onboarding_update_view,  name="solo-onboarding"),
     path("solo/me/",         solo_me_view,                 name="solo-me"),
+    path("solo/convert/",    solo_convert_view,            name="solo-convert"),
 
     # Profile P.1.1 — wires up the SOON pills on the iOS Profile
     # tab (lifetime stats, avatar upload, username change,

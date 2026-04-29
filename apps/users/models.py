@@ -184,6 +184,20 @@ class SoloProfile(models.Model):
     equipment  = models.CharField(max_length=20, choices=EQUIPMENT_CHOICES, blank=True, default="")
     days_per_week = models.PositiveSmallIntegerField(default=3)
 
+    # SOLO-02 — assigned programme. Null on signup; set when the user
+    # picks one from the catalog. Mirrors ClientProfile.assigned_workout_plan
+    # so the existing workouts pipeline (next_workout, plan_active,
+    # etc.) Just Works once `get_user_active_plan` is extended to
+    # check this. on_delete=SET_NULL so deleting a programme doesn't
+    # cascade-delete the user.
+    assigned_workout_plan = models.ForeignKey(
+        "workouts.WorkoutPlan",
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name="assigned_solo_users",
+    )
+
     # Subscription — defaults to free; SOLO-03 (Stripe billing) flips
     # this when a Checkout session completes. `tier_active_until` is
     # null while on free or while a paid sub is current; populated

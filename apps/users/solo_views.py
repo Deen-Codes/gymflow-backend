@@ -136,9 +136,18 @@ def solo_signup_view(request):
     days        = _clean_days(data.get("days_per_week"))
     full_name   = (data.get("full_name") or "").strip()[:120]
 
-    # Idempotent on email — find OR create. We never silently demote
-    # an existing TRAINER/CLIENT to SOLO, only set SOLO on fresh
-    # accounts or update an existing SOLO.
+    # Idempotent on email — find OR create. Existing accounts:
+    #
+    #   • TRAINER          → never demote. Reject so a trainer doesn't
+    #                        accidentally lose their dashboard.
+    #   • CLIENT w/ trainer→ never demote. Reject so a paired client
+    #                        keeps their PT.
+    #   • CLIENT no trainer→ convert to SOLO. They're effectively a
+    #                        solo user already; this just labels the
+    #                        account properly so the app routes them
+    #                        through the Solo experience.
+    #   • SOLO             → no role change; just refresh answers.
+    #   • Brand new        → create as SOLO.
     user = User.objects.filter(email__iexact=email).first()
     is_new = user is None
 
@@ -159,6 +168,44 @@ def solo_signup_view(request):
             if len(parts) == 2:
                 user.last_name = parts[1][:30]
         user.save()
+    else:
+        # Decide whether to convert the existing account to SOLO.
+        if user.role == User.TRAINER:
+            # Don't silently turn a trainer into a solo account.
+            return Response(
+                {"detail": "This email belongs to a trainer account. Use the trainer login instead."},
+                status=status.HTTP_409_CONFLICT,
+            )
+        if user.role == User.CLIENT:
+            # Convert iff there's no active trainer pairing. Pairing
+            # detection: ClientProfile.trainer is non-null.
+            client_profile = getattr(user, "client_profile", None)
+            has_trainer = client_profile is not None and client_profile.trainer_id is not None
+            if has_trainer:
+                # User has an active PT — refuse the auto-conversion.
+                # They can manually un-pair via the Profile sheet first.
+                return Response(
+                    {"detail": "This email is already paired with a trainer. Unpair from your trainer first to switch to Solo."},
+                    status=status.HTTP_409_CONFLICT,
+                )
+            # No active trainer → safe to convert. Drop the orphan
+            # ClientProfile (no trainer FK to lose) so home/nutrition
+            # views resolve through the SOLO branch instead of the
+            # CLIENT branch.
+            if client_profile is not None:
+                client_profile.delete()
+            user.role = User.SOLO
+            user.save(update_fields=["role"])
+
+        # Refresh names if the caller passed them — useful for SOLO
+        # users who started with just an email and added their name on
+        # screen 2.
+        if full_name:
+            parts = full_name.split(maxsplit=1)
+            user.first_name = parts[0][:30]
+            if len(parts) == 2:
+                user.last_name = parts[1][:30]
+            user.save(update_fields=["first_name", "last_name"])
 
     # Update / create the SoloProfile. Only refresh fields that the
     # caller actually supplied — partial signups (just email) don't
@@ -229,6 +276,41 @@ def solo_onboarding_update_view(request):
     profile.save()
 
     return Response(_solo_payload(profile))
+
+
+@csrf_exempt
+@api_view(["POST"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def solo_convert_view(request):
+    """POST /api/users/solo/convert/
+
+    Flip the calling user's account from CLIENT → SOLO. Same safety
+    rails as the signup-time conversion: refused for trainers, refused
+    for clients who currently have an active trainer pairing.
+
+    Used by the iOS Profile sheet's "Solo" mode toggle so users who
+    are already logged in (with a no-trainer client account from
+    pre-Solo days) can switch experiences without re-signing-up.
+    """
+    user = request.user
+    if user.role == User.TRAINER:
+        return Response({"detail": "Trainer accounts can't switch to Solo."}, status=status.HTTP_403_FORBIDDEN)
+    if user.role == User.SOLO:
+        return Response({"ok": True, "already_solo": True})
+
+    client_profile = getattr(user, "client_profile", None)
+    if client_profile is not None and client_profile.trainer_id is not None:
+        return Response(
+            {"detail": "Unpair from your trainer first."},
+            status=status.HTTP_409_CONFLICT,
+        )
+    if client_profile is not None:
+        client_profile.delete()
+    user.role = User.SOLO
+    user.save(update_fields=["role"])
+    SoloProfile.objects.get_or_create(user=user)
+    return Response({"ok": True, "already_solo": False})
 
 
 @csrf_exempt
