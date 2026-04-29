@@ -59,6 +59,15 @@ class TrainerProfile(models.Model):
     # account ID (acct_…) which is safe to keep in the DB.
     stripe_user_id = models.CharField(max_length=64, blank=True, default="")
 
+    # M.2 — programmatic SEO city directory pages. Free-text city
+    # name set by the trainer (e.g. "London", "Manchester", "New
+    # York"). We slugify on read for the URL. Optional — older
+    # trainers won't have one set, and they simply won't appear in
+    # any city directory until they fill this in. Indexed for the
+    # cheap city listing GROUP BY.
+    city = models.CharField(max_length=80, blank=True, default="", db_index=True)
+    country = models.CharField(max_length=80, blank=True, default="")
+
     def __str__(self):
         return self.business_name or self.user.username
 

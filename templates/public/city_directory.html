@@ -1,0 +1,196 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ seo.title }}</title>
+    <meta name="description" content="{{ seo.description }}">
+    <link rel="canonical" href="{{ seo.page_url }}">
+
+    <!-- Open Graph (no per-city OG image yet — falls back to a static
+         GymFlow card baked into the public_site_og_image route's
+         lookalike. M.2.x). -->
+    <meta property="og:title" content="{{ seo.title }}">
+    <meta property="og:description" content="{{ seo.description }}">
+    <meta property="og:url" content="{{ seo.page_url }}">
+    <meta property="og:type" content="website">
+
+    <!-- Schema.org — ItemList of LocalBusinesses for the city. Helps
+         Google attach the page to local-trainer queries. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Personal Trainers in {{ city_name }}",
+      "url": "{{ seo.page_url }}",
+      "numberOfItems": {{ cards|length }},
+      "itemListElement": [
+        {% for c in cards %}
+        {
+          "@type": "ListItem",
+          "position": {{ forloop.counter }},
+          "item": {
+            "@type": "LocalBusiness",
+            "name": "{{ c.display_name|escapejs }}",
+            "url": "{{ seo.page_url|cut:'/cities/' }}{{ c.url }}"
+          }
+        }{% if not forloop.last %},{% endif %}
+        {% endfor %}
+      ]
+    }
+    </script>
+
+    {% include "_favicon_links.html" %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/public-site.css' %}">
+    <style>
+        :root { --pt-accent: #c8ff00; }
+        .city-wrap { max-width: 1040px; margin: 0 auto; padding: 56px 24px 80px; }
+        .city-kicker {
+            text-transform: uppercase;
+            letter-spacing: 1.6px;
+            font-size: 12px;
+            color: var(--pt-accent);
+            margin-bottom: 12px;
+        }
+        .city-h1 {
+            font-size: clamp(34px, 6vw, 60px);
+            line-height: 1.05;
+            letter-spacing: -0.02em;
+            margin: 0 0 14px;
+        }
+        .city-lede {
+            color: rgba(255,255,255,0.72);
+            max-width: 640px;
+            font-size: 17px;
+            line-height: 1.5;
+            margin: 0 0 36px;
+        }
+        .city-grid {
+            display: grid;
+            gap: 14px;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        }
+        .city-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 22px 22px 20px;
+            transition: transform .15s ease, border-color .15s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .city-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--card-accent, var(--pt-accent));
+        }
+        .city-card-disc {
+            width: 44px; height: 44px;
+            border-radius: 12px;
+            background: var(--card-accent, var(--pt-accent));
+            color: #0b1100;
+            font-weight: 800;
+            display: grid; place-items: center;
+            margin-bottom: 14px;
+            font-size: 18px;
+        }
+        .city-card-name {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -0.005em;
+            margin: 0 0 6px;
+        }
+        .city-card-cta {
+            font-size: 13px;
+            color: rgba(255,255,255,0.55);
+        }
+        .city-card:hover .city-card-cta { color: var(--card-accent, var(--pt-accent)); }
+        .city-other {
+            margin-top: 64px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 28px;
+        }
+        .city-other-h {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.6px;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 12px;
+        }
+        .city-other-links {
+            display: flex; flex-wrap: wrap; gap: 8px;
+        }
+        .city-other-link {
+            padding: 8px 14px;
+            border: 1px solid rgba(255,255,255,0.10);
+            border-radius: 999px;
+            color: rgba(255,255,255,0.78);
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .city-other-link:hover {
+            border-color: var(--pt-accent);
+            color: var(--pt-accent);
+        }
+        .city-foot {
+            margin-top: 56px;
+            color: rgba(255,255,255,0.45);
+            font-size: 12px;
+            text-align: center;
+        }
+        .city-foot a { color: inherit; }
+    </style>
+</head>
+<body class="pt-public">
+
+<header class="pt-public-nav">
+    <div class="pt-public-nav-brand">
+        <a href="/" style="color:inherit;text-decoration:none;">GymFlow</a>
+    </div>
+    <a href="/cities/" class="pt-public-nav-cta">All cities →</a>
+</header>
+
+<main class="city-wrap">
+    <div class="city-kicker">Personal trainers</div>
+    <h1 class="city-h1">{{ city_name }}</h1>
+    <p class="city-lede">
+        {{ cards|length }} coach{{ cards|length|pluralize:"es" }} in {{ city_name }} use
+        GymFlow to deliver programmes, nutrition coaching and weekly check-ins —
+        all in one app. Pick a trainer below to apply.
+    </p>
+
+    <div class="city-grid">
+        {% for c in cards %}
+            <a class="city-card" href="{{ c.url }}" style="--card-accent: {{ c.brand_color }};">
+                <div class="city-card-disc">{{ c.display_name|first|upper }}</div>
+                <div class="city-card-name">{{ c.display_name }}</div>
+                <div class="city-card-cta">View page →</div>
+            </a>
+        {% endfor %}
+    </div>
+
+    {% if other_cities %}
+    <section class="city-other">
+        <div class="city-other-h">Other cities on GymFlow</div>
+        <div class="city-other-links">
+            {% for c in other_cities %}
+                <a class="city-other-link" href="/cities/{{ c.slug }}/">{{ c.name }}</a>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    <div class="city-foot">
+        Are you a trainer in {{ city_name }}?
+        <a href="/">Get your own GymFlow page →</a>
+        <br><br>
+        <a href="{% url 'legal-privacy' %}">Privacy</a>
+        ·
+        <a href="{% url 'legal-terms' %}">Terms</a>
+    </div>
+</main>
+
+</body>
+</html>

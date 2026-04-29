@@ -17,7 +17,16 @@ class CustomUserAdmin(UserAdmin):
 
 @admin.register(TrainerProfile)
 class TrainerProfileAdmin(admin.ModelAdmin):
-    list_display = ("user", "business_name", "slug")
+    list_display = ("user", "business_name", "slug", "city", "country")
+    list_filter = ("city", "country")
+    search_fields = ("user__username", "business_name", "city")
+    fieldsets = (
+        (None, {"fields": ("user", "business_name", "slug")}),
+        ("Location (powers /cities/<slug>/ directory)", {
+            "fields": ("city", "country"),
+        }),
+        ("Stripe Connect", {"fields": ("stripe_user_id",)}),
+    )
 
 
 @admin.register(ClientProfile)

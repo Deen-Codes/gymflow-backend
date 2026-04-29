@@ -31,6 +31,28 @@
     font-size: 17px;
     font-weight: 800;
     letter-spacing: -0.01em;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* M.2 — small city pill in the public-site nav. Links to
+   /cities/<slug>/ so visitors can browse trainers in the same area. */
+.pt-public-nav-city {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.08);
+    color: rgba(255,255,255,0.78);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background 140ms, color 140ms;
+}
+.pt-public-nav-city:hover {
+    background: var(--pt-accent);
+    color: #0a0f02;
 }
 
 .pt-public-nav-cta {

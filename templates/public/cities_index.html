@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ seo.title }}</title>
+    <meta name="description" content="{{ seo.description }}">
+    <link rel="canonical" href="{{ seo.page_url }}">
+
+    <meta property="og:title" content="{{ seo.title }}">
+    <meta property="og:description" content="{{ seo.description }}">
+    <meta property="og:url" content="{{ seo.page_url }}">
+    <meta property="og:type" content="website">
+
+    {% include "_favicon_links.html" %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/public-site.css' %}">
+    <style>
+        :root { --pt-accent: #c8ff00; }
+        .city-wrap { max-width: 1040px; margin: 0 auto; padding: 56px 24px 80px; }
+        .city-kicker {
+            text-transform: uppercase;
+            letter-spacing: 1.6px;
+            font-size: 12px;
+            color: var(--pt-accent);
+            margin-bottom: 12px;
+        }
+        .city-h1 {
+            font-size: clamp(34px, 6vw, 60px);
+            line-height: 1.05;
+            letter-spacing: -0.02em;
+            margin: 0 0 14px;
+        }
+        .city-lede {
+            color: rgba(255,255,255,0.72);
+            max-width: 640px;
+            font-size: 17px;
+            line-height: 1.5;
+            margin: 0 0 36px;
+        }
+        .city-list {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        }
+        .city-pill {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            padding: 16px 18px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            color: inherit;
+            text-decoration: none;
+            transition: border-color .15s ease, transform .15s ease;
+        }
+        .city-pill:hover {
+            transform: translateY(-1px);
+            border-color: var(--pt-accent);
+        }
+        .city-pill-name { font-weight: 600; }
+        .city-pill-count {
+            font-size: 12px;
+            color: rgba(255,255,255,0.5);
+        }
+        .city-pill:hover .city-pill-count { color: var(--pt-accent); }
+        .city-empty {
+            padding: 36px;
+            background: rgba(255,255,255,0.03);
+            border: 1px dashed rgba(255,255,255,0.10);
+            border-radius: 14px;
+            color: rgba(255,255,255,0.55);
+            text-align: center;
+        }
+        .city-foot {
+            margin-top: 56px;
+            color: rgba(255,255,255,0.45);
+            font-size: 12px;
+            text-align: center;
+        }
+        .city-foot a { color: inherit; }
+    </style>
+</head>
+<body class="pt-public">
+
+<header class="pt-public-nav">
+    <div class="pt-public-nav-brand">
+        <a href="/" style="color:inherit;text-decoration:none;">GymFlow</a>
+    </div>
+    <a href="/" class="pt-public-nav-cta">For trainers →</a>
+</header>
+
+<main class="city-wrap">
+    <div class="city-kicker">Find a coach</div>
+    <h1 class="city-h1">Personal trainers by city</h1>
+    <p class="city-lede">
+        Every coach below runs their business on GymFlow — programmes,
+        nutrition, check-ins, billing in one place. Pick your city to
+        see who's local.
+    </p>
+
+    {% if cities %}
+        <div class="city-list">
+            {% for c in cities %}
+                <a class="city-pill" href="/cities/{{ c.slug }}/">
+                    <span class="city-pill-name">{{ c.name }}</span>
+                    <span class="city-pill-count">{{ c.count }} coach{{ c.count|pluralize:"es" }}</span>
+                </a>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="city-empty">
+            No trainer cities listed yet — published trainers appear here as
+            they fill in their city on their public site.
+        </div>
+    {% endif %}
+
+    <div class="city-foot">
+        Are you a trainer? <a href="/">Get your own GymFlow page →</a>
+        <br><br>
+        <a href="{% url 'legal-privacy' %}">Privacy</a>
+        ·
+        <a href="{% url 'legal-terms' %}">Terms</a>
+    </div>
+</main>
+
+</body>
+</html>

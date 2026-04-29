@@ -4,7 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ trainer.business_name|default:trainer.user.username }} · Coaching</title>
+    <title>{{ seo.title }}</title>
+    <meta name="description" content="{{ seo.description }}">
+    <link rel="canonical" href="{{ seo.page_url }}">
+
+    <!-- Open Graph / Twitter — task #43 / M.3.
+         Auto-generated 1200x630 OG image lives at /p/<slug>/og.png. -->
+    <meta property="og:title" content="{{ seo.title }}">
+    <meta property="og:description" content="{{ seo.description }}">
+    <meta property="og:image" content="{{ seo.og_image }}">
+    <meta property="og:url" content="{{ seo.page_url }}">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ seo.title }}">
+    <meta name="twitter:description" content="{{ seo.description }}">
+    <meta name="twitter:image" content="{{ seo.og_image }}">
+
+    <!-- Schema.org JSON-LD — LocalBusiness + Person + Offer.
+         Helps Google's rich-result panels surface the trainer's
+         page for high-intent local-search queries. -->
+    <script type="application/ld+json">{{ seo.schema_json|safe }}</script>
+
     {% include "_favicon_links.html" %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="{% static 'css/public-site.css' %}">
@@ -13,7 +33,16 @@
 <body class="pt-public">
 
 <header class="pt-public-nav">
-    <div class="pt-public-nav-brand">{{ trainer.business_name|default:trainer.user.get_full_name|default:trainer.user.username }}</div>
+    <div class="pt-public-nav-brand">
+        {{ trainer.business_name|default:trainer.user.get_full_name|default:trainer.user.username }}
+        {% if trainer.city %}
+            <a href="/cities/{{ trainer.city|slugify }}/"
+               class="pt-public-nav-city"
+               title="More personal trainers in {{ trainer.city }}">
+                {{ trainer.city }}
+            </a>
+        {% endif %}
+    </div>
     <a href="#apply" class="pt-public-nav-cta">Apply →</a>
 </header>
 

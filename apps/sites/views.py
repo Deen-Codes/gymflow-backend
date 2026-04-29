@@ -221,17 +221,41 @@ def site_sections_reorder(request):
 def site_update(request):
     """PATCH /api/sites/dashboard/site/
 
-    Body: {is_published?, brand_color?}
+    Body: {is_published?, brand_color?, city?, country?}
+
+    `city` + `country` actually live on TrainerProfile (not TrainerSite)
+    because the /cities/<slug>/ directory page reads them via
+    TrainerProfile — kept here as a single endpoint so the editor only
+    has one save path.
     """
     site = ensure_site(request.user.trainer_profile)
+    trainer_profile = request.user.trainer_profile
+    site_dirty = False
+    profile_dirty = False
+
     if "is_published" in request.data:
         site.is_published = bool(request.data["is_published"])
+        site_dirty = True
     if "brand_color" in request.data:
         color = (request.data["brand_color"] or "").strip()
         if color and not (color.startswith("#") and len(color) in (4, 7)):
             return Response({"detail": "brand_color must be a hex like #c8ff00."}, status=400)
         site.brand_color = color
-    site.save()
+        site_dirty = True
+
+    if "city" in request.data:
+        city = (request.data.get("city") or "").strip()[:80]
+        trainer_profile.city = city
+        profile_dirty = True
+    if "country" in request.data:
+        country = (request.data.get("country") or "").strip()[:80]
+        trainer_profile.country = country
+        profile_dirty = True
+
+    if site_dirty:
+        site.save()
+    if profile_dirty:
+        trainer_profile.save(update_fields=["city", "country"])
     return Response({"ok": True})
 
 
@@ -276,6 +300,272 @@ def public_site_page(request, slug):
         "brand_color": site.brand_color or "#c8ff00",
         "pricing_plans": pricing_plans,
         "selected_plan": selected_plan,
+        "seo": _seo_context(request, trainer_profile, site, pricing_plans),
+    })
+
+
+# -------------------------------------------------------------------
+# SEO helpers (task #43 / M.3)
+#
+# Each public trainer page gets bespoke meta tags + schema.org
+# markup. Cheap to add, compounds with every new trainer — Google
+# rewards original local-business content and a trainer's bio is
+# exactly that.
+# -------------------------------------------------------------------
+
+
+def _seo_context(request, trainer, site, pricing_plans):
+    """Build a SEO dict the template injects into <head>."""
+    name = trainer.business_name or trainer.user.first_name or trainer.user.username
+    bio = (site.bio or "").strip() if hasattr(site, "bio") and site.bio else ""
+
+    title = f"Train with {name} — Personal Trainer on GymFlow"
+    # 155 chars caps the meta description for clean Google previews.
+    description = (
+        bio if bio
+        else f"Online coaching with {name}. Programmes, nutrition, check-ins and progress tracking — all in one app."
+    )
+    if len(description) > 155:
+        description = description[:152].rstrip() + "…"
+
+    page_url = request.build_absolute_uri()
+    og_image = request.build_absolute_uri(
+        f"/p/{trainer.slug}/og.png"
+    )
+
+    # JSON-LD — LocalBusiness + Person + Offer for the cheapest tier.
+    cheapest_plan = pricing_plans[0] if pricing_plans else None
+    schema = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": name,
+        "description": description,
+        "url": page_url,
+        "image": og_image,
+        "founder": {
+            "@type": "Person",
+            "name": trainer.user.get_full_name() or name,
+        },
+    }
+    # M.2 — feed Google's local-business panel an address. Even with
+    # only `addressLocality` (city) populated, Google can attach the
+    # business to "near me" and "<city>" queries.
+    if getattr(trainer, "city", "") or getattr(trainer, "country", ""):
+        schema["address"] = {
+            "@type": "PostalAddress",
+            "addressLocality": trainer.city or "",
+            "addressCountry": trainer.country or "",
+        }
+        if trainer.city:
+            schema["areaServed"] = trainer.city
+    if cheapest_plan:
+        schema["makesOffer"] = {
+            "@type": "Offer",
+            "name": cheapest_plan.name,
+            "price": str(cheapest_plan.price_pence / 100) if hasattr(cheapest_plan, "price_pence") else None,
+            "priceCurrency": getattr(cheapest_plan, "currency", "GBP"),
+        }
+
+    import json
+    return {
+        "title": title,
+        "description": description,
+        "page_url": page_url,
+        "og_image": og_image,
+        "schema_json": json.dumps(schema, indent=None),
+    }
+
+
+def public_site_og_image(request, slug):
+    """GET /p/<slug>/og.png — auto-generated 1200x630 social card.
+
+    Pure-Pillow render: brand-colour background, trainer's first
+    initial in a centred lime disc + their full name underneath
+    + "GymFlow" wordmark. Works without any uploaded assets so
+    every trainer gets a sharable preview the moment their site
+    publishes.
+    """
+    from io import BytesIO
+    from PIL import Image, ImageDraw, ImageFont
+    from django.http import HttpResponse
+
+    trainer = get_object_or_404(TrainerProfile, slug=slug)
+    site = ensure_site(trainer)
+    name = trainer.business_name or trainer.user.first_name or trainer.user.username
+    initial = name[:1].upper()
+
+    W, H = 1200, 630
+    bg = (4, 7, 17)         # GymFlow deepest dark
+    accent = (200, 255, 32) # lime
+    img = Image.new("RGB", (W, H), bg)
+    draw = ImageDraw.Draw(img)
+
+    # Lime disc with initial
+    disc_r = 130
+    cx, cy = W // 2, H // 2 - 60
+    draw.ellipse(
+        (cx - disc_r, cy - disc_r, cx + disc_r, cy + disc_r),
+        fill=accent,
+    )
+    # Try the system-default font — Pillow ships one. Fonts are
+    # finicky on Render's slim image, so a fallback chain.
+    def _load_font(size):
+        for path in ("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",):
+            try:
+                return ImageFont.truetype(path, size=size)
+            except Exception:
+                pass
+        return ImageFont.load_default()
+
+    font_initial = _load_font(140)
+    font_name = _load_font(64)
+    font_brand = _load_font(28)
+
+    # Centre the initial in the disc
+    bbox = draw.textbbox((0, 0), initial, font=font_initial)
+    iw, ih = bbox[2] - bbox[0], bbox[3] - bbox[1]
+    draw.text((cx - iw // 2, cy - ih // 2 - bbox[1]), initial, fill=bg, font=font_initial)
+
+    # Trainer name below disc
+    bbox = draw.textbbox((0, 0), name, font=font_name)
+    nw = bbox[2] - bbox[0]
+    draw.text((W // 2 - nw // 2, cy + disc_r + 28), name, fill=(255, 255, 255), font=font_name)
+
+    # "GYMFLOW" wordmark, faint, bottom-right
+    brand = "GYMFLOW"
+    bbox = draw.textbbox((0, 0), brand, font=font_brand)
+    bw = bbox[2] - bbox[0]
+    draw.text((W - bw - 36, H - 50), brand, fill=accent, font=font_brand)
+
+    buf = BytesIO()
+    img.save(buf, format="PNG", optimize=True)
+    response = HttpResponse(buf.getvalue(), content_type="image/png")
+    # Cache 24h; the OG image only changes if the trainer renames.
+    response["Cache-Control"] = "public, max-age=86400"
+    return response
+
+
+def public_sitemap(request):
+    """GET /sitemap.xml — lists every published trainer's public
+    page plus all city directory pages (M.2). Re-generated on each
+    request (cheap) so newly published trainers appear immediately."""
+    from django.http import HttpResponse
+
+    base = request.build_absolute_uri("/").rstrip("/")
+    urls = [base + "/", base + "/legal/privacy/", base + "/legal/terms/"]
+
+    # Per-trainer landing pages
+    for site in TrainerSite.objects.filter(is_published=True).select_related("trainer"):
+        urls.append(f"{base}/p/{site.trainer.slug}/")
+
+    # M.2 — city directory pages. One URL per distinct city that has
+    # at least one published trainer. We expose the index too so
+    # crawlers find every leaf page.
+    from .city_pages import published_city_slugs
+    if published_city_slugs():
+        urls.append(f"{base}/cities/")
+        for city_slug in published_city_slugs():
+            urls.append(f"{base}/cities/{city_slug}/")
+
+    body = ['<?xml version="1.0" encoding="UTF-8"?>']
+    body.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
+    for url in urls:
+        body.append(f"  <url><loc>{url}</loc></url>")
+    body.append("</urlset>")
+    return HttpResponse("\n".join(body), content_type="application/xml")
+
+
+# -------------------------------------------------------------------
+# M.2 — Programmatic city directory pages.
+#
+# Two routes mounted at the top of the project:
+#     /cities/                    — index of every city w/ ≥1 trainer
+#     /cities/<city-slug>/        — leaf page listing that city's PTs
+#
+# Pure SEO play. We list the trainers, link out to their pages, and
+# ship the page with a tight title + meta-description so Google can
+# rank it for "personal trainer <city>" queries. Sitemap auto-includes
+# every leaf URL.
+# -------------------------------------------------------------------
+
+
+def cities_index(request):
+    """GET /cities/ — list of every city with at least one published
+    trainer. Hidden from the nav; lives only as a discovery aid for
+    crawlers + an internal-link target from the leaf city pages."""
+    from .city_pages import cities_with_counts
+
+    cities = cities_with_counts()
+    base = request.build_absolute_uri("/").rstrip("/")
+    seo = {
+        "title": "Find a Personal Trainer by City — GymFlow",
+        "description": (
+            "Browse personal trainers and online coaches by city. "
+            "GymFlow is the all-in-one platform trainers run their "
+            "business on — programmes, nutrition, check-ins."
+        ),
+        "page_url": f"{base}/cities/",
+    }
+    return render(request, "public/cities_index.html", {
+        "cities": cities,
+        "seo": seo,
+    })
+
+
+def city_directory_page(request, city_slug):
+    """GET /cities/<slug>/ — list every published trainer based in
+    `city_slug`. 404 if no trainer claims that city."""
+    from .city_pages import (
+        trainers_in_city,
+        display_name_for_slug,
+        cities_with_counts,
+    )
+
+    trainers = trainers_in_city(city_slug)
+    if not trainers:
+        raise Http404("No trainers found for that city.")
+
+    city_name = display_name_for_slug(city_slug)
+    base = request.build_absolute_uri("/").rstrip("/")
+
+    # Cards are pre-decorated so the template stays dumb.
+    cards = []
+    for tp in trainers:
+        site = getattr(tp, "site", None)
+        cards.append({
+            "slug": tp.slug,
+            "display_name": (
+                tp.business_name
+                or tp.user.first_name
+                or tp.user.username
+            ),
+            "url": f"/p/{tp.slug}/",
+            "brand_color": (site.brand_color if site and site.brand_color else "#c8ff00"),
+        })
+
+    # Internal links to neighbouring cities help Google understand the
+    # set; we cap at 8 so the footer doesn't get noisy.
+    other_cities = [
+        c for c in cities_with_counts()
+        if c["slug"] != city_slug
+    ][:8]
+
+    seo = {
+        "title": f"Personal Trainers in {city_name} — GymFlow",
+        "description": (
+            f"{len(trainers)} personal trainer"
+            f"{'s' if len(trainers) != 1 else ''} based in "
+            f"{city_name}, all using GymFlow to deliver coaching, "
+            "nutrition and check-ins."
+        )[:155],
+        "page_url": f"{base}/cities/{city_slug}/",
+    }
+    return render(request, "public/city_directory.html", {
+        "city_name": city_name,
+        "city_slug": city_slug,
+        "cards": cards,
+        "other_cities": other_cities,
+        "seo": seo,
     })
 
 

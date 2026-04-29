@@ -3,6 +3,11 @@ from django.urls import include, path
 from django.views.generic import TemplateView
 
 from apps.users.views import magic_link_web_handler
+from apps.sites.views import (
+    public_sitemap,
+    cities_index,
+    city_directory_page,
+)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -16,6 +21,17 @@ urlpatterns = [
     # phone" page with App Store guidance.
     path("magic/<str:token>/", magic_link_web_handler, name="magic-link-web"),
     path("magic/<str:token>",  magic_link_web_handler),  # trailing-slash optional
+
+    # Sitemap — task #43. Pure GET, lists every published trainer.
+    path("sitemap.xml", public_sitemap, name="sitemap"),
+
+    # Programmatic city directory pages — task #42 / M.2. Mounted at
+    # the project root (rather than under /p/) so the URL reads
+    # naturally for SEO: gymflow.coach/cities/london/ ranks better
+    # than gymflow.coach/p/cities/london/. Each page lists every
+    # trainer with that city set.
+    path("cities/",                 cities_index,        name="cities-index"),
+    path("cities/<slug:city_slug>/", city_directory_page, name="city-directory"),
 
     # Phase #21 — legal pages. Static templates, no DB. Linked from
     # public-site footer + Stripe Customer Portal "Public business

@@ -265,6 +265,20 @@
                        maxlength="7" pattern="^#[0-9a-fA-F]{6}$" placeholder="#c8ff00">
             </div>
             <div class="settings-hint">Applied to buttons + accents on your public page.</div>
+
+            <!-- M.2 — city directory pages. Filling this in adds the
+                 trainer to /cities/<slug>/ which Google can rank for
+                 "personal trainer <city>". Optional. -->
+            <label class="label" style="margin-top:18px;">City</label>
+            <input type="text" id="site-trainer-city" class="input"
+                   value="{{ request.user.trainer_profile.city|default:'' }}"
+                   maxlength="80" placeholder="London">
+            <div class="settings-hint">Where you coach. Adds you to the GymFlow city directory for SEO. Leave blank if you'd rather not be listed.</div>
+
+            <label class="label" style="margin-top:14px;">Country</label>
+            <input type="text" id="site-trainer-country" class="input"
+                   value="{{ request.user.trainer_profile.country|default:'' }}"
+                   maxlength="80" placeholder="United Kingdom">
         </div>
 
         <!-- One properties panel per section, hidden by default; the JS

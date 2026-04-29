@@ -396,6 +396,26 @@
         }
     });
 
+    // ---- M.2 — city / country (powers /cities/<slug>/ directory) ----
+    const cityInput = document.getElementById("site-trainer-city");
+    const countryInput = document.getElementById("site-trainer-country");
+    async function saveLocation(payload) {
+        try {
+            await api("PATCH", "/api/sites/dashboard/site/", payload);
+        } catch (err) {
+            console.warn("location save failed:", err);
+        }
+    }
+    const debouncedCitySave = debounce((v) => saveLocation({ city: v }), 500);
+    const debouncedCountrySave = debounce((v) => saveLocation({ country: v }), 500);
+
+    cityInput?.addEventListener("input", function () {
+        debouncedCitySave(cityInput.value.trim());
+    });
+    countryInput?.addEventListener("input", function () {
+        debouncedCountrySave(countryInput.value.trim());
+    });
+
     // -------------------------------------------------------------
     // Bootstrap
     // -------------------------------------------------------------
