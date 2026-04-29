@@ -294,6 +294,83 @@ class ClientCheckInAssignment(models.Model):
 # tolerant up to PositiveSmallIntegerField's range in case the goal
 # changes later.
 # ============================================================
+# --------------------------------------------------------------------
+# D.2.1 — Solo body-weight history.
+#
+# PT-coded clients log weight via CheckInAnswer rows tied to their
+# trainer's check-in form. Solo users have no trainer / no form, so
+# they need a first-class store. One row per (user, date); same-day
+# updates upsert in place.
+# --------------------------------------------------------------------
+
+
+class SoloBodyweightLog(models.Model):
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name="solo_bodyweight_logs",
+    )
+    logged_on = models.DateField(default=timezone.localdate, db_index=True)
+    kg = models.FloatField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ["-logged_on"]
+        constraints = [
+            models.UniqueConstraint(
+                fields=["user", "logged_on"],
+                name="unique_solo_bodyweight_per_day",
+            ),
+        ]
+
+
+# --------------------------------------------------------------------
+# D.2.2 — Progress photos.
+#
+# One row per uploaded photo. Stored base64 on the row for v1 (same
+# trade-off as User.avatar_base64 — no S3 dependency, survives every
+# Render redeploy, easy to migrate later by replacing the column with
+# `storage_url` + a one-shot migrator). Cap at ~3MB raw / ~4MB after
+# b64 — bigger than that and we ship Imagemagick to compress on
+# upload.
+#
+# `category` lets the user organise their gallery (front/side/back).
+# Free tier gets 1 photo / month; Pro + Pro AI get unlimited. Cap is
+# enforced in the view, not on the model — keeps the data clean.
+# --------------------------------------------------------------------
+
+
+class ProgressPhoto(models.Model):
+    CAT_FRONT = "front"
+    CAT_SIDE  = "side"
+    CAT_BACK  = "back"
+    CAT_OTHER = "other"
+    CATEGORY_CHOICES = [
+        (CAT_FRONT, "Front"),
+        (CAT_SIDE,  "Side"),
+        (CAT_BACK,  "Back"),
+        (CAT_OTHER, "Other"),
+    ]
+
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name="progress_photos",
+    )
+    category = models.CharField(
+        max_length=8, choices=CATEGORY_CHOICES, default=CAT_FRONT,
+    )
+    image_base64 = models.TextField()
+    bodyweight_kg = models.FloatField(null=True, blank=True)  # snapshot for compare cards
+    note = models.CharField(max_length=255, blank=True, default="")
+    taken_on = models.DateField(default=timezone.localdate, db_index=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["-taken_on", "-created_at"]
+
+
 class HydrationLog(models.Model):
     client = models.ForeignKey(
         settings.AUTH_USER_MODEL,

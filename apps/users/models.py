@@ -213,6 +213,23 @@ class SoloProfile(models.Model):
     # on free.
     stripe_subscription_id = models.CharField(max_length=64, blank=True, default="")
 
+    # N.1.1 — daily macro targets. Set on first nutrition tab render
+    # by `compute_default_macro_targets` using the user's goal stack
+    # (or by AI PT for Pro AI users). Stored on the SoloProfile so
+    # they survive the user editing their goals later — explicit
+    # values, not derived on-the-fly.
+    #
+    # Bodyweight is needed for protein-per-kg calc; we don't capture
+    # it in onboarding (per the user's "minimal questions" pivot) so
+    # it lands either via Apple Health sync (#81) or when the user
+    # logs their first weight check-in. Until then we use a sensible
+    # default (75 kg).
+    target_calories = models.PositiveIntegerField(default=2200)
+    target_protein  = models.PositiveSmallIntegerField(default=140)  # grams
+    target_carbs    = models.PositiveSmallIntegerField(default=240)  # grams
+    target_fats     = models.PositiveSmallIntegerField(default=70)   # grams
+    bodyweight_kg   = models.FloatField(null=True, blank=True)
+
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -228,6 +245,57 @@ class SoloProfile(models.Model):
     def has_pro_access(self) -> bool:
         """True iff the user has Pro OR Pro AI."""
         return self.tier in (self.TIER_PRO, self.TIER_PRO_AI)
+
+    def compute_default_macro_targets(self, *, save: bool = True) -> dict:
+        """Evidence-based defaults from the user's goal + bodyweight.
+
+        Logic — derived from the macro research in SOLO_MVP_DESIGN.md
+        sources (Helms et al. / RP-style cutting-bulking):
+
+          • Bodyweight (kg). Falls back to 75kg if not set.
+          • TDEE estimate: 30 kcal/kg/day for moderate activity.
+          • Goal modifier:
+              build_muscle      → +250 kcal (lean surplus)
+              get_stronger      → +250 kcal
+              lose_fat          → −400 kcal (sustainable cut)
+              stay_consistent   → maintenance
+              train_for_sport   → maintenance
+          • Protein:  1.8 g/kg (research minimum for hypertrophy in
+                                deficit; sufficient at maintenance).
+          • Fat:      0.8 g/kg (~25–30% of total kcal at most goals).
+          • Carbs:    remainder of kcal / 4.
+
+        Returns the calculated dict; mutates + saves the SoloProfile
+        unless save=False (useful for previews / dry-run).
+        """
+        bw = self.bodyweight_kg or 75.0
+        tdee = bw * 30.0
+        goals = self.goals or []
+        modifier = 0
+        if "lose_fat" in goals:
+            modifier = -400
+        elif "build_muscle" in goals or "get_stronger" in goals:
+            modifier = 250
+        target_kcal = max(1200, int(tdee + modifier))
+
+        protein_g = round(bw * 1.8)
+        fat_g     = round(bw * 0.8)
+        # carbs are whatever kcal is left after protein (4) + fat (9)
+        used_kcal = (protein_g * 4) + (fat_g * 9)
+        carb_kcal = max(0, target_kcal - used_kcal)
+        carbs_g   = max(0, round(carb_kcal / 4))
+
+        targets = {
+            "target_calories": target_kcal,
+            "target_protein":  protein_g,
+            "target_carbs":    carbs_g,
+            "target_fats":     fat_g,
+        }
+        if save:
+            for k, v in targets.items():
+                setattr(self, k, v)
+            self.save(update_fields=list(targets.keys()))
+        return targets
 
 
 # ----------------------------------------------------------------------

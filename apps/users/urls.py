@@ -20,6 +20,8 @@ from .solo_views import (
     solo_me_view,
     solo_convert_view,
 )
+from .ai_pt_views import solo_ai_pt_chat
+from .iap_views import solo_iap_verify, solo_iap_webhook
 from .profile_views import (
     lifetime_stats_for_me,
     avatar_for_me,
@@ -53,6 +55,12 @@ urlpatterns = [
     path("solo/onboarding/", solo_onboarding_update_view,  name="solo-onboarding"),
     path("solo/me/",         solo_me_view,                 name="solo-me"),
     path("solo/convert/",    solo_convert_view,            name="solo-convert"),
+    # E.2 — AI PT chat (Pro AI gated)
+    path("solo/ai-pt/chat/", solo_ai_pt_chat,              name="solo-ai-pt-chat"),
+
+    # SOLO-03 — Apple IAP receipt validation + webhook for renewals.
+    path("solo/iap/verify/",  solo_iap_verify,             name="solo-iap-verify"),
+    path("solo/iap/webhook/", solo_iap_webhook,            name="solo-iap-webhook"),
 
     # Profile P.1.1 — wires up the SOON pills on the iOS Profile
     # tab (lifetime stats, avatar upload, username change,

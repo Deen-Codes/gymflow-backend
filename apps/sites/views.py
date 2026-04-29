@@ -565,6 +565,132 @@ def city_directory_page(request, city_slug):
     })
 
 
+# -------------------------------------------------------------------
+# L.1.2 — Browse trainers marketplace.
+#
+# Two surfaces:
+#   • /trainers/                       — full marketplace landing
+#   • GET /api/sites/trainers/         — JSON for the iOS marketplace
+#                                        view (Solo users tap "Find a
+#                                        coach" in Profile → this).
+#
+# Marketplace card shape (compact for iOS):
+#   { slug, name, business_name, city, country, brand_color,
+#     headline, photo_url, pricing_starts_at, slug_url }
+#
+# Sorting: city > random within city. Once we have ratings / signup
+# counts we'd rank by them; for v1 pure local-availability matters
+# more than any vanity score.
+# -------------------------------------------------------------------
+
+
+def trainer_marketplace_page(request):
+    """GET /trainers/ — public marketplace landing page (web)."""
+    from django.http import HttpResponse
+    from django.utils.text import slugify
+
+    cards = _trainer_marketplace_cards(city_filter=request.GET.get("city"))
+    base = request.build_absolute_uri("/").rstrip("/")
+    seo = {
+        "title":       "Find a Personal Trainer — GymFlow",
+        "description": "Browse coaches by city. Every coach below runs their business on GymFlow — programmes, nutrition, check-ins, in one app.",
+        "page_url":    f"{base}/trainers/",
+    }
+    return render(request, "public/trainer_marketplace.html", {
+        "cards": cards,
+        "seo":   seo,
+    })
+
+
+def trainer_marketplace_api(request):
+    """GET /api/sites/trainers/ — JSON for the iOS marketplace
+    view. Cheap; no auth required."""
+    from django.http import JsonResponse
+
+    cards = _trainer_marketplace_cards(
+        city_filter=request.GET.get("city"),
+        limit=int(request.GET.get("limit") or 100),
+    )
+    base = request.build_absolute_uri("/").rstrip("/")
+    payload = {
+        "trainers": [{
+            "slug":              c["slug"],
+            "name":              c["name"],
+            "business_name":     c["business_name"],
+            "city":              c["city"],
+            "country":           c["country"],
+            "brand_color":       c["brand_color"],
+            "headline":          c["headline"],
+            "page_url":          f"{base}/p/{c['slug']}/",
+            "og_image":          f"{base}/p/{c['slug']}/og.png",
+            "pricing_starts_at": c.get("pricing_starts_at"),
+            "pricing_currency":  c.get("pricing_currency", "GBP"),
+        } for c in cards],
+    }
+    return JsonResponse(payload)
+
+
+def _trainer_marketplace_cards(*, city_filter: str | None = None, limit: int = 100):
+    """Compact serializer the marketplace web + iOS surfaces share."""
+    from django.utils.text import slugify
+    from .models import TrainerSite, PricingPlan
+
+    qs = (
+        TrainerSite.objects
+        .filter(is_published=True)
+        .select_related("trainer", "trainer__user")
+    )
+    if city_filter:
+        slug_target = slugify(city_filter)
+        # Filter in Python; trainer.city isn't slug-indexed.
+        rows = [
+            s for s in qs
+            if slugify(s.trainer.city) == slug_target
+        ]
+    else:
+        rows = list(qs)
+
+    # Cheapest plan per trainer (Pro plan etc.). Single query.
+    cheapest_by_trainer: dict[int, PricingPlan] = {}
+    for plan in PricingPlan.objects.filter(
+        trainer__in=[s.trainer_id for s in rows], is_active=True,
+    ).order_by("trainer_id", "price_pence"):
+        if plan.trainer_id not in cheapest_by_trainer:
+            cheapest_by_trainer[plan.trainer_id] = plan
+
+    cards = []
+    for s in rows[:limit]:
+        trainer = s.trainer
+        # Headline derives from the published Site's hero section if
+        # one exists. Falls back to a generic line. We prefer their
+        # own copy over our copywriting.
+        headline = ""
+        try:
+            hero = next(
+                (sec for sec in s.sections.filter(is_visible=True)
+                 if sec.section_type == "hero"),
+                None,
+            )
+            if hero:
+                headline = (hero.content or {}).get("headline") or ""
+        except Exception:
+            pass
+
+        plan = cheapest_by_trainer.get(trainer.id)
+        cards.append({
+            "slug":            trainer.slug,
+            "business_name":   trainer.business_name,
+            "name":            trainer.business_name or trainer.user.first_name or trainer.user.username,
+            "city":            trainer.city,
+            "country":         trainer.country,
+            "brand_color":     s.brand_color or "#c8ff20",
+            "headline":        headline.strip()[:160],
+            "pricing_starts_at": (plan.price_pence / 100) if plan else None,
+            "pricing_currency":  getattr(plan, "currency", "GBP") if plan else "GBP",
+        })
+    return cards
+
+
 def public_manage_subscription(request, slug):
     """GET /p/<slug>/manage/ — public form where a client can request
     a Stripe Customer Portal magic link to be emailed to them.

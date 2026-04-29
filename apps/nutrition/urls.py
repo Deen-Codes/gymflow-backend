@@ -4,6 +4,14 @@ from .mobile_views import (
     nutrition_today_for_me,
     consumption_for_me,
 )
+from .solo_views import (
+    solo_nutrition_today,
+    solo_nutrition_log_create,
+    solo_nutrition_log_delete,
+    solo_nutrition_barcode_lookup,
+    solo_nutrition_food_create,
+)
+from .ai_describe_views import solo_ai_describe_food
 
 urlpatterns = [
     path("me/today/",        nutrition_today_for_me, name="me-nutrition-today"),
@@ -12,4 +20,16 @@ urlpatterns = [
     # Single URL handles GET (list ticks for date) / POST (tick) /
     # DELETE (untick). Method dispatch lives in the view itself.
     path("me/consumption/",  consumption_for_me,     name="me-consumption"),
+
+    # N.1.1 — Solo nutrition. Separate from the trainer-meal-plan
+    # endpoints so a user can be SOLO and use these without any
+    # role-detection branching on iOS.
+    path("solo/today/",                  solo_nutrition_today,           name="solo-nutrition-today"),
+    path("solo/log/",                    solo_nutrition_log_create,      name="solo-nutrition-log-create"),
+    path("solo/log/<int:entry_id>/",     solo_nutrition_log_delete,      name="solo-nutrition-log-delete"),
+    path("solo/barcode/<str:code>/",     solo_nutrition_barcode_lookup,  name="solo-nutrition-barcode"),
+    path("solo/foods/",                  solo_nutrition_food_create,     name="solo-nutrition-food-create"),
+
+    # N.1.2 — AI describe (Pro AI gated)
+    path("solo/ai-describe/",            solo_ai_describe_food,          name="solo-ai-describe"),
 ]

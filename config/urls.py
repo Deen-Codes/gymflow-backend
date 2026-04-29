@@ -7,6 +7,8 @@ from apps.sites.views import (
     public_sitemap,
     cities_index,
     city_directory_page,
+    trainer_marketplace_page,
+    trainer_marketplace_api,
 )
 
 urlpatterns = [
@@ -32,6 +34,11 @@ urlpatterns = [
     # trainer with that city set.
     path("cities/",                 cities_index,        name="cities-index"),
     path("cities/<slug:city_slug>/", city_directory_page, name="city-directory"),
+
+    # L.1.2 — Browse trainers marketplace (public no-login surface).
+    # Web landing + JSON for the iOS Solo "Find a coach" tab.
+    path("trainers/",                 trainer_marketplace_page, name="trainer-marketplace"),
+    path("api/sites/trainers/",       trainer_marketplace_api,  name="trainer-marketplace-api"),
 
     # Phase #21 — legal pages. Static templates, no DB. Linked from
     # public-site footer + Stripe Customer Portal "Public business

@@ -221,6 +221,12 @@ def solo_signup_view(request):
         profile.days_per_week = days
     profile.save()
 
+    # Re-derive macro targets if the goals changed — the user picked
+    # "lose fat" vs "build muscle" and we owe them a fresh recommended
+    # daily intake on the Nutrition tab. Idempotent + cheap.
+    if goals:
+        profile.compute_default_macro_targets(save=True)
+
     # Send the magic link unconditionally on signup — this is how the
     # user logs in. Reusing the same token plumbing as the regular
     # magic-link path so the deep-link / web-bridge / email template
