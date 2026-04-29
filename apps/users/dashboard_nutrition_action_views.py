@@ -1,9 +1,8 @@
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 from django.db import transaction
 from django.shortcuts import get_object_or_404, redirect
 
-from .dashboard_helpers import trainer_required
+from .dashboard_helpers import trainer_required_view
 from .forms import (
     CreateNutritionPlanForm,
     UpdateNutritionPlanForm,
@@ -22,11 +21,8 @@ from apps.nutrition.models import (
 )
 
 
-@login_required
+@trainer_required_view
 def dashboard_create_nutrition_plan(request):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     if request.method != "POST":
         return redirect("trainer-nutrition-plans-page")
 
@@ -54,11 +50,8 @@ def dashboard_create_nutrition_plan(request):
     return redirect("trainer-nutrition-plan-detail", plan_id=plan.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_update_nutrition_plan(request, plan_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     plan = get_object_or_404(NutritionPlan, id=plan_id, user=request.user)
 
     if request.method != "POST":
@@ -84,11 +77,8 @@ def dashboard_update_nutrition_plan(request, plan_id):
     return redirect("trainer-nutrition-plan-detail", plan_id=plan.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_delete_nutrition_plan(request, plan_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     plan = get_object_or_404(NutritionPlan, id=plan_id, user=request.user)
 
     if request.method != "POST":
@@ -101,11 +91,8 @@ def dashboard_delete_nutrition_plan(request, plan_id):
     return redirect("trainer-nutrition-plans-page")
 
 
-@login_required
+@trainer_required_view
 def dashboard_duplicate_nutrition_plan(request, plan_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     source_plan = get_object_or_404(
         NutritionPlan.objects.prefetch_related("meals__items"),
         id=plan_id,
@@ -153,11 +140,8 @@ def dashboard_duplicate_nutrition_plan(request, plan_id):
     return redirect("trainer-nutrition-plan-detail", plan_id=new_plan.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_assign_nutrition_plan(request):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     if request.method != "POST":
         return redirect("trainer-dashboard")
 
@@ -240,11 +224,8 @@ def dashboard_assign_nutrition_plan(request):
     return redirect("trainer-client-detail", client_id=client_user.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_create_food_library_item(request):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     if request.method != "POST":
         return redirect("trainer-nutrition-plans-page")
 
@@ -272,11 +253,8 @@ def dashboard_create_food_library_item(request):
     return redirect("trainer-nutrition-plans-page")
 
 
-@login_required
+@trainer_required_view
 def dashboard_update_food_library_item(request, food_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     food = get_object_or_404(
         FoodLibraryItem,
         id=food_id,
@@ -308,11 +286,8 @@ def dashboard_update_food_library_item(request, food_id):
     return redirect("trainer-nutrition-plans-page")
 
 
-@login_required
+@trainer_required_view
 def dashboard_delete_food_library_item(request, food_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     food = get_object_or_404(
         FoodLibraryItem,
         id=food_id,
@@ -329,11 +304,8 @@ def dashboard_delete_food_library_item(request, food_id):
     return redirect("trainer-nutrition-plans-page")
 
 
-@login_required
+@trainer_required_view
 def dashboard_duplicate_food_library_item(request, food_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     food = get_object_or_404(
         FoodLibraryItem,
         id=food_id,
@@ -357,11 +329,8 @@ def dashboard_duplicate_food_library_item(request, food_id):
     return redirect("trainer-nutrition-plans-page")
 
 
-@login_required
+@trainer_required_view
 def dashboard_create_nutrition_meal(request, plan_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     plan = get_object_or_404(NutritionPlan, id=plan_id, user=request.user)
 
     if request.method != "POST":
@@ -385,11 +354,8 @@ def dashboard_create_nutrition_meal(request, plan_id):
     return redirect("trainer-nutrition-plan-detail", plan_id=plan.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_update_nutrition_meal(request, plan_id, meal_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     plan = get_object_or_404(NutritionPlan, id=plan_id, user=request.user)
     meal = get_object_or_404(
         NutritionMeal,
@@ -416,11 +382,8 @@ def dashboard_update_nutrition_meal(request, plan_id, meal_id):
     return redirect("trainer-nutrition-plan-detail", plan_id=plan.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_delete_nutrition_meal(request, plan_id, meal_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     plan = get_object_or_404(NutritionPlan, id=plan_id, user=request.user)
     meal = get_object_or_404(
         NutritionMeal,
@@ -438,11 +401,8 @@ def dashboard_delete_nutrition_meal(request, plan_id, meal_id):
     return redirect("trainer-nutrition-plan-detail", plan_id=plan.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_add_food_to_nutrition_meal(request, plan_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     plan = get_object_or_404(NutritionPlan, id=plan_id, user=request.user)
 
     if request.method != "POST":
@@ -488,11 +448,8 @@ def dashboard_add_food_to_nutrition_meal(request, plan_id):
     return redirect("trainer-nutrition-plan-detail", plan_id=plan.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_delete_nutrition_meal_item(request, plan_id, item_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     plan = get_object_or_404(NutritionPlan, id=plan_id, user=request.user)
     item = get_object_or_404(
         NutritionMealItem.objects.select_related("meal", "meal__nutrition_plan"),

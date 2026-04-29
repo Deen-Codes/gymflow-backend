@@ -11,10 +11,9 @@ Routes:
     /dashboard/checkin-forms/<id>/    → that specific form in the canvas
 """
 
-from django.contrib.auth.decorators import login_required
-from django.shortcuts import get_object_or_404, redirect, render
+from django.shortcuts import get_object_or_404, render
 
-from .dashboard_helpers import trainer_required, dashboard_context
+from .dashboard_helpers import trainer_required_view, dashboard_context
 from .forms import UpdateCheckInFormForm
 from .dashboard_checkin_action_views import (
     _create_default_onboarding_questions,
@@ -119,17 +118,13 @@ def _render_checkins_workspace(request, form_id=None):
     return render(request, "dashboard/dashboard_checkin_forms.html", context)
 
 
-@login_required
+@trainer_required_view
 def trainer_checkin_forms_page(request):
     """Front of the Check-Ins workspace — Onboarding auto-selected."""
-    if not trainer_required(request):
-        return redirect("landing-page")
     return _render_checkins_workspace(request, form_id=None)
 
 
-@login_required
+@trainer_required_view
 def trainer_checkin_form_detail_page(request, form_id):
     """Deep-link to a specific form in the Check-Ins workspace."""
-    if not trainer_required(request):
-        return redirect("landing-page")
     return _render_checkins_workspace(request, form_id=form_id)

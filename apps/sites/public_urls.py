@@ -15,6 +15,7 @@ from apps.payments.portal_views import (
 
 urlpatterns = [
     path("<slug:slug>/",         v.public_site_page,   name="public-site-page"),
+    path("<slug:slug>/og.png",   v.public_site_og_image, name="public-site-og-image"),
     path("<slug:slug>/signup/",  v.public_site_signup, name="public-site-signup"),
 
     # Phase 7.7.1 — Stripe Checkout subscribe flow.

@@ -34,7 +34,6 @@ from datetime import timedelta
 
 from django.conf import settings
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 from django.core.mail import send_mail
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, redirect
@@ -46,7 +45,7 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
-from apps.users.dashboard_helpers import trainer_required
+from apps.users.dashboard_helpers import trainer_required_view
 from apps.users.models import User
 
 from .models import ClientSubscription
@@ -126,13 +125,10 @@ def _public_site_url(request, sub: ClientSubscription) -> str:
 # -------------------------------------------------------------------
 # 1. Trainer-initiated — from the subscription panel on client detail
 # -------------------------------------------------------------------
-@login_required
+@trainer_required_view
 @require_POST
 def email_portal_link_to_client(request, sub_id):
     """Trainer hits "Email portal link" → we email the URL to the client."""
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     sub = get_object_or_404(
         ClientSubscription.objects.select_related("client", "trainer", "trainer__user"),
         id=sub_id,

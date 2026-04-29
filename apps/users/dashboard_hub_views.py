@@ -19,13 +19,12 @@ keep working without a 50-file edit.
 """
 from datetime import timedelta
 
-from django.contrib.auth.decorators import login_required
-from django.shortcuts import redirect, render
+from django.shortcuts import render
 from django.urls import reverse
 from django.utils import timezone
 
 from .dashboard_helpers import (
-    trainer_required,
+    trainer_required_view,
     dashboard_context,
     get_trainer_clients,
 )
@@ -318,12 +317,9 @@ def _greeting(now):
     return "Burning the midnight oil"
 
 
-@login_required
+@trainer_required_view
 def trainer_hub_page(request):
     """GET /dashboard/ — the GymFlow Hub."""
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     context = dashboard_context(request, "Hub")
     trainer = request.user
     clients = context["clients"]

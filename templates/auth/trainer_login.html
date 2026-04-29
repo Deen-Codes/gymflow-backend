@@ -34,13 +34,37 @@
                 </div>
             {% endif %}
 
+            <!-- Magic-link sign-in (preferred path — no password) -->
+            <form method="post" action="{% url 'trainer-magic-link-request' %}" style="display:grid;gap:16px;">
+                {% csrf_token %}
+                <div>
+                    <label class="label">Email</label>
+                    <input class="input" type="email" name="email" placeholder="you@example.com"
+                           autocomplete="email" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;margin-top:6px;">
+                    Email me a sign-in link
+                </button>
+                <p class="muted" style="margin:0;font-size:12px;text-align:center;">
+                    No password needed. We'll send a one-tap sign-in link.
+                </p>
+            </form>
+
+            <!-- Divider -->
+            <div style="display:flex;align-items:center;gap:10px;margin:22px 0;">
+                <div style="flex:1;height:1px;background:rgba(255,255,255,0.10);"></div>
+                <span class="muted" style="font-size:11px;letter-spacing:1.4px;">OR USE PASSWORD</span>
+                <div style="flex:1;height:1px;background:rgba(255,255,255,0.10);"></div>
+            </div>
+
+            <!-- Legacy username/password form — kept for the rollover window -->
             <form method="post" style="display:grid;gap:16px;">
                 {% csrf_token %}
 
                 <div>
                     <label class="label">Username</label>
                     <input class="input" type="text" name="username" value="{{ form.username.value|default:'' }}"
-                           placeholder="Your username" autocomplete="username" autofocus>
+                           placeholder="Your username" autocomplete="username">
                 </div>
 
                 <div>
@@ -48,7 +72,7 @@
                     <input class="input" type="password" name="password" placeholder="••••••••" autocomplete="current-password">
                 </div>
 
-                <button type="submit" class="btn btn-primary" style="width:100%;margin-top:6px;">Log in</button>
+                <button type="submit" class="btn btn-secondary" style="width:100%;margin-top:6px;">Log in with password</button>
 
                 <div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px;font-size:13px;">
                     <a href="{% url 'password_reset' %}" class="muted">Forgot password?</a>

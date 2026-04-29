@@ -1,12 +1,11 @@
 from datetime import timedelta
 
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 from django.db import transaction
 from django.shortcuts import get_object_or_404, redirect, render
 from django.utils import timezone
 
-from .dashboard_helpers import trainer_required, dashboard_context
+from .dashboard_helpers import trainer_required_view, dashboard_context
 from .forms import CreateClientForm, AssignWorkoutPlanForm, AssignNutritionPlanForm
 from .models import User
 from .serializers import ClientCreateSerializer
@@ -206,14 +205,11 @@ def _action_needed(clients):
     return missing_workout, missing_nutrition, len(missing_workout) + len(missing_nutrition)
 
 
-@login_required
+@trainer_required_view
 def trainer_dashboard(request):
     """
     Clients workspace — full roster with action-needed inbox + add modal.
     """
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     context = dashboard_context(request, "Clients")
 
     missing_workout, missing_nutrition, action_needed = _action_needed(context["clients"])
@@ -226,14 +222,11 @@ def trainer_dashboard(request):
     return render(request, "dashboard/trainer_dashboard.html", context)
 
 
-@login_required
+@trainer_required_view
 def trainer_client_detail_page(request, client_id):
     """
     Detail page for a single trainer-owned client.
     """
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     client = get_object_or_404(
         User.objects.select_related(
             "client_profile",
@@ -354,14 +347,11 @@ def _build_subscription_context(client, trainer_profile):
     }
 
 
-@login_required
+@trainer_required_view
 def dashboard_create_client(request):
     """
     Create a new client account under the logged-in trainer.
     """
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     if request.method != "POST":
         return redirect("trainer-dashboard")
 
@@ -395,15 +385,12 @@ def dashboard_create_client(request):
     return redirect("trainer-dashboard")
 
 
-@login_required
+@trainer_required_view
 def dashboard_assign_workout_plan(request):
     """
     Assign a trainer-owned workout plan to a trainer-owned client.
     Optionally create a client-specific copy before assigning.
     """
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     if request.method != "POST":
         return redirect("trainer-dashboard")
 
@@ -481,15 +468,12 @@ def dashboard_assign_workout_plan(request):
     return redirect("trainer-client-detail", client_id=client_user.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_assign_nutrition_plan(request):
     """
     Assign a trainer-owned nutrition plan to a trainer-owned client.
     Optionally create a client-specific copy before assigning.
     """
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     if request.method != "POST":
         return redirect("trainer-dashboard")
 
@@ -549,12 +533,9 @@ def dashboard_assign_nutrition_plan(request):
     return redirect("trainer-client-detail", client_id=client_user.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_unassign_workout_plan(request, client_id):
     """Clear the assigned workout plan from a trainer-owned client."""
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     client_user = get_object_or_404(
         User.objects.select_related("client_profile"),
         id=client_id,
@@ -571,12 +552,9 @@ def dashboard_unassign_workout_plan(request, client_id):
     return redirect("trainer-client-detail", client_id=client_user.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_unassign_nutrition_plan(request, client_id):
     """Clear the assigned nutrition plan from a trainer-owned client."""
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     client_user = get_object_or_404(
         User.objects.select_related("client_profile"),
         id=client_id,
@@ -593,7 +571,7 @@ def dashboard_unassign_nutrition_plan(request, client_id):
     return redirect("trainer-client-detail", client_id=client_user.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_delete_client(request, client_id):
     """
     Delete a trainer-owned client account.
@@ -612,9 +590,6 @@ def dashboard_delete_client(request, client_id):
     locally so the trainer isn't stuck with a ghost client they can't
     remove.
     """
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     client = get_object_or_404(
         User,
         id=client_id,

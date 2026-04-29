@@ -112,78 +112,226 @@ def me_view(request):
 # -------------------------------------------------------------------
 
 
+# -- per-namespace data builders ----------------------------------
+#
+# Each builder returns the payload its standalone endpoint would have
+# returned (so iOS can decode into the same view model with no
+# transformation), or `None` if the call blew up. None signals "fall
+# back to the standalone endpoint" without crashing the launch.
+# Wrapping defensively because a single bad data row in trophies
+# shouldn't take down the user's whole app.
+
+
+def _safely(fn):
+    """Run a builder; swallow any exception, log it, return None."""
+    try:
+        return fn()
+    except Exception:
+        import logging
+        logging.exception("startup_for_me sub-builder failed: %s", fn.__name__)
+        return None
+
+
+def _build_home_stats(user):
+    """Latest body weight + streak + weekly target. Client-only."""
+    if user.role != User.CLIENT or not hasattr(user, "client_profile"):
+        return {"latest_weight_kg": None, "active_streak": 0, "weekly_target": 0}
+
+    from apps.progress.models import CheckInAnswer
+    from apps.users.dashboard_client_views import WEIGHT_FIELD_KEYS
+    from apps.trophies.streak import compute_active_streak, weekly_target_for
+
+    latest = (
+        CheckInAnswer.objects
+        .filter(
+            submission__client=user,
+            submission__status="submitted",
+            value_number__isnull=False,
+            question__field_key__in=WEIGHT_FIELD_KEYS,
+        )
+        .order_by("-submission__submitted_at")
+        .values_list("value_number", flat=True)
+        .first()
+    )
+    weekly_target = weekly_target_for(user)
+    streak = compute_active_streak(user, weekly_target=weekly_target)
+    return {
+        "latest_weight_kg": round(float(latest), 1) if latest is not None else None,
+        "active_streak":    streak,
+        "weekly_target":    weekly_target,
+    }
+
+
+def _build_nutrition_today(user):
+    """Today's plan + meals. Returns the same shape as
+    /api/nutrition/me/today/. Client-only."""
+    if user.role != User.CLIENT or not hasattr(user, "client_profile"):
+        return {"status": "no_plan", "plan": None}
+
+    plan = user.client_profile.assigned_nutrition_plan
+    if plan is None:
+        return {"status": "no_plan", "plan": None}
+
+    from apps.nutrition.mobile_views import _meal_payload
+    meals = list(plan.meals.all().prefetch_related("items"))
+    meal_payloads = [_meal_payload(m) for m in meals]
+    next_meal = meal_payloads[0] if meal_payloads else None
+    return {
+        "status": "assigned",
+        "plan": {
+            "id":              plan.id,
+            "name":            plan.name,
+            "calories_target": plan.calories_target,
+            "protein_target":  plan.protein_target,
+            "carbs_target":    plan.carbs_target,
+            "fats_target":     plan.fats_target,
+            "meals":           meal_payloads,
+            "next_meal":       next_meal,
+        },
+    }
+
+
+def _build_nutrition_consumption(user):
+    """Today's ticks for the current client. Same shape as the GET on
+    /api/nutrition/me/consumption/."""
+    from django.utils import timezone
+    from apps.nutrition.models import NutritionMealConsumption
+    from apps.nutrition.mobile_views import _consumption_payload
+
+    if user.role != User.CLIENT or not hasattr(user, "client_profile"):
+        return {"date": timezone.localdate().isoformat(), "ticks": []}
+
+    today = timezone.localdate()
+    rows = (
+        NutritionMealConsumption.objects
+        .filter(client=user, consumed_on=today)
+        .order_by("created_at")
+    )
+    return {"date": today.isoformat(), "ticks": [_consumption_payload(r) for r in rows]}
+
+
+def _build_hydration(user):
+    """Today's hydration row. Same shape as GET on
+    /api/progress/me/hydration/."""
+    from django.utils import timezone
+    from apps.progress.models import HydrationLog
+
+    if user.role != User.CLIENT or not hasattr(user, "client_profile"):
+        return None
+
+    today = timezone.localdate()
+    log = HydrationLog.objects.filter(client=user, logged_on=today).first()
+    return {
+        "logged_on": today.isoformat(),
+        "cups":      log.cups if log else 0,
+        "goal_cups": log.goal_cups if log else 8,
+    }
+
+
+def _build_next_checkin(user):
+    """Most-relevant check-in for the current client. Reuses the live
+    view code path so logic stays single-sourced."""
+    if user.role != User.CLIENT or not hasattr(user, "client_profile"):
+        return {"status": "no_assignments"}
+
+    # Re-use the existing view by constructing a synthetic request.
+    # The view returns a DRF Response; pull `.data` off it.
+    from apps.progress.mobile_views import next_checkin_for_me
+    from rest_framework.request import Request
+    from django.http import HttpRequest
+
+    http_req = HttpRequest()
+    http_req.method = "GET"
+    http_req.user = user
+    drf_req = Request(http_req)
+    drf_req.user = user
+    return next_checkin_for_me(drf_req).data
+
+
+def _build_workout_next(user):
+    """Next workout in the user's rotation. Same shape as
+    /api/workouts/next/. Returns None when no plan assigned."""
+    from apps.workouts.views import get_user_active_plan
+    from apps.workouts.models import WorkoutSession
+    from apps.workouts.serializers import WorkoutDaySerializer
+
+    plan = get_user_active_plan(user)
+    if plan is None:
+        return None
+    days = list(plan.days.all().order_by("order"))
+    if not days:
+        return None
+
+    latest_session = (
+        WorkoutSession.objects
+        .filter(user=user, is_complete=True)
+        .select_related("workout_day")
+        .order_by("-completed_at")
+        .first()
+    )
+    if latest_session is None:
+        next_day = days[0]
+    else:
+        idx = next(
+            (i for i, d in enumerate(days) if d.id == latest_session.workout_day_id),
+            None,
+        )
+        next_day = days[0] if idx is None else days[(idx + 1) % len(days)]
+    return WorkoutDaySerializer(next_day).data
+
+
+def _build_workout_plan_active(user):
+    """The active plan with all days. Mirrors /api/workouts/plan/active/."""
+    from apps.workouts.views import get_user_active_plan
+    from apps.workouts.serializers import WorkoutPlanSerializer
+
+    plan = get_user_active_plan(user)
+    if plan is None:
+        return None
+    return WorkoutPlanSerializer(plan).data
+
+
+def _build_trophies(user):
+    """Full trophy catalogue with earned + progress state. Same shape
+    as /api/trophies/me/."""
+    from apps.trophies.services import list_trophies_for
+    return {"trophies": list_trophies_for(user)}
+
+
 @api_view(["GET"])
 @permission_classes([IsAuthenticated])
 def startup_for_me(request):
-    """Combined launch payload — `{ user, home_stats, required_actions }`.
+    """Combined launch payload. iOS hits this once on cold launch
+    instead of fanning out to ~10 standalone endpoints.
 
-    iOS hits this on app launch instead of three separate GETs
-    against /me/, /me/home-stats/, /me/required-actions/. Falls
-    back to the existing per-endpoint flow if this returns 5xx
-    or missing keys, so deploys are safe.
-
-    Each namespace mirrors the shape its standalone endpoint
-    returns — iOS distributes the response into the same view
-    models that consume the standalone endpoints.
+    Each namespace's payload mirrors the shape its standalone endpoint
+    returns so iOS decodes into the same view model. Any namespace
+    that fails returns null — iOS falls back to the standalone
+    endpoint for that one namespace, but the rest of the launch
+    still goes through.
     """
     from .profile_schema import missing_required_fields_for, needs_onboarding
     user = request.user
 
-    # ----- user -----
-    user_payload = UserMeSerializer(user).data
-
-    # ----- home_stats (only meaningful for clients) -----
-    home_stats = {
-        "latest_weight_kg": None,
-        "active_streak":    0,
-        "weekly_target":    0,
-    }
-    if user.role == User.CLIENT and hasattr(user, "client_profile"):
-        from apps.progress.models import CheckInAnswer
-        from apps.users.dashboard_client_views import WEIGHT_FIELD_KEYS
-        latest = (
-            CheckInAnswer.objects
-            .filter(
-                submission__client=user,
-                submission__status="submitted",
-                value_number__isnull=False,
-                question__field_key__in=WEIGHT_FIELD_KEYS,
-            )
-            .order_by("-submission__submitted_at")
-            .values_list("value_number", flat=True)
-            .first()
-        )
-        from apps.trophies.streak import compute_active_streak, weekly_target_for
-        weekly_target = weekly_target_for(user)
-        streak = compute_active_streak(user, weekly_target=weekly_target)
-        home_stats = {
-            "latest_weight_kg": round(float(latest), 1) if latest is not None else None,
-            "active_streak":    streak,
-            "weekly_target":    weekly_target,
-        }
-
-    # ----- required_actions -----
-    required_actions = {
-        "needs_onboarding":       needs_onboarding(user),
-        "missing_profile_fields": missing_required_fields_for(user),
-    }
-
     return Response(
         {
-            "user":             user_payload,
-            "home_stats":       home_stats,
-            "required_actions": required_actions,
-            # Keys not yet inlined return null so iOS can detect
-            # "this namespace isn't in the composite yet, fall back
-            # to the standalone endpoint" without crashing on
-            # missing keys.
-            "nutrition_today":  None,
-            "nutrition_consumption": None,
-            "hydration":        None,
-            "next_checkin":     None,
-            "workout_next":     None,
-            "workout_plan_active": None,
-            "trophies":         None,
+            # Always-on
+            "user":              UserMeSerializer(user).data,
+            "home_stats":        _safely(lambda: _build_home_stats(user))
+                                 or {"latest_weight_kg": None, "active_streak": 0, "weekly_target": 0},
+            "required_actions":  {
+                "needs_onboarding":       needs_onboarding(user),
+                "missing_profile_fields": missing_required_fields_for(user),
+            },
+
+            # Namespaces inlined for the cold-launch fan-out collapse
+            "nutrition_today":       _safely(lambda: _build_nutrition_today(user)),
+            "nutrition_consumption": _safely(lambda: _build_nutrition_consumption(user)),
+            "hydration":             _safely(lambda: _build_hydration(user)),
+            "next_checkin":          _safely(lambda: _build_next_checkin(user)),
+            "workout_next":          _safely(lambda: _build_workout_next(user)),
+            "workout_plan_active":   _safely(lambda: _build_workout_plan_active(user)),
+            "trophies":              _safely(lambda: _build_trophies(user)),
         },
         status=status.HTTP_200_OK,
     )
@@ -346,25 +494,36 @@ def _send_magic_link_email(user, deep_link, web_link):
 def magic_link_web_handler(request, token):
     """Web-side handler for `https://gymflow.coach/magic/<token>`.
 
-    Why this exists: the email's primary CTA points at
-    `gymflow://magic/<token>` (custom URL scheme that launches the
-    iOS app directly). But Gmail and a few other email clients
-    silently rewrite custom schemes to https:// before exposing
-    them as clickable, sending users to the gymflow.coach web URL
-    instead. Without this view that's a 404.
+    Three branches based on the token's owner:
+      • TRAINER  — consume the token + create a Django session +
+                   redirect straight to /dashboard. Trainers don't
+                   have an iOS app, so the link IS the sign-in.
+      • CLIENT on iOS — render a bridge page that meta-refreshes
+                   to `gymflow://magic/<token>` to open the app.
+      • CLIENT elsewhere — friendly "open this on your phone"
+                   page with App Store guidance.
 
-    Strategy:
-      • iOS visitor — render a tiny bridge page with a meta
-        refresh to `gymflow://magic/<token>` so the app opens
-        seamlessly. Falls back to a tap-to-open button if the
-        meta refresh is blocked.
-      • Anyone else — friendly "open this on your phone" page
-        with App Store guidance. We don't try to authenticate
-        web-side because the iOS app is the only client.
-
-    The token isn't validated here — that's the verify endpoint's
-    job. We just route the user back to the right place.
+    Email clients (Gmail in particular) rewrite custom schemes to
+    https:// before exposing them as clickable, so we always send
+    the https URL in the email and let this handler route.
     """
+    from django.utils import timezone
+    record = MagicLoginToken.objects.filter(token=token).first()
+
+    # Trainer auto-login. Token must be valid (not expired, not
+    # used) — if not, render the same bridge page so the user
+    # sees the consistent friendly error rather than raw text.
+    if record is not None and record.is_consumable and record.user.role == User.TRAINER:
+        record.used_at = timezone.now()
+        forwarded = request.META.get("HTTP_X_FORWARDED_FOR", "")
+        record.consumed_ip = forwarded.split(",")[0].strip() if forwarded else request.META.get("REMOTE_ADDR")
+        record.save(update_fields=["used_at", "consumed_ip"])
+        from django.contrib.auth import login as django_login
+        django_login(request, record.user)
+        from django.shortcuts import redirect as _redirect
+        return _redirect("trainer-hub-page")
+
+    # Client / iOS deep-link bridge (existing behaviour).
     user_agent = request.META.get("HTTP_USER_AGENT", "").lower()
     is_ios = ("iphone" in user_agent) or ("ipad" in user_agent) or ("ipod" in user_agent)
     return render(

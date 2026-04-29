@@ -1,8 +1,7 @@
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404, redirect
 
-from .dashboard_helpers import trainer_required
+from .dashboard_helpers import trainer_required_view
 from .forms import (
     CreateCheckInFormForm,
     UpdateCheckInFormForm,
@@ -219,11 +218,8 @@ def _create_default_questions_for_form(checkin_form):
         _create_default_weekly_questions(checkin_form)
 
 
-@login_required
+@trainer_required_view
 def dashboard_create_checkin_form(request):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     if request.method != "POST":
         return redirect("trainer-checkin-forms-page")
 
@@ -248,11 +244,8 @@ def dashboard_create_checkin_form(request):
     return redirect("trainer-checkin-form-detail", form_id=checkin_form.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_update_checkin_form(request, form_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     checkin_form = get_object_or_404(CheckInForm, id=form_id, user=request.user)
 
     if request.method != "POST":
@@ -282,11 +275,8 @@ def dashboard_update_checkin_form(request, form_id):
     return redirect("trainer-checkin-form-detail", form_id=checkin_form.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_delete_checkin_form(request, form_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     checkin_form = get_object_or_404(CheckInForm, id=form_id, user=request.user)
 
     if request.method != "POST":
@@ -299,11 +289,8 @@ def dashboard_delete_checkin_form(request, form_id):
     return redirect("trainer-checkin-forms-page")
 
 
-@login_required
+@trainer_required_view
 def dashboard_create_checkin_question(request, form_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     checkin_form = get_object_or_404(CheckInForm, id=form_id, user=request.user)
 
     if request.method != "POST":
@@ -334,11 +321,8 @@ def dashboard_create_checkin_question(request, form_id):
     return redirect("trainer-checkin-form-detail", form_id=checkin_form.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_update_checkin_question(request, form_id, question_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     checkin_form = get_object_or_404(CheckInForm, id=form_id, user=request.user)
     question = get_object_or_404(CheckInQuestion, id=question_id, form=checkin_form)
 
@@ -373,11 +357,8 @@ def dashboard_update_checkin_question(request, form_id, question_id):
     return redirect("trainer-checkin-form-detail", form_id=checkin_form.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_delete_checkin_question(request, form_id, question_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     checkin_form = get_object_or_404(CheckInForm, id=form_id, user=request.user)
     question = get_object_or_404(CheckInQuestion, id=question_id, form=checkin_form)
 

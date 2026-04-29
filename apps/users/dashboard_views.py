@@ -2,6 +2,7 @@ from .dashboard_auth_views import (
     landing_page,
     trainer_login_page,
     trainer_logout_page,
+    trainer_magic_link_request,
 )
 
 from .dashboard_page_views import (

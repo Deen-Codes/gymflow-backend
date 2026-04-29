@@ -20,12 +20,11 @@ from collections import OrderedDict
 from datetime import timedelta
 from urllib.parse import urlencode
 
-from django.contrib.auth.decorators import login_required
-from django.shortcuts import redirect, render
+from django.shortcuts import render
 from django.urls import reverse
 from django.utils import timezone
 
-from .dashboard_helpers import trainer_required, dashboard_context, get_trainer_clients
+from .dashboard_helpers import trainer_required_view, dashboard_context, get_trainer_clients
 from .models import User
 from apps.workouts.models import (
     WorkoutPlan,
@@ -415,11 +414,8 @@ def _next_actions(trainer):
     return actions[:3]
 
 
-@login_required
+@trainer_required_view
 def trainer_activity_page(request):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     kind = request.GET.get("kind", "all")
     if kind not in {slug for slug, _ in EVENT_KIND_CHOICES}:
         kind = "all"

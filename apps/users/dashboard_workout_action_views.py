@@ -1,8 +1,7 @@
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404, redirect
 
-from .dashboard_helpers import trainer_required
+from .dashboard_helpers import trainer_required_view
 from .forms import (
     CreateExerciseLibraryItemForm,
     CreateWorkoutPlanForm,
@@ -21,11 +20,8 @@ from apps.workouts.models import (
 )
 
 
-@login_required
+@trainer_required_view
 def dashboard_create_exercise_library_item(request):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     if request.method != "POST":
         return redirect("trainer-workout-plans-page")
 
@@ -48,14 +44,11 @@ def dashboard_create_exercise_library_item(request):
     return redirect("trainer-workout-plans-page")
 
 
-@login_required
+@trainer_required_view
 def dashboard_update_exercise_library_item(request, exercise_id):
     """
     Update a trainer-owned exercise preset from the exercise library.
     """
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     exercise = get_object_or_404(
         ExerciseLibraryItem,
         id=exercise_id,
@@ -82,14 +75,11 @@ def dashboard_update_exercise_library_item(request, exercise_id):
     return redirect("trainer-workout-plans-page")
 
 
-@login_required
+@trainer_required_view
 def dashboard_delete_exercise_library_item(request, exercise_id):
     """
     Delete a trainer-owned exercise preset from the exercise library.
     """
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     exercise = get_object_or_404(
         ExerciseLibraryItem,
         id=exercise_id,
@@ -106,14 +96,11 @@ def dashboard_delete_exercise_library_item(request, exercise_id):
     return redirect("trainer-workout-plans-page")
 
 
-@login_required
+@trainer_required_view
 def dashboard_duplicate_exercise_library_item(request, exercise_id):
     """
     Duplicate a trainer-owned exercise preset so it can be quickly tweaked.
     """
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     exercise = get_object_or_404(
         ExerciseLibraryItem,
         id=exercise_id,
@@ -134,11 +121,8 @@ def dashboard_duplicate_exercise_library_item(request, exercise_id):
     return redirect("trainer-workout-plans-page")
 
 
-@login_required
+@trainer_required_view
 def dashboard_create_workout_plan(request):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     if request.method != "POST":
         return redirect("trainer-workout-plans-page")
 
@@ -160,15 +144,12 @@ def dashboard_create_workout_plan(request):
     return redirect("trainer-workout-plan-detail", plan_id=plan.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_duplicate_workout_plan(request, plan_id):
     """
     Duplicate a full trainer-owned workout plan template, including days,
     exercises, and set targets.
     """
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     source_plan = get_object_or_404(
         WorkoutPlan.objects.prefetch_related("days__exercises__sets"),
         id=plan_id,
@@ -211,11 +192,8 @@ def dashboard_duplicate_workout_plan(request, plan_id):
     return redirect("trainer-workout-plan-detail", plan_id=new_plan.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_update_workout_plan(request, plan_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     plan = get_object_or_404(WorkoutPlan, id=plan_id, user=request.user)
 
     if request.method != "POST":
@@ -236,11 +214,8 @@ def dashboard_update_workout_plan(request, plan_id):
     return redirect("trainer-workout-plan-detail", plan_id=plan.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_delete_workout_plan(request, plan_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     plan = get_object_or_404(WorkoutPlan, id=plan_id, user=request.user)
 
     if request.method != "POST":
@@ -253,11 +228,8 @@ def dashboard_delete_workout_plan(request, plan_id):
     return redirect("trainer-workout-plans-page")
 
 
-@login_required
+@trainer_required_view
 def dashboard_create_workout_day(request, plan_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     plan = get_object_or_404(WorkoutPlan, id=plan_id, user=request.user)
 
     if request.method != "POST":
@@ -281,11 +253,8 @@ def dashboard_create_workout_day(request, plan_id):
     return redirect("trainer-workout-plan-detail", plan_id=plan.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_update_workout_day(request, plan_id, day_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     plan = get_object_or_404(WorkoutPlan, id=plan_id, user=request.user)
     day = get_object_or_404(WorkoutDay, id=day_id, plan=plan)
 
@@ -308,11 +277,8 @@ def dashboard_update_workout_day(request, plan_id, day_id):
     return redirect("trainer-workout-plan-detail", plan_id=plan.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_delete_workout_day(request, plan_id, day_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     plan = get_object_or_404(WorkoutPlan, id=plan_id, user=request.user)
     day = get_object_or_404(WorkoutDay, id=day_id, plan=plan)
 
@@ -326,11 +292,8 @@ def dashboard_delete_workout_day(request, plan_id, day_id):
     return redirect("trainer-workout-plan-detail", plan_id=plan.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_add_exercise_to_day(request, plan_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     plan = get_object_or_404(WorkoutPlan, id=plan_id, user=request.user)
 
     if request.method != "POST":
@@ -375,11 +338,8 @@ def dashboard_add_exercise_to_day(request, plan_id):
     return redirect("trainer-workout-plan-detail", plan_id=plan.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_update_exercise(request, plan_id, exercise_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     plan = get_object_or_404(WorkoutPlan, id=plan_id, user=request.user)
     exercise = get_object_or_404(
         Exercise.objects.select_related("workout_day", "workout_day__plan").prefetch_related("sets"),
@@ -419,11 +379,8 @@ def dashboard_update_exercise(request, plan_id, exercise_id):
     return redirect("trainer-workout-plan-detail", plan_id=plan.id)
 
 
-@login_required
+@trainer_required_view
 def dashboard_delete_exercise(request, plan_id, exercise_id):
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     plan = get_object_or_404(WorkoutPlan, id=plan_id, user=request.user)
     exercise = get_object_or_404(
         Exercise.objects.select_related("workout_day", "workout_day__plan"),

@@ -19,24 +19,20 @@ import secrets
 
 from django.conf import settings
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
 from django.urls import reverse
 from django.views.decorators.http import require_POST
 
-from apps.users.dashboard_helpers import trainer_required
+from apps.users.dashboard_helpers import trainer_required_view
 
 from .models import StripeOAuthState
 from .stripe_client import get_stripe, is_configured
 
 
-@login_required
+@trainer_required_view
 @require_POST
 def stripe_oauth_connect(request):
     """Kick off the Stripe Connect OAuth flow for the logged-in trainer."""
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     if not is_configured():
         messages.error(
             request,
@@ -70,12 +66,9 @@ def stripe_oauth_connect(request):
     return redirect(url)
 
 
-@login_required
+@trainer_required_view
 def stripe_oauth_callback(request):
     """Stripe redirects back here. Swap code → connected account."""
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     error = request.GET.get("error") or request.GET.get("error_description")
     if error:
         messages.error(request, f"Stripe declined: {error}")
@@ -116,13 +109,10 @@ def stripe_oauth_callback(request):
     return redirect("trainer-settings-page")
 
 
-@login_required
+@trainer_required_view
 @require_POST
 def stripe_oauth_disconnect(request):
     """Clear the trainer's Stripe link (best-effort revoke + DB wipe)."""
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     profile = request.user.trainer_profile
     if not profile.stripe_user_id:
         return redirect("trainer-settings-page")

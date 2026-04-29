@@ -14,10 +14,9 @@ stays in one place and the JS builder boots the same way regardless of
 how the user landed.
 """
 
-from django.contrib.auth.decorators import login_required
-from django.shortcuts import get_object_or_404, redirect, render
+from django.shortcuts import get_object_or_404, render
 
-from .dashboard_helpers import trainer_required, dashboard_context
+from .dashboard_helpers import trainer_required_view, dashboard_context
 from .forms import (
     CreateWorkoutDayForm,
     AddExerciseToDayForm,
@@ -103,22 +102,18 @@ def _render_workouts_workspace(request, plan_id=None):
     return render(request, "dashboard/dashboard_workouts.html", context)
 
 
-@login_required
+@trainer_required_view
 def trainer_workout_plans_page(request):
     """
     Legacy route /dashboard/workout-plans/ — same as the dashboard home.
     Kept so old bookmarks don't 404 and so the URL name stays valid.
     """
-    if not trainer_required(request):
-        return redirect("landing-page")
     return _render_workouts_workspace(request, plan_id=None)
 
 
-@login_required
+@trainer_required_view
 def trainer_workout_plan_detail_page(request, plan_id):
     """
     Deep-link to a specific plan in the Workouts workspace.
     """
-    if not trainer_required(request):
-        return redirect("landing-page")
     return _render_workouts_workspace(request, plan_id=plan_id)

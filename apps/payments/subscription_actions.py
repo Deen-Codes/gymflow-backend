@@ -23,12 +23,11 @@ local ClientSubscription row so the UI updates without waiting for
 the webhook to round-trip.
 """
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404, redirect
 from django.utils import timezone
 from django.views.decorators.http import require_POST
 
-from apps.users.dashboard_helpers import trainer_required
+from apps.users.dashboard_helpers import trainer_required_view
 
 from .models import ClientSubscription
 from .stripe_client import get_stripe, is_configured
@@ -48,13 +47,10 @@ def _load_subscription_for_trainer(request, sub_id):
     )
 
 
-@login_required
+@trainer_required_view
 @require_POST
 def cancel_at_period_end(request, sub_id):
     """Cancel at the end of the current billing period (most common)."""
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     sub = _load_subscription_for_trainer(request, sub_id)
 
     if not sub.stripe_subscription_id:
@@ -88,13 +84,10 @@ def cancel_at_period_end(request, sub_id):
     return _back_to_client(sub)
 
 
-@login_required
+@trainer_required_view
 @require_POST
 def resume(request, sub_id):
     """Undo a previously-scheduled cancellation."""
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     sub = _load_subscription_for_trainer(request, sub_id)
 
     if not sub.cancel_at_period_end:
@@ -127,7 +120,7 @@ def resume(request, sub_id):
     return _back_to_client(sub)
 
 
-@login_required
+@trainer_required_view
 @require_POST
 def cancel_immediately(request, sub_id):
     """End the subscription right now — Stripe stops further charges immediately.
@@ -136,9 +129,6 @@ def cancel_immediately(request, sub_id):
     client gets to keep what they already paid for. Immediate cancel is for
     cases like fraud, refund, or "client emailed me an emergency".
     """
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     sub = _load_subscription_for_trainer(request, sub_id)
 
     if not sub.stripe_subscription_id:

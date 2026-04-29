@@ -9,10 +9,9 @@ renders both routes:
     /dashboard/nutrition-plans/<id>/    → that specific plan in the canvas
 """
 
-from django.contrib.auth.decorators import login_required
-from django.shortcuts import get_object_or_404, redirect, render
+from django.shortcuts import get_object_or_404, render
 
-from .dashboard_helpers import trainer_required, dashboard_context
+from .dashboard_helpers import trainer_required_view, dashboard_context
 from .forms import (
     UpdateNutritionPlanForm,
     CreateNutritionMealForm,
@@ -71,17 +70,13 @@ def _render_nutrition_workspace(request, plan_id=None):
     return render(request, "dashboard/dashboard_nutrition_plans.html", context)
 
 
-@login_required
+@trainer_required_view
 def trainer_nutrition_plans_page(request):
     """Front of the nutrition workspace — newest plan auto-selected."""
-    if not trainer_required(request):
-        return redirect("landing-page")
     return _render_nutrition_workspace(request, plan_id=None)
 
 
-@login_required
+@trainer_required_view
 def trainer_nutrition_plan_detail_page(request, plan_id):
     """Deep-link to a specific plan in the nutrition workspace."""
-    if not trainer_required(request):
-        return redirect("landing-page")
     return _render_nutrition_workspace(request, plan_id=plan_id)

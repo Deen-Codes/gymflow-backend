@@ -4,6 +4,7 @@ from .dashboard_views import (
     landing_page,
     trainer_login_page,
     trainer_logout_page,
+    trainer_magic_link_request,
     trainer_hub_page,
     trainer_dashboard,
     trainer_dashboard_home,
@@ -66,6 +67,7 @@ from .dashboard_views import (
 urlpatterns = [
     path("", landing_page, name="landing-page"),
     path("portal/login/", trainer_login_page, name="trainer-login-page"),
+    path("portal/login/magic-link/", trainer_magic_link_request, name="trainer-magic-link-request"),
     path("portal/logout/", trainer_logout_page, name="trainer-logout-page"),
 
     # Phase 10 — /dashboard/ is now the GymFlow Hub.

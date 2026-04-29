@@ -13,7 +13,6 @@ Auth model:
 import secrets
 
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 from django.db import transaction
 from django.http import Http404, JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
@@ -28,7 +27,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from apps.users.models import User, ClientProfile, TrainerProfile
-from apps.users.dashboard_helpers import trainer_required, dashboard_context
+from apps.users.dashboard_helpers import trainer_required_view, dashboard_context
 from apps.progress.models import (
     CheckInForm,
     CheckInSubmission,
@@ -43,16 +42,13 @@ from .models import TrainerSite, SiteSection, PublicSignup, PricingPlan
 # -------------------------------------------------------------------
 # Editor (server-rendered)
 # -------------------------------------------------------------------
-@login_required
+@trainer_required_view
 def trainer_site_page(request):
     """Site editor — renders the 3-column workspace.
 
     Outline list of sections on the left, live preview in the centre,
     properties panel on the right (shows the selected section's fields,
     or a "site overview" panel when nothing is selected)."""
-    if not trainer_required(request):
-        return redirect("landing-page")
-
     site = ensure_site(request.user.trainer_profile)
     sections = list(site.sections.all().order_by("order"))
 
