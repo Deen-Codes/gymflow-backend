@@ -289,12 +289,34 @@ def _call_claude_for_programme(user) -> tuple[dict | None, str | None]:
 @authentication_classes([TokenAuthentication])
 @permission_classes([IsAuthenticated])
 def solo_ai_build_preview(request):
+    # R7-DIAG — wrap the entire view body in a try/except that
+    # logs the full traceback, then re-raises. We had a silent 503
+    # (no error log) on first iOS hit despite explicit logging in
+    # _call_claude_for_programme — meaning an exception was firing
+    # somewhere upstream of that function (e.g. _build_user_context,
+    # SoloProfile lookup, or DRF auth) and DRF was swallowing it
+    # into a generic 503. This wrapper catches everything and
+    # surfaces it.
+    log.info("AI build preview: ENTER user_id=%s", getattr(request.user, "id", None))
+    try:
+        return _solo_ai_build_preview_inner(request)
+    except Exception as exc:
+        log.exception("AI build preview: UNHANDLED EXCEPTION")
+        return Response(
+            {"detail": f"AI build crashed: {type(exc).__name__}: {str(exc)[:200]}"},
+            status=503,
+        )
+
+
+def _solo_ai_build_preview_inner(request):
     user = request.user
+    log.info("AI build: user role=%s", user.role)
     if user.role != User.SOLO:
         return Response({"detail": "Solo accounts only."}, status=status.HTTP_403_FORBIDDEN)
 
     profile, _ = SoloProfile.objects.get_or_create(user=user)
     has_ai = profile.has_ai_access
+    log.info("AI build: has_ai_access=%s", has_ai)
 
     if not has_ai:
         if _has_used_preview(user):
@@ -306,7 +328,10 @@ def solo_ai_build_preview(request):
                 status=status.HTTP_402_PAYMENT_REQUIRED,
             )
 
+    log.info("AI build: calling Claude")
     programme, error = _call_claude_for_programme(user)
+    log.info("AI build: Claude returned programme=%s error=%s",
+             "yes" if programme else "no", error)
     if error:
         return Response({"detail": error}, status=503)
 
