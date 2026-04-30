@@ -10,6 +10,7 @@ from .solo_views import (
     solo_nutrition_log_delete,
     solo_nutrition_barcode_lookup,
     solo_nutrition_food_create,
+    solo_macro_targets_update,
 )
 from .ai_describe_views import solo_ai_describe_food
 
@@ -29,6 +30,10 @@ urlpatterns = [
     path("solo/log/<int:entry_id>/",     solo_nutrition_log_delete,      name="solo-nutrition-log-delete"),
     path("solo/barcode/<str:code>/",     solo_nutrition_barcode_lookup,  name="solo-nutrition-barcode"),
     path("solo/foods/",                  solo_nutrition_food_create,     name="solo-nutrition-food-create"),
+
+    # R5-2 — first-time macro target setup ("Set them myself"
+    # path on iOS).
+    path("solo/macro-targets/",          solo_macro_targets_update,      name="solo-macro-targets"),
 
     # N.1.2 — AI describe (Pro AI gated)
     path("solo/ai-describe/",            solo_ai_describe_food,          name="solo-ai-describe"),

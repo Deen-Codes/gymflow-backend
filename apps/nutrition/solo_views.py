@@ -91,6 +91,68 @@ def _ensure_solo(user) -> SoloProfile | None:
 
 
 # --------------------------------------------------------------------
+# R5-2 — Macro target update (lets the iOS first-time setup flow
+# write user-chosen targets without going through the full
+# `solo_onboarding_update_view` — that one expects all the profile
+# fields and we only want to touch macros here).
+# --------------------------------------------------------------------
+@csrf_exempt
+@api_view(["POST"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def solo_macro_targets_update(request):
+    """Body: {calories, protein, carbs, fats} — all required, all ints.
+
+    Saves to SoloProfile.target_*. Used by the iOS first-time
+    nutrition setup flow ("Set them myself" path) and by future
+    AI-coach paths that suggest targets and let the user accept
+    them with one tap.
+    """
+    profile = _ensure_solo(request.user)
+    if profile is None:
+        return Response({"detail": "Solo accounts only."}, status=status.HTTP_403_FORBIDDEN)
+
+    data = request.data or {}
+    try:
+        calories = int(data.get("calories") or 0)
+        protein  = int(data.get("protein")  or 0)
+        carbs    = int(data.get("carbs")    or 0)
+        fats     = int(data.get("fats")     or 0)
+    except (TypeError, ValueError):
+        return Response({"detail": "Targets must be integers."}, status=400)
+
+    # Sanity-cap. Refusing 0 calories keeps the "macros set" check
+    # (`target_calories > 0`) reliable across the app.
+    if calories < 800 or calories > 6000:
+        return Response(
+            {"detail": "Calorie target should be between 800 and 6000 kcal."},
+            status=400,
+        )
+    if protein < 20 or protein > 500:
+        return Response({"detail": "Protein target out of range."}, status=400)
+    if carbs < 0 or carbs > 800:
+        return Response({"detail": "Carb target out of range."}, status=400)
+    if fats < 0 or fats > 250:
+        return Response({"detail": "Fat target out of range."}, status=400)
+
+    profile.target_calories = calories
+    profile.target_protein  = protein
+    profile.target_carbs    = carbs
+    profile.target_fats     = fats
+    profile.save(update_fields=[
+        "target_calories", "target_protein", "target_carbs", "target_fats",
+    ])
+
+    return Response({
+        "ok":            True,
+        "target_calories": profile.target_calories,
+        "target_protein":  profile.target_protein,
+        "target_carbs":    profile.target_carbs,
+        "target_fats":     profile.target_fats,
+    })
+
+
+# --------------------------------------------------------------------
 # Daily totals + targets
 # --------------------------------------------------------------------
 @csrf_exempt
