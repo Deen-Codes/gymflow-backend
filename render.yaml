@@ -4,7 +4,16 @@ services:
     runtime: python
     plan: free
     buildCommand: ./build.sh
-    startCommand: gunicorn config.asgi:application -k uvicorn.workers.UvicornWorker
+    # `--timeout 120` raises gunicorn's worker timeout from the
+    # default 30s. Without this, AI tool-use generations (which
+    # can take 30-50s) get the worker killed mid-request — the
+    # caller sees 503 even though Anthropic completed the work
+    # AND billed for the tokens. Python-level request timeouts
+    # (`requests.post(..., timeout=70)`) are meaningless without
+    # this — gunicorn nukes the worker first.
+    # `--graceful-timeout 30` keeps shutdowns snappy when Render
+    # restarts the service.
+    startCommand: gunicorn config.asgi:application -k uvicorn.workers.UvicornWorker --timeout 120 --graceful-timeout 30
 
     envVars:
       - key: PYTHON_VERSION

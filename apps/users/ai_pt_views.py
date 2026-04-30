@@ -295,6 +295,10 @@ def solo_ai_pt_chat(request):
             status=status.HTTP_402_PAYMENT_REQUIRED,
         )
     if not ANTHROPIC_API_KEY:
+        log.error(
+            "AI PT: ANTHROPIC_API_KEY env var is missing or empty on this "
+            "deploy. Set it in Render → Environment → Environment Variables."
+        )
         return Response({"detail": "AI PT temporarily unavailable."}, status=503)
 
     ok, remaining = _check_rate_limit(user.id)

@@ -22,6 +22,7 @@ from .solo_views import (
 )
 from .ai_pt_views import solo_ai_pt_chat
 from .ai_build_views import solo_ai_build_preview, solo_ai_build_assign
+from .ai_diag_views import ai_diag
 from .coach_code_views import coach_code_redeem
 from .push_views import register_apns_token, deregister_apns_token
 from .iap_views import solo_iap_verify, solo_iap_webhook
@@ -65,6 +66,12 @@ urlpatterns = [
     # users; assign is Pro-AI gated.
     path("solo/ai-build/preview/", solo_ai_build_preview,  name="solo-ai-build-preview"),
     path("solo/ai-build/assign/",  solo_ai_build_assign,   name="solo-ai-build-assign"),
+
+    # R7-DIAG — temporary no-auth endpoint to diagnose the AI 503.
+    # Confirms ANTHROPIC_API_KEY is actually set on the live dyno
+    # and lets us fire a 1-token Anthropic ping. Remove once the
+    # 503 is fully nailed.
+    path("_diag/ai/", ai_diag, name="ai-diag"),
 
     # R3-7 — Coach code redemption (no auth; trainer-side
     # generator endpoints live in dashboard_urls.py).

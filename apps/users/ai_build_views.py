@@ -193,6 +193,13 @@ def _call_claude_for_programme(user) -> tuple[dict | None, str | None]:
     import requests
 
     if not ANTHROPIC_API_KEY:
+        # Loud log so this shows up in Render logs the moment a
+        # call lands. Silent return previously meant 503s with
+        # zero diagnostic trail.
+        log.error(
+            "AI build: ANTHROPIC_API_KEY env var is missing or empty on this "
+            "deploy. Set it in Render → Environment → Environment Variables."
+        )
         return None, "AI build temporarily unavailable."
 
     context = _build_user_context(user)
