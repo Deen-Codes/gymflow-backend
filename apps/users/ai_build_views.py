@@ -217,15 +217,43 @@ def _call_claude_for_programme(user) -> tuple[dict | None, str | None]:
                 "anthropic-version": "2023-06-01",
                 "content-type": "application/json",
             },
-            timeout=45.0,
+            # R6-1 — bumped from 45s to 70s. Anthropic tool-use
+            # generation with a 2500-token max output regularly
+            # hits 30-50s on first call; 45s was cutting off
+            # legitimate responses. iOS timeout is 75s; backend
+            # at 70s leaves a 5s buffer for our own response
+            # serialisation.
+            timeout=70.0,
         )
+    except requests.exceptions.Timeout:
+        log.error("AI build timed out talking to Anthropic")
+        return None, "AI provider took too long to respond. Please try again."
     except Exception as exc:
         log.exception("AI build request failed")
         return None, f"AI provider unreachable: {exc}"
 
     if resp.status_code != 200:
         log.error("AI build non-200: %s %s", resp.status_code, resp.text[:300])
-        return None, "AI provider returned an error."
+        # Surface the actual Anthropic error code + parsed reason
+        # so iOS can show something more useful than a generic 503.
+        # Common reasons we want the user / dev to see:
+        #   401 invalid_authentication / authentication_error → API key wrong on Render
+        #   402 payment_required → Anthropic account out of credit
+        #   429 rate_limit_error → too many requests / spend cap hit
+        #   500/529 → Anthropic having an outage
+        try:
+            err = (resp.json().get("error") or {})
+            err_type = err.get("type") or "error"
+            err_msg = err.get("message") or "AI provider returned an error."
+        except Exception:
+            err_type, err_msg = "error", "AI provider returned an error."
+        if resp.status_code == 401:
+            return None, "AI provider rejected our API key — it may be missing or wrong on Render."
+        if resp.status_code == 402:
+            return None, "AI provider account is out of credits — top up at console.anthropic.com."
+        if resp.status_code == 429:
+            return None, "AI provider rate-limited the request. Try again in a minute."
+        return None, f"AI provider {resp.status_code} ({err_type}): {err_msg[:160]}"
 
     payload = resp.json()
     # The reply is a list of content blocks; we want the tool_use

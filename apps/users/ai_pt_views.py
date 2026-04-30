@@ -342,15 +342,35 @@ def solo_ai_pt_chat(request):
                 "anthropic-version": "2023-06-01",
                 "content-type": "application/json",
             },
-            timeout=30.0,
+            # R6-1 — bumped 30s → 70s. Chat replies are shorter
+            # than the build endpoint's structured output but cold
+            # connections + queue waits can still push past 30s.
+            timeout=70.0,
         )
+    except requests.exceptions.Timeout:
+        log.error("AI PT timed out talking to Anthropic")
+        return Response({"detail": "AI provider took too long to respond. Please try again."}, status=504)
     except Exception as exc:
         log.exception("AI PT request failed")
         return Response({"detail": f"AI provider unreachable: {exc}"}, status=503)
 
     if resp.status_code != 200:
         log.error("AI PT non-200: %s %s", resp.status_code, resp.text[:300])
-        return Response({"detail": "AI provider returned an error."}, status=502)
+        # Surface a useful reason instead of a generic 502 so iOS
+        # (and Deen's debugging) can see whether it's a billing
+        # issue, a bad key, a rate-limit, or an Anthropic outage.
+        try:
+            err = (resp.json().get("error") or {})
+            err_msg = err.get("message") or "AI provider returned an error."
+        except Exception:
+            err_msg = "AI provider returned an error."
+        if resp.status_code == 401:
+            return Response({"detail": "AI provider rejected our API key — it may be missing or wrong on Render."}, status=502)
+        if resp.status_code == 402:
+            return Response({"detail": "AI provider account is out of credits — top up at console.anthropic.com."}, status=502)
+        if resp.status_code == 429:
+            return Response({"detail": "AI provider rate-limited the request. Try again in a minute."}, status=502)
+        return Response({"detail": f"AI provider {resp.status_code}: {err_msg[:160]}"}, status=502)
 
     try:
         payload = resp.json()
