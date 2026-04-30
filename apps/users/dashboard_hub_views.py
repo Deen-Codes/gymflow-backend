@@ -382,12 +382,17 @@ def trainer_hub_page(request):
             "url_cta": latest.cta_label or "",
         }
     else:
+        # FIX-7 — was a stale "Pricing tiers coming soon" placeholder.
+        # Pricing tiers + Stripe are live. Default fallback now points
+        # the trainer at a useful next step instead of a fake roadmap
+        # promise.
         context["hub_whats_new"] = {
-            "title":   "Pricing tiers + Stripe coming soon",
-            "body":    "Set monthly/weekly/yearly plans on your Site. "
-                       "Live Stripe payments are next on the roadmap.",
-            "url":     reverse("trainer-settings-page"),
-            "url_cta": "Set up tiers →",
+            "title":   "Set up your public site",
+            "body":    "Add your hero image, services, and pricing — "
+                       "your /p/<slug>/ page is what clients see when "
+                       "you share GymFlow with them.",
+            "url":     reverse("trainer-site-page"),
+            "url_cta": "Open Site editor →",
         }
 
     return render(request, "dashboard/dashboard_hub.html", context)

@@ -21,6 +21,9 @@ from .solo_views import (
     solo_convert_view,
 )
 from .ai_pt_views import solo_ai_pt_chat
+from .ai_build_views import solo_ai_build_preview, solo_ai_build_assign
+from .coach_code_views import coach_code_redeem
+from .push_views import register_apns_token, deregister_apns_token
 from .iap_views import solo_iap_verify, solo_iap_webhook
 from .profile_views import (
     lifetime_stats_for_me,
@@ -57,6 +60,21 @@ urlpatterns = [
     path("solo/convert/",    solo_convert_view,            name="solo-convert"),
     # E.2 — AI PT chat (Pro AI gated)
     path("solo/ai-pt/chat/", solo_ai_pt_chat,              name="solo-ai-pt-chat"),
+
+    # R3-1 — AI build programme: preview is one-shot for Free
+    # users; assign is Pro-AI gated.
+    path("solo/ai-build/preview/", solo_ai_build_preview,  name="solo-ai-build-preview"),
+    path("solo/ai-build/assign/",  solo_ai_build_assign,   name="solo-ai-build-assign"),
+
+    # R3-7 — Coach code redemption (no auth; trainer-side
+    # generator endpoints live in dashboard_urls.py).
+    path("coach-code/redeem/",     coach_code_redeem,      name="coach-code-redeem"),
+
+    # R3-9 — APNs device-token registration. Stores tokens against
+    # User.notification_prefs; the send pipeline reads them from
+    # there.
+    path("push/register/",   register_apns_token,    name="push-register-apns"),
+    path("push/deregister/", deregister_apns_token,  name="push-deregister-apns"),
 
     # SOLO-03 — Apple IAP receipt validation + webhook for renewals.
     path("solo/iap/verify/",  solo_iap_verify,             name="solo-iap-verify"),

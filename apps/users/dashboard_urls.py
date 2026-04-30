@@ -1,5 +1,9 @@
 from django.urls import path
 from django.contrib.auth import views as auth_views
+from .coach_code_views import (
+    dashboard_coach_code,
+    dashboard_coach_code_regenerate,
+)
 from .dashboard_views import (
     landing_page,
     trainer_login_page,
@@ -141,6 +145,10 @@ urlpatterns = [
     path("dashboard/settings/pricing/save/", dashboard_pricing_save, name="dashboard-pricing-save"),
     path("dashboard/settings/pricing/<int:plan_id>/delete/", dashboard_pricing_delete, name="dashboard-pricing-delete"),
     path("dashboard/settings/delete-account/", dashboard_delete_account, name="dashboard-delete-account"),
+
+    # R3-7 — Coach code panel on Settings.
+    path("dashboard/settings/coach-code/",            dashboard_coach_code,             name="dashboard-coach-code"),
+    path("dashboard/settings/coach-code/regenerate/", dashboard_coach_code_regenerate,  name="dashboard-coach-code-regenerate"),
 
     # Logged-in password change (used by the Settings workspace)
     path(

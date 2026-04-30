@@ -1,14 +1,21 @@
 /* ============================================================
-   GymFlow — design system v2 (Kahunas-style polished dark glass)
+   GymFlow — design system v3 (iOS-aligned dark-glass + lime)
    This file is the SINGLE SOURCE OF TRUTH for tokens, primitives,
    the dashboard shell, and shared workspace chrome. Per-workspace
    layout (e.g. the workout builder grid) lives in its own file
    and only adds layout specifics on top of these tokens.
+
+   R3-3 visual rework (decision 2.7) — tokens aligned to iOS
+   `AppColors`:
+       bg-deep ← #040711 (was #06080c)
+       accent  ← #c8ff20 (was #c8ff00)
+   The whole dashboard inherits the new values via the cascade,
+   so per-workspace CSS files don't need touching.
    ============================================================ */
 
 :root {
-    /* Surface palette — deep, slightly cool black */
-    --bg-deep:   #06080c;
+    /* Surface palette — matches iOS AppColors.bgDeepest etc. */
+    --bg-deep:   #040711;
     --bg-base:   #0a0d13;
     --bg-soft:   #11161f;
     --bg-lift:   #161c27;
@@ -27,13 +34,13 @@
     --text-faint: rgba(255, 255, 255, 0.38);
     --text-mute:  rgba(255, 255, 255, 0.24);
 
-    /* Accent — neon lime, the recognisably "Kahunas" cue */
-    --accent:        #c8ff00;
+    /* Accent — lime, matched to iOS AppColors.accent (#c8ff20) */
+    --accent:        #c8ff20;
     --accent-strong: #d6ff3a;
     --accent-deep:   #9ecf00;
-    --accent-soft:   rgba(200, 255, 0, 0.12);
-    --accent-line:   rgba(200, 255, 0, 0.28);
-    --accent-glow:   rgba(200, 255, 0, 0.35);
+    --accent-soft:   rgba(200, 255, 32, 0.12);
+    --accent-line:   rgba(200, 255, 32, 0.28);
+    --accent-glow:   rgba(200, 255, 32, 0.35);
 
     /* Status colours */
     --blue:   #5b8def;
@@ -45,7 +52,7 @@
     --shadow-sm:   0 4px 20px rgba(0, 0, 0, 0.32);
     --shadow-md:   0 12px 38px rgba(0, 0, 0, 0.45);
     --shadow-lg:   0 28px 70px rgba(0, 0, 0, 0.55);
-    --shadow-glow: 0 8px 36px rgba(200, 255, 0, 0.20);
+    --shadow-glow: 0 8px 36px rgba(200, 255, 32, 0.20);
 
     /* Radius ramp */
     --radius-xs: 8px;

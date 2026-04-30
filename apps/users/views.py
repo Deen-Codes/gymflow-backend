@@ -102,13 +102,10 @@ def me_view(request):
 # Per-feature endpoints remain — pull-to-refresh and feature-scoped
 # reloads still hit them. Composite is launch-only.
 #
-# Currently inlines: user, home_stats, required_actions.
-# TODO (next session): nutrition.today, nutrition.consumption,
-# progress.hydration, progress.next_checkin, workouts.next,
-# workouts.plan_active, workouts.latest_session_for_next,
-# trophies.me. Each needs the underlying view's data-prep logic
-# imported / extracted into a reusable function. Doing them
-# incrementally so we don't ship a partial endpoint.
+# Currently inlines (all done as of P.2):
+#   user, home_stats, required_actions, nutrition.today,
+#   nutrition.consumption, progress.hydration, progress.next_checkin,
+#   workouts.next, workouts.plan_active, trophies.me, solo.
 # -------------------------------------------------------------------
 
 
