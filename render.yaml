@@ -2,7 +2,16 @@ services:
   - type: web
     name: gymflow-api
     runtime: python
-    plan: free
+    # Starter (paid) — free-tier services sleep after ~15 min of
+    # inactivity, and the cold-start path takes 30-60s before any
+    # request reaches gunicorn. Combined with a 30-50s Anthropic
+    # call that blows past Render's free-tier router timeout and
+    # returns 503 with no log line on our side. Starter doesn't
+    # sleep, so cold starts disappear and the AI build endpoints
+    # are reachable on first hit. ($7/month — the cost of one
+    # AI build's $0.17 spend × 40 calls. Pays for itself the
+    # moment a single user buys Pro AI.)
+    plan: starter
     buildCommand: ./build.sh
     # `--timeout 120` raises gunicorn's worker timeout from the
     # default 30s. Without this, AI tool-use generations (which
