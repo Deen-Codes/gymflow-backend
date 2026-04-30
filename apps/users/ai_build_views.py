@@ -203,6 +203,7 @@ def _call_claude_for_programme(user) -> tuple[dict | None, str | None]:
         return None, "AI build temporarily unavailable."
 
     context = _build_user_context(user)
+    print(f"[AI BUILD] user_context (first 800 chars):\n{context[:800]}", flush=True)
     system = SYSTEM_TEMPLATE.format(context=context)
 
     body = {
@@ -277,6 +278,16 @@ def _call_claude_for_programme(user) -> tuple[dict | None, str | None]:
         return None, "Couldn't parse the AI response."
     programme = tool_block.get("input") or {}
     if not programme.get("days"):
+        # Dump exactly what Claude sent us so we can see why days
+        # is empty — sparse user profile, malformed schema, refusal,
+        # etc. Trim each field to keep log lines reasonable.
+        import json as _json
+        print(
+            f"[AI BUILD] EMPTY PROGRAMME — Claude tool_block.input keys="
+            f"{list(programme.keys())} stop_reason={payload.get('stop_reason')!r} "
+            f"input_dump={_json.dumps(programme)[:1500]}",
+            flush=True,
+        )
         return None, "AI returned an empty programme."
     return programme, None
 
