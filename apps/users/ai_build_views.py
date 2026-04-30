@@ -208,7 +208,16 @@ def _call_claude_for_programme(user) -> tuple[dict | None, str | None]:
 
     body = {
         "model": ANTHROPIC_MODEL,
-        "max_tokens": 2500,
+        # R7-DIAG fix — bumped from 2500 to 8000. With 5 training
+        # days × 4-7 exercises × 3-4 sets, the JSON for `days` alone
+        # can easily run 2-3k tokens. Once you add prose for name +
+        # tagline + summary + progression_rule + deload_strategy
+        # (~500-800 tokens), 2500 max_tokens hit `stop_reason:
+        # max_tokens` before Claude even started writing `days`.
+        # 8000 leaves ~5k tokens of headroom; Sonnet 4.6 supports
+        # up to 64k output anyway. Cost impact is negligible
+        # because we only pay for actual tokens generated.
+        "max_tokens": 8000,
         "system": system,
         "tools": [PROGRAMME_TOOL],
         "tool_choice": {"type": "tool", "name": "submit_programme"},
