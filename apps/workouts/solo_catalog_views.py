@@ -33,6 +33,7 @@ from apps.users.models import User, SoloProfile
 from .models import (
     WorkoutPlan, WorkoutDay, Exercise, ExerciseSetTarget,
 )
+from .solo_catalog_ranker import rank_programmes
 
 
 # --------------------------------------------------------------------
@@ -104,7 +105,20 @@ def _serialize_card(plan: WorkoutPlan) -> dict:
 @api_view(["GET"])
 @permission_classes([IsAuthenticated])
 def solo_programmes_list(request):
-    """List public programme templates, optionally filtered."""
+    """List public programme templates, optionally filtered.
+
+    CATALOG-PERSONALISED-TOP3 (#131) — the response now includes
+    a `recommended` array (top-3 ranked by the user's profile)
+    in addition to the existing `programmes` array (the full
+    filtered list). iOS renders the `recommended` cards above
+    the alphabetised list; users can still scroll the full list
+    below.
+
+    The ranking is rule-based + transparent (see
+    `solo_catalog_ranker.py`). Each recommended card carries a
+    `match_reasons` list so the UI can show "Why this programme?"
+    inline without a second request.
+    """
     goal       = request.query_params.get("goal") or None
     experience = request.query_params.get("experience") or None
     equipment  = request.query_params.get("equipment") or None
@@ -118,12 +132,47 @@ def solo_programmes_list(request):
         .filter(is_solo_template=True, is_active=True)
         .order_by("name")
     )
-    cards = [
-        _serialize_card(p) for p in qs
+    matched_plans = [
+        p for p in qs
         if _matches(p.programme_meta or {}, goal=goal,
                     experience=experience, equipment=equipment, days=days)
     ]
-    return Response({"programmes": cards})
+
+    # Build the user's profile inputs for scoring. If the request
+    # came with explicit query params, prefer those (the user is
+    # actively filtering); otherwise read from SoloProfile so the
+    # default unfiltered list still surfaces personal top-3.
+    user = request.user
+    profile = getattr(user, "solo_profile", None)
+    profile_inputs = {
+        "goals":         [goal] if goal else (profile.goals if profile else []),
+        "experience":    experience or (profile.experience if profile else ""),
+        "equipment":     equipment or (profile.equipment if profile else ""),
+        "days_per_week": days or (profile.days_per_week if profile else 0),
+    }
+
+    recommended_tuples, others_tuples = rank_programmes(
+        matched_plans, profile_inputs, top_n=3,
+    )
+
+    def _serialise_with_reasons(plan, score, reasons):
+        card = _serialize_card(plan)
+        card["match_score"] = score
+        card["match_reasons"] = reasons
+        return card
+
+    recommended = [
+        _serialise_with_reasons(p, s, r) for (p, s, r) in recommended_tuples
+    ]
+    # Preserve alphabetical order in the rest by re-sorting on name.
+    others_plans = [t[0] for t in others_tuples]
+    others_plans.sort(key=lambda p: (p.name or "").lower())
+    others = [_serialize_card(p) for p in others_plans]
+
+    return Response({
+        "recommended": recommended,
+        "programmes":  recommended + others,  # back-compat: full list
+    })
 
 
 # --------------------------------------------------------------------
