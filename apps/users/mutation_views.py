@@ -65,7 +65,13 @@ log = logging.getLogger(__name__)
 @authentication_classes([TokenAuthentication])
 @permission_classes([IsAuthenticated])
 def mutation_apply(request, mutation_id: int):
-    """Apply a proposed mutation. `?type=workout|nutrition`.
+    """Apply a proposed mutation. `?type=workout|nutrition|cardio`.
+
+    Body: optional JSON `{"chosen_option_index": int}` for
+    SWAP-MULTI-OPTION proposals where the AI offered multiple
+    alternatives in `new_value.payload.options[]`. The index is
+    0-based into that array. If the proposal is single-option
+    (no `options` array), the body is ignored.
 
     Returns:
         200 {ok: true, applied_at, audit_id} on success.
@@ -77,9 +83,18 @@ def mutation_apply(request, mutation_id: int):
     if user.role != User.SOLO:
         return Response({"detail": "Solo accounts only."}, status=403)
 
+    chosen_option_index = None
+    if isinstance(request.data, dict):
+        raw = request.data.get("chosen_option_index")
+        if raw is not None:
+            try:
+                chosen_option_index = int(raw)
+            except (TypeError, ValueError):
+                chosen_option_index = None
+
     mutation_type = (request.query_params.get("type") or "").strip()
     if mutation_type == "workout":
-        return _apply_workout(user, mutation_id)
+        return _apply_workout(user, mutation_id, chosen_option_index)
     if mutation_type == "nutrition":
         return _apply_nutrition(user, mutation_id)
     return Response(
@@ -88,7 +103,7 @@ def mutation_apply(request, mutation_id: int):
     )
 
 
-def _apply_workout(user, mutation_id: int):
+def _apply_workout(user, mutation_id: int, chosen_option_index: int = None):
     try:
         mutation = WorkoutMutation.objects.get(id=mutation_id, user=user)
     except WorkoutMutation.DoesNotExist:
@@ -114,6 +129,39 @@ def _apply_workout(user, mutation_id: int):
     plan = profile.assigned_workout_plan
     payload = mutation.new_value or {}
     kind = mutation.kind
+
+    # SWAP-MULTI-OPTION — if the AI proposed multiple alternatives
+    # for a swap, the iOS card lets the user pick one. The
+    # chosen_option_index (0-based into payload['options']) is
+    # passed in the request body. Resolve here to a single-option
+    # payload that the existing _apply_swap_exercise can consume
+    # unchanged. Backward-compat: payloads without 'options' use
+    # the legacy {current_exercise_name, new_exercise_name} shape.
+    if (
+        kind == WorkoutMutation.KIND_SWAP_EXERCISE
+        and isinstance(payload.get("options"), list)
+        and len(payload["options"]) > 0
+    ):
+        idx = chosen_option_index if chosen_option_index is not None else 0
+        idx = max(0, min(idx, len(payload["options"]) - 1))
+        chosen = payload["options"][idx] or {}
+        # Build a single-option-shaped payload the legacy applier
+        # expects, while keeping the full options list in
+        # `_chosen_option` audit metadata for the mutation row.
+        payload = {
+            **payload,                       # preserve current_exercise_name etc.
+            "new_exercise_name": chosen.get("name") or chosen.get("new_exercise_name"),
+            "exercise_id":       chosen.get("exercise_id"),
+            "sets":              chosen.get("sets"),
+            "reps":              chosen.get("reps"),
+            "rest_seconds":      chosen.get("rest_seconds"),
+            "_chosen_option_index": idx,
+        }
+        # Persist the user's choice on the mutation row so
+        # the audit trail records WHICH option they picked.
+        new_value = mutation.new_value or {}
+        new_value["chosen_option_index"] = idx
+        mutation.new_value = new_value
 
     with transaction.atomic():
         try:
