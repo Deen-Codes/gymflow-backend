@@ -39,6 +39,16 @@ services:
       - key: ALLOWED_HOSTS
         value: .gymflow.coach,.onrender.com
 
+      # Enables the /api/users/_debug/set-state/ endpoint so the
+      # iOS Profile DEBUG panel can flip tier (free/pro/pro_ai)
+      # and reset the AI-build preview flag server-side. Each
+      # authenticated solo user can only mutate their own row.
+      # *** REMOVE OR SET TO "0" BEFORE APP STORE SUBMISSION ***
+      # — leaving this on lets a user upgrade themselves to
+      # Pro AI without paying through IAP.
+      - key: ENABLE_DEBUG_RESET
+        value: "1"
+
 databases:
   - name: gymflow-db
     plan: free

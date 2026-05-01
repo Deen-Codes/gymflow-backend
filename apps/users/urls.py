@@ -23,6 +23,7 @@ from .solo_views import (
 from .ai_pt_views import solo_ai_pt_chat
 from .ai_build_views import solo_ai_build_preview, solo_ai_build_assign
 from .ai_diag_views import ai_diag
+from .debug_views import solo_debug_set_state
 from .coach_code_views import coach_code_redeem
 from .push_views import register_apns_token, deregister_apns_token
 from .iap_views import solo_iap_verify, solo_iap_webhook
@@ -72,6 +73,12 @@ urlpatterns = [
     # and lets us fire a 1-token Anthropic ping. Remove once the
     # 503 is fully nailed.
     path("_diag/ai/", ai_diag, name="ai-diag"),
+
+    # Debug — flip subscription tier + reset AI usage state without
+    # touching Stripe / IAP. ONLY active when settings.DEBUG=True or
+    # ENABLE_DEBUG_RESET=1. Authenticated; users can only mutate
+    # their own row. iOS Profile screen's debug panel calls this.
+    path("_debug/set-state/", solo_debug_set_state, name="solo-debug-set-state"),
 
     # R3-7 — Coach code redemption (no auth; trainer-side
     # generator endpoints live in dashboard_urls.py).
