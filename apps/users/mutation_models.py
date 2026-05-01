@@ -150,6 +150,51 @@ class WorkoutMutation(models.Model):
 # --------------------------------------------------------------------
 
 
+class CardioMutation(models.Model):
+    """CARDIO-MUTATIONS — audit row for AI-proposed changes to the
+    user's cardio prescription. Mirrors WorkoutMutation /
+    NutritionMutation for the cardio surface. Daniels-VDOT
+    taxonomy (Z2/threshold/intervals/long), modality swaps,
+    volume adjustments, priority shifts.
+    """
+    KIND_ASSIGN_SESSION_TYPE = "assign_session_type"
+    KIND_ADJUST_VOLUME       = "adjust_volume"
+    KIND_SWAP_MODALITY       = "swap_modality"
+    KIND_CHANGE_PRIORITY     = "change_priority"
+    KIND_CHOICES = [
+        (KIND_ASSIGN_SESSION_TYPE, "Assign session type"),
+        (KIND_ADJUST_VOLUME,       "Adjust volume"),
+        (KIND_SWAP_MODALITY,       "Swap modality"),
+        (KIND_CHANGE_PRIORITY,     "Change priority"),
+    ]
+
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="cardio_mutations",
+    )
+    kind   = models.CharField(max_length=24, choices=KIND_CHOICES)
+    status = models.CharField(
+        max_length=10, choices=MutationStatus.choices,
+        default=MutationStatus.PROPOSED,
+    )
+    original_value = models.JSONField(default=dict, blank=True)
+    new_value      = models.JSONField(default=dict, blank=True)
+    ai_rationale   = models.TextField(blank=True, default="")
+    proposed_at    = models.DateTimeField(auto_now_add=True)
+    decided_at     = models.DateTimeField(null=True, blank=True)
+    applied_at     = models.DateTimeField(null=True, blank=True)
+    chat_turn_ref  = models.CharField(max_length=64, blank=True, default="")
+
+    class Meta:
+        ordering = ["-proposed_at"]
+        indexes = [
+            models.Index(fields=["user", "status"]),
+            models.Index(fields=["user", "-proposed_at"]),
+        ]
+
+    def __str__(self):
+        return f"CardioMutation({self.kind} {self.status} u={self.user_id})"
+
+
 class NutritionMutation(models.Model):
     """Audit row for an AI-proposed change to the user's nutrition.
 

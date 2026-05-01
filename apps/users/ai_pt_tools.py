@@ -34,7 +34,7 @@ from django.utils import timezone
 
 from .models import SoloProfile
 from .mutation_models import (
-    MutationStatus, WorkoutMutation, NutritionMutation,
+    MutationStatus, WorkoutMutation, NutritionMutation, CardioMutation,
 )
 
 log = logging.getLogger(__name__)
@@ -152,12 +152,60 @@ TOOLS = [
                         "  swap_exercise={current_exercise_name, "
                         "new_exercise_name, day_id?, exercise_id?};\n"
                         "  change_set_scheme={current_exercise_name OR "
-                        "exercise_id, sets, reps};\n"
+                        "exercise_id, sets?, reps?, rest_seconds?};\n"
                         "  deload_week={scope: 'this_week'|'next_week'};\n"
                         "  reorder_days={new_order: [day_id,...]};\n"
                         "  remove_day={day_id};\n"
                         "  add_day=(prefer the custom-builder UI; this kind "
-                        "isn't auto-applicable yet)."
+                        "isn't auto-applicable yet).\n"
+                        "REST-ASSIGNABLE: rest_seconds is clamped 0-600s. "
+                        "Use this when the user complains about pace "
+                        "(\"I'm rushing between sets\") or wants more "
+                        "between heavy compounds."
+                    ),
+                },
+            },
+            "required": ["kind", "summary", "rationale", "payload"],
+        },
+    },
+    {
+        "name": "propose_cardio_mutation",
+        "description": (
+            "Propose a single change to the user's cardio "
+            "prescription. Same propose-then-apply pattern as "
+            "the workout / nutrition mutations. ONE call per chat "
+            "turn. Use this when the user asks about cardio, "
+            "running pace, intervals, or wants to swap modalities."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "kind": {
+                    "type": "string",
+                    "enum": [
+                        "assign_session_type",
+                        "adjust_volume",
+                        "swap_modality",
+                        "change_priority",
+                    ],
+                    "description": "Which kind of cardio change.",
+                },
+                "summary": {"type": "string"},
+                "rationale": {"type": "string"},
+                "payload": {
+                    "type": "object",
+                    "description": (
+                        "Kind-specific. Examples:\n"
+                        "  assign_session_type={"
+                        "session: 'z2'|'threshold'|'intervals'|'long', "
+                        "duration_min, frequency_per_week};\n"
+                        "  adjust_volume={"
+                        "minutes_per_week OR distance_km_per_week};\n"
+                        "  swap_modality={"
+                        "from: 'run'|'bike'|'row'|'walk'|'elliptical', "
+                        "to: same enum};\n"
+                        "  change_priority={"
+                        "priority: 'runner_first'|'lifter_first'|'balanced'}."
                     ),
                 },
             },
@@ -331,6 +379,15 @@ def dispatch_tool(
                 "is already on the user's screen.",
             ), None)
         return _tool_propose_nutrition_mutation(user, profile, tool_input, chat_turn_ref)
+
+    if tool_name == "propose_cardio_mutation":
+        if proposals_this_turn >= 1:
+            return (_refusal(
+                "multi_proposal_blocked",
+                "Only one proposal per chat turn. The previous proposal "
+                "is already on the user's screen.",
+            ), None)
+        return _tool_propose_cardio_mutation(user, profile, tool_input, chat_turn_ref)
 
     return ({"error": f"unknown_tool: {tool_name}"}, None)
 
@@ -545,6 +602,60 @@ def _tool_propose_nutrition_mutation(user, profile: SoloProfile, tool_input: dic
     )
     proposal = {
         "kind":          "nutrition",
+        "id":            mutation.id,
+        "mutation_kind": kind,
+        "summary":       summary,
+        "rationale":     rationale,
+        "payload":       payload,
+    }
+    return ({
+        "proposed":    True,
+        "proposal_id": mutation.id,
+        "kind":        kind,
+        "summary":     summary,
+    }, proposal)
+
+
+# --------------------------------------------------------------------
+# CARDIO-MUTATIONS — propose handler. Mirrors the workout +
+# nutrition propose patterns. No safety floors yet (cardio
+# safety floors are looser than nutrition; the AI's KB-driven
+# voice is the primary guardrail). Future enhancement: refuse
+# changes that conflict with the user's `goals` (e.g. proposing
+# 5+ Z2 hours/wk for a `lose_fat` user is fine; proposing 90-min
+# tempo runs for a beginner is dangerous).
+# --------------------------------------------------------------------
+
+
+def _tool_propose_cardio_mutation(user, profile: SoloProfile, tool_input: dict, chat_turn_ref: str):
+    kind      = tool_input.get("kind", "")
+    summary   = (tool_input.get("summary") or "").strip()[:200]
+    rationale = (tool_input.get("rationale") or "").strip()[:500]
+    payload   = tool_input.get("payload") or {}
+
+    valid_kinds = {k for k, _ in CardioMutation.KIND_CHOICES}
+    if kind not in valid_kinds:
+        return (_refusal("invalid_kind", f"Unknown cardio mutation kind: {kind}"), None)
+    if not summary or not rationale:
+        return (_refusal(
+            "missing_explanation",
+            "Both summary and rationale are required.",
+        ), None)
+
+    # Snapshot — for now just store an empty dict; a future revert
+    # surface can read the user's previous cardio prescription
+    # from notification_prefs once that lives somewhere stable.
+    mutation = CardioMutation.objects.create(
+        user=user,
+        kind=kind,
+        status=MutationStatus.PROPOSED,
+        original_value={},
+        new_value=payload,
+        ai_rationale=rationale,
+        chat_turn_ref=chat_turn_ref or "",
+    )
+    proposal = {
+        "kind":          "cardio",
         "id":            mutation.id,
         "mutation_kind": kind,
         "summary":       summary,

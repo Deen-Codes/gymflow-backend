@@ -63,6 +63,8 @@ class ExerciseSerializer(serializers.ModelSerializer):
             "animation_url",
             "instructions",
             "muscle_group",
+            # REST-ASSIGNABLE — per-exercise rest in seconds.
+            "rest_seconds",
         ]
 
 

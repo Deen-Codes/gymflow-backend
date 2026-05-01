@@ -535,6 +535,21 @@ def _build_user_context(user) -> str:
         lines.append(f"- Session length: ~{profile.session_minutes} min")
     if profile.avoidances:
         lines.append(f"- Avoidances: {', '.join(profile.avoidances)}")
+    # NUTRITION-AI-ONBOARDING — dietary context surfaced when set.
+    # The AI uses these to filter meal suggestions + macro framing.
+    if profile.dietary_pattern:
+        diet_label = profile.dietary_pattern
+        if profile.dietary_pattern == "other" and profile.dietary_other:
+            diet_label = profile.dietary_other
+        lines.append(f"- Dietary pattern: {diet_label}")
+    if profile.food_restrictions:
+        lines.append(f"- Food restrictions: {', '.join(profile.food_restrictions)}")
+    if profile.food_dislikes:
+        lines.append(f"- Food dislikes: {', '.join(profile.food_dislikes)}")
+    if profile.meals_per_day:
+        lines.append(f"- Meals per day: {profile.meals_per_day}")
+    if profile.cooking_comfort:
+        lines.append(f"- Cooking comfort: {profile.cooking_comfort}")
 
     # Bodyweight — current + 7-day delta + 4-week slope. Drives
     # longitudinal coaching ("you've dropped 1.6kg over 4 weeks,

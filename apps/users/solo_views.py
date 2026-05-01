@@ -148,6 +148,48 @@ def _clean_avoidances(raw):
     return cleaned
 
 
+# NUTRITION-AI-ONBOARDING — input cleaners.
+
+_VALID_DIETARY = {choice for choice, _ in SoloProfile.DIETARY_CHOICES}
+_VALID_COOKING = {choice for choice, _ in SoloProfile.COOKING_CHOICES}
+
+
+def _clean_dietary_pattern(raw):
+    if not isinstance(raw, str):
+        return ""
+    v = raw.strip().lower()
+    return v if v in _VALID_DIETARY else ""
+
+
+def _clean_dietary_other(raw):
+    if not isinstance(raw, str):
+        return ""
+    return raw.strip()[:120]
+
+
+def _clean_food_list(raw):
+    """Reused for food_restrictions + food_dislikes. Same shape
+    rules as avoidances — cap each entry, cap the list, dedup."""
+    return _clean_avoidances(raw)
+
+
+def _clean_meals_per_day(raw):
+    try:
+        n = int(raw)
+    except (TypeError, ValueError):
+        return 0
+    if n <= 0:
+        return 0
+    return max(2, min(6, n))
+
+
+def _clean_cooking_comfort(raw):
+    if not isinstance(raw, str):
+        return ""
+    v = raw.strip().lower()
+    return v if v in _VALID_COOKING else ""
+
+
 def _username_from_email(email: str) -> str:
     """Strip the @domain off, sanitise, fall back to a random suffix
     on collision."""
@@ -351,6 +393,24 @@ def solo_onboarding_update_view(request):
     if "avoidances" in data:
         profile.avoidances = _clean_avoidances(data["avoidances"])
 
+    # NUTRITION-AI-ONBOARDING — fields captured during the
+    # cinematic nutrition setup flow.
+    if "dietary_pattern" in data:
+        profile.dietary_pattern = _clean_dietary_pattern(data["dietary_pattern"])
+    if "dietary_other" in data:
+        profile.dietary_other = _clean_dietary_other(data["dietary_other"])
+    if "food_restrictions" in data:
+        profile.food_restrictions = _clean_food_list(data["food_restrictions"])
+    if "food_dislikes" in data:
+        profile.food_dislikes = _clean_food_list(data["food_dislikes"])
+    if "meals_per_day" in data:
+        profile.meals_per_day = _clean_meals_per_day(data["meals_per_day"])
+    if "cooking_comfort" in data:
+        profile.cooking_comfort = _clean_cooking_comfort(data["cooking_comfort"])
+    # Goal weight + height live on SoloProfile too (existing fields)
+    # but the iOS Profile sheet handles them. Don't duplicate the
+    # path here; iOS routes to /profile-update/ for those.
+
     profile.save()
 
     return Response(_solo_payload(profile))
@@ -447,6 +507,15 @@ def _solo_payload(profile: SoloProfile) -> dict:
         "training_days":    profile.training_days,
         "session_minutes":  profile.session_minutes,
         "avoidances":       profile.avoidances,
+        # NUTRITION-AI-ONBOARDING — same skip-pages-we-already-have
+        # logic as the workout side. iOS reads these and skips
+        # any page where the answer is set.
+        "dietary_pattern":   profile.dietary_pattern,
+        "dietary_other":     profile.dietary_other,
+        "food_restrictions": profile.food_restrictions,
+        "food_dislikes":     profile.food_dislikes,
+        "meals_per_day":     profile.meals_per_day,
+        "cooking_comfort":   profile.cooking_comfort,
         # AI-FREE-FIRST-GEN — true once the user has assigned at
         # least one AI plan. Drives the paywall framing on the
         # AI build view: free for the first, Pro AI for the rest.

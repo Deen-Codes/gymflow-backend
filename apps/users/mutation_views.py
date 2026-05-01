@@ -344,17 +344,21 @@ def _apply_swap_exercise(plan, payload: dict):
 
 
 def _apply_change_set_scheme(plan, payload: dict):
-    """Change set count and/or reps on an existing exercise.
+    """Change set count, reps, and/or rest on an existing exercise.
 
     Sets live on `ExerciseSetTarget` rows (one row per set), so
     changing the count means inserting / deleting target rows.
-    Changing reps means updating the existing rows.
+    Changing reps means updating the existing rows. REST-ASSIGNABLE
+    extends this kind to also accept `rest_seconds` in the payload —
+    the AI can propose rest changes alongside set/rep tweaks
+    without a new mutation kind.
     """
     from apps.workouts.models import ExerciseSetTarget
     ex = _find_exercise(plan, payload)
 
     new_sets = payload.get("sets")
     new_reps = payload.get("reps") or payload.get("rep_range")
+    new_rest = payload.get("rest_seconds")
 
     current_sets = list(ex.sets.all().order_by("set_number"))
     current_count = len(current_sets)
@@ -383,6 +387,13 @@ def _apply_change_set_scheme(plan, payload: dict):
         for st in current_sets:
             st.reps = str(new_reps)
             st.save(update_fields=["reps"])
+
+    # REST-ASSIGNABLE — clamp to a sane band so the AI can't
+    # propose 0s or 30min rests via free-text.
+    if new_rest is not None:
+        rest = max(0, min(600, int(new_rest)))
+        ex.rest_seconds = rest
+        ex.save(update_fields=["rest_seconds"])
 
 
 def _apply_reorder_days(plan, payload: dict):

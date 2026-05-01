@@ -263,6 +263,62 @@ class SoloProfile(models.Model):
     # this list and route around it.
     avoidances      = models.JSONField(default=list, blank=True)
 
+    # NUTRITION-AI-ONBOARDING — captured during the cinematic
+    # nutrition setup flow (parallel to AI-BUILD-ONBOARDING for
+    # workouts). Surfaces in the AI PT user context so meal
+    # suggestions respect dietary patterns, allergies, dislikes.
+    #
+    # `dietary_pattern` — single-select. None means no
+    # restriction; the rest cover the major patterns a PT would
+    # ask about. Free-text variants land in `dietary_other`.
+    DIETARY_NONE         = "none"
+    DIETARY_PESCATARIAN  = "pescatarian"
+    DIETARY_VEGETARIAN   = "vegetarian"
+    DIETARY_VEGAN        = "vegan"
+    DIETARY_HALAL        = "halal"
+    DIETARY_KOSHER       = "kosher"
+    DIETARY_OTHER        = "other"
+    DIETARY_CHOICES = [
+        (DIETARY_NONE,        "None"),
+        (DIETARY_PESCATARIAN, "Pescatarian"),
+        (DIETARY_VEGETARIAN,  "Vegetarian"),
+        (DIETARY_VEGAN,       "Vegan"),
+        (DIETARY_HALAL,       "Halal"),
+        (DIETARY_KOSHER,      "Kosher"),
+        (DIETARY_OTHER,       "Other"),
+    ]
+    dietary_pattern = models.CharField(
+        max_length=16, choices=DIETARY_CHOICES, blank=True, default="",
+    )
+    # Free-text describing the "other" pattern when dietary_pattern
+    # is "other" (e.g. "low FODMAP", "ketogenic"). Optional.
+    dietary_other     = models.CharField(max_length=120, blank=True, default="")
+    # Allergies + restrictions (multi-select + free-text). Mix of
+    # common chips ("Nuts", "Dairy", "Gluten", etc.) and user
+    # free-text. The AI PT routes around these when suggesting
+    # meals or food swaps.
+    food_restrictions = models.JSONField(default=list, blank=True)
+    # Foods the user doesn't enjoy. Separate from restrictions
+    # because "I dislike broccoli" is different from "I'm allergic
+    # to peanuts" — the AI handles them with different urgency.
+    food_dislikes     = models.JSONField(default=list, blank=True)
+    # Meals per day. 0 = unspecified; 2-6 are the valid range.
+    meals_per_day     = models.PositiveSmallIntegerField(default=0)
+    # Cooking comfort. Drives meal-suggestion complexity.
+    COOKING_LOVE         = "love"
+    COOKING_COMFORTABLE  = "comfortable"
+    COOKING_PREASSEMBLED = "preassembled"
+    COOKING_EATING_OUT   = "eating_out"
+    COOKING_CHOICES = [
+        (COOKING_LOVE,         "Love cooking"),
+        (COOKING_COMFORTABLE,  "Comfortable"),
+        (COOKING_PREASSEMBLED, "Mostly pre-assembled"),
+        (COOKING_EATING_OUT,   "Eat out a lot"),
+    ]
+    cooking_comfort = models.CharField(
+        max_length=16, choices=COOKING_CHOICES, blank=True, default="",
+    )
+
     # Phase A — working "phase" the user is currently in. Distinct
     # from `goals` (which are sacred + long-term and only change via
     # explicit Profile edits). The phase is HOW the user is moving
@@ -375,6 +431,7 @@ from .mutation_models import (  # noqa: E402  (intentional bottom-of-file import
     MutationStatus,
     WorkoutMutation,
     NutritionMutation,
+    CardioMutation,
 )
 
 
