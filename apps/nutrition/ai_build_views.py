@@ -54,6 +54,7 @@ from rest_framework.response import Response
 
 from apps.users.models import User, SoloProfile
 from apps.users.ai_caps import enforce_cap, increment
+from .deficit_math import three_variants, defensible_rationale
 
 log = logging.getLogger(__name__)
 
@@ -74,43 +75,51 @@ NUTRITION_FIRST_USED_KEY = "solo_ai_nutrition_build_used"
 
 
 SYSTEM_PROMPT = """\
-You are GymFlow's nutrition planner. Given a user's profile and
-onboarding answers, return THREE macro target variants for them
-to choose from.
+You are Marrow's nutrition coach. The user has completed their
+onboarding. We've already computed the macro numbers from
+established formulas (Mifflin-St Jeor + Helms cut depths +
+ISSN protein bands) — your job is to RETURN THOSE NUMBERS
+unchanged and write a brief, calm rationale around each.
+
+You will see ANCHOR NUMBERS in the user message. Use them
+EXACTLY for calories/protein/carbs/fats. Do not invent
+different numbers — the math is defensible only when it
+matches what we computed.
 
 Return ONLY valid JSON, no prose. Schema:
 {
   "variants": [
     {
       "id":         "cut" | "maintain" | "bulk",
-      "label":      string,    // 2-3 word coach-voice label
-      "calories":   number,
-      "protein":    number,    // grams
-      "carbs":      number,    // grams
-      "fats":       number,    // grams
-      "rationale":  string     // ONE sentence on why someone picks this
+      "label":      string,
+      "calories":   number,    // copy from ANCHOR
+      "protein":    number,    // copy from ANCHOR
+      "carbs":      number,    // copy from ANCHOR
+      "fats":       number,    // copy from ANCHOR
+      "rationale":  string     // 1 sentence, calm coach voice
     },
-    ... (exactly 3)
+    ... (exactly 3, in order cut, maintain, bulk)
   ]
 }
 
-Rules:
-- ALWAYS return three variants in the order cut, maintain, bulk.
-- Use the user's bodyweight + goals as the anchor. With no
-  bodyweight, default to 75 kg and flag in rationale.
-- Protein floor: 1.6 g/kg for general training, 2.0 g/kg if the
-  user's goal stack includes "build_muscle" or "get_stronger".
-- Calorie deltas from the AI's maintenance estimate:
-  cut = -400 to -500, maintain = 0, bulk = +250 to +350.
-- Round calories to the nearest 50, macros to the nearest 5.
-- Respect dietary_pattern (vegan, vegetarian, halal, etc.) — DO
-  NOT lower protein for plant-based users. They can hit the
-  protein floor with legumes/tofu/tempeh.
-- Voice: warm, plain English. NOT "macros optimised" — say
-  things like "Lean down ~0.5kg/week" or "Steady weight while
-  you focus on training".
-- If experience is "just_starting", lean toward maintain (don't
-  recommend an aggressive cut to a brand-new trainee).
+Rationale voice:
+- Plain English, not "macros optimised".
+- Speak to THIS user — reference their goals, dietary pattern,
+  experience level, or training frequency where it adds value.
+- 1 sentence each. <30 words.
+- No exclamation marks, no hype. Calm, confident, evidence-led.
+- For cut: explain why ~0.5–0.75 kg/week is the safe range.
+- For maintain: speak to "training quality without juggling a
+  deficit/surplus".
+- For bulk: explain why ~0.25 kg/week is sustainable.
+
+Respect dietary_pattern — DO NOT recommend lowering protein
+for plant-based users. They can hit the floor with legumes,
+tofu, tempeh, seitan, or supplemented protein.
+
+If experience is "just_starting", note it: brand-new trainees
+often benefit from "Hold steady" while they build a training
+habit.
 """
 
 
@@ -244,9 +253,39 @@ def solo_ai_nutrition_build(request):
         return Response(cap_info["error_response"], status=cap_info["status"])
 
     user_context = _build_user_context(profile)
+
+    # DEFICIT-MATH (#127) — compute the anchor numbers
+    # deterministically before the AI call. Claude returns those
+    # numbers verbatim and writes the prose around them.
+    dob = profile.user.date_of_birth
+    age_years = None
+    if dob is not None:
+        age_years = (timezone.localdate() - dob).days // 365
+    inputs = {
+        "weight_kg":     profile.bodyweight_kg,
+        "height_cm":     profile.height_cm,
+        "age_years":     age_years,
+        "sex":           (profile.sex_at_birth or profile.gender or None),
+        "goals":         profile.goals or [],
+        "experience":    profile.experience or "",
+        "days_per_week": profile.days_per_week or 3,
+    }
+    anchors = three_variants(inputs)
+    anchors_block = "\n".join(
+        f"- {a['id']}: calories={a['calories']}, protein={a['protein']}g, "
+        f"carbs={a['carbs']}g, fats={a['fats']}g"
+        for a in anchors
+    )
+
     user_message = (
-        "Generate three macro target variants for me. My profile:\n\n"
-        f"{user_context}"
+        "Generate three macro target variants for me.\n\n"
+        f"USER PROFILE:\n{user_context}\n"
+        "ANCHOR NUMBERS (use these EXACTLY for each variant — do not "
+        "compute different ones):\n"
+        f"{anchors_block}\n\n"
+        "Return all three variants in the schema specified by the "
+        "system prompt, with rationale prose written around these "
+        "anchor numbers."
     )
 
     body = {
@@ -311,6 +350,26 @@ def solo_ai_nutrition_build(request):
     # output order.
     order = {"cut": 0, "maintain": 1, "bulk": 2}
     variants.sort(key=lambda v: order.get(v["id"], 99))
+
+    # DEFICIT-MATH guard — the AI is *supposed* to copy the
+    # anchor numbers verbatim, but if it ever drifts (Claude
+    # rounds creatively, returns 1990 instead of 2000, etc.) we
+    # overwrite from the anchors. The math is the source of
+    # truth; the AI provides voice. Defense in depth.
+    anchor_by_id = {a["id"]: a for a in anchors}
+    for v in variants:
+        anchor = anchor_by_id.get(v["id"])
+        if anchor is None:
+            continue
+        v["calories"] = anchor["calories"]
+        v["protein"]  = anchor["protein"]
+        v["carbs"]    = anchor["carbs"]
+        v["fats"]     = anchor["fats"]
+        # Keep the AI's rationale + label — that's the value-add.
+        # If the AI returned no rationale, fall back to the
+        # deterministic one from defensible_rationale.
+        if not v.get("rationale"):
+            v["rationale"] = defensible_rationale(v["id"], inputs, anchor)
 
     # Mark the free-first slot used + bump the cap counter ONLY
     # after a successful parse, so a failed Anthropic call doesn't
