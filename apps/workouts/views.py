@@ -244,6 +244,7 @@ def create_workout_session(request):
         completed_at=timezone.now(),
         duration=validated.get("duration", 0),
         is_complete=validated.get("is_complete", True),
+        notes=(validated.get("notes") or "").strip(),
     )
 
     for exercise_data in validated["exercises"]:
@@ -294,3 +295,31 @@ def create_workout_session(request):
     # can reveal them in the same response — no extra round-trip.
     payload["newly_earned_trophies"] = newly_earned
     return Response(payload, status=status.HTTP_201_CREATED)
+
+
+# WORKOUT-NOTES-POSTSESSION — PATCH endpoint that updates the
+# free-text "anything else?" note on an existing session. Used
+# by the post-cinematic prompt: the session is created on
+# Finish (notes empty), the celebration plays, and on Done
+# the iOS client PATCHes notes here. Skip → no PATCH at all.
+@api_view(["PATCH"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def update_workout_session_notes(request, session_id):
+    """PATCH /api/workouts/sessions/<int:session_id>/notes/"""
+    user = request.user
+    session_obj = get_object_or_404(
+        WorkoutSession, id=session_id, user=user,
+    )
+    notes = request.data.get("notes", "")
+    if not isinstance(notes, str):
+        return Response(
+            {"detail": "notes must be a string."},
+            status=status.HTTP_400_BAD_REQUEST,
+        )
+    session_obj.notes = notes.strip()[:2000]
+    session_obj.save(update_fields=["notes"])
+    return Response(
+        {"id": session_obj.id, "notes": session_obj.notes},
+        status=status.HTTP_200_OK,
+    )

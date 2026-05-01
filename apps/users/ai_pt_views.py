@@ -634,6 +634,20 @@ def _build_user_context(user) -> str:
             title = s.workout_day.title if s.workout_day_id else "?"
             lines.append(f"    {d}: {title}")
 
+        # WORKOUT-NOTES-POSTSESSION — surface the most recent
+        # non-empty session note so the model can reference what
+        # the user said last time ("you mentioned your knee was
+        # bothering you on Tuesday — how is it today?").
+        last_note = next(
+            (s for s in recent if (s.notes or "").strip()), None,
+        )
+        if last_note is not None:
+            note_text = last_note.notes.strip().replace("\n", " ")
+            if len(note_text) > 200:
+                note_text = note_text[:197] + "..."
+            d = last_note.completed_at.strftime("%b %d") if last_note.completed_at else "?"
+            lines.append(f"- Last session note ({d}): {note_text}")
+
     # Last 7 days of food log totals + today's CURRENT remaining
     # macros so the AI can reason about "what can I fit" questions
     # without asking the user to repeat themselves (FIX-7-C).

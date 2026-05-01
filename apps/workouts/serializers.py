@@ -124,6 +124,7 @@ class WorkoutSessionSerializer(serializers.ModelSerializer):
             "workout_day",
             "completed_at",
             "duration",
+            "notes",
             "exercise_sessions",
         ]
 
@@ -147,4 +148,9 @@ class WorkoutSessionCreateSerializer(serializers.Serializer):
     workout_day_id = serializers.IntegerField()
     duration = serializers.IntegerField(default=0)
     is_complete = serializers.BooleanField(default=True)
+    # Optional "anything else?" note captured after the
+    # cinematic celebration. Skipped → empty string.
+    notes = serializers.CharField(
+        required=False, allow_blank=True, default="", max_length=2000,
+    )
     exercises = ExerciseSessionInputSerializer(many=True)

@@ -111,6 +111,11 @@ class WorkoutSession(models.Model):
     completed_at = models.DateTimeField(auto_now_add=True)
     duration = models.IntegerField(default=0)
     is_complete = models.BooleanField(default=True)
+    # Optional free-text "anything else?" note written from the
+    # post-cinematic prompt. Surfaces back to the AI PT in
+    # _build_user_context as "Last session note: ...". Defaults
+    # to empty so older clients keep working.
+    notes = models.TextField(blank=True, default="")
 
     def __str__(self):
         return f"{self.user} - {self.workout_day}"
