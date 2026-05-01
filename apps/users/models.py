@@ -230,6 +230,37 @@ class SoloProfile(models.Model):
     target_fats     = models.PositiveSmallIntegerField(default=70)   # grams
     bodyweight_kg   = models.FloatField(null=True, blank=True)
 
+    # Phase A — goal weight. Optional; the user sets it from the
+    # Profile → Personal Details sheet (or by replying in chat —
+    # the AI surfaces a Profile shortcut). The AI PT context block
+    # always includes (current_kg, goal_kg, delta_to_goal) when both
+    # are known so the model can frame progress against the target,
+    # not in absolute kg ("you're 1.6 kg from goal" beats "you've
+    # lost 1.6 kg" for motivation framing — Locke & Latham 1990,
+    # specific + measurable goals drive adherence).
+    goal_weight_kg  = models.FloatField(null=True, blank=True)
+
+    # Phase A — working "phase" the user is currently in. Distinct
+    # from `goals` (which are sacred + long-term and only change via
+    # explicit Profile edits). The phase is HOW the user is moving
+    # toward the goal right now: actively cutting / holding /
+    # bulking. The AI PT proposes phase transitions when the data
+    # supports them ("you've held this weight for 3 weeks, want to
+    # ease out of the cut?") via the `change_goal_phase` mutation.
+    PHASE_CUT         = "cut"
+    PHASE_MAINTENANCE = "maintenance"
+    PHASE_BULK        = "bulk"
+    PHASE_CHOICES = [
+        (PHASE_CUT,         "Cut"),
+        (PHASE_MAINTENANCE, "Maintenance"),
+        (PHASE_BULK,        "Bulk"),
+    ]
+    phase = models.CharField(
+        max_length=12, choices=PHASE_CHOICES,
+        default=PHASE_MAINTENANCE,
+    )
+    phase_started_at = models.DateTimeField(null=True, blank=True)
+
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -308,6 +339,20 @@ class SoloProfile(models.Model):
 # grows audience targeting, scheduling, or rich-text bodies, split
 # into a dedicated `apps.cms` app.
 # ----------------------------------------------------------------------
+
+
+# ----------------------------------------------------------------------
+# Phase A — AI mutation audit trail. Models live in `mutation_models.py`
+# so the import surface for `apps.users.models` stays focussed. Re-
+# exported here so existing `from .models import ...` patterns keep
+# working without touching dozens of call sites.
+# ----------------------------------------------------------------------
+
+from .mutation_models import (  # noqa: E402  (intentional bottom-of-file import)
+    MutationStatus,
+    WorkoutMutation,
+    NutritionMutation,
+)
 
 
 class Changelog(models.Model):

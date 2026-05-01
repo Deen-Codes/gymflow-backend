@@ -49,6 +49,7 @@ from rest_framework.response import Response
 
 from .models import User, SoloProfile
 from .ai_caps import enforce_cap, increment
+from .ai_pt_tools import TOOLS, dispatch_tool
 
 log = logging.getLogger(__name__)
 
@@ -58,8 +59,13 @@ ANTHROPIC_MODEL   = "claude-sonnet-4-6"
 ANTHROPIC_URL     = "https://api.anthropic.com/v1/messages"
 
 DAILY_MESSAGE_LIMIT = 100   # per decision 2.5 — raised from 60
-MAX_OUTPUT_TOKENS   = 600
+MAX_OUTPUT_TOKENS   = 800   # bumped 600 → 800 to fit tool reasoning
 MAX_HISTORY_TURNS   = 12   # client should also clip; we hard-cap
+
+# Phase A — agentic loop bound. After this many tool-use rounds we
+# force a final text-only completion. Anthropic's tool loops can in
+# theory bounce indefinitely; this is the safety net.
+MAX_TOOL_ROUNDS     = 4
 
 
 SYSTEM_TEMPLATE = """\
@@ -361,6 +367,75 @@ Hard rules:
 - Never claim to be human. If they ask "are you real?" say you're
   GymFlow's AI coach.
 
+Longitudinal coaching.
+The USER CONTEXT block carries the user's bodyweight history (7-day
+delta, 4-week slope) plus phase + goal weight whenever those are
+set. Use them. When the user opens chat after a few weeks of
+training, your first reference point should be what's changed since
+last time — not just the question they asked. Be factual, not
+hype-y.
+- "You're down 1.6 kg over the last 4 weeks — right in the 0.5-1%
+  bodyweight/week safe band. Want to keep this pace or ease into
+  maintenance?" beats "Great progress!".
+- "Weight has held within 0.4 kg for three weeks — that's a clean
+  maintenance hold. If you're happy here, we keep it. If you want
+  to push toward 75 kg, I'd nudge calories down by 200/day."
+- If the user is on a cut and progress has stalled for 2+ weeks at
+  good adherence, propose a small calorie cut (-150-250 kcal) via
+  `propose_nutrition_mutation`. Don't volunteer aggressive changes.
+- If the user has hit their goal weight (within ±0.5 kg), proactively
+  ask if they want to shift to maintenance phase. Maintenance is a
+  legitimate destination — don't push them to keep cutting.
+- If the user explicitly says they're happy where they are, accept
+  it. Switch into maintenance mode — focus on consistency, recovery,
+  and skill, not chasing more loss/gain.
+
+The user's stated `goals` (build_muscle, lose_fat, etc.) are sacred.
+The user changes them via Profile, not chat. Your `phase` proposals
+must stay coherent with their goals — you can suggest cut → maint
+when the user is on a fat-loss goal and at goal weight, but you
+can't suggest bulk while goal=lose_fat.
+
+Tool use — when to call which tool, and how often.
+
+Five tools available. Three are READ-ONLY (you can call them as
+needed):
+- `get_active_programme_detail` — full plan structure when the user
+  asks programme-design questions about THEIR plan.
+- `get_recent_sessions` — exercises + RPE + sets from the last
+  N completed sessions.
+- `get_macro_history` — last 14 days of food log totals + macro
+  averages.
+
+Two are PROPOSAL tools (you write through them, but only ONE per
+chat turn):
+- `propose_workout_mutation` — swap an exercise, change a set
+  scheme, deload, reorder days, add/remove a day.
+- `propose_nutrition_mutation` — adjust macros, swap food
+  preferences, change meal frequency, change goal phase.
+
+Rules:
+- Propose only ONE mutation per chat turn. Multiple at once
+  fragments the user's attention and hurts accept rate.
+- Always include a calm, specific `rationale` explaining the
+  trade-off ("swapping rows for cable rows — same horizontal-
+  pull pattern, easier on the lower back, you'll keep the
+  same hypertrophy stimulus"). The rationale appears verbatim
+  on the proposal card the user sees.
+- The user clicks Apply or Don't Apply on their device. You
+  don't apply directly. Don't tell the user to "go to settings
+  to confirm" — the proposal card has the buttons.
+- If a `propose_*` tool returns `refused: true` (e.g.
+  `protein_floor_breach`), own it in chat and propose a smaller
+  adjustment that stays inside the safety floor. Never ask the
+  user to override safety rails.
+- For information requests, use the read-only tools rather than
+  guessing. If the user asks "how was my last leg day", call
+  `get_recent_sessions` rather than imagining one.
+- Don't call tools just to look busy. If the user asks "how
+  much protein per kg should I eat?", you have the answer in
+  the KB — answer directly.
+
 USER CONTEXT:
 {context}
 """
@@ -385,14 +460,57 @@ def _build_user_context(user) -> str:
     lines.append(f"- Equipment: {profile.equipment or 'unspecified'}")
     lines.append(f"- Target days/week: {profile.days_per_week}")
 
-    # Bodyweight (most recent)
-    latest_bw = (
-        SoloBodyweightLog.objects.filter(user=user).order_by("-logged_on").first()
+    # Bodyweight — current + 7-day delta + 4-week slope. Drives
+    # longitudinal coaching ("you've dropped 1.6kg over 4 weeks,
+    # right in the safe band — want to keep pace or ease into
+    # maintenance?"). All weight references in chat get framed
+    # against `goal_weight_kg` when set (Locke & Latham 1990 —
+    # specific + measurable goals drive adherence).
+    bw_logs = list(
+        SoloBodyweightLog.objects.filter(user=user)
+        .order_by("-logged_on")[:30]   # cap the read
     )
-    if latest_bw:
-        lines.append(f"- Bodyweight: {latest_bw.kg:.1f}kg (logged {latest_bw.logged_on.isoformat()})")
-    elif profile.bodyweight_kg:
-        lines.append(f"- Bodyweight: {profile.bodyweight_kg:.1f}kg (estimated)")
+    current_kg = bw_logs[0].kg if bw_logs else (profile.bodyweight_kg or None)
+    if current_kg is not None:
+        lines.append(f"- Current bodyweight: {current_kg:.1f}kg")
+        # 7-day delta — if a log within ~10 days exists, surface
+        # the change. Generous window so a missed week doesn't
+        # nuke the signal.
+        cutoff_7d = timezone.localdate() - timedelta(days=10)
+        seven_d_anchor = next(
+            (b for b in bw_logs if b.logged_on <= cutoff_7d), None,
+        )
+        if seven_d_anchor:
+            delta = current_kg - seven_d_anchor.kg
+            lines.append(f"- 7-day weight delta: {delta:+.1f}kg")
+        # 4-week slope — average of points within last 28 days.
+        cutoff_28d = timezone.localdate() - timedelta(days=28)
+        recent_bw = [b for b in bw_logs if b.logged_on >= cutoff_28d]
+        if len(recent_bw) >= 2:
+            oldest = recent_bw[-1]
+            newest = recent_bw[0]
+            span_days = max(
+                (newest.logged_on - oldest.logged_on).days, 1,
+            )
+            slope_per_week = (newest.kg - oldest.kg) / span_days * 7
+            lines.append(f"- 4-week slope: {slope_per_week:+.2f}kg/wk")
+    if profile.goal_weight_kg is not None:
+        lines.append(f"- Goal weight: {profile.goal_weight_kg:.1f}kg")
+        if current_kg is not None:
+            to_goal = profile.goal_weight_kg - current_kg
+            lines.append(f"- To goal: {to_goal:+.1f}kg")
+
+    # Phase awareness — distinct from goals. Goals = sacred,
+    # long-term ('lose_fat'). Phase = how the user is moving
+    # toward them right now ('cut'/'maintenance'/'bulk'). The AI
+    # proposes phase transitions when the data supports them; the
+    # user's stated goals never mutate from chat.
+    lines.append(f"- Current phase: {profile.phase}")
+    if profile.phase_started_at:
+        weeks_in_phase = max(
+            int((timezone.now() - profile.phase_started_at).days / 7), 0,
+        )
+        lines.append(f"- Weeks in phase: {weeks_in_phase}")
 
     # Macro targets
     lines.append(
@@ -526,40 +644,54 @@ def solo_ai_pt_chat(request):
     context = _build_user_context(user)
     system = SYSTEM_TEMPLATE.format(context=context)
 
-    body = {
-        "model": ANTHROPIC_MODEL,
-        "max_tokens": MAX_OUTPUT_TOKENS,
-        "system": system,
-        "messages": cleaned,
-    }
+    # Phase A — chat_turn_ref ties the proposals created during this
+    # turn to the user's chat session, useful for analytics and for
+    # iOS to associate proposals with the right turn locally.
+    chat_turn_ref = request.data.get("chat_turn_ref") or ""
+
+    # The conversation messages get mutated as we loop — start with
+    # the cleaned list and append assistant + tool_result blocks
+    # round by round. Anthropic expects content blocks (not strings)
+    # for assistant turns that include tool_use; we pass through
+    # what they sent us each round.
+    conversation = list(cleaned)
+
+    # Events we'll surface back to iOS in order. iOS renders these
+    # as a stream of text bubbles + tool-use pills + proposal cards.
+    events: list[dict] = []
+    proposals_this_turn = 0
 
     import requests
-    try:
-        resp = requests.post(
+
+    def call_anthropic(messages_for_api: list):
+        """One round-trip to Anthropic. Returns the parsed JSON body
+        on success; raises an exception on transport-layer failure.
+        Status checks happen at the call site so we can surface a
+        useful 502 reason."""
+        body = {
+            "model":      ANTHROPIC_MODEL,
+            "max_tokens": MAX_OUTPUT_TOKENS,
+            "system":     system,
+            "tools":      TOOLS,
+            "messages":   messages_for_api,
+        }
+        return requests.post(
             ANTHROPIC_URL,
             json=body,
             headers={
-                "x-api-key": ANTHROPIC_API_KEY,
+                "x-api-key":         ANTHROPIC_API_KEY,
                 "anthropic-version": "2023-06-01",
-                "content-type": "application/json",
+                "content-type":      "application/json",
             },
-            # R6-1 — bumped 30s → 70s. Chat replies are shorter
-            # than the build endpoint's structured output but cold
-            # connections + queue waits can still push past 30s.
+            # R6-1 — bumped 30s → 70s. Per-round timeout, not whole-loop;
+            # the agentic loop can take ~3 rounds × 70s in the
+            # worst case before we give up via MAX_TOOL_ROUNDS.
             timeout=70.0,
         )
-    except requests.exceptions.Timeout:
-        log.error("AI PT timed out talking to Anthropic")
-        return Response({"detail": "AI provider took too long to respond. Please try again."}, status=504)
-    except Exception as exc:
-        log.exception("AI PT request failed")
-        return Response({"detail": f"AI provider unreachable: {exc}"}, status=503)
 
-    if resp.status_code != 200:
+    def map_provider_error(resp):
+        """Translate Anthropic non-200s into a useful Response object."""
         log.error("AI PT non-200: %s %s", resp.status_code, resp.text[:300])
-        # Surface a useful reason instead of a generic 502 so iOS
-        # (and Deen's debugging) can see whether it's a billing
-        # issue, a bad key, a rate-limit, or an Anthropic outage.
         try:
             err = (resp.json().get("error") or {})
             err_msg = err.get("message") or "AI provider returned an error."
@@ -573,23 +705,140 @@ def solo_ai_pt_chat(request):
             return Response({"detail": "AI provider rate-limited the request. Try again in a minute."}, status=502)
         return Response({"detail": f"AI provider {resp.status_code}: {err_msg[:160]}"}, status=502)
 
-    try:
-        payload = resp.json()
-        content = payload.get("content") or []
-        text_block = next((c for c in content if c.get("type") == "text"), None)
-        reply = text_block["text"] if text_block else ""
-    except Exception:
-        log.exception("AI PT parse failed")
-        return Response({"detail": "Couldn't parse AI response."}, status=502)
+    # ----------------------------------------------------------------
+    # Agentic loop. Each round:
+    #   1. Call Anthropic with the running conversation.
+    #   2. If response has tool_use blocks → execute each, append
+    #      tool_result blocks, log events, continue.
+    #   3. If response is text-only (or hit MAX_TOOL_ROUNDS) → log
+    #      the text event, exit.
+    # ----------------------------------------------------------------
+    final_reply_text = ""
 
-    # R7-1 — bump the monthly counter only AFTER a successful
-    # parse, so a failed Anthropic call doesn't burn a slot.
+    for round_index in range(MAX_TOOL_ROUNDS + 1):
+        try:
+            resp = call_anthropic(conversation)
+        except requests.exceptions.Timeout:
+            log.error("AI PT timed out talking to Anthropic (round=%d)", round_index)
+            return Response({"detail": "AI provider took too long to respond. Please try again."}, status=504)
+        except Exception as exc:
+            log.exception("AI PT request failed (round=%d)", round_index)
+            return Response({"detail": f"AI provider unreachable: {exc}"}, status=503)
+
+        if resp.status_code != 200:
+            return map_provider_error(resp)
+
+        try:
+            payload = resp.json()
+        except Exception:
+            log.exception("AI PT parse failed")
+            return Response({"detail": "Couldn't parse AI response."}, status=502)
+
+        content_blocks = payload.get("content") or []
+        stop_reason    = payload.get("stop_reason") or ""
+
+        # Append the assistant's full content (text + tool_use blocks)
+        # to the conversation so the next round sees what was said.
+        # Anthropic requires the full content array, not just the text.
+        conversation.append({"role": "assistant", "content": content_blocks})
+
+        # Extract any text the assistant produced in this round —
+        # we surface it in the events stream regardless of whether
+        # tool_use blocks also appeared.
+        for block in content_blocks:
+            if block.get("type") == "text" and block.get("text"):
+                events.append({"type": "text", "text": block["text"]})
+                # Last text segment becomes the final reply for the
+                # legacy `reply` field. iOS prefers the events array
+                # but we keep `reply` populated for back-compat.
+                final_reply_text = block["text"]
+
+        tool_use_blocks = [b for b in content_blocks if b.get("type") == "tool_use"]
+
+        # Done — model's wrapping up.
+        if not tool_use_blocks or stop_reason == "end_turn":
+            break
+
+        # Force-stop if we've burned the round budget. We append a
+        # single tool_result for each pending tool_use saying
+        # "we're stopping" and let the model produce a final text
+        # next round (the loop bound +1 leaves room for that).
+        if round_index == MAX_TOOL_ROUNDS:
+            log.warning(
+                "AI PT hit MAX_TOOL_ROUNDS — forcing text completion (user_id=%s)",
+                user.id,
+            )
+            stop_results = []
+            for tu in tool_use_blocks:
+                stop_results.append({
+                    "type":        "tool_result",
+                    "tool_use_id": tu.get("id"),
+                    "content":     json.dumps({
+                        "error": "round_budget_exhausted",
+                        "detail": "Reply directly without further tool calls.",
+                    }),
+                })
+            conversation.append({"role": "user", "content": stop_results})
+            continue
+
+        # Dispatch each tool_use, build tool_result blocks, append
+        # to the conversation. Surface running + result events so
+        # iOS can render the pill + collapse-to-result animation.
+        tool_results = []
+        for tu in tool_use_blocks:
+            tool_id   = tu.get("id")
+            tool_name = tu.get("name") or ""
+            tool_input = tu.get("input") or {}
+
+            events.append({
+                "type":         "tool_use",
+                "tool_use_id":  tool_id,
+                "tool_name":    tool_name,
+                "input":        tool_input,
+            })
+
+            try:
+                result_data, proposal = dispatch_tool(
+                    user, tool_name, tool_input,
+                    chat_turn_ref=chat_turn_ref,
+                    proposals_this_turn=proposals_this_turn,
+                )
+            except Exception as exc:
+                log.exception("AI PT tool dispatch failed: %s", tool_name)
+                result_data = {"error": "tool_failed", "detail": str(exc)[:200]}
+                proposal = None
+
+            if proposal is not None:
+                proposals_this_turn += 1
+                events.append({"type": "proposal", "proposal": proposal})
+
+            events.append({
+                "type":         "tool_result",
+                "tool_use_id":  tool_id,
+                "tool_name":    tool_name,
+                "result":       result_data,
+            })
+
+            tool_results.append({
+                "type":        "tool_result",
+                "tool_use_id": tool_id,
+                "content":     json.dumps(result_data),
+            })
+
+        # tool_results travel back to Anthropic as a "user" turn
+        # per their tool-use protocol.
+        conversation.append({"role": "user", "content": tool_results})
+
+    # R7-1 — bump the monthly counter only after we've produced a
+    # final response (success path). Tool calls inside one chat turn
+    # don't burn extra slots — the user paid for one turn.
     new_remaining = increment(user, "chat")
 
     return Response({
-        "reply":           reply.strip(),
-        # Kept the field name for iOS-side back-compat. Now monthly,
-        # not daily — iOS displays "X of Y this month".
+        # New canonical field — iOS renders this directly.
+        "events":          events,
+        # Back-compat for any iOS build still on the old surface.
+        "reply":           final_reply_text.strip(),
         "remaining_today": new_remaining,
         "remaining_month": new_remaining,
     })

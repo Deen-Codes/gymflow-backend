@@ -22,6 +22,7 @@ from .solo_views import (
 )
 from .ai_pt_views import solo_ai_pt_chat
 from .ai_build_views import solo_ai_build_preview, solo_ai_build_assign
+from .mutation_views import mutation_apply, mutation_decline
 from .ai_diag_views import ai_diag
 from .debug_views import solo_debug_set_state, solo_debug_factory_reset
 from .coach_code_views import coach_code_redeem
@@ -62,6 +63,20 @@ urlpatterns = [
     path("solo/convert/",    solo_convert_view,            name="solo-convert"),
     # E.2 — AI PT chat (Pro AI gated)
     path("solo/ai-pt/chat/", solo_ai_pt_chat,              name="solo-ai-pt-chat"),
+
+    # Phase A — AI mutation apply / decline endpoints. Hit by the
+    # iOS proposal-card buttons. ?type=workout|nutrition picks
+    # which mutation table.
+    path(
+        "solo/ai-pt/mutations/<int:mutation_id>/apply/",
+        mutation_apply,
+        name="solo-ai-pt-mutation-apply",
+    ),
+    path(
+        "solo/ai-pt/mutations/<int:mutation_id>/decline/",
+        mutation_decline,
+        name="solo-ai-pt-mutation-decline",
+    ),
 
     # R3-1 — AI build programme: preview is one-shot for Free
     # users; assign is Pro-AI gated.
