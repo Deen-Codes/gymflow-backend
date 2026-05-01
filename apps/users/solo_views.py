@@ -414,15 +414,19 @@ def solo_me_view(request):
         })
 
     profile, _ = SoloProfile.objects.get_or_create(user=user)
-    payload = _solo_payload(profile)
-    payload["is_solo"] = True
-    return Response(payload)
+    # _solo_payload already includes "is_solo": True for this branch.
+    return Response(_solo_payload(profile))
 
 
 def _solo_payload(profile: SoloProfile) -> dict:
     """Shared serialisation shape used by `solo_me_view` +
-    `solo_onboarding_update_view`."""
+    `solo_onboarding_update_view`. ALWAYS includes `is_solo: True`
+    because this helper only runs for SOLO accounts — the non-
+    solo branch in `solo_me_view` builds its own dict. iOS's
+    `SoloMeResponse.isSolo` is non-optional, so the PATCH-response
+    decode would barf without this key."""
     return {
+        "is_solo":          True,
         "tier":             profile.tier,
         "has_ai_access":    profile.has_ai_access,
         "has_pro_access":   profile.has_pro_access,
