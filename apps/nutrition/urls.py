@@ -13,6 +13,7 @@ from .solo_views import (
     solo_macro_targets_update,
 )
 from .ai_describe_views import solo_ai_describe_food
+from .ai_build_views import solo_ai_nutrition_build
 
 urlpatterns = [
     path("me/today/",        nutrition_today_for_me, name="me-nutrition-today"),
@@ -37,4 +38,10 @@ urlpatterns = [
 
     # N.1.2 — AI describe (Pro AI gated)
     path("solo/ai-describe/",            solo_ai_describe_food,          name="solo-ai-describe"),
+
+    # NUTRITION-3-OPTIONS — three-variant macro plan generator.
+    # First call free per user (AI-FREE-FIRST-GEN); subsequent
+    # require Pro AI. Returns cut/maintain/bulk variants Claude
+    # produces from the user's onboarding context.
+    path("solo/ai-build/",               solo_ai_nutrition_build,        name="solo-ai-nutrition-build"),
 ]
