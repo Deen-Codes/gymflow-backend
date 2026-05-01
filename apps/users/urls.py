@@ -23,7 +23,7 @@ from .solo_views import (
 from .ai_pt_views import solo_ai_pt_chat
 from .ai_build_views import solo_ai_build_preview, solo_ai_build_assign
 from .ai_diag_views import ai_diag
-from .debug_views import solo_debug_set_state
+from .debug_views import solo_debug_set_state, solo_debug_factory_reset
 from .coach_code_views import coach_code_redeem
 from .push_views import register_apns_token, deregister_apns_token
 from .iap_views import solo_iap_verify, solo_iap_webhook
@@ -79,6 +79,16 @@ urlpatterns = [
     # ENABLE_DEBUG_RESET=1. Authenticated; users can only mutate
     # their own row. iOS Profile screen's debug panel calls this.
     path("_debug/set-state/", solo_debug_set_state, name="solo-debug-set-state"),
+
+    # RESET-FRESH — true factory restart. Wipes the user's training
+    # history end-to-end (assigned plan, completed sessions, food
+    # logs, bodyweight, AI caches) and resets SoloProfile onboarding
+    # answers + macro targets to defaults. Same DEBUG-only gating.
+    path(
+        "_debug/factory-reset/",
+        solo_debug_factory_reset,
+        name="solo-debug-factory-reset",
+    ),
 
     # R3-7 — Coach code redemption (no auth; trainer-side
     # generator endpoints live in dashboard_urls.py).
