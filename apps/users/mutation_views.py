@@ -292,61 +292,113 @@ class _SafetyBreach(Exception):
     """Raised inside an appliers fn to signal a 422 to the caller."""
 
 
-def _apply_swap_exercise(plan, payload: dict):
-    from apps.workouts.models import Exercise, WorkoutDayExercise
-    day_id   = payload.get("day_id")
-    ex_id    = payload.get("exercise_id")
-    new_name = (payload.get("new_exercise_name") or "").strip()
-    if not (day_id and ex_id and new_name):
-        raise _SafetyBreach("swap_exercise needs day_id, exercise_id, new_exercise_name.")
-    try:
-        wde = WorkoutDayExercise.objects.get(
-            id=ex_id, workout_day__plan=plan, workout_day__id=day_id,
+def _find_exercise(plan, payload: dict):
+    """Locate the Exercise row to mutate. Tolerant of partial payloads:
+       1. exercise_id (preferred — set when AI called get_active_programme_detail).
+       2. day_id + current_exercise_name (case-insensitive name match).
+       3. current_exercise_name across the whole plan (fallback).
+    Raises _SafetyBreach if nothing matches.
+    """
+    from apps.workouts.models import Exercise
+    ex_id        = payload.get("exercise_id")
+    day_id       = payload.get("day_id")
+    current_name = (payload.get("current_exercise_name") or "").strip()
+
+    if ex_id:
+        try:
+            return Exercise.objects.get(id=ex_id, workout_day__plan=plan)
+        except Exercise.DoesNotExist:
+            pass  # fall through to name match
+
+    if not current_name:
+        raise _SafetyBreach(
+            "Couldn't find the exercise to swap. Need exercise_id or "
+            "current_exercise_name in the proposal payload.",
         )
-    except WorkoutDayExercise.DoesNotExist:
-        raise _SafetyBreach("Exercise not found on this plan/day.")
-    # Try matching an existing Exercise by name first; fall back to
-    # the free-form `name` field.
-    try:
-        ex = Exercise.objects.filter(name__iexact=new_name).first()
-    except Exception:
-        ex = None
-    if ex is not None:
-        wde.exercise = ex
-    wde.name = new_name  # mirror so list views show the new name
-    wde.save(update_fields=["exercise", "name"])
+
+    qs = Exercise.objects.filter(workout_day__plan=plan, name__iexact=current_name)
+    if day_id:
+        qs = qs.filter(workout_day__id=day_id)
+    ex = qs.first()
+    if ex is None:
+        raise _SafetyBreach(
+            f"No exercise named '{current_name}' on this plan."
+            + (f" (day_id={day_id})" if day_id else ""),
+        )
+    return ex
+
+
+def _apply_swap_exercise(plan, payload: dict):
+    """Swap one exercise for another. We don't have a separate
+    Exercise-catalog FK on the Exercise row in this schema (the
+    name string IS the source of truth), so swapping = renaming.
+    Sets + reps carry over unchanged unless the caller also supplied
+    them in the payload.
+    """
+    new_name = (payload.get("new_exercise_name") or "").strip()
+    if not new_name:
+        raise _SafetyBreach("swap_exercise needs new_exercise_name.")
+    ex = _find_exercise(plan, payload)
+    ex.name = new_name
+    ex.save(update_fields=["name"])
 
 
 def _apply_change_set_scheme(plan, payload: dict):
-    from apps.workouts.models import WorkoutDayExercise
-    ex_id = payload.get("exercise_id")
+    """Change set count and/or reps on an existing exercise.
+
+    Sets live on `ExerciseSetTarget` rows (one row per set), so
+    changing the count means inserting / deleting target rows.
+    Changing reps means updating the existing rows.
+    """
+    from apps.workouts.models import ExerciseSetTarget
+    ex = _find_exercise(plan, payload)
+
     new_sets = payload.get("sets")
-    new_reps = payload.get("rep_range") or payload.get("reps")
-    if not ex_id or new_sets is None:
-        raise _SafetyBreach("change_set_scheme needs exercise_id + sets.")
-    try:
-        wde = WorkoutDayExercise.objects.get(
-            id=ex_id, workout_day__plan=plan,
-        )
-    except WorkoutDayExercise.DoesNotExist:
-        raise _SafetyBreach("Exercise not found on this plan.")
-    wde.sets = int(new_sets)
+    new_reps = payload.get("reps") or payload.get("rep_range")
+
+    current_sets = list(ex.sets.all().order_by("set_number"))
+    current_count = len(current_sets)
+
+    if new_sets is not None:
+        target = max(1, int(new_sets))
+        if target > current_count:
+            # Add rows. New rows inherit reps from the last existing
+            # row (or "8" as a fallback if the exercise has no sets
+            # at all — shouldn't happen).
+            template_reps = current_sets[-1].reps if current_sets else "8"
+            for n in range(current_count, target):
+                ExerciseSetTarget.objects.create(
+                    exercise=ex,
+                    set_number=n + 1,
+                    reps=template_reps,
+                )
+        elif target < current_count:
+            # Drop the trailing rows.
+            for st in current_sets[target:]:
+                st.delete()
+        # Refresh the list since we just mutated it.
+        current_sets = list(ex.sets.all().order_by("set_number"))
+
     if new_reps is not None:
-        wde.reps = str(new_reps)
-    wde.save(update_fields=["sets", "reps"])
+        for st in current_sets:
+            st.reps = str(new_reps)
+            st.save(update_fields=["reps"])
 
 
 def _apply_reorder_days(plan, payload: dict):
+    """Re-sequence the user's training days. Field is `order` on
+    WorkoutDay, not `order_index`.
+    """
     new_order = payload.get("new_order") or []
     if not isinstance(new_order, list) or not new_order:
-        raise _SafetyBreach("reorder_days needs new_order list.")
+        raise _SafetyBreach("reorder_days needs a non-empty new_order list.")
     days = {d.id: d for d in plan.days.all()}
     if set(new_order) != set(days.keys()):
         raise _SafetyBreach("new_order must reference exactly the existing day IDs.")
     for index, day_id in enumerate(new_order):
         d = days[day_id]
-        d.order_index = index
-        d.save(update_fields=["order_index"])
+        d.order = index
+        d.save(update_fields=["order"])
 
 
 def _apply_deload_week(plan, payload: dict):

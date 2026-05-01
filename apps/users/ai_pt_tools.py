@@ -145,11 +145,19 @@ TOOLS = [
                 "payload": {
                     "type": "object",
                     "description": (
-                        "Kind-specific details. Examples: "
-                        "swap_exercise={day_id, exercise_id, new_exercise_name}; "
-                        "change_set_scheme={exercise_id, sets, rep_range, rir}; "
-                        "deload_week={scope: 'this_week'|'next_week'}; "
-                        "reorder_days={new_order: [day_id,...]}."
+                        "Kind-specific details. The apply handler is "
+                        "tolerant of partial payloads — current_exercise_name "
+                        "is enough to identify a swap target; exact IDs are "
+                        "preferred when known. Examples:\n"
+                        "  swap_exercise={current_exercise_name, "
+                        "new_exercise_name, day_id?, exercise_id?};\n"
+                        "  change_set_scheme={current_exercise_name OR "
+                        "exercise_id, sets, reps};\n"
+                        "  deload_week={scope: 'this_week'|'next_week'};\n"
+                        "  reorder_days={new_order: [day_id,...]};\n"
+                        "  remove_day={day_id};\n"
+                        "  add_day=(prefer the custom-builder UI; this kind "
+                        "isn't auto-applicable yet)."
                     ),
                 },
             },
@@ -333,19 +341,31 @@ def dispatch_tool(
 
 
 def _tool_get_active_programme_detail(profile: SoloProfile) -> dict:
+    """Return the user's active plan in a shape the AI can reason
+    about + reference by id when it proposes a swap.
+
+    Schema: WorkoutPlan → WorkoutDay (related_name="days") →
+    Exercise (related_name="exercises") → ExerciseSetTarget
+    (related_name="sets"). Sets/reps live on the per-set rows;
+    we surface them as a compact set count + first-set reps
+    string for the AI to anchor on.
+    """
     plan = profile.assigned_workout_plan
     if plan is None:
         return {"plan": None, "note": "No active programme."}
     days_payload = []
-    for day in plan.days.all().order_by("order_index"):
+    for day in plan.days.all().order_by("order"):
         ex_payload = []
-        for ex in day.exercises.all().order_by("order_index"):
+        for ex in day.exercises.all().order_by("order"):
+            sets = list(ex.sets.all().order_by("set_number"))
             ex_payload.append({
                 "id":       ex.id,
-                "name":     ex.exercise.name if ex.exercise_id else ex.name,
-                "sets":     ex.sets,
-                "reps":     ex.reps,
-                "rest_s":   ex.rest_seconds,
+                "name":     ex.name,
+                "sets":     len(sets),
+                # Reps as a representative string. Most plans use the
+                # same rep target across sets; if not, the AI can
+                # call again or work with the first one.
+                "reps":     sets[0].reps if sets else "",
             })
         days_payload.append({
             "id":    day.id,
@@ -546,21 +566,32 @@ def _tool_propose_nutrition_mutation(user, profile: SoloProfile, tool_input: dic
 
 
 def _snapshot_for_workout_kind(plan, kind: str, payload: dict) -> dict:
+    """Capture the canonical value the mutation will replace, so
+    revert / audit can show a clean diff. Tolerant of partial AI
+    payloads — when an `exercise_id` is missing we fall back to
+    matching by `current_exercise_name`.
+    """
     if kind == "swap_exercise":
-        ex_id = payload.get("exercise_id")
+        ex_id        = payload.get("exercise_id")
+        current_name = (payload.get("current_exercise_name") or "").strip().lower()
         for day in plan.days.all():
             for ex in day.exercises.all():
-                if ex.id == ex_id:
+                hit = (ex_id and ex.id == ex_id) or (
+                    current_name and ex.name.lower() == current_name
+                )
+                if hit:
+                    set_count = ex.sets.count()
+                    first_set = ex.sets.order_by("set_number").first()
                     return {
-                        "day_id":         day.id,
-                        "exercise_id":    ex.id,
-                        "exercise_name":  ex.exercise.name if ex.exercise_id else ex.name,
-                        "sets":           ex.sets,
-                        "reps":           ex.reps,
+                        "day_id":        day.id,
+                        "exercise_id":   ex.id,
+                        "exercise_name": ex.name,
+                        "sets":          set_count,
+                        "reps":          first_set.reps if first_set else "",
                     }
     if kind == "reorder_days":
         return {
-            "current_order": [d.id for d in plan.days.all().order_by("order_index")],
+            "current_order": [d.id for d in plan.days.all().order_by("order")],
         }
     # Other kinds: snapshot is informational; payload itself is enough
     # for revert in most cases. Empty dict is fine.
