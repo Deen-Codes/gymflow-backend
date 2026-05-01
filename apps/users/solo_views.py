@@ -425,6 +425,13 @@ def _solo_payload(profile: SoloProfile) -> dict:
     solo branch in `solo_me_view` builds its own dict. iOS's
     `SoloMeResponse.isSolo` is non-optional, so the PATCH-response
     decode would barf without this key."""
+    # AI-FREE-FIRST-GEN — surface whether the user has already
+    # used their free first assignment. iOS reads this to swap
+    # the AI build CTA copy ("First one's on us" vs "Pro AI
+    # required to re-roll").
+    prefs = profile.user.notification_prefs or {}
+    ai_assign_used = bool(prefs.get("solo_ai_build_assign_used"))
+
     return {
         "is_solo":          True,
         "tier":             profile.tier,
@@ -440,5 +447,9 @@ def _solo_payload(profile: SoloProfile) -> dict:
         "training_days":    profile.training_days,
         "session_minutes":  profile.session_minutes,
         "avoidances":       profile.avoidances,
+        # AI-FREE-FIRST-GEN — true once the user has assigned at
+        # least one AI plan. Drives the paywall framing on the
+        # AI build view: free for the first, Pro AI for the rest.
+        "ai_first_assign_used": ai_assign_used,
         "trial_ends_at":    profile.trial_ends_at.isoformat() if profile.trial_ends_at else None,
     }

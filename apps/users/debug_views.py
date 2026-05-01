@@ -278,6 +278,7 @@ def solo_debug_factory_reset(request):
         prefs = user.notification_prefs or {}
         for key in (
             "solo_ai_build_preview_used",
+            "solo_ai_build_assign_used",   # AI-FREE-FIRST-GEN — give the free first assignment back on reset
             "ai_usage",
             "recent_feedback",
             "macro_targets_seeded",

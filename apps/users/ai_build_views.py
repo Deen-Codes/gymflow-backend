@@ -52,6 +52,30 @@ log = logging.getLogger(__name__)
 # of defence; this is the server-side belt-and-braces.
 PREVIEW_USED_KEY = "solo_ai_build_preview_used"
 
+# AI-FREE-FIRST-GEN — the FIRST AI-built programme assignment is
+# free for every user; subsequent assignments require Pro AI. The
+# free assignment is the conversion lever — user gets a real
+# working plan without paying, then hits the paywall when they
+# want chat coaching, mutations, weekly check-ins, or to re-roll.
+# Per Deen's call ("Pattern B for v1, Pattern C as Phase E").
+ASSIGN_USED_KEY = "solo_ai_build_assign_used"
+
+
+def _has_used_first_free_assign(user) -> bool:
+    """True iff this user has previously assigned at least one
+    AI-built programme. Used to gate Pro AI on subsequent assigns."""
+    prefs = user.notification_prefs or {}
+    return bool(prefs.get(ASSIGN_USED_KEY))
+
+
+def _mark_assign_used(user) -> None:
+    """Flip the flag once the user assigns their first AI plan.
+    Subsequent assigns will hit the Pro AI gate."""
+    prefs = user.notification_prefs or {}
+    prefs[ASSIGN_USED_KEY] = True
+    user.notification_prefs = prefs
+    user.save(update_fields=["notification_prefs"])
+
 
 # Tool spec — forces Claude to return a strictly-shaped programme.
 # Names/labels/sets follow the same conventions as
@@ -395,9 +419,15 @@ def solo_ai_build_assign(request):
         return Response({"detail": "Solo accounts only."}, status=status.HTTP_403_FORBIDDEN)
 
     profile, _ = SoloProfile.objects.get_or_create(user=user)
-    if not profile.has_ai_access:
+
+    # AI-FREE-FIRST-GEN — the FIRST assignment is free for every
+    # user. Subsequent assignments require Pro AI (re-rolls, new
+    # programmes after the first). Free users get one working
+    # plan day one; the chat coach + mutations + weekly check-ins
+    # remain Pro AI so the upgrade lever stays sharp.
+    if not profile.has_ai_access and _has_used_first_free_assign(user):
         return Response(
-            {"detail": "Pro AI required to assign AI-built programmes.",
+            {"detail": "Pro AI required to assign another AI-built programme.",
              "upgrade_to": "pro_ai"},
             status=status.HTTP_402_PAYMENT_REQUIRED,
         )
@@ -478,6 +508,12 @@ def solo_ai_build_assign(request):
 
         profile.assigned_workout_plan = plan
         profile.save(update_fields=["assigned_workout_plan"])
+
+        # AI-FREE-FIRST-GEN — flip the "first assignment used" flag
+        # only after the assign has succeeded. So if the build
+        # transaction fails partway, the user keeps their free
+        # assignment for next try.
+        _mark_assign_used(user)
 
     return Response({
         "ok":        True,

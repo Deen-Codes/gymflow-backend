@@ -68,6 +68,14 @@ class Exercise(models.Model):
     order = models.IntegerField()
     superset_group = models.IntegerField(null=True, blank=True)
 
+    # REST-ASSIGNABLE — per-exercise rest in seconds. Drives the
+    # rest-timer banner in the active workout. Default 90s matches
+    # what the active workout used as a hardcoded fallback before
+    # this field existed. Trainers set it via the existing edit-
+    # programme UI; AI PT can mutate it via the change_set_scheme
+    # tool (extended to accept rest_seconds in the payload).
+    rest_seconds = models.PositiveSmallIntegerField(default=90)
+
     # Phase 5+ — link back to the global ExerciseCatalog so the
     # iOS workout view can surface the catalog's image_url +
     # animation_url + instructions on this row. Nullable + on_delete
