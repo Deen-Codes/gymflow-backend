@@ -53,6 +53,9 @@ logger = logging.getLogger(__name__)
 _VALID_GOALS = {choice for choice, _ in SoloProfile.GOAL_CHOICES}
 _VALID_EXPERIENCE = {choice for choice, _ in SoloProfile.EXPERIENCE_CHOICES}
 _VALID_EQUIPMENT = {choice for choice, _ in SoloProfile.EQUIPMENT_CHOICES}
+# SIGNUP-RESTRUCTURE — D-AFK.4
+_VALID_GENDER     = {c for c, _ in SoloProfile.GENDER_CHOICES}
+_VALID_SEX_BIRTH  = {c for c, _ in SoloProfile.SEX_BIRTH_CHOICES}
 
 
 def _clean_goals(raw):
@@ -190,6 +193,74 @@ def _clean_cooking_comfort(raw):
     return v if v in _VALID_COOKING else ""
 
 
+# SIGNUP-RESTRUCTURE — identity field cleaners.
+def _clean_gender(raw):
+    if not isinstance(raw, str):
+        return ""
+    v = raw.strip().lower()
+    return v if v in _VALID_GENDER else ""
+
+
+def _clean_sex_at_birth(raw):
+    if not isinstance(raw, str):
+        return ""
+    v = raw.strip().lower()
+    return v if v in _VALID_SEX_BIRTH else ""
+
+
+def _clean_height_cm(raw):
+    """Accept int, float, or numeric string. Clamp to [50, 250]
+    cm — anything outside is almost certainly a unit-mix-up
+    (feet vs cm) and we'd rather drop it than store nonsense."""
+    if raw is None or raw == "":
+        return None
+    try:
+        n = int(round(float(raw)))
+    except (TypeError, ValueError):
+        return None
+    if n < 50 or n > 250:
+        return None
+    return n
+
+
+def _clean_weight_kg(raw):
+    if raw is None or raw == "":
+        return None
+    try:
+        f = float(raw)
+    except (TypeError, ValueError):
+        return None
+    if f < 20 or f > 400:
+        return None
+    return round(f, 1)
+
+
+def _clean_dob(raw):
+    """Accept ISO date string YYYY-MM-DD; reject obviously bad
+    values (future dates, age < 13, age > 120)."""
+    if not isinstance(raw, str):
+        return None
+    raw = raw.strip()
+    if not raw:
+        return None
+    try:
+        from datetime import date
+        parts = raw.split("-")
+        if len(parts) != 3:
+            return None
+        y, m, d = int(parts[0]), int(parts[1]), int(parts[2])
+        dob = date(y, m, d)
+    except Exception:
+        return None
+    today = timezone.localdate()
+    if dob > today:
+        return None
+    age_yrs = (today - dob).days / 365.25
+    if age_yrs < 13 or age_yrs > 120:
+        return None
+    return dob
+
+
 def _username_from_email(email: str) -> str:
     """Strip the @domain off, sanitise, fall back to a random suffix
     on collision."""
@@ -237,6 +308,14 @@ def solo_signup_view(request):
     equipment   = _clean_choice(data.get("equipment"),  _VALID_EQUIPMENT)
     days        = _clean_days(data.get("days_per_week"))
     full_name   = (data.get("full_name") or "").strip()[:120]
+    # SIGNUP-RESTRUCTURE — identity captured at signup (D-AFK.4).
+    # Each is optional individually; the iOS signup form collects
+    # them on a dedicated identity page.
+    gender      = _clean_gender(data.get("gender"))
+    sex_birth   = _clean_sex_at_birth(data.get("sex_at_birth"))
+    height_cm   = _clean_height_cm(data.get("height_cm"))
+    weight_kg   = _clean_weight_kg(data.get("weight_kg"))
+    dob         = _clean_dob(data.get("date_of_birth"))
 
     # Idempotent on email — find OR create. Existing accounts:
     #
@@ -321,7 +400,23 @@ def solo_signup_view(request):
         profile.equipment = equipment
     if days:
         profile.days_per_week = days
+    # SIGNUP-RESTRUCTURE — only overwrite identity fields when the
+    # caller provided them. Apple Health users may skip height/
+    # weight at signup so we never want a partial submission to
+    # null out an existing value.
+    if gender:
+        profile.gender = gender
+    if sex_birth:
+        profile.sex_at_birth = sex_birth
+    if height_cm is not None:
+        profile.height_cm = height_cm
+    if weight_kg is not None:
+        profile.bodyweight_kg = weight_kg
     profile.save()
+    if dob is not None:
+        # date_of_birth lives on User, not SoloProfile.
+        user.date_of_birth = dob
+        user.save(update_fields=["date_of_birth"])
 
     # Re-derive macro targets if the goals changed — the user picked
     # "lose fat" vs "build muscle" and we owe them a fresh recommended
@@ -381,6 +476,26 @@ def solo_onboarding_update_view(request):
         profile.equipment = _clean_choice(data["equipment"], _VALID_EQUIPMENT)
     if "days_per_week" in data:
         profile.days_per_week = _clean_days(data["days_per_week"])
+
+    # SIGNUP-RESTRUCTURE — identity. Same partial-update rules as
+    # signup: only overwrite when the key is present in the body.
+    if "gender" in data:
+        profile.gender = _clean_gender(data["gender"])
+    if "sex_at_birth" in data:
+        profile.sex_at_birth = _clean_sex_at_birth(data["sex_at_birth"])
+    if "height_cm" in data:
+        cleaned = _clean_height_cm(data["height_cm"])
+        if cleaned is not None:
+            profile.height_cm = cleaned
+    if "weight_kg" in data:
+        cleaned = _clean_weight_kg(data["weight_kg"])
+        if cleaned is not None:
+            profile.bodyweight_kg = cleaned
+    if "date_of_birth" in data:
+        cleaned_dob = _clean_dob(data["date_of_birth"])
+        if cleaned_dob is not None:
+            user.date_of_birth = cleaned_dob
+            user.save(update_fields=["date_of_birth"])
 
     # AI-BUILD-ONBOARDING — three new fields captured during the
     # cinematic AI build flow. Each is independently updatable so
@@ -516,6 +631,15 @@ def _solo_payload(profile: SoloProfile) -> dict:
         "food_dislikes":     profile.food_dislikes,
         "meals_per_day":     profile.meals_per_day,
         "cooking_comfort":   profile.cooking_comfort,
+        # SIGNUP-RESTRUCTURE — identity surfaces here so iOS Profile
+        # → Personal Details prefills correctly + AI build skips the
+        # height/weight question when already on file.
+        "gender":            profile.gender,
+        "sex_at_birth":      profile.sex_at_birth,
+        "height_cm":         profile.height_cm,
+        "weight_kg":         profile.bodyweight_kg,
+        "date_of_birth":     profile.user.date_of_birth.isoformat()
+                              if profile.user.date_of_birth else None,
         # AI-FREE-FIRST-GEN — true once the user has assigned at
         # least one AI plan. Drives the paywall framing on the
         # AI build view: free for the first, Pro AI for the rest.

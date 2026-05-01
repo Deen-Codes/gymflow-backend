@@ -165,6 +165,25 @@ class SoloProfile(models.Model):
         ("mixed",            "Mixed"),
     ]
 
+    # SIGNUP-RESTRUCTURE (D-AFK.4) — identity fields captured at
+    # signup. Gender uses a single inclusive list. Sex-at-birth is
+    # a separate optional field used ONLY by macro calc (BMR formulas
+    # are sex-keyed at the biology level). Most users see the gender
+    # question and skip the sex-at-birth one — it's labelled as
+    # "Used for accurate calorie calculations" so the framing is
+    # opt-in for accuracy, not pry.
+    GENDER_CHOICES = [
+        ("male",         "Male"),
+        ("female",       "Female"),
+        ("non_binary",   "Non-binary"),
+        ("prefer_not",   "Prefer not to say"),
+    ]
+    SEX_BIRTH_CHOICES = [
+        ("male",   "Male"),
+        ("female", "Female"),
+        ("",       "Unspecified"),
+    ]
+
     # Subscription tier. Drives feature gating across iOS + backend.
     TIER_FREE = "free"
     TIER_PRO = "pro"
@@ -183,6 +202,17 @@ class SoloProfile(models.Model):
     experience = models.CharField(max_length=20, choices=EXPERIENCE_CHOICES, blank=True, default="")
     equipment  = models.CharField(max_length=20, choices=EQUIPMENT_CHOICES, blank=True, default="")
     days_per_week = models.PositiveSmallIntegerField(default=3)
+
+    # SIGNUP-RESTRUCTURE (D-AFK.4) — identity captured at signup.
+    # All blank-by-default so existing users + Apple Health users
+    # who skip these still flow through with no breakage.
+    gender         = models.CharField(
+        max_length=16, choices=GENDER_CHOICES, blank=True, default="",
+    )
+    sex_at_birth   = models.CharField(
+        max_length=8, choices=SEX_BIRTH_CHOICES, blank=True, default="",
+    )
+    height_cm      = models.PositiveSmallIntegerField(null=True, blank=True)
 
     # SOLO-02 — assigned programme. Null on signup; set when the user
     # picks one from the catalog. Mirrors ClientProfile.assigned_workout_plan
