@@ -524,6 +524,17 @@ def _build_user_context(user) -> str:
     lines.append(f"- Experience: {profile.experience or 'unspecified'}")
     lines.append(f"- Equipment: {profile.equipment or 'unspecified'}")
     lines.append(f"- Target days/week: {profile.days_per_week}")
+    # AI-BUILD-ONBOARDING — surface the captured-during-build fields
+    # whenever they're set so the model schedules around the user's
+    # life and respects avoidances.
+    if profile.training_days:
+        lines.append(
+            f"- Training days: {', '.join(d.upper() for d in profile.training_days)}"
+        )
+    if profile.session_minutes:
+        lines.append(f"- Session length: ~{profile.session_minutes} min")
+    if profile.avoidances:
+        lines.append(f"- Avoidances: {', '.join(profile.avoidances)}")
 
     # Bodyweight — current + 7-day delta + 4-week slope. Drives
     # longitudinal coaching ("you've dropped 1.6kg over 4 weeks,

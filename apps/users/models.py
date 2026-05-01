@@ -240,6 +240,29 @@ class SoloProfile(models.Model):
     # specific + measurable goals drive adherence).
     goal_weight_kg  = models.FloatField(null=True, blank=True)
 
+    # AI-BUILD-ONBOARDING — captured during the AI workout build's
+    # cinematic onboarding flow. Surfaces in the AI PT user context
+    # so the model schedules around the user's life and respects
+    # avoidances. Each is optional so users who never run AI build
+    # don't get nagged for them.
+    #
+    # `training_days` — list of weekday short codes the user trains
+    # on. Values from {"mon","tue","wed","thu","fri","sat","sun"}.
+    # Combined with `days_per_week` becomes the calendar-strip
+    # source-of-truth for HOME-CALENDAR-INTERACTIVE. Empty when
+    # not yet set.
+    training_days   = models.JSONField(default=list, blank=True)
+    # `session_minutes` — typical session length (30 / 45 / 60 /
+    # 75 / 90+ minutes). Drives the AI build's exercise count +
+    # the ON DECK card's `~X MIN` estimate.
+    session_minutes = models.PositiveSmallIntegerField(default=0)
+    # `avoidances` — free-form list of things the user wants to
+    # skip: "knee pain", "shoulder issues", "no overhead press",
+    # "hate running", etc. Mix of curated chips + user free-text.
+    # The AI PT system prompt's safety + preference rules read
+    # this list and route around it.
+    avoidances      = models.JSONField(default=list, blank=True)
+
     # Phase A — working "phase" the user is currently in. Distinct
     # from `goals` (which are sacred + long-term and only change via
     # explicit Profile edits). The phase is HOW the user is moving

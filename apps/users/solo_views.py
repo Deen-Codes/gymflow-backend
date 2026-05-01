@@ -88,6 +88,66 @@ def _clean_days(raw):
     return max(1, min(7, n))
 
 
+# AI-BUILD-ONBOARDING — input cleaners for the new fields.
+
+_VALID_TRAINING_DAYS = {"mon", "tue", "wed", "thu", "fri", "sat", "sun"}
+
+
+def _clean_training_days(raw):
+    """Normalise to lowercase 3-letter weekday codes, dedup, cap at 7."""
+    if not isinstance(raw, list):
+        return []
+    cleaned = []
+    seen = set()
+    for d in raw:
+        if not isinstance(d, str):
+            continue
+        v = d.strip().lower()[:3]
+        if v in _VALID_TRAINING_DAYS and v not in seen:
+            cleaned.append(v)
+            seen.add(v)
+        if len(cleaned) >= 7:
+            break
+    return cleaned
+
+
+def _clean_session_minutes(raw):
+    """Round to the nearest sane chip value. 0 = unspecified."""
+    try:
+        n = int(raw)
+    except (TypeError, ValueError):
+        return 0
+    if n <= 0:
+        return 0
+    # Snap to standard chip values to keep the AI's reasoning
+    # simple. Anything 90+ becomes 90.
+    for chip in (30, 45, 60, 75, 90):
+        if n <= chip:
+            return chip
+    return 90
+
+
+def _clean_avoidances(raw):
+    """Cap each item at 80 chars and the list at 12 entries — these
+    flow into the AI system prompt verbatim, so input hygiene
+    matters."""
+    if not isinstance(raw, list):
+        return []
+    cleaned = []
+    seen = set()
+    for item in raw:
+        if not isinstance(item, str):
+            continue
+        v = item.strip()[:80]
+        key = v.lower()
+        if v and key not in seen:
+            cleaned.append(v)
+            seen.add(key)
+        if len(cleaned) >= 12:
+            break
+    return cleaned
+
+
 def _username_from_email(email: str) -> str:
     """Strip the @domain off, sanitise, fall back to a random suffix
     on collision."""
@@ -279,6 +339,18 @@ def solo_onboarding_update_view(request):
         profile.equipment = _clean_choice(data["equipment"], _VALID_EQUIPMENT)
     if "days_per_week" in data:
         profile.days_per_week = _clean_days(data["days_per_week"])
+
+    # AI-BUILD-ONBOARDING — three new fields captured during the
+    # cinematic AI build flow. Each is independently updatable so
+    # users can tweak any one from Profile later without resetting
+    # the others.
+    if "training_days" in data:
+        profile.training_days = _clean_training_days(data["training_days"])
+    if "session_minutes" in data:
+        profile.session_minutes = _clean_session_minutes(data["session_minutes"])
+    if "avoidances" in data:
+        profile.avoidances = _clean_avoidances(data["avoidances"])
+
     profile.save()
 
     return Response(_solo_payload(profile))
@@ -358,5 +430,11 @@ def _solo_payload(profile: SoloProfile) -> dict:
         "experience":       profile.experience,
         "equipment":        profile.equipment,
         "days_per_week":    profile.days_per_week,
+        # AI-BUILD-ONBOARDING — surface the new fields so iOS can
+        # detect "do we already have this answer?" and skip pages
+        # in the AI build onboarding flow.
+        "training_days":    profile.training_days,
+        "session_minutes":  profile.session_minutes,
+        "avoidances":       profile.avoidances,
         "trial_ends_at":    profile.trial_ends_at.isoformat() if profile.trial_ends_at else None,
     }
