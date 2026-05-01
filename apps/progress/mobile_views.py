@@ -30,7 +30,11 @@ from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
+import logging
+
 from apps.users.models import User
+
+log = logging.getLogger(__name__)
 from .models import (
     CheckInForm,
     CheckInQuestion,
@@ -508,8 +512,9 @@ def submit_form_for_me(request, form_id):
                 "icon":     trophy.icon,
                 "category": trophy.category,
             })
-    except Exception as exc:
-        print(f"[trophies] post-checkin evaluation failed: {exc!r}")
+    except Exception:
+        # Trophy eval must never fail the check-in submission.
+        log.exception("trophies post-checkin evaluation failed")
 
     return Response({
         "id":           submission.id,
@@ -583,8 +588,9 @@ def hydration_for_me(request):
                 "icon":     trophy.icon,
                 "category": trophy.category,
             })
-    except Exception as exc:
-        print(f"[trophies] post-hydration evaluation failed: {exc!r}")
+    except Exception:
+        # Trophy eval must never fail the hydration tick.
+        log.exception("trophies post-hydration evaluation failed")
 
     return Response({
         "logged_on": log.logged_on.isoformat(),

@@ -36,8 +36,11 @@ from django.utils import timezone
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
 from rest_framework import status
-from rest_framework.decorators import api_view, authentication_classes, permission_classes
+from rest_framework.decorators import (
+    api_view, authentication_classes, permission_classes, throttle_classes,
+)
 from rest_framework.response import Response
+from rest_framework.throttling import AnonRateThrottle
 
 from .models import User, ClientProfile, TrainerProfile
 
@@ -129,6 +132,7 @@ def dashboard_coach_code_regenerate(request):
 @api_view(["POST"])
 @authentication_classes([])
 @permission_classes([])
+@throttle_classes([AnonRateThrottle])
 def coach_code_redeem(request):
     """Body: {"email": str, "code": str}
 

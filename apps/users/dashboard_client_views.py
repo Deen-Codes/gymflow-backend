@@ -1,9 +1,12 @@
+import logging
 from datetime import timedelta
 
 from django.contrib import messages
 from django.db import transaction
 from django.shortcuts import get_object_or_404, redirect, render
 from django.utils import timezone
+
+log = logging.getLogger(__name__)
 
 from .dashboard_helpers import trainer_required_view, dashboard_context
 from .forms import CreateClientForm, AssignWorkoutPlanForm, AssignNutritionPlanForm
@@ -630,7 +633,12 @@ def dashboard_delete_client(request, client_id):
                 cancelled_count += 1
             except Exception as exc:        # noqa: BLE001 — surface verbatim
                 cancel_errors.append(f"{sub.stripe_subscription_id}: {exc}")
-                print(f"[delete_client] Stripe cancel warning: {exc}")
+                log.warning(
+                    "delete_client: Stripe cancel warning for %s — continuing "
+                    "with hard delete since the user explicitly requested it",
+                    sub.stripe_subscription_id,
+                    exc_info=True,
+                )
 
     # ---- Step 2: hard delete the user (CASCADE handles the rest) ----
     client_username = client.username
@@ -695,8 +703,9 @@ def _build_activity_context(client):
     def _safe(label, fn):
         try:
             return fn()
-        except Exception as exc:        # noqa: BLE001 — surface verbatim
-            print(f"[activity_feed] {label} failed: {exc!r}")
+        except Exception:        # noqa: BLE001 — surface verbatim
+            # Activity feed must never crash the dashboard render.
+            log.exception("activity_feed: %s failed", label)
             return []
 
     return {

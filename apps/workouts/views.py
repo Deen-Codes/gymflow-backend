@@ -1,3 +1,5 @@
+import logging
+
 from django.shortcuts import get_object_or_404
 from django.utils import timezone
 from django.views.decorators.csrf import csrf_exempt
@@ -6,6 +8,8 @@ from rest_framework.decorators import api_view, permission_classes, authenticati
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+
+log = logging.getLogger(__name__)
 
 from apps.users.models import User
 from .models import (
@@ -278,8 +282,11 @@ def create_workout_session(request):
                 "icon":     trophy.icon,
                 "category": trophy.category,
             })
-    except Exception as exc:
-        print(f"[trophies] post-workout evaluation failed: {exc!r}")
+    except Exception:
+        # Trophy eval must never fail the workout-save request.
+        # log.exception captures full traceback so we can debug
+        # which evaluator broke without losing the user's session.
+        log.exception("trophies post-workout evaluation failed")
 
     response_serializer = WorkoutSessionSerializer(workout_session)
     payload = response_serializer.data

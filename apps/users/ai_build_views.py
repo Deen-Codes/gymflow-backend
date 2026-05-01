@@ -42,6 +42,7 @@ from rest_framework.response import Response
 
 from .models import User, SoloProfile
 from .ai_pt_views import _build_user_context, ANTHROPIC_API_KEY, ANTHROPIC_MODEL, ANTHROPIC_URL
+from .ai_caps import enforce_cap, increment
 
 log = logging.getLogger(__name__)
 
@@ -342,6 +343,17 @@ def _solo_ai_build_preview_inner(request):
                 status=status.HTTP_402_PAYMENT_REQUIRED,
             )
 
+    # R7-1 — Pro AI users hit the build cap (4/month). Free users
+    # already passed the one-shot preview gate above; for them the
+    # cap effectively can't fire (you can't get a second free
+    # preview without going Pro AI), so the cap is functionally
+    # only a Pro AI control. Without it a heavy power user could
+    # rebuild daily and run up the unit-economics math.
+    if has_ai:
+        cap_ok, cap_info = enforce_cap(user, "build")
+        if not cap_ok:
+            return Response(cap_info["error_response"], status=cap_info["status"])
+
     programme, error = _call_claude_for_programme(user)
     if error:
         return Response({"detail": error}, status=503)
@@ -350,6 +362,11 @@ def _solo_ai_build_preview_inner(request):
     # burn the preview on a network failure.
     if not has_ai:
         _mark_preview_used(user)
+    else:
+        # R7-1 — bump the monthly counter only AFTER a successful
+        # Pro AI build, so a failed Anthropic call doesn't burn
+        # a slot.
+        increment(user, "build")
 
     return Response({
         "programme":         programme,

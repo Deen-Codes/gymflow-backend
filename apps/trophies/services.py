@@ -14,8 +14,12 @@ Two responsibilities:
 Both wrap the EVALUATORS dict so the rest of the codebase doesn't
 need to know about evaluator internals.
 """
+import logging
+
 from .models import ClientTrophyAward, Trophy
 from .evaluators import EVALUATORS
+
+log = logging.getLogger(__name__)
 
 
 def evaluate_and_award(user):
@@ -49,8 +53,10 @@ def evaluate_and_award(user):
             current, target = evaluator(user)
         except Exception as exc:
             # Evaluators should never crash the request that triggered
-            # them (e.g. a workout save). Log and move on.
-            print(f"[trophies] evaluator {code!r} failed: {exc!r}")
+            # them (e.g. a workout save). Log and move on. Using
+            # log.exception captures the full traceback to Render's
+            # log stream — the previous print() was invisible there.
+            log.exception("trophies evaluator %r failed", code)
             continue
         if current >= target:
             ClientTrophyAward.objects.create(user=user, trophy=trophy)
@@ -88,8 +94,8 @@ def list_trophies_for(user):
     # no duplicates.
     try:
         evaluate_and_award(user)
-    except Exception as exc:
-        print(f"[trophies] retroactive sweep failed: {exc!r}")
+    except Exception:
+        log.exception("trophies retroactive sweep failed")
 
     awards_by_trophy_id = {
         a.trophy_id: a for a in
@@ -104,8 +110,8 @@ def list_trophies_for(user):
         else:
             try:
                 current, target = evaluator(user)
-            except Exception as exc:
-                print(f"[trophies] list evaluator {trophy.code!r} failed: {exc!r}")
+            except Exception:
+                log.exception("trophies list evaluator %r failed", trophy.code)
                 current, target = (0, 1)
 
         award = awards_by_trophy_id.get(trophy.id)

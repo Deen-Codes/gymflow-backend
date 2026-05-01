@@ -1,3 +1,4 @@
+import logging
 import secrets
 
 from django.conf import settings
@@ -22,6 +23,8 @@ from .serializers import (
     ClientListSerializer,
     AssignWorkoutPlanSerializer,
 )
+
+log = logging.getLogger(__name__)
 
 
 # -------------------------------------------------------------------
@@ -73,7 +76,14 @@ def logout_view(request):
     try:
         request.user.auth_token.delete()
     except (AttributeError, Token.DoesNotExist):
+        # Expected for session-only auth — fine to ignore.
         pass
+    except Exception:
+        # Any other exception during token cleanup we want to know
+        # about — silently swallowing previously meant a broken
+        # logout could persist tokens. log.exception captures the
+        # full traceback to Render.
+        log.exception("logout token cleanup failed unexpectedly")
 
     logout(request)
     return Response({"message": "Logout successful."}, status=status.HTTP_200_OK)

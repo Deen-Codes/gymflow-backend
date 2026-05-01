@@ -30,6 +30,7 @@ In all three cases, what we actually email is a Stripe `billing_portal.
 Session.url`. Stripe makes that URL single-use and 24-hour-expiring;
 we don't have to add our own token layer on top.
 """
+import logging
 from datetime import timedelta
 
 from django.conf import settings
@@ -50,6 +51,8 @@ from apps.users.models import User
 
 from .models import ClientSubscription
 from .stripe_client import get_stripe, is_configured
+
+log = logging.getLogger(__name__)
 
 
 # -------------------------------------------------------------------
@@ -74,9 +77,9 @@ def _create_portal_session(sub: ClientSubscription, return_url: str) -> str | No
             stripe_account=sub.trainer.stripe_user_id,
         )
         return portal.url
-    except Exception as exc:        # noqa: BLE001
+    except Exception:        # noqa: BLE001
         # Surfaced to caller; we don't want a crash to leak.
-        print(f"[portal] Stripe portal session create failed: {exc}")
+        log.exception("portal: Stripe portal session create failed")
         return None
 
 
@@ -110,8 +113,8 @@ def _email_portal_link(sub: ClientSubscription, portal_url: str) -> bool:
             fail_silently=False,
         )
         return True
-    except Exception as exc:        # noqa: BLE001
-        print(f"[portal] email send failed: {exc}")
+    except Exception:        # noqa: BLE001
+        log.exception("portal: email send failed")
         return False
 
 

@@ -51,6 +51,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from apps.users.models import User, SoloProfile
+from apps.users.ai_caps import enforce_cap, increment
 
 log = logging.getLogger(__name__)
 
@@ -93,22 +94,9 @@ Rules:
 """
 
 
-# --------------------------------------------------------------------
-# Rate limiting (in-memory, per-process; good enough for v1 — flip to
-# Redis if we end up running >1 worker that needs cross-process limits)
-# --------------------------------------------------------------------
-_call_counts: dict[int, tuple[str, int]] = {}
-
-
-def _check_rate_limit(user_id: int) -> bool:
-    today = timezone.localdate().isoformat()
-    last_day, count = _call_counts.get(user_id, (today, 0))
-    if last_day != today:
-        last_day, count = today, 0
-    if count >= RATE_LIMIT_PER_DAY:
-        return False
-    _call_counts[user_id] = (today, count + 1)
-    return True
+# R7-1 — Rate limiting now via apps.users.ai_caps (persistent,
+# per-user, monthly bucket on User.notification_prefs). The
+# previous in-memory dict reset on dyno restart.
 
 
 # --------------------------------------------------------------------
@@ -134,11 +122,10 @@ def solo_ai_describe_food(request):
         log.error("solo_ai_describe_food: ANTHROPIC_API_KEY not configured")
         return Response({"detail": "AI describe is temporarily unavailable."}, status=503)
 
-    if not _check_rate_limit(user.id):
-        return Response(
-            {"detail": "Daily AI limit reached. Try again tomorrow."},
-            status=status.HTTP_429_TOO_MANY_REQUESTS,
-        )
+    # R7-1 caps — persistent monthly limit (100/month for describe).
+    cap_ok, cap_info = enforce_cap(user, "describe")
+    if not cap_ok:
+        return Response(cap_info["error_response"], status=cap_info["status"])
 
     data = request.data or {}
     image_b64 = (data.get("image_b64") or "").strip()
@@ -233,13 +220,18 @@ def solo_ai_describe_food(request):
             v = default
         return max(0.0, min(v, max_val))
 
+    # R7-1 — bump the monthly counter only AFTER a successful parse,
+    # so a failed Anthropic call doesn't burn a slot.
+    new_remaining = increment(user, "describe")
+
     return Response({
-        "name":       (parsed.get("name") or "Unknown meal")[:255],
-        "portion":    (parsed.get("portion") or "")[:80],
-        "calories":   round(_num("calories")),
-        "protein":    round(_num("protein", max_val=500)),
-        "carbs":      round(_num("carbs",   max_val=1000)),
-        "fats":       round(_num("fats",    max_val=500)),
-        "confidence": parsed.get("confidence") if parsed.get("confidence") in {"high", "medium", "low"} else "medium",
-        "warnings":   list(parsed.get("warnings") or [])[:3],
+        "name":            (parsed.get("name") or "Unknown meal")[:255],
+        "portion":         (parsed.get("portion") or "")[:80],
+        "calories":        round(_num("calories")),
+        "protein":         round(_num("protein", max_val=500)),
+        "carbs":           round(_num("carbs",   max_val=1000)),
+        "fats":            round(_num("fats",    max_val=500)),
+        "confidence":      parsed.get("confidence") if parsed.get("confidence") in {"high", "medium", "low"} else "medium",
+        "warnings":        list(parsed.get("warnings") or [])[:3],
+        "remaining_month": new_remaining,
     })

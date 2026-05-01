@@ -48,6 +48,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from .models import User, SoloProfile
+from .ai_caps import enforce_cap, increment
 
 log = logging.getLogger(__name__)
 
@@ -261,19 +262,11 @@ def _build_user_context(user) -> str:
     return "\n".join(lines)
 
 
-# In-memory rate limiter
-_chat_call_counts: dict[int, tuple[str, int]] = {}
-
-
-def _check_rate_limit(user_id: int) -> tuple[bool, int]:
-    today = timezone.localdate().isoformat()
-    last_day, count = _chat_call_counts.get(user_id, (today, 0))
-    if last_day != today:
-        last_day, count = today, 0
-    if count >= DAILY_MESSAGE_LIMIT:
-        return False, 0
-    _chat_call_counts[user_id] = (today, count + 1)
-    return True, DAILY_MESSAGE_LIMIT - count - 1
+# R7-1 — Rate limiting now lives in apps.users.ai_caps which
+# persists usage to User.notification_prefs["ai_usage"][YYYY-MM][channel].
+# The previous in-memory _chat_call_counts dict reset on every dyno
+# restart, so heavy users could dodge the daily cap by waiting for
+# a deploy. Caps are now monthly + persistent.
 
 
 # --------------------------------------------------------------------
@@ -301,12 +294,13 @@ def solo_ai_pt_chat(request):
         )
         return Response({"detail": "AI PT temporarily unavailable."}, status=503)
 
-    ok, remaining = _check_rate_limit(user.id)
-    if not ok:
-        return Response(
-            {"detail": "Daily AI message limit reached. Try again tomorrow."},
-            status=status.HTTP_429_TOO_MANY_REQUESTS,
-        )
+    # R7-1 caps — enforce_cap returns (False, info) with the
+    # 402 payload pre-built when the monthly cap is hit. info
+    # includes upgrade_to + channel + resets_on so iOS can show
+    # a useful "you're at X of Y this month, resets on Z" pill.
+    cap_ok, cap_info = enforce_cap(user, "chat")
+    if not cap_ok:
+        return Response(cap_info["error_response"], status=cap_info["status"])
 
     raw_messages = request.data.get("messages") or []
     if not isinstance(raw_messages, list) or not raw_messages:
@@ -385,7 +379,14 @@ def solo_ai_pt_chat(request):
         log.exception("AI PT parse failed")
         return Response({"detail": "Couldn't parse AI response."}, status=502)
 
+    # R7-1 — bump the monthly counter only AFTER a successful
+    # parse, so a failed Anthropic call doesn't burn a slot.
+    new_remaining = increment(user, "chat")
+
     return Response({
         "reply":           reply.strip(),
-        "remaining_today": remaining,
+        # Kept the field name for iOS-side back-compat. Now monthly,
+        # not daily — iOS displays "X of Y this month".
+        "remaining_today": new_remaining,
+        "remaining_month": new_remaining,
     })

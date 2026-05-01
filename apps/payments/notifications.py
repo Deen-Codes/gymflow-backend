@@ -10,9 +10,13 @@ event delivery, but each call is wrapped in try/except so a flaky
 email never blocks the webhook from returning 200 to Stripe (which
 would cause Stripe to retry deliveries forever and double-create state).
 """
+import logging
+
 from django.conf import settings
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
+
+log = logging.getLogger(__name__)
 
 from .models import ClientSubscription
 
@@ -80,8 +84,10 @@ def _send(template_base: str, subject: str, client_sub: ClientSubscription,
             html_message=html_body,
             fail_silently=True,
         )
-    except Exception as exc:        # noqa: BLE001
-        print(f"[notifications] {template_base} send failed: {exc}")
+    except Exception:        # noqa: BLE001
+        # Email failures must never block webhook 200 — Stripe
+        # would retry forever and double-create state.
+        log.exception("notifications: %s send failed", template_base)
 
 
 # -------------------------------------------------------------------
