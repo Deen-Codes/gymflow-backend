@@ -660,12 +660,21 @@ def home_stats_for_me(request):
 @authentication_classes([TokenAuthentication])
 @permission_classes([IsAuthenticated])
 def required_actions_for_me(request):
-    """What does this user still owe before the app fully unlocks?"""
-    from .profile_schema import missing_required_fields_for, needs_onboarding
+    """What does this user still owe before the app fully unlocks?
+
+    Also returns the user's saved `personal_details` (name, DOB, sex,
+    height, weight, primary goal, units) so the iOS Profile sheet
+    pre-fills with whatever the user previously entered. Without
+    this, the sheet always opened with blank fields and felt broken.
+    """
+    from .profile_schema import (
+        missing_required_fields_for, needs_onboarding, personal_details_for,
+    )
     user = request.user
     return Response({
         "needs_onboarding":       needs_onboarding(user),
         "missing_profile_fields": missing_required_fields_for(user),
+        "personal_details":       personal_details_for(user),
     })
 
 
@@ -685,6 +694,7 @@ def profile_update_for_me(request):
         apply_profile_update,
         missing_required_fields_for,
         needs_onboarding,
+        personal_details_for,
     )
     user = request.user
     applied = apply_profile_update(user, request.data or {})
@@ -692,6 +702,7 @@ def profile_update_for_me(request):
         "applied_fields":         applied,
         "needs_onboarding":       needs_onboarding(user),
         "missing_profile_fields": missing_required_fields_for(user),
+        "personal_details":       personal_details_for(user),
     })
 
 

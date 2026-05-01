@@ -117,11 +117,25 @@ def missing_required_fields_for(user):
     return out
 
 
+#: PROFILE-FIX (2026-05) — Personal Details sheet on iOS sends a
+# wider payload than the original "system required fields" gate
+# was designed for: sex, height_cm, weight_kg, primary_goal, units.
+# Most don't have dedicated columns on the User/ClientProfile model,
+# and we don't want to ship a migration just to capture optional
+# self-reported preferences. Instead we route them into a
+# `User.notification_prefs["personal_details"]` JSON sub-dict —
+# already a JSONField, no schema change needed. Solo users' weight
+# also writes to `SoloProfile.bodyweight_kg` so the macro engine
+# can use it.
+PERSONAL_DETAILS_KEYS = ("sex", "height_cm", "weight_kg", "primary_goal", "units")
+
+
 def apply_profile_update(user, payload):
-    """Apply a dict of {field_key: value} to the user / client_profile.
-    Returns the list of field keys actually applied. Silently ignores
-    keys that aren't in the schema so callers can't smuggle arbitrary
-    field updates through this endpoint."""
+    """Apply a dict of {field_key: value} to the user / client_profile
+    / SoloProfile / notification_prefs. Returns the list of field
+    keys actually applied. Silently ignores keys that aren't in any
+    schema, so callers can't smuggle arbitrary field updates through
+    this endpoint."""
     profile = getattr(user, "client_profile", None)
     applied = []
     for field in SYSTEM_REQUIRED_FIELDS:
@@ -166,11 +180,56 @@ def apply_profile_update(user, payload):
         setattr(target_obj, key, value)
         applied.append(key)
 
+    # PROFILE-FIX — extra Personal Details fields. These don't live
+    # on User/ClientProfile columns; they go into the existing
+    # notification_prefs JSON under a `personal_details` sub-dict.
+    # weight_kg ALSO mirrors to SoloProfile.bodyweight_kg for solo
+    # users so the macro engine + AI prompt context see it.
+    extras_applied = []
+    extras = {}
+    for k in PERSONAL_DETAILS_KEYS:
+        if k in payload:
+            raw = payload[k]
+            # Numeric coercion for height/weight; tolerate the user
+            # typing "78kg" / "175cm" by stripping non-digits/dots.
+            if k in ("height_cm", "weight_kg") and isinstance(raw, str):
+                cleaned = "".join(c for c in raw if c.isdigit() or c == ".")
+                try:
+                    raw = float(cleaned) if cleaned else None
+                except ValueError:
+                    raw = None
+            # `units` is constrained to a known set so we don't
+            # store typos.
+            if k == "units" and raw not in ("metric", "imperial"):
+                continue
+            if raw in (None, ""):
+                continue
+            extras[k] = raw
+            extras_applied.append(k)
+    if extras_applied:
+        prefs = user.notification_prefs or {}
+        pd = dict(prefs.get("personal_details") or {})
+        pd.update(extras)
+        prefs["personal_details"] = pd
+        user.notification_prefs = prefs
+        applied.extend(extras_applied)
+        # If solo user provided weight_kg, also mirror to SoloProfile.
+        if "weight_kg" in extras:
+            try:
+                solo = getattr(user, "solo_profile", None)
+                if solo is not None:
+                    solo.bodyweight_kg = float(extras["weight_kg"])
+                    solo.save(update_fields=["bodyweight_kg"])
+            except (TypeError, ValueError):
+                pass
+
     # Persist user when any user-targeted field (including the
-    # virtual full_name) was applied.
+    # virtual full_name OR any extras that wrote to notification_prefs)
+    # was applied.
     user_targeted = {field["key"] for field in SYSTEM_REQUIRED_FIELDS
                      if field["target"] == "user"}
-    if any(k in user_targeted for k in applied):
+    user_dirty = any(k in user_targeted for k in applied) or bool(extras_applied)
+    if user_dirty:
         user.save()
     if profile is not None and any(
         field["target"] == "client_profile"
@@ -179,6 +238,29 @@ def apply_profile_update(user, payload):
     ):
         profile.save()
     return applied
+
+
+def personal_details_for(user) -> dict:
+    """Read-side helper. Returns the saved personal-details dict
+    (sex/height/weight/goal/units) merged with the canonical fields
+    we already have columns for. Used by the iOS Profile sheet to
+    pre-fill on open."""
+    out: dict = {}
+    if user.first_name:
+        out["full_name"] = (user.first_name + " " + (user.last_name or "")).strip()
+    if user.date_of_birth:
+        out["date_of_birth"] = user.date_of_birth.isoformat()
+    prefs = user.notification_prefs or {}
+    pd = prefs.get("personal_details") or {}
+    for k in PERSONAL_DETAILS_KEYS:
+        if k in pd:
+            out[k] = pd[k]
+    # Solo bodyweight wins over a possibly-stale notification_prefs
+    # value because compute_default_macro_targets writes to it.
+    solo = getattr(user, "solo_profile", None)
+    if solo is not None and solo.bodyweight_kg is not None:
+        out["weight_kg"] = solo.bodyweight_kg
+    return out
 
 
 def needs_onboarding(user):
