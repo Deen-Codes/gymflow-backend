@@ -19,6 +19,36 @@ class ExerciseSetTargetSerializer(serializers.ModelSerializer):
 class ExerciseSerializer(serializers.ModelSerializer):
     set_targets = ExerciseSetTargetSerializer(source="sets", many=True, read_only=True)
 
+    # EXERCISE-FOUNDATION — surface catalog details when the row is
+    # linked. iOS uses these to render the form-demo on the
+    # exercise card. All four fall back to empty strings when the
+    # row isn't catalog-linked (custom / AI-generated exercises);
+    # the iOS view degrades to an SF symbol in that case.
+    image_url     = serializers.SerializerMethodField()
+    animation_url = serializers.SerializerMethodField()
+    instructions  = serializers.SerializerMethodField()
+    muscle_group  = serializers.SerializerMethodField()
+    catalog_id    = serializers.IntegerField(source="catalog_item_id", read_only=True)
+
+    def _catalog(self, obj):
+        return getattr(obj, "catalog_item", None)
+
+    def get_image_url(self, obj):
+        cat = self._catalog(obj)
+        return (cat.image_url if cat else "") or ""
+
+    def get_animation_url(self, obj):
+        cat = self._catalog(obj)
+        return (cat.animation_url if cat else "") or ""
+
+    def get_instructions(self, obj):
+        cat = self._catalog(obj)
+        return (cat.instructions if cat else "") or ""
+
+    def get_muscle_group(self, obj):
+        cat = self._catalog(obj)
+        return (cat.muscle_group if cat else "") or ""
+
     class Meta:
         model = Exercise
         fields = [
@@ -28,6 +58,11 @@ class ExerciseSerializer(serializers.ModelSerializer):
             "order",
             "superset_group",
             "set_targets",
+            "catalog_id",
+            "image_url",
+            "animation_url",
+            "instructions",
+            "muscle_group",
         ]
 
 

@@ -68,6 +68,22 @@ class Exercise(models.Model):
     order = models.IntegerField()
     superset_group = models.IntegerField(null=True, blank=True)
 
+    # Phase 5+ — link back to the global ExerciseCatalog so the
+    # iOS workout view can surface the catalog's image_url +
+    # animation_url + instructions on this row. Nullable + on_delete
+    # SET_NULL so a catalog deletion doesn't cascade-kill plans;
+    # blank=True so AI-generated / custom rows that don't match a
+    # catalog entry stay valid. Population:
+    #   • Phase A AI-build view sets it when a catalog match exists.
+    #   • Migration 0007 backfills existing rows by name match.
+    #   • Trainer-built plans set it when a library item is added.
+    catalog_item = models.ForeignKey(
+        "ExerciseCatalog",
+        on_delete=models.SET_NULL,
+        null=True, blank=True,
+        related_name="workout_exercises",
+    )
+
     def __str__(self):
         return self.name
 
@@ -133,6 +149,15 @@ class ExerciseCatalog(models.Model):
     instructions = models.TextField(blank=True)
     video_url = models.URLField(blank=True)
     image_url = models.URLField(blank=True)
+    # Phase 5+ — cinematic animation URL. Populated when the
+    # commissioned animation library lands (Lottie .json / .lottie
+    # preferred; .mp4 fallback). The iOS `ExerciseAnimationView`
+    # component picks the renderer by URL extension. Empty for
+    # uncommissioned exercises — the view falls back to image_url
+    # then to an SF symbol placeholder. See
+    # `EXERCISE_ANIMATION_LIBRARY.md` (iOS repo) for sourcing
+    # strategy + brand spec.
+    animation_url = models.URLField(blank=True)
 
     source = models.CharField(max_length=16, choices=SOURCE_CHOICES, default=SOURCE_CURATED)
     external_id = models.CharField(max_length=64, blank=True, db_index=True)
