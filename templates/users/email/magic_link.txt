@@ -1,4 +1,4 @@
-Sign in to GymFlow
+Sign in to Marrow
 ==================
 
 Tap this link on your iPhone to log in:
@@ -10,4 +10,4 @@ The link expires in {{ ttl_minutes }} minutes and works once.
 Didn't ask for this? Ignore the email — nothing changes.
 
 —
-GymFlow · Coaching for trainers and clients
+Marrow · Coaching for trainers and clients

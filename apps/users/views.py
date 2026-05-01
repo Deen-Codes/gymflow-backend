@@ -400,13 +400,18 @@ def startup_for_me(request):
 def _magic_link_urls(token):
     """Return (deep_link, web_link) tuple for the email body.
 
-    `deep_link` opens the iOS app via the registered `gymflow://`
-    custom scheme. `web_link` is a fallback for desktop browsers
-    and the eventual Universal Links setup.
+    `deep_link` opens the iOS app via the new `marrow://` custom
+    scheme. The legacy `gymflow://` scheme is still registered on
+    the iOS side for ~30 days so any in-flight emails from before
+    the rebrand keep working — but every newly-issued link uses
+    `marrow://` from now on.
+
+    `web_link` is a fallback for desktop browsers and the
+    eventual Universal Links setup.
     """
     web_base = getattr(settings, "GYMFLOW_WEB_BASE_URL", "https://gymflow.coach")
     return (
-        f"gymflow://magic/{token}",
+        f"marrow://magic/{token}",
         f"{web_base}/magic/{token}",
     )
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in to GymFlow</title>
+    <title>Sign in to Marrow</title>
     {% if is_ios %}
     <!-- Auto-redirect iOS visitors into the app via the custom URL
          scheme. Triggered immediately on page load; if it fails
@@ -102,20 +102,20 @@
     <main class="card">
         {% if is_ios %}
             <div class="eyebrow">SIGNING YOU IN</div>
-            <h1>Opening GymFlow…</h1>
+            <h1>Opening Marrow…</h1>
             <p>If the app doesn't open automatically, tap the button below.</p>
-            <a class="cta" href="{{ deep_link }}">Open GymFlow</a>
+            <a class="cta" href="{{ deep_link }}">Open Marrow</a>
             <div class="ttl">Link expires in {{ ttl_minutes }} minutes.</div>
         {% else %}
             <div class="eyebrow">FOR YOUR PHONE</div>
             <h1>Open this link on your phone</h1>
-            <p>Sign-in links work inside the GymFlow app. Forward this email to yourself on your phone, or open it in the iOS Mail / Gmail app on the device with the app installed.</p>
-            <p>Don't have GymFlow yet? It's a free download on the App Store — search "GymFlow" or visit gymflow.coach.</p>
+            <p>Sign-in links work inside the Marrow app. Forward this email to yourself on your phone, or open it in the iOS Mail / Gmail app on the device with the app installed.</p>
+            <p>Don't have Marrow yet? It's a free download on the App Store — search "Marrow" or visit gymflow.coach.</p>
             <div class="ttl">Link expires in {{ ttl_minutes }} minutes.</div>
         {% endif %}
 
         <div class="footer">
-            GymFlow · The coaching platform for trainers and clients
+            Marrow · The coaching platform for trainers and clients
         </div>
     </main>
 </body>
