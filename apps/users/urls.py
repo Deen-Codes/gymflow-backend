@@ -23,6 +23,7 @@ from .solo_views import (
 from .ai_pt_views import solo_ai_pt_chat
 from .ai_build_views import solo_ai_build_preview, solo_ai_build_assign
 from .mutation_views import mutation_apply, mutation_decline
+from .checkin_ai_views import checkin_suggestions
 from .ai_diag_views import ai_diag
 from .debug_views import solo_debug_set_state, solo_debug_factory_reset
 from .coach_code_views import coach_code_redeem
@@ -76,6 +77,16 @@ urlpatterns = [
         "solo/ai-pt/mutations/<int:mutation_id>/decline/",
         mutation_decline,
         name="solo-ai-pt-mutation-decline",
+    ),
+
+    # Phase C — CHECKIN-APPLIES (R7-4). After a check-in submission,
+    # iOS POSTs here to get AI-generated proposals tied to that
+    # submission. Idempotent: same submission_id returns the same
+    # proposals on re-call (no extra AI cap burn).
+    path(
+        "solo/checkin-suggestions/<int:submission_id>/",
+        checkin_suggestions,
+        name="solo-checkin-suggestions",
     ),
 
     # R3-1 — AI build programme: preview is one-shot for Free
