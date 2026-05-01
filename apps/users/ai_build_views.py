@@ -203,7 +203,6 @@ def _call_claude_for_programme(user) -> tuple[dict | None, str | None]:
         return None, "AI build temporarily unavailable."
 
     context = _build_user_context(user)
-    print(f"[AI BUILD] user_context (first 800 chars):\n{context[:800]}", flush=True)
     system = SYSTEM_TEMPLATE.format(context=context)
 
     body = {
@@ -287,15 +286,16 @@ def _call_claude_for_programme(user) -> tuple[dict | None, str | None]:
         return None, "Couldn't parse the AI response."
     programme = tool_block.get("input") or {}
     if not programme.get("days"):
-        # Dump exactly what Claude sent us so we can see why days
-        # is empty — sparse user profile, malformed schema, refusal,
-        # etc. Trim each field to keep log lines reasonable.
-        import json as _json
-        print(
-            f"[AI BUILD] EMPTY PROGRAMME — Claude tool_block.input keys="
-            f"{list(programme.keys())} stop_reason={payload.get('stop_reason')!r} "
-            f"input_dump={_json.dumps(programme)[:1500]}",
-            flush=True,
+        # Loud server log so we can see *why* days is empty if it
+        # ever happens again — usually `stop_reason: max_tokens`
+        # (already mitigated by max_tokens=8000 above) but could
+        # also be a refusal or malformed schema. Logs the keys
+        # and stop_reason — NOT the full prompt or user context,
+        # to avoid leaking PII to production logs.
+        log.error(
+            "AI build empty programme: keys=%s stop_reason=%s",
+            list(programme.keys()),
+            payload.get("stop_reason"),
         )
         return None, "AI returned an empty programme."
     return programme, None
@@ -309,18 +309,15 @@ def _call_claude_for_programme(user) -> tuple[dict | None, str | None]:
 @authentication_classes([TokenAuthentication])
 @permission_classes([IsAuthenticated])
 def solo_ai_build_preview(request):
-    # R7-DIAG — wrap the view body in try/except + print() to
-    # stdout (NOT log.info — Django's default LOGGING config hides
-    # INFO-level app logs in production, so log.info silently
-    # never appears in Render logs). print() goes straight to
-    # stdout which gunicorn pipes into the log stream.
-    import sys, traceback
-    print(f"[AI BUILD] ENTER user_id={getattr(request.user, 'id', None)}", flush=True)
+    # Defence in depth — keep the catch-all so an unexpected
+    # exception still produces a useful 503 instead of a silent
+    # gunicorn-killed worker. Log via log.exception (auto-captures
+    # full traceback) to Render's stderr stream.
     try:
         return _solo_ai_build_preview_inner(request)
     except Exception as exc:
-        tb = traceback.format_exc()
-        print(f"[AI BUILD] UNHANDLED EXCEPTION:\n{tb}", flush=True, file=sys.stderr)
+        log.exception("AI build preview: unhandled exception for user_id=%s",
+                      getattr(request.user, "id", None))
         return Response(
             {"detail": f"AI build crashed: {type(exc).__name__}: {str(exc)[:200]}"},
             status=503,
@@ -329,13 +326,11 @@ def solo_ai_build_preview(request):
 
 def _solo_ai_build_preview_inner(request):
     user = request.user
-    print(f"[AI BUILD] user.role={user.role}", flush=True)
     if user.role != User.SOLO:
         return Response({"detail": "Solo accounts only."}, status=status.HTTP_403_FORBIDDEN)
 
     profile, _ = SoloProfile.objects.get_or_create(user=user)
     has_ai = profile.has_ai_access
-    print(f"[AI BUILD] has_ai_access={has_ai}", flush=True)
 
     if not has_ai:
         if _has_used_preview(user):
@@ -347,9 +342,7 @@ def _solo_ai_build_preview_inner(request):
                 status=status.HTTP_402_PAYMENT_REQUIRED,
             )
 
-    print(f"[AI BUILD] calling Claude...", flush=True)
     programme, error = _call_claude_for_programme(user)
-    print(f"[AI BUILD] Claude returned programme={'yes' if programme else 'no'} error={error!r}", flush=True)
     if error:
         return Response({"detail": error}, status=503)
 
