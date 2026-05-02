@@ -5,10 +5,14 @@ Without monthly caps a heavy Pro AI user could rack up ~$60/mo of
 Anthropic spend on a £19.99 subscription, which inverts the unit
 economics. Caps enforce a reasonable monthly ceiling per channel:
 
-    • build      —  4 / month   (~once a week — like a real PT swap)
-    • chat       — 150 / month  (~5/day — covers nutrition + workout chat)
-    • describe   — 100 / month  (~3/day — typical photo logger)
-    • checkin    —   5 / month  (one ISO-week + 1 spare)
+    • build           —  4 / month   (~once a week — like a real PT swap)
+    • chat            — 150 / month  (~5/day — covers nutrition + workout chat)
+    • describe        — 100 / month  (~3/day — typical photo logger)
+    • nutrition_build —  6 / month   (macro variant generation; was on
+                                     `describe` but a single user re-running
+                                     the AI nutrition setup chewed through
+                                     the photo-describe budget — POLISH-AICAP)
+    • checkin         —   5 / month  (one ISO-week + 1 spare)
 
 Total worst-case spend per user: ~$2.07/mo on a £19.99 subscription
 = ~92% gross margin on a power user. Anything over the cap returns
@@ -46,17 +50,19 @@ USAGE_KEY       = "ai_usage"
 PREVIOUS_MONTHS_TO_KEEP = 1  # drop anything older than current + 1 prior
 
 DEFAULT_CAPS: dict[str, int] = {
-    "build":    4,
-    "chat":   150,
-    "describe": 100,
-    "checkin":  5,
+    "build":            4,
+    "chat":           150,
+    "describe":       100,
+    "nutrition_build":  6,
+    "checkin":          5,
 }
 
 CHANNEL_LABELS: dict[str, str] = {
-    "build":    "AI build programme",
-    "chat":     "AI coach chat",
-    "describe": "AI describe",
-    "checkin":  "Weekly check-in",
+    "build":           "AI build programme",
+    "chat":            "AI coach chat",
+    "describe":        "AI describe",
+    "nutrition_build": "AI nutrition setup",
+    "checkin":         "Weekly check-in",
 }
 
 

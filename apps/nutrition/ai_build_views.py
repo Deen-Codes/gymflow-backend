@@ -244,11 +244,13 @@ def solo_ai_nutrition_build(request):
             status=503,
         )
 
-    # Cap — uses the existing 'describe' bucket since both are
-    # nutrition-AI calls and we don't want to multiply the cap
-    # surface unnecessarily. Future: split if usage patterns
-    # justify it.
-    cap_ok, cap_info = enforce_cap(user, "describe")
+    # POLISH-AICAP — own bucket. Previously shared `describe` with
+    # photo food logging, which collided: a single user retrying the
+    # AI nutrition setup could exhaust the 100/mo describe budget and
+    # the next photo log returned an instant cap error. Splitting it
+    # off gives nutrition setup its own modest 6/mo limit and protects
+    # the describe budget for daily use.
+    cap_ok, cap_info = enforce_cap(user, "nutrition_build")
     if not cap_ok:
         return Response(cap_info["error_response"], status=cap_info["status"])
 
@@ -376,7 +378,7 @@ def solo_ai_nutrition_build(request):
     # burn the user's free slot.
     if not profile.has_ai_access:
         _mark_first_used(user)
-    new_remaining = increment(user, "describe")
+    new_remaining = increment(user, "nutrition_build")
 
     return Response({
         "variants":        variants,
