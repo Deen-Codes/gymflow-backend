@@ -120,8 +120,33 @@ class CuratedFood(models.Model):
     serving_label = models.CharField(max_length=40, blank=True, default="")
 
     # Free-form tags for filtering UI ("staple", "branded", "fast_food",
-    # "high_protein", "vegan", etc.). Comma-separated lowercase.
+    # "high_protein", etc.). Comma-separated lowercase.
     tags = models.CharField(max_length=200, blank=True, default="")
+
+    # FOOD-DB-TAGGING — structured tags so the AI builder, swap
+    # mutations, and dietary filters don't have to substring-match
+    # the freeform `tags` column.
+    #
+    # `dietary_compat` — comma-separated lowercase set drawn from:
+    #   halal, kosher, vegan, vegetarian, pescatarian,
+    #   gluten_free, dairy_free
+    # Conservative semantics: a tag is ONLY present when the food
+    # is provably compatible. "halal" on chicken means "compatible
+    # with halal diet (no pork, no alcohol)" — NOT "this specific
+    # chicken was slaughtered halal". Real provenance is the user's
+    # responsibility on branded items; for our purposes the absence
+    # of pork/alcohol is the surfaceable signal.
+    dietary_compat = models.CharField(max_length=128, blank=True, default="", db_index=True)
+
+    # `allergens` — UK FSA "top 14" (the EU allergen set):
+    #   milk, eggs, gluten, peanuts, tree_nuts, sesame, soy,
+    #   fish, crustaceans, molluscs, celery, mustard, lupin,
+    #   sulphites
+    # Comma-separated, lowercase. Empty string means "no known
+    # major allergens detected" — NOT "verified allergen-free".
+    # Branded items always need real label data; this column is
+    # the safety floor for AI-generated meal plans.
+    allergens = models.CharField(max_length=128, blank=True, default="", db_index=True)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

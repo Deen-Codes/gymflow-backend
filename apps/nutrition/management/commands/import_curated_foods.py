@@ -144,48 +144,184 @@ class Command(BaseCommand):
 
 
 def load_usda(path: str) -> Iterable[dict]:
-    """USDA FoodData Central — Foundation Foods CSV.
+    """USDA FoodData Central — JSON download.
 
-    Schema: fdc_id, description, food_category, ... + nutrient rows
-    in a separate `food_nutrient.csv` you join on fdc_id.
+    Source: https://fdc.nal.usda.gov/fdc-datasets/
+        FoodData_Central_sr_legacy_food_json_2018-04.zip
+        FoodData_Central_foundation_food_json_2024-04-18.zip
 
-    TODO: implement. The shape published is two CSVs (foods +
-    nutrients) — typical loader streams the small one into memory
-    keyed by id, then joins the large one on the fly.
+    Both unzip to a single JSON file with shape:
+        {"FoundationFoods": [...]}  or  {"SRLegacyFoods": [...]}
+
+    Each food is:
+        {
+          "fdcId":         123,
+          "description":   "Chicken, breast, raw",
+          "foodCategory":  {"description": "Poultry Products"},
+          "foodNutrients": [
+            {
+              "nutrient": {"id": 1003, "name": "Protein", "unitName": "g"},
+              "amount":   23.1
+            },
+            ...
+          ],
+          "foodPortions":  [
+            {"gramWeight": 100.0, "portionDescription": "1 piece"},
+            ...
+          ]
+        }
+
+    Nutrient IDs we care about (USDA canonical):
+      1003 — Protein (g)
+      1004 — Total fat (g)
+      1005 — Carbohydrate, by difference (g)
+      1008 — Energy (kcal)
+
+    A single download contains both raw and prepared variants
+    ("Chicken, breast, raw" vs "Chicken, breast, cooked, roasted").
+    We keep both — users searching for "chicken breast" benefit
+    from seeing the cooked entry which matches what they actually
+    eat. The auto-tagger applies on the description so all are
+    tagged consistently.
+
+    Public domain — USDA publications are works of the U.S.
+    federal government, exempt from copyright per 17 U.S.C. § 105.
+    No attribution required, full commercial use permitted.
     """
-    raise NotImplementedError(
-        "USDA loader stub. See https://fdc.nal.usda.gov/download-datasets.html "
-        "for the bundle shape."
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+
+    # The JSON payload uses different top-level keys depending on
+    # which dataset you downloaded. Handle all of them.
+    foods = (
+        data.get("FoundationFoods")
+        or data.get("SRLegacyFoods")
+        or data.get("BrandedFoods")
+        or data.get("foods")
+        or []
     )
-    # pragma: no cover — generator placeholder so caller's
-    # `list(loader(...))` succeeds in dry-run testing.
-    yield  # type: ignore[unreachable]
+
+    # Deferred import — only needed when this loader is invoked,
+    # avoids a hard dependency if a different loader is selected.
+    from apps.nutrition.food_tagging import auto_tag
+
+    nutrient_ids = {
+        "protein": 1003,
+        "fat":     1004,
+        "carbs":   1005,
+        "kcal":    1008,
+    }
+
+    for food in foods:
+        fdc_id = food.get("fdcId")
+        name = (food.get("description") or "").strip()
+        if not fdc_id or not name:
+            continue
+
+        # Macros — index nutrient amounts by ID for cheap lookup.
+        macros: dict[str, float] = {}
+        for fn in food.get("foodNutrients") or []:
+            # USDA's structure varies by dataset version: some have
+            # `nutrient: {id, name, unitName}`, others flatten to
+            # `nutrientId` / `nutrientName` / `unitName` directly.
+            n = fn.get("nutrient") or fn
+            nid = n.get("id") or fn.get("nutrientId")
+            amt = fn.get("amount")
+            if nid is None or amt is None:
+                continue
+            for key, target_id in nutrient_ids.items():
+                if nid == target_id:
+                    try:
+                        macros[key] = float(amt)
+                    except (TypeError, ValueError):
+                        pass
+                    break
+
+        # Skip rows missing the headline number — energy is the
+        # only one we hard-require because variants without macro
+        # data aren't useful in a meal plan.
+        if "kcal" not in macros:
+            continue
+
+        # Default serving — first food portion if present.
+        serving_grams: float | None = None
+        serving_label = ""
+        for fp in food.get("foodPortions") or []:
+            gw = fp.get("gramWeight")
+            desc = fp.get("portionDescription") or fp.get("modifier") or ""
+            if gw and desc and "100" not in desc:    # skip "100g" tautology
+                serving_grams = float(gw)
+                serving_label = desc[:40]
+                break
+
+        # Tags from USDA category + auto-tagging engine.
+        category = ((food.get("foodCategory") or {}).get("description") or "").lower()
+        tag_set: list[str] = []
+        if category:
+            tag_set.append(category.replace(" ", "_").replace(",", ""))
+        tag_set.append("usda")
+
+        dietary_compat, allergens = auto_tag(name)
+
+        yield {
+            "source":           CuratedFood.SOURCE_USDA,
+            "source_id":        str(fdc_id),
+            "name":             name[:200],
+            "brand":            "",
+            "barcode":          (food.get("gtinUpc") or "").strip(),
+            "region_codes":     "us",
+            "kcal_per_100g":    macros.get("kcal", 0.0),
+            "protein_per_100g": macros.get("protein", 0.0),
+            "carbs_per_100g":   macros.get("carbs", 0.0),
+            "fat_per_100g":     macros.get("fat", 0.0),
+            "serving_grams":    serving_grams,
+            "serving_label":    serving_label,
+            "tags":             ",".join(tag_set)[:200],
+            "dietary_compat":   dietary_compat,
+            "allergens":        allergens,
+        }
 
 
 def load_fsa_uk(path: str) -> Iterable[dict]:
-    """UK FSA — McCance & Widdowson's Composition of Foods.
+    """UK FSA — McCance & Widdowson's Composition of Foods (7th ed).
 
-    CC BY 4.0. Distributed as a .xlsx with one row per food. We
-    tag each row with `region_codes="gb"` and `tags="fsa_uk,cc_by"`.
+    CC BY 4.0. Distributed as a .xlsx workbook with multiple
+    sheets. Authoring the parser is a follow-up — schema differs
+    from USDA's clean JSON, requires openpyxl/pandas, and the
+    macro field naming varies between sheets ("Energy (kcal/100g)"
+    vs "Energy kcal").
+
+    To add: open `path` with openpyxl, locate the "Foods" sheet,
+    and yield rows in the same shape as `load_usda` (matching
+    CuratedFood field names). See FOOD_DB_INGEST.md for the
+    field-mapping reference.
     """
     raise NotImplementedError(
-        "FSA loader stub. Source: https://www.food.gov.uk/research/food-composition-data"
+        "FSA loader is a Phase 2 task. USDA covers most reference foods "
+        "for v1; FSA adds UK-specific items (kippers, marmite, salad "
+        "cream, etc.). Source: https://www.gov.uk/government/publications"
+        "/composition-of-foods-integrated-dataset-cofid"
     )
     yield  # type: ignore[unreachable]
 
 
 def load_ausnut(path: str) -> Iterable[dict]:
-    """AUSNUT 2011-13 — Food Standards Australia NZ."""
+    """AUSNUT 2011-13 — Food Standards Australia New Zealand.
+
+    Public, .xls bundle. Phase 3 — adds AU-specific items
+    (Vegemite, Tim Tams, lamingtons, regional cuts).
+    """
     raise NotImplementedError(
-        "AUSNUT loader stub. Source: https://www.foodstandards.gov.au/science-data/monitoringnutrients/ausnut"
+        "AUSNUT loader is a Phase 3 task. Source: "
+        "https://www.foodstandards.gov.au/science-data/monitoringnutrients/ausnut"
     )
     yield  # type: ignore[unreachable]
 
 
 def load_ciqual(path: str) -> Iterable[dict]:
-    """CIQUAL — ANSES (France), open licence."""
+    """CIQUAL — ANSES (France), open licence. Phase 4."""
     raise NotImplementedError(
-        "CIQUAL loader stub. Source: https://ciqual.anses.fr"
+        "CIQUAL loader is a Phase 4 task. Source: https://ciqual.anses.fr"
     )
     yield  # type: ignore[unreachable]
 
@@ -194,16 +330,30 @@ def load_marrow(path: str) -> Iterable[dict]:
     """Marrow-curated — our own additions. Generic CSV ingest with
     columns: source_id,name,brand,barcode,region_codes,kcal_per_100g,
     protein_per_100g,carbs_per_100g,fat_per_100g,serving_grams,
-    serving_label,tags. This one is real — we use it for hand-curated
-    branded items (Tesco / Whole Foods) we want in the catalog.
+    serving_label,tags,dietary_compat,allergens.
+
+    The last two are optional — if missing, the auto-tagger fills
+    them from the food name. Pass explicit values to override the
+    auto-tagging (useful for branded products where we know the
+    label).
     """
+    from apps.nutrition.food_tagging import auto_tag
+
     with open(path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
+            name = row["name"].strip()
+            csv_dietary = (row.get("dietary_compat") or "").strip()
+            csv_allergens = (row.get("allergens") or "").strip()
+            if not csv_dietary or not csv_allergens:
+                auto_dietary, auto_allergens = auto_tag(name)
+                csv_dietary = csv_dietary or auto_dietary
+                csv_allergens = csv_allergens or auto_allergens
+
             yield {
                 "source":            CuratedFood.SOURCE_MARROW,
                 "source_id":         row["source_id"].strip(),
-                "name":              row["name"].strip(),
+                "name":              name,
                 "brand":             (row.get("brand") or "").strip(),
                 "barcode":           (row.get("barcode") or "").strip(),
                 "region_codes":      (row.get("region_codes") or DEFAULT_REGIONS[CuratedFood.SOURCE_MARROW]).strip(),
@@ -214,6 +364,8 @@ def load_marrow(path: str) -> Iterable[dict]:
                 "serving_grams":     float(row["serving_grams"]) if row.get("serving_grams") else None,
                 "serving_label":     (row.get("serving_label") or "").strip(),
                 "tags":              (row.get("tags") or "marrow").strip(),
+                "dietary_compat":    csv_dietary,
+                "allergens":         csv_allergens,
             }
 
 
