@@ -42,6 +42,101 @@ class NutritionPlan(models.Model):
         return self.name
 
 
+# --------------------------------------------------------------------
+# NUTRITION-DB (#105) — owned, multi-region food catalog.
+#
+# Strategy (per repo notes + the ingest plan):
+#   • USDA FoodData Central        — US, public domain, ~400k items
+#   • UK FSA McCance & Widdowson's — UK, CC BY 4.0, ~3k staples
+#   • AUSNUT 2011-13               — AU/NZ, public, ~5.7k items
+#   • CIQUAL                       — EU/FR, open license, ~3.2k items
+#   • Marrow-curated               — our own additions (branded items
+#                                    we add manually; pro-tier fields)
+#
+# Open Food Facts is intentionally NOT ingested (CC BY-SA copyleft
+# blocks commercial bake-in). OFF stays as a runtime barcode lookup
+# in iOS — `FoodLookupService` already handles that path. Branded
+# items the user finds via barcode and re-uses become entries in the
+# user's per-account food log; popular ones can be promoted into the
+# `marrow` source over time with our own re-derivation.
+#
+# Multi-region resolution: when the iOS client searches, the backend
+# filters CuratedFood by `region_codes` overlap with the user's locale
+# (`Locale.current.region`). Items tagged with multiple regions
+# ("chicken breast" — US/UK/AU/EU) appear in every market. Items
+# specific to one region ("Tesco Greek yogurt") only appear there.
+#
+# Ingest pipeline lives in `management/commands/import_curated_foods.py`
+# (scaffolded; data loaders to be added per source).
+# --------------------------------------------------------------------
+
+
+class CuratedFood(models.Model):
+    """Owned food catalog row.
+
+    Read-only at runtime — iOS/web search this table; updates happen
+    via the management command. The `source` field is the provenance
+    so future re-ingests can `update_or_create` against `(source,
+    source_id)` without duplicating rows.
+    """
+
+    SOURCE_USDA   = "usda"
+    SOURCE_FSA_UK = "fsa_uk"
+    SOURCE_AUSNUT = "ausnut"
+    SOURCE_CIQUAL = "ciqual"
+    SOURCE_MARROW = "marrow"
+    SOURCE_CHOICES = [
+        (SOURCE_USDA,   "USDA FoodData Central"),
+        (SOURCE_FSA_UK, "UK FSA McCance & Widdowson's"),
+        (SOURCE_AUSNUT, "AUSNUT 2011-13"),
+        (SOURCE_CIQUAL, "CIQUAL"),
+        (SOURCE_MARROW, "Marrow curated"),
+    ]
+
+    source     = models.CharField(max_length=12, choices=SOURCE_CHOICES, db_index=True)
+    source_id  = models.CharField(max_length=64, db_index=True)
+    name       = models.CharField(max_length=200, db_index=True)
+    brand      = models.CharField(max_length=120, blank=True, default="")
+    barcode    = models.CharField(max_length=32, blank=True, default="", db_index=True)
+
+    # Region distribution. Stored as a comma-separated lowercase ISO
+    # 3166-1 alpha-2 list (`"us,gb,au"`). Comma-separated rather than
+    # ArrayField so we don't pin the catalog to Postgres-only — SQLite
+    # works for local dev. iOS sends its locale, backend does a
+    # `__contains` filter on the comma-bounded list.
+    region_codes = models.CharField(max_length=64, blank=True, default="")
+
+    # Macros per 100g (cooked / as-eaten where relevant). Each source
+    # publishes its own as-prepared semantics; ingest normalises to
+    # 100g of the form a user typically eats (cooked rice, not raw).
+    kcal_per_100g    = models.FloatField()
+    protein_per_100g = models.FloatField()
+    carbs_per_100g   = models.FloatField()
+    fat_per_100g     = models.FloatField()
+
+    # Default serving info — what the user is likely to log. Falls
+    # back to 100g if a source doesn't specify.
+    serving_grams = models.FloatField(null=True, blank=True)
+    serving_label = models.CharField(max_length=40, blank=True, default="")
+
+    # Free-form tags for filtering UI ("staple", "branded", "fast_food",
+    # "high_protein", "vegan", etc.). Comma-separated lowercase.
+    tags = models.CharField(max_length=200, blank=True, default="")
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        unique_together = [("source", "source_id")]
+        indexes = [
+            models.Index(fields=["name"]),
+            models.Index(fields=["barcode"]),
+        ]
+
+    def __str__(self) -> str:
+        return f"[{self.source}] {self.name}"
+
+
 class FoodLibraryItem(models.Model):
     """Per-trainer food preset.
 
