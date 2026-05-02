@@ -40,6 +40,7 @@ any account; subsequent require Pro AI.
 import json
 import logging
 import os
+import re
 
 from django.conf import settings
 from django.utils import timezone
@@ -174,6 +175,55 @@ def _mark_first_used(user) -> None:
     prefs[NUTRITION_FIRST_USED_KEY] = True
     user.notification_prefs = prefs
     user.save(update_fields=["notification_prefs"])
+
+
+def _extract_json_object(text: str) -> dict | None:
+    """NUTRITION-AI-BUILD-FIX — robust JSON extraction.
+
+    Claude is asked for raw JSON but sometimes wraps the response
+    in a ```json``` code fence or prefixes a one-line acknowledgement
+    ("Here's your variants:\\n{...}"). Plain `json.loads(text)` then
+    blows up with 502s the user can't recover from.
+
+    This helper tries, in order:
+      1. Strip a leading ```json (or plain ```) fence, parse the
+         payload between fences.
+      2. Find the FIRST `{` and LAST `}` in the string and parse
+         the substring between them. Handles "Here are your
+         variants: {...}" prefixes.
+      3. Direct `json.loads(text)`.
+
+    Returns the parsed dict on success, None on failure (caller
+    surfaces a 502 with the raw payload logged for debugging).
+    """
+    if not text:
+        return None
+    text = text.strip()
+
+    # 1. Code fence — handle ```json ... ``` and ``` ... ```
+    fence = re.match(r"^```(?:json)?\s*\n(.*?)\n```\s*$", text, re.DOTALL)
+    if fence:
+        try:
+            return json.loads(fence.group(1))
+        except json.JSONDecodeError:
+            pass
+
+    # 2. First-{ to last-} substring. Slightly fragile if Claude
+    # writes prose containing braces, but works for the common
+    # "prefix + JSON" failure mode.
+    first = text.find("{")
+    last = text.rfind("}")
+    if first != -1 and last != -1 and last > first:
+        try:
+            return json.loads(text[first : last + 1])
+        except json.JSONDecodeError:
+            pass
+
+    # 3. Direct parse — covers the happy path where Claude obeyed.
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        return None
 
 
 def _clamp_int(v, lo: int, hi: int) -> int:
@@ -332,12 +382,30 @@ def solo_ai_nutrition_build(request):
         text_block = next((c for c in content if c.get("type") == "text"), None)
         if not text_block:
             raise ValueError("No text block in response.")
-        parsed = json.loads(text_block["text"])
-        raw_variants = parsed.get("variants") or []
-        if not isinstance(raw_variants, list) or len(raw_variants) != 3:
-            raise ValueError(
-                f"Expected 3 variants, got {len(raw_variants) if isinstance(raw_variants, list) else 'non-list'}"
+        # NUTRITION-AI-BUILD-FIX — robust extraction. The previous
+        # version did a bare `json.loads` on text_block["text"] and
+        # 502'd whenever Claude wrapped its reply in a ```json
+        # fence. Helper now tries fence → substring → direct, and
+        # we log the raw payload on total failure so we can see
+        # what Claude actually returned.
+        raw_text = text_block.get("text") or ""
+        parsed = _extract_json_object(raw_text)
+        if parsed is None:
+            log.error(
+                "AI nutrition build: JSON extraction failed. Raw text: %s",
+                raw_text[:600],
             )
+            raise ValueError("Couldn't extract a JSON object from the AI reply.")
+        raw_variants = parsed.get("variants") or []
+        if not isinstance(raw_variants, list):
+            raise ValueError(f"variants is not a list: {type(raw_variants).__name__}")
+        # Allow 1–3 variants; we backfill missing IDs from anchors
+        # below so a partial Claude response doesn't 502 the user.
+        # >3 truncate to first 3.
+        if len(raw_variants) > 3:
+            raw_variants = raw_variants[:3]
+        if not raw_variants:
+            raise ValueError("Empty variants list — no usable AI output.")
     except Exception as exc:
         log.exception("AI nutrition build parse failed: %s", exc)
         return Response(
@@ -346,6 +414,32 @@ def solo_ai_nutrition_build(request):
         )
 
     variants = [_sanitise_variant(v) for v in raw_variants]
+
+    # NUTRITION-AI-BUILD-FIX — backfill any missing variant IDs
+    # from the anchor data so iOS always gets a complete cut /
+    # maintain / bulk trio. The AI's rationale prose is the
+    # value-add; if Claude only returned cut+maintain, we still
+    # surface bulk via the deterministic rationale.
+    seen_ids = {v["id"] for v in variants}
+    for required_id in ("cut", "maintain", "bulk"):
+        if required_id not in seen_ids:
+            anchor = next((a for a in anchors if a["id"] == required_id), None)
+            if anchor is None:
+                continue
+            label = {
+                "cut":      "Lean down",
+                "maintain": "Hold steady",
+                "bulk":     "Lean gain",
+            }[required_id]
+            variants.append({
+                "id":        required_id,
+                "label":     label,
+                "calories":  anchor["calories"],
+                "protein":   anchor["protein"],
+                "carbs":     anchor["carbs"],
+                "fats":      anchor["fats"],
+                "rationale": defensible_rationale(required_id, inputs, anchor),
+            })
 
     # Order — always cut → maintain → bulk so the iOS picker
     # renders left-to-right consistently regardless of the AI's
