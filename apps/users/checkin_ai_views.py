@@ -26,6 +26,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import re
 
 import requests
 from django.conf import settings
@@ -78,9 +79,88 @@ Hard rules:
   introspective effort — meet that with a real, considered
   response, not boilerplate.
 
+R7-3 (#60) — STRUCTURED OUTPUT
+Begin your text response with a single fenced JSON block on its own
+lines (no prose before it), then a blank line, then your normal
+text response. The JSON block has exactly these keys:
+
+```json
+{
+  "summary": "one-line plain-English read of the week (≤80 chars)",
+  "assessment": "tracking" | "watch" | "concerning",
+  "themes": ["≤3 short labels — e.g. 'sleep dropped', 'protein hit', 'mood low'"]
+}
+```
+
+`assessment` semantics:
+  - "tracking"    — everything's on plan, no concerns
+  - "watch"       — one or two soft signals worth noting
+  - "concerning"  — sleep / energy / pain pattern that warrants the
+                    user's attention even if no mutation is proposed
+
+The JSON block is read by the iOS surface to render a compact
+badge. Your prose response below the block is shown verbatim — keep
+it warm and short.
+
 You see the same USER CONTEXT block as the chat coach. The
 CHECK-IN block below contains this submission's answers.
 """
+
+
+_STRUCTURED_BLOCK = re.compile(
+    r"^\s*```(?:json)?\s*\n(.*?)\n```\s*",
+    re.DOTALL,
+)
+_STRUCTURED_VALID_ASSESSMENTS = {"tracking", "watch", "concerning"}
+
+
+def _split_structured(text: str) -> tuple[dict | None, str]:
+    """R7-3 (#60) — pull the leading ```json fence (if any) off the
+    AI's response. Returns (structured_dict_or_none, remaining_prose).
+
+    Defensive — if the fence is missing or malformed, we fall back
+    to (None, text). The iOS sheet handles missing structured data
+    gracefully (omits the badge).
+
+    The JSON must contain `summary` (str), `assessment` (one of
+    "tracking"/"watch"/"concerning"), and `themes` (list[str]). We
+    drop the whole block on any schema mismatch — surfacing partial
+    or wrong-typed data would be worse than just hiding the badge.
+    """
+    if not text:
+        return None, ""
+    match = _STRUCTURED_BLOCK.match(text)
+    if not match:
+        return None, text
+    raw = match.group(1).strip()
+    rest = text[match.end():].lstrip()
+    try:
+        parsed = json.loads(raw)
+    except json.JSONDecodeError:
+        return None, text  # keep the fence visible — better the
+                           # user sees a quirk than we silently
+                           # mangle their feedback
+    if not isinstance(parsed, dict):
+        return None, text
+    summary = parsed.get("summary")
+    assessment = parsed.get("assessment")
+    themes = parsed.get("themes")
+    if (
+        not isinstance(summary, str)
+        or not summary
+        or assessment not in _STRUCTURED_VALID_ASSESSMENTS
+        or not isinstance(themes, list)
+        or not all(isinstance(t, str) for t in themes)
+    ):
+        return None, text
+    return (
+        {
+            "summary": summary[:120],
+            "assessment": assessment,
+            "themes": [t[:48] for t in themes[:3]],
+        },
+        rest,
+    )
 
 
 def _format_checkin_block(submission: CheckInSubmission) -> str:
@@ -237,9 +317,16 @@ def checkin_suggestions(request, submission_id):
             except Exception as e:
                 log.exception("dispatch_tool failed in checkin: %s", e)
 
+    # R7-3 (#60) — peel the structured JSON block off the front of
+    # text_response. iOS uses the structured data to render a small
+    # assessment badge; the prose underneath is the verbatim coach
+    # voice the user actually reads.
+    structured, prose = _split_structured(text_response)
+
     return Response({
         "submission_id": submission.id,
         "proposals":     proposals,
-        "text_response": text_response.strip(),
+        "text_response": prose.strip(),
+        "structured":    structured,         # nullable
         "cached":        False,
     })
