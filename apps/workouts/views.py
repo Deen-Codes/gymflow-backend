@@ -306,20 +306,67 @@ def create_workout_session(request):
 @authentication_classes([TokenAuthentication])
 @permission_classes([IsAuthenticated])
 def update_workout_session_notes(request, session_id):
-    """PATCH /api/workouts/sessions/<int:session_id>/notes/"""
+    """PATCH /api/workouts/sessions/<int:session_id>/notes/
+
+    Accepts an optional `notes` (free-text), `rpe` (int 1–10) and
+    `mood` (short string) per R7-2 (#59). All three fields are
+    optional and partial — a client that only sends `notes` or only
+    sends `rpe` is fine. Backwards-compatible with older clients
+    that PATCHed only `notes`.
+    """
     user = request.user
     session_obj = get_object_or_404(
         WorkoutSession, id=session_id, user=user,
     )
-    notes = request.data.get("notes", "")
-    if not isinstance(notes, str):
-        return Response(
-            {"detail": "notes must be a string."},
-            status=status.HTTP_400_BAD_REQUEST,
-        )
-    session_obj.notes = notes.strip()[:2000]
-    session_obj.save(update_fields=["notes"])
+
+    update_fields = []
+
+    if "notes" in request.data:
+        notes = request.data.get("notes", "")
+        if not isinstance(notes, str):
+            return Response(
+                {"detail": "notes must be a string."},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+        session_obj.notes = notes.strip()[:2000]
+        update_fields.append("notes")
+
+    if "rpe" in request.data:
+        rpe = request.data.get("rpe")
+        # Allow null to clear, int 1–10 to set. Anything else → 400.
+        if rpe is None:
+            session_obj.rpe = None
+        elif isinstance(rpe, int) and 1 <= rpe <= 10:
+            session_obj.rpe = rpe
+        else:
+            return Response(
+                {"detail": "rpe must be null or an integer 1–10."},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+        update_fields.append("rpe")
+
+    if "mood" in request.data:
+        mood = request.data.get("mood", "")
+        if not isinstance(mood, str):
+            return Response(
+                {"detail": "mood must be a string."},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+        # Schemaless on purpose — see model docstring. Trim + cap
+        # but accept any short label so iOS can iterate without a
+        # backend deploy.
+        session_obj.mood = mood.strip()[:16]
+        update_fields.append("mood")
+
+    if update_fields:
+        session_obj.save(update_fields=update_fields)
+
     return Response(
-        {"id": session_obj.id, "notes": session_obj.notes},
+        {
+            "id": session_obj.id,
+            "notes": session_obj.notes,
+            "rpe": session_obj.rpe,
+            "mood": session_obj.mood,
+        },
         status=status.HTTP_200_OK,
     )

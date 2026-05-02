@@ -117,6 +117,20 @@ class WorkoutSession(models.Model):
     # to empty so older clients keep working.
     notes = models.TextField(blank=True, default="")
 
+    # R7-2 (#59) — post-session feedback pills.
+    #
+    # rpe: 1–10 Rate of Perceived Exertion (Borg CR-10). Optional; if
+    #   present, feeds into the AI PT context for future programming
+    #   ("they reported RPE 9 on Wednesday, ease Friday's volume").
+    #
+    # mood: short categorical label for "how did it feel" — calmer
+    #   than the numeric RPE. Free-form CharField rather than choices
+    #   so the iOS pill set can evolve without a schema change.
+    #   Values today: "good" | "fine" | "off" | "tough" — but
+    #   anything ≤16 chars is accepted server-side.
+    rpe = models.SmallIntegerField(null=True, blank=True)
+    mood = models.CharField(max_length=16, blank=True, default="")
+
     def __str__(self):
         return f"{self.user} - {self.workout_day}"
 
