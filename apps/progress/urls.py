@@ -16,6 +16,7 @@ from .solo_views import (
     solo_progress_photo_create,
     solo_progress_photo_delete,
 )
+from .photo_ai_views import analyze_progress_photo
 
 urlpatterns = [
     path("me/next-checkin/", next_checkin_for_me, name="me-next-checkin"),
@@ -36,4 +37,7 @@ urlpatterns = [
     path("solo/photos/<int:photo_id>/",   solo_progress_photo_detail,   name="solo-progress-photo-detail"),
     path("solo/photos/upload/",           solo_progress_photo_create,   name="solo-progress-photo-create"),
     path("solo/photos/<int:photo_id>/delete/", solo_progress_photo_delete, name="solo-progress-photo-delete"),
+
+    # PHOTO-COACHING (#106) — Claude Vision commentary.
+    path("solo/photos/<int:photo_id>/analyze/", analyze_progress_photo, name="solo-progress-photo-analyze"),
 ]

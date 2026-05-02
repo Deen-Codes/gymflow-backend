@@ -705,6 +705,55 @@ def _build_user_context(user) -> str:
             d = last_note.completed_at.strftime("%b %d") if last_note.completed_at else "?"
             lines.append(f"- Last session note ({d}): {note_text}")
 
+        # R7-2 (#59) — recent post-session feedback (RPE + mood).
+        # Pulls the last session that has either rpe or mood set so
+        # the coach can read effort trends without spamming the
+        # context with empty rows. ("RPE 9 on Wednesday — let's
+        # ease Friday's volume.")
+        last_feel = next(
+            (
+                s for s in recent
+                if (s.rpe is not None) or (s.mood or "").strip()
+            ),
+            None,
+        )
+        if last_feel is not None:
+            d = last_feel.completed_at.strftime("%b %d") if last_feel.completed_at else "?"
+            bits = []
+            if last_feel.rpe is not None:
+                bits.append(f"RPE {last_feel.rpe}/10")
+            if (last_feel.mood or "").strip():
+                bits.append(f"felt {last_feel.mood.strip()}")
+            lines.append(f"- Last session feedback ({d}): {', '.join(bits)}")
+
+        # PHOTO-COACHING (#106) — surface the most recent AI photo
+        # commentary so the coach can reference what was visible
+        # last time ("your front photo from May 1st showed
+        # better posture symmetry — let's keep mobility work in").
+        # We import lazily to avoid the circular dependency that
+        # would otherwise come from progress models touching
+        # users.ai_pt_views directly.
+        try:
+            from apps.progress.models import ProgressPhoto
+            last_photo = (
+                ProgressPhoto.objects
+                .filter(user=user)
+                .exclude(ai_commentary="")
+                .order_by("-taken_on", "-created_at")
+                .first()
+            )
+            if last_photo is not None:
+                d = last_photo.taken_on.isoformat()
+                txt = last_photo.ai_commentary.strip().replace("\n", " ")
+                if len(txt) > 240:
+                    txt = txt[:237] + "..."
+                lines.append(f"- Latest progress photo coach-read ({d}): {txt}")
+        except Exception:
+            # Defensive — context build must never fail because of
+            # an optional read. Photo commentary is decorative; the
+            # rest of the block stands without it.
+            pass
+
     # Last 7 days of food log totals + today's CURRENT remaining
     # macros so the AI can reason about "what can I fit" questions
     # without asking the user to repeat themselves (FIX-7-C).

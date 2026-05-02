@@ -366,6 +366,15 @@ class ProgressPhoto(models.Model):
     note = models.CharField(max_length=255, blank=True, default="")
     taken_on = models.DateField(default=timezone.localdate, db_index=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    # PHOTO-COACHING (#106) — AI Vision commentary. The photo is
+    # sent to Claude Vision with a calm-coach system prompt that
+    # ABSOLUTELY rules out appearance/attractiveness commentary.
+    # Returns short objective text: visible posture / definition /
+    # composition observations + a one-liner takeaway. Nullable —
+    # photos uploaded before #106 shipped (and any photo where the
+    # user opts out) leave these empty.
+    ai_commentary = models.TextField(blank=True, default="")
+    ai_analyzed_at = models.DateTimeField(null=True, blank=True)
 
     class Meta:
         ordering = ["-taken_on", "-created_at"]

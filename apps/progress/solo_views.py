@@ -301,6 +301,11 @@ def _photo_payload(p: ProgressPhoto, *, include_image: bool = False) -> dict:
         "note":           p.note,
         "taken_on":       p.taken_on.isoformat(),
         "created_at":     p.created_at.isoformat(),
+        # PHOTO-COACHING (#106) — expose AI commentary so iOS can
+        # surface it on the photo card. Both nullable; iOS gracefully
+        # hides if empty.
+        "ai_commentary":  p.ai_commentary or "",
+        "ai_analyzed_at": p.ai_analyzed_at.isoformat() if p.ai_analyzed_at else None,
     }
     if include_image:
         out["image_base64"] = p.image_base64
