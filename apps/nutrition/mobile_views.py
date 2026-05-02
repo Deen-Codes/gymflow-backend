@@ -104,8 +104,45 @@ def _meal_payload(meal):
 @authentication_classes([TokenAuthentication])
 @permission_classes([IsAuthenticated])
 def nutrition_today_for_me(request):
-    """Return today's nutrition plan + meals for the current client."""
+    """Return today's nutrition plan + meals for the current user.
+
+    NUTRITION-SOLO-TARGETS-FIX — historically this endpoint only
+    served CLIENT users (PT-managed plan via NutritionPlan FK).
+    Solo users went through `/api/nutrition/solo/today/` which had
+    a different response shape, and the iOS widget only consumed
+    THIS endpoint. Result: after a Solo user picked their macro
+    variant (which saves to SoloProfile.target_*) the iOS widget
+    re-fetched here, got `no_plan`, and the empty-state stayed
+    rendered — the user's saved targets were invisible.
+
+    Fix: synthesise a plan-shaped response for Solo users from
+    SoloProfile.target_*. iOS decoder is unchanged.
+    """
     user = request.user
+
+    # Solo path. Returns a synthetic plan with the user's saved
+    # targets. Meals = [] because Solo doesn't have a structured
+    # plan; per-meal info lives on the Solo food log surface.
+    if user.role == User.SOLO:
+        from apps.users.models import SoloProfile
+        profile = SoloProfile.objects.filter(user=user).first()
+        if profile is None or not (profile.target_calories or 0) > 0:
+            return Response({"status": "no_plan", "plan": None})
+        return Response({
+            "status": "assigned",
+            "plan": {
+                "id":              profile.id,
+                "name":            f"{profile.target_calories} kcal",
+                "calories_target": profile.target_calories,
+                "protein_target":  profile.target_protein,
+                "carbs_target":    profile.target_carbs,
+                "fats_target":     profile.target_fats,
+                "meals":           [],
+                "next_meal":       None,
+            },
+        })
+
+    # Client (PT-managed) path — original behaviour.
     if user.role != User.CLIENT or not hasattr(user, "client_profile"):
         return Response({"status": "no_plan", "plan": None})
 
