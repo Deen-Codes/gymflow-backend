@@ -3,12 +3,12 @@ EXERCISE-DB — owned multi-source exercise catalog ingest.
 
 Mirrors the approach in `import_curated_foods` (NUTRITION-DB / #105):
 re-derive a clean owned catalog from public sources, with the
-Marrow source for our own additions + branded animated pose stills.
+GymFlow source for our own additions + branded animated pose stills.
 
 Usage:
 
     python manage.py import_exercise_catalog --source=free_exercise_db --path=/path/to/exercises.json
-    python manage.py import_exercise_catalog --source=marrow --path=/path/to/marrow_exercises.csv
+    python manage.py import_exercise_catalog --source=gymflow --path=/path/to/gymflow_exercises.csv
 
 Sources:
   • Free Exercise DB (yuhonas) — public domain, ~800 exercises with
@@ -16,7 +16,7 @@ Sources:
     Re-derive: we ingest the metadata + replace images with our own
     animated pose stills (sourced separately per
     `EXERCISE_ANIMATION_LIBRARY.md`).
-  • Marrow                    — our own additions / curated overrides.
+  • GymFlow                    — our own additions / curated overrides.
 
 Intentionally NOT ingested:
   • wger (AGPL/viral copyleft — would taint the catalog DB)
@@ -46,12 +46,12 @@ from apps.workouts.models import ExerciseCatalog
 
 SUPPORTED_SOURCES = {
     ExerciseCatalog.SOURCE_FREE_EXERCISE_DB,
-    ExerciseCatalog.SOURCE_MARROW,
+    ExerciseCatalog.SOURCE_GYMFLOW,
 }
 
 
 class Command(BaseCommand):
-    help = "Ingest exercises from a public source (Free Exercise DB) or the Marrow-curated list."
+    help = "Ingest exercises from a public source (Free Exercise DB) or the GymFlow-curated list."
 
     def add_arguments(self, parser):
         parser.add_argument(
@@ -117,7 +117,7 @@ class Command(BaseCommand):
 # --------------------------------------------------------------------
 # Per-source loaders — each yields dicts matching ExerciseCatalog
 # fields. The Free Exercise DB loader is REAL (the JSON file is
-# small and well-shaped); the Marrow loader expects our own CSV.
+# small and well-shaped); the GymFlow loader expects our own CSV.
 # --------------------------------------------------------------------
 
 
@@ -183,8 +183,8 @@ def load_free_exercise_db(path: str) -> Iterable[dict]:
         }
 
 
-def load_marrow(path: str) -> Iterable[dict]:
-    """Marrow-curated CSV. Columns: external_id,name,muscle_group,
+def load_gymflow(path: str) -> Iterable[dict]:
+    """GymFlow-curated CSV. Columns: external_id,name,muscle_group,
     equipment,instructions,image_url,video_url,animation_url.
     Used for branded / overridden / newly-commissioned exercises.
     """
@@ -192,7 +192,7 @@ def load_marrow(path: str) -> Iterable[dict]:
         reader = csv.DictReader(f)
         for row in reader:
             yield {
-                "source":        ExerciseCatalog.SOURCE_MARROW,
+                "source":        ExerciseCatalog.SOURCE_GYMFLOW,
                 "external_id":   row["external_id"].strip(),
                 "name":          row["name"].strip(),
                 "muscle_group":  (row.get("muscle_group") or "").strip(),
@@ -207,5 +207,5 @@ def load_marrow(path: str) -> Iterable[dict]:
 
 LOADERS = {
     ExerciseCatalog.SOURCE_FREE_EXERCISE_DB: load_free_exercise_db,
-    ExerciseCatalog.SOURCE_MARROW:           load_marrow,
+    ExerciseCatalog.SOURCE_GYMFLOW:           load_gymflow,
 }

@@ -53,7 +53,7 @@ SUPPORTED_SOURCES = {
     CuratedFood.SOURCE_FSA_UK,
     CuratedFood.SOURCE_AUSNUT,
     CuratedFood.SOURCE_CIQUAL,
-    CuratedFood.SOURCE_MARROW,
+    CuratedFood.SOURCE_GYMFLOW,
 }
 
 # Default region distribution per source. Ingest can override per-row
@@ -65,7 +65,7 @@ DEFAULT_REGIONS = {
     CuratedFood.SOURCE_FSA_UK: "gb",
     CuratedFood.SOURCE_AUSNUT: "au,nz",
     CuratedFood.SOURCE_CIQUAL: "fr,eu",
-    CuratedFood.SOURCE_MARROW: "us,gb,au,nz,fr,eu",
+    CuratedFood.SOURCE_GYMFLOW: "us,gb,au,nz,fr,eu",
 }
 
 
@@ -326,8 +326,8 @@ def load_ciqual(path: str) -> Iterable[dict]:
     yield  # type: ignore[unreachable]
 
 
-def load_marrow(path: str) -> Iterable[dict]:
-    """Marrow-curated — our own additions. Generic CSV ingest with
+def load_gymflow(path: str) -> Iterable[dict]:
+    """GymFlow-curated — our own additions. Generic CSV ingest with
     columns: source_id,name,brand,barcode,region_codes,kcal_per_100g,
     protein_per_100g,carbs_per_100g,fat_per_100g,serving_grams,
     serving_label,tags,dietary_compat,allergens.
@@ -351,19 +351,19 @@ def load_marrow(path: str) -> Iterable[dict]:
                 csv_allergens = csv_allergens or auto_allergens
 
             yield {
-                "source":            CuratedFood.SOURCE_MARROW,
+                "source":            CuratedFood.SOURCE_GYMFLOW,
                 "source_id":         row["source_id"].strip(),
                 "name":              name,
                 "brand":             (row.get("brand") or "").strip(),
                 "barcode":           (row.get("barcode") or "").strip(),
-                "region_codes":      (row.get("region_codes") or DEFAULT_REGIONS[CuratedFood.SOURCE_MARROW]).strip(),
+                "region_codes":      (row.get("region_codes") or DEFAULT_REGIONS[CuratedFood.SOURCE_GYMFLOW]).strip(),
                 "kcal_per_100g":     float(row["kcal_per_100g"]),
                 "protein_per_100g":  float(row["protein_per_100g"]),
                 "carbs_per_100g":    float(row["carbs_per_100g"]),
                 "fat_per_100g":      float(row["fat_per_100g"]),
                 "serving_grams":     float(row["serving_grams"]) if row.get("serving_grams") else None,
                 "serving_label":     (row.get("serving_label") or "").strip(),
-                "tags":              (row.get("tags") or "marrow").strip(),
+                "tags":              (row.get("tags") or "gymflow").strip(),
                 "dietary_compat":    csv_dietary,
                 "allergens":         csv_allergens,
             }
@@ -374,5 +374,5 @@ LOADERS = {
     CuratedFood.SOURCE_FSA_UK: load_fsa_uk,
     CuratedFood.SOURCE_AUSNUT: load_ausnut,
     CuratedFood.SOURCE_CIQUAL: load_ciqual,
-    CuratedFood.SOURCE_MARROW: load_marrow,
+    CuratedFood.SOURCE_GYMFLOW: load_gymflow,
 }

@@ -392,7 +392,7 @@ def startup_for_me(request):
 #
 # The link in the email is `gymflow://magic/<token>` (custom URL
 # scheme handled by `GymFlowApp.onOpenURL` on iOS) plus a
-# `https://gymflow.coach/magic/<token>` web fallback for users
+# `https://gymflow.app/magic/<token>` web fallback for users
 # who tap from a desktop / non-iOS browser.
 # -------------------------------------------------------------------
 
@@ -400,18 +400,18 @@ def startup_for_me(request):
 def _magic_link_urls(token):
     """Return (deep_link, web_link) tuple for the email body.
 
-    `deep_link` opens the iOS app via the new `marrow://` custom
+    `deep_link` opens the iOS app via the new `gymflow://` custom
     scheme. The legacy `gymflow://` scheme is still registered on
     the iOS side for ~30 days so any in-flight emails from before
     the rebrand keep working — but every newly-issued link uses
-    `marrow://` from now on.
+    `gymflow://` from now on.
 
     `web_link` is a fallback for desktop browsers and the
     eventual Universal Links setup.
     """
-    web_base = getattr(settings, "GYMFLOW_WEB_BASE_URL", "https://gymflow.coach")
+    web_base = getattr(settings, "GYMFLOW_WEB_BASE_URL", "https://gymflow.app")
     return (
-        f"marrow://magic/{token}",
+        f"gymflow://magic/{token}",
         f"{web_base}/magic/{token}",
     )
 
@@ -531,7 +531,7 @@ def _send_magic_link_email(user, deep_link, web_link):
     msg = EmailMultiAlternatives(
         subject=subject,
         body=text_body,
-        from_email=getattr(settings, "DEFAULT_FROM_EMAIL", "GymFlow <hello@gymflow.coach>"),
+        from_email=getattr(settings, "DEFAULT_FROM_EMAIL", "GymFlow <hello@gymflow.app>"),
         to=[user.email],
     )
     msg.attach_alternative(html_body, "text/html")
@@ -539,7 +539,7 @@ def _send_magic_link_email(user, deep_link, web_link):
 
 
 def magic_link_web_handler(request, token):
-    """Web-side handler for `https://gymflow.coach/magic/<token>`.
+    """Web-side handler for `https://gymflow.app/magic/<token>`.
 
     Three branches based on the token's owner:
       • TRAINER  — consume the token + create a Django session +

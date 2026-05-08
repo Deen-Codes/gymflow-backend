@@ -285,7 +285,7 @@ def solo_nutrition_barcode_lookup(request, code: str):
     try:
         resp = requests.get(
             url, timeout=6.0,
-            headers={"User-Agent": "GymFlow/1.0 (gymflow.coach)"},
+            headers={"User-Agent": "GymFlow/1.0 (gymflow.app)"},
         )
         data = resp.json()
     except Exception as exc:

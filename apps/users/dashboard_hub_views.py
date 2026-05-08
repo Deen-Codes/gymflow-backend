@@ -285,7 +285,7 @@ TIPS = [
     {
         "icon":  "✦",
         "title": "Share your signup link daily",
-        "body":  "Drop your gymflow.coach URL in your IG bio + every story. "
+        "body":  "Drop your gymflow.app URL in your IG bio + every story. "
                  "Even one new application a week compounds.",
     },
     {

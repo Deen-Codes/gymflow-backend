@@ -28,7 +28,7 @@
 
 set -euo pipefail
 
-WORKDIR=/tmp/marrow_food_seed
+WORKDIR=/tmp/gymflow_food_seed
 mkdir -p "$WORKDIR"
 cd "$WORKDIR"
 

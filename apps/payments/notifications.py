@@ -67,8 +67,8 @@ def _send(template_base: str, subject: str, client_sub: ClientSubscription,
             client_sub.plan.get_interval_display() if client_sub.plan else ""
         ),
         "current_period_end": client_sub.current_period_end,
-        "trainer_clients_url": "https://gymflow.coach/dashboard/clients/",
-        "client_detail_url": f"https://gymflow.coach/dashboard/clients/{client_sub.client_id}/",
+        "trainer_clients_url": "https://gymflow.app/dashboard/clients/",
+        "client_detail_url": f"https://gymflow.app/dashboard/clients/{client_sub.client_id}/",
     }
     if extra_ctx:
         ctx.update(extra_ctx)

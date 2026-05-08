@@ -50,7 +50,7 @@ class NutritionPlan(models.Model):
 #   • UK FSA McCance & Widdowson's — UK, CC BY 4.0, ~3k staples
 #   • AUSNUT 2011-13               — AU/NZ, public, ~5.7k items
 #   • CIQUAL                       — EU/FR, open license, ~3.2k items
-#   • Marrow-curated               — our own additions (branded items
+#   • GymFlow-curated               — our own additions (branded items
 #                                    we add manually; pro-tier fields)
 #
 # Open Food Facts is intentionally NOT ingested (CC BY-SA copyleft
@@ -58,7 +58,7 @@ class NutritionPlan(models.Model):
 # in iOS — `FoodLookupService` already handles that path. Branded
 # items the user finds via barcode and re-uses become entries in the
 # user's per-account food log; popular ones can be promoted into the
-# `marrow` source over time with our own re-derivation.
+# `gymflow` source over time with our own re-derivation.
 #
 # Multi-region resolution: when the iOS client searches, the backend
 # filters CuratedFood by `region_codes` overlap with the user's locale
@@ -84,13 +84,13 @@ class CuratedFood(models.Model):
     SOURCE_FSA_UK = "fsa_uk"
     SOURCE_AUSNUT = "ausnut"
     SOURCE_CIQUAL = "ciqual"
-    SOURCE_MARROW = "marrow"
+    SOURCE_GYMFLOW = "gymflow"
     SOURCE_CHOICES = [
         (SOURCE_USDA,   "USDA FoodData Central"),
         (SOURCE_FSA_UK, "UK FSA McCance & Widdowson's"),
         (SOURCE_AUSNUT, "AUSNUT 2011-13"),
         (SOURCE_CIQUAL, "CIQUAL"),
-        (SOURCE_MARROW, "Marrow curated"),
+        (SOURCE_GYMFLOW, "GymFlow curated"),
     ]
 
     source     = models.CharField(max_length=12, choices=SOURCE_CHOICES, db_index=True)

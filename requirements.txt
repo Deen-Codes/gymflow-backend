@@ -23,3 +23,6 @@ stripe>=10.0,<12
 # JWTs; the [crypto] extra pulls in `cryptography` which we need for
 # RS256 signature verification against each provider's JWKS.
 PyJWT[crypto]>=2.8,<3
+# NUTRITION-DB seed loader parses popular_foods.yaml. Used by
+# `manage.py seed_popular_foods` — no runtime use, build-time only.
+PyYAML>=6.0,<7

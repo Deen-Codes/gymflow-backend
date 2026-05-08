@@ -16,7 +16,7 @@ steady state.
 | **UK FSA McCance & Widdowson** | ~3,000 | UK | CC BY 4.0 | Phase 2 (loader stubbed) |
 | **AUSNUT 2011-13** | ~5,700 | AU/NZ | Public | Phase 3 (loader stubbed) |
 | **CIQUAL** | ~3,200 | EU/FR | Open licence | Phase 4 (loader stubbed) |
-| **Marrow-curated** | manual | global | Owned | **Live** (CSV loader real) |
+| **GymFlow-curated** | manual | global | Owned | **Live** (CSV loader real) |
 
 **Open Food Facts intentionally excluded** from ingest — its
 CC BY-SA copyleft would force the whole derivative DB under CC
@@ -149,8 +149,8 @@ identity (so AI proposals referencing those rows stay valid).
           f.save(update_fields=['dietary_compat', 'allergens'])
   "
   ```
-- **Add a Marrow override** (e.g. for a branded item where you
+- **Add a GymFlow override** (e.g. for a branded item where you
   know the actual halal certification) — write a CSV with
   explicit `dietary_compat` / `allergens` columns and import
-  via `--source=marrow`. Marrow has the highest dedup priority
+  via `--source=gymflow`. GymFlow has the highest dedup priority
   so it overrides USDA's auto-tagged values.

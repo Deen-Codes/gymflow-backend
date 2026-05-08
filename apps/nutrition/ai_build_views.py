@@ -76,7 +76,7 @@ NUTRITION_FIRST_USED_KEY = "solo_ai_nutrition_build_used"
 
 
 SYSTEM_PROMPT = """\
-You are Marrow's nutrition coach. The user has completed their
+You are GymFlow's nutrition coach. The user has completed their
 onboarding. We've already computed the macro numbers from
 established formulas (Mifflin-St Jeor + Helms cut depths +
 ISSN protein bands) — your job is to RETURN THOSE NUMBERS

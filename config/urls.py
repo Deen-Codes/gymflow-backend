@@ -29,8 +29,8 @@ urlpatterns = [
 
     # Programmatic city directory pages — task #42 / M.2. Mounted at
     # the project root (rather than under /p/) so the URL reads
-    # naturally for SEO: gymflow.coach/cities/london/ ranks better
-    # than gymflow.coach/p/cities/london/. Each page lists every
+    # naturally for SEO: gymflow.app/cities/london/ ranks better
+    # than gymflow.app/p/cities/london/. Each page lists every
     # trainer with that city set.
     path("cities/",                 cities_index,        name="cities-index"),
     path("cities/<slug:city_slug>/", city_directory_page, name="city-directory"),

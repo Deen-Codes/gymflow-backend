@@ -1,5 +1,5 @@
 # EXERCISE-DB — extend ExerciseCatalog.source choices to cover
-# the new ingest sources (Free Exercise DB + Marrow curated).
+# the new ingest sources (Free Exercise DB + GymFlow curated).
 # Choice expansion is a no-op at the schema level (CharField) but
 # we record the migration so the choices list stays in sync with
 # the model definition for future migrations.
@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
                     ("curated",          "Curated"),
                     ("wger",             "wger"),
                     ("free_exercise_db", "Free Exercise DB"),
-                    ("marrow",           "Marrow curated"),
+                    ("gymflow",           "GymFlow curated"),
                 ],
                 default="curated",
                 max_length=16,

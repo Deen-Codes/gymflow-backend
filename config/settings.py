@@ -18,14 +18,14 @@ DEBUG = os.environ.get("DEBUG", "False").lower() in ("true", "1", "yes")
 # ALLOWED_HOSTS — env var override with a sensible default that
 # already includes our production domains. Django interprets a
 # leading dot as "this domain and all its subdomains" — so
-# `.gymflow.coach` matches both gymflow.coach itself and every
-# trainer subdomain (deen.gymflow.coach, etc.) without needing
+# `.gymflow.app` matches both gymflow.app itself and every
+# trainer subdomain (deen.gymflow.app, etc.) without needing
 # a wildcard CNAME on the host header.
 #
 # Format: comma-separated list of hosts.
-#   ALLOWED_HOSTS=.gymflow.coach,.onrender.com,localhost
+#   ALLOWED_HOSTS=.gymflow.app,.onrender.com,localhost
 # -------------------------------------------------------------------
-_DEFAULT_ALLOWED_HOSTS = "localhost,127.0.0.1,.gymflow.coach,.onrender.com"
+_DEFAULT_ALLOWED_HOSTS = "localhost,127.0.0.1,.gymflow.app,.onrender.com"
 ALLOWED_HOSTS = [
     h.strip()
     for h in os.environ.get("ALLOWED_HOSTS", _DEFAULT_ALLOWED_HOSTS).split(",")
@@ -48,8 +48,8 @@ ALLOWED_HOSTS = [
 # -------------------------------------------------------------------
 CSRF_TRUSTED_ORIGINS = [
     "https://gymflow-api-wxm9.onrender.com",
-    "https://*.gymflow.coach",
-    "https://gymflow.coach",
+    "https://*.gymflow.app",
+    "https://gymflow.app",
 ]
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 

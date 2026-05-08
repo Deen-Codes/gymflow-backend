@@ -35,9 +35,9 @@ services:
         generateValue: true
 
       # Comma-separated host list. Leading dot = match all subdomains.
-      # `.gymflow.coach` covers every trainer subdomain plus the apex.
+      # `.gymflow.app` covers every trainer subdomain plus the apex.
       - key: ALLOWED_HOSTS
-        value: .gymflow.coach,.onrender.com
+        value: .gymflow.app,.onrender.com
 
       # Enables the /api/users/_debug/set-state/ endpoint so the
       # iOS Profile DEBUG panel can flip tier (free/pro/pro_ai)

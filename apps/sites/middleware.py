@@ -34,7 +34,7 @@ from django.utils.deprecation import MiddlewareMixin
 # `localhost` is included so /etc/hosts entries like
 # `test-gym.localhost` work in local dev.
 SUBDOMAIN_APEX_HOSTS = (
-    "gymflow.coach",   # primary apex (production)
+    "gymflow.app",   # primary apex (production)
     "gymflow.com",     # legacy / aspirational — kept so old links don't 404 if the domain is acquired later
     "gymflow.app",
     "localhost",
@@ -60,7 +60,7 @@ RESERVED_SUBDOMAINS = frozenset({
     "support",
     "status",
     "cdn",
-    "billing",   # Stripe Customer Portal — billing.gymflow.coach
+    "billing",   # Stripe Customer Portal — billing.gymflow.app
 })
 
 
@@ -69,7 +69,7 @@ RESERVED_SUBDOMAINS = frozenset({
 # legal pages, admin, static files, the API, and Stripe routes still
 # work from any host (including subdomains, in case a footer link or
 # Stripe redirect lands there). Without this skip, a request like
-# `deen.gymflow.coach/legal/privacy/` would rewrite to
+# `deen.gymflow.app/legal/privacy/` would rewrite to
 # `/p/deen/legal/privacy/` and 404.
 GLOBAL_PATH_PREFIXES = (
     "/legal/",      # Privacy policy + Terms of service
@@ -119,7 +119,7 @@ class SubdomainSiteMiddleware(MiddlewareMixin):
         # Skip global paths — let them resolve normally. So the legal
         # pages, admin, API, Stripe webhooks, and static files all
         # still work even when the request arrives on a trainer
-        # subdomain like `deen.gymflow.coach/legal/privacy/`.
+        # subdomain like `deen.gymflow.app/legal/privacy/`.
         if request.path_info.startswith(GLOBAL_PATH_PREFIXES):
             return None
 

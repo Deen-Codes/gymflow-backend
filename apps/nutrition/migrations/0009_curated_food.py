@@ -1,6 +1,6 @@
 # NUTRITION-DB (#105) — owned multi-region food catalog. Read-only
 # at runtime; populated via the `import_curated_foods` management
-# command from USDA / UK FSA / AUSNUT / CIQUAL / Marrow-curated
+# command from USDA / UK FSA / AUSNUT / CIQUAL / GymFlow-curated
 # sources. See the model docstring for the full provenance table
 # and licensing rationale (Open Food Facts is intentionally
 # excluded — CC BY-SA blocks commercial bake-in).
@@ -27,7 +27,7 @@ class Migration(migrations.Migration):
                     ("fsa_uk", "UK FSA McCance & Widdowson's"),
                     ("ausnut", "AUSNUT 2011-13"),
                     ("ciqual", "CIQUAL"),
-                    ("marrow", "Marrow curated"),
+                    ("gymflow", "GymFlow curated"),
                 ], db_index=True, max_length=12)),
                 ("source_id", models.CharField(db_index=True, max_length=64)),
                 ("name",      models.CharField(db_index=True, max_length=200)),

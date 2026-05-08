@@ -168,17 +168,17 @@ class ExerciseCatalog(models.Model):
     # EXERCISE-DB (per #105 sibling) — owned multi-source exercise
     # catalog. Free Exercise DB (yuhonas) is public domain, ~800
     # exercises with instructions + images we can re-derive into
-    # our own animated pose stills. Marrow source is for our own
+    # our own animated pose stills. GymFlow source is for our own
     # additions / curated overrides. wger is intentionally NOT
     # ingested at runtime — its data is AGPL (viral copyleft) and
     # would force the catalog DB itself under AGPL too.
     SOURCE_FREE_EXERCISE_DB = "free_exercise_db"
-    SOURCE_MARROW = "marrow"
+    SOURCE_GYMFLOW = "gymflow"
     SOURCE_CHOICES = [
         (SOURCE_CURATED, "Curated"),
         (SOURCE_WGER, "wger"),
         (SOURCE_FREE_EXERCISE_DB, "Free Exercise DB"),
-        (SOURCE_MARROW, "Marrow curated"),
+        (SOURCE_GYMFLOW, "GymFlow curated"),
     ]
 
     name = models.CharField(max_length=255, db_index=True)
