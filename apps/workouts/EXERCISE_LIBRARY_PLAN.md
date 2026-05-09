@@ -88,19 +88,29 @@ For all 1500 (873 imported + 627 curated):
 ## Phase 5 — Icon generation
 
 Free Exercise DB ships stock photos as the start-frame. They work as v1 icons but
-look nothing like our brand. Replacement options (decision pending):
+look nothing like our brand.
 
-1. **AI-generated, consistent style** — Midjourney/SD with a tightly-defined
-   style spec (silhouette/line art, brand palette). Fastest. Quality variance
-   is the risk; needs a human review pass per icon.
+**Icon style spec (per Deen):**
+- Faceless figure (no eyes / mouth / hair detail) — silhouette or stylised body shape
+- Brand palette only: **white + lime (the app's lime accent)**, transparent or dark background
+- Same posture as the **animation start frame** — first frame of the motion, not a generic pose
+- Consistent line weight / fill style across all 1500 so the catalog feels uniform
+- Square aspect (works as both small icon AND cinematic background drop)
+
+Replacement options:
+
+1. **AI-generated, consistent style** — Midjourney/SD with a locked style prompt
+   (faceless silhouette, white + lime two-tone, minimal background). Fastest.
+   Quality variance is the risk; needs a review pass per icon.
 2. **Custom illustration commission** — slowest, most expensive, highest
    quality and brand consistency.
-3. **Layered placeholder approach** — keep yuhonas images on a tinted/
-   desaturated overlay so they fit the cinematic look until proper icons
+3. **Layered placeholder approach** — yuhonas images on a tinted/desaturated
+   white-and-lime overlay so they fit the cinematic look until proper icons
    land. Lowest effort to ship.
 
-Default if no decision: **option 3 for v1, option 1 for v2** as a curated
-bulk run after the 1500 entries are categorised.
+**Default plan:** option 3 for v1 (ship now with placeholders), option 1 for v2
+(bulk AI generation once 1500 entries are categorised). Each generated icon
+becomes the `image_url`; `animation_url` later layers the motion on top.
 
 ## Phase 6 — Animation commissioning
 

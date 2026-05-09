@@ -121,6 +121,78 @@ class Command(BaseCommand):
 # --------------------------------------------------------------------
 
 
+#: Free Exercise DB external_ids that duplicate a GymFlow-curated
+#: entry. We keep the curated name (UK-friendly + canonical) and
+#: skip the FreeDB equivalent so iOS doesn't show two "Goblet
+#: Squats" / "Bench Presses" / etc. Mapping is curated_name → list
+#: of FreeDB external_ids that mean the same thing. Re-derive this
+#: table when curated names change. (See EXERCISE_LIBRARY_PLAN.md)
+GYMFLOW_FREEDB_DUPES = {
+    # Squats
+    "Back Squat":              ["Barbell_Squat"],
+    "Front Squat":             ["Front_Barbell_Squat"],
+    "Goblet Squat":            ["Goblet_Squat"],
+    "Bulgarian Split Squat":   ["Split_Squat_with_Dumbbells"],
+    # Lunges
+    "Walking Lunge":           ["Dumbbell_Lunges", "Barbell_Walking_Lunge",
+                                "Bodyweight_Walking_Lunge"],
+    # Leg machines
+    "Leg Press":               ["Leg_Press"],
+    "Leg Extension":           ["Leg_Extensions"],
+    "Lying Leg Curl":          ["Lying_Leg_Curls"],
+    "Seated Leg Curl":         ["Seated_Leg_Curl"],
+    # Posterior chain
+    "Conventional Deadlift":   ["Barbell_Deadlift"],
+    "Romanian Deadlift":       ["Romanian_Deadlift"],
+    "Sumo Deadlift":           ["Sumo_Deadlift"],
+    # Glutes
+    "Hip Thrust":              ["Barbell_Hip_Thrust"],
+    "Glute Bridge":            ["Single_Leg_Glute_Bridge"],
+    # Calves
+    "Standing Calf Raise":     ["Standing_Calf_Raises"],
+    "Seated Calf Raise":       ["Seated_Calf_Raise"],
+    # Chest
+    "Bench Press":             ["Barbell_Bench_Press_-_Medium_Grip",
+                                "Bench_Press_-_Powerlifting"],
+    "Incline Bench Press":     ["Barbell_Incline_Bench_Press_-_Medium_Grip"],
+    "Dumbbell Bench Press":    ["Dumbbell_Bench_Press"],
+    "Incline Dumbbell Press":  ["Incline_Dumbbell_Press"],
+    "Cable Chest Fly":         ["Flat_Bench_Cable_Flyes", "Cable_Crossover"],
+    "Push-Up":                 ["Pushups"],
+    # Back
+    "Pull-Up":                 ["Pullups"],
+    "Lat Pulldown":            ["Wide-Grip_Lat_Pulldown",
+                                "Full_Range-Of-Motion_Lat_Pulldown"],
+    "Barbell Row":             ["Bent_Over_Barbell_Row"],
+    "Single-Arm Dumbbell Row": ["One-Arm_Dumbbell_Row"],
+    "Seated Cable Row":        ["Seated_Cable_Rows"],
+    # Shoulders
+    "Overhead Press":          ["Barbell_Shoulder_Press"],
+    "Lateral Raise":           ["Side_Lateral_Raise"],
+    "Cable Lateral Raise":     ["Cable_Seated_Lateral_Raise"],
+    "Face Pull":               ["Face_Pull"],
+    "Rear Delt Fly":           ["Cable_Rear_Delt_Fly"],
+    "Seated Dumbbell Press":   ["Seated_Dumbbell_Press"],
+    # Arms
+    "Barbell Curl":            ["Barbell_Curl"],
+    "Dumbbell Curl":           ["Dumbbell_Bicep_Curl",
+                                "Dumbbell_Alternate_Bicep_Curl"],
+    "Hammer Curl":             ["Hammer_Curls", "Alternate_Hammer_Curl"],
+    "Cable Tricep Pushdown":   ["Triceps_Pushdown",
+                                "Triceps_Pushdown_-_Rope_Attachment",
+                                "Triceps_Pushdown_-_V-Bar_Attachment"],
+    "Overhead Tricep Extension": ["Standing_Dumbbell_Triceps_Extension",
+                                  "Cable_Rope_Overhead_Triceps_Extension"],
+    "Skullcrusher":            ["EZ-Bar_Skullcrusher"],
+    # Core
+    "Plank":                   ["Plank"],
+    "Hanging Leg Raise":       ["Hanging_Leg_Raise"],
+    "Cable Crunch":            ["Cable_Crunch"],
+}
+#: Flatten to a single set for fast lookup at import time.
+FREEDB_DUPE_IDS = {fid for ids in GYMFLOW_FREEDB_DUPES.values() for fid in ids}
+
+
 def load_free_exercise_db(path: str) -> Iterable[dict]:
     """yuhonas/free-exercise-db — exercises.json.
 
@@ -143,6 +215,10 @@ def load_free_exercise_db(path: str) -> Iterable[dict]:
     later commissioned for this exercise, set `animation_url` via
     a separate management command or admin UI; it doesn't replace
     the image, it layers on top.
+
+    Dedup: any FreeDB row whose `id` is in `FREEDB_DUPE_IDS` is
+    skipped — its GymFlow-curated equivalent is already in the
+    catalog with a UK-friendly canonical name.
     """
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
@@ -151,7 +227,11 @@ def load_free_exercise_db(path: str) -> Iterable[dict]:
     # keyed by id. Handle both.
     rows = data.values() if isinstance(data, dict) else data
 
+    skipped_dupes = 0
     for row in rows:
+        if row.get("id") in FREEDB_DUPE_IDS:
+            skipped_dupes += 1
+            continue
         # Default to body only when missing.
         equipment = (row.get("equipment") or "body only").strip()
         primary_muscle = ""

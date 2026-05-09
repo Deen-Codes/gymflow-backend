@@ -1,0 +1,327 @@
+# Cardio — FreeDB ships only 14 cardio entries. Adds modern modalities
+# (rowing, ski erg, assault bike, sled, jump rope variants), interval
+# templates, and high-intensity circuits.
+
+- external_id: gymflow_treadmill_walk
+  name: Treadmill Walk
+  muscle_group: ""
+  equipment: machine
+  level: beginner
+  category: cardio
+
+- external_id: gymflow_treadmill_incline_walk
+  name: Treadmill Incline Walk
+  muscle_group: ""
+  equipment: machine
+  level: beginner
+  category: cardio
+
+- external_id: gymflow_treadmill_jog
+  name: Treadmill Jog
+  muscle_group: ""
+  equipment: machine
+  level: beginner
+  category: cardio
+
+- external_id: gymflow_treadmill_run
+  name: Treadmill Run
+  muscle_group: ""
+  equipment: machine
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_treadmill_sprint
+  name: Treadmill Sprint
+  muscle_group: ""
+  equipment: machine
+  level: expert
+  category: cardio
+
+- external_id: gymflow_treadmill_intervals
+  name: Treadmill Intervals
+  muscle_group: ""
+  equipment: machine
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_outdoor_walk
+  name: Outdoor Walk
+  muscle_group: ""
+  equipment: body only
+  level: beginner
+  category: cardio
+
+- external_id: gymflow_outdoor_run
+  name: Outdoor Run
+  muscle_group: ""
+  equipment: body only
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_outdoor_sprint
+  name: Outdoor Sprint
+  muscle_group: ""
+  equipment: body only
+  level: expert
+  category: cardio
+
+- external_id: gymflow_hill_sprint
+  name: Hill Sprint
+  muscle_group: ""
+  equipment: body only
+  level: expert
+  category: cardio
+
+- external_id: gymflow_stationary_bike
+  name: Stationary Bike
+  muscle_group: ""
+  equipment: machine
+  level: beginner
+  category: cardio
+
+- external_id: gymflow_spin_bike
+  name: Spin Bike
+  muscle_group: ""
+  equipment: machine
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_assault_bike
+  name: Assault Bike
+  muscle_group: ""
+  equipment: machine
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_assault_bike_intervals
+  name: Assault Bike Intervals
+  muscle_group: ""
+  equipment: machine
+  level: expert
+  category: cardio
+
+- external_id: gymflow_air_bike
+  name: Air Bike
+  muscle_group: ""
+  equipment: machine
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_outdoor_cycle
+  name: Outdoor Cycling
+  muscle_group: ""
+  equipment: body only
+  level: beginner
+  category: cardio
+
+- external_id: gymflow_rowing_machine
+  name: Rowing Machine
+  muscle_group: ""
+  secondary_muscles: lats,upper back,quadriceps
+  equipment: machine
+  level: beginner
+  category: cardio
+
+- external_id: gymflow_rowing_intervals
+  name: Rowing Intervals
+  muscle_group: ""
+  secondary_muscles: lats,upper back,quadriceps
+  equipment: machine
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_ski_erg
+  name: Ski Erg
+  muscle_group: ""
+  secondary_muscles: lats,triceps,core
+  equipment: machine
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_elliptical
+  name: Elliptical Trainer
+  muscle_group: ""
+  equipment: machine
+  level: beginner
+  category: cardio
+
+- external_id: gymflow_stair_climber
+  name: Stair Climber
+  muscle_group: glutes
+  secondary_muscles: quadriceps,calves
+  equipment: machine
+  level: beginner
+  category: cardio
+
+- external_id: gymflow_stair_master
+  name: StairMaster
+  muscle_group: glutes
+  secondary_muscles: quadriceps,calves
+  equipment: machine
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_stepmill
+  name: Stepmill
+  muscle_group: glutes
+  secondary_muscles: quadriceps,calves
+  equipment: machine
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_jump_rope_basic
+  name: Jump Rope (Basic)
+  muscle_group: calves
+  secondary_muscles: shoulders,core
+  equipment: other
+  level: beginner
+  category: cardio
+
+- external_id: gymflow_jump_rope_double_under
+  name: Double-Under Jump Rope
+  muscle_group: calves
+  secondary_muscles: shoulders,core
+  equipment: other
+  level: expert
+  category: cardio
+
+- external_id: gymflow_jump_rope_high_knees
+  name: Jump Rope High Knees
+  muscle_group: calves
+  secondary_muscles: hip flexors,core
+  equipment: other
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_jump_rope_boxer
+  name: Jump Rope Boxer Step
+  muscle_group: calves
+  secondary_muscles: shoulders,core
+  equipment: other
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_sled_push
+  name: Sled Push
+  muscle_group: quadriceps
+  secondary_muscles: glutes,calves,core
+  equipment: other
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_sled_pull
+  name: Sled Pull
+  muscle_group: hamstrings
+  secondary_muscles: glutes,lats,upper back
+  equipment: other
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_prowler_push
+  name: Prowler Push
+  muscle_group: quadriceps
+  secondary_muscles: glutes,calves,core
+  equipment: other
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_battle_ropes
+  name: Battle Ropes
+  muscle_group: shoulders
+  secondary_muscles: core,lats
+  equipment: other
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_battle_rope_slams
+  name: Battle Rope Slams
+  muscle_group: shoulders
+  secondary_muscles: core,lats
+  equipment: other
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_battle_rope_alt_waves
+  name: Battle Rope Alternating Waves
+  muscle_group: shoulders
+  secondary_muscles: core,lats
+  equipment: other
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_shadow_boxing
+  name: Shadow Boxing
+  muscle_group: shoulders
+  secondary_muscles: core,calves
+  equipment: body only
+  level: beginner
+  category: cardio
+
+- external_id: gymflow_heavy_bag_boxing
+  name: Heavy Bag Boxing
+  muscle_group: shoulders
+  secondary_muscles: core,calves,lats
+  equipment: other
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_speed_bag
+  name: Speed Bag
+  muscle_group: shoulders
+  secondary_muscles: forearms
+  equipment: other
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_swimming_freestyle
+  name: Swimming (Freestyle)
+  muscle_group: lats
+  secondary_muscles: shoulders,core,quadriceps
+  equipment: body only
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_swimming_breaststroke
+  name: Swimming (Breaststroke)
+  muscle_group: chest
+  secondary_muscles: shoulders,core,glutes
+  equipment: body only
+  level: beginner
+  category: cardio
+
+- external_id: gymflow_swimming_backstroke
+  name: Swimming (Backstroke)
+  muscle_group: lats
+  secondary_muscles: shoulders,core
+  equipment: body only
+  level: intermediate
+  category: cardio
+
+- external_id: gymflow_swimming_butterfly
+  name: Swimming (Butterfly)
+  muscle_group: lats
+  secondary_muscles: shoulders,core,chest
+  equipment: body only
+  level: expert
+  category: cardio
+
+- external_id: gymflow_steady_state_cardio
+  name: Steady State Cardio
+  muscle_group: ""
+  equipment: body only
+  level: beginner
+  category: cardio
+
+- external_id: gymflow_zone_2_cardio
+  name: Zone 2 Cardio
+  muscle_group: ""
+  equipment: body only
+  level: beginner
+  category: cardio
+
+- external_id: gymflow_hiit_cardio
+  name: HIIT Cardio Session
+  muscle_group: ""
+  equipment: body only
+  level: intermediate
+  category: cardio
