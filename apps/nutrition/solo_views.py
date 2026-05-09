@@ -316,12 +316,35 @@ def solo_nutrition_food_search(request):
 
     # Pull a wide candidate pool. For multi-token queries we want
     # items where ANY token matches name OR brand OR tags so we
-    # can rank across the combined hits. For single-token, the OR
-    # filter is the same.
+    # can rank across the combined hits.
+    #
+    # Apostrophe handling: the DB stores brands like "Nando's" /
+    # "McDonald's" / "Lyle's" with literal apostrophes, but users
+    # type "nandos" / "mcdonalds". `__icontains` on the raw column
+    # won't match because the apostrophe is in the middle. So for
+    # every query token we ALSO add an apostrophe-bearing variant
+    # — typically the form `<token-without-trailing-s>'s` — so the
+    # SQL prefilter can find apostrophe-rich brand names.
     from django.db.models import Q
+    def _apostrophe_variants(tok: str) -> list[str]:
+        out = [tok]
+        # "nandos" → "nando's"; "mcdonalds" → "mcdonald's";
+        # "lyles" → "lyle's"; "cadburys" → "cadbury's".
+        if len(tok) >= 3 and tok.endswith("s"):
+            out.append(f"{tok[:-1]}'s")
+        # Also handle "nando" (no trailing s) → "nando's" for
+        # users who skip the s entirely.
+        if len(tok) >= 3 and not tok.endswith("s"):
+            out.append(f"{tok}'s")
+        return out
     qfilter = Q()
     for tok in q_tokens:
-        qfilter |= Q(name__icontains=tok) | Q(brand__icontains=tok) | Q(tags__icontains=tok)
+        for variant in _apostrophe_variants(tok):
+            qfilter |= (
+                Q(name__icontains=variant)
+                | Q(brand__icontains=variant)
+                | Q(tags__icontains=variant)
+            )
     candidates = CuratedFood.objects.filter(qfilter)[:400]
 
     ranked = []

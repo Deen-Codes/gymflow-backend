@@ -238,10 +238,24 @@ def food_search(request):
         return Response({"results": [], "source": "catalog"})
     q_tokens = [t for t in q_norm.split() if t]
 
+    # Apostrophe handling — same pattern as solo_views.search_curated_foods
+    # (see comments there). DB stores "Nando's" but users type "nandos".
     from django.db.models import Q
+    def _apostrophe_variants(tok: str) -> list[str]:
+        out = [tok]
+        if len(tok) >= 3 and tok.endswith("s"):
+            out.append(f"{tok[:-1]}'s")
+        if len(tok) >= 3 and not tok.endswith("s"):
+            out.append(f"{tok}'s")
+        return out
     qfilter = Q()
     for tok in q_tokens:
-        qfilter |= Q(name__icontains=tok) | Q(brand__icontains=tok) | Q(tags__icontains=tok)
+        for variant in _apostrophe_variants(tok):
+            qfilter |= (
+                Q(name__icontains=variant)
+                | Q(brand__icontains=variant)
+                | Q(tags__icontains=variant)
+            )
     candidates = CuratedFood.objects.filter(qfilter)[:400]
 
     ranked = []
