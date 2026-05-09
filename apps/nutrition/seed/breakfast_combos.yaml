@@ -1,8 +1,9 @@
 # breakfast_combos.yaml — most-tracked breakfast items: scrambled/fried/boiled/poached eggs, omelettes (plain/cheese/ham/mushroom/egg-white), toast combinations (butter/jam/PB/avocado/eggs/beans), porridge variants (milk/water/oat milk/honey/banana-PB/protein), cereal-with-milk, pancakes/waffles/French toast/crêpes, smoothies (banana/berry/green/protein), full English variants, protein shakes (whey/casein/vegan), homemade meals (chicken+rice+broc, salmon+rice+veg, beef-mince+pasta, tuna pasta, Caesar, curry, chilli, shepherd's/cottage pie, lasagne, spag bol, toad-in-the-hole, bangers&mash), cottage cheese + quark.
+
 - source: gymflow
   source_id: egg_scrambled_with_butter_milk
   name: Scrambled Eggs (with butter & milk, 2 eggs)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 200
   protein_per_100g: 12
@@ -18,7 +19,7 @@
 - source: gymflow
   source_id: egg_scrambled_plain_2
   name: Scrambled Eggs Plain (2 eggs, dry)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 155
   protein_per_100g: 13
@@ -33,8 +34,8 @@
   unit_grams: 100
 - source: gymflow
   source_id: egg_fried_oil
-  name: Fried Egg in Oil (1)
-  brand: Generic
+  name: Fried Egg in Oil
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 14
@@ -49,8 +50,8 @@
   unit_grams: 60
 - source: gymflow
   source_id: egg_fried_butter
-  name: Fried Egg in Butter (1)
-  brand: Generic
+  name: Fried Egg in Butter
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 14
@@ -66,7 +67,7 @@
 - source: gymflow
   source_id: egg_boiled_soft
   name: Soft Boiled Egg (1 large)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 155
   protein_per_100g: 13
@@ -82,7 +83,7 @@
 - source: gymflow
   source_id: egg_boiled_hard
   name: Hard Boiled Egg (1 large)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 155
   protein_per_100g: 13
@@ -98,7 +99,7 @@
 - source: gymflow
   source_id: egg_poached_1
   name: Poached Egg (1 large)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 155
   protein_per_100g: 13
@@ -114,7 +115,7 @@
 - source: gymflow
   source_id: omelette_2_eggs_plain
   name: Omelette Plain (2 eggs)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 13
@@ -130,7 +131,7 @@
 - source: gymflow
   source_id: omelette_3_eggs_cheese
   name: Cheese Omelette (3 eggs)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 17
@@ -146,7 +147,7 @@
 - source: gymflow
   source_id: omelette_3_eggs_ham
   name: Ham Omelette (3 eggs)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 17
@@ -162,7 +163,7 @@
 - source: gymflow
   source_id: omelette_3_eggs_mushroom
   name: Mushroom Omelette (3 eggs)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 14
@@ -178,7 +179,7 @@
 - source: gymflow
   source_id: omelette_egg_white_3
   name: Egg White Omelette (3 whites)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 55
   protein_per_100g: 11
@@ -194,7 +195,7 @@
 - source: gymflow
   source_id: toast_white_butter
   name: Toast (1 slice white) with Butter
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 285
   protein_per_100g: 8
@@ -210,7 +211,7 @@
 - source: gymflow
   source_id: toast_wholemeal_butter
   name: Toast (1 slice wholemeal) with Butter
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 270
   protein_per_100g: 9
@@ -226,7 +227,7 @@
 - source: gymflow
   source_id: toast_butter_jam
   name: Toast with Butter & Jam (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 305
   protein_per_100g: 7
@@ -242,7 +243,7 @@
 - source: gymflow
   source_id: toast_peanut_butter
   name: Toast with Peanut Butter (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 320
   protein_per_100g: 12
@@ -258,7 +259,7 @@
 - source: gymflow
   source_id: toast_avocado
   name: Avocado on Toast (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 240
   protein_per_100g: 6
@@ -274,7 +275,7 @@
 - source: gymflow
   source_id: toast_eggs_scrambled
   name: Toast with Scrambled Eggs (1 slice + 2 eggs)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 12
@@ -290,7 +291,7 @@
 - source: gymflow
   source_id: toast_baked_beans
   name: Toast with Baked Beans (1 slice + half tin)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 7
@@ -306,7 +307,7 @@
 - source: gymflow
   source_id: porridge_milk_made
   name: Porridge made with Whole Milk (1 bowl)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 115
   protein_per_100g: 4.5
@@ -322,7 +323,7 @@
 - source: gymflow
   source_id: porridge_semi_milk
   name: Porridge made with Semi-Skimmed Milk
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 95
   protein_per_100g: 4
@@ -338,7 +339,7 @@
 - source: gymflow
   source_id: porridge_oat_milk
   name: Porridge made with Oat Milk
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 75
   protein_per_100g: 2.5
@@ -354,7 +355,7 @@
 - source: gymflow
   source_id: porridge_water_with_honey
   name: Porridge with Water & Honey
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 95
   protein_per_100g: 2.4
@@ -370,7 +371,7 @@
 - source: gymflow
   source_id: porridge_with_banana_pb
   name: Porridge with Banana & Peanut Butter
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 6
@@ -386,7 +387,7 @@
 - source: gymflow
   source_id: porridge_protein_chocolate
   name: Protein Porridge with Chocolate (1 scoop + oats + milk)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 18
@@ -402,7 +403,7 @@
 - source: gymflow
   source_id: corn_flakes_with_semi_milk
   name: Corn Flakes with Semi-Skimmed Milk (1 bowl)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 6
@@ -418,7 +419,7 @@
 - source: gymflow
   source_id: weetabix_2_with_milk
   name: Weetabix (2) with Semi-Skimmed Milk
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 7
@@ -434,7 +435,7 @@
 - source: gymflow
   source_id: granola_with_yogurt_berries
   name: Granola with Yogurt & Berries (bowl)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 11
@@ -450,7 +451,7 @@
 - source: gymflow
   source_id: pancakes_2_basic
   name: Pancakes (2, basic with milk/egg)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 230
   protein_per_100g: 6
@@ -466,7 +467,7 @@
 - source: gymflow
   source_id: american_pancakes_3_stack
   name: American Pancakes (3 stack)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 280
   protein_per_100g: 7
@@ -482,7 +483,7 @@
 - source: gymflow
   source_id: protein_pancakes_2_v2
   name: Protein Pancakes (2)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 240
   protein_per_100g: 22
@@ -498,7 +499,7 @@
 - source: gymflow
   source_id: french_toast_2
   name: French Toast (2 slices)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 250
   protein_per_100g: 9
@@ -514,7 +515,7 @@
 - source: gymflow
   source_id: crepes_2
   name: Crêpes (2 plain)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 7
@@ -530,7 +531,7 @@
 - source: gymflow
   source_id: smoothie_banana_oats_pb
   name: Banana, Oats & Peanut Butter Smoothie
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 95
   protein_per_100g: 4
@@ -545,7 +546,7 @@
 - source: gymflow
   source_id: smoothie_berry_yogurt
   name: Mixed Berry Yogurt Smoothie
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 75
   protein_per_100g: 4
@@ -560,7 +561,7 @@
 - source: gymflow
   source_id: smoothie_green_kale_apple
   name: Green Smoothie (Kale, Apple, Banana)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 50
   protein_per_100g: 1.5
@@ -575,7 +576,7 @@
 - source: gymflow
   source_id: smoothie_strawberry_protein
   name: Strawberry Protein Smoothie (with milk + whey)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 75
   protein_per_100g: 12
@@ -590,7 +591,7 @@
 - source: gymflow
   source_id: smoothie_chocolate_banana_protein
   name: Chocolate Banana Protein Shake
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 90
   protein_per_100g: 12
@@ -605,7 +606,7 @@
 - source: gymflow
   source_id: full_english_classic
   name: Full English Breakfast (classic plate)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 11
@@ -621,7 +622,7 @@
 - source: gymflow
   source_id: full_english_small
   name: Small Full English (3 items)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 11
@@ -637,7 +638,7 @@
 - source: gymflow
   source_id: vegetarian_breakfast
   name: Vegetarian Breakfast
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 8
@@ -653,7 +654,7 @@
 - source: gymflow
   source_id: breakfast_bagel_egg_bacon
   name: Bagel with Egg & Bacon
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 270
   protein_per_100g: 14
@@ -669,7 +670,7 @@
 - source: gymflow
   source_id: breakfast_burrito_eggs
   name: Breakfast Burrito (eggs, beans, cheese)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 11
@@ -685,7 +686,7 @@
 - source: gymflow
   source_id: whey_shake_water_1_scoop
   name: Whey Protein Shake with Water (1 scoop)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 90
   protein_per_100g: 22
@@ -700,7 +701,7 @@
 - source: gymflow
   source_id: whey_shake_milk_1_scoop
   name: Whey Protein Shake with Milk (1 scoop + 250ml semi)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 75
   protein_per_100g: 13
@@ -715,7 +716,7 @@
 - source: gymflow
   source_id: whey_shake_2_scoop
   name: Whey Protein Shake (2 scoops with water)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 80
   protein_per_100g: 25
@@ -730,7 +731,7 @@
 - source: gymflow
   source_id: vegan_protein_shake_water
   name: Vegan Protein Shake with Water (1 scoop)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 75
   protein_per_100g: 20
@@ -745,7 +746,7 @@
 - source: gymflow
   source_id: casein_shake_water
   name: Casein Shake with Water (1 scoop)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 85
   protein_per_100g: 22
@@ -760,7 +761,7 @@
 - source: gymflow
   source_id: chicken_breast_rice_broccoli
   name: Chicken Breast, Rice & Broccoli (basic meal)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 14
@@ -776,7 +777,7 @@
 - source: gymflow
   source_id: chicken_breast_sweet_potato
   name: Chicken Breast & Sweet Potato
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 17
@@ -792,7 +793,7 @@
 - source: gymflow
   source_id: salmon_rice_veg
   name: Salmon, Rice & Vegetables
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 13
@@ -808,7 +809,7 @@
 - source: gymflow
   source_id: beef_mince_pasta
   name: Beef Mince & Pasta
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 13
@@ -824,7 +825,7 @@
 - source: gymflow
   source_id: tuna_pasta
   name: Tuna Pasta with Sweetcorn
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 11
@@ -840,7 +841,7 @@
 - source: gymflow
   source_id: chicken_caesar_salad_homemade
   name: Chicken Caesar Salad (homemade)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 13
@@ -856,7 +857,7 @@
 - source: gymflow
   source_id: chicken_curry_rice
   name: Chicken Curry & Rice (homemade)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 11
@@ -872,7 +873,7 @@
 - source: gymflow
   source_id: chilli_con_carne_homemade
   name: Chilli Con Carne with Rice (homemade)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 11
@@ -888,7 +889,7 @@
 - source: gymflow
   source_id: shepherds_pie_homemade
   name: Shepherd's Pie (homemade)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 8
@@ -904,7 +905,7 @@
 - source: gymflow
   source_id: cottage_pie_homemade
   name: Cottage Pie (homemade)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 125
   protein_per_100g: 8
@@ -920,7 +921,7 @@
 - source: gymflow
   source_id: lasagne_homemade
   name: Beef Lasagne (homemade)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 9
@@ -936,7 +937,7 @@
 - source: gymflow
   source_id: spag_bol_homemade
   name: Spaghetti Bolognese (homemade)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 9
@@ -952,7 +953,7 @@
 - source: gymflow
   source_id: toad_in_the_hole
   name: Toad in the Hole
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 200
   protein_per_100g: 8
@@ -968,7 +969,7 @@
 - source: gymflow
   source_id: bangers_mash
   name: Bangers & Mash
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 9
@@ -984,7 +985,7 @@
 - source: gymflow
   source_id: rice_white_with_butter
   name: White Rice with Butter (1 portion)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 2.7
@@ -999,7 +1000,7 @@
 - source: gymflow
   source_id: rice_egg_fried_homemade
   name: Egg Fried Rice (homemade)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 5
@@ -1014,7 +1015,7 @@
 - source: gymflow
   source_id: rice_coconut
   name: Coconut Rice
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 3
@@ -1029,7 +1030,7 @@
 - source: gymflow
   source_id: rice_pilau_homemade
   name: Pilau Rice (homemade)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 3
@@ -1044,7 +1045,7 @@
 - source: gymflow
   source_id: cottage_cheese_pineapple
   name: Cottage Cheese with Pineapple (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 80
   protein_per_100g: 11
@@ -1059,7 +1060,7 @@
 - source: gymflow
   source_id: quark_natural_per_100g
   name: Quark, Natural (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 70
   protein_per_100g: 12
@@ -1075,7 +1076,7 @@
 - source: gymflow
   source_id: quark_strawberry_125
   name: Quark Strawberry (125g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 90
   protein_per_100g: 11

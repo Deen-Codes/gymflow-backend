@@ -1319,7 +1319,7 @@
   protein_per_100g: 0.0
   carbs_per_100g: 0.0
   fat_per_100g: 0.0
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 1
   serving_label: 1 g
@@ -1334,7 +1334,7 @@
   protein_per_100g: 10.0
   carbs_per_100g: 50.0
   fat_per_100g: 0.0
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 10
   serving_label: 10 g

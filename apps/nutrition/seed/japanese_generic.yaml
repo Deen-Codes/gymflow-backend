@@ -1,8 +1,9 @@
 # japanese_generic.yaml — generic Japanese dishes not tied to Wagamama / Wasabi / Itsu. Ramen variants, donburi bowls, yakitori, onigiri, sushi, sashimi, mochi, sake, condiments.
+
 - source: gymflow
   source_id: jpn_ramen_tonkotsu
   name: Tonkotsu Ramen
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 95
   protein_per_100g: 5
@@ -18,7 +19,7 @@
 - source: gymflow
   source_id: jpn_ramen_shoyu
   name: Shoyu Ramen
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 80
   protein_per_100g: 5
@@ -34,7 +35,7 @@
 - source: gymflow
   source_id: jpn_ramen_miso
   name: Miso Ramen
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 85
   protein_per_100g: 5
@@ -50,7 +51,7 @@
 - source: gymflow
   source_id: jpn_ramen_chicken
   name: Chicken Ramen
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 75
   protein_per_100g: 7
@@ -66,7 +67,7 @@
 - source: gymflow
   source_id: jpn_ramen_vegan
   name: Vegan Ramen
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 65
   protein_per_100g: 3
@@ -82,7 +83,7 @@
 - source: gymflow
   source_id: jpn_tempura_prawn_3
   name: Prawn Tempura (3 pieces)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 240
   protein_per_100g: 13
@@ -98,7 +99,7 @@
 - source: gymflow
   source_id: jpn_tempura_veg_3
   name: Vegetable Tempura (3)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 4
@@ -114,7 +115,7 @@
 - source: gymflow
   source_id: jpn_tempura_chicken_3
   name: Chicken Karaage (3)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 16
@@ -130,7 +131,7 @@
 - source: gymflow
   source_id: jpn_tonkatsu
   name: Tonkatsu (Pork Cutlet)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 270
   protein_per_100g: 18
@@ -146,7 +147,7 @@
 - source: gymflow
   source_id: jpn_chicken_katsu
   name: Chicken Katsu
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 230
   protein_per_100g: 18
@@ -162,7 +163,7 @@
 - source: gymflow
   source_id: jpn_donburi_gyudon
   name: Gyūdon (Beef Bowl)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 11
@@ -178,7 +179,7 @@
 - source: gymflow
   source_id: jpn_donburi_oyakodon
   name: Oyakodon (Chicken & Egg Bowl)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 11
@@ -194,7 +195,7 @@
 - source: gymflow
   source_id: jpn_donburi_katsudon
   name: Katsudon (Pork Cutlet Bowl)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 11
@@ -210,7 +211,7 @@
 - source: gymflow
   source_id: jpn_donburi_unagi
   name: Unagi Don (Eel Rice Bowl)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 14
@@ -225,8 +226,8 @@
   unit_grams: 350
 - source: gymflow
   source_id: jpn_yakitori_chicken_skewer
-  name: Chicken Yakitori Skewer (1)
-  brand: Generic
+  name: Chicken Yakitori Skewer
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 22
@@ -241,8 +242,8 @@
   unit_grams: 90
 - source: gymflow
   source_id: jpn_yakitori_pork_skewer
-  name: Pork Yakitori Skewer (1)
-  brand: Generic
+  name: Pork Yakitori Skewer
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 18
@@ -257,8 +258,8 @@
   unit_grams: 90
 - source: gymflow
   source_id: jpn_onigiri_salmon
-  name: Onigiri Salmon (1)
-  brand: Generic
+  name: Onigiri Salmon
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 5
@@ -273,8 +274,8 @@
   unit_grams: 100
 - source: gymflow
   source_id: jpn_onigiri_tuna_mayo
-  name: Onigiri Tuna Mayo (1)
-  brand: Generic
+  name: Onigiri Tuna Mayo
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 6
@@ -289,8 +290,8 @@
   unit_grams: 100
 - source: gymflow
   source_id: jpn_onigiri_umeboshi
-  name: Onigiri Umeboshi (1)
-  brand: Generic
+  name: Onigiri Umeboshi
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 3
@@ -306,7 +307,7 @@
 - source: gymflow
   source_id: jpn_takoyaki_6
   name: Takoyaki (6 balls)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 8
@@ -322,7 +323,7 @@
 - source: gymflow
   source_id: jpn_okonomiyaki
   name: Okonomiyaki
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 9
@@ -338,7 +339,7 @@
 - source: gymflow
   source_id: jpn_gyoza_pork_5
   name: Pork Gyoza (5)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 10
@@ -354,7 +355,7 @@
 - source: gymflow
   source_id: jpn_gyoza_chicken_5
   name: Chicken Gyoza (5)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 11
@@ -370,7 +371,7 @@
 - source: gymflow
   source_id: jpn_gyoza_veg_5
   name: Vegetable Gyoza (5)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 5
@@ -386,7 +387,7 @@
 - source: gymflow
   source_id: jpn_sushi_nigiri_salmon_2
   name: Salmon Nigiri (2 pieces)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 6
@@ -402,7 +403,7 @@
 - source: gymflow
   source_id: jpn_sushi_nigiri_tuna_2
   name: Tuna Nigiri (2 pieces)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 9
@@ -418,7 +419,7 @@
 - source: gymflow
   source_id: jpn_sushi_nigiri_prawn_2
   name: Cooked Prawn Nigiri (2)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 7
@@ -434,7 +435,7 @@
 - source: gymflow
   source_id: jpn_sushi_maki_salmon_avocado_8
   name: Salmon & Avocado Maki (8 pieces)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 6
@@ -450,7 +451,7 @@
 - source: gymflow
   source_id: jpn_sushi_maki_tuna_8
   name: Tuna Maki (8 pieces)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 7
@@ -466,7 +467,7 @@
 - source: gymflow
   source_id: jpn_sashimi_assorted_9
   name: Assorted Sashimi (9 pieces)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 22
@@ -482,7 +483,7 @@
 - source: gymflow
   source_id: jpn_miso_soup_white
   name: Miso Soup (white miso)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 30
   protein_per_100g: 2
@@ -498,7 +499,7 @@
 - source: gymflow
   source_id: jpn_edamame_steamed
   name: Edamame, Steamed (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 121
   protein_per_100g: 11
@@ -514,7 +515,7 @@
 - source: gymflow
   source_id: jpn_seaweed_salad
   name: Seaweed Salad
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 70
   protein_per_100g: 2
@@ -530,7 +531,7 @@
 - source: gymflow
   source_id: jpn_chirashi_bowl
   name: Chirashi Sushi Bowl
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 13
@@ -546,7 +547,7 @@
 - source: gymflow
   source_id: jpn_mochi_2
   name: Mochi (2 pieces)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 3
@@ -562,7 +563,7 @@
 - source: gymflow
   source_id: jpn_mochi_ice_cream_2
   name: Mochi Ice Cream (2 pieces)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 3
@@ -578,7 +579,7 @@
 - source: gymflow
   source_id: jpn_dorayaki_pancakes
   name: Dorayaki (Red Bean Pancakes, 1)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 270
   protein_per_100g: 7
@@ -594,7 +595,7 @@
 - source: gymflow
   source_id: jpn_taiyaki
   name: Taiyaki (Fish-shaped Pastry)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 250
   protein_per_100g: 5
@@ -610,7 +611,7 @@
 - source: gymflow
   source_id: jpn_dashi_stock
   name: Dashi Stock (per 250ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 6
   protein_per_100g: 1
@@ -625,7 +626,7 @@
 - source: gymflow
   source_id: jpn_mirin_15ml
   name: Mirin (1 tbsp/15ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 240
   protein_per_100g: 0
@@ -641,7 +642,7 @@
 - source: gymflow
   source_id: jpn_sake_25
   name: Sake (25ml shot)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 134
   protein_per_100g: 0.5
@@ -657,7 +658,7 @@
 - source: gymflow
   source_id: jpn_sake_warm_180
   name: Sake (180ml warm)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 134
   protein_per_100g: 0.5
@@ -672,7 +673,7 @@
 - source: gymflow
   source_id: jpn_japanese_curry
   name: Japanese Curry (with rice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 7
@@ -688,7 +689,7 @@
 - source: gymflow
   source_id: jpn_chashu_pork
   name: Chashu Pork (per 50g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 18
@@ -703,7 +704,7 @@
 - source: gymflow
   source_id: jpn_ajitama_egg
   name: Ajitama (Soft Egg)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 155
   protein_per_100g: 13
@@ -719,7 +720,7 @@
 - source: gymflow
   source_id: jpn_furikake_seasoning_5g
   name: Furikake Seasoning (1 tsp/5g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 380
   protein_per_100g: 18
@@ -735,7 +736,7 @@
 - source: gymflow
   source_id: jpn_panko_breadcrumbs_30g
   name: Panko Breadcrumbs (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 380
   protein_per_100g: 13
@@ -750,7 +751,7 @@
 - source: gymflow
   source_id: jpn_pickled_ginger_15g
   name: Pickled Ginger / Gari (15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 50
   protein_per_100g: 1

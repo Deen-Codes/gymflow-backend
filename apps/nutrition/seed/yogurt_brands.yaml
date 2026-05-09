@@ -1,4 +1,5 @@
 # yogurt_brands.yaml — Onken natural/strawberry, Liberté Greek/strawberry, The Collective, Yeo Valley natural/strawberry, Rachel's Organic, Alpro plant yogurts, Coconut Collaborative, Actimel, Benecol, Yakult Light, Elmlea creams, soured cream.
+
 - source: gymflow
   source_id: onken_natural_500
   name: Onken Natural Yogurt (per 100g)
@@ -304,7 +305,7 @@
 - source: gymflow
   source_id: soured_cream_30g
   name: Soured Cream (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 200
   protein_per_100g: 2.5

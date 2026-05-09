@@ -1,10 +1,11 @@
 # bakery_extras.yaml — croissants, Danish pastries, English muffins, crumpets,
 # hot cross buns, brioche, naan, chapati, roti, poppadoms, focaccia, ciabatta,
 # bagels variants, branded bread (Warburtons, Hovis, Kingsmill).
+
 - source: gymflow
   source_id: croissant_butter_60g
   name: Butter Croissant
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 445
   protein_per_100g: 8
@@ -20,7 +21,7 @@
 - source: gymflow
   source_id: pain_au_chocolat_70g
   name: Pain au Chocolat
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 410
   protein_per_100g: 6
@@ -36,7 +37,7 @@
 - source: gymflow
   source_id: pain_au_raisin_85g
   name: Pain au Raisins
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 365
   protein_per_100g: 6
@@ -52,7 +53,7 @@
 - source: gymflow
   source_id: cinnamon_swirl_85g
   name: Cinnamon Swirl
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 380
   protein_per_100g: 6
@@ -67,8 +68,8 @@
   unit_grams: 85
 - source: gymflow
   source_id: english_muffin_white
-  name: English Muffin (1)
-  brand: Generic
+  name: English Muffin
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 8
@@ -83,8 +84,8 @@
   unit_grams: 60
 - source: gymflow
   source_id: crumpet
-  name: Crumpet (1)
-  brand: Generic
+  name: Crumpet
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 6
@@ -99,8 +100,8 @@
   unit_grams: 50
 - source: gymflow
   source_id: hot_cross_bun
-  name: Hot Cross Bun (1)
-  brand: Generic
+  name: Hot Cross Bun
+  brand: ''
   region_codes: gb
   kcal_per_100g: 295
   protein_per_100g: 7
@@ -115,8 +116,8 @@
   unit_grams: 60
 - source: gymflow
   source_id: teacake
-  name: Teacake (1)
-  brand: Generic
+  name: Teacake
+  brand: ''
   region_codes: gb
   kcal_per_100g: 270
   protein_per_100g: 8
@@ -132,7 +133,7 @@
 - source: gymflow
   source_id: brioche_loaf_slice
   name: Brioche Loaf (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 365
   protein_per_100g: 8
@@ -147,8 +148,8 @@
   unit_grams: 30
 - source: gymflow
   source_id: naan_plain_70g
-  name: Plain Naan Bread (1)
-  brand: Generic
+  name: Plain Naan Bread
+  brand: ''
   region_codes: gb
   kcal_per_100g: 290
   protein_per_100g: 9
@@ -163,8 +164,8 @@
   unit_grams: 70
 - source: gymflow
   source_id: naan_garlic_coriander_70g
-  name: Garlic & Coriander Naan (1)
-  brand: Generic
+  name: Garlic & Coriander Naan
+  brand: ''
   region_codes: gb
   kcal_per_100g: 295
   protein_per_100g: 9
@@ -179,8 +180,8 @@
   unit_grams: 70
 - source: gymflow
   source_id: chapati_50g
-  name: Chapati (1)
-  brand: Generic
+  name: Chapati
+  brand: ''
   region_codes: gb
   kcal_per_100g: 290
   protein_per_100g: 10
@@ -195,8 +196,8 @@
   unit_grams: 50
 - source: gymflow
   source_id: roti_50g
-  name: Roti (1)
-  brand: Generic
+  name: Roti
+  brand: ''
   region_codes: gb
   kcal_per_100g: 290
   protein_per_100g: 10
@@ -211,8 +212,8 @@
   unit_grams: 50
 - source: gymflow
   source_id: poppadom_baked
-  name: Poppadom (1)
-  brand: Generic
+  name: Poppadom
+  brand: ''
   region_codes: gb
   kcal_per_100g: 365
   protein_per_100g: 22
@@ -228,7 +229,7 @@
 - source: gymflow
   source_id: focaccia_slice
   name: Focaccia (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 270
   protein_per_100g: 8
@@ -243,8 +244,8 @@
   unit_grams: 50
 - source: gymflow
   source_id: ciabatta_50g
-  name: Ciabatta Roll (1)
-  brand: Generic
+  name: Ciabatta Roll
+  brand: ''
   region_codes: gb
   kcal_per_100g: 270
   protein_per_100g: 9
@@ -260,7 +261,7 @@
 - source: gymflow
   source_id: garlic_baguette_slice
   name: Garlic Baguette (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 290
   protein_per_100g: 7
@@ -276,7 +277,7 @@
 - source: gymflow
   source_id: baguette_french_50g
   name: French Baguette (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 270
   protein_per_100g: 9
@@ -291,8 +292,8 @@
   unit_grams: 50
 - source: gymflow
   source_id: dinner_roll_white
-  name: White Dinner Roll (1)
-  brand: Generic
+  name: White Dinner Roll
+  brand: ''
   region_codes: gb
   kcal_per_100g: 280
   protein_per_100g: 9
@@ -307,8 +308,8 @@
   unit_grams: 45
 - source: gymflow
   source_id: cinnamon_bagel_plain
-  name: Cinnamon Bagel (1)
-  brand: Generic
+  name: Cinnamon Bagel
+  brand: ''
   region_codes: gb
   kcal_per_100g: 260
   protein_per_100g: 9
@@ -323,8 +324,8 @@
   unit_grams: 95
 - source: gymflow
   source_id: plain_protein_bagel
-  name: Protein Bagel (1)
-  brand: Generic
+  name: Protein Bagel
+  brand: ''
   region_codes: gb
   kcal_per_100g: 240
   protein_per_100g: 25
@@ -339,7 +340,7 @@
   unit_grams: 100
 - source: gymflow
   source_id: warburtons_thins_white
-  name: Warburtons Thins White (1)
+  name: Warburtons Thins White
   brand: Warburtons
   region_codes: gb
   kcal_per_100g: 245
@@ -355,7 +356,7 @@
   unit_grams: 50
 - source: gymflow
   source_id: warburtons_thins_seeded
-  name: Warburtons Thins Seeded (1)
+  name: Warburtons Thins Seeded
   brand: Warburtons
   region_codes: gb
   kcal_per_100g: 250
@@ -547,7 +548,7 @@
   unit_grams: 40
 - source: gymflow
   source_id: warburtons_brioche_finger_rolls_4
-  name: Warburtons Brioche Finger Rolls (1)
+  name: Warburtons Brioche Finger Rolls
   brand: Warburtons
   region_codes: gb
   kcal_per_100g: 305
@@ -563,7 +564,7 @@
   unit_grams: 60
 - source: gymflow
   source_id: warburtons_seeded_batch_rolls
-  name: Warburtons Seeded Batch Rolls (1)
+  name: Warburtons Seeded Batch Rolls
   brand: Warburtons
   region_codes: gb
   kcal_per_100g: 260
@@ -579,7 +580,7 @@
   unit_grams: 70
 - source: gymflow
   source_id: warburtons_white_baps_4
-  name: Warburtons White Baps (1)
+  name: Warburtons White Baps
   brand: Warburtons
   region_codes: gb
   kcal_per_100g: 270
@@ -595,7 +596,7 @@
   unit_grams: 67
 - source: gymflow
   source_id: warburtons_giant_white_wraps_4
-  name: Warburtons Giant White Wraps (1)
+  name: Warburtons Giant White Wraps
   brand: Warburtons
   region_codes: gb
   kcal_per_100g: 295
@@ -611,7 +612,7 @@
   unit_grams: 64
 - source: gymflow
   source_id: warburtons_protein_wraps_2
-  name: Warburtons Protein Wraps (1)
+  name: Warburtons Protein Wraps
   brand: Warburtons
   region_codes: gb
   kcal_per_100g: 280
@@ -627,7 +628,7 @@
   unit_grams: 60
 - source: gymflow
   source_id: warburtons_thins_white_2
-  name: Warburtons Sandwich Thins White (1)
+  name: Warburtons Sandwich Thins White
   brand: Warburtons
   region_codes: gb
   kcal_per_100g: 245
@@ -643,7 +644,7 @@
   unit_grams: 50
 - source: gymflow
   source_id: warburtons_thins_seeded_2
-  name: Warburtons Sandwich Thins Seeded (1)
+  name: Warburtons Sandwich Thins Seeded
   brand: Warburtons
   region_codes: gb
   kcal_per_100g: 250
@@ -659,7 +660,7 @@
   unit_grams: 50
 - source: gymflow
   source_id: warburtons_pittas_white_6
-  name: Warburtons White Pittas (1)
+  name: Warburtons White Pittas
   brand: Warburtons
   region_codes: gb
   kcal_per_100g: 270
@@ -675,7 +676,7 @@
   unit_grams: 60
 - source: gymflow
   source_id: warburtons_crumpets_6
-  name: Warburtons Crumpets (1)
+  name: Warburtons Crumpets
   brand: Warburtons
   region_codes: gb
   kcal_per_100g: 195
@@ -915,7 +916,7 @@
   unit_grams: 50
 - source: gymflow
   source_id: kingsmill_burger_buns_4
-  name: Kingsmill Skinny Burger Buns (1)
+  name: Kingsmill Skinny Burger Buns
   brand: Kingsmill
   region_codes: gb
   kcal_per_100g: 235
@@ -932,7 +933,7 @@
 - source: gymflow
   source_id: bread_brown_medium_slice_alias
   name: Brown Bread, Medium Slice (generic)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 230
   protein_per_100g: 9.5
@@ -948,7 +949,7 @@
 - source: gymflow
   source_id: bread_brown_thick_slice_alias
   name: Brown Bread, Thick Slice (generic)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 230
   protein_per_100g: 9.5
@@ -964,7 +965,7 @@
 - source: gymflow
   source_id: bread_granary_slice
   name: Granary Bread (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 250
   protein_per_100g: 9
@@ -980,7 +981,7 @@
 - source: gymflow
   source_id: bread_multigrain_slice
   name: Multigrain Bread (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 10
@@ -996,7 +997,7 @@
 - source: gymflow
   source_id: bread_white_thick_slice_generic
   name: White Bread, Thick Slice (generic)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 8.5
@@ -1044,7 +1045,7 @@
 - source: gymflow
   source_id: mcgrains_irish_soda_slice
   name: Irish Soda Bread (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 250
   protein_per_100g: 7
@@ -1075,7 +1076,7 @@
   unit_grams: 30
 - source: gymflow
   source_id: soreen_lunchbox_loaf
-  name: Soreen Lunchbox Loaf (1)
+  name: Soreen Lunchbox Loaf
   brand: Soreen
   region_codes: gb
   kcal_per_100g: 295

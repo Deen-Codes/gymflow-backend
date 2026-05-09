@@ -1,6 +1,7 @@
 # alcoholic_drinks.yaml — beers, ciders, wines, spirits, cocktails.
 # Macros include alcohol kcal (7 kcal/g ethanol) so the (P×4)+(C×4)+(F×9) check
 # will under-shoot kcal — that is correct, NOT an error.
+
 - source: gymflow
   source_id: beer_carling_pint
   name: Carling (pint)
@@ -516,7 +517,7 @@
 - source: gymflow
   source_id: wine_red_175ml
   name: Red Wine (175ml glass)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 85
   protein_per_100g: 0.1
@@ -531,7 +532,7 @@
 - source: gymflow
   source_id: wine_red_125ml
   name: Red Wine (125ml glass)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 85
   protein_per_100g: 0.1
@@ -546,7 +547,7 @@
 - source: gymflow
   source_id: wine_red_250ml
   name: Red Wine (250ml large glass)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 85
   protein_per_100g: 0.1
@@ -561,7 +562,7 @@
 - source: gymflow
   source_id: wine_white_175ml
   name: White Wine (175ml glass)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 80
   protein_per_100g: 0.1
@@ -576,7 +577,7 @@
 - source: gymflow
   source_id: wine_white_125ml
   name: White Wine (125ml glass)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 80
   protein_per_100g: 0.1
@@ -591,7 +592,7 @@
 - source: gymflow
   source_id: wine_white_250ml
   name: White Wine (250ml large glass)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 80
   protein_per_100g: 0.1
@@ -606,7 +607,7 @@
 - source: gymflow
   source_id: wine_rose_175ml
   name: Rosé Wine (175ml glass)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 82
   protein_per_100g: 0.1
@@ -621,7 +622,7 @@
 - source: gymflow
   source_id: wine_prosecco_125ml
   name: Prosecco (125ml glass)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 80
   protein_per_100g: 0.1
@@ -636,7 +637,7 @@
 - source: gymflow
   source_id: wine_champagne_125ml
   name: Champagne (125ml glass)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 90
   protein_per_100g: 0.1
@@ -651,7 +652,7 @@
 - source: gymflow
   source_id: wine_dessert_75ml
   name: Dessert / Pudding Wine (75ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 0.1
@@ -666,7 +667,7 @@
 - source: gymflow
   source_id: spirit_vodka_25
   name: Vodka (25ml shot)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 0
@@ -682,7 +683,7 @@
 - source: gymflow
   source_id: spirit_gin_25
   name: Gin (25ml shot)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 0
@@ -698,7 +699,7 @@
 - source: gymflow
   source_id: spirit_whisky_25
   name: Whisky (25ml shot)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 0
@@ -714,7 +715,7 @@
 - source: gymflow
   source_id: spirit_rum_25
   name: Rum (25ml shot)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 0
@@ -730,7 +731,7 @@
 - source: gymflow
   source_id: spirit_tequila_25
   name: Tequila (25ml shot)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 0
@@ -746,7 +747,7 @@
 - source: gymflow
   source_id: spirit_brandy_25
   name: Brandy (25ml shot)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 0
@@ -826,7 +827,7 @@
 - source: gymflow
   source_id: cocktail_gin_tonic
   name: Gin & Tonic
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 65
   protein_per_100g: 0
@@ -841,7 +842,7 @@
 - source: gymflow
   source_id: cocktail_vodka_lime_soda
   name: Vodka, Lime & Soda
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 50
   protein_per_100g: 0
@@ -856,7 +857,7 @@
 - source: gymflow
   source_id: cocktail_mojito
   name: Mojito (generic)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 0.2
@@ -871,7 +872,7 @@
 - source: gymflow
   source_id: cocktail_margarita
   name: Margarita (generic)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 0
@@ -886,7 +887,7 @@
 - source: gymflow
   source_id: cocktail_old_fashioned
   name: Old Fashioned
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 0
@@ -901,7 +902,7 @@
 - source: gymflow
   source_id: cocktail_negroni
   name: Negroni
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 230
   protein_per_100g: 0
@@ -916,7 +917,7 @@
 - source: gymflow
   source_id: cocktail_bloody_mary
   name: Bloody Mary
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 60
   protein_per_100g: 1

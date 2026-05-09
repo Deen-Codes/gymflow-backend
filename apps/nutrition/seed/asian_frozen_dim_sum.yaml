@@ -1,4 +1,5 @@
 # asian_frozen_dim_sum.yaml — Itsu pork chive/chicken/veg gyoza, yakitori skewers, edamame; Birds Eye spring rolls; generic frozen gyoza/dumplings/har gow/siu mai/bao buns/wontons/lumpia/potstickers.
+
 - source: gymflow
   source_id: itsu_pork_chive_dumplings_5
   name: Itsu Pork & Chive Gyoza (5)
@@ -49,7 +50,7 @@
   unit_grams: 26
 - source: gymflow
   source_id: itsu_chicken_yakitori_skewers
-  name: Itsu Chicken Yakitori Skewers (1)
+  name: Itsu Chicken Yakitori Skewers
   brand: Itsu
   region_codes: gb
   kcal_per_100g: 165
@@ -81,7 +82,7 @@
   unit_grams: 100
 - source: gymflow
   source_id: birds_eye_spring_rolls_4
-  name: Birds Eye Crispy Spring Rolls (1)
+  name: Birds Eye Crispy Spring Rolls
   brand: Birds Eye
   region_codes: gb
   kcal_per_100g: 245
@@ -98,7 +99,7 @@
 - source: gymflow
   source_id: frozen_chicken_gyoza_generic_5
   name: Frozen Chicken Gyoza (5)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 11
@@ -114,7 +115,7 @@
 - source: gymflow
   source_id: frozen_pork_dumplings_generic_5
   name: Frozen Pork Dumplings (5)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 10
@@ -130,7 +131,7 @@
 - source: gymflow
   source_id: frozen_har_gow_4
   name: Frozen Prawn Har Gow (4)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 7
@@ -146,7 +147,7 @@
 - source: gymflow
   source_id: frozen_siu_mai_4
   name: Frozen Siu Mai (4)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 9
@@ -162,7 +163,7 @@
 - source: gymflow
   source_id: frozen_bao_pork_2
   name: Frozen Pork Bao Buns (2)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 11
@@ -178,7 +179,7 @@
 - source: gymflow
   source_id: frozen_bao_chicken_2
   name: Frozen Chicken Bao Buns (2)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 225
   protein_per_100g: 12
@@ -194,7 +195,7 @@
 - source: gymflow
   source_id: frozen_wontons_pork_5
   name: Frozen Pork Wontons (5)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 200
   protein_per_100g: 10
@@ -210,7 +211,7 @@
 - source: gymflow
   source_id: frozen_lumpia_3
   name: Frozen Lumpia / Spring Rolls (3)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 240
   protein_per_100g: 5
@@ -226,7 +227,7 @@
 - source: gymflow
   source_id: frozen_potstickers_5
   name: Frozen Potstickers (5)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 11

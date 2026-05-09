@@ -1,9 +1,10 @@
 # caffe_nero.yaml — Caffè Nero UK menu. 30 entries.
 # Coffees use ml (volumetric); food per piece.
 # Source: caffenero.com/uk/menu.
+
 - source: gymflow
   source_id: caffenero_espresso
-  name: Espresso (single)
+  name: Espresso
   brand: Caffè Nero
   region_codes: gb
   kcal_per_100g: 1

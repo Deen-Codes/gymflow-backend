@@ -1,4 +1,5 @@
 # crisps_brands.yaml — Tyrrells (Lightly Salted/Cheddar Chive/Sweet Chilli), Burts (Lightly Salted/Sea Salt Balsamic), McCoy's (Flame Grilled Steak/Salt Malt Vinegar), Walkers Max + Squares + French Fries + Baked, Discos, Hula Hoops BBQ + Big Feet, Popchips, Mexican tortilla chips.
+
 - source: gymflow
   source_id: tyrrells_lightly_sea_salted
   name: Tyrrells Lightly Sea Salted (40g)
@@ -290,7 +291,7 @@
 - source: gymflow
   source_id: squirrel_corn_chips_30g
   name: Squirrel Corn Chips Lightly Salted (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 470
   protein_per_100g: 7
@@ -306,7 +307,7 @@
 - source: gymflow
   source_id: mexican_tortilla_chips_30g
   name: Mexican Tortilla Chips Salted (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 480
   protein_per_100g: 7

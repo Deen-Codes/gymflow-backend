@@ -1,4 +1,5 @@
 # world_snacks.yaml — Pocky 3 flavours, Hi-Chew, Pepero choc/almond, Lotte Choco Pie, Honey Butter Chip, Calbee Shrimp Chips, Takis Fuego, Cheetos Flamin' Hot, Fritos, Seabrook, prawn crackers, Bombay mix, Chevda, Dukkah, instant noodles (Indomie Mi Goreng + Special Chicken, Nissin Cup Noodle Chicken/Curry, Mama Tom Yum, Shin Ramyun, Buldak 2x Spicy, Pot Noodle Chicken Mushroom + Bombay Bad Boy, Batchelors Super Noodles).
+
 - source: gymflow
   source_id: pocky_chocolate_pack
   name: Pocky Chocolate (1 pack)
@@ -49,7 +50,7 @@
   unit_grams: 40
 - source: gymflow
   source_id: hi_chew_pack
-  name: Hi-Chew Mixed Pack (1)
+  name: Hi-Chew Mixed Pack
   brand: Hi-Chew
   region_codes: gb
   kcal_per_100g: 410
@@ -210,7 +211,7 @@
 - source: gymflow
   source_id: chinese_prawn_crackers_30g
   name: Prawn Crackers (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 520
   protein_per_100g: 4
@@ -226,7 +227,7 @@
 - source: gymflow
   source_id: bombay_mix_30g_extra
   name: Bombay Mix (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 525
   protein_per_100g: 16
@@ -242,7 +243,7 @@
 - source: gymflow
   source_id: chevda_30g
   name: Chevda (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 525
   protein_per_100g: 14
@@ -258,7 +259,7 @@
 - source: gymflow
   source_id: moroccan_dukkah_15g
   name: Dukkah (1 tbsp/15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 480
   protein_per_100g: 14
@@ -385,7 +386,7 @@
   unit_grams: 140
 - source: gymflow
   source_id: pot_noodle_chicken_mushroom
-  name: Pot Noodle Chicken & Mushroom (1)
+  name: Pot Noodle Chicken & Mushroom
   brand: Pot Noodle
   region_codes: gb
   kcal_per_100g: 410
@@ -401,7 +402,7 @@
   unit_grams: 90
 - source: gymflow
   source_id: pot_noodle_bombay_bad_boy
-  name: Pot Noodle Bombay Bad Boy (1)
+  name: Pot Noodle Bombay Bad Boy
   brand: Pot Noodle
   region_codes: gb
   kcal_per_100g: 410

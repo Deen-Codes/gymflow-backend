@@ -1,8 +1,9 @@
 # thai.yaml — Thai curries (red/green/yellow/panang/massaman), pad thai variants, tom yum/tom kha, satay, papaya salad, fried rice, mango sticky rice.
+
 - source: gymflow
   source_id: th_pad_thai_chicken
   name: Pad Thai with Chicken
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 12
@@ -18,7 +19,7 @@
 - source: gymflow
   source_id: th_pad_thai_prawn
   name: Pad Thai with Prawn
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 11
@@ -34,7 +35,7 @@
 - source: gymflow
   source_id: th_pad_thai_vegan
   name: Vegan Pad Thai
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 6
@@ -50,7 +51,7 @@
 - source: gymflow
   source_id: th_green_curry_chicken
   name: Thai Green Curry with Chicken
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 11
@@ -66,7 +67,7 @@
 - source: gymflow
   source_id: th_red_curry_chicken
   name: Thai Red Curry with Chicken
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 155
   protein_per_100g: 11
@@ -82,7 +83,7 @@
 - source: gymflow
   source_id: th_red_curry_beef
   name: Thai Red Curry with Beef
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 12
@@ -98,7 +99,7 @@
 - source: gymflow
   source_id: th_yellow_curry_chicken
   name: Thai Yellow Curry Chicken
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 11
@@ -114,7 +115,7 @@
 - source: gymflow
   source_id: th_panang_curry_chicken
   name: Panang Curry Chicken
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 11
@@ -130,7 +131,7 @@
 - source: gymflow
   source_id: th_massaman_curry_beef
   name: Massaman Curry Beef
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 11
@@ -146,7 +147,7 @@
 - source: gymflow
   source_id: th_jungle_curry_chicken
   name: Jungle Curry Chicken
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 95
   protein_per_100g: 12
@@ -162,7 +163,7 @@
 - source: gymflow
   source_id: th_tom_yum_prawn
   name: Tom Yum Soup with Prawn
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 50
   protein_per_100g: 4
@@ -178,7 +179,7 @@
 - source: gymflow
   source_id: th_tom_kha_chicken
   name: Tom Kha Chicken Soup
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 75
   protein_per_100g: 5
@@ -194,7 +195,7 @@
 - source: gymflow
   source_id: th_thai_fried_rice_chicken
   name: Thai Fried Rice with Chicken
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 170
   protein_per_100g: 9
@@ -210,7 +211,7 @@
 - source: gymflow
   source_id: th_thai_fried_rice_prawn
   name: Thai Fried Rice with Prawn
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 9
@@ -226,7 +227,7 @@
 - source: gymflow
   source_id: th_pineapple_fried_rice
   name: Pineapple Fried Rice
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 5
@@ -242,7 +243,7 @@
 - source: gymflow
   source_id: th_thai_basil_chicken
   name: Thai Basil Chicken (Pad Krapow)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 14
@@ -258,7 +259,7 @@
 - source: gymflow
   source_id: th_satay_chicken_4
   name: Chicken Satay (4 skewers)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 22
@@ -274,7 +275,7 @@
 - source: gymflow
   source_id: th_satay_sauce_30g
   name: Satay Peanut Sauce (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 320
   protein_per_100g: 9
@@ -290,7 +291,7 @@
 - source: gymflow
   source_id: th_thai_summer_rolls_3
   name: Thai Summer Rolls (3)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 95
   protein_per_100g: 5
@@ -306,7 +307,7 @@
 - source: gymflow
   source_id: th_papaya_salad
   name: Som Tum (Papaya Salad)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 75
   protein_per_100g: 3
@@ -322,7 +323,7 @@
 - source: gymflow
   source_id: th_thai_beef_salad
   name: Thai Beef Salad
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 14
@@ -338,7 +339,7 @@
 - source: gymflow
   source_id: th_chicken_pad_see_ew
   name: Pad See Ew Chicken
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 11
@@ -354,7 +355,7 @@
 - source: gymflow
   source_id: th_thai_sticky_rice_100g
   name: Thai Sticky Rice (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 170
   protein_per_100g: 3.5
@@ -369,7 +370,7 @@
 - source: gymflow
   source_id: th_mango_sticky_rice
   name: Mango Sticky Rice
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 200
   protein_per_100g: 3
@@ -385,7 +386,7 @@
 - source: gymflow
   source_id: th_thai_iced_tea
   name: Thai Iced Tea
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 110
   protein_per_100g: 1.5

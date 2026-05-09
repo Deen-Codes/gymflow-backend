@@ -1,7 +1,8 @@
 # frozen_pizza_brands.yaml — Gino D'Acampo, San Marco, Pizza Express frozen, more Goodfella's, Birds Eye Inspirations, WW low-cal.
+
 - source: gymflow
   source_id: gino_dacampo_margherita_pizza
-  name: Gino D'Acampo Margherita Pizza (1)
+  name: Gino D'Acampo Margherita Pizza
   brand: Gino D'Acampo
   region_codes: gb
   kcal_per_100g: 245
@@ -17,7 +18,7 @@
   unit_grams: 350
 - source: gymflow
   source_id: gino_dacampo_pepperoni_pizza
-  name: Gino D'Acampo Pepperoni Pizza (1)
+  name: Gino D'Acampo Pepperoni Pizza
   brand: Gino D'Acampo
   region_codes: gb
   kcal_per_100g: 270
@@ -33,7 +34,7 @@
   unit_grams: 350
 - source: gymflow
   source_id: san_marco_pepperoni_pizza
-  name: San Marco Pepperoni Pizza (1)
+  name: San Marco Pepperoni Pizza
   brand: San Marco
   region_codes: gb
   kcal_per_100g: 280
@@ -81,7 +82,7 @@
   unit_grams: 245
 - source: gymflow
   source_id: goodfellas_loaded_pepperoni_pizza
-  name: Goodfella's Loaded Pepperoni Pizza (1)
+  name: Goodfella's Loaded Pepperoni Pizza
   brand: Goodfella's
   region_codes: gb
   kcal_per_100g: 290
@@ -97,7 +98,7 @@
   unit_grams: 432
 - source: gymflow
   source_id: goodfellas_thin_loaded_pepperoni
-  name: Goodfella's Thin Loaded Pepperoni (1)
+  name: Goodfella's Thin Loaded Pepperoni
   brand: Goodfella's
   region_codes: gb
   kcal_per_100g: 270

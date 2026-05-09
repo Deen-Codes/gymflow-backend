@@ -745,7 +745,7 @@
   unit_grams: 400
 - source: frankie_and_bennys
   source_id: fbennys_classic_pepperoni_pizza
-  name: Frankie & Benny's Classic Pepperoni Pizza (Whole)
+  name: Frankie & Benny's Classic Pepperoni Pizza
   kcal_per_100g: 245
   protein_per_100g: 11
   carbs_per_100g: 28
@@ -759,7 +759,7 @@
   unit_grams: 320
 - source: frankie_and_bennys
   source_id: fbennys_classic_margherita_pizza
-  name: Frankie & Benny's Classic Margherita Pizza (Whole)
+  name: Frankie & Benny's Classic Margherita Pizza
   kcal_per_100g: 215
   protein_per_100g: 9
   carbs_per_100g: 28

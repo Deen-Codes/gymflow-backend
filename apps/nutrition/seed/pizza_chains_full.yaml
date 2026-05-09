@@ -492,7 +492,7 @@
   unit_grams: 290
 - source: pizzaexpress
   source_id: pe_pollo_ad_astra_classic
-  name: Pizza Express Pollo ad Astra (Whole)
+  name: Pizza Express Pollo ad Astra
   kcal_per_100g: 80.3
   protein_per_100g: 4.59
   carbs_per_100g: 8.85
@@ -506,7 +506,7 @@
   unit_grams: 305
 - source: pizzaexpress
   source_id: pe_la_reine_classic
-  name: Pizza Express La Reine (Whole)
+  name: Pizza Express La Reine
   kcal_per_100g: 80.3
   protein_per_100g: 3.93
   carbs_per_100g: 9.18
@@ -520,7 +520,7 @@
   unit_grams: 305
 - source: pizzaexpress
   source_id: pe_giardiniera_classic
-  name: Pizza Express Giardiniera (Whole)
+  name: Pizza Express Giardiniera
   kcal_per_100g: 68.8
   protein_per_100g: 2.81
   carbs_per_100g: 9.06
@@ -534,7 +534,7 @@
   unit_grams: 320
 - source: pizzaexpress
   source_id: pe_quattro_formaggi_classic
-  name: Pizza Express Quattro Formaggi (Whole)
+  name: Pizza Express Quattro Formaggi
   kcal_per_100g: 87.9
   protein_per_100g: 4.48
   carbs_per_100g: 9.31

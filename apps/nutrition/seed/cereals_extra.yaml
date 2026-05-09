@@ -1,4 +1,5 @@
 # cereals_extra.yaml — branded cereal variants beyond the base set: Kellogg's Special K/Crunchy Nut/Krave/Honey Loops/Fruit & Fibre, Nestlé Cheerios variants/Curiously Cinnamon/Cookie Crisp/Lucky Charms/Shreddies, Honey Monster, Jordans Country Crisp/muesli/Frusli, Dorset, Quaker sachets, Ready Brek, Bear, Lizi's, Tesco own.
+
 - source: gymflow
   source_id: kelloggs_special_k_red_berries_30g
   name: Kellogg's Special K Red Berries (30g)
@@ -395,7 +396,7 @@
   unit_grams: 33
 - source: gymflow
   source_id: quaker_porridge_pot_30g
-  name: Quaker Porridge Pot (1)
+  name: Quaker Porridge Pot
   brand: Quaker
   region_codes: gb
   kcal_per_100g: 390

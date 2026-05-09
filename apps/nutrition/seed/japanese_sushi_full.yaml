@@ -8,7 +8,7 @@
   protein_per_100g: 6
   carbs_per_100g: 22
   fat_per_100g: 5
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -22,7 +22,7 @@
   protein_per_100g: 8
   carbs_per_100g: 22
   fat_per_100g: 1
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -36,7 +36,7 @@
   protein_per_100g: 7
   carbs_per_100g: 22
   fat_per_100g: 4
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -50,7 +50,7 @@
   protein_per_100g: 7
   carbs_per_100g: 23
   fat_per_100g: 5
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -64,7 +64,7 @@
   protein_per_100g: 7
   carbs_per_100g: 22
   fat_per_100g: 0.5
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -78,7 +78,7 @@
   protein_per_100g: 7
   carbs_per_100g: 22
   fat_per_100g: 0.5
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -92,7 +92,7 @@
   protein_per_100g: 7
   carbs_per_100g: 22
   fat_per_100g: 0.5
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -106,7 +106,7 @@
   protein_per_100g: 7
   carbs_per_100g: 22
   fat_per_100g: 2
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -120,7 +120,7 @@
   protein_per_100g: 5
   carbs_per_100g: 22
   fat_per_100g: 6
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -134,7 +134,7 @@
   protein_per_100g: 7
   carbs_per_100g: 22
   fat_per_100g: 4
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -148,7 +148,7 @@
   protein_per_100g: 4
   carbs_per_100g: 22
   fat_per_100g: 2
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 25
   serving_label: item (25 g)
@@ -162,7 +162,7 @@
   protein_per_100g: 4
   carbs_per_100g: 22
   fat_per_100g: 2
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 200
   serving_label: item (200 g)
@@ -176,7 +176,7 @@
   protein_per_100g: 5
   carbs_per_100g: 18
   fat_per_100g: 5
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 25
   serving_label: item (25 g)
@@ -190,7 +190,7 @@
   protein_per_100g: 5
   carbs_per_100g: 18
   fat_per_100g: 5
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 200
   serving_label: item (200 g)
@@ -204,7 +204,7 @@
   protein_per_100g: 5
   carbs_per_100g: 22
   fat_per_100g: 1
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 25
   serving_label: item (25 g)
@@ -218,7 +218,7 @@
   protein_per_100g: 5
   carbs_per_100g: 22
   fat_per_100g: 1
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 200
   serving_label: item (200 g)
@@ -232,7 +232,7 @@
   protein_per_100g: 5
   carbs_per_100g: 21
   fat_per_100g: 4
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 25
   serving_label: item (25 g)
@@ -246,7 +246,7 @@
   protein_per_100g: 6
   carbs_per_100g: 22
   fat_per_100g: 7
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -260,7 +260,7 @@
   protein_per_100g: 7
   carbs_per_100g: 21
   fat_per_100g: 5
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -274,7 +274,7 @@
   protein_per_100g: 6
   carbs_per_100g: 21
   fat_per_100g: 7
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -288,7 +288,7 @@
   protein_per_100g: 2
   carbs_per_100g: 21
   fat_per_100g: 2
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 25
   serving_label: item (25 g)
@@ -302,7 +302,7 @@
   protein_per_100g: 2
   carbs_per_100g: 22
   fat_per_100g: 0.5
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 25
   serving_label: item (25 g)
@@ -316,7 +316,7 @@
   protein_per_100g: 6
   carbs_per_100g: 22
   fat_per_100g: 9
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -330,7 +330,7 @@
   protein_per_100g: 8
   carbs_per_100g: 22
   fat_per_100g: 8
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 60
   serving_label: item (60 g)
@@ -344,7 +344,7 @@
   protein_per_100g: 9
   carbs_per_100g: 22
   fat_per_100g: 5
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 60
   serving_label: item (60 g)
@@ -358,7 +358,7 @@
   protein_per_100g: 9
   carbs_per_100g: 22
   fat_per_100g: 6
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 60
   serving_label: item (60 g)
@@ -372,7 +372,7 @@
   protein_per_100g: 5
   carbs_per_100g: 22
   fat_per_100g: 5
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 60
   serving_label: item (60 g)
@@ -386,7 +386,7 @@
   protein_per_100g: 21
   carbs_per_100g: 0
   fat_per_100g: 9
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 20
   serving_label: item (20 g)
@@ -400,7 +400,7 @@
   protein_per_100g: 28
   carbs_per_100g: 0
   fat_per_100g: 1
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 20
   serving_label: item (20 g)
@@ -414,7 +414,7 @@
   protein_per_100g: 22
   carbs_per_100g: 0
   fat_per_100g: 6
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 20
   serving_label: item (20 g)
@@ -428,7 +428,7 @@
   protein_per_100g: 22
   carbs_per_100g: 0
   fat_per_100g: 2
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 20
   serving_label: item (20 g)
@@ -442,7 +442,7 @@
   protein_per_100g: 12
   carbs_per_100g: 22
   fat_per_100g: 5
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: item (350 g)
@@ -456,7 +456,7 @@
   protein_per_100g: 11
   carbs_per_100g: 26
   fat_per_100g: 5
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: item (400 g)
@@ -470,7 +470,7 @@
   protein_per_100g: 11
   carbs_per_100g: 22
   fat_per_100g: 4
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: item (400 g)
@@ -484,7 +484,7 @@
   protein_per_100g: 11
   carbs_per_100g: 22
   fat_per_100g: 5
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: item (400 g)
@@ -498,7 +498,7 @@
   protein_per_100g: 11
   carbs_per_100g: 24
   fat_per_100g: 9
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: item (400 g)
@@ -512,7 +512,7 @@
   protein_per_100g: 2
   carbs_per_100g: 4
   fat_per_100g: 1
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 250
   serving_label: item (250 g)
@@ -526,7 +526,7 @@
   protein_per_100g: 11
   carbs_per_100g: 9
   fat_per_100g: 5
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -540,7 +540,7 @@
   protein_per_100g: 1.5
   carbs_per_100g: 12
   fat_per_100g: 5
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -554,7 +554,7 @@
   protein_per_100g: 13
   carbs_per_100g: 17
   fat_per_100g: 14
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 120
   serving_label: item (120 g)
@@ -568,7 +568,7 @@
   protein_per_100g: 4
   carbs_per_100g: 22
   fat_per_100g: 11
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 130
   serving_label: item (130 g)
@@ -582,7 +582,7 @@
   protein_per_100g: 11
   carbs_per_100g: 22
   fat_per_100g: 7
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 450
   serving_label: item (450 g)
@@ -596,7 +596,7 @@
   protein_per_100g: 18
   carbs_per_100g: 12
   fat_per_100g: 14
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 130
   serving_label: item (130 g)
@@ -610,7 +610,7 @@
   protein_per_100g: 22
   carbs_per_100g: 5
   fat_per_100g: 6
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 50
   serving_label: item (50 g)
@@ -624,7 +624,7 @@
   protein_per_100g: 6
   carbs_per_100g: 18
   fat_per_100g: 9
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 25
   serving_label: item (25 g)
@@ -638,7 +638,7 @@
   protein_per_100g: 9
   carbs_per_100g: 18
   fat_per_100g: 7
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 250
   serving_label: item (250 g)
@@ -652,7 +652,7 @@
   protein_per_100g: 8
   carbs_per_100g: 22
   fat_per_100g: 13
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 25
   serving_label: item (25 g)
@@ -666,7 +666,7 @@
   protein_per_100g: 9
   carbs_per_100g: 22
   fat_per_100g: 11
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 25
   serving_label: item (25 g)
@@ -680,7 +680,7 @@
   protein_per_100g: 5
   carbs_per_100g: 25
   fat_per_100g: 9
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 25
   serving_label: item (25 g)
@@ -694,7 +694,7 @@
   protein_per_100g: 8
   carbs_per_100g: 14
   fat_per_100g: 6
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 600
   serving_label: item (600 g)
@@ -708,7 +708,7 @@
   protein_per_100g: 7
   carbs_per_100g: 14
   fat_per_100g: 3
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 600
   serving_label: item (600 g)
@@ -722,7 +722,7 @@
   protein_per_100g: 7
   carbs_per_100g: 13
   fat_per_100g: 4
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 600
   serving_label: item (600 g)
@@ -736,7 +736,7 @@
   protein_per_100g: 8
   carbs_per_100g: 13
   fat_per_100g: 4
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 600
   serving_label: item (600 g)
@@ -750,7 +750,7 @@
   protein_per_100g: 6
   carbs_per_100g: 17
   fat_per_100g: 3
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 500
   serving_label: item (500 g)
@@ -764,7 +764,7 @@
   protein_per_100g: 7
   carbs_per_100g: 17
   fat_per_100g: 4
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 500
   serving_label: item (500 g)
@@ -778,7 +778,7 @@
   protein_per_100g: 5
   carbs_per_100g: 21
   fat_per_100g: 0.7
-  brand: Japanese / Sushi
+  brand: ''
   region_codes: GB
   serving_grams: 300
   serving_label: item (300 g)

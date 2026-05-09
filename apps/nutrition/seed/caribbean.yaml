@@ -1,8 +1,9 @@
 # caribbean.yaml — Jamaican / Caribbean foods commonly found in UK takeaways + supermarkets.
+
 - source: gymflow
   source_id: crb_jerk_chicken_breast
   name: Jerk Chicken Breast (cooked)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 26
@@ -18,7 +19,7 @@
 - source: gymflow
   source_id: crb_jerk_chicken_thigh
   name: Jerk Chicken Thigh (cooked)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 24
@@ -34,7 +35,7 @@
 - source: gymflow
   source_id: crb_brown_stew_chicken
   name: Brown Stew Chicken
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 200
   protein_per_100g: 22
@@ -50,7 +51,7 @@
 - source: gymflow
   source_id: crb_curry_goat
   name: Curry Goat
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 22
@@ -66,7 +67,7 @@
 - source: gymflow
   source_id: crb_oxtail_stew
   name: Oxtail Stew
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 21
@@ -82,7 +83,7 @@
 - source: gymflow
   source_id: crb_curry_chicken
   name: Caribbean Curry Chicken
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 22
@@ -98,7 +99,7 @@
 - source: gymflow
   source_id: crb_rice_peas
   name: Rice and Peas
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 4
@@ -113,7 +114,7 @@
 - source: gymflow
   source_id: crb_fried_plantain
   name: Fried Plantain
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 1.5
@@ -128,7 +129,7 @@
 - source: gymflow
   source_id: crb_boiled_plantain
   name: Boiled Plantain
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 122
   protein_per_100g: 1.3
@@ -143,7 +144,7 @@
 - source: gymflow
   source_id: crb_ackee_saltfish
   name: Ackee and Saltfish
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 14
@@ -159,7 +160,7 @@
 - source: gymflow
   source_id: crb_callaloo_cooked
   name: Callaloo (cooked)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 60
   protein_per_100g: 4
@@ -174,7 +175,7 @@
 - source: gymflow
   source_id: crb_festival_dumpling
   name: Festival (Jamaican fried dumpling)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 290
   protein_per_100g: 6
@@ -190,7 +191,7 @@
 - source: gymflow
   source_id: crb_fried_dumpling
   name: Fried Dumpling (Jamaican)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 320
   protein_per_100g: 5
@@ -206,7 +207,7 @@
 - source: gymflow
   source_id: crb_hardo_bread
   name: Jamaican Hardo Bread (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 270
   protein_per_100g: 8
@@ -222,7 +223,7 @@
 - source: gymflow
   source_id: crb_jamaican_patty_beef
   name: Jamaican Beef Patty
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 285
   protein_per_100g: 8
@@ -238,7 +239,7 @@
 - source: gymflow
   source_id: crb_jamaican_patty_chicken
   name: Jamaican Chicken Patty
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 270
   protein_per_100g: 9
@@ -254,7 +255,7 @@
 - source: gymflow
   source_id: crb_jamaican_patty_veg
   name: Jamaican Vegetable Patty
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 250
   protein_per_100g: 5
@@ -270,7 +271,7 @@
 - source: gymflow
   source_id: crb_escovitch_fish
   name: Escovitch Fish
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 22
@@ -286,7 +287,7 @@
 - source: gymflow
   source_id: crb_brown_stew_fish
   name: Brown Stew Fish
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 22
@@ -302,7 +303,7 @@
 - source: gymflow
   source_id: crb_saltfish_fritters_3
   name: Saltfish Fritters (3)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 9
@@ -318,7 +319,7 @@
 - source: gymflow
   source_id: crb_breadfruit_roasted
   name: Roasted Breadfruit (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 105
   protein_per_100g: 1
@@ -333,7 +334,7 @@
 - source: gymflow
   source_id: crb_yam_boiled
   name: Boiled Yam (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 120
   protein_per_100g: 1.5
@@ -348,7 +349,7 @@
 - source: gymflow
   source_id: crb_green_banana_boiled
   name: Boiled Green Banana (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 89
   protein_per_100g: 1.1
@@ -363,7 +364,7 @@
 - source: gymflow
   source_id: crb_cornmeal_porridge
   name: Cornmeal Porridge (with milk)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 85
   protein_per_100g: 3
@@ -379,7 +380,7 @@
 - source: gymflow
   source_id: crb_bun_n_cheese_slice
   name: Bun and Cheese (1 slice + cheese)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 320
   protein_per_100g: 9
@@ -395,7 +396,7 @@
 - source: gymflow
   source_id: crb_easter_bun_slice
   name: Jamaican Easter Bun (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 360
   protein_per_100g: 5
@@ -474,7 +475,7 @@
 - source: gymflow
   source_id: crb_sorrel_drink
   name: Jamaican Sorrel Drink
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 38
   protein_per_100g: 0.2
@@ -489,7 +490,7 @@
 - source: gymflow
   source_id: crb_ginger_beer_jamaican
   name: Jamaican Ginger Beer (330ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 50
   protein_per_100g: 0
@@ -537,7 +538,7 @@
 - source: gymflow
   source_id: crb_grace_solomon_grundy
   name: Solomon Grundy / Pickled Mackerel (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 17
@@ -552,7 +553,7 @@
 - source: gymflow
   source_id: crb_macaroni_cheese_caribbean
   name: Caribbean Mac and Cheese (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 200
   protein_per_100g: 8
@@ -567,7 +568,7 @@
 - source: gymflow
   source_id: crb_potato_salad
   name: Caribbean Potato Salad (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 2
@@ -582,7 +583,7 @@
 - source: gymflow
   source_id: crb_coleslaw_caribbean
   name: Caribbean Coleslaw (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 1.5
@@ -597,7 +598,7 @@
 - source: gymflow
   source_id: crb_jerk_pork
   name: Jerk Pork (cooked)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 230
   protein_per_100g: 24
@@ -612,7 +613,7 @@
 - source: gymflow
   source_id: crb_curry_chicken_drumsticks
   name: Curry Chicken Drumsticks (3)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 22

@@ -1,5 +1,6 @@
 # vegan_meats.yaml — meat alternatives: Quorn, Beyond Meat, THIS, Linda McCartney,
 # Oumph, Vivera, Moving Mountains, Plant Chef, generic seitan.
+
 - source: gymflow
   source_id: quorn_chicken_pieces
   name: Quorn Chicken-Style Pieces
@@ -172,7 +173,7 @@
   allergens: ''
 - source: gymflow
   source_id: beyond_sausages_classic
-  name: Beyond Meat Sausages Classic (1)
+  name: Beyond Meat Sausages Classic
   brand: Beyond Meat
   region_codes: gb
   kcal_per_100g: 250
@@ -249,7 +250,7 @@
   unit_grams: 37.5
 - source: gymflow
   source_id: linda_mccartney_quarter_pounder
-  name: Linda McCartney Vegetarian Quarter Pounder (1)
+  name: Linda McCartney Vegetarian Quarter Pounder
   brand: Linda McCartney
   region_codes: gb
   kcal_per_100g: 200
@@ -280,7 +281,7 @@
   allergens: soy
 - source: gymflow
   source_id: vivera_steak_2
-  name: Vivera Plant Steak (1)
+  name: Vivera Plant Steak
   brand: Vivera
   region_codes: gb
   kcal_per_100g: 165
@@ -311,7 +312,7 @@
   allergens: soy
 - source: gymflow
   source_id: moving_mountains_burger
-  name: Moving Mountains B12 Burger (1)
+  name: Moving Mountains B12 Burger
   brand: Moving Mountains
   region_codes: gb
   kcal_per_100g: 250
@@ -327,7 +328,7 @@
   unit_grams: 113
 - source: gymflow
   source_id: moving_mountains_hot_dog
-  name: Moving Mountains Hot Dog (1)
+  name: Moving Mountains Hot Dog
   brand: Moving Mountains
   region_codes: gb
   kcal_per_100g: 240
@@ -344,7 +345,7 @@
 - source: gymflow
   source_id: seitan_per_100g
   name: Seitan / Wheat Gluten (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 25

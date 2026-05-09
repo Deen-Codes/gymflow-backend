@@ -1,7 +1,8 @@
 # sushi_supermarket.yaml — Itsu pots (chicken teriyaki, ginger salmon, sushi packs), salmon sashimi, avocado maki; Tesco/M&S/Sainsbury's sushi packs (California, salmon, veggie, chicken katsu).
+
 - source: gymflow
   source_id: itsu_chicken_teriyaki_pot
-  name: Itsu Chicken Teriyaki Rice Pot (1)
+  name: Itsu Chicken Teriyaki Rice Pot
   brand: Itsu
   region_codes: gb
   kcal_per_100g: 175
@@ -17,7 +18,7 @@
   unit_grams: 350
 - source: gymflow
   source_id: itsu_ginger_salmon_pot
-  name: Itsu Ginger Salmon Bowl (1)
+  name: Itsu Ginger Salmon Bowl
   brand: Itsu
   region_codes: gb
   kcal_per_100g: 165

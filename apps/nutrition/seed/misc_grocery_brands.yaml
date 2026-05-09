@@ -223,7 +223,7 @@
   protein_per_100g: 17
   carbs_per_100g: 8
   fat_per_100g: 13
-  brand: Halal
+  brand: ''
   region_codes: GB
   serving_grams: 60
   serving_label: 60 g
@@ -237,7 +237,7 @@
   protein_per_100g: 26
   carbs_per_100g: 2
   fat_per_100g: 7
-  brand: Halal
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -251,7 +251,7 @@
   protein_per_100g: 23
   carbs_per_100g: 0
   fat_per_100g: 1.5
-  brand: Halal
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -265,7 +265,7 @@
   protein_per_100g: 17
   carbs_per_100g: 0
   fat_per_100g: 19
-  brand: Halal
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -279,7 +279,7 @@
   protein_per_100g: 22
   carbs_per_100g: 0
   fat_per_100g: 5
-  brand: Halal
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -293,7 +293,7 @@
   protein_per_100g: 17
   carbs_per_100g: 5
   fat_per_100g: 18
-  brand: Halal
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: 80 g
@@ -307,7 +307,7 @@
   protein_per_100g: 22
   carbs_per_100g: 5
   fat_per_100g: 19
-  brand: Halal
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -321,7 +321,7 @@
   protein_per_100g: 22
   carbs_per_100g: 4
   fat_per_100g: 11
-  brand: Halal
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -335,7 +335,7 @@
   protein_per_100g: 18
   carbs_per_100g: 22
   fat_per_100g: 9
-  brand: Halal
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -349,7 +349,7 @@
   protein_per_100g: 22
   carbs_per_100g: 5
   fat_per_100g: 14
-  brand: Halal
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -363,7 +363,7 @@
   protein_per_100g: 23
   carbs_per_100g: 0
   fat_per_100g: 1.5
-  brand: Kosher
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -377,7 +377,7 @@
   protein_per_100g: 28
   carbs_per_100g: 0
   fat_per_100g: 18
-  brand: Kosher
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -391,7 +391,7 @@
   protein_per_100g: 21
   carbs_per_100g: 1
   fat_per_100g: 33
-  brand: Kosher
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -405,7 +405,7 @@
   protein_per_100g: 22
   carbs_per_100g: 1
   fat_per_100g: 6
-  brand: Kosher
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -419,7 +419,7 @@
   protein_per_100g: 9
   carbs_per_100g: 53
   fat_per_100g: 6
-  brand: Kosher
+  brand: ''
   region_codes: GB
   serving_grams: 50
   serving_label: 50 g
@@ -433,7 +433,7 @@
   protein_per_100g: 11
   carbs_per_100g: 88
   fat_per_100g: 1.4
-  brand: Kosher
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -447,7 +447,7 @@
   protein_per_100g: 9
   carbs_per_100g: 7
   fat_per_100g: 3
-  brand: Kosher
+  brand: ''
   region_codes: GB
   serving_grams: 60
   serving_label: 60 g
@@ -461,7 +461,7 @@
   protein_per_100g: 5
   carbs_per_100g: 50
   fat_per_100g: 22
-  brand: Kosher
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -475,7 +475,7 @@
   protein_per_100g: 4
   carbs_per_100g: 32
   fat_per_100g: 11
-  brand: Kosher
+  brand: ''
   region_codes: GB
   serving_grams: 60
   serving_label: 60 g

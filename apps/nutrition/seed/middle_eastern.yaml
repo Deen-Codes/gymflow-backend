@@ -1,8 +1,9 @@
 # middle_eastern.yaml — Lebanese / Turkish / Middle Eastern. Doner kebab, shawarma, falafel, hummus, tabbouleh, manakish, kunafa, baklava.
+
 - source: gymflow
   source_id: me_doner_kebab_meat
   name: Lamb Doner Kebab Meat (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 280
   protein_per_100g: 18
@@ -17,7 +18,7 @@
 - source: gymflow
   source_id: me_doner_kebab_pita
   name: Lamb Doner in Pita
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 14
@@ -33,7 +34,7 @@
 - source: gymflow
   source_id: me_chicken_doner_pita
   name: Chicken Doner in Pita
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 16
@@ -48,8 +49,8 @@
   unit_grams: 350
 - source: gymflow
   source_id: me_chicken_shish_skewer
-  name: Chicken Shish Skewer (1)
-  brand: Generic
+  name: Chicken Shish Skewer
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 24
@@ -64,8 +65,8 @@
   unit_grams: 100
 - source: gymflow
   source_id: me_lamb_shish_skewer
-  name: Lamb Shish Skewer (1)
-  brand: Generic
+  name: Lamb Shish Skewer
+  brand: ''
   region_codes: gb
   kcal_per_100g: 235
   protein_per_100g: 22
@@ -81,7 +82,7 @@
 - source: gymflow
   source_id: me_chicken_shawarma
   name: Chicken Shawarma Wrap
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 16
@@ -97,7 +98,7 @@
 - source: gymflow
   source_id: me_lamb_shawarma
   name: Lamb Shawarma Wrap
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 270
   protein_per_100g: 15
@@ -113,7 +114,7 @@
 - source: gymflow
   source_id: me_falafel_5
   name: Falafel (5)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 13
@@ -129,7 +130,7 @@
 - source: gymflow
   source_id: me_falafel_wrap
   name: Falafel Wrap
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 8
@@ -145,7 +146,7 @@
 - source: gymflow
   source_id: me_hummus_50g
   name: Hummus (50g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 166
   protein_per_100g: 7.9
@@ -161,7 +162,7 @@
 - source: gymflow
   source_id: me_baba_ganoush_50g
   name: Baba Ganoush (50g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 3
@@ -177,7 +178,7 @@
 - source: gymflow
   source_id: me_tabouleh_100g
   name: Tabbouleh Salad (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 95
   protein_per_100g: 3
@@ -192,7 +193,7 @@
 - source: gymflow
   source_id: me_fattoush_salad
   name: Fattoush Salad (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 85
   protein_per_100g: 2.5
@@ -208,7 +209,7 @@
 - source: gymflow
   source_id: me_fatteh
   name: Fatteh (Lebanese)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 7
@@ -224,7 +225,7 @@
 - source: gymflow
   source_id: me_kibbeh_3
   name: Kibbeh (3)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 14
@@ -240,7 +241,7 @@
 - source: gymflow
   source_id: me_manakish_zaatar
   name: Manakish Zaatar
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 270
   protein_per_100g: 7
@@ -256,7 +257,7 @@
 - source: gymflow
   source_id: me_lebanese_lamb_pizza
   name: Lahmacun (Lamb Pizza)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 230
   protein_per_100g: 12
@@ -271,8 +272,8 @@
   unit_grams: 200
 - source: gymflow
   source_id: me_borek_cheese
-  name: Cheese Börek (1)
-  brand: Generic
+  name: Cheese Börek
+  brand: ''
   region_codes: gb
   kcal_per_100g: 290
   protein_per_100g: 10
@@ -287,8 +288,8 @@
   unit_grams: 130
 - source: gymflow
   source_id: me_borek_spinach
-  name: Spinach Börek (1)
-  brand: Generic
+  name: Spinach Börek
+  brand: ''
   region_codes: gb
   kcal_per_100g: 270
   protein_per_100g: 8
@@ -304,7 +305,7 @@
 - source: gymflow
   source_id: me_pide_chicken
   name: Chicken Pide
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 12
@@ -320,7 +321,7 @@
 - source: gymflow
   source_id: me_baklava_pistachio
   name: Pistachio Baklava (1 piece)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 410
   protein_per_100g: 6
@@ -336,7 +337,7 @@
 - source: gymflow
   source_id: me_kunafa_slice
   name: Knafeh / Kunafa (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 380
   protein_per_100g: 7
@@ -352,7 +353,7 @@
 - source: gymflow
   source_id: me_turkish_delight_30g
   name: Turkish Delight (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 320
   protein_per_100g: 0.5
@@ -368,7 +369,7 @@
 - source: gymflow
   source_id: me_chicken_biryani_lebanese
   name: Lebanese Chicken Biryani
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 11
@@ -384,7 +385,7 @@
 - source: gymflow
   source_id: me_lentil_soup_lebanese
   name: Lebanese Lentil Soup
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 95
   protein_per_100g: 6
@@ -400,7 +401,7 @@
 - source: gymflow
   source_id: me_kebab_kofta
   name: Kofta Kebab Skewer
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 17
@@ -416,7 +417,7 @@
 - source: gymflow
   source_id: me_iskender_kebab
   name: Iskender Kebab
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 16
@@ -432,7 +433,7 @@
 - source: gymflow
   source_id: me_pilav_rice
   name: Turkish Pilav Rice (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 170
   protein_per_100g: 3
@@ -447,7 +448,7 @@
 - source: gymflow
   source_id: me_lebanese_garlic_sauce_15g
   name: Lebanese Garlic Sauce / Toum (15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 750
   protein_per_100g: 1
@@ -463,7 +464,7 @@
 - source: gymflow
   source_id: me_chilli_sauce_lebanese_15g
   name: Lebanese Chilli Sauce (15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 35
   protein_per_100g: 1
@@ -479,7 +480,7 @@
 - source: gymflow
   source_id: me_grilled_halloumi_pita
   name: Halloumi Pita Wrap
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 11

@@ -1,8 +1,9 @@
 # greek.yaml — Greek tavern + UK takeaway. Souvlaki, gyros, moussaka, dolmades, baklava, halloumi.
+
 - source: gymflow
   source_id: grk_souvlaki_chicken
   name: Chicken Souvlaki
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 24
@@ -18,7 +19,7 @@
 - source: gymflow
   source_id: grk_souvlaki_pork
   name: Pork Souvlaki
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 22
@@ -34,7 +35,7 @@
 - source: gymflow
   source_id: grk_gyros_chicken_pita
   name: Chicken Gyros Pita
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 14
@@ -50,7 +51,7 @@
 - source: gymflow
   source_id: grk_gyros_pork_pita
   name: Pork Gyros Pita
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 270
   protein_per_100g: 13
@@ -66,7 +67,7 @@
 - source: gymflow
   source_id: grk_moussaka
   name: Moussaka
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 9
@@ -82,7 +83,7 @@
 - source: gymflow
   source_id: grk_pastitsio
   name: Pastitsio (Greek Lasagne)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 200
   protein_per_100g: 10
@@ -98,7 +99,7 @@
 - source: gymflow
   source_id: grk_spanakopita
   name: Spanakopita (Spinach Pie, 1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 270
   protein_per_100g: 8
@@ -114,7 +115,7 @@
 - source: gymflow
   source_id: grk_dolmades_5
   name: Dolmades (Stuffed Vine Leaves, 5)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 3
@@ -130,7 +131,7 @@
 - source: gymflow
   source_id: grk_horiatiki_salad
   name: Horiatiki (Greek Salad)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 110
   protein_per_100g: 5
@@ -146,7 +147,7 @@
 - source: gymflow
   source_id: grk_taramasalata_30g
   name: Taramasalata (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 480
   protein_per_100g: 4
@@ -162,7 +163,7 @@
 - source: gymflow
   source_id: grk_tzatziki_30g
   name: Tzatziki (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 90
   protein_per_100g: 3
@@ -178,7 +179,7 @@
 - source: gymflow
   source_id: grk_skordalia_30g
   name: Skordalia (Garlic Dip, 30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 1
@@ -194,7 +195,7 @@
 - source: gymflow
   source_id: grk_calamari_greek
   name: Greek Calamari Fried
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 14
@@ -210,7 +211,7 @@
 - source: gymflow
   source_id: grk_lamb_kleftiko
   name: Lamb Kleftiko
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 22
@@ -226,7 +227,7 @@
 - source: gymflow
   source_id: grk_baklava_slice
   name: Baklava (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 410
   protein_per_100g: 6
@@ -242,7 +243,7 @@
 - source: gymflow
   source_id: grk_loukoumades_5
   name: Loukoumades (Greek Donuts, 5)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 360
   protein_per_100g: 5
@@ -258,7 +259,7 @@
 - source: gymflow
   source_id: grk_galaktoboureko_slice
   name: Galaktoboureko (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 280
   protein_per_100g: 5
@@ -273,8 +274,8 @@
   unit_grams: 130
 - source: gymflow
   source_id: grk_pita_bread
-  name: Greek Pita Bread (1)
-  brand: Generic
+  name: Greek Pita Bread
+  brand: ''
   region_codes: gb
   kcal_per_100g: 270
   protein_per_100g: 9
@@ -290,7 +291,7 @@
 - source: gymflow
   source_id: grk_olives_kalamata_30g
   name: Kalamata Olives (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 115
   protein_per_100g: 0.8
@@ -305,7 +306,7 @@
 - source: gymflow
   source_id: grk_feta_30g
   name: Greek Feta Cheese (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 264
   protein_per_100g: 14

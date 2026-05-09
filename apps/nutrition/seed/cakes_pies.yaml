@@ -1,4 +1,5 @@
 # cakes_pies.yaml — Mr Kipling French Fancies/Angel Slice/Battenberg/Bakewell Tart/Country Slice/Apple Pies/Cherry Bakewells/Viennese Whirls, Cadbury Mini Rolls + Chocolate Fingers, McVitie's Jaffa Cakes/Choc Digestives/Caramel, Pukka Pies (Chicken & Mushroom, Steak & Kidney, Steak & Ale), Holland's Pies, Pieminister.
+
 - source: gymflow
   source_id: mr_kipling_french_fancies_2
   name: Mr Kipling French Fancies (2)
@@ -17,7 +18,7 @@
   unit_grams: 25
 - source: gymflow
   source_id: mr_kipling_angel_slice_1
-  name: Mr Kipling Angel Slice (1)
+  name: Mr Kipling Angel Slice
   brand: Mr Kipling
   region_codes: gb
   kcal_per_100g: 415
@@ -49,7 +50,7 @@
   unit_grams: 33
 - source: gymflow
   source_id: mr_kipling_bakewell_tart
-  name: Mr Kipling Bakewell Tart (1)
+  name: Mr Kipling Bakewell Tart
   brand: Mr Kipling
   region_codes: gb
   kcal_per_100g: 425
@@ -65,7 +66,7 @@
   unit_grams: 50
 - source: gymflow
   source_id: mr_kipling_country_slice
-  name: Mr Kipling Country Slice (1)
+  name: Mr Kipling Country Slice
   brand: Mr Kipling
   region_codes: gb
   kcal_per_100g: 380
@@ -81,7 +82,7 @@
   unit_grams: 35
 - source: gymflow
   source_id: mr_kipling_apple_pies_6
-  name: Mr Kipling Apple Pies (1)
+  name: Mr Kipling Apple Pies
   brand: Mr Kipling
   region_codes: gb
   kcal_per_100g: 360
@@ -97,7 +98,7 @@
   unit_grams: 65
 - source: gymflow
   source_id: mr_kipling_cherry_bakewells_6
-  name: Mr Kipling Cherry Bakewells (1)
+  name: Mr Kipling Cherry Bakewells
   brand: Mr Kipling
   region_codes: gb
   kcal_per_100g: 405
@@ -113,7 +114,7 @@
   unit_grams: 38
 - source: gymflow
   source_id: mr_kipling_viennese_whirls
-  name: Mr Kipling Viennese Whirls (1)
+  name: Mr Kipling Viennese Whirls
   brand: Mr Kipling
   region_codes: gb
   kcal_per_100g: 480
@@ -129,7 +130,7 @@
   unit_grams: 28
 - source: gymflow
   source_id: cadbury_mini_rolls_6
-  name: Cadbury Mini Rolls (1)
+  name: Cadbury Mini Rolls
   brand: Cadbury
   region_codes: gb
   kcal_per_100g: 480
@@ -209,7 +210,7 @@
   unit_grams: 18
 - source: gymflow
   source_id: pukka_chicken_mushroom_pie
-  name: Pukka Chicken & Mushroom Pie (1)
+  name: Pukka Chicken & Mushroom Pie
   brand: Pukka
   region_codes: gb
   kcal_per_100g: 290
@@ -225,7 +226,7 @@
   unit_grams: 233
 - source: gymflow
   source_id: pukka_steak_kidney_pie
-  name: Pukka Steak & Kidney Pie (1)
+  name: Pukka Steak & Kidney Pie
   brand: Pukka
   region_codes: gb
   kcal_per_100g: 285
@@ -241,7 +242,7 @@
   unit_grams: 233
 - source: gymflow
   source_id: pukka_steak_ale_pie
-  name: Pukka Steak & Ale Pie (1)
+  name: Pukka Steak & Ale Pie
   brand: Pukka
   region_codes: gb
   kcal_per_100g: 290
@@ -257,7 +258,7 @@
   unit_grams: 233
 - source: gymflow
   source_id: hollands_chicken_mushroom
-  name: Holland's Chicken & Mushroom Pie (1)
+  name: Holland's Chicken & Mushroom Pie
   brand: Holland's
   region_codes: gb
   kcal_per_100g: 295
@@ -273,7 +274,7 @@
   unit_grams: 200
 - source: gymflow
   source_id: hollands_meat_potato_pie
-  name: Holland's Meat & Potato Pie (1)
+  name: Holland's Meat & Potato Pie
   brand: Holland's
   region_codes: gb
   kcal_per_100g: 280
@@ -289,7 +290,7 @@
   unit_grams: 200
 - source: gymflow
   source_id: pieminister_heidi_pie
-  name: Pieminister Heidi Pie (1)
+  name: Pieminister Heidi Pie
   brand: Pieminister
   region_codes: gb
   kcal_per_100g: 270
@@ -305,7 +306,7 @@
   unit_grams: 270
 - source: gymflow
   source_id: pieminister_moo_pie
-  name: Pieminister Moo Pie (1)
+  name: Pieminister Moo Pie
   brand: Pieminister
   region_codes: gb
   kcal_per_100g: 290

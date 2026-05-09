@@ -1,4 +1,5 @@
 # world_sauces.yaml — curry pastes, Asian/Thai sauces, Mexican, Mediterranean, stocks.
+
 - source: gymflow
   source_id: pataks_tikka_masala_paste
   name: Patak's Tikka Masala Paste (1 tbsp)
@@ -162,7 +163,7 @@
 - source: gymflow
   source_id: mango_chutney_15g
   name: Mango Chutney (15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 240
   protein_per_100g: 0.4
@@ -178,7 +179,7 @@
 - source: gymflow
   source_id: lime_pickle_15g
   name: Lime Pickle (15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 1
@@ -194,7 +195,7 @@
 - source: gymflow
   source_id: raita_30g
   name: Raita / Cucumber Yogurt Sauce (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 60
   protein_per_100g: 3
@@ -370,7 +371,7 @@
 - source: gymflow
   source_id: gochujang_15g
   name: Gochujang Korean Chilli Paste (15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 6
@@ -386,7 +387,7 @@
 - source: gymflow
   source_id: miso_paste_15g
   name: White Miso Paste (15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 200
   protein_per_100g: 12
@@ -434,7 +435,7 @@
 - source: gymflow
   source_id: chinese_5_spice_2g
   name: Chinese 5-Spice (1 tsp/2g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 350
   protein_per_100g: 8
@@ -546,7 +547,7 @@
 - source: gymflow
   source_id: guacamole_30g
   name: Guacamole (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 2
@@ -562,7 +563,7 @@
 - source: gymflow
   source_id: jalapenos_pickled_15g
   name: Pickled Jalapeños (15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 25
   protein_per_100g: 1
@@ -578,7 +579,7 @@
 - source: gymflow
   source_id: chipotle_mayo_15g
   name: Chipotle Mayonnaise (15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 600
   protein_per_100g: 1
@@ -594,7 +595,7 @@
 - source: gymflow
   source_id: harissa_paste_15g
   name: Harissa Paste (15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 3
@@ -610,7 +611,7 @@
 - source: gymflow
   source_id: sun_dried_tomato_paste_15g
   name: Sun-Dried Tomato Paste (15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 4
@@ -626,7 +627,7 @@
 - source: gymflow
   source_id: olive_tapenade_15g
   name: Black Olive Tapenade (15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 230
   protein_per_100g: 2
@@ -642,7 +643,7 @@
 - source: gymflow
   source_id: pesto_red_15g
   name: Red Pesto (15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 380
   protein_per_100g: 4
@@ -658,7 +659,7 @@
 - source: gymflow
   source_id: tzatziki_30g
   name: Tzatziki Greek Yogurt Dip (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 90
   protein_per_100g: 3
@@ -674,7 +675,7 @@
 - source: gymflow
   source_id: tahini_15g
   name: Tahini Sesame Paste (15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 595
   protein_per_100g: 17
@@ -690,7 +691,7 @@
 - source: gymflow
   source_id: baba_ganoush_30g
   name: Baba Ganoush (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 3
@@ -866,7 +867,7 @@
 - source: gymflow
   source_id: bbq_sauce_sticky_15g
   name: BBQ Sauce, Sweet & Smoky (15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 0.5
@@ -882,7 +883,7 @@
 - source: gymflow
   source_id: jerk_marinade_15g
   name: Jerk Marinade (15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 150
   protein_per_100g: 2
@@ -930,7 +931,7 @@
 - source: gymflow
   source_id: wholegrain_mustard_5g
   name: Wholegrain Mustard (5g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 9
@@ -946,7 +947,7 @@
 - source: gymflow
   source_id: balsamic_vinegar_15ml
   name: Balsamic Vinegar (15ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 90
   protein_per_100g: 0
@@ -962,7 +963,7 @@
 - source: gymflow
   source_id: white_wine_vinegar_15ml
   name: White Wine Vinegar (15ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 18
   protein_per_100g: 0
@@ -978,7 +979,7 @@
 - source: gymflow
   source_id: apple_cider_vinegar_15ml
   name: Apple Cider Vinegar (15ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 21
   protein_per_100g: 0
@@ -994,7 +995,7 @@
 - source: gymflow
   source_id: malt_vinegar_15ml
   name: Malt Vinegar (15ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 18
   protein_per_100g: 0

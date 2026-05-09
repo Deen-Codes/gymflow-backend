@@ -1,8 +1,9 @@
 # african.yaml — Nigerian/West African + Ethiopian + South African + Moroccan + Ghanaian dishes.
+
 - source: gymflow
   source_id: afr_jollof_rice
   name: Jollof Rice
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 4
@@ -18,7 +19,7 @@
 - source: gymflow
   source_id: afr_jollof_chicken_meal
   name: Jollof Rice with Chicken
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 11
@@ -34,7 +35,7 @@
 - source: gymflow
   source_id: afr_egusi_soup
   name: Egusi Soup
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 8
@@ -50,7 +51,7 @@
 - source: gymflow
   source_id: afr_pepper_soup_chicken
   name: Pepper Soup (Chicken)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 90
   protein_per_100g: 12
@@ -66,7 +67,7 @@
 - source: gymflow
   source_id: afr_efo_riro
   name: Efo Riro (Spinach Stew)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 6
@@ -82,7 +83,7 @@
 - source: gymflow
   source_id: afr_okra_soup
   name: Okra Soup
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 95
   protein_per_100g: 5
@@ -98,7 +99,7 @@
 - source: gymflow
   source_id: afr_suya_beef
   name: Suya (Beef Skewer)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 25
@@ -114,7 +115,7 @@
 - source: gymflow
   source_id: afr_suya_chicken
   name: Chicken Suya Skewer
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 200
   protein_per_100g: 28
@@ -130,7 +131,7 @@
 - source: gymflow
   source_id: afr_fufu_pounded_yam
   name: Pounded Yam / Fufu (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 150
   protein_per_100g: 1.5
@@ -145,7 +146,7 @@
 - source: gymflow
   source_id: afr_eba_garri
   name: Eba (cooked Garri, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 1.5
@@ -160,7 +161,7 @@
 - source: gymflow
   source_id: afr_amala
   name: Amala (yam flour, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 125
   protein_per_100g: 1.4
@@ -175,7 +176,7 @@
 - source: gymflow
   source_id: afr_pounded_yam
   name: Pounded Yam (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 1.5
@@ -190,7 +191,7 @@
 - source: gymflow
   source_id: afr_akara_3
   name: Akara (Bean Cakes, 3)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 235
   protein_per_100g: 9
@@ -206,7 +207,7 @@
 - source: gymflow
   source_id: afr_moin_moin
   name: Moin Moin (Steamed Bean Cake)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 8
@@ -222,7 +223,7 @@
 - source: gymflow
   source_id: afr_puff_puff_3
   name: Puff Puff (3)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 320
   protein_per_100g: 5
@@ -238,7 +239,7 @@
 - source: gymflow
   source_id: afr_chin_chin_30g
   name: Chin Chin (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 480
   protein_per_100g: 8
@@ -254,7 +255,7 @@
 - source: gymflow
   source_id: afr_meat_pie
   name: Nigerian Meat Pie
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 290
   protein_per_100g: 8
@@ -270,7 +271,7 @@
 - source: gymflow
   source_id: afr_fried_rice_nigerian
   name: Nigerian Fried Rice
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 5
@@ -286,7 +287,7 @@
 - source: gymflow
   source_id: afr_plantain_chips_30g
   name: Plantain Chips (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 530
   protein_per_100g: 1.5
@@ -302,7 +303,7 @@
 - source: gymflow
   source_id: afr_shawarma_chicken_nigerian
   name: Nigerian-Style Chicken Shawarma
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 14
@@ -318,7 +319,7 @@
 - source: gymflow
   source_id: afr_doro_wat
   name: Doro Wat (Ethiopian Chicken Stew)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 180
   protein_per_100g: 14
@@ -334,7 +335,7 @@
 - source: gymflow
   source_id: afr_injera_50g
   name: Injera (1 piece)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 6
@@ -350,7 +351,7 @@
 - source: gymflow
   source_id: afr_misir_wat
   name: Misir Wat (Lentil Stew)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 7
@@ -366,7 +367,7 @@
 - source: gymflow
   source_id: afr_kitfo_lean
   name: Kitfo (Spiced Beef)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 235
   protein_per_100g: 25
@@ -382,7 +383,7 @@
 - source: gymflow
   source_id: afr_shiro_wat
   name: Shiro Wat (Chickpea Stew)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 6
@@ -398,7 +399,7 @@
 - source: gymflow
   source_id: afr_berbere_seasoning_5g
   name: Berbere Seasoning (1 tsp/5g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 280
   protein_per_100g: 12
@@ -414,7 +415,7 @@
 - source: gymflow
   source_id: afr_bobotie
   name: Bobotie (per 200g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 11
@@ -430,7 +431,7 @@
 - source: gymflow
   source_id: afr_boerewors_cooked
   name: Boerewors (cooked, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 290
   protein_per_100g: 14
@@ -445,7 +446,7 @@
 - source: gymflow
   source_id: afr_pap_cooked
   name: Pap (Maize porridge, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 95
   protein_per_100g: 2
@@ -460,7 +461,7 @@
 - source: gymflow
   source_id: afr_chakalaka_relish
   name: Chakalaka (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 75
   protein_per_100g: 2
@@ -475,7 +476,7 @@
 - source: gymflow
   source_id: afr_biltong_traditional_30g
   name: Traditional Biltong (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 275
   protein_per_100g: 55
@@ -491,7 +492,7 @@
 - source: gymflow
   source_id: afr_droewors_30g
   name: Droewors (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 320
   protein_per_100g: 50
@@ -507,7 +508,7 @@
 - source: gymflow
   source_id: afr_kelewele
   name: Kelewele (Spiced Plantain)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 240
   protein_per_100g: 1.5
@@ -523,7 +524,7 @@
 - source: gymflow
   source_id: afr_red_red
   name: Red Red (Black-Eyed Beans Stew)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 8
@@ -539,7 +540,7 @@
 - source: gymflow
   source_id: afr_kenkey_corn_dumpling
   name: Kenkey (Corn Dumpling)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 120
   protein_per_100g: 3
@@ -554,7 +555,7 @@
 - source: gymflow
   source_id: afr_waakye
   name: Waakye (Rice & Beans)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 5
@@ -570,7 +571,7 @@
 - source: gymflow
   source_id: afr_tagine_chicken
   name: Chicken Tagine
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 14
@@ -586,7 +587,7 @@
 - source: gymflow
   source_id: afr_tagine_lamb
   name: Lamb Tagine
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 16
@@ -602,7 +603,7 @@
 - source: gymflow
   source_id: afr_couscous_moroccan
   name: Moroccan Couscous (cooked, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 112
   protein_per_100g: 3.8
@@ -617,7 +618,7 @@
 - source: gymflow
   source_id: afr_harira_soup
   name: Harira (Moroccan Soup)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 80
   protein_per_100g: 4
@@ -633,7 +634,7 @@
 - source: gymflow
   source_id: afr_moroccan_lentil_soup
   name: Moroccan Lentil Soup
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 95
   protein_per_100g: 6

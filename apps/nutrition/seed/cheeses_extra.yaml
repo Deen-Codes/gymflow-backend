@@ -1,8 +1,9 @@
 # cheeses_extra.yaml — UK + European cheese variety: Red Leicester, Wensleydale + Cranberry, Lancashire, Cheshire, Double Gloucester, Edam, Gouda, Emmental, Manchego, Applewood smoked, goats cheese, Boursin, Laughing Cow, Dairylea, Mascarpone, Ricotta, Burrata, grated cheddar/mozzarella, Buffalo Mozzarella, paneer, halloumi, baked Brie/Camembert.
+
 - source: gymflow
   source_id: cheese_red_leicester_30g
   name: Red Leicester (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 401
   protein_per_100g: 24
@@ -18,7 +19,7 @@
 - source: gymflow
   source_id: cheese_wensleydale_30g
   name: Wensleydale (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 365
   protein_per_100g: 23
@@ -34,7 +35,7 @@
 - source: gymflow
   source_id: cheese_wensleydale_cranberry_30g
   name: Wensleydale & Cranberry (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 360
   protein_per_100g: 18
@@ -50,7 +51,7 @@
 - source: gymflow
   source_id: cheese_double_gloucester_30g
   name: Double Gloucester (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 405
   protein_per_100g: 24
@@ -66,7 +67,7 @@
 - source: gymflow
   source_id: cheese_lancashire_30g
   name: Lancashire Cheese (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 380
   protein_per_100g: 23
@@ -82,7 +83,7 @@
 - source: gymflow
   source_id: cheese_cheshire_30g
   name: Cheshire Cheese (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 380
   protein_per_100g: 24
@@ -98,7 +99,7 @@
 - source: gymflow
   source_id: cheese_edam_30g
   name: Edam (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 357
   protein_per_100g: 25
@@ -114,7 +115,7 @@
 - source: gymflow
   source_id: cheese_gouda_30g
   name: Gouda (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 356
   protein_per_100g: 25
@@ -130,7 +131,7 @@
 - source: gymflow
   source_id: cheese_emmental_30g
   name: Emmental (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 380
   protein_per_100g: 28
@@ -146,7 +147,7 @@
 - source: gymflow
   source_id: cheese_manchego_30g
   name: Manchego (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 395
   protein_per_100g: 25
@@ -178,7 +179,7 @@
 - source: gymflow
   source_id: cheese_goats_soft_30g
   name: Soft Goats Cheese (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 290
   protein_per_100g: 19
@@ -193,7 +194,7 @@
 - source: gymflow
   source_id: cheese_goats_hard_30g
   name: Hard Goats Cheese (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 365
   protein_per_100g: 22
@@ -289,7 +290,7 @@
 - source: gymflow
   source_id: cheese_mascarpone_30g
   name: Mascarpone (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 425
   protein_per_100g: 6
@@ -305,7 +306,7 @@
 - source: gymflow
   source_id: cheese_ricotta_30g
   name: Ricotta (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 11
@@ -321,7 +322,7 @@
 - source: gymflow
   source_id: cheese_burrata_60g
   name: Burrata (1 ball/60g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 330
   protein_per_100g: 17
@@ -337,7 +338,7 @@
 - source: gymflow
   source_id: cheese_grated_cheddar_30g
   name: Grated Mature Cheddar (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 416
   protein_per_100g: 25
@@ -353,7 +354,7 @@
 - source: gymflow
   source_id: cheese_grated_mozzarella_30g
   name: Grated Mozzarella (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 280
   protein_per_100g: 22
@@ -369,7 +370,7 @@
 - source: gymflow
   source_id: cheese_buffalo_mozzarella_125g
   name: Buffalo Mozzarella (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 280
   protein_per_100g: 18
@@ -385,7 +386,7 @@
 - source: gymflow
   source_id: cheese_paneer_30g
   name: Paneer (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 320
   protein_per_100g: 18
@@ -400,7 +401,7 @@
 - source: gymflow
   source_id: cheese_haloumi_30g_alt
   name: Halloumi (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 320
   protein_per_100g: 22
@@ -416,7 +417,7 @@
 - source: gymflow
   source_id: cheese_brie_baked_30g
   name: Baked Brie (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 334
   protein_per_100g: 21
@@ -432,7 +433,7 @@
 - source: gymflow
   source_id: cheese_camembert_baked_30g
   name: Baked Camembert (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 300
   protein_per_100g: 20

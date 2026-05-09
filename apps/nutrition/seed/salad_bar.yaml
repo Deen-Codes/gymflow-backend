@@ -1,8 +1,9 @@
 # salad_bar.yaml — salad bar items: mixed leaves, baby spinach, iceberg, potato/pasta/couscous/bulgur salads. Dressings: Caesar, balsamic vinaigrette, French, honey-mustard, blue cheese, thousand island, ranch, low-fat balsamic. Toppings: croutons, pickled onions/gherkins/beetroot/red cabbage.
+
 - source: gymflow
   source_id: salad_mixed_leaves_handful
   name: Mixed Leaves (1 handful/30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 17
   protein_per_100g: 1.5
@@ -17,7 +18,7 @@
 - source: gymflow
   source_id: salad_baby_spinach_handful
   name: Baby Spinach (1 handful/30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 23
   protein_per_100g: 2.9
@@ -32,7 +33,7 @@
 - source: gymflow
   source_id: salad_iceberg_handful
   name: Iceberg Lettuce (1 handful/40g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 14
   protein_per_100g: 0.9
@@ -47,7 +48,7 @@
 - source: gymflow
   source_id: salad_potato_homemade_per_100
   name: Potato Salad (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 2
@@ -62,7 +63,7 @@
 - source: gymflow
   source_id: salad_pasta_salad_per_100
   name: Pasta Salad (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 6
@@ -77,7 +78,7 @@
 - source: gymflow
   source_id: salad_couscous_lemon_per_100
   name: Couscous Salad with Lemon (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 120
   protein_per_100g: 4
@@ -92,7 +93,7 @@
 - source: gymflow
   source_id: salad_bulgur_wheat_per_100
   name: Bulgur Wheat Salad (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 4
@@ -107,7 +108,7 @@
 - source: gymflow
   source_id: dressing_caesar_15ml
   name: Caesar Salad Dressing (15ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 480
   protein_per_100g: 1
@@ -123,7 +124,7 @@
 - source: gymflow
   source_id: dressing_balsamic_15ml
   name: Balsamic Vinaigrette (15ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 280
   protein_per_100g: 0.3
@@ -139,7 +140,7 @@
 - source: gymflow
   source_id: dressing_french_15ml
   name: French Dressing (15ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 380
   protein_per_100g: 0.5
@@ -155,7 +156,7 @@
 - source: gymflow
   source_id: dressing_honey_mustard_15ml
   name: Honey & Mustard Dressing (15ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 380
   protein_per_100g: 1
@@ -171,7 +172,7 @@
 - source: gymflow
   source_id: dressing_blue_cheese_15ml
   name: Blue Cheese Dressing (15ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 460
   protein_per_100g: 2
@@ -187,7 +188,7 @@
 - source: gymflow
   source_id: dressing_thousand_island_15ml
   name: Thousand Island Dressing (15ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 405
   protein_per_100g: 1
@@ -203,7 +204,7 @@
 - source: gymflow
   source_id: dressing_ranch_15ml
   name: Ranch Dressing (15ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 440
   protein_per_100g: 1
@@ -219,7 +220,7 @@
 - source: gymflow
   source_id: dressing_low_fat_balsamic_15ml
   name: Low Fat Balsamic Dressing (15ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 80
   protein_per_100g: 0.5
@@ -235,7 +236,7 @@
 - source: gymflow
   source_id: salad_croutons_per_30g
   name: Croutons (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 470
   protein_per_100g: 11
@@ -251,7 +252,7 @@
 - source: gymflow
   source_id: salad_pickled_onions_per_50g
   name: Pickled Onions (50g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 35
   protein_per_100g: 1
@@ -266,7 +267,7 @@
 - source: gymflow
   source_id: salad_pickled_gherkins_2
   name: Pickled Gherkins (2)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 12
   protein_per_100g: 0.7
@@ -282,7 +283,7 @@
 - source: gymflow
   source_id: salad_pickled_beetroot_per_100
   name: Pickled Beetroot (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 50
   protein_per_100g: 1.5
@@ -297,7 +298,7 @@
 - source: gymflow
   source_id: salad_pickled_red_cabbage_per_100
   name: Pickled Red Cabbage (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 25
   protein_per_100g: 1

@@ -1,4 +1,5 @@
 # free_from.yaml — gluten-free / Free From: Genius bread (white/seeded), Schar pasta/baguette/cookies/crackers, BFree wraps (white/multigrain), Newburn Bakehouse Tiger Loaf, Warburtons GF white/wraps, GF corn flakes, GF sausages, GF tomato sauce, GF breadcrumbs.
+
 - source: gymflow
   source_id: genius_white_bread_slice
   name: Genius Gluten Free White Bread (1 slice)
@@ -48,7 +49,7 @@
   allergens: ''
 - source: gymflow
   source_id: schar_baguette_2_pack
-  name: Schar Gluten Free Baguette (1)
+  name: Schar Gluten Free Baguette
   brand: Schar
   region_codes: gb
   kcal_per_100g: 250
@@ -64,7 +65,7 @@
   unit_grams: 75
 - source: gymflow
   source_id: bfree_white_wraps
-  name: BFree Gluten Free White Wraps (1)
+  name: BFree Gluten Free White Wraps
   brand: BFree
   region_codes: gb
   kcal_per_100g: 220
@@ -80,7 +81,7 @@
   unit_grams: 56
 - source: gymflow
   source_id: bfree_multigrain_wraps
-  name: BFree Multigrain Wraps (1)
+  name: BFree Multigrain Wraps
   brand: BFree
   region_codes: gb
   kcal_per_100g: 235
@@ -128,7 +129,7 @@
   unit_grams: 35
 - source: gymflow
   source_id: warburtons_gluten_free_wraps
-  name: Warburtons Gluten Free Wraps (1)
+  name: Warburtons Gluten Free Wraps
   brand: Warburtons
   region_codes: gb
   kcal_per_100g: 240
@@ -145,7 +146,7 @@
 - source: gymflow
   source_id: free_from_corn_flakes_30g
   name: Gluten Free Corn Flakes (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 380
   protein_per_100g: 7.5
@@ -191,8 +192,8 @@
   unit_grams: 30
 - source: gymflow
   source_id: free_from_sausages_pork_4
-  name: Gluten Free Pork Sausages (1)
-  brand: Generic
+  name: Gluten Free Pork Sausages
+  brand: ''
   region_codes: gb
   kcal_per_100g: 285
   protein_per_100g: 14
@@ -208,7 +209,7 @@
 - source: gymflow
   source_id: free_from_pasta_sauce_tomato
   name: Gluten Free Tomato Pasta Sauce (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 55
   protein_per_100g: 2
@@ -223,7 +224,7 @@
 - source: gymflow
   source_id: free_from_breadcrumbs_per_100
   name: Gluten Free Breadcrumbs (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 380
   protein_per_100g: 7

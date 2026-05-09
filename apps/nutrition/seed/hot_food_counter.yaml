@@ -1,4 +1,5 @@
 # hot_food_counter.yaml — supermarket hot counter: Tesco/M&S/Asda/Sainsbury's rotisserie whole chicken + hot pieces (drumsticks/thighs/wings), pork ribs, hot Kievs, pork pies, sausage rolls, Scotch eggs.
+
 - source: gymflow
   source_id: tesco_rotisserie_whole_chicken_per_100
   name: Tesco Rotisserie Whole Chicken (per 100g)
@@ -16,7 +17,7 @@
   allergens: ''
 - source: gymflow
   source_id: tesco_hot_chicken_drumstick
-  name: Tesco Hot Chicken Drumstick (1)
+  name: Tesco Hot Chicken Drumstick
   brand: Tesco
   region_codes: gb
   kcal_per_100g: 175
@@ -32,7 +33,7 @@
   unit_grams: 75
 - source: gymflow
   source_id: tesco_hot_chicken_thigh
-  name: Tesco Hot Chicken Thigh (1)
+  name: Tesco Hot Chicken Thigh
   brand: Tesco
   region_codes: gb
   kcal_per_100g: 215
@@ -124,7 +125,7 @@
 - source: gymflow
   source_id: hot_food_pork_ribs_rack
   name: Hot Pork Ribs Rack (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 25
@@ -138,8 +139,8 @@
   allergens: sulphites
 - source: gymflow
   source_id: hot_food_chicken_kievs_2
-  name: Hot Chicken Kievs (1)
-  brand: Generic
+  name: Hot Chicken Kievs
+  brand: ''
   region_codes: gb
   kcal_per_100g: 230
   protein_per_100g: 14
@@ -155,7 +156,7 @@
 - source: gymflow
   source_id: hot_food_pork_pie
   name: Pork Pie (1 small)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 380
   protein_per_100g: 9
@@ -171,7 +172,7 @@
 - source: gymflow
   source_id: hot_food_sausage_roll_gourmet
   name: Sausage Roll (gourmet, large)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 380
   protein_per_100g: 11
@@ -186,8 +187,8 @@
   unit_grams: 130
 - source: gymflow
   source_id: hot_food_scotch_egg
-  name: Scotch Egg (1)
-  brand: Generic
+  name: Scotch Egg
+  brand: ''
   region_codes: gb
   kcal_per_100g: 250
   protein_per_100g: 12

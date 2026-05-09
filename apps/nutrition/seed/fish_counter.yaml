@@ -1,8 +1,9 @@
 # fish_counter.yaml — fresh fish counter: whole sea bass/mackerel, sea bream, smoked mackerel/trout, dressed crab, crab claws, lobster tail, mussels, plaice, halibut, swordfish, kingfish, squid/calamari, octopus.
+
 - source: gymflow
   source_id: fish_sea_bass_whole_cooked
   name: Whole Sea Bass, cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 20
@@ -18,7 +19,7 @@
 - source: gymflow
   source_id: fish_sea_bass_2_fillets
   name: Sea Bass Fillets (2)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 20
@@ -34,7 +35,7 @@
 - source: gymflow
   source_id: fish_sea_bream_fillets
   name: Sea Bream Fillet, cooked
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 20
@@ -50,7 +51,7 @@
 - source: gymflow
   source_id: fish_whole_mackerel_cooked
   name: Whole Mackerel, cooked
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 262
   protein_per_100g: 22
@@ -65,8 +66,8 @@
   unit_grams: 200
 - source: gymflow
   source_id: fish_smoked_mackerel_fillet
-  name: Smoked Mackerel Fillet (1)
-  brand: Generic
+  name: Smoked Mackerel Fillet
+  brand: ''
   region_codes: gb
   kcal_per_100g: 305
   protein_per_100g: 18
@@ -82,7 +83,7 @@
 - source: gymflow
   source_id: fish_smoked_trout_slice
   name: Smoked Trout Slice
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 21
@@ -98,7 +99,7 @@
 - source: gymflow
   source_id: fish_dressed_crab_per_100
   name: Dressed Crab (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 20
@@ -114,7 +115,7 @@
 - source: gymflow
   source_id: fish_crab_claws_2_cooked
   name: Crab Claws, cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 87
   protein_per_100g: 18
@@ -128,8 +129,8 @@
   allergens: crustaceans
 - source: gymflow
   source_id: fish_lobster_tail_cooked
-  name: Lobster Tail, cooked (1)
-  brand: Generic
+  name: Lobster Tail, cooked
+  brand: ''
   region_codes: gb
   kcal_per_100g: 89
   protein_per_100g: 19
@@ -145,7 +146,7 @@
 - source: gymflow
   source_id: fish_mussels_cooked_pot
   name: Mussels in Shells, cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 86
   protein_per_100g: 12
@@ -161,7 +162,7 @@
 - source: gymflow
   source_id: fish_plaice_fillet_cooked
   name: Plaice Fillet, cooked
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 91
   protein_per_100g: 18
@@ -177,7 +178,7 @@
 - source: gymflow
   source_id: fish_halibut_steak_cooked
   name: Halibut Steak, cooked
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 140
   protein_per_100g: 27
@@ -193,7 +194,7 @@
 - source: gymflow
   source_id: fish_swordfish_steak_cooked
   name: Swordfish Steak, cooked
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 155
   protein_per_100g: 25
@@ -209,7 +210,7 @@
 - source: gymflow
   source_id: fish_kingfish_cooked
   name: King Fish (Kingfish), cooked
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 150
   protein_per_100g: 24
@@ -225,7 +226,7 @@
 - source: gymflow
   source_id: fish_squid_calamari_per_100
   name: Squid (Calamari), cooked plain (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 18
@@ -240,7 +241,7 @@
 - source: gymflow
   source_id: fish_octopus_cooked_per_100
   name: Octopus, cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 30

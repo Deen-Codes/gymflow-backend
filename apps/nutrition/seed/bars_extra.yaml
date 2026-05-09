@@ -1,4 +1,5 @@
 # bars_extra.yaml — Belvita variants (Soft Bake choc/berries/honey, Brunch, Crunchy), Nature Valley (Oats & Honey, Protein, Crunchy), Trek (Protein Flapjack, Power), Eat Natural (almond apricot, dark choc orange, protein packed), Special K bars, Nutri-Grain, Quaker Chewy, Nakd (cocoa orange/berry/cashew/mint), Alpen Light, KIND (Dark Choc Nuts, Caramel Almond), Cliff Bar, Fibre One brownies/lemon, Tracker, Boost.
+
 - source: gymflow
   source_id: belvita_choc_chip_4
   name: Belvita Soft Bake Choc Chip (4 biscuits)
@@ -81,7 +82,7 @@
   unit_grams: 30
 - source: gymflow
   source_id: nature_valley_oats_honey
-  name: Nature Valley Oats & Honey (1)
+  name: Nature Valley Oats & Honey
   brand: Nature Valley
   region_codes: gb
   kcal_per_100g: 470
@@ -97,7 +98,7 @@
   unit_grams: 21
 - source: gymflow
   source_id: nature_valley_protein_choc
-  name: Nature Valley Protein Salted Caramel (1)
+  name: Nature Valley Protein Salted Caramel
   brand: Nature Valley
   region_codes: gb
   kcal_per_100g: 460
@@ -113,7 +114,7 @@
   unit_grams: 40
 - source: gymflow
   source_id: nature_valley_chocolate_chip
-  name: Nature Valley Crunchy Chocolate Chip (1)
+  name: Nature Valley Crunchy Chocolate Chip
   brand: Nature Valley
   region_codes: gb
   kcal_per_100g: 480
@@ -129,7 +130,7 @@
   unit_grams: 21
 - source: gymflow
   source_id: trek_protein_flapjack_choc
-  name: Trek Protein Flapjack Chocolate (1)
+  name: Trek Protein Flapjack Chocolate
   brand: Trek
   region_codes: gb
   kcal_per_100g: 415
@@ -145,7 +146,7 @@
   unit_grams: 50
 - source: gymflow
   source_id: trek_power_protein_bar
-  name: Trek Power Bar Cocoa Coconut (1)
+  name: Trek Power Bar Cocoa Coconut
   brand: Trek
   region_codes: gb
   kcal_per_100g: 405
@@ -161,7 +162,7 @@
   unit_grams: 55
 - source: gymflow
   source_id: eat_natural_almond_apricot
-  name: Eat Natural Almond, Apricot & Yogurt (1)
+  name: Eat Natural Almond, Apricot & Yogurt
   brand: Eat Natural
   region_codes: gb
   kcal_per_100g: 460
@@ -177,7 +178,7 @@
   unit_grams: 50
 - source: gymflow
   source_id: eat_natural_dark_choc_orange
-  name: Eat Natural Dark Chocolate & Orange (1)
+  name: Eat Natural Dark Chocolate & Orange
   brand: Eat Natural
   region_codes: gb
   kcal_per_100g: 480
@@ -193,7 +194,7 @@
   unit_grams: 45
 - source: gymflow
   source_id: eat_natural_protein_packed
-  name: Eat Natural Protein Packed (1)
+  name: Eat Natural Protein Packed
   brand: Eat Natural
   region_codes: gb
   kcal_per_100g: 410
@@ -209,7 +210,7 @@
   unit_grams: 45
 - source: gymflow
   source_id: special_k_red_berries_bar
-  name: Special K Red Berries Bar (1)
+  name: Special K Red Berries Bar
   brand: Kellogg's
   region_codes: gb
   kcal_per_100g: 380
@@ -225,7 +226,7 @@
   unit_grams: 22
 - source: gymflow
   source_id: special_k_chocolate_caramel_bar
-  name: Special K Chocolate Caramel Bar (1)
+  name: Special K Chocolate Caramel Bar
   brand: Kellogg's
   region_codes: gb
   kcal_per_100g: 380
@@ -273,7 +274,7 @@
   unit_grams: 37
 - source: gymflow
   source_id: quaker_chewy_choc_chip
-  name: Quaker Chewy Chocolate Chip (1)
+  name: Quaker Chewy Chocolate Chip
   brand: Quaker
   region_codes: gb
   kcal_per_100g: 425
@@ -289,7 +290,7 @@
   unit_grams: 28
 - source: gymflow
   source_id: quaker_oats_so_simple_bar_apple
-  name: Quaker Oat So Simple Bar Apple (1)
+  name: Quaker Oat So Simple Bar Apple
   brand: Quaker
   region_codes: gb
   kcal_per_100g: 380
@@ -369,7 +370,7 @@
   unit_grams: 35
 - source: gymflow
   source_id: alpen_light_summer_fruits_bar
-  name: Alpen Light Summer Fruits Bar (1)
+  name: Alpen Light Summer Fruits Bar
   brand: Alpen
   region_codes: gb
   kcal_per_100g: 350
@@ -385,7 +386,7 @@
   unit_grams: 19
 - source: gymflow
   source_id: alpen_light_choc_orange_bar
-  name: Alpen Light Chocolate Orange Bar (1)
+  name: Alpen Light Chocolate Orange Bar
   brand: Alpen
   region_codes: gb
   kcal_per_100g: 365
@@ -401,7 +402,7 @@
   unit_grams: 19
 - source: gymflow
   source_id: kind_dark_choc_nuts_sea_salt
-  name: KIND Dark Chocolate Nuts & Sea Salt (1)
+  name: KIND Dark Chocolate Nuts & Sea Salt
   brand: KIND
   region_codes: gb
   kcal_per_100g: 540
@@ -417,7 +418,7 @@
   unit_grams: 40
 - source: gymflow
   source_id: kind_caramel_almond
-  name: KIND Caramel Almond & Sea Salt (1)
+  name: KIND Caramel Almond & Sea Salt
   brand: KIND
   region_codes: gb
   kcal_per_100g: 540
@@ -433,7 +434,7 @@
   unit_grams: 40
 - source: gymflow
   source_id: cliff_bar_choc_chip
-  name: Cliff Bar Chocolate Chip (1)
+  name: Cliff Bar Chocolate Chip
   brand: Cliff Bar
   region_codes: gb
   kcal_per_100g: 395
@@ -449,7 +450,7 @@
   unit_grams: 68
 - source: gymflow
   source_id: fibre_one_brownies_choc
-  name: Fibre One Chocolate Brownies (1)
+  name: Fibre One Chocolate Brownies
   brand: Fibre One
   region_codes: gb
   kcal_per_100g: 350
@@ -465,7 +466,7 @@
   unit_grams: 24
 - source: gymflow
   source_id: fibre_one_lemon_drizzle
-  name: Fibre One Lemon Drizzle (1)
+  name: Fibre One Lemon Drizzle
   brand: Fibre One
   region_codes: gb
   kcal_per_100g: 360
@@ -481,7 +482,7 @@
   unit_grams: 24
 - source: gymflow
   source_id: tracker_original_bar
-  name: Tracker Roasted Nut Original (1)
+  name: Tracker Roasted Nut Original
   brand: Tracker
   region_codes: gb
   kcal_per_100g: 460
@@ -497,7 +498,7 @@
   unit_grams: 26
 - source: gymflow
   source_id: tracker_choc_chip_bar
-  name: Tracker Chocolate Chip (1)
+  name: Tracker Chocolate Chip
   brand: Tracker
   region_codes: gb
   kcal_per_100g: 470

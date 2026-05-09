@@ -549,7 +549,7 @@
   unit_grams: 195
 - source: frozen
   source_id: gf_thin_classic_margherita_pizza
-  name: Goodfella's Thin Classic Margherita (Whole)
+  name: Goodfella's Thin Classic Margherita
   kcal_per_100g: 245
   protein_per_100g: 11
   carbs_per_100g: 32
@@ -563,7 +563,7 @@
   unit_grams: 345
 - source: frozen
   source_id: gf_thin_pepperoni
-  name: Goodfella's Thin Pepperoni Pizza (Whole)
+  name: Goodfella's Thin Pepperoni Pizza
   kcal_per_100g: 275
   protein_per_100g: 12
   carbs_per_100g: 30
@@ -577,7 +577,7 @@
   unit_grams: 345
 - source: frozen
   source_id: gf_stonebaked_meat_feast
-  name: Goodfella's Stonebaked Meat Feast (Whole)
+  name: Goodfella's Stonebaked Meat Feast
   kcal_per_100g: 280
   protein_per_100g: 13
   carbs_per_100g: 28
@@ -591,7 +591,7 @@
   unit_grams: 405
 - source: frozen
   source_id: ct_takeaway_pepperoni
-  name: Chicago Town Takeaway Pepperoni Pizza (Whole)
+  name: Chicago Town Takeaway Pepperoni Pizza
   kcal_per_100g: 270
   protein_per_100g: 11
   carbs_per_100g: 28
@@ -605,7 +605,7 @@
   unit_grams: 480
 - source: frozen
   source_id: ct_takeaway_chicken_bbq
-  name: Chicago Town Takeaway Chicken & BBQ (Whole)
+  name: Chicago Town Takeaway Chicken & BBQ
   kcal_per_100g: 250
   protein_per_100g: 13
   carbs_per_100g: 30

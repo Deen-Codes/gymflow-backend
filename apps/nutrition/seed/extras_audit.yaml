@@ -5,10 +5,11 @@
 # raisins/dried fruit/blackberries), olives, more cheese (brie/halloumi/parm),
 # popcorn/pretzels/rice cakes/trail mix/bombay mix, more fish (anchovies/kippers
 # /pollock/seabream), falafel, frozen berries.
+
 - source: gymflow
   source_id: chorizo_ring_per_100g
   name: Chorizo (sliced, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 450
   protein_per_100g: 24
@@ -23,7 +24,7 @@
 - source: gymflow
   source_id: chorizo_slice_5g
   name: Chorizo (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 450
   protein_per_100g: 24
@@ -39,7 +40,7 @@
 - source: gymflow
   source_id: salami_slice
   name: Salami (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 380
   protein_per_100g: 22
@@ -55,7 +56,7 @@
 - source: gymflow
   source_id: prosciutto_di_parma_slice
   name: Prosciutto di Parma (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 270
   protein_per_100g: 28
@@ -71,7 +72,7 @@
 - source: gymflow
   source_id: serrano_ham_slice
   name: Serrano Ham (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 30
@@ -87,7 +88,7 @@
 - source: gymflow
   source_id: parma_crisps_pack
   name: Parma Crisps (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 30
@@ -103,7 +104,7 @@
 - source: gymflow
   source_id: pepperoni_slice
   name: Pepperoni (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 495
   protein_per_100g: 22
@@ -119,7 +120,7 @@
 - source: gymflow
   source_id: biltong_per_100g
   name: Biltong (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 275
   protein_per_100g: 55
@@ -134,7 +135,7 @@
 - source: gymflow
   source_id: beef_jerky_per_30g
   name: Beef Jerky (1 pack/30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 295
   protein_per_100g: 55
@@ -150,7 +151,7 @@
 - source: gymflow
   source_id: chicken_liver_cooked_100g
   name: Chicken Liver, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 25
@@ -165,7 +166,7 @@
 - source: gymflow
   source_id: venison_steak_cooked_100g
   name: Venison Steak, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 158
   protein_per_100g: 30
@@ -181,7 +182,7 @@
 - source: gymflow
   source_id: pasta_spaghetti_cooked
   name: Spaghetti, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 158
   protein_per_100g: 5.8
@@ -196,7 +197,7 @@
 - source: gymflow
   source_id: pasta_linguine_cooked
   name: Linguine, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 158
   protein_per_100g: 5.8
@@ -211,7 +212,7 @@
 - source: gymflow
   source_id: pasta_fettuccine_cooked
   name: Fettuccine, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 158
   protein_per_100g: 5.8
@@ -226,7 +227,7 @@
 - source: gymflow
   source_id: pasta_tagliatelle_cooked
   name: Tagliatelle, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 158
   protein_per_100g: 5.8
@@ -241,7 +242,7 @@
 - source: gymflow
   source_id: pasta_rigatoni_cooked
   name: Rigatoni, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 158
   protein_per_100g: 5.8
@@ -256,7 +257,7 @@
 - source: gymflow
   source_id: pasta_fusilli_cooked
   name: Fusilli, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 158
   protein_per_100g: 5.8
@@ -271,7 +272,7 @@
 - source: gymflow
   source_id: pasta_lasagne_sheets_cooked
   name: Lasagne Sheets, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 158
   protein_per_100g: 5.8
@@ -286,7 +287,7 @@
 - source: gymflow
   source_id: pasta_ravioli_meat_cooked
   name: Meat Ravioli, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 200
   protein_per_100g: 8
@@ -301,7 +302,7 @@
 - source: gymflow
   source_id: pasta_tortellini_cheese
   name: Cheese Tortellini, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 9
@@ -316,7 +317,7 @@
 - source: gymflow
   source_id: gnocchi_potato_cooked
   name: Potato Gnocchi, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 3
@@ -331,7 +332,7 @@
 - source: gymflow
   source_id: noodles_egg_cooked
   name: Egg Noodles, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 138
   protein_per_100g: 4.5
@@ -346,7 +347,7 @@
 - source: gymflow
   source_id: noodles_rice_cooked
   name: Rice Noodles, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 110
   protein_per_100g: 1.6
@@ -361,7 +362,7 @@
 - source: gymflow
   source_id: noodles_udon_cooked
   name: Udon Noodles, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 5
@@ -376,7 +377,7 @@
 - source: gymflow
   source_id: noodles_soba_cooked
   name: Soba (Buckwheat) Noodles, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 99
   protein_per_100g: 5.1
@@ -391,7 +392,7 @@
 - source: gymflow
   source_id: noodles_glass_cooked
   name: Glass Noodles, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 78
   protein_per_100g: 0.1
@@ -406,7 +407,7 @@
 - source: gymflow
   source_id: noodles_ramen_instant
   name: Instant Ramen Noodles (1 pack)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 460
   protein_per_100g: 9
@@ -422,7 +423,7 @@
 - source: gymflow
   source_id: mushroom_chestnut_raw
   name: Chestnut Mushrooms, Raw (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 22
   protein_per_100g: 3.1
@@ -436,8 +437,8 @@
   allergens: ''
 - source: gymflow
   source_id: mushroom_portobello_raw
-  name: Portobello Mushroom, Raw (1)
-  brand: Generic
+  name: Portobello Mushroom, Raw
+  brand: ''
   region_codes: gb
   kcal_per_100g: 22
   protein_per_100g: 3.1
@@ -453,7 +454,7 @@
 - source: gymflow
   source_id: mushroom_shiitake_raw
   name: Shiitake Mushrooms, Raw (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 34
   protein_per_100g: 2.2
@@ -468,7 +469,7 @@
 - source: gymflow
   source_id: mushroom_oyster_raw
   name: Oyster Mushrooms, Raw (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 33
   protein_per_100g: 3.3
@@ -483,7 +484,7 @@
 - source: gymflow
   source_id: herbs_basil_fresh_handful
   name: Fresh Basil (1 handful/10g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 23
   protein_per_100g: 3.2
@@ -498,7 +499,7 @@
 - source: gymflow
   source_id: herbs_mint_fresh_handful
   name: Fresh Mint (1 handful/10g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 70
   protein_per_100g: 3.3
@@ -513,7 +514,7 @@
 - source: gymflow
   source_id: herbs_coriander_fresh_handful
   name: Fresh Coriander (1 handful/10g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 23
   protein_per_100g: 2.1
@@ -528,7 +529,7 @@
 - source: gymflow
   source_id: herbs_parsley_fresh_handful
   name: Fresh Parsley (1 handful/10g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 36
   protein_per_100g: 3
@@ -543,7 +544,7 @@
 - source: gymflow
   source_id: veg_butternut_squash_cooked
   name: Butternut Squash, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 40
   protein_per_100g: 0.9
@@ -558,7 +559,7 @@
 - source: gymflow
   source_id: veg_pumpkin_cooked
   name: Pumpkin, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 26
   protein_per_100g: 1
@@ -573,7 +574,7 @@
 - source: gymflow
   source_id: veg_leek_cooked
   name: Leek, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 31
   protein_per_100g: 0.8
@@ -588,7 +589,7 @@
 - source: gymflow
   source_id: veg_celery_raw
   name: Celery, Raw (1 stick/40g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 16
   protein_per_100g: 0.7
@@ -604,7 +605,7 @@
 - source: gymflow
   source_id: veg_rocket_handful
   name: Rocket / Arugula (1 handful/30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 25
   protein_per_100g: 2.6
@@ -619,7 +620,7 @@
 - source: gymflow
   source_id: veg_radish_raw
   name: Radish, Raw (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 16
   protein_per_100g: 0.7
@@ -634,7 +635,7 @@
 - source: gymflow
   source_id: veg_beetroot_cooked
   name: Beetroot, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 44
   protein_per_100g: 1.7
@@ -649,7 +650,7 @@
 - source: gymflow
   source_id: veg_fennel_raw
   name: Fennel, Raw (1 bulb)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 31
   protein_per_100g: 1.2
@@ -665,7 +666,7 @@
 - source: gymflow
   source_id: fruit_lemon
   name: Lemon (1 medium)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 29
   protein_per_100g: 1.1
@@ -681,7 +682,7 @@
 - source: gymflow
   source_id: fruit_lime
   name: Lime (1 medium)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 30
   protein_per_100g: 0.7
@@ -697,7 +698,7 @@
 - source: gymflow
   source_id: fruit_plum
   name: Plum (1 medium)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 46
   protein_per_100g: 0.7
@@ -713,7 +714,7 @@
 - source: gymflow
   source_id: fruit_nectarine
   name: Nectarine (1 medium)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 44
   protein_per_100g: 1.1
@@ -729,7 +730,7 @@
 - source: gymflow
   source_id: fruit_grapefruit_half
   name: Grapefruit (half)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 42
   protein_per_100g: 0.8
@@ -745,7 +746,7 @@
 - source: gymflow
   source_id: fruit_pomegranate_seeds_100g
   name: Pomegranate Seeds (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 83
   protein_per_100g: 1.7
@@ -759,8 +760,8 @@
   allergens: ''
 - source: gymflow
   source_id: fruit_dates_medjool
-  name: Medjool Date (1)
-  brand: Generic
+  name: Medjool Date
+  brand: ''
   region_codes: gb
   kcal_per_100g: 277
   protein_per_100g: 1.8
@@ -776,7 +777,7 @@
 - source: gymflow
   source_id: fruit_raisins_30g
   name: Raisins (1 small box/30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 299
   protein_per_100g: 3.1
@@ -792,7 +793,7 @@
 - source: gymflow
   source_id: fruit_dried_cranberries_30g
   name: Dried Cranberries (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 308
   protein_per_100g: 0.2
@@ -807,7 +808,7 @@
 - source: gymflow
   source_id: fruit_dried_apricots_30g
   name: Dried Apricots (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 241
   protein_per_100g: 3.4
@@ -822,7 +823,7 @@
 - source: gymflow
   source_id: fruit_prunes_30g
   name: Prunes / Dried Plums (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 240
   protein_per_100g: 2.2
@@ -837,7 +838,7 @@
 - source: gymflow
   source_id: fruit_blackberries_100g
   name: Blackberries (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 43
   protein_per_100g: 1.4
@@ -852,7 +853,7 @@
 - source: gymflow
   source_id: olives_green_pitted_30g
   name: Green Olives, Pitted (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 1.0
@@ -867,7 +868,7 @@
 - source: gymflow
   source_id: olives_black_pitted_30g
   name: Black Olives, Pitted (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 115
   protein_per_100g: 0.8
@@ -882,7 +883,7 @@
 - source: gymflow
   source_id: cheese_brie_30g
   name: Brie (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 334
   protein_per_100g: 21
@@ -898,7 +899,7 @@
 - source: gymflow
   source_id: cheese_camembert_30g
   name: Camembert (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 300
   protein_per_100g: 20
@@ -914,7 +915,7 @@
 - source: gymflow
   source_id: cheese_blue_stilton_30g
   name: Blue Stilton (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 393
   protein_per_100g: 24
@@ -930,7 +931,7 @@
 - source: gymflow
   source_id: cheese_parmesan_grated_15g
   name: Parmesan, Grated (1 tbsp/15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 392
   protein_per_100g: 35
@@ -946,7 +947,7 @@
 - source: gymflow
   source_id: cheese_halloumi_30g
   name: Halloumi (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 320
   protein_per_100g: 22
@@ -961,7 +962,7 @@
   unit_grams: 30
 - source: gymflow
   source_id: cheese_babybel_original
-  name: Babybel Original (1)
+  name: Babybel Original
   brand: Babybel
   region_codes: gb
   kcal_per_100g: 305
@@ -977,7 +978,7 @@
   unit_grams: 20
 - source: gymflow
   source_id: cheese_strings_string
-  name: Cheestrings (1)
+  name: Cheestrings
   brand: Cheestrings
   region_codes: gb
   kcal_per_100g: 328
@@ -1042,7 +1043,7 @@
 - source: gymflow
   source_id: snack_pretzels_50g
   name: Pretzels (50g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 380
   protein_per_100g: 10
@@ -1057,8 +1058,8 @@
   unit_grams: 50
 - source: gymflow
   source_id: snack_rice_cake_plain
-  name: Rice Cake (1)
-  brand: Generic
+  name: Rice Cake
+  brand: ''
   region_codes: gb
   kcal_per_100g: 380
   protein_per_100g: 8
@@ -1073,8 +1074,8 @@
   unit_grams: 9
 - source: gymflow
   source_id: snack_oat_cake
-  name: Oat Cake (1)
-  brand: Generic
+  name: Oat Cake
+  brand: ''
   region_codes: gb
   kcal_per_100g: 425
   protein_per_100g: 11
@@ -1090,7 +1091,7 @@
 - source: gymflow
   source_id: snack_trail_mix_30g
   name: Trail Mix (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 480
   protein_per_100g: 12
@@ -1106,7 +1107,7 @@
 - source: gymflow
   source_id: snack_bombay_mix_30g
   name: Bombay Mix (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 525
   protein_per_100g: 16
@@ -1122,7 +1123,7 @@
 - source: gymflow
   source_id: fish_anchovies_canned
   name: Anchovies in Oil, Drained (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 210
   protein_per_100g: 28
@@ -1137,7 +1138,7 @@
 - source: gymflow
   source_id: fish_kippers_smoked
   name: Kippers, Smoked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 226
   protein_per_100g: 18
@@ -1153,7 +1154,7 @@
 - source: gymflow
   source_id: fish_pollock_cooked
   name: Pollock Fillet, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 92
   protein_per_100g: 19
@@ -1169,7 +1170,7 @@
 - source: gymflow
   source_id: fish_seabream_cooked
   name: Seabream Fillet, Cooked (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 20
@@ -1185,7 +1186,7 @@
 - source: gymflow
   source_id: hummus_branded_pot_30g
   name: Hummus (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 166
   protein_per_100g: 7.9
@@ -1201,7 +1202,7 @@
 - source: gymflow
   source_id: chickpea_falafel_3
   name: Falafel (3 pieces)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 13
@@ -1217,7 +1218,7 @@
 - source: gymflow
   source_id: frozen_blackberries_100g
   name: Frozen Blackberries (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 43
   protein_per_100g: 1.4
@@ -1232,7 +1233,7 @@
 - source: gymflow
   source_id: frozen_raspberries_100g
   name: Frozen Raspberries (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 52
   protein_per_100g: 1.2
@@ -1247,7 +1248,7 @@
 - source: gymflow
   source_id: frozen_mango_chunks_100g
   name: Frozen Mango Chunks (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 60
   protein_per_100g: 0.8

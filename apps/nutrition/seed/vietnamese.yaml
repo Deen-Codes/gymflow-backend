@@ -1,8 +1,9 @@
 # vietnamese.yaml — Vietnamese dishes (separate from Wasabi/Wagamama). Pho variants, banh mi, summer/spring rolls, com, bun, noodle bowls.
+
 - source: gymflow
   source_id: viet_pho_bo
   name: Phở Bò (Beef Noodle Soup)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 65
   protein_per_100g: 5
@@ -18,7 +19,7 @@
 - source: gymflow
   source_id: viet_pho_ga
   name: Phở Gà (Chicken Noodle Soup)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 55
   protein_per_100g: 5
@@ -34,7 +35,7 @@
 - source: gymflow
   source_id: viet_pho_chay
   name: Phở Chay (Vegan Pho)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 50
   protein_per_100g: 2
@@ -50,7 +51,7 @@
 - source: gymflow
   source_id: viet_banh_mi_chicken
   name: Bánh Mì Gà (Chicken Sandwich)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 11
@@ -66,7 +67,7 @@
 - source: gymflow
   source_id: viet_banh_mi_pork
   name: Bánh Mì Heo (Pork Sandwich)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 12
@@ -82,7 +83,7 @@
 - source: gymflow
   source_id: viet_banh_mi_tofu
   name: Bánh Mì Đậu Hũ (Tofu)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 8
@@ -98,7 +99,7 @@
 - source: gymflow
   source_id: viet_bun_cha
   name: Bún Chả
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 12
@@ -114,7 +115,7 @@
 - source: gymflow
   source_id: viet_bun_bo_hue
   name: Bún Bò Huế (Spicy Beef Noodle Soup)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 75
   protein_per_100g: 6
@@ -130,7 +131,7 @@
 - source: gymflow
   source_id: viet_goi_cuon_3
   name: Gỏi Cuốn (Summer Rolls, 3)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 95
   protein_per_100g: 5
@@ -146,7 +147,7 @@
 - source: gymflow
   source_id: viet_goi_cuon_veg_3
   name: Gỏi Cuốn Chay (Vegan, 3)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 75
   protein_per_100g: 2.5
@@ -162,7 +163,7 @@
 - source: gymflow
   source_id: viet_nem_ran_5
   name: Nem Rán / Chả Giò (Spring Rolls, 5)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 8
@@ -178,7 +179,7 @@
 - source: gymflow
   source_id: viet_nem_ran_veg_5
   name: Vietnamese Veg Spring Rolls (5)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 225
   protein_per_100g: 5
@@ -194,7 +195,7 @@
 - source: gymflow
   source_id: viet_com_tam
   name: Cơm Tấm (Broken Rice w/ Pork)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 10
@@ -210,7 +211,7 @@
 - source: gymflow
   source_id: viet_banh_xeo
   name: Bánh Xèo (Vietnamese Pancake)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 205
   protein_per_100g: 7
@@ -226,7 +227,7 @@
 - source: gymflow
   source_id: viet_ca_kho_to
   name: Cá Kho Tộ (Caramel Catfish)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 185
   protein_per_100g: 19
@@ -242,7 +243,7 @@
 - source: gymflow
   source_id: viet_ga_nuong
   name: Gà Nướng (Grilled Chicken)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 24
@@ -258,7 +259,7 @@
 - source: gymflow
   source_id: viet_thit_nuong
   name: Thịt Nướng (Grilled Pork)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 22
@@ -274,7 +275,7 @@
 - source: gymflow
   source_id: viet_bun_thit_nuong
   name: Bún Thịt Nướng (Grilled Pork Vermicelli)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 11
@@ -290,7 +291,7 @@
 - source: gymflow
   source_id: viet_pho_topping_extra_meat
   name: Pho Extra Meat (50g add)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 200
   protein_per_100g: 28
@@ -306,7 +307,7 @@
 - source: gymflow
   source_id: viet_nuoc_cham_15ml
   name: Nước Chấm Dipping Sauce (15ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 35
   protein_per_100g: 1
@@ -322,7 +323,7 @@
 - source: gymflow
   source_id: viet_hoisin_15g
   name: Hoisin Sauce (15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 2
@@ -338,7 +339,7 @@
 - source: gymflow
   source_id: viet_che_ba_mau
   name: Chè Ba Màu (3-Colour Dessert)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 3
@@ -354,7 +355,7 @@
 - source: gymflow
   source_id: viet_ca_phe_sua_da
   name: Cà Phê Sữa Đá (Iced Vietnamese Coffee)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 80
   protein_per_100g: 2
@@ -369,7 +370,7 @@
 - source: gymflow
   source_id: viet_che_dau
   name: Chè Đậu (Sweet Bean Soup)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 4
@@ -385,7 +386,7 @@
 - source: gymflow
   source_id: viet_lemongrass_chicken
   name: Vietnamese Lemongrass Chicken
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 22

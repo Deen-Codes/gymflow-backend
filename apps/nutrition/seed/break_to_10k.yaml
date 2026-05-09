@@ -12,7 +12,7 @@
   protein_per_100g: 4
   carbs_per_100g: 22
   fat_per_100g: 7
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: 350 g
@@ -26,7 +26,7 @@
   protein_per_100g: 14
   carbs_per_100g: 22
   fat_per_100g: 7
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: 400 g
@@ -40,7 +40,7 @@
   protein_per_100g: 8
   carbs_per_100g: 22
   fat_per_100g: 5
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: 350 g
@@ -54,7 +54,7 @@
   protein_per_100g: 14
   carbs_per_100g: 17
   fat_per_100g: 7
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: 350 g
@@ -68,7 +68,7 @@
   protein_per_100g: 14
   carbs_per_100g: 17
   fat_per_100g: 4
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: 400 g
@@ -82,7 +82,7 @@
   protein_per_100g: 14
   carbs_per_100g: 17
   fat_per_100g: 6
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: 400 g
@@ -96,7 +96,7 @@
   protein_per_100g: 14
   carbs_per_100g: 17
   fat_per_100g: 6
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: 400 g
@@ -110,7 +110,7 @@
   protein_per_100g: 14
   carbs_per_100g: 22
   fat_per_100g: 7
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: 400 g
@@ -124,7 +124,7 @@
   protein_per_100g: 11
   carbs_per_100g: 17
   fat_per_100g: 5
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: 400 g
@@ -153,7 +153,7 @@
   protein_per_100g: 13
   carbs_per_100g: 22
   fat_per_100g: 4
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: 400 g
@@ -167,7 +167,7 @@
   protein_per_100g: 13
   carbs_per_100g: 22
   fat_per_100g: 6
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: 400 g
@@ -181,7 +181,7 @@
   protein_per_100g: 13
   carbs_per_100g: 22
   fat_per_100g: 6
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: 400 g
@@ -195,7 +195,7 @@
   protein_per_100g: 13
   carbs_per_100g: 22
   fat_per_100g: 5
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: 400 g
@@ -209,7 +209,7 @@
   protein_per_100g: 11
   carbs_per_100g: 22
   fat_per_100g: 5
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: 400 g
@@ -223,7 +223,7 @@
   protein_per_100g: 9
   carbs_per_100g: 22
   fat_per_100g: 4
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 500
   serving_label: 500 g
@@ -237,7 +237,7 @@
   protein_per_100g: 7
   carbs_per_100g: 25
   fat_per_100g: 2
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 450
   serving_label: 450 g
@@ -281,7 +281,7 @@
   protein_per_100g: 11
   carbs_per_100g: 22
   fat_per_100g: 5
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: 400 g
@@ -310,7 +310,7 @@
   protein_per_100g: 10
   carbs_per_100g: 22
   fat_per_100g: 4
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 500
   serving_label: 500 g
@@ -324,7 +324,7 @@
   protein_per_100g: 16
   carbs_per_100g: 30
   fat_per_100g: 18
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 200
   serving_label: 200 g
@@ -338,7 +338,7 @@
   protein_per_100g: 15
   carbs_per_100g: 32
   fat_per_100g: 18
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 220
   serving_label: 220 g
@@ -352,7 +352,7 @@
   protein_per_100g: 18
   carbs_per_100g: 30
   fat_per_100g: 22
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 240
   serving_label: 240 g
@@ -381,7 +381,7 @@
   protein_per_100g: 11
   carbs_per_100g: 30
   fat_per_100g: 14
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 200
   serving_label: 200 g
@@ -395,7 +395,7 @@
   protein_per_100g: 14
   carbs_per_100g: 32
   fat_per_100g: 14
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: 350 g
@@ -549,7 +549,7 @@
   protein_per_100g: 13
   carbs_per_100g: 30
   fat_per_100g: 8
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 550
   serving_label: 550 g
@@ -563,7 +563,7 @@
   protein_per_100g: 14
   carbs_per_100g: 22
   fat_per_100g: 11
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 550
   serving_label: 550 g
@@ -577,7 +577,7 @@
   protein_per_100g: 11
   carbs_per_100g: 30
   fat_per_100g: 8
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 500
   serving_label: 500 g
@@ -591,7 +591,7 @@
   protein_per_100g: 14
   carbs_per_100g: 25
   fat_per_100g: 9
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 500
   serving_label: 500 g
@@ -605,7 +605,7 @@
   protein_per_100g: 14
   carbs_per_100g: 25
   fat_per_100g: 14
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 500
   serving_label: 500 g
@@ -619,7 +619,7 @@
   protein_per_100g: 13
   carbs_per_100g: 22
   fat_per_100g: 6
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 450
   serving_label: 450 g
@@ -633,7 +633,7 @@
   protein_per_100g: 14
   carbs_per_100g: 22
   fat_per_100g: 8
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 450
   serving_label: 450 g
@@ -647,7 +647,7 @@
   protein_per_100g: 16
   carbs_per_100g: 28
   fat_per_100g: 13
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 250
   serving_label: 250 g
@@ -661,7 +661,7 @@
   protein_per_100g: 12
   carbs_per_100g: 22
   fat_per_100g: 7
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: 350 g
@@ -675,7 +675,7 @@
   protein_per_100g: 13
   carbs_per_100g: 18
   fat_per_100g: 7
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 240
   serving_label: 240 g
@@ -689,7 +689,7 @@
   protein_per_100g: 11
   carbs_per_100g: 18
   fat_per_100g: 11
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 240
   serving_label: 240 g
@@ -703,7 +703,7 @@
   protein_per_100g: 11
   carbs_per_100g: 22
   fat_per_100g: 5
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 450
   serving_label: 450 g
@@ -717,7 +717,7 @@
   protein_per_100g: 13
   carbs_per_100g: 22
   fat_per_100g: 6
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 450
   serving_label: 450 g
@@ -731,7 +731,7 @@
   protein_per_100g: 9
   carbs_per_100g: 13
   fat_per_100g: 3
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 600
   serving_label: 600 g
@@ -745,7 +745,7 @@
   protein_per_100g: 9
   carbs_per_100g: 17
   fat_per_100g: 4
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 600
   serving_label: 600 g
@@ -759,7 +759,7 @@
   protein_per_100g: 7
   carbs_per_100g: 17
   fat_per_100g: 4
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 500
   serving_label: 500 g
@@ -773,7 +773,7 @@
   protein_per_100g: 14
   carbs_per_100g: 17
   fat_per_100g: 6
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: 400 g
@@ -832,7 +832,7 @@
   protein_per_100g: 18
   carbs_per_100g: 14
   fat_per_100g: 6
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: 400 g
@@ -846,7 +846,7 @@
   protein_per_100g: 16
   carbs_per_100g: 14
   fat_per_100g: 9
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: 400 g
@@ -860,7 +860,7 @@
   protein_per_100g: 9
   carbs_per_100g: 22
   fat_per_100g: 6
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: 350 g
@@ -874,7 +874,7 @@
   protein_per_100g: 11
   carbs_per_100g: 17
   fat_per_100g: 8
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: 400 g
@@ -933,7 +933,7 @@
   protein_per_100g: 25
   carbs_per_100g: 12
   fat_per_100g: 4
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: 350 g
@@ -947,7 +947,7 @@
   protein_per_100g: 25
   carbs_per_100g: 12
   fat_per_100g: 4
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: 350 g
@@ -961,7 +961,7 @@
   protein_per_100g: 25
   carbs_per_100g: 4
   fat_per_100g: 1
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: 350 g
@@ -975,7 +975,7 @@
   protein_per_100g: 25
   carbs_per_100g: 4
   fat_per_100g: 1
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: 350 g
@@ -989,7 +989,7 @@
   protein_per_100g: 25
   carbs_per_100g: 30
   fat_per_100g: 3
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: 400 g
@@ -1003,7 +1003,7 @@
   protein_per_100g: 17
   carbs_per_100g: 28
   fat_per_100g: 3
-  brand: Homemade
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: 400 g

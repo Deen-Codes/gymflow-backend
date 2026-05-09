@@ -1424,7 +1424,7 @@
   protein_per_100g: 56
   carbs_per_100g: 0
   fat_per_100g: 38
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1439,7 +1439,7 @@
   protein_per_100g: 9
   carbs_per_100g: 78
   fat_per_100g: 3
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 25
   serving_label: 25 g
@@ -1454,7 +1454,7 @@
   protein_per_100g: 7
   carbs_per_100g: 65
   fat_per_100g: 22
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1469,7 +1469,7 @@
   protein_per_100g: 7
   carbs_per_100g: 70
   fat_per_100g: 19
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1529,7 +1529,7 @@
   protein_per_100g: 3
   carbs_per_100g: 55
   fat_per_100g: 0.5
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1544,7 +1544,7 @@
   protein_per_100g: 3
   carbs_per_100g: 79
   fat_per_100g: 0.5
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1559,7 +1559,7 @@
   protein_per_100g: 3
   carbs_per_100g: 80
   fat_per_100g: 0.4
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1574,7 +1574,7 @@
   protein_per_100g: 4
   carbs_per_100g: 78
   fat_per_100g: 0.5
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1589,7 +1589,7 @@
   protein_per_100g: 0.2
   carbs_per_100g: 82
   fat_per_100g: 1.4
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1604,7 +1604,7 @@
   protein_per_100g: 2.5
   carbs_per_100g: 75
   fat_per_100g: 0.4
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1619,7 +1619,7 @@
   protein_per_100g: 2
   carbs_per_100g: 75
   fat_per_100g: 0.2
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 24
   serving_label: 24 g
@@ -1634,7 +1634,7 @@
   protein_per_100g: 3
   carbs_per_100g: 64
   fat_per_100g: 0.9
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1649,7 +1649,7 @@
   protein_per_100g: 2.2
   carbs_per_100g: 64
   fat_per_100g: 0.4
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1664,7 +1664,7 @@
   protein_per_100g: 2
   carbs_per_100g: 80
   fat_per_100g: 1
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1679,7 +1679,7 @@
   protein_per_100g: 2
   carbs_per_100g: 80
   fat_per_100g: 0.5
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1694,7 +1694,7 @@
   protein_per_100g: 0.9
   carbs_per_100g: 90
   fat_per_100g: 0.3
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1709,7 +1709,7 @@
   protein_per_100g: 2
   carbs_per_100g: 58
   fat_per_100g: 34
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1724,7 +1724,7 @@
   protein_per_100g: 7
   carbs_per_100g: 24
   fat_per_100g: 60
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1739,7 +1739,7 @@
   protein_per_100g: 1
   carbs_per_100g: 4
   fat_per_100g: 15
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1754,7 +1754,7 @@
   protein_per_100g: 1
   carbs_per_100g: 1
   fat_per_100g: 16
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1769,7 +1769,7 @@
   protein_per_100g: 0.8
   carbs_per_100g: 6
   fat_per_100g: 11
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1784,7 +1784,7 @@
   protein_per_100g: 4
   carbs_per_100g: 50
   fat_per_100g: 9
-  brand: Christmas
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1798,7 +1798,7 @@
   protein_per_100g: 4
   carbs_per_100g: 60
   fat_per_100g: 11
-  brand: Christmas
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: 80 g
@@ -1812,7 +1812,7 @@
   protein_per_100g: 4
   carbs_per_100g: 60
   fat_per_100g: 17
-  brand: Christmas
+  brand: ''
   region_codes: GB
   serving_grams: 60
   serving_label: 60 g
@@ -1826,7 +1826,7 @@
   protein_per_100g: 13
   carbs_per_100g: 5
   fat_per_100g: 25
-  brand: Christmas
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1840,7 +1840,7 @@
   protein_per_100g: 5
   carbs_per_100g: 28
   fat_per_100g: 9
-  brand: Christmas
+  brand: ''
   region_codes: GB
   serving_grams: 35
   serving_label: 35 g
@@ -1854,7 +1854,7 @@
   protein_per_100g: 0.3
   carbs_per_100g: 36
   fat_per_100g: 0
-  brand: Christmas
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1868,7 +1868,7 @@
   protein_per_100g: 4
   carbs_per_100g: 14
   fat_per_100g: 4
-  brand: Christmas
+  brand: ''
   region_codes: GB
   serving_grams: 50
   serving_label: 50 g
@@ -1882,7 +1882,7 @@
   protein_per_100g: 0.5
   carbs_per_100g: 30
   fat_per_100g: 47
-  brand: Christmas
+  brand: ''
   region_codes: GB
   serving_grams: 15
   serving_label: 15 g
@@ -1896,7 +1896,7 @@
   protein_per_100g: 5
   carbs_per_100g: 50
   fat_per_100g: 22
-  brand: Christmas
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: 80 g
@@ -1910,7 +1910,7 @@
   protein_per_100g: 9
   carbs_per_100g: 50
   fat_per_100g: 17
-  brand: Christmas
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: 80 g
@@ -1924,7 +1924,7 @@
   protein_per_100g: 6
   carbs_per_100g: 55
   fat_per_100g: 14
-  brand: Christmas
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: 80 g
@@ -1938,7 +1938,7 @@
   protein_per_100g: 7
   carbs_per_100g: 57
   fat_per_100g: 30
-  brand: Christmas
+  brand: ''
   region_codes: GB
   serving_grams: 4
   serving_label: 4 g
@@ -1952,7 +1952,7 @@
   protein_per_100g: 7
   carbs_per_100g: 57
   fat_per_100g: 30
-  brand: Easter
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: 80 g
@@ -1966,7 +1966,7 @@
   protein_per_100g: 7
   carbs_per_100g: 57
   fat_per_100g: 30
-  brand: Easter
+  brand: ''
   region_codes: GB
   serving_grams: 150
   serving_label: 150 g
@@ -1980,7 +1980,7 @@
   protein_per_100g: 7
   carbs_per_100g: 57
   fat_per_100g: 30
-  brand: Easter
+  brand: ''
   region_codes: GB
   serving_grams: 250
   serving_label: 250 g
@@ -1994,7 +1994,7 @@
   protein_per_100g: 3
   carbs_per_100g: 58
   fat_per_100g: 14
-  brand: Easter
+  brand: ''
   region_codes: GB
   serving_grams: 40
   serving_label: 40 g
@@ -2008,7 +2008,7 @@
   protein_per_100g: 5
   carbs_per_100g: 55
   fat_per_100g: 11
-  brand: Easter
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: 80 g
@@ -2022,7 +2022,7 @@
   protein_per_100g: 7
   carbs_per_100g: 50
   fat_per_100g: 5
-  brand: Easter
+  brand: ''
   region_codes: GB
   serving_grams: 75
   serving_label: 75 g
@@ -2036,7 +2036,7 @@
   protein_per_100g: 6
   carbs_per_100g: 67
   fat_per_100g: 22
-  brand: Easter
+  brand: ''
   region_codes: GB
   serving_grams: 4
   serving_label: 4 g
@@ -2050,7 +2050,7 @@
   protein_per_100g: 0.5
   carbs_per_100g: 60
   fat_per_100g: 4
-  brand: Halloween
+  brand: ''
   region_codes: GB
   serving_grams: 200
   serving_label: 200 g
@@ -2064,7 +2064,7 @@
   protein_per_100g: 5
   carbs_per_100g: 60
   fat_per_100g: 16
-  brand: Bonfire
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: 80 g
@@ -2078,7 +2078,7 @@
   protein_per_100g: 0.5
   carbs_per_100g: 75
   fat_per_100g: 12
-  brand: Bonfire
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -2092,7 +2092,7 @@
   protein_per_100g: 7
   carbs_per_100g: 32
   fat_per_100g: 9
-  brand: Pancake Day
+  brand: ''
   region_codes: GB
   serving_grams: 60
   serving_label: 60 g
@@ -2106,7 +2106,7 @@
   protein_per_100g: 7
   carbs_per_100g: 40
   fat_per_100g: 9
-  brand: Pancake Day
+  brand: ''
   region_codes: GB
   serving_grams: 75
   serving_label: 75 g
@@ -2120,7 +2120,7 @@
   protein_per_100g: 8
   carbs_per_100g: 45
   fat_per_100g: 17
-  brand: Pancake Day
+  brand: ''
   region_codes: GB
   serving_grams: 90
   serving_label: 90 g
@@ -2134,7 +2134,7 @@
   protein_per_100g: 3
   carbs_per_100g: 19
   fat_per_100g: 5
-  brand: BBQ
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -2148,7 +2148,7 @@
   protein_per_100g: 1.5
   carbs_per_100g: 4
   fat_per_100g: 1.5
-  brand: BBQ
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -2162,7 +2162,7 @@
   protein_per_100g: 1
   carbs_per_100g: 7
   fat_per_100g: 0.3
-  brand: BBQ
+  brand: ''
   region_codes: GB
   serving_grams: 75
   serving_label: 75 g
@@ -2176,7 +2176,7 @@
   protein_per_100g: 22
   carbs_per_100g: 2
   fat_per_100g: 25
-  brand: BBQ
+  brand: ''
   region_codes: GB
   serving_grams: 50
   serving_label: 50 g
@@ -2190,7 +2190,7 @@
   protein_per_100g: 21
   carbs_per_100g: 4
   fat_per_100g: 10
-  brand: BBQ
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -2204,7 +2204,7 @@
   protein_per_100g: 25
   carbs_per_100g: 0
   fat_per_100g: 19
-  brand: BBQ
+  brand: ''
   region_codes: GB
   serving_grams: 120
   serving_label: 120 g
@@ -2218,7 +2218,7 @@
   protein_per_100g: 14
   carbs_per_100g: 26
   fat_per_100g: 12
-  brand: BBQ
+  brand: ''
   region_codes: GB
   serving_grams: 220
   serving_label: 220 g
@@ -2232,7 +2232,7 @@
   protein_per_100g: 11
   carbs_per_100g: 26
   fat_per_100g: 16
-  brand: BBQ
+  brand: ''
   region_codes: GB
   serving_grams: 200
   serving_label: 200 g
@@ -2246,7 +2246,7 @@
   protein_per_100g: 11
   carbs_per_100g: 8
   fat_per_100g: 19
-  brand: BBQ
+  brand: ''
   region_codes: GB
   serving_grams: 50
   serving_label: 50 g
@@ -2260,7 +2260,7 @@
   protein_per_100g: 19
   carbs_per_100g: 8
   fat_per_100g: 18
-  brand: BBQ
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g

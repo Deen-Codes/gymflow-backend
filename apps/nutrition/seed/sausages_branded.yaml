@@ -1,7 +1,8 @@
 # sausages_branded.yaml — Richmond (Thick Pork, Irish Recipe, Meat Free), Wall's, Heck (Chicken Italia, Pork Chipolatas, Meatballs), The Black Farmer, Cumberland, Lincolnshire, cooking chorizo, Quorn sausages, fresh burgers (Heck, M&S Aberdeen Angus, Tesco), fresh chicken (M&S Oakham, Tesco Finest).
+
 - source: gymflow
   source_id: richmond_pork_thick_8
-  name: Richmond Thick Pork Sausages (1)
+  name: Richmond Thick Pork Sausages
   brand: Richmond
   region_codes: gb
   kcal_per_100g: 290
@@ -17,7 +18,7 @@
   unit_grams: 50
 - source: gymflow
   source_id: richmond_irish_recipe_sausages
-  name: Richmond Irish Recipe Sausages (1)
+  name: Richmond Irish Recipe Sausages
   brand: Richmond
   region_codes: gb
   kcal_per_100g: 285
@@ -33,7 +34,7 @@
   unit_grams: 50
 - source: gymflow
   source_id: richmond_meat_free_8
-  name: Richmond Meat Free Sausages (1)
+  name: Richmond Meat Free Sausages
   brand: Richmond
   region_codes: gb
   kcal_per_100g: 200
@@ -49,7 +50,7 @@
   unit_grams: 50
 - source: gymflow
   source_id: walls_pork_sausages_8
-  name: Walls Classic Pork Sausages (1)
+  name: Walls Classic Pork Sausages
   brand: Wall's
   region_codes: gb
   kcal_per_100g: 290
@@ -65,7 +66,7 @@
   unit_grams: 50
 - source: gymflow
   source_id: heck_chicken_italia_sausages
-  name: Heck Chicken Italia Sausages (1)
+  name: Heck Chicken Italia Sausages
   brand: Heck
   region_codes: gb
   kcal_per_100g: 165
@@ -81,7 +82,7 @@
   unit_grams: 60
 - source: gymflow
   source_id: heck_pork_chipolatas_12
-  name: Heck Pork Chipolatas (1)
+  name: Heck Pork Chipolatas
   brand: Heck
   region_codes: gb
   kcal_per_100g: 280
@@ -97,7 +98,7 @@
   unit_grams: 30
 - source: gymflow
   source_id: heck_meatballs_classic
-  name: Heck Classic Pork Meatballs (1)
+  name: Heck Classic Pork Meatballs
   brand: Heck
   region_codes: gb
   kcal_per_100g: 220
@@ -113,7 +114,7 @@
   unit_grams: 22
 - source: gymflow
   source_id: heck_chicken_italia_meatballs
-  name: Heck Chicken Italia Meatballs (1)
+  name: Heck Chicken Italia Meatballs
   brand: Heck
   region_codes: gb
   kcal_per_100g: 165
@@ -129,7 +130,7 @@
   unit_grams: 22
 - source: gymflow
   source_id: the_black_farmer_sausages
-  name: The Black Farmer Premium Pork Sausages (1)
+  name: The Black Farmer Premium Pork Sausages
   brand: The Black Farmer
   region_codes: gb
   kcal_per_100g: 295
@@ -146,7 +147,7 @@
 - source: gymflow
   source_id: cumberland_sausage_per_100
   name: Cumberland Sausage (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 290
   protein_per_100g: 14
@@ -161,7 +162,7 @@
 - source: gymflow
   source_id: lincolnshire_sausages_per_100
   name: Lincolnshire Sausages (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 285
   protein_per_100g: 13
@@ -176,7 +177,7 @@
 - source: gymflow
   source_id: chorizo_cooking_per_100
   name: Cooking Chorizo (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 320
   protein_per_100g: 18
@@ -190,7 +191,7 @@
   allergens: sulphites
 - source: gymflow
   source_id: quorn_classic_sausages
-  name: Quorn Classic Sausages (1)
+  name: Quorn Classic Sausages
   brand: Quorn
   region_codes: gb
   kcal_per_100g: 165
@@ -206,7 +207,7 @@
   unit_grams: 42
 - source: gymflow
   source_id: heck_beef_burgers_4
-  name: Heck 100% Beef Burgers (1)
+  name: Heck 100% Beef Burgers
   brand: Heck
   region_codes: gb
   kcal_per_100g: 220
@@ -222,7 +223,7 @@
   unit_grams: 113
 - source: gymflow
   source_id: mands_aberdeen_angus_burger
-  name: M&S Aberdeen Angus Beef Burger (1)
+  name: M&S Aberdeen Angus Beef Burger
   brand: M&S
   region_codes: gb
   kcal_per_100g: 250
@@ -238,7 +239,7 @@
   unit_grams: 170
 - source: gymflow
   source_id: tesco_beef_burgers_4
-  name: Tesco British Beef Burgers (1)
+  name: Tesco British Beef Burgers
   brand: Tesco
   region_codes: gb
   kcal_per_100g: 245

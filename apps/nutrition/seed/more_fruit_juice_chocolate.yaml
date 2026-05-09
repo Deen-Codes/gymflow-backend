@@ -866,7 +866,7 @@
   protein_per_100g: 11
   carbs_per_100g: 22
   fat_per_100g: 46
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -880,7 +880,7 @@
   protein_per_100g: 9
   carbs_per_100g: 30
   fat_per_100g: 40
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -894,7 +894,7 @@
   protein_per_100g: 6
   carbs_per_100g: 45
   fat_per_100g: 32
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -908,7 +908,7 @@
   protein_per_100g: 7
   carbs_per_100g: 60
   fat_per_100g: 30
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -922,7 +922,7 @@
   protein_per_100g: 7
   carbs_per_100g: 58
   fat_per_100g: 31
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -936,7 +936,7 @@
   protein_per_100g: 6
   carbs_per_100g: 60
   fat_per_100g: 25
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 15
   serving_label: 15 g
@@ -950,7 +950,7 @@
   protein_per_100g: 7
   carbs_per_100g: 57
   fat_per_100g: 30
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1300,7 +1300,7 @@
   protein_per_100g: 0
   carbs_per_100g: 1
   fat_per_100g: 0
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 250
   serving_label: 250 g
@@ -1314,7 +1314,7 @@
   protein_per_100g: 0
   carbs_per_100g: 0.5
   fat_per_100g: 0
-  brand: Generic
+  brand: ''
   region_codes: GB
   serving_grams: 250
   serving_label: 250 g

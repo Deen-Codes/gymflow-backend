@@ -1,8 +1,9 @@
 # polish.yaml — Polish dishes available in UK Polski sklep + restaurants. Includes pierogi variants, kielbasa, soups, baked goods, drinks.
+
 - source: gymflow
   source_id: pol_pierogi_meat_5
   name: Pierogi z Mięsem (Meat Dumplings, 5)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 235
   protein_per_100g: 11
@@ -18,7 +19,7 @@
 - source: gymflow
   source_id: pol_pierogi_potato_5
   name: Pierogi Ruskie (Potato & Cheese, 5)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 200
   protein_per_100g: 7
@@ -34,7 +35,7 @@
 - source: gymflow
   source_id: pol_pierogi_cabbage_5
   name: Pierogi z Kapustą (Cabbage & Mushroom, 5)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 180
   protein_per_100g: 5
@@ -50,7 +51,7 @@
 - source: gymflow
   source_id: pol_pierogi_blueberry_5
   name: Pierogi z Jagodami (Blueberry, 5)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 5
@@ -66,7 +67,7 @@
 - source: gymflow
   source_id: pol_kielbasa_polska_cooked
   name: Kiełbasa Polska (cooked, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 295
   protein_per_100g: 14
@@ -81,7 +82,7 @@
 - source: gymflow
   source_id: pol_krakowska_slice
   name: Krakowska Sausage (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 285
   protein_per_100g: 17
@@ -97,7 +98,7 @@
 - source: gymflow
   source_id: pol_kabanos_30g
   name: Kabanos (1 stick, 30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 460
   protein_per_100g: 26
@@ -113,7 +114,7 @@
 - source: gymflow
   source_id: pol_bigos
   name: Bigos (Hunter's Stew)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 9
@@ -129,7 +130,7 @@
 - source: gymflow
   source_id: pol_golabki_meat_2
   name: Gołąbki (Stuffed Cabbage Rolls, 2)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 9
@@ -145,7 +146,7 @@
 - source: gymflow
   source_id: pol_kotlet_schabowy
   name: Kotlet Schabowy (Pork Schnitzel)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 250
   protein_per_100g: 24
@@ -161,7 +162,7 @@
 - source: gymflow
   source_id: pol_kotlet_mielony
   name: Kotlet Mielony (Polish Meatball)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 16
@@ -177,7 +178,7 @@
 - source: gymflow
   source_id: pol_zurek
   name: Żurek (Sour Rye Soup)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 95
   protein_per_100g: 4
@@ -193,7 +194,7 @@
 - source: gymflow
   source_id: pol_barszcz_clear
   name: Barszcz Czerwony (Clear Beetroot Soup)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 35
   protein_per_100g: 1.2
@@ -209,7 +210,7 @@
 - source: gymflow
   source_id: pol_rosol
   name: Rosół (Chicken Soup)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 65
   protein_per_100g: 5
@@ -225,7 +226,7 @@
 - source: gymflow
   source_id: pol_placki_ziemniaczane_3
   name: Placki Ziemniaczane (Potato Pancakes, 3)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 4
@@ -241,7 +242,7 @@
 - source: gymflow
   source_id: pol_kasza_gryczana_cooked
   name: Kasza Gryczana (Buckwheat, cooked, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 92
   protein_per_100g: 3.4
@@ -256,7 +257,7 @@
 - source: gymflow
   source_id: pol_kasza_jeczmienna_cooked
   name: Kasza Jęczmienna (Pearl Barley, cooked, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 95
   protein_per_100g: 2.5
@@ -271,7 +272,7 @@
 - source: gymflow
   source_id: pol_ogorki_kiszone
   name: Ogórki Kiszone (Pickled Cucumbers, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 12
   protein_per_100g: 0.7
@@ -286,7 +287,7 @@
 - source: gymflow
   source_id: pol_kapusta_kiszona
   name: Kapusta Kiszona (Sauerkraut, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 19
   protein_per_100g: 0.9
@@ -301,7 +302,7 @@
 - source: gymflow
   source_id: pol_mizeria
   name: Mizeria (Cucumber Salad)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 60
   protein_per_100g: 2
@@ -317,7 +318,7 @@
 - source: gymflow
   source_id: pol_buraczki
   name: Buraczki (Beetroot Salad)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 70
   protein_per_100g: 1.5
@@ -333,7 +334,7 @@
 - source: gymflow
   source_id: pol_oscypek_30g
   name: Oscypek (Smoked Sheep Cheese, 30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 350
   protein_per_100g: 25
@@ -349,7 +350,7 @@
 - source: gymflow
   source_id: pol_kefir_polish_glass
   name: Polish Kefir (250ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 41
   protein_per_100g: 3.4
@@ -364,7 +365,7 @@
 - source: gymflow
   source_id: pol_maslanka
   name: Maślanka (Buttermilk, 250ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 40
   protein_per_100g: 3.3
@@ -379,7 +380,7 @@
 - source: gymflow
   source_id: pol_makowiec_slice
   name: Makowiec (Poppy Seed Roll, 1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 380
   protein_per_100g: 7
@@ -395,7 +396,7 @@
 - source: gymflow
   source_id: pol_sernik_slice
   name: Sernik (Polish Cheesecake, 1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 320
   protein_per_100g: 8
@@ -411,7 +412,7 @@
 - source: gymflow
   source_id: pol_paczek
   name: Pączek (Polish Doughnut)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 360
   protein_per_100g: 6
@@ -427,7 +428,7 @@
 - source: gymflow
   source_id: pol_rogal_swietomarcinski
   name: Rogal Świętomarciński (Croissant, slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 410
   protein_per_100g: 8
@@ -443,7 +444,7 @@
 - source: gymflow
   source_id: pol_chleb_zytni_slice
   name: Chleb Żytni (Rye Bread, 1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 230
   protein_per_100g: 7
@@ -459,7 +460,7 @@
 - source: gymflow
   source_id: pol_zapiekanka
   name: Zapiekanka (Polish Pizza Bread)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 270
   protein_per_100g: 11
@@ -475,7 +476,7 @@
 - source: gymflow
   source_id: pol_tatar
   name: Tatar Wołowy (Steak Tartare)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 22
@@ -491,7 +492,7 @@
 - source: gymflow
   source_id: pol_smalec_15g
   name: Smalec (Pork Lard Spread, 15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 720
   protein_per_100g: 1

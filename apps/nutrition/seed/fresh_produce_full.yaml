@@ -7,7 +7,7 @@
   protein_per_100g: 0.3
   carbs_per_100g: 14
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 150
   serving_label: 150 g
@@ -22,7 +22,7 @@
   protein_per_100g: 0.3
   carbs_per_100g: 14
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 150
   serving_label: 150 g
@@ -37,7 +37,7 @@
   protein_per_100g: 0.3
   carbs_per_100g: 14
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 150
   serving_label: 150 g
@@ -52,7 +52,7 @@
   protein_per_100g: 0.3
   carbs_per_100g: 14
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 150
   serving_label: 150 g
@@ -67,7 +67,7 @@
   protein_per_100g: 0.3
   carbs_per_100g: 14
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 150
   serving_label: 150 g
@@ -82,7 +82,7 @@
   protein_per_100g: 1.1
   carbs_per_100g: 23
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 118
   serving_label: 118 g
@@ -97,7 +97,7 @@
   protein_per_100g: 1.1
   carbs_per_100g: 23
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 136
   serving_label: 136 g
@@ -112,7 +112,7 @@
   protein_per_100g: 1.1
   carbs_per_100g: 23
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 101
   serving_label: 101 g
@@ -127,7 +127,7 @@
   protein_per_100g: 0.9
   carbs_per_100g: 12
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 154
   serving_label: 154 g
@@ -142,7 +142,7 @@
   protein_per_100g: 0.9
   carbs_per_100g: 12
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 184
   serving_label: 184 g
@@ -157,7 +157,7 @@
   protein_per_100g: 0.7
   carbs_per_100g: 9
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: 80 g
@@ -172,7 +172,7 @@
   protein_per_100g: 0.7
   carbs_per_100g: 9
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 75
   serving_label: 75 g
@@ -187,7 +187,7 @@
   protein_per_100g: 0.7
   carbs_per_100g: 9
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 75
   serving_label: 75 g
@@ -202,7 +202,7 @@
   protein_per_100g: 0.7
   carbs_per_100g: 8
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 200
   serving_label: 200 g
@@ -217,7 +217,7 @@
   protein_per_100g: 1.1
   carbs_per_100g: 9
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 70
   serving_label: 70 g
@@ -232,7 +232,7 @@
   protein_per_100g: 0.7
   carbs_per_100g: 11
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 65
   serving_label: 65 g
@@ -247,7 +247,7 @@
   protein_per_100g: 0.4
   carbs_per_100g: 15
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 180
   serving_label: 180 g
@@ -262,7 +262,7 @@
   protein_per_100g: 0.4
   carbs_per_100g: 15
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 180
   serving_label: 180 g
@@ -277,7 +277,7 @@
   protein_per_100g: 0.4
   carbs_per_100g: 15
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 180
   serving_label: 180 g
@@ -292,7 +292,7 @@
   protein_per_100g: 0.6
   carbs_per_100g: 17
   fat_per_100g: 0.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -307,7 +307,7 @@
   protein_per_100g: 0.6
   carbs_per_100g: 17
   fat_per_100g: 0.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -322,7 +322,7 @@
   protein_per_100g: 0.6
   carbs_per_100g: 17
   fat_per_100g: 0.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -337,7 +337,7 @@
   protein_per_100g: 0.6
   carbs_per_100g: 17
   fat_per_100g: 0.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -352,7 +352,7 @@
   protein_per_100g: 0.7
   carbs_per_100g: 8
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -367,7 +367,7 @@
   protein_per_100g: 0.7
   carbs_per_100g: 8
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: 400 g
@@ -382,7 +382,7 @@
   protein_per_100g: 0.7
   carbs_per_100g: 14
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -397,7 +397,7 @@
   protein_per_100g: 0.7
   carbs_per_100g: 14
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 125
   serving_label: 125 g
@@ -412,7 +412,7 @@
   protein_per_100g: 1.2
   carbs_per_100g: 12
   fat_per_100g: 0.7
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -427,7 +427,7 @@
   protein_per_100g: 1.2
   carbs_per_100g: 12
   fat_per_100g: 0.7
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 125
   serving_label: 125 g
@@ -442,7 +442,7 @@
   protein_per_100g: 1.4
   carbs_per_100g: 10
   fat_per_100g: 0.5
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -457,7 +457,7 @@
   protein_per_100g: 1.1
   carbs_per_100g: 16
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -472,7 +472,7 @@
   protein_per_100g: 1.1
   carbs_per_100g: 16
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: 80 g
@@ -487,7 +487,7 @@
   protein_per_100g: 0.5
   carbs_per_100g: 13
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -502,7 +502,7 @@
   protein_per_100g: 0.5
   carbs_per_100g: 13
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 84
   serving_label: 84 g
@@ -517,7 +517,7 @@
   protein_per_100g: 0.8
   carbs_per_100g: 15
   fat_per_100g: 0.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -532,7 +532,7 @@
   protein_per_100g: 0.8
   carbs_per_100g: 15
   fat_per_100g: 0.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 200
   serving_label: 200 g
@@ -547,7 +547,7 @@
   protein_per_100g: 0.5
   carbs_per_100g: 11
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -562,7 +562,7 @@
   protein_per_100g: 1.1
   carbs_per_100g: 15
   fat_per_100g: 0.5
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 75
   serving_label: 75 g
@@ -577,7 +577,7 @@
   protein_per_100g: 1.2
   carbs_per_100g: 15
   fat_per_100g: 0.5
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 75
   serving_label: 75 g
@@ -592,7 +592,7 @@
   protein_per_100g: 2
   carbs_per_100g: 9
   fat_per_100g: 15
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -602,12 +602,12 @@
   dietary_compat: vegan,vegetarian
 - source: produce
   source_id: fruit_avocado_whole
-  name: Avocado (Whole)
+  name: Avocado
   kcal_per_100g: 160
   protein_per_100g: 2
   carbs_per_100g: 9
   fat_per_100g: 15
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 200
   serving_label: 200 g
@@ -622,7 +622,7 @@
   protein_per_100g: 2
   carbs_per_100g: 9
   fat_per_100g: 15
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 130
   serving_label: 130 g
@@ -637,7 +637,7 @@
   protein_per_100g: 0.9
   carbs_per_100g: 10
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 150
   serving_label: 150 g
@@ -652,7 +652,7 @@
   protein_per_100g: 1.1
   carbs_per_100g: 11
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 142
   serving_label: 142 g
@@ -667,7 +667,7 @@
   protein_per_100g: 1.4
   carbs_per_100g: 11
   fat_per_100g: 0.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 35
   serving_label: 35 g
@@ -682,7 +682,7 @@
   protein_per_100g: 0.7
   carbs_per_100g: 11
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 66
   serving_label: 66 g
@@ -697,7 +697,7 @@
   protein_per_100g: 0.6
   carbs_per_100g: 8
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -712,7 +712,7 @@
   protein_per_100g: 0.6
   carbs_per_100g: 8
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 280
   serving_label: 280 g
@@ -727,7 +727,7 @@
   protein_per_100g: 0.8
   carbs_per_100g: 8
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -742,7 +742,7 @@
   protein_per_100g: 0.5
   carbs_per_100g: 9
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -757,7 +757,7 @@
   protein_per_100g: 1.7
   carbs_per_100g: 19
   fat_per_100g: 1.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -767,12 +767,12 @@
   dietary_compat: vegan,vegetarian
 - source: produce
   source_id: fruit_pomegranate_per_unit
-  name: Pomegranate (Whole)
+  name: Pomegranate
   kcal_per_100g: 83
   protein_per_100g: 1.7
   carbs_per_100g: 19
   fat_per_100g: 1.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 280
   serving_label: 280 g
@@ -787,7 +787,7 @@
   protein_per_100g: 2.2
   carbs_per_100g: 23
   fat_per_100g: 0.7
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 18
   serving_label: 18 g
@@ -802,7 +802,7 @@
   protein_per_100g: 1.2
   carbs_per_100g: 13
   fat_per_100g: 0.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -817,7 +817,7 @@
   protein_per_100g: 0.8
   carbs_per_100g: 17
   fat_per_100g: 0.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -832,7 +832,7 @@
   protein_per_100g: 1.8
   carbs_per_100g: 75
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 24
   serving_label: 24 g
@@ -847,7 +847,7 @@
   protein_per_100g: 1.8
   carbs_per_100g: 75
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -862,7 +862,7 @@
   protein_per_100g: 3.4
   carbs_per_100g: 55
   fat_per_100g: 0.5
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -877,7 +877,7 @@
   protein_per_100g: 3.1
   carbs_per_100g: 79
   fat_per_100g: 0.5
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -892,7 +892,7 @@
   protein_per_100g: 0.2
   carbs_per_100g: 82
   fat_per_100g: 1.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -907,7 +907,7 @@
   protein_per_100g: 2.2
   carbs_per_100g: 64
   fat_per_100g: 0.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 8
   serving_label: 8 g
@@ -922,7 +922,7 @@
   protein_per_100g: 0.9
   carbs_per_100g: 10
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 60
   serving_label: 60 g
@@ -937,7 +937,7 @@
   protein_per_100g: 0.6
   carbs_per_100g: 8
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: 80 g
@@ -952,7 +952,7 @@
   protein_per_100g: 2.8
   carbs_per_100g: 7
   fat_per_100g: 0.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -967,7 +967,7 @@
   protein_per_100g: 2.8
   carbs_per_100g: 7
   fat_per_100g: 0.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 91
   serving_label: 91 g
@@ -982,7 +982,7 @@
   protein_per_100g: 1.9
   carbs_per_100g: 5
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -997,7 +997,7 @@
   protein_per_100g: 3.4
   carbs_per_100g: 9
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1012,7 +1012,7 @@
   protein_per_100g: 1.3
   carbs_per_100g: 6
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1027,7 +1027,7 @@
   protein_per_100g: 1.4
   carbs_per_100g: 7
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1042,7 +1042,7 @@
   protein_per_100g: 4.3
   carbs_per_100g: 9
   fat_per_100g: 0.9
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1057,7 +1057,7 @@
   protein_per_100g: 2.9
   carbs_per_100g: 4
   fat_per_100g: 0.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1072,7 +1072,7 @@
   protein_per_100g: 2.9
   carbs_per_100g: 4
   fat_per_100g: 0.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1087,7 +1087,7 @@
   protein_per_100g: 2.6
   carbs_per_100g: 4
   fat_per_100g: 0.7
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1102,7 +1102,7 @@
   protein_per_100g: 2.6
   carbs_per_100g: 4
   fat_per_100g: 0.7
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 25
   serving_label: 25 g
@@ -1117,7 +1117,7 @@
   protein_per_100g: 0.9
   carbs_per_100g: 3
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1132,7 +1132,7 @@
   protein_per_100g: 1.4
   carbs_per_100g: 3
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1147,7 +1147,7 @@
   protein_per_100g: 1.2
   carbs_per_100g: 3
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1162,7 +1162,7 @@
   protein_per_100g: 1.5
   carbs_per_100g: 3
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1177,7 +1177,7 @@
   protein_per_100g: 0.7
   carbs_per_100g: 3
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1192,7 +1192,7 @@
   protein_per_100g: 0.7
   carbs_per_100g: 3
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 40
   serving_label: 40 g
@@ -1207,7 +1207,7 @@
   protein_per_100g: 0.7
   carbs_per_100g: 4
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1217,12 +1217,12 @@
   dietary_compat: vegan,vegetarian
 - source: produce
   source_id: veg_cucumber_whole
-  name: Cucumber (Whole)
+  name: Cucumber
   kcal_per_100g: 16
   protein_per_100g: 0.7
   carbs_per_100g: 4
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 300
   serving_label: 300 g
@@ -1237,7 +1237,7 @@
   protein_per_100g: 0.9
   carbs_per_100g: 4
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 123
   serving_label: 123 g
@@ -1252,7 +1252,7 @@
   protein_per_100g: 0.9
   carbs_per_100g: 4
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1267,7 +1267,7 @@
   protein_per_100g: 0.9
   carbs_per_100g: 4
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 60
   serving_label: 60 g
@@ -1282,7 +1282,7 @@
   protein_per_100g: 0.9
   carbs_per_100g: 4
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1297,7 +1297,7 @@
   protein_per_100g: 0.9
   carbs_per_100g: 4
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 220
   serving_label: 220 g
@@ -1312,7 +1312,7 @@
   protein_per_100g: 1
   carbs_per_100g: 7
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 150
   serving_label: 150 g
@@ -1327,7 +1327,7 @@
   protein_per_100g: 1
   carbs_per_100g: 6
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 150
   serving_label: 150 g
@@ -1342,7 +1342,7 @@
   protein_per_100g: 0.9
   carbs_per_100g: 5
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 150
   serving_label: 150 g
@@ -1357,7 +1357,7 @@
   protein_per_100g: 1
   carbs_per_100g: 7
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 150
   serving_label: 150 g
@@ -1372,7 +1372,7 @@
   protein_per_100g: 1.2
   carbs_per_100g: 3
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 196
   serving_label: 196 g
@@ -1387,7 +1387,7 @@
   protein_per_100g: 1
   carbs_per_100g: 6
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 250
   serving_label: 250 g
@@ -1402,7 +1402,7 @@
   protein_per_100g: 3.1
   carbs_per_100g: 3
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1417,7 +1417,7 @@
   protein_per_100g: 3.1
   carbs_per_100g: 3
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1432,7 +1432,7 @@
   protein_per_100g: 3.1
   carbs_per_100g: 3
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: 80 g
@@ -1447,7 +1447,7 @@
   protein_per_100g: 1.1
   carbs_per_100g: 9
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 110
   serving_label: 110 g
@@ -1462,7 +1462,7 @@
   protein_per_100g: 1.1
   carbs_per_100g: 9
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 110
   serving_label: 110 g
@@ -1477,7 +1477,7 @@
   protein_per_100g: 1.8
   carbs_per_100g: 7
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 15
   serving_label: 15 g
@@ -1492,7 +1492,7 @@
   protein_per_100g: 6.4
   carbs_per_100g: 33
   fat_per_100g: 0.5
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 3
   serving_label: 3 g
@@ -1507,7 +1507,7 @@
   protein_per_100g: 1.8
   carbs_per_100g: 18
   fat_per_100g: 0.8
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: 30 g
@@ -1522,7 +1522,7 @@
   protein_per_100g: 2
   carbs_per_100g: 17
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 200
   serving_label: 200 g
@@ -1537,7 +1537,7 @@
   protein_per_100g: 2
   carbs_per_100g: 17
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1552,7 +1552,7 @@
   protein_per_100g: 2
   carbs_per_100g: 20
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 130
   serving_label: 130 g
@@ -1567,7 +1567,7 @@
   protein_per_100g: 1
   carbs_per_100g: 12
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1577,12 +1577,12 @@
   dietary_compat: vegan,vegetarian
 - source: produce
   source_id: veg_butternut_squash_per_unit
-  name: Butternut Squash (Whole)
+  name: Butternut Squash
   kcal_per_100g: 45
   protein_per_100g: 1
   carbs_per_100g: 12
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 800
   serving_label: 800 g
@@ -1597,7 +1597,7 @@
   protein_per_100g: 3.2
   carbs_per_100g: 19
   fat_per_100g: 1.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1612,7 +1612,7 @@
   protein_per_100g: 5
   carbs_per_100g: 14
   fat_per_100g: 0.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1627,7 +1627,7 @@
   protein_per_100g: 5
   carbs_per_100g: 14
   fat_per_100g: 0.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: 80 g
@@ -1642,7 +1642,7 @@
   protein_per_100g: 1.8
   carbs_per_100g: 7
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1657,7 +1657,7 @@
   protein_per_100g: 1.5
   carbs_per_100g: 4
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1672,7 +1672,7 @@
   protein_per_100g: 2.2
   carbs_per_100g: 4
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 16
   serving_label: 16 g
@@ -1687,7 +1687,7 @@
   protein_per_100g: 2.2
   carbs_per_100g: 4
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: 80 g
@@ -1702,7 +1702,7 @@
   protein_per_100g: 0.7
   carbs_per_100g: 3
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1717,7 +1717,7 @@
   protein_per_100g: 1.7
   carbs_per_100g: 10
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1732,7 +1732,7 @@
   protein_per_100g: 1.2
   carbs_per_100g: 18
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 110
   serving_label: 110 g
@@ -1747,7 +1747,7 @@
   protein_per_100g: 1.1
   carbs_per_100g: 9
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1762,7 +1762,7 @@
   protein_per_100g: 0.9
   carbs_per_100g: 6
   fat_per_100g: 0.1
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1777,7 +1777,7 @@
   protein_per_100g: 1.5
   carbs_per_100g: 14
   fat_per_100g: 0.3
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 89
   serving_label: 89 g
@@ -1792,7 +1792,7 @@
   protein_per_100g: 1.9
   carbs_per_100g: 9
   fat_per_100g: 0.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 14
   serving_label: 14 g
@@ -1807,7 +1807,7 @@
   protein_per_100g: 1.9
   carbs_per_100g: 9
   fat_per_100g: 0.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 14
   serving_label: 14 g
@@ -1822,7 +1822,7 @@
   protein_per_100g: 1.4
   carbs_per_100g: 7
   fat_per_100g: 0.4
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 14
   serving_label: 14 g
@@ -1837,7 +1837,7 @@
   protein_per_100g: 3.3
   carbs_per_100g: 11
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 120
   serving_label: 120 g
@@ -1852,7 +1852,7 @@
   protein_per_100g: 1.2
   carbs_per_100g: 7
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1867,7 +1867,7 @@
   protein_per_100g: 1.5
   carbs_per_100g: 2
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g
@@ -1882,7 +1882,7 @@
   protein_per_100g: 1.2
   carbs_per_100g: 2
   fat_per_100g: 0.2
-  brand: Fresh Produce
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: 100 g

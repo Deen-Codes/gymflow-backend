@@ -1,8 +1,9 @@
 # uk_takeaway_generic.yaml — chip shop classics: fish & chips, cod/haddock & chips, chicken kebab, doner kebab, mixed kebab, chicken shish, battered sausage, saveloy, pickled egg, curry sauce, mushy peas, gravy, large chips, doner meat, garlic pizza bread, Chinese/Indian buffet plate.
+
 - source: gymflow
   source_id: takeaway_fish_chips_full
   name: Fish & Chips (chip shop)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 12
@@ -18,7 +19,7 @@
 - source: gymflow
   source_id: takeaway_cod_chips
   name: Cod & Chips (chip shop)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 12
@@ -34,7 +35,7 @@
 - source: gymflow
   source_id: takeaway_haddock_chips
   name: Haddock & Chips (chip shop)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 210
   protein_per_100g: 12
@@ -50,7 +51,7 @@
 - source: gymflow
   source_id: takeaway_chicken_kebab_pita
   name: Chicken Kebab in Pita (takeaway)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 16
@@ -66,7 +67,7 @@
 - source: gymflow
   source_id: takeaway_doner_kebab_pita
   name: Doner Kebab in Pita (takeaway)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 14
@@ -82,7 +83,7 @@
 - source: gymflow
   source_id: takeaway_mixed_kebab_meat
   name: Mixed Meat Kebab Plate
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 230
   protein_per_100g: 18
@@ -98,7 +99,7 @@
 - source: gymflow
   source_id: takeaway_chicken_shish
   name: Chicken Shish Skewer (takeaway)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 24
@@ -114,7 +115,7 @@
 - source: gymflow
   source_id: takeaway_battered_sausage
   name: Battered Sausage (chip shop)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 290
   protein_per_100g: 12
@@ -130,7 +131,7 @@
 - source: gymflow
   source_id: takeaway_saveloy
   name: Saveloy (chip shop)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 295
   protein_per_100g: 14
@@ -146,7 +147,7 @@
 - source: gymflow
   source_id: takeaway_pickled_egg
   name: Pickled Egg
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 13
@@ -162,7 +163,7 @@
 - source: gymflow
   source_id: takeaway_curry_sauce_chip_shop
   name: Chip Shop Curry Sauce (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 70
   protein_per_100g: 1.5
@@ -178,7 +179,7 @@
 - source: gymflow
   source_id: takeaway_mushy_peas_chip_shop
   name: Chip Shop Mushy Peas (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 80
   protein_per_100g: 5
@@ -194,7 +195,7 @@
 - source: gymflow
   source_id: takeaway_gravy_chip_shop
   name: Chip Shop Gravy (per 100ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 30
   protein_per_100g: 1
@@ -209,7 +210,7 @@
 - source: gymflow
   source_id: takeaway_chip_shop_chips_large
   name: Chip Shop Chips (large)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 4
@@ -225,7 +226,7 @@
 - source: gymflow
   source_id: takeaway_donner_meat_only_per_100
   name: Doner Meat (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 280
   protein_per_100g: 18
@@ -240,7 +241,7 @@
 - source: gymflow
   source_id: takeaway_garlic_pizza_bread_slice
   name: Garlic Pizza Bread (1 slice)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 280
   protein_per_100g: 8
@@ -256,7 +257,7 @@
 - source: gymflow
   source_id: takeaway_chinese_buffet_plate
   name: Chinese Buffet (mixed plate)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 9
@@ -272,7 +273,7 @@
 - source: gymflow
   source_id: takeaway_indian_buffet_plate
   name: Indian Buffet (mixed plate)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 11

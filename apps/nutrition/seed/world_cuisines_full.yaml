@@ -8,7 +8,7 @@
   protein_per_100g: 13
   carbs_per_100g: 32
   fat_per_100g: 18
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 17
   serving_label: item (17 g)
@@ -23,7 +23,7 @@
   protein_per_100g: 13
   carbs_per_100g: 32
   fat_per_100g: 18
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 51
   serving_label: item (51 g)
@@ -38,7 +38,7 @@
   protein_per_100g: 13
   carbs_per_100g: 32
   fat_per_100g: 18
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 85
   serving_label: item (85 g)
@@ -53,7 +53,7 @@
   protein_per_100g: 13
   carbs_per_100g: 12
   fat_per_100g: 13
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: item (80 g)
@@ -67,7 +67,7 @@
   protein_per_100g: 3
   carbs_per_100g: 6
   fat_per_100g: 16
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -82,7 +82,7 @@
   protein_per_100g: 8
   carbs_per_100g: 13
   fat_per_100g: 25
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -97,7 +97,7 @@
   protein_per_100g: 3
   carbs_per_100g: 17
   fat_per_100g: 2.5
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -112,7 +112,7 @@
   protein_per_100g: 2
   carbs_per_100g: 11
   fat_per_100g: 5
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -127,7 +127,7 @@
   protein_per_100g: 5
   carbs_per_100g: 13
   fat_per_100g: 19
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -142,7 +142,7 @@
   protein_per_100g: 6
   carbs_per_100g: 5
   fat_per_100g: 14
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -157,7 +157,7 @@
   protein_per_100g: 16
   carbs_per_100g: 25
   fat_per_100g: 7
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 280
   serving_label: item (280 g)
@@ -171,7 +171,7 @@
   protein_per_100g: 14
   carbs_per_100g: 25
   fat_per_100g: 11
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 280
   serving_label: item (280 g)
@@ -185,7 +185,7 @@
   protein_per_100g: 14
   carbs_per_100g: 28
   fat_per_100g: 14
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 280
   serving_label: item (280 g)
@@ -199,7 +199,7 @@
   protein_per_100g: 16
   carbs_per_100g: 5
   fat_per_100g: 17
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 75
   serving_label: item (75 g)
@@ -213,7 +213,7 @@
   protein_per_100g: 22
   carbs_per_100g: 4
   fat_per_100g: 8
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -227,7 +227,7 @@
   protein_per_100g: 20
   carbs_per_100g: 4
   fat_per_100g: 11
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -241,7 +241,7 @@
   protein_per_100g: 16
   carbs_per_100g: 28
   fat_per_100g: 12
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 300
   serving_label: item (300 g)
@@ -255,7 +255,7 @@
   protein_per_100g: 16
   carbs_per_100g: 28
   fat_per_100g: 14
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 300
   serving_label: item (300 g)
@@ -269,7 +269,7 @@
   protein_per_100g: 9
   carbs_per_100g: 11
   fat_per_100g: 9
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: item (350 g)
@@ -283,7 +283,7 @@
   protein_per_100g: 3
   carbs_per_100g: 18
   fat_per_100g: 4
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -298,7 +298,7 @@
   protein_per_100g: 8
   carbs_per_100g: 22
   fat_per_100g: 18
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -313,7 +313,7 @@
   protein_per_100g: 9
   carbs_per_100g: 22
   fat_per_100g: 19
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -328,7 +328,7 @@
   protein_per_100g: 4
   carbs_per_100g: 6
   fat_per_100g: 12
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 250
   serving_label: item (250 g)
@@ -343,7 +343,7 @@
   protein_per_100g: 17
   carbs_per_100g: 4
   fat_per_100g: 17
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -357,7 +357,7 @@
   protein_per_100g: 9
   carbs_per_100g: 17
   fat_per_100g: 8
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: item (350 g)
@@ -371,7 +371,7 @@
   protein_per_100g: 5
   carbs_per_100g: 50
   fat_per_100g: 22
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 50
   serving_label: item (50 g)
@@ -386,7 +386,7 @@
   protein_per_100g: 4
   carbs_per_100g: 50
   fat_per_100g: 18
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -401,7 +401,7 @@
   protein_per_100g: 16
   carbs_per_100g: 22
   fat_per_100g: 8
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: item (400 g)
@@ -415,7 +415,7 @@
   protein_per_100g: 17
   carbs_per_100g: 4
   fat_per_100g: 18
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -429,7 +429,7 @@
   protein_per_100g: 22
   carbs_per_100g: 4
   fat_per_100g: 8
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -443,7 +443,7 @@
   protein_per_100g: 16
   carbs_per_100g: 5
   fat_per_100g: 18
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -457,7 +457,7 @@
   protein_per_100g: 11
   carbs_per_100g: 30
   fat_per_100g: 8
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 220
   serving_label: item (220 g)
@@ -471,7 +471,7 @@
   protein_per_100g: 11
   carbs_per_100g: 30
   fat_per_100g: 13
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 250
   serving_label: item (250 g)
@@ -486,7 +486,7 @@
   protein_per_100g: 13
   carbs_per_100g: 28
   fat_per_100g: 14
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 280
   serving_label: item (280 g)
@@ -500,7 +500,7 @@
   protein_per_100g: 11
   carbs_per_100g: 28
   fat_per_100g: 11
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 250
   serving_label: item (250 g)
@@ -514,7 +514,7 @@
   protein_per_100g: 9
   carbs_per_100g: 22
   fat_per_100g: 19
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -529,7 +529,7 @@
   protein_per_100g: 11
   carbs_per_100g: 22
   fat_per_100g: 20
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -543,7 +543,7 @@
   protein_per_100g: 8
   carbs_per_100g: 50
   fat_per_100g: 22
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 150
   serving_label: item (150 g)
@@ -558,7 +558,7 @@
   protein_per_100g: 6
   carbs_per_100g: 50
   fat_per_100g: 22
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 50
   serving_label: item (50 g)
@@ -573,7 +573,7 @@
   protein_per_100g: 3
   carbs_per_100g: 28
   fat_per_100g: 9
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 200
   serving_label: item (200 g)
@@ -588,7 +588,7 @@
   protein_per_100g: 8
   carbs_per_100g: 22
   fat_per_100g: 14
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -602,7 +602,7 @@
   protein_per_100g: 13
   carbs_per_100g: 17
   fat_per_100g: 13
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 150
   serving_label: item (150 g)
@@ -616,7 +616,7 @@
   protein_per_100g: 35
   carbs_per_100g: 0
   fat_per_100g: 12
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 50
   serving_label: item (50 g)
@@ -630,7 +630,7 @@
   protein_per_100g: 31
   carbs_per_100g: 0
   fat_per_100g: 17
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 50
   serving_label: item (50 g)
@@ -644,7 +644,7 @@
   protein_per_100g: 22
   carbs_per_100g: 1
   fat_per_100g: 40
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -658,7 +658,7 @@
   protein_per_100g: 7
   carbs_per_100g: 14
   fat_per_100g: 9
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -673,7 +673,7 @@
   protein_per_100g: 17
   carbs_per_100g: 5
   fat_per_100g: 17
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -687,7 +687,7 @@
   protein_per_100g: 5
   carbs_per_100g: 28
   fat_per_100g: 5
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -702,7 +702,7 @@
   protein_per_100g: 10
   carbs_per_100g: 22
   fat_per_100g: 4
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: item (350 g)
@@ -716,7 +716,7 @@
   protein_per_100g: 11
   carbs_per_100g: 22
   fat_per_100g: 5
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: item (350 g)
@@ -730,7 +730,7 @@
   protein_per_100g: 2
   carbs_per_100g: 8
   fat_per_100g: 6
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: item (80 g)
@@ -745,7 +745,7 @@
   protein_per_100g: 2
   carbs_per_100g: 10
   fat_per_100g: 2.5
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 250
   serving_label: item (250 g)
@@ -760,7 +760,7 @@
   protein_per_100g: 11
   carbs_per_100g: 18
   fat_per_100g: 11
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: item (80 g)
@@ -774,7 +774,7 @@
   protein_per_100g: 13
   carbs_per_100g: 18
   fat_per_100g: 7
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: item (80 g)
@@ -788,7 +788,7 @@
   protein_per_100g: 9
   carbs_per_100g: 18
   fat_per_100g: 9
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: item (80 g)
@@ -802,7 +802,7 @@
   protein_per_100g: 12
   carbs_per_100g: 18
   fat_per_100g: 11
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: item (80 g)
@@ -816,7 +816,7 @@
   protein_per_100g: 12
   carbs_per_100g: 18
   fat_per_100g: 10
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: item (80 g)
@@ -830,7 +830,7 @@
   protein_per_100g: 16
   carbs_per_100g: 28
   fat_per_100g: 13
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 250
   serving_label: item (250 g)
@@ -844,7 +844,7 @@
   protein_per_100g: 11
   carbs_per_100g: 28
   fat_per_100g: 17
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 200
   serving_label: item (200 g)
@@ -859,7 +859,7 @@
   protein_per_100g: 11
   carbs_per_100g: 22
   fat_per_100g: 9
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: item (350 g)
@@ -873,7 +873,7 @@
   protein_per_100g: 11
   carbs_per_100g: 21
   fat_per_100g: 11
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: item (350 g)
@@ -887,7 +887,7 @@
   protein_per_100g: 11
   carbs_per_100g: 22
   fat_per_100g: 11
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: item (350 g)
@@ -901,7 +901,7 @@
   protein_per_100g: 12
   carbs_per_100g: 22
   fat_per_100g: 7
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: item (350 g)
@@ -915,7 +915,7 @@
   protein_per_100g: 11
   carbs_per_100g: 22
   fat_per_100g: 12
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: item (350 g)
@@ -930,7 +930,7 @@
   protein_per_100g: 13
   carbs_per_100g: 18
   fat_per_100g: 5
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: item (400 g)
@@ -944,7 +944,7 @@
   protein_per_100g: 14
   carbs_per_100g: 18
   fat_per_100g: 7
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 400
   serving_label: item (400 g)
@@ -958,7 +958,7 @@
   protein_per_100g: 9
   carbs_per_100g: 28
   fat_per_100g: 14
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 250
   serving_label: item (250 g)
@@ -972,7 +972,7 @@
   protein_per_100g: 13
   carbs_per_100g: 28
   fat_per_100g: 14
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: item (350 g)
@@ -986,7 +986,7 @@
   protein_per_100g: 7
   carbs_per_100g: 65
   fat_per_100g: 25
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 50
   serving_label: item (50 g)
@@ -1001,7 +1001,7 @@
   protein_per_100g: 1
   carbs_per_100g: 7
   fat_per_100g: 0
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 50
   serving_label: item (50 g)
@@ -1016,7 +1016,7 @@
   protein_per_100g: 1
   carbs_per_100g: 5
   fat_per_100g: 0
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 50
   serving_label: item (50 g)
@@ -1031,7 +1031,7 @@
   protein_per_100g: 2
   carbs_per_100g: 8
   fat_per_100g: 13
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 50
   serving_label: item (50 g)
@@ -1046,7 +1046,7 @@
   protein_per_100g: 9
   carbs_per_100g: 30
   fat_per_100g: 8
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -1060,7 +1060,7 @@
   protein_per_100g: 7
   carbs_per_100g: 30
   fat_per_100g: 7
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -1075,7 +1075,7 @@
   protein_per_100g: 6
   carbs_per_100g: 30
   fat_per_100g: 5
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -1090,7 +1090,7 @@
   protein_per_100g: 11
   carbs_per_100g: 8
   fat_per_100g: 8
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: item (350 g)
@@ -1104,7 +1104,7 @@
   protein_per_100g: 18
   carbs_per_100g: 12
   fat_per_100g: 14
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 130
   serving_label: item (130 g)
@@ -1118,7 +1118,7 @@
   protein_per_100g: 5
   carbs_per_100g: 7
   fat_per_100g: 5
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 300
   serving_label: item (300 g)
@@ -1132,7 +1132,7 @@
   protein_per_100g: 24
   carbs_per_100g: 1
   fat_per_100g: 30
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 30
   serving_label: item (30 g)
@@ -1146,7 +1146,7 @@
   protein_per_100g: 5
   carbs_per_100g: 38
   fat_per_100g: 13
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: item (80 g)
@@ -1161,7 +1161,7 @@
   protein_per_100g: 8
   carbs_per_100g: 50
   fat_per_100g: 16
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 80
   serving_label: item (80 g)
@@ -1176,7 +1176,7 @@
   protein_per_100g: 22
   carbs_per_100g: 5
   fat_per_100g: 8
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 200
   serving_label: item (200 g)
@@ -1190,7 +1190,7 @@
   protein_per_100g: 5
   carbs_per_100g: 25
   fat_per_100g: 5
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 250
   serving_label: item (250 g)
@@ -1205,7 +1205,7 @@
   protein_per_100g: 9
   carbs_per_100g: 28
   fat_per_100g: 14
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 130
   serving_label: item (130 g)
@@ -1219,7 +1219,7 @@
   protein_per_100g: 10
   carbs_per_100g: 28
   fat_per_100g: 12
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 130
   serving_label: item (130 g)
@@ -1233,7 +1233,7 @@
   protein_per_100g: 18
   carbs_per_100g: 5
   fat_per_100g: 9
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: item (350 g)
@@ -1247,7 +1247,7 @@
   protein_per_100g: 18
   carbs_per_100g: 5
   fat_per_100g: 13
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 350
   serving_label: item (350 g)
@@ -1261,7 +1261,7 @@
   protein_per_100g: 11
   carbs_per_100g: 8
   fat_per_100g: 12
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 300
   serving_label: item (300 g)
@@ -1275,7 +1275,7 @@
   protein_per_100g: 1
   carbs_per_100g: 32
   fat_per_100g: 5
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)
@@ -1290,7 +1290,7 @@
   protein_per_100g: 6
   carbs_per_100g: 50
   fat_per_100g: 6
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 60
   serving_label: item (60 g)
@@ -1305,7 +1305,7 @@
   protein_per_100g: 4
   carbs_per_100g: 30
   fat_per_100g: 5
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 300
   serving_label: item (300 g)
@@ -1320,7 +1320,7 @@
   protein_per_100g: 14
   carbs_per_100g: 8
   fat_per_100g: 14
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 300
   serving_label: item (300 g)
@@ -1334,7 +1334,7 @@
   protein_per_100g: 2
   carbs_per_100g: 32
   fat_per_100g: 1
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 200
   serving_label: item (200 g)
@@ -1349,7 +1349,7 @@
   protein_per_100g: 22
   carbs_per_100g: 5
   fat_per_100g: 14
-  brand: Generic World Cuisine
+  brand: ''
   region_codes: GB
   serving_grams: 100
   serving_label: item (100 g)

@@ -1,8 +1,9 @@
 # chinese.yaml — UK takeaway Chinese (Cantonese, Sichuan, dim sum). Sweet & sour, chow mein, fried rice, kung pao, dim sum, BBQ pork.
+
 - source: gymflow
   source_id: cn_sweet_sour_chicken
   name: Sweet & Sour Chicken
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 200
   protein_per_100g: 11
@@ -18,7 +19,7 @@
 - source: gymflow
   source_id: cn_sweet_sour_pork
   name: Sweet & Sour Pork
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 11
@@ -34,7 +35,7 @@
 - source: gymflow
   source_id: cn_kung_pao_chicken
   name: Kung Pao Chicken
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 14
@@ -50,7 +51,7 @@
 - source: gymflow
   source_id: cn_general_tso_chicken
   name: General Tso's Chicken
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 225
   protein_per_100g: 13
@@ -66,7 +67,7 @@
 - source: gymflow
   source_id: cn_chow_mein_chicken
   name: Chicken Chow Mein
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 9
@@ -82,7 +83,7 @@
 - source: gymflow
   source_id: cn_chow_mein_beef
   name: Beef Chow Mein
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 9
@@ -98,7 +99,7 @@
 - source: gymflow
   source_id: cn_chow_mein_veg
   name: Vegetable Chow Mein
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 110
   protein_per_100g: 4
@@ -114,7 +115,7 @@
 - source: gymflow
   source_id: cn_singapore_noodles
   name: Singapore Noodles
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 8
@@ -130,7 +131,7 @@
 - source: gymflow
   source_id: cn_egg_fried_rice
   name: Egg Fried Rice
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 5
@@ -145,7 +146,7 @@
 - source: gymflow
   source_id: cn_special_fried_rice
   name: Special Fried Rice
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 9
@@ -161,7 +162,7 @@
 - source: gymflow
   source_id: cn_boiled_rice
   name: Plain Boiled Rice
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 2.7
@@ -176,7 +177,7 @@
 - source: gymflow
   source_id: cn_kung_pao_prawns
   name: Kung Pao Prawns
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 14
@@ -192,7 +193,7 @@
 - source: gymflow
   source_id: cn_salt_pepper_chicken
   name: Salt & Pepper Chicken
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 235
   protein_per_100g: 18
@@ -208,7 +209,7 @@
 - source: gymflow
   source_id: cn_salt_pepper_chips
   name: Salt & Pepper Chips
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 285
   protein_per_100g: 5
@@ -224,7 +225,7 @@
 - source: gymflow
   source_id: cn_szechuan_beef
   name: Szechuan Beef
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 14
@@ -240,7 +241,7 @@
 - source: gymflow
   source_id: cn_mongolian_beef
   name: Mongolian Beef
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 14
@@ -256,7 +257,7 @@
 - source: gymflow
   source_id: cn_crispy_duck_pancakes_4
   name: Crispy Duck Pancakes (4)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 230
   protein_per_100g: 14
@@ -272,7 +273,7 @@
 - source: gymflow
   source_id: cn_spring_roll_meat_2
   name: Meat Spring Rolls (2)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 8
@@ -288,7 +289,7 @@
 - source: gymflow
   source_id: cn_spring_roll_veg_2
   name: Vegetable Spring Rolls (2)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 225
   protein_per_100g: 5
@@ -304,7 +305,7 @@
 - source: gymflow
   source_id: cn_prawn_toast_4
   name: Prawn Toast (4)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 320
   protein_per_100g: 11
@@ -320,7 +321,7 @@
 - source: gymflow
   source_id: cn_wonton_soup
   name: Wonton Soup
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 65
   protein_per_100g: 4
@@ -336,7 +337,7 @@
 - source: gymflow
   source_id: cn_hot_sour_soup
   name: Hot & Sour Soup
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 60
   protein_per_100g: 3
@@ -352,7 +353,7 @@
 - source: gymflow
   source_id: cn_egg_drop_soup
   name: Egg Drop Soup
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 35
   protein_per_100g: 2.5
@@ -368,7 +369,7 @@
 - source: gymflow
   source_id: cn_bao_pork_2
   name: Pork Bao Buns (2)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 11
@@ -384,7 +385,7 @@
 - source: gymflow
   source_id: cn_bao_chicken_2
   name: Chicken Bao Buns (2)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 225
   protein_per_100g: 12
@@ -400,7 +401,7 @@
 - source: gymflow
   source_id: cn_bao_veg_2
   name: Vegetable Bao Buns (2)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 5
@@ -416,7 +417,7 @@
 - source: gymflow
   source_id: cn_dim_sum_har_gow_4
   name: Har Gow (Prawn Dumplings, 4)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 7
@@ -432,7 +433,7 @@
 - source: gymflow
   source_id: cn_dim_sum_siu_mai_4
   name: Siu Mai (Pork Dumplings, 4)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 9
@@ -448,7 +449,7 @@
 - source: gymflow
   source_id: cn_char_siu_pork
   name: Char Siu (BBQ Pork, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 245
   protein_per_100g: 22
@@ -463,7 +464,7 @@
 - source: gymflow
   source_id: cn_peking_duck_pancake_per_100
   name: Peking Duck (skin + meat, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 285
   protein_per_100g: 19
@@ -478,7 +479,7 @@
 - source: gymflow
   source_id: cn_mapo_tofu
   name: Mapo Tofu
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 9
@@ -494,7 +495,7 @@
 - source: gymflow
   source_id: cn_aubergine_garlic_sauce
   name: Aubergine in Garlic Sauce
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 3
@@ -510,7 +511,7 @@
 - source: gymflow
   source_id: cn_cantonese_chicken_rice
   name: Cantonese Chicken & Rice
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 11
@@ -525,8 +526,8 @@
   unit_grams: 400
 - source: gymflow
   source_id: cn_fortune_cookie
-  name: Fortune Cookie (1)
-  brand: Generic
+  name: Fortune Cookie
+  brand: ''
   region_codes: gb
   kcal_per_100g: 380
   protein_per_100g: 4

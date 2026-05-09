@@ -1,4 +1,5 @@
 # sweets_extra.yaml — Maoam Stripes/Pinballs/Kracher, Drumstick lolly/Squashies, Refreshers lemon/chew bar, Chewits, Love Hearts, Parma Violets, sherbet lemons, Werther's Original, Murray Mints, Mint Imperials, Tic Tacs, Sour Patch Kids, Jolly Rancher, Reese's, Tesco own (jelly beans, fizzy mix, strawberries & cream, milk bottles), more Haribo, Roses/Heroes/Milk Tray.
+
 - source: gymflow
   source_id: maoam_stripes_30g
   name: Maoam Stripes (30g)
@@ -49,7 +50,7 @@
   unit_grams: 30
 - source: gymflow
   source_id: drumstick_lolly
-  name: Drumstick Lolly (1)
+  name: Drumstick Lolly
   brand: Swizzels
   region_codes: gb
   kcal_per_100g: 380
@@ -97,7 +98,7 @@
   unit_grams: 30
 - source: gymflow
   source_id: refreshers_chew_bar
-  name: Refreshers Chew Bar (1)
+  name: Refreshers Chew Bar
   brand: Swizzels
   region_codes: gb
   kcal_per_100g: 395
@@ -178,7 +179,7 @@
 - source: gymflow
   source_id: sherbet_lemons_30g
   name: Sherbet Lemons (30g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 395
   protein_per_100g: 0
@@ -226,7 +227,7 @@
 - source: gymflow
   source_id: mints_imperials_3
   name: Mint Imperials (3)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 395
   protein_per_100g: 0

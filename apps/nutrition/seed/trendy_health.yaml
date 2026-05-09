@@ -1,8 +1,9 @@
 # trendy_health.yaml — kefir, kombucha (more brands), açaí, kimchi varieties, sauerkraut, tempeh, nutritional yeast, chia pudding, overnight oats, Buddha/grain/poke bowls, Yopro/Arla Skyr/Chobani protein yogurts, Eat Real/Hippeas/Forest Feast healthy snacks, allplants/Mindful Chef ready meals, Press cold-press juices, more Huel, dairy-free yogurts (Coconut Collaborative, Alpro), protein pancakes/waffles, Ryvita.
+
 - source: gymflow
   source_id: kefir_natural_cup
   name: Kefir, Natural (250ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 41
   protein_per_100g: 3.4
@@ -17,7 +18,7 @@
 - source: gymflow
   source_id: kefir_strawberry_cup
   name: Kefir, Strawberry (250ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 70
   protein_per_100g: 3
@@ -64,7 +65,7 @@
 - source: gymflow
   source_id: acai_bowl_basic
   name: Açaí Bowl (basic, 350g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 5
@@ -80,7 +81,7 @@
 - source: gymflow
   source_id: acai_smoothie_300
   name: Açaí Smoothie (300ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 95
   protein_per_100g: 2
@@ -96,7 +97,7 @@
 - source: gymflow
   source_id: kimchi_napa_per_100g
   name: Kimchi (Napa Cabbage, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 30
   protein_per_100g: 1.5
@@ -111,7 +112,7 @@
 - source: gymflow
   source_id: kimchi_radish_per_100g
   name: Kkakdugi (Radish Kimchi, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 28
   protein_per_100g: 1
@@ -126,7 +127,7 @@
 - source: gymflow
   source_id: sauerkraut_per_100g
   name: Sauerkraut, Plain (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 19
   protein_per_100g: 0.9
@@ -141,7 +142,7 @@
 - source: gymflow
   source_id: sauerkraut_apple_caraway
   name: Sauerkraut Apple & Caraway (100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 25
   protein_per_100g: 1
@@ -156,7 +157,7 @@
 - source: gymflow
   source_id: tempeh_per_100g
   name: Tempeh, Plain (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 192
   protein_per_100g: 20
@@ -171,7 +172,7 @@
 - source: gymflow
   source_id: tempeh_smoky_branded_100g
   name: Tempeh, Smoky (100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 200
   protein_per_100g: 19
@@ -186,7 +187,7 @@
 - source: gymflow
   source_id: nutritional_yeast_5g
   name: Nutritional Yeast (1 tbsp/5g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 350
   protein_per_100g: 50
@@ -202,7 +203,7 @@
 - source: gymflow
   source_id: chia_pudding_almond
   name: Chia Pudding, Almond Milk (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 4
@@ -218,7 +219,7 @@
 - source: gymflow
   source_id: overnight_oats_basic
   name: Overnight Oats with Berries
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 5
@@ -234,7 +235,7 @@
 - source: gymflow
   source_id: buddha_bowl_quinoa
   name: Buddha Bowl, Quinoa & Vegetables
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 7
@@ -250,7 +251,7 @@
 - source: gymflow
   source_id: grain_bowl_chicken_brown_rice
   name: Grain Bowl with Chicken
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 13
@@ -266,7 +267,7 @@
 - source: gymflow
   source_id: poke_bowl_salmon
   name: Salmon Poke Bowl
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 12
@@ -282,7 +283,7 @@
 - source: gymflow
   source_id: poke_bowl_tuna
   name: Tuna Poke Bowl
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 13
@@ -298,7 +299,7 @@
 - source: gymflow
   source_id: poke_bowl_tofu_vegan
   name: Vegan Tofu Poke Bowl
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 8
@@ -714,7 +715,7 @@
 - source: gymflow
   source_id: frozen_yogurt_strawberry_100
   name: Frozen Yogurt, Strawberry (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 4
@@ -729,7 +730,7 @@
 - source: gymflow
   source_id: frozen_yogurt_chocolate_100
   name: Frozen Yogurt, Chocolate (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 4
@@ -744,7 +745,7 @@
 - source: gymflow
   source_id: protein_pancakes_2
   name: Protein Pancakes (2)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 240
   protein_per_100g: 22
@@ -759,8 +760,8 @@
   unit_grams: 50
 - source: gymflow
   source_id: protein_waffle_1
-  name: Protein Waffle (1)
-  brand: Generic
+  name: Protein Waffle
+  brand: ''
   region_codes: gb
   kcal_per_100g: 250
   protein_per_100g: 22

@@ -1,4 +1,5 @@
 # lunch_range.yaml — supermarket lunch range: M&S/Tesco/Sainsbury's protein bowls + salads + sandwiches + wraps, M&S Plant Kitchen + Made Without, Tesco Plant Chef.
+
 - source: gymflow
   source_id: mands_higher_protein_chicken_bowl
   name: M&S Higher Protein Chicken Salad Bowl
@@ -321,7 +322,7 @@
   unit_grams: 400
 - source: gymflow
   source_id: tesco_plant_chef_no_chicken_kievs
-  name: Tesco Plant Chef No Chicken Kievs (1)
+  name: Tesco Plant Chef No Chicken Kievs
   brand: Tesco
   region_codes: gb
   kcal_per_100g: 230
@@ -514,7 +515,7 @@
 - source: gymflow
   source_id: caesar_salad_classic
   name: Caesar Salad with Chicken (per portion)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 13
@@ -530,7 +531,7 @@
 - source: gymflow
   source_id: greek_salad_classic
   name: Greek Salad
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 110
   protein_per_100g: 5
@@ -546,7 +547,7 @@
 - source: gymflow
   source_id: quinoa_salad_classic
   name: Quinoa & Roasted Vegetable Salad
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 6
@@ -562,7 +563,7 @@
 - source: gymflow
   source_id: cobb_salad_classic
   name: Cobb Salad
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 195
   protein_per_100g: 14
@@ -578,7 +579,7 @@
 - source: gymflow
   source_id: niçoise_salad_classic
   name: Niçoise Salad
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 11

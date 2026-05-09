@@ -1,4 +1,5 @@
 # ice_cream_brands.yaml — Little Moons mochi (6 flavours), more Häagen-Dazs (Cookies & Cream, Salted Caramel, Strawberry, Pralines), more Ben & Jerry's (Half Baked, Caramel Chew Chew, Karamel Sutra, Choc Fudge Brownie), Magnum Mint/Caramel Billionaire/Dark, Wall's Soft Scoop, Carte D'Or, Mr Whippy, sorbets, Booja-Booja vegan, Mövenpick, Cornetto Strawberry/Mint.
+
 - source: gymflow
   source_id: little_moons_mango_passionfruit_6
   name: Little Moons Mango & Passionfruit (1 piece)
@@ -17,7 +18,7 @@
   unit_grams: 32
 - source: gymflow
   source_id: little_moons_strawberry_6
-  name: Little Moons Strawberry & Raspberry (1)
+  name: Little Moons Strawberry & Raspberry
   brand: Little Moons
   region_codes: gb
   kcal_per_100g: 220
@@ -33,7 +34,7 @@
   unit_grams: 32
 - source: gymflow
   source_id: little_moons_chocolate_6
-  name: Little Moons Belgian Chocolate (1)
+  name: Little Moons Belgian Chocolate
   brand: Little Moons
   region_codes: gb
   kcal_per_100g: 240
@@ -49,7 +50,7 @@
   unit_grams: 32
 - source: gymflow
   source_id: little_moons_vanilla_6
-  name: Little Moons Madagascan Vanilla (1)
+  name: Little Moons Madagascan Vanilla
   brand: Little Moons
   region_codes: gb
   kcal_per_100g: 230
@@ -65,7 +66,7 @@
   unit_grams: 32
 - source: gymflow
   source_id: little_moons_salted_caramel_6
-  name: Little Moons Salted Caramel (1)
+  name: Little Moons Salted Caramel
   brand: Little Moons
   region_codes: gb
   kcal_per_100g: 240
@@ -81,7 +82,7 @@
   unit_grams: 32
 - source: gymflow
   source_id: little_moons_pink_lemonade_6
-  name: Little Moons Pink Lemonade Sorbet (1)
+  name: Little Moons Pink Lemonade Sorbet
   brand: Little Moons
   region_codes: gb
   kcal_per_100g: 145
@@ -310,8 +311,8 @@
   allergens: milk,eggs,soy
 - source: gymflow
   source_id: mr_whippy_99_with_flake
-  name: Mr Whippy 99 Cone with Flake (1)
-  brand: Generic
+  name: Mr Whippy 99 Cone with Flake
+  brand: ''
   region_codes: gb
   kcal_per_100g: 175
   protein_per_100g: 3
@@ -326,8 +327,8 @@
   unit_grams: 100
 - source: gymflow
   source_id: mr_whippy_plain_cone
-  name: Mr Whippy Plain Cone (1)
-  brand: Generic
+  name: Mr Whippy Plain Cone
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 3
@@ -343,7 +344,7 @@
 - source: gymflow
   source_id: sorbet_lemon_100g
   name: Lemon Sorbet (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 120
   protein_per_100g: 0.2
@@ -358,7 +359,7 @@
 - source: gymflow
   source_id: sorbet_mango_100g
   name: Mango Sorbet (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 130
   protein_per_100g: 0.3
@@ -402,7 +403,7 @@
   allergens: milk,eggs,soy
 - source: gymflow
   source_id: cornetto_strawberry_cone
-  name: Cornetto Strawberry (1)
+  name: Cornetto Strawberry
   brand: Cornetto
   region_codes: gb
   kcal_per_100g: 240
@@ -418,7 +419,7 @@
   unit_grams: 90
 - source: gymflow
   source_id: cornetto_mint_cone
-  name: Cornetto Mint (1)
+  name: Cornetto Mint
   brand: Cornetto
   region_codes: gb
   kcal_per_100g: 250

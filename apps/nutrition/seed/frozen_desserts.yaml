@@ -1,8 +1,9 @@
 # frozen_desserts.yaml — ice cream brands, lollies, low-calorie variants.
+
 - source: gymflow
   source_id: ice_cream_vanilla_generic
   name: Vanilla Ice Cream (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 207
   protein_per_100g: 3.5
@@ -17,7 +18,7 @@
 - source: gymflow
   source_id: ice_cream_chocolate_generic
   name: Chocolate Ice Cream (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 215
   protein_per_100g: 4
@@ -32,7 +33,7 @@
 - source: gymflow
   source_id: ice_cream_strawberry_generic
   name: Strawberry Ice Cream (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 200
   protein_per_100g: 3.5
@@ -249,7 +250,7 @@
   unit_grams: 105
 - source: gymflow
   source_id: fab_lolly
-  name: FAB Strawberry Lolly (1)
+  name: FAB Strawberry Lolly
   brand: FAB
   region_codes: gb
   kcal_per_100g: 75
@@ -265,7 +266,7 @@
   unit_grams: 58
 - source: gymflow
   source_id: mini_milk
-  name: Mini Milk Lolly (1)
+  name: Mini Milk Lolly
   brand: Mini Milk
   region_codes: gb
   kcal_per_100g: 30

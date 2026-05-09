@@ -1,8 +1,9 @@
 # tinned_canned.yaml — chopped/plum/cherry/whole tomatoes, passata, purée, beans (cannellini/butter/black/pinto/mixed/borlotti), branded baked beans (Branston), tinned fish (tuna in oil/brine/mayo, pink/red salmon, mackerel, kippers), Baxters soup, mushy peas, creamed corn, coconut milk, tinned fruit.
+
 - source: gymflow
   source_id: tinned_chopped_tomatoes_400g
   name: Chopped Tomatoes, tinned (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 23
   protein_per_100g: 1.2
@@ -17,7 +18,7 @@
 - source: gymflow
   source_id: tinned_plum_tomatoes_400g
   name: Plum Tomatoes, tinned (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 23
   protein_per_100g: 1.2
@@ -32,7 +33,7 @@
 - source: gymflow
   source_id: tinned_cherry_tomatoes_400g
   name: Cherry Tomatoes, tinned (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 25
   protein_per_100g: 1.2
@@ -47,7 +48,7 @@
 - source: gymflow
   source_id: tinned_passata_500g
   name: Passata, sieved tomatoes (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 30
   protein_per_100g: 1.4
@@ -62,7 +63,7 @@
 - source: gymflow
   source_id: tinned_tomato_puree_15g
   name: Tomato Purée (1 tbsp/15g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 90
   protein_per_100g: 5
@@ -108,7 +109,7 @@
 - source: gymflow
   source_id: tinned_cannellini_beans_400g
   name: Cannellini Beans, tinned (drained, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 110
   protein_per_100g: 7
@@ -123,7 +124,7 @@
 - source: gymflow
   source_id: tinned_butter_beans_400g
   name: Butter Beans, tinned (drained, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 96
   protein_per_100g: 6
@@ -138,7 +139,7 @@
 - source: gymflow
   source_id: tinned_black_beans_400g
   name: Black Beans, tinned (drained, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 132
   protein_per_100g: 8.9
@@ -153,7 +154,7 @@
 - source: gymflow
   source_id: tinned_pinto_beans_400g
   name: Pinto Beans, tinned (drained, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 110
   protein_per_100g: 7
@@ -168,7 +169,7 @@
 - source: gymflow
   source_id: tinned_mixed_beans_400g
   name: Mixed Beans Salad, tinned (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 90
   protein_per_100g: 6
@@ -183,7 +184,7 @@
 - source: gymflow
   source_id: tinned_borlotti_beans_400g
   name: Borlotti Beans, tinned (drained, per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 105
   protein_per_100g: 7
@@ -228,7 +229,7 @@
 - source: gymflow
   source_id: tinned_tuna_oil_drained_80g
   name: Tuna in Sunflower Oil, drained (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 200
   protein_per_100g: 28
@@ -244,7 +245,7 @@
 - source: gymflow
   source_id: tinned_tuna_brine_drained_80g
   name: Tuna in Brine, drained (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 116
   protein_per_100g: 26
@@ -260,7 +261,7 @@
 - source: gymflow
   source_id: tinned_tuna_mayonnaise_185g
   name: Tuna Mayonnaise (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 220
   protein_per_100g: 13
@@ -276,7 +277,7 @@
 - source: gymflow
   source_id: tinned_pink_salmon_213g
   name: Pink Salmon, tinned (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 145
   protein_per_100g: 22
@@ -292,7 +293,7 @@
 - source: gymflow
   source_id: tinned_red_salmon_213g
   name: Red Salmon, tinned (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 165
   protein_per_100g: 25
@@ -308,7 +309,7 @@
 - source: gymflow
   source_id: tinned_mackerel_tomato_125g
   name: Mackerel in Tomato Sauce (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 180
   protein_per_100g: 17
@@ -324,7 +325,7 @@
 - source: gymflow
   source_id: tinned_kippers_smoked_125g
   name: Kippers in Brine, tinned (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 226
   protein_per_100g: 18
@@ -372,7 +373,7 @@
 - source: gymflow
   source_id: tinned_spaghetti_hoops_400g
   name: Spaghetti Hoops in Tomato Sauce (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 60
   protein_per_100g: 2
@@ -388,7 +389,7 @@
 - source: gymflow
   source_id: tinned_mushy_peas_300g
   name: Mushy Peas, tinned (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 80
   protein_per_100g: 5
@@ -403,7 +404,7 @@
 - source: gymflow
   source_id: tinned_creamed_corn_400g
   name: Creamed Corn, tinned (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 75
   protein_per_100g: 2
@@ -418,7 +419,7 @@
 - source: gymflow
   source_id: tinned_coconut_milk_400ml
   name: Coconut Milk, tinned (per 100ml)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 200
   protein_per_100g: 2
@@ -433,7 +434,7 @@
 - source: gymflow
   source_id: tinned_pineapple_chunks_juice
   name: Pineapple Chunks in Juice (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 60
   protein_per_100g: 0.4
@@ -448,7 +449,7 @@
 - source: gymflow
   source_id: tinned_peaches_juice
   name: Peach Slices in Juice (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 50
   protein_per_100g: 0.5
@@ -463,7 +464,7 @@
 - source: gymflow
   source_id: tinned_pears_juice
   name: Pear Halves in Juice (per 100g)
-  brand: Generic
+  brand: ''
   region_codes: gb
   kcal_per_100g: 48
   protein_per_100g: 0.3
