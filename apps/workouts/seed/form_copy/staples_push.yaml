@@ -1,0 +1,147 @@
+# Staple lift form copy — pushing patterns (chest, shoulders, triceps).
+
+- name: Bench Press
+  form_description: |
+    Lie back with your eyes directly under the bar. Plant your feet firmly. Pinch your shoulder blades together and tuck them down — that gives you a stable shelf to press from. Grip width should put your forearms vertical at the bottom. Unrack, lower the bar to your lower chest with a controlled tempo, and press it back up in a slight arc towards your eyes.
+  common_mistakes: |
+    - Bar bouncing off the chest
+    - Elbows flaring 90 degrees from the body — tuck them to about 45 to 70
+    - Lifting the bum off the bench (some leg drive is fine, lifting fully off is not)
+    - Wrists bent back — keep them stacked over the elbows
+    - Asymmetric press (one side rises faster than the other)
+  breathing_cues: |
+    Big breath in at the top, hold through the descent and the bottom of the press, exhale once you're past the sticking point.
+
+- name: Incline Bench Press
+  form_description: |
+    Set the bench around 30 to 45 degrees — too steep and it becomes an overhead press. Same setup as the flat bench: feet planted, shoulder blades pinched and tucked. Lower the bar to the upper chest just below the collarbone, press it back up in a straight line.
+  common_mistakes: |
+    - Bench set too steep (kills upper chest engagement)
+    - Bar drifting too high towards the throat
+    - Losing the upper-back arch
+  breathing_cues: |
+    Inhale at the top, hold through the lift, exhale at lockout.
+
+- name: Dumbbell Bench Press
+  form_description: |
+    Sit with the dumbbells on your knees, then kick them back as you lie down — saves your shoulders from a heavy clean. Press them up over the chest, palms forward. Lower until the dumbbells are at chest level with elbows around 45 to 70 degrees from the body. Press back up.
+  common_mistakes: |
+    - Dumbbells crashing together at the top (you can lightly touch them, not slam)
+    - Going too deep and stretching the front delt unhappily
+    - Pressing in a wide arc rather than over the chest
+  breathing_cues: |
+    Inhale on the descent, exhale on the press.
+
+- name: Incline Dumbbell Press
+  form_description: |
+    Bench at 30 to 45 degrees. Get the dumbbells into position with the knee-kick technique. Press them up over the upper chest, lower under control to chest level. Same elbow position as the flat dumbbell press.
+  common_mistakes: |
+    - Bench too steep
+    - Pressing dumbbells out wide instead of over the upper chest
+    - Bouncing reps
+  breathing_cues: |
+    Inhale down, exhale up.
+
+- name: Push-Up
+  form_description: |
+    Hands roughly shoulder-width or slightly wider, fingers spread. Brace the core so your body is one straight line from heels to head. Lower until your chest is just off the floor, elbows tucked at about 45 degrees. Press back up without letting the hips sag or pike.
+  common_mistakes: |
+    - Hips sagging (lower back takes it)
+    - Hips piking up (turns into a downward dog)
+    - Elbows flaring out 90 degrees from the body
+    - Cutting depth short
+  breathing_cues: |
+    Inhale on the descent, exhale on the press.
+
+- name: Cable Chest Fly
+  form_description: |
+    Set the cable handles at chest height, take a small split stance, lean slightly forward. Start with arms wide, slight bend in the elbows, palms facing forward. Bring the handles together in a hugging-a-tree arc until they meet in front of your chest. Squeeze, then control the return all the way back into a stretch.
+  common_mistakes: |
+    - Bending the elbows like a press (bicep takes it)
+    - Cutting the stretch short on the return
+    - Standing fully upright (less chest engagement)
+  breathing_cues: |
+    Inhale as you stretch, exhale as you bring the handles together.
+
+- name: Overhead Press
+  form_description: |
+    Bar at upper-chest height, grip just outside shoulder-width. Step in, set the bar across the front delts. Take a big breath, brace, then press straight up. As the bar passes your face, push your head slightly forward so the bar finishes directly over your shoulders, ears, and hips.
+  common_mistakes: |
+    - Pressing in front of the body — sticks at the head and you grind it
+    - Too much lower-back arch
+    - Knees bending (turns it into a push press)
+    - Letting the bar drift too far forward as you press up
+  breathing_cues: |
+    Big breath in and brace. Hold through the press, exhale at lockout.
+
+- name: Seated Dumbbell Press
+  form_description: |
+    Sit upright with the back pad set to 90 degrees or just shy. Dumbbells at shoulder height, palms forward. Press them up and slightly together so they meet near the top without crashing. Lower with control until the dumbbells are level with your ears.
+  common_mistakes: |
+    - Pressing them too far forward (shoulders pull forward)
+    - Slamming the dumbbells together at the top
+    - Cutting depth short — get them down to ear level
+    - Arching the lower back excessively
+  breathing_cues: |
+    Inhale at the bottom, exhale on the press.
+
+- name: Lateral Raise
+  form_description: |
+    Stand tall with a dumbbell in each hand, slight bend in the elbows. Lead with your elbows — not your hands — and lift the dumbbells out to the sides until they're roughly level with your shoulders. Brief pause, then lower with control. Keep the wrist neutral, not tipping.
+  common_mistakes: |
+    - Going way above shoulder height — traps take over
+    - Swinging with the body
+    - Using too much weight (turns into a partial)
+    - Wrist tipping like pouring out a jug — rotate slightly so the pinky leads
+  breathing_cues: |
+    Exhale as you raise, inhale as you lower.
+
+- name: Cable Lateral Raise
+  form_description: |
+    Pulley set low. Stand side-on with the cable behind you, handle in the hand furthest from the machine. Slight elbow bend, lift the arm out to the side until it's roughly shoulder height. Slow controlled return through a full stretch.
+  common_mistakes: |
+    - Standing too close to the cable (loses tension at the bottom)
+    - Lifting too high (traps)
+    - Yanking with the body
+  breathing_cues: |
+    Exhale up, inhale down.
+
+- name: Rear Delt Fly
+  form_description: |
+    Hinge forward at the hips with a flat back, dumbbells hanging down. Slight bend in the elbows. Lift the dumbbells out to the sides — leading with your elbows, not your hands — until they're level with your shoulders. Squeeze the rear delts and shoulder blades briefly, lower with control.
+  common_mistakes: |
+    - Standing too upright (turns it into a row)
+    - Using momentum
+    - Lifting more with the traps than the rear delts
+  breathing_cues: |
+    Exhale as you raise, inhale as you lower.
+
+- name: Cable Tricep Pushdown
+  form_description: |
+    Pulley set high, rope or straight bar attached. Tuck your elbows close to your sides and keep them pinned there. Push the handle down by extending only at the elbow until your arms are straight and triceps are squeezed hard. Slow controlled return — no further than 90 degrees at the top, you want to keep tension.
+  common_mistakes: |
+    - Elbows flaring forward (shoulders take over)
+    - Leaning into it with the upper body
+    - Using too much weight and turning it into a half-rep
+  breathing_cues: |
+    Exhale on the push, inhale on the return.
+
+- name: Overhead Tricep Extension
+  form_description: |
+    Stand or sit with a dumbbell held overhead, both hands cupping under the top end. Keep your elbows close to your ears. Lower the dumbbell behind your head by bending only at the elbows. When you feel a deep tricep stretch, reverse and extend back up without letting the elbows flare.
+  common_mistakes: |
+    - Elbows flaring out wide
+    - Cutting the stretch short
+    - Arching the lower back as you extend
+  breathing_cues: |
+    Inhale on the way down, exhale on the extension.
+
+- name: Skullcrusher
+  form_description: |
+    Lie flat on a bench with an EZ-bar held above your chest, arms straight. Keep the upper arms still and pointing roughly straight up. Bend at the elbows to lower the bar towards your forehead — or just past it for more stretch — then extend back up.
+  common_mistakes: |
+    - Letting the upper arms drift forward (turns into a press)
+    - Flaring the elbows out wide
+    - Going too heavy and stalling reps
+  breathing_cues: |
+    Inhale on the descent, exhale on the extension.

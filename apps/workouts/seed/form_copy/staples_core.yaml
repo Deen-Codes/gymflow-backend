@@ -1,0 +1,95 @@
+# Staple lift form copy — core / abs.
+
+- name: Plank
+  form_description: |
+    Forearms on the floor parallel to each other, elbows under your shoulders. Toes on the floor, body in one straight line from heels to head. Squeeze your glutes and brace your abs as if bracing for a punch. Hold without letting the hips sag or pike up.
+  common_mistakes: |
+    - Hips sagging (lower back takes it)
+    - Hips piking up (turns into a downward dog)
+    - Holding the breath
+    - Looking up — neutral neck only, eyes at the floor a few inches in front of your hands
+  breathing_cues: |
+    Breathe shallow but steady through the diaphragm — don't hold your breath. Brace through your core continuously.
+
+- name: Hanging Leg Raise
+  form_description: |
+    Hang from a pull-up bar with shoulders packed down (not loose-shrugged). Keep your legs straight and lift them up by bending at the hips until they're parallel to the floor — or higher if you can keep them straight. Lower with control without swinging.
+  common_mistakes: |
+    - Bending the knees to cheat the lift
+    - Swinging the body for momentum
+    - Cutting the lower portion short (full extension at the bottom)
+    - Shoulders shrugging up — keep them packed
+  breathing_cues: |
+    Exhale as you lift, inhale as you lower.
+
+- name: Cable Crunch
+  form_description: |
+    Pulley set high, rope attachment. Kneel facing the cable, hold the rope at the sides of your head — like wearing headphones. Crunch down by curling your spine and bringing your elbows towards your knees. Lead with your abs, not your hips. Squeeze hard at the bottom, slow return.
+  common_mistakes: |
+    - Hinging at the hips instead of crunching the abs
+    - Pulling with the arms
+    - Cutting reps short
+    - Not staying in a stable kneeling position
+  breathing_cues: |
+    Exhale on the crunch, inhale on the return.
+
+- name: Dead Bug
+  form_description: |
+    Lie on your back with arms straight up over your shoulders and knees bent 90 degrees over your hips. Lower-back pressed firmly into the floor — that's the key. Slowly extend opposite arm and leg towards the floor without losing the lower-back contact. Return and switch sides.
+  common_mistakes: |
+    - Lower back lifting off the floor (defeats the point)
+    - Moving too fast
+    - Holding breath
+  breathing_cues: |
+    Inhale at the centre, exhale slowly as you extend out.
+
+- name: Bird Dog
+  form_description: |
+    On all fours, hands under shoulders and knees under hips. Brace your core. Slowly extend opposite arm and leg until both are straight and parallel to the floor — no hip rotation, body stays square. Pause briefly, return, switch.
+  common_mistakes: |
+    - Hips rotating as you extend (one side rises)
+    - Lower back arching as the leg goes back
+    - Speeding through the rep
+  breathing_cues: |
+    Exhale as you extend, inhale as you return.
+
+- name: Pallof Press
+  form_description: |
+    Cable set chest-high, stand side-on to the machine. Grip the handle with both hands at your chest. The cable wants to twist you — your job is to resist. Press the handle straight out away from your chest, hold for a beat, then bring it back. The whole core fights to keep you square.
+  common_mistakes: |
+    - Standing too close to the cable (no resistance)
+    - Letting the torso twist as you press out
+    - Pressing too fast
+  breathing_cues: |
+    Inhale before you press, exhale slowly through the press.
+
+- name: Hollow Hold
+  form_description: |
+    Lie on your back. Press your lower back firmly into the floor and lift your shoulders, head, and feet a few inches off — your body should look like a banana. Arms can be at your sides or extended overhead for harder. Hold without letting the lower back lift up.
+  common_mistakes: |
+    - Lower back lifting off (you're not braced enough)
+    - Lifting too high (turns into a sit-up hold)
+    - Holding breath
+  breathing_cues: |
+    Shallow steady breath through the diaphragm. Don't hold.
+
+- name: Russian Twist
+  form_description: |
+    Sit with your knees bent and feet just off the floor (or on the floor for easier). Lean back slightly so your torso is at about 45 degrees, abs braced. Hold a weight or just clasp your hands. Rotate your torso side to side, tapping the weight to the floor next to each hip.
+  common_mistakes: |
+    - Just swinging the arms — torso has to rotate
+    - Rounding the lower back
+    - Going too fast (loses the brace)
+  breathing_cues: |
+    Steady breathing — exhale on each rotation.
+
+- name: Side Plank
+  form_description: |
+    Lie on your side, forearm on the floor with elbow under the shoulder. Stack your feet. Lift your hips so your body forms a straight line from feet to head. Squeeze your glutes, brace the obliques. Hold. Switch sides.
+  common_mistakes: |
+    - Hips sagging
+    - Body folding forward at the hips
+    - Shoulder shrugging up
+    - Looking down at the floor — keep a neutral neck
+  breathing_cues: |
+    Steady breathing through the diaphragm. Don't hold.

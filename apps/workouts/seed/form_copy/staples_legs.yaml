@@ -1,0 +1,179 @@
+# Staple lift form copy — leg movements.
+# Hand-curated UK gym vocabulary, conversational coaching tone
+# (matches the FORM-VOICE pass — calm coach, not jargon-heavy).
+
+- name: Back Squat
+  form_description: |
+    Set the bar across your upper traps, not on your neck. Step out of the rack with a tight core and feet roughly shoulder-width apart, toes turned out about 15 degrees. Take a big breath in, brace as if bracing for a punch, then sit down and back at the same time — knees tracking over your toes. Hit at least parallel (hip crease level with the top of the knee), then drive the floor away through mid-foot.
+  common_mistakes: |
+    - Knees caving inward on the way up
+    - Heels lifting off the floor (suggests ankle mobility limit or stance too narrow)
+    - Looking up at the ceiling — keeps a neutral neck instead
+    - Bouncing out of the bottom rather than controlling the descent
+    - Bar drifting onto the neck instead of sitting on the traps
+  breathing_cues: |
+    Take a big breath in at the top and brace before you descend. Hold the breath through the bottom and the hardest part of the lift, then exhale once you're past the sticking point.
+
+- name: Front Squat
+  form_description: |
+    Take a clean grip with the bar resting on the front of your shoulders, elbows pointed up and high. The bar sits on your delts — your hands are just there to keep it in place. Feet shoulder-width, take a deep breath, and squat straight down with an upright torso. Drive elbows up the whole way to stop the bar from rolling forward.
+  common_mistakes: |
+    - Elbows dropping (bar tips forward and you fold)
+    - Heels coming up
+    - Cheating into a leaning back-squat-style descent
+    - Wrist pain from gripping too tight — the rack is shoulder support, not hand support
+  breathing_cues: |
+    Brace at the top, hold through the bottom, exhale on the way up.
+
+- name: Goblet Squat
+  form_description: |
+    Hold a dumbbell or kettlebell vertically against your chest, hands cupping the top. Stand with feet just outside shoulder-width and toes slightly turned out. Squat down between your knees, keeping the chest tall and the elbows pointing down — they should brush the inside of your knees at the bottom.
+  common_mistakes: |
+    - Letting the elbows drift outside the knees (rounds the upper back)
+    - Not going deep enough — full hip crease below knee is the goal
+    - Heels lifting off
+    - Knees collapsing inward
+  breathing_cues: |
+    Inhale on the way down, exhale as you stand up.
+
+- name: Bulgarian Split Squat
+  form_description: |
+    Plant your back foot on a bench behind you, laces down. Front foot far enough forward that when you sink, your front knee stops over your ankle, not way past your toes. Keep your torso slightly forward, drop straight down, and drive through the heel of the front foot. The back leg is for balance, not for pushing off.
+  common_mistakes: |
+    - Front foot too close — knee shoots way past toes and the quad takes everything
+    - Pushing off the back foot instead of driving through the front
+    - Letting the back knee crash into the floor
+    - Torso too upright, which kills the glute stretch
+  breathing_cues: |
+    Inhale on the descent, exhale as you drive up.
+
+- name: Walking Lunge
+  form_description: |
+    Step forward into a long stride. Lower until your back knee is just above the floor and your front shin is roughly vertical. Drive through the front heel to come up, then step the back foot forward into the next rep without bringing your feet together. Stay tall through the chest and don't let the front knee dive in.
+  common_mistakes: |
+    - Steps too short — front knee shoots past toes
+    - Stepping wide like a tightrope and losing balance
+    - Pushing off the back foot instead of driving up through the front
+    - Looking down (your torso follows your eyes)
+  breathing_cues: |
+    Inhale as you step and descend, exhale as you stand up.
+
+- name: Conventional Deadlift
+  form_description: |
+    Bar over mid-foot, hip-width stance. Hinge at the hips and bend the knees to grip the bar just outside your shins. Big breath, brace, pull the slack out of the bar — you should feel tension before it leaves the floor. Push the floor away with your legs while keeping the bar dragging up your shins. Lockout is a hip extension, not a lean back.
+  common_mistakes: |
+    - Bar drifting away from the body (kills the lift)
+    - Hips shooting up first, turning it into a stiff-leg
+    - Rounding the lower back at lift-off
+    - Hyperextending at the top — stand tall, don't lean
+    - Letting the chin tuck down or up; keep a neutral neck
+  breathing_cues: |
+    Big breath in at the bottom, brace, hold it through the lift, exhale only at the top.
+
+- name: Romanian Deadlift
+  form_description: |
+    Bar at hip level, soft bend in the knees, push your hips back until you feel a deep stretch in the hamstrings. The bar travels straight down close to your legs — you're not squatting, you're hinging. Lower until you feel the stretch (usually mid-shin), then drive the hips forward to come back up. Keep the back flat the whole way.
+  common_mistakes: |
+    - Squatting down instead of hinging back
+    - Rounding the lower back when chasing depth
+    - Bar drifting away from the legs
+    - Hyperextending at the top
+    - Not actually loading the hamstrings (looking for a stretch that isn't there)
+  breathing_cues: |
+    Inhale at the top and brace as you hinge down. Exhale on the way up.
+
+- name: Sumo Deadlift
+  form_description: |
+    Take a wide stance with toes turned out 30–45 degrees. Bar over mid-foot, grip inside your knees. Lower the hips by spreading the floor outwards with your feet — knees track out over the toes. Big breath, brace, push the legs into the floor, and stand it up keeping the chest tall. Lockout is hips through, not a lean back.
+  common_mistakes: |
+    - Stance too narrow (loses the leverage advantage)
+    - Knees caving in instead of tracking out
+    - Hips rising before the bar moves — rounds the back
+    - Pulling with the arms instead of pushing the floor away
+  breathing_cues: |
+    Inhale at the bottom, brace, hold through the pull, exhale at lockout.
+
+- name: Hip Thrust
+  form_description: |
+    Sit with your upper back against a bench, feet planted hip-width and shins roughly vertical at the top. Bar across your hips, padded if needed. Drive through your heels and finish with a hard glute squeeze — knees bent 90 degrees, ribs down, no excessive lower-back arch. Lower under control until the bar is almost at the floor.
+  common_mistakes: |
+    - Going too deep at the top (lower-back arch instead of hip extension)
+    - Feet too far forward — turns into a leg curl
+    - Feet too close — turns into a quad-dominant lift
+    - Rushing reps without squeezing the glutes hard at the top
+    - Letting the chin point at the ceiling
+  breathing_cues: |
+    Inhale at the bottom, exhale forcefully as you squeeze the glutes at the top.
+
+- name: Glute Bridge
+  form_description: |
+    Lie on your back, feet flat and pulled close so your shins are nearly vertical when your hips are up. Drive through your heels, lift your hips until your body forms a straight line from shoulders to knees. Squeeze the glutes hard at the top. Lower under control without letting the lower back take over.
+  common_mistakes: |
+    - Driving with the lower back instead of the glutes
+    - Feet too far forward (hamstrings take it)
+    - Coming up too high and arching the lower back
+    - Rushing reps — slow and squeeze
+  breathing_cues: |
+    Inhale at the bottom, exhale and squeeze at the top.
+
+- name: Leg Press
+  form_description: |
+    Sit fully into the seat, feet roughly shoulder-width on the platform, mid-foot. Lower the weight under control until your knees hit roughly 90 degrees. Push back up through your mid-foot without locking the knees out at the top — keep tension on the quads.
+  common_mistakes: |
+    - Feet too low on the platform (knees come over the toes hard)
+    - Lifting your hips off the seat at the bottom (rounds the lower back)
+    - Locking the knees out at the top
+    - Going too deep and losing back contact with the seat
+  breathing_cues: |
+    Inhale on the descent, exhale on the press.
+
+- name: Leg Extension
+  form_description: |
+    Sit with the pad just above your ankles, knees aligned with the pivot point. Extend your legs all the way to a hard quad squeeze at the top — pause for a second. Lower under control. Don't slam the stack.
+  common_mistakes: |
+    - Using too much weight and swinging
+    - Cutting reps short and not getting the squeeze
+    - Knees flaring out or in
+    - Lifting the bum off the seat
+  breathing_cues: |
+    Exhale as you extend, inhale as you lower.
+
+- name: Lying Leg Curl
+  form_description: |
+    Lie face-down with the pad just above your heels. Squeeze the hamstrings to curl your heels towards your bum. Pause briefly at the peak, then lower under control through a full stretch.
+  common_mistakes: |
+    - Hips lifting off the bench
+    - Cutting the range short at the top OR the bottom
+    - Using momentum (kicking the legs up)
+  breathing_cues: |
+    Exhale on the curl, inhale on the lower.
+
+- name: Seated Leg Curl
+  form_description: |
+    Adjust the seat so your knees line up with the machine's pivot. Lap pad locked in, ankle pad just above the heels. Curl the heels under and back, squeeze the hamstrings hard, control the return.
+  common_mistakes: |
+    - Hips lifting up to use momentum
+    - Letting the weight stack slam between reps
+    - Not getting full extension at the top
+  breathing_cues: |
+    Exhale on the curl, inhale on the return.
+
+- name: Standing Calf Raise
+  form_description: |
+    Place the balls of your feet on the platform with your heels hanging off. Drive up onto your toes as high as you can, squeeze the calves at the peak for a second, then lower into a deep stretch — heels well below the platform.
+  common_mistakes: |
+    - Half-reps at the top
+    - Bouncing out of the bottom
+    - Bending the knees to use the quads
+  breathing_cues: |
+    Exhale on the way up, inhale on the way down.
+
+- name: Seated Calf Raise
+  form_description: |
+    Sit with knees bent 90 degrees and the pad just above your knees. Balls of the feet on the platform. Push up onto your toes, squeeze, and lower for a deep stretch. This loads the soleus more than standing variants.
+  common_mistakes: |
+    - Short range
+    - Pad too far forward — slips off the knees
+    - Rushing reps
+  breathing_cues: |
+    Exhale up, inhale down.

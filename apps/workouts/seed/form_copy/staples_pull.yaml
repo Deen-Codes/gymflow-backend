@@ -1,0 +1,109 @@
+# Staple lift form copy — pulling patterns (back, biceps, rear delts).
+
+- name: Pull-Up
+  form_description: |
+    Hands roughly shoulder-width on the bar, palms forward. Hang with arms fully extended but shoulders pulled down and back — not loose-shrugged. Pull yourself up by driving your elbows down and back until your chin clears the bar. Lower with control until your arms are fully extended again.
+  common_mistakes: |
+    - Kipping (hip swing) when not training kipping pull-ups
+    - Cutting reps short — chin clears the bar at the top, full extension at the bottom
+    - Shoulders shrugging up rather than packed down
+    - Pulling with the biceps instead of the lats
+  breathing_cues: |
+    Exhale as you pull up, inhale as you lower.
+
+- name: Lat Pulldown
+  form_description: |
+    Sit with the thigh pad locked. Wide grip, palms forward. Lean back slightly and pull the bar to your upper chest by driving your elbows down and back. Squeeze the lats hard at the bottom for a beat. Slow return through a full lat stretch.
+  common_mistakes: |
+    - Pulling the bar behind the neck (shoulder impingement risk)
+    - Leaning too far back, turning it into a row
+    - Cutting the stretch short at the top
+    - Pulling with the biceps instead of the lats
+  breathing_cues: |
+    Exhale as you pull, inhale as you return.
+
+- name: Barbell Row
+  form_description: |
+    Hinge at the hips with a flat back, knees soft, torso roughly 45 degrees. Bar hangs in your hands at shin height. Pull the bar to your lower chest or upper abs by driving your elbows back. Squeeze the shoulder blades together, lower under control.
+  common_mistakes: |
+    - Standing too upright (turns into an upright row)
+    - Rounded back at the bottom
+    - Using momentum and bouncing the bar off the ground
+    - Pulling to the throat instead of the lower chest
+  breathing_cues: |
+    Inhale at the bottom, exhale on the pull.
+
+- name: Single-Arm Dumbbell Row
+  form_description: |
+    Place one knee and the same-side hand on a bench. Other foot planted, dumbbell in the free hand hanging straight down. Keep your back flat. Row the dumbbell up to your hip by driving your elbow back. Squeeze the lat at the top, lower with control through a full stretch.
+  common_mistakes: |
+    - Twisting the torso for cheat reps
+    - Pulling to the chest rather than the hip
+    - Rounding the lower back
+    - Not getting the full stretch at the bottom
+  breathing_cues: |
+    Inhale at the bottom, exhale on the pull.
+
+- name: Seated Cable Row
+  form_description: |
+    Feet on the platform, knees slightly bent. Sit tall with a flat back, grip the handle. Pull the handle to your lower abs/hip by driving your elbows back. Squeeze the shoulder blades together for a beat. Slow controlled return — let your arms straighten and feel the stretch.
+  common_mistakes: |
+    - Rocking the torso back and forth using momentum
+    - Pulling too high (to the chest instead of belly)
+    - Not getting the stretch at the front
+    - Rounding the lower back
+  breathing_cues: |
+    Inhale at the front, exhale on the pull.
+
+- name: Chest-Supported Row
+  form_description: |
+    Lie chest-down on an incline bench set around 45 degrees. Dumbbells hanging straight down. Row both up to your hips by driving the elbows back, squeezing the shoulder blades. Lower under control. The bench takes the lower-back work out so you can really focus the pull.
+  common_mistakes: |
+    - Lifting the chest off the bench to swing the weight
+    - Rowing too high (to the chest instead of the hip)
+    - Cutting the stretch short
+  breathing_cues: |
+    Exhale on the row, inhale on the lower.
+
+- name: Face Pull
+  form_description: |
+    Pulley set just above face height, rope attachment. Grip the rope with palms facing each other. Pull the rope towards your face, separating your hands as you pull so your knuckles end up near your ears. External rotation at the shoulder is the goal. Squeeze the rear delts and upper back.
+  common_mistakes: |
+    - Pulling to the chest instead of the face
+    - Not separating the hands at the end
+    - Using too much weight (it should be light to moderate)
+    - Letting the elbows drop low
+  breathing_cues: |
+    Exhale as you pull, inhale as you return.
+
+- name: Barbell Curl
+  form_description: |
+    Stand tall with a barbell at thigh height, hands shoulder-width, palms forward. Tuck your elbows in by your sides — keep them pinned there. Curl the bar up by bending only at the elbows, squeeze the biceps hard at the top, then lower with control through a full stretch.
+  common_mistakes: |
+    - Swinging with the lower back to lift heavier
+    - Elbows drifting forward (turns into a half-front-raise)
+    - Cutting the bottom range short
+    - Using too much wrist
+  breathing_cues: |
+    Exhale on the curl, inhale on the lower.
+
+- name: Dumbbell Curl
+  form_description: |
+    Stand or sit with a dumbbell in each hand, palms facing forward. Elbows pinned to your sides. Curl one or both dumbbells up by bending only at the elbow. Squeeze the bicep at the top, lower with control.
+  common_mistakes: |
+    - Letting the elbows drift forward
+    - Half-reps without the full stretch at the bottom
+    - Swinging
+    - Wrist bending forward instead of staying neutral
+  breathing_cues: |
+    Exhale on the curl, inhale on the lower.
+
+- name: Hammer Curl
+  form_description: |
+    Same setup as a regular dumbbell curl but with a neutral grip — palms facing each other the entire rep. Elbows pinned. Curl up, squeeze, slow lower. Hits the brachialis and brachioradialis along with the bicep.
+  common_mistakes: |
+    - Rotating the wrists to make it a regular curl
+    - Swinging
+    - Elbows drifting forward
+  breathing_cues: |
+    Exhale up, inhale down.
