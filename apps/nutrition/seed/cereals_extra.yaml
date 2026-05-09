@@ -1,0 +1,531 @@
+# cereals_extra.yaml — branded cereal variants beyond the base set: Kellogg's Special K/Crunchy Nut/Krave/Honey Loops/Fruit & Fibre, Nestlé Cheerios variants/Curiously Cinnamon/Cookie Crisp/Lucky Charms/Shreddies, Honey Monster, Jordans Country Crisp/muesli/Frusli, Dorset, Quaker sachets, Ready Brek, Bear, Lizi's, Tesco own.
+- source: gymflow
+  source_id: kelloggs_special_k_red_berries_30g
+  name: Kellogg's Special K Red Berries (30g)
+  brand: Kellogg's
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 9
+  carbs_per_100g: 75
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,milk
+- source: gymflow
+  source_id: kelloggs_crunchy_nut_honey_30g
+  name: Kellogg's Crunchy Nut Honey & Nut Cornflakes (30g)
+  brand: Kellogg's
+  region_codes: gb
+  kcal_per_100g: 395
+  protein_per_100g: 6
+  carbs_per_100g: 80
+  fat_per_100g: 5
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,tree_nuts,milk
+- source: gymflow
+  source_id: kelloggs_crunchy_nut_chocolate_30g
+  name: Kellogg's Crunchy Nut Chocolate (30g)
+  brand: Kellogg's
+  region_codes: gb
+  kcal_per_100g: 405
+  protein_per_100g: 7
+  carbs_per_100g: 78
+  fat_per_100g: 6
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,soy
+- source: gymflow
+  source_id: kelloggs_coco_pops_chocos_30g
+  name: Kellogg's Coco Pops Chocos (30g)
+  brand: Kellogg's
+  region_codes: gb
+  kcal_per_100g: 386
+  protein_per_100g: 6
+  carbs_per_100g: 82
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: kelloggs_frosted_mini_wheats_40g
+  name: Kellogg's Frosted Mini-Wheats (40g)
+  brand: Kellogg's
+  region_codes: gb
+  kcal_per_100g: 358
+  protein_per_100g: 11
+  carbs_per_100g: 71
+  fat_per_100g: 1.5
+  serving_grams: 40
+  serving_label: 1 grams (40 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast,fibre
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: kelloggs_krave_chocolate_hazelnut_30g
+  name: Kellogg's Krave Chocolate Hazelnut (30g)
+  brand: Kellogg's
+  region_codes: gb
+  kcal_per_100g: 415
+  protein_per_100g: 7
+  carbs_per_100g: 70
+  fat_per_100g: 12
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,soy,tree_nuts
+- source: gymflow
+  source_id: kelloggs_honey_loops_30g
+  name: Kellogg's Honey Loops (30g)
+  brand: Kellogg's
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 8
+  carbs_per_100g: 79
+  fat_per_100g: 2.5
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: kelloggs_fruit_fibre_45g
+  name: Kellogg's Fruit & Fibre (45g)
+  brand: Kellogg's
+  region_codes: gb
+  kcal_per_100g: 343
+  protein_per_100g: 8
+  carbs_per_100g: 70
+  fat_per_100g: 4
+  serving_grams: 45
+  serving_label: 1 grams (45 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast,fibre
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,tree_nuts
+- source: gymflow
+  source_id: nestle_cheerios_honey_30g
+  name: Nestlé Honey Cheerios (30g)
+  brand: Nestlé
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 8
+  carbs_per_100g: 78
+  fat_per_100g: 3.5
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: nestle_cheerios_multigrain_30g
+  name: Nestlé Multi-Grain Cheerios (30g)
+  brand: Nestlé
+  region_codes: gb
+  kcal_per_100g: 376
+  protein_per_100g: 8.5
+  carbs_per_100g: 75
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast,fibre
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: nestle_curiously_cinnamon_30g
+  name: Nestlé Curiously Cinnamon (30g)
+  brand: Nestlé
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 5
+  carbs_per_100g: 72
+  fat_per_100g: 11
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy
+- source: gymflow
+  source_id: nestle_cookie_crisp_30g
+  name: Nestlé Cookie Crisp (30g)
+  brand: Nestlé
+  region_codes: gb
+  kcal_per_100g: 382
+  protein_per_100g: 6
+  carbs_per_100g: 80
+  fat_per_100g: 3.5
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,milk,soy
+- source: gymflow
+  source_id: nestle_lucky_charms_30g
+  name: Nestlé Lucky Charms (30g)
+  brand: Nestlé
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 7
+  carbs_per_100g: 79
+  fat_per_100g: 3.5
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: nestle_shreddies_honey_40g
+  name: Nestlé Honey Shreddies (40g)
+  brand: Nestlé
+  region_codes: gb
+  kcal_per_100g: 364
+  protein_per_100g: 9
+  carbs_per_100g: 75
+  fat_per_100g: 1.7
+  serving_grams: 40
+  serving_label: 1 grams (40 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast,fibre
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: nestle_shreddies_coco_40g
+  name: Nestlé Coco Shreddies (40g)
+  brand: Nestlé
+  region_codes: gb
+  kcal_per_100g: 376
+  protein_per_100g: 8
+  carbs_per_100g: 76
+  fat_per_100g: 3
+  serving_grams: 40
+  serving_label: 1 grams (40 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast,fibre
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,milk,soy
+- source: gymflow
+  source_id: honey_monster_puffs_30g
+  name: Honey Monster Puffs (30g)
+  brand: Honey Monster
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 6
+  carbs_per_100g: 85
+  fat_per_100g: 1.5
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: jordans_country_crisp_strawberries_45g
+  name: Jordans Country Crisp Strawberries (45g)
+  brand: Jordans
+  region_codes: gb
+  kcal_per_100g: 432
+  protein_per_100g: 7
+  carbs_per_100g: 65
+  fat_per_100g: 16
+  serving_grams: 45
+  serving_label: 1 grams (45 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast,granola
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,tree_nuts
+- source: gymflow
+  source_id: jordans_country_crisp_choc_45g
+  name: Jordans Country Crisp Triple Choc (45g)
+  brand: Jordans
+  region_codes: gb
+  kcal_per_100g: 460
+  protein_per_100g: 7
+  carbs_per_100g: 64
+  fat_per_100g: 19
+  serving_grams: 45
+  serving_label: 1 grams (45 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast,granola
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,milk,soy
+- source: gymflow
+  source_id: jordans_super_3_seeds_50g
+  name: Jordans Super Muesli 3 Seeds (50g)
+  brand: Jordans
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 7
+  serving_grams: 50
+  serving_label: 1 grams (50 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast,muesli
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sesame,tree_nuts
+- source: gymflow
+  source_id: jordans_frusli_choc_chip_30g
+  name: Jordans Frusli Chocolate Chip (1 bar)
+  brand: Jordans
+  region_codes: gb
+  kcal_per_100g: 415
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 14
+  serving_grams: 30
+  serving_label: 1 bar (30 g)
+  portion_unit: bar
+  tags: snack,branded,bar,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: dorset_simply_delicious_50g
+  name: Dorset Simply Delicious Muesli (50g)
+  brand: Dorset Cereals
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 9
+  carbs_per_100g: 60
+  fat_per_100g: 9
+  serving_grams: 50
+  serving_label: 1 grams (50 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast,muesli
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,tree_nuts
+- source: gymflow
+  source_id: dorset_super_high_fibre_50g
+  name: Dorset Super High Fibre Muesli (50g)
+  brand: Dorset Cereals
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 11
+  carbs_per_100g: 56
+  fat_per_100g: 8
+  serving_grams: 50
+  serving_label: 1 grams (50 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast,muesli,fibre
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,tree_nuts
+- source: gymflow
+  source_id: dorset_classic_fruity_granola_45g
+  name: Dorset Classic Fruity Granola (45g)
+  brand: Dorset Cereals
+  region_codes: gb
+  kcal_per_100g: 415
+  protein_per_100g: 7
+  carbs_per_100g: 65
+  fat_per_100g: 14
+  serving_grams: 45
+  serving_label: 1 grams (45 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast,granola
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,tree_nuts
+- source: gymflow
+  source_id: quaker_oat_so_simple_golden_syrup_36g
+  name: Quaker Oat So Simple Golden Syrup (1 sachet)
+  brand: Quaker
+  region_codes: gb
+  kcal_per_100g: 372
+  protein_per_100g: 9
+  carbs_per_100g: 67
+  fat_per_100g: 6
+  serving_grams: 36
+  serving_label: 1 portion (36 g)
+  portion_unit: pack
+  tags: cereal,branded,breakfast,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 36
+- source: gymflow
+  source_id: quaker_oat_so_simple_chocolate_36g
+  name: Quaker Oat So Simple Chocolate (1 sachet)
+  brand: Quaker
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 9
+  carbs_per_100g: 65
+  fat_per_100g: 8
+  serving_grams: 36
+  serving_label: 1 portion (36 g)
+  portion_unit: pack
+  tags: cereal,branded,breakfast,grain
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,milk,soy
+  unit_grams: 36
+- source: gymflow
+  source_id: quaker_oat_so_simple_apple_cinnamon_33g
+  name: Quaker Oat So Simple Apple & Cinnamon (1 sachet)
+  brand: Quaker
+  region_codes: gb
+  kcal_per_100g: 365
+  protein_per_100g: 9
+  carbs_per_100g: 67
+  fat_per_100g: 5
+  serving_grams: 33
+  serving_label: 1 portion (33 g)
+  portion_unit: pack
+  tags: cereal,branded,breakfast,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 33
+- source: gymflow
+  source_id: quaker_porridge_pot_30g
+  name: Quaker Porridge Pot (1)
+  brand: Quaker
+  region_codes: gb
+  kcal_per_100g: 390
+  protein_per_100g: 11
+  carbs_per_100g: 64
+  fat_per_100g: 7
+  serving_grams: 57
+  serving_label: 1 portion (57 g)
+  portion_unit: pack
+  tags: cereal,branded,breakfast,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 57
+- source: gymflow
+  source_id: ready_brek_30g
+  name: Ready Brek Original (30g)
+  brand: Ready Brek
+  region_codes: gb
+  kcal_per_100g: 372
+  protein_per_100g: 12
+  carbs_per_100g: 60
+  fat_per_100g: 8
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: bear_alphabites_choco_30g
+  name: Bear Alphabites Choco (30g)
+  brand: Bear
+  region_codes: gb
+  kcal_per_100g: 365
+  protein_per_100g: 7
+  carbs_per_100g: 70
+  fat_per_100g: 5
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast,kids
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: lizis_low_sugar_granola_45g
+  name: Lizi's Low Sugar Granola (45g)
+  brand: Lizi's
+  region_codes: gb
+  kcal_per_100g: 425
+  protein_per_100g: 13
+  carbs_per_100g: 50
+  fat_per_100g: 18
+  serving_grams: 45
+  serving_label: 1 grams (45 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast,granola,low_sugar
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,tree_nuts
+- source: gymflow
+  source_id: tesco_corn_flakes_30g
+  name: Tesco Corn Flakes (30g)
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 7.5
+  carbs_per_100g: 84
+  fat_per_100g: 0.9
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast,supermarket
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: tesco_strawberry_crisp_45g
+  name: Tesco Strawberry Crisp (45g)
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 432
+  protein_per_100g: 7
+  carbs_per_100g: 65
+  fat_per_100g: 16
+  serving_grams: 45
+  serving_label: 1 grams (45 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast,granola,supermarket
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,tree_nuts
+- source: gymflow
+  source_id: tesco_fruit_fibre_45g
+  name: Tesco Fruit & Fibre (45g)
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 343
+  protein_per_100g: 8
+  carbs_per_100g: 70
+  fat_per_100g: 4
+  serving_grams: 45
+  serving_label: 1 grams (45 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast,fibre,supermarket
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,tree_nuts
+- source: gymflow
+  source_id: tesco_choco_hoops_30g
+  name: Tesco Choco Hoops (30g)
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 4
+  carbs_per_100g: 86
+  fat_per_100g: 1
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast,kids,supermarket
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: tesco_honey_nut_corn_flakes_30g
+  name: Tesco Honey Nut Corn Flakes (30g)
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 395
+  protein_per_100g: 6
+  carbs_per_100g: 80
+  fat_per_100g: 5
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: cereal,branded,breakfast,supermarket
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,tree_nuts

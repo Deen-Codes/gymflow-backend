@@ -2866,22 +2866,6 @@
   allergens: ''
   unit_grams: 5
 - source: gymflow
-  source_id: belvita_choc_chip_4
-  name: Belvita Soft Bake Chocolate Chip (4 biscuits)
-  brand: Belvita
-  region_codes: gb
-  kcal_per_100g: 440
-  protein_per_100g: 7
-  carbs_per_100g: 65
-  fat_per_100g: 16
-  serving_grams: 50
-  serving_label: 1 portion (50 g)
-  portion_unit: pack
-  tags: snack,bar,branded,breakfast
-  dietary_compat: vegetarian,pescatarian,halal,kosher
-  allergens: gluten,milk,eggs,soy
-  unit_grams: 50
-- source: gymflow
   source_id: nature_valley_oats_honey_42
   name: Nature Valley Crunchy Oats & Honey
   brand: Nature Valley
@@ -2897,22 +2881,6 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,soy
   unit_grams: 21
-- source: gymflow
-  source_id: eat_natural_almond_apricot
-  name: Eat Natural Almond, Apricot & Yogurt Bar
-  brand: Eat Natural
-  region_codes: gb
-  kcal_per_100g: 460
-  protein_per_100g: 9
-  carbs_per_100g: 50
-  fat_per_100g: 24
-  serving_grams: 50
-  serving_label: 1 bar (50 g)
-  portion_unit: bar
-  tags: snack,bar,branded
-  dietary_compat: vegetarian,pescatarian,halal,kosher
-  allergens: milk,tree_nuts
-  unit_grams: 50
 - source: gymflow
   source_id: tracker_roasted_nut
   name: Tracker Roasted Nut Bar

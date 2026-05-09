@@ -1,0 +1,481 @@
+# sweets_extra.yaml — Maoam Stripes/Pinballs/Kracher, Drumstick lolly/Squashies, Refreshers lemon/chew bar, Chewits, Love Hearts, Parma Violets, sherbet lemons, Werther's Original, Murray Mints, Mint Imperials, Tic Tacs, Sour Patch Kids, Jolly Rancher, Reese's, Tesco own (jelly beans, fizzy mix, strawberries & cream, milk bottles), more Haribo, Roses/Heroes/Milk Tray.
+- source: gymflow
+  source_id: maoam_stripes_30g
+  name: Maoam Stripes (30g)
+  brand: Maoam
+  region_codes: gb
+  kcal_per_100g: 390
+  protein_per_100g: 0.5
+  carbs_per_100g: 90
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: maoam_pinballs_30g
+  name: Maoam Pinballs (30g)
+  brand: Maoam
+  region_codes: gb
+  kcal_per_100g: 365
+  protein_per_100g: 1
+  carbs_per_100g: 80
+  fat_per_100g: 3
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: maoam_kracher_30g
+  name: Maoam Kracher (30g)
+  brand: Maoam
+  region_codes: gb
+  kcal_per_100g: 390
+  protein_per_100g: 0.5
+  carbs_per_100g: 90
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: drumstick_lolly
+  name: Drumstick Lolly (1)
+  brand: Swizzels
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 0.4
+  carbs_per_100g: 90
+  fat_per_100g: 3
+  serving_grams: 11
+  serving_label: 1 piece (11 g)
+  portion_unit: piece
+  tags: snack,confectionery,branded
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 11
+- source: gymflow
+  source_id: drumstick_chew_squashies_30g
+  name: Drumstick Squashies (30g)
+  brand: Swizzels
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 4
+  carbs_per_100g: 78
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded,low_fat
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: refreshers_lemon_30g
+  name: Refreshers Lemon (30g pack)
+  brand: Swizzels
+  region_codes: gb
+  kcal_per_100g: 395
+  protein_per_100g: 0
+  carbs_per_100g: 95
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: refreshers_chew_bar
+  name: Refreshers Chew Bar (1)
+  brand: Swizzels
+  region_codes: gb
+  kcal_per_100g: 395
+  protein_per_100g: 0
+  carbs_per_100g: 95
+  fat_per_100g: 0
+  serving_grams: 14
+  serving_label: 1 bar (14 g)
+  portion_unit: bar
+  tags: snack,confectionery,branded,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 14
+- source: gymflow
+  source_id: chewits_strawberry_pack
+  name: Chewits Strawberry (1 pack)
+  brand: Chewits
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 1
+  carbs_per_100g: 88
+  fat_per_100g: 3
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: chewits_xtreme_30g
+  name: Chewits Xtreme Sour (30g)
+  brand: Chewits
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 1
+  carbs_per_100g: 88
+  fat_per_100g: 3
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: love_hearts_pack
+  name: Love Hearts (1 pack)
+  brand: Swizzels
+  region_codes: gb
+  kcal_per_100g: 390
+  protein_per_100g: 0
+  carbs_per_100g: 99
+  fat_per_100g: 0
+  serving_grams: 39
+  serving_label: 1 portion (39 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 39
+- source: gymflow
+  source_id: parma_violets_pack
+  name: Parma Violets (1 pack)
+  brand: Swizzels
+  region_codes: gb
+  kcal_per_100g: 390
+  protein_per_100g: 0
+  carbs_per_100g: 99
+  fat_per_100g: 0
+  serving_grams: 21
+  serving_label: 1 portion (21 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 21
+- source: gymflow
+  source_id: sherbet_lemons_30g
+  name: Sherbet Lemons (30g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 395
+  protein_per_100g: 0
+  carbs_per_100g: 99
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,confectionery,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: werthers_original_3
+  name: Werther's Original (3 pieces)
+  brand: Werther's
+  region_codes: gb
+  kcal_per_100g: 440
+  protein_per_100g: 1
+  carbs_per_100g: 80
+  fat_per_100g: 13
+  serving_grams: 18
+  serving_label: 1 piece (18 g)
+  portion_unit: piece
+  tags: snack,confectionery,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 6
+- source: gymflow
+  source_id: murray_mints_3
+  name: Murray Mints (3 pieces)
+  brand: Murray
+  region_codes: gb
+  kcal_per_100g: 395
+  protein_per_100g: 0.3
+  carbs_per_100g: 95
+  fat_per_100g: 1
+  serving_grams: 21
+  serving_label: 1 piece (21 g)
+  portion_unit: piece
+  tags: snack,confectionery,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 7
+- source: gymflow
+  source_id: mints_imperials_3
+  name: Mint Imperials (3)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 395
+  protein_per_100g: 0
+  carbs_per_100g: 99
+  fat_per_100g: 0
+  serving_grams: 9
+  serving_label: 1 piece (9 g)
+  portion_unit: piece
+  tags: snack,confectionery,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 3
+- source: gymflow
+  source_id: tic_tacs_30g
+  name: Tic Tacs Mint (30g)
+  brand: Tic Tac
+  region_codes: gb
+  kcal_per_100g: 395
+  protein_per_100g: 0
+  carbs_per_100g: 95
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: sour_patch_kids_30g
+  name: Sour Patch Kids (30g)
+  brand: Sour Patch
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 0.5
+  carbs_per_100g: 80
+  fat_per_100g: 0.5
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: jolly_rancher_30g
+  name: Jolly Rancher Hard Candy (30g)
+  brand: Jolly Rancher
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 0
+  carbs_per_100g: 96
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: reeses_cup_2
+  name: Reese's Peanut Butter Cup (2)
+  brand: Reese's
+  region_codes: gb
+  kcal_per_100g: 530
+  protein_per_100g: 11
+  carbs_per_100g: 50
+  fat_per_100g: 31
+  serving_grams: 42
+  serving_label: 1 piece (42 g)
+  portion_unit: piece
+  tags: snack,confectionery,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,peanuts,soy
+  unit_grams: 21
+- source: gymflow
+  source_id: tesco_jelly_beans_30g
+  name: Tesco Jelly Beans (30g)
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 1
+  carbs_per_100g: 90
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded,supermarket,low_fat
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: tesco_fizzy_mix_30g
+  name: Tesco Fizzy Mix (30g)
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 4
+  carbs_per_100g: 80
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded,supermarket,low_fat
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: tesco_strawberries_cream_30g
+  name: Tesco Strawberries & Cream (30g)
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 4
+  carbs_per_100g: 78
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded,supermarket,low_fat
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: tesco_milk_bottles_30g
+  name: Tesco Milk Bottles (30g)
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 4
+  carbs_per_100g: 78
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded,supermarket,low_fat
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: tesco_kids_jelly_mix_30g
+  name: Tesco Kids' Jelly Mix (30g)
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 4
+  carbs_per_100g: 80
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded,supermarket,kids,low_fat
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: haribo_super_mix_30g
+  name: Haribo Super Mix (30g)
+  brand: Haribo
+  region_codes: gb
+  kcal_per_100g: 340
+  protein_per_100g: 7
+  carbs_per_100g: 76
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded,low_fat
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: haribo_giant_strawbs_30g
+  name: Haribo Giant Strawbs (30g)
+  brand: Haribo
+  region_codes: gb
+  kcal_per_100g: 340
+  protein_per_100g: 7
+  carbs_per_100g: 76
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded,low_fat
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: haribo_cola_bottles_30g
+  name: Haribo Cola Bottles (30g)
+  brand: Haribo
+  region_codes: gb
+  kcal_per_100g: 340
+  protein_per_100g: 7
+  carbs_per_100g: 76
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,confectionery,branded,low_fat
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: roses_chocolate_3
+  name: Roses Chocolates (3)
+  brand: Cadbury
+  region_codes: gb
+  kcal_per_100g: 490
+  protein_per_100g: 5
+  carbs_per_100g: 58
+  fat_per_100g: 25
+  serving_grams: 30
+  serving_label: 1 piece (30 g)
+  portion_unit: piece
+  tags: snack,confectionery,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,tree_nuts
+  unit_grams: 10
+- source: gymflow
+  source_id: heroes_chocolate_3
+  name: Cadbury Heroes (3)
+  brand: Cadbury
+  region_codes: gb
+  kcal_per_100g: 490
+  protein_per_100g: 6
+  carbs_per_100g: 58
+  fat_per_100g: 25
+  serving_grams: 30
+  serving_label: 1 piece (30 g)
+  portion_unit: piece
+  tags: snack,confectionery,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,soy
+  unit_grams: 10
+- source: gymflow
+  source_id: milk_tray_3
+  name: Cadbury Milk Tray (3)
+  brand: Cadbury
+  region_codes: gb
+  kcal_per_100g: 470
+  protein_per_100g: 5
+  carbs_per_100g: 56
+  fat_per_100g: 24
+  serving_grams: 30
+  serving_label: 1 piece (30 g)
+  portion_unit: piece
+  tags: snack,confectionery,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,tree_nuts
+  unit_grams: 10

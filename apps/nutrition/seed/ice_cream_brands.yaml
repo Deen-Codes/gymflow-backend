@@ -1,0 +1,434 @@
+# ice_cream_brands.yaml — Little Moons mochi (6 flavours), more Häagen-Dazs (Cookies & Cream, Salted Caramel, Strawberry, Pralines), more Ben & Jerry's (Half Baked, Caramel Chew Chew, Karamel Sutra, Choc Fudge Brownie), Magnum Mint/Caramel Billionaire/Dark, Wall's Soft Scoop, Carte D'Or, Mr Whippy, sorbets, Booja-Booja vegan, Mövenpick, Cornetto Strawberry/Mint.
+- source: gymflow
+  source_id: little_moons_mango_passionfruit_6
+  name: Little Moons Mango & Passionfruit (1 piece)
+  brand: Little Moons
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 3
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  serving_grams: 32
+  serving_label: 1 piece (32 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert,japanese
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+  unit_grams: 32
+- source: gymflow
+  source_id: little_moons_strawberry_6
+  name: Little Moons Strawberry & Raspberry (1)
+  brand: Little Moons
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 3
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  serving_grams: 32
+  serving_label: 1 piece (32 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert,japanese
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+  unit_grams: 32
+- source: gymflow
+  source_id: little_moons_chocolate_6
+  name: Little Moons Belgian Chocolate (1)
+  brand: Little Moons
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 3
+  carbs_per_100g: 32
+  fat_per_100g: 11
+  serving_grams: 32
+  serving_label: 1 piece (32 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert,japanese
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs,soy
+  unit_grams: 32
+- source: gymflow
+  source_id: little_moons_vanilla_6
+  name: Little Moons Madagascan Vanilla (1)
+  brand: Little Moons
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 3
+  carbs_per_100g: 32
+  fat_per_100g: 9
+  serving_grams: 32
+  serving_label: 1 piece (32 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert,japanese
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+  unit_grams: 32
+- source: gymflow
+  source_id: little_moons_salted_caramel_6
+  name: Little Moons Salted Caramel (1)
+  brand: Little Moons
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 3
+  carbs_per_100g: 33
+  fat_per_100g: 10
+  serving_grams: 32
+  serving_label: 1 piece (32 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert,japanese
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+  unit_grams: 32
+- source: gymflow
+  source_id: little_moons_pink_lemonade_6
+  name: Little Moons Pink Lemonade Sorbet (1)
+  brand: Little Moons
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 0
+  carbs_per_100g: 35
+  fat_per_100g: 0
+  serving_grams: 32
+  serving_label: 1 piece (32 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert,japanese,vegan,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 32
+- source: gymflow
+  source_id: haagen_dazs_cookies_cream_100g
+  name: Häagen-Dazs Cookies & Cream (per 100g)
+  brand: Häagen-Dazs
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 5
+  carbs_per_100g: 24
+  fat_per_100g: 17
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+- source: gymflow
+  source_id: haagen_dazs_salted_caramel_100g
+  name: Häagen-Dazs Salted Caramel (per 100g)
+  brand: Häagen-Dazs
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 4
+  carbs_per_100g: 26
+  fat_per_100g: 16
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+- source: gymflow
+  source_id: haagen_dazs_strawberry_100g
+  name: Häagen-Dazs Strawberries & Cream (per 100g)
+  brand: Häagen-Dazs
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 5
+  carbs_per_100g: 23
+  fat_per_100g: 14
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+- source: gymflow
+  source_id: haagen_dazs_pralines_cream_100g
+  name: Häagen-Dazs Pralines & Cream (per 100g)
+  brand: Häagen-Dazs
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 5
+  carbs_per_100g: 26
+  fat_per_100g: 18
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs,tree_nuts,soy
+- source: gymflow
+  source_id: ben_jerrys_half_baked_100g
+  name: Ben & Jerry's Half Baked (per 100g)
+  brand: Ben & Jerry's
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 4
+  carbs_per_100g: 38
+  fat_per_100g: 13
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian
+  allergens: gluten,milk,eggs,soy
+- source: gymflow
+  source_id: ben_jerrys_caramel_chew_100g
+  name: Ben & Jerry's Caramel Chew Chew (per 100g)
+  brand: Ben & Jerry's
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 4
+  carbs_per_100g: 36
+  fat_per_100g: 13
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+- source: gymflow
+  source_id: ben_jerrys_karamel_sutra_100g
+  name: Ben & Jerry's Karamel Sutra (per 100g)
+  brand: Ben & Jerry's
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 14
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,eggs,soy
+- source: gymflow
+  source_id: ben_jerrys_chocolate_fudge_100g
+  name: Ben & Jerry's Chocolate Fudge Brownie (per 100g)
+  brand: Ben & Jerry's
+  region_codes: gb
+  kcal_per_100g: 260
+  protein_per_100g: 5
+  carbs_per_100g: 33
+  fat_per_100g: 12
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian
+  allergens: gluten,milk,eggs,soy
+- source: gymflow
+  source_id: magnum_mint_bar
+  name: Magnum Mint (1 bar)
+  brand: Magnum
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 4
+  carbs_per_100g: 24
+  fat_per_100g: 17
+  serving_grams: 79
+  serving_label: 1 piece (79 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,eggs,soy
+  unit_grams: 79
+- source: gymflow
+  source_id: magnum_caramel_billionaire_bar
+  name: Magnum Caramel Billionaire (1 bar)
+  brand: Magnum
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 4
+  carbs_per_100g: 28
+  fat_per_100g: 18
+  serving_grams: 88
+  serving_label: 1 piece (88 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 88
+- source: gymflow
+  source_id: magnum_dark_chocolate_bar
+  name: Magnum Dark Chocolate (1 bar)
+  brand: Magnum
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 4
+  carbs_per_100g: 23
+  fat_per_100g: 18
+  serving_grams: 79
+  serving_label: 1 piece (79 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,eggs,soy
+  unit_grams: 79
+- source: gymflow
+  source_id: walls_soft_scoop_vanilla_100g
+  name: Wall's Soft Scoop Vanilla (per 100g)
+  brand: Wall's
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 2.5
+  carbs_per_100g: 24
+  fat_per_100g: 7
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+- source: gymflow
+  source_id: carte_dor_vanilla_100g
+  name: Carte D'Or Vanilla (per 100g)
+  brand: Carte D'Or
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 3
+  carbs_per_100g: 24
+  fat_per_100g: 9
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+- source: gymflow
+  source_id: carte_dor_chocolate_100g
+  name: Carte D'Or Chocolate (per 100g)
+  brand: Carte D'Or
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 3
+  carbs_per_100g: 26
+  fat_per_100g: 10
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,eggs,soy
+- source: gymflow
+  source_id: mr_whippy_99_with_flake
+  name: Mr Whippy 99 Cone with Flake (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 3
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 100
+- source: gymflow
+  source_id: mr_whippy_plain_cone
+  name: Mr Whippy Plain Cone (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 3
+  carbs_per_100g: 20
+  fat_per_100g: 8
+  serving_grams: 80
+  serving_label: 1 piece (80 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 80
+- source: gymflow
+  source_id: sorbet_lemon_100g
+  name: Lemon Sorbet (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 120
+  protein_per_100g: 0.2
+  carbs_per_100g: 30
+  fat_per_100g: 0
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,dessert,vegan,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: sorbet_mango_100g
+  name: Mango Sorbet (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 0.3
+  carbs_per_100g: 32
+  fat_per_100g: 0.1
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,dessert,vegan,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: booja_booja_chocolate_100g
+  name: Booja-Booja Chocolate (per 100g)
+  brand: Booja-Booja
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 3
+  carbs_per_100g: 22
+  fat_per_100g: 16
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts,soy
+- source: gymflow
+  source_id: movenpick_swiss_chocolate_100g
+  name: Mövenpick Swiss Chocolate (per 100g)
+  brand: Mövenpick
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 4
+  carbs_per_100g: 23
+  fat_per_100g: 14
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,eggs,soy
+- source: gymflow
+  source_id: cornetto_strawberry_cone
+  name: Cornetto Strawberry (1)
+  brand: Cornetto
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 3
+  carbs_per_100g: 32
+  fat_per_100g: 11
+  serving_grams: 90
+  serving_label: 1 piece (90 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 90
+- source: gymflow
+  source_id: cornetto_mint_cone
+  name: Cornetto Mint (1)
+  brand: Cornetto
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 3
+  carbs_per_100g: 32
+  fat_per_100g: 12
+  serving_grams: 90
+  serving_label: 1 piece (90 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 90

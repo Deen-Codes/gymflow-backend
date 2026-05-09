@@ -1,0 +1,477 @@
+# tinned_canned.yaml — chopped/plum/cherry/whole tomatoes, passata, purée, beans (cannellini/butter/black/pinto/mixed/borlotti), branded baked beans (Branston), tinned fish (tuna in oil/brine/mayo, pink/red salmon, mackerel, kippers), Baxters soup, mushy peas, creamed corn, coconut milk, tinned fruit.
+- source: gymflow
+  source_id: tinned_chopped_tomatoes_400g
+  name: Chopped Tomatoes, tinned (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 23
+  protein_per_100g: 1.2
+  carbs_per_100g: 4.4
+  fat_per_100g: 0.2
+  serving_grams: 200
+  serving_label: 1 grams (200 g)
+  portion_unit: grams
+  tags: pantry,canned,vegetable,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: tinned_plum_tomatoes_400g
+  name: Plum Tomatoes, tinned (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 23
+  protein_per_100g: 1.2
+  carbs_per_100g: 4.4
+  fat_per_100g: 0.2
+  serving_grams: 200
+  serving_label: 1 grams (200 g)
+  portion_unit: grams
+  tags: pantry,canned,vegetable,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: tinned_cherry_tomatoes_400g
+  name: Cherry Tomatoes, tinned (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 25
+  protein_per_100g: 1.2
+  carbs_per_100g: 5
+  fat_per_100g: 0.2
+  serving_grams: 200
+  serving_label: 1 grams (200 g)
+  portion_unit: grams
+  tags: pantry,canned,vegetable,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: tinned_passata_500g
+  name: Passata, sieved tomatoes (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 30
+  protein_per_100g: 1.4
+  carbs_per_100g: 6
+  fat_per_100g: 0.3
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: pantry,canned,sauce,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: tinned_tomato_puree_15g
+  name: Tomato Purée (1 tbsp/15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 90
+  protein_per_100g: 5
+  carbs_per_100g: 18
+  fat_per_100g: 0.5
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: pantry,canned,sauce,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: tinned_napolina_chopped_400g
+  name: Napolina Chopped Tomatoes (per 100g)
+  brand: Napolina
+  region_codes: gb
+  kcal_per_100g: 23
+  protein_per_100g: 1.2
+  carbs_per_100g: 4.4
+  fat_per_100g: 0.2
+  serving_grams: 200
+  serving_label: 1 grams (200 g)
+  portion_unit: grams
+  tags: pantry,canned,branded,vegetable,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: tinned_cirio_chopped_400g
+  name: Cirio Chopped Tomatoes (per 100g)
+  brand: Cirio
+  region_codes: gb
+  kcal_per_100g: 23
+  protein_per_100g: 1.2
+  carbs_per_100g: 4.4
+  fat_per_100g: 0.2
+  serving_grams: 200
+  serving_label: 1 grams (200 g)
+  portion_unit: grams
+  tags: pantry,canned,branded,vegetable,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: tinned_cannellini_beans_400g
+  name: Cannellini Beans, tinned (drained, per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 0.5
+  serving_grams: 80
+  serving_label: 1 grams (80 g)
+  portion_unit: grams
+  tags: pantry,canned,pulses,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: tinned_butter_beans_400g
+  name: Butter Beans, tinned (drained, per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 96
+  protein_per_100g: 6
+  carbs_per_100g: 17
+  fat_per_100g: 0.4
+  serving_grams: 80
+  serving_label: 1 grams (80 g)
+  portion_unit: grams
+  tags: pantry,canned,pulses,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: tinned_black_beans_400g
+  name: Black Beans, tinned (drained, per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 132
+  protein_per_100g: 8.9
+  carbs_per_100g: 23.7
+  fat_per_100g: 0.5
+  serving_grams: 80
+  serving_label: 1 grams (80 g)
+  portion_unit: grams
+  tags: pantry,canned,pulses,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: tinned_pinto_beans_400g
+  name: Pinto Beans, tinned (drained, per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 7
+  carbs_per_100g: 18
+  fat_per_100g: 0.5
+  serving_grams: 80
+  serving_label: 1 grams (80 g)
+  portion_unit: grams
+  tags: pantry,canned,pulses,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: tinned_mixed_beans_400g
+  name: Mixed Beans Salad, tinned (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 90
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 0.5
+  serving_grams: 80
+  serving_label: 1 grams (80 g)
+  portion_unit: grams
+  tags: pantry,canned,pulses,vegan,salad
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: tinned_borlotti_beans_400g
+  name: Borlotti Beans, tinned (drained, per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 0.4
+  serving_grams: 80
+  serving_label: 1 grams (80 g)
+  portion_unit: grams
+  tags: pantry,canned,pulses,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: tinned_baked_beans_branston_400g
+  name: Branston Baked Beans (per 100g)
+  brand: Branston
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 4.8
+  carbs_per_100g: 13
+  fat_per_100g: 0.6
+  serving_grams: 200
+  serving_label: 1 grams (200 g)
+  portion_unit: grams
+  tags: pantry,canned,branded,pulses,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: tinned_baked_beans_sausages_branston
+  name: Branston Baked Beans & Sausages (per 100g)
+  brand: Branston
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 6
+  carbs_per_100g: 11
+  fat_per_100g: 4
+  serving_grams: 200
+  serving_label: 1 grams (200 g)
+  portion_unit: grams
+  tags: pantry,canned,branded,pulses
+  dietary_compat: pescatarian
+  allergens: gluten,sulphites
+- source: gymflow
+  source_id: tinned_tuna_oil_drained_80g
+  name: Tuna in Sunflower Oil, drained (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 28
+  carbs_per_100g: 0
+  fat_per_100g: 9
+  serving_grams: 80
+  serving_label: 1 can (80 g)
+  portion_unit: can
+  tags: fish,canned,high_protein
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 80
+- source: gymflow
+  source_id: tinned_tuna_brine_drained_80g
+  name: Tuna in Brine, drained (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 116
+  protein_per_100g: 26
+  carbs_per_100g: 0
+  fat_per_100g: 1
+  serving_grams: 80
+  serving_label: 1 can (80 g)
+  portion_unit: can
+  tags: fish,canned,high_protein,low_fat,low_carb
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 80
+- source: gymflow
+  source_id: tinned_tuna_mayonnaise_185g
+  name: Tuna Mayonnaise (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 13
+  carbs_per_100g: 1.5
+  fat_per_100g: 18
+  serving_grams: 100
+  serving_label: 1 can (100 g)
+  portion_unit: can
+  tags: fish,canned,high_protein
+  dietary_compat: pescatarian,gluten_free
+  allergens: fish,eggs,mustard
+  unit_grams: 100
+- source: gymflow
+  source_id: tinned_pink_salmon_213g
+  name: Pink Salmon, tinned (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 6
+  serving_grams: 100
+  serving_label: 1 can (100 g)
+  portion_unit: can
+  tags: fish,canned,high_protein,omega3
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 100
+- source: gymflow
+  source_id: tinned_red_salmon_213g
+  name: Red Salmon, tinned (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 7
+  serving_grams: 100
+  serving_label: 1 can (100 g)
+  portion_unit: can
+  tags: fish,canned,high_protein,omega3
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 100
+- source: gymflow
+  source_id: tinned_mackerel_tomato_125g
+  name: Mackerel in Tomato Sauce (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 180
+  protein_per_100g: 17
+  carbs_per_100g: 4
+  fat_per_100g: 11
+  serving_grams: 125
+  serving_label: 1 can (125 g)
+  portion_unit: can
+  tags: fish,canned,high_protein,omega3
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 125
+- source: gymflow
+  source_id: tinned_kippers_smoked_125g
+  name: Kippers in Brine, tinned (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 226
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 17
+  serving_grams: 125
+  serving_label: 1 can (125 g)
+  portion_unit: can
+  tags: fish,canned,high_protein,omega3
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 125
+- source: gymflow
+  source_id: baxters_chicken_soup_can
+  name: Baxters Cream of Chicken Soup (per 100g)
+  brand: Baxters
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 2
+  carbs_per_100g: 6
+  fat_per_100g: 3
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: soup,canned,branded
+  dietary_compat: pescatarian
+  allergens: gluten,milk,celery
+  unit_grams: 200
+- source: gymflow
+  source_id: baxters_lentil_soup_can
+  name: Baxters Lentil & Vegetable Soup (per 100g)
+  brand: Baxters
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 3
+  carbs_per_100g: 12
+  fat_per_100g: 0.5
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: soup,canned,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: celery
+  unit_grams: 200
+- source: gymflow
+  source_id: tinned_spaghetti_hoops_400g
+  name: Spaghetti Hoops in Tomato Sauce (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 2
+  carbs_per_100g: 12
+  fat_per_100g: 0.5
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: pantry,canned
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 200
+- source: gymflow
+  source_id: tinned_mushy_peas_300g
+  name: Mushy Peas, tinned (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 5
+  carbs_per_100g: 13
+  fat_per_100g: 0.5
+  serving_grams: 150
+  serving_label: 1 grams (150 g)
+  portion_unit: grams
+  tags: pantry,canned,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: tinned_creamed_corn_400g
+  name: Creamed Corn, tinned (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 2
+  carbs_per_100g: 17
+  fat_per_100g: 0.5
+  serving_grams: 150
+  serving_label: 1 grams (150 g)
+  portion_unit: grams
+  tags: pantry,canned,vegetable,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: tinned_coconut_milk_400ml
+  name: Coconut Milk, tinned (per 100ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 2
+  carbs_per_100g: 3
+  fat_per_100g: 21
+  serving_grams: 100
+  serving_label: 1 ml (100 g)
+  portion_unit: ml
+  tags: pantry,canned,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: tinned_pineapple_chunks_juice
+  name: Pineapple Chunks in Juice (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 0.4
+  carbs_per_100g: 14
+  fat_per_100g: 0.1
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: pantry,canned,fruit,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: tinned_peaches_juice
+  name: Peach Slices in Juice (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 0.5
+  carbs_per_100g: 12
+  fat_per_100g: 0.1
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: pantry,canned,fruit,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: tinned_pears_juice
+  name: Pear Halves in Juice (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 48
+  protein_per_100g: 0.3
+  carbs_per_100g: 12
+  fat_per_100g: 0.1
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: pantry,canned,fruit,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''

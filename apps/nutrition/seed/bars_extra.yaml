@@ -1,0 +1,529 @@
+# bars_extra.yaml — Belvita variants (Soft Bake choc/berries/honey, Brunch, Crunchy), Nature Valley (Oats & Honey, Protein, Crunchy), Trek (Protein Flapjack, Power), Eat Natural (almond apricot, dark choc orange, protein packed), Special K bars, Nutri-Grain, Quaker Chewy, Nakd (cocoa orange/berry/cashew/mint), Alpen Light, KIND (Dark Choc Nuts, Caramel Almond), Cliff Bar, Fibre One brownies/lemon, Tracker, Boost.
+- source: gymflow
+  source_id: belvita_choc_chip_4
+  name: Belvita Soft Bake Choc Chip (4 biscuits)
+  brand: Belvita
+  region_codes: gb
+  kcal_per_100g: 440
+  protein_per_100g: 7
+  carbs_per_100g: 65
+  fat_per_100g: 16
+  serving_grams: 50
+  serving_label: 1 portion (50 g)
+  portion_unit: pack
+  tags: snack,bar,branded,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 50
+- source: gymflow
+  source_id: belvita_berries_4
+  name: Belvita Soft Bake Berries (4 biscuits)
+  brand: Belvita
+  region_codes: gb
+  kcal_per_100g: 435
+  protein_per_100g: 7
+  carbs_per_100g: 66
+  fat_per_100g: 15
+  serving_grams: 50
+  serving_label: 1 portion (50 g)
+  portion_unit: pack
+  tags: snack,bar,branded,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 50
+- source: gymflow
+  source_id: belvita_breakfast_4
+  name: Belvita Breakfast Honey & Nuts (4 biscuits)
+  brand: Belvita
+  region_codes: gb
+  kcal_per_100g: 450
+  protein_per_100g: 8
+  carbs_per_100g: 64
+  fat_per_100g: 17
+  serving_grams: 50
+  serving_label: 1 portion (50 g)
+  portion_unit: pack
+  tags: snack,bar,branded,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,tree_nuts,soy
+  unit_grams: 50
+- source: gymflow
+  source_id: belvita_brunch_bar
+  name: Belvita Brunch Honey & Nuts (1 bar)
+  brand: Belvita
+  region_codes: gb
+  kcal_per_100g: 425
+  protein_per_100g: 8
+  carbs_per_100g: 60
+  fat_per_100g: 16
+  serving_grams: 50
+  serving_label: 1 bar (50 g)
+  portion_unit: bar
+  tags: snack,bar,branded,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,tree_nuts,soy
+  unit_grams: 50
+- source: gymflow
+  source_id: belvita_crunchy_30g
+  name: Belvita Crunchy Mixed Berries (30g)
+  brand: Belvita
+  region_codes: gb
+  kcal_per_100g: 440
+  protein_per_100g: 7
+  carbs_per_100g: 67
+  fat_per_100g: 14
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,bar,branded,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: nature_valley_oats_honey
+  name: Nature Valley Oats & Honey (1)
+  brand: Nature Valley
+  region_codes: gb
+  kcal_per_100g: 470
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 21
+  serving_grams: 21
+  serving_label: 1 piece (21 g)
+  portion_unit: piece
+  tags: snack,bar,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,soy
+  unit_grams: 21
+- source: gymflow
+  source_id: nature_valley_protein_choc
+  name: Nature Valley Protein Salted Caramel (1)
+  brand: Nature Valley
+  region_codes: gb
+  kcal_per_100g: 460
+  protein_per_100g: 19
+  carbs_per_100g: 36
+  fat_per_100g: 22
+  serving_grams: 40
+  serving_label: 1 bar (40 g)
+  portion_unit: bar
+  tags: snack,bar,branded,protein
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,peanuts
+  unit_grams: 40
+- source: gymflow
+  source_id: nature_valley_chocolate_chip
+  name: Nature Valley Crunchy Chocolate Chip (1)
+  brand: Nature Valley
+  region_codes: gb
+  kcal_per_100g: 480
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 22
+  serving_grams: 21
+  serving_label: 1 piece (21 g)
+  portion_unit: piece
+  tags: snack,bar,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,soy
+  unit_grams: 21
+- source: gymflow
+  source_id: trek_protein_flapjack_choc
+  name: Trek Protein Flapjack Chocolate (1)
+  brand: Trek
+  region_codes: gb
+  kcal_per_100g: 415
+  protein_per_100g: 12
+  carbs_per_100g: 50
+  fat_per_100g: 17
+  serving_grams: 50
+  serving_label: 1 bar (50 g)
+  portion_unit: bar
+  tags: snack,bar,branded,protein,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy
+  unit_grams: 50
+- source: gymflow
+  source_id: trek_power_protein_bar
+  name: Trek Power Bar Cocoa Coconut (1)
+  brand: Trek
+  region_codes: gb
+  kcal_per_100g: 405
+  protein_per_100g: 16
+  carbs_per_100g: 40
+  fat_per_100g: 19
+  serving_grams: 55
+  serving_label: 1 bar (55 g)
+  portion_unit: bar
+  tags: snack,bar,branded,protein,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy,tree_nuts
+  unit_grams: 55
+- source: gymflow
+  source_id: eat_natural_almond_apricot
+  name: Eat Natural Almond, Apricot & Yogurt (1)
+  brand: Eat Natural
+  region_codes: gb
+  kcal_per_100g: 460
+  protein_per_100g: 9
+  carbs_per_100g: 50
+  fat_per_100g: 24
+  serving_grams: 50
+  serving_label: 1 bar (50 g)
+  portion_unit: bar
+  tags: snack,bar,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,tree_nuts
+  unit_grams: 50
+- source: gymflow
+  source_id: eat_natural_dark_choc_orange
+  name: Eat Natural Dark Chocolate & Orange (1)
+  brand: Eat Natural
+  region_codes: gb
+  kcal_per_100g: 480
+  protein_per_100g: 8
+  carbs_per_100g: 52
+  fat_per_100g: 26
+  serving_grams: 45
+  serving_label: 1 bar (45 g)
+  portion_unit: bar
+  tags: snack,bar,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: tree_nuts,soy
+  unit_grams: 45
+- source: gymflow
+  source_id: eat_natural_protein_packed
+  name: Eat Natural Protein Packed (1)
+  brand: Eat Natural
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 17
+  carbs_per_100g: 38
+  fat_per_100g: 19
+  serving_grams: 45
+  serving_label: 1 bar (45 g)
+  portion_unit: bar
+  tags: snack,bar,branded,protein
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,tree_nuts
+  unit_grams: 45
+- source: gymflow
+  source_id: special_k_red_berries_bar
+  name: Special K Red Berries Bar (1)
+  brand: Kellogg's
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 75
+  fat_per_100g: 6
+  serving_grams: 22
+  serving_label: 1 bar (22 g)
+  portion_unit: bar
+  tags: snack,bar,branded,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,milk,soy
+  unit_grams: 22
+- source: gymflow
+  source_id: special_k_chocolate_caramel_bar
+  name: Special K Chocolate Caramel Bar (1)
+  brand: Kellogg's
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 73
+  fat_per_100g: 7
+  serving_grams: 23
+  serving_label: 1 bar (23 g)
+  portion_unit: bar
+  tags: snack,bar,branded,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,soy
+  unit_grams: 23
+- source: gymflow
+  source_id: nutri_grain_strawberry
+  name: Nutri-Grain Strawberry (1 bar)
+  brand: Kellogg's
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 65
+  fat_per_100g: 11
+  serving_grams: 37
+  serving_label: 1 bar (37 g)
+  portion_unit: bar
+  tags: snack,bar,branded,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 37
+- source: gymflow
+  source_id: nutri_grain_apple
+  name: Nutri-Grain Apple (1 bar)
+  brand: Kellogg's
+  region_codes: gb
+  kcal_per_100g: 375
+  protein_per_100g: 5
+  carbs_per_100g: 64
+  fat_per_100g: 10
+  serving_grams: 37
+  serving_label: 1 bar (37 g)
+  portion_unit: bar
+  tags: snack,bar,branded,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 37
+- source: gymflow
+  source_id: quaker_chewy_choc_chip
+  name: Quaker Chewy Chocolate Chip (1)
+  brand: Quaker
+  region_codes: gb
+  kcal_per_100g: 425
+  protein_per_100g: 6
+  carbs_per_100g: 70
+  fat_per_100g: 13
+  serving_grams: 28
+  serving_label: 1 bar (28 g)
+  portion_unit: bar
+  tags: snack,bar,branded,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,milk,soy
+  unit_grams: 28
+- source: gymflow
+  source_id: quaker_oats_so_simple_bar_apple
+  name: Quaker Oat So Simple Bar Apple (1)
+  brand: Quaker
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 10
+  serving_grams: 35
+  serving_label: 1 bar (35 g)
+  portion_unit: bar
+  tags: snack,bar,branded,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,milk,soy
+  unit_grams: 35
+- source: gymflow
+  source_id: nakd_cocoa_orange_alt
+  name: Nakd Cocoa Orange (1 bar)
+  brand: Nakd
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 5
+  carbs_per_100g: 51
+  fat_per_100g: 19
+  serving_grams: 35
+  serving_label: 1 bar (35 g)
+  portion_unit: bar
+  tags: snack,bar,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts
+  unit_grams: 35
+- source: gymflow
+  source_id: nakd_berry_delight
+  name: Nakd Berry Delight (1 bar)
+  brand: Nakd
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 55
+  fat_per_100g: 16
+  serving_grams: 35
+  serving_label: 1 bar (35 g)
+  portion_unit: bar
+  tags: snack,bar,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts
+  unit_grams: 35
+- source: gymflow
+  source_id: nakd_cashew_cookie
+  name: Nakd Cashew Cookie (1 bar)
+  brand: Nakd
+  region_codes: gb
+  kcal_per_100g: 425
+  protein_per_100g: 7
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  serving_grams: 35
+  serving_label: 1 bar (35 g)
+  portion_unit: bar
+  tags: snack,bar,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts
+  unit_grams: 35
+- source: gymflow
+  source_id: nakd_cocoa_mint
+  name: Nakd Cocoa Mint (1 bar)
+  brand: Nakd
+  region_codes: gb
+  kcal_per_100g: 405
+  protein_per_100g: 5
+  carbs_per_100g: 52
+  fat_per_100g: 18
+  serving_grams: 35
+  serving_label: 1 bar (35 g)
+  portion_unit: bar
+  tags: snack,bar,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts
+  unit_grams: 35
+- source: gymflow
+  source_id: alpen_light_summer_fruits_bar
+  name: Alpen Light Summer Fruits Bar (1)
+  brand: Alpen
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 4
+  carbs_per_100g: 65
+  fat_per_100g: 7
+  serving_grams: 19
+  serving_label: 1 bar (19 g)
+  portion_unit: bar
+  tags: snack,bar,branded,low_fat,low_calorie
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,milk,soy
+  unit_grams: 19
+- source: gymflow
+  source_id: alpen_light_choc_orange_bar
+  name: Alpen Light Chocolate Orange Bar (1)
+  brand: Alpen
+  region_codes: gb
+  kcal_per_100g: 365
+  protein_per_100g: 4
+  carbs_per_100g: 64
+  fat_per_100g: 8
+  serving_grams: 19
+  serving_label: 1 bar (19 g)
+  portion_unit: bar
+  tags: snack,bar,branded,low_fat,low_calorie
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,milk,soy
+  unit_grams: 19
+- source: gymflow
+  source_id: kind_dark_choc_nuts_sea_salt
+  name: KIND Dark Chocolate Nuts & Sea Salt (1)
+  brand: KIND
+  region_codes: gb
+  kcal_per_100g: 540
+  protein_per_100g: 13
+  carbs_per_100g: 35
+  fat_per_100g: 35
+  serving_grams: 40
+  serving_label: 1 bar (40 g)
+  portion_unit: bar
+  tags: snack,bar,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts,peanuts,soy
+  unit_grams: 40
+- source: gymflow
+  source_id: kind_caramel_almond
+  name: KIND Caramel Almond & Sea Salt (1)
+  brand: KIND
+  region_codes: gb
+  kcal_per_100g: 540
+  protein_per_100g: 13
+  carbs_per_100g: 36
+  fat_per_100g: 35
+  serving_grams: 40
+  serving_label: 1 bar (40 g)
+  portion_unit: bar
+  tags: snack,bar,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,tree_nuts,soy
+  unit_grams: 40
+- source: gymflow
+  source_id: cliff_bar_choc_chip
+  name: Cliff Bar Chocolate Chip (1)
+  brand: Cliff Bar
+  region_codes: gb
+  kcal_per_100g: 395
+  protein_per_100g: 14
+  carbs_per_100g: 60
+  fat_per_100g: 9
+  serving_grams: 68
+  serving_label: 1 bar (68 g)
+  portion_unit: bar
+  tags: snack,bar,branded,protein,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy
+  unit_grams: 68
+- source: gymflow
+  source_id: fibre_one_brownies_choc
+  name: Fibre One Chocolate Brownies (1)
+  brand: Fibre One
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 4
+  carbs_per_100g: 55
+  fat_per_100g: 12
+  serving_grams: 24
+  serving_label: 1 bar (24 g)
+  portion_unit: bar
+  tags: snack,bar,branded,fibre,low_calorie
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,milk,soy
+  unit_grams: 24
+- source: gymflow
+  source_id: fibre_one_lemon_drizzle
+  name: Fibre One Lemon Drizzle (1)
+  brand: Fibre One
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 3
+  carbs_per_100g: 55
+  fat_per_100g: 13
+  serving_grams: 24
+  serving_label: 1 bar (24 g)
+  portion_unit: bar
+  tags: snack,bar,branded,fibre,low_calorie
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,milk,soy
+  unit_grams: 24
+- source: gymflow
+  source_id: tracker_original_bar
+  name: Tracker Roasted Nut Original (1)
+  brand: Tracker
+  region_codes: gb
+  kcal_per_100g: 460
+  protein_per_100g: 8
+  carbs_per_100g: 55
+  fat_per_100g: 22
+  serving_grams: 26
+  serving_label: 1 bar (26 g)
+  portion_unit: bar
+  tags: snack,bar,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,peanuts,soy
+  unit_grams: 26
+- source: gymflow
+  source_id: tracker_choc_chip_bar
+  name: Tracker Chocolate Chip (1)
+  brand: Tracker
+  region_codes: gb
+  kcal_per_100g: 470
+  protein_per_100g: 7
+  carbs_per_100g: 58
+  fat_per_100g: 22
+  serving_grams: 26
+  serving_label: 1 bar (26 g)
+  portion_unit: bar
+  tags: snack,bar,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,soy
+  unit_grams: 26
+- source: gymflow
+  source_id: boost_glucose_30g
+  name: Boost Glucose Bar (30g)
+  brand: Boost
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 0
+  carbs_per_100g: 90
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 bar (30 g)
+  portion_unit: bar
+  tags: snack,bar,branded,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30

@@ -1,0 +1,129 @@
+# chocolate_spreads.yaml — Cadbury Chocolate Spread, Lotus Biscoff smooth/crunchy, Hershey's, Whole Earth Hazelnut, Tesco own, Nutkao, Mr Organic.
+- source: gymflow
+  source_id: cadbury_chocolate_spread_15g
+  name: Cadbury Chocolate Spread (15g)
+  brand: Cadbury
+  region_codes: gb
+  kcal_per_100g: 530
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 30
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: spread,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 15
+- source: gymflow
+  source_id: lotus_biscoff_spread_smooth_15g
+  name: Lotus Biscoff Spread Smooth (15g)
+  brand: Lotus
+  region_codes: gb
+  kcal_per_100g: 590
+  protein_per_100g: 5
+  carbs_per_100g: 58
+  fat_per_100g: 36
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: spread,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy
+  unit_grams: 15
+- source: gymflow
+  source_id: lotus_biscoff_spread_crunchy_15g
+  name: Lotus Biscoff Spread Crunchy (15g)
+  brand: Lotus
+  region_codes: gb
+  kcal_per_100g: 590
+  protein_per_100g: 5
+  carbs_per_100g: 58
+  fat_per_100g: 36
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: spread,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy
+  unit_grams: 15
+- source: gymflow
+  source_id: hersheys_chocolate_spread_15g
+  name: Hershey's Chocolate Spread (15g)
+  brand: Hershey's
+  region_codes: gb
+  kcal_per_100g: 540
+  protein_per_100g: 5
+  carbs_per_100g: 56
+  fat_per_100g: 32
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: spread,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy,tree_nuts
+  unit_grams: 15
+- source: gymflow
+  source_id: whole_earth_hazelnut_spread_15g
+  name: Whole Earth Hazelnut Spread (15g)
+  brand: Whole Earth
+  region_codes: gb
+  kcal_per_100g: 555
+  protein_per_100g: 7
+  carbs_per_100g: 50
+  fat_per_100g: 35
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: spread,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts
+  unit_grams: 15
+- source: gymflow
+  source_id: tesco_chocolate_hazelnut_spread_15g
+  name: Tesco Chocolate Hazelnut Spread (15g)
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 540
+  protein_per_100g: 6
+  carbs_per_100g: 57
+  fat_per_100g: 31
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: spread,branded,supermarket
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy,tree_nuts
+  unit_grams: 15
+- source: gymflow
+  source_id: nutkao_milk_choc_spread_15g
+  name: Nutkao Milk Chocolate Hazelnut Spread (15g)
+  brand: Nutkao
+  region_codes: gb
+  kcal_per_100g: 540
+  protein_per_100g: 6
+  carbs_per_100g: 56
+  fat_per_100g: 32
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: spread,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy,tree_nuts
+  unit_grams: 15
+- source: gymflow
+  source_id: mr_organic_choc_hazelnut_15g
+  name: Mr Organic Chocolate Hazelnut Spread (15g)
+  brand: Mr Organic
+  region_codes: gb
+  kcal_per_100g: 545
+  protein_per_100g: 7
+  carbs_per_100g: 50
+  fat_per_100g: 35
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: spread,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts
+  unit_grams: 15
