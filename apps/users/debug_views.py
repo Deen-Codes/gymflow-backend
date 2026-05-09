@@ -262,6 +262,23 @@ def solo_debug_factory_reset(request):
         profile.experience            = ""
         profile.equipment             = ""
         profile.days_per_week         = 3
+        # DEBUG-FACTORY-RESET-LOGOUT — also wipe AI-build / nutrition
+        # onboarding fields so the cinematic flows AND the
+        # signup-onboarding gates re-fire on next entry. Without
+        # this the user reports "I clicked reset but the onboarding
+        # never showed again" because some of these fields persisted
+        # and short-circuited the empty-state checks.
+        profile.training_days         = []
+        profile.session_minutes       = 0
+        profile.avoidances            = []
+        profile.dietary_pattern       = ""
+        profile.dietary_other         = ""
+        profile.allergies             = []
+        profile.dislikes              = []
+        profile.cooking_comfort       = ""
+        profile.height_cm             = None
+        profile.goal_weight_kg        = None
+        profile.sex_at_birth          = ""
         # NUTRITION-ONBOARDING-FIX — reset macros to 0 (not the
         # historical 2200/140/240/70 defaults) so the iOS empty-
         # state correctly fires the cinematic onboarding on the
@@ -292,7 +309,29 @@ def solo_debug_factory_reset(request):
         ):
             prefs.pop(key, None)
         user.notification_prefs = prefs
-        user.save(update_fields=["notification_prefs"])
+
+        # DEBUG-FACTORY-RESET-LOGOUT — also wipe identity fields on
+        # User so re-signup via SoloOnboardingFlow (with the same
+        # email) re-collects everything cleanly. We DON'T null the
+        # email or pk — the User row stays so SSO links + Stripe
+        # ids etc. are preserved.
+        user.full_name = ""
+        user.date_of_birth = None
+        user.save(update_fields=[
+            "notification_prefs", "full_name", "date_of_birth",
+        ])
+
+        # 4. Invalidate every auth token so the iOS keychain on
+        #    *any* device can no longer be used to silently re-auth
+        #    after the wipe. The iOS client also wipes its own
+        #    keychain locally; this is belt-and-braces for the
+        #    server-side state.
+        try:
+            from rest_framework.authtoken.models import Token
+            Token.objects.filter(user=user).delete()
+            counts["auth_tokens"] = 1
+        except Exception:
+            pass
 
     log.info(
         "debug factory-reset: user_id=%s wiped=%s",
