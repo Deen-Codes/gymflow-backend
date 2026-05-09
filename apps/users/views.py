@@ -409,10 +409,23 @@ def _magic_link_urls(token):
     `web_link` is a fallback for desktop browsers and the
     eventual Universal Links setup.
     """
-    web_base = getattr(settings, "GYMFLOW_WEB_BASE_URL", "https://gymflow.app")
+    # MAGIC-LINK-DOMAIN — our actual apex is gymflow.coach (the .app
+    # one is owned by an unrelated party and 301-redirects to
+    # elitehockeyhq.com, which 404'd every magic-link tap). The
+    # bridge view at /magic/<token>/ is mounted on the Django
+    # backend (config/urls.py); gymflow.coach is already pointed at
+    # Render in DNS, so the same template + redirect-to-`gymflow://`
+    # flow works on the real apex.
+    #
+    # Override via the `GYMFLOW_WEB_BASE_URL` env var on Render if
+    # we ever swap apex domains again — no rebuild required.
+    web_base = getattr(
+        settings, "GYMFLOW_WEB_BASE_URL",
+        "https://gymflow.coach",
+    )
     return (
         f"gymflow://magic/{token}",
-        f"{web_base}/magic/{token}",
+        f"{web_base}/magic/{token}/",
     )
 
 

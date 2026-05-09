@@ -25,7 +25,7 @@ DEBUG = os.environ.get("DEBUG", "False").lower() in ("true", "1", "yes")
 # Format: comma-separated list of hosts.
 #   ALLOWED_HOSTS=.gymflow.app,.onrender.com,localhost
 # -------------------------------------------------------------------
-_DEFAULT_ALLOWED_HOSTS = "localhost,127.0.0.1,.gymflow.app,.onrender.com"
+_DEFAULT_ALLOWED_HOSTS = "localhost,127.0.0.1,.gymflow.coach,.gymflow.app,.onrender.com"
 ALLOWED_HOSTS = [
     h.strip()
     for h in os.environ.get("ALLOWED_HOSTS", _DEFAULT_ALLOWED_HOSTS).split(",")
@@ -48,6 +48,8 @@ ALLOWED_HOSTS = [
 # -------------------------------------------------------------------
 CSRF_TRUSTED_ORIGINS = [
     "https://gymflow-api-wxm9.onrender.com",
+    "https://*.gymflow.coach",
+    "https://gymflow.coach",
     "https://*.gymflow.app",
     "https://gymflow.app",
 ]

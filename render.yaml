@@ -35,9 +35,12 @@ services:
         generateValue: true
 
       # Comma-separated host list. Leading dot = match all subdomains.
-      # `.gymflow.app` covers every trainer subdomain plus the apex.
+      # `.gymflow.coach` is our real apex (.app is owned by another
+      # party and redirects to elitehockeyhq.com — see MAGIC-LINK-
+      # DOMAIN). `.gymflow.app` is kept in case any old bookmarks /
+      # in-flight magic-link emails still hit us via that hostname.
       - key: ALLOWED_HOSTS
-        value: .gymflow.app,.onrender.com
+        value: .gymflow.coach,.gymflow.app,.onrender.com
 
       # Enables the /api/users/_debug/set-state/ endpoint so the
       # iOS Profile DEBUG panel can flip tier (free/pro/pro_ai)
