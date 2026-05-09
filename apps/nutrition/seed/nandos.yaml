@@ -1,0 +1,497 @@
+# nandos.yaml — Nando's UK menu.
+# 31 entries (incl 7 migrated).
+# Source: nandos.co.uk/eat/menu allergen guide.
+- source: gymflow
+  source_id: nandos_chicken_thigh_butterfly
+  name: Nando's Chicken Thigh, Butterfly
+  brand: Nando's
+  region_codes: gb,us
+  kcal_per_100g: 196
+  protein_per_100g: 23.0
+  carbs_per_100g: 0.5
+  fat_per_100g: 11.5
+  serving_grams: 145
+  serving_label: 1 butterfly thigh
+  tags: protein,restaurant,chain
+  dietary_compat: halal_compatible,gluten_free
+  allergens: ''
+  portion_unit: piece
+  unit_grams: 170
+- source: gymflow
+  source_id: nandos_chips_regular
+  name: Nando's Chips, Regular
+  brand: Nando's
+  region_codes: gb,us
+  kcal_per_100g: 231
+  protein_per_100g: 3.0
+  carbs_per_100g: 35.0
+  fat_per_100g: 9.0
+  serving_grams: 130
+  serving_label: 1 regular portion
+  tags: restaurant,chain,sides
+  dietary_compat: vegan,vegetarian,gluten_free,dairy_free
+  allergens: ''
+  portion_unit: pack
+  unit_grams: 200
+- source: gymflow
+  source_id: nandos_garlic_bread
+  name: Nando's Garlic Bread
+  brand: Nando's
+  region_codes: gb,us
+  kcal_per_100g: 318
+  protein_per_100g: 8.0
+  carbs_per_100g: 36.0
+  fat_per_100g: 16.0
+  serving_grams: 90
+  serving_label: 1 portion (~90g)
+  tags: restaurant,chain,sides,bread
+  dietary_compat: vegetarian
+  allergens: gluten,milk
+  portion_unit: piece
+  unit_grams: 80
+- source: gymflow
+  source_id: nandos_halloumi_sticks
+  name: Nando's Halloumi Sticks & Dip
+  brand: Nando's
+  region_codes: gb,us
+  kcal_per_100g: 270
+  protein_per_100g: 13.0
+  carbs_per_100g: 16.0
+  fat_per_100g: 17.0
+  serving_grams: 110
+  serving_label: 1 portion
+  tags: restaurant,chain,starter
+  dietary_compat: vegetarian
+  allergens: milk,gluten,eggs
+  portion_unit: pack
+  unit_grams: 95
+- source: gymflow
+  source_id: nandos_peri_chips
+  name: Nando's Peri-Salted Chips
+  brand: Nando's
+  region_codes: gb,us
+  kcal_per_100g: 250
+  protein_per_100g: 3.2
+  carbs_per_100g: 35.0
+  fat_per_100g: 11.0
+  serving_grams: 130
+  serving_label: 1 regular portion
+  tags: restaurant,chain,sides
+  dietary_compat: vegan,vegetarian,gluten_free,dairy_free
+  allergens: ''
+  portion_unit: pack
+  unit_grams: 200
+- source: gymflow
+  source_id: nandos_quarter_chicken
+  name: Nando's 1/4 Chicken (breast)
+  brand: Nando's
+  region_codes: gb,us
+  kcal_per_100g: 165
+  protein_per_100g: 31.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 4.0
+  serving_grams: 130
+  serving_label: 1/4 chicken breast portion
+  tags: protein,restaurant,chain,lean
+  dietary_compat: halal_compatible,gluten_free
+  allergens: ''
+  portion_unit: piece
+  unit_grams: 130
+- source: gymflow
+  source_id: nandos_spicy_rice
+  name: Nando's Spicy Rice
+  brand: Nando's
+  region_codes: gb,us
+  kcal_per_100g: 156
+  protein_per_100g: 3.5
+  carbs_per_100g: 28.0
+  fat_per_100g: 3.5
+  serving_grams: 200
+  serving_label: 1 regular portion
+  tags: restaurant,chain,sides,carbs
+  dietary_compat: vegan,vegetarian,gluten_free,dairy_free
+  allergens: ''
+  portion_unit: pack
+  unit_grams: 200
+- source: gymflow
+  source_id: nandos_whole_chicken
+  name: Whole Chicken
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 30
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  serving_grams: 600
+  serving_label: 1 piece (600 g)
+  portion_unit: piece
+  tags: chain,chicken,high_protein,sharing
+  dietary_compat: halal,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 600
+- source: gymflow
+  source_id: nandos_half_chicken
+  name: Half Chicken
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 30
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  serving_grams: 320
+  serving_label: 1 piece (320 g)
+  portion_unit: piece
+  tags: chain,chicken,high_protein
+  dietary_compat: halal,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 320
+- source: gymflow
+  source_id: nandos_chicken_breast_fillet
+  name: Chicken Breast Fillet
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 30
+  carbs_per_100g: 0
+  fat_per_100g: 5
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: chain,chicken,high_protein,low_carb
+  dietary_compat: halal,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 130
+- source: gymflow
+  source_id: nandos_chicken_thighs_3
+  name: 3 Chicken Thighs (no bone)
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 26
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  serving_grams: 195
+  serving_label: 1 piece (195 g)
+  portion_unit: piece
+  tags: chain,chicken,high_protein
+  dietary_compat: halal,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 195
+- source: gymflow
+  source_id: nandos_chicken_wings_5
+  name: 5 Chicken Wings
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 24
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: chain,chicken,high_protein
+  dietary_compat: halal,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: nandos_chicken_pitta
+  name: Chicken Pitta
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 17
+  carbs_per_100g: 21
+  fat_per_100g: 5
+  serving_grams: 240
+  serving_label: 1 piece (240 g)
+  portion_unit: piece
+  tags: chain,chicken
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 240
+- source: gymflow
+  source_id: nandos_chicken_wrap
+  name: Chicken Wrap
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 17
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  serving_grams: 250
+  serving_label: 1 wrap (250 g)
+  portion_unit: wrap
+  tags: chain,chicken,wrap
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,sesame
+  unit_grams: 250
+- source: gymflow
+  source_id: nandos_chicken_burger
+  name: Chicken Butterfly Burger
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 20
+  carbs_per_100g: 21
+  fat_per_100g: 6
+  serving_grams: 280
+  serving_label: 1 piece (280 g)
+  portion_unit: piece
+  tags: chain,burger,chicken
+  dietary_compat: halal,pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 280
+- source: gymflow
+  source_id: nandos_double_chicken_burger
+  name: Double Chicken Burger
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 24
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  serving_grams: 320
+  serving_label: 1 piece (320 g)
+  portion_unit: piece
+  tags: chain,burger,chicken,high_protein
+  dietary_compat: halal,pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 320
+- source: gymflow
+  source_id: nandos_veggie_burger
+  name: The Veggie Burger
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 8
+  carbs_per_100g: 24
+  fat_per_100g: 8
+  serving_grams: 270
+  serving_label: 1 piece (270 g)
+  portion_unit: piece
+  tags: chain,burger,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 270
+- source: gymflow
+  source_id: nandos_great_imitator
+  name: The Great Imitator (vegan)
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  serving_grams: 270
+  serving_label: 1 piece (270 g)
+  portion_unit: piece
+  tags: chain,burger,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sesame,soy
+  unit_grams: 270
+- source: gymflow
+  source_id: nandos_chicken_thigh_burger
+  name: Boneless Chicken Thigh Burger
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 19
+  carbs_per_100g: 21
+  fat_per_100g: 9
+  serving_grams: 280
+  serving_label: 1 piece (280 g)
+  portion_unit: piece
+  tags: chain,burger,chicken
+  dietary_compat: halal,pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 280
+- source: gymflow
+  source_id: nandos_caesar_salad
+  name: Caesar Salad with Chicken
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 13
+  carbs_per_100g: 9
+  fat_per_100g: 6
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: chain,salad,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,fish
+  unit_grams: 380
+- source: gymflow
+  source_id: nandos_supergrain_salad
+  name: Supergrain Bowl with Chicken
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: chain,salad,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,sesame,sulphites
+  unit_grams: 400
+- source: gymflow
+  source_id: nandos_corn_cob
+  name: Corn on the Cob
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 100
+  protein_per_100g: 3
+  carbs_per_100g: 19
+  fat_per_100g: 1.5
+  serving_grams: 110
+  serving_label: 1 piece (110 g)
+  portion_unit: piece
+  tags: chain,side,vegan,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 110
+- source: gymflow
+  source_id: nandos_macho_peas
+  name: Macho Peas
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 90
+  protein_per_100g: 6
+  carbs_per_100g: 11
+  fat_per_100g: 1
+  serving_grams: 165
+  serving_label: 1 portion (165 g)
+  portion_unit: pack
+  tags: chain,side,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 165
+- source: gymflow
+  source_id: nandos_coleslaw
+  name: Coleslaw
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 1.5
+  carbs_per_100g: 8
+  fat_per_100g: 15
+  serving_grams: 110
+  serving_label: 1 portion (110 g)
+  portion_unit: pack
+  tags: chain,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: eggs,milk,mustard,sulphites
+  unit_grams: 110
+- source: gymflow
+  source_id: nandos_chargrilled_veg
+  name: Chargrilled Veg
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 2
+  carbs_per_100g: 10
+  fat_per_100g: 2
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,side,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 200
+- source: gymflow
+  source_id: nandos_mash_potato
+  name: Mashed Potato
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 3
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 200
+- source: gymflow
+  source_id: nandos_creamy_mash_potato
+  name: Creamy Mashed Potato
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 3
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 200
+- source: gymflow
+  source_id: nandos_cake_chocolate
+  name: Chocolate Cake
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  serving_grams: 100
+  serving_label: 1 slice (100 g)
+  portion_unit: slice
+  tags: chain,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 100
+- source: gymflow
+  source_id: nandos_cheesecake_naughty
+  name: Naughty Natas (Portuguese cheesecake)
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 5
+  carbs_per_100g: 35
+  fat_per_100g: 21
+  serving_grams: 80
+  serving_label: 1 piece (80 g)
+  portion_unit: piece
+  tags: chain,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 80
+- source: gymflow
+  source_id: nandos_bottomless_drink_diet
+  name: Bottomless Diet Coke (refill)
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 400
+  serving_label: 1 ml (400 g)
+  portion_unit: ml
+  tags: chain,drink,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: nandos_bottomless_drink_full
+  name: Bottomless Coca-Cola
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 0
+  carbs_per_100g: 10.6
+  fat_per_100g: 0
+  serving_grams: 400
+  serving_label: 1 ml (400 g)
+  portion_unit: ml
+  tags: chain,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''

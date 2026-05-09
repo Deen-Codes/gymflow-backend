@@ -1,0 +1,1503 @@
+# uk_chains_extra.yaml — chains we missed first time (Bill's, Côte, Wahaca, Frankie & Benny's, Bella Italia, Prezzo, Yo! Sushi, Honest Burgers, Patty & Bun, Pho, Krispy Kreme, Las Iguanas, Banana Tree, Busaba, Rosa's Thai, Tortilla, Chiquito, Patisserie Valerie, Hard Rock, more Greggs/Pret/Costa).
+- source: gymflow
+  source_id: bills_buttermilk_chicken_burger
+  name: Bill's Buttermilk Chicken Burger
+  brand: Bill's
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  serving_grams: 470
+  serving_label: 1 portion (470 g)
+  portion_unit: meal
+  tags: chain,restaurant,burger,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 470
+- source: gymflow
+  source_id: bills_classic_burger
+  name: Bill's Classic Burger
+  brand: Bill's
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 15
+  carbs_per_100g: 20
+  fat_per_100g: 14
+  serving_grams: 480
+  serving_label: 1 portion (480 g)
+  portion_unit: meal
+  tags: chain,restaurant,burger
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 480
+- source: gymflow
+  source_id: bills_fish_chips
+  name: Bill's Fish & Chips
+  brand: Bill's
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 12
+  carbs_per_100g: 23
+  fat_per_100g: 9
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: chain,restaurant,meal
+  dietary_compat: pescatarian
+  allergens: fish,gluten,eggs
+  unit_grams: 600
+- source: gymflow
+  source_id: bills_chicken_milanese
+  name: Bill's Chicken Milanese
+  brand: Bill's
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: chain,restaurant,meal,chicken,high_protein
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 450
+- source: gymflow
+  source_id: bills_pancakes_stack
+  name: Bill's Pancakes Stack
+  brand: Bill's
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 8
+  carbs_per_100g: 50
+  fat_per_100g: 11
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: meal
+  tags: chain,restaurant,breakfast,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 250
+- source: gymflow
+  source_id: bills_eggs_benedict
+  name: Bill's Eggs Benedict
+  brand: Bill's
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: chain,restaurant,breakfast
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 350
+- source: gymflow
+  source_id: bills_full_english
+  name: Bill's Full English
+  brand: Bill's
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 11
+  carbs_per_100g: 12
+  fat_per_100g: 14
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: chain,restaurant,breakfast
+  dietary_compat: pescatarian
+  allergens: gluten,eggs,sulphites
+  unit_grams: 600
+- source: gymflow
+  source_id: bills_avocado_eggs
+  name: Bill's Smashed Avo & Eggs
+  brand: Bill's
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  serving_grams: 300
+  serving_label: 1 portion (300 g)
+  portion_unit: meal
+  tags: chain,restaurant,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,eggs
+  unit_grams: 300
+- source: gymflow
+  source_id: cote_steak_frites
+  name: Côte Steak Frites
+  brand: Côte
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 22
+  carbs_per_100g: 22
+  fat_per_100g: 10
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: chain,restaurant,french,high_protein
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 450
+- source: gymflow
+  source_id: cote_moules_frites
+  name: Côte Moules Frites
+  brand: Côte
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 16
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: chain,restaurant,french
+  dietary_compat: pescatarian,dairy_free
+  allergens: molluscs,gluten,sulphites
+  unit_grams: 450
+- source: gymflow
+  source_id: cote_chicken_lyonnaise
+  name: Côte Chicken Lyonnaise
+  brand: Côte
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 20
+  carbs_per_100g: 5
+  fat_per_100g: 12
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: chain,restaurant,french,chicken
+  dietary_compat: pescatarian,gluten_free
+  allergens: milk
+  unit_grams: 350
+- source: gymflow
+  source_id: cote_french_onion_soup
+  name: Côte French Onion Soup
+  brand: Côte
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 6
+  carbs_per_100g: 12
+  fat_per_100g: 6
+  serving_grams: 300
+  serving_label: 1 portion (300 g)
+  portion_unit: pack
+  tags: chain,restaurant,french,soup
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,celery
+  unit_grams: 300
+- source: gymflow
+  source_id: cote_eggs_florentine
+  name: Côte Eggs Florentine
+  brand: Côte
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: chain,restaurant,french,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 350
+- source: gymflow
+  source_id: cote_creme_brulee
+  name: Côte Crème Brûlée
+  brand: Côte
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 4
+  carbs_per_100g: 28
+  fat_per_100g: 21
+  serving_grams: 130
+  serving_label: 1 portion (130 g)
+  portion_unit: pack
+  tags: chain,restaurant,french,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+  unit_grams: 130
+- source: gymflow
+  source_id: wahaca_chicken_burrito
+  name: Wahaca Chicken Burrito
+  brand: Wahaca
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: chain,restaurant,mexican,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 500
+- source: gymflow
+  source_id: wahaca_beef_burrito
+  name: Wahaca Beef Burrito
+  brand: Wahaca
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: chain,restaurant,mexican
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 500
+- source: gymflow
+  source_id: wahaca_chicken_taco_2
+  name: Wahaca Chicken Tacos (2)
+  brand: Wahaca
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  serving_grams: 220
+  serving_label: 1 piece (220 g)
+  portion_unit: piece
+  tags: chain,restaurant,mexican,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 110
+- source: gymflow
+  source_id: wahaca_pork_pibil_taco_2
+  name: Wahaca Pork Pibil Tacos (2)
+  brand: Wahaca
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 220
+  serving_label: 1 piece (220 g)
+  portion_unit: piece
+  tags: chain,restaurant,mexican
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 110
+- source: gymflow
+  source_id: wahaca_grilled_steak_taco_2
+  name: Wahaca Grilled Steak Tacos (2)
+  brand: Wahaca
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 14
+  carbs_per_100g: 20
+  fat_per_100g: 9
+  serving_grams: 220
+  serving_label: 1 piece (220 g)
+  portion_unit: piece
+  tags: chain,restaurant,mexican
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 110
+- source: gymflow
+  source_id: wahaca_mushroom_taco_2
+  name: Wahaca Mushroom Tacos (2)
+  brand: Wahaca
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: chain,restaurant,mexican,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 100
+- source: gymflow
+  source_id: wahaca_quesadilla_chicken
+  name: Wahaca Chicken Quesadilla
+  brand: Wahaca
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: chain,restaurant,mexican,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 380
+- source: gymflow
+  source_id: wahaca_chargrilled_chicken
+  name: Wahaca Chargrilled Chicken
+  brand: Wahaca
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 4
+  fat_per_100g: 8
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: meal
+  tags: chain,restaurant,mexican,chicken,high_protein
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 200
+- source: gymflow
+  source_id: wahaca_nachos_full_meal
+  name: Wahaca Loaded Nachos
+  brand: Wahaca
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 9
+  carbs_per_100g: 26
+  fat_per_100g: 14
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: pack
+  tags: chain,restaurant,mexican,starter
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,sulphites
+  unit_grams: 350
+- source: gymflow
+  source_id: wahaca_guacamole
+  name: Wahaca Guacamole (per portion)
+  brand: Wahaca
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 2
+  carbs_per_100g: 5
+  fat_per_100g: 13
+  serving_grams: 80
+  serving_label: 1 portion (80 g)
+  portion_unit: pack
+  tags: chain,restaurant,mexican,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 80
+- source: gymflow
+  source_id: fnb_classic_pepperoni_pizza
+  name: F&B Classic Pepperoni Pizza
+  brand: Frankie & Benny's
+  region_codes: gb
+  kcal_per_100g: 260
+  protein_per_100g: 13
+  carbs_per_100g: 26
+  fat_per_100g: 11
+  serving_grams: 300
+  serving_label: 1 portion (300 g)
+  portion_unit: meal
+  tags: chain,restaurant,italian,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sulphites
+  unit_grams: 300
+- source: gymflow
+  source_id: fnb_meat_lovers_pizza
+  name: F&B Meat Lovers Pizza
+  brand: Frankie & Benny's
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 14
+  carbs_per_100g: 26
+  fat_per_100g: 14
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: chain,restaurant,italian,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 350
+- source: gymflow
+  source_id: fnb_classic_burger
+  name: F&B Classic Burger
+  brand: Frankie & Benny's
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 15
+  carbs_per_100g: 22
+  fat_per_100g: 13
+  serving_grams: 480
+  serving_label: 1 portion (480 g)
+  portion_unit: meal
+  tags: chain,restaurant,burger
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 480
+- source: gymflow
+  source_id: fnb_chicken_milanese
+  name: F&B Chicken Milanese
+  brand: Frankie & Benny's
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 18
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: chain,restaurant,italian,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 450
+- source: gymflow
+  source_id: fnb_lasagne
+  name: F&B Lasagne Classico
+  brand: Frankie & Benny's
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 11
+  carbs_per_100g: 19
+  fat_per_100g: 11
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: chain,restaurant,italian,pasta
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 500
+- source: gymflow
+  source_id: fnb_carbonara
+  name: F&B Spaghetti Carbonara
+  brand: Frankie & Benny's
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: chain,restaurant,italian,pasta
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 450
+- source: gymflow
+  source_id: bella_pepperoni_pizza
+  name: Bella Italia Pepperoni Pizza
+  brand: Bella Italia
+  region_codes: gb
+  kcal_per_100g: 260
+  protein_per_100g: 13
+  carbs_per_100g: 26
+  fat_per_100g: 11
+  serving_grams: 300
+  serving_label: 1 portion (300 g)
+  portion_unit: meal
+  tags: chain,restaurant,italian,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sulphites
+  unit_grams: 300
+- source: gymflow
+  source_id: bella_carbonara
+  name: Bella Italia Carbonara
+  brand: Bella Italia
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: chain,restaurant,italian,pasta
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 450
+- source: gymflow
+  source_id: bella_chicken_milanese
+  name: Bella Italia Chicken Milanese
+  brand: Bella Italia
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 18
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: chain,restaurant,italian,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 450
+- source: gymflow
+  source_id: bella_lasagne
+  name: Bella Italia Lasagne al Forno
+  brand: Bella Italia
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 11
+  carbs_per_100g: 19
+  fat_per_100g: 11
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: chain,restaurant,italian,pasta
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 500
+- source: gymflow
+  source_id: bella_pollo_funghi
+  name: Bella Italia Pollo Funghi
+  brand: Bella Italia
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 12
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: chain,restaurant,italian,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 450
+- source: gymflow
+  source_id: prezzo_pepperoni_pizza
+  name: Prezzo Pepperoni Pizza
+  brand: Prezzo
+  region_codes: gb
+  kcal_per_100g: 260
+  protein_per_100g: 13
+  carbs_per_100g: 26
+  fat_per_100g: 11
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: chain,restaurant,italian,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sulphites
+  unit_grams: 350
+- source: gymflow
+  source_id: prezzo_carbonara
+  name: Prezzo Carbonara
+  brand: Prezzo
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: chain,restaurant,italian,pasta
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 450
+- source: gymflow
+  source_id: prezzo_chicken_milanese
+  name: Prezzo Chicken Milanese
+  brand: Prezzo
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 18
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: chain,restaurant,italian,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 450
+- source: gymflow
+  source_id: prezzo_lasagne
+  name: Prezzo Lasagne al Forno
+  brand: Prezzo
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 11
+  carbs_per_100g: 19
+  fat_per_100g: 11
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: chain,restaurant,italian,pasta
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 500
+- source: gymflow
+  source_id: yo_california_roll_4
+  name: Yo! California Roll (4 pieces)
+  brand: Yo! Sushi
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 6
+  carbs_per_100g: 24
+  fat_per_100g: 4
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: chain,japanese,sushi
+  dietary_compat: pescatarian
+  allergens: crustaceans,fish,soy,eggs,sesame
+  unit_grams: 25
+- source: gymflow
+  source_id: yo_salmon_nigiri_2
+  name: Yo! Salmon Nigiri (2 pieces)
+  brand: Yo! Sushi
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 6
+  carbs_per_100g: 24
+  fat_per_100g: 5
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: chain,japanese,sushi
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish
+  unit_grams: 30
+- source: gymflow
+  source_id: yo_chicken_katsu_curry
+  name: Yo! Chicken Katsu Curry
+  brand: Yo! Sushi
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 25
+  fat_per_100g: 7
+  serving_grams: 410
+  serving_label: 1 portion (410 g)
+  portion_unit: meal
+  tags: chain,japanese,curry,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,celery
+  unit_grams: 410
+- source: gymflow
+  source_id: yo_chicken_teriyaki_donburi
+  name: Yo! Chicken Teriyaki Donburi
+  brand: Yo! Sushi
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: chain,japanese,bowl,chicken
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,soy,sesame
+  unit_grams: 400
+- source: gymflow
+  source_id: yo_edamame_beans
+  name: Yo! Edamame
+  brand: Yo! Sushi
+  region_codes: gb
+  kcal_per_100g: 135
+  protein_per_100g: 12
+  carbs_per_100g: 8
+  fat_per_100g: 5
+  serving_grams: 100
+  serving_label: 1 portion (100 g)
+  portion_unit: pack
+  tags: chain,japanese,starter,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+  unit_grams: 100
+- source: gymflow
+  source_id: yo_pork_gyoza_5
+  name: Yo! Pork Gyoza (5)
+  brand: Yo! Sushi
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 10
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: chain,japanese,starter
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,soy,sesame
+  unit_grams: 26
+- source: gymflow
+  source_id: honest_classic_burger
+  name: Honest Burgers Classic
+  brand: Honest Burgers
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 16
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: chain,restaurant,burger
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 380
+- source: gymflow
+  source_id: honest_tribute_burger
+  name: Honest Burgers Tribute
+  brand: Honest Burgers
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 16
+  carbs_per_100g: 22
+  fat_per_100g: 16
+  serving_grams: 420
+  serving_label: 1 portion (420 g)
+  portion_unit: meal
+  tags: chain,restaurant,burger
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 420
+- source: gymflow
+  source_id: honest_chicken_burger
+  name: Honest Burgers Chicken
+  brand: Honest Burgers
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 17
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: chain,restaurant,burger,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 380
+- source: gymflow
+  source_id: honest_plant_burger
+  name: Honest Burgers Plant
+  brand: Honest Burgers
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: chain,restaurant,burger,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sesame,soy
+  unit_grams: 380
+- source: gymflow
+  source_id: honest_chips
+  name: Honest Burgers Chips
+  brand: Honest Burgers
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 4
+  carbs_per_100g: 38
+  fat_per_100g: 13
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,restaurant,side
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 200
+- source: gymflow
+  source_id: honest_rosemary_chips
+  name: Honest Rosemary Chips
+  brand: Honest Burgers
+  region_codes: gb
+  kcal_per_100g: 305
+  protein_per_100g: 4
+  carbs_per_100g: 38
+  fat_per_100g: 14
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,restaurant,side
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 200
+- source: gymflow
+  source_id: patty_bun_ari_gold
+  name: Patty & Bun Ari Gold
+  brand: Patty & Bun
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 16
+  carbs_per_100g: 22
+  fat_per_100g: 16
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: chain,restaurant,burger
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 380
+- source: gymflow
+  source_id: patty_bun_smokey_robinson
+  name: Patty & Bun Smokey Robinson
+  brand: Patty & Bun
+  region_codes: gb
+  kcal_per_100g: 310
+  protein_per_100g: 17
+  carbs_per_100g: 22
+  fat_per_100g: 18
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: chain,restaurant,burger
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame,sulphites
+  unit_grams: 400
+- source: gymflow
+  source_id: patty_bun_chicken_burger
+  name: Patty & Bun Coronation Chicken
+  brand: Patty & Bun
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 17
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: chain,restaurant,burger,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 380
+- source: gymflow
+  source_id: pho_chicken_pho
+  name: Pho Chicken Pho
+  brand: Pho
+  region_codes: gb
+  kcal_per_100g: 55
+  protein_per_100g: 5
+  carbs_per_100g: 9
+  fat_per_100g: 1
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: chain,restaurant,vietnamese,soup,low_calorie
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish,soy
+  unit_grams: 700
+- source: gymflow
+  source_id: pho_beef_pho
+  name: Pho Beef Pho
+  brand: Pho
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 5
+  carbs_per_100g: 9
+  fat_per_100g: 1.5
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: chain,restaurant,vietnamese,soup
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish,soy
+  unit_grams: 700
+- source: gymflow
+  source_id: pho_summer_rolls_3
+  name: Pho Summer Rolls (3)
+  brand: Pho
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 5
+  carbs_per_100g: 17
+  fat_per_100g: 1
+  serving_grams: 270
+  serving_label: 1 piece (270 g)
+  portion_unit: piece
+  tags: chain,restaurant,vietnamese,starter,low_fat
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: crustaceans,fish,soy,sesame
+  unit_grams: 90
+- source: gymflow
+  source_id: pho_banh_mi
+  name: Pho Bánh Mì
+  brand: Pho
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 27
+  fat_per_100g: 7
+  serving_grams: 280
+  serving_label: 1 piece (280 g)
+  portion_unit: piece
+  tags: chain,restaurant,vietnamese,sandwich
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,fish,soy,eggs
+  unit_grams: 280
+- source: gymflow
+  source_id: pho_chicken_curry
+  name: Pho Chicken Curry
+  brand: Pho
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 6
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: chain,restaurant,vietnamese,curry,chicken
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish,soy
+  unit_grams: 400
+- source: gymflow
+  source_id: kk_original_glazed
+  name: Krispy Kreme Original Glazed
+  brand: Krispy Kreme
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  serving_grams: 52
+  serving_label: 1 piece (52 g)
+  portion_unit: piece
+  tags: chain,branded,dessert,doughnut
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 52
+- source: gymflow
+  source_id: kk_chocolate_glazed
+  name: Krispy Kreme Chocolate Iced Glazed
+  brand: Krispy Kreme
+  region_codes: gb
+  kcal_per_100g: 415
+  protein_per_100g: 4
+  carbs_per_100g: 52
+  fat_per_100g: 21
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: chain,branded,dessert,doughnut
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 60
+- source: gymflow
+  source_id: kk_strawberry_glazed
+  name: Krispy Kreme Strawberry Iced
+  brand: Krispy Kreme
+  region_codes: gb
+  kcal_per_100g: 420
+  protein_per_100g: 4
+  carbs_per_100g: 53
+  fat_per_100g: 21
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: chain,branded,dessert,doughnut
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 60
+- source: gymflow
+  source_id: kk_original_filled
+  name: Krispy Kreme Original Filled (Custard)
+  brand: Krispy Kreme
+  region_codes: gb
+  kcal_per_100g: 425
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 23
+  serving_grams: 78
+  serving_label: 1 piece (78 g)
+  portion_unit: piece
+  tags: chain,branded,dessert,doughnut
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 78
+- source: gymflow
+  source_id: kk_lotus_biscoff
+  name: Krispy Kreme Lotus Biscoff
+  brand: Krispy Kreme
+  region_codes: gb
+  kcal_per_100g: 440
+  protein_per_100g: 4
+  carbs_per_100g: 55
+  fat_per_100g: 22
+  serving_grams: 80
+  serving_label: 1 piece (80 g)
+  portion_unit: piece
+  tags: chain,branded,dessert,doughnut
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 80
+- source: gymflow
+  source_id: iguanas_chicken_burrito
+  name: Las Iguanas Chicken Burrito
+  brand: Las Iguanas
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 11
+  carbs_per_100g: 24
+  fat_per_100g: 7
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: chain,restaurant,mexican,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 500
+- source: gymflow
+  source_id: iguanas_chimichanga_chicken
+  name: Las Iguanas Chicken Chimichanga
+  brand: Las Iguanas
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: chain,restaurant,mexican,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 450
+- source: gymflow
+  source_id: iguanas_paella
+  name: Las Iguanas Paella
+  brand: Las Iguanas
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 19
+  fat_per_100g: 5
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: chain,restaurant,spanish
+  dietary_compat: pescatarian,dairy_free
+  allergens: crustaceans,molluscs,sulphites
+  unit_grams: 500
+- source: gymflow
+  source_id: banana_tree_pad_thai
+  name: Banana Tree Pad Thai Chicken
+  brand: Banana Tree
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 12
+  carbs_per_100g: 18
+  fat_per_100g: 6
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: chain,restaurant,thai,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs,peanuts,fish,soy
+  unit_grams: 400
+- source: gymflow
+  source_id: busaba_pad_thai
+  name: Busaba Pad Thai
+  brand: Busaba
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 12
+  carbs_per_100g: 18
+  fat_per_100g: 6
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: chain,restaurant,thai,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs,peanuts,fish,soy
+  unit_grams: 400
+- source: gymflow
+  source_id: busaba_green_curry
+  name: Busaba Green Curry Chicken
+  brand: Busaba
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 12
+  fat_per_100g: 6
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: chain,restaurant,thai,curry,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: fish,soy
+  unit_grams: 400
+- source: gymflow
+  source_id: rosas_thai_pad_kee_mao
+  name: Rosa's Thai Pad Kee Mao Chicken
+  brand: Rosa's Thai
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: chain,restaurant,thai,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs,fish,soy
+  unit_grams: 400
+- source: gymflow
+  source_id: rosas_green_curry
+  name: Rosa's Thai Green Curry Chicken
+  brand: Rosa's Thai
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 12
+  fat_per_100g: 6
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: chain,restaurant,thai,curry,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: fish,soy
+  unit_grams: 400
+- source: gymflow
+  source_id: rosas_thai_red_curry
+  name: Rosa's Thai Red Curry Beef
+  brand: Rosa's Thai
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 12
+  carbs_per_100g: 12
+  fat_per_100g: 9
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: chain,restaurant,thai,curry
+  dietary_compat: pescatarian,dairy_free
+  allergens: fish,soy
+  unit_grams: 400
+- source: gymflow
+  source_id: tortilla_chicken_burrito
+  name: Tortilla Chicken Burrito
+  brand: Tortilla
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 24
+  fat_per_100g: 6
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: chain,restaurant,mexican,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 500
+- source: gymflow
+  source_id: tortilla_beef_burrito
+  name: Tortilla Beef Burrito
+  brand: Tortilla
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: chain,restaurant,mexican
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 500
+- source: gymflow
+  source_id: tortilla_naked_burrito_chicken
+  name: Tortilla Naked Burrito Chicken
+  brand: Tortilla
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 12
+  carbs_per_100g: 18
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: chain,restaurant,mexican,chicken,low_carb
+  dietary_compat: pescatarian
+  allergens: milk
+  unit_grams: 400
+- source: gymflow
+  source_id: tortilla_quesadilla_chicken
+  name: Tortilla Chicken Quesadilla
+  brand: Tortilla
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: chain,restaurant,mexican,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 380
+- source: gymflow
+  source_id: chiquito_fajitas_chicken
+  name: Chiquito Chicken Fajitas
+  brand: Chiquito
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 16
+  fat_per_100g: 6
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: chain,restaurant,mexican,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sulphites
+  unit_grams: 400
+- source: gymflow
+  source_id: chiquito_burrito_chicken
+  name: Chiquito Chicken Burrito
+  brand: Chiquito
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 24
+  fat_per_100g: 6
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: chain,restaurant,mexican,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 500
+- source: gymflow
+  source_id: chiquito_nachos_loaded
+  name: Chiquito Loaded Nachos
+  brand: Chiquito
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 9
+  carbs_per_100g: 26
+  fat_per_100g: 14
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: pack
+  tags: chain,restaurant,mexican,starter
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,sulphites
+  unit_grams: 350
+- source: gymflow
+  source_id: patisserie_valerie_chocolate_cake
+  name: Patisserie Valerie Chocolate Cake (slice)
+  brand: Patisserie Valerie
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  serving_grams: 100
+  serving_label: 1 slice (100 g)
+  portion_unit: slice
+  tags: chain,restaurant,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 100
+- source: gymflow
+  source_id: patisserie_valerie_red_velvet
+  name: Patisserie Valerie Red Velvet (slice)
+  brand: Patisserie Valerie
+  region_codes: gb
+  kcal_per_100g: 405
+  protein_per_100g: 5
+  carbs_per_100g: 52
+  fat_per_100g: 21
+  serving_grams: 100
+  serving_label: 1 slice (100 g)
+  portion_unit: slice
+  tags: chain,restaurant,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 100
+- source: gymflow
+  source_id: hardrock_classic_burger
+  name: Hard Rock Classic Burger
+  brand: Hard Rock
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 16
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  serving_grams: 480
+  serving_label: 1 portion (480 g)
+  portion_unit: meal
+  tags: chain,restaurant,burger
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 480
+- source: gymflow
+  source_id: hardrock_chicken_sandwich
+  name: Hard Rock Original Legendary Chicken Sandwich
+  brand: Hard Rock
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 17
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: chain,restaurant,burger,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 380
+- source: gymflow
+  source_id: greggs_belgian_bun
+  name: Greggs Belgian Bun
+  brand: Greggs
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 6
+  carbs_per_100g: 56
+  fat_per_100g: 11
+  serving_grams: 110
+  serving_label: 1 piece (110 g)
+  portion_unit: piece
+  tags: chain,bakery,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 110
+- source: gymflow
+  source_id: greggs_iced_doughnut
+  name: Greggs Iced Ring Doughnut
+  brand: Greggs
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 56
+  fat_per_100g: 14
+  serving_grams: 70
+  serving_label: 1 piece (70 g)
+  portion_unit: piece
+  tags: chain,bakery,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 70
+- source: gymflow
+  source_id: pret_oat_porridge_brown_sugar
+  name: Pret Oat Porridge with Brown Sugar
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 6
+  carbs_per_100g: 25
+  fat_per_100g: 4
+  serving_grams: 270
+  serving_label: 1 portion (270 g)
+  portion_unit: pack
+  tags: chain,coffee,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 270
+- source: gymflow
+  source_id: pret_chicken_pesto_pot
+  name: Pret Chicken Pesto Pasta Pot
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: chain,coffee,salad,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,tree_nuts
+  unit_grams: 250
+- source: gymflow
+  source_id: pret_smoked_salmon_avocado_box
+  name: Pret Smoked Salmon & Avocado Box
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 11
+  serving_grams: 280
+  serving_label: 1 portion (280 g)
+  portion_unit: pack
+  tags: chain,coffee,salad,fish,high_protein
+  dietary_compat: pescatarian,gluten_free
+  allergens: fish,milk,eggs,mustard
+  unit_grams: 280
+- source: gymflow
+  source_id: pret_crayfish_avocado_baguette
+  name: Pret Crayfish & Avocado Baguette
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 250
+  serving_label: 1 piece (250 g)
+  portion_unit: piece
+  tags: chain,coffee,food
+  dietary_compat: pescatarian
+  allergens: crustaceans,gluten,milk,eggs
+  unit_grams: 250
+- source: gymflow
+  source_id: costa_mocha_iced_med_oat
+  name: Costa Iced Mocha (medium, oat)
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 90
+  protein_per_100g: 1.5
+  carbs_per_100g: 14
+  fat_per_100g: 3
+  serving_grams: 360
+  serving_label: 1 ml (360 g)
+  portion_unit: ml
+  tags: chain,coffee,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy
+- source: gymflow
+  source_id: costa_iced_caramel_macchiato
+  name: Costa Iced Caramel Macchiato (medium)
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 2.5
+  carbs_per_100g: 12
+  fat_per_100g: 2.0
+  serving_grams: 360
+  serving_label: 1 ml (360 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: costa_chocolate_box
+  name: Costa Chocolate Box Bar
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  serving_grams: 80
+  serving_label: 1 piece (80 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 80
+- source: gymflow
+  source_id: costa_tuna_sweetcorn_baguette
+  name: Costa Tuna & Sweetcorn Baguette
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 12
+  carbs_per_100g: 25
+  fat_per_100g: 8
+  serving_grams: 195
+  serving_label: 1 piece (195 g)
+  portion_unit: piece
+  tags: chain,coffee,food
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,fish,mustard
+  unit_grams: 195

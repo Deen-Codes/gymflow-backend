@@ -1,0 +1,830 @@
+# coop.yaml — Co-op own-brand items. 50 entries covering most-logged staples.
+- source: gymflow
+  source_id: coop_greek_yogurt_natural_500
+  name: Co-op Greek Style Natural Yogurt
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 5.5
+  carbs_per_100g: 5.0
+  fat_per_100g: 6.0
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: supermarket,dairy
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 150
+- source: gymflow
+  source_id: coop_greek_yogurt_0pct
+  name: Co-op Greek Style 0% Fat Yogurt
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 10.0
+  carbs_per_100g: 4.0
+  fat_per_100g: 0.4
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: supermarket,dairy,high_protein,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 150
+- source: gymflow
+  source_id: coop_skyr_vanilla
+  name: Co-op Vanilla Skyr
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 70
+  protein_per_100g: 11.0
+  carbs_per_100g: 6.0
+  fat_per_100g: 0.2
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: supermarket,dairy,high_protein,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 150
+- source: gymflow
+  source_id: coop_milk_semi
+  name: Co-op British Semi-skimmed Milk
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 47
+  protein_per_100g: 3.5
+  carbs_per_100g: 4.8
+  fat_per_100g: 1.7
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: supermarket,dairy
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: coop_milk_whole
+  name: Co-op British Whole Milk
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 3.4
+  carbs_per_100g: 4.7
+  fat_per_100g: 3.6
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: supermarket,dairy
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: coop_cheddar_mature
+  name: Co-op Mature Cheddar
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 416
+  protein_per_100g: 25
+  carbs_per_100g: 0.1
+  fat_per_100g: 35
+  serving_grams: 30
+  serving_label: 1 slice (30 g)
+  portion_unit: slice
+  tags: supermarket,dairy,high_protein
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 30
+- source: gymflow
+  source_id: coop_butter_unsalted
+  name: Co-op Unsalted Butter
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 717
+  protein_per_100g: 0.9
+  carbs_per_100g: 0.1
+  fat_per_100g: 81
+  serving_grams: 14
+  serving_label: 1 tbsp (14 g)
+  portion_unit: tbsp
+  tags: supermarket,dairy,fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 14
+- source: gymflow
+  source_id: coop_eggs_free_range_med
+  name: Co-op Free Range Medium Eggs
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 155
+  protein_per_100g: 13
+  carbs_per_100g: 1.1
+  fat_per_100g: 11
+  serving_grams: 50
+  serving_label: 1 egg (50 g)
+  portion_unit: egg
+  tags: supermarket,eggs
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: eggs
+  unit_grams: 50
+- source: gymflow
+  source_id: coop_eggs_free_range_lge
+  name: Co-op Free Range Large Eggs
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 155
+  protein_per_100g: 13
+  carbs_per_100g: 1.1
+  fat_per_100g: 11
+  serving_grams: 60
+  serving_label: 1 egg (60 g)
+  portion_unit: egg
+  tags: supermarket,eggs
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: eggs
+  unit_grams: 60
+- source: gymflow
+  source_id: coop_loved_white_bread
+  name: Co-op Loved by Us White Bread
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 47
+  fat_per_100g: 2.5
+  serving_grams: 38
+  serving_label: 1 slice (38 g)
+  portion_unit: slice
+  tags: supermarket,bakery,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 38
+- source: gymflow
+  source_id: coop_loved_wholemeal_bread
+  name: Co-op Loved by Us Wholemeal Bread
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 9
+  carbs_per_100g: 41
+  fat_per_100g: 2.5
+  serving_grams: 38
+  serving_label: 1 slice (38 g)
+  portion_unit: slice
+  tags: supermarket,bakery,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 38
+- source: gymflow
+  source_id: coop_50_50_bread
+  name: Co-op 50/50 Medium Bread
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 8.5
+  carbs_per_100g: 44
+  fat_per_100g: 2.5
+  serving_grams: 36
+  serving_label: 1 slice (36 g)
+  portion_unit: slice
+  tags: supermarket,bakery,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 36
+- source: gymflow
+  source_id: coop_seeded_bread
+  name: Co-op Seeded Bloomer
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 10
+  carbs_per_100g: 38
+  fat_per_100g: 5
+  serving_grams: 50
+  serving_label: 1 slice (50 g)
+  portion_unit: slice
+  tags: supermarket,bakery,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sesame
+  unit_grams: 50
+- source: gymflow
+  source_id: coop_brioche_buns_4
+  name: Co-op Brioche Buns
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 305
+  protein_per_100g: 10
+  carbs_per_100g: 50
+  fat_per_100g: 7
+  serving_grams: 70
+  serving_label: 1 piece (70 g)
+  portion_unit: piece
+  tags: supermarket,bakery,bread
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 70
+- source: gymflow
+  source_id: coop_white_wraps
+  name: Co-op White Tortilla Wraps
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 295
+  protein_per_100g: 9
+  carbs_per_100g: 52
+  fat_per_100g: 6
+  serving_grams: 64
+  serving_label: 1 wrap (64 g)
+  portion_unit: wrap
+  tags: supermarket,bakery,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 64
+- source: gymflow
+  source_id: coop_pitta_white_5
+  name: Co-op White Pitta Breads
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 9
+  carbs_per_100g: 55
+  fat_per_100g: 1.5
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: supermarket,bakery,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 60
+- source: gymflow
+  source_id: coop_chicken_breast_fillets
+  name: Co-op British Chicken Breast Fillets
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 23.5
+  carbs_per_100g: 0
+  fat_per_100g: 1.6
+  serving_grams: 150
+  serving_label: 1 grams (150 g)
+  portion_unit: grams
+  tags: supermarket,meat,chicken,high_protein,low_fat,low_carb
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: coop_chicken_thighs
+  name: Co-op British Chicken Thighs
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 19
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: supermarket,meat,chicken,high_protein
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: coop_lean_beef_mince_5pct
+  name: Co-op Lean Beef Mince 5% Fat
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 137
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 5
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: supermarket,meat,high_protein,low_fat
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: coop_pork_sausages_8
+  name: Co-op British Pork Sausages
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 14
+  carbs_per_100g: 9
+  fat_per_100g: 22
+  serving_grams: 50
+  serving_label: 1 piece (50 g)
+  portion_unit: piece
+  tags: supermarket,meat,processed
+  dietary_compat: pescatarian
+  allergens: gluten,sulphites
+  unit_grams: 50
+- source: gymflow
+  source_id: coop_bacon_smoked_back
+  name: Co-op Smoked Back Bacon
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 27
+  carbs_per_100g: 0
+  fat_per_100g: 20
+  serving_grams: 25
+  serving_label: 1 slice (25 g)
+  portion_unit: slice
+  tags: supermarket,meat,processed
+  dietary_compat: pescatarian,gluten_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: coop_ham_wafer_thin
+  name: Co-op Wafer Thin Ham
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 19
+  carbs_per_100g: 1.5
+  fat_per_100g: 3
+  serving_grams: 25
+  serving_label: 1 slice (25 g)
+  portion_unit: slice
+  tags: supermarket,meat,processed
+  dietary_compat: pescatarian,gluten_free,dairy_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: coop_tuna_chunks_water
+  name: Co-op Tuna Chunks in Spring Water
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 116
+  protein_per_100g: 26
+  carbs_per_100g: 0
+  fat_per_100g: 1
+  serving_grams: 80
+  serving_label: 1 can (80 g)
+  portion_unit: can
+  tags: supermarket,fish,canned,high_protein,low_fat,low_carb
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 80
+- source: gymflow
+  source_id: coop_smoked_salmon
+  name: Co-op Smoked Scottish Salmon
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 6
+  serving_grams: 30
+  serving_label: 1 slice (30 g)
+  portion_unit: slice
+  tags: supermarket,fish,high_protein,omega3
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 30
+- source: gymflow
+  source_id: coop_salmon_fillets
+  name: Co-op Salmon Fillets
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 210
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: supermarket,fish,high_protein,omega3
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 130
+- source: gymflow
+  source_id: coop_porridge_oats
+  name: Co-op Porridge Oats
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 379
+  protein_per_100g: 13
+  carbs_per_100g: 67.7
+  fat_per_100g: 7
+  serving_grams: 40
+  serving_label: 1 grams (40 g)
+  portion_unit: grams
+  tags: supermarket,cereal,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: coop_corn_flakes
+  name: Co-op Corn Flakes
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 7.5
+  carbs_per_100g: 84
+  fat_per_100g: 0.9
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: supermarket,cereal,breakfast
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: coop_bran_flakes
+  name: Co-op Bran Flakes
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 11
+  carbs_per_100g: 70
+  fat_per_100g: 2
+  serving_grams: 40
+  serving_label: 1 grams (40 g)
+  portion_unit: grams
+  tags: supermarket,cereal,breakfast,fibre
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: coop_granola_fruit_nut
+  name: Co-op Fruit & Nut Granola
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 440
+  protein_per_100g: 9
+  carbs_per_100g: 60
+  fat_per_100g: 18
+  serving_grams: 50
+  serving_label: 1 grams (50 g)
+  portion_unit: grams
+  tags: supermarket,cereal,breakfast
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,tree_nuts
+- source: gymflow
+  source_id: coop_white_pasta_dry
+  name: Co-op Penne Pasta (dry)
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 358
+  protein_per_100g: 12
+  carbs_per_100g: 71
+  fat_per_100g: 1.8
+  serving_grams: 75
+  serving_label: 1 grams (75 g)
+  portion_unit: grams
+  tags: supermarket,grain,pasta
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: coop_basmati_rice_dry
+  name: Co-op Basmati Rice (dry)
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 7.5
+  carbs_per_100g: 78
+  fat_per_100g: 0.9
+  serving_grams: 75
+  serving_label: 1 grams (75 g)
+  portion_unit: grams
+  tags: supermarket,grain,rice
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: coop_white_rice_microwave
+  name: Co-op Microwave White Rice
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 2.7
+  carbs_per_100g: 28
+  fat_per_100g: 0.3
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: supermarket,grain,rice
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: coop_milk_chocolate_bar
+  name: Co-op Milk Chocolate Bar
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 540
+  protein_per_100g: 7
+  carbs_per_100g: 56
+  fat_per_100g: 30
+  serving_grams: 45
+  serving_label: 1 bar (45 g)
+  portion_unit: bar
+  tags: supermarket,snack,confectionery
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+  unit_grams: 45
+- source: gymflow
+  source_id: coop_chocolate_cookies
+  name: Co-op Chocolate Chip Cookies
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 490
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 22
+  serving_grams: 12
+  serving_label: 1 piece (12 g)
+  portion_unit: piece
+  tags: supermarket,snack,confectionery
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 12
+- source: gymflow
+  source_id: coop_ready_salted_crisps
+  name: Co-op Ready Salted Crisps
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 530
+  protein_per_100g: 6
+  carbs_per_100g: 50
+  fat_per_100g: 33
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: supermarket,snack,crisps
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: coop_salt_vinegar_crisps
+  name: Co-op Salt & Vinegar Crisps
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 530
+  protein_per_100g: 6
+  carbs_per_100g: 50
+  fat_per_100g: 33
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: supermarket,snack,crisps
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: coop_chicken_tikka_masala_meal
+  name: Co-op Chicken Tikka Masala
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 9
+  carbs_per_100g: 14
+  fat_per_100g: 5
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: supermarket,ready_meal,curry,chicken
+  dietary_compat: pescatarian
+  allergens: milk,celery
+  unit_grams: 400
+- source: gymflow
+  source_id: coop_lasagne_meal
+  name: Co-op Beef Lasagne
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 14
+  fat_per_100g: 7
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: supermarket,ready_meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 400
+- source: gymflow
+  source_id: coop_cottage_pie_meal
+  name: Co-op Cottage Pie
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 115
+  protein_per_100g: 7
+  carbs_per_100g: 12
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: supermarket,ready_meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,celery
+  unit_grams: 400
+- source: gymflow
+  source_id: coop_thai_green_curry_meal
+  name: Co-op Thai Green Chicken Curry
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: supermarket,ready_meal,curry,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: fish,celery
+  unit_grams: 400
+- source: gymflow
+  source_id: coop_orange_juice_smooth
+  name: Co-op Smooth Orange Juice
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 0.7
+  carbs_per_100g: 9.5
+  fat_per_100g: 0.2
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: supermarket,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: coop_apple_juice
+  name: Co-op Apple Juice
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 47
+  protein_per_100g: 0.1
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: supermarket,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: coop_water_still_500
+  name: Co-op Still Water
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: supermarket,drink,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: coop_frozen_chips
+  name: Co-op Oven Chips (frozen)
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 2.5
+  carbs_per_100g: 27
+  fat_per_100g: 5
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: supermarket,frozen,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: coop_frozen_peas
+  name: Co-op Garden Peas (frozen)
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 5
+  carbs_per_100g: 11
+  fat_per_100g: 0.4
+  serving_grams: 80
+  serving_label: 1 grams (80 g)
+  portion_unit: grams
+  tags: supermarket,frozen,vegetable,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: coop_frozen_pizza_pepperoni
+  name: Co-op Pepperoni Pizza (frozen)
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 12
+  carbs_per_100g: 30
+  fat_per_100g: 11
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: supermarket,frozen,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sulphites
+  unit_grams: 350
+- source: gymflow
+  source_id: coop_tomato_sauce
+  name: Co-op Tomato Ketchup
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 102
+  protein_per_100g: 1
+  carbs_per_100g: 23
+  fat_per_100g: 0.4
+  serving_grams: 17
+  serving_label: 1 tbsp (17 g)
+  portion_unit: tbsp
+  tags: supermarket,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 17
+- source: gymflow
+  source_id: coop_mayonnaise
+  name: Co-op Real Mayonnaise
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 680
+  protein_per_100g: 1
+  carbs_per_100g: 1.5
+  fat_per_100g: 75
+  serving_grams: 14
+  serving_label: 1 tbsp (14 g)
+  portion_unit: tbsp
+  tags: supermarket,condiment,fat
+  dietary_compat: vegetarian,pescatarian,gluten_free
+  allergens: eggs,mustard
+  unit_grams: 14
+- source: gymflow
+  source_id: coop_pasta_sauce_tomato
+  name: Co-op Tomato & Basil Pasta Sauce
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 55
+  protein_per_100g: 2
+  carbs_per_100g: 8
+  fat_per_100g: 1.5
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: supermarket,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: coop_baked_beans
+  name: Co-op Baked Beans in Tomato Sauce
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 4.8
+  carbs_per_100g: 13
+  fat_per_100g: 0.6
+  serving_grams: 200
+  serving_label: 1 grams (200 g)
+  portion_unit: grams
+  tags: supermarket,canned,pulses
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: coop_chickpeas_canned
+  name: Co-op Chickpeas (canned, drained)
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 18
+  fat_per_100g: 2
+  serving_grams: 80
+  serving_label: 1 grams (80 g)
+  portion_unit: grams
+  tags: supermarket,canned,pulses,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: coop_peanut_butter_smooth
+  name: Co-op Smooth Peanut Butter
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 600
+  protein_per_100g: 25
+  carbs_per_100g: 12
+  fat_per_100g: 50
+  serving_grams: 16
+  serving_label: 1 tbsp (16 g)
+  portion_unit: tbsp
+  tags: supermarket,fat,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: peanuts
+  unit_grams: 16
+- source: gymflow
+  source_id: coop_almonds_30g
+  name: Co-op Whole Almonds
+  brand: Co-op
+  region_codes: gb
+  kcal_per_100g: 615
+  protein_per_100g: 21
+  carbs_per_100g: 7
+  fat_per_100g: 53
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: supermarket,nuts,fat,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts

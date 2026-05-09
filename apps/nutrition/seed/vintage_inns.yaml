@@ -1,0 +1,483 @@
+# vintage_inns.yaml — Vintage Inns (Mitchells & Butlers) pub menu.
+# 30 entries. Source: vintageinns.co.uk allergen + nutrition guides.
+# `meal` portion unit captures full plate-as-served (main + sides bundled).
+- source: gymflow
+  source_id: vintageinns_fish_chips
+  name: Fish & Chips
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: pescatarian
+  allergens: fish,gluten,eggs
+  unit_grams: 600
+- source: gymflow
+  source_id: vintageinns_steak_ale_pie
+  name: Steak & Ale Pie
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 500
+- source: gymflow
+  source_id: vintageinns_chicken_pie
+  name: Chicken & Mushroom Pie
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 12
+  carbs_per_100g: 21
+  fat_per_100g: 10
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 500
+- source: gymflow
+  source_id: vintageinns_sunday_beef
+  name: Roast Beef Sunday Lunch
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 6
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: chain,pub,meal,sunday_roast
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,eggs,celery
+  unit_grams: 700
+- source: gymflow
+  source_id: vintageinns_sunday_chicken
+  name: Roast Chicken Sunday Lunch
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 16
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: chain,pub,meal,sunday_roast
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,eggs,celery
+  unit_grams: 700
+- source: gymflow
+  source_id: vintageinns_sunday_pork
+  name: Roast Pork Sunday Lunch
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 15
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: chain,pub,meal,sunday_roast
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs,celery
+  unit_grams: 700
+- source: gymflow
+  source_id: vintageinns_sunday_lamb
+  name: Roast Lamb Sunday Lunch
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 11
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: chain,pub,meal,sunday_roast
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,eggs,celery
+  unit_grams: 700
+- source: gymflow
+  source_id: vintageinns_burger_classic
+  name: Classic Beef Burger
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  serving_grams: 480
+  serving_label: 1 portion (480 g)
+  portion_unit: meal
+  tags: chain,pub,burger
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 480
+- source: gymflow
+  source_id: vintageinns_chicken_burger
+  name: Buttermilk Chicken Burger
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 16
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 460
+  serving_label: 1 portion (460 g)
+  portion_unit: meal
+  tags: chain,pub,burger,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 460
+- source: gymflow
+  source_id: vintageinns_lasagne
+  name: Beef Lasagne
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 450
+- source: gymflow
+  source_id: vintageinns_curry_chicken
+  name: Chicken Curry & Rice
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 170
+  protein_per_100g: 10
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: chain,pub,meal,curry
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,celery,mustard
+  unit_grams: 600
+- source: gymflow
+  source_id: vintageinns_gammon_egg
+  name: Gammon Steak with Egg & Chips
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 16
+  carbs_per_100g: 16
+  fat_per_100g: 8
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: chain,pub,meal,high_protein
+  dietary_compat: pescatarian,dairy_free
+  allergens: eggs
+  unit_grams: 500
+- source: gymflow
+  source_id: vintageinns_sausage_mash
+  name: Sausage & Mash
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 8
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  serving_grams: 550
+  serving_label: 1 portion (550 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 550
+- source: gymflow
+  source_id: vintageinns_seabass
+  name: Pan Seared Seabass
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 170
+  protein_per_100g: 16
+  carbs_per_100g: 12
+  fat_per_100g: 7
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: chain,pub,meal,fish
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish
+  unit_grams: 400
+- source: gymflow
+  source_id: vintageinns_veggie_burger
+  name: Plant-Based Burger
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 460
+  serving_label: 1 portion (460 g)
+  portion_unit: meal
+  tags: chain,pub,burger,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten,sesame,soy
+  unit_grams: 460
+- source: gymflow
+  source_id: vintageinns_garlic_bread
+  name: Garlic Bread
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 7
+  carbs_per_100g: 38
+  fat_per_100g: 12
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,pub,starter
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 180
+- source: gymflow
+  source_id: vintageinns_calamari
+  name: Salt & Pepper Calamari
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 170
+  serving_label: 1 portion (170 g)
+  portion_unit: pack
+  tags: chain,pub,starter
+  dietary_compat: pescatarian
+  allergens: gluten,molluscs,eggs
+  unit_grams: 170
+- source: gymflow
+  source_id: vintageinns_brie_wedges
+  name: Camembert Wedges
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 22
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,pub,starter
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 180
+- source: gymflow
+  source_id: vintageinns_prawn_cocktail
+  name: Prawn Cocktail
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 12
+  carbs_per_100g: 7
+  fat_per_100g: 11
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,pub,starter
+  dietary_compat: pescatarian
+  allergens: crustaceans,eggs,mustard
+  unit_grams: 180
+- source: gymflow
+  source_id: vintageinns_soup_day
+  name: Soup of the Day
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 2
+  carbs_per_100g: 9
+  fat_per_100g: 2
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: pack
+  tags: chain,pub,starter
+  dietary_compat: pescatarian
+  allergens: gluten,milk,celery
+  unit_grams: 350
+- source: gymflow
+  source_id: vintageinns_chips
+  name: Chips
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 4
+  carbs_per_100g: 36
+  fat_per_100g: 9
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,pub,side
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 200
+- source: gymflow
+  source_id: vintageinns_sweet_potato_fries
+  name: Sweet Potato Fries
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 3
+  carbs_per_100g: 35
+  fat_per_100g: 9
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,pub,side
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 180
+- source: gymflow
+  source_id: vintageinns_seasonal_veg
+  name: Seasonal Vegetables
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 3
+  carbs_per_100g: 9
+  fat_per_100g: 2
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: chain,pub,side,vegetable
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 150
+- source: gymflow
+  source_id: vintageinns_onion_rings
+  name: Onion Rings
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 310
+  protein_per_100g: 4
+  carbs_per_100g: 35
+  fat_per_100g: 16
+  serving_grams: 130
+  serving_label: 1 portion (130 g)
+  portion_unit: pack
+  tags: chain,pub,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 130
+- source: gymflow
+  source_id: vintageinns_side_salad
+  name: Side Salad
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 2
+  carbs_per_100g: 5
+  fat_per_100g: 3
+  serving_grams: 130
+  serving_label: 1 portion (130 g)
+  portion_unit: pack
+  tags: chain,pub,side,salad
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: mustard,sulphites
+  unit_grams: 130
+- source: gymflow
+  source_id: vintageinns_sticky_toffee
+  name: Sticky Toffee Pudding
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 365
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 17
+  serving_grams: 170
+  serving_label: 1 piece (170 g)
+  portion_unit: piece
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 170
+- source: gymflow
+  source_id: vintageinns_apple_crumble
+  name: Apple Crumble & Custard
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 3
+  carbs_per_100g: 42
+  fat_per_100g: 11
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 200
+- source: gymflow
+  source_id: vintageinns_chocolate_brownie
+  name: Chocolate Brownie Sundae
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 48
+  fat_per_100g: 19
+  serving_grams: 180
+  serving_label: 1 piece (180 g)
+  portion_unit: piece
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 180
+- source: gymflow
+  source_id: vintageinns_cheesecake
+  name: Vanilla Cheesecake
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 5
+  carbs_per_100g: 32
+  fat_per_100g: 19
+  serving_grams: 150
+  serving_label: 1 slice (150 g)
+  portion_unit: slice
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 150
+- source: gymflow
+  source_id: vintageinns_ice_cream_3
+  name: Ice Cream (3 scoops)
+  brand: Vintage Inns
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 4
+  carbs_per_100g: 24
+  fat_per_100g: 10
+  serving_grams: 150
+  serving_label: 1 piece (150 g)
+  portion_unit: piece
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+  unit_grams: 150

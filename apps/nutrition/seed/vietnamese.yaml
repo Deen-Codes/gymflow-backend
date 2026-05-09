@@ -1,0 +1,400 @@
+# vietnamese.yaml — Vietnamese dishes (separate from Wasabi/Wagamama). Pho variants, banh mi, summer/spring rolls, com, bun, noodle bowls.
+- source: gymflow
+  source_id: viet_pho_bo
+  name: Phở Bò (Beef Noodle Soup)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 5
+  carbs_per_100g: 9
+  fat_per_100g: 1.5
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: vietnamese,soup,noodles
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish,soy
+  unit_grams: 700
+- source: gymflow
+  source_id: viet_pho_ga
+  name: Phở Gà (Chicken Noodle Soup)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 55
+  protein_per_100g: 5
+  carbs_per_100g: 9
+  fat_per_100g: 1
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: vietnamese,soup,noodles,chicken,low_calorie
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish,soy
+  unit_grams: 700
+- source: gymflow
+  source_id: viet_pho_chay
+  name: Phở Chay (Vegan Pho)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 2
+  carbs_per_100g: 10
+  fat_per_100g: 0.5
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: vietnamese,soup,noodles,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+  unit_grams: 700
+- source: gymflow
+  source_id: viet_banh_mi_chicken
+  name: Bánh Mì Gà (Chicken Sandwich)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 27
+  fat_per_100g: 7
+  serving_grams: 280
+  serving_label: 1 piece (280 g)
+  portion_unit: piece
+  tags: vietnamese,sandwich,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,fish,soy,eggs
+  unit_grams: 280
+- source: gymflow
+  source_id: viet_banh_mi_pork
+  name: Bánh Mì Heo (Pork Sandwich)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 12
+  carbs_per_100g: 26
+  fat_per_100g: 10
+  serving_grams: 280
+  serving_label: 1 piece (280 g)
+  portion_unit: piece
+  tags: vietnamese,sandwich
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,fish,soy,eggs
+  unit_grams: 280
+- source: gymflow
+  source_id: viet_banh_mi_tofu
+  name: Bánh Mì Đậu Hũ (Tofu)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 8
+  carbs_per_100g: 27
+  fat_per_100g: 5
+  serving_grams: 280
+  serving_label: 1 piece (280 g)
+  portion_unit: piece
+  tags: vietnamese,sandwich,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy,sesame
+  unit_grams: 280
+- source: gymflow
+  source_id: viet_bun_cha
+  name: Bún Chả
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 12
+  carbs_per_100g: 18
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: vietnamese,meal,noodles
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish,soy
+  unit_grams: 400
+- source: gymflow
+  source_id: viet_bun_bo_hue
+  name: Bún Bò Huế (Spicy Beef Noodle Soup)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 6
+  carbs_per_100g: 10
+  fat_per_100g: 2
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: vietnamese,soup,noodles
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish,soy
+  unit_grams: 600
+- source: gymflow
+  source_id: viet_goi_cuon_3
+  name: Gỏi Cuốn (Summer Rolls, 3)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 5
+  carbs_per_100g: 17
+  fat_per_100g: 1
+  serving_grams: 270
+  serving_label: 1 piece (270 g)
+  portion_unit: piece
+  tags: vietnamese,starter,low_fat
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: crustaceans,fish,soy,sesame
+  unit_grams: 90
+- source: gymflow
+  source_id: viet_goi_cuon_veg_3
+  name: Gỏi Cuốn Chay (Vegan, 3)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 2.5
+  carbs_per_100g: 16
+  fat_per_100g: 0.5
+  serving_grams: 270
+  serving_label: 1 piece (270 g)
+  portion_unit: piece
+  tags: vietnamese,starter,vegan,low_fat,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy,sesame
+  unit_grams: 90
+- source: gymflow
+  source_id: viet_nem_ran_5
+  name: Nem Rán / Chả Giò (Spring Rolls, 5)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 28
+  fat_per_100g: 12
+  serving_grams: 250
+  serving_label: 1 piece (250 g)
+  portion_unit: piece
+  tags: vietnamese,starter
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,crustaceans,eggs,soy,sesame
+  unit_grams: 50
+- source: gymflow
+  source_id: viet_nem_ran_veg_5
+  name: Vietnamese Veg Spring Rolls (5)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 225
+  protein_per_100g: 5
+  carbs_per_100g: 30
+  fat_per_100g: 9
+  serving_grams: 250
+  serving_label: 1 piece (250 g)
+  portion_unit: piece
+  tags: vietnamese,starter,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy,sesame
+  unit_grams: 50
+- source: gymflow
+  source_id: viet_com_tam
+  name: Cơm Tấm (Broken Rice w/ Pork)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 10
+  carbs_per_100g: 28
+  fat_per_100g: 5
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: vietnamese,meal,grain
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish,soy
+  unit_grams: 400
+- source: gymflow
+  source_id: viet_banh_xeo
+  name: Bánh Xèo (Vietnamese Pancake)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 205
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 250
+  serving_label: 1 piece (250 g)
+  portion_unit: piece
+  tags: vietnamese,meal
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: crustaceans,eggs,fish,soy
+  unit_grams: 250
+- source: gymflow
+  source_id: viet_ca_kho_to
+  name: Cá Kho Tộ (Caramel Catfish)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 185
+  protein_per_100g: 19
+  carbs_per_100g: 8
+  fat_per_100g: 8
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: meal
+  tags: vietnamese,meal,fish,high_protein
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish,soy
+  unit_grams: 250
+- source: gymflow
+  source_id: viet_ga_nuong
+  name: Gà Nướng (Grilled Chicken)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 24
+  carbs_per_100g: 4
+  fat_per_100g: 8
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: meal
+  tags: vietnamese,meal,chicken,high_protein,low_carb
+  dietary_compat: halal,pescatarian,dairy_free,gluten_free
+  allergens: fish,soy,sesame
+  unit_grams: 200
+- source: gymflow
+  source_id: viet_thit_nuong
+  name: Thịt Nướng (Grilled Pork)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 12
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: meal
+  tags: vietnamese,meal,high_protein
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish,soy,sesame
+  unit_grams: 200
+- source: gymflow
+  source_id: viet_bun_thit_nuong
+  name: Bún Thịt Nướng (Grilled Pork Vermicelli)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: vietnamese,noodles
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish,peanuts,soy,sesame
+  unit_grams: 400
+- source: gymflow
+  source_id: viet_pho_topping_extra_meat
+  name: Pho Extra Meat (50g add)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 28
+  carbs_per_100g: 0
+  fat_per_100g: 9
+  serving_grams: 50
+  serving_label: 1 portion (50 g)
+  portion_unit: pack
+  tags: vietnamese,addon,high_protein
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 50
+- source: gymflow
+  source_id: viet_nuoc_cham_15ml
+  name: Nước Chấm Dipping Sauce (15ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 35
+  protein_per_100g: 1
+  carbs_per_100g: 7
+  fat_per_100g: 0
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: vietnamese,sauce,low_calorie
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish
+  unit_grams: 15
+- source: gymflow
+  source_id: viet_hoisin_15g
+  name: Hoisin Sauce (15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 2
+  carbs_per_100g: 50
+  fat_per_100g: 1
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: vietnamese,sauce
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy,sulphites
+  unit_grams: 15
+- source: gymflow
+  source_id: viet_che_ba_mau
+  name: Chè Ba Màu (3-Colour Dessert)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 3
+  carbs_per_100g: 30
+  fat_per_100g: 5
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: vietnamese,dessert
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: viet_ca_phe_sua_da
+  name: Cà Phê Sữa Đá (Iced Vietnamese Coffee)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 2
+  carbs_per_100g: 14
+  fat_per_100g: 2.5
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: vietnamese,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: viet_che_dau
+  name: Chè Đậu (Sweet Bean Soup)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 4
+  carbs_per_100g: 25
+  fat_per_100g: 2
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: vietnamese,dessert,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: viet_lemongrass_chicken
+  name: Vietnamese Lemongrass Chicken
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 22
+  carbs_per_100g: 4
+  fat_per_100g: 7
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: meal
+  tags: vietnamese,chicken,high_protein
+  dietary_compat: halal,pescatarian,dairy_free,gluten_free
+  allergens: fish,soy
+  unit_grams: 250

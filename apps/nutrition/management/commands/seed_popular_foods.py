@@ -1,22 +1,23 @@
 """
 NUTRITION-DB seed loader — popular foods bootstrap.
 
-Loads `apps/nutrition/seed/popular_foods.yaml` into the
+Loads one or many YAML files under `apps/nutrition/seed/` into the
 `CuratedFood` table. Idempotent: re-running updates existing rows
 matched by `(source, source_id)` without creating duplicates.
 
 Usage:
     python manage.py seed_popular_foods
-    python manage.py seed_popular_foods --dry-run
+        # loads `apps/nutrition/seed/popular_foods.yaml` plus every
+        # other `.yaml` in `apps/nutrition/seed/` (FOOD-DB-V2 batches
+        # — `whole_foods.yaml`, `tesco.yaml`, `mcdonalds.yaml`, …).
+
     python manage.py seed_popular_foods --path /custom/path.yaml
+        # one specific file.
 
-This is the day-1 catalog — ~200 hand-curated entries covering UK
-+ US popular foods (whole foods, supermarket, restaurant chains,
-common takeaway, common dishes). For long-tail coverage we still
-fall back to OFF runtime barcode lookup in iOS.
+    python manage.py seed_popular_foods --dry-run
+        # validate everything, write nothing.
 
-To extend: add new entries to `popular_foods.yaml` and re-run. The
-command stays the same — it just upserts more rows.
+To extend: drop a new `.yaml` into `apps/nutrition/seed/` and re-run.
 """
 from __future__ import annotations
 
@@ -40,11 +41,17 @@ OPTIONAL_FIELDS = {
     "brand", "barcode", "region_codes",
     "serving_grams", "serving_label",
     "tags", "dietary_compat", "allergens",
+    "portion_unit", "unit_grams",
 }
 
-DEFAULT_SEED_PATH = (
-    Path(__file__).resolve().parents[2] / "seed" / "popular_foods.yaml"
-)
+VALID_PORTION_UNITS = {
+    "grams", "ml", "piece", "slice", "wrap", "scoop",
+    "tbsp", "tsp", "cup", "oz", "egg", "bar",
+    "can", "bottle", "pack", "pint", "shot", "meal",
+}
+
+DEFAULT_SEED_DIR = Path(__file__).resolve().parents[2] / "seed"
+DEFAULT_SEED_PATH = DEFAULT_SEED_DIR / "popular_foods.yaml"
 
 
 class Command(BaseCommand):
@@ -53,8 +60,11 @@ class Command(BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument(
             "--path",
-            default=str(DEFAULT_SEED_PATH),
-            help="Path to the seed YAML (defaults to apps/nutrition/seed/popular_foods.yaml).",
+            default=None,
+            help=(
+                "Path to a specific seed YAML. "
+                "Default behaviour is to load every .yaml in apps/nutrition/seed/."
+            ),
         )
         parser.add_argument(
             "--dry-run",
@@ -66,17 +76,32 @@ class Command(BaseCommand):
         path = opts["path"]
         dry_run = opts["dry_run"]
 
-        if not os.path.exists(path):
-            raise CommandError(f"Seed file not found: {path}")
+        # Build the file list. --path overrides; otherwise glob the
+        # whole seed directory so newly-added YAMLs (tesco.yaml,
+        # mcdonalds.yaml, …) get picked up automatically.
+        if path:
+            if not os.path.exists(path):
+                raise CommandError(f"Seed file not found: {path}")
+            seed_files = [Path(path)]
+        else:
+            seed_files = sorted(DEFAULT_SEED_DIR.glob("*.yaml"))
+            if not seed_files:
+                raise CommandError(f"No YAML files in {DEFAULT_SEED_DIR}")
 
-        self.stdout.write(f"Loading {path}…")
-        with open(path, "r") as f:
-            entries = yaml.safe_load(f)
-
-        if not isinstance(entries, list):
-            raise CommandError(
-                f"Expected a YAML list at root, got {type(entries).__name__}",
-            )
+        # Load + concatenate every YAML into a single entries list.
+        entries = []
+        for f_path in seed_files:
+            self.stdout.write(f"Loading {f_path.name}…")
+            with open(f_path, "r") as f:
+                chunk = yaml.safe_load(f)
+            if chunk is None:
+                continue
+            if not isinstance(chunk, list):
+                raise CommandError(
+                    f"{f_path.name}: expected a YAML list at root, "
+                    f"got {type(chunk).__name__}",
+                )
+            entries.extend(chunk)
 
         # Validate all entries upfront — we want a hard fail BEFORE
         # we start writing rows so partial-write states don't happen.
@@ -122,6 +147,22 @@ class Command(BaseCommand):
                     f"Entry {i}: numeric macro fields invalid",
                 )
 
+            # FOOD-DB-V2 — portion-unit validation. If a portion_unit
+            # other than "grams" is specified, unit_grams MUST also
+            # be present (otherwise the iOS picker can't compute
+            # per-N-units macros).
+            portion_unit = e.get("portion_unit") or "grams"
+            if portion_unit not in VALID_PORTION_UNITS:
+                validation_errors.append(
+                    f"Entry {i} ({e.get('source_id', '?')}): "
+                    f"portion_unit={portion_unit!r} not in {sorted(VALID_PORTION_UNITS)}"
+                )
+            if portion_unit != "grams" and e.get("unit_grams") is None:
+                validation_errors.append(
+                    f"Entry {i} ({e.get('source_id', '?')}): "
+                    f"portion_unit={portion_unit!r} requires unit_grams (gram-equivalent of 1 unit)"
+                )
+
         if validation_errors:
             self.stdout.write(self.style.ERROR(
                 f"Validation failed — {len(validation_errors)} errors:"
@@ -161,6 +202,9 @@ class Command(BaseCommand):
                     "tags":             str(e.get("tags", "") or ""),
                     "dietary_compat":   str(e.get("dietary_compat", "") or ""),
                     "allergens":        str(e.get("allergens", "") or ""),
+                    # FOOD-DB-V2 — portion units
+                    "portion_unit":     str(e.get("portion_unit", "grams") or "grams"),
+                    "unit_grams":       e.get("unit_grams"),
                 }
                 _, was_created = CuratedFood.objects.update_or_create(
                     source=e["source"],

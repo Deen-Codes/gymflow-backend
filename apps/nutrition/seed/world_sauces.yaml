@@ -1,0 +1,1009 @@
+# world_sauces.yaml — curry pastes, Asian/Thai sauces, Mexican, Mediterranean, stocks.
+- source: gymflow
+  source_id: pataks_tikka_masala_paste
+  name: Patak's Tikka Masala Paste (1 tbsp)
+  brand: Patak's
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 4
+  carbs_per_100g: 12
+  fat_per_100g: 14
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,curry,indian
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,mustard,sulphites
+  unit_grams: 15
+- source: gymflow
+  source_id: pataks_korma_paste
+  name: Patak's Korma Paste (1 tbsp)
+  brand: Patak's
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 5
+  carbs_per_100g: 8
+  fat_per_100g: 18
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,curry,indian
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: tree_nuts,milk,sulphites
+  unit_grams: 15
+- source: gymflow
+  source_id: pataks_madras_paste
+  name: Patak's Madras Paste (1 tbsp)
+  brand: Patak's
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 8
+  fat_per_100g: 13
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,curry,indian
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: mustard
+  unit_grams: 15
+- source: gymflow
+  source_id: pataks_bhuna_paste
+  name: Patak's Bhuna Paste (1 tbsp)
+  brand: Patak's
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 5
+  carbs_per_100g: 8
+  fat_per_100g: 11
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,curry,indian
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: mustard
+  unit_grams: 15
+- source: gymflow
+  source_id: pataks_vindaloo_paste
+  name: Patak's Vindaloo Paste (1 tbsp)
+  brand: Patak's
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 8
+  fat_per_100g: 13
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,curry,indian
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: mustard
+  unit_grams: 15
+- source: gymflow
+  source_id: pataks_jalfrezi_paste
+  name: Patak's Jalfrezi Paste (1 tbsp)
+  brand: Patak's
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 9
+  fat_per_100g: 9
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,curry,indian
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: mustard
+  unit_grams: 15
+- source: gymflow
+  source_id: pataks_balti_paste
+  name: Patak's Balti Paste (1 tbsp)
+  brand: Patak's
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 8
+  fat_per_100g: 12
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,curry,indian
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,mustard
+  unit_grams: 15
+- source: gymflow
+  source_id: pataks_tikka_masala_jar
+  name: Patak's Tikka Masala Cooking Sauce
+  brand: Patak's
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 1.5
+  carbs_per_100g: 9
+  fat_per_100g: 7
+  serving_grams: 175
+  serving_label: 1 portion (175 g)
+  portion_unit: pack
+  tags: sauce,branded,curry,indian,cook_in
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,mustard
+  unit_grams: 175
+- source: gymflow
+  source_id: pataks_korma_jar
+  name: Patak's Korma Cooking Sauce
+  brand: Patak's
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 1.5
+  carbs_per_100g: 10
+  fat_per_100g: 8
+  serving_grams: 175
+  serving_label: 1 portion (175 g)
+  portion_unit: pack
+  tags: sauce,branded,curry,indian,cook_in
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,tree_nuts
+  unit_grams: 175
+- source: gymflow
+  source_id: pataks_butter_chicken_jar
+  name: Patak's Butter Chicken Sauce
+  brand: Patak's
+  region_codes: gb
+  kcal_per_100g: 120
+  protein_per_100g: 1.5
+  carbs_per_100g: 9
+  fat_per_100g: 8
+  serving_grams: 175
+  serving_label: 1 portion (175 g)
+  portion_unit: pack
+  tags: sauce,branded,curry,indian,cook_in
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,mustard
+  unit_grams: 175
+- source: gymflow
+  source_id: mango_chutney_15g
+  name: Mango Chutney (15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 0.4
+  carbs_per_100g: 60
+  fat_per_100g: 0.3
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,indian,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: lime_pickle_15g
+  name: Lime Pickle (15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 1
+  carbs_per_100g: 15
+  fat_per_100g: 16
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,indian,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: mustard
+  unit_grams: 15
+- source: gymflow
+  source_id: raita_30g
+  name: Raita / Cucumber Yogurt Sauce (30g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 3
+  carbs_per_100g: 4
+  fat_per_100g: 3
+  serving_grams: 30
+  serving_label: 1 tbsp (30 g)
+  portion_unit: tbsp
+  tags: sauce,branded,indian,condiment
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 30
+- source: gymflow
+  source_id: blue_dragon_red_curry_paste
+  name: Blue Dragon Thai Red Curry Paste (1 tbsp)
+  brand: Blue Dragon
+  region_codes: gb
+  kcal_per_100g: 135
+  protein_per_100g: 3
+  carbs_per_100g: 10
+  fat_per_100g: 9
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,curry,thai
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: crustaceans,fish
+  unit_grams: 15
+- source: gymflow
+  source_id: blue_dragon_green_curry_paste
+  name: Blue Dragon Thai Green Curry Paste (1 tbsp)
+  brand: Blue Dragon
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 3
+  carbs_per_100g: 10
+  fat_per_100g: 8
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,curry,thai
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: crustaceans,fish
+  unit_grams: 15
+- source: gymflow
+  source_id: blue_dragon_yellow_curry_paste
+  name: Blue Dragon Thai Yellow Curry Paste (1 tbsp)
+  brand: Blue Dragon
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 3
+  carbs_per_100g: 10
+  fat_per_100g: 10
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,curry,thai
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: crustaceans,fish
+  unit_grams: 15
+- source: gymflow
+  source_id: blue_dragon_sweet_chilli_15g
+  name: Blue Dragon Sweet Chilli Sauce (15g)
+  brand: Blue Dragon
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 0
+  carbs_per_100g: 60
+  fat_per_100g: 0
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,thai,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: blue_dragon_oyster_sauce_15g
+  name: Blue Dragon Oyster Sauce (15g)
+  brand: Blue Dragon
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 1.5
+  carbs_per_100g: 25
+  fat_per_100g: 0.4
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,asian,condiment
+  dietary_compat: pescatarian,dairy_free
+  allergens: molluscs,fish,gluten,soy
+  unit_grams: 15
+- source: gymflow
+  source_id: blue_dragon_hoisin_15g
+  name: Blue Dragon Hoisin Sauce (15g)
+  brand: Blue Dragon
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 2
+  carbs_per_100g: 50
+  fat_per_100g: 1
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,asian,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy,sulphites
+  unit_grams: 15
+- source: gymflow
+  source_id: blue_dragon_teriyaki_15g
+  name: Blue Dragon Teriyaki Sauce (15g)
+  brand: Blue Dragon
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 4
+  carbs_per_100g: 22
+  fat_per_100g: 0.5
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,asian,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy,sesame
+  unit_grams: 15
+- source: gymflow
+  source_id: blue_dragon_fish_sauce_15ml
+  name: Blue Dragon Fish Sauce (15ml)
+  brand: Blue Dragon
+  region_codes: gb
+  kcal_per_100g: 35
+  protein_per_100g: 7
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,asian,condiment,low_calorie
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish
+  unit_grams: 15
+- source: gymflow
+  source_id: lee_kum_kee_sriracha_15g
+  name: Lee Kum Kee Sriracha (15g)
+  brand: Lee Kum Kee
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 1.5
+  carbs_per_100g: 18
+  fat_per_100g: 1
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,asian,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: flying_goose_sriracha_15g
+  name: Flying Goose Sriracha (15g)
+  brand: Flying Goose
+  region_codes: gb
+  kcal_per_100g: 90
+  protein_per_100g: 1.5
+  carbs_per_100g: 18
+  fat_per_100g: 1
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,asian,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: gochujang_15g
+  name: Gochujang Korean Chilli Paste (15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 6
+  carbs_per_100g: 47
+  fat_per_100g: 3
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,asian,korean
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: soy,gluten
+  unit_grams: 15
+- source: gymflow
+  source_id: miso_paste_15g
+  name: White Miso Paste (15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 12
+  carbs_per_100g: 26
+  fat_per_100g: 6
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,asian,japanese,fermented
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: soy
+  unit_grams: 15
+- source: gymflow
+  source_id: soy_sauce_kikkoman_15ml
+  name: Kikkoman Soy Sauce (15ml)
+  brand: Kikkoman
+  region_codes: gb
+  kcal_per_100g: 53
+  protein_per_100g: 8
+  carbs_per_100g: 5
+  fat_per_100g: 0.6
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,asian,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: soy,gluten
+  unit_grams: 15
+- source: gymflow
+  source_id: soy_sauce_amoy_15ml
+  name: Amoy Light Soy Sauce (15ml)
+  brand: Amoy
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 7
+  carbs_per_100g: 5
+  fat_per_100g: 0.5
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,asian,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: soy,gluten
+  unit_grams: 15
+- source: gymflow
+  source_id: chinese_5_spice_2g
+  name: Chinese 5-Spice (1 tsp/2g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 8
+  carbs_per_100g: 60
+  fat_per_100g: 9
+  serving_grams: 2
+  serving_label: 1 tsp (2 g)
+  portion_unit: tsp
+  tags: sauce,branded,asian,spice
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 2
+- source: gymflow
+  source_id: old_el_paso_fajita_seasoning
+  name: Old El Paso Fajita Seasoning (1 sachet)
+  brand: Old El Paso
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 9
+  carbs_per_100g: 50
+  fat_per_100g: 4
+  serving_grams: 35
+  serving_label: 1 portion (35 g)
+  portion_unit: pack
+  tags: sauce,branded,mexican,seasoning
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: celery
+  unit_grams: 35
+- source: gymflow
+  source_id: old_el_paso_taco_seasoning
+  name: Old El Paso Taco Seasoning (1 sachet)
+  brand: Old El Paso
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 9
+  carbs_per_100g: 49
+  fat_per_100g: 4
+  serving_grams: 35
+  serving_label: 1 portion (35 g)
+  portion_unit: pack
+  tags: sauce,branded,mexican,seasoning
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: celery
+  unit_grams: 35
+- source: gymflow
+  source_id: old_el_paso_chunky_salsa_30g
+  name: Old El Paso Chunky Salsa Mild (30g)
+  brand: Old El Paso
+  region_codes: gb
+  kcal_per_100g: 35
+  protein_per_100g: 1
+  carbs_per_100g: 7
+  fat_per_100g: 0.2
+  serving_grams: 30
+  serving_label: 1 tbsp (30 g)
+  portion_unit: tbsp
+  tags: sauce,branded,mexican,condiment,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: old_el_paso_refried_beans_215
+  name: Old El Paso Refried Beans (1 portion)
+  brand: Old El Paso
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 5
+  carbs_per_100g: 14
+  fat_per_100g: 1.5
+  serving_grams: 215
+  serving_label: 1 portion (215 g)
+  portion_unit: pack
+  tags: branded,mexican,canned,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 215
+- source: gymflow
+  source_id: discovery_taco_shells
+  name: Discovery Taco Shells (per shell)
+  brand: Discovery
+  region_codes: gb
+  kcal_per_100g: 470
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 22
+  serving_grams: 12
+  serving_label: 1 piece (12 g)
+  portion_unit: piece
+  tags: branded,mexican
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 12
+- source: gymflow
+  source_id: discovery_chipotle_paste_15g
+  name: Discovery Chipotle Paste (15g)
+  brand: Discovery
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 1.5
+  carbs_per_100g: 18
+  fat_per_100g: 1.5
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,mexican,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: guacamole_30g
+  name: Guacamole (30g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 2
+  carbs_per_100g: 5
+  fat_per_100g: 13
+  serving_grams: 30
+  serving_label: 1 tbsp (30 g)
+  portion_unit: tbsp
+  tags: sauce,branded,mexican,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: jalapenos_pickled_15g
+  name: Pickled Jalapeños (15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 25
+  protein_per_100g: 1
+  carbs_per_100g: 4
+  fat_per_100g: 0.5
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: condiment,branded,mexican,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: chipotle_mayo_15g
+  name: Chipotle Mayonnaise (15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 600
+  protein_per_100g: 1
+  carbs_per_100g: 5
+  fat_per_100g: 62
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,condiment
+  dietary_compat: vegetarian,pescatarian,gluten_free
+  allergens: eggs,mustard
+  unit_grams: 15
+- source: gymflow
+  source_id: harissa_paste_15g
+  name: Harissa Paste (15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 3
+  carbs_per_100g: 8
+  fat_per_100g: 13
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,middle_eastern
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: sun_dried_tomato_paste_15g
+  name: Sun-Dried Tomato Paste (15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 4
+  carbs_per_100g: 12
+  fat_per_100g: 19
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,italian
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: olive_tapenade_15g
+  name: Black Olive Tapenade (15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 2
+  carbs_per_100g: 4
+  fat_per_100g: 22
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,mediterranean
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: fish
+  unit_grams: 15
+- source: gymflow
+  source_id: pesto_red_15g
+  name: Red Pesto (15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 4
+  carbs_per_100g: 6
+  fat_per_100g: 38
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,italian,pasta
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,tree_nuts
+  unit_grams: 15
+- source: gymflow
+  source_id: tzatziki_30g
+  name: Tzatziki Greek Yogurt Dip (30g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 90
+  protein_per_100g: 3
+  carbs_per_100g: 3
+  fat_per_100g: 7
+  serving_grams: 30
+  serving_label: 1 tbsp (30 g)
+  portion_unit: tbsp
+  tags: sauce,branded,greek,condiment
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 30
+- source: gymflow
+  source_id: tahini_15g
+  name: Tahini Sesame Paste (15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 595
+  protein_per_100g: 17
+  carbs_per_100g: 21
+  fat_per_100g: 54
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,middle_eastern,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: sesame
+  unit_grams: 15
+- source: gymflow
+  source_id: baba_ganoush_30g
+  name: Baba Ganoush (30g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 3
+  carbs_per_100g: 8
+  fat_per_100g: 10
+  serving_grams: 30
+  serving_label: 1 tbsp (30 g)
+  portion_unit: tbsp
+  tags: sauce,branded,middle_eastern,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: sesame
+  unit_grams: 30
+- source: gymflow
+  source_id: oxo_beef_cube
+  name: OXO Beef Stock Cube (1 cube)
+  brand: OXO
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 13
+  carbs_per_100g: 36
+  fat_per_100g: 7
+  serving_grams: 6
+  serving_label: 1 piece (6 g)
+  portion_unit: piece
+  tags: pantry,branded,stock
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,celery,sulphites
+  unit_grams: 6
+- source: gymflow
+  source_id: oxo_chicken_cube
+  name: OXO Chicken Stock Cube (1 cube)
+  brand: OXO
+  region_codes: gb
+  kcal_per_100g: 260
+  protein_per_100g: 13
+  carbs_per_100g: 38
+  fat_per_100g: 6
+  serving_grams: 6
+  serving_label: 1 piece (6 g)
+  portion_unit: piece
+  tags: pantry,branded,stock
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,celery,sulphites
+  unit_grams: 6
+- source: gymflow
+  source_id: oxo_vegetable_cube
+  name: OXO Vegetable Stock Cube (1 cube)
+  brand: OXO
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 9
+  carbs_per_100g: 40
+  fat_per_100g: 5
+  serving_grams: 6
+  serving_label: 1 piece (6 g)
+  portion_unit: piece
+  tags: pantry,branded,stock,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,celery,sulphites
+  unit_grams: 6
+- source: gymflow
+  source_id: knorr_chicken_stock_pot
+  name: Knorr Chicken Stock Pot (1 pot)
+  brand: Knorr
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 5
+  carbs_per_100g: 8
+  fat_per_100g: 13
+  serving_grams: 28
+  serving_label: 1 portion (28 g)
+  portion_unit: pack
+  tags: pantry,branded,stock
+  dietary_compat: pescatarian,dairy_free
+  allergens: celery
+  unit_grams: 28
+- source: gymflow
+  source_id: knorr_vegetable_stock_pot
+  name: Knorr Vegetable Stock Pot (1 pot)
+  brand: Knorr
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 4
+  carbs_per_100g: 7
+  fat_per_100g: 7
+  serving_grams: 28
+  serving_label: 1 portion (28 g)
+  portion_unit: pack
+  tags: pantry,branded,stock,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: celery
+  unit_grams: 28
+- source: gymflow
+  source_id: marigold_bouillon_powder
+  name: Marigold Vegetable Bouillon Powder (1 tsp)
+  brand: Marigold
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 12
+  carbs_per_100g: 30
+  fat_per_100g: 3
+  serving_grams: 5
+  serving_label: 1 tsp (5 g)
+  portion_unit: tsp
+  tags: pantry,branded,stock,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: celery
+  unit_grams: 5
+- source: gymflow
+  source_id: nandos_peri_peri_medium_bottle
+  name: Nando's Peri-Peri Sauce, Medium (15g)
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 1
+  carbs_per_100g: 8
+  fat_per_100g: 5
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: nandos_peri_peri_hot_bottle
+  name: Nando's Peri-Peri Sauce, Hot (15g)
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 1
+  carbs_per_100g: 8
+  fat_per_100g: 5
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: nandos_perinaise_garlic_15g
+  name: Nando's Perinaise Garlic (15g)
+  brand: Nando's
+  region_codes: gb
+  kcal_per_100g: 480
+  protein_per_100g: 1
+  carbs_per_100g: 6
+  fat_per_100g: 50
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,condiment
+  dietary_compat: vegetarian,pescatarian,gluten_free
+  allergens: eggs,mustard
+  unit_grams: 15
+- source: gymflow
+  source_id: frank_hot_sauce_15g
+  name: Frank's RedHot (15g)
+  brand: Frank's
+  region_codes: gb
+  kcal_per_100g: 5
+  protein_per_100g: 0.2
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,condiment,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: bbq_sauce_sticky_15g
+  name: BBQ Sauce, Sweet & Smoky (15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 0.5
+  carbs_per_100g: 39
+  fat_per_100g: 0
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: jerk_marinade_15g
+  name: Jerk Marinade (15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 150
+  protein_per_100g: 2
+  carbs_per_100g: 12
+  fat_per_100g: 10
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: sauce,branded,condiment,caribbean
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: coleman_english_mustard_5g
+  name: Coleman's English Mustard (5g)
+  brand: Coleman's
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 6
+  carbs_per_100g: 19
+  fat_per_100g: 11
+  serving_grams: 5
+  serving_label: 1 tsp (5 g)
+  portion_unit: tsp
+  tags: sauce,branded,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: mustard
+  unit_grams: 5
+- source: gymflow
+  source_id: maille_dijon_mustard_5g
+  name: Maille Dijon Mustard (5g)
+  brand: Maille
+  region_codes: gb
+  kcal_per_100g: 70
+  protein_per_100g: 4.4
+  carbs_per_100g: 5
+  fat_per_100g: 4
+  serving_grams: 5
+  serving_label: 1 tsp (5 g)
+  portion_unit: tsp
+  tags: sauce,branded,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: mustard
+  unit_grams: 5
+- source: gymflow
+  source_id: wholegrain_mustard_5g
+  name: Wholegrain Mustard (5g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 9
+  carbs_per_100g: 6
+  fat_per_100g: 9
+  serving_grams: 5
+  serving_label: 1 tsp (5 g)
+  portion_unit: tsp
+  tags: sauce,branded,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: mustard
+  unit_grams: 5
+- source: gymflow
+  source_id: balsamic_vinegar_15ml
+  name: Balsamic Vinegar (15ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 90
+  protein_per_100g: 0
+  carbs_per_100g: 18
+  fat_per_100g: 0
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: pantry,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: sulphites
+  unit_grams: 15
+- source: gymflow
+  source_id: white_wine_vinegar_15ml
+  name: White Wine Vinegar (15ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 18
+  protein_per_100g: 0
+  carbs_per_100g: 0.6
+  fat_per_100g: 0
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: pantry,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: sulphites
+  unit_grams: 15
+- source: gymflow
+  source_id: apple_cider_vinegar_15ml
+  name: Apple Cider Vinegar (15ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 21
+  protein_per_100g: 0
+  carbs_per_100g: 0.9
+  fat_per_100g: 0
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: pantry,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: malt_vinegar_15ml
+  name: Malt Vinegar (15ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 18
+  protein_per_100g: 0
+  carbs_per_100g: 0.6
+  fat_per_100g: 0
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: pantry,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sulphites
+  unit_grams: 15

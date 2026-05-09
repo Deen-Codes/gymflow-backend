@@ -1,0 +1,2060 @@
+# whole_foods.yaml — generic, no-brand whole foods.
+#
+# These are the ingredients people log every day. Macros are
+# per-100g (always); `portion_unit` + `unit_grams` express the
+# everyday unit so the iOS picker can show "1 egg / 2 / 3" instead
+# of "50g / 100g / 150g".
+#
+# Sourcing: USDA FoodData Central (Foundation + SR Legacy) for
+# whole foods. Public domain. Macros normalised to as-eaten
+# (cooked rice, not raw rice; cooked pasta, not dry).
+#
+# Allergen / dietary tags are conservative — present only when
+# provably true.
+
+# ============================================================
+# MEAT — POULTRY
+# ============================================================
+
+- source: gymflow
+  source_id: chicken_breast_cooked
+  name: Chicken breast, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 165
+  protein_per_100g: 31.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 3.6
+  serving_grams: 120
+  serving_label: 1 medium fillet (120 g)
+  portion_unit: piece
+  unit_grams: 120
+  tags: staple,whole,meat,high_protein,low_carb
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: chicken_breast_raw
+  name: Chicken breast, raw
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 120
+  protein_per_100g: 22.5
+  carbs_per_100g: 0.0
+  fat_per_100g: 2.6
+  serving_grams: 150
+  serving_label: 1 raw fillet (150 g)
+  portion_unit: grams
+  tags: staple,whole,meat,high_protein,low_carb,raw
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: chicken_thigh_skinless_cooked
+  name: Chicken thigh, skinless, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 209
+  protein_per_100g: 26.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 10.9
+  serving_grams: 100
+  serving_label: 1 thigh (100 g)
+  portion_unit: piece
+  unit_grams: 100
+  tags: staple,whole,meat,high_protein
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: chicken_thigh_skin_on_cooked
+  name: Chicken thigh, skin-on, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 247
+  protein_per_100g: 25.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 15.5
+  serving_grams: 110
+  serving_label: 1 thigh (110 g)
+  portion_unit: piece
+  unit_grams: 110
+  tags: staple,whole,meat,high_protein
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: chicken_drumstick_cooked
+  name: Chicken drumstick, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 175
+  protein_per_100g: 27.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 7.0
+  serving_grams: 75
+  serving_label: 1 drumstick (75 g, no bone)
+  portion_unit: piece
+  unit_grams: 75
+  tags: staple,whole,meat,high_protein
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: chicken_wing_cooked
+  name: Chicken wing, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 215
+  protein_per_100g: 24.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 13.0
+  serving_grams: 30
+  serving_label: 1 wing (30 g, no bone)
+  portion_unit: piece
+  unit_grams: 30
+  tags: whole,meat
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: chicken_mince_cooked
+  name: Chicken mince, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 175
+  protein_per_100g: 25.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 8.0
+  serving_grams: 100
+  serving_label: "100 g"
+  portion_unit: grams
+  tags: staple,whole,meat,high_protein
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: turkey_breast_cooked
+  name: Turkey breast, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 135
+  protein_per_100g: 30.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 1.0
+  serving_grams: 120
+  serving_label: 1 fillet (120 g)
+  portion_unit: piece
+  unit_grams: 120
+  tags: staple,whole,meat,high_protein,low_fat
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: turkey_mince_5pct_cooked
+  name: Turkey mince 5% fat, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 150
+  protein_per_100g: 28.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 5.0
+  serving_grams: 100
+  serving_label: "100 g"
+  portion_unit: grams
+  tags: staple,whole,meat,high_protein,low_fat
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: duck_breast_cooked
+  name: Duck breast, cooked, no skin
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 195
+  protein_per_100g: 24.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 11.0
+  serving_grams: 130
+  serving_label: 1 breast (130 g)
+  portion_unit: piece
+  unit_grams: 130
+  tags: whole,meat,high_protein
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+# ============================================================
+# MEAT — BEEF / PORK / LAMB
+# ============================================================
+
+- source: gymflow
+  source_id: beef_mince_5pct_cooked
+  name: Beef mince 5% fat, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 167
+  protein_per_100g: 27.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 6.0
+  serving_grams: 100
+  serving_label: "100 g"
+  portion_unit: grams
+  tags: staple,whole,meat,high_protein,low_fat
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: beef_mince_15pct_cooked
+  name: Beef mince 15% fat, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 230
+  protein_per_100g: 24.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 15.0
+  serving_grams: 100
+  serving_label: "100 g"
+  portion_unit: grams
+  tags: staple,whole,meat,high_protein
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: beef_mince_20pct_cooked
+  name: Beef mince 20% fat, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 268
+  protein_per_100g: 23.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 19.0
+  serving_grams: 100
+  serving_label: "100 g"
+  portion_unit: grams
+  tags: whole,meat,high_protein
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: beef_steak_sirloin_cooked
+  name: Sirloin steak, cooked, lean
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 215
+  protein_per_100g: 30.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 10.0
+  serving_grams: 200
+  serving_label: 1 steak (200 g)
+  portion_unit: piece
+  unit_grams: 200
+  tags: whole,meat,high_protein
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: beef_steak_ribeye_cooked
+  name: Ribeye steak, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 260
+  protein_per_100g: 27.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 17.0
+  serving_grams: 225
+  serving_label: 1 steak (225 g)
+  portion_unit: piece
+  unit_grams: 225
+  tags: whole,meat,high_protein
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: beef_steak_fillet_cooked
+  name: Fillet steak, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 195
+  protein_per_100g: 30.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 8.0
+  serving_grams: 170
+  serving_label: 1 fillet (170 g)
+  portion_unit: piece
+  unit_grams: 170
+  tags: whole,meat,high_protein
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: beef_brisket_cooked
+  name: Beef brisket, cooked, trimmed
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 240
+  protein_per_100g: 28.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 14.0
+  serving_grams: 120
+  serving_label: "120 g"
+  portion_unit: grams
+  tags: whole,meat,high_protein
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: pork_loin_cooked
+  name: Pork loin, cooked, lean
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 175
+  protein_per_100g: 28.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 7.0
+  serving_grams: 120
+  serving_label: 1 chop (120 g)
+  portion_unit: piece
+  unit_grams: 120
+  tags: whole,meat,high_protein
+  dietary_compat: pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: pork_chop_cooked
+  name: Pork chop, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 205
+  protein_per_100g: 27.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 11.0
+  serving_grams: 130
+  serving_label: 1 chop (130 g)
+  portion_unit: piece
+  unit_grams: 130
+  tags: whole,meat,high_protein
+  dietary_compat: pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: bacon_streaky_cooked
+  name: Streaky bacon, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 540
+  protein_per_100g: 37.0
+  carbs_per_100g: 1.4
+  fat_per_100g: 42.0
+  serving_grams: 12
+  serving_label: 1 rasher (12 g cooked)
+  portion_unit: slice
+  unit_grams: 12
+  tags: whole,meat,processed
+  dietary_compat: pescatarian,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: bacon_back_cooked
+  name: Back bacon, cooked
+  region_codes: gb,au,eu
+  kcal_per_100g: 290
+  protein_per_100g: 27.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 20.0
+  serving_grams: 25
+  serving_label: 1 rasher (25 g cooked)
+  portion_unit: slice
+  unit_grams: 25
+  tags: whole,meat,processed
+  dietary_compat: pescatarian,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: ham_lean_sliced
+  name: Ham, lean, sliced
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 110
+  protein_per_100g: 19.0
+  carbs_per_100g: 1.5
+  fat_per_100g: 3.0
+  serving_grams: 25
+  serving_label: 1 slice (25 g)
+  portion_unit: slice
+  unit_grams: 25
+  tags: whole,meat,processed,sliced
+  dietary_compat: pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: lamb_mince_cooked
+  name: Lamb mince, cooked
+  region_codes: gb,au,eu
+  kcal_per_100g: 250
+  protein_per_100g: 25.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 17.0
+  serving_grams: 100
+  serving_label: "100 g"
+  portion_unit: grams
+  tags: whole,meat,high_protein
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: lamb_chop_cooked
+  name: Lamb chop, cooked, lean
+  region_codes: gb,au,eu
+  kcal_per_100g: 235
+  protein_per_100g: 28.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 13.0
+  serving_grams: 100
+  serving_label: 1 chop (100 g)
+  portion_unit: piece
+  unit_grams: 100
+  tags: whole,meat,high_protein
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: sausage_pork_cooked
+  name: Pork sausage, cooked
+  region_codes: gb,au,eu
+  kcal_per_100g: 290
+  protein_per_100g: 14.0
+  carbs_per_100g: 9.0
+  fat_per_100g: 22.0
+  serving_grams: 50
+  serving_label: 1 sausage (50 g)
+  portion_unit: piece
+  unit_grams: 50
+  tags: whole,meat,processed
+  dietary_compat: pescatarian
+  allergens: gluten,sulphites
+
+# ============================================================
+# FISH + SEAFOOD
+# ============================================================
+
+- source: gymflow
+  source_id: salmon_atlantic_cooked
+  name: Atlantic salmon, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 210
+  protein_per_100g: 25.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 12.0
+  serving_grams: 130
+  serving_label: 1 fillet (130 g)
+  portion_unit: piece
+  unit_grams: 130
+  tags: staple,whole,fish,high_protein,omega3
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+
+- source: gymflow
+  source_id: salmon_smoked
+  name: Smoked salmon
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 145
+  protein_per_100g: 22.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 6.0
+  serving_grams: 30
+  serving_label: 1 slice (30 g)
+  portion_unit: slice
+  unit_grams: 30
+  tags: whole,fish,high_protein,omega3
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+
+- source: gymflow
+  source_id: tuna_canned_water
+  name: Tuna in spring water, canned
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 116
+  protein_per_100g: 26.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 1.0
+  serving_grams: 80
+  serving_label: 1 can drained (80 g)
+  portion_unit: can
+  unit_grams: 80
+  tags: staple,whole,fish,high_protein,low_fat,canned
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+
+- source: gymflow
+  source_id: tuna_steak_cooked
+  name: Tuna steak, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 184
+  protein_per_100g: 30.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 6.0
+  serving_grams: 150
+  serving_label: 1 steak (150 g)
+  portion_unit: piece
+  unit_grams: 150
+  tags: whole,fish,high_protein
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+
+- source: gymflow
+  source_id: cod_cooked
+  name: Cod fillet, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 105
+  protein_per_100g: 23.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 1.0
+  serving_grams: 130
+  serving_label: 1 fillet (130 g)
+  portion_unit: piece
+  unit_grams: 130
+  tags: whole,fish,high_protein,low_fat
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+
+- source: gymflow
+  source_id: haddock_cooked
+  name: Haddock fillet, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 112
+  protein_per_100g: 24.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 1.0
+  serving_grams: 130
+  serving_label: 1 fillet (130 g)
+  portion_unit: piece
+  unit_grams: 130
+  tags: whole,fish,high_protein,low_fat
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+
+- source: gymflow
+  source_id: prawns_king_cooked
+  name: King prawns, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 99
+  protein_per_100g: 22.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 1.0
+  serving_grams: 100
+  serving_label: "100 g"
+  portion_unit: grams
+  tags: staple,whole,seafood,high_protein,low_fat,low_carb
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: crustaceans
+
+- source: gymflow
+  source_id: mackerel_cooked
+  name: Mackerel fillet, cooked
+  region_codes: gb,au,eu
+  kcal_per_100g: 262
+  protein_per_100g: 22.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 19.0
+  serving_grams: 130
+  serving_label: 1 fillet (130 g)
+  portion_unit: piece
+  unit_grams: 130
+  tags: whole,fish,high_protein,omega3
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+
+- source: gymflow
+  source_id: sardines_canned_oil_drained
+  name: Sardines in oil, drained
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 208
+  protein_per_100g: 25.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 11.5
+  serving_grams: 90
+  serving_label: 1 can drained (90 g)
+  portion_unit: can
+  unit_grams: 90
+  tags: whole,fish,high_protein,canned
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+
+# ============================================================
+# EGGS
+# ============================================================
+
+- source: gymflow
+  source_id: egg_whole_large
+  name: Egg, whole, large
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 155
+  protein_per_100g: 13.0
+  carbs_per_100g: 1.1
+  fat_per_100g: 11.0
+  serving_grams: 50
+  serving_label: 1 large egg (50 g)
+  portion_unit: egg
+  unit_grams: 50
+  tags: staple,whole,eggs,high_protein
+  dietary_compat: kosher,vegetarian,pescatarian,gluten_free
+  allergens: eggs
+
+- source: gymflow
+  source_id: egg_whole_medium
+  name: Egg, whole, medium
+  region_codes: gb,eu
+  kcal_per_100g: 155
+  protein_per_100g: 13.0
+  carbs_per_100g: 1.1
+  fat_per_100g: 11.0
+  serving_grams: 44
+  serving_label: 1 medium egg (44 g)
+  portion_unit: egg
+  unit_grams: 44
+  tags: staple,whole,eggs,high_protein
+  dietary_compat: kosher,vegetarian,pescatarian,gluten_free
+  allergens: eggs
+
+- source: gymflow
+  source_id: egg_white_only
+  name: Egg white only
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 52
+  protein_per_100g: 11.0
+  carbs_per_100g: 0.7
+  fat_per_100g: 0.2
+  serving_grams: 33
+  serving_label: 1 egg white (33 g)
+  portion_unit: piece
+  unit_grams: 33
+  tags: staple,whole,eggs,high_protein,low_fat
+  dietary_compat: kosher,vegetarian,pescatarian,gluten_free,dairy_free
+  allergens: eggs
+
+- source: gymflow
+  source_id: egg_yolk_only
+  name: Egg yolk only
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 322
+  protein_per_100g: 16.0
+  carbs_per_100g: 3.6
+  fat_per_100g: 27.0
+  serving_grams: 17
+  serving_label: 1 yolk (17 g)
+  portion_unit: piece
+  unit_grams: 17
+  tags: whole,eggs
+  dietary_compat: kosher,vegetarian,pescatarian,gluten_free
+  allergens: eggs
+
+# ============================================================
+# DAIRY
+# ============================================================
+
+- source: gymflow
+  source_id: milk_whole
+  name: Whole milk
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 61
+  protein_per_100g: 3.4
+  carbs_per_100g: 4.8
+  fat_per_100g: 3.3
+  serving_grams: 200
+  serving_label: 1 glass (200 ml)
+  portion_unit: ml
+  tags: staple,whole,dairy
+  dietary_compat: kosher,vegetarian,pescatarian,gluten_free
+  allergens: milk
+
+- source: gymflow
+  source_id: milk_semi_skimmed
+  name: Semi-skimmed milk
+  region_codes: gb,eu
+  kcal_per_100g: 47
+  protein_per_100g: 3.5
+  carbs_per_100g: 4.8
+  fat_per_100g: 1.7
+  serving_grams: 200
+  serving_label: 1 glass (200 ml)
+  portion_unit: ml
+  tags: staple,whole,dairy
+  dietary_compat: kosher,vegetarian,pescatarian,gluten_free
+  allergens: milk
+
+- source: gymflow
+  source_id: milk_skimmed
+  name: Skimmed milk
+  region_codes: gb,eu
+  kcal_per_100g: 35
+  protein_per_100g: 3.5
+  carbs_per_100g: 5.0
+  fat_per_100g: 0.1
+  serving_grams: 200
+  serving_label: 1 glass (200 ml)
+  portion_unit: ml
+  tags: staple,whole,dairy,low_fat
+  dietary_compat: kosher,vegetarian,pescatarian,gluten_free
+  allergens: milk
+
+- source: gymflow
+  source_id: milk_oat
+  name: Oat milk, unsweetened
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 45
+  protein_per_100g: 1.0
+  carbs_per_100g: 7.0
+  fat_per_100g: 1.5
+  serving_grams: 200
+  serving_label: 1 glass (200 ml)
+  portion_unit: ml
+  tags: staple,whole,dairy_alternative
+  dietary_compat: vegan,vegetarian,pescatarian,kosher,halal,dairy_free
+  allergens: gluten
+
+- source: gymflow
+  source_id: milk_almond
+  name: Almond milk, unsweetened
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 13
+  protein_per_100g: 0.5
+  carbs_per_100g: 0.3
+  fat_per_100g: 1.1
+  serving_grams: 200
+  serving_label: 1 glass (200 ml)
+  portion_unit: ml
+  tags: whole,dairy_alternative,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,kosher,halal,dairy_free,gluten_free
+  allergens: tree_nuts
+
+- source: gymflow
+  source_id: milk_soy
+  name: Soy milk, unsweetened
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 33
+  protein_per_100g: 3.3
+  carbs_per_100g: 0.6
+  fat_per_100g: 1.8
+  serving_grams: 200
+  serving_label: 1 glass (200 ml)
+  portion_unit: ml
+  tags: whole,dairy_alternative
+  dietary_compat: vegan,vegetarian,pescatarian,kosher,halal,dairy_free,gluten_free
+  allergens: soy
+
+- source: gymflow
+  source_id: yogurt_greek_0pct
+  name: Greek yogurt, 0% fat
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 57
+  protein_per_100g: 10.0
+  carbs_per_100g: 4.0
+  fat_per_100g: 0.0
+  serving_grams: 170
+  serving_label: 1 pot (170 g)
+  portion_unit: pack
+  unit_grams: 170
+  tags: staple,whole,dairy,high_protein,low_fat
+  dietary_compat: kosher,vegetarian,pescatarian,gluten_free
+  allergens: milk
+
+- source: gymflow
+  source_id: yogurt_greek_2pct
+  name: Greek yogurt, 2% fat
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 73
+  protein_per_100g: 9.0
+  carbs_per_100g: 4.0
+  fat_per_100g: 2.0
+  serving_grams: 170
+  serving_label: 1 pot (170 g)
+  portion_unit: pack
+  unit_grams: 170
+  tags: staple,whole,dairy,high_protein
+  dietary_compat: kosher,vegetarian,pescatarian,gluten_free
+  allergens: milk
+
+- source: gymflow
+  source_id: yogurt_greek_5pct
+  name: Greek yogurt, 5% fat
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 97
+  protein_per_100g: 9.0
+  carbs_per_100g: 4.0
+  fat_per_100g: 5.0
+  serving_grams: 170
+  serving_label: 1 pot (170 g)
+  portion_unit: pack
+  unit_grams: 170
+  tags: whole,dairy,high_protein
+  dietary_compat: kosher,vegetarian,pescatarian,gluten_free
+  allergens: milk
+
+- source: gymflow
+  source_id: yogurt_natural
+  name: Natural yogurt
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 61
+  protein_per_100g: 3.5
+  carbs_per_100g: 4.7
+  fat_per_100g: 3.3
+  serving_grams: 150
+  serving_label: 1 pot (150 g)
+  portion_unit: pack
+  unit_grams: 150
+  tags: whole,dairy
+  dietary_compat: kosher,vegetarian,pescatarian,gluten_free
+  allergens: milk
+
+- source: gymflow
+  source_id: cottage_cheese_low_fat
+  name: Cottage cheese, low fat
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 72
+  protein_per_100g: 12.5
+  carbs_per_100g: 3.0
+  fat_per_100g: 1.5
+  serving_grams: 100
+  serving_label: "100 g"
+  portion_unit: grams
+  tags: staple,whole,dairy,high_protein,low_fat
+  dietary_compat: kosher,vegetarian,pescatarian,gluten_free
+  allergens: milk
+
+- source: gymflow
+  source_id: cheddar_mature
+  name: Cheddar cheese, mature
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 416
+  protein_per_100g: 25.0
+  carbs_per_100g: 0.1
+  fat_per_100g: 35.0
+  serving_grams: 30
+  serving_label: 1 slice (30 g)
+  portion_unit: slice
+  unit_grams: 30
+  tags: staple,whole,dairy,high_protein
+  dietary_compat: kosher,vegetarian,pescatarian,gluten_free
+  allergens: milk
+
+- source: gymflow
+  source_id: mozzarella
+  name: Mozzarella cheese
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 280
+  protein_per_100g: 22.0
+  carbs_per_100g: 2.0
+  fat_per_100g: 21.0
+  serving_grams: 30
+  serving_label: "30 g"
+  portion_unit: grams
+  tags: whole,dairy,high_protein
+  dietary_compat: kosher,vegetarian,pescatarian,gluten_free
+  allergens: milk
+
+- source: gymflow
+  source_id: feta
+  name: Feta cheese
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 264
+  protein_per_100g: 14.0
+  carbs_per_100g: 4.0
+  fat_per_100g: 21.0
+  serving_grams: 30
+  serving_label: "30 g"
+  portion_unit: grams
+  tags: whole,dairy
+  dietary_compat: kosher,vegetarian,pescatarian,gluten_free
+  allergens: milk
+
+- source: gymflow
+  source_id: butter_unsalted
+  name: Butter, unsalted
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 717
+  protein_per_100g: 0.9
+  carbs_per_100g: 0.1
+  fat_per_100g: 81.0
+  serving_grams: 10
+  serving_label: 1 knob (10 g)
+  portion_unit: tbsp
+  unit_grams: 14
+  tags: whole,dairy,fat
+  dietary_compat: kosher,vegetarian,pescatarian,gluten_free
+  allergens: milk
+
+# ============================================================
+# GRAINS / CARBS
+# ============================================================
+
+- source: gymflow
+  source_id: rice_white_cooked
+  name: White rice, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 130
+  protein_per_100g: 2.7
+  carbs_per_100g: 28.0
+  fat_per_100g: 0.3
+  serving_grams: 150
+  serving_label: 1 portion (150 g cooked)
+  portion_unit: grams
+  tags: staple,whole,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: rice_brown_cooked
+  name: Brown rice, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 123
+  protein_per_100g: 2.7
+  carbs_per_100g: 25.6
+  fat_per_100g: 1.0
+  serving_grams: 150
+  serving_label: 1 portion (150 g cooked)
+  portion_unit: grams
+  tags: staple,whole,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: rice_basmati_cooked
+  name: Basmati rice, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 121
+  protein_per_100g: 3.0
+  carbs_per_100g: 25.0
+  fat_per_100g: 0.4
+  serving_grams: 150
+  serving_label: 1 portion (150 g cooked)
+  portion_unit: grams
+  tags: staple,whole,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: rice_jasmine_cooked
+  name: Jasmine rice, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 129
+  protein_per_100g: 2.7
+  carbs_per_100g: 28.0
+  fat_per_100g: 0.2
+  serving_grams: 150
+  serving_label: 1 portion (150 g cooked)
+  portion_unit: grams
+  tags: whole,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: pasta_white_cooked
+  name: White pasta, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 158
+  protein_per_100g: 5.8
+  carbs_per_100g: 31.0
+  fat_per_100g: 0.9
+  serving_grams: 200
+  serving_label: 1 portion (200 g cooked)
+  portion_unit: grams
+  tags: staple,whole,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,eggs
+
+- source: gymflow
+  source_id: pasta_wholewheat_cooked
+  name: Wholewheat pasta, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 124
+  protein_per_100g: 5.0
+  carbs_per_100g: 25.0
+  fat_per_100g: 0.5
+  serving_grams: 200
+  serving_label: 1 portion (200 g cooked)
+  portion_unit: grams
+  tags: staple,whole,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+
+- source: gymflow
+  source_id: oats_rolled_dry
+  name: Rolled oats, dry
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 379
+  protein_per_100g: 13.0
+  carbs_per_100g: 67.7
+  fat_per_100g: 7.0
+  serving_grams: 40
+  serving_label: 1 serving (40 g dry)
+  portion_unit: grams
+  tags: staple,whole,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+
+- source: gymflow
+  source_id: porridge_water
+  name: Porridge, made with water
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 65
+  protein_per_100g: 2.4
+  carbs_per_100g: 11.5
+  fat_per_100g: 1.1
+  serving_grams: 250
+  serving_label: 1 bowl (250 g)
+  portion_unit: grams
+  tags: whole,grain,breakfast
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+
+- source: gymflow
+  source_id: quinoa_cooked
+  name: Quinoa, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 120
+  protein_per_100g: 4.4
+  carbs_per_100g: 21.0
+  fat_per_100g: 1.9
+  serving_grams: 150
+  serving_label: 1 portion (150 g cooked)
+  portion_unit: grams
+  tags: staple,whole,grain,gluten_free
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: couscous_cooked
+  name: Couscous, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 112
+  protein_per_100g: 3.8
+  carbs_per_100g: 23.0
+  fat_per_100g: 0.2
+  serving_grams: 150
+  serving_label: 1 portion (150 g cooked)
+  portion_unit: grams
+  tags: whole,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+
+- source: gymflow
+  source_id: bread_white_sliced
+  name: White bread, medium slice
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 265
+  protein_per_100g: 9.0
+  carbs_per_100g: 49.0
+  fat_per_100g: 3.2
+  serving_grams: 36
+  serving_label: 1 slice (36 g)
+  portion_unit: slice
+  unit_grams: 36
+  tags: staple,whole,grain,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+
+- source: gymflow
+  source_id: bread_wholemeal_sliced
+  name: Wholemeal bread, medium slice
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 247
+  protein_per_100g: 9.4
+  carbs_per_100g: 41.4
+  fat_per_100g: 2.5
+  serving_grams: 36
+  serving_label: 1 slice (36 g)
+  portion_unit: slice
+  unit_grams: 36
+  tags: staple,whole,grain,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+
+- source: gymflow
+  source_id: bread_sourdough
+  name: Sourdough bread
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 247
+  protein_per_100g: 8.5
+  carbs_per_100g: 47.5
+  fat_per_100g: 1.5
+  serving_grams: 50
+  serving_label: 1 slice (50 g)
+  portion_unit: slice
+  unit_grams: 50
+  tags: whole,grain,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+
+- source: gymflow
+  source_id: wrap_white_tortilla
+  name: White flour tortilla wrap
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 308
+  protein_per_100g: 9.0
+  carbs_per_100g: 53.0
+  fat_per_100g: 6.5
+  serving_grams: 60
+  serving_label: 1 wrap (60 g)
+  portion_unit: wrap
+  unit_grams: 60
+  tags: staple,whole,grain,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+
+- source: gymflow
+  source_id: wrap_wholemeal
+  name: Wholemeal wrap
+  region_codes: gb,eu
+  kcal_per_100g: 280
+  protein_per_100g: 10.0
+  carbs_per_100g: 47.0
+  fat_per_100g: 5.0
+  serving_grams: 60
+  serving_label: 1 wrap (60 g)
+  portion_unit: wrap
+  unit_grams: 60
+  tags: whole,grain,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+
+- source: gymflow
+  source_id: bagel_plain
+  name: Plain bagel
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 257
+  protein_per_100g: 10.0
+  carbs_per_100g: 52.0
+  fat_per_100g: 1.5
+  serving_grams: 95
+  serving_label: 1 bagel (95 g)
+  portion_unit: piece
+  unit_grams: 95
+  tags: whole,grain,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+
+- source: gymflow
+  source_id: pitta_white
+  name: White pitta bread
+  region_codes: gb,eu
+  kcal_per_100g: 275
+  protein_per_100g: 9.0
+  carbs_per_100g: 55.0
+  fat_per_100g: 1.5
+  serving_grams: 60
+  serving_label: 1 pitta (60 g)
+  portion_unit: piece
+  unit_grams: 60
+  tags: whole,grain,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+
+# ============================================================
+# PULSES + LEGUMES
+# ============================================================
+
+- source: gymflow
+  source_id: lentils_red_cooked
+  name: Red lentils, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 116
+  protein_per_100g: 9.0
+  carbs_per_100g: 20.0
+  fat_per_100g: 0.4
+  serving_grams: 150
+  serving_label: 1 portion (150 g cooked)
+  portion_unit: grams
+  tags: staple,whole,pulses,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: chickpeas_cooked
+  name: Chickpeas, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 164
+  protein_per_100g: 9.0
+  carbs_per_100g: 27.4
+  fat_per_100g: 2.6
+  serving_grams: 150
+  serving_label: 1 portion (150 g cooked)
+  portion_unit: grams
+  tags: staple,whole,pulses,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: black_beans_cooked
+  name: Black beans, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 132
+  protein_per_100g: 8.9
+  carbs_per_100g: 23.7
+  fat_per_100g: 0.5
+  serving_grams: 150
+  serving_label: 1 portion (150 g cooked)
+  portion_unit: grams
+  tags: whole,pulses,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: kidney_beans_cooked
+  name: Kidney beans, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 127
+  protein_per_100g: 8.7
+  carbs_per_100g: 22.8
+  fat_per_100g: 0.5
+  serving_grams: 150
+  serving_label: 1 portion (150 g cooked)
+  portion_unit: grams
+  tags: whole,pulses,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: baked_beans
+  name: Baked beans in tomato sauce
+  region_codes: gb,eu
+  kcal_per_100g: 81
+  protein_per_100g: 4.8
+  carbs_per_100g: 13.0
+  fat_per_100g: 0.6
+  serving_grams: 200
+  serving_label: 1 half-can (200 g)
+  portion_unit: grams
+  tags: staple,whole,pulses
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: tofu_firm
+  name: Firm tofu
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 144
+  protein_per_100g: 17.0
+  carbs_per_100g: 2.8
+  fat_per_100g: 8.7
+  serving_grams: 100
+  serving_label: "100 g"
+  portion_unit: grams
+  tags: staple,whole,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+
+- source: gymflow
+  source_id: tempeh
+  name: Tempeh
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 192
+  protein_per_100g: 20.0
+  carbs_per_100g: 7.6
+  fat_per_100g: 11.0
+  serving_grams: 100
+  serving_label: "100 g"
+  portion_unit: grams
+  tags: whole,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+
+- source: gymflow
+  source_id: edamame_cooked
+  name: Edamame, shelled, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 121
+  protein_per_100g: 11.0
+  carbs_per_100g: 8.0
+  fat_per_100g: 5.2
+  serving_grams: 100
+  serving_label: "100 g"
+  portion_unit: grams
+  tags: whole,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+
+# ============================================================
+# VEGETABLES
+# ============================================================
+
+- source: gymflow
+  source_id: broccoli_cooked
+  name: Broccoli, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 35
+  protein_per_100g: 2.4
+  carbs_per_100g: 7.2
+  fat_per_100g: 0.4
+  serving_grams: 100
+  serving_label: "100 g"
+  portion_unit: grams
+  tags: staple,whole,vegetable,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: spinach_cooked
+  name: Spinach, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 23
+  protein_per_100g: 2.9
+  carbs_per_100g: 3.8
+  fat_per_100g: 0.3
+  serving_grams: 100
+  serving_label: "100 g"
+  portion_unit: grams
+  tags: staple,whole,vegetable,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: spinach_raw
+  name: Spinach, raw
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 23
+  protein_per_100g: 2.9
+  carbs_per_100g: 3.6
+  fat_per_100g: 0.4
+  serving_grams: 30
+  serving_label: 1 handful (30 g)
+  portion_unit: grams
+  tags: staple,whole,vegetable,salad
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: sweet_potato_cooked
+  name: Sweet potato, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 90
+  protein_per_100g: 2.0
+  carbs_per_100g: 21.0
+  fat_per_100g: 0.1
+  serving_grams: 150
+  serving_label: 1 medium (150 g)
+  portion_unit: piece
+  unit_grams: 150
+  tags: staple,whole,vegetable
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: potato_cooked
+  name: Potato, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 87
+  protein_per_100g: 1.9
+  carbs_per_100g: 20.1
+  fat_per_100g: 0.1
+  serving_grams: 200
+  serving_label: 1 medium (200 g)
+  portion_unit: piece
+  unit_grams: 200
+  tags: staple,whole,vegetable
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: carrot_raw
+  name: Carrot, raw
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 41
+  protein_per_100g: 0.9
+  carbs_per_100g: 9.6
+  fat_per_100g: 0.2
+  serving_grams: 80
+  serving_label: 1 medium (80 g)
+  portion_unit: piece
+  unit_grams: 80
+  tags: whole,vegetable,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: onion_raw
+  name: Onion, raw
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 40
+  protein_per_100g: 1.1
+  carbs_per_100g: 9.3
+  fat_per_100g: 0.1
+  serving_grams: 100
+  serving_label: 1 medium (100 g)
+  portion_unit: piece
+  unit_grams: 100
+  tags: whole,vegetable
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: pepper_red_raw
+  name: Red bell pepper, raw
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 31
+  protein_per_100g: 1.0
+  carbs_per_100g: 6.0
+  fat_per_100g: 0.3
+  serving_grams: 120
+  serving_label: 1 pepper (120 g)
+  portion_unit: piece
+  unit_grams: 120
+  tags: whole,vegetable,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: tomato_raw
+  name: Tomato, raw
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 18
+  protein_per_100g: 0.9
+  carbs_per_100g: 3.9
+  fat_per_100g: 0.2
+  serving_grams: 80
+  serving_label: 1 medium (80 g)
+  portion_unit: piece
+  unit_grams: 80
+  tags: whole,vegetable,low_calorie,salad
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: cucumber_raw
+  name: Cucumber, raw
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 15
+  protein_per_100g: 0.7
+  carbs_per_100g: 3.6
+  fat_per_100g: 0.1
+  serving_grams: 100
+  serving_label: 1 portion (100 g)
+  portion_unit: grams
+  tags: whole,vegetable,low_calorie,salad
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: lettuce_iceberg
+  name: Iceberg lettuce, raw
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 14
+  protein_per_100g: 0.9
+  carbs_per_100g: 2.0
+  fat_per_100g: 0.2
+  serving_grams: 50
+  serving_label: 1 handful (50 g)
+  portion_unit: grams
+  tags: whole,vegetable,low_calorie,salad
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: avocado
+  name: Avocado
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 160
+  protein_per_100g: 2.0
+  carbs_per_100g: 8.5
+  fat_per_100g: 14.7
+  serving_grams: 150
+  serving_label: 1 medium avocado (150 g flesh)
+  portion_unit: piece
+  unit_grams: 150
+  tags: staple,whole,vegetable,fruit,fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: courgette_cooked
+  name: Courgette, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 17
+  protein_per_100g: 1.2
+  carbs_per_100g: 3.0
+  fat_per_100g: 0.3
+  serving_grams: 100
+  serving_label: "100 g"
+  portion_unit: grams
+  tags: whole,vegetable,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: aubergine_cooked
+  name: Aubergine, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 35
+  protein_per_100g: 0.8
+  carbs_per_100g: 8.7
+  fat_per_100g: 0.2
+  serving_grams: 100
+  serving_label: "100 g"
+  portion_unit: grams
+  tags: whole,vegetable
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: cauliflower_cooked
+  name: Cauliflower, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 23
+  protein_per_100g: 1.8
+  carbs_per_100g: 4.0
+  fat_per_100g: 0.5
+  serving_grams: 100
+  serving_label: "100 g"
+  portion_unit: grams
+  tags: whole,vegetable,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: green_beans_cooked
+  name: Green beans, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 35
+  protein_per_100g: 1.9
+  carbs_per_100g: 7.9
+  fat_per_100g: 0.3
+  serving_grams: 100
+  serving_label: "100 g"
+  portion_unit: grams
+  tags: whole,vegetable,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: peas_cooked
+  name: Peas, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 84
+  protein_per_100g: 5.4
+  carbs_per_100g: 14.0
+  fat_per_100g: 0.4
+  serving_grams: 80
+  serving_label: 1 portion (80 g)
+  portion_unit: grams
+  tags: staple,whole,vegetable
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: corn_cooked
+  name: Sweetcorn, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 96
+  protein_per_100g: 3.4
+  carbs_per_100g: 21.0
+  fat_per_100g: 1.5
+  serving_grams: 80
+  serving_label: 1 portion (80 g)
+  portion_unit: grams
+  tags: whole,vegetable
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: mushroom_white_cooked
+  name: White mushroom, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 28
+  protein_per_100g: 2.2
+  carbs_per_100g: 5.0
+  fat_per_100g: 0.5
+  serving_grams: 80
+  serving_label: 1 portion (80 g)
+  portion_unit: grams
+  tags: whole,vegetable,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: kale_cooked
+  name: Kale, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 28
+  protein_per_100g: 1.9
+  carbs_per_100g: 5.6
+  fat_per_100g: 0.4
+  serving_grams: 100
+  serving_label: "100 g"
+  portion_unit: grams
+  tags: whole,vegetable,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: asparagus_cooked
+  name: Asparagus, cooked
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 22
+  protein_per_100g: 2.4
+  carbs_per_100g: 4.1
+  fat_per_100g: 0.2
+  serving_grams: 80
+  serving_label: 5 spears (80 g)
+  portion_unit: grams
+  tags: whole,vegetable,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+# ============================================================
+# FRUITS
+# ============================================================
+
+- source: gymflow
+  source_id: banana
+  name: Banana
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 89
+  protein_per_100g: 1.1
+  carbs_per_100g: 22.8
+  fat_per_100g: 0.3
+  serving_grams: 118
+  serving_label: 1 medium (118 g flesh)
+  portion_unit: piece
+  unit_grams: 118
+  tags: staple,whole,fruit
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: apple
+  name: Apple
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 52
+  protein_per_100g: 0.3
+  carbs_per_100g: 13.8
+  fat_per_100g: 0.2
+  serving_grams: 180
+  serving_label: 1 medium (180 g)
+  portion_unit: piece
+  unit_grams: 180
+  tags: staple,whole,fruit
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: orange
+  name: Orange
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 47
+  protein_per_100g: 0.9
+  carbs_per_100g: 11.8
+  fat_per_100g: 0.1
+  serving_grams: 130
+  serving_label: 1 medium (130 g flesh)
+  portion_unit: piece
+  unit_grams: 130
+  tags: whole,fruit
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: berries_blueberries
+  name: Blueberries
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 57
+  protein_per_100g: 0.7
+  carbs_per_100g: 14.5
+  fat_per_100g: 0.3
+  serving_grams: 80
+  serving_label: 1 handful (80 g)
+  portion_unit: grams
+  tags: whole,fruit,berries
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: berries_strawberries
+  name: Strawberries
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 32
+  protein_per_100g: 0.7
+  carbs_per_100g: 7.7
+  fat_per_100g: 0.3
+  serving_grams: 100
+  serving_label: 1 handful (100 g)
+  portion_unit: grams
+  tags: whole,fruit,berries,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: berries_raspberries
+  name: Raspberries
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 52
+  protein_per_100g: 1.2
+  carbs_per_100g: 11.9
+  fat_per_100g: 0.7
+  serving_grams: 100
+  serving_label: 1 handful (100 g)
+  portion_unit: grams
+  tags: whole,fruit,berries
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: mango
+  name: Mango
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 60
+  protein_per_100g: 0.8
+  carbs_per_100g: 15.0
+  fat_per_100g: 0.4
+  serving_grams: 165
+  serving_label: 1 cup chopped (165 g)
+  portion_unit: grams
+  tags: whole,fruit
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: pineapple
+  name: Pineapple
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 50
+  protein_per_100g: 0.5
+  carbs_per_100g: 13.1
+  fat_per_100g: 0.1
+  serving_grams: 165
+  serving_label: 1 cup chunks (165 g)
+  portion_unit: grams
+  tags: whole,fruit
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: grapes
+  name: Grapes
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 69
+  protein_per_100g: 0.7
+  carbs_per_100g: 18.0
+  fat_per_100g: 0.2
+  serving_grams: 100
+  serving_label: 1 handful (100 g)
+  portion_unit: grams
+  tags: whole,fruit
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: pear
+  name: Pear
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 57
+  protein_per_100g: 0.4
+  carbs_per_100g: 15.2
+  fat_per_100g: 0.1
+  serving_grams: 180
+  serving_label: 1 medium (180 g)
+  portion_unit: piece
+  unit_grams: 180
+  tags: whole,fruit
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: peach
+  name: Peach
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 39
+  protein_per_100g: 0.9
+  carbs_per_100g: 9.5
+  fat_per_100g: 0.3
+  serving_grams: 150
+  serving_label: 1 medium (150 g)
+  portion_unit: piece
+  unit_grams: 150
+  tags: whole,fruit,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: kiwi
+  name: Kiwi fruit
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 61
+  protein_per_100g: 1.1
+  carbs_per_100g: 14.7
+  fat_per_100g: 0.5
+  serving_grams: 70
+  serving_label: 1 medium (70 g)
+  portion_unit: piece
+  unit_grams: 70
+  tags: whole,fruit
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: melon_watermelon
+  name: Watermelon
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 30
+  protein_per_100g: 0.6
+  carbs_per_100g: 7.6
+  fat_per_100g: 0.2
+  serving_grams: 150
+  serving_label: 1 cup cubed (150 g)
+  portion_unit: grams
+  tags: whole,fruit,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+# ============================================================
+# NUTS, SEEDS + FATS
+# ============================================================
+
+- source: gymflow
+  source_id: almonds
+  name: Almonds
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 579
+  protein_per_100g: 21.0
+  carbs_per_100g: 22.0
+  fat_per_100g: 49.0
+  serving_grams: 30
+  serving_label: 1 handful (30 g)
+  portion_unit: grams
+  tags: whole,nuts,fat,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts
+
+- source: gymflow
+  source_id: cashews
+  name: Cashews
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 553
+  protein_per_100g: 18.0
+  carbs_per_100g: 30.0
+  fat_per_100g: 44.0
+  serving_grams: 30
+  serving_label: 1 handful (30 g)
+  portion_unit: grams
+  tags: whole,nuts,fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts
+
+- source: gymflow
+  source_id: walnuts
+  name: Walnuts
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 654
+  protein_per_100g: 15.0
+  carbs_per_100g: 14.0
+  fat_per_100g: 65.0
+  serving_grams: 30
+  serving_label: 1 handful (30 g)
+  portion_unit: grams
+  tags: whole,nuts,fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts
+
+- source: gymflow
+  source_id: peanuts
+  name: Peanuts, roasted
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 567
+  protein_per_100g: 26.0
+  carbs_per_100g: 16.0
+  fat_per_100g: 49.0
+  serving_grams: 30
+  serving_label: 1 handful (30 g)
+  portion_unit: grams
+  tags: whole,nuts,fat,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: peanuts
+
+- source: gymflow
+  source_id: peanut_butter
+  name: Peanut butter, smooth
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 588
+  protein_per_100g: 25.0
+  carbs_per_100g: 20.0
+  fat_per_100g: 50.0
+  serving_grams: 16
+  serving_label: 1 tbsp (16 g)
+  portion_unit: tbsp
+  unit_grams: 16
+  tags: staple,whole,fat,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: peanuts
+
+- source: gymflow
+  source_id: chia_seeds
+  name: Chia seeds
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 486
+  protein_per_100g: 17.0
+  carbs_per_100g: 42.0
+  fat_per_100g: 31.0
+  serving_grams: 12
+  serving_label: 1 tbsp (12 g)
+  portion_unit: tbsp
+  unit_grams: 12
+  tags: whole,seeds,fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: flax_seeds
+  name: Flax seeds, ground
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 534
+  protein_per_100g: 18.0
+  carbs_per_100g: 29.0
+  fat_per_100g: 42.0
+  serving_grams: 7
+  serving_label: 1 tbsp (7 g)
+  portion_unit: tbsp
+  unit_grams: 7
+  tags: whole,seeds,fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: olive_oil
+  name: Olive oil, extra virgin
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 884
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 100.0
+  serving_grams: 14
+  serving_label: 1 tbsp (14 g)
+  portion_unit: tbsp
+  unit_grams: 14
+  tags: staple,whole,fat,oil
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: rapeseed_oil
+  name: Rapeseed oil
+  region_codes: gb,eu
+  kcal_per_100g: 884
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 100.0
+  serving_grams: 14
+  serving_label: 1 tbsp (14 g)
+  portion_unit: tbsp
+  unit_grams: 14
+  tags: whole,fat,oil
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: coconut_oil
+  name: Coconut oil
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 892
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 100.0
+  serving_grams: 14
+  serving_label: 1 tbsp (14 g)
+  portion_unit: tbsp
+  unit_grams: 14
+  tags: whole,fat,oil
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+# ============================================================
+# CONDIMENTS, SAUCES + STAPLES
+# ============================================================
+
+- source: gymflow
+  source_id: ketchup
+  name: Tomato ketchup
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 102
+  protein_per_100g: 1.0
+  carbs_per_100g: 23.0
+  fat_per_100g: 0.4
+  serving_grams: 17
+  serving_label: 1 tbsp (17 g)
+  portion_unit: tbsp
+  unit_grams: 17
+  tags: whole,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: mayonnaise
+  name: Mayonnaise, full fat
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 680
+  protein_per_100g: 1.0
+  carbs_per_100g: 1.5
+  fat_per_100g: 75.0
+  serving_grams: 14
+  serving_label: 1 tbsp (14 g)
+  portion_unit: tbsp
+  unit_grams: 14
+  tags: whole,condiment,fat
+  dietary_compat: vegetarian,pescatarian,gluten_free
+  allergens: eggs,mustard
+
+- source: gymflow
+  source_id: mustard_dijon
+  name: Dijon mustard
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 70
+  protein_per_100g: 4.4
+  carbs_per_100g: 5.0
+  fat_per_100g: 4.0
+  serving_grams: 5
+  serving_label: 1 tsp (5 g)
+  portion_unit: tsp
+  unit_grams: 5
+  tags: whole,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: mustard
+
+- source: gymflow
+  source_id: soy_sauce
+  name: Soy sauce
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 53
+  protein_per_100g: 8.0
+  carbs_per_100g: 5.0
+  fat_per_100g: 0.6
+  serving_grams: 16
+  serving_label: 1 tbsp (16 g)
+  portion_unit: tbsp
+  unit_grams: 16
+  tags: whole,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: soy,gluten
+
+- source: gymflow
+  source_id: honey
+  name: Honey
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 304
+  protein_per_100g: 0.3
+  carbs_per_100g: 82.4
+  fat_per_100g: 0.0
+  serving_grams: 21
+  serving_label: 1 tbsp (21 g)
+  portion_unit: tbsp
+  unit_grams: 21
+  tags: whole,sweetener
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: maple_syrup
+  name: Maple syrup
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 260
+  protein_per_100g: 0.0
+  carbs_per_100g: 67.0
+  fat_per_100g: 0.1
+  serving_grams: 20
+  serving_label: 1 tbsp (20 g)
+  portion_unit: tbsp
+  unit_grams: 20
+  tags: whole,sweetener
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: hummus
+  name: Hummus
+  region_codes: us,gb,au,eu
+  kcal_per_100g: 166
+  protein_per_100g: 7.9
+  carbs_per_100g: 14.3
+  fat_per_100g: 9.6
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: tbsp
+  unit_grams: 15
+  tags: whole,condiment,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: sesame

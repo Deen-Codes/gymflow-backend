@@ -1,0 +1,437 @@
+# starbucks.yaml — Starbucks UK menu.
+# 28 entries (incl 4 migrated).
+# Source: starbucks.co.uk/menu.
+- source: gymflow
+  source_id: starbucks_caffe_latte_grande_semi
+  name: Starbucks Caffe Latte, Grande, Semi-skimmed
+  brand: Starbucks
+  region_codes: gb,us
+  kcal_per_100g: 50
+  protein_per_100g: 3.4
+  carbs_per_100g: 4.7
+  fat_per_100g: 1.9
+  serving_grams: 480
+  serving_label: 1 grande (~480ml, 190 kcal)
+  tags: restaurant,chain,coffee
+  dietary_compat: vegetarian,halal,kosher
+  allergens: milk
+  portion_unit: ml
+- source: gymflow
+  source_id: starbucks_cappuccino_grande_semi
+  name: Starbucks Cappuccino, Grande, Semi-skimmed
+  brand: Starbucks
+  region_codes: gb,us
+  kcal_per_100g: 41
+  protein_per_100g: 2.5
+  carbs_per_100g: 3.5
+  fat_per_100g: 1.5
+  serving_grams: 360
+  serving_label: 1 grande (~360ml, 130 kcal)
+  tags: restaurant,chain,coffee
+  dietary_compat: vegetarian,halal,kosher
+  allergens: milk
+  portion_unit: ml
+- source: gymflow
+  source_id: starbucks_caramel_frappuccino_grande
+  name: Starbucks Caramel Frappuccino, Grande
+  brand: Starbucks
+  region_codes: gb,us
+  kcal_per_100g: 86
+  protein_per_100g: 1.7
+  carbs_per_100g: 14.0
+  fat_per_100g: 2.7
+  serving_grams: 480
+  serving_label: 1 grande (~480ml, 410 kcal)
+  tags: restaurant,chain,drink,treat
+  dietary_compat: vegetarian
+  allergens: milk
+  portion_unit: ml
+- source: gymflow
+  source_id: starbucks_flat_white_grande_semi
+  name: Starbucks Flat White, Grande, Semi-skimmed
+  brand: Starbucks
+  region_codes: gb,us
+  kcal_per_100g: 38
+  protein_per_100g: 2.5
+  carbs_per_100g: 3.6
+  fat_per_100g: 1.4
+  serving_grams: 360
+  serving_label: 1 grande (~360ml, ~140 kcal)
+  tags: restaurant,chain,coffee,drink
+  dietary_compat: vegetarian,halal,kosher
+  allergens: milk
+  portion_unit: ml
+- source: gymflow
+  source_id: sb_caffe_latte_grande_oat
+  name: Caffe Latte Grande, oat
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 45
+  protein_per_100g: 1.4
+  carbs_per_100g: 6.5
+  fat_per_100g: 1.5
+  serving_grams: 470
+  serving_label: 1 ml (470 g)
+  portion_unit: ml
+  tags: chain,coffee,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: sb_caffe_latte_venti_semi
+  name: Caffe Latte Venti, semi
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 3.5
+  carbs_per_100g: 4.5
+  fat_per_100g: 2.0
+  serving_grams: 590
+  serving_label: 1 ml (590 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: sb_americano_grande
+  name: Americano Grande
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 2
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.3
+  fat_per_100g: 0
+  serving_grams: 470
+  serving_label: 1 ml (470 g)
+  portion_unit: ml
+  tags: chain,coffee,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: sb_espresso
+  name: Espresso
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 ml (30 g)
+  portion_unit: ml
+  tags: chain,coffee,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: sb_mocha_grande_semi
+  name: Caffe Mocha Grande, semi
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 3.5
+  carbs_per_100g: 14.0
+  fat_per_100g: 3.0
+  serving_grams: 470
+  serving_label: 1 ml (470 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+- source: gymflow
+  source_id: sb_hot_choc_grande_semi
+  name: Hot Chocolate Grande, semi
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 4.5
+  carbs_per_100g: 14.5
+  fat_per_100g: 3.5
+  serving_grams: 470
+  serving_label: 1 ml (470 g)
+  portion_unit: ml
+  tags: chain,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+- source: gymflow
+  source_id: sb_chai_latte_grande_semi
+  name: Chai Tea Latte Grande, semi
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 3.0
+  carbs_per_100g: 12.0
+  fat_per_100g: 1.5
+  serving_grams: 470
+  serving_label: 1 ml (470 g)
+  portion_unit: ml
+  tags: chain,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: sb_pumpkin_spice_latte_grande
+  name: Pumpkin Spice Latte Grande, semi
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 90
+  protein_per_100g: 3.0
+  carbs_per_100g: 13.0
+  fat_per_100g: 2.5
+  serving_grams: 470
+  serving_label: 1 ml (470 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,eggs
+- source: gymflow
+  source_id: sb_iced_caramel_macchiato
+  name: Iced Caramel Macchiato Grande
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 70
+  protein_per_100g: 2.5
+  carbs_per_100g: 11
+  fat_per_100g: 2.0
+  serving_grams: 470
+  serving_label: 1 ml (470 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk
+- source: gymflow
+  source_id: sb_frappuccino_mocha_grande
+  name: Mocha Frappuccino Grande
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 2.5
+  carbs_per_100g: 18
+  fat_per_100g: 2.5
+  serving_grams: 470
+  serving_label: 1 ml (470 g)
+  portion_unit: ml
+  tags: chain,coffee,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+- source: gymflow
+  source_id: sb_egg_bacon_brioche
+  name: Egg & Bacon Brioche
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 12
+  carbs_per_100g: 26
+  fat_per_100g: 11
+  serving_grams: 145
+  serving_label: 1 piece (145 g)
+  portion_unit: piece
+  tags: chain,coffee,breakfast
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 145
+- source: gymflow
+  source_id: sb_panini_mozzarella_tomato
+  name: Mozzarella & Tomato Panini
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 11
+  carbs_per_100g: 27
+  fat_per_100g: 8
+  serving_grams: 215
+  serving_label: 1 piece (215 g)
+  portion_unit: piece
+  tags: chain,coffee,food,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 215
+- source: gymflow
+  source_id: sb_panini_chicken_pesto
+  name: Chicken Pesto Panini
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 13
+  carbs_per_100g: 27
+  fat_per_100g: 9
+  serving_grams: 215
+  serving_label: 1 piece (215 g)
+  portion_unit: piece
+  tags: chain,coffee,food,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,tree_nuts
+  unit_grams: 215
+- source: gymflow
+  source_id: sb_sandwich_chicken_avocado
+  name: Chicken & Avocado Sandwich
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: chain,coffee,food,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 200
+- source: gymflow
+  source_id: sb_sandwich_egg_cress
+  name: Egg & Cress Sandwich
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 180
+  serving_label: 1 piece (180 g)
+  portion_unit: piece
+  tags: chain,coffee,food,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,mustard
+  unit_grams: 180
+- source: gymflow
+  source_id: sb_porridge_oat
+  name: Oat Porridge
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 2.5
+  carbs_per_100g: 12
+  fat_per_100g: 1.5
+  serving_grams: 280
+  serving_label: 1 portion (280 g)
+  portion_unit: pack
+  tags: chain,coffee,breakfast,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 280
+- source: gymflow
+  source_id: sb_chocolate_brownie
+  name: Chocolate Brownie
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 415
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  serving_grams: 80
+  serving_label: 1 piece (80 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 80
+- source: gymflow
+  source_id: sb_almond_croissant
+  name: Almond Croissant
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 405
+  protein_per_100g: 7
+  carbs_per_100g: 38
+  fat_per_100g: 24
+  serving_grams: 110
+  serving_label: 1 piece (110 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,tree_nuts
+  unit_grams: 110
+- source: gymflow
+  source_id: sb_butter_croissant
+  name: Butter Croissant
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 445
+  protein_per_100g: 8
+  carbs_per_100g: 45
+  fat_per_100g: 25
+  serving_grams: 75
+  serving_label: 1 piece (75 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 75
+- source: gymflow
+  source_id: sb_lemon_loaf_cake
+  name: Lemon Loaf Cake
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 4
+  carbs_per_100g: 52
+  fat_per_100g: 17
+  serving_grams: 100
+  serving_label: 1 slice (100 g)
+  portion_unit: slice
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 100
+- source: gymflow
+  source_id: sb_carrot_cake
+  name: Carrot Cake
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 390
+  protein_per_100g: 4
+  carbs_per_100g: 49
+  fat_per_100g: 19
+  serving_grams: 100
+  serving_label: 1 slice (100 g)
+  portion_unit: slice
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,tree_nuts
+  unit_grams: 100
+- source: gymflow
+  source_id: sb_chocolate_chip_cookie
+  name: Chocolate Chip Cookie
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 470
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 22
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 60
+- source: gymflow
+  source_id: sb_blueberry_muffin
+  name: Blueberry Muffin
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 17
+  serving_grams: 110
+  serving_label: 1 piece (110 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 110
+- source: gymflow
+  source_id: sb_birthday_cake_pop
+  name: Birthday Cake Pop
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 405
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 21
+  serving_grams: 35
+  serving_label: 1 piece (35 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 35

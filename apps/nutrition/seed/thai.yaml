@@ -1,0 +1,399 @@
+# thai.yaml — Thai curries (red/green/yellow/panang/massaman), pad thai variants, tom yum/tom kha, satay, papaya salad, fried rice, mango sticky rice.
+- source: gymflow
+  source_id: th_pad_thai_chicken
+  name: Pad Thai with Chicken
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 12
+  carbs_per_100g: 18
+  fat_per_100g: 6
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: thai,noodles,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs,peanuts,fish,soy,sesame
+  unit_grams: 400
+- source: gymflow
+  source_id: th_pad_thai_prawn
+  name: Pad Thai with Prawn
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: thai,noodles
+  dietary_compat: pescatarian,dairy_free
+  allergens: crustaceans,gluten,eggs,peanuts,fish
+  unit_grams: 400
+- source: gymflow
+  source_id: th_pad_thai_vegan
+  name: Vegan Pad Thai
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 3
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: thai,noodles,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,peanuts,sesame
+  unit_grams: 400
+- source: gymflow
+  source_id: th_green_curry_chicken
+  name: Thai Green Curry with Chicken
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 12
+  fat_per_100g: 6
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: thai,curry,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: fish,soy
+  unit_grams: 400
+- source: gymflow
+  source_id: th_red_curry_chicken
+  name: Thai Red Curry with Chicken
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 155
+  protein_per_100g: 11
+  carbs_per_100g: 12
+  fat_per_100g: 7
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: thai,curry,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: fish,soy
+  unit_grams: 400
+- source: gymflow
+  source_id: th_red_curry_beef
+  name: Thai Red Curry with Beef
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 12
+  carbs_per_100g: 12
+  fat_per_100g: 9
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: thai,curry
+  dietary_compat: pescatarian,dairy_free
+  allergens: fish,soy
+  unit_grams: 400
+- source: gymflow
+  source_id: th_yellow_curry_chicken
+  name: Thai Yellow Curry Chicken
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 14
+  fat_per_100g: 7
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: thai,curry,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: fish,soy
+  unit_grams: 400
+- source: gymflow
+  source_id: th_panang_curry_chicken
+  name: Panang Curry Chicken
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 12
+  fat_per_100g: 8
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: thai,curry,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: peanuts,fish,soy
+  unit_grams: 400
+- source: gymflow
+  source_id: th_massaman_curry_beef
+  name: Massaman Curry Beef
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 14
+  fat_per_100g: 9
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: thai,curry
+  dietary_compat: pescatarian,dairy_free
+  allergens: peanuts,fish,soy
+  unit_grams: 400
+- source: gymflow
+  source_id: th_jungle_curry_chicken
+  name: Jungle Curry Chicken
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 12
+  carbs_per_100g: 6
+  fat_per_100g: 2
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: thai,curry,chicken,low_calorie
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish,soy
+  unit_grams: 400
+- source: gymflow
+  source_id: th_tom_yum_prawn
+  name: Tom Yum Soup with Prawn
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 4
+  carbs_per_100g: 7
+  fat_per_100g: 1
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: pack
+  tags: thai,soup,low_calorie
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: crustaceans,fish,soy
+  unit_grams: 350
+- source: gymflow
+  source_id: th_tom_kha_chicken
+  name: Tom Kha Chicken Soup
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 5
+  carbs_per_100g: 6
+  fat_per_100g: 4
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: pack
+  tags: thai,soup,chicken
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish,soy
+  unit_grams: 350
+- source: gymflow
+  source_id: th_thai_fried_rice_chicken
+  name: Thai Fried Rice with Chicken
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 170
+  protein_per_100g: 9
+  carbs_per_100g: 25
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: thai,grain,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: eggs,soy,fish,sesame
+  unit_grams: 400
+- source: gymflow
+  source_id: th_thai_fried_rice_prawn
+  name: Thai Fried Rice with Prawn
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 25
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: thai,grain
+  dietary_compat: pescatarian,dairy_free
+  allergens: crustaceans,eggs,soy,fish,sesame
+  unit_grams: 400
+- source: gymflow
+  source_id: th_pineapple_fried_rice
+  name: Pineapple Fried Rice
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 28
+  fat_per_100g: 5
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: thai,grain
+  dietary_compat: pescatarian,dairy_free
+  allergens: eggs,soy,fish
+  unit_grams: 400
+- source: gymflow
+  source_id: th_thai_basil_chicken
+  name: Thai Basil Chicken (Pad Krapow)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 12
+  fat_per_100g: 7
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: thai,chicken
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: soy,fish
+  unit_grams: 350
+- source: gymflow
+  source_id: th_satay_chicken_4
+  name: Chicken Satay (4 skewers)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 22
+  carbs_per_100g: 6
+  fat_per_100g: 12
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: thai,starter,chicken
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: peanuts,sesame,soy
+  unit_grams: 50
+- source: gymflow
+  source_id: th_satay_sauce_30g
+  name: Satay Peanut Sauce (30g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 9
+  carbs_per_100g: 18
+  fat_per_100g: 22
+  serving_grams: 30
+  serving_label: 1 tbsp (30 g)
+  portion_unit: tbsp
+  tags: thai,sauce
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: peanuts,sesame,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: th_thai_summer_rolls_3
+  name: Thai Summer Rolls (3)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 5
+  carbs_per_100g: 17
+  fat_per_100g: 1
+  serving_grams: 270
+  serving_label: 1 piece (270 g)
+  portion_unit: piece
+  tags: thai,starter,low_fat
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: crustaceans,fish,soy,sesame
+  unit_grams: 90
+- source: gymflow
+  source_id: th_papaya_salad
+  name: Som Tum (Papaya Salad)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 3
+  carbs_per_100g: 14
+  fat_per_100g: 1.5
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: thai,salad,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: crustaceans,fish,peanuts
+  unit_grams: 200
+- source: gymflow
+  source_id: th_thai_beef_salad
+  name: Thai Beef Salad
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 14
+  carbs_per_100g: 9
+  fat_per_100g: 6
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: meal
+  tags: thai,salad,high_protein
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish,sesame,soy
+  unit_grams: 250
+- source: gymflow
+  source_id: th_chicken_pad_see_ew
+  name: Pad See Ew Chicken
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: thai,noodles,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs,soy,sesame,fish
+  unit_grams: 400
+- source: gymflow
+  source_id: th_thai_sticky_rice_100g
+  name: Thai Sticky Rice (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 170
+  protein_per_100g: 3.5
+  carbs_per_100g: 38
+  fat_per_100g: 0.4
+  serving_grams: 200
+  serving_label: 1 grams (200 g)
+  portion_unit: grams
+  tags: thai,grain,vegan,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: th_mango_sticky_rice
+  name: Mango Sticky Rice
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 3
+  carbs_per_100g: 42
+  fat_per_100g: 4
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: thai,dessert,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: th_thai_iced_tea
+  name: Thai Iced Tea
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 1.5
+  carbs_per_100g: 20
+  fat_per_100g: 3
+  serving_grams: 300
+  serving_label: 1 ml (300 g)
+  portion_unit: ml
+  tags: thai,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk

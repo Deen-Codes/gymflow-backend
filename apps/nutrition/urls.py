@@ -8,7 +8,7 @@ from .solo_views import (
     solo_nutrition_today,
     solo_nutrition_log_create,
     solo_nutrition_log_delete,
-    solo_nutrition_barcode_lookup,
+    solo_nutrition_food_search,
     solo_nutrition_food_create,
     solo_macro_targets_update,
 )
@@ -29,7 +29,12 @@ urlpatterns = [
     path("solo/today/",                  solo_nutrition_today,           name="solo-nutrition-today"),
     path("solo/log/",                    solo_nutrition_log_create,      name="solo-nutrition-log-create"),
     path("solo/log/<int:entry_id>/",     solo_nutrition_log_delete,      name="solo-nutrition-log-delete"),
-    path("solo/barcode/<str:code>/",     solo_nutrition_barcode_lookup,  name="solo-nutrition-barcode"),
+
+    # NUTRITION-DB (#105) — text search across CuratedFood.
+    # Query: ?q=chicken&limit=25&region=gb
+    # Internal-only — no external DB fallback.
+    path("solo/foods/search/",           solo_nutrition_food_search,     name="solo-nutrition-food-search"),
+
     path("solo/foods/",                  solo_nutrition_food_create,     name="solo-nutrition-food-create"),
 
     # R5-2 — first-time macro target setup ("Set them myself"

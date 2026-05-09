@@ -1,0 +1,558 @@
+# kfc.yaml — KFC UK menu.
+# 35 entries (incl 5 migrated).
+# Source: kfc.co.uk/menu allergen + nutrition.
+- source: gymflow
+  source_id: kfc_fries_regular
+  name: KFC Fries, Regular
+  brand: KFC
+  region_codes: gb,us
+  kcal_per_100g: 285
+  protein_per_100g: 3.5
+  carbs_per_100g: 38.0
+  fat_per_100g: 13.0
+  serving_grams: 90
+  serving_label: 1 regular (~257 kcal)
+  tags: restaurant,chain,sides
+  dietary_compat: vegan,vegetarian,dairy_free
+  allergens: gluten
+  portion_unit: pack
+  unit_grams: 90
+- source: gymflow
+  source_id: kfc_gravy_regular
+  name: KFC Gravy, Regular
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 64
+  protein_per_100g: 2.5
+  carbs_per_100g: 8.0
+  fat_per_100g: 2.5
+  serving_grams: 105
+  serving_label: 1 regular pot
+  tags: restaurant,chain,sides
+  dietary_compat: halal_compatible
+  allergens: gluten,milk,celery,sulphites
+  portion_unit: pack
+  unit_grams: 70
+- source: gymflow
+  source_id: kfc_original_chicken_breast
+  name: KFC Original Recipe Chicken Breast
+  brand: KFC
+  region_codes: gb,us
+  kcal_per_100g: 230
+  protein_per_100g: 22.0
+  carbs_per_100g: 9.0
+  fat_per_100g: 12.0
+  serving_grams: 161
+  serving_label: 1 piece (~161g)
+  tags: protein,restaurant,chain,fried
+  dietary_compat: ''
+  allergens: gluten,eggs,milk
+  portion_unit: piece
+  unit_grams: 161
+- source: gymflow
+  source_id: kfc_popcorn_chicken_regular
+  name: KFC Popcorn Chicken, Regular
+  brand: KFC
+  region_codes: gb,us
+  kcal_per_100g: 296
+  protein_per_100g: 19.0
+  carbs_per_100g: 17.0
+  fat_per_100g: 17.0
+  serving_grams: 100
+  serving_label: 1 regular box
+  tags: restaurant,chain,protein
+  dietary_compat: halal_compatible
+  allergens: gluten,milk,eggs
+  portion_unit: pack
+  unit_grams: 100
+- source: gymflow
+  source_id: kfc_zinger_burger
+  name: KFC Zinger Burger
+  brand: KFC
+  region_codes: gb,us
+  kcal_per_100g: 245
+  protein_per_100g: 13.0
+  carbs_per_100g: 22.0
+  fat_per_100g: 12.0
+  serving_grams: 195
+  serving_label: 1 burger (~478 kcal)
+  tags: restaurant,chain,fast_food,spicy
+  dietary_compat: halal_compatible
+  allergens: gluten,eggs,milk
+  portion_unit: piece
+  unit_grams: 222
+- source: gymflow
+  source_id: kfc_original_thigh
+  name: Original Recipe Chicken Thigh
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 22
+  carbs_per_100g: 7
+  fat_per_100g: 14
+  serving_grams: 95
+  serving_label: 1 piece (95 g)
+  portion_unit: piece
+  tags: chain,fast_food,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 95
+- source: gymflow
+  source_id: kfc_original_drumstick
+  name: Original Recipe Drumstick
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 21
+  carbs_per_100g: 7
+  fat_per_100g: 12
+  serving_grams: 65
+  serving_label: 1 piece (65 g)
+  portion_unit: piece
+  tags: chain,fast_food,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 65
+- source: gymflow
+  source_id: kfc_original_wing
+  name: Original Recipe Wing
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 22
+  carbs_per_100g: 7
+  fat_per_100g: 14
+  serving_grams: 50
+  serving_label: 1 piece (50 g)
+  portion_unit: piece
+  tags: chain,fast_food,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 50
+- source: gymflow
+  source_id: kfc_hot_wings_5
+  name: Hot Wings (5)
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 21
+  carbs_per_100g: 8
+  fat_per_100g: 14
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,fast_food,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 200
+- source: gymflow
+  source_id: kfc_boneless_banquet
+  name: Boneless Banquet (3 mini fillets + sides)
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 13
+  carbs_per_100g: 24
+  fat_per_100g: 10
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: chain,fast_food,meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 700
+- source: gymflow
+  source_id: kfc_fillet_burger
+  name: Fillet Burger
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 14
+  carbs_per_100g: 24
+  fat_per_100g: 10
+  serving_grams: 220
+  serving_label: 1 piece (220 g)
+  portion_unit: piece
+  tags: chain,fast_food,burger,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 220
+- source: gymflow
+  source_id: kfc_tower_burger
+  name: Tower Burger
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 260
+  protein_per_100g: 14
+  carbs_per_100g: 24
+  fat_per_100g: 12
+  serving_grams: 280
+  serving_label: 1 piece (280 g)
+  portion_unit: piece
+  tags: chain,fast_food,burger,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 280
+- source: gymflow
+  source_id: kfc_zinger_tower
+  name: Zinger Tower Burger
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 265
+  protein_per_100g: 14
+  carbs_per_100g: 23
+  fat_per_100g: 13
+  serving_grams: 285
+  serving_label: 1 piece (285 g)
+  portion_unit: piece
+  tags: chain,fast_food,burger,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 285
+- source: gymflow
+  source_id: kfc_mini_fillet_burger
+  name: Mini Fillet Burger
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 25
+  fat_per_100g: 10
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: chain,fast_food,burger,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 130
+- source: gymflow
+  source_id: kfc_double_down
+  name: Double Down (2 fillets, no bun)
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 25
+  carbs_per_100g: 8
+  fat_per_100g: 17
+  serving_grams: 230
+  serving_label: 1 piece (230 g)
+  portion_unit: piece
+  tags: chain,fast_food,burger,chicken,low_carb,high_protein
+  dietary_compat: pescatarian
+  allergens: milk,eggs
+  unit_grams: 230
+- source: gymflow
+  source_id: kfc_chicken_wrap_original
+  name: Original Chicken Wrap
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 12
+  carbs_per_100g: 24
+  fat_per_100g: 8
+  serving_grams: 180
+  serving_label: 1 wrap (180 g)
+  portion_unit: wrap
+  tags: chain,fast_food,wrap,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 180
+- source: gymflow
+  source_id: kfc_zinger_wrap
+  name: Zinger Wrap
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 12
+  carbs_per_100g: 24
+  fat_per_100g: 9
+  serving_grams: 185
+  serving_label: 1 wrap (185 g)
+  portion_unit: wrap
+  tags: chain,fast_food,wrap,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 185
+- source: gymflow
+  source_id: kfc_rice_box_zinger
+  name: Zinger Rice Box
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: chain,fast_food,bowl,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 380
+- source: gymflow
+  source_id: kfc_rice_box_grilled
+  name: Grilled Chicken Rice Box
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 20
+  fat_per_100g: 5
+  serving_grams: 370
+  serving_label: 1 portion (370 g)
+  portion_unit: meal
+  tags: chain,fast_food,bowl,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: ''
+  unit_grams: 370
+- source: gymflow
+  source_id: kfc_fries_large
+  name: Fries (large)
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 4
+  carbs_per_100g: 38
+  fat_per_100g: 13
+  serving_grams: 165
+  serving_label: 1 portion (165 g)
+  portion_unit: pack
+  tags: chain,fast_food,side,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 165
+- source: gymflow
+  source_id: kfc_fries_small
+  name: Fries (small)
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 4
+  carbs_per_100g: 38
+  fat_per_100g: 13
+  serving_grams: 80
+  serving_label: 1 portion (80 g)
+  portion_unit: pack
+  tags: chain,fast_food,side,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 80
+- source: gymflow
+  source_id: kfc_corn_cobette
+  name: Corn Cobette
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 100
+  protein_per_100g: 3
+  carbs_per_100g: 19
+  fat_per_100g: 1.5
+  serving_grams: 110
+  serving_label: 1 piece (110 g)
+  portion_unit: piece
+  tags: chain,fast_food,side,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 110
+- source: gymflow
+  source_id: kfc_coleslaw_regular
+  name: Coleslaw (regular)
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 1.5
+  carbs_per_100g: 8
+  fat_per_100g: 15
+  serving_grams: 110
+  serving_label: 1 portion (110 g)
+  portion_unit: pack
+  tags: chain,fast_food,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: eggs,milk,mustard,sulphites
+  unit_grams: 110
+- source: gymflow
+  source_id: kfc_beans_regular
+  name: Beans (regular)
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 5
+  carbs_per_100g: 14
+  fat_per_100g: 0.5
+  serving_grams: 110
+  serving_label: 1 portion (110 g)
+  portion_unit: pack
+  tags: chain,fast_food,side,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 110
+- source: gymflow
+  source_id: kfc_mash_gravy
+  name: Mash & Gravy
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 3
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: chain,fast_food,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,celery
+  unit_grams: 150
+- source: gymflow
+  source_id: kfc_milkshake_chocolate
+  name: Chocolate Krushem
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 160
+  protein_per_100g: 3
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  serving_grams: 350
+  serving_label: 1 ml (350 g)
+  portion_unit: ml
+  tags: chain,fast_food,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk
+- source: gymflow
+  source_id: kfc_milkshake_strawberry
+  name: Strawberry Krushem
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 155
+  protein_per_100g: 3
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  serving_grams: 350
+  serving_label: 1 ml (350 g)
+  portion_unit: ml
+  tags: chain,fast_food,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk
+- source: gymflow
+  source_id: kfc_pepsi_max_med
+  name: Pepsi Max (medium)
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 400
+  serving_label: 1 ml (400 g)
+  portion_unit: ml
+  tags: chain,fast_food,drink,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: kfc_pepsi_med
+  name: Pepsi (medium)
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 41
+  protein_per_100g: 0
+  carbs_per_100g: 10
+  fat_per_100g: 0
+  serving_grams: 400
+  serving_label: 1 ml (400 g)
+  portion_unit: ml
+  tags: chain,fast_food,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: kfc_lemonade_med
+  name: Lemonade (medium)
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 22
+  protein_per_100g: 0
+  carbs_per_100g: 5.5
+  fat_per_100g: 0
+  serving_grams: 400
+  serving_label: 1 ml (400 g)
+  portion_unit: ml
+  tags: chain,fast_food,drink,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: kfc_dip_bbq
+  name: BBQ Dip
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 0.5
+  carbs_per_100g: 39
+  fat_per_100g: 0
+  serving_grams: 25
+  serving_label: 1 portion (25 g)
+  portion_unit: pack
+  tags: chain,fast_food,sauce
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: kfc_dip_garlic_buttermilk
+  name: Garlic Buttermilk Dip
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 1
+  carbs_per_100g: 6
+  fat_per_100g: 38
+  serving_grams: 25
+  serving_label: 1 portion (25 g)
+  portion_unit: pack
+  tags: chain,fast_food,sauce
+  dietary_compat: vegetarian,pescatarian,gluten_free
+  allergens: eggs,milk,mustard
+  unit_grams: 25
+- source: gymflow
+  source_id: kfc_dip_sweet_chilli
+  name: Sweet Chilli Dip
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 0
+  carbs_per_100g: 60
+  fat_per_100g: 0
+  serving_grams: 25
+  serving_label: 1 portion (25 g)
+  portion_unit: pack
+  tags: chain,fast_food,sauce
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: kfc_cookies_choc
+  name: Chocolate Chip Cookie
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 480
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 23
+  serving_grams: 35
+  serving_label: 1 piece (35 g)
+  portion_unit: piece
+  tags: chain,fast_food,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 35
+- source: gymflow
+  source_id: kfc_apple_pie
+  name: Apple Pie
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 3
+  carbs_per_100g: 45
+  fat_per_100g: 18
+  serving_grams: 75
+  serving_label: 1 piece (75 g)
+  portion_unit: piece
+  tags: chain,fast_food,dessert
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 75

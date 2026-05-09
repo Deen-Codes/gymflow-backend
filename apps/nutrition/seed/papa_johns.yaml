@@ -1,0 +1,627 @@
+# papa_johns.yaml — Papa John's UK pizza menu.
+# 40 entries. Macros per-slice (medium 8-slice; large 8-slice; XL 10-slice).
+# Source: papajohns.co.uk/nutrition.
+- source: gymflow
+  source_id: papajohns_pepperoni_passion_med
+  name: Pepperoni Passion (med slice)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 12
+  carbs_per_100g: 28
+  fat_per_100g: 12
+  serving_grams: 105
+  serving_label: 1 slice (105 g)
+  portion_unit: slice
+  tags: chain,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 105
+- source: gymflow
+  source_id: papajohns_hawaiian_med
+  name: Hawaiian (med slice)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 8
+  serving_grams: 110
+  serving_label: 1 slice (110 g)
+  portion_unit: slice
+  tags: chain,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sulphites
+  unit_grams: 110
+- source: gymflow
+  source_id: papajohns_meatlovers_med
+  name: The Meats (med slice)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 13
+  carbs_per_100g: 26
+  fat_per_100g: 14
+  serving_grams: 115
+  serving_label: 1 slice (115 g)
+  portion_unit: slice
+  tags: chain,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 115
+- source: gymflow
+  source_id: papajohns_garden_party_med
+  name: Garden Party (med slice)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 7
+  serving_grams: 110
+  serving_label: 1 slice (110 g)
+  portion_unit: slice
+  tags: chain,pizza,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,sulphites
+  unit_grams: 110
+- source: gymflow
+  source_id: papajohns_chicken_club_med
+  name: Chicken Club (med slice)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 13
+  carbs_per_100g: 26
+  fat_per_100g: 10
+  serving_grams: 115
+  serving_label: 1 slice (115 g)
+  portion_unit: slice
+  tags: chain,pizza,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 115
+- source: gymflow
+  source_id: papajohns_bbq_chicken_med
+  name: BBQ Chicken Bacon (med slice)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 265
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 10
+  serving_grams: 115
+  serving_label: 1 slice (115 g)
+  portion_unit: slice
+  tags: chain,pizza,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 115
+- source: gymflow
+  source_id: papajohns_works_med
+  name: The Works (med slice)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 12
+  carbs_per_100g: 28
+  fat_per_100g: 11
+  serving_grams: 115
+  serving_label: 1 slice (115 g)
+  portion_unit: slice
+  tags: chain,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites,fish
+  unit_grams: 115
+- source: gymflow
+  source_id: papajohns_cheese_only_med
+  name: Cheese (med slice)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 8
+  serving_grams: 95
+  serving_label: 1 slice (95 g)
+  portion_unit: slice
+  tags: chain,pizza,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 95
+- source: gymflow
+  source_id: papajohns_vegan_garden_med
+  name: Vegan Garden (med slice)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 7
+  carbs_per_100g: 30
+  fat_per_100g: 6
+  serving_grams: 110
+  serving_label: 1 slice (110 g)
+  portion_unit: slice
+  tags: chain,pizza,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sulphites
+  unit_grams: 110
+- source: gymflow
+  source_id: papajohns_vegan_meatless_med
+  name: Vegan Meatless Meatball (med slice)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 8
+  carbs_per_100g: 28
+  fat_per_100g: 8
+  serving_grams: 110
+  serving_label: 1 slice (110 g)
+  portion_unit: slice
+  tags: chain,pizza,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy,sulphites
+  unit_grams: 110
+- source: gymflow
+  source_id: papajohns_garlic_pizza_sticks
+  name: Garlic Pizza Sticks
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 9
+  carbs_per_100g: 38
+  fat_per_100g: 11
+  serving_grams: 165
+  serving_label: 1 portion (165 g)
+  portion_unit: pack
+  tags: chain,pizza,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 165
+- source: gymflow
+  source_id: papajohns_cheese_garlic_sticks
+  name: Cheese & Garlic Sticks
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 305
+  protein_per_100g: 12
+  carbs_per_100g: 36
+  fat_per_100g: 12
+  serving_grams: 175
+  serving_label: 1 portion (175 g)
+  portion_unit: pack
+  tags: chain,pizza,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 175
+- source: gymflow
+  source_id: papajohns_chicken_dippers
+  name: Chicken Dippers (6)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 17
+  carbs_per_100g: 16
+  fat_per_100g: 13
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: chain,pizza,side,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 150
+- source: gymflow
+  source_id: papajohns_chicken_wings_8
+  name: Chicken Wings (8)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 22
+  carbs_per_100g: 8
+  fat_per_100g: 13
+  serving_grams: 280
+  serving_label: 1 portion (280 g)
+  portion_unit: pack
+  tags: chain,pizza,side,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 280
+- source: gymflow
+  source_id: papajohns_garlic_dough_balls
+  name: Garlic Dough Balls (12)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 8
+  carbs_per_100g: 35
+  fat_per_100g: 11
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,pizza,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 200
+- source: gymflow
+  source_id: papajohns_potato_tots
+  name: Potato Tots
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 12
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,pizza,side
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 200
+- source: gymflow
+  source_id: papajohns_jalapenos
+  name: Stuffed Jalapeños
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 13
+  serving_grams: 165
+  serving_label: 1 portion (165 g)
+  portion_unit: pack
+  tags: chain,pizza,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 165
+- source: gymflow
+  source_id: papajohns_garlic_dip
+  name: Garlic Dipping Sauce
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 425
+  protein_per_100g: 1
+  carbs_per_100g: 6
+  fat_per_100g: 45
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: chain,pizza,sauce
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: eggs,milk,mustard
+  unit_grams: 30
+- source: gymflow
+  source_id: papajohns_bbq_dip
+  name: BBQ Dipping Sauce
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 0.5
+  carbs_per_100g: 39
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: chain,pizza,sauce
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: papajohns_sweet_chilli_dip
+  name: Sweet Chilli Dipping Sauce
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 0
+  carbs_per_100g: 60
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: chain,pizza,sauce
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: papajohns_coke_bottle
+  name: Coca-Cola (bottle)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 0
+  carbs_per_100g: 10.6
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: chain,pizza,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: papajohns_diet_coke_bottle
+  name: Diet Coke (bottle)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: chain,pizza,drink,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: papajohns_fanta_bottle
+  name: Fanta Orange (bottle)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 19
+  protein_per_100g: 0
+  carbs_per_100g: 4.6
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: chain,pizza,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: papajohns_sprite_bottle
+  name: Sprite (bottle)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 14
+  protein_per_100g: 0
+  carbs_per_100g: 3.3
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: chain,pizza,drink,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: papajohns_water_bottle
+  name: Still Water (bottle)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: chain,pizza,drink,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: papajohns_chocolate_brownie
+  name: Chocolate Brownie
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 415
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: chain,pizza,dessert
+  dietary_compat: vegetarian,pescatarian
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 100
+- source: gymflow
+  source_id: papajohns_cinnamon_sticks
+  name: Cinnamon Scrolls
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 56
+  fat_per_100g: 14
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,pizza,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 200
+- source: gymflow
+  source_id: papajohns_cookies_choc_chip
+  name: Choc Chip Cookies
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 445
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 20
+  serving_grams: 165
+  serving_label: 1 portion (165 g)
+  portion_unit: pack
+  tags: chain,pizza,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 165
+- source: gymflow
+  source_id: papajohns_pepperoni_passion_whole_med
+  name: Pepperoni Passion (whole medium)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 12
+  carbs_per_100g: 28
+  fat_per_100g: 12
+  serving_grams: 840
+  serving_label: 1 portion (840 g)
+  portion_unit: meal
+  tags: chain,pizza,sharing
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 840
+- source: gymflow
+  source_id: papajohns_meats_whole_lge
+  name: The Meats (whole large)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 13
+  carbs_per_100g: 26
+  fat_per_100g: 14
+  serving_grams: 1175
+  serving_label: 1 portion (1175 g)
+  portion_unit: meal
+  tags: chain,pizza,sharing
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 1175
+- source: gymflow
+  source_id: papajohns_works_whole_lge
+  name: The Works (whole large)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 12
+  carbs_per_100g: 28
+  fat_per_100g: 11
+  serving_grams: 1175
+  serving_label: 1 portion (1175 g)
+  portion_unit: meal
+  tags: chain,pizza,sharing
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites,fish
+  unit_grams: 1175
+- source: gymflow
+  source_id: papajohns_breakfast_pizza_med
+  name: All Day Breakfast (med slice)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 13
+  carbs_per_100g: 27
+  fat_per_100g: 12
+  serving_grams: 115
+  serving_label: 1 slice (115 g)
+  portion_unit: slice
+  tags: chain,pizza,breakfast
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 115
+- source: gymflow
+  source_id: papajohns_pepperoni_lge_slice
+  name: Pepperoni Passion (large slice)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 12
+  carbs_per_100g: 28
+  fat_per_100g: 12
+  serving_grams: 145
+  serving_label: 1 slice (145 g)
+  portion_unit: slice
+  tags: chain,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 145
+- source: gymflow
+  source_id: papajohns_pepperoni_xl_slice
+  name: Pepperoni Passion (XL slice)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 12
+  carbs_per_100g: 28
+  fat_per_100g: 12
+  serving_grams: 175
+  serving_label: 1 slice (175 g)
+  portion_unit: slice
+  tags: chain,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 175
+- source: gymflow
+  source_id: papajohns_pepperoni_sml_whole
+  name: Pepperoni Passion (whole small)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 12
+  carbs_per_100g: 28
+  fat_per_100g: 12
+  serving_grams: 480
+  serving_label: 1 portion (480 g)
+  portion_unit: meal
+  tags: chain,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 480
+- source: gymflow
+  source_id: papajohns_cheese_sml_whole
+  name: Cheese (whole small)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 8
+  serving_grams: 425
+  serving_label: 1 portion (425 g)
+  portion_unit: meal
+  tags: chain,pizza
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 425
+- source: gymflow
+  source_id: papajohns_stuffed_crust_pep_med
+  name: Stuffed Crust Pepperoni (med slice)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  serving_grams: 130
+  serving_label: 1 slice (130 g)
+  portion_unit: slice
+  tags: chain,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 130
+- source: gymflow
+  source_id: papajohns_calzone_meats
+  name: Meat Calzone
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 12
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: chain,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 350
+- source: gymflow
+  source_id: papajohns_chicken_strips_8
+  name: Chicken Strips (8)
+  brand: Papa John's
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 17
+  carbs_per_100g: 16
+  fat_per_100g: 13
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,pizza,side,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 200

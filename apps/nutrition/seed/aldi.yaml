@@ -1,0 +1,1298 @@
+# aldi.yaml — Aldi own-brand staples + Specially Selected.
+# 83 entries (incl 1 migrated).
+# Source: aldi.co.uk product pages.
+- source: gymflow
+  source_id: aldi_specially_chicken
+  name: Aldi Specially Selected British Chicken Breast
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 23.5
+  carbs_per_100g: 0.0
+  fat_per_100g: 1.0
+  tags: protein,branded,supermarket
+  dietary_compat: halal_compatible,gluten_free,dairy_free
+  allergens: ''
+  portion_unit: grams
+- source: gymflow
+  source_id: aldi_brooklea_greek_0pct
+  name: Aldi Brooklea Greek Style 0% Fat Yogurt
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 10
+  carbs_per_100g: 4
+  fat_per_100g: 0.4
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: supermarket,dairy,high_protein,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 150
+- source: gymflow
+  source_id: aldi_brooklea_skyr_vanilla
+  name: Aldi Brooklea Vanilla Skyr
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 70
+  protein_per_100g: 11
+  carbs_per_100g: 6
+  fat_per_100g: 0.2
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: supermarket,dairy,high_protein,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 150
+- source: gymflow
+  source_id: aldi_brooklea_skyr_strawberry
+  name: Aldi Brooklea Strawberry Skyr
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 72
+  protein_per_100g: 11
+  carbs_per_100g: 6.5
+  fat_per_100g: 0.2
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: supermarket,dairy,high_protein,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 150
+- source: gymflow
+  source_id: aldi_milk_semi_skimmed
+  name: Aldi Cowbelle Semi-skimmed Milk
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 47
+  protein_per_100g: 3.5
+  carbs_per_100g: 4.8
+  fat_per_100g: 1.7
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: supermarket,dairy
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: aldi_milk_whole
+  name: Aldi Cowbelle Whole Milk
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 3.4
+  carbs_per_100g: 4.7
+  fat_per_100g: 3.6
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: supermarket,dairy
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: aldi_milk_skimmed
+  name: Aldi Cowbelle Skimmed Milk
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 35
+  protein_per_100g: 3.5
+  carbs_per_100g: 5
+  fat_per_100g: 0.1
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: supermarket,dairy,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: aldi_oat_milk
+  name: Aldi GoVita Oat Drink
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 45
+  protein_per_100g: 1
+  carbs_per_100g: 7
+  fat_per_100g: 1.5
+  serving_grams: 200
+  serving_label: 1 ml (200 g)
+  portion_unit: ml
+  tags: supermarket,dairy_alternative,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: aldi_almond_milk
+  name: Aldi GoVita Almond Drink
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 13
+  protein_per_100g: 0.5
+  carbs_per_100g: 0.3
+  fat_per_100g: 1.1
+  serving_grams: 200
+  serving_label: 1 ml (200 g)
+  portion_unit: ml
+  tags: supermarket,dairy_alternative,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts
+- source: gymflow
+  source_id: aldi_specially_cheddar_mature
+  name: Aldi Specially Selected Mature Cheddar
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 416
+  protein_per_100g: 25
+  carbs_per_100g: 0.1
+  fat_per_100g: 35
+  serving_grams: 30
+  serving_label: 1 slice (30 g)
+  portion_unit: slice
+  tags: supermarket,dairy,high_protein
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 30
+- source: gymflow
+  source_id: aldi_butter_unsalted
+  name: Aldi Norpak Unsalted Butter
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 717
+  protein_per_100g: 0.9
+  carbs_per_100g: 0.1
+  fat_per_100g: 81
+  serving_grams: 14
+  serving_label: 1 tbsp (14 g)
+  portion_unit: tbsp
+  tags: supermarket,dairy,fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 14
+- source: gymflow
+  source_id: aldi_eggs_free_range_med
+  name: Aldi Free Range Medium Eggs
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 155
+  protein_per_100g: 13
+  carbs_per_100g: 1.1
+  fat_per_100g: 11
+  serving_grams: 50
+  serving_label: 1 egg (50 g)
+  portion_unit: egg
+  tags: supermarket,eggs
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: eggs
+  unit_grams: 50
+- source: gymflow
+  source_id: aldi_eggs_free_range_lge
+  name: Aldi Free Range Large Eggs
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 155
+  protein_per_100g: 13
+  carbs_per_100g: 1.1
+  fat_per_100g: 11
+  serving_grams: 60
+  serving_label: 1 egg (60 g)
+  portion_unit: egg
+  tags: supermarket,eggs
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: eggs
+  unit_grams: 60
+- source: gymflow
+  source_id: aldi_cottage_cheese_low_fat
+  name: Aldi Cottage Cheese (low fat)
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 72
+  protein_per_100g: 12.5
+  carbs_per_100g: 3
+  fat_per_100g: 1.5
+  serving_grams: 100
+  serving_label: 1 portion (100 g)
+  portion_unit: pack
+  tags: supermarket,dairy,high_protein,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 100
+- source: gymflow
+  source_id: aldi_white_bread_medium
+  name: Aldi Village Bakery White Medium
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 47
+  fat_per_100g: 2.5
+  serving_grams: 38
+  serving_label: 1 slice (38 g)
+  portion_unit: slice
+  tags: supermarket,bakery,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 38
+- source: gymflow
+  source_id: aldi_wholemeal_bread
+  name: Aldi Village Bakery Wholemeal
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 9
+  carbs_per_100g: 41
+  fat_per_100g: 2.5
+  serving_grams: 38
+  serving_label: 1 slice (38 g)
+  portion_unit: slice
+  tags: supermarket,bakery,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 38
+- source: gymflow
+  source_id: aldi_seeded_bloomer
+  name: Aldi Specially Selected Seeded Bloomer
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 10
+  carbs_per_100g: 38
+  fat_per_100g: 5
+  serving_grams: 50
+  serving_label: 1 slice (50 g)
+  portion_unit: slice
+  tags: supermarket,bakery,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sesame
+  unit_grams: 50
+- source: gymflow
+  source_id: aldi_brioche_burger_buns_4
+  name: Aldi Brioche Burger Buns
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 305
+  protein_per_100g: 10
+  carbs_per_100g: 50
+  fat_per_100g: 7
+  serving_grams: 70
+  serving_label: 1 piece (70 g)
+  portion_unit: piece
+  tags: supermarket,bakery,bread
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 70
+- source: gymflow
+  source_id: aldi_white_wraps
+  name: Aldi White Tortilla Wraps
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 295
+  protein_per_100g: 9
+  carbs_per_100g: 52
+  fat_per_100g: 6
+  serving_grams: 64
+  serving_label: 1 wrap (64 g)
+  portion_unit: wrap
+  tags: supermarket,bakery,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 64
+- source: gymflow
+  source_id: aldi_pitta_white_6
+  name: Aldi White Pitta Breads
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 9
+  carbs_per_100g: 55
+  fat_per_100g: 1.5
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: supermarket,bakery,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 60
+- source: gymflow
+  source_id: aldi_bagels_plain_5
+  name: Aldi Plain Bagels
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 257
+  protein_per_100g: 10
+  carbs_per_100g: 52
+  fat_per_100g: 1.5
+  serving_grams: 95
+  serving_label: 1 piece (95 g)
+  portion_unit: piece
+  tags: supermarket,bakery,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 95
+- source: gymflow
+  source_id: aldi_specially_chicken_breast
+  name: Aldi Specially Selected British Chicken Breast
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 23.5
+  carbs_per_100g: 0
+  fat_per_100g: 1.6
+  serving_grams: 150
+  serving_label: 1 grams (150 g)
+  portion_unit: grams
+  tags: supermarket,meat,chicken,high_protein,low_fat,low_carb
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: aldi_chicken_thighs_skinless
+  name: Aldi Boneless Skinless Chicken Thighs
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 119
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 3.5
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: supermarket,meat,chicken,high_protein
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: aldi_lean_beef_mince_5pct
+  name: Aldi Lean Beef Mince 5% Fat
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 137
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 5
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: supermarket,meat,high_protein,low_fat
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: aldi_beef_mince_15pct
+  name: Aldi Beef Mince 15% Fat
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 24
+  carbs_per_100g: 0
+  fat_per_100g: 15
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: supermarket,meat,high_protein
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: aldi_pork_sausages_8
+  name: Aldi Specially Selected Pork Sausages
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 14
+  carbs_per_100g: 9
+  fat_per_100g: 22
+  serving_grams: 50
+  serving_label: 1 piece (50 g)
+  portion_unit: piece
+  tags: supermarket,meat,processed
+  dietary_compat: pescatarian
+  allergens: gluten,sulphites
+  unit_grams: 50
+- source: gymflow
+  source_id: aldi_back_bacon_smoked
+  name: Aldi Smoked Back Bacon
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 27
+  carbs_per_100g: 0
+  fat_per_100g: 20
+  serving_grams: 25
+  serving_label: 1 slice (25 g)
+  portion_unit: slice
+  tags: supermarket,meat,processed
+  dietary_compat: pescatarian,gluten_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: aldi_streaky_bacon
+  name: Aldi Streaky Bacon
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 540
+  protein_per_100g: 37
+  carbs_per_100g: 1.4
+  fat_per_100g: 42
+  serving_grams: 12
+  serving_label: 1 slice (12 g)
+  portion_unit: slice
+  tags: supermarket,meat,processed
+  dietary_compat: pescatarian,gluten_free
+  allergens: ''
+  unit_grams: 12
+- source: gymflow
+  source_id: aldi_ham_wafer_thin
+  name: Aldi Wafer Thin Ham
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 19
+  carbs_per_100g: 1.5
+  fat_per_100g: 3
+  serving_grams: 25
+  serving_label: 1 slice (25 g)
+  portion_unit: slice
+  tags: supermarket,meat,processed
+  dietary_compat: pescatarian,gluten_free,dairy_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: aldi_chicken_breast_slices
+  name: Aldi Roast Chicken Breast Slices
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 22
+  carbs_per_100g: 1
+  fat_per_100g: 2
+  serving_grams: 25
+  serving_label: 1 slice (25 g)
+  portion_unit: slice
+  tags: supermarket,meat,processed,chicken,low_fat
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: aldi_lamb_mince
+  name: Aldi Lamb Mince
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 20
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: supermarket,meat,high_protein
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: aldi_steak_sirloin
+  name: Aldi Specially Selected Sirloin Steak
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 30
+  carbs_per_100g: 0
+  fat_per_100g: 10
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: supermarket,meat,steak,high_protein,low_carb
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ''
+  unit_grams: 200
+- source: gymflow
+  source_id: aldi_tuna_water
+  name: Aldi Ocean Rise Tuna in Spring Water
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 116
+  protein_per_100g: 26
+  carbs_per_100g: 0
+  fat_per_100g: 1
+  serving_grams: 80
+  serving_label: 1 can (80 g)
+  portion_unit: can
+  tags: supermarket,fish,canned,high_protein,low_fat,low_carb
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 80
+- source: gymflow
+  source_id: aldi_smoked_salmon
+  name: Aldi Specially Selected Smoked Scottish Salmon
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 6
+  serving_grams: 30
+  serving_label: 1 slice (30 g)
+  portion_unit: slice
+  tags: supermarket,fish,high_protein,omega3
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 30
+- source: gymflow
+  source_id: aldi_salmon_fillets_2
+  name: Aldi Salmon Fillets
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 210
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: supermarket,fish,high_protein,omega3
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 130
+- source: gymflow
+  source_id: aldi_cod_fillets
+  name: Aldi Cod Fillets
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 1
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: supermarket,fish,high_protein,low_fat
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 130
+- source: gymflow
+  source_id: aldi_king_prawns_cooked
+  name: Aldi Cooked King Prawns
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 99
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 1
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: supermarket,seafood,high_protein,low_fat,low_carb
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: crustaceans
+- source: gymflow
+  source_id: aldi_porridge_oats
+  name: Aldi Harvest Morn Porridge Oats
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 379
+  protein_per_100g: 13
+  carbs_per_100g: 67.7
+  fat_per_100g: 7
+  serving_grams: 40
+  serving_label: 1 grams (40 g)
+  portion_unit: grams
+  tags: supermarket,cereal,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: aldi_corn_flakes
+  name: Aldi Harvest Morn Corn Flakes
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 7.5
+  carbs_per_100g: 84
+  fat_per_100g: 0.9
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: supermarket,cereal,breakfast
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: aldi_bran_flakes
+  name: Aldi Harvest Morn Bran Flakes
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 11
+  carbs_per_100g: 70
+  fat_per_100g: 2
+  serving_grams: 40
+  serving_label: 1 grams (40 g)
+  portion_unit: grams
+  tags: supermarket,cereal,breakfast,fibre
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: aldi_granola_fruit_nut
+  name: Aldi Specially Selected Fruit & Nut Granola
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 440
+  protein_per_100g: 9
+  carbs_per_100g: 60
+  fat_per_100g: 18
+  serving_grams: 50
+  serving_label: 1 grams (50 g)
+  portion_unit: grams
+  tags: supermarket,cereal,breakfast
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,tree_nuts
+- source: gymflow
+  source_id: aldi_weetabix_clone
+  name: Aldi Harvest Morn Wheat Biscuits
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 11
+  carbs_per_100g: 68
+  fat_per_100g: 2
+  serving_grams: 37.5
+  serving_label: 1 piece (37.5 g)
+  portion_unit: piece
+  tags: supermarket,cereal,breakfast
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 18.75
+- source: gymflow
+  source_id: aldi_white_pasta_dry
+  name: Aldi Cucina Penne Pasta
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 358
+  protein_per_100g: 12
+  carbs_per_100g: 71
+  fat_per_100g: 1.8
+  serving_grams: 75
+  serving_label: 1 grams (75 g)
+  portion_unit: grams
+  tags: supermarket,grain,pasta
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: aldi_wholewheat_pasta
+  name: Aldi Cucina Wholewheat Pasta
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 340
+  protein_per_100g: 13
+  carbs_per_100g: 65
+  fat_per_100g: 2
+  serving_grams: 75
+  serving_label: 1 grams (75 g)
+  portion_unit: grams
+  tags: supermarket,grain,pasta
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: aldi_basmati_rice_dry
+  name: Aldi Worldwide Foods Basmati Rice
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 7.5
+  carbs_per_100g: 78
+  fat_per_100g: 0.9
+  serving_grams: 75
+  serving_label: 1 grams (75 g)
+  portion_unit: grams
+  tags: supermarket,grain,rice
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: aldi_microwave_rice_basmati
+  name: Aldi Microwave Basmati Rice
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 2.7
+  carbs_per_100g: 28
+  fat_per_100g: 0.3
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: supermarket,grain,rice
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: aldi_brown_rice_microwave
+  name: Aldi Microwave Wholegrain Rice
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 123
+  protein_per_100g: 2.7
+  carbs_per_100g: 25
+  fat_per_100g: 1
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: supermarket,grain,rice
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: aldi_couscous
+  name: Aldi Cucina Couscous
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 358
+  protein_per_100g: 12
+  carbs_per_100g: 73
+  fat_per_100g: 1
+  serving_grams: 75
+  serving_label: 1 grams (75 g)
+  portion_unit: grams
+  tags: supermarket,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: aldi_mille_feuille_chocolate
+  name: Aldi Choceur Mille Feuille
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 535
+  protein_per_100g: 7
+  carbs_per_100g: 56
+  fat_per_100g: 30
+  serving_grams: 22
+  serving_label: 1 piece (22 g)
+  portion_unit: piece
+  tags: supermarket,snack,confectionery
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+  unit_grams: 22
+- source: gymflow
+  source_id: aldi_chocolate_bar
+  name: Aldi Dairyfine Milk Chocolate
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 540
+  protein_per_100g: 7
+  carbs_per_100g: 56
+  fat_per_100g: 30
+  serving_grams: 45
+  serving_label: 1 bar (45 g)
+  portion_unit: bar
+  tags: supermarket,snack,confectionery
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+  unit_grams: 45
+- source: gymflow
+  source_id: aldi_ready_salted_crisps
+  name: Aldi Snackrite Ready Salted Crisps
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 530
+  protein_per_100g: 6
+  carbs_per_100g: 50
+  fat_per_100g: 33
+  serving_grams: 25
+  serving_label: 1 portion (25 g)
+  portion_unit: pack
+  tags: supermarket,snack,crisps
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: aldi_salt_vinegar_crisps
+  name: Aldi Snackrite Salt & Vinegar Crisps
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 530
+  protein_per_100g: 6
+  carbs_per_100g: 50
+  fat_per_100g: 33
+  serving_grams: 25
+  serving_label: 1 portion (25 g)
+  portion_unit: pack
+  tags: supermarket,snack,crisps
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: aldi_cheese_onion_crisps
+  name: Aldi Snackrite Cheese & Onion Crisps
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 530
+  protein_per_100g: 7
+  carbs_per_100g: 50
+  fat_per_100g: 33
+  serving_grams: 25
+  serving_label: 1 portion (25 g)
+  portion_unit: pack
+  tags: supermarket,snack,crisps
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 25
+- source: gymflow
+  source_id: aldi_protein_bar_chocolate
+  name: Aldi Foodie Market Protein Bar Chocolate
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 30
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  serving_grams: 60
+  serving_label: 1 bar (60 g)
+  portion_unit: bar
+  tags: supermarket,snack,protein
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+  unit_grams: 60
+- source: gymflow
+  source_id: aldi_chicken_tikka_masala
+  name: Aldi Chicken Tikka Masala (ready meal)
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 9
+  carbs_per_100g: 14
+  fat_per_100g: 5
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: supermarket,ready_meal,curry,chicken
+  dietary_compat: pescatarian
+  allergens: milk,celery
+  unit_grams: 400
+- source: gymflow
+  source_id: aldi_lasagne
+  name: Aldi Beef Lasagne
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 14
+  fat_per_100g: 7
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: supermarket,ready_meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 400
+- source: gymflow
+  source_id: aldi_cottage_pie
+  name: Aldi Cottage Pie
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 115
+  protein_per_100g: 7
+  carbs_per_100g: 12
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: supermarket,ready_meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 400
+- source: gymflow
+  source_id: aldi_thai_green_curry
+  name: Aldi Thai Green Chicken Curry
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: supermarket,ready_meal,curry,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: fish,celery
+  unit_grams: 400
+- source: gymflow
+  source_id: aldi_vegan_chilli_meal
+  name: Aldi Plant Menu Vegan Chilli
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 5
+  carbs_per_100g: 16
+  fat_per_100g: 1.2
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: supermarket,ready_meal,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: celery
+  unit_grams: 400
+- source: gymflow
+  source_id: aldi_orange_juice
+  name: Aldi Smooth Orange Juice
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 0.7
+  carbs_per_100g: 9.5
+  fat_per_100g: 0.2
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: supermarket,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: aldi_apple_juice
+  name: Aldi Apple Juice
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 47
+  protein_per_100g: 0.1
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: supermarket,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: aldi_water_still_500
+  name: Aldi Spring Water
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: supermarket,drink,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: aldi_smoothie_strawberry
+  name: Aldi Strawberry & Banana Smoothie
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 1
+  carbs_per_100g: 13
+  fat_per_100g: 0.3
+  serving_grams: 250
+  serving_label: 1 bottle (250 g)
+  portion_unit: bottle
+  tags: supermarket,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: aldi_cola_can
+  name: Aldi Cola
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 0
+  carbs_per_100g: 10.6
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 can (330 g)
+  portion_unit: can
+  tags: supermarket,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 330
+- source: gymflow
+  source_id: aldi_diet_cola_can
+  name: Aldi Diet Cola
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 can (330 g)
+  portion_unit: can
+  tags: supermarket,drink,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 330
+- source: gymflow
+  source_id: aldi_oven_chips
+  name: Aldi Oven Chips
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 2.5
+  carbs_per_100g: 27
+  fat_per_100g: 5
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: supermarket,frozen,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: aldi_frozen_peas
+  name: Aldi Garden Peas (frozen)
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 5
+  carbs_per_100g: 11
+  fat_per_100g: 0.4
+  serving_grams: 80
+  serving_label: 1 grams (80 g)
+  portion_unit: grams
+  tags: supermarket,frozen,vegetable,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: aldi_frozen_pizza_pepperoni
+  name: Aldi Pepperoni Pizza (frozen)
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 12
+  carbs_per_100g: 30
+  fat_per_100g: 11
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: supermarket,frozen,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sulphites
+  unit_grams: 350
+- source: gymflow
+  source_id: aldi_vanilla_ice_cream
+  name: Aldi Specially Selected Vanilla Ice Cream
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 4
+  carbs_per_100g: 24
+  fat_per_100g: 10
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: supermarket,frozen,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+- source: gymflow
+  source_id: aldi_tomato_ketchup
+  name: Aldi Bramwells Tomato Ketchup
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 102
+  protein_per_100g: 1
+  carbs_per_100g: 23
+  fat_per_100g: 0.4
+  serving_grams: 17
+  serving_label: 1 tbsp (17 g)
+  portion_unit: tbsp
+  tags: supermarket,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 17
+- source: gymflow
+  source_id: aldi_mayonnaise
+  name: Aldi Bramwells Mayonnaise
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 680
+  protein_per_100g: 1
+  carbs_per_100g: 1.5
+  fat_per_100g: 75
+  serving_grams: 14
+  serving_label: 1 tbsp (14 g)
+  portion_unit: tbsp
+  tags: supermarket,condiment,fat
+  dietary_compat: vegetarian,pescatarian,gluten_free
+  allergens: eggs,mustard
+  unit_grams: 14
+- source: gymflow
+  source_id: aldi_pasta_sauce_tomato
+  name: Aldi Cucina Tomato & Basil Pasta Sauce
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 55
+  protein_per_100g: 2
+  carbs_per_100g: 8
+  fat_per_100g: 1.5
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: supermarket,condiment
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: aldi_baked_beans
+  name: Aldi Baked Beans
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 4.8
+  carbs_per_100g: 13
+  fat_per_100g: 0.6
+  serving_grams: 200
+  serving_label: 1 grams (200 g)
+  portion_unit: grams
+  tags: supermarket,canned,pulses
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: aldi_chickpeas_canned
+  name: Aldi Chickpeas (canned, drained)
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 18
+  fat_per_100g: 2
+  serving_grams: 80
+  serving_label: 1 grams (80 g)
+  portion_unit: grams
+  tags: supermarket,canned,pulses,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: aldi_kidney_beans
+  name: Aldi Kidney Beans (canned)
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 127
+  protein_per_100g: 8.7
+  carbs_per_100g: 22.8
+  fat_per_100g: 0.5
+  serving_grams: 80
+  serving_label: 1 grams (80 g)
+  portion_unit: grams
+  tags: supermarket,canned,pulses,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: aldi_peanut_butter_smooth
+  name: Aldi Bramwells Smooth Peanut Butter
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 600
+  protein_per_100g: 25
+  carbs_per_100g: 12
+  fat_per_100g: 50
+  serving_grams: 16
+  serving_label: 1 tbsp (16 g)
+  portion_unit: tbsp
+  tags: supermarket,fat,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: peanuts
+  unit_grams: 16
+- source: gymflow
+  source_id: aldi_mixed_nuts
+  name: Aldi The Foodie Market Mixed Nuts
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 615
+  protein_per_100g: 21
+  carbs_per_100g: 12
+  fat_per_100g: 53
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: supermarket,nuts,fat,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts,peanuts
+- source: gymflow
+  source_id: aldi_almonds_30g
+  name: Aldi The Foodie Market Whole Almonds
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 615
+  protein_per_100g: 21
+  carbs_per_100g: 7
+  fat_per_100g: 53
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: supermarket,nuts,fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts
+- source: gymflow
+  source_id: aldi_avocados_2
+  name: Aldi Ripen at Home Avocados
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 160
+  protein_per_100g: 2
+  carbs_per_100g: 8.5
+  fat_per_100g: 14.7
+  serving_grams: 150
+  serving_label: 1 piece (150 g)
+  portion_unit: piece
+  tags: supermarket,fruit,fat,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 150
+- source: gymflow
+  source_id: aldi_bananas
+  name: Aldi Bananas
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 89
+  protein_per_100g: 1.1
+  carbs_per_100g: 22.8
+  fat_per_100g: 0.3
+  serving_grams: 118
+  serving_label: 1 piece (118 g)
+  portion_unit: piece
+  tags: supermarket,fruit,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 118
+- source: gymflow
+  source_id: aldi_apples_braeburn
+  name: Aldi Braeburn Apples
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 52
+  protein_per_100g: 0.3
+  carbs_per_100g: 13.8
+  fat_per_100g: 0.2
+  serving_grams: 180
+  serving_label: 1 piece (180 g)
+  portion_unit: piece
+  tags: supermarket,fruit,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 180
+- source: gymflow
+  source_id: aldi_blueberries_punnet
+  name: Aldi Blueberries (punnet)
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 57
+  protein_per_100g: 0.7
+  carbs_per_100g: 14.5
+  fat_per_100g: 0.3
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: supermarket,fruit,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 150
+- source: gymflow
+  source_id: aldi_olive_oil_extra_virgin
+  name: Aldi Solesta Extra Virgin Olive Oil
+  brand: Aldi
+  region_codes: gb
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  serving_grams: 14
+  serving_label: 1 tbsp (14 g)
+  portion_unit: tbsp
+  tags: supermarket,fat,oil,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 14

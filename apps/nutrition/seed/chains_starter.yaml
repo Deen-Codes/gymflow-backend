@@ -1,0 +1,17 @@
+# chains_starter.yaml — residual.
+- source: gymflow
+  source_id: dominos_pepperoni_passion_med_slice
+  name: Domino's Pepperoni Passion, Medium Pizza
+  brand: Domino's
+  region_codes: gb,us
+  kcal_per_100g: 282
+  protein_per_100g: 12.0
+  carbs_per_100g: 28.0
+  fat_per_100g: 13.0
+  serving_grams: 90
+  serving_label: 1 slice (~90g, ~254 kcal)
+  tags: restaurant,chain,pizza
+  dietary_compat: ''
+  allergens: gluten,milk,soy
+  portion_unit: slice
+  unit_grams: 105

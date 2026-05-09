@@ -18,12 +18,6 @@ Five endpoints:
   • DELETE /api/nutrition/solo/log/<entry_id>/
         Untick a logged entry.
 
-  • GET    /api/nutrition/solo/barcode/<code>/
-        Lookup a barcode against Open Food Facts. Returns macros for
-        a 100g reference. Doesn't auto-add to the user's library —
-        the iOS client decides whether to log it directly or save it
-        first.
-
   • POST   /api/nutrition/solo/foods/
         Create a custom FoodLibraryItem (typed in by the user). The
         existing trainer-side endpoint requires a different role; we
@@ -47,7 +41,7 @@ from rest_framework.response import Response
 
 from apps.users.models import User, SoloProfile
 
-from .models import SoloFoodLogEntry, FoodLibraryItem
+from .models import SoloFoodLogEntry, FoodLibraryItem, CuratedFood
 
 log = logging.getLogger(__name__)
 
@@ -265,55 +259,118 @@ def solo_nutrition_log_delete(request, entry_id: int):
 
 
 # --------------------------------------------------------------------
-# Barcode lookup (Open Food Facts proxy)
+# NUTRITION-DB search (#105) — CuratedFood text search.
 # --------------------------------------------------------------------
 @csrf_exempt
 @api_view(["GET"])
 @authentication_classes([TokenAuthentication])
 @permission_classes([IsAuthenticated])
-def solo_nutrition_barcode_lookup(request, code: str):
-    """Look up a barcode against Open Food Facts. Returns:
-        { found: bool, name, brand, calories, protein, carbs, fats,
-          reference_grams, off_id }
-    Macros normalized to per-100g."""
-    import requests
-    code = (code or "").strip()
-    if not code or not code.isdigit() or len(code) > 32:
-        return Response({"detail": "Invalid barcode."}, status=400)
+def solo_nutrition_food_search(request):
+    """Text search across the CuratedFood catalog.
 
-    url = f"https://world.openfoodfacts.org/api/v2/product/{code}.json"
+    Query: ?q=chicken&limit=25&region=gb
+    Returns: { results: [{name, brand, calories, protein, carbs, fats,
+                          reference_grams, serving_grams, serving_label,
+                          tags, allergens}, ...] }
+
+    Ranking (descending priority):
+      1. Exact name match (case-insensitive)
+      2. Name STARTS WITH query
+      3. Brand STARTS WITH query
+      4. Name CONTAINS query
+      5. Brand CONTAINS query
+      6. Tags CONTAIN query
+
+    Region filter: when provided, items whose `region_codes` contains
+    the user's region rank higher; items NOT tagged for that region
+    still appear (e.g. world-wide whole foods) but lower.
+
+    INTERNAL-ONLY. No external DB fallback. If no results, iOS
+    can offer the AI Describe path.
+    """
+    q = (request.query_params.get("q") or "").strip()
+    if not q or len(q) < 2:
+        return Response({"results": []})
+    if len(q) > 80:
+        q = q[:80]
+
     try:
-        resp = requests.get(
-            url, timeout=6.0,
-            headers={"User-Agent": "GymFlow/1.0 (gymflow.app)"},
-        )
-        data = resp.json()
-    except Exception as exc:
-        log.warning("OFF barcode lookup failed for %s: %s", code, exc)
-        return Response({"detail": "Open Food Facts unavailable."}, status=503)
+        limit = int(request.query_params.get("limit") or 25)
+    except (TypeError, ValueError):
+        limit = 25
+    limit = max(1, min(50, limit))
 
-    product = data.get("product") or {}
-    if data.get("status") != 1 or not product:
-        return Response({"found": False})
+    region = (request.query_params.get("region") or "").strip().lower()[:8]
 
-    nutriments = product.get("nutriments") or {}
-    def _g(key: str, default: float = 0.0) -> float:
-        try:
-            return float(nutriments.get(key) or default)
-        except (TypeError, ValueError):
-            return default
+    q_lower = q.lower()
 
-    return Response({
-        "found":           True,
-        "off_id":          code,
-        "name":            (product.get("product_name") or "").strip()[:255] or "Unknown product",
-        "brand":           (product.get("brands") or "").split(",")[0].strip()[:255],
-        "calories":        round(_g("energy-kcal_100g"), 1),
-        "protein":         round(_g("proteins_100g"),    1),
-        "carbs":           round(_g("carbohydrates_100g"),1),
-        "fats":            round(_g("fat_100g"),         1),
-        "reference_grams": 100,
-    })
+    # Pull a wider pool than `limit` so we can rank in Python without
+    # paying for a complex SQL query. With a curated DB capped at
+    # ~10k rows, any iexact / icontains hit set fits comfortably in
+    # memory.
+    from django.db.models import Q
+    candidates = CuratedFood.objects.filter(
+        Q(name__icontains=q) |
+        Q(brand__icontains=q) |
+        Q(tags__icontains=q),
+    )[:200]
+
+    ranked = []
+    for f in candidates:
+        name_l = (f.name or "").lower()
+        brand_l = (f.brand or "").lower()
+        tags_l = (f.tags or "").lower()
+        regions_l = (f.region_codes or "").lower()
+
+        if name_l == q_lower:
+            tier = 0
+        elif name_l.startswith(q_lower):
+            tier = 1
+        elif brand_l.startswith(q_lower):
+            tier = 2
+        elif q_lower in name_l:
+            tier = 3
+        elif q_lower in brand_l:
+            tier = 4
+        elif q_lower in tags_l:
+            tier = 5
+        else:
+            tier = 9
+
+        # Region bonus — same tier but region-matched items rank
+        # before world-wide items.
+        region_bonus = 0
+        if region and region in regions_l.split(","):
+            region_bonus = -1  # negative pulls earlier in sort
+
+        ranked.append((tier, region_bonus, len(name_l), f))
+
+    ranked.sort(key=lambda t: (t[0], t[1], t[2]))
+    top = ranked[:limit]
+
+    results = []
+    for _, _, _, f in top:
+        results.append({
+            "name":            f.name,
+            "brand":           f.brand or "",
+            "calories":        round(f.kcal_per_100g,    1),
+            "protein":         round(f.protein_per_100g, 1),
+            "carbs":           round(f.carbs_per_100g,   1),
+            "fats":            round(f.fat_per_100g,     1),
+            "reference_grams": 100,
+            "serving_grams":   f.serving_grams,
+            "serving_label":   f.serving_label or "",
+            "tags":             f.tags or "",
+            "allergens":        f.allergens or "",
+            "source":           f.source,
+            # FOOD-DB-V2 — portion-unit support. iOS uses these to
+            # show "1 egg / 2 / 3" stepper rows instead of grams
+            # for unit-portion foods.
+            "portion_unit":     f.portion_unit or "grams",
+            "unit_grams":       f.unit_grams,
+        })
+
+    return Response({"results": results})
 
 
 # --------------------------------------------------------------------

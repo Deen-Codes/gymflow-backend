@@ -1,0 +1,765 @@
+# japanese_generic.yaml — generic Japanese dishes not tied to Wagamama / Wasabi / Itsu. Ramen variants, donburi bowls, yakitori, onigiri, sushi, sashimi, mochi, sake, condiments.
+- source: gymflow
+  source_id: jpn_ramen_tonkotsu
+  name: Tonkotsu Ramen
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 5
+  carbs_per_100g: 12
+  fat_per_100g: 3
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: japanese,noodles,soup
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 700
+- source: gymflow
+  source_id: jpn_ramen_shoyu
+  name: Shoyu Ramen
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 5
+  carbs_per_100g: 12
+  fat_per_100g: 2
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: japanese,noodles,soup
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs,soy,fish
+  unit_grams: 700
+- source: gymflow
+  source_id: jpn_ramen_miso
+  name: Miso Ramen
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 85
+  protein_per_100g: 5
+  carbs_per_100g: 12
+  fat_per_100g: 2.5
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: japanese,noodles,soup
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs,soy,fish
+  unit_grams: 700
+- source: gymflow
+  source_id: jpn_ramen_chicken
+  name: Chicken Ramen
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 7
+  carbs_per_100g: 11
+  fat_per_100g: 1.5
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: japanese,noodles,soup,chicken,low_calorie
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs,soy
+  unit_grams: 700
+- source: gymflow
+  source_id: jpn_ramen_vegan
+  name: Vegan Ramen
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 3
+  carbs_per_100g: 12
+  fat_per_100g: 1
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: japanese,noodles,soup,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy,sesame
+  unit_grams: 700
+- source: gymflow
+  source_id: jpn_tempura_prawn_3
+  name: Prawn Tempura (3 pieces)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 90
+  serving_label: 1 piece (90 g)
+  portion_unit: piece
+  tags: japanese,starter
+  dietary_compat: pescatarian,dairy_free
+  allergens: crustaceans,gluten,eggs,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: jpn_tempura_veg_3
+  name: Vegetable Tempura (3)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 4
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: japanese,starter,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy,sesame
+  unit_grams: 33
+- source: gymflow
+  source_id: jpn_tempura_chicken_3
+  name: Chicken Karaage (3)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 16
+  carbs_per_100g: 14
+  fat_per_100g: 13
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: japanese,starter,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,soy,sesame,eggs
+  unit_grams: 43
+- source: gymflow
+  source_id: jpn_tonkatsu
+  name: Tonkatsu (Pork Cutlet)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 18
+  carbs_per_100g: 18
+  fat_per_100g: 14
+  serving_grams: 170
+  serving_label: 1 piece (170 g)
+  portion_unit: piece
+  tags: japanese,meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 170
+- source: gymflow
+  source_id: jpn_chicken_katsu
+  name: Chicken Katsu
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 18
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  serving_grams: 170
+  serving_label: 1 piece (170 g)
+  portion_unit: piece
+  tags: japanese,meal,chicken
+  dietary_compat: halal,pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 170
+- source: gymflow
+  source_id: jpn_donburi_gyudon
+  name: Gyūdon (Beef Bowl)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 20
+  fat_per_100g: 5
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: japanese,bowl
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,soy,sesame
+  unit_grams: 400
+- source: gymflow
+  source_id: jpn_donburi_oyakodon
+  name: Oyakodon (Chicken & Egg Bowl)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 20
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: japanese,bowl,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs,soy
+  unit_grams: 400
+- source: gymflow
+  source_id: jpn_donburi_katsudon
+  name: Katsudon (Pork Cutlet Bowl)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: japanese,bowl
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 450
+- source: gymflow
+  source_id: jpn_donburi_unagi
+  name: Unagi Don (Eel Rice Bowl)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: japanese,bowl,fish
+  dietary_compat: pescatarian,dairy_free
+  allergens: fish,gluten,soy,eggs
+  unit_grams: 350
+- source: gymflow
+  source_id: jpn_yakitori_chicken_skewer
+  name: Chicken Yakitori Skewer (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 22
+  carbs_per_100g: 6
+  fat_per_100g: 6
+  serving_grams: 90
+  serving_label: 1 piece (90 g)
+  portion_unit: piece
+  tags: japanese,starter,chicken,high_protein,low_carb
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: soy,sesame
+  unit_grams: 90
+- source: gymflow
+  source_id: jpn_yakitori_pork_skewer
+  name: Pork Yakitori Skewer (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 18
+  carbs_per_100g: 6
+  fat_per_100g: 10
+  serving_grams: 90
+  serving_label: 1 piece (90 g)
+  portion_unit: piece
+  tags: japanese,starter,high_protein
+  dietary_compat: pescatarian,dairy_free
+  allergens: soy,sesame
+  unit_grams: 90
+- source: gymflow
+  source_id: jpn_onigiri_salmon
+  name: Onigiri Salmon (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 32
+  fat_per_100g: 3
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: japanese,snack
+  dietary_compat: pescatarian,dairy_free
+  allergens: fish,soy,sesame
+  unit_grams: 100
+- source: gymflow
+  source_id: jpn_onigiri_tuna_mayo
+  name: Onigiri Tuna Mayo (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 6
+  carbs_per_100g: 30
+  fat_per_100g: 6
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: japanese,snack
+  dietary_compat: pescatarian
+  allergens: fish,eggs,soy,sesame
+  unit_grams: 100
+- source: gymflow
+  source_id: jpn_onigiri_umeboshi
+  name: Onigiri Umeboshi (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 3
+  carbs_per_100g: 32
+  fat_per_100g: 0.5
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: japanese,snack,vegan,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 100
+- source: gymflow
+  source_id: jpn_takoyaki_6
+  name: Takoyaki (6 balls)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 8
+  carbs_per_100g: 20
+  fat_per_100g: 11
+  serving_grams: 180
+  serving_label: 1 piece (180 g)
+  portion_unit: piece
+  tags: japanese,starter
+  dietary_compat: pescatarian
+  allergens: gluten,molluscs,eggs,milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: jpn_okonomiyaki
+  name: Okonomiyaki
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  serving_grams: 350
+  serving_label: 1 piece (350 g)
+  portion_unit: piece
+  tags: japanese,meal
+  dietary_compat: pescatarian
+  allergens: gluten,eggs,milk,soy,fish
+  unit_grams: 350
+- source: gymflow
+  source_id: jpn_gyoza_pork_5
+  name: Pork Gyoza (5)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 10
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: japanese,starter
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,soy,sesame
+  unit_grams: 26
+- source: gymflow
+  source_id: jpn_gyoza_chicken_5
+  name: Chicken Gyoza (5)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 24
+  fat_per_100g: 4
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: japanese,starter,chicken
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,soy,sesame
+  unit_grams: 26
+- source: gymflow
+  source_id: jpn_gyoza_veg_5
+  name: Vegetable Gyoza (5)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 26
+  fat_per_100g: 5
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: japanese,starter,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy,sesame
+  unit_grams: 26
+- source: gymflow
+  source_id: jpn_sushi_nigiri_salmon_2
+  name: Salmon Nigiri (2 pieces)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 6
+  carbs_per_100g: 24
+  fat_per_100g: 5
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: japanese,sushi
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish
+  unit_grams: 30
+- source: gymflow
+  source_id: jpn_sushi_nigiri_tuna_2
+  name: Tuna Nigiri (2 pieces)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 1.5
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: japanese,sushi,low_fat
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish
+  unit_grams: 30
+- source: gymflow
+  source_id: jpn_sushi_nigiri_prawn_2
+  name: Cooked Prawn Nigiri (2)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 7
+  carbs_per_100g: 24
+  fat_per_100g: 1.5
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: japanese,sushi,low_fat
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: crustaceans
+  unit_grams: 30
+- source: gymflow
+  source_id: jpn_sushi_maki_salmon_avocado_8
+  name: Salmon & Avocado Maki (8 pieces)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 6
+  carbs_per_100g: 24
+  fat_per_100g: 5
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: japanese,sushi
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish,sesame
+  unit_grams: 25
+- source: gymflow
+  source_id: jpn_sushi_maki_tuna_8
+  name: Tuna Maki (8 pieces)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 7
+  carbs_per_100g: 26
+  fat_per_100g: 1.5
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: japanese,sushi,low_fat
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish
+  unit_grams: 25
+- source: gymflow
+  source_id: jpn_sashimi_assorted_9
+  name: Assorted Sashimi (9 pieces)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 22
+  carbs_per_100g: 1
+  fat_per_100g: 8
+  serving_grams: 145
+  serving_label: 1 piece (145 g)
+  portion_unit: piece
+  tags: japanese,sushi,fish,high_protein,low_carb
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish
+  unit_grams: 16
+- source: gymflow
+  source_id: jpn_miso_soup_white
+  name: Miso Soup (white miso)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 30
+  protein_per_100g: 2
+  carbs_per_100g: 3
+  fat_per_100g: 1
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: japanese,soup,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: soy,fish
+  unit_grams: 250
+- source: gymflow
+  source_id: jpn_edamame_steamed
+  name: Edamame, Steamed (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 121
+  protein_per_100g: 11
+  carbs_per_100g: 8
+  fat_per_100g: 5.2
+  serving_grams: 100
+  serving_label: 1 portion (100 g)
+  portion_unit: pack
+  tags: japanese,starter,vegan,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+  unit_grams: 100
+- source: gymflow
+  source_id: jpn_seaweed_salad
+  name: Seaweed Salad
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 70
+  protein_per_100g: 2
+  carbs_per_100g: 9
+  fat_per_100g: 3
+  serving_grams: 100
+  serving_label: 1 portion (100 g)
+  portion_unit: pack
+  tags: japanese,starter,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: sesame
+  unit_grams: 100
+- source: gymflow
+  source_id: jpn_chirashi_bowl
+  name: Chirashi Sushi Bowl
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: japanese,sushi,bowl,high_protein
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish,sesame
+  unit_grams: 350
+- source: gymflow
+  source_id: jpn_mochi_2
+  name: Mochi (2 pieces)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 3
+  carbs_per_100g: 50
+  fat_per_100g: 1
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: japanese,dessert
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: jpn_mochi_ice_cream_2
+  name: Mochi Ice Cream (2 pieces)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 3
+  carbs_per_100g: 38
+  fat_per_100g: 6
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: japanese,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+  unit_grams: 30
+- source: gymflow
+  source_id: jpn_dorayaki_pancakes
+  name: Dorayaki (Red Bean Pancakes, 1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 7
+  carbs_per_100g: 50
+  fat_per_100g: 5
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: japanese,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 60
+- source: gymflow
+  source_id: jpn_taiyaki
+  name: Taiyaki (Fish-shaped Pastry)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 5
+  carbs_per_100g: 48
+  fat_per_100g: 4
+  serving_grams: 80
+  serving_label: 1 piece (80 g)
+  portion_unit: piece
+  tags: japanese,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 80
+- source: gymflow
+  source_id: jpn_dashi_stock
+  name: Dashi Stock (per 250ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 6
+  protein_per_100g: 1
+  carbs_per_100g: 0.5
+  fat_per_100g: 0
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: japanese,sauce,low_calorie
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish,soy
+- source: gymflow
+  source_id: jpn_mirin_15ml
+  name: Mirin (1 tbsp/15ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 0
+  carbs_per_100g: 43
+  fat_per_100g: 0
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: japanese,sauce
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: jpn_sake_25
+  name: Sake (25ml shot)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 134
+  protein_per_100g: 0.5
+  carbs_per_100g: 5
+  fat_per_100g: 0
+  serving_grams: 25
+  serving_label: 1 shot (25 g)
+  portion_unit: shot
+  tags: japanese,alcoholic,spirit
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: jpn_sake_warm_180
+  name: Sake (180ml warm)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 134
+  protein_per_100g: 0.5
+  carbs_per_100g: 5
+  fat_per_100g: 0
+  serving_grams: 180
+  serving_label: 1 ml (180 g)
+  portion_unit: ml
+  tags: japanese,alcoholic,spirit
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: jpn_japanese_curry
+  name: Japanese Curry (with rice)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 7
+  carbs_per_100g: 25
+  fat_per_100g: 5
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: japanese,curry,meal
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,soy,celery
+  unit_grams: 400
+- source: gymflow
+  source_id: jpn_chashu_pork
+  name: Chashu Pork (per 50g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 18
+  carbs_per_100g: 5
+  fat_per_100g: 17
+  serving_grams: 50
+  serving_label: 1 grams (50 g)
+  portion_unit: grams
+  tags: japanese,meat,high_protein
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,soy
+- source: gymflow
+  source_id: jpn_ajitama_egg
+  name: Ajitama (Soft Egg)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 155
+  protein_per_100g: 13
+  carbs_per_100g: 2
+  fat_per_100g: 11
+  serving_grams: 50
+  serving_label: 1 piece (50 g)
+  portion_unit: piece
+  tags: japanese,topping,high_protein
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy,eggs
+  unit_grams: 50
+- source: gymflow
+  source_id: jpn_furikake_seasoning_5g
+  name: Furikake Seasoning (1 tsp/5g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 18
+  carbs_per_100g: 30
+  fat_per_100g: 22
+  serving_grams: 5
+  serving_label: 1 tsp (5 g)
+  portion_unit: tsp
+  tags: japanese,seasoning
+  dietary_compat: pescatarian,dairy_free
+  allergens: fish,soy,sesame
+  unit_grams: 5
+- source: gymflow
+  source_id: jpn_panko_breadcrumbs_30g
+  name: Panko Breadcrumbs (30g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 13
+  carbs_per_100g: 73
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: japanese,pantry,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: jpn_pickled_ginger_15g
+  name: Pickled Ginger / Gari (15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 1
+  carbs_per_100g: 12
+  fat_per_100g: 0.2
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: japanese,condiment,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15

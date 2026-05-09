@@ -1,0 +1,627 @@
+# caribbean.yaml — Jamaican / Caribbean foods commonly found in UK takeaways + supermarkets.
+- source: gymflow
+  source_id: crb_jerk_chicken_breast
+  name: Jerk Chicken Breast (cooked)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 26
+  carbs_per_100g: 4
+  fat_per_100g: 6
+  serving_grams: 150
+  serving_label: 1 piece (150 g)
+  portion_unit: piece
+  tags: caribbean,whole,chicken,high_protein
+  dietary_compat: halal,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 150
+- source: gymflow
+  source_id: crb_jerk_chicken_thigh
+  name: Jerk Chicken Thigh (cooked)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 24
+  carbs_per_100g: 4
+  fat_per_100g: 11
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: caribbean,whole,chicken,high_protein
+  dietary_compat: halal,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 100
+- source: gymflow
+  source_id: crb_brown_stew_chicken
+  name: Brown Stew Chicken
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 22
+  carbs_per_100g: 6
+  fat_per_100g: 9
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: meal
+  tags: caribbean,meal,chicken
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,celery
+  unit_grams: 250
+- source: gymflow
+  source_id: crb_curry_goat
+  name: Curry Goat
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 22
+  carbs_per_100g: 8
+  fat_per_100g: 11
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: meal
+  tags: caribbean,meal,curry,high_protein
+  dietary_compat: halal,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: crb_oxtail_stew
+  name: Oxtail Stew
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 21
+  carbs_per_100g: 6
+  fat_per_100g: 16
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: meal
+  tags: caribbean,meal,high_protein
+  dietary_compat: halal,kosher,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: crb_curry_chicken
+  name: Caribbean Curry Chicken
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 6
+  fat_per_100g: 7
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: meal
+  tags: caribbean,meal,curry,chicken
+  dietary_compat: halal,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: crb_rice_peas
+  name: Rice and Peas
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 28
+  fat_per_100g: 4
+  serving_grams: 150
+  serving_label: 1 grams (150 g)
+  portion_unit: grams
+  tags: caribbean,side,grain,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: crb_fried_plantain
+  name: Fried Plantain
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 1.5
+  carbs_per_100g: 32
+  fat_per_100g: 9
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: caribbean,side,fruit
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: crb_boiled_plantain
+  name: Boiled Plantain
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 122
+  protein_per_100g: 1.3
+  carbs_per_100g: 32
+  fat_per_100g: 0.4
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: caribbean,side,fruit,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: crb_ackee_saltfish
+  name: Ackee and Saltfish
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 7
+  fat_per_100g: 10
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: meal
+  tags: caribbean,meal,fish
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish
+  unit_grams: 250
+- source: gymflow
+  source_id: crb_callaloo_cooked
+  name: Callaloo (cooked)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 4
+  carbs_per_100g: 7
+  fat_per_100g: 1.5
+  serving_grams: 150
+  serving_label: 1 grams (150 g)
+  portion_unit: grams
+  tags: caribbean,side,vegetable,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: crb_festival_dumpling
+  name: Festival (Jamaican fried dumpling)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 6
+  carbs_per_100g: 45
+  fat_per_100g: 9
+  serving_grams: 80
+  serving_label: 1 piece (80 g)
+  portion_unit: piece
+  tags: caribbean,side,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 80
+- source: gymflow
+  source_id: crb_fried_dumpling
+  name: Fried Dumpling (Jamaican)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 5
+  carbs_per_100g: 38
+  fat_per_100g: 16
+  serving_grams: 70
+  serving_label: 1 piece (70 g)
+  portion_unit: piece
+  tags: caribbean,side,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 70
+- source: gymflow
+  source_id: crb_hardo_bread
+  name: Jamaican Hardo Bread (1 slice)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 8
+  carbs_per_100g: 50
+  fat_per_100g: 4
+  serving_grams: 50
+  serving_label: 1 slice (50 g)
+  portion_unit: slice
+  tags: caribbean,bakery,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 50
+- source: gymflow
+  source_id: crb_jamaican_patty_beef
+  name: Jamaican Beef Patty
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 8
+  carbs_per_100g: 30
+  fat_per_100g: 14
+  serving_grams: 140
+  serving_label: 1 piece (140 g)
+  portion_unit: piece
+  tags: caribbean,meal,bakery
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 140
+- source: gymflow
+  source_id: crb_jamaican_patty_chicken
+  name: Jamaican Chicken Patty
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 9
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  serving_grams: 140
+  serving_label: 1 piece (140 g)
+  portion_unit: piece
+  tags: caribbean,meal,bakery,chicken
+  dietary_compat: halal,pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 140
+- source: gymflow
+  source_id: crb_jamaican_patty_veg
+  name: Jamaican Vegetable Patty
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 5
+  carbs_per_100g: 32
+  fat_per_100g: 11
+  serving_grams: 140
+  serving_label: 1 piece (140 g)
+  portion_unit: piece
+  tags: caribbean,meal,bakery,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 140
+- source: gymflow
+  source_id: crb_escovitch_fish
+  name: Escovitch Fish
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 6
+  fat_per_100g: 7
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: meal
+  tags: caribbean,meal,fish,high_protein
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish,sulphites
+  unit_grams: 200
+- source: gymflow
+  source_id: crb_brown_stew_fish
+  name: Brown Stew Fish
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 6
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: meal
+  tags: caribbean,meal,fish,high_protein
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish
+  unit_grams: 200
+- source: gymflow
+  source_id: crb_saltfish_fritters_3
+  name: Saltfish Fritters (3)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 24
+  fat_per_100g: 9
+  serving_grams: 90
+  serving_label: 1 piece (90 g)
+  portion_unit: piece
+  tags: caribbean,starter,fish
+  dietary_compat: pescatarian
+  allergens: gluten,fish,eggs
+  unit_grams: 30
+- source: gymflow
+  source_id: crb_breadfruit_roasted
+  name: Roasted Breadfruit (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 1
+  carbs_per_100g: 27
+  fat_per_100g: 0.2
+  serving_grams: 150
+  serving_label: 1 grams (150 g)
+  portion_unit: grams
+  tags: caribbean,whole,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: crb_yam_boiled
+  name: Boiled Yam (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 120
+  protein_per_100g: 1.5
+  carbs_per_100g: 28
+  fat_per_100g: 0.2
+  serving_grams: 150
+  serving_label: 1 grams (150 g)
+  portion_unit: grams
+  tags: caribbean,whole,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: crb_green_banana_boiled
+  name: Boiled Green Banana (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 89
+  protein_per_100g: 1.1
+  carbs_per_100g: 22.8
+  fat_per_100g: 0.3
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: caribbean,whole,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: crb_cornmeal_porridge
+  name: Cornmeal Porridge (with milk)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 85
+  protein_per_100g: 3
+  carbs_per_100g: 14
+  fat_per_100g: 2
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: caribbean,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk
+  unit_grams: 250
+- source: gymflow
+  source_id: crb_bun_n_cheese_slice
+  name: Bun and Cheese (1 slice + cheese)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 9
+  carbs_per_100g: 48
+  fat_per_100g: 11
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: caribbean,bakery
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 100
+- source: gymflow
+  source_id: crb_easter_bun_slice
+  name: Jamaican Easter Bun (1 slice)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 11
+  serving_grams: 80
+  serving_label: 1 slice (80 g)
+  portion_unit: slice
+  tags: caribbean,bakery,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 80
+- source: gymflow
+  source_id: crb_dunns_river_jerk_15g
+  name: Dunn's River Jerk Seasoning (1 tsp/5g)
+  brand: Dunn's River
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 6
+  carbs_per_100g: 38
+  fat_per_100g: 3
+  serving_grams: 5
+  serving_label: 1 tsp (5 g)
+  portion_unit: tsp
+  tags: caribbean,seasoning,branded
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: crb_walkerswood_jerk_15g
+  name: Walkerswood Jerk Seasoning (1 tbsp/15g)
+  brand: Walkerswood
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: caribbean,seasoning,branded
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: crb_grace_pepper_sauce_5g
+  name: Grace Hot Pepper Sauce (1 tsp/5g)
+  brand: Grace
+  region_codes: gb
+  kcal_per_100g: 35
+  protein_per_100g: 1
+  carbs_per_100g: 7
+  fat_per_100g: 0.5
+  serving_grams: 5
+  serving_label: 1 tsp (5 g)
+  portion_unit: tsp
+  tags: caribbean,sauce,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: crb_grace_coconut_milk_100ml
+  name: Grace Coconut Milk (100ml)
+  brand: Grace
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 2
+  carbs_per_100g: 3
+  fat_per_100g: 21
+  serving_grams: 100
+  serving_label: 1 ml (100 g)
+  portion_unit: ml
+  tags: caribbean,branded
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: crb_sorrel_drink
+  name: Jamaican Sorrel Drink
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 38
+  protein_per_100g: 0.2
+  carbs_per_100g: 9
+  fat_per_100g: 0
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: caribbean,drink,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: crb_ginger_beer_jamaican
+  name: Jamaican Ginger Beer (330ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 0
+  carbs_per_100g: 12
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 can (330 g)
+  portion_unit: can
+  tags: caribbean,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 330
+- source: gymflow
+  source_id: crb_supermalt_330
+  name: Supermalt (330ml)
+  brand: Supermalt
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 1
+  carbs_per_100g: 16
+  fat_per_100g: 0.3
+  serving_grams: 330
+  serving_label: 1 bottle (330 g)
+  portion_unit: bottle
+  tags: caribbean,drink,branded
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 330
+- source: gymflow
+  source_id: crb_ting_330
+  name: Ting Jamaican Grapefruit Soda
+  brand: Ting
+  region_codes: gb
+  kcal_per_100g: 47
+  protein_per_100g: 0
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 can (330 g)
+  portion_unit: can
+  tags: caribbean,drink,branded
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 330
+- source: gymflow
+  source_id: crb_grace_solomon_grundy
+  name: Solomon Grundy / Pickled Mackerel (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 17
+  carbs_per_100g: 4
+  fat_per_100g: 11
+  serving_grams: 50
+  serving_label: 1 grams (50 g)
+  portion_unit: grams
+  tags: caribbean,fish,high_protein
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: fish,sulphites
+- source: gymflow
+  source_id: crb_macaroni_cheese_caribbean
+  name: Caribbean Mac and Cheese (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 200
+  serving_label: 1 grams (200 g)
+  portion_unit: grams
+  tags: caribbean,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+- source: gymflow
+  source_id: crb_potato_salad
+  name: Caribbean Potato Salad (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 2
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  serving_grams: 150
+  serving_label: 1 grams (150 g)
+  portion_unit: grams
+  tags: caribbean,side,salad
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: eggs,mustard
+- source: gymflow
+  source_id: crb_coleslaw_caribbean
+  name: Caribbean Coleslaw (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 1.5
+  carbs_per_100g: 8
+  fat_per_100g: 15
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: caribbean,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: eggs,milk,mustard
+- source: gymflow
+  source_id: crb_jerk_pork
+  name: Jerk Pork (cooked)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 24
+  carbs_per_100g: 5
+  fat_per_100g: 13
+  serving_grams: 150
+  serving_label: 1 grams (150 g)
+  portion_unit: grams
+  tags: caribbean,whole,high_protein
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: crb_curry_chicken_drumsticks
+  name: Curry Chicken Drumsticks (3)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 9
+  serving_grams: 240
+  serving_label: 1 portion (240 g)
+  portion_unit: pack
+  tags: caribbean,chicken,high_protein
+  dietary_compat: halal,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 240

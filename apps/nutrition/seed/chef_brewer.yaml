@@ -1,0 +1,643 @@
+# chef_brewer.yaml — Chef & Brewer (Greene King) pub menu.
+# 40 entries. Mainstream gastropub menu.
+# Source: chefandbrewer.com.
+- source: gymflow
+  source_id: chefbrewer_fish_chips
+  name: Beer-Battered Fish & Chips
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 13
+  carbs_per_100g: 24
+  fat_per_100g: 8
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: pescatarian
+  allergens: fish,gluten,eggs
+  unit_grams: 600
+- source: gymflow
+  source_id: chefbrewer_steak_pie
+  name: Steak & Stilton Pie
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 13
+  serving_grams: 540
+  serving_label: 1 portion (540 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 540
+- source: gymflow
+  source_id: chefbrewer_chicken_pie
+  name: Chicken & Bacon Pie
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 13
+  carbs_per_100g: 21
+  fat_per_100g: 11
+  serving_grams: 540
+  serving_label: 1 portion (540 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 540
+- source: gymflow
+  source_id: chefbrewer_sunday_beef
+  name: Roast Beef Sunday Lunch
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 6
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: chain,pub,meal,sunday_roast
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,eggs,celery
+  unit_grams: 700
+- source: gymflow
+  source_id: chefbrewer_sunday_chicken
+  name: Roast Chicken Sunday Lunch
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 16
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: chain,pub,meal,sunday_roast
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,eggs,celery
+  unit_grams: 700
+- source: gymflow
+  source_id: chefbrewer_sunday_pork
+  name: Roast Pork Sunday Lunch
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 15
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: chain,pub,meal,sunday_roast
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs,celery
+  unit_grams: 700
+- source: gymflow
+  source_id: chefbrewer_sunday_lamb
+  name: Slow-Roast Lamb Sunday Lunch
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 11
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: chain,pub,meal,sunday_roast
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,eggs,celery
+  unit_grams: 700
+- source: gymflow
+  source_id: chefbrewer_sunday_trio
+  name: Roast Trio Sunday Lunch
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 18
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  serving_grams: 750
+  serving_label: 1 portion (750 g)
+  portion_unit: meal
+  tags: chain,pub,meal,sunday_roast,high_protein
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs,celery
+  unit_grams: 750
+- source: gymflow
+  source_id: chefbrewer_burger
+  name: Beef Brisket Burger
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 260
+  protein_per_100g: 15
+  carbs_per_100g: 21
+  fat_per_100g: 14
+  serving_grams: 480
+  serving_label: 1 portion (480 g)
+  portion_unit: meal
+  tags: chain,pub,burger
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 480
+- source: gymflow
+  source_id: chefbrewer_chicken_burger
+  name: Chicken Burger
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 16
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 460
+  serving_label: 1 portion (460 g)
+  portion_unit: meal
+  tags: chain,pub,burger,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 460
+- source: gymflow
+  source_id: chefbrewer_lamb_shank
+  name: Slow-Cooked Lamb Shank
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 18
+  carbs_per_100g: 12
+  fat_per_100g: 9
+  serving_grams: 480
+  serving_label: 1 portion (480 g)
+  portion_unit: meal
+  tags: chain,pub,meal,high_protein
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: celery
+  unit_grams: 480
+- source: gymflow
+  source_id: chefbrewer_seabass
+  name: Pan-Fried Seabass
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 17
+  carbs_per_100g: 12
+  fat_per_100g: 7
+  serving_grams: 430
+  serving_label: 1 portion (430 g)
+  portion_unit: meal
+  tags: chain,pub,meal,fish,high_protein
+  dietary_compat: pescatarian,dairy_free
+  allergens: fish
+  unit_grams: 430
+- source: gymflow
+  source_id: chefbrewer_salmon
+  name: Salmon Fillet
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 19
+  carbs_per_100g: 12
+  fat_per_100g: 9
+  serving_grams: 420
+  serving_label: 1 portion (420 g)
+  portion_unit: meal
+  tags: chain,pub,meal,fish,high_protein,omega3
+  dietary_compat: pescatarian,dairy_free
+  allergens: fish
+  unit_grams: 420
+- source: gymflow
+  source_id: chefbrewer_curry_chicken
+  name: Chicken Tikka Masala
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 20
+  fat_per_100g: 6
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: chain,pub,meal,curry
+  dietary_compat: halal,pescatarian
+  allergens: milk,celery
+  unit_grams: 600
+- source: gymflow
+  source_id: chefbrewer_lasagne
+  name: Beef Lasagne
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 10
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  serving_grams: 470
+  serving_label: 1 portion (470 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 470
+- source: gymflow
+  source_id: chefbrewer_mac_cheese
+  name: Truffle Mac & Cheese
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 9
+  carbs_per_100g: 24
+  fat_per_100g: 12
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 400
+- source: gymflow
+  source_id: chefbrewer_veg_curry
+  name: Vegetable Curry
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 21
+  fat_per_100g: 5
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: chain,pub,meal,vegan,curry
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: celery
+  unit_grams: 600
+- source: gymflow
+  source_id: chefbrewer_veg_burger
+  name: Plant Burger
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 23
+  fat_per_100g: 10
+  serving_grams: 470
+  serving_label: 1 portion (470 g)
+  portion_unit: meal
+  tags: chain,pub,burger,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten,sesame,soy
+  unit_grams: 470
+- source: gymflow
+  source_id: chefbrewer_garlic_bread
+  name: Garlic Ciabatta
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 295
+  protein_per_100g: 7
+  carbs_per_100g: 38
+  fat_per_100g: 12
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,pub,starter
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 180
+- source: gymflow
+  source_id: chefbrewer_buffalo_wings
+  name: Buffalo Wings
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 22
+  carbs_per_100g: 7
+  fat_per_100g: 14
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,pub,starter,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 200
+- source: gymflow
+  source_id: chefbrewer_brie_wedges
+  name: Crispy Brie Wedges
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 22
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,pub,starter
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 180
+- source: gymflow
+  source_id: chefbrewer_calamari
+  name: Salt & Pepper Squid
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 170
+  serving_label: 1 portion (170 g)
+  portion_unit: pack
+  tags: chain,pub,starter
+  dietary_compat: pescatarian
+  allergens: gluten,molluscs,eggs
+  unit_grams: 170
+- source: gymflow
+  source_id: chefbrewer_prawn_cocktail
+  name: Prawn Cocktail
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 12
+  carbs_per_100g: 7
+  fat_per_100g: 11
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,pub,starter
+  dietary_compat: pescatarian
+  allergens: crustaceans,eggs,mustard
+  unit_grams: 180
+- source: gymflow
+  source_id: chefbrewer_soup_day
+  name: Soup of the Day
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 2
+  carbs_per_100g: 9
+  fat_per_100g: 2
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: pack
+  tags: chain,pub,starter
+  dietary_compat: pescatarian
+  allergens: gluten,milk,celery
+  unit_grams: 350
+- source: gymflow
+  source_id: chefbrewer_chips
+  name: Chunky Chips
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 4
+  carbs_per_100g: 35
+  fat_per_100g: 8
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,pub,side
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 200
+- source: gymflow
+  source_id: chefbrewer_sweet_potato_fries
+  name: Sweet Potato Fries
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 3
+  carbs_per_100g: 35
+  fat_per_100g: 9
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,pub,side
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 180
+- source: gymflow
+  source_id: chefbrewer_seasonal_veg
+  name: Seasonal Vegetables
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 3
+  carbs_per_100g: 9
+  fat_per_100g: 1
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,pub,side,vegetable
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 180
+- source: gymflow
+  source_id: chefbrewer_house_salad
+  name: House Salad
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 2
+  carbs_per_100g: 6
+  fat_per_100g: 4
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,pub,side,salad
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: mustard,sulphites
+  unit_grams: 180
+- source: gymflow
+  source_id: chefbrewer_onion_rings
+  name: Beer-Battered Onion Rings
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 305
+  protein_per_100g: 4
+  carbs_per_100g: 35
+  fat_per_100g: 16
+  serving_grams: 130
+  serving_label: 1 portion (130 g)
+  portion_unit: pack
+  tags: chain,pub,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 130
+- source: gymflow
+  source_id: chefbrewer_sticky_toffee
+  name: Sticky Toffee Pudding
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 365
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 17
+  serving_grams: 170
+  serving_label: 1 piece (170 g)
+  portion_unit: piece
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 170
+- source: gymflow
+  source_id: chefbrewer_chocolate_brownie
+  name: Chocolate Brownie
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  serving_grams: 160
+  serving_label: 1 piece (160 g)
+  portion_unit: piece
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 160
+- source: gymflow
+  source_id: chefbrewer_apple_crumble
+  name: Apple & Berry Crumble
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 3
+  carbs_per_100g: 40
+  fat_per_100g: 11
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 200
+- source: gymflow
+  source_id: chefbrewer_cheesecake
+  name: Vanilla Cheesecake
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 5
+  carbs_per_100g: 32
+  fat_per_100g: 19
+  serving_grams: 150
+  serving_label: 1 slice (150 g)
+  portion_unit: slice
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 150
+- source: gymflow
+  source_id: chefbrewer_peppercorn_sauce
+  name: Peppercorn Sauce
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 2
+  carbs_per_100g: 5
+  fat_per_100g: 16
+  serving_grams: 60
+  serving_label: 1 portion (60 g)
+  portion_unit: pack
+  tags: chain,pub,sauce
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 60
+- source: gymflow
+  source_id: chefbrewer_diane_sauce
+  name: Diane Sauce
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 180
+  protein_per_100g: 2
+  carbs_per_100g: 6
+  fat_per_100g: 16
+  serving_grams: 60
+  serving_label: 1 portion (60 g)
+  portion_unit: pack
+  tags: chain,pub,sauce
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 60
+- source: gymflow
+  source_id: chefbrewer_breakfast_full
+  name: Full English
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 11
+  carbs_per_100g: 12
+  fat_per_100g: 14
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: chain,pub,meal,breakfast
+  dietary_compat: pescatarian
+  allergens: gluten,eggs,sulphites
+  unit_grams: 600
+- source: gymflow
+  source_id: chefbrewer_breakfast_veggie
+  name: Veggie Breakfast
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 8
+  carbs_per_100g: 16
+  fat_per_100g: 9
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: chain,pub,meal,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,eggs
+  unit_grams: 500
+- source: gymflow
+  source_id: chefbrewer_breakfast_eggs_bacon
+  name: Eggs Royale
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 12
+  carbs_per_100g: 14
+  fat_per_100g: 12
+  serving_grams: 280
+  serving_label: 1 portion (280 g)
+  portion_unit: meal
+  tags: chain,pub,meal,breakfast
+  dietary_compat: pescatarian
+  allergens: gluten,eggs,fish
+  unit_grams: 280
+- source: gymflow
+  source_id: chefbrewer_kids_chicken
+  name: Kids' Chicken Goujons & Chips
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 13
+  carbs_per_100g: 24
+  fat_per_100g: 9
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: chain,pub,meal,kids
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 350
+- source: gymflow
+  source_id: chefbrewer_kids_pasta
+  name: Kids' Pasta Bolognese
+  brand: Chef & Brewer
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  serving_grams: 300
+  serving_label: 1 portion (300 g)
+  portion_unit: meal
+  tags: chain,pub,meal,kids
+  dietary_compat: pescatarian
+  allergens: gluten,milk,celery
+  unit_grams: 300

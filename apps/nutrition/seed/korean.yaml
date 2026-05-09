@@ -1,0 +1,303 @@
+# korean.yaml — Korean dishes available in UK Korean restaurants + supermarkets. Bibimbap, bulgogi, KFC (Korean Fried Chicken), kimchi, japchae, tteokbokki, kimbap.
+- source: gymflow
+  source_id: kor_bibimbap_beef
+  name: Bibimbap with Beef
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 20
+  fat_per_100g: 5
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: korean,bowl
+  dietary_compat: pescatarian,dairy_free
+  allergens: soy,sesame,eggs
+  unit_grams: 450
+- source: gymflow
+  source_id: kor_bibimbap_chicken
+  name: Bibimbap with Chicken
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 155
+  protein_per_100g: 12
+  carbs_per_100g: 20
+  fat_per_100g: 4
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: korean,bowl,chicken
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: soy,sesame,eggs
+  unit_grams: 450
+- source: gymflow
+  source_id: kor_bibimbap_veg
+  name: Vegan Bibimbap
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 3
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: korean,bowl,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy,sesame
+  unit_grams: 450
+- source: gymflow
+  source_id: kor_korean_fried_chicken
+  name: Korean Fried Chicken (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 19
+  carbs_per_100g: 18
+  fat_per_100g: 16
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: korean,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,soy,sesame,eggs
+  unit_grams: 200
+- source: gymflow
+  source_id: kor_kimchi_jjigae
+  name: Kimchi Jjigae (Stew)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 70
+  protein_per_100g: 5
+  carbs_per_100g: 8
+  fat_per_100g: 2
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: korean,soup,low_calorie
+  dietary_compat: pescatarian,dairy_free
+  allergens: fish,soy
+  unit_grams: 400
+- source: gymflow
+  source_id: kor_kimchi_per_100g
+  name: Kimchi (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 30
+  protein_per_100g: 1.5
+  carbs_per_100g: 5
+  fat_per_100g: 0.5
+  serving_grams: 50
+  serving_label: 1 grams (50 g)
+  portion_unit: grams
+  tags: korean,fermented,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: fish
+- source: gymflow
+  source_id: kor_bulgogi_beef
+  name: Bulgogi Beef
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 18
+  carbs_per_100g: 8
+  fat_per_100g: 11
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: meal
+  tags: korean,whole,high_protein
+  dietary_compat: pescatarian,dairy_free
+  allergens: soy,sesame
+  unit_grams: 200
+- source: gymflow
+  source_id: kor_bulgogi_chicken
+  name: Bulgogi Chicken
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 19
+  carbs_per_100g: 8
+  fat_per_100g: 7
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: meal
+  tags: korean,whole,chicken,high_protein
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: soy,sesame
+  unit_grams: 200
+- source: gymflow
+  source_id: kor_dak_galbi
+  name: Dak Galbi (Spicy Stir-Fried Chicken)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 14
+  fat_per_100g: 6
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: korean,chicken
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: soy,sesame
+  unit_grams: 350
+- source: gymflow
+  source_id: kor_japchae
+  name: Japchae (Glass Noodles)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 24
+  fat_per_100g: 4
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: korean,noodles
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy,sesame
+  unit_grams: 350
+- source: gymflow
+  source_id: kor_tteokbokki
+  name: Tteokbokki (Spicy Rice Cakes)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 4
+  carbs_per_100g: 38
+  fat_per_100g: 3
+  serving_grams: 300
+  serving_label: 1 portion (300 g)
+  portion_unit: meal
+  tags: korean,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy
+  unit_grams: 300
+- source: gymflow
+  source_id: kor_kimbap
+  name: Kimbap (Korean Sushi Roll)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 25
+  fat_per_100g: 3
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: korean,snack
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs,soy,sesame
+  unit_grams: 25
+- source: gymflow
+  source_id: kor_korean_pancake_pajeon
+  name: Pajeon (Korean Pancake)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 7
+  carbs_per_100g: 20
+  fat_per_100g: 9
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: korean,starter
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs,soy,sesame
+  unit_grams: 200
+- source: gymflow
+  source_id: kor_galbi_short_ribs
+  name: Galbi (Korean Short Ribs)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 22
+  carbs_per_100g: 8
+  fat_per_100g: 14
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: meal
+  tags: korean,whole,high_protein
+  dietary_compat: pescatarian,dairy_free
+  allergens: soy,sesame
+  unit_grams: 200
+- source: gymflow
+  source_id: kor_samgyeopsal
+  name: Samgyeopsal (Pork Belly, per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 19
+  carbs_per_100g: 0
+  fat_per_100g: 28
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: korean,whole,high_protein
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: kor_jjajangmyeon
+  name: Jjajangmyeon (Black Bean Noodles)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 6
+  carbs_per_100g: 25
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: korean,noodles
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,soy,sesame
+  unit_grams: 400
+- source: gymflow
+  source_id: kor_kimchi_fried_rice
+  name: Kimchi Fried Rice
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 5
+  carbs_per_100g: 27
+  fat_per_100g: 4
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: korean,grain
+  dietary_compat: pescatarian,dairy_free
+  allergens: eggs,soy,sesame
+  unit_grams: 350
+- source: gymflow
+  source_id: kor_korean_corn_dog
+  name: Korean Corn Dog (cheese)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 14
+  serving_grams: 110
+  serving_label: 1 piece (110 g)
+  portion_unit: piece
+  tags: korean,fast_food
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 110
+- source: gymflow
+  source_id: kor_gochujang_paste_15g
+  name: Gochujang (1 tbsp/15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 6
+  carbs_per_100g: 47
+  fat_per_100g: 3
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: korean,sauce
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: soy,gluten
+  unit_grams: 15

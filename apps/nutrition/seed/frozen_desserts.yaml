@@ -1,0 +1,373 @@
+# frozen_desserts.yaml — ice cream brands, lollies, low-calorie variants.
+- source: gymflow
+  source_id: ice_cream_vanilla_generic
+  name: Vanilla Ice Cream (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 207
+  protein_per_100g: 3.5
+  carbs_per_100g: 24
+  fat_per_100g: 11
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+- source: gymflow
+  source_id: ice_cream_chocolate_generic
+  name: Chocolate Ice Cream (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 4
+  carbs_per_100g: 26
+  fat_per_100g: 11
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,eggs,soy
+- source: gymflow
+  source_id: ice_cream_strawberry_generic
+  name: Strawberry Ice Cream (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 3.5
+  carbs_per_100g: 25
+  fat_per_100g: 9
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+- source: gymflow
+  source_id: ben_jerrys_phish_food_100g
+  name: Ben & Jerry's Phish Food (per 100g)
+  brand: Ben & Jerry's
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 5
+  carbs_per_100g: 38
+  fat_per_100g: 12
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian
+  allergens: gluten,milk,eggs,soy
+- source: gymflow
+  source_id: ben_jerrys_cookie_dough_100g
+  name: Ben & Jerry's Cookie Dough (per 100g)
+  brand: Ben & Jerry's
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 4
+  carbs_per_100g: 36
+  fat_per_100g: 14
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian
+  allergens: gluten,milk,eggs,soy
+- source: gymflow
+  source_id: ben_jerrys_chunky_monkey_100g
+  name: Ben & Jerry's Chunky Monkey (per 100g)
+  brand: Ben & Jerry's
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 5
+  carbs_per_100g: 28
+  fat_per_100g: 16
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian
+  allergens: milk,eggs,tree_nuts,soy
+- source: gymflow
+  source_id: haagen_dazs_vanilla_100g
+  name: Häagen-Dazs Vanilla (per 100g)
+  brand: Häagen-Dazs
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 5
+  carbs_per_100g: 21
+  fat_per_100g: 16
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+- source: gymflow
+  source_id: haagen_dazs_choc_choc_chip_100g
+  name: Häagen-Dazs Belgian Chocolate (per 100g)
+  brand: Häagen-Dazs
+  region_codes: gb
+  kcal_per_100g: 260
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 17
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs,soy
+- source: gymflow
+  source_id: magnum_classic_bar
+  name: Magnum Classic (1 bar)
+  brand: Magnum
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 4
+  carbs_per_100g: 24
+  fat_per_100g: 17
+  serving_grams: 79
+  serving_label: 1 piece (79 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,eggs,soy
+  unit_grams: 79
+- source: gymflow
+  source_id: magnum_almond_bar
+  name: Magnum Almond (1 bar)
+  brand: Magnum
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 4
+  carbs_per_100g: 23
+  fat_per_100g: 19
+  serving_grams: 86
+  serving_label: 1 piece (86 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,eggs,tree_nuts,soy
+  unit_grams: 86
+- source: gymflow
+  source_id: magnum_white_bar
+  name: Magnum White (1 bar)
+  brand: Magnum
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 4
+  carbs_per_100g: 26
+  fat_per_100g: 18
+  serving_grams: 79
+  serving_label: 1 piece (79 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,eggs,soy
+  unit_grams: 79
+- source: gymflow
+  source_id: magnum_double_caramel_bar
+  name: Magnum Double Caramel (1 bar)
+  brand: Magnum
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 4
+  carbs_per_100g: 28
+  fat_per_100g: 18
+  serving_grams: 88
+  serving_label: 1 piece (88 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,eggs,soy
+  unit_grams: 88
+- source: gymflow
+  source_id: cornetto_classico
+  name: Cornetto Classico (1 cone)
+  brand: Cornetto
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 3.5
+  carbs_per_100g: 32
+  fat_per_100g: 12
+  serving_grams: 90
+  serving_label: 1 piece (90 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy,tree_nuts
+  unit_grams: 90
+- source: gymflow
+  source_id: twister_lolly
+  name: Twister Lolly (1 piece)
+  brand: Twister
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 0.7
+  carbs_per_100g: 18
+  fat_per_100g: 0.6
+  serving_grams: 80
+  serving_label: 1 piece (80 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 80
+- source: gymflow
+  source_id: solero_exotic
+  name: Solero Exotic (1 lolly)
+  brand: Solero
+  region_codes: gb
+  kcal_per_100g: 90
+  protein_per_100g: 1
+  carbs_per_100g: 19
+  fat_per_100g: 1
+  serving_grams: 90
+  serving_label: 1 piece (90 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 90
+- source: gymflow
+  source_id: calippo_orange
+  name: Calippo Orange (1 lolly)
+  brand: Calippo
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 0
+  carbs_per_100g: 22
+  fat_per_100g: 0
+  serving_grams: 105
+  serving_label: 1 piece (105 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert,low_fat,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 105
+- source: gymflow
+  source_id: fab_lolly
+  name: FAB Strawberry Lolly (1)
+  brand: FAB
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 0.5
+  carbs_per_100g: 17
+  fat_per_100g: 0.5
+  serving_grams: 58
+  serving_label: 1 piece (58 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 58
+- source: gymflow
+  source_id: mini_milk
+  name: Mini Milk Lolly (1)
+  brand: Mini Milk
+  region_codes: gb
+  kcal_per_100g: 30
+  protein_per_100g: 1
+  carbs_per_100g: 5
+  fat_per_100g: 0.7
+  serving_grams: 35
+  serving_label: 1 piece (35 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert,low_calorie
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 35
+- source: gymflow
+  source_id: feast_chocolate
+  name: Feast Chocolate (1 lolly)
+  brand: Feast
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 3
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 80
+  serving_label: 1 piece (80 g)
+  portion_unit: piece
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,eggs,soy
+  unit_grams: 80
+- source: gymflow
+  source_id: vienetta_vanilla_slice
+  name: Vienetta Vanilla (1 slice/85g)
+  brand: Vienetta
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 3
+  carbs_per_100g: 26
+  fat_per_100g: 15
+  serving_grams: 85
+  serving_label: 1 slice (85 g)
+  portion_unit: slice
+  tags: frozen,branded,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,eggs,soy
+  unit_grams: 85
+- source: gymflow
+  source_id: alpro_vanilla_vegan_ice_cream
+  name: Alpro Vanilla Plant-Based Ice Cream (per 100g)
+  brand: Alpro
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 1
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+- source: gymflow
+  source_id: halo_top_choc_chip_100g
+  name: Halo Top Chocolate Chip (per 100g)
+  brand: Halo Top
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 5
+  carbs_per_100g: 17
+  fat_per_100g: 2.5
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert,low_calorie,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+- source: gymflow
+  source_id: oppo_vanilla_brownie_100g
+  name: Oppo Brothers Vanilla Brownie (per 100g)
+  brand: Oppo Brothers
+  region_codes: gb
+  kcal_per_100g: 125
+  protein_per_100g: 5
+  carbs_per_100g: 11
+  fat_per_100g: 6
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert,low_calorie
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+- source: gymflow
+  source_id: breyers_no_sugar_added_100g
+  name: Breyers No Sugar Added Vanilla (per 100g)
+  brand: Breyers
+  region_codes: gb
+  kcal_per_100g: 90
+  protein_per_100g: 3
+  carbs_per_100g: 14
+  fat_per_100g: 2.5
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: frozen,branded,dessert,low_calorie
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs

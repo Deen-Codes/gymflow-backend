@@ -1,0 +1,789 @@
+# iceland.yaml — Iceland frozen-heavy own-brand. 50 entries.
+- source: gymflow
+  source_id: iceland_chicken_tikka_masala
+  name: Iceland Chicken Tikka Masala (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 135
+  protein_per_100g: 9
+  carbs_per_100g: 14
+  fat_per_100g: 5
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: supermarket,frozen,ready_meal,curry,chicken
+  dietary_compat: pescatarian
+  allergens: milk,celery
+  unit_grams: 400
+- source: gymflow
+  source_id: iceland_chicken_korma
+  name: Iceland Chicken Korma (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 14
+  fat_per_100g: 6
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: supermarket,frozen,ready_meal,curry,chicken
+  dietary_compat: pescatarian
+  allergens: milk,tree_nuts
+  unit_grams: 400
+- source: gymflow
+  source_id: iceland_thai_green_curry
+  name: Iceland Thai Green Chicken Curry (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: supermarket,frozen,ready_meal,curry,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: fish
+  unit_grams: 400
+- source: gymflow
+  source_id: iceland_lasagne
+  name: Iceland Beef Lasagne (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 14
+  fat_per_100g: 7
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: supermarket,frozen,ready_meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 400
+- source: gymflow
+  source_id: iceland_spaghetti_bolognese
+  name: Iceland Spaghetti Bolognese (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: supermarket,frozen,ready_meal,pasta
+  dietary_compat: pescatarian
+  allergens: gluten,milk,celery
+  unit_grams: 400
+- source: gymflow
+  source_id: iceland_cottage_pie
+  name: Iceland Cottage Pie (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 115
+  protein_per_100g: 7
+  carbs_per_100g: 12
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: supermarket,frozen,ready_meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 400
+- source: gymflow
+  source_id: iceland_shepherds_pie
+  name: Iceland Shepherd's Pie (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 120
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: supermarket,frozen,ready_meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 400
+- source: gymflow
+  source_id: iceland_chicken_chow_mein
+  name: Iceland Chicken Chow Mein (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 9
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  serving_grams: 375
+  serving_label: 1 portion (375 g)
+  portion_unit: meal
+  tags: supermarket,frozen,ready_meal,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,soy,sesame,eggs
+  unit_grams: 375
+- source: gymflow
+  source_id: iceland_sweet_sour_chicken
+  name: Iceland Sweet & Sour Chicken (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 8
+  carbs_per_100g: 21
+  fat_per_100g: 2
+  serving_grams: 375
+  serving_label: 1 portion (375 g)
+  portion_unit: meal
+  tags: supermarket,frozen,ready_meal,chicken
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,soy,eggs
+  unit_grams: 375
+- source: gymflow
+  source_id: iceland_macaroni_cheese
+  name: Iceland Macaroni Cheese (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 6
+  carbs_per_100g: 18
+  fat_per_100g: 7
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: supermarket,frozen,ready_meal,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 400
+- source: gymflow
+  source_id: iceland_sw_chicken_jalfrezi
+  name: Iceland Slimming World Chicken Jalfrezi
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 90
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 1.4
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: supermarket,frozen,ready_meal,curry,low_calorie,chicken
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: celery,sulphites
+  unit_grams: 500
+- source: gymflow
+  source_id: iceland_sw_chilli_con_carne
+  name: Iceland Slimming World Chilli Con Carne
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 100
+  protein_per_100g: 7
+  carbs_per_100g: 14
+  fat_per_100g: 1.5
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: supermarket,frozen,ready_meal,low_calorie
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: celery
+  unit_grams: 500
+- source: gymflow
+  source_id: iceland_sw_lasagne
+  name: Iceland Slimming World Lasagne
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 8
+  carbs_per_100g: 13
+  fat_per_100g: 2
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: supermarket,frozen,ready_meal,low_calorie
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 500
+- source: gymflow
+  source_id: iceland_sw_thai_chicken
+  name: Iceland Slimming World Thai Sweet Chilli Chicken
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 8
+  carbs_per_100g: 13
+  fat_per_100g: 1.2
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: supermarket,frozen,ready_meal,low_calorie,chicken
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,soy,sesame
+  unit_grams: 500
+- source: gymflow
+  source_id: iceland_pepperoni_pizza_frozen
+  name: Iceland Pepperoni Pizza (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 12
+  carbs_per_100g: 30
+  fat_per_100g: 11
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: supermarket,frozen,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sulphites
+  unit_grams: 350
+- source: gymflow
+  source_id: iceland_margherita_pizza_frozen
+  name: Iceland Margherita Pizza (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 8
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: supermarket,frozen,pizza,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 350
+- source: gymflow
+  source_id: iceland_meat_feast_pizza
+  name: Iceland Meat Feast Pizza (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 12
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: supermarket,frozen,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 380
+- source: gymflow
+  source_id: iceland_chicken_breast_fillets
+  name: Iceland Chicken Breast Fillets (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 23.5
+  carbs_per_100g: 0
+  fat_per_100g: 1.6
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: supermarket,frozen,meat,chicken,high_protein,low_fat,low_carb
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: iceland_chicken_thighs_skinless
+  name: Iceland Chicken Thighs Skinless (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 119
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 3.5
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: supermarket,frozen,meat,chicken,high_protein
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: iceland_breaded_chicken_4
+  name: Iceland Breaded Chicken Breasts (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 16
+  carbs_per_100g: 16
+  fat_per_100g: 9
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: supermarket,frozen,meat,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 100
+- source: gymflow
+  source_id: iceland_chicken_kievs_2
+  name: Iceland Chicken Kievs (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 14
+  carbs_per_100g: 14
+  fat_per_100g: 13
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: supermarket,frozen,meat,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 130
+- source: gymflow
+  source_id: iceland_chicken_nuggets_30
+  name: Iceland Chicken Nuggets (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 13
+  carbs_per_100g: 16
+  fat_per_100g: 13
+  serving_grams: 16
+  serving_label: 1 piece (16 g)
+  portion_unit: piece
+  tags: supermarket,frozen,meat,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 16
+- source: gymflow
+  source_id: iceland_fish_fingers_10
+  name: Iceland Fish Fingers (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 11
+  serving_grams: 30
+  serving_label: 1 piece (30 g)
+  portion_unit: piece
+  tags: supermarket,frozen,fish
+  dietary_compat: pescatarian
+  allergens: gluten,fish,milk,eggs
+  unit_grams: 30
+- source: gymflow
+  source_id: iceland_battered_cod_2
+  name: Iceland Battered Cod Fillets (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 12
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  serving_grams: 165
+  serving_label: 1 piece (165 g)
+  portion_unit: piece
+  tags: supermarket,frozen,fish
+  dietary_compat: pescatarian
+  allergens: gluten,fish,milk,eggs
+  unit_grams: 165
+- source: gymflow
+  source_id: iceland_breaded_scampi
+  name: Iceland Wholetail Scampi (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 10
+  carbs_per_100g: 25
+  fat_per_100g: 9
+  serving_grams: 220
+  serving_label: 1 portion (220 g)
+  portion_unit: pack
+  tags: supermarket,frozen,fish
+  dietary_compat: pescatarian
+  allergens: crustaceans,gluten,eggs
+  unit_grams: 220
+- source: gymflow
+  source_id: iceland_salmon_fillets_4
+  name: Iceland Salmon Fillets (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 210
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: supermarket,frozen,fish,high_protein,omega3
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 130
+- source: gymflow
+  source_id: iceland_oven_chips
+  name: Iceland Oven Chips (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 2.5
+  carbs_per_100g: 27
+  fat_per_100g: 5
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: supermarket,frozen,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: iceland_frozen_peas
+  name: Iceland Garden Peas (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 5
+  carbs_per_100g: 11
+  fat_per_100g: 0.4
+  serving_grams: 80
+  serving_label: 1 grams (80 g)
+  portion_unit: grams
+  tags: supermarket,frozen,vegetable,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: iceland_frozen_sweetcorn
+  name: Iceland Sweetcorn (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 96
+  protein_per_100g: 3.4
+  carbs_per_100g: 21
+  fat_per_100g: 1.5
+  serving_grams: 80
+  serving_label: 1 grams (80 g)
+  portion_unit: grams
+  tags: supermarket,frozen,vegetable,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: iceland_mixed_veg
+  name: Iceland Mixed Vegetables (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 3
+  carbs_per_100g: 9
+  fat_per_100g: 0.5
+  serving_grams: 80
+  serving_label: 1 grams (80 g)
+  portion_unit: grams
+  tags: supermarket,frozen,vegetable,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: iceland_potato_waffles_10
+  name: Iceland Potato Waffles (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 2.5
+  carbs_per_100g: 25
+  fat_per_100g: 9
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: supermarket,frozen,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 60
+- source: gymflow
+  source_id: iceland_hash_browns
+  name: Iceland Hash Browns (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 2
+  carbs_per_100g: 25
+  fat_per_100g: 9
+  serving_grams: 35
+  serving_label: 1 piece (35 g)
+  portion_unit: piece
+  tags: supermarket,frozen,breakfast,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 35
+- source: gymflow
+  source_id: iceland_vanilla_ice_cream
+  name: Iceland Vanilla Ice Cream
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 4
+  carbs_per_100g: 24
+  fat_per_100g: 10
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: supermarket,frozen,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+- source: gymflow
+  source_id: iceland_chocolate_ice_cream
+  name: Iceland Chocolate Ice Cream
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 4
+  carbs_per_100g: 26
+  fat_per_100g: 10
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: supermarket,frozen,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,eggs,soy
+- source: gymflow
+  source_id: iceland_frozen_berries_mixed
+  name: Iceland Mixed Berries (frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 1
+  carbs_per_100g: 12
+  fat_per_100g: 0.3
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: supermarket,frozen,fruit,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: iceland_lean_beef_mince_5pct
+  name: Iceland Lean Beef Mince 5% Fat
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 137
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 5
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: supermarket,meat,high_protein,low_fat
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: iceland_pork_sausages
+  name: Iceland British Pork Sausages
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 14
+  carbs_per_100g: 9
+  fat_per_100g: 22
+  serving_grams: 50
+  serving_label: 1 piece (50 g)
+  portion_unit: piece
+  tags: supermarket,meat,processed
+  dietary_compat: pescatarian
+  allergens: gluten,sulphites
+  unit_grams: 50
+- source: gymflow
+  source_id: iceland_eggs_free_range_lge
+  name: Iceland Free Range Large Eggs
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 155
+  protein_per_100g: 13
+  carbs_per_100g: 1.1
+  fat_per_100g: 11
+  serving_grams: 60
+  serving_label: 1 egg (60 g)
+  portion_unit: egg
+  tags: supermarket,eggs
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: eggs
+  unit_grams: 60
+- source: gymflow
+  source_id: iceland_milk_semi
+  name: Iceland Semi-skimmed Milk
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 47
+  protein_per_100g: 3.5
+  carbs_per_100g: 4.8
+  fat_per_100g: 1.7
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: supermarket,dairy
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: iceland_greek_yogurt_0pct
+  name: Iceland Greek Style 0% Fat Yogurt
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 10
+  carbs_per_100g: 4
+  fat_per_100g: 0.4
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: supermarket,dairy,high_protein,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 150
+- source: gymflow
+  source_id: iceland_white_bread_medium
+  name: Iceland White Medium Bread
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 47
+  fat_per_100g: 2.5
+  serving_grams: 38
+  serving_label: 1 slice (38 g)
+  portion_unit: slice
+  tags: supermarket,bakery,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 38
+- source: gymflow
+  source_id: iceland_milk_chocolate_bar
+  name: Iceland Milk Chocolate
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 540
+  protein_per_100g: 7
+  carbs_per_100g: 56
+  fat_per_100g: 30
+  serving_grams: 45
+  serving_label: 1 bar (45 g)
+  portion_unit: bar
+  tags: supermarket,snack,confectionery
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+  unit_grams: 45
+- source: gymflow
+  source_id: iceland_ready_salted_crisps
+  name: Iceland Ready Salted Crisps
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 530
+  protein_per_100g: 6
+  carbs_per_100g: 50
+  fat_per_100g: 33
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: supermarket,snack,crisps
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: iceland_baked_beans
+  name: Iceland Baked Beans
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 4.8
+  carbs_per_100g: 13
+  fat_per_100g: 0.6
+  serving_grams: 200
+  serving_label: 1 grams (200 g)
+  portion_unit: grams
+  tags: supermarket,canned,pulses
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: iceland_tuna_water
+  name: Iceland Tuna in Spring Water
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 116
+  protein_per_100g: 26
+  carbs_per_100g: 0
+  fat_per_100g: 1
+  serving_grams: 80
+  serving_label: 1 can (80 g)
+  portion_unit: can
+  tags: supermarket,fish,canned,high_protein,low_fat
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 80
+- source: gymflow
+  source_id: iceland_greggs_sausage_rolls_4
+  name: Greggs Sausage Rolls (Iceland frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 9
+  carbs_per_100g: 30
+  fat_per_100g: 19
+  serving_grams: 90
+  serving_label: 1 piece (90 g)
+  portion_unit: piece
+  tags: supermarket,frozen,bakery
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 90
+- source: gymflow
+  source_id: iceland_greggs_steak_bakes_4
+  name: Greggs Steak Bakes (Iceland frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 295
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 16
+  serving_grams: 145
+  serving_label: 1 piece (145 g)
+  portion_unit: piece
+  tags: supermarket,frozen,bakery
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 145
+- source: gymflow
+  source_id: iceland_greggs_chicken_bakes_4
+  name: Greggs Chicken Bakes (Iceland frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 305
+  protein_per_100g: 9
+  carbs_per_100g: 26
+  fat_per_100g: 18
+  serving_grams: 145
+  serving_label: 1 piece (145 g)
+  portion_unit: piece
+  tags: supermarket,frozen,bakery,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 145
+- source: gymflow
+  source_id: iceland_tgi_loaded_potato_skins
+  name: TGI Loaded Potato Skins (Iceland frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 26
+  fat_per_100g: 12
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: supermarket,frozen
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 200
+- source: gymflow
+  source_id: iceland_tgi_chicken_wings
+  name: TGI BBQ Chicken Wings (Iceland frozen)
+  brand: Iceland
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 22
+  carbs_per_100g: 8
+  fat_per_100g: 13
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: supermarket,frozen,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 250

@@ -1,0 +1,469 @@
+# costa.yaml — Costa Coffee UK menu.
+# 30 entries (incl 3 migrated).
+# Drinks per ml.
+# Source: costa.co.uk/menu.
+- source: gymflow
+  source_id: costa_americano_medium
+  name: Costa Americano, Medium, Black
+  brand: Costa
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  serving_grams: 340
+  serving_label: 1 medium (~340ml, 4 kcal)
+  tags: restaurant,chain,coffee,zero_cal
+  dietary_compat: vegan,vegetarian,gluten_free,dairy_free,halal,kosher
+  allergens: ''
+  portion_unit: ml
+- source: gymflow
+  source_id: costa_cappuccino_medium_semi
+  name: Costa Cappuccino, Medium, Semi-skimmed
+  brand: Costa
+  region_codes: gb
+  kcal_per_100g: 40
+  protein_per_100g: 2.5
+  carbs_per_100g: 3.6
+  fat_per_100g: 1.5
+  serving_grams: 340
+  serving_label: 1 medium (~340ml, ~135 kcal)
+  tags: restaurant,chain,coffee
+  dietary_compat: vegetarian,halal,kosher
+  allergens: milk
+  portion_unit: ml
+- source: gymflow
+  source_id: costa_flat_white_medium_semi
+  name: Costa Flat White, Medium, Semi-skimmed
+  brand: Costa
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 2.8
+  carbs_per_100g: 4.0
+  fat_per_100g: 1.6
+  serving_grams: 340
+  serving_label: 1 medium (~340ml, ~143 kcal)
+  tags: restaurant,chain,coffee,drink
+  dietary_compat: vegetarian,halal,kosher
+  allergens: milk
+  portion_unit: ml
+- source: gymflow
+  source_id: costa_latte_med_semi
+  name: Latte (medium, semi)
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 3.5
+  carbs_per_100g: 4.5
+  fat_per_100g: 2.0
+  serving_grams: 360
+  serving_label: 1 ml (360 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: costa_latte_lge_semi
+  name: Latte (large, semi)
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 3.5
+  carbs_per_100g: 4.5
+  fat_per_100g: 2.0
+  serving_grams: 480
+  serving_label: 1 ml (480 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: costa_latte_med_oat
+  name: Latte (medium, oat)
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 45
+  protein_per_100g: 1.4
+  carbs_per_100g: 6.5
+  fat_per_100g: 1.5
+  serving_grams: 360
+  serving_label: 1 ml (360 g)
+  portion_unit: ml
+  tags: chain,coffee,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: costa_flat_white_oat
+  name: Flat White (oat)
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 1.5
+  carbs_per_100g: 7.0
+  fat_per_100g: 1.8
+  serving_grams: 240
+  serving_label: 1 ml (240 g)
+  portion_unit: ml
+  tags: chain,coffee,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: costa_americano_med
+  name: Americano (medium)
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 2
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.3
+  fat_per_100g: 0
+  serving_grams: 360
+  serving_label: 1 ml (360 g)
+  portion_unit: ml
+  tags: chain,coffee,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: costa_espresso
+  name: Espresso
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 ml (30 g)
+  portion_unit: ml
+  tags: chain,coffee,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: costa_mocha_med_semi
+  name: Mocha (medium, semi)
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 3.5
+  carbs_per_100g: 14.0
+  fat_per_100g: 3.0
+  serving_grams: 360
+  serving_label: 1 ml (360 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+- source: gymflow
+  source_id: costa_hot_choc_med_semi
+  name: Hot Chocolate (medium, semi)
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 4.5
+  carbs_per_100g: 14.0
+  fat_per_100g: 3.5
+  serving_grams: 360
+  serving_label: 1 ml (360 g)
+  portion_unit: ml
+  tags: chain,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+- source: gymflow
+  source_id: costa_chai_latte_med_semi
+  name: Chai Latte (medium, semi)
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 3.0
+  carbs_per_100g: 12.0
+  fat_per_100g: 1.5
+  serving_grams: 360
+  serving_label: 1 ml (360 g)
+  portion_unit: ml
+  tags: chain,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: costa_iced_americano
+  name: Iced Americano
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 2
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.3
+  fat_per_100g: 0
+  serving_grams: 360
+  serving_label: 1 ml (360 g)
+  portion_unit: ml
+  tags: chain,coffee,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: costa_iced_latte_semi
+  name: Iced Latte (semi)
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 45
+  protein_per_100g: 3.0
+  carbs_per_100g: 4.0
+  fat_per_100g: 1.7
+  serving_grams: 360
+  serving_label: 1 ml (360 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: costa_caramel_frostino
+  name: Caramel Frostino
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 2.5
+  carbs_per_100g: 18.0
+  fat_per_100g: 2.5
+  serving_grams: 360
+  serving_label: 1 ml (360 g)
+  portion_unit: ml
+  tags: chain,coffee,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk
+- source: gymflow
+  source_id: costa_panini_chicken_pesto
+  name: Chicken Pesto Panini
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 27
+  fat_per_100g: 9
+  serving_grams: 220
+  serving_label: 1 piece (220 g)
+  portion_unit: piece
+  tags: chain,coffee,food,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,tree_nuts
+  unit_grams: 220
+- source: gymflow
+  source_id: costa_panini_mozzarella_tomato
+  name: Mozzarella & Tomato Panini
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 11
+  carbs_per_100g: 27
+  fat_per_100g: 8
+  serving_grams: 215
+  serving_label: 1 piece (215 g)
+  portion_unit: piece
+  tags: chain,coffee,food,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 215
+- source: gymflow
+  source_id: costa_panini_ham_cheese
+  name: Ham & Cheese Toastie
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 26
+  fat_per_100g: 10
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: chain,coffee,food
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 200
+- source: gymflow
+  source_id: costa_sandwich_chicken_salad
+  name: Chicken Salad Sandwich
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: chain,coffee,food,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,mustard
+  unit_grams: 200
+- source: gymflow
+  source_id: costa_sandwich_egg_mayo
+  name: Egg Mayo Sandwich
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 180
+  serving_label: 1 piece (180 g)
+  portion_unit: piece
+  tags: chain,coffee,food,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,mustard
+  unit_grams: 180
+- source: gymflow
+  source_id: costa_sandwich_tuna_cucumber
+  name: Tuna & Cucumber Sandwich
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  serving_grams: 195
+  serving_label: 1 piece (195 g)
+  portion_unit: piece
+  tags: chain,coffee,food
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,fish,mustard
+  unit_grams: 195
+- source: gymflow
+  source_id: costa_porridge_oat
+  name: Oat Porridge
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 2.5
+  carbs_per_100g: 12
+  fat_per_100g: 1.5
+  serving_grams: 280
+  serving_label: 1 portion (280 g)
+  portion_unit: pack
+  tags: chain,coffee,food,breakfast,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 280
+- source: gymflow
+  source_id: costa_brownie
+  name: Chocolate Brownie
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 415
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  serving_grams: 80
+  serving_label: 1 piece (80 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 80
+- source: gymflow
+  source_id: costa_cookie_choc
+  name: Chocolate Chunk Cookie
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 470
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 22
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 60
+- source: gymflow
+  source_id: costa_almond_croissant
+  name: Almond Croissant
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 405
+  protein_per_100g: 7
+  carbs_per_100g: 38
+  fat_per_100g: 24
+  serving_grams: 110
+  serving_label: 1 piece (110 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,tree_nuts
+  unit_grams: 110
+- source: gymflow
+  source_id: costa_butter_croissant
+  name: Butter Croissant
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 445
+  protein_per_100g: 8
+  carbs_per_100g: 45
+  fat_per_100g: 25
+  serving_grams: 75
+  serving_label: 1 piece (75 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 75
+- source: gymflow
+  source_id: costa_pain_au_chocolat
+  name: Pain au Chocolat
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 6
+  carbs_per_100g: 42
+  fat_per_100g: 22
+  serving_grams: 90
+  serving_label: 1 piece (90 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 90
+- source: gymflow
+  source_id: costa_lemon_cake
+  name: Lemon Drizzle Cake
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 4
+  carbs_per_100g: 52
+  fat_per_100g: 17
+  serving_grams: 100
+  serving_label: 1 slice (100 g)
+  portion_unit: slice
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 100
+- source: gymflow
+  source_id: costa_carrot_cake
+  name: Carrot Cake
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 390
+  protein_per_100g: 4
+  carbs_per_100g: 49
+  fat_per_100g: 19
+  serving_grams: 100
+  serving_label: 1 slice (100 g)
+  portion_unit: slice
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,tree_nuts
+  unit_grams: 100
+- source: gymflow
+  source_id: costa_belgian_bun
+  name: Belgian Bun
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 6
+  carbs_per_100g: 56
+  fat_per_100g: 11
+  serving_grams: 110
+  serving_label: 1 piece (110 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 110

@@ -1,0 +1,481 @@
+# hungry_horse.yaml — Hungry Horse (Greene King) value pub menu. 30 entries.
+- source: gymflow
+  source_id: hungryhorse_donkey_burger
+  name: The Donkey (huge burger)
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: chain,pub,burger,sharing
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 600
+- source: gymflow
+  source_id: hungryhorse_classic_burger
+  name: Classic Beef Burger
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 13
+  serving_grams: 470
+  serving_label: 1 portion (470 g)
+  portion_unit: meal
+  tags: chain,pub,burger
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 470
+- source: gymflow
+  source_id: hungryhorse_chicken_burger
+  name: Buttermilk Chicken Burger
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 16
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 460
+  serving_label: 1 portion (460 g)
+  portion_unit: meal
+  tags: chain,pub,burger,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 460
+- source: gymflow
+  source_id: hungryhorse_mixed_grill
+  name: Mixed Grill
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 18
+  carbs_per_100g: 14
+  fat_per_100g: 12
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: chain,pub,meal,high_protein,sharing
+  dietary_compat: pescatarian,dairy_free
+  allergens: sulphites,eggs
+  unit_grams: 700
+- source: gymflow
+  source_id: hungryhorse_fish_chips
+  name: Fish & Chips (large)
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 210
+  protein_per_100g: 12
+  carbs_per_100g: 23
+  fat_per_100g: 8
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: pescatarian
+  allergens: fish,gluten,eggs
+  unit_grams: 700
+- source: gymflow
+  source_id: hungryhorse_steak_pie
+  name: Steak Pie
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  serving_grams: 540
+  serving_label: 1 portion (540 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 540
+- source: gymflow
+  source_id: hungryhorse_sunday_beef
+  name: Roast Beef Sunday Lunch
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 6
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: chain,pub,meal,sunday_roast
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,eggs,celery
+  unit_grams: 700
+- source: gymflow
+  source_id: hungryhorse_sunday_chicken
+  name: Roast Chicken Sunday Lunch
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 16
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: chain,pub,meal,sunday_roast
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,eggs,celery
+  unit_grams: 700
+- source: gymflow
+  source_id: hungryhorse_sunday_3meats
+  name: 3 Roast Meats Sunday Lunch
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 18
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  serving_grams: 800
+  serving_label: 1 portion (800 g)
+  portion_unit: meal
+  tags: chain,pub,meal,sunday_roast,high_protein,sharing
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs,celery
+  unit_grams: 800
+- source: gymflow
+  source_id: hungryhorse_gammon
+  name: Gammon, Egg & Chips
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 16
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  serving_grams: 550
+  serving_label: 1 portion (550 g)
+  portion_unit: meal
+  tags: chain,pub,meal,high_protein
+  dietary_compat: pescatarian,dairy_free
+  allergens: eggs
+  unit_grams: 550
+- source: gymflow
+  source_id: hungryhorse_lasagne
+  name: Beef Lasagne
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 190
+  protein_per_100g: 9
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  serving_grams: 470
+  serving_label: 1 portion (470 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 470
+- source: gymflow
+  source_id: hungryhorse_curry_chicken
+  name: Chicken Curry & Rice
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 10
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: chain,pub,meal,curry
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: celery
+  unit_grams: 600
+- source: gymflow
+  source_id: hungryhorse_jacket_cheese
+  name: Jacket Potato Cheese
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 155
+  protein_per_100g: 7
+  carbs_per_100g: 21
+  fat_per_100g: 6
+  serving_grams: 420
+  serving_label: 1 portion (420 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk
+  unit_grams: 420
+- source: gymflow
+  source_id: hungryhorse_jacket_beans
+  name: Jacket Potato Beans
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 5
+  carbs_per_100g: 21
+  fat_per_100g: 1
+  serving_grams: 420
+  serving_label: 1 portion (420 g)
+  portion_unit: meal
+  tags: chain,pub,meal,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: ''
+  unit_grams: 420
+- source: gymflow
+  source_id: hungryhorse_kids_chicken_chips
+  name: Kids' Chicken & Chips
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 12
+  carbs_per_100g: 24
+  fat_per_100g: 9
+  serving_grams: 320
+  serving_label: 1 portion (320 g)
+  portion_unit: meal
+  tags: chain,pub,meal,kids
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 320
+- source: gymflow
+  source_id: hungryhorse_breakfast_full
+  name: The Big Plate Breakfast
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 12
+  fat_per_100g: 13
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: chain,pub,meal,breakfast
+  dietary_compat: pescatarian
+  allergens: gluten,eggs,sulphites
+  unit_grams: 700
+- source: gymflow
+  source_id: hungryhorse_chips
+  name: Chips
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 4
+  carbs_per_100g: 36
+  fat_per_100g: 8
+  serving_grams: 220
+  serving_label: 1 portion (220 g)
+  portion_unit: pack
+  tags: chain,pub,side
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 220
+- source: gymflow
+  source_id: hungryhorse_garlic_bread
+  name: Garlic Bread
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 7
+  carbs_per_100g: 38
+  fat_per_100g: 12
+  serving_grams: 130
+  serving_label: 1 portion (130 g)
+  portion_unit: pack
+  tags: chain,pub,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 130
+- source: gymflow
+  source_id: hungryhorse_onion_rings
+  name: Onion Rings
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 305
+  protein_per_100g: 4
+  carbs_per_100g: 35
+  fat_per_100g: 16
+  serving_grams: 120
+  serving_label: 1 portion (120 g)
+  portion_unit: pack
+  tags: chain,pub,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 120
+- source: gymflow
+  source_id: hungryhorse_loaded_chips
+  name: Loaded Cheese & Bacon Chips
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 8
+  carbs_per_100g: 24
+  fat_per_100g: 17
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: chain,pub,side
+  dietary_compat: pescatarian
+  allergens: milk,eggs
+  unit_grams: 250
+- source: gymflow
+  source_id: hungryhorse_garlic_dough_balls
+  name: Garlic Dough Balls
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 8
+  carbs_per_100g: 35
+  fat_per_100g: 11
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,pub,starter
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 200
+- source: gymflow
+  source_id: hungryhorse_chicken_wings
+  name: Chicken Wings
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 22
+  carbs_per_100g: 7
+  fat_per_100g: 14
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,pub,starter,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 200
+- source: gymflow
+  source_id: hungryhorse_calamari
+  name: Calamari
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 170
+  serving_label: 1 portion (170 g)
+  portion_unit: pack
+  tags: chain,pub,starter
+  dietary_compat: pescatarian
+  allergens: gluten,molluscs,eggs
+  unit_grams: 170
+- source: gymflow
+  source_id: hungryhorse_brie_bites
+  name: Brie Bites
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 22
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,pub,starter
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 180
+- source: gymflow
+  source_id: hungryhorse_sticky_toffee
+  name: Sticky Toffee Pudding
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 16
+  serving_grams: 170
+  serving_label: 1 piece (170 g)
+  portion_unit: piece
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 170
+- source: gymflow
+  source_id: hungryhorse_chocolate_brownie
+  name: Chocolate Brownie Sundae
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 405
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  serving_grams: 160
+  serving_label: 1 piece (160 g)
+  portion_unit: piece
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 160
+- source: gymflow
+  source_id: hungryhorse_apple_pie
+  name: Apple Pie
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 3
+  carbs_per_100g: 40
+  fat_per_100g: 11
+  serving_grams: 180
+  serving_label: 1 piece (180 g)
+  portion_unit: piece
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 180
+- source: gymflow
+  source_id: hungryhorse_ice_cream_3
+  name: Ice Cream (3 scoops)
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 4
+  carbs_per_100g: 24
+  fat_per_100g: 10
+  serving_grams: 150
+  serving_label: 1 piece (150 g)
+  portion_unit: piece
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+  unit_grams: 150
+- source: gymflow
+  source_id: hungryhorse_lager_pint
+  name: Lager (pint)
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 43
+  protein_per_100g: 0.3
+  carbs_per_100g: 3.0
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: chain,pub,drink,alcoholic
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 568
+- source: gymflow
+  source_id: hungryhorse_cider_pint
+  name: Cider (pint)
+  brand: Hungry Horse
+  region_codes: gb
+  kcal_per_100g: 47
+  protein_per_100g: 0
+  carbs_per_100g: 5.5
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: chain,pub,drink,alcoholic
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+  unit_grams: 568

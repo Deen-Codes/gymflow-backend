@@ -1,0 +1,827 @@
+# baking_essentials.yaml — flours, sugars, oils, spices, herbs, baking aids,
+# nut butters, sweeteners.
+- source: gymflow
+  source_id: flour_plain_white
+  name: Plain White Flour (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 364
+  protein_per_100g: 10.3
+  carbs_per_100g: 76
+  fat_per_100g: 1
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: pantry,baking,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: flour_self_raising
+  name: Self-Raising Flour (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 10
+  carbs_per_100g: 76
+  fat_per_100g: 1
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: pantry,baking,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: flour_wholemeal
+  name: Wholemeal Flour (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 13.2
+  carbs_per_100g: 65
+  fat_per_100g: 2.2
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: pantry,baking,grain,fibre
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: flour_strong_white_bread
+  name: Strong White Bread Flour (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 358
+  protein_per_100g: 12.5
+  carbs_per_100g: 71
+  fat_per_100g: 1.5
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: pantry,baking,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: flour_gluten_free
+  name: Gluten-Free Plain Flour (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 5
+  carbs_per_100g: 80
+  fat_per_100g: 0.8
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: pantry,baking,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: flour_almond
+  name: Ground Almonds / Almond Flour (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 615
+  protein_per_100g: 21
+  carbs_per_100g: 7
+  fat_per_100g: 53
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: pantry,baking,low_carb
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts
+- source: gymflow
+  source_id: flour_coconut
+  name: Coconut Flour (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 400
+  protein_per_100g: 18
+  carbs_per_100g: 60
+  fat_per_100g: 14
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: pantry,baking,low_carb
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: sugar_white_caster_5g
+  name: White Caster Sugar (1 tsp/5g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 400
+  protein_per_100g: 0
+  carbs_per_100g: 100
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 tsp (5 g)
+  portion_unit: tsp
+  tags: pantry,baking,sweetener
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: sugar_brown_5g
+  name: Brown Sugar (1 tsp/5g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 0
+  carbs_per_100g: 98
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 tsp (5 g)
+  portion_unit: tsp
+  tags: pantry,baking,sweetener
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: sugar_icing_5g
+  name: Icing Sugar (1 tsp/5g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 400
+  protein_per_100g: 0
+  carbs_per_100g: 100
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 tsp (5 g)
+  portion_unit: tsp
+  tags: pantry,baking,sweetener
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: sugar_demerara_5g
+  name: Demerara Sugar (1 tsp/5g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 0
+  carbs_per_100g: 99
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 tsp (5 g)
+  portion_unit: tsp
+  tags: pantry,baking,sweetener
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: stevia_3g
+  name: Stevia Sweetener (1 tsp/3g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  serving_grams: 3
+  serving_label: 1 tsp (3 g)
+  portion_unit: tsp
+  tags: pantry,sweetener,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 3
+- source: gymflow
+  source_id: truvia_2g
+  name: Truvia Sweetener (1 sachet/2g)
+  brand: Truvia
+  region_codes: gb
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  serving_grams: 2
+  serving_label: 1 portion (2 g)
+  portion_unit: pack
+  tags: pantry,branded,sweetener,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 2
+- source: gymflow
+  source_id: sweetener_canderel_1g
+  name: Canderel Sweetener (1 sachet/1g)
+  brand: Canderel
+  region_codes: gb
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  serving_grams: 1
+  serving_label: 1 portion (1 g)
+  portion_unit: pack
+  tags: pantry,branded,sweetener,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 1
+- source: gymflow
+  source_id: oil_vegetable_15ml
+  name: Vegetable Oil (1 tbsp)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  serving_grams: 14
+  serving_label: 1 tbsp (14 g)
+  portion_unit: tbsp
+  tags: pantry,fat,oil
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 14
+- source: gymflow
+  source_id: oil_sunflower_15ml
+  name: Sunflower Oil (1 tbsp)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  serving_grams: 14
+  serving_label: 1 tbsp (14 g)
+  portion_unit: tbsp
+  tags: pantry,fat,oil
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 14
+- source: gymflow
+  source_id: oil_sesame_15ml
+  name: Sesame Oil (1 tbsp)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  serving_grams: 14
+  serving_label: 1 tbsp (14 g)
+  portion_unit: tbsp
+  tags: pantry,fat,oil
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: sesame
+  unit_grams: 14
+- source: gymflow
+  source_id: oil_avocado_15ml
+  name: Avocado Oil (1 tbsp)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  serving_grams: 14
+  serving_label: 1 tbsp (14 g)
+  portion_unit: tbsp
+  tags: pantry,fat,oil
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 14
+- source: gymflow
+  source_id: oil_mct_15ml
+  name: MCT Oil (1 tbsp)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 850
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  serving_grams: 14
+  serving_label: 1 tbsp (14 g)
+  portion_unit: tbsp
+  tags: pantry,fat,oil,supplement
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 14
+- source: gymflow
+  source_id: crisp_n_dry_15ml
+  name: Crisp 'n Dry Oil (1 tbsp)
+  brand: Crisp 'n Dry
+  region_codes: gb
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  serving_grams: 14
+  serving_label: 1 tbsp (14 g)
+  portion_unit: tbsp
+  tags: pantry,branded,fat,oil
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 14
+- source: gymflow
+  source_id: spice_cumin_2g
+  name: Ground Cumin (1 tsp/2g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 375
+  protein_per_100g: 18
+  carbs_per_100g: 44
+  fat_per_100g: 22
+  serving_grams: 2
+  serving_label: 1 tsp (2 g)
+  portion_unit: tsp
+  tags: pantry,spice
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 2
+- source: gymflow
+  source_id: spice_paprika_2g
+  name: Paprika (1 tsp/2g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 14
+  carbs_per_100g: 54
+  fat_per_100g: 13
+  serving_grams: 2
+  serving_label: 1 tsp (2 g)
+  portion_unit: tsp
+  tags: pantry,spice
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 2
+- source: gymflow
+  source_id: spice_smoked_paprika_2g
+  name: Smoked Paprika (1 tsp/2g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 14
+  carbs_per_100g: 54
+  fat_per_100g: 13
+  serving_grams: 2
+  serving_label: 1 tsp (2 g)
+  portion_unit: tsp
+  tags: pantry,spice
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 2
+- source: gymflow
+  source_id: spice_turmeric_2g
+  name: Ground Turmeric (1 tsp/2g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 8
+  carbs_per_100g: 65
+  fat_per_100g: 10
+  serving_grams: 2
+  serving_label: 1 tsp (2 g)
+  portion_unit: tsp
+  tags: pantry,spice
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 2
+- source: gymflow
+  source_id: spice_cinnamon_2g
+  name: Ground Cinnamon (1 tsp/2g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 4
+  carbs_per_100g: 81
+  fat_per_100g: 1.2
+  serving_grams: 2
+  serving_label: 1 tsp (2 g)
+  portion_unit: tsp
+  tags: pantry,spice
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 2
+- source: gymflow
+  source_id: spice_garam_masala_2g
+  name: Garam Masala (1 tsp/2g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 14
+  carbs_per_100g: 50
+  fat_per_100g: 16
+  serving_grams: 2
+  serving_label: 1 tsp (2 g)
+  portion_unit: tsp
+  tags: pantry,spice
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 2
+- source: gymflow
+  source_id: spice_chilli_powder_2g
+  name: Chilli Powder (1 tsp/2g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 13
+  carbs_per_100g: 50
+  fat_per_100g: 14
+  serving_grams: 2
+  serving_label: 1 tsp (2 g)
+  portion_unit: tsp
+  tags: pantry,spice
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 2
+- source: gymflow
+  source_id: spice_ginger_ground_2g
+  name: Ground Ginger (1 tsp/2g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 335
+  protein_per_100g: 9
+  carbs_per_100g: 71
+  fat_per_100g: 4
+  serving_grams: 2
+  serving_label: 1 tsp (2 g)
+  portion_unit: tsp
+  tags: pantry,spice
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 2
+- source: gymflow
+  source_id: spice_garlic_powder_3g
+  name: Garlic Powder (1 tsp/3g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 330
+  protein_per_100g: 17
+  carbs_per_100g: 73
+  fat_per_100g: 0.7
+  serving_grams: 3
+  serving_label: 1 tsp (3 g)
+  portion_unit: tsp
+  tags: pantry,spice
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 3
+- source: gymflow
+  source_id: herbs_oregano_dried_1g
+  name: Dried Oregano (1 tsp/1g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 9
+  carbs_per_100g: 65
+  fat_per_100g: 4
+  serving_grams: 1
+  serving_label: 1 tsp (1 g)
+  portion_unit: tsp
+  tags: pantry,spice,herb
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 1
+- source: gymflow
+  source_id: herbs_basil_dried_1g
+  name: Dried Basil (1 tsp/1g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 23
+  carbs_per_100g: 48
+  fat_per_100g: 4
+  serving_grams: 1
+  serving_label: 1 tsp (1 g)
+  portion_unit: tsp
+  tags: pantry,spice,herb
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 1
+- source: gymflow
+  source_id: herbs_thyme_dried_1g
+  name: Dried Thyme (1 tsp/1g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 9
+  carbs_per_100g: 64
+  fat_per_100g: 7.4
+  serving_grams: 1
+  serving_label: 1 tsp (1 g)
+  portion_unit: tsp
+  tags: pantry,spice,herb
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 1
+- source: gymflow
+  source_id: herbs_mixed_dried_1g
+  name: Dried Mixed Herbs (1 tsp/1g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 11
+  carbs_per_100g: 55
+  fat_per_100g: 5
+  serving_grams: 1
+  serving_label: 1 tsp (1 g)
+  portion_unit: tsp
+  tags: pantry,spice,herb
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 1
+- source: gymflow
+  source_id: seasoning_black_pepper_1g
+  name: Ground Black Pepper (1 tsp/1g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 11
+  carbs_per_100g: 64
+  fat_per_100g: 3.3
+  serving_grams: 1
+  serving_label: 1 tsp (1 g)
+  portion_unit: tsp
+  tags: pantry,spice
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 1
+- source: gymflow
+  source_id: seasoning_salt_1g
+  name: Salt (1g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 1
+  serving_label: 1 tsp (1 g)
+  portion_unit: tsp
+  tags: pantry,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 1
+- source: gymflow
+  source_id: baking_yeast_dry_5g
+  name: Dry Yeast (1 sachet/7g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 325
+  protein_per_100g: 40
+  carbs_per_100g: 41
+  fat_per_100g: 8
+  serving_grams: 7
+  serving_label: 1 portion (7 g)
+  portion_unit: pack
+  tags: pantry,baking
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 7
+- source: gymflow
+  source_id: baking_powder_3g
+  name: Baking Powder (1 tsp/3g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 0
+  carbs_per_100g: 30
+  fat_per_100g: 0
+  serving_grams: 3
+  serving_label: 1 tsp (3 g)
+  portion_unit: tsp
+  tags: pantry,baking,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 3
+- source: gymflow
+  source_id: baking_soda_3g
+  name: Bicarbonate of Soda (1 tsp/3g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 3
+  serving_label: 1 tsp (3 g)
+  portion_unit: tsp
+  tags: pantry,baking,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 3
+- source: gymflow
+  source_id: baking_cocoa_powder_5g
+  name: Cocoa Powder (1 tbsp/5g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 20
+  carbs_per_100g: 58
+  fat_per_100g: 14
+  serving_grams: 5
+  serving_label: 1 tbsp (5 g)
+  portion_unit: tbsp
+  tags: pantry,baking
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: baking_cornflour_5g
+  name: Cornflour (1 tbsp/5g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 0.3
+  carbs_per_100g: 91
+  fat_per_100g: 0.1
+  serving_grams: 5
+  serving_label: 1 tbsp (5 g)
+  portion_unit: tbsp
+  tags: pantry,baking
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: baking_chocolate_chips_dark_15g
+  name: Dark Chocolate Chips (15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 510
+  protein_per_100g: 5
+  carbs_per_100g: 65
+  fat_per_100g: 25
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: pantry,baking
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: soy
+  unit_grams: 15
+- source: gymflow
+  source_id: baking_chocolate_chips_milk_15g
+  name: Milk Chocolate Chips (15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 530
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 28
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: pantry,baking
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+  unit_grams: 15
+- source: gymflow
+  source_id: baking_vanilla_extract_5ml
+  name: Vanilla Extract (1 tsp/5ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 0.1
+  carbs_per_100g: 13
+  fat_per_100g: 0.1
+  serving_grams: 5
+  serving_label: 1 tsp (5 g)
+  portion_unit: tsp
+  tags: pantry,baking,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: honey_runny_15g
+  name: Runny Honey (1 tbsp/15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 304
+  protein_per_100g: 0.3
+  carbs_per_100g: 82.4
+  fat_per_100g: 0
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: pantry,sweetener
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: maple_syrup_15ml
+  name: Maple Syrup (1 tbsp)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 260
+  protein_per_100g: 0
+  carbs_per_100g: 67
+  fat_per_100g: 0.1
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: pantry,sweetener
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: agave_syrup_15ml
+  name: Agave Syrup (1 tbsp)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 310
+  protein_per_100g: 0
+  carbs_per_100g: 76
+  fat_per_100g: 0
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: pantry,sweetener
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: golden_syrup_15g
+  name: Golden Syrup (1 tbsp)
+  brand: Lyle's
+  region_codes: gb
+  kcal_per_100g: 300
+  protein_per_100g: 0.3
+  carbs_per_100g: 79
+  fat_per_100g: 0
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: pantry,branded,sweetener
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: nut_butter_almond_15g
+  name: Almond Butter (1 tbsp/15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 614
+  protein_per_100g: 21
+  carbs_per_100g: 19
+  fat_per_100g: 56
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: pantry,fat,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts
+  unit_grams: 15
+- source: gymflow
+  source_id: nut_butter_cashew_15g
+  name: Cashew Butter (1 tbsp/15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 580
+  protein_per_100g: 18
+  carbs_per_100g: 28
+  fat_per_100g: 47
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: pantry,fat,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts
+  unit_grams: 15
+- source: gymflow
+  source_id: nut_butter_peanut_crunchy_15g
+  name: Crunchy Peanut Butter (1 tbsp/15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 600
+  protein_per_100g: 25
+  carbs_per_100g: 12
+  fat_per_100g: 50
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: pantry,fat,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: peanuts
+  unit_grams: 15
+- source: gymflow
+  source_id: nut_butter_meridian_smooth
+  name: Meridian Smooth Peanut Butter (1 tbsp)
+  brand: Meridian
+  region_codes: gb
+  kcal_per_100g: 605
+  protein_per_100g: 30
+  carbs_per_100g: 11
+  fat_per_100g: 50
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: pantry,branded,fat,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: peanuts
+  unit_grams: 15
+- source: gymflow
+  source_id: nut_butter_pip_n_nut_almond
+  name: Pip & Nut Almond Butter (1 tbsp)
+  brand: Pip & Nut
+  region_codes: gb
+  kcal_per_100g: 615
+  protein_per_100g: 22
+  carbs_per_100g: 12
+  fat_per_100g: 53
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: pantry,branded,fat,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts
+  unit_grams: 15

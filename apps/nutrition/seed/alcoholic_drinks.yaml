@@ -1,0 +1,1010 @@
+# alcoholic_drinks.yaml — beers, ciders, wines, spirits, cocktails.
+# Macros include alcohol kcal (7 kcal/g ethanol) so the (P×4)+(C×4)+(F×9) check
+# will under-shoot kcal — that is correct, NOT an error.
+- source: gymflow
+  source_id: beer_carling_pint
+  name: Carling (pint)
+  brand: Carling
+  region_codes: gb
+  kcal_per_100g: 36
+  protein_per_100g: 0.3
+  carbs_per_100g: 2.6
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: drink,alcoholic,lager,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 568
+- source: gymflow
+  source_id: beer_fosters_pint
+  name: Foster's (pint)
+  brand: Foster's
+  region_codes: gb
+  kcal_per_100g: 38
+  protein_per_100g: 0.3
+  carbs_per_100g: 2.8
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: drink,alcoholic,lager,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 568
+- source: gymflow
+  source_id: beer_stella_330
+  name: Stella Artois (330ml bottle)
+  brand: Stella Artois
+  region_codes: gb
+  kcal_per_100g: 43
+  protein_per_100g: 0.3
+  carbs_per_100g: 3.4
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 bottle (330 g)
+  portion_unit: bottle
+  tags: drink,alcoholic,lager,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 330
+- source: gymflow
+  source_id: beer_stella_pint
+  name: Stella Artois (pint)
+  brand: Stella Artois
+  region_codes: gb
+  kcal_per_100g: 43
+  protein_per_100g: 0.3
+  carbs_per_100g: 3.4
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: drink,alcoholic,lager,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 568
+- source: gymflow
+  source_id: beer_heineken_330
+  name: Heineken (330ml bottle)
+  brand: Heineken
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 0.3
+  carbs_per_100g: 3.2
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 bottle (330 g)
+  portion_unit: bottle
+  tags: drink,alcoholic,lager,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 330
+- source: gymflow
+  source_id: beer_heineken_pint
+  name: Heineken (pint)
+  brand: Heineken
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 0.3
+  carbs_per_100g: 3.2
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: drink,alcoholic,lager,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 568
+- source: gymflow
+  source_id: beer_corona_330
+  name: Corona Extra (330ml bottle)
+  brand: Corona
+  region_codes: gb
+  kcal_per_100g: 39
+  protein_per_100g: 0.3
+  carbs_per_100g: 3.0
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 bottle (330 g)
+  portion_unit: bottle
+  tags: drink,alcoholic,lager,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 330
+- source: gymflow
+  source_id: beer_madri_pint
+  name: Madri Excepcional (pint)
+  brand: Madri
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 0.3
+  carbs_per_100g: 3.2
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: drink,alcoholic,lager,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 568
+- source: gymflow
+  source_id: beer_peroni_330
+  name: Peroni Nastro Azzurro (330ml)
+  brand: Peroni
+  region_codes: gb
+  kcal_per_100g: 43
+  protein_per_100g: 0.3
+  carbs_per_100g: 3.4
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 bottle (330 g)
+  portion_unit: bottle
+  tags: drink,alcoholic,lager,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 330
+- source: gymflow
+  source_id: beer_asahi_330
+  name: Asahi Super Dry (330ml)
+  brand: Asahi
+  region_codes: gb
+  kcal_per_100g: 40
+  protein_per_100g: 0.3
+  carbs_per_100g: 3.0
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 bottle (330 g)
+  portion_unit: bottle
+  tags: drink,alcoholic,lager,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 330
+- source: gymflow
+  source_id: beer_san_miguel_pint
+  name: San Miguel (pint)
+  brand: San Miguel
+  region_codes: gb
+  kcal_per_100g: 43
+  protein_per_100g: 0.3
+  carbs_per_100g: 3.4
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: drink,alcoholic,lager,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 568
+- source: gymflow
+  source_id: beer_tiger_330
+  name: Tiger (330ml bottle)
+  brand: Tiger
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 0.3
+  carbs_per_100g: 3.4
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 bottle (330 g)
+  portion_unit: bottle
+  tags: drink,alcoholic,lager,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 330
+- source: gymflow
+  source_id: beer_carlsberg_pint
+  name: Carlsberg (pint)
+  brand: Carlsberg
+  region_codes: gb
+  kcal_per_100g: 36
+  protein_per_100g: 0.3
+  carbs_per_100g: 2.6
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: drink,alcoholic,lager,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 568
+- source: gymflow
+  source_id: beer_kronenbourg_pint
+  name: Kronenbourg 1664 (pint)
+  brand: Kronenbourg
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 0.3
+  carbs_per_100g: 3.2
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: drink,alcoholic,lager,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 568
+- source: gymflow
+  source_id: beer_birra_moretti_330
+  name: Birra Moretti (330ml)
+  brand: Birra Moretti
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 0.4
+  carbs_per_100g: 3.2
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 bottle (330 g)
+  portion_unit: bottle
+  tags: drink,alcoholic,lager,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 330
+- source: gymflow
+  source_id: beer_brewdog_punk_ipa_330
+  name: BrewDog Punk IPA (330ml)
+  brand: BrewDog
+  region_codes: gb
+  kcal_per_100g: 46
+  protein_per_100g: 0.5
+  carbs_per_100g: 3.5
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 can (330 g)
+  portion_unit: can
+  tags: drink,alcoholic,beer,ipa,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 330
+- source: gymflow
+  source_id: beer_brewdog_hazy_jane_330
+  name: BrewDog Hazy Jane (330ml)
+  brand: BrewDog
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 0.5
+  carbs_per_100g: 4.0
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 can (330 g)
+  portion_unit: can
+  tags: drink,alcoholic,beer,ipa,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 330
+- source: gymflow
+  source_id: beer_brewdog_lost_lager_330
+  name: BrewDog Lost Lager (330ml)
+  brand: BrewDog
+  region_codes: gb
+  kcal_per_100g: 38
+  protein_per_100g: 0.4
+  carbs_per_100g: 3.0
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 can (330 g)
+  portion_unit: can
+  tags: drink,alcoholic,lager,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 330
+- source: gymflow
+  source_id: beer_brewdog_nanny_state_330
+  name: BrewDog Nanny State (alcohol-free, 330ml)
+  brand: BrewDog
+  region_codes: gb
+  kcal_per_100g: 12
+  protein_per_100g: 0.5
+  carbs_per_100g: 1.5
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 can (330 g)
+  portion_unit: can
+  tags: drink,beer,branded,low_calorie,alcohol_free
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 330
+- source: gymflow
+  source_id: beer_camden_hells_330
+  name: Camden Hells Lager (330ml)
+  brand: Camden Town
+  region_codes: gb
+  kcal_per_100g: 39
+  protein_per_100g: 0.4
+  carbs_per_100g: 3.0
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 can (330 g)
+  portion_unit: can
+  tags: drink,alcoholic,lager,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 330
+- source: gymflow
+  source_id: beer_beavertown_neck_oil_330
+  name: Beavertown Neck Oil (330ml)
+  brand: Beavertown
+  region_codes: gb
+  kcal_per_100g: 45
+  protein_per_100g: 0.5
+  carbs_per_100g: 3.5
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 can (330 g)
+  portion_unit: can
+  tags: drink,alcoholic,beer,ipa,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 330
+- source: gymflow
+  source_id: beer_guinness_pint
+  name: Guinness Draught (pint)
+  brand: Guinness
+  region_codes: gb
+  kcal_per_100g: 35
+  protein_per_100g: 0.5
+  carbs_per_100g: 3.0
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: drink,alcoholic,stout,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 568
+- source: gymflow
+  source_id: beer_guinness_can_440
+  name: Guinness Draught (440ml can)
+  brand: Guinness
+  region_codes: gb
+  kcal_per_100g: 35
+  protein_per_100g: 0.5
+  carbs_per_100g: 3.0
+  fat_per_100g: 0
+  serving_grams: 440
+  serving_label: 1 can (440 g)
+  portion_unit: can
+  tags: drink,alcoholic,stout,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 440
+- source: gymflow
+  source_id: beer_doom_bar_pint
+  name: Doom Bar Cornish Ale (pint)
+  brand: Sharp's
+  region_codes: gb
+  kcal_per_100g: 38
+  protein_per_100g: 0.4
+  carbs_per_100g: 3.0
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: drink,alcoholic,ale,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 568
+- source: gymflow
+  source_id: beer_old_speckled_hen_pint
+  name: Old Speckled Hen (pint)
+  brand: Old Speckled Hen
+  region_codes: gb
+  kcal_per_100g: 44
+  protein_per_100g: 0.4
+  carbs_per_100g: 3.5
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: drink,alcoholic,ale,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 568
+- source: gymflow
+  source_id: cider_strongbow_pint
+  name: Strongbow (pint)
+  brand: Strongbow
+  region_codes: gb
+  kcal_per_100g: 47
+  protein_per_100g: 0
+  carbs_per_100g: 5.5
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: drink,alcoholic,cider,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+  unit_grams: 568
+- source: gymflow
+  source_id: cider_magners_500
+  name: Magners Original (500ml)
+  brand: Magners
+  region_codes: gb
+  kcal_per_100g: 51
+  protein_per_100g: 0
+  carbs_per_100g: 5.5
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: drink,alcoholic,cider,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+  unit_grams: 500
+- source: gymflow
+  source_id: cider_bulmers_500
+  name: Bulmers Original (500ml)
+  brand: Bulmers
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 0
+  carbs_per_100g: 5.5
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: drink,alcoholic,cider,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+  unit_grams: 500
+- source: gymflow
+  source_id: cider_rekorderlig_strawberry_500
+  name: Rekorderlig Strawberry & Lime (500ml)
+  brand: Rekorderlig
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 0
+  carbs_per_100g: 9.0
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: drink,alcoholic,cider,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+  unit_grams: 500
+- source: gymflow
+  source_id: cider_old_mout_kiwi_lime_500
+  name: Old Mout Kiwi & Lime (500ml)
+  brand: Old Mout
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 0
+  carbs_per_100g: 8.0
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: drink,alcoholic,cider,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+  unit_grams: 500
+- source: gymflow
+  source_id: cider_aspall_dry_500
+  name: Aspall Dry English Cyder (500ml)
+  brand: Aspall
+  region_codes: gb
+  kcal_per_100g: 51
+  protein_per_100g: 0
+  carbs_per_100g: 5.5
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: drink,alcoholic,cider,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+  unit_grams: 500
+- source: gymflow
+  source_id: cider_kopparberg_strawberry_lime_500
+  name: Kopparberg Strawberry & Lime (500ml)
+  brand: Kopparberg
+  region_codes: gb
+  kcal_per_100g: 62
+  protein_per_100g: 0
+  carbs_per_100g: 8.5
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: drink,alcoholic,cider,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+  unit_grams: 500
+- source: gymflow
+  source_id: wine_red_175ml
+  name: Red Wine (175ml glass)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 85
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.5
+  fat_per_100g: 0
+  serving_grams: 175
+  serving_label: 1 ml (175 g)
+  portion_unit: ml
+  tags: drink,alcoholic,wine
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: wine_red_125ml
+  name: Red Wine (125ml glass)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 85
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.5
+  fat_per_100g: 0
+  serving_grams: 125
+  serving_label: 1 ml (125 g)
+  portion_unit: ml
+  tags: drink,alcoholic,wine
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: wine_red_250ml
+  name: Red Wine (250ml large glass)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 85
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.5
+  fat_per_100g: 0
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: drink,alcoholic,wine
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: wine_white_175ml
+  name: White Wine (175ml glass)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 0.1
+  carbs_per_100g: 1.0
+  fat_per_100g: 0
+  serving_grams: 175
+  serving_label: 1 ml (175 g)
+  portion_unit: ml
+  tags: drink,alcoholic,wine
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: wine_white_125ml
+  name: White Wine (125ml glass)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 0.1
+  carbs_per_100g: 1.0
+  fat_per_100g: 0
+  serving_grams: 125
+  serving_label: 1 ml (125 g)
+  portion_unit: ml
+  tags: drink,alcoholic,wine
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: wine_white_250ml
+  name: White Wine (250ml large glass)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 0.1
+  carbs_per_100g: 1.0
+  fat_per_100g: 0
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: drink,alcoholic,wine
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: wine_rose_175ml
+  name: Rosé Wine (175ml glass)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 82
+  protein_per_100g: 0.1
+  carbs_per_100g: 1.5
+  fat_per_100g: 0
+  serving_grams: 175
+  serving_label: 1 ml (175 g)
+  portion_unit: ml
+  tags: drink,alcoholic,wine
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: wine_prosecco_125ml
+  name: Prosecco (125ml glass)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 0.1
+  carbs_per_100g: 1.5
+  fat_per_100g: 0
+  serving_grams: 125
+  serving_label: 1 ml (125 g)
+  portion_unit: ml
+  tags: drink,alcoholic,wine,sparkling
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: wine_champagne_125ml
+  name: Champagne (125ml glass)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 90
+  protein_per_100g: 0.1
+  carbs_per_100g: 1.0
+  fat_per_100g: 0
+  serving_grams: 125
+  serving_label: 1 ml (125 g)
+  portion_unit: ml
+  tags: drink,alcoholic,wine,sparkling
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: wine_dessert_75ml
+  name: Dessert / Pudding Wine (75ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 0.1
+  carbs_per_100g: 22
+  fat_per_100g: 0
+  serving_grams: 75
+  serving_label: 1 ml (75 g)
+  portion_unit: ml
+  tags: drink,alcoholic,wine
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: spirit_vodka_25
+  name: Vodka (25ml shot)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 25
+  serving_label: 1 shot (25 g)
+  portion_unit: shot
+  tags: drink,alcoholic,spirit
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: spirit_gin_25
+  name: Gin (25ml shot)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 25
+  serving_label: 1 shot (25 g)
+  portion_unit: shot
+  tags: drink,alcoholic,spirit
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: spirit_whisky_25
+  name: Whisky (25ml shot)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 25
+  serving_label: 1 shot (25 g)
+  portion_unit: shot
+  tags: drink,alcoholic,spirit
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 25
+- source: gymflow
+  source_id: spirit_rum_25
+  name: Rum (25ml shot)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 25
+  serving_label: 1 shot (25 g)
+  portion_unit: shot
+  tags: drink,alcoholic,spirit
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: spirit_tequila_25
+  name: Tequila (25ml shot)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 25
+  serving_label: 1 shot (25 g)
+  portion_unit: shot
+  tags: drink,alcoholic,spirit
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: spirit_brandy_25
+  name: Brandy (25ml shot)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 25
+  serving_label: 1 shot (25 g)
+  portion_unit: shot
+  tags: drink,alcoholic,spirit
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: spirit_baileys_50
+  name: Baileys Irish Cream (50ml)
+  brand: Baileys
+  region_codes: gb
+  kcal_per_100g: 327
+  protein_per_100g: 3
+  carbs_per_100g: 24
+  fat_per_100g: 13
+  serving_grams: 50
+  serving_label: 1 shot (50 g)
+  portion_unit: shot
+  tags: drink,alcoholic,liqueur,branded
+  dietary_compat: vegetarian,pescatarian,kosher
+  allergens: milk
+  unit_grams: 50
+- source: gymflow
+  source_id: spirit_jagermeister_25
+  name: Jägermeister (25ml shot)
+  brand: Jägermeister
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 0
+  carbs_per_100g: 12
+  fat_per_100g: 0
+  serving_grams: 25
+  serving_label: 1 shot (25 g)
+  portion_unit: shot
+  tags: drink,alcoholic,liqueur,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: spirit_aperol_25
+  name: Aperol (25ml shot)
+  brand: Aperol
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 0
+  carbs_per_100g: 22
+  fat_per_100g: 0
+  serving_grams: 25
+  serving_label: 1 shot (25 g)
+  portion_unit: shot
+  tags: drink,alcoholic,liqueur,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+  unit_grams: 25
+- source: gymflow
+  source_id: spirit_campari_25
+  name: Campari (25ml shot)
+  brand: Campari
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 25
+  serving_label: 1 shot (25 g)
+  portion_unit: shot
+  tags: drink,alcoholic,liqueur,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+  unit_grams: 25
+- source: gymflow
+  source_id: cocktail_gin_tonic
+  name: Gin & Tonic
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 0
+  carbs_per_100g: 7
+  fat_per_100g: 0
+  serving_grams: 200
+  serving_label: 1 ml (200 g)
+  portion_unit: ml
+  tags: drink,alcoholic,cocktail
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: cocktail_vodka_lime_soda
+  name: Vodka, Lime & Soda
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 0
+  carbs_per_100g: 0.5
+  fat_per_100g: 0
+  serving_grams: 200
+  serving_label: 1 ml (200 g)
+  portion_unit: ml
+  tags: drink,alcoholic,cocktail,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: cocktail_mojito
+  name: Mojito (generic)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 0.2
+  carbs_per_100g: 16
+  fat_per_100g: 0
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: drink,alcoholic,cocktail
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: cocktail_margarita
+  name: Margarita (generic)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 0
+  carbs_per_100g: 14
+  fat_per_100g: 0
+  serving_grams: 175
+  serving_label: 1 ml (175 g)
+  portion_unit: ml
+  tags: drink,alcoholic,cocktail
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: cocktail_old_fashioned
+  name: Old Fashioned
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 0
+  carbs_per_100g: 7
+  fat_per_100g: 0
+  serving_grams: 100
+  serving_label: 1 ml (100 g)
+  portion_unit: ml
+  tags: drink,alcoholic,cocktail
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: cocktail_negroni
+  name: Negroni
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 0
+  carbs_per_100g: 13
+  fat_per_100g: 0
+  serving_grams: 90
+  serving_label: 1 ml (90 g)
+  portion_unit: ml
+  tags: drink,alcoholic,cocktail
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: cocktail_bloody_mary
+  name: Bloody Mary
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 1
+  carbs_per_100g: 7
+  fat_per_100g: 0.2
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: drink,alcoholic,cocktail
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: celery
+- source: gymflow
+  source_id: seltzer_white_claw_330
+  name: White Claw Hard Seltzer (330ml)
+  brand: White Claw
+  region_codes: gb
+  kcal_per_100g: 27
+  protein_per_100g: 0
+  carbs_per_100g: 1.7
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 can (330 g)
+  portion_unit: can
+  tags: drink,alcoholic,seltzer,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 330
+- source: gymflow
+  source_id: seltzer_white_claw_mango_330
+  name: White Claw Mango (330ml)
+  brand: White Claw
+  region_codes: gb
+  kcal_per_100g: 27
+  protein_per_100g: 0
+  carbs_per_100g: 1.7
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 can (330 g)
+  portion_unit: can
+  tags: drink,alcoholic,seltzer,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 330
+- source: gymflow
+  source_id: seltzer_topo_chico_330
+  name: Topo Chico Hard Seltzer (330ml)
+  brand: Topo Chico
+  region_codes: gb
+  kcal_per_100g: 30
+  protein_per_100g: 0
+  carbs_per_100g: 2
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 can (330 g)
+  portion_unit: can
+  tags: drink,alcoholic,seltzer,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 330
+- source: gymflow
+  source_id: beer_heineken_zero_330
+  name: Heineken 0.0 (330ml)
+  brand: Heineken
+  region_codes: gb
+  kcal_per_100g: 21
+  protein_per_100g: 0.4
+  carbs_per_100g: 4.6
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 bottle (330 g)
+  portion_unit: bottle
+  tags: drink,beer,branded,alcohol_free,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 330
+- source: gymflow
+  source_id: beer_lucky_saint_330
+  name: Lucky Saint Alcohol-Free (330ml)
+  brand: Lucky Saint
+  region_codes: gb
+  kcal_per_100g: 27
+  protein_per_100g: 0.5
+  carbs_per_100g: 5.0
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 bottle (330 g)
+  portion_unit: bottle
+  tags: drink,beer,branded,alcohol_free,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 330

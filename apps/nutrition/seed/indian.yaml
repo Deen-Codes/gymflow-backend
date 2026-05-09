@@ -1,0 +1,749 @@
+# indian.yaml — Indian curries (chicken/lamb/paneer/vegan), biryanis, breads (naan/chapati/paratha/poppadom), starters (samosa/bhaji/pakora), tandoori, sides (raita/chutney), desserts (gulab jamun/kheer/jalebi), drinks (chai/lassi).
+- source: gymflow
+  source_id: in_chicken_tikka_masala
+  name: Chicken Tikka Masala
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 12
+  fat_per_100g: 8
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: indian,curry,chicken
+  dietary_compat: pescatarian
+  allergens: milk,celery
+  unit_grams: 350
+- source: gymflow
+  source_id: in_chicken_korma
+  name: Chicken Korma
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 12
+  carbs_per_100g: 12
+  fat_per_100g: 11
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: indian,curry,chicken
+  dietary_compat: pescatarian
+  allergens: milk,tree_nuts
+  unit_grams: 350
+- source: gymflow
+  source_id: in_chicken_madras
+  name: Chicken Madras
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 14
+  carbs_per_100g: 9
+  fat_per_100g: 8
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: indian,curry,chicken
+  dietary_compat: halal,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 350
+- source: gymflow
+  source_id: in_chicken_jalfrezi
+  name: Chicken Jalfrezi
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 14
+  carbs_per_100g: 9
+  fat_per_100g: 6
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: indian,curry,chicken
+  dietary_compat: halal,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 350
+- source: gymflow
+  source_id: in_chicken_vindaloo
+  name: Chicken Vindaloo
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 9
+  fat_per_100g: 9
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: indian,curry,chicken
+  dietary_compat: halal,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 350
+- source: gymflow
+  source_id: in_chicken_balti
+  name: Chicken Balti
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 13
+  carbs_per_100g: 10
+  fat_per_100g: 8
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: indian,curry,chicken
+  dietary_compat: pescatarian,gluten_free
+  allergens: milk
+  unit_grams: 350
+- source: gymflow
+  source_id: in_chicken_dhansak
+  name: Chicken Dhansak
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 13
+  carbs_per_100g: 12
+  fat_per_100g: 5
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: indian,curry,chicken
+  dietary_compat: halal,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 350
+- source: gymflow
+  source_id: in_chicken_pasanda
+  name: Chicken Pasanda
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 10
+  fat_per_100g: 11
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: indian,curry,chicken
+  dietary_compat: pescatarian
+  allergens: milk,tree_nuts
+  unit_grams: 350
+- source: gymflow
+  source_id: in_chicken_rogan_josh
+  name: Chicken Rogan Josh
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 14
+  carbs_per_100g: 10
+  fat_per_100g: 7
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: indian,curry,chicken
+  dietary_compat: halal,pescatarian,gluten_free
+  allergens: milk
+  unit_grams: 350
+- source: gymflow
+  source_id: in_lamb_rogan_josh
+  name: Lamb Rogan Josh
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 10
+  fat_per_100g: 11
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: indian,curry
+  dietary_compat: halal,kosher,pescatarian,gluten_free
+  allergens: milk
+  unit_grams: 350
+- source: gymflow
+  source_id: in_lamb_madras
+  name: Lamb Madras
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 9
+  fat_per_100g: 11
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: indian,curry
+  dietary_compat: halal,kosher,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 350
+- source: gymflow
+  source_id: in_lamb_bhuna
+  name: Lamb Bhuna
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 15
+  carbs_per_100g: 9
+  fat_per_100g: 11
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: indian,curry
+  dietary_compat: halal,kosher,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 350
+- source: gymflow
+  source_id: in_paneer_tikka_masala
+  name: Paneer Tikka Masala
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 11
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: indian,curry,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 350
+- source: gymflow
+  source_id: in_paneer_butter_masala
+  name: Paneer Butter Masala
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 10
+  fat_per_100g: 13
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: indian,curry,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,tree_nuts
+  unit_grams: 350
+- source: gymflow
+  source_id: in_dhal_tarka
+  name: Dhal Tarka (Lentil Curry)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 6
+  carbs_per_100g: 18
+  fat_per_100g: 4
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: indian,curry,vegan,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: in_chana_masala
+  name: Chana Masala (Chickpea Curry)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 6
+  carbs_per_100g: 18
+  fat_per_100g: 3
+  serving_grams: 300
+  serving_label: 1 portion (300 g)
+  portion_unit: pack
+  tags: indian,curry,vegan,plant_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 300
+- source: gymflow
+  source_id: in_aloo_gobi
+  name: Aloo Gobi (Potato Cauliflower)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 3
+  carbs_per_100g: 12
+  fat_per_100g: 4
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: indian,curry,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: in_saag_paneer
+  name: Saag Paneer (Spinach Cheese Curry)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 7
+  carbs_per_100g: 7
+  fat_per_100g: 10
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: indian,curry,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 250
+- source: gymflow
+  source_id: in_saag_aloo
+  name: Saag Aloo (Spinach Potato)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 3
+  carbs_per_100g: 13
+  fat_per_100g: 4
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: indian,curry,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: in_pilau_rice
+  name: Pilau Rice (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 4
+  serving_grams: 250
+  serving_label: 1 grams (250 g)
+  portion_unit: grams
+  tags: indian,grain,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: in_basmati_rice_cooked
+  name: Basmati Rice, Cooked (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 121
+  protein_per_100g: 3
+  carbs_per_100g: 25
+  fat_per_100g: 0.4
+  serving_grams: 250
+  serving_label: 1 grams (250 g)
+  portion_unit: grams
+  tags: indian,grain,vegan,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: in_chicken_biryani
+  name: Chicken Biryani
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 24
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: indian,grain,chicken
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: milk,tree_nuts
+  unit_grams: 400
+- source: gymflow
+  source_id: in_lamb_biryani
+  name: Lamb Biryani
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 12
+  carbs_per_100g: 24
+  fat_per_100g: 6
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: indian,grain
+  dietary_compat: halal,kosher,pescatarian,dairy_free
+  allergens: milk,tree_nuts
+  unit_grams: 400
+- source: gymflow
+  source_id: in_veg_biryani
+  name: Vegetable Biryani
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 26
+  fat_per_100g: 3
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: indian,grain,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: tree_nuts
+  unit_grams: 400
+- source: gymflow
+  source_id: in_naan_plain
+  name: Plain Naan (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 9
+  carbs_per_100g: 50
+  fat_per_100g: 6
+  serving_grams: 70
+  serving_label: 1 piece (70 g)
+  portion_unit: piece
+  tags: indian,bread
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 70
+- source: gymflow
+  source_id: in_naan_garlic_coriander
+  name: Garlic & Coriander Naan (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 295
+  protein_per_100g: 9
+  carbs_per_100g: 49
+  fat_per_100g: 7
+  serving_grams: 70
+  serving_label: 1 piece (70 g)
+  portion_unit: piece
+  tags: indian,bread
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 70
+- source: gymflow
+  source_id: in_naan_peshwari
+  name: Peshwari Naan (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 8
+  carbs_per_100g: 52
+  fat_per_100g: 9
+  serving_grams: 80
+  serving_label: 1 piece (80 g)
+  portion_unit: piece
+  tags: indian,bread
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,tree_nuts
+  unit_grams: 80
+- source: gymflow
+  source_id: in_chapati
+  name: Chapati (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 10
+  carbs_per_100g: 60
+  fat_per_100g: 4
+  serving_grams: 50
+  serving_label: 1 piece (50 g)
+  portion_unit: piece
+  tags: indian,bread,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 50
+- source: gymflow
+  source_id: in_paratha_plain
+  name: Plain Paratha (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 310
+  protein_per_100g: 8
+  carbs_per_100g: 45
+  fat_per_100g: 11
+  serving_grams: 80
+  serving_label: 1 piece (80 g)
+  portion_unit: piece
+  tags: indian,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 80
+- source: gymflow
+  source_id: in_paratha_aloo
+  name: Aloo Paratha (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 7
+  carbs_per_100g: 40
+  fat_per_100g: 11
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: indian,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 100
+- source: gymflow
+  source_id: in_papadom
+  name: Poppadom (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 365
+  protein_per_100g: 22
+  carbs_per_100g: 58
+  fat_per_100g: 4
+  serving_grams: 7
+  serving_label: 1 piece (7 g)
+  portion_unit: piece
+  tags: indian,bread,vegan,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: ''
+  unit_grams: 7
+- source: gymflow
+  source_id: in_samosa_meat
+  name: Meat Samosa (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 310
+  protein_per_100g: 8
+  carbs_per_100g: 28
+  fat_per_100g: 18
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: indian,starter
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs
+  unit_grams: 60
+- source: gymflow
+  source_id: in_samosa_veg
+  name: Vegetable Samosa (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 5
+  carbs_per_100g: 30
+  fat_per_100g: 16
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: indian,starter,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 60
+- source: gymflow
+  source_id: in_onion_bhaji_3
+  name: Onion Bhaji (3)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 19
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: indian,starter,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 33
+- source: gymflow
+  source_id: in_pakora_chicken_3
+  name: Chicken Pakora (3)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 14
+  fat_per_100g: 14
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: indian,starter,chicken
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: ''
+  unit_grams: 33
+- source: gymflow
+  source_id: in_tandoori_chicken_breast
+  name: Tandoori Chicken Breast (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 26
+  carbs_per_100g: 4
+  fat_per_100g: 6
+  serving_grams: 150
+  serving_label: 1 piece (150 g)
+  portion_unit: piece
+  tags: indian,whole,chicken,high_protein
+  dietary_compat: halal,pescatarian,gluten_free
+  allergens: milk
+  unit_grams: 150
+- source: gymflow
+  source_id: in_chicken_tikka_dry
+  name: Chicken Tikka Dry (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 26
+  carbs_per_100g: 4
+  fat_per_100g: 5
+  serving_grams: 150
+  serving_label: 1 piece (150 g)
+  portion_unit: piece
+  tags: indian,whole,chicken,high_protein,low_carb
+  dietary_compat: halal,pescatarian,gluten_free
+  allergens: milk
+  unit_grams: 150
+- source: gymflow
+  source_id: in_seekh_kebab_lamb
+  name: Seekh Kebab Lamb (1 skewer)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 16
+  carbs_per_100g: 5
+  fat_per_100g: 18
+  serving_grams: 90
+  serving_label: 1 piece (90 g)
+  portion_unit: piece
+  tags: indian,whole,high_protein
+  dietary_compat: halal,kosher,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 90
+- source: gymflow
+  source_id: in_raita_30g
+  name: Raita Yogurt Sauce (30g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 3
+  carbs_per_100g: 4
+  fat_per_100g: 3
+  serving_grams: 30
+  serving_label: 1 tbsp (30 g)
+  portion_unit: tbsp
+  tags: indian,sauce,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 30
+- source: gymflow
+  source_id: in_mango_chutney_15g
+  name: Mango Chutney (15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 0.4
+  carbs_per_100g: 60
+  fat_per_100g: 0.3
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: indian,sauce,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: in_lime_pickle_15g
+  name: Lime Pickle (15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 1
+  carbs_per_100g: 15
+  fat_per_100g: 16
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: indian,condiment,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: mustard
+  unit_grams: 15
+- source: gymflow
+  source_id: in_mango_lassi_300
+  name: Mango Lassi (300ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 100
+  protein_per_100g: 3
+  carbs_per_100g: 18
+  fat_per_100g: 2
+  serving_grams: 300
+  serving_label: 1 ml (300 g)
+  portion_unit: ml
+  tags: indian,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: in_masala_chai
+  name: Masala Chai (mug, 250ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 2
+  carbs_per_100g: 6
+  fat_per_100g: 2
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: indian,drink,tea
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: in_gulab_jamun_3
+  name: Gulab Jamun (3)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 9
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: indian,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 33
+- source: gymflow
+  source_id: in_jalebi_3
+  name: Jalebi (3)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 3
+  carbs_per_100g: 65
+  fat_per_100g: 10
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: indian,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten
+  unit_grams: 33
+- source: gymflow
+  source_id: in_kheer_rice_pudding
+  name: Kheer (Rice Pudding)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: indian,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,tree_nuts
+  unit_grams: 200
+- source: gymflow
+  source_id: in_butter_chicken_jar_made
+  name: Butter Chicken (made up, per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 12
+  carbs_per_100g: 11
+  fat_per_100g: 9
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: indian,curry,chicken
+  dietary_compat: pescatarian,gluten_free
+  allergens: milk,tree_nuts
+  unit_grams: 350

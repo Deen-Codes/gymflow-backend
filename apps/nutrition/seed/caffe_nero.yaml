@@ -1,0 +1,483 @@
+# caffe_nero.yaml — Caffè Nero UK menu. 30 entries.
+# Coffees use ml (volumetric); food per piece.
+# Source: caffenero.com/uk/menu.
+- source: gymflow
+  source_id: caffenero_espresso
+  name: Espresso (single)
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 ml (30 g)
+  portion_unit: ml
+  tags: chain,coffee,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: caffenero_double_espresso
+  name: Double Espresso
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 60
+  serving_label: 1 ml (60 g)
+  portion_unit: ml
+  tags: chain,coffee,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: caffenero_americano
+  name: Americano
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 2
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.3
+  fat_per_100g: 0
+  serving_grams: 240
+  serving_label: 1 ml (240 g)
+  portion_unit: ml
+  tags: chain,coffee,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: caffenero_flat_white_semi
+  name: Flat White, semi-skimmed
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 4.0
+  carbs_per_100g: 5.5
+  fat_per_100g: 2.4
+  serving_grams: 240
+  serving_label: 1 ml (240 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: caffenero_flat_white_oat
+  name: Flat White, oat milk
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 1.5
+  carbs_per_100g: 7.0
+  fat_per_100g: 1.8
+  serving_grams: 240
+  serving_label: 1 ml (240 g)
+  portion_unit: ml
+  tags: chain,coffee,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: caffenero_cappuccino_med_semi
+  name: Cappuccino, regular, semi-skimmed
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 38
+  protein_per_100g: 2.5
+  carbs_per_100g: 3.5
+  fat_per_100g: 1.5
+  serving_grams: 300
+  serving_label: 1 ml (300 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: caffenero_latte_med_semi
+  name: Latte, regular, semi-skimmed
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 3.5
+  carbs_per_100g: 4.5
+  fat_per_100g: 2.0
+  serving_grams: 350
+  serving_label: 1 ml (350 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: caffenero_latte_med_oat
+  name: Latte, regular, oat milk
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 45
+  protein_per_100g: 1.4
+  carbs_per_100g: 6.5
+  fat_per_100g: 1.5
+  serving_grams: 350
+  serving_label: 1 ml (350 g)
+  portion_unit: ml
+  tags: chain,coffee,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: caffenero_mocha_med_semi
+  name: Mocha, regular, semi-skimmed
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 3.5
+  carbs_per_100g: 14.0
+  fat_per_100g: 3.0
+  serving_grams: 350
+  serving_label: 1 ml (350 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+- source: gymflow
+  source_id: caffenero_hot_choc_med_semi
+  name: Hot Chocolate, regular, semi-skimmed
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 4.5
+  carbs_per_100g: 14.0
+  fat_per_100g: 3.5
+  serving_grams: 350
+  serving_label: 1 ml (350 g)
+  portion_unit: ml
+  tags: chain,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+- source: gymflow
+  source_id: caffenero_chai_latte_med_semi
+  name: Chai Latte, regular, semi-skimmed
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 3.0
+  carbs_per_100g: 12.0
+  fat_per_100g: 1.5
+  serving_grams: 350
+  serving_label: 1 ml (350 g)
+  portion_unit: ml
+  tags: chain,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: caffenero_iced_americano
+  name: Iced Americano
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 2
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.3
+  fat_per_100g: 0
+  serving_grams: 350
+  serving_label: 1 ml (350 g)
+  portion_unit: ml
+  tags: chain,coffee,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: caffenero_iced_latte_semi
+  name: Iced Latte, semi-skimmed
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 45
+  protein_per_100g: 3.0
+  carbs_per_100g: 4.0
+  fat_per_100g: 1.7
+  serving_grams: 350
+  serving_label: 1 ml (350 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: caffenero_frappe_caramel
+  name: Caramel Frappé
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 2.5
+  carbs_per_100g: 18.0
+  fat_per_100g: 2.5
+  serving_grams: 350
+  serving_label: 1 ml (350 g)
+  portion_unit: ml
+  tags: chain,coffee,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk
+- source: gymflow
+  source_id: caffenero_panini_classic_chicken
+  name: Classic Chicken Panini
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 13
+  carbs_per_100g: 27
+  fat_per_100g: 9
+  serving_grams: 220
+  serving_label: 1 piece (220 g)
+  portion_unit: piece
+  tags: chain,coffee,food,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 220
+- source: gymflow
+  source_id: caffenero_panini_mozzarella_tomato
+  name: Mozzarella & Tomato Panini
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 11
+  carbs_per_100g: 27
+  fat_per_100g: 8
+  serving_grams: 215
+  serving_label: 1 piece (215 g)
+  portion_unit: piece
+  tags: chain,coffee,food,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 215
+- source: gymflow
+  source_id: caffenero_panini_ham_cheese
+  name: Ham & Cheese Toastie
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 13
+  carbs_per_100g: 26
+  fat_per_100g: 10
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: chain,coffee,food
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 200
+- source: gymflow
+  source_id: caffenero_panini_tuna_melt
+  name: Tuna Melt Panini
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 25
+  fat_per_100g: 10
+  serving_grams: 220
+  serving_label: 1 piece (220 g)
+  portion_unit: piece
+  tags: chain,coffee,food
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,fish
+  unit_grams: 220
+- source: gymflow
+  source_id: caffenero_sandwich_chicken_salad
+  name: Chicken Salad Sandwich
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: chain,coffee,food,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,mustard
+  unit_grams: 200
+- source: gymflow
+  source_id: caffenero_sandwich_egg_mayo
+  name: Egg Mayonnaise Sandwich
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 180
+  serving_label: 1 piece (180 g)
+  portion_unit: piece
+  tags: chain,coffee,food,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,mustard
+  unit_grams: 180
+- source: gymflow
+  source_id: caffenero_focaccia_chicken
+  name: Chicken & Mediterranean Focaccia
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 11
+  carbs_per_100g: 26
+  fat_per_100g: 8
+  serving_grams: 220
+  serving_label: 1 piece (220 g)
+  portion_unit: piece
+  tags: chain,coffee,food,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 220
+- source: gymflow
+  source_id: caffenero_chocolate_brownie
+  name: Chocolate Brownie
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 415
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  serving_grams: 80
+  serving_label: 1 piece (80 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 80
+- source: gymflow
+  source_id: caffenero_almond_croissant
+  name: Almond Croissant
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 405
+  protein_per_100g: 7
+  carbs_per_100g: 38
+  fat_per_100g: 24
+  serving_grams: 110
+  serving_label: 1 piece (110 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,tree_nuts
+  unit_grams: 110
+- source: gymflow
+  source_id: caffenero_pain_au_chocolat
+  name: Pain au Chocolat
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 6
+  carbs_per_100g: 42
+  fat_per_100g: 22
+  serving_grams: 90
+  serving_label: 1 piece (90 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 90
+- source: gymflow
+  source_id: caffenero_lemon_drizzle
+  name: Lemon Drizzle Cake
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 4
+  carbs_per_100g: 52
+  fat_per_100g: 17
+  serving_grams: 100
+  serving_label: 1 slice (100 g)
+  portion_unit: slice
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 100
+- source: gymflow
+  source_id: caffenero_carrot_cake
+  name: Carrot Cake
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 390
+  protein_per_100g: 4
+  carbs_per_100g: 49
+  fat_per_100g: 19
+  serving_grams: 100
+  serving_label: 1 slice (100 g)
+  portion_unit: slice
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,tree_nuts
+  unit_grams: 100
+- source: gymflow
+  source_id: caffenero_belgian_waffle
+  name: Belgian Waffle
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 6
+  carbs_per_100g: 48
+  fat_per_100g: 22
+  serving_grams: 90
+  serving_label: 1 piece (90 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 90
+- source: gymflow
+  source_id: caffenero_porridge_oat
+  name: Oat Porridge
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 2.5
+  carbs_per_100g: 12.0
+  fat_per_100g: 1.5
+  serving_grams: 280
+  serving_label: 1 portion (280 g)
+  portion_unit: pack
+  tags: chain,coffee,food,breakfast,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 280
+- source: gymflow
+  source_id: caffenero_breakfast_panini
+  name: Bacon Breakfast Panini
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 13
+  carbs_per_100g: 26
+  fat_per_100g: 12
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: chain,coffee,food,breakfast
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 200
+- source: gymflow
+  source_id: caffenero_smoothie_berry
+  name: Berry Smoothie
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 1
+  carbs_per_100g: 13
+  fat_per_100g: 0.3
+  serving_grams: 300
+  serving_label: 1 ml (300 g)
+  portion_unit: ml
+  tags: chain,coffee,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: caffenero_orange_juice
+  name: Fresh Orange Juice
+  brand: Caffè Nero
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 0.7
+  carbs_per_100g: 9.5
+  fat_per_100g: 0.2
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: chain,coffee,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''

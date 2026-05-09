@@ -53,12 +53,11 @@ class NutritionPlan(models.Model):
 #   • GymFlow-curated               — our own additions (branded items
 #                                    we add manually; pro-tier fields)
 #
-# Open Food Facts is intentionally NOT ingested (CC BY-SA copyleft
-# blocks commercial bake-in). OFF stays as a runtime barcode lookup
-# in iOS — `FoodLookupService` already handles that path. Branded
-# items the user finds via barcode and re-uses become entries in the
-# user's per-account food log; popular ones can be promoted into the
-# `gymflow` source over time with our own re-derivation.
+# No external runtime calls. All food data ships in CuratedFood and is
+# updated only via the seed/import management commands. Open Food Facts
+# was investigated and rejected — its CC BY-SA copyleft would force our
+# commercial DB to also be share-alike. Branded items we want for our
+# users are added manually via `popular_foods.yaml`.
 #
 # Multi-region resolution: when the iOS client searches, the backend
 # filters CuratedFood by `region_codes` overlap with the user's locale
@@ -119,6 +118,77 @@ class CuratedFood(models.Model):
     serving_grams = models.FloatField(null=True, blank=True)
     serving_label = models.CharField(max_length=40, blank=True, default="")
 
+    # FOOD-DB-V2 — portion-unit support. Lets the food picker
+    # express "1 egg" / "1 slice" / "1 wrap" / "1 scoop" as a
+    # first-class portion alongside grams.
+    #
+    # Why this matters: people don't weigh slices of bread or
+    # wraps. The "1 unit" affordance is what makes the picker
+    # actually usable for everyday foods. Macros stay stored
+    # per-100g (so the math is uniform); `unit_grams` carries the
+    # gram-equivalent of one unit, and the iOS picker uses it to
+    # render unit-based stepper rows.
+    #
+    # When `portion_unit == "grams"` (the default for raw / bulk
+    # foods like rice, oil, yogurt), `unit_grams` is unused and
+    # the picker shows 50g / 100g / 150g / 200g chips.
+    #
+    # When `portion_unit != "grams"` (e.g. an egg), the picker
+    # shows 1 / 2 / 3 / 4 chips and computes
+    # `kcal = kcal_per_100g * unit_grams * N / 100`.
+    PORTION_GRAMS = "grams"
+    PORTION_ML    = "ml"
+    PORTION_PIECE = "piece"   # e.g. 1 banana, 1 apple
+    PORTION_SLICE = "slice"   # e.g. 1 slice of bread, 1 slice of cheese
+    PORTION_WRAP  = "wrap"
+    PORTION_SCOOP = "scoop"
+    PORTION_TBSP  = "tbsp"
+    PORTION_TSP   = "tsp"
+    PORTION_CUP   = "cup"
+    PORTION_OZ    = "oz"
+    PORTION_EGG   = "egg"
+    PORTION_BAR   = "bar"     # protein bars, chocolate bars
+    PORTION_CAN   = "can"     # canned drinks
+    PORTION_BOTTLE = "bottle"
+    PORTION_PACK  = "pack"    # packets / sachets / pots
+    PORTION_PINT  = "pint"    # beer, milk in pubs
+    PORTION_SHOT  = "shot"    # 25 ml spirit measure
+    PORTION_MEAL  = "meal"    # whole prepared meals — Big Mac meal,
+                              # Nando's quarter chicken meal, Sunday
+                              # roast. The "meal" unit means the
+                              # complete plate as the chain serves it,
+                              # macros bundled.
+    PORTION_CHOICES = [
+        (PORTION_GRAMS,  "Grams"),
+        (PORTION_ML,     "Millilitres"),
+        (PORTION_PIECE,  "Piece"),
+        (PORTION_SLICE,  "Slice"),
+        (PORTION_WRAP,   "Wrap"),
+        (PORTION_SCOOP,  "Scoop"),
+        (PORTION_TBSP,   "Tablespoon"),
+        (PORTION_TSP,    "Teaspoon"),
+        (PORTION_CUP,    "Cup"),
+        (PORTION_OZ,     "Ounce"),
+        (PORTION_EGG,    "Egg"),
+        (PORTION_BAR,    "Bar"),
+        (PORTION_CAN,    "Can"),
+        (PORTION_BOTTLE, "Bottle"),
+        (PORTION_PACK,   "Pack"),
+        (PORTION_PINT,   "Pint"),
+        (PORTION_SHOT,   "Shot"),
+        (PORTION_MEAL,   "Meal"),
+    ]
+    portion_unit = models.CharField(
+        max_length=10,
+        choices=PORTION_CHOICES,
+        default=PORTION_GRAMS,
+        db_index=True,
+    )
+    # Gram-equivalent of one unit. Required when portion_unit isn't
+    # "grams". For "1 large egg" → 50.0; "1 slice white bread" → 30.0;
+    # "1 chicken wrap" → 220.0.
+    unit_grams = models.FloatField(null=True, blank=True)
+
     # Free-form tags for filtering UI ("staple", "branded", "fast_food",
     # "high_protein", etc.). Comma-separated lowercase.
     tags = models.CharField(max_length=200, blank=True, default="")
@@ -166,17 +236,26 @@ class FoodLibraryItem(models.Model):
     """Per-trainer food preset.
 
     `reference_grams` + macros define the per-portion nutritional values
-    (e.g. "100g of brown rice = 360 kcal / 7p / 75c / 3f"). Phase 3 adds
-    optional `source`, `external_id`, `brand` so the same row can either
-    be a custom item the trainer typed in OR a snapshot of an Open Food
-    Facts product they pulled from search.
+    (e.g. "100g of brown rice = 360 kcal / 7p / 75c / 3f"). Optional
+    `source`, `external_id`, `brand` so the same row can either be a
+    custom item the trainer typed in OR a snapshot of a CuratedFood
+    catalog row they pulled from the food picker.
+
+    Pre-NUTRITION-DB rows have `source="off"` (Open Food Facts snapshots
+    from when we proxied that DB). Those rows still work; new snapshots
+    use `source="gymflow"`.
     """
 
-    SOURCE_CUSTOM = "custom"
-    SOURCE_OFF = "off"
+    SOURCE_CUSTOM   = "custom"
+    SOURCE_GYMFLOW  = "gymflow"
+    # Legacy — pre-NUTRITION-DB rows snapshotted from Open Food Facts.
+    # No new rows use this; kept in choices so existing data still
+    # validates in admin.
+    SOURCE_OFF      = "off"
     SOURCE_CHOICES = [
-        (SOURCE_CUSTOM, "Custom"),
-        (SOURCE_OFF, "Open Food Facts"),
+        (SOURCE_CUSTOM,  "Custom"),
+        (SOURCE_GYMFLOW, "GymFlow catalog"),
+        (SOURCE_OFF,     "Open Food Facts (legacy)"),
     ]
 
     # Portion mode. For weighed foods (rice, chicken) `reference_grams`

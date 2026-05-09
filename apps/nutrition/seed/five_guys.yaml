@@ -1,0 +1,524 @@
+# five_guys.yaml — Five Guys UK menu.
+#
+# 30 entries covering the full UK menu: burgers (regular + little),
+# hot dogs, fries (regular + Cajun, three sizes each), milkshakes,
+# and add-ons.
+#
+# Source: fiveguys.co.uk/nutritional-information (UK kcal labelling
+# regs require chains > 250 employees to publish; Five Guys exceeds).
+#
+# Portion units:
+#   • Burgers + hot dogs → `piece` (the whole sandwich)
+#   • Fries → `pack` (the cup; sizes differ by gram weight)
+#   • Milkshakes → `ml` (volumetric, per-100ml macros)
+#   • Add-ons (bacon strip, cheese slice) → `slice`/`piece`
+
+# ============================================================
+# BURGERS — REGULAR (2 patties, ~120g each)
+# ============================================================
+
+- source: gymflow
+  source_id: fiveguys_hamburger
+  name: Hamburger
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 247
+  protein_per_100g: 14.0
+  carbs_per_100g: 16.0
+  fat_per_100g: 14.0
+  serving_grams: 297
+  serving_label: 1 hamburger (no toppings)
+  portion_unit: piece
+  unit_grams: 297
+  tags: chain,burger,fast_food
+  dietary_compat: halal,kosher,pescatarian,dairy_free
+  allergens: gluten,sesame
+
+- source: gymflow
+  source_id: fiveguys_cheeseburger
+  name: Cheeseburger
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 277
+  protein_per_100g: 16.5
+  carbs_per_100g: 16.0
+  fat_per_100g: 17.0
+  serving_grams: 313
+  serving_label: 1 cheeseburger (2 cheese slices)
+  portion_unit: piece
+  unit_grams: 313
+  tags: chain,burger,fast_food
+  dietary_compat: halal,kosher,pescatarian
+  allergens: gluten,milk,sesame
+
+- source: gymflow
+  source_id: fiveguys_bacon_burger
+  name: Bacon Burger
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 286
+  protein_per_100g: 18.0
+  carbs_per_100g: 15.0
+  fat_per_100g: 18.0
+  serving_grams: 314
+  serving_label: 1 bacon burger
+  portion_unit: piece
+  unit_grams: 314
+  tags: chain,burger,fast_food
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,sesame
+
+- source: gymflow
+  source_id: fiveguys_bacon_cheeseburger
+  name: Bacon Cheeseburger
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 312
+  protein_per_100g: 20.0
+  carbs_per_100g: 15.0
+  fat_per_100g: 20.0
+  serving_grams: 330
+  serving_label: 1 bacon cheeseburger
+  portion_unit: piece
+  unit_grams: 330
+  tags: chain,burger,fast_food
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sesame
+
+- source: gymflow
+  source_id: fiveguys_veggie_sandwich
+  name: Veggie Sandwich
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 175
+  protein_per_100g: 5.5
+  carbs_per_100g: 26.0
+  fat_per_100g: 5.5
+  serving_grams: 240
+  serving_label: 1 veggie sandwich
+  portion_unit: piece
+  unit_grams: 240
+  tags: chain,burger,fast_food,vegetarian
+  dietary_compat: vegetarian,kosher,halal,pescatarian,dairy_free
+  allergens: gluten,sesame
+
+- source: gymflow
+  source_id: fiveguys_cheese_veggie_sandwich
+  name: Cheese Veggie Sandwich
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 200
+  protein_per_100g: 8.0
+  carbs_per_100g: 24.0
+  fat_per_100g: 8.0
+  serving_grams: 256
+  serving_label: 1 cheese veggie sandwich
+  portion_unit: piece
+  unit_grams: 256
+  tags: chain,burger,fast_food,vegetarian
+  dietary_compat: vegetarian,kosher,halal,pescatarian
+  allergens: gluten,milk,sesame
+
+# ============================================================
+# LITTLE BURGERS (single patty, ~60g)
+# ============================================================
+
+- source: gymflow
+  source_id: fiveguys_little_hamburger
+  name: Little Hamburger
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 235
+  protein_per_100g: 12.0
+  carbs_per_100g: 18.0
+  fat_per_100g: 12.0
+  serving_grams: 200
+  serving_label: 1 little hamburger
+  portion_unit: piece
+  unit_grams: 200
+  tags: chain,burger,fast_food
+  dietary_compat: halal,kosher,pescatarian,dairy_free
+  allergens: gluten,sesame
+
+- source: gymflow
+  source_id: fiveguys_little_cheeseburger
+  name: Little Cheeseburger
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 269
+  protein_per_100g: 14.5
+  carbs_per_100g: 17.5
+  fat_per_100g: 14.0
+  serving_grams: 215
+  serving_label: 1 little cheeseburger
+  portion_unit: piece
+  unit_grams: 215
+  tags: chain,burger,fast_food
+  dietary_compat: halal,kosher,pescatarian
+  allergens: gluten,milk,sesame
+
+- source: gymflow
+  source_id: fiveguys_little_bacon_burger
+  name: Little Bacon Burger
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 280
+  protein_per_100g: 16.0
+  carbs_per_100g: 17.0
+  fat_per_100g: 15.5
+  serving_grams: 215
+  serving_label: 1 little bacon burger
+  portion_unit: piece
+  unit_grams: 215
+  tags: chain,burger,fast_food
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,sesame
+
+- source: gymflow
+  source_id: fiveguys_little_bacon_cheeseburger
+  name: Little Bacon Cheeseburger
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 298
+  protein_per_100g: 18.0
+  carbs_per_100g: 17.0
+  fat_per_100g: 17.5
+  serving_grams: 230
+  serving_label: 1 little bacon cheeseburger
+  portion_unit: piece
+  unit_grams: 230
+  tags: chain,burger,fast_food
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sesame
+
+# ============================================================
+# HOT DOGS
+# ============================================================
+
+- source: gymflow
+  source_id: fiveguys_hot_dog
+  name: Hot Dog
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 295
+  protein_per_100g: 12.0
+  carbs_per_100g: 21.0
+  fat_per_100g: 18.0
+  serving_grams: 215
+  serving_label: 1 hot dog
+  portion_unit: piece
+  unit_grams: 215
+  tags: chain,fast_food
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,sesame
+
+- source: gymflow
+  source_id: fiveguys_cheese_dog
+  name: Cheese Dog
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 311
+  protein_per_100g: 13.5
+  carbs_per_100g: 21.0
+  fat_per_100g: 19.5
+  serving_grams: 230
+  serving_label: 1 cheese dog
+  portion_unit: piece
+  unit_grams: 230
+  tags: chain,fast_food
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sesame
+
+- source: gymflow
+  source_id: fiveguys_bacon_dog
+  name: Bacon Dog
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 320
+  protein_per_100g: 14.5
+  carbs_per_100g: 20.0
+  fat_per_100g: 21.0
+  serving_grams: 230
+  serving_label: 1 bacon dog
+  portion_unit: piece
+  unit_grams: 230
+  tags: chain,fast_food
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,sesame
+
+- source: gymflow
+  source_id: fiveguys_bacon_cheese_dog
+  name: Bacon Cheese Dog
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 335
+  protein_per_100g: 16.0
+  carbs_per_100g: 20.0
+  fat_per_100g: 22.5
+  serving_grams: 245
+  serving_label: 1 bacon cheese dog
+  portion_unit: piece
+  unit_grams: 245
+  tags: chain,fast_food
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sesame
+
+# ============================================================
+# FRIES
+# ============================================================
+
+- source: gymflow
+  source_id: fiveguys_fries_little
+  name: Little Fries
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 305
+  protein_per_100g: 4.0
+  carbs_per_100g: 41.0
+  fat_per_100g: 13.5
+  serving_grams: 227
+  serving_label: 1 little fries (227 g)
+  portion_unit: pack
+  unit_grams: 227
+  tags: chain,fast_food
+  dietary_compat: vegan,vegetarian,kosher,halal,pescatarian,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: fiveguys_fries_regular
+  name: Regular Fries
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 305
+  protein_per_100g: 4.0
+  carbs_per_100g: 41.0
+  fat_per_100g: 13.5
+  serving_grams: 411
+  serving_label: 1 regular fries (411 g)
+  portion_unit: pack
+  unit_grams: 411
+  tags: chain,fast_food
+  dietary_compat: vegan,vegetarian,kosher,halal,pescatarian,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: fiveguys_fries_large
+  name: Large Fries
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 305
+  protein_per_100g: 4.0
+  carbs_per_100g: 41.0
+  fat_per_100g: 13.5
+  serving_grams: 587
+  serving_label: 1 large fries (587 g)
+  portion_unit: pack
+  unit_grams: 587
+  tags: chain,fast_food
+  dietary_compat: vegan,vegetarian,kosher,halal,pescatarian,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: fiveguys_cajun_fries_little
+  name: Little Cajun Fries
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 308
+  protein_per_100g: 4.0
+  carbs_per_100g: 42.0
+  fat_per_100g: 13.5
+  serving_grams: 227
+  serving_label: 1 little cajun fries (227 g)
+  portion_unit: pack
+  unit_grams: 227
+  tags: chain,fast_food
+  dietary_compat: vegan,vegetarian,kosher,halal,pescatarian,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: fiveguys_cajun_fries_regular
+  name: Regular Cajun Fries
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 308
+  protein_per_100g: 4.0
+  carbs_per_100g: 42.0
+  fat_per_100g: 13.5
+  serving_grams: 411
+  serving_label: 1 regular cajun fries (411 g)
+  portion_unit: pack
+  unit_grams: 411
+  tags: chain,fast_food
+  dietary_compat: vegan,vegetarian,kosher,halal,pescatarian,dairy_free
+  allergens: ""
+
+- source: gymflow
+  source_id: fiveguys_cajun_fries_large
+  name: Large Cajun Fries
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 308
+  protein_per_100g: 4.0
+  carbs_per_100g: 42.0
+  fat_per_100g: 13.5
+  serving_grams: 587
+  serving_label: 1 large cajun fries (587 g)
+  portion_unit: pack
+  unit_grams: 587
+  tags: chain,fast_food
+  dietary_compat: vegan,vegetarian,kosher,halal,pescatarian,dairy_free
+  allergens: ""
+
+# ============================================================
+# MILKSHAKES — base shake, full size (~600 ml)
+# ============================================================
+
+- source: gymflow
+  source_id: fiveguys_milkshake_vanilla
+  name: Vanilla Milkshake
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 145
+  protein_per_100g: 3.0
+  carbs_per_100g: 18.0
+  fat_per_100g: 7.0
+  serving_grams: 600
+  serving_label: 1 milkshake (600 ml)
+  portion_unit: ml
+  tags: chain,fast_food,drink
+  dietary_compat: vegetarian,kosher,halal,pescatarian
+  allergens: milk
+
+- source: gymflow
+  source_id: fiveguys_milkshake_chocolate
+  name: Chocolate Milkshake
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 158
+  protein_per_100g: 3.0
+  carbs_per_100g: 22.0
+  fat_per_100g: 7.0
+  serving_grams: 600
+  serving_label: 1 milkshake (600 ml)
+  portion_unit: ml
+  tags: chain,fast_food,drink
+  dietary_compat: vegetarian,kosher,halal,pescatarian
+  allergens: milk
+
+- source: gymflow
+  source_id: fiveguys_milkshake_strawberry
+  name: Strawberry Milkshake
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 152
+  protein_per_100g: 3.0
+  carbs_per_100g: 20.0
+  fat_per_100g: 7.0
+  serving_grams: 600
+  serving_label: 1 milkshake (600 ml)
+  portion_unit: ml
+  tags: chain,fast_food,drink
+  dietary_compat: vegetarian,kosher,halal,pescatarian
+  allergens: milk
+
+- source: gymflow
+  source_id: fiveguys_milkshake_oreo
+  name: Oreo Milkshake
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 165
+  protein_per_100g: 3.0
+  carbs_per_100g: 22.0
+  fat_per_100g: 7.5
+  serving_grams: 600
+  serving_label: 1 milkshake (600 ml)
+  portion_unit: ml
+  tags: chain,fast_food,drink
+  dietary_compat: vegetarian,pescatarian
+  allergens: milk,gluten,soy
+
+- source: gymflow
+  source_id: fiveguys_milkshake_salted_caramel
+  name: Salted Caramel Milkshake
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 168
+  protein_per_100g: 3.0
+  carbs_per_100g: 22.0
+  fat_per_100g: 8.0
+  serving_grams: 600
+  serving_label: 1 milkshake (600 ml)
+  portion_unit: ml
+  tags: chain,fast_food,drink
+  dietary_compat: vegetarian,kosher,halal,pescatarian
+  allergens: milk
+
+- source: gymflow
+  source_id: fiveguys_milkshake_banana
+  name: Banana Milkshake
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 152
+  protein_per_100g: 3.0
+  carbs_per_100g: 20.5
+  fat_per_100g: 7.0
+  serving_grams: 600
+  serving_label: 1 milkshake (600 ml)
+  portion_unit: ml
+  tags: chain,fast_food,drink
+  dietary_compat: vegetarian,kosher,halal,pescatarian
+  allergens: milk
+
+- source: gymflow
+  source_id: fiveguys_milkshake_peanut_butter
+  name: Peanut Butter Milkshake
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 175
+  protein_per_100g: 4.0
+  carbs_per_100g: 20.0
+  fat_per_100g: 9.0
+  serving_grams: 600
+  serving_label: 1 milkshake (600 ml)
+  portion_unit: ml
+  tags: chain,fast_food,drink
+  dietary_compat: vegetarian,pescatarian
+  allergens: milk,peanuts
+
+# ============================================================
+# ADD-ONS / TOPPINGS
+# ============================================================
+
+- source: gymflow
+  source_id: fiveguys_bacon_strip
+  name: Bacon Strip (add-on)
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 540
+  protein_per_100g: 37.0
+  carbs_per_100g: 1.4
+  fat_per_100g: 42.0
+  serving_grams: 12
+  serving_label: 1 strip (12 g)
+  portion_unit: slice
+  unit_grams: 12
+  tags: chain,fast_food,topping
+  dietary_compat: pescatarian,gluten_free
+  allergens: ""
+
+- source: gymflow
+  source_id: fiveguys_cheese_slice
+  name: Cheese Slice (add-on)
+  brand: Five Guys
+  region_codes: gb,us
+  kcal_per_100g: 296
+  protein_per_100g: 17.0
+  carbs_per_100g: 4.0
+  fat_per_100g: 24.0
+  serving_grams: 19
+  serving_label: 1 slice (19 g)
+  portion_unit: slice
+  unit_grams: 19
+  tags: chain,fast_food,topping
+  dietary_compat: vegetarian,kosher,halal,pescatarian,gluten_free
+  allergens: milk

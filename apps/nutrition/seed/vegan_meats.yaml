@@ -1,0 +1,374 @@
+# vegan_meats.yaml — meat alternatives: Quorn, Beyond Meat, THIS, Linda McCartney,
+# Oumph, Vivera, Moving Mountains, Plant Chef, generic seitan.
+- source: gymflow
+  source_id: quorn_chicken_pieces
+  name: Quorn Chicken-Style Pieces
+  brand: Quorn
+  region_codes: gb
+  kcal_per_100g: 100
+  protein_per_100g: 14
+  carbs_per_100g: 4
+  fat_per_100g: 2.5
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: meat_alternative,branded,vegetarian,high_protein,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: eggs,milk,gluten
+- source: gymflow
+  source_id: quorn_vegan_pieces
+  name: Quorn Vegan Pieces
+  brand: Quorn
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 14
+  carbs_per_100g: 5
+  fat_per_100g: 2
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: meat_alternative,branded,vegan,high_protein,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: quorn_mince
+  name: Quorn Mince
+  brand: Quorn
+  region_codes: gb
+  kcal_per_100g: 90
+  protein_per_100g: 14
+  carbs_per_100g: 4
+  fat_per_100g: 2
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: meat_alternative,branded,vegetarian,high_protein,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: eggs,milk,gluten
+- source: gymflow
+  source_id: quorn_vegan_mince
+  name: Quorn Vegan Mince
+  brand: Quorn
+  region_codes: gb
+  kcal_per_100g: 85
+  protein_per_100g: 13
+  carbs_per_100g: 4
+  fat_per_100g: 2
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: meat_alternative,branded,vegan,high_protein,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: quorn_sausages_2
+  name: Quorn Sausages (2)
+  brand: Quorn
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 14
+  carbs_per_100g: 9
+  fat_per_100g: 8
+  serving_grams: 84
+  serving_label: 1 piece (84 g)
+  portion_unit: piece
+  tags: meat_alternative,branded,vegetarian,high_protein
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: eggs,milk,gluten
+  unit_grams: 42
+- source: gymflow
+  source_id: quorn_chicken_nuggets_4
+  name: Quorn Crispy Nuggets (4)
+  brand: Quorn
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 80
+  serving_label: 1 piece (80 g)
+  portion_unit: piece
+  tags: meat_alternative,branded,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: eggs,milk,gluten
+  unit_grams: 20
+- source: gymflow
+  source_id: quorn_chicken_burger_2
+  name: Quorn Chicken Style Burgers (2)
+  brand: Quorn
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: meat_alternative,branded,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: eggs,milk,gluten
+  unit_grams: 50
+- source: gymflow
+  source_id: quorn_fillets_2
+  name: Quorn Chicken-Style Fillets (2)
+  brand: Quorn
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 14
+  carbs_per_100g: 5
+  fat_per_100g: 2.5
+  serving_grams: 88
+  serving_label: 1 piece (88 g)
+  portion_unit: piece
+  tags: meat_alternative,branded,vegetarian,high_protein,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: eggs,milk,gluten
+  unit_grams: 88
+- source: gymflow
+  source_id: quorn_meatballs
+  name: Quorn Meatballs (per 100g)
+  brand: Quorn
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 14
+  carbs_per_100g: 12
+  fat_per_100g: 7
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: meat_alternative,branded,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: eggs,milk,gluten
+- source: gymflow
+  source_id: beyond_burger_2
+  name: Beyond Meat Burger (1 patty)
+  brand: Beyond Meat
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 18
+  carbs_per_100g: 7
+  fat_per_100g: 18
+  serving_grams: 113
+  serving_label: 1 piece (113 g)
+  portion_unit: piece
+  tags: meat_alternative,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 113
+- source: gymflow
+  source_id: beyond_mince_100g
+  name: Beyond Meat Mince (per 100g)
+  brand: Beyond Meat
+  region_codes: gb
+  kcal_per_100g: 260
+  protein_per_100g: 19
+  carbs_per_100g: 7
+  fat_per_100g: 18
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: meat_alternative,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: beyond_sausages_classic
+  name: Beyond Meat Sausages Classic (1)
+  brand: Beyond Meat
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 16
+  carbs_per_100g: 5
+  fat_per_100g: 18
+  serving_grams: 76
+  serving_label: 1 piece (76 g)
+  portion_unit: piece
+  tags: meat_alternative,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 76
+- source: gymflow
+  source_id: this_isnt_chicken_pieces
+  name: THIS Isn't Chicken Pieces (per 100g)
+  brand: THIS
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 22
+  carbs_per_100g: 4
+  fat_per_100g: 4
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: meat_alternative,branded,vegan,high_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+- source: gymflow
+  source_id: this_isnt_bacon
+  name: THIS Isn't Bacon (per 100g)
+  brand: THIS
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 18
+  carbs_per_100g: 5
+  fat_per_100g: 14
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: meat_alternative,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+- source: gymflow
+  source_id: this_isnt_chicken_nuggets
+  name: THIS Isn't Chicken Nuggets (per 100g)
+  brand: THIS
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 16
+  carbs_per_100g: 17
+  fat_per_100g: 9
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: meat_alternative,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy
+- source: gymflow
+  source_id: linda_mccartney_sausages_2
+  name: Linda McCartney Sausages (2)
+  brand: Linda McCartney
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 18
+  carbs_per_100g: 7
+  fat_per_100g: 11
+  serving_grams: 75
+  serving_label: 1 piece (75 g)
+  portion_unit: piece
+  tags: meat_alternative,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy
+  unit_grams: 37.5
+- source: gymflow
+  source_id: linda_mccartney_quarter_pounder
+  name: Linda McCartney Vegetarian Quarter Pounder (1)
+  brand: Linda McCartney
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 19
+  carbs_per_100g: 9
+  fat_per_100g: 9
+  serving_grams: 113
+  serving_label: 1 piece (113 g)
+  portion_unit: piece
+  tags: meat_alternative,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy
+  unit_grams: 113
+- source: gymflow
+  source_id: oumph_chunks_pulled
+  name: Oumph! The Chunk (per 100g)
+  brand: Oumph!
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 17
+  carbs_per_100g: 4
+  fat_per_100g: 5
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: meat_alternative,branded,vegan,high_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+- source: gymflow
+  source_id: vivera_steak_2
+  name: Vivera Plant Steak (1)
+  brand: Vivera
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 19
+  carbs_per_100g: 8
+  fat_per_100g: 6
+  serving_grams: 90
+  serving_label: 1 piece (90 g)
+  portion_unit: piece
+  tags: meat_alternative,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+  unit_grams: 90
+- source: gymflow
+  source_id: vivera_chicken_pieces
+  name: Vivera Veggie Chicken Pieces (per 100g)
+  brand: Vivera
+  region_codes: gb
+  kcal_per_100g: 150
+  protein_per_100g: 19
+  carbs_per_100g: 8
+  fat_per_100g: 5
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: meat_alternative,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+- source: gymflow
+  source_id: moving_mountains_burger
+  name: Moving Mountains B12 Burger (1)
+  brand: Moving Mountains
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 18
+  carbs_per_100g: 8
+  fat_per_100g: 17
+  serving_grams: 113
+  serving_label: 1 piece (113 g)
+  portion_unit: piece
+  tags: meat_alternative,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+  unit_grams: 113
+- source: gymflow
+  source_id: moving_mountains_hot_dog
+  name: Moving Mountains Hot Dog (1)
+  brand: Moving Mountains
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 18
+  carbs_per_100g: 4
+  fat_per_100g: 18
+  serving_grams: 70
+  serving_label: 1 piece (70 g)
+  portion_unit: piece
+  tags: meat_alternative,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+  unit_grams: 70
+- source: gymflow
+  source_id: seitan_per_100g
+  name: Seitan / Wheat Gluten (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 25
+  carbs_per_100g: 13
+  fat_per_100g: 1.7
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: meat_alternative,vegan,high_protein,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: plant_chef_pies_2
+  name: Plant Chef Vegan Sausage Rolls (2)
+  brand: Plant Chef
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 7
+  carbs_per_100g: 28
+  fat_per_100g: 16
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: meat_alternative,branded,vegan,bakery
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy
+  unit_grams: 60

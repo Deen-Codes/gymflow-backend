@@ -1,0 +1,512 @@
+# wagamama.yaml — Wagamama UK menu.
+# 32 entries (incl 4 migrated from chains_starter).
+# Source: wagamama.com/menu allergen guide.
+- source: gymflow
+  source_id: wagamama_chicken_katsu_curry
+  name: Wagamama Chicken Katsu Curry
+  brand: Wagamama
+  region_codes: gb,us
+  kcal_per_100g: 165
+  protein_per_100g: 9.0
+  carbs_per_100g: 22.0
+  fat_per_100g: 4.5
+  serving_grams: 600
+  serving_label: 1 bowl
+  tags: restaurant,chain,asian,curry
+  dietary_compat: ''
+  allergens: gluten,eggs,milk,soy,sesame
+  portion_unit: meal
+  unit_grams: 678
+- source: gymflow
+  source_id: wagamama_chicken_ramen
+  name: Wagamama Chicken Ramen
+  brand: Wagamama
+  region_codes: gb,us
+  kcal_per_100g: 75
+  protein_per_100g: 5.5
+  carbs_per_100g: 8.0
+  fat_per_100g: 2.0
+  serving_grams: 750
+  serving_label: 1 bowl
+  tags: restaurant,chain,asian,soup
+  dietary_compat: ''
+  allergens: gluten,eggs,soy,sesame
+  portion_unit: meal
+  unit_grams: 705
+- source: gymflow
+  source_id: wagamama_chicken_yakisoba
+  name: Wagamama Chicken Yakisoba
+  brand: Wagamama
+  region_codes: gb,us
+  kcal_per_100g: 130
+  protein_per_100g: 8.0
+  carbs_per_100g: 17.0
+  fat_per_100g: 3.5
+  serving_grams: 500
+  serving_label: 1 bowl
+  tags: restaurant,chain,asian,noodle
+  dietary_compat: ''
+  allergens: gluten,eggs,soy,sesame,fish
+  portion_unit: meal
+  unit_grams: 532
+- source: gymflow
+  source_id: wagamama_edamame
+  name: Wagamama Edamame Beans
+  brand: Wagamama
+  region_codes: gb,us
+  kcal_per_100g: 145
+  protein_per_100g: 12.0
+  carbs_per_100g: 9.0
+  fat_per_100g: 6.0
+  serving_grams: 120
+  serving_label: 1 portion
+  tags: restaurant,chain,sides,protein,vegan
+  dietary_compat: vegan,vegetarian,gluten_free,dairy_free
+  allergens: soy
+  portion_unit: pack
+  unit_grams: 100
+- source: gymflow
+  source_id: wagamama_pad_thai_chicken
+  name: Pad Thai Chicken
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 12
+  carbs_per_100g: 18
+  fat_per_100g: 6
+  serving_grams: 580
+  serving_label: 1 portion (580 g)
+  portion_unit: meal
+  tags: chain,japanese,noodles,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,eggs,peanuts,fish,sesame
+  unit_grams: 580
+- source: gymflow
+  source_id: wagamama_pad_thai_prawn
+  name: Pad Thai Prawn
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  serving_grams: 560
+  serving_label: 1 portion (560 g)
+  portion_unit: meal
+  tags: chain,japanese,noodles
+  dietary_compat: pescatarian
+  allergens: crustaceans,gluten,eggs,peanuts,fish
+  unit_grams: 560
+- source: gymflow
+  source_id: wagamama_pad_thai_veggie
+  name: Pad Thai (vegan)
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 3
+  serving_grams: 540
+  serving_label: 1 portion (540 g)
+  portion_unit: meal
+  tags: chain,japanese,noodles,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,eggs,peanuts,fish
+  unit_grams: 540
+- source: gymflow
+  source_id: wagamama_yasai_katsu
+  name: Yasai (Vegan) Katsu Curry
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 24
+  fat_per_100g: 7
+  serving_grams: 658
+  serving_label: 1 portion (658 g)
+  portion_unit: meal
+  tags: chain,japanese,curry,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,celery,sesame
+  unit_grams: 658
+- source: gymflow
+  source_id: wagamama_firecracker_chicken
+  name: Firecracker Chicken
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 6
+  serving_grams: 545
+  serving_label: 1 portion (545 g)
+  portion_unit: meal
+  tags: chain,japanese,chicken
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,sesame,fish,molluscs
+  unit_grams: 545
+- source: gymflow
+  source_id: wagamama_chilli_squid
+  name: Chilli Squid (starter)
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 165
+  serving_label: 1 portion (165 g)
+  portion_unit: pack
+  tags: chain,japanese,starter
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,molluscs,eggs,sesame
+  unit_grams: 165
+- source: gymflow
+  source_id: wagamama_pulled_pork_gyoza
+  name: Pulled Pork Gyoza (5)
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 10
+  carbs_per_100g: 24
+  fat_per_100g: 12
+  serving_grams: 145
+  serving_label: 1 portion (145 g)
+  portion_unit: pack
+  tags: chain,japanese,starter
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,soy,sesame,sulphites
+  unit_grams: 145
+- source: gymflow
+  source_id: wagamama_yasai_gyoza
+  name: Yasai (Vegan) Gyoza (5)
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 26
+  fat_per_100g: 5
+  serving_grams: 130
+  serving_label: 1 portion (130 g)
+  portion_unit: pack
+  tags: chain,japanese,starter,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy,sesame
+  unit_grams: 130
+- source: gymflow
+  source_id: wagamama_kare_lomen
+  name: Kare Lomen (curry ramen)
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 6
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: chain,japanese,noodles,curry
+  dietary_compat: pescatarian
+  allergens: gluten,milk,celery
+  unit_grams: 700
+- source: gymflow
+  source_id: wagamama_shirodashi_ramen
+  name: Shirodashi Pork Ramen
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 12
+  carbs_per_100g: 16
+  fat_per_100g: 5
+  serving_grams: 705
+  serving_label: 1 portion (705 g)
+  portion_unit: meal
+  tags: chain,japanese,noodles
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,molluscs,fish,sesame
+  unit_grams: 705
+- source: gymflow
+  source_id: wagamama_yasai_ramen
+  name: Yasai (Vegan) Ramen
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 5
+  carbs_per_100g: 18
+  fat_per_100g: 3
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: chain,japanese,noodles,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sesame
+  unit_grams: 700
+- source: gymflow
+  source_id: wagamama_donburi_chicken
+  name: Chicken Donburi
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 21
+  fat_per_100g: 5
+  serving_grams: 540
+  serving_label: 1 portion (540 g)
+  portion_unit: meal
+  tags: chain,japanese,bowl,chicken
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,eggs,sesame
+  unit_grams: 540
+- source: gymflow
+  source_id: wagamama_steak_donburi
+  name: Steak Donburi
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  serving_grams: 540
+  serving_label: 1 portion (540 g)
+  portion_unit: meal
+  tags: chain,japanese,bowl
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs,sesame
+  unit_grams: 540
+- source: gymflow
+  source_id: wagamama_yasai_donburi
+  name: Yasai (Vegan) Donburi
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  serving_grams: 520
+  serving_label: 1 portion (520 g)
+  portion_unit: meal
+  tags: chain,japanese,bowl,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sesame
+  unit_grams: 520
+- source: gymflow
+  source_id: wagamama_chicken_raisukaree
+  name: Chicken Raisukaree
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  serving_grams: 530
+  serving_label: 1 portion (530 g)
+  portion_unit: meal
+  tags: chain,japanese,curry,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,celery,sesame,fish
+  unit_grams: 530
+- source: gymflow
+  source_id: wagamama_kosho_chicken
+  name: Kosho Chicken
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 13
+  carbs_per_100g: 16
+  fat_per_100g: 6
+  serving_grams: 530
+  serving_label: 1 portion (530 g)
+  portion_unit: meal
+  tags: chain,japanese,chicken
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,sesame
+  unit_grams: 530
+- source: gymflow
+  source_id: wagamama_bao_pulled_pork
+  name: 'Bao Buns: Pulled Pork (2)'
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 10
+  carbs_per_100g: 26
+  fat_per_100g: 10
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,japanese,starter
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,soy,sesame
+  unit_grams: 180
+- source: gymflow
+  source_id: wagamama_bao_chicken
+  name: 'Bao Buns: Chicken (2)'
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 11
+  carbs_per_100g: 26
+  fat_per_100g: 9
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,japanese,starter,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,soy,sesame
+  unit_grams: 180
+- source: gymflow
+  source_id: wagamama_miso_soup
+  name: Miso Soup
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 25
+  protein_per_100g: 2
+  carbs_per_100g: 3
+  fat_per_100g: 0.5
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: chain,japanese,starter,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: soy,fish
+  unit_grams: 250
+- source: gymflow
+  source_id: wagamama_steamed_rice
+  name: Steamed Rice (side)
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 2.7
+  carbs_per_100g: 28
+  fat_per_100g: 0.3
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,japanese,side,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 200
+- source: gymflow
+  source_id: wagamama_kimchee_pickle
+  name: Kimchee Pickle
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 35
+  protein_per_100g: 1.5
+  carbs_per_100g: 5
+  fat_per_100g: 0.5
+  serving_grams: 80
+  serving_label: 1 portion (80 g)
+  portion_unit: pack
+  tags: chain,japanese,side,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: fish,sulphites
+  unit_grams: 80
+- source: gymflow
+  source_id: wagamama_dorayaki
+  name: Dorayaki Pancakes
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 7
+  carbs_per_100g: 50
+  fat_per_100g: 14
+  serving_grams: 175
+  serving_label: 1 piece (175 g)
+  portion_unit: piece
+  tags: chain,japanese,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 175
+- source: gymflow
+  source_id: wagamama_yasai_yaki_soba
+  name: Yasai (Vegan) Yaki Soba
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  serving_grams: 510
+  serving_label: 1 portion (510 g)
+  portion_unit: meal
+  tags: chain,japanese,noodles,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy,sesame
+  unit_grams: 510
+- source: gymflow
+  source_id: wagamama_chicken_itame
+  name: Chicken Itame
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 16
+  fat_per_100g: 4
+  serving_grams: 540
+  serving_label: 1 portion (540 g)
+  portion_unit: meal
+  tags: chain,japanese,noodles,chicken
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,molluscs,fish,sesame
+  unit_grams: 540
+- source: gymflow
+  source_id: wagamama_grilled_duck_donburi
+  name: Grilled Duck Donburi
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 12
+  carbs_per_100g: 19
+  fat_per_100g: 8
+  serving_grams: 530
+  serving_label: 1 portion (530 g)
+  portion_unit: meal
+  tags: chain,japanese,bowl
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,sesame
+  unit_grams: 530
+- source: gymflow
+  source_id: wagamama_juice_apple
+  name: Apple Juice (Wagamama)
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 47
+  protein_per_100g: 0.1
+  carbs_per_100g: 11.0
+  fat_per_100g: 0
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: chain,japanese,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: wagamama_lemonade
+  name: House Lemonade
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 35
+  protein_per_100g: 0
+  carbs_per_100g: 8.5
+  fat_per_100g: 0
+  serving_grams: 350
+  serving_label: 1 ml (350 g)
+  portion_unit: ml
+  tags: chain,japanese,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: wagamama_green_tea
+  name: Green Tea
+  brand: Wagamama
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0.2
+  fat_per_100g: 0
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: chain,japanese,drink,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''

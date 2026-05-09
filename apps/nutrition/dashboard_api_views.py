@@ -1,24 +1,25 @@
 """Phase 3 — nutrition dashboard JSON endpoints.
 
-Powers the drag-drop meal builder + Open Food Facts food search.
+Powers the trainer's drag-drop meal builder + food picker.
+
+**Internal-only food catalog.** The dashboard food search queries the
+`CuratedFood` table (NUTRITION-DB #105) — our 200+ hand-curated whole
+foods, UK supermarket items and restaurant chains. No Open Food Facts,
+no USDA live API, no third-party calls.
+
+If a trainer can't find a food in the catalog, they can either
+(a) create a custom library item via `/library/custom/`, or
+(b) ask the AI describe path on the client side to estimate macros.
 
 Auth: trainer with role==TRAINER and a related trainer_profile.
-Catalog reads proxy to Open Food Facts; writes are scoped to the
-calling trainer's own data.
+Catalog reads come from CuratedFood; writes are scoped to the calling
+trainer's own data.
 """
-import json
 import logging
-import time
-import urllib.parse
-import urllib.request
-import urllib.error
 
-from django.core.cache import cache
 from django.db import transaction
 from django.db.models import Q
 from django.shortcuts import get_object_or_404
-
-log = logging.getLogger(__name__)
 
 from rest_framework import status
 from rest_framework.decorators import api_view, permission_classes
@@ -28,12 +29,12 @@ from rest_framework.response import Response
 from apps.users.models import User
 
 from .models import (
+    CuratedFood,
     FoodLibraryItem,
     NutritionMeal,
     NutritionMealItem,
 )
 from .dashboard_serializers import (
-    FoodCatalogResultSerializer,
     FoodLibraryItemSerializer,
     MealItemCreateSerializer,
     MealItemReadSerializer,
@@ -41,21 +42,7 @@ from .dashboard_serializers import (
     MealReorderSerializer,
 )
 
-
-# Search-a-licious is OFF's modern Elasticsearch-backed search engine —
-# proper relevance ranking, much less noise than the legacy MongoDB regex
-# search. Far better for queries like "rice" / "chicken breast" where the
-# old endpoint returns anything containing the word in any field.
-OFF_SALC_URL = "https://search.openfoodfacts.org/search"
-OFF_V2_URL = "https://world.openfoodfacts.org/api/v2/search"
-OFF_LEGACY_URL = "https://world.openfoodfacts.org/cgi/search.pl"
-# OFF asks third parties to identify themselves clearly.
-OFF_USER_AGENT = "GymFlow/1.0 - Trainer dashboard - https://github.com/Deen-Codes/gymflow-backend"
-OFF_TIMEOUT_SEC = 6
-OFF_CACHE_SECONDS = 600  # 10 min — same query won't keep hitting OFF
-# Bumped to v5 — exact-match boost reorders results, so any cached
-# responses from the previous shape would be in the wrong order.
-OFF_CACHE_PREFIX = "off:v6:search:"   # bumped to flush bad cache entries from the strict-brand-filter regression
+log = logging.getLogger(__name__)
 
 
 # -------------------------------------------------------------------
@@ -82,486 +69,94 @@ def _safe_float(value, default=0.0):
         return default
 
 
-def _pick_name(p):
-    """Pick the best human-readable name from an OFF product.
-    Prefers explicit English fields, then the generic name, then the
-    default. Returns "" if nothing usable exists (caller should drop)."""
-    if not isinstance(p, dict):
-        return ""
-    candidates = [
-        p.get("product_name_en"),
-        p.get("product_name"),
-        p.get("generic_name_en"),
-        p.get("generic_name"),
-    ]
-    for c in candidates:
-        if not c:
-            continue
-        # OFF sometimes returns localized names as a list of dicts
-        # like [{"lang": "en", "text": "Brown Rice"}]. Pull the text
-        # if that's what we got.
-        if isinstance(c, list) and c:
-            first = c[0]
-            if isinstance(first, dict):
-                c = first.get("text") or first.get("value") or ""
-            else:
-                c = first
-        if not isinstance(c, str):
-            c = str(c)
-        s = c.strip()
-        if not s:
-            continue
-        # Skip names that are just barcodes / numeric IDs — OFF stores
-        # these for products with no real name set.
-        digits = sum(ch.isdigit() for ch in s)
-        if digits >= max(6, len(s) - 2):
-            continue
-        return s[:255]
-    return ""
-
-
-def _normalize_off_product(p):
-    """Reduce one Open Food Facts product blob into our flat shape.
-
-    Handles three shapes:
-      • OFF v2 / legacy CGI: flat dict {code, product_name, nutriments}
-      • search-a-licious flat: same shape as v2
-      • search-a-licious ES-style: {_id, _score, _source: {...flat...}}
-
-    Returns None if the input isn't a dict at all (defensive — we never
-    want a single bad row to 500 the whole search).
-    """
-    if not isinstance(p, dict):
-        return None
-
-    # Unwrap Elasticsearch-style hits if needed
-    if "_source" in p and isinstance(p.get("_source"), dict):
-        p = p["_source"]
-
-    nutr = p.get("nutriments") or {}
-    if not isinstance(nutr, dict):
-        nutr = {}
-
-    kcal = (
-        nutr.get("energy-kcal_100g")
-        or nutr.get("energy-kcal")
-        or nutr.get("energy_100g")
-        or 0
-    )
-    # OFF returns `brands` as a comma-separated string, but
-    # search-a-licious returns it as a list. Handle both shapes
-    # so we don't render Python list literals to the trainer.
-    brands_raw = p.get("brands")
-    if isinstance(brands_raw, list):
-        brand_str = (brands_raw[0] if brands_raw else "")
-    elif isinstance(brands_raw, str):
-        brand_str = brands_raw.split(",")[0]
-    else:
-        brand_str = ""
-    if not isinstance(brand_str, str):
-        brand_str = str(brand_str)
-    brand = brand_str.strip()[:255]
-
+def _scale_macros(library_item, grams):
+    """Scale a library item's per-reference macros to the requested
+    grams-equivalent amount. The reference is stored on the library
+    item (default 100 g; for unit-portion items it's the named unit)."""
+    ref = library_item.reference_grams or 100.0
+    factor = (grams or 0.0) / ref if ref else 0.0
     return {
-        "external_id": str(p.get("code") or "").strip(),
-        "name": _pick_name(p),
-        "brand": brand,
-        "reference_grams": 100.0,
-        "calories": _safe_float(kcal),
-        "protein": _safe_float(nutr.get("proteins_100g")),
-        "carbs": _safe_float(nutr.get("carbohydrates_100g")),
-        "fats": _safe_float(nutr.get("fat_100g")),
+        "calories": (library_item.calories or 0) * factor,
+        "protein":  (library_item.protein  or 0) * factor,
+        "carbs":    (library_item.carbs    or 0) * factor,
+        "fats":     (library_item.fats     or 0) * factor,
     }
 
 
-def _is_useful_food(item):
-    """Filter rules that drop OFF noise:
-       - missing or junk name → drop
-       - all-zero macros → drop (means OFF has no nutrition data)
+def _curated_to_row(food):
+    """Render a CuratedFood as a dashboard food-picker row.
 
-    We don't filter on brand here — every brand string gets blanked
-    out before the response is sent (see `_strip_brand_for_display`)
-    so the UI never shows brand-name baggage, but the underlying OFF
-    record can still surface as a generic food. Combined with
-    `_dedupe_by_name`, the trainer sees one clean "Brown Rice" row
-    rather than twelve branded variants.
+    The shape mirrors what the trainer dashboard frontend already
+    consumes — keeps the React/Vue components untouched while we
+    swap the data source.
+
+    `external_id` becomes `curated:<pk>` so meal-item snapshots
+    can dedupe per-trainer the same way they used to with OFF
+    barcodes.
     """
-    if not item.get("name"):
-        return False
-    macro_total = (
-        (item.get("calories") or 0)
-        + (item.get("protein") or 0)
-        + (item.get("carbs") or 0)
-        + (item.get("fats") or 0)
-    )
-    return macro_total > 0
+    return {
+        "external_id":     f"curated:{food.id}",
+        "name":            food.name,
+        "brand":           food.brand or "",
+        "reference_grams": 100.0,
+        "calories":        round(food.kcal_per_100g,    1),
+        "protein":         round(food.protein_per_100g, 1),
+        "carbs":           round(food.carbs_per_100g,   1),
+        "fats":            round(food.fat_per_100g,     1),
+        "serving_grams":   food.serving_grams,
+        "serving_label":   food.serving_label or "",
+        # FOOD-DB-V2 — portion units. Trainer dashboard surfaces
+        # the same unit affordance as iOS so a "1 egg" selection
+        # makes it through end-to-end.
+        "portion_unit":    food.portion_unit or "grams",
+        "unit_grams":      food.unit_grams,
+    }
 
 
-def _strip_brand_for_display(items):
-    """Blank out the `brand` field on every result so the UI shows
-    foods as generic. Mutates a shallow copy and returns the new
-    list. Combined with `_dedupe_by_name`, the trainer sees one
-    "Brown Rice" entry rather than "Tesco Brown Rice", "Tilda Brown
-    Rice", etc."""
-    out = []
-    for item in items or []:
-        copy = dict(item)
-        copy["brand"] = ""
-        out.append(copy)
-    return out
+def _snapshot_food_into_library(trainer, payload):
+    """Idempotently copy a search-result row into the trainer's
+    private FoodLibraryItem table.
 
+    Trainers can edit / rename library items without affecting the
+    canonical CuratedFood entry — the snapshot model gives them a
+    private workspace. Re-search of the same food returns the existing
+    row so we don't grow the library on every drag.
 
-def _snapshot_off_into_library(trainer, payload):
-    """Idempotent: if an OFF product is already in this trainer's
-    library (matched on source+external_id), return it; otherwise
-    create a fresh FoodLibraryItem from the OFF snapshot."""
+    Replaces the old OFF-snapshot path (`source="off"`); new snapshots
+    use `source="gymflow"`. Legacy `source="off"` rows in the database
+    keep working — `external_id` lookups still resolve them.
+    """
     external_id = (payload.get("external_id") or "").strip()
     if external_id:
-        existing = FoodLibraryItem.objects.filter(
-            user=trainer, source=FoodLibraryItem.SOURCE_OFF, external_id=external_id
-        ).first()
+        existing = (
+            FoodLibraryItem.objects
+            .filter(user=trainer, external_id=external_id)
+            .first()
+        )
         if existing:
             return existing
 
     return FoodLibraryItem.objects.create(
         user=trainer,
-        name=payload["name"],
-        brand=payload.get("brand", ""),
-        reference_grams=payload.get("reference_grams", 100.0) or 100.0,
-        calories=payload.get("calories", 0.0) or 0.0,
-        protein=payload.get("protein", 0.0) or 0.0,
-        carbs=payload.get("carbs", 0.0) or 0.0,
-        fats=payload.get("fats", 0.0) or 0.0,
-        source=FoodLibraryItem.SOURCE_OFF if external_id else FoodLibraryItem.SOURCE_CUSTOM,
+        name=str(payload.get("name") or "")[:255],
+        brand=str(payload.get("brand") or "")[:255],
+        reference_grams=_safe_float(payload.get("reference_grams"), 100.0) or 100.0,
+        calories=_safe_float(payload.get("calories")),
+        protein=_safe_float(payload.get("protein")),
+        carbs=_safe_float(payload.get("carbs")),
+        fats=_safe_float(payload.get("fats")),
+        portion_type=FoodLibraryItem.PORTION_GRAMS,
+        unit_label="",
+        source=FoodLibraryItem.SOURCE_GYMFLOW,
         external_id=external_id,
     )
 
 
-def _scale_macros(library_item, grams):
-    """Scale a library item's per-reference macros to a portion size."""
-    ref = library_item.reference_grams or 100.0
-    factor = float(grams) / float(ref) if ref else 0
-    return {
-        "calories": (library_item.calories or 0) * factor,
-        "protein": (library_item.protein or 0) * factor,
-        "carbs": (library_item.carbs or 0) * factor,
-        "fats": (library_item.fats or 0) * factor,
-    }
-
-
-# -------------------------------------------------------------------
-# Open Food Facts catalog (right-rail search)
-# -------------------------------------------------------------------
-def _http_get_json(url, timeout=OFF_TIMEOUT_SEC):
-    """Fetch a JSON response. Returns (body_dict, error_str). On HTTP
-    or network failure returns (None, "<reason>"). Caller decides what
-    to do — we don't raise here so the view can fall back cleanly."""
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": OFF_USER_AGENT})
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            raw = resp.read().decode("utf-8")
-        return json.loads(raw), None
-    except urllib.error.HTTPError as exc:
-        return None, f"HTTP {exc.code} {exc.reason}"
-    except (urllib.error.URLError, TimeoutError) as exc:
-        return None, f"network: {exc}"
-    except (ValueError, json.JSONDecodeError) as exc:
-        return None, f"bad JSON: {exc}"
-
-
-FIELDS = "code,product_name,product_name_en,generic_name,generic_name_en,brands,nutriments"
-
-
-def _fetch_off(query):
-    """Try OFF endpoints in order of result quality:
-       1. search-a-licious  — Elasticsearch-backed, proper relevance ranking
-       2. v2 + categories   — restricts matches to the curated category
-                              taxonomy (drops dairy when searching "rice")
-       3. v2 plain text     — last-resort full-text fallback
-
-    First non-empty response wins.
-    """
-    last_err = "no attempts"
-    for fetcher in (_fetch_off_salc, _fetch_off_v2_categories, _fetch_off_v2_text):
-        try:
-            products, err = fetcher(query)
-        except Exception as exc:
-            log.warning("OFF fetcher %s raised: %s", fetcher.__name__, exc)
-            products, err = None, f"{fetcher.__name__}: {exc}"
-        if products:
-            return products, None
-        if err:
-            last_err = err
-        time.sleep(0.3)
-    return None, last_err
-
-
-def _fetch_off_salc(query):
-    """OFF search-a-licious — modern Elasticsearch search engine."""
-    params = {
-        "q": query,
-        "page_size": "40",
-        "fields": FIELDS,
-        "langs": "en",
-    }
-    url = f"{OFF_SALC_URL}?{urllib.parse.urlencode(params)}"
-    body, err = _http_get_json(url)
-    if body is None:
-        return None, f"salc: {err}"
-    hits = body.get("hits") or body.get("products") or []
-    if isinstance(hits, list):
-        return hits, None
-    return None, "salc: no hits field"
-
-
-def _fetch_off_v2_categories(query):
-    """OFF v2 with category-tag filter."""
-    params = {
-        "tagtype_0": "categories",
-        "tag_contains_0": "contains",
-        "tag_0": query,
-        "lc": "en",
-        "sort_by": "unique_scans_n",
-        "fields": FIELDS,
-        "page_size": "40",
-        "json": "1",
-    }
-    url = f"{OFF_V2_URL}?{urllib.parse.urlencode(params)}"
-    body, err = _http_get_json(url)
-    if body is None:
-        return None, f"v2-categories: {err}"
-    products = body.get("products") or []
-    if isinstance(products, list):
-        return products, None
-    return None, "v2-categories: no products field"
-
-
-def _fetch_off_v2_text(query):
-    """OFF v2 free-text fallback."""
-    params = {
-        "search_terms": query,
-        "lc": "en",
-        "sort_by": "unique_scans_n",
-        "fields": FIELDS,
-        "page_size": "40",
-        "json": "1",
-    }
-    url = f"{OFF_V2_URL}?{urllib.parse.urlencode(params)}"
-    body, err = _http_get_json(url)
-    if body is None:
-        return None, f"v2-text: {err}"
-    products = body.get("products") or []
-    if isinstance(products, list):
-        return products, None
-    return None, "v2-text: no products field"
-
-
-def _dedupe_by_name(items):
-    """Collapse multiple branded variants of the same food into one row.
-
-    Trainers don't care that "Tilda Brown Rice" and "Sainsbury's Brown
-    Rice" are different products — they care about brown rice. After
-    debranding, we keep the first occurrence per lowercased name so the
-    list stays clean.
-    """
-    seen = set()
-    out = []
-    for item in items:
-        key = (item.get("name") or "").strip().lower()
-        if not key or key in seen:
-            continue
-        seen.add(key)
-        out.append(item)
-    return out
-
-
-def _exact_match_boost(items, query):
-    """Re-rank results so exact / near-exact name matches float to the top.
-
-    The default OFF order surfaces popular compound products like
-    "Almond milk" before the literal "Almonds". Trainers searching
-    "almond" almost always want the literal first. We bucket results
-    into match-quality tiers and concatenate, preserving relative
-    order inside each tier.
-    """
-    q = (query or "").strip().lower()
-    if not q:
-        return items
-
-    exact, plural, starts, contains, rest = [], [], [], [], []
-    for item in items:
-        n = (item.get("name") or "").strip().lower()
-        if n == q:
-            exact.append(item)
-        elif n in (q + "s", q + "es") or q in (n + "s", n + "es"):
-            plural.append(item)
-        elif n.startswith(q + " ") or n.startswith(q + ","):
-            starts.append(item)
-        elif f" {q} " in f" {n} " or n.endswith(" " + q):
-            contains.append(item)
-        else:
-            rest.append(item)
-
-    return exact + plural + starts + contains + rest
-
-
-def _library_fallback(trainer, query):
-    """When OFF is fully down, search the trainer's already-snapshotted
-    library so they can still build meals. Returns rows shaped like the
-    catalog response."""
-    qs = FoodLibraryItem.objects.filter(user=trainer)
-    if query:
-        qs = qs.filter(Q(name__icontains=query) | Q(brand__icontains=query))
-    qs = qs.order_by("name")[:20]
-    rows = []
-    for f in qs:
-        # `id` lets the JS post the library_item_id path (no re-snapshot
-        # needed). external_id stays for the in-library badge.
-        rows.append({
-            "id": f.id,
-            "external_id": f.external_id or f"lib-{f.id}",
-            "name": f.name,
-            "brand": f.brand,
-            "reference_grams": f.reference_grams or 100,
-            "calories": f.calories or 0,
-            "protein": f.protein or 0,
-            "carbs": f.carbs or 0,
-            "fats": f.fats or 0,
-            "in_library": True,
-        })
-    return rows
-
-
-@api_view(["GET"])
-@permission_classes([IsAuthenticated])
-def food_search(request):
-    """GET /api/nutrition/dashboard/catalog/?q=apple
-
-    Live-proxy to Open Food Facts with retry, legacy-endpoint fallback,
-    a 10-minute in-memory cache, and a library fallback when OFF is
-    fully down — so the trainer can still build meals during outages.
-
-    Response shape: {results: [...], source: "off"|"cache"|"library", message?}
-    """
-    trainer, err = _require_trainer(request)
-    if err:
-        return err
-
-    q = (request.query_params.get("q") or "").strip()
-    if not q:
-        # Empty search → show the trainer's recent library so the
-        # picker mirrors the workout catalog tab, which always has
-        # *something* to pick from. Sorted by created_at descending so
-        # the most recently added food appears first; `library_list`-
-        # style payload shape lets the frontend reuse the same row
-        # template.
-        recent = list(
-            FoodLibraryItem.objects.filter(user=trainer)
-            .order_by("-created_at")[:20]
-        )
-        rows = [
-            {
-                "external_id":    f.external_id,
-                "name":           f.name,
-                "brand":          f.brand,
-                "reference_grams": f.reference_grams,
-                "calories":       f.calories,
-                "protein":        f.protein,
-                "carbs":          f.carbs,
-                "fats":           f.fats,
-                "in_library":     True,
-                "library_id":     f.id,
-                "portion_type":   f.portion_type,
-                "unit_label":     f.unit_label,
-            }
-            for f in recent
-        ]
-        return Response({"results": rows, "source": "library"})
-
-    cache_key = f"{OFF_CACHE_PREFIX}{q.lower()}"
-    try:
-        cached = cache.get(cache_key)
-    except Exception as exc:  # broken cache backend shouldn't 500
-        log.warning("food cache read failed: %s", exc)
-        cached = None
-    if cached is not None:
-        results = _annotate_in_library(trainer, cached)
-        return Response({"results": results, "source": "cache"})
-
-    # Fetch + normalize is wrapped end-to-end so any unexpected exception
-    # (network, weird response shape, etc.) falls back to the library
-    # rather than 500-ing the entire search.
-    try:
-        products, off_err = _fetch_off(q)
-    except Exception as exc:
-        log.exception("food_search: fetch raised: %s", exc)
-        products, off_err = None, str(exc)
-
-    if not products:
-        log.info("food_search: OFF returned no usable results for %r (%s)", q, off_err)
-        rows = _library_fallback(trainer, q)
-        return Response({
-            "results": rows,
-            "source": "library",
-            "message": "Food search is offline — showing matches from your library.",
-        })
-
-    normalized = []
-    for p in products:
-        try:
-            n = _normalize_off_product(p)
-        except Exception as exc:
-            log.warning("food_search: normalize failed for %r: %s", p, exc)
-            continue
-        if not n:
-            continue
-        if not n.get("external_id"):
-            continue
-        if not _is_useful_food(n):
-            continue
-        normalized.append(n)
-
-    # Collapse branded variants of the same food into one row
-    # ("Tilda Brown Rice", "Sainsbury's Brown Rice" → just "Brown Rice").
-    normalized = _dedupe_by_name(normalized)
-
-    # Bubble exact / near-exact matches to the top so "almond" surfaces
-    # "Almonds" before "Almond milk".
-    normalized = _exact_match_boost(normalized, q)
-
-    # Trim back down to ~20 after filtering — page_size=40 was headroom.
-    normalized = normalized[:20]
-
-    if not normalized:
-        log.info("food_search: all %d OFF results filtered out for %r", len(products), q)
-        rows = _library_fallback(trainer, q)
-        return Response({
-            "results": rows,
-            "source": "library",
-            "message": "No matches with nutrition data — showing your library instead.",
-        })
-
-    # Generic-only display: blank out brand strings on every row so
-    # the trainer sees clean food names, not "Tesco Brown Rice"
-    # baggage. The earlier `_dedupe_by_name` pass has already
-    # collapsed brand variants of the same food, so blanking the
-    # field doesn't lose any signal. Strip BEFORE caching so cache
-    # hits are also already-clean; saves us re-stripping on every
-    # retrieval.
-    normalized = _strip_brand_for_display(normalized)
-
-    try:
-        cache.set(cache_key, normalized, OFF_CACHE_SECONDS)
-    except Exception as exc:
-        log.warning("food cache write failed: %s", exc)
-
-    results = _annotate_in_library(trainer, normalized)
-    return Response({"results": results, "source": "off"})
-
-
 def _annotate_in_library(trainer, items):
-    """Tag each item with `in_library=True` if this trainer already
-    snapshotted that OFF code. Mutates a shallow copy."""
+    """Tag each row with `in_library=True` if this trainer has already
+    snapshotted that food. Match is by `external_id` so the same
+    `curated:<id>` resolves on re-search.
+    """
     if not items:
         return []
     external_ids = [it["external_id"] for it in items if it.get("external_id")]
@@ -570,7 +165,6 @@ def _annotate_in_library(trainer, items):
         in_lib = set(
             FoodLibraryItem.objects.filter(
                 user=trainer,
-                source=FoodLibraryItem.SOURCE_OFF,
                 external_id__in=external_ids,
             ).values_list("external_id", flat=True)
         )
@@ -580,6 +174,91 @@ def _annotate_in_library(trainer, items):
         copy["in_library"] = it.get("in_library") or (it.get("external_id") in in_lib)
         out.append(copy)
     return out
+
+
+# -------------------------------------------------------------------
+# Food search — internal CuratedFood query
+# -------------------------------------------------------------------
+@api_view(["GET"])
+@permission_classes([IsAuthenticated])
+def food_search(request):
+    """GET /api/nutrition/dashboard/catalog/?q=apple&region=gb
+
+    Search the internal CuratedFood catalog. Returns up to 20 rows
+    in the dashboard food-picker shape.
+
+    Empty query → trainer's recent library items so the picker
+    always has something to scroll through.
+
+    Response shape: `{results: [...], source: "library"|"catalog"}`
+    """
+    trainer, err = _require_trainer(request)
+    if err:
+        return err
+
+    q = (request.query_params.get("q") or "").strip()
+
+    # Empty search → recent library items, like a "recently used" tray.
+    if not q:
+        recent = list(
+            FoodLibraryItem.objects.filter(user=trainer)
+            .order_by("-created_at")[:20]
+        )
+        rows = [
+            {
+                "external_id":     f.external_id,
+                "name":            f.name,
+                "brand":           f.brand,
+                "reference_grams": f.reference_grams,
+                "calories":        f.calories,
+                "protein":         f.protein,
+                "carbs":           f.carbs,
+                "fats":            f.fats,
+                "in_library":      True,
+                "library_id":      f.id,
+                "portion_type":    f.portion_type,
+                "unit_label":      f.unit_label,
+            }
+            for f in recent
+        ]
+        return Response({"results": rows, "source": "library"})
+
+    if len(q) > 80:
+        q = q[:80]
+
+    region = (request.query_params.get("region") or "").strip().lower()
+
+    # Tiered ranking — same shape as the Solo search, so trainers and
+    # clients see the same results for the same query.
+    base = CuratedFood.objects.all()
+    exact      = list(base.filter(name__iexact=q)[:20])
+    starts     = list(base.filter(name__istartswith=q).exclude(name__iexact=q)[:20])
+    contains   = list(base.filter(name__icontains=q).exclude(name__istartswith=q)[:20])
+    brand_hits = list(base.filter(brand__icontains=q).exclude(name__icontains=q)[:20])
+    tag_hits   = list(base.filter(tags__icontains=q)
+                          .exclude(name__icontains=q)
+                          .exclude(brand__icontains=q)[:20])
+
+    ordered = []
+    seen = set()
+    for bucket in (exact, starts, contains, brand_hits, tag_hits):
+        for f in bucket:
+            if f.id in seen:
+                continue
+            seen.add(f.id)
+            ordered.append(f)
+
+    # Region prioritisation — if the trainer passed a locale region,
+    # bubble matching items above world-wide ones. Items NOT tagged
+    # for that region still appear, just lower.
+    if region:
+        in_region = [f for f in ordered if region in (f.region_codes or "").lower().split(",")]
+        rest      = [f for f in ordered if f not in in_region]
+        ordered   = in_region + rest
+
+    rows = [_curated_to_row(f) for f in ordered[:20]]
+    rows = _annotate_in_library(trainer, rows)
+    return Response({"results": rows, "source": "catalog"})
 
 
 # -------------------------------------------------------------------
@@ -651,20 +330,14 @@ def library_create_custom(request):
     except (TypeError, ValueError):
         reference = default_reference
 
-    def _macro(key):
-        try:
-            return float(body.get(key) or 0)
-        except (TypeError, ValueError):
-            return 0.0
-
     item = FoodLibraryItem.objects.create(
         user=trainer,
         name=name[:255],
         reference_grams=max(0.001, reference),    # avoid div-by-zero in scaling
-        calories=_macro("calories"),
-        protein=_macro("protein"),
-        carbs=_macro("carbs"),
-        fats=_macro("fats"),
+        calories=_safe_float(body.get("calories")),
+        protein=_safe_float(body.get("protein")),
+        carbs=_safe_float(body.get("carbs")),
+        fats=_safe_float(body.get("fats")),
         portion_type=portion_type,
         unit_label=(body.get("unit_label") or "").strip()[:40],
         source=FoodLibraryItem.SOURCE_CUSTOM,
@@ -689,8 +362,11 @@ def meal_item_add(request):
     Body: either {meal_id, library_item_id, grams}
     OR {meal_id, external_id, name, brand?, reference_grams?, calories?,
         protein?, carbs?, fats?, grams}
-    The OFF path implicitly snapshots the food into the trainer's
-    library before creating the meal item.
+
+    The catalog path implicitly snapshots the food into the trainer's
+    library before creating the meal item. Re-dropping the same
+    `external_id` reuses the existing snapshot so the library doesn't
+    grow on every drag.
     """
     trainer, err = _require_trainer(request)
     if err:
@@ -711,15 +387,15 @@ def meal_item_add(request):
             FoodLibraryItem, pk=payload["library_item_id"], user=trainer
         )
     else:
-        library_item = _snapshot_off_into_library(trainer, {
-            "external_id": payload.get("external_id", ""),
-            "name": payload["name"],
-            "brand": payload.get("brand", ""),
+        library_item = _snapshot_food_into_library(trainer, {
+            "external_id":     payload.get("external_id", ""),
+            "name":            payload["name"],
+            "brand":           payload.get("brand", ""),
             "reference_grams": payload.get("reference_grams", 100.0) or 100.0,
-            "calories": payload.get("calories", 0.0) or 0.0,
-            "protein": payload.get("protein", 0.0) or 0.0,
-            "carbs": payload.get("carbs", 0.0) or 0.0,
-            "fats": payload.get("fats", 0.0) or 0.0,
+            "calories":        payload.get("calories", 0.0) or 0.0,
+            "protein":         payload.get("protein", 0.0) or 0.0,
+            "carbs":           payload.get("carbs", 0.0) or 0.0,
+            "fats":            payload.get("fats", 0.0) or 0.0,
         })
 
     macros = _scale_macros(library_item, grams)
@@ -768,17 +444,17 @@ def meal_item_update(request, item_id):
     src = item.food_library_item
     if src is not None:
         item.calories = (src.calories or 0) * factor * (src.reference_grams or 100.0) / ref
-        item.protein = (src.protein or 0) * factor * (src.reference_grams or 100.0) / ref
-        item.carbs = (src.carbs or 0) * factor * (src.reference_grams or 100.0) / ref
-        item.fats = (src.fats or 0) * factor * (src.reference_grams or 100.0) / ref
+        item.protein  = (src.protein  or 0) * factor * (src.reference_grams or 100.0) / ref
+        item.carbs    = (src.carbs    or 0) * factor * (src.reference_grams or 100.0) / ref
+        item.fats     = (src.fats     or 0) * factor * (src.reference_grams or 100.0) / ref
     else:
         # Proportional rescale: new_macro = old_macro * (new_grams / old_grams)
         old_grams = item.grams or ref
         scale = grams / old_grams if old_grams else 0
         item.calories = (item.calories or 0) * scale
-        item.protein = (item.protein or 0) * scale
-        item.carbs = (item.carbs or 0) * scale
-        item.fats = (item.fats or 0) * scale
+        item.protein  = (item.protein  or 0) * scale
+        item.carbs    = (item.carbs    or 0) * scale
+        item.fats     = (item.fats     or 0) * scale
 
     item.grams = grams
     item.save()

@@ -1,0 +1,635 @@
+# slug_lettuce.yaml — Slug & Lettuce (Stonegate) bar/restaurant menu.
+# 40 entries: cocktails, mains, brunch, sharing platters.
+# Source: slugandlettuce.co.uk allergen + nutrition.
+- source: gymflow
+  source_id: sluglettuce_calamari
+  name: Salt & Pepper Calamari
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 170
+  serving_label: 1 portion (170 g)
+  portion_unit: pack
+  tags: chain,pub,starter
+  dietary_compat: pescatarian
+  allergens: gluten,molluscs,eggs
+  unit_grams: 170
+- source: gymflow
+  source_id: sluglettuce_chicken_wings
+  name: Buffalo Chicken Wings
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 22
+  carbs_per_100g: 7
+  fat_per_100g: 14
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,pub,starter,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 200
+- source: gymflow
+  source_id: sluglettuce_loaded_fries
+  name: Cheesy Bacon Fries
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 8
+  carbs_per_100g: 24
+  fat_per_100g: 17
+  serving_grams: 220
+  serving_label: 1 portion (220 g)
+  portion_unit: pack
+  tags: chain,pub,starter
+  dietary_compat: pescatarian
+  allergens: milk,eggs
+  unit_grams: 220
+- source: gymflow
+  source_id: sluglettuce_halloumi_fries
+  name: Halloumi Fries
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 295
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 17
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,pub,starter
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 200
+- source: gymflow
+  source_id: sluglettuce_nachos
+  name: Loaded Nachos
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 9
+  carbs_per_100g: 26
+  fat_per_100g: 14
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: pack
+  tags: chain,pub,starter
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,sulphites
+  unit_grams: 350
+- source: gymflow
+  source_id: sluglettuce_classic_burger
+  name: Classic Beef Burger
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 13
+  serving_grams: 470
+  serving_label: 1 portion (470 g)
+  portion_unit: meal
+  tags: chain,pub,burger
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 470
+- source: gymflow
+  source_id: sluglettuce_chicken_burger
+  name: Buttermilk Chicken Burger
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 16
+  carbs_per_100g: 23
+  fat_per_100g: 9
+  serving_grams: 460
+  serving_label: 1 portion (460 g)
+  portion_unit: meal
+  tags: chain,pub,burger,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 460
+- source: gymflow
+  source_id: sluglettuce_vegan_burger
+  name: Vegan Burger
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 9
+  carbs_per_100g: 24
+  fat_per_100g: 8
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: chain,pub,burger,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten,sesame,soy
+  unit_grams: 450
+- source: gymflow
+  source_id: sluglettuce_fish_chips
+  name: Fish & Chips
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 12
+  carbs_per_100g: 23
+  fat_per_100g: 9
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: pescatarian
+  allergens: fish,gluten,eggs
+  unit_grams: 600
+- source: gymflow
+  source_id: sluglettuce_chicken_pasta
+  name: Cajun Chicken Pasta
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  serving_grams: 480
+  serving_label: 1 portion (480 g)
+  portion_unit: meal
+  tags: chain,pub,meal,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 480
+- source: gymflow
+  source_id: sluglettuce_thai_chicken
+  name: Thai Green Chicken Curry
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 6
+  serving_grams: 580
+  serving_label: 1 portion (580 g)
+  portion_unit: meal
+  tags: chain,pub,meal,curry
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: fish,celery
+  unit_grams: 580
+- source: gymflow
+  source_id: sluglettuce_paella
+  name: Chicken & Chorizo Paella
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 19
+  fat_per_100g: 5
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: chain,pub,meal,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: crustaceans,molluscs,sulphites
+  unit_grams: 500
+- source: gymflow
+  source_id: sluglettuce_jackfruit_curry
+  name: Jackfruit Curry
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 3
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  serving_grams: 580
+  serving_label: 1 portion (580 g)
+  portion_unit: meal
+  tags: chain,pub,meal,vegan,curry
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: ''
+  unit_grams: 580
+- source: gymflow
+  source_id: sluglettuce_buddha_bowl
+  name: Buddha Bowl
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 140
+  protein_per_100g: 6
+  carbs_per_100g: 20
+  fat_per_100g: 4
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: chain,pub,meal,vegan,salad
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: sesame,sulphites
+  unit_grams: 380
+- source: gymflow
+  source_id: sluglettuce_sharer_meat
+  name: Meat Sharer
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 16
+  carbs_per_100g: 14
+  fat_per_100g: 13
+  serving_grams: 700
+  serving_label: 1 portion (700 g)
+  portion_unit: meal
+  tags: chain,pub,meal,sharing
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 700
+- source: gymflow
+  source_id: sluglettuce_sharer_veg
+  name: Veggie Sharer
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 8
+  carbs_per_100g: 24
+  fat_per_100g: 10
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: chain,pub,meal,sharing,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 600
+- source: gymflow
+  source_id: sluglettuce_caesar_chicken
+  name: Chicken Caesar Salad
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 13
+  carbs_per_100g: 9
+  fat_per_100g: 6
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: chain,pub,meal,salad,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,fish
+  unit_grams: 380
+- source: gymflow
+  source_id: sluglettuce_superfood_salad
+  name: Superfood Salad
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 18
+  fat_per_100g: 6
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: chain,pub,meal,salad,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: sesame,mustard
+  unit_grams: 350
+- source: gymflow
+  source_id: sluglettuce_breakfast_full
+  name: Full English
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 11
+  carbs_per_100g: 12
+  fat_per_100g: 14
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: chain,pub,meal,breakfast
+  dietary_compat: pescatarian
+  allergens: gluten,eggs,sulphites
+  unit_grams: 600
+- source: gymflow
+  source_id: sluglettuce_eggs_benedict
+  name: Eggs Benedict
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: chain,pub,meal,breakfast
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 350
+- source: gymflow
+  source_id: sluglettuce_avocado_toast
+  name: Smashed Avocado on Toast
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  serving_grams: 280
+  serving_label: 1 portion (280 g)
+  portion_unit: meal
+  tags: chain,pub,meal,breakfast,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 280
+- source: gymflow
+  source_id: sluglettuce_chips
+  name: Chips
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 4
+  carbs_per_100g: 36
+  fat_per_100g: 8
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,pub,side
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 200
+- source: gymflow
+  source_id: sluglettuce_sweet_potato_fries
+  name: Sweet Potato Fries
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 3
+  carbs_per_100g: 35
+  fat_per_100g: 9
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,pub,side
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 180
+- source: gymflow
+  source_id: sluglettuce_onion_rings
+  name: Onion Rings
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 305
+  protein_per_100g: 4
+  carbs_per_100g: 35
+  fat_per_100g: 16
+  serving_grams: 130
+  serving_label: 1 portion (130 g)
+  portion_unit: pack
+  tags: chain,pub,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 130
+- source: gymflow
+  source_id: sluglettuce_garlic_bread
+  name: Garlic Bread
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 7
+  carbs_per_100g: 38
+  fat_per_100g: 12
+  serving_grams: 130
+  serving_label: 1 portion (130 g)
+  portion_unit: pack
+  tags: chain,pub,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 130
+- source: gymflow
+  source_id: sluglettuce_pornstar_martini
+  name: Pornstar Martini
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 0.2
+  carbs_per_100g: 18.0
+  fat_per_100g: 0.1
+  serving_grams: 175
+  serving_label: 1 ml (175 g)
+  portion_unit: ml
+  tags: chain,pub,drink,alcoholic,cocktail
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: sluglettuce_espresso_martini
+  name: Espresso Martini
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 0.4
+  carbs_per_100g: 16.0
+  fat_per_100g: 0.4
+  serving_grams: 150
+  serving_label: 1 ml (150 g)
+  portion_unit: ml
+  tags: chain,pub,drink,alcoholic,cocktail
+  dietary_compat: vegetarian,pescatarian,gluten_free
+  allergens: milk,sulphites
+- source: gymflow
+  source_id: sluglettuce_aperol_spritz
+  name: Aperol Spritz
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 0.0
+  carbs_per_100g: 13.0
+  fat_per_100g: 0.0
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: chain,pub,drink,alcoholic,cocktail
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: sluglettuce_mojito
+  name: Mojito
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 0.2
+  carbs_per_100g: 16.0
+  fat_per_100g: 0.0
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: chain,pub,drink,alcoholic,cocktail
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: sluglettuce_cosmopolitan
+  name: Cosmopolitan
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 0.1
+  carbs_per_100g: 16.0
+  fat_per_100g: 0.0
+  serving_grams: 150
+  serving_label: 1 ml (150 g)
+  portion_unit: ml
+  tags: chain,pub,drink,alcoholic,cocktail
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: sluglettuce_lager_pint
+  name: Lager (pint)
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 43
+  protein_per_100g: 0.3
+  carbs_per_100g: 3.0
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: chain,pub,drink,alcoholic
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 568
+- source: gymflow
+  source_id: sluglettuce_cider_pint
+  name: Cider (pint)
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 47
+  protein_per_100g: 0.0
+  carbs_per_100g: 5.5
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: chain,pub,drink,alcoholic
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+  unit_grams: 568
+- source: gymflow
+  source_id: sluglettuce_house_red_175
+  name: House Red Wine (175 ml)
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 85
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.5
+  fat_per_100g: 0
+  serving_grams: 175
+  serving_label: 1 ml (175 g)
+  portion_unit: ml
+  tags: chain,pub,drink,alcoholic
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: sluglettuce_house_white_175
+  name: House White Wine (175 ml)
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 85
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.5
+  fat_per_100g: 0
+  serving_grams: 175
+  serving_label: 1 ml (175 g)
+  portion_unit: ml
+  tags: chain,pub,drink,alcoholic
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: sluglettuce_prosecco_glass
+  name: Prosecco (glass)
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 0.1
+  carbs_per_100g: 1.5
+  fat_per_100g: 0
+  serving_grams: 125
+  serving_label: 1 ml (125 g)
+  portion_unit: ml
+  tags: chain,pub,drink,alcoholic
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: sluglettuce_brownie_sundae
+  name: Brownie Sundae
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 48
+  fat_per_100g: 19
+  serving_grams: 180
+  serving_label: 1 piece (180 g)
+  portion_unit: piece
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 180
+- source: gymflow
+  source_id: sluglettuce_sticky_toffee
+  name: Sticky Toffee Pudding
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 365
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 17
+  serving_grams: 170
+  serving_label: 1 piece (170 g)
+  portion_unit: piece
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 170
+- source: gymflow
+  source_id: sluglettuce_cheesecake
+  name: Vanilla Cheesecake
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 5
+  carbs_per_100g: 32
+  fat_per_100g: 19
+  serving_grams: 150
+  serving_label: 1 slice (150 g)
+  portion_unit: slice
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 150
+- source: gymflow
+  source_id: sluglettuce_peppercorn_sauce
+  name: Peppercorn Sauce
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 2
+  carbs_per_100g: 5
+  fat_per_100g: 16
+  serving_grams: 60
+  serving_label: 1 portion (60 g)
+  portion_unit: pack
+  tags: chain,pub,sauce
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 60
+- source: gymflow
+  source_id: sluglettuce_garlic_butter
+  name: Garlic Butter
+  brand: Slug & Lettuce
+  region_codes: gb
+  kcal_per_100g: 720
+  protein_per_100g: 1
+  carbs_per_100g: 0.5
+  fat_per_100g: 80
+  serving_grams: 20
+  serving_label: 1 tbsp (20 g)
+  portion_unit: tbsp
+  tags: chain,pub,sauce
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 20

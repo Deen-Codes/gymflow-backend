@@ -1,0 +1,480 @@
+# pizza_express.yaml — Pizza Express UK menu. 30 entries.
+# Source: pizzaexpress.com/menu/nutritional-information.
+- source: gymflow
+  source_id: pe_pizza_margherita
+  name: Margherita Romana
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  serving_grams: 360
+  serving_label: 1 portion (360 g)
+  portion_unit: meal
+  tags: chain,italian,pizza,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 360
+- source: gymflow
+  source_id: pe_pizza_american
+  name: American Romana (pepperoni)
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 12
+  carbs_per_100g: 28
+  fat_per_100g: 12
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: chain,italian,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sulphites
+  unit_grams: 380
+- source: gymflow
+  source_id: pe_pizza_padana
+  name: La Reine Romana
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 260
+  protein_per_100g: 12
+  carbs_per_100g: 28
+  fat_per_100g: 11
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: chain,italian,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 400
+- source: gymflow
+  source_id: pe_pizza_giardiniera
+  name: Giardiniera Romana
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 7
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: chain,italian,pizza,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 400
+- source: gymflow
+  source_id: pe_pizza_vegan_giardiniera
+  name: Vegan Giardiniera
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 6
+  carbs_per_100g: 30
+  fat_per_100g: 6
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: chain,italian,pizza,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 400
+- source: gymflow
+  source_id: pe_pizza_diavolo
+  name: La Diavolo Romana
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 12
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: chain,italian,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sulphites
+  unit_grams: 400
+- source: gymflow
+  source_id: pe_pizza_pollo_pesto
+  name: Pollo Pesto Romana
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 27
+  fat_per_100g: 9
+  serving_grams: 410
+  serving_label: 1 portion (410 g)
+  portion_unit: meal
+  tags: chain,italian,pizza,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,tree_nuts
+  unit_grams: 410
+- source: gymflow
+  source_id: pe_pizza_quattro_formaggi
+  name: Quattro Formaggi Romana
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 13
+  carbs_per_100g: 27
+  fat_per_100g: 12
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: chain,italian,pizza,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 380
+- source: gymflow
+  source_id: pe_pizza_calabrese
+  name: Calabrese Romana
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 275
+  protein_per_100g: 13
+  carbs_per_100g: 27
+  fat_per_100g: 12
+  serving_grams: 410
+  serving_label: 1 portion (410 g)
+  portion_unit: meal
+  tags: chain,italian,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sulphites
+  unit_grams: 410
+- source: gymflow
+  source_id: pe_leggera_pollo
+  name: Leggera Pollo ad Astra
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  serving_grams: 320
+  serving_label: 1 portion (320 g)
+  portion_unit: meal
+  tags: chain,italian,pizza,low_calorie,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 320
+- source: gymflow
+  source_id: pe_leggera_padana
+  name: Leggera Padana
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 170
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 7
+  serving_grams: 320
+  serving_label: 1 portion (320 g)
+  portion_unit: meal
+  tags: chain,italian,pizza,low_calorie,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 320
+- source: gymflow
+  source_id: pe_carbonara
+  name: Spaghetti Carbonara
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: chain,italian,pasta
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 450
+- source: gymflow
+  source_id: pe_bolognese
+  name: Spaghetti Bolognese
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 10
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  serving_grams: 480
+  serving_label: 1 portion (480 g)
+  portion_unit: meal
+  tags: chain,italian,pasta
+  dietary_compat: pescatarian
+  allergens: gluten,milk,celery
+  unit_grams: 480
+- source: gymflow
+  source_id: pe_arrabbiata
+  name: Penne Arrabbiata
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 6
+  carbs_per_100g: 28
+  fat_per_100g: 3
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: chain,italian,pasta,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 450
+- source: gymflow
+  source_id: pe_lasagna
+  name: Lasagna Classica
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 19
+  fat_per_100g: 10
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: chain,italian,pasta
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 500
+- source: gymflow
+  source_id: pe_caesar_salad
+  name: Pollo Caesar Salad
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 13
+  carbs_per_100g: 9
+  fat_per_100g: 6
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: chain,italian,salad,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,fish
+  unit_grams: 380
+- source: gymflow
+  source_id: pe_superfood_salad
+  name: Superfood Salad
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 140
+  protein_per_100g: 5
+  carbs_per_100g: 14
+  fat_per_100g: 6
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: chain,italian,salad,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: sesame,sulphites
+  unit_grams: 350
+- source: gymflow
+  source_id: pe_dough_balls_8
+  name: Dough Balls (8)
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 8
+  carbs_per_100g: 36
+  fat_per_100g: 11
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,italian,starter
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 180
+- source: gymflow
+  source_id: pe_dough_balls_pizza
+  name: Dough Balls Pizza Pesto Rosso
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 295
+  protein_per_100g: 9
+  carbs_per_100g: 35
+  fat_per_100g: 13
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,italian,starter
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,tree_nuts
+  unit_grams: 200
+- source: gymflow
+  source_id: pe_bruschetta_classica
+  name: Bruschetta Classica
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 210
+  protein_per_100g: 5
+  carbs_per_100g: 28
+  fat_per_100g: 8
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,italian,starter,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sulphites
+  unit_grams: 200
+- source: gymflow
+  source_id: pe_calamari_starter
+  name: Calamari
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,italian,starter
+  dietary_compat: pescatarian
+  allergens: gluten,molluscs,eggs
+  unit_grams: 200
+- source: gymflow
+  source_id: pe_polenta_chips
+  name: Polenta Chips
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 4
+  carbs_per_100g: 35
+  fat_per_100g: 11
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,italian,side,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 180
+- source: gymflow
+  source_id: pe_house_salad
+  name: House Salad
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 2
+  carbs_per_100g: 6
+  fat_per_100g: 4
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,italian,side,salad
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: mustard,sulphites
+  unit_grams: 180
+- source: gymflow
+  source_id: pe_tiramisu
+  name: Tiramisù
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 5
+  carbs_per_100g: 32
+  fat_per_100g: 18
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: chain,italian,dessert
+  dietary_compat: vegetarian,pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 130
+- source: gymflow
+  source_id: pe_chocolate_glory
+  name: Chocolate Glory
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 405
+  protein_per_100g: 5
+  carbs_per_100g: 48
+  fat_per_100g: 21
+  serving_grams: 140
+  serving_label: 1 piece (140 g)
+  portion_unit: piece
+  tags: chain,italian,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 140
+- source: gymflow
+  source_id: pe_panna_cotta
+  name: Vanilla Panna Cotta
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 4
+  carbs_per_100g: 28
+  fat_per_100g: 17
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: chain,italian,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 130
+- source: gymflow
+  source_id: pe_gelato_2
+  name: Gelato (2 scoops)
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 4
+  carbs_per_100g: 24
+  fat_per_100g: 10
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: chain,italian,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+  unit_grams: 100
+- source: gymflow
+  source_id: pe_dough_balls_dessert
+  name: Doughnut Doughballs
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 56
+  fat_per_100g: 14
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,italian,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 200
+- source: gymflow
+  source_id: pe_house_red_175
+  name: House Red Wine (175 ml)
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 85
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.5
+  fat_per_100g: 0
+  serving_grams: 175
+  serving_label: 1 ml (175 g)
+  portion_unit: ml
+  tags: chain,italian,drink,alcoholic
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: pe_house_white_175
+  name: House White Wine (175 ml)
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 85
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.5
+  fat_per_100g: 0
+  serving_grams: 175
+  serving_label: 1 ml (175 g)
+  portion_unit: ml
+  tags: chain,italian,drink,alcoholic
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites

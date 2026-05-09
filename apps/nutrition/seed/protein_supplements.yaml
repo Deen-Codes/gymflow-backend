@@ -1,0 +1,1843 @@
+# protein_supplements.yaml — gym + protein supplements.
+# 35 entries: powders (scoop), bars (bar), RTDs (bottle), creatine, BCAAs, pre-workout.
+# Sources: brand product pages.
+- source: gymflow
+  source_id: myprotein_impact_whey_chocolate
+  name: Impact Whey, Chocolate
+  brand: Myprotein
+  region_codes: gb
+  kcal_per_100g: 400
+  protein_per_100g: 80
+  carbs_per_100g: 7
+  fat_per_100g: 6
+  serving_grams: 25
+  serving_label: 1 scoop (25 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 25
+- source: gymflow
+  source_id: myprotein_impact_whey_vanilla
+  name: Impact Whey, Vanilla
+  brand: Myprotein
+  region_codes: gb
+  kcal_per_100g: 400
+  protein_per_100g: 80
+  carbs_per_100g: 7
+  fat_per_100g: 6
+  serving_grams: 25
+  serving_label: 1 scoop (25 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 25
+- source: gymflow
+  source_id: myprotein_impact_whey_strawberry
+  name: Impact Whey, Strawberry
+  brand: Myprotein
+  region_codes: gb
+  kcal_per_100g: 400
+  protein_per_100g: 80
+  carbs_per_100g: 7
+  fat_per_100g: 6
+  serving_grams: 25
+  serving_label: 1 scoop (25 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 25
+- source: gymflow
+  source_id: myprotein_impact_whey_cookies_cream
+  name: Impact Whey, Cookies & Cream
+  brand: Myprotein
+  region_codes: gb
+  kcal_per_100g: 400
+  protein_per_100g: 80
+  carbs_per_100g: 7
+  fat_per_100g: 6
+  serving_grams: 25
+  serving_label: 1 scoop (25 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,gluten
+  unit_grams: 25
+- source: gymflow
+  source_id: myprotein_clear_whey_apple
+  name: Clear Whey Isolate, Apple
+  brand: Myprotein
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 90
+  carbs_per_100g: 1
+  fat_per_100g: 0.5
+  serving_grams: 28
+  serving_label: 1 scoop (28 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey,low_fat,low_carb
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 28
+- source: gymflow
+  source_id: myprotein_pro_whey_chocolate
+  name: Pro Whey, Chocolate
+  brand: Myprotein
+  region_codes: gb
+  kcal_per_100g: 415
+  protein_per_100g: 87
+  carbs_per_100g: 5
+  fat_per_100g: 4
+  serving_grams: 25
+  serving_label: 1 scoop (25 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey,high_protein
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 25
+- source: gymflow
+  source_id: myprotein_vegan_blend_chocolate
+  name: Vegan Protein Blend, Chocolate
+  brand: Myprotein
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 70
+  carbs_per_100g: 8
+  fat_per_100g: 6
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+  unit_grams: 30
+- source: gymflow
+  source_id: on_gold_standard_chocolate
+  name: Gold Standard 100% Whey, Chocolate
+  brand: Optimum Nutrition
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 80
+  carbs_per_100g: 5
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: on_gold_standard_vanilla
+  name: Gold Standard 100% Whey, Vanilla
+  brand: Optimum Nutrition
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 80
+  carbs_per_100g: 5
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: on_serious_mass_chocolate
+  name: Serious Mass, Chocolate (mass gainer)
+  brand: Optimum Nutrition
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 13
+  carbs_per_100g: 80
+  fat_per_100g: 4
+  serving_grams: 334
+  serving_label: 1 scoop (334 g)
+  portion_unit: scoop
+  tags: supplement,protein,gainer
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,gluten,eggs
+  unit_grams: 334
+- source: gymflow
+  source_id: bulk_pure_whey_chocolate
+  name: Pure Whey Protein, Chocolate
+  brand: Bulk
+  region_codes: gb
+  kcal_per_100g: 390
+  protein_per_100g: 80
+  carbs_per_100g: 6
+  fat_per_100g: 5
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: bulk_complete_lean_mass
+  name: Complete Lean Mass Gainer
+  brand: Bulk
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 25
+  carbs_per_100g: 60
+  fat_per_100g: 5
+  serving_grams: 100
+  serving_label: 1 scoop (100 g)
+  portion_unit: scoop
+  tags: supplement,protein,gainer
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,gluten
+  unit_grams: 100
+- source: gymflow
+  source_id: myprotein_slow_release_casein
+  name: Slow-Release Casein, Vanilla
+  brand: Myprotein
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 75
+  carbs_per_100g: 5
+  fat_per_100g: 2
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,casein
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: grenade_carb_killa_white_chocolate
+  name: Carb Killa Bar, White Chocolate Cookie
+  brand: Grenade
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 35
+  carbs_per_100g: 17
+  fat_per_100g: 14
+  serving_grams: 60
+  serving_label: 1 bar (60 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,eggs
+  unit_grams: 60
+- source: gymflow
+  source_id: grenade_carb_killa_caramel_chaos
+  name: Carb Killa Bar, Caramel Chaos
+  brand: Grenade
+  region_codes: gb
+  kcal_per_100g: 385
+  protein_per_100g: 35
+  carbs_per_100g: 18
+  fat_per_100g: 14
+  serving_grams: 60
+  serving_label: 1 bar (60 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,eggs
+  unit_grams: 60
+- source: gymflow
+  source_id: grenade_carb_killa_choc_chip
+  name: Carb Killa Bar, Chocolate Chip
+  brand: Grenade
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 35
+  carbs_per_100g: 17
+  fat_per_100g: 14
+  serving_grams: 60
+  serving_label: 1 bar (60 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,eggs
+  unit_grams: 60
+- source: gymflow
+  source_id: barebells_protein_bar_caramel
+  name: Barebells Protein Bar, Caramel
+  brand: Barebells
+  region_codes: gb
+  kcal_per_100g: 365
+  protein_per_100g: 35
+  carbs_per_100g: 14
+  fat_per_100g: 16
+  serving_grams: 55
+  serving_label: 1 bar (55 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+  unit_grams: 55
+- source: gymflow
+  source_id: barebells_protein_bar_choc_dough
+  name: Barebells Protein Bar, Chocolate Dough
+  brand: Barebells
+  region_codes: gb
+  kcal_per_100g: 365
+  protein_per_100g: 35
+  carbs_per_100g: 15
+  fat_per_100g: 15
+  serving_grams: 55
+  serving_label: 1 bar (55 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+  unit_grams: 55
+- source: gymflow
+  source_id: fulfil_protein_bar_choc_caramel
+  name: Fulfil Bar, Chocolate Caramel
+  brand: Fulfil
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 32
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  serving_grams: 55
+  serving_label: 1 bar (55 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,eggs,tree_nuts
+  unit_grams: 55
+- source: gymflow
+  source_id: fulfil_protein_bar_choc_brownie
+  name: Fulfil Bar, Chocolate Brownie
+  brand: Fulfil
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 32
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  serving_grams: 55
+  serving_label: 1 bar (55 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,eggs,tree_nuts
+  unit_grams: 55
+- source: gymflow
+  source_id: myprotein_layered_bar_chocolate
+  name: Myprotein Layered Bar, Chocolate Caramel
+  brand: Myprotein
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 30
+  carbs_per_100g: 22
+  fat_per_100g: 15
+  serving_grams: 60
+  serving_label: 1 bar (60 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,eggs
+  unit_grams: 60
+- source: gymflow
+  source_id: eat_natural_protein_bar
+  name: Eat Natural Protein Packed Bar
+  brand: Eat Natural
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 17
+  carbs_per_100g: 38
+  fat_per_100g: 19
+  serving_grams: 45
+  serving_label: 1 bar (45 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,tree_nuts
+  unit_grams: 45
+- source: gymflow
+  source_id: trek_protein_flapjack_chocolate
+  name: Trek Protein Flapjack, Chocolate
+  brand: Trek
+  region_codes: gb
+  kcal_per_100g: 415
+  protein_per_100g: 12
+  carbs_per_100g: 50
+  fat_per_100g: 17
+  serving_grams: 50
+  serving_label: 1 bar (50 g)
+  portion_unit: bar
+  tags: supplement,protein,bar,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy
+  unit_grams: 50
+- source: gymflow
+  source_id: quest_bar_choc_chip
+  name: Quest Bar, Choc Chip Cookie
+  brand: Quest
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 35
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  serving_grams: 60
+  serving_label: 1 bar (60 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+  unit_grams: 60
+- source: gymflow
+  source_id: grenade_protein_shake_chocolate
+  name: Grenade Carb Killa Shake, Chocolate
+  brand: Grenade
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 9
+  carbs_per_100g: 4
+  fat_per_100g: 1.7
+  serving_grams: 330
+  serving_label: 1 bottle (330 g)
+  portion_unit: bottle
+  tags: supplement,protein,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 330
+- source: gymflow
+  source_id: myprotein_clear_protein_drink
+  name: Myprotein Clear Whey RTD
+  brand: Myprotein
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 20
+  carbs_per_100g: 0.5
+  fat_per_100g: 0
+  serving_grams: 250
+  serving_label: 1 bottle (250 g)
+  portion_unit: bottle
+  tags: supplement,protein,drink,low_fat,low_carb
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 250
+- source: gymflow
+  source_id: huel_ready_to_drink
+  name: Huel Ready-to-Drink, Chocolate
+  brand: Huel
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 5
+  carbs_per_100g: 8
+  fat_per_100g: 3
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: supplement,meal_replacement,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,oats
+  unit_grams: 500
+- source: gymflow
+  source_id: myprotein_creatine_monohydrate
+  name: Creatine Monohydrate
+  brand: Myprotein
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 scoop (5 g)
+  portion_unit: scoop
+  tags: supplement,creatine,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: on_micronised_creatine
+  name: Micronised Creatine, ON
+  brand: Optimum Nutrition
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 scoop (5 g)
+  portion_unit: scoop
+  tags: supplement,creatine,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: myprotein_bcaa_4_1_1
+  name: BCAA 4:1:1
+  brand: Myprotein
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 50
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 scoop (5 g)
+  portion_unit: scoop
+  tags: supplement,bcaa,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: myprotein_glutamine
+  name: L-Glutamine
+  brand: Myprotein
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 scoop (5 g)
+  portion_unit: scoop
+  tags: supplement,glutamine,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: myprotein_thepre
+  name: THE Pre-Workout
+  brand: Myprotein
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 0.5
+  carbs_per_100g: 23
+  fat_per_100g: 0.5
+  serving_grams: 17
+  serving_label: 1 scoop (17 g)
+  portion_unit: scoop
+  tags: supplement,preworkout
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 17
+- source: gymflow
+  source_id: myprotein_diet_whey_chocolate
+  name: Diet Whey, Chocolate
+  brand: Myprotein
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 75
+  carbs_per_100g: 6
+  fat_per_100g: 4
+  serving_grams: 25
+  serving_label: 1 scoop (25 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 25
+- source: gymflow
+  source_id: phd_diet_whey_belgian_chocolate
+  name: PhD Diet Whey, Belgian Chocolate
+  brand: PhD
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 70
+  carbs_per_100g: 8
+  fat_per_100g: 4
+  serving_grams: 25
+  serving_label: 1 scoop (25 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+  unit_grams: 25
+- source: gymflow
+  source_id: warrior_crunch_white_chocolate
+  name: Warrior Crunch Bar, White Chocolate
+  brand: Warrior
+  region_codes: gb
+  kcal_per_100g: 405
+  protein_per_100g: 32
+  carbs_per_100g: 25
+  fat_per_100g: 18
+  serving_grams: 64
+  serving_label: 1 bar (64 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,eggs
+  unit_grams: 64
+- source: gymflow
+  source_id: usn_pure_protein_100_whey_choc
+  name: USN Pure Protein 100% Whey, Chocolate
+  brand: USN
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 78
+  carbs_per_100g: 7
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: usn_pure_protein_100_whey_vanilla
+  name: USN Pure Protein 100% Whey, Vanilla
+  brand: USN
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 78
+  carbs_per_100g: 7
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: usn_pure_protein_100_whey_strawberry
+  name: USN Pure Protein 100% Whey, Strawberry
+  brand: USN
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 78
+  carbs_per_100g: 7
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: usn_pure_protein_gf1_choc
+  name: USN Pure Protein GF-1, Chocolate
+  brand: USN
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 60
+  carbs_per_100g: 24
+  fat_per_100g: 6
+  serving_grams: 50
+  serving_label: 1 scoop (50 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey,gainer
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 50
+- source: gymflow
+  source_id: usn_bluelab_100_whey_choc
+  name: USN BlueLab 100% Whey, Chocolate
+  brand: USN
+  region_codes: gb
+  kcal_per_100g: 400
+  protein_per_100g: 78
+  carbs_per_100g: 8
+  fat_per_100g: 5
+  serving_grams: 25
+  serving_label: 1 scoop (25 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 25
+- source: gymflow
+  source_id: usn_diet_whey_chocolate
+  name: USN Diet Whey IsoLean, Chocolate
+  brand: USN
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 70
+  carbs_per_100g: 9
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: usn_hyperbolic_mass_choc
+  name: USN Hyperbolic Mass, Chocolate (mass gainer)
+  brand: USN
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 14
+  carbs_per_100g: 80
+  fat_per_100g: 3
+  serving_grams: 100
+  serving_label: 1 scoop (100 g)
+  portion_unit: scoop
+  tags: supplement,protein,gainer
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,gluten,eggs
+  unit_grams: 100
+- source: gymflow
+  source_id: usn_anabolic_mass_choc
+  name: USN Anabolic Mass, Chocolate
+  brand: USN
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 24
+  carbs_per_100g: 65
+  fat_per_100g: 6
+  serving_grams: 100
+  serving_label: 1 scoop (100 g)
+  portion_unit: scoop
+  tags: supplement,protein,gainer
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,gluten,eggs
+  unit_grams: 100
+- source: gymflow
+  source_id: usn_micronised_creatine
+  name: USN Micronised Creatine
+  brand: USN
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 scoop (5 g)
+  portion_unit: scoop
+  tags: supplement,creatine,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: usn_qhush_protein_bar_choc
+  name: USN Qhush Protein Bar, Chocolate Caramel
+  brand: USN
+  region_codes: gb
+  kcal_per_100g: 365
+  protein_per_100g: 35
+  carbs_per_100g: 18
+  fat_per_100g: 14
+  serving_grams: 60
+  serving_label: 1 bar (60 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,eggs
+  unit_grams: 60
+- source: gymflow
+  source_id: usn_trust_protein_bar_choc
+  name: USN Trust Protein Bar, Chocolate Brownie
+  brand: USN
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 32
+  carbs_per_100g: 20
+  fat_per_100g: 13
+  serving_grams: 55
+  serving_label: 1 bar (55 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,eggs
+  unit_grams: 55
+- source: gymflow
+  source_id: usn_vooma_pre_workout_blue
+  name: USN Vooma Pre-Workout, Blue Raspberry
+  brand: USN
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 0.5
+  carbs_per_100g: 23
+  fat_per_100g: 0.5
+  serving_grams: 12
+  serving_label: 1 scoop (12 g)
+  portion_unit: scoop
+  tags: supplement,preworkout
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 12
+- source: gymflow
+  source_id: usn_diet_protein_shake_rtd
+  name: USN Diet Protein Shake (RTD)
+  brand: USN
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 9
+  carbs_per_100g: 4
+  fat_per_100g: 1.5
+  serving_grams: 310
+  serving_label: 1 bottle (310 g)
+  portion_unit: bottle
+  tags: supplement,protein,drink,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 310
+- source: gymflow
+  source_id: maximuscle_promax_chocolate
+  name: Maximuscle Promax, Chocolate
+  brand: Maximuscle
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 75
+  carbs_per_100g: 9
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: maximuscle_promax_vanilla
+  name: Maximuscle Promax, Vanilla
+  brand: Maximuscle
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 75
+  carbs_per_100g: 9
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: maximuscle_cyclone_chocolate
+  name: Maximuscle Cyclone, Chocolate
+  brand: Maximuscle
+  region_codes: gb
+  kcal_per_100g: 390
+  protein_per_100g: 60
+  carbs_per_100g: 18
+  fat_per_100g: 4
+  serving_grams: 60
+  serving_label: 1 scoop (60 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey,gainer
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 60
+- source: gymflow
+  source_id: maximuscle_recovermax_orange
+  name: Maximuscle Recovermax, Orange
+  brand: Maximuscle
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 30
+  carbs_per_100g: 60
+  fat_per_100g: 1
+  serving_grams: 75
+  serving_label: 1 scoop (75 g)
+  portion_unit: scoop
+  tags: supplement,recovery,protein
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 75
+- source: gymflow
+  source_id: maximuscle_creatamax
+  name: Maximuscle Creatamax
+  brand: Maximuscle
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 scoop (5 g)
+  portion_unit: scoop
+  tags: supplement,creatine,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: maximuscle_promax_bar_choc
+  name: Maximuscle Promax Bar, Chocolate
+  brand: Maximuscle
+  region_codes: gb
+  kcal_per_100g: 365
+  protein_per_100g: 32
+  carbs_per_100g: 20
+  fat_per_100g: 13
+  serving_grams: 60
+  serving_label: 1 bar (60 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,eggs
+  unit_grams: 60
+- source: gymflow
+  source_id: maximuscle_promax_diet_chocolate
+  name: Maximuscle Promax Diet, Chocolate
+  brand: Maximuscle
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 72
+  carbs_per_100g: 7
+  fat_per_100g: 4
+  serving_grams: 25
+  serving_label: 1 scoop (25 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 25
+- source: gymflow
+  source_id: phd_pharma_whey_choc
+  name: PhD Pharma Whey HT+, Chocolate
+  brand: PhD
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 75
+  carbs_per_100g: 8
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: phd_smart_protein_bar_choc
+  name: PhD Smart Protein Bar, Chocolate Brownie
+  brand: PhD
+  region_codes: gb
+  kcal_per_100g: 365
+  protein_per_100g: 35
+  carbs_per_100g: 18
+  fat_per_100g: 14
+  serving_grams: 64
+  serving_label: 1 bar (64 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,eggs
+  unit_grams: 64
+- source: gymflow
+  source_id: phd_smart_protein_bar_caramel
+  name: PhD Smart Protein Bar, Salted Caramel
+  brand: PhD
+  region_codes: gb
+  kcal_per_100g: 370
+  protein_per_100g: 35
+  carbs_per_100g: 18
+  fat_per_100g: 15
+  serving_grams: 64
+  serving_label: 1 bar (64 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,eggs
+  unit_grams: 64
+- source: gymflow
+  source_id: phd_diet_whey_bar_choc
+  name: PhD Diet Whey Bar, Chocolate
+  brand: PhD
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 32
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  serving_grams: 65
+  serving_label: 1 bar (65 g)
+  portion_unit: bar
+  tags: supplement,protein,bar,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,eggs
+  unit_grams: 65
+- source: gymflow
+  source_id: phd_diet_meal_replacement_choc
+  name: PhD Diet Meal Replacement, Chocolate
+  brand: PhD
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 35
+  carbs_per_100g: 35
+  fat_per_100g: 8
+  serving_grams: 55
+  serving_label: 1 scoop (55 g)
+  portion_unit: scoop
+  tags: supplement,meal_replacement,protein
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,oats,gluten
+  unit_grams: 55
+- source: gymflow
+  source_id: reflex_one_stop_choc
+  name: Reflex One Stop, Chocolate
+  brand: Reflex
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 50
+  carbs_per_100g: 30
+  fat_per_100g: 6
+  serving_grams: 70
+  serving_label: 1 scoop (70 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey,gainer
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy,eggs
+  unit_grams: 70
+- source: gymflow
+  source_id: reflex_micro_whey_choc
+  name: Reflex Micro Whey, Chocolate
+  brand: Reflex
+  region_codes: gb
+  kcal_per_100g: 390
+  protein_per_100g: 80
+  carbs_per_100g: 5
+  fat_per_100g: 5
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: reflex_diet_protein_choc
+  name: Reflex Diet Protein, Chocolate
+  brand: Reflex
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 75
+  carbs_per_100g: 6
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: scimx_pro_2_go_rtd_choc
+  name: Sci-MX Pro 2 Go RTD, Chocolate
+  brand: Sci-MX
+  region_codes: gb
+  kcal_per_100g: 70
+  protein_per_100g: 9
+  carbs_per_100g: 5
+  fat_per_100g: 1.7
+  serving_grams: 310
+  serving_label: 1 bottle (310 g)
+  portion_unit: bottle
+  tags: supplement,protein,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 310
+- source: gymflow
+  source_id: scimx_omni_mx_choc
+  name: Sci-MX Omni-MX, Chocolate
+  brand: Sci-MX
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 25
+  carbs_per_100g: 50
+  fat_per_100g: 6
+  serving_grams: 100
+  serving_label: 1 scoop (100 g)
+  portion_unit: scoop
+  tags: supplement,protein,gainer
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,gluten
+  unit_grams: 100
+- source: gymflow
+  source_id: tpw_whey_80_choc
+  name: TPW Whey Protein 80, Chocolate
+  brand: The Protein Works
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 78
+  carbs_per_100g: 7
+  fat_per_100g: 5
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: tpw_diet_meal_replacement
+  name: TPW Diet Meal Replacement, Vanilla
+  brand: The Protein Works
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 35
+  carbs_per_100g: 32
+  fat_per_100g: 6
+  serving_grams: 55
+  serving_label: 1 scoop (55 g)
+  portion_unit: scoop
+  tags: supplement,meal_replacement
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,oats,gluten
+  unit_grams: 55
+- source: gymflow
+  source_id: premier_protein_shake_choc
+  name: Premier Protein Shake, Chocolate
+  brand: Premier Protein
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 9
+  carbs_per_100g: 1
+  fat_per_100g: 0.9
+  serving_grams: 325
+  serving_label: 1 bottle (325 g)
+  portion_unit: bottle
+  tags: supplement,protein,drink,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 325
+- source: gymflow
+  source_id: premier_protein_shake_vanilla
+  name: Premier Protein Shake, Vanilla
+  brand: Premier Protein
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 9
+  carbs_per_100g: 1
+  fat_per_100g: 0.9
+  serving_grams: 325
+  serving_label: 1 bottle (325 g)
+  portion_unit: bottle
+  tags: supplement,protein,drink,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 325
+- source: gymflow
+  source_id: premier_protein_bar_choc
+  name: Premier Protein Bar, Chocolate Peanut Butter
+  brand: Premier Protein
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 33
+  carbs_per_100g: 18
+  fat_per_100g: 14
+  serving_grams: 60
+  serving_label: 1 bar (60 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,peanuts
+  unit_grams: 60
+- source: gymflow
+  source_id: mars_protein_bar
+  name: Mars Protein Bar
+  brand: Mars
+  region_codes: gb
+  kcal_per_100g: 365
+  protein_per_100g: 30
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  serving_grams: 51
+  serving_label: 1 bar (51 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,eggs
+  unit_grams: 51
+- source: gymflow
+  source_id: snickers_protein_bar
+  name: Snickers Hi-Protein Bar
+  brand: Snickers
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 32
+  carbs_per_100g: 26
+  fat_per_100g: 14
+  serving_grams: 57
+  serving_label: 1 bar (57 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,peanuts
+  unit_grams: 57
+- source: gymflow
+  source_id: snickers_hi_protein_shake
+  name: Snickers Hi-Protein Shake
+  brand: Snickers
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 9
+  carbs_per_100g: 6
+  fat_per_100g: 2
+  serving_grams: 330
+  serving_label: 1 bottle (330 g)
+  portion_unit: bottle
+  tags: supplement,protein,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy,peanuts
+  unit_grams: 330
+- source: gymflow
+  source_id: mars_hi_protein_shake
+  name: Mars Hi-Protein Shake
+  brand: Mars
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 9
+  carbs_per_100g: 6
+  fat_per_100g: 2
+  serving_grams: 330
+  serving_label: 1 bottle (330 g)
+  portion_unit: bottle
+  tags: supplement,protein,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 330
+- source: gymflow
+  source_id: milky_way_protein_shake
+  name: Milky Way Hi-Protein Shake
+  brand: Milky Way
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 9
+  carbs_per_100g: 5
+  fat_per_100g: 2
+  serving_grams: 330
+  serving_label: 1 bottle (330 g)
+  portion_unit: bottle
+  tags: supplement,protein,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 330
+- source: gymflow
+  source_id: twix_hi_protein_shake
+  name: Twix Hi-Protein Shake
+  brand: Twix
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 9
+  carbs_per_100g: 6
+  fat_per_100g: 2
+  serving_grams: 330
+  serving_label: 1 bottle (330 g)
+  portion_unit: bottle
+  tags: supplement,protein,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 330
+- source: gymflow
+  source_id: bounty_hi_protein_bar
+  name: Bounty Hi-Protein Bar
+  brand: Bounty
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 30
+  carbs_per_100g: 26
+  fat_per_100g: 16
+  serving_grams: 52
+  serving_label: 1 bar (52 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,eggs
+  unit_grams: 52
+- source: gymflow
+  source_id: yazoo_protein_chocolate
+  name: Yazoo Protein Chocolate (RTD)
+  brand: Yazoo
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 9
+  carbs_per_100g: 5
+  fat_per_100g: 1.2
+  serving_grams: 400
+  serving_label: 1 bottle (400 g)
+  portion_unit: bottle
+  tags: supplement,protein,drink,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 400
+- source: gymflow
+  source_id: innermost_lean_protein_choc
+  name: Innermost The Lean Protein, Chocolate
+  brand: Innermost
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 75
+  carbs_per_100g: 8
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: innermost_strong_protein_choc
+  name: Innermost The Strong Protein, Chocolate
+  brand: Innermost
+  region_codes: gb
+  kcal_per_100g: 395
+  protein_per_100g: 80
+  carbs_per_100g: 6
+  fat_per_100g: 5
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey,high_protein
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: pulsin_pea_protein_choc
+  name: Pulsin Pea Protein, Chocolate
+  brand: Pulsin
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 75
+  carbs_per_100g: 7
+  fat_per_100g: 5
+  serving_grams: 25
+  serving_label: 1 scoop (25 g)
+  portion_unit: scoop
+  tags: supplement,protein,plant,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+  unit_grams: 25
+- source: gymflow
+  source_id: pulsin_brown_rice_protein
+  name: Pulsin Brown Rice Protein
+  brand: Pulsin
+  region_codes: gb
+  kcal_per_100g: 370
+  protein_per_100g: 78
+  carbs_per_100g: 8
+  fat_per_100g: 3
+  serving_grams: 25
+  serving_label: 1 scoop (25 g)
+  portion_unit: scoop
+  tags: supplement,protein,plant,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: vega_sport_protein_choc
+  name: Vega Sport Protein, Chocolate
+  brand: Vega
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 70
+  carbs_per_100g: 10
+  fat_per_100g: 6
+  serving_grams: 35
+  serving_label: 1 scoop (35 g)
+  portion_unit: scoop
+  tags: supplement,protein,plant,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+  unit_grams: 35
+- source: gymflow
+  source_id: misfits_chocolate_bar
+  name: Misfits Plant-Based Bar, Salted Caramel
+  brand: Misfits
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 30
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  serving_grams: 45
+  serving_label: 1 bar (45 g)
+  portion_unit: bar
+  tags: supplement,protein,bar,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: soy,tree_nuts
+  unit_grams: 45
+- source: gymflow
+  source_id: bsc_high_protein_bar
+  name: BSC Hi-Protein Bar, Chocolate
+  brand: BSC
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 32
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  serving_grams: 60
+  serving_label: 1 bar (60 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,eggs
+  unit_grams: 60
+- source: gymflow
+  source_id: foodspring_whey_choc
+  name: Foodspring Whey, Chocolate
+  brand: Foodspring
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 78
+  carbs_per_100g: 7
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: foodspring_protein_bar
+  name: Foodspring Protein Bar, Caramel
+  brand: Foodspring
+  region_codes: gb
+  kcal_per_100g: 365
+  protein_per_100g: 35
+  carbs_per_100g: 18
+  fat_per_100g: 14
+  serving_grams: 60
+  serving_label: 1 bar (60 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,eggs
+  unit_grams: 60
+- source: gymflow
+  source_id: battle_bites_choc_caramel
+  name: Battle Bites, Chocolate Caramel
+  brand: Battle Bites
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 30
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  serving_grams: 62
+  serving_label: 1 bar (62 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,eggs
+  unit_grams: 62
+- source: gymflow
+  source_id: naked_whey_protein_powder
+  name: Naked Whey Protein Powder
+  brand: Naked Nutrition
+  region_codes: gb
+  kcal_per_100g: 400
+  protein_per_100g: 87
+  carbs_per_100g: 5
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 30
+- source: gymflow
+  source_id: cellucor_c4_original_fruit
+  name: Cellucor C4 Original, Fruit Punch
+  brand: Cellucor
+  region_codes: gb
+  kcal_per_100g: 100
+  protein_per_100g: 0
+  carbs_per_100g: 24
+  fat_per_100g: 0
+  serving_grams: 6
+  serving_label: 1 scoop (6 g)
+  portion_unit: scoop
+  tags: supplement,preworkout,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 6
+- source: gymflow
+  source_id: on_amino_energy_orange
+  name: ON Amino Energy, Fruit Fusion
+  brand: Optimum Nutrition
+  region_codes: gb
+  kcal_per_100g: 30
+  protein_per_100g: 5
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 9
+  serving_label: 1 scoop (9 g)
+  portion_unit: scoop
+  tags: supplement,preworkout,bcaa,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 9
+- source: gymflow
+  source_id: bulk_pre_workout_lemon
+  name: Bulk Complete Pre-Workout, Lemon
+  brand: Bulk
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 1
+  carbs_per_100g: 22
+  fat_per_100g: 0
+  serving_grams: 12
+  serving_label: 1 scoop (12 g)
+  portion_unit: scoop
+  tags: supplement,preworkout
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 12
+- source: gymflow
+  source_id: on_amino_energy_grape
+  name: ON Amino Energy, Grape
+  brand: Optimum Nutrition
+  region_codes: gb
+  kcal_per_100g: 30
+  protein_per_100g: 5
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 9
+  serving_label: 1 scoop (9 g)
+  portion_unit: scoop
+  tags: supplement,preworkout,bcaa,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 9
+- source: gymflow
+  source_id: xtend_bcaa_watermelon
+  name: Scivation Xtend BCAA, Watermelon
+  brand: Scivation
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 14
+  serving_label: 1 scoop (14 g)
+  portion_unit: scoop
+  tags: supplement,bcaa,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 14
+- source: gymflow
+  source_id: bulk_eaa_powder
+  name: Bulk EAA Powder, Fruit Punch
+  brand: Bulk
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 60
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 10
+  serving_label: 1 scoop (10 g)
+  portion_unit: scoop
+  tags: supplement,eaa,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 10
+- source: gymflow
+  source_id: bulk_creapure_creatine
+  name: Bulk Creapure Creatine Monohydrate
+  brand: Bulk
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 scoop (5 g)
+  portion_unit: scoop
+  tags: supplement,creatine,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: myprotein_creatine_hcl
+  name: Myprotein Creatine HCL
+  brand: Myprotein
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 3
+  serving_label: 1 scoop (3 g)
+  portion_unit: scoop
+  tags: supplement,creatine,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 3
+- source: gymflow
+  source_id: pulsin_brownie_choc_orange
+  name: Pulsin Brownie, Chocolate Orange
+  brand: Pulsin
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 18
+  carbs_per_100g: 38
+  fat_per_100g: 19
+  serving_grams: 50
+  serving_label: 1 bar (50 g)
+  portion_unit: bar
+  tags: supplement,protein,bar,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts,soy
+  unit_grams: 50
+- source: gymflow
+  source_id: myprotein_collagen_powder
+  name: Myprotein Collagen Peptides
+  brand: Myprotein
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 95
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 10
+  serving_label: 1 scoop (10 g)
+  portion_unit: scoop
+  tags: supplement,collagen,low_calorie
+  dietary_compat: pescatarian,gluten_free,dairy_free
+  allergens: ''
+  unit_grams: 10
+- source: gymflow
+  source_id: bulk_collagen_powder
+  name: Bulk Collagen Peptides
+  brand: Bulk
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 95
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 10
+  serving_label: 1 scoop (10 g)
+  portion_unit: scoop
+  tags: supplement,collagen,low_calorie
+  dietary_compat: pescatarian,gluten_free,dairy_free
+  allergens: ''
+  unit_grams: 10
+- source: gymflow
+  source_id: on_gold_standard_casein_choc
+  name: ON Gold Standard Casein, Chocolate
+  brand: Optimum Nutrition
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 75
+  carbs_per_100g: 4
+  fat_per_100g: 2
+  serving_grams: 33
+  serving_label: 1 scoop (33 g)
+  portion_unit: scoop
+  tags: supplement,protein,casein
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 33
+- source: gymflow
+  source_id: on_pro_gainer_choc
+  name: ON Pro Gainer, Chocolate
+  brand: Optimum Nutrition
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 24
+  carbs_per_100g: 56
+  fat_per_100g: 6
+  serving_grams: 165
+  serving_label: 1 scoop (165 g)
+  portion_unit: scoop
+  tags: supplement,protein,gainer
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy,gluten
+  unit_grams: 165
+- source: gymflow
+  source_id: myprotein_electrolyte_powder
+  name: Myprotein Electrolyte Plus, Orange
+  brand: Myprotein
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 0
+  carbs_per_100g: 88
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 scoop (5 g)
+  portion_unit: scoop
+  tags: supplement,electrolyte,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: redbull_can
+  name: Red Bull Energy Drink (can)
+  brand: Red Bull
+  region_codes: gb
+  kcal_per_100g: 45
+  protein_per_100g: 0.5
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  serving_grams: 250
+  serving_label: 1 can (250 g)
+  portion_unit: can
+  tags: energy_drink,supplement
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: redbull_sugarfree_can
+  name: Red Bull Sugar Free (can)
+  brand: Red Bull
+  region_codes: gb
+  kcal_per_100g: 3
+  protein_per_100g: 0.5
+  carbs_per_100g: 0.4
+  fat_per_100g: 0
+  serving_grams: 250
+  serving_label: 1 can (250 g)
+  portion_unit: can
+  tags: energy_drink,supplement,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: monster_original_500
+  name: Monster Energy (500ml)
+  brand: Monster
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 0
+  carbs_per_100g: 12
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 can (500 g)
+  portion_unit: can
+  tags: energy_drink,supplement
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: monster_ultra_zero_500
+  name: Monster Ultra Zero (500ml)
+  brand: Monster
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 can (500 g)
+  portion_unit: can
+  tags: energy_drink,supplement,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: grenade_energy_drink_can
+  name: Grenade Energy (can)
+  brand: Grenade
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 can (330 g)
+  portion_unit: can
+  tags: energy_drink,supplement,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 330
+- source: gymflow
+  source_id: built_bar_double_chocolate
+  name: Built Bar, Double Chocolate
+  brand: Built
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 30
+  carbs_per_100g: 28
+  fat_per_100g: 4
+  serving_grams: 55
+  serving_label: 1 bar (55 g)
+  portion_unit: bar
+  tags: supplement,protein,bar,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+  unit_grams: 55
+- source: gymflow
+  source_id: rxbar_chocolate_sea_salt
+  name: RxBar, Chocolate Sea Salt
+  brand: RxBar
+  region_codes: gb
+  kcal_per_100g: 365
+  protein_per_100g: 24
+  carbs_per_100g: 38
+  fat_per_100g: 12
+  serving_grams: 52
+  serving_label: 1 bar (52 g)
+  portion_unit: bar
+  tags: supplement,protein,bar
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: eggs,tree_nuts
+  unit_grams: 52
+- source: gymflow
+  source_id: slimfast_meal_shake_choc
+  name: SlimFast Meal Shake, Chocolate (RTD)
+  brand: SlimFast
+  region_codes: gb
+  kcal_per_100g: 70
+  protein_per_100g: 5
+  carbs_per_100g: 9
+  fat_per_100g: 1.5
+  serving_grams: 325
+  serving_label: 1 bottle (325 g)
+  portion_unit: bottle
+  tags: supplement,meal_replacement,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 325
+- source: gymflow
+  source_id: larabar_choc_chip_brownie
+  name: Larabar, Chocolate Chip Brownie
+  brand: Larabar
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 8
+  carbs_per_100g: 50
+  fat_per_100g: 18
+  serving_grams: 45
+  serving_label: 1 bar (45 g)
+  portion_unit: bar
+  tags: supplement,bar,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts
+  unit_grams: 45
+- source: gymflow
+  source_id: myprotein_milk_protein_smooth
+  name: Myprotein Milk Protein Smooth
+  brand: Myprotein
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 76
+  carbs_per_100g: 8
+  fat_per_100g: 1.5
+  serving_grams: 30
+  serving_label: 1 scoop (30 g)
+  portion_unit: scoop
+  tags: supplement,protein,casein,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 30
+- source: gymflow
+  source_id: phd_diet_whey_strawberry
+  name: PhD Diet Whey, Strawberry
+  brand: PhD
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 70
+  carbs_per_100g: 8
+  fat_per_100g: 4
+  serving_grams: 25
+  serving_label: 1 scoop (25 g)
+  portion_unit: scoop
+  tags: supplement,protein,whey,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+  unit_grams: 25
+- source: gymflow
+  source_id: phd_smart_protein_white_choc
+  name: PhD Smart Bar Plant, White Chocolate
+  brand: PhD
+  region_codes: gb
+  kcal_per_100g: 365
+  protein_per_100g: 30
+  carbs_per_100g: 25
+  fat_per_100g: 14
+  serving_grams: 64
+  serving_label: 1 bar (64 g)
+  portion_unit: bar
+  tags: supplement,protein,bar,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: soy
+  unit_grams: 64

@@ -1,0 +1,495 @@
+# pret.yaml — Pret A Manger UK menu.
+# 31 entries (incl 7 migrated).
+# Source: pret.co.uk/en-GB/menu.
+- source: gymflow
+  source_id: pret_chicken_caesar_baguette
+  name: Pret Chicken Caesar & Bacon Baguette
+  brand: Pret a Manger
+  region_codes: gb,us
+  kcal_per_100g: 250
+  protein_per_100g: 14.0
+  carbs_per_100g: 22.0
+  fat_per_100g: 12.0
+  serving_grams: 240
+  serving_label: 1 baguette
+  tags: restaurant,chain,sandwich
+  dietary_compat: ''
+  allergens: gluten,eggs,milk,fish,mustard
+  portion_unit: piece
+  unit_grams: 270
+- source: gymflow
+  source_id: pret_chocolate_brownie
+  name: Pret Chocolate Brownie
+  brand: Pret a Manger
+  region_codes: gb,us
+  kcal_per_100g: 460
+  protein_per_100g: 6.0
+  carbs_per_100g: 53.0
+  fat_per_100g: 24.0
+  serving_grams: 90
+  serving_label: 1 brownie (~90g, 414 kcal)
+  tags: restaurant,chain,treat,dessert
+  dietary_compat: vegetarian
+  allergens: gluten,eggs,milk,soy
+  portion_unit: piece
+  unit_grams: 70
+- source: gymflow
+  source_id: pret_classic_super_club
+  name: Pret a Manger Classic Super Club
+  brand: Pret a Manger
+  region_codes: gb,us
+  kcal_per_100g: 230
+  protein_per_100g: 12.0
+  carbs_per_100g: 19.0
+  fat_per_100g: 11.0
+  serving_grams: 250
+  serving_label: 1 sandwich
+  tags: restaurant,chain,sandwich,protein
+  dietary_compat: ''
+  allergens: gluten,eggs,milk,mustard
+  portion_unit: piece
+  unit_grams: 250
+- source: gymflow
+  source_id: pret_egg_avocado_protein_pot
+  name: Pret a Manger Egg & Avocado Protein Pot
+  brand: Pret a Manger
+  region_codes: gb
+  kcal_per_100g: 167
+  protein_per_100g: 10.0
+  carbs_per_100g: 1.5
+  fat_per_100g: 13.5
+  serving_grams: 130
+  serving_label: 1 pot
+  tags: protein,restaurant,chain,breakfast,low_carb
+  dietary_compat: vegetarian,gluten_free
+  allergens: eggs
+  portion_unit: pack
+  unit_grams: 165
+- source: gymflow
+  source_id: pret_falafel_humous_wrap
+  name: Pret Falafel & Humous Wrap
+  brand: Pret a Manger
+  region_codes: gb,us
+  kcal_per_100g: 195
+  protein_per_100g: 7.0
+  carbs_per_100g: 25.0
+  fat_per_100g: 8.0
+  serving_grams: 250
+  serving_label: 1 wrap
+  tags: restaurant,chain,wrap,vegan
+  dietary_compat: vegan,vegetarian
+  allergens: gluten,sesame
+  portion_unit: wrap
+  unit_grams: 222
+- source: gymflow
+  source_id: pret_porridge_oats_milk
+  name: Pret Porridge with Milk
+  brand: Pret a Manger
+  region_codes: gb,us
+  kcal_per_100g: 95
+  protein_per_100g: 4.0
+  carbs_per_100g: 14.0
+  fat_per_100g: 2.5
+  serving_grams: 320
+  serving_label: 1 pot
+  tags: restaurant,chain,breakfast,oats
+  dietary_compat: vegetarian
+  allergens: gluten,milk
+  portion_unit: pack
+  unit_grams: 270
+- source: gymflow
+  source_id: pret_thai_chicken_soup
+  name: Pret Thai Chicken & Sweet Potato Soup
+  brand: Pret a Manger
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 3.5
+  carbs_per_100g: 7.0
+  fat_per_100g: 2.5
+  serving_grams: 350
+  serving_label: 1 large pot
+  tags: restaurant,chain,soup
+  dietary_compat: gluten_free,dairy_free
+  allergens: celery
+  portion_unit: pack
+  unit_grams: 350
+- source: gymflow
+  source_id: pret_chicken_avocado_baguette
+  name: Chicken & Avocado Baguette
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 245
+  serving_label: 1 piece (245 g)
+  portion_unit: piece
+  tags: chain,coffee,food,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 245
+- source: gymflow
+  source_id: pret_ham_cheese_baguette
+  name: Ham & Cheese Baguette
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 24
+  fat_per_100g: 10
+  serving_grams: 245
+  serving_label: 1 piece (245 g)
+  portion_unit: piece
+  tags: chain,coffee,food
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 245
+- source: gymflow
+  source_id: pret_mature_cheddar_pickle_baguette
+  name: Mature Cheddar & Pickle Baguette
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 11
+  carbs_per_100g: 26
+  fat_per_100g: 11
+  serving_grams: 245
+  serving_label: 1 piece (245 g)
+  portion_unit: piece
+  tags: chain,coffee,food
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 245
+- source: gymflow
+  source_id: pret_balsamic_chicken_avocado_salad
+  name: Balsamic Chicken & Avocado Salad
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 12
+  carbs_per_100g: 9
+  fat_per_100g: 7
+  serving_grams: 320
+  serving_label: 1 portion (320 g)
+  portion_unit: meal
+  tags: chain,coffee,salad,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: sulphites,mustard
+  unit_grams: 320
+- source: gymflow
+  source_id: pret_yogurt_granola_pot
+  name: Yogurt & Granola Pot
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 160
+  protein_per_100g: 6
+  carbs_per_100g: 21
+  fat_per_100g: 6
+  serving_grams: 230
+  serving_label: 1 portion (230 g)
+  portion_unit: pack
+  tags: chain,coffee,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,gluten,tree_nuts
+  unit_grams: 230
+- source: gymflow
+  source_id: pret_avocado_arugula_sandwich
+  name: Avocado, Pine Nut & Arugula Sandwich
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 6
+  carbs_per_100g: 18
+  fat_per_100g: 13
+  serving_grams: 220
+  serving_label: 1 piece (220 g)
+  portion_unit: piece
+  tags: chain,coffee,food,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,tree_nuts
+  unit_grams: 220
+- source: gymflow
+  source_id: pret_egg_avocado_sandwich
+  name: Egg & Avocado Sandwich
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 13
+  serving_grams: 215
+  serving_label: 1 piece (215 g)
+  portion_unit: piece
+  tags: chain,coffee,food
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 215
+- source: gymflow
+  source_id: pret_more_veg_less_meat_sandwich
+  name: More Veg, Less Meat Sandwich
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 23
+  fat_per_100g: 7
+  serving_grams: 220
+  serving_label: 1 piece (220 g)
+  portion_unit: piece
+  tags: chain,coffee,food
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 220
+- source: gymflow
+  source_id: pret_tuna_sweetcorn_baguette
+  name: Tuna & Sweetcorn Baguette
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 13
+  carbs_per_100g: 26
+  fat_per_100g: 8
+  serving_grams: 230
+  serving_label: 1 piece (230 g)
+  portion_unit: piece
+  tags: chain,coffee,food
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,fish
+  unit_grams: 230
+- source: gymflow
+  source_id: pret_mac_cheese
+  name: Mac & Cheese
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 8
+  carbs_per_100g: 19
+  fat_per_100g: 10
+  serving_grams: 270
+  serving_label: 1 portion (270 g)
+  portion_unit: pack
+  tags: chain,coffee,food
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 270
+- source: gymflow
+  source_id: pret_butter_chicken_curry
+  name: Butter Chicken Curry
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 6
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: pack
+  tags: chain,coffee,food,curry,chicken
+  dietary_compat: pescatarian
+  allergens: milk,celery
+  unit_grams: 350
+- source: gymflow
+  source_id: pret_dahl_curry
+  name: Dahl Curry
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 5
+  carbs_per_100g: 18
+  fat_per_100g: 4
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: pack
+  tags: chain,coffee,food,vegan,curry
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: celery
+  unit_grams: 350
+- source: gymflow
+  source_id: pret_yogurt_berry_pot
+  name: Yogurt & Berry Pot
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 5
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,coffee,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 200
+- source: gymflow
+  source_id: pret_chia_pudding
+  name: Chia Pudding
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 150
+  protein_per_100g: 5
+  carbs_per_100g: 15
+  fat_per_100g: 7
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,coffee,breakfast,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 180
+- source: gymflow
+  source_id: pret_overnight_oats
+  name: Overnight Oats
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  serving_grams: 220
+  serving_label: 1 portion (220 g)
+  portion_unit: pack
+  tags: chain,coffee,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 220
+- source: gymflow
+  source_id: pret_super_kale_caesar
+  name: Super Kale Caesar Bowl
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 12
+  carbs_per_100g: 8
+  fat_per_100g: 7
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: chain,coffee,salad,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,fish
+  unit_grams: 350
+- source: gymflow
+  source_id: pret_pomegranate_grain_bowl
+  name: Pomegranate Grain Bowl
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: chain,coffee,salad,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sulphites
+  unit_grams: 350
+- source: gymflow
+  source_id: pret_almond_croissant
+  name: Almond Croissant
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 405
+  protein_per_100g: 7
+  carbs_per_100g: 38
+  fat_per_100g: 24
+  serving_grams: 110
+  serving_label: 1 piece (110 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,tree_nuts
+  unit_grams: 110
+- source: gymflow
+  source_id: pret_pain_au_chocolat
+  name: Pain au Chocolat
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 6
+  carbs_per_100g: 42
+  fat_per_100g: 22
+  serving_grams: 90
+  serving_label: 1 piece (90 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 90
+- source: gymflow
+  source_id: pret_butter_croissant
+  name: Butter Croissant
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 445
+  protein_per_100g: 8
+  carbs_per_100g: 45
+  fat_per_100g: 25
+  serving_grams: 75
+  serving_label: 1 piece (75 g)
+  portion_unit: piece
+  tags: chain,coffee,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 75
+- source: gymflow
+  source_id: pret_americano_med
+  name: Americano (regular)
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 2
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.3
+  fat_per_100g: 0
+  serving_grams: 240
+  serving_label: 1 ml (240 g)
+  portion_unit: ml
+  tags: chain,coffee,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: pret_latte_med_semi
+  name: Latte (regular, semi)
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 3.5
+  carbs_per_100g: 4.5
+  fat_per_100g: 2.0
+  serving_grams: 350
+  serving_label: 1 ml (350 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: pret_flat_white_semi
+  name: Flat White (semi)
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 4.0
+  carbs_per_100g: 5.5
+  fat_per_100g: 2.4
+  serving_grams: 240
+  serving_label: 1 ml (240 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: pret_oat_latte
+  name: Oat Milk Latte
+  brand: Pret A Manger
+  region_codes: gb
+  kcal_per_100g: 45
+  protein_per_100g: 1.4
+  carbs_per_100g: 6.5
+  fat_per_100g: 1.5
+  serving_grams: 350
+  serving_label: 1 ml (350 g)
+  portion_unit: ml
+  tags: chain,coffee,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten

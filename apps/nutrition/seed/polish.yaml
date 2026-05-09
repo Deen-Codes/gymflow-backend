@@ -1,0 +1,554 @@
+# polish.yaml — Polish dishes available in UK Polski sklep + restaurants. Includes pierogi variants, kielbasa, soups, baked goods, drinks.
+- source: gymflow
+  source_id: pol_pierogi_meat_5
+  name: Pierogi z Mięsem (Meat Dumplings, 5)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 8
+  serving_grams: 250
+  serving_label: 1 piece (250 g)
+  portion_unit: piece
+  tags: polish,dumpling
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 50
+- source: gymflow
+  source_id: pol_pierogi_potato_5
+  name: Pierogi Ruskie (Potato & Cheese, 5)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 7
+  carbs_per_100g: 32
+  fat_per_100g: 5
+  serving_grams: 250
+  serving_label: 1 piece (250 g)
+  portion_unit: piece
+  tags: polish,dumpling,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 50
+- source: gymflow
+  source_id: pol_pierogi_cabbage_5
+  name: Pierogi z Kapustą (Cabbage & Mushroom, 5)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 180
+  protein_per_100g: 5
+  carbs_per_100g: 30
+  fat_per_100g: 5
+  serving_grams: 250
+  serving_label: 1 piece (250 g)
+  portion_unit: piece
+  tags: polish,dumpling,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 50
+- source: gymflow
+  source_id: pol_pierogi_blueberry_5
+  name: Pierogi z Jagodami (Blueberry, 5)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 5
+  carbs_per_100g: 38
+  fat_per_100g: 3
+  serving_grams: 250
+  serving_label: 1 piece (250 g)
+  portion_unit: piece
+  tags: polish,dumpling,dessert,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 50
+- source: gymflow
+  source_id: pol_kielbasa_polska_cooked
+  name: Kiełbasa Polska (cooked, per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 295
+  protein_per_100g: 14
+  carbs_per_100g: 2
+  fat_per_100g: 26
+  serving_grams: 80
+  serving_label: 1 grams (80 g)
+  portion_unit: grams
+  tags: polish,meat,processed
+  dietary_compat: pescatarian,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: pol_krakowska_slice
+  name: Krakowska Sausage (1 slice)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 17
+  carbs_per_100g: 1
+  fat_per_100g: 24
+  serving_grams: 25
+  serving_label: 1 slice (25 g)
+  portion_unit: slice
+  tags: polish,meat,processed
+  dietary_compat: pescatarian,gluten_free
+  allergens: sulphites
+  unit_grams: 25
+- source: gymflow
+  source_id: pol_kabanos_30g
+  name: Kabanos (1 stick, 30g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 460
+  protein_per_100g: 26
+  carbs_per_100g: 1.5
+  fat_per_100g: 38
+  serving_grams: 30
+  serving_label: 1 piece (30 g)
+  portion_unit: piece
+  tags: polish,meat,processed,high_protein
+  dietary_compat: pescatarian,gluten_free
+  allergens: sulphites
+  unit_grams: 30
+- source: gymflow
+  source_id: pol_bigos
+  name: Bigos (Hunter's Stew)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 9
+  carbs_per_100g: 8
+  fat_per_100g: 7
+  serving_grams: 300
+  serving_label: 1 portion (300 g)
+  portion_unit: meal
+  tags: polish,meal
+  dietary_compat: pescatarian,dairy_free
+  allergens: sulphites
+  unit_grams: 300
+- source: gymflow
+  source_id: pol_golabki_meat_2
+  name: Gołąbki (Stuffed Cabbage Rolls, 2)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 14
+  fat_per_100g: 5
+  serving_grams: 350
+  serving_label: 1 piece (350 g)
+  portion_unit: piece
+  tags: polish,meal
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 175
+- source: gymflow
+  source_id: pol_kotlet_schabowy
+  name: Kotlet Schabowy (Pork Schnitzel)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 24
+  carbs_per_100g: 16
+  fat_per_100g: 11
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: polish,meal,high_protein
+  dietary_compat: pescatarian
+  allergens: gluten,eggs,milk
+  unit_grams: 200
+- source: gymflow
+  source_id: pol_kotlet_mielony
+  name: Kotlet Mielony (Polish Meatball)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 16
+  carbs_per_100g: 12
+  fat_per_100g: 12
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: polish,meal
+  dietary_compat: pescatarian
+  allergens: gluten,eggs
+  unit_grams: 130
+- source: gymflow
+  source_id: pol_zurek
+  name: Żurek (Sour Rye Soup)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 4
+  carbs_per_100g: 11
+  fat_per_100g: 4
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: pack
+  tags: polish,soup
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 350
+- source: gymflow
+  source_id: pol_barszcz_clear
+  name: Barszcz Czerwony (Clear Beetroot Soup)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 35
+  protein_per_100g: 1.2
+  carbs_per_100g: 7
+  fat_per_100g: 0.3
+  serving_grams: 300
+  serving_label: 1 portion (300 g)
+  portion_unit: pack
+  tags: polish,soup,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: celery
+  unit_grams: 300
+- source: gymflow
+  source_id: pol_rosol
+  name: Rosół (Chicken Soup)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 5
+  carbs_per_100g: 7
+  fat_per_100g: 2
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: pack
+  tags: polish,soup,chicken,low_calorie
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,celery
+  unit_grams: 350
+- source: gymflow
+  source_id: pol_placki_ziemniaczane_3
+  name: Placki Ziemniaczane (Potato Pancakes, 3)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 4
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  serving_grams: 180
+  serving_label: 1 piece (180 g)
+  portion_unit: piece
+  tags: polish,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: eggs
+  unit_grams: 60
+- source: gymflow
+  source_id: pol_kasza_gryczana_cooked
+  name: Kasza Gryczana (Buckwheat, cooked, per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 92
+  protein_per_100g: 3.4
+  carbs_per_100g: 19
+  fat_per_100g: 0.6
+  serving_grams: 150
+  serving_label: 1 grams (150 g)
+  portion_unit: grams
+  tags: polish,grain,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: pol_kasza_jeczmienna_cooked
+  name: Kasza Jęczmienna (Pearl Barley, cooked, per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 2.5
+  carbs_per_100g: 21
+  fat_per_100g: 0.5
+  serving_grams: 150
+  serving_label: 1 grams (150 g)
+  portion_unit: grams
+  tags: polish,grain,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+- source: gymflow
+  source_id: pol_ogorki_kiszone
+  name: Ogórki Kiszone (Pickled Cucumbers, per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 12
+  protein_per_100g: 0.7
+  carbs_per_100g: 2
+  fat_per_100g: 0.1
+  serving_grams: 80
+  serving_label: 1 grams (80 g)
+  portion_unit: grams
+  tags: polish,fermented,low_calorie,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: pol_kapusta_kiszona
+  name: Kapusta Kiszona (Sauerkraut, per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 19
+  protein_per_100g: 0.9
+  carbs_per_100g: 4
+  fat_per_100g: 0.1
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: polish,fermented,low_calorie,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: pol_mizeria
+  name: Mizeria (Cucumber Salad)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 2
+  carbs_per_100g: 4
+  fat_per_100g: 4
+  serving_grams: 100
+  serving_label: 1 portion (100 g)
+  portion_unit: pack
+  tags: polish,side,salad,vegetarian,low_calorie
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 100
+- source: gymflow
+  source_id: pol_buraczki
+  name: Buraczki (Beetroot Salad)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 70
+  protein_per_100g: 1.5
+  carbs_per_100g: 12
+  fat_per_100g: 2
+  serving_grams: 100
+  serving_label: 1 portion (100 g)
+  portion_unit: pack
+  tags: polish,side,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 100
+- source: gymflow
+  source_id: pol_oscypek_30g
+  name: Oscypek (Smoked Sheep Cheese, 30g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 350
+  protein_per_100g: 25
+  carbs_per_100g: 1
+  fat_per_100g: 27
+  serving_grams: 30
+  serving_label: 1 slice (30 g)
+  portion_unit: slice
+  tags: polish,dairy
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 30
+- source: gymflow
+  source_id: pol_kefir_polish_glass
+  name: Polish Kefir (250ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 41
+  protein_per_100g: 3.4
+  carbs_per_100g: 4.5
+  fat_per_100g: 1
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: polish,dairy,fermented
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: pol_maslanka
+  name: Maślanka (Buttermilk, 250ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 40
+  protein_per_100g: 3.3
+  carbs_per_100g: 4.7
+  fat_per_100g: 0.9
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: polish,dairy,fermented
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: pol_makowiec_slice
+  name: Makowiec (Poppy Seed Roll, 1 slice)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 7
+  carbs_per_100g: 50
+  fat_per_100g: 17
+  serving_grams: 80
+  serving_label: 1 slice (80 g)
+  portion_unit: slice
+  tags: polish,bakery,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 80
+- source: gymflow
+  source_id: pol_sernik_slice
+  name: Sernik (Polish Cheesecake, 1 slice)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 8
+  carbs_per_100g: 32
+  fat_per_100g: 18
+  serving_grams: 130
+  serving_label: 1 slice (130 g)
+  portion_unit: slice
+  tags: polish,bakery,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 130
+- source: gymflow
+  source_id: pol_paczek
+  name: Pączek (Polish Doughnut)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 6
+  carbs_per_100g: 50
+  fat_per_100g: 15
+  serving_grams: 70
+  serving_label: 1 piece (70 g)
+  portion_unit: piece
+  tags: polish,bakery,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 70
+- source: gymflow
+  source_id: pol_rogal_swietomarcinski
+  name: Rogal Świętomarciński (Croissant, slice)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 8
+  carbs_per_100g: 45
+  fat_per_100g: 22
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: polish,bakery,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,tree_nuts
+  unit_grams: 100
+- source: gymflow
+  source_id: pol_chleb_zytni_slice
+  name: Chleb Żytni (Rye Bread, 1 slice)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 7
+  carbs_per_100g: 47
+  fat_per_100g: 1.5
+  serving_grams: 50
+  serving_label: 1 slice (50 g)
+  portion_unit: slice
+  tags: polish,bakery,bread,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 50
+- source: gymflow
+  source_id: pol_zapiekanka
+  name: Zapiekanka (Polish Pizza Bread)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 11
+  serving_grams: 250
+  serving_label: 1 piece (250 g)
+  portion_unit: piece
+  tags: polish,fast_food
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 250
+- source: gymflow
+  source_id: pol_tatar
+  name: Tatar Wołowy (Steak Tartare)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 22
+  carbs_per_100g: 1
+  fat_per_100g: 14
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: meal
+  tags: polish,meat,raw,high_protein,low_carb
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: eggs,mustard
+  unit_grams: 150
+- source: gymflow
+  source_id: pol_smalec_15g
+  name: Smalec (Pork Lard Spread, 15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 720
+  protein_per_100g: 1
+  carbs_per_100g: 0.5
+  fat_per_100g: 80
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: polish,fat,spread
+  dietary_compat: pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 15
+- source: gymflow
+  source_id: pol_zubrowka_25
+  name: Żubrówka Vodka (25ml shot)
+  brand: Żubrówka
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 25
+  serving_label: 1 shot (25 g)
+  portion_unit: shot
+  tags: polish,alcoholic,spirit,branded
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: pol_tyskie_pint
+  name: Tyskie Beer (pint)
+  brand: Tyskie
+  region_codes: gb
+  kcal_per_100g: 38
+  protein_per_100g: 0.4
+  carbs_per_100g: 3.0
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: polish,alcoholic,beer,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 568
+- source: gymflow
+  source_id: pol_zywiec_pint
+  name: Żywiec Beer (pint)
+  brand: Żywiec
+  region_codes: gb
+  kcal_per_100g: 39
+  protein_per_100g: 0.4
+  carbs_per_100g: 3.0
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: polish,alcoholic,beer,branded
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 568

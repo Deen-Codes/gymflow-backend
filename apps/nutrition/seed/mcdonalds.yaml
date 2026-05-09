@@ -1,0 +1,665 @@
+# mcdonalds.yaml — McDonald's UK menu.
+# 42 entries (incl 9 migrated).
+# Source: mcdonalds.com/gb/en-gb/good-to-know/nutrition-calculator.html.
+- source: gymflow
+  source_id: mcdonalds_big_mac
+  name: McDonald's Big Mac
+  brand: McDonald's
+  region_codes: gb,us
+  kcal_per_100g: 254
+  protein_per_100g: 11.7
+  carbs_per_100g: 20.3
+  fat_per_100g: 14.9
+  serving_grams: 219
+  serving_label: 1 burger (~219g, 563 kcal total)
+  tags: restaurant,chain,fast_food
+  dietary_compat: ''
+  allergens: gluten,eggs,milk,sesame
+  portion_unit: piece
+  unit_grams: 215
+- source: gymflow
+  source_id: mcdonalds_chicken_nuggets_6
+  name: McDonald's Chicken McNuggets, 6 piece
+  brand: McDonald's
+  region_codes: gb,us
+  kcal_per_100g: 281
+  protein_per_100g: 14.0
+  carbs_per_100g: 14.0
+  fat_per_100g: 18.0
+  serving_grams: 100
+  serving_label: 6 nuggets (~100g, 280 kcal)
+  tags: restaurant,chain,fast_food,protein
+  dietary_compat: halal_compatible
+  allergens: gluten,milk
+  portion_unit: pack
+  unit_grams: 102
+- source: gymflow
+  source_id: mcdonalds_egg_mcmuffin
+  name: McDonald's Egg McMuffin
+  brand: McDonald's
+  region_codes: gb,us
+  kcal_per_100g: 233
+  protein_per_100g: 14.0
+  carbs_per_100g: 22.0
+  fat_per_100g: 9.5
+  serving_grams: 138
+  serving_label: 1 muffin (~290 kcal)
+  tags: restaurant,chain,breakfast
+  dietary_compat: vegetarian
+  allergens: gluten,eggs,milk
+  portion_unit: piece
+  unit_grams: 138
+- source: gymflow
+  source_id: mcdonalds_filet_o_fish
+  name: McDonald's Filet-O-Fish
+  brand: McDonald's
+  region_codes: gb,us
+  kcal_per_100g: 233
+  protein_per_100g: 11.0
+  carbs_per_100g: 25.0
+  fat_per_100g: 10.0
+  serving_grams: 140
+  serving_label: 1 burger (~330 kcal)
+  tags: restaurant,chain,fast_food,fish
+  dietary_compat: pescatarian
+  allergens: gluten,eggs,milk,fish
+  portion_unit: piece
+  unit_grams: 142
+- source: gymflow
+  source_id: mcdonalds_fries_medium
+  name: McDonald's Medium Fries
+  brand: McDonald's
+  region_codes: gb,us
+  kcal_per_100g: 322
+  protein_per_100g: 3.4
+  carbs_per_100g: 41.0
+  fat_per_100g: 16.0
+  serving_grams: 117
+  serving_label: 1 medium (~117g, 337 kcal)
+  tags: restaurant,chain,sides,fries
+  dietary_compat: vegan,vegetarian,gluten_free,dairy_free
+  allergens: ''
+  portion_unit: pack
+  unit_grams: 117
+- source: gymflow
+  source_id: mcdonalds_grilled_chicken_wrap
+  name: McDonald's Chicken Mayo Wrap
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 242
+  protein_per_100g: 11.0
+  carbs_per_100g: 25.0
+  fat_per_100g: 11.0
+  serving_grams: 150
+  serving_label: 1 wrap (~150g, ~365 kcal)
+  tags: restaurant,chain,wrap,protein
+  dietary_compat: halal_compatible
+  allergens: gluten,eggs,milk,mustard
+  portion_unit: wrap
+  unit_grams: 215
+- source: gymflow
+  source_id: mcdonalds_mcchicken
+  name: McDonald's McChicken Sandwich
+  brand: McDonald's
+  region_codes: gb,us
+  kcal_per_100g: 256
+  protein_per_100g: 12.0
+  carbs_per_100g: 25.0
+  fat_per_100g: 12.0
+  serving_grams: 162
+  serving_label: 1 sandwich (~415 kcal)
+  tags: restaurant,chain,fast_food
+  dietary_compat: halal_compatible
+  allergens: gluten,eggs,milk,sesame
+  portion_unit: piece
+  unit_grams: 175
+- source: gymflow
+  source_id: mcdonalds_quarter_pounder
+  name: McDonald's Quarter Pounder with Cheese
+  brand: McDonald's
+  region_codes: gb,us
+  kcal_per_100g: 261
+  protein_per_100g: 14.5
+  carbs_per_100g: 18.0
+  fat_per_100g: 14.0
+  serving_grams: 199
+  serving_label: 1 burger (~520 kcal)
+  tags: restaurant,chain,fast_food
+  dietary_compat: ''
+  allergens: gluten,eggs,milk,sesame
+  portion_unit: piece
+  unit_grams: 199
+- source: gymflow
+  source_id: mcdonalds_strawberry_milkshake_med
+  name: McDonald's Strawberry Milkshake, Medium
+  brand: McDonald's
+  region_codes: gb,us
+  kcal_per_100g: 117
+  protein_per_100g: 3.4
+  carbs_per_100g: 21.0
+  fat_per_100g: 2.5
+  serving_grams: 410
+  serving_label: 1 medium (~410ml)
+  tags: restaurant,chain,drink,dessert
+  dietary_compat: vegetarian,halal,kosher
+  allergens: milk
+  portion_unit: ml
+- source: gymflow
+  source_id: mcdonalds_double_cheeseburger
+  name: Double Cheeseburger
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 16
+  carbs_per_100g: 17
+  fat_per_100g: 16
+  serving_grams: 159
+  serving_label: 1 piece (159 g)
+  portion_unit: piece
+  tags: chain,fast_food,burger
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 159
+- source: gymflow
+  source_id: mcdonalds_triple_cheeseburger
+  name: Triple Cheeseburger
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 17
+  carbs_per_100g: 17
+  fat_per_100g: 17
+  serving_grams: 196
+  serving_label: 1 piece (196 g)
+  portion_unit: piece
+  tags: chain,fast_food,burger
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 196
+- source: gymflow
+  source_id: mcdonalds_cheeseburger
+  name: Cheeseburger
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 24
+  fat_per_100g: 11
+  serving_grams: 119
+  serving_label: 1 piece (119 g)
+  portion_unit: piece
+  tags: chain,fast_food,burger
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 119
+- source: gymflow
+  source_id: mcdonalds_hamburger
+  name: Hamburger
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 12
+  carbs_per_100g: 26
+  fat_per_100g: 8
+  serving_grams: 105
+  serving_label: 1 piece (105 g)
+  portion_unit: piece
+  tags: chain,fast_food,burger
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs,sesame
+  unit_grams: 105
+- source: gymflow
+  source_id: mcdonalds_mcplant
+  name: McPlant Burger
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 215
+  serving_label: 1 piece (215 g)
+  portion_unit: piece
+  tags: chain,fast_food,burger,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sesame,soy
+  unit_grams: 215
+- source: gymflow
+  source_id: mcdonalds_chicken_legend_bbq
+  name: Chicken Legend BBQ
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 14
+  carbs_per_100g: 26
+  fat_per_100g: 9
+  serving_grams: 245
+  serving_label: 1 piece (245 g)
+  portion_unit: piece
+  tags: chain,fast_food,burger,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 245
+- source: gymflow
+  source_id: mcdonalds_chicken_legend_mayo
+  name: Chicken Legend Mayo
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 14
+  carbs_per_100g: 24
+  fat_per_100g: 13
+  serving_grams: 245
+  serving_label: 1 piece (245 g)
+  portion_unit: piece
+  tags: chain,fast_food,burger,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 245
+- source: gymflow
+  source_id: mcdonalds_chicken_select_3
+  name: Chicken Selects (3)
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 17
+  carbs_per_100g: 17
+  fat_per_100g: 12
+  serving_grams: 90
+  serving_label: 1 portion (90 g)
+  portion_unit: pack
+  tags: chain,fast_food,side,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 90
+- source: gymflow
+  source_id: mcdonalds_chicken_nuggets_9
+  name: Chicken McNuggets (9)
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 14
+  carbs_per_100g: 16
+  fat_per_100g: 14
+  serving_grams: 153
+  serving_label: 1 portion (153 g)
+  portion_unit: pack
+  tags: chain,fast_food,side,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs
+  unit_grams: 153
+- source: gymflow
+  source_id: mcdonalds_chicken_nuggets_20
+  name: Chicken McNuggets (20)
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 14
+  carbs_per_100g: 16
+  fat_per_100g: 14
+  serving_grams: 340
+  serving_label: 1 portion (340 g)
+  portion_unit: pack
+  tags: chain,fast_food,side,chicken,sharing
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs
+  unit_grams: 340
+- source: gymflow
+  source_id: mcdonalds_fries_small
+  name: Small Fries
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 3
+  carbs_per_100g: 34
+  fat_per_100g: 15
+  serving_grams: 80
+  serving_label: 1 portion (80 g)
+  portion_unit: pack
+  tags: chain,fast_food,side,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 80
+- source: gymflow
+  source_id: mcdonalds_fries_large
+  name: Large Fries
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 3
+  carbs_per_100g: 34
+  fat_per_100g: 15
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: chain,fast_food,side,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 150
+- source: gymflow
+  source_id: mcdonalds_apple_pie
+  name: Apple Pie
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 3
+  carbs_per_100g: 45
+  fat_per_100g: 18
+  serving_grams: 75
+  serving_label: 1 piece (75 g)
+  portion_unit: piece
+  tags: chain,fast_food,dessert
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 75
+- source: gymflow
+  source_id: mcdonalds_mcflurry_oreo
+  name: Oreo McFlurry
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 3.5
+  carbs_per_100g: 27
+  fat_per_100g: 6
+  serving_grams: 170
+  serving_label: 1 piece (170 g)
+  portion_unit: piece
+  tags: chain,fast_food,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 170
+- source: gymflow
+  source_id: mcdonalds_mcflurry_smarties
+  name: Smarties McFlurry
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 4
+  carbs_per_100g: 28
+  fat_per_100g: 7
+  serving_grams: 175
+  serving_label: 1 piece (175 g)
+  portion_unit: piece
+  tags: chain,fast_food,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+  unit_grams: 175
+- source: gymflow
+  source_id: mcdonalds_sundae_chocolate
+  name: Hot Chocolate Fudge Sundae
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 4
+  carbs_per_100g: 30
+  fat_per_100g: 7
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: chain,fast_food,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,eggs,soy
+  unit_grams: 200
+- source: gymflow
+  source_id: mcdonalds_milkshake_vanilla_med
+  name: Vanilla Milkshake (medium)
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 3
+  carbs_per_100g: 16
+  fat_per_100g: 3
+  serving_grams: 400
+  serving_label: 1 ml (400 g)
+  portion_unit: ml
+  tags: chain,fast_food,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk
+- source: gymflow
+  source_id: mcdonalds_milkshake_chocolate_med
+  name: Chocolate Milkshake (medium)
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 3
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  serving_grams: 400
+  serving_label: 1 ml (400 g)
+  portion_unit: ml
+  tags: chain,fast_food,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk
+- source: gymflow
+  source_id: mcdonalds_coke_med
+  name: Coca-Cola (medium)
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 0
+  carbs_per_100g: 10.6
+  fat_per_100g: 0
+  serving_grams: 400
+  serving_label: 1 ml (400 g)
+  portion_unit: ml
+  tags: chain,fast_food,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: mcdonalds_coke_zero_med
+  name: Coca-Cola Zero (medium)
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 400
+  serving_label: 1 ml (400 g)
+  portion_unit: ml
+  tags: chain,fast_food,drink,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: mcdonalds_fanta_med
+  name: Fanta Orange (medium)
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 19
+  protein_per_100g: 0
+  carbs_per_100g: 4.6
+  fat_per_100g: 0
+  serving_grams: 400
+  serving_label: 1 ml (400 g)
+  portion_unit: ml
+  tags: chain,fast_food,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: mcdonalds_water_500
+  name: Buxton Still Water
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: chain,fast_food,drink,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: mcdonalds_orange_juice
+  name: Tropicana Orange Juice
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 0.7
+  carbs_per_100g: 9.5
+  fat_per_100g: 0.2
+  serving_grams: 250
+  serving_label: 1 bottle (250 g)
+  portion_unit: bottle
+  tags: chain,fast_food,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: mcdonalds_sausage_mcmuffin
+  name: Sausage McMuffin
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 11
+  carbs_per_100g: 23
+  fat_per_100g: 16
+  serving_grams: 122
+  serving_label: 1 piece (122 g)
+  portion_unit: piece
+  tags: chain,fast_food,breakfast
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sulphites
+  unit_grams: 122
+- source: gymflow
+  source_id: mcdonalds_sausage_egg_mcmuffin
+  name: Sausage & Egg McMuffin
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 14
+  carbs_per_100g: 21
+  fat_per_100g: 16
+  serving_grams: 178
+  serving_label: 1 piece (178 g)
+  portion_unit: piece
+  tags: chain,fast_food,breakfast
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 178
+- source: gymflow
+  source_id: mcdonalds_bacon_egg_mcmuffin
+  name: Bacon & Egg McMuffin
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 23
+  fat_per_100g: 11
+  serving_grams: 158
+  serving_label: 1 piece (158 g)
+  portion_unit: piece
+  tags: chain,fast_food,breakfast
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 158
+- source: gymflow
+  source_id: mcdonalds_double_sausage_egg_mcmuffin
+  name: Double Sausage & Egg McMuffin
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 16
+  carbs_per_100g: 18
+  fat_per_100g: 17
+  serving_grams: 220
+  serving_label: 1 piece (220 g)
+  portion_unit: piece
+  tags: chain,fast_food,breakfast
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 220
+- source: gymflow
+  source_id: mcdonalds_hash_brown
+  name: Hash Brown
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 3
+  carbs_per_100g: 32
+  fat_per_100g: 17
+  serving_grams: 56
+  serving_label: 1 piece (56 g)
+  portion_unit: piece
+  tags: chain,fast_food,breakfast,side,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 56
+- source: gymflow
+  source_id: mcdonalds_pancakes_syrup
+  name: Pancakes & Syrup
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 5
+  serving_grams: 175
+  serving_label: 1 portion (175 g)
+  portion_unit: pack
+  tags: chain,fast_food,breakfast
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 175
+- source: gymflow
+  source_id: mcdonalds_latte_reg_semi
+  name: Latte (regular, semi)
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 3.5
+  carbs_per_100g: 4.5
+  fat_per_100g: 2.0
+  serving_grams: 350
+  serving_label: 1 ml (350 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: mcdonalds_cappuccino_reg_semi
+  name: Cappuccino (regular, semi)
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 38
+  protein_per_100g: 2.5
+  carbs_per_100g: 3.5
+  fat_per_100g: 1.5
+  serving_grams: 300
+  serving_label: 1 ml (300 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: mcdonalds_americano_reg
+  name: Americano (regular)
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 2
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.3
+  fat_per_100g: 0
+  serving_grams: 240
+  serving_label: 1 ml (240 g)
+  portion_unit: ml
+  tags: chain,coffee,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: mcdonalds_iced_caramel_frappe
+  name: Caramel Iced Frappé
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 3
+  carbs_per_100g: 21
+  fat_per_100g: 5
+  serving_grams: 350
+  serving_label: 1 ml (350 g)
+  portion_unit: ml
+  tags: chain,coffee,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy

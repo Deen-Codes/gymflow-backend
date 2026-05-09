@@ -1,0 +1,640 @@
+# sizzling_pubs.yaml — Sizzling Pubs (Mitchells & Butlers).
+# 40 entries: signature sizzling skillets, mains, sides, drinks (pints + spirits).
+# Source: sizzlingpubs.co.uk allergen + nutrition.
+- source: gymflow
+  source_id: sizzling_sizzling_steak
+  name: Sizzling Steak Skillet
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 16
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: chain,pub,meal,high_protein
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 500
+- source: gymflow
+  source_id: sizzling_sizzling_chicken
+  name: Sizzling Chicken Skillet
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 17
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: chain,pub,meal,high_protein,chicken
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 500
+- source: gymflow
+  source_id: sizzling_sizzling_fajita
+  name: Sizzling Fajita Chicken
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 16
+  carbs_per_100g: 19
+  fat_per_100g: 5
+  serving_grams: 520
+  serving_label: 1 portion (520 g)
+  portion_unit: meal
+  tags: chain,pub,meal,chicken
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: gluten,sulphites
+  unit_grams: 520
+- source: gymflow
+  source_id: sizzling_fish_chips
+  name: Fish & Chips
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 12
+  carbs_per_100g: 23
+  fat_per_100g: 9
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: pescatarian
+  allergens: fish,gluten,eggs
+  unit_grams: 600
+- source: gymflow
+  source_id: sizzling_steak_pie
+  name: Steak Pie
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  serving_grams: 540
+  serving_label: 1 portion (540 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 540
+- source: gymflow
+  source_id: sizzling_burger_classic
+  name: Sizzling Beef Burger
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  serving_grams: 470
+  serving_label: 1 portion (470 g)
+  portion_unit: meal
+  tags: chain,pub,burger
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 470
+- source: gymflow
+  source_id: sizzling_burger_chicken
+  name: Chicken Burger
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 16
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  serving_grams: 450
+  serving_label: 1 portion (450 g)
+  portion_unit: meal
+  tags: chain,pub,burger,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sesame
+  unit_grams: 450
+- source: gymflow
+  source_id: sizzling_mixed_grill
+  name: Mixed Grill
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 14
+  fat_per_100g: 11
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: chain,pub,meal,high_protein
+  dietary_compat: pescatarian,dairy_free
+  allergens: sulphites,eggs
+  unit_grams: 600
+- source: gymflow
+  source_id: sizzling_gammon_egg
+  name: Gammon, Egg & Chips
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 16
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  serving_grams: 550
+  serving_label: 1 portion (550 g)
+  portion_unit: meal
+  tags: chain,pub,meal,high_protein
+  dietary_compat: pescatarian,dairy_free
+  allergens: eggs
+  unit_grams: 550
+- source: gymflow
+  source_id: sizzling_jacket_cheese_beans
+  name: Jacket Potato Cheese & Beans
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk
+  unit_grams: 500
+- source: gymflow
+  source_id: sizzling_lasagne
+  name: Beef Lasagne
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 190
+  protein_per_100g: 9
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  serving_grams: 470
+  serving_label: 1 portion (470 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 470
+- source: gymflow
+  source_id: sizzling_curry_chicken
+  name: Chicken Curry & Rice
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 10
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: chain,pub,meal,curry
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: celery
+  unit_grams: 600
+- source: gymflow
+  source_id: sizzling_pasta_chicken
+  name: Chicken & Bacon Pasta
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 20
+  fat_per_100g: 8
+  serving_grams: 480
+  serving_label: 1 portion (480 g)
+  portion_unit: meal
+  tags: chain,pub,meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 480
+- source: gymflow
+  source_id: sizzling_kids_chicken_chips
+  name: Kids' Chicken & Chips
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 12
+  carbs_per_100g: 24
+  fat_per_100g: 9
+  serving_grams: 320
+  serving_label: 1 portion (320 g)
+  portion_unit: meal
+  tags: chain,pub,meal,kids
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 320
+- source: gymflow
+  source_id: sizzling_kids_sausage_mash
+  name: Kids' Sausage & Mash
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 190
+  protein_per_100g: 8
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  serving_grams: 320
+  serving_label: 1 portion (320 g)
+  portion_unit: meal
+  tags: chain,pub,meal,kids
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sulphites
+  unit_grams: 320
+- source: gymflow
+  source_id: sizzling_breakfast_full
+  name: Sizzling Breakfast
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 12
+  fat_per_100g: 13
+  serving_grams: 580
+  serving_label: 1 portion (580 g)
+  portion_unit: meal
+  tags: chain,pub,meal,breakfast
+  dietary_compat: pescatarian
+  allergens: gluten,eggs,sulphites
+  unit_grams: 580
+- source: gymflow
+  source_id: sizzling_chips
+  name: Chips
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 4
+  carbs_per_100g: 36
+  fat_per_100g: 8
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,pub,side
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 200
+- source: gymflow
+  source_id: sizzling_garlic_bread
+  name: Garlic Bread
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 7
+  carbs_per_100g: 38
+  fat_per_100g: 12
+  serving_grams: 130
+  serving_label: 1 portion (130 g)
+  portion_unit: pack
+  tags: chain,pub,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 130
+- source: gymflow
+  source_id: sizzling_onion_rings
+  name: Onion Rings
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 305
+  protein_per_100g: 4
+  carbs_per_100g: 35
+  fat_per_100g: 16
+  serving_grams: 120
+  serving_label: 1 portion (120 g)
+  portion_unit: pack
+  tags: chain,pub,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 120
+- source: gymflow
+  source_id: sizzling_seasonal_veg
+  name: Seasonal Vegetables
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 3
+  carbs_per_100g: 9
+  fat_per_100g: 1
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: chain,pub,side,vegetable
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 150
+- source: gymflow
+  source_id: sizzling_side_salad
+  name: Side Salad
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 2
+  carbs_per_100g: 5
+  fat_per_100g: 3
+  serving_grams: 130
+  serving_label: 1 portion (130 g)
+  portion_unit: pack
+  tags: chain,pub,side,salad
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: mustard,sulphites
+  unit_grams: 130
+- source: gymflow
+  source_id: sizzling_sweet_potato_fries
+  name: Sweet Potato Fries
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 3
+  carbs_per_100g: 35
+  fat_per_100g: 9
+  serving_grams: 170
+  serving_label: 1 portion (170 g)
+  portion_unit: pack
+  tags: chain,pub,side
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 170
+- source: gymflow
+  source_id: sizzling_garlic_mushrooms
+  name: Garlic Mushrooms
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 9
+  fat_per_100g: 12
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,pub,starter
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 180
+- source: gymflow
+  source_id: sizzling_chicken_wings
+  name: Chicken Wings
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 22
+  carbs_per_100g: 7
+  fat_per_100g: 14
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,pub,starter,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 200
+- source: gymflow
+  source_id: sizzling_loaded_fries
+  name: Loaded Cheese & Bacon Fries
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 8
+  carbs_per_100g: 24
+  fat_per_100g: 17
+  serving_grams: 220
+  serving_label: 1 portion (220 g)
+  portion_unit: pack
+  tags: chain,pub,starter
+  dietary_compat: pescatarian
+  allergens: milk,eggs
+  unit_grams: 220
+- source: gymflow
+  source_id: sizzling_sticky_toffee
+  name: Sticky Toffee Pudding
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 16
+  serving_grams: 170
+  serving_label: 1 piece (170 g)
+  portion_unit: piece
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 170
+- source: gymflow
+  source_id: sizzling_chocolate_fudge
+  name: Chocolate Fudge Cake
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 405
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  serving_grams: 160
+  serving_label: 1 slice (160 g)
+  portion_unit: slice
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 160
+- source: gymflow
+  source_id: sizzling_apple_pie
+  name: Apple Pie
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 3
+  carbs_per_100g: 40
+  fat_per_100g: 11
+  serving_grams: 180
+  serving_label: 1 piece (180 g)
+  portion_unit: piece
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 180
+- source: gymflow
+  source_id: sizzling_ice_cream_2
+  name: Ice Cream (2 scoops)
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 4
+  carbs_per_100g: 24
+  fat_per_100g: 10
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: chain,pub,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs
+  unit_grams: 100
+- source: gymflow
+  source_id: sizzling_peppercorn_sauce
+  name: Peppercorn Sauce
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 170
+  protein_per_100g: 2
+  carbs_per_100g: 5
+  fat_per_100g: 15
+  serving_grams: 60
+  serving_label: 1 portion (60 g)
+  portion_unit: pack
+  tags: chain,pub,sauce
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 60
+- source: gymflow
+  source_id: sizzling_lager_pint
+  name: Lager (pint)
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 43
+  protein_per_100g: 0.3
+  carbs_per_100g: 3.0
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: chain,pub,drink,alcoholic
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 568
+- source: gymflow
+  source_id: sizzling_ale_pint
+  name: Ale (pint)
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 40
+  protein_per_100g: 0.3
+  carbs_per_100g: 3.5
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: chain,pub,drink,alcoholic
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free
+  allergens: gluten
+  unit_grams: 568
+- source: gymflow
+  source_id: sizzling_cider_pint
+  name: Cider (pint)
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 47
+  protein_per_100g: 0.0
+  carbs_per_100g: 5.5
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: chain,pub,drink,alcoholic
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+  unit_grams: 568
+- source: gymflow
+  source_id: sizzling_house_red_175
+  name: House Red Wine (175 ml)
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 85
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.5
+  fat_per_100g: 0
+  serving_grams: 175
+  serving_label: 1 ml (175 g)
+  portion_unit: ml
+  tags: chain,pub,drink,alcoholic
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: sizzling_house_white_175
+  name: House White Wine (175 ml)
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 85
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.5
+  fat_per_100g: 0
+  serving_grams: 175
+  serving_label: 1 ml (175 g)
+  portion_unit: ml
+  tags: chain,pub,drink,alcoholic
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: sulphites
+- source: gymflow
+  source_id: sizzling_spirit_25
+  name: Spirit (25 ml shot)
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 25
+  serving_label: 1 shot (25 g)
+  portion_unit: shot
+  tags: chain,pub,drink,alcoholic
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: sizzling_pepsi_pint
+  name: Pepsi (pint)
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 41
+  protein_per_100g: 0.0
+  carbs_per_100g: 10.0
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: chain,pub,drink
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 568
+- source: gymflow
+  source_id: sizzling_diet_pepsi_pint
+  name: Diet Pepsi (pint)
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: chain,pub,drink,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 568
+- source: gymflow
+  source_id: sizzling_orange_juice
+  name: Orange Juice
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 0.7
+  carbs_per_100g: 9.5
+  fat_per_100g: 0.2
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: chain,pub,drink
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: sizzling_lemonade_pint
+  name: Lemonade (pint)
+  brand: Sizzling Pubs
+  region_codes: gb
+  kcal_per_100g: 18
+  protein_per_100g: 0.0
+  carbs_per_100g: 4.5
+  fat_per_100g: 0
+  serving_grams: 568
+  serving_label: 1 pint (568 g)
+  portion_unit: pint
+  tags: chain,pub,drink,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 568

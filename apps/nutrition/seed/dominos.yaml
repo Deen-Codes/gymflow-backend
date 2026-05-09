@@ -1,0 +1,482 @@
+# dominos.yaml — Domino's UK menu. 30 entries.
+# Source: dominos.co.uk/nutrition.
+- source: gymflow
+  source_id: dominos_margherita_med_sl
+  name: Margherita (med slice)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  serving_grams: 105
+  serving_label: 1 slice (105 g)
+  portion_unit: slice
+  tags: chain,pizza,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 105
+- source: gymflow
+  source_id: dominos_mighty_meaty_med_sl
+  name: Mighty Meaty (med slice)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 14
+  carbs_per_100g: 26
+  fat_per_100g: 13
+  serving_grams: 115
+  serving_label: 1 slice (115 g)
+  portion_unit: slice
+  tags: chain,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 115
+- source: gymflow
+  source_id: dominos_meateor_med_sl
+  name: The Meateor (med slice)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 295
+  protein_per_100g: 15
+  carbs_per_100g: 26
+  fat_per_100g: 14
+  serving_grams: 120
+  serving_label: 1 slice (120 g)
+  portion_unit: slice
+  tags: chain,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 120
+- source: gymflow
+  source_id: dominos_texas_bbq_med_sl
+  name: Texas BBQ (med slice)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 265
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 10
+  serving_grams: 115
+  serving_label: 1 slice (115 g)
+  portion_unit: slice
+  tags: chain,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sulphites
+  unit_grams: 115
+- source: gymflow
+  source_id: dominos_tandoori_hot_med_sl
+  name: Tandoori Hot (med slice)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 27
+  fat_per_100g: 9
+  serving_grams: 115
+  serving_label: 1 slice (115 g)
+  portion_unit: slice
+  tags: chain,pizza,chicken
+  dietary_compat: halal,pescatarian
+  allergens: gluten,milk
+  unit_grams: 115
+- source: gymflow
+  source_id: dominos_hawaiian_med_sl
+  name: Hawaiian (med slice)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 12
+  carbs_per_100g: 30
+  fat_per_100g: 8
+  serving_grams: 110
+  serving_label: 1 slice (110 g)
+  portion_unit: slice
+  tags: chain,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 110
+- source: gymflow
+  source_id: dominos_chicken_feast_med_sl
+  name: Chicken Feast (med slice)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 27
+  fat_per_100g: 9
+  serving_grams: 115
+  serving_label: 1 slice (115 g)
+  portion_unit: slice
+  tags: chain,pizza,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 115
+- source: gymflow
+  source_id: dominos_vegi_classic_med_sl
+  name: Vegi Classic (med slice)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 7
+  serving_grams: 110
+  serving_label: 1 slice (110 g)
+  portion_unit: slice
+  tags: chain,pizza,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 110
+- source: gymflow
+  source_id: dominos_vegan_garden_med_sl
+  name: Vegan Vegi Supreme (med slice)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 7
+  carbs_per_100g: 30
+  fat_per_100g: 6
+  serving_grams: 110
+  serving_label: 1 slice (110 g)
+  portion_unit: slice
+  tags: chain,pizza,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sulphites
+  unit_grams: 110
+- source: gymflow
+  source_id: dominos_cheese_n_tomato_med_sl
+  name: Cheese & Tomato (med slice)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  serving_grams: 100
+  serving_label: 1 slice (100 g)
+  portion_unit: slice
+  tags: chain,pizza,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 100
+- source: gymflow
+  source_id: dominos_meateor_med_whole
+  name: The Meateor (whole medium)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 295
+  protein_per_100g: 15
+  carbs_per_100g: 26
+  fat_per_100g: 14
+  serving_grams: 960
+  serving_label: 1 portion (960 g)
+  portion_unit: meal
+  tags: chain,pizza,sharing
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 960
+- source: gymflow
+  source_id: dominos_margherita_med_whole
+  name: Margherita (whole medium)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  serving_grams: 840
+  serving_label: 1 portion (840 g)
+  portion_unit: meal
+  tags: chain,pizza,sharing,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 840
+- source: gymflow
+  source_id: dominos_garlic_pizza_bread
+  name: Garlic Pizza Bread
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 8
+  carbs_per_100g: 36
+  fat_per_100g: 12
+  serving_grams: 180
+  serving_label: 1 portion (180 g)
+  portion_unit: pack
+  tags: chain,pizza,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 180
+- source: gymflow
+  source_id: dominos_chicken_wings_7
+  name: Chicken Wings (7)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 22
+  carbs_per_100g: 8
+  fat_per_100g: 13
+  serving_grams: 245
+  serving_label: 1 portion (245 g)
+  portion_unit: pack
+  tags: chain,pizza,side,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 245
+- source: gymflow
+  source_id: dominos_chicken_strippers_4
+  name: Chicken Strippers (4)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 17
+  carbs_per_100g: 16
+  fat_per_100g: 13
+  serving_grams: 130
+  serving_label: 1 portion (130 g)
+  portion_unit: pack
+  tags: chain,pizza,side,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 130
+- source: gymflow
+  source_id: dominos_chicken_kickers_5
+  name: Chicken Kickers (5)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 18
+  carbs_per_100g: 14
+  fat_per_100g: 13
+  serving_grams: 130
+  serving_label: 1 portion (130 g)
+  portion_unit: pack
+  tags: chain,pizza,side,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 130
+- source: gymflow
+  source_id: dominos_potato_wedges
+  name: Potato Wedges
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 9
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: chain,pizza,side,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 250
+- source: gymflow
+  source_id: dominos_garlic_dough_balls
+  name: Garlic & Herb Dough Balls (8)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 8
+  carbs_per_100g: 35
+  fat_per_100g: 11
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,pizza,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 200
+- source: gymflow
+  source_id: dominos_loaded_wedges
+  name: Loaded Cheesy Wedges
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 8
+  carbs_per_100g: 26
+  fat_per_100g: 14
+  serving_grams: 280
+  serving_label: 1 portion (280 g)
+  portion_unit: pack
+  tags: chain,pizza,side
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 280
+- source: gymflow
+  source_id: dominos_garlic_herb_dip
+  name: Garlic & Herb Dip
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 425
+  protein_per_100g: 1
+  carbs_per_100g: 6
+  fat_per_100g: 45
+  serving_grams: 25
+  serving_label: 1 portion (25 g)
+  portion_unit: pack
+  tags: chain,pizza,sauce
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: eggs,milk,mustard
+  unit_grams: 25
+- source: gymflow
+  source_id: dominos_bbq_dip
+  name: BBQ Dip
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 0.5
+  carbs_per_100g: 39
+  fat_per_100g: 0
+  serving_grams: 25
+  serving_label: 1 portion (25 g)
+  portion_unit: pack
+  tags: chain,pizza,sauce
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: dominos_sweet_chilli_dip
+  name: Sweet Chilli Dip
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 0
+  carbs_per_100g: 60
+  fat_per_100g: 0
+  serving_grams: 25
+  serving_label: 1 portion (25 g)
+  portion_unit: pack
+  tags: chain,pizza,sauce
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: dominos_honey_mustard_dip
+  name: Honey & Mustard Dip
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 1
+  carbs_per_100g: 38
+  fat_per_100g: 22
+  serving_grams: 25
+  serving_label: 1 portion (25 g)
+  portion_unit: pack
+  tags: chain,pizza,sauce
+  dietary_compat: vegetarian,pescatarian,gluten_free
+  allergens: eggs,milk,mustard
+  unit_grams: 25
+- source: gymflow
+  source_id: dominos_coke_bottle
+  name: Coca-Cola (bottle)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 0
+  carbs_per_100g: 10.6
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: chain,pizza,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: dominos_diet_coke_bottle
+  name: Diet Coke (bottle)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: chain,pizza,drink,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: dominos_fanta_bottle
+  name: Fanta Orange (bottle)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 19
+  protein_per_100g: 0
+  carbs_per_100g: 4.6
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: chain,pizza,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: dominos_water_bottle
+  name: Still Water (bottle)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: chain,pizza,drink,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: dominos_chocolate_brownies
+  name: Chocolate Brownies (6)
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 415
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  serving_grams: 165
+  serving_label: 1 portion (165 g)
+  portion_unit: pack
+  tags: chain,pizza,dessert
+  dietary_compat: vegetarian,pescatarian
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 165
+- source: gymflow
+  source_id: dominos_cinnamon_dough_balls
+  name: Cinnamon Dough Balls
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 56
+  fat_per_100g: 14
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: chain,pizza,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 200
+- source: gymflow
+  source_id: dominos_lotus_cookies
+  name: Lotus Biscoff Cookies
+  brand: Domino's
+  region_codes: gb
+  kcal_per_100g: 445
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 20
+  serving_grams: 165
+  serving_label: 1 portion (165 g)
+  portion_unit: pack
+  tags: chain,pizza,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 165

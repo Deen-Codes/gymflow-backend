@@ -1,6 +1,6 @@
 """Serializers used exclusively by the Phase 3 nutrition dashboard
-JSON endpoints (drag-drop meal builder, food catalog search via
-Open Food Facts, per-meal item CRUD).
+JSON endpoints (drag-drop meal builder, food catalog search against
+our internal CuratedFood DB, per-meal item CRUD).
 """
 from rest_framework import serializers
 
@@ -25,31 +25,17 @@ class FoodLibraryItemSerializer(serializers.ModelSerializer):
         ]
 
 
-class FoodCatalogResultSerializer(serializers.Serializer):
-    """Normalized OFF search result. Not backed by a model — populated
-    on the fly by `food_search` from the live OFF response."""
-    external_id = serializers.CharField()
-    name = serializers.CharField()
-    brand = serializers.CharField(allow_blank=True, required=False, default="")
-    reference_grams = serializers.FloatField(default=100)
-    calories = serializers.FloatField(default=0)
-    protein = serializers.FloatField(default=0)
-    carbs = serializers.FloatField(default=0)
-    fats = serializers.FloatField(default=0)
-    in_library = serializers.BooleanField(default=False)
-
-
 class MealItemCreateSerializer(serializers.Serializer):
     """Drop a food onto a meal. Either `library_item_id` (existing
-    library entry) OR a full OFF payload that we'll snapshot into the
-    library first."""
+    library entry) OR a full CuratedFood payload that we'll snapshot
+    into the library first."""
     meal_id = serializers.IntegerField()
     grams = serializers.FloatField(min_value=0.01, default=100)
 
     # Path A: drop from library
     library_item_id = serializers.IntegerField(required=False)
 
-    # Path B: drop from Open Food Facts catalog
+    # Path B: drop from CuratedFood catalog (external_id is "curated:<id>")
     external_id = serializers.CharField(required=False, allow_blank=True)
     name = serializers.CharField(required=False, allow_blank=True)
     brand = serializers.CharField(required=False, allow_blank=True, default="")
@@ -62,7 +48,7 @@ class MealItemCreateSerializer(serializers.Serializer):
     def validate(self, attrs):
         if not attrs.get("library_item_id") and not (attrs.get("external_id") and attrs.get("name")):
             raise serializers.ValidationError(
-                "Provide either library_item_id, or external_id + name (OFF snapshot)."
+                "Provide either library_item_id, or external_id + name (catalog snapshot)."
             )
         return attrs
 
