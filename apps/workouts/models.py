@@ -181,10 +181,87 @@ class ExerciseCatalog(models.Model):
         (SOURCE_GYMFLOW, "GymFlow curated"),
     ]
 
+    # === EXERCISE-LIB-1500 (#210) ============================
+    # Levels / mechanic / force / category mirror Free Exercise DB
+    # taxonomy so we can ingest its data losslessly. Filters in
+    # iOS use these for chips: equipment ("at-home"/"barbell"/etc),
+    # primary-muscle, level (beginner→advanced), category.
+    LEVEL_BEGINNER = "beginner"
+    LEVEL_INTERMEDIATE = "intermediate"
+    LEVEL_EXPERT = "expert"
+    LEVEL_CHOICES = [
+        (LEVEL_BEGINNER, "Beginner"),
+        (LEVEL_INTERMEDIATE, "Intermediate"),
+        (LEVEL_EXPERT, "Expert / Advanced"),
+    ]
+    MECHANIC_COMPOUND = "compound"
+    MECHANIC_ISOLATION = "isolation"
+    MECHANIC_CHOICES = [
+        (MECHANIC_COMPOUND, "Compound"),
+        (MECHANIC_ISOLATION, "Isolation"),
+    ]
+    FORCE_PUSH = "push"
+    FORCE_PULL = "pull"
+    FORCE_STATIC = "static"
+    FORCE_CHOICES = [
+        (FORCE_PUSH, "Push"),
+        (FORCE_PULL, "Pull"),
+        (FORCE_STATIC, "Static"),
+    ]
+    CATEGORY_STRENGTH = "strength"
+    CATEGORY_STRETCHING = "stretching"
+    CATEGORY_PLYOMETRICS = "plyometrics"
+    CATEGORY_POWERLIFTING = "powerlifting"
+    CATEGORY_CARDIO = "cardio"
+    CATEGORY_OLYMPIC = "olympic_weightlifting"
+    CATEGORY_STRONGMAN = "strongman"
+    CATEGORY_CHOICES = [
+        (CATEGORY_STRENGTH, "Strength"),
+        (CATEGORY_STRETCHING, "Stretching / Mobility"),
+        (CATEGORY_PLYOMETRICS, "Plyometrics"),
+        (CATEGORY_POWERLIFTING, "Powerlifting"),
+        (CATEGORY_CARDIO, "Cardio"),
+        (CATEGORY_OLYMPIC, "Olympic Weightlifting"),
+        (CATEGORY_STRONGMAN, "Strongman"),
+    ]
+
     name = models.CharField(max_length=255, db_index=True)
     muscle_group = models.CharField(max_length=64, blank=True, db_index=True)
+    # Comma-separated secondary muscles (e.g. "triceps,shoulders")
+    # — kept as text instead of JSONField so SQLite/Postgres
+    # behave the same and __icontains filters work for the AI PT.
+    secondary_muscles = models.CharField(max_length=255, blank=True)
     equipment = models.CharField(max_length=64, blank=True, db_index=True)
+
+    level = models.CharField(
+        max_length=16, blank=True, db_index=True,
+        choices=LEVEL_CHOICES,
+    )
+    mechanic = models.CharField(
+        max_length=16, blank=True, db_index=True,
+        choices=MECHANIC_CHOICES,
+    )
+    force = models.CharField(
+        max_length=16, blank=True, db_index=True,
+        choices=FORCE_CHOICES,
+    )
+    category = models.CharField(
+        max_length=24, blank=True, db_index=True,
+        choices=CATEGORY_CHOICES,
+    )
+
+    # Free Exercise DB ships terse "instructions" (numbered steps).
+    # We surface that as the basic execution. The richer fields
+    # below are written by the curation/AI pass and shown in the
+    # enlarged exercise view per Deen's spec:
+    #   form_description   — paragraph on proper setup, key cues
+    #   common_mistakes    — "Don't…" list (newline-delimited)
+    #   breathing_cues     — when to inhale/exhale
     instructions = models.TextField(blank=True)
+    form_description = models.TextField(blank=True)
+    common_mistakes = models.TextField(blank=True)
+    breathing_cues = models.TextField(blank=True)
+
     video_url = models.URLField(blank=True)
     image_url = models.URLField(blank=True)
     # Phase 5+ — cinematic animation URL. Populated when the

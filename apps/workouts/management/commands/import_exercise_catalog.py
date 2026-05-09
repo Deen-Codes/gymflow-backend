@@ -157,12 +157,22 @@ def load_free_exercise_db(path: str) -> Iterable[dict]:
         primary_muscle = ""
         if row.get("primaryMuscles"):
             primary_muscle = row["primaryMuscles"][0]
+        secondary_muscles = ",".join(row.get("secondaryMuscles") or [])
 
         instructions = "\n".join(row.get("instructions") or [])
 
+        # Free Exercise DB taxonomy → our schema. Values are
+        # passed through as-is (lowercase strings); the model's
+        # `choices` accept them directly. Empty when missing.
+        level = (row.get("level") or "").strip().lower()
+        mechanic = (row.get("mechanic") or "").strip().lower()
+        force = (row.get("force") or "").strip().lower()
+        category = (row.get("category") or "").strip().lower().replace(" ", "_")
+
         # Image URL — the repo serves images from a known prefix.
-        # Caller can override the prefix at runtime if mirroring
-        # to S3 / CDN. Default to the GitHub raw URL.
+        # The first image is the "start frame" / icon used on the
+        # cinematic background drop in setup-workout per Deen's
+        # spec. Animations get layered on later via animation_url.
         image_relpath = (row.get("images") or [""])[0]
         image_url = (
             f"https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/{image_relpath}"
@@ -170,16 +180,27 @@ def load_free_exercise_db(path: str) -> Iterable[dict]:
         )
 
         yield {
-            "source":        ExerciseCatalog.SOURCE_FREE_EXERCISE_DB,
-            "external_id":   row["id"],
-            "name":          row["name"],
-            "muscle_group":  primary_muscle,
-            "equipment":     equipment,
-            "instructions":  instructions,
-            "image_url":     image_url,
-            "video_url":     "",
-            "animation_url": "",       # populate later when commissioned
-            "is_published":  True,
+            "source":             ExerciseCatalog.SOURCE_FREE_EXERCISE_DB,
+            "external_id":        row["id"],
+            "name":               row["name"],
+            "muscle_group":       primary_muscle,
+            "secondary_muscles":  secondary_muscles,
+            "equipment":          equipment,
+            "level":              level,
+            "mechanic":           mechanic,
+            "force":              force,
+            "category":           category,
+            "instructions":       instructions,
+            # form_description / common_mistakes / breathing_cues
+            # are intentionally left empty — populated by the
+            # curation pass (#210 Phase 4).
+            "form_description":   "",
+            "common_mistakes":    "",
+            "breathing_cues":     "",
+            "image_url":          image_url,
+            "video_url":          "",
+            "animation_url":      "",       # populate later when commissioned
+            "is_published":       True,
         }
 
 
