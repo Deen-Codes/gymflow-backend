@@ -14,6 +14,7 @@ from .solo_views import (
 )
 from .ai_describe_views import solo_ai_describe_food
 from .ai_build_views import solo_ai_nutrition_build
+from .template_views import recommend_templates
 
 urlpatterns = [
     path("me/today/",        nutrition_today_for_me, name="me-nutrition-today"),
@@ -49,4 +50,10 @@ urlpatterns = [
     # require Pro AI. Returns cut/maintain/bulk variants Claude
     # produces from the user's onboarding context.
     path("solo/ai-build/",               solo_ai_nutrition_build,        name="solo-ai-nutrition-build"),
+
+    # T1.8 — free-tier nutrition template recommender. No AI cost.
+    # Ranks the 8 NutritionTemplate rows against the user's goals
+    # + dietary pattern + bodyweight and returns the top 3 (or
+    # whatever ?top= asks for, capped at 8).
+    path("templates/recommend/",         recommend_templates,            name="nutrition-templates-recommend"),
 ]

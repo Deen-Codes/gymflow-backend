@@ -1,0 +1,141 @@
+# T1.7 — 8 curated nutrition templates per DISPATCH_BRIEF.md §1
+# decision #7 (locked by Deen). Free-tier plans scaled deterministically
+# by user weight + goal (no AI cost).
+#
+# Macro logic — see NutritionTemplate.scaled_macros():
+#   protein_g  = bodyweight_kg × protein_g_per_kg
+#   fat_g      = bodyweight_kg × fat_g_per_kg
+#   kcal       = TDEE + kcal_delta_vs_tdee   (TDEE ≈ bw × 30)
+#   carbs_g    = (kcal − protein_kcal − fat_kcal) / 4
+#
+# References:
+#   • Helms 2018 (RIR + protein per kg in deficit / surplus)
+#   • Schoenfeld 2017 (1.6–2.2 g/kg protein for hypertrophy)
+#   • RP Diet Coach approach (cut/maintenance/bulk delta bands)
+#   • Aragon & Schoenfeld 2020 (lean bulk surplus rates)
+
+- slug: lean_cutting
+  name: Lean cutting
+  tagline: Drop fat, keep the muscle.
+  summary: |
+    Steady ~0.5 kg/week deficit. Protein high to preserve lean mass
+    through the cut. Carbs land around your training, fats fill the
+    rest. Designed for a 6–12 week run, then transition into
+    maintenance to stabilise.
+  protein_g_per_kg: 2.0
+  fat_g_per_kg: 0.8
+  kcal_delta_vs_tdee: -400
+  goal_alignment: lose_fat,get_stronger
+  dietary_compatibility: ""
+  pace_label: ~0.5 kg/week down
+  sort_order: 10
+
+- slug: aggressive_cut
+  name: Aggressive cut
+  tagline: Faster fat loss, short window.
+  summary: |
+    ~1 kg/week deficit. Protein bumped higher than the standard cut
+    to protect muscle under steeper kcal restriction. Best run for
+    4–6 weeks, not as a long-term default — adherence drops sharply
+    past that. Pair with a maintenance phase before another cut.
+  protein_g_per_kg: 2.2
+  fat_g_per_kg: 0.7
+  kcal_delta_vs_tdee: -700
+  goal_alignment: lose_fat
+  dietary_compatibility: ""
+  pace_label: ~1 kg/week down (4–6 wk only)
+  sort_order: 20
+
+- slug: recomp_balanced
+  name: Recomp balanced
+  tagline: Build, lean, hold.
+  summary: |
+    Maintenance kcal with hypertrophy-focused macros. Best fit for
+    intermediates on a sensible programme who want to add muscle
+    while shedding fat slowly. Scale slow — recomposition is real
+    but takes 6+ months to see in the mirror.
+  protein_g_per_kg: 1.8
+  fat_g_per_kg: 0.9
+  kcal_delta_vs_tdee: 0
+  goal_alignment: build_muscle,stay_consistent,get_stronger
+  dietary_compatibility: ""
+  pace_label: maintenance, slow recomp
+  sort_order: 30
+
+- slug: lean_bulk
+  name: Lean bulk
+  tagline: Add muscle, minimise the fat.
+  summary: |
+    ~0.25 kg/week surplus. High-carb to fuel training volume without
+    blunting the surplus with excessive fat. Run for 8–16 weeks, then
+    short cut to clean up before continuing. Pair with progressive
+    overload — surplus without training is just gaining fat.
+  protein_g_per_kg: 1.8
+  fat_g_per_kg: 0.8
+  kcal_delta_vs_tdee: 250
+  goal_alignment: build_muscle,get_stronger
+  dietary_compatibility: ""
+  pace_label: ~0.25 kg/week up
+  sort_order: 40
+
+- slug: maintenance_omnivore
+  name: Maintenance
+  tagline: Sustainable. No phase, just balance.
+  summary: |
+    True maintenance — kcal at TDEE, protein at the upper end of the
+    sufficient band, fats and carbs balanced. Use when goals are
+    fuzzy or you've just finished a bulk/cut and want to stabilise
+    before deciding the next phase. Default for unknown goals.
+  protein_g_per_kg: 1.6
+  fat_g_per_kg: 0.9
+  kcal_delta_vs_tdee: 0
+  goal_alignment: stay_consistent,train_for_sport
+  dietary_compatibility: ""
+  pace_label: hold steady
+  sort_order: 50
+
+- slug: vegetarian_balanced
+  name: Vegetarian balanced
+  tagline: Plant-forward, dairy + eggs in, no compromise on protein.
+  summary: |
+    Maintenance kcal. Protein target hit through dairy, eggs, legumes,
+    and high-protein vegetarian staples. Slightly higher fats vs the
+    omnivore default to account for nut + seed-heavy meals.
+  protein_g_per_kg: 1.7
+  fat_g_per_kg: 1.0
+  kcal_delta_vs_tdee: 0
+  goal_alignment: stay_consistent,build_muscle
+  dietary_compatibility: vegetarian
+  pace_label: hold steady, plant-forward
+  sort_order: 60
+
+- slug: vegan_lean_bulk
+  name: Vegan lean bulk
+  tagline: Plant-only, surplus calibrated for muscle gain.
+  summary: |
+    ~0.25 kg/week surplus on a fully plant-based plan. Protein leans
+    on tofu, tempeh, seitan, lentils, and supplemental pea/soy
+    protein. Fats slightly higher to hit kcal without bulky volumes
+    of carbs.
+  protein_g_per_kg: 1.8
+  fat_g_per_kg: 1.0
+  kcal_delta_vs_tdee: 250
+  goal_alignment: build_muscle,get_stronger
+  dietary_compatibility: vegan
+  pace_label: ~0.25 kg/week up, plant-only
+  sort_order: 70
+
+- slug: halal_recomp
+  name: Halal recomp
+  tagline: Maintenance + muscle, halal staples throughout.
+  summary: |
+    Maintenance kcal with hypertrophy macros. Foods bias toward halal
+    proteins — chicken, lamb, eggs, dairy, fish. Same recomp logic
+    as the balanced template, scoped to the dietary requirement.
+  protein_g_per_kg: 1.8
+  fat_g_per_kg: 0.9
+  kcal_delta_vs_tdee: 0
+  goal_alignment: build_muscle,stay_consistent
+  dietary_compatibility: halal
+  pace_label: maintenance, slow recomp
+  sort_order: 80

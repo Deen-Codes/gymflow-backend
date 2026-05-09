@@ -529,3 +529,118 @@ class NutritionMealConsumption(models.Model):
         if self.meal_item:
             return f"{self.client.username} ate {self.meal_item.food_name} on {self.consumed_on}"
         return f"{self.client.username} completed {self.meal.title} on {self.consumed_on}"
+
+
+# ====================================================================
+# T1.7 — NutritionTemplate
+#
+# Free-tier "Tier 2" path per DISPATCH_BRIEF.md: a curated set of
+# nutrition plans that get scaled deterministically (no AI cost) by
+# user weight + goal. Replaces the "AI build is the only way to get
+# a plan" coupling, so free users hit a real plan day one.
+#
+# Each row is a goal-aligned macro split with a tagline + descriptive
+# rationale. The recommend endpoint (T1.8) ranks them by goal match
+# and returns the top 3. iOS surfaces them as the "Browse templates"
+# carousel on the nutrition empty state (T2.6).
+#
+# Sample meal slots are deferred to the AI-MEAL-PLAN-V2 work (#226)
+# — the first cut of templates ships with macro splits + scaling
+# rules only, which is enough for the recommend endpoint to be
+# useful and for free users to see a real targets-set plan without
+# a NULL data layer.
+# ====================================================================
+class NutritionTemplate(models.Model):
+    """Curated free-tier nutrition plan template.
+
+    Macro split is expressed as protein g/kg + fat g/kg + a calorie
+    delta off TDEE. Carbs are computed as the kcal remainder so the
+    template auto-scales to any user's bodyweight without storing
+    per-weight rows.
+    """
+
+    # Goal alignment — used by the recommend endpoint to rank the
+    # templates against the user's `goals` array. Multi-tag (a
+    # single template can fit multiple goals; lean_bulk fits both
+    # build_muscle and stay_consistent for example).
+    GOAL_LOSE_FAT       = "lose_fat"
+    GOAL_BUILD_MUSCLE   = "build_muscle"
+    GOAL_GET_STRONGER   = "get_stronger"
+    GOAL_STAY_CONSISTENT = "stay_consistent"
+    GOAL_TRAIN_FOR_SPORT = "train_for_sport"
+
+    slug        = models.SlugField(max_length=64, unique=True, db_index=True)
+    name        = models.CharField(max_length=80)
+    tagline     = models.CharField(max_length=160, blank=True)
+    summary     = models.TextField(blank=True)
+
+    # Macro scaling rules. `protein_g_per_kg` * bodyweight_kg →
+    # protein target. `fat_g_per_kg` * bodyweight_kg → fat target.
+    # `kcal_delta_vs_tdee` is added to TDEE (use negative for cuts).
+    # Carbs computed as remainder.
+    protein_g_per_kg     = models.FloatField(default=1.8)
+    fat_g_per_kg         = models.FloatField(default=0.8)
+    kcal_delta_vs_tdee   = models.IntegerField(default=0)
+
+    # Goal alignment array. Stored as comma-separated lowercase
+    # tokens so we don't pin to Postgres (matches CuratedFood's
+    # region_codes pattern).
+    goal_alignment       = models.CharField(max_length=128, blank=True, default="")
+
+    # Dietary pattern compatibility — which onboarded users this
+    # template is shown to. Empty == all. Comma-separated values
+    # matching SoloProfile.DIETARY_* tokens.
+    dietary_compatibility = models.CharField(max_length=128, blank=True, default="")
+
+    # Pace expectation — used by the iOS carousel preview as a
+    # one-line "what this looks like" subtitle (e.g. "~0.5 kg/week
+    # cut", "lean bulk, ~0.25 kg/week up").
+    pace_label  = models.CharField(max_length=80, blank=True, default="")
+
+    # Display order in the carousel (lower = earlier). Same template
+    # may rank differently per goal once T1.8 lands; this is the
+    # baseline tiebreaker.
+    sort_order  = models.PositiveSmallIntegerField(default=100)
+
+    is_published = models.BooleanField(default=True)
+    created_at  = models.DateTimeField(auto_now_add=True)
+    updated_at  = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ["sort_order", "name"]
+
+    def __str__(self):
+        return f"{self.name} ({self.slug})"
+
+    # ----------------------------------------------------------------
+    # Helpers
+    # ----------------------------------------------------------------
+    def goal_tags(self) -> list[str]:
+        return [t for t in (self.goal_alignment or "").split(",") if t]
+
+    def dietary_tags(self) -> list[str]:
+        return [t for t in (self.dietary_compatibility or "").split(",") if t]
+
+    def scaled_macros(self, bodyweight_kg: float | None,
+                      tdee_kcal: int | None) -> dict[str, int]:
+        """Compute scaled macros for a specific user.
+
+        Falls back to a 75 kg / 2400 kcal default user when inputs
+        aren't set so the carousel always renders something
+        plausible. The caller (recommend endpoint / iOS preview)
+        can override.
+        """
+        bw    = bodyweight_kg or 75.0
+        tdee  = tdee_kcal or int(bw * 30.0)   # 30 kcal/kg default
+        kcal  = max(1200, tdee + (self.kcal_delta_vs_tdee or 0))
+        protein_g = round(bw * (self.protein_g_per_kg or 1.8))
+        fat_g     = round(bw * (self.fat_g_per_kg or 0.8))
+        used_kcal = (protein_g * 4) + (fat_g * 9)
+        carb_kcal = max(0, kcal - used_kcal)
+        carbs_g   = max(0, round(carb_kcal / 4))
+        return {
+            "calories": int(kcal),
+            "protein":  int(protein_g),
+            "carbs":    int(carbs_g),
+            "fats":     int(fat_g),
+        }
