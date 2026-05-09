@@ -157,7 +157,11 @@ class Command(BaseCommand):
                     f"Entry {i} ({e.get('source_id', '?')}): "
                     f"portion_unit={portion_unit!r} not in {sorted(VALID_PORTION_UNITS)}"
                 )
-            if portion_unit != "grams" and e.get("unit_grams") is None:
+            # `ml` is the only unit exempt from unit_grams: for liquids the
+            # macros are already per-100ml ≈ per-100g (water-based density).
+            # Every other non-grams unit (piece/slice/scoop/etc.) needs
+            # unit_grams to convert "1 unit" into a gram amount.
+            if portion_unit not in ("grams", "ml") and e.get("unit_grams") is None:
                 validation_errors.append(
                     f"Entry {i} ({e.get('source_id', '?')}): "
                     f"portion_unit={portion_unit!r} requires unit_grams (gram-equivalent of 1 unit)"
