@@ -92,6 +92,29 @@ class Exercise(models.Model):
         related_name="workout_exercises",
     )
 
+    # T1.9 / EDIT-PROVENANCE-TRACKING — where did this exercise row
+    # originate? Used by the AI PT context surface so weekly review +
+    # chat can comment on user-made edits intelligently ("I see you
+    # swapped Bench for Incline DB Press 4 days ago — any reason?").
+    # `ai_generated`: created by Phase A AI build / mutation.
+    # `template`:     cloned from a programme catalog template.
+    # `user_edit`:    last touched by a user-side edit (custom builder
+    #                 or in-place edit on assigned programme).
+    PROVENANCE_AI       = "ai_generated"
+    PROVENANCE_TEMPLATE = "template"
+    PROVENANCE_USER     = "user_edit"
+    PROVENANCE_CHOICES = [
+        (PROVENANCE_AI,       "AI generated"),
+        (PROVENANCE_TEMPLATE, "Template"),
+        (PROVENANCE_USER,     "User edit"),
+    ]
+    provenance = models.CharField(
+        max_length=16,
+        choices=PROVENANCE_CHOICES,
+        default=PROVENANCE_TEMPLATE,
+        blank=True,
+    )
+
     def __str__(self):
         return self.name
 

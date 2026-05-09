@@ -493,6 +493,7 @@ def solo_ai_build_assign(request):
                     name=ex_name,
                     label=ex_label,
                     order=ex_idx,
+                    provenance=Exercise.PROVENANCE_AI,
                 )
                 sets = ex.get("sets") or []
                 for set_idx, st in enumerate(sets):

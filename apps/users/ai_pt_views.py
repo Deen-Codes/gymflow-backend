@@ -586,6 +586,11 @@ def _build_user_context(user) -> str:
     lines.append(f"- Experience: {profile.experience or 'unspecified'}")
     lines.append(f"- Equipment: {profile.equipment or 'unspecified'}")
     lines.append(f"- Target days/week: {profile.days_per_week}")
+    # T1.3 — surface height for BMI / body-comp framing in nutrition
+    # + recomp recommendations. Captured at signup (optional) but
+    # was missing from the AI's view until now.
+    if profile.height_cm:
+        lines.append(f"- Height: {profile.height_cm} cm")
     # AI-BUILD-ONBOARDING — surface the captured-during-build fields
     # whenever they're set so the model schedules around the user's
     # life and respects avoidances.
