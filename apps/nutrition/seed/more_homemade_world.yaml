@@ -1,0 +1,1412 @@
+# Homemade global classics — Italian (carbonara/lasagne/risotto/aglio e olio/Parmigiana/Milanese),
+# French (cordon bleu/quiche/Steak Diane/dauphinoise/ratatouille), Moroccan (tagine/couscous),
+# Middle Eastern (falafel/shawarma), Greek (souvlaki/moussaka/pastitsio/spanakopita),
+# Korean (bibimbap/japchae/Korean fried chicken), Thai (Pad Thai variants/Thai curries/satay),
+# Vietnamese (pho/banh mi/summer rolls), Chinese (chow mein/Kung Pao/General Tso/sweet & sour/Mongolian),
+# Indian (butter chicken/tikka masala/biryani/dal/chana/palak paneer/naan), Mexican (burritos/tacos/quesadilla/
+# enchiladas/chimichanga/nachos/huevos rancheros/tamales), Caribbean (jerk/curry goat/rice & peas/patties/
+# ackee saltfish), African (jollof/egusi/suya/doro wat), Brazilian (feijoada/pão de queijo)
+
+- source: homemade
+  source_id: home_carbonara_classic_homemade
+  name: Spaghetti Carbonara (Homemade Classic)
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: italian
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: home_lasagne_classic_homemade
+  name: Lasagne Bolognese (Homemade Classic)
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: italian
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_risotto_pesto_homemade
+  name: Pesto Risotto
+  kcal_per_100g: 215
+  protein_per_100g: 7
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: italian,vegetarian
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: home_aglio_olio_homemade
+  name: Spaghetti Aglio e Olio (Homemade)
+  kcal_per_100g: 195
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: italian,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: home_pasta_arrabiata_homemade
+  name: Penne all'Arrabbiata (Homemade)
+  kcal_per_100g: 165
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: italian,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: home_minestrone_classic_homemade
+  name: Minestrone Classic Homemade
+  kcal_per_100g: 70
+  protein_per_100g: 3
+  carbs_per_100g: 11
+  fat_per_100g: 1.5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: italian,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: home_garlic_butter_prawns_pasta
+  name: Garlic Butter Prawn Linguine
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: italian
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: home_chicken_parmigiana_homemade
+  name: Chicken Parmigiana (Homemade)
+  kcal_per_100g: 245
+  protein_per_100g: 19
+  carbs_per_100g: 18
+  fat_per_100g: 13
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: italian
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_chicken_milanese_homemade
+  name: Chicken Milanese (Homemade)
+  kcal_per_100g: 235
+  protein_per_100g: 19
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: italian
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_eggplant_parmigiana_homemade
+  name: Eggplant Parmigiana (Homemade)
+  kcal_per_100g: 175
+  protein_per_100g: 7
+  carbs_per_100g: 14
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: italian,vegetarian
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: home_chicken_cordon_bleu
+  name: Chicken Cordon Bleu (Homemade)
+  kcal_per_100g: 285
+  protein_per_100g: 21
+  carbs_per_100g: 14
+  fat_per_100g: 17
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: french
+  portion_unit: meal
+  unit_grams: 250
+- source: homemade
+  source_id: home_french_baguette_with_brie
+  name: French Baguette with Brie
+  kcal_per_100g: 305
+  protein_per_100g: 11
+  carbs_per_100g: 38
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: french,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: home_french_omelette_classic
+  name: Classic French Omelette (3 Eggs)
+  kcal_per_100g: 215
+  protein_per_100g: 13
+  carbs_per_100g: 1
+  fat_per_100g: 18
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 165
+  serving_label: 165 g
+  tags: french,vegetarian
+  portion_unit: meal
+  unit_grams: 165
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: home_galette_buckwheat_savoury
+  name: Buckwheat Galette (Savoury)
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: french,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: home_quiche_homemade_per_slice
+  name: Quiche Lorraine Homemade (Per Slice)
+  kcal_per_100g: 295
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 18
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: french
+  portion_unit: piece
+  unit_grams: 130
+- source: homemade
+  source_id: home_steak_diane_homemade
+  name: Steak Diane (Homemade)
+  kcal_per_100g: 225
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 13
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: french
+  portion_unit: meal
+  unit_grams: 250
+- source: homemade
+  source_id: home_steak_tartare_homemade
+  name: Steak Tartare (Homemade)
+  kcal_per_100g: 195
+  protein_per_100g: 22
+  carbs_per_100g: 4
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: french
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: home_lobster_thermidor_homemade
+  name: Lobster Thermidor (Homemade)
+  kcal_per_100g: 195
+  protein_per_100g: 17
+  carbs_per_100g: 7
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: french
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: home_bourride_homemade
+  name: Bourride (Provençal Fish Soup)
+  kcal_per_100g: 145
+  protein_per_100g: 13
+  carbs_per_100g: 9
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: french
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_potato_dauphinoise_homemade
+  name: Potato Dauphinoise (Per Serving)
+  kcal_per_100g: 175
+  protein_per_100g: 4
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: french,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: home_potato_lyonnaise
+  name: Potato Lyonnaise (Per Serving)
+  kcal_per_100g: 145
+  protein_per_100g: 3
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: french,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: home_potato_gratin_homemade
+  name: Potato Gratin (Per Serving)
+  kcal_per_100g: 175
+  protein_per_100g: 4
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: french,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: home_ratatouille_homemade
+  name: Ratatouille (Homemade)
+  kcal_per_100g: 65
+  protein_per_100g: 1.5
+  carbs_per_100g: 7
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: french,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: home_couscous_morocco
+  name: Moroccan Couscous Salad
+  kcal_per_100g: 165
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: moroccan,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: home_tagine_chicken_apricot
+  name: Chicken Tagine with Apricots (Homemade)
+  kcal_per_100g: 165
+  protein_per_100g: 13
+  carbs_per_100g: 11
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: moroccan
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_tagine_lamb_apricot
+  name: Lamb Tagine with Apricots (Homemade)
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 11
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: moroccan
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_falafel_pita_homemade
+  name: Falafel in Pita (Homemade)
+  kcal_per_100g: 215
+  protein_per_100g: 8
+  carbs_per_100g: 25
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: middle-eastern,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: home_shawarma_chicken_pita
+  name: Chicken Shawarma in Pita (Homemade)
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 25
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: middle-eastern
+  portion_unit: meal
+  unit_grams: 250
+- source: homemade
+  source_id: home_shawarma_lamb_pita
+  name: Lamb Shawarma in Pita (Homemade)
+  kcal_per_100g: 265
+  protein_per_100g: 13
+  carbs_per_100g: 25
+  fat_per_100g: 13
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: middle-eastern
+  portion_unit: meal
+  unit_grams: 250
+- source: homemade
+  source_id: home_dolmas_homemade
+  name: Stuffed Vine Leaves (Homemade)
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: greek,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: home_souvlaki_chicken_skewer
+  name: Chicken Souvlaki Skewer
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 4
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: greek
+  portion_unit: meal
+  unit_grams: 100
+- source: homemade
+  source_id: home_souvlaki_pork_skewer
+  name: Pork Souvlaki Skewer
+  kcal_per_100g: 195
+  protein_per_100g: 20
+  carbs_per_100g: 4
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: greek
+  portion_unit: meal
+  unit_grams: 100
+- source: homemade
+  source_id: home_moussaka_classic_homemade
+  name: Moussaka Classic (Homemade)
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: greek
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: home_pastichio_homemade
+  name: Pastitsio (Homemade)
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: greek
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: home_spanakopita_homemade
+  name: Spanakopita (Homemade)
+  kcal_per_100g: 285
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 18
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: greek,vegetarian
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: home_bibimbap_classic_homemade
+  name: Bibimbap Classic (Homemade)
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: korean
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: home_kimchi_pancake_homemade
+  name: Kimchi Pancake (Homemade)
+  kcal_per_100g: 175
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: korean,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: home_japchae_homemade
+  name: Japchae Glass Noodles
+  kcal_per_100g: 165
+  protein_per_100g: 5
+  carbs_per_100g: 25
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: korean,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: home_korean_fried_chicken_homemade
+  name: Korean Fried Chicken (Homemade)
+  kcal_per_100g: 265
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: korean
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: home_pad_thai_chicken_classic
+  name: Pad Thai Chicken (Classic Homemade)
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: thai
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: home_pad_see_ew
+  name: Pad See Ew (Homemade)
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: thai
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_pad_kee_mao
+  name: Pad Kee Mao Drunken Noodles
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: thai,spicy
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_thai_basil_chicken
+  name: Thai Basil Chicken (Homemade)
+  kcal_per_100g: 165
+  protein_per_100g: 14
+  carbs_per_100g: 8
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: thai
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: home_thai_red_curry_prawn
+  name: Thai Red Prawn Curry
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: thai
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_thai_panang_beef
+  name: Thai Panang Beef Curry
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 12
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: thai
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_tom_yum_chicken
+  name: Tom Yum Chicken Soup
+  kcal_per_100g: 95
+  protein_per_100g: 8
+  carbs_per_100g: 8
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: thai
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_tom_kha_chicken
+  name: Tom Kha Chicken Soup
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 8
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: thai
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_thai_satay_chicken_skewer
+  name: Thai Satay Chicken Skewer
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 8
+  fat_per_100g: 12
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: thai
+  portion_unit: meal
+  unit_grams: 100
+- source: homemade
+  source_id: home_thai_papaya_salad
+  name: Thai Papaya Salad Som Tum
+  kcal_per_100g: 65
+  protein_per_100g: 2
+  carbs_per_100g: 14
+  fat_per_100g: 0.5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: thai,vegan,vegetarian,salad
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: home_thai_red_duck_curry
+  name: Thai Red Duck Curry
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 11
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: thai
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_pho_beef_homemade
+  name: Pho Bo Beef (Homemade)
+  kcal_per_100g: 110
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 3
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 600
+  serving_label: 600 g
+  tags: vietnamese
+  portion_unit: meal
+  unit_grams: 600
+- source: homemade
+  source_id: home_pho_chicken_homemade
+  name: Pho Ga Chicken (Homemade)
+  kcal_per_100g: 95
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 2.5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 600
+  serving_label: 600 g
+  tags: vietnamese
+  portion_unit: meal
+  unit_grams: 600
+- source: homemade
+  source_id: home_banh_mi_chicken_homemade
+  name: Banh Mi Chicken (Homemade)
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 30
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: vietnamese
+  portion_unit: meal
+  unit_grams: 250
+- source: homemade
+  source_id: home_summer_rolls_homemade
+  name: Vietnamese Summer Rolls Homemade (Per Roll)
+  kcal_per_100g: 95
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 1.5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: vietnamese,vegetarian
+  portion_unit: meal
+  unit_grams: 60
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: home_chinese_chicken_chow_mein
+  name: Chicken Chow Mein (Homemade)
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: chinese
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_chinese_kung_pao
+  name: Kung Pao Chicken (Homemade)
+  kcal_per_100g: 165
+  protein_per_100g: 14
+  carbs_per_100g: 8
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: chinese
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: home_chinese_general_tso
+  name: General Tso's Chicken (Homemade)
+  kcal_per_100g: 215
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: chinese
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_chinese_sweet_sour_chicken
+  name: Sweet & Sour Chicken (Homemade)
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: chinese
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_chinese_szechuan_chicken
+  name: Szechuan Chicken (Homemade)
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 11
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: chinese,spicy
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_chinese_mongolian_beef
+  name: Mongolian Beef (Homemade)
+  kcal_per_100g: 215
+  protein_per_100g: 14
+  carbs_per_100g: 11
+  fat_per_100g: 13
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: chinese
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_chinese_orange_chicken
+  name: Orange Chicken (Homemade)
+  kcal_per_100g: 215
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: chinese
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_indian_butter_chicken_classic
+  name: Butter Chicken Classic (Homemade)
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 8
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: indian
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_indian_chicken_makhani
+  name: Chicken Makhani (Homemade)
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 8
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: indian
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_indian_chicken_tikka_masala_classic
+  name: Chicken Tikka Masala Classic
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 8
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: indian
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_indian_lamb_korma
+  name: Lamb Korma (Homemade)
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 9
+  fat_per_100g: 12
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: indian
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_indian_lamb_rogan_josh_classic
+  name: Lamb Rogan Josh Classic
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 8
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: indian
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_indian_chicken_biryani_homemade
+  name: Chicken Biryani (Homemade)
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 24
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: indian
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_indian_lamb_biryani_homemade
+  name: Lamb Biryani (Homemade)
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 23
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: indian
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_indian_dal_tadka
+  name: Dal Tadka (Homemade)
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: indian,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: home_indian_chana_masala_classic
+  name: Chana Masala Classic
+  kcal_per_100g: 130
+  protein_per_100g: 5
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: indian,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: home_indian_aloo_gobi_classic
+  name: Aloo Gobi Classic
+  kcal_per_100g: 95
+  protein_per_100g: 3
+  carbs_per_100g: 13
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: indian,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: home_indian_palak_paneer_classic
+  name: Palak Paneer Classic
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 6
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: indian,vegetarian
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: home_indian_naan_garlic_homemade
+  name: Naan Garlic (Homemade)
+  kcal_per_100g: 305
+  protein_per_100g: 9
+  carbs_per_100g: 47
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: indian,vegetarian
+  portion_unit: meal
+  unit_grams: 130
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: home_indian_naan_butter_homemade
+  name: Naan Butter (Homemade)
+  kcal_per_100g: 320
+  protein_per_100g: 9
+  carbs_per_100g: 47
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: indian,vegetarian
+  portion_unit: meal
+  unit_grams: 130
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: home_mexican_chicken_burrito_homemade
+  name: Chicken Burrito (Homemade)
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: mexican
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_mexican_steak_burrito
+  name: Steak Burrito (Homemade)
+  kcal_per_100g: 245
+  protein_per_100g: 16
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: mexican
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_mexican_carnitas_taco
+  name: Carnitas Taco (Homemade)
+  kcal_per_100g: 220
+  protein_per_100g: 12
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: mexican
+  portion_unit: meal
+  unit_grams: 80
+- source: homemade
+  source_id: home_mexican_chicken_quesadilla_homemade
+  name: Chicken Quesadilla (Homemade)
+  kcal_per_100g: 285
+  protein_per_100g: 16
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: mexican
+  portion_unit: meal
+  unit_grams: 250
+- source: homemade
+  source_id: home_mexican_chimichanga_chicken_homemade
+  name: Chicken Chimichanga (Homemade)
+  kcal_per_100g: 295
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: mexican
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: home_mexican_chicken_enchiladas_homemade
+  name: Chicken Enchiladas (Homemade)
+  kcal_per_100g: 195
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: mexican
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: home_mexican_chilli_homemade
+  name: Mexican Chilli con Carne (Homemade)
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: mexican
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_mexican_jalapeno_poppers
+  name: Jalapeño Poppers (Homemade)
+  kcal_per_100g: 350
+  protein_per_100g: 9
+  carbs_per_100g: 30
+  fat_per_100g: 22
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: mexican,vegetarian
+  portion_unit: meal
+  unit_grams: 110
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: home_mexican_nachos_loaded_homemade
+  name: Loaded Nachos (Homemade)
+  kcal_per_100g: 280
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: mexican
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: home_mexican_huevos_rancheros
+  name: Huevos Rancheros (Homemade)
+  kcal_per_100g: 195
+  protein_per_100g: 12
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: mexican,vegetarian
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: home_mexican_tamales_per_unit
+  name: Tamales (Per Tamale)
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 30
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: mexican
+  portion_unit: piece
+  unit_grams: 100
+- source: homemade
+  source_id: home_caribbean_jerk_chicken_homemade
+  name: Jerk Chicken (Homemade)
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: caribbean
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: home_caribbean_curry_goat_homemade
+  name: Caribbean Curry Goat
+  kcal_per_100g: 175
+  protein_per_100g: 18
+  carbs_per_100g: 5
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: caribbean
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: home_caribbean_oxtail_homemade
+  name: Caribbean Oxtail (Homemade)
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 5
+  fat_per_100g: 13
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: caribbean
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: home_caribbean_rice_peas_homemade
+  name: Caribbean Rice & Peas (Homemade)
+  kcal_per_100g: 165
+  protein_per_100g: 5
+  carbs_per_100g: 25
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: caribbean,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: home_caribbean_jamaican_patty_homemade
+  name: Jamaican Patty (Homemade)
+  kcal_per_100g: 280
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: caribbean
+  portion_unit: meal
+  unit_grams: 130
+- source: homemade
+  source_id: home_caribbean_ackee_saltfish_homemade
+  name: Ackee & Saltfish (Homemade)
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 8
+  fat_per_100g: 12
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: caribbean
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: home_african_jollof_rice_homemade
+  name: Jollof Rice (Homemade)
+  kcal_per_100g: 175
+  protein_per_100g: 4
+  carbs_per_100g: 30
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: african,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: home_african_jollof_chicken
+  name: Jollof Rice with Chicken
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: african
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_african_egusi_homemade
+  name: Egusi Soup (Homemade)
+  kcal_per_100g: 215
+  protein_per_100g: 14
+  carbs_per_100g: 8
+  fat_per_100g: 14
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: african
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: home_african_suya_skewer
+  name: Suya Beef Skewer (Homemade)
+  kcal_per_100g: 235
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 14
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: african
+  portion_unit: meal
+  unit_grams: 100
+- source: homemade
+  source_id: home_african_doro_wat
+  name: Ethiopian Doro Wat
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 9
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: african
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: home_brazilian_feijoada_homemade
+  name: Feijoada (Brazilian Bean Stew)
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brazilian
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_brazilian_pao_de_queijo
+  name: Pão de Queijo Brazilian Cheese Bread (Per Ball)
+  kcal_per_100g: 295
+  protein_per_100g: 7
+  carbs_per_100g: 30
+  fat_per_100g: 16
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brazilian,vegetarian
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian

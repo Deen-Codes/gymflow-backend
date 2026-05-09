@@ -1,0 +1,648 @@
+# Cadbury full range — Dairy Milk variants, Wispa, Twirl, Crunchie, Flake, Curly Wurly,
+# Freddo, Boost, Picnic, Double Decker, Star Bar, Time Out, Brunch Bars, Heroes, Roses
+
+- source: brand
+  source_id: cad_dairy_milk_freddo
+  name: Cadbury Freddo
+  kcal_per_100g: 525
+  protein_per_100g: 7
+  carbs_per_100g: 57
+  fat_per_100g: 30
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 18
+  serving_label: bar (18 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 18
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_chomp
+  name: Cadbury Chomp
+  kcal_per_100g: 460
+  protein_per_100g: 4
+  carbs_per_100g: 64
+  fat_per_100g: 21
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 21
+  serving_label: bar (21 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 21
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_fudge
+  name: Cadbury Fudge
+  kcal_per_100g: 430
+  protein_per_100g: 3.5
+  carbs_per_100g: 70
+  fat_per_100g: 15
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 25.5
+  serving_label: bar (25.5 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 25.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_caramel_45g
+  name: Cadbury Dairy Milk Caramel
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 45
+  serving_label: bar (45 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_oreo_120g
+  name: Cadbury Dairy Milk Oreo Bar
+  kcal_per_100g: 525
+  protein_per_100g: 6
+  carbs_per_100g: 58
+  fat_per_100g: 30
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 120
+  serving_label: pack (120 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: pack
+  unit_grams: 120
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_fruit_nut_45g
+  name: Cadbury Dairy Milk Fruit & Nut
+  kcal_per_100g: 510
+  protein_per_100g: 8
+  carbs_per_100g: 53
+  fat_per_100g: 29
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 45
+  serving_label: bar (45 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_whole_nut_45g
+  name: Cadbury Dairy Milk Whole Nut
+  kcal_per_100g: 555
+  protein_per_100g: 9
+  carbs_per_100g: 49
+  fat_per_100g: 35
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 45
+  serving_label: bar (45 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_oreo_white
+  name: Cadbury Dairy Milk White Oreo
+  kcal_per_100g: 525
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 28
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 120
+  serving_label: pack (120 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: pack
+  unit_grams: 120
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_marble_45g
+  name: Cadbury Dairy Milk Marble
+  kcal_per_100g: 535
+  protein_per_100g: 8
+  carbs_per_100g: 55
+  fat_per_100g: 30
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 45
+  serving_label: bar (45 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_chunk_45g
+  name: Cadbury Dairy Milk Chunk
+  kcal_per_100g: 530
+  protein_per_100g: 7.5
+  carbs_per_100g: 57
+  fat_per_100g: 30
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 45
+  serving_label: bar (45 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_mint_45g
+  name: Cadbury Dairy Milk Mint
+  kcal_per_100g: 525
+  protein_per_100g: 7
+  carbs_per_100g: 58
+  fat_per_100g: 29
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 45
+  serving_label: bar (45 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_orange_45g
+  name: Cadbury Dairy Milk Orange
+  kcal_per_100g: 525
+  protein_per_100g: 7
+  carbs_per_100g: 58
+  fat_per_100g: 29
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 45
+  serving_label: bar (45 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_buttons
+  name: Cadbury Dairy Milk Buttons
+  kcal_per_100g: 530
+  protein_per_100g: 7.5
+  carbs_per_100g: 57
+  fat_per_100g: 30
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 32.5
+  serving_label: bar (32.5 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 32.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_giant_buttons
+  name: Cadbury Dairy Milk Giant Buttons
+  kcal_per_100g: 530
+  protein_per_100g: 7.5
+  carbs_per_100g: 57
+  fat_per_100g: 30
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 95
+  serving_label: pack (95 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: pack
+  unit_grams: 95
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_wispa
+  name: Cadbury Wispa
+  kcal_per_100g: 558
+  protein_per_100g: 7
+  carbs_per_100g: 56
+  fat_per_100g: 33
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 36
+  serving_label: bar (36 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 36
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_wispa_gold
+  name: Cadbury Wispa Gold
+  kcal_per_100g: 540
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 31
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 48
+  serving_label: bar (48 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 48
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_twirl
+  name: Cadbury Twirl (2 fingers)
+  kcal_per_100g: 530
+  protein_per_100g: 7
+  carbs_per_100g: 56
+  fat_per_100g: 31
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 43
+  serving_label: bar (43 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 43
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_twirl_orange
+  name: Cadbury Twirl Orange (2 fingers)
+  kcal_per_100g: 530
+  protein_per_100g: 7
+  carbs_per_100g: 56
+  fat_per_100g: 31
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 43
+  serving_label: bar (43 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 43
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_crunchie
+  name: Cadbury Crunchie
+  kcal_per_100g: 470
+  protein_per_100g: 4
+  carbs_per_100g: 73
+  fat_per_100g: 18
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 40
+  serving_label: bar (40 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_picnic
+  name: Cadbury Picnic
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 23
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 48.4
+  serving_label: bar (48.4 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 48.4
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_double_decker
+  name: Cadbury Double Decker
+  kcal_per_100g: 470
+  protein_per_100g: 5
+  carbs_per_100g: 65
+  fat_per_100g: 21
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 54.5
+  serving_label: bar (54.5 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 54.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_boost
+  name: Cadbury Boost
+  kcal_per_100g: 500
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 26
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 48.5
+  serving_label: bar (48.5 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 48.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_starbar
+  name: Cadbury Star Bar
+  kcal_per_100g: 540
+  protein_per_100g: 9
+  carbs_per_100g: 50
+  fat_per_100g: 33
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 49
+  serving_label: bar (49 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 49
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_caramello
+  name: Cadbury Caramello
+  kcal_per_100g: 470
+  protein_per_100g: 5
+  carbs_per_100g: 64
+  fat_per_100g: 21
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 45
+  serving_label: bar (45 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_time_out
+  name: Cadbury Time Out
+  kcal_per_100g: 530
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 28
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 21.2
+  serving_label: bar (21.2 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 21.2
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_time_out_wafer
+  name: Cadbury Time Out Wafer
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 24
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 21.2
+  serving_label: bar (21.2 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 21.2
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_brunch_bar_choc_chip
+  name: Cadbury Brunch Bar Chocolate Chip
+  kcal_per_100g: 470
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 22
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 32
+  serving_label: bar (32 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 32
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_brunch_bar_raisin
+  name: Cadbury Brunch Bar Raisin
+  kcal_per_100g: 460
+  protein_per_100g: 6
+  carbs_per_100g: 64
+  fat_per_100g: 19
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 32
+  serving_label: bar (32 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 32
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_brunch_bar_peanut
+  name: Cadbury Brunch Bar Peanut
+  kcal_per_100g: 470
+  protein_per_100g: 9
+  carbs_per_100g: 56
+  fat_per_100g: 22
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 32
+  serving_label: bar (32 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 32
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_freddo_caramel
+  name: Cadbury Freddo Caramel
+  kcal_per_100g: 480
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 19.5
+  serving_label: bar (19.5 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 19.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_animals
+  name: Cadbury Animals (Biscuits)
+  kcal_per_100g: 530
+  protein_per_100g: 6
+  carbs_per_100g: 67
+  fat_per_100g: 26
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 100
+  serving_label: pack (100 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: pack
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_creme_egg
+  name: Cadbury Creme Egg
+  kcal_per_100g: 380
+  protein_per_100g: 3
+  carbs_per_100g: 58
+  fat_per_100g: 14
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 40
+  serving_label: bar (40 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_mini_eggs
+  name: Cadbury Mini Eggs
+  kcal_per_100g: 489
+  protein_per_100g: 6
+  carbs_per_100g: 67
+  fat_per_100g: 22
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 80
+  serving_label: pack (80 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: pack
+  unit_grams: 80
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_buttons_white
+  name: Cadbury White Chocolate Buttons
+  kcal_per_100g: 530
+  protein_per_100g: 7
+  carbs_per_100g: 57
+  fat_per_100g: 30
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 30
+  serving_label: bar (30 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_caramel_nibbles
+  name: Cadbury Caramel Nibbles
+  kcal_per_100g: 510
+  protein_per_100g: 5
+  carbs_per_100g: 65
+  fat_per_100g: 25
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 95
+  serving_label: pack (95 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: pack
+  unit_grams: 95
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_giant_chocolate_buttons
+  name: Cadbury Giant Chocolate Buttons
+  kcal_per_100g: 530
+  protein_per_100g: 7.5
+  carbs_per_100g: 57
+  fat_per_100g: 30
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 90
+  serving_label: pack (90 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: pack
+  unit_grams: 90
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dinky_deckers
+  name: Cadbury Dinky Deckers
+  kcal_per_100g: 470
+  protein_per_100g: 5
+  carbs_per_100g: 65
+  fat_per_100g: 21
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 90
+  serving_label: pack (90 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: pack
+  unit_grams: 90
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_caramel_120g
+  name: Cadbury Dairy Milk Caramel Bar 120g
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 120
+  serving_label: pack (120 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: pack
+  unit_grams: 120
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_oreo_minis
+  name: Cadbury Dairy Milk Oreo Minis
+  kcal_per_100g: 525
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 28
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 96
+  serving_label: pack (96 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: pack
+  unit_grams: 96
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_milk_tray
+  name: Cadbury Milk Tray (per 100g)
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 100
+  serving_label: pack (100 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: pack
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_heroes
+  name: Cadbury Heroes (per piece avg)
+  kcal_per_100g: 490
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 25
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 8
+  serving_label: bar (8 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 8
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_roses
+  name: Cadbury Roses (per piece avg)
+  kcal_per_100g: 480
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 9
+  serving_label: bar (9 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 9
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cad_dairy_milk_silk_almond
+  name: Cadbury Dairy Milk Silk Almond
+  kcal_per_100g: 545
+  protein_per_100g: 8
+  carbs_per_100g: 55
+  fat_per_100g: 32
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 60
+  serving_label: bar (60 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 60
+  dietary_compat: vegetarian

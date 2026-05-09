@@ -1,0 +1,1435 @@
+# More fruit portion sizes (palmful, handful, sliced, halved, quarter, segments) +
+# More smoothie/juice brands (Naked variants full, Innocent kids/super, Simply, Copella,
+# Ocean Spray, Pomegreat, Dr. Will's kombucha, Savse) +
+# More chocolate variants (dark 55/70/85%, milk, white, Terry's, After Eight, Lindor,
+# Green & Black's, Montezuma, Divine, Tony's Chocolonely, Milkybar, Aero, Yorkie, Galaxy variants) +
+# More squashes/flavoured waters/yogurt flavours (Skyr full flavours, kefir variants)
+
+- source: produce
+  source_id: fruit_apple_sliced_palmful
+  name: Apple Slices (Palmful, ~80g)
+  kcal_per_100g: 52
+  protein_per_100g: 0.3
+  carbs_per_100g: 14
+  fat_per_100g: 0.2
+  brand: fresh
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 80
+- source: produce
+  source_id: fruit_apple_chopped_per_100g
+  name: Apple Chopped (Per 100g)
+  kcal_per_100g: 52
+  protein_per_100g: 0.3
+  carbs_per_100g: 14
+  fat_per_100g: 0.2
+  brand: fresh
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 100
+- source: produce
+  source_id: fruit_banana_sliced_per_100g
+  name: Banana Slices (Per 100g)
+  kcal_per_100g: 89
+  protein_per_100g: 1.1
+  carbs_per_100g: 23
+  fat_per_100g: 0.3
+  brand: fresh
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 100
+- source: produce
+  source_id: fruit_banana_palmful_handful
+  name: Banana Slices Palmful (~70g)
+  kcal_per_100g: 89
+  protein_per_100g: 1.1
+  carbs_per_100g: 23
+  fat_per_100g: 0.3
+  brand: fresh
+  region_codes: GB
+  serving_grams: 70
+  serving_label: 70 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 70
+- source: produce
+  source_id: fruit_strawberries_handful
+  name: Strawberries Handful (~80g)
+  kcal_per_100g: 32
+  protein_per_100g: 0.7
+  carbs_per_100g: 8
+  fat_per_100g: 0.3
+  brand: fresh
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 80
+- source: produce
+  source_id: fruit_strawberries_4_pieces
+  name: Strawberries (4 medium)
+  kcal_per_100g: 32
+  protein_per_100g: 0.7
+  carbs_per_100g: 8
+  fat_per_100g: 0.3
+  brand: fresh
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 50
+- source: produce
+  source_id: fruit_blueberries_handful
+  name: Blueberries Handful (~30g)
+  kcal_per_100g: 57
+  protein_per_100g: 0.7
+  carbs_per_100g: 14
+  fat_per_100g: 0.3
+  brand: fresh
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 30
+- source: produce
+  source_id: fruit_blueberries_punnet_125_v2
+  name: Blueberries Small Punnet (~125g)
+  kcal_per_100g: 57
+  protein_per_100g: 0.7
+  carbs_per_100g: 14
+  fat_per_100g: 0.3
+  brand: fresh
+  region_codes: GB
+  serving_grams: 125
+  serving_label: 125 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 125
+- source: produce
+  source_id: fruit_raspberries_handful
+  name: Raspberries Handful (~30g)
+  kcal_per_100g: 52
+  protein_per_100g: 1.2
+  carbs_per_100g: 12
+  fat_per_100g: 0.7
+  brand: fresh
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 30
+- source: produce
+  source_id: fruit_blackberries_handful
+  name: Blackberries Handful (~30g)
+  kcal_per_100g: 43
+  protein_per_100g: 1.4
+  carbs_per_100g: 10
+  fat_per_100g: 0.5
+  brand: fresh
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 30
+- source: produce
+  source_id: fruit_grapes_red_handful
+  name: Red Grapes Handful (~30g)
+  kcal_per_100g: 67
+  protein_per_100g: 0.6
+  carbs_per_100g: 17
+  fat_per_100g: 0.4
+  brand: fresh
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 30
+- source: produce
+  source_id: fruit_grapes_red_per_unit
+  name: Red Grape (Per Single Grape)
+  kcal_per_100g: 67
+  protein_per_100g: 0.6
+  carbs_per_100g: 17
+  fat_per_100g: 0.4
+  brand: fresh
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: fruit
+  portion_unit: piece
+  unit_grams: 5
+- source: produce
+  source_id: fruit_grapes_white_handful
+  name: White Grapes Handful (~30g)
+  kcal_per_100g: 67
+  protein_per_100g: 0.6
+  carbs_per_100g: 17
+  fat_per_100g: 0.4
+  brand: fresh
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 30
+- source: produce
+  source_id: fruit_orange_segment_per_unit
+  name: Orange (Per Segment)
+  kcal_per_100g: 47
+  protein_per_100g: 0.9
+  carbs_per_100g: 12
+  fat_per_100g: 0.1
+  brand: fresh
+  region_codes: GB
+  serving_grams: 12
+  serving_label: 12 g
+  tags: fruit
+  portion_unit: piece
+  unit_grams: 12
+- source: produce
+  source_id: fruit_orange_half_med
+  name: Orange (Half Medium)
+  kcal_per_100g: 47
+  protein_per_100g: 0.9
+  carbs_per_100g: 12
+  fat_per_100g: 0.1
+  brand: fresh
+  region_codes: GB
+  serving_grams: 77
+  serving_label: 77 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 77
+- source: produce
+  source_id: fruit_apple_half_med
+  name: Apple (Half Medium)
+  kcal_per_100g: 52
+  protein_per_100g: 0.3
+  carbs_per_100g: 14
+  fat_per_100g: 0.2
+  brand: fresh
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 75
+- source: produce
+  source_id: fruit_avocado_quarter
+  name: Avocado (Quarter)
+  kcal_per_100g: 160
+  protein_per_100g: 2
+  carbs_per_100g: 9
+  fat_per_100g: 15
+  brand: fresh
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 50
+- source: produce
+  source_id: fruit_avocado_smashed_per_50g
+  name: Smashed Avocado (Per 50g)
+  kcal_per_100g: 160
+  protein_per_100g: 2
+  carbs_per_100g: 9
+  fat_per_100g: 15
+  brand: fresh
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: fruit
+  portion_unit: piece
+  unit_grams: 50
+- source: produce
+  source_id: fruit_avocado_two_thirds
+  name: Avocado (Two Thirds)
+  kcal_per_100g: 160
+  protein_per_100g: 2
+  carbs_per_100g: 9
+  fat_per_100g: 15
+  brand: fresh
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 130
+- source: produce
+  source_id: fruit_pineapple_chunks_handful
+  name: Pineapple Chunks Handful (~80g)
+  kcal_per_100g: 50
+  protein_per_100g: 0.5
+  carbs_per_100g: 13
+  fat_per_100g: 0.1
+  brand: fresh
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 80
+- source: produce
+  source_id: fruit_pineapple_quarter
+  name: Pineapple (Quarter)
+  kcal_per_100g: 50
+  protein_per_100g: 0.5
+  carbs_per_100g: 13
+  fat_per_100g: 0.1
+  brand: fresh
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 200
+- source: produce
+  source_id: fruit_mango_chunks_per_100g
+  name: Mango Chunks (Per 100g)
+  kcal_per_100g: 60
+  protein_per_100g: 0.8
+  carbs_per_100g: 15
+  fat_per_100g: 0.4
+  brand: fresh
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 100
+- source: produce
+  source_id: fruit_mango_half
+  name: Mango (Half)
+  kcal_per_100g: 60
+  protein_per_100g: 0.8
+  carbs_per_100g: 15
+  fat_per_100g: 0.4
+  brand: fresh
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 100
+- source: produce
+  source_id: fruit_kiwi_sliced_per_unit
+  name: Kiwi Sliced (Per Unit)
+  kcal_per_100g: 61
+  protein_per_100g: 1.1
+  carbs_per_100g: 15
+  fat_per_100g: 0.5
+  brand: fresh
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: fruit
+  portion_unit: piece
+  unit_grams: 75
+- source: produce
+  source_id: fruit_kiwi_half
+  name: Kiwi (Half)
+  kcal_per_100g: 61
+  protein_per_100g: 1.1
+  carbs_per_100g: 15
+  fat_per_100g: 0.5
+  brand: fresh
+  region_codes: GB
+  serving_grams: 38
+  serving_label: 38 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 38
+- source: produce
+  source_id: fruit_peach_half
+  name: Peach (Half)
+  kcal_per_100g: 39
+  protein_per_100g: 0.9
+  carbs_per_100g: 10
+  fat_per_100g: 0.3
+  brand: fresh
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 75
+- source: produce
+  source_id: fruit_peach_quarter
+  name: Peach (Quarter)
+  kcal_per_100g: 39
+  protein_per_100g: 0.9
+  carbs_per_100g: 10
+  fat_per_100g: 0.3
+  brand: fresh
+  region_codes: GB
+  serving_grams: 38
+  serving_label: 38 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 38
+- source: produce
+  source_id: fruit_pear_sliced_half
+  name: Pear (Half Sliced)
+  kcal_per_100g: 57
+  protein_per_100g: 0.4
+  carbs_per_100g: 15
+  fat_per_100g: 0.1
+  brand: fresh
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 90
+- source: produce
+  source_id: fruit_pear_quarter
+  name: Pear (Quarter)
+  kcal_per_100g: 57
+  protein_per_100g: 0.4
+  carbs_per_100g: 15
+  fat_per_100g: 0.1
+  brand: fresh
+  region_codes: GB
+  serving_grams: 45
+  serving_label: 45 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 45
+- source: produce
+  source_id: fruit_grapefruit_segments_per_100g
+  name: Grapefruit Segments (Per 100g)
+  kcal_per_100g: 32
+  protein_per_100g: 0.7
+  carbs_per_100g: 8
+  fat_per_100g: 0.1
+  brand: fresh
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 100
+- source: produce
+  source_id: fruit_lemon_squeeze
+  name: Lemon Juice Squeezed (Per 15ml)
+  kcal_per_100g: 22
+  protein_per_100g: 0
+  carbs_per_100g: 7
+  fat_per_100g: 0
+  brand: fresh
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 15
+- source: produce
+  source_id: fruit_lemon_zest_per_5g
+  name: Lemon Zest (Per 5g)
+  kcal_per_100g: 47
+  protein_per_100g: 1.5
+  carbs_per_100g: 16
+  fat_per_100g: 0.3
+  brand: fresh
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: fruit
+  portion_unit: tsp
+  unit_grams: 5
+- source: produce
+  source_id: fruit_lime_squeeze
+  name: Lime Juice Squeezed (Per 15ml)
+  kcal_per_100g: 25
+  protein_per_100g: 0
+  carbs_per_100g: 8
+  fat_per_100g: 0
+  brand: fresh
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 15
+- source: produce
+  source_id: fruit_pomegranate_handful
+  name: Pomegranate Seeds Handful (~30g)
+  kcal_per_100g: 83
+  protein_per_100g: 1.7
+  carbs_per_100g: 19
+  fat_per_100g: 1.2
+  brand: fresh
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 30
+- source: produce
+  source_id: fruit_dried_fruit_mix_handful
+  name: Dried Fruit Mix Handful (~30g)
+  kcal_per_100g: 280
+  protein_per_100g: 2
+  carbs_per_100g: 65
+  fat_per_100g: 1
+  brand: fresh
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 30
+- source: produce
+  source_id: fruit_olives_handful_30g
+  name: Olives Mixed (Handful 30g)
+  kcal_per_100g: 145
+  protein_per_100g: 1
+  carbs_per_100g: 4
+  fat_per_100g: 14
+  brand: fresh
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 30
+- source: produce
+  source_id: fruit_dates_per_2_medjool
+  name: Medjool Dates (2 Pieces)
+  kcal_per_100g: 277
+  protein_per_100g: 2
+  carbs_per_100g: 75
+  fat_per_100g: 0.2
+  brand: fresh
+  region_codes: GB
+  serving_grams: 48
+  serving_label: 48 g
+  tags: fruit
+  portion_unit: piece
+  unit_grams: 48
+- source: produce
+  source_id: fruit_dates_per_3_medjool
+  name: Medjool Dates (3 Pieces)
+  kcal_per_100g: 277
+  protein_per_100g: 2
+  carbs_per_100g: 75
+  fat_per_100g: 0.2
+  brand: fresh
+  region_codes: GB
+  serving_grams: 72
+  serving_label: 72 g
+  tags: fruit
+  portion_unit: piece
+  unit_grams: 72
+- source: produce
+  source_id: fruit_dried_apricots_5
+  name: Dried Apricots (5 pieces)
+  kcal_per_100g: 240
+  protein_per_100g: 3.4
+  carbs_per_100g: 55
+  fat_per_100g: 0.5
+  brand: fresh
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 40
+- source: produce
+  source_id: fruit_apple_in_porridge_50g
+  name: Apple Diced in Porridge (Per 50g)
+  kcal_per_100g: 52
+  protein_per_100g: 0.3
+  carbs_per_100g: 14
+  fat_per_100g: 0.2
+  brand: fresh
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 50
+- source: produce
+  source_id: fruit_banana_half
+  name: Banana (Half)
+  kcal_per_100g: 89
+  protein_per_100g: 1.1
+  carbs_per_100g: 23
+  fat_per_100g: 0.3
+  brand: fresh
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 60
+- source: brand
+  source_id: juice_naked_smoothie_strawberry_banana
+  name: Naked Smoothie Strawberry Banana (Per 100ml)
+  kcal_per_100g: 60
+  protein_per_100g: 0.7
+  carbs_per_100g: 13
+  fat_per_100g: 0.2
+  brand: Naked
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: juice_naked_protein_zone_per_100ml
+  name: Naked Protein Zone (Per 100ml)
+  kcal_per_100g: 65
+  protein_per_100g: 4
+  carbs_per_100g: 8
+  fat_per_100g: 1.5
+  brand: Naked
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: drink
+  portion_unit: ml
+  unit_grams: 100
+- source: brand
+  source_id: juice_naked_blue_machine
+  name: Naked Blue Machine (Per 100ml)
+  kcal_per_100g: 75
+  protein_per_100g: 1
+  carbs_per_100g: 17
+  fat_per_100g: 0.3
+  brand: Naked
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: juice_naked_green_machine
+  name: Naked Green Machine (Per 100ml)
+  kcal_per_100g: 65
+  protein_per_100g: 1
+  carbs_per_100g: 14
+  fat_per_100g: 0.3
+  brand: Naked
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: juice_naked_mighty_mango
+  name: Naked Mighty Mango (Per 100ml)
+  kcal_per_100g: 60
+  protein_per_100g: 0.7
+  carbs_per_100g: 13
+  fat_per_100g: 0.2
+  brand: Naked
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: juice_naked_red_machine
+  name: Naked Red Machine (Per 100ml)
+  kcal_per_100g: 75
+  protein_per_100g: 1
+  carbs_per_100g: 16
+  fat_per_100g: 0.3
+  brand: Naked
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: juice_innocent_smoothie_kids_apple_pear
+  name: Innocent Kids Smoothie Apple & Pear (Per 180ml)
+  kcal_per_100g: 60
+  protein_per_100g: 0.5
+  carbs_per_100g: 13
+  fat_per_100g: 0.2
+  brand: Innocent
+  region_codes: GB
+  serving_grams: 180
+  serving_label: 180 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 180
+- source: brand
+  source_id: juice_innocent_super_smoothie_uplift
+  name: Innocent Super Smoothie Uplift
+  kcal_per_100g: 55
+  protein_per_100g: 1
+  carbs_per_100g: 12
+  fat_per_100g: 0.3
+  brand: Innocent
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: juice_innocent_super_smoothie_defence
+  name: Innocent Super Smoothie Defence
+  kcal_per_100g: 55
+  protein_per_100g: 1
+  carbs_per_100g: 12
+  fat_per_100g: 0.3
+  brand: Innocent
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: juice_simply_apple_per_250ml
+  name: Simply Apple Juice (Per 250ml)
+  kcal_per_100g: 47
+  protein_per_100g: 0.1
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Simply
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: ml
+  unit_grams: 250
+- source: brand
+  source_id: juice_simply_orange_per_250ml
+  name: Simply Orange Juice (Per 250ml)
+  kcal_per_100g: 41
+  protein_per_100g: 0.6
+  carbs_per_100g: 9
+  fat_per_100g: 0.1
+  brand: Simply
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: ml
+  unit_grams: 250
+- source: brand
+  source_id: juice_copella_apple_per_250ml
+  name: Copella Apple Juice (Per 250ml)
+  kcal_per_100g: 47
+  protein_per_100g: 0.1
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Copella
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: ml
+  unit_grams: 250
+- source: brand
+  source_id: juice_copella_apple_raspberry
+  name: Copella Apple & Raspberry (Per 250ml)
+  kcal_per_100g: 47
+  protein_per_100g: 0.1
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Copella
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: juice_ocean_spray_cranberry
+  name: Ocean Spray Cranberry Classic (Per 250ml)
+  kcal_per_100g: 50
+  protein_per_100g: 0
+  carbs_per_100g: 12
+  fat_per_100g: 0
+  brand: Ocean Spray
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: juice_ocean_spray_cranberry_light
+  name: Ocean Spray Cranberry Light
+  kcal_per_100g: 8
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Ocean Spray
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: juice_pomegreat_pomegranate
+  name: Pomegreat Pomegranate Juice (Per 250ml)
+  kcal_per_100g: 65
+  protein_per_100g: 0.5
+  carbs_per_100g: 16
+  fat_per_100g: 0.3
+  brand: Pomegreat
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: juice_dr_will_kombucha_orig
+  name: Dr. Will's Original Kombucha (Per 250ml)
+  kcal_per_100g: 22
+  protein_per_100g: 0
+  carbs_per_100g: 5
+  fat_per_100g: 0
+  brand: Dr. Will's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: juice_jus_mu_orange_carrot
+  name: Jus Mu Orange & Carrot (Per 250ml)
+  kcal_per_100g: 50
+  protein_per_100g: 0.5
+  carbs_per_100g: 12
+  fat_per_100g: 0.2
+  brand: Jus Mu
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 250
+- source: produce
+  source_id: juice_naked_pure_fruit_pure_pineapple
+  name: Naked Pure Fruit Pineapple (Per 250ml)
+  kcal_per_100g: 50
+  protein_per_100g: 0.5
+  carbs_per_100g: 13
+  fat_per_100g: 0.1
+  brand: Naked
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: juice_savse_super_blue
+  name: Savse Super Blue Smoothie (Per 250ml)
+  kcal_per_100g: 55
+  protein_per_100g: 1
+  carbs_per_100g: 12
+  fat_per_100g: 0.3
+  brand: Savse
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: choc_dark_chocolate_85_per_30g
+  name: Dark Chocolate 85% (Per 30g)
+  kcal_per_100g: 555
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 46
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_dark_chocolate_70_per_30g
+  name: Dark Chocolate 70% (Per 30g)
+  kcal_per_100g: 530
+  protein_per_100g: 9
+  carbs_per_100g: 30
+  fat_per_100g: 40
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_dark_chocolate_55_per_30g
+  name: Dark Chocolate 55% (Per 30g)
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 45
+  fat_per_100g: 32
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_milk_chocolate_per_30g
+  name: Milk Chocolate (Per 30g)
+  kcal_per_100g: 535
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 30
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_white_chocolate_per_30g
+  name: White Chocolate (Per 30g)
+  kcal_per_100g: 540
+  protein_per_100g: 7
+  carbs_per_100g: 58
+  fat_per_100g: 31
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_chocolate_chips_per_15g
+  name: Chocolate Chips (Per 15g)
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 25
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: chocolate
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: choc_chocolate_buttons_per_30g
+  name: Chocolate Buttons (Per 30g)
+  kcal_per_100g: 530
+  protein_per_100g: 7
+  carbs_per_100g: 57
+  fat_per_100g: 30
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_terrys_chocolate_orange_segment
+  name: Terry's Chocolate Orange Segment (Per Segment)
+  kcal_per_100g: 540
+  protein_per_100g: 4
+  carbs_per_100g: 60
+  fat_per_100g: 30
+  brand: Terry's
+  region_codes: GB
+  serving_grams: 8
+  serving_label: 8 g
+  tags: chocolate
+  portion_unit: meal
+  unit_grams: 8
+- source: brand
+  source_id: choc_after_eight_per_2_mints
+  name: After Eight Mints (Per 2 Mints)
+  kcal_per_100g: 425
+  protein_per_100g: 3
+  carbs_per_100g: 75
+  fat_per_100g: 12
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 16
+  serving_label: 16 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 16
+- source: brand
+  source_id: choc_lindor_per_truffle
+  name: Lindt Lindor (Per Truffle)
+  kcal_per_100g: 600
+  protein_per_100g: 6
+  carbs_per_100g: 50
+  fat_per_100g: 41
+  brand: Lindt
+  region_codes: GB
+  serving_grams: 12
+  serving_label: 12 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 12
+- source: brand
+  source_id: choc_lindt_excellence_85_per_3_squares
+  name: Lindt Excellence 85% (Per 3 Squares)
+  kcal_per_100g: 555
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 46
+  brand: Lindt
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_green_blacks_85_per_30g
+  name: Green & Black's 85% Dark (Per 30g)
+  kcal_per_100g: 555
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 46
+  brand: Green & Black's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_green_blacks_70_per_30g
+  name: Green & Black's 70% Dark (Per 30g)
+  kcal_per_100g: 530
+  protein_per_100g: 9
+  carbs_per_100g: 30
+  fat_per_100g: 40
+  brand: Green & Black's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_green_blacks_milk_per_30g
+  name: Green & Black's Milk (Per 30g)
+  kcal_per_100g: 540
+  protein_per_100g: 7
+  carbs_per_100g: 58
+  fat_per_100g: 31
+  brand: Green & Black's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_montezuma_dark_per_30g
+  name: Montezuma Dark Chocolate 70% (Per 30g)
+  kcal_per_100g: 530
+  protein_per_100g: 9
+  carbs_per_100g: 30
+  fat_per_100g: 40
+  brand: Montezuma's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_montezuma_milk_per_30g
+  name: Montezuma Milk Chocolate (Per 30g)
+  kcal_per_100g: 535
+  protein_per_100g: 7
+  carbs_per_100g: 58
+  fat_per_100g: 31
+  brand: Montezuma's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_divine_dark_70_per_30g
+  name: Divine Dark 70% (Per 30g)
+  kcal_per_100g: 530
+  protein_per_100g: 9
+  carbs_per_100g: 30
+  fat_per_100g: 40
+  brand: Divine
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_tonys_milk_chocolate_per_30g
+  name: Tony's Chocolonely Milk Chocolate (Per 30g)
+  kcal_per_100g: 535
+  protein_per_100g: 7
+  carbs_per_100g: 58
+  fat_per_100g: 31
+  brand: Tony's Chocolonely
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_tonys_dark_70_per_30g
+  name: Tony's Chocolonely Dark 70% (Per 30g)
+  kcal_per_100g: 530
+  protein_per_100g: 9
+  carbs_per_100g: 30
+  fat_per_100g: 40
+  brand: Tony's Chocolonely
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_milkybar_kid_per_30g
+  name: Milkybar Kid (Per 30g)
+  kcal_per_100g: 555
+  protein_per_100g: 8
+  carbs_per_100g: 56
+  fat_per_100g: 32
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_aero_chocolate_per_30g
+  name: Aero Chocolate (Per 30g)
+  kcal_per_100g: 520
+  protein_per_100g: 7
+  carbs_per_100g: 58
+  fat_per_100g: 29
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_yorkie_per_30g
+  name: Yorkie Milk Chocolate (Per 30g)
+  kcal_per_100g: 540
+  protein_per_100g: 7
+  carbs_per_100g: 58
+  fat_per_100g: 30
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_galaxy_per_30g_v2
+  name: Galaxy Smooth Milk (Per 30g)
+  kcal_per_100g: 549
+  protein_per_100g: 7
+  carbs_per_100g: 57
+  fat_per_100g: 32
+  brand: Galaxy
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_galaxy_caramel_per_30g
+  name: Galaxy Caramel (Per 30g)
+  kcal_per_100g: 482
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Galaxy
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: choc_galaxy_minstrels_per_30g
+  name: Galaxy Minstrels (Per 30g)
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 25
+  brand: Galaxy
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: squash_robinsons_apple_blackcurrant_diluted
+  name: Robinsons Apple & Blackcurrant Squash (Diluted Per 250ml)
+  kcal_per_100g: 8
+  protein_per_100g: 0.1
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Robinsons
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: squash_robinsons_orange_diluted
+  name: Robinsons Orange Squash (Diluted Per 250ml)
+  kcal_per_100g: 8
+  protein_per_100g: 0.1
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Robinsons
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: squash_robinsons_double_strength
+  name: Robinsons Double Strength (Diluted Per 250ml)
+  kcal_per_100g: 16
+  protein_per_100g: 0.1
+  carbs_per_100g: 2
+  fat_per_100g: 0
+  brand: Robinsons
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: water_volvic_touch_strawberry
+  name: Volvic Touch of Fruit Strawberry
+  kcal_per_100g: 12
+  protein_per_100g: 0
+  carbs_per_100g: 3
+  fat_per_100g: 0
+  brand: Volvic
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 500
+- source: brand
+  source_id: water_dash_water_blackcurrant_apple
+  name: Dash Water Blackcurrant Apple (Per 330ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Dash
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 330
+- source: brand
+  source_id: water_dash_lime_per_330
+  name: Dash Water Lime (Per 330ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Dash
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: drink
+  portion_unit: ml
+  unit_grams: 330
+- source: brand
+  source_id: water_lemon_water_homemade
+  name: Lemon Water (Homemade Per 250ml)
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: water_cucumber_mint_per_250ml
+  name: Cucumber Mint Water (Per 250ml)
+  kcal_per_100g: 3
+  protein_per_100g: 0
+  carbs_per_100g: 0.5
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: ml
+  unit_grams: 250
+- source: brand
+  source_id: yog_skyr_strawberry_per_pot
+  name: Arla Skyr Strawberry (Per Pot)
+  kcal_per_100g: 65
+  protein_per_100g: 10
+  carbs_per_100g: 6
+  fat_per_100g: 0.2
+  brand: Arla Skyr
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt
+  portion_unit: piece
+  unit_grams: 150
+- source: brand
+  source_id: yog_skyr_blueberry_per_pot
+  name: Arla Skyr Blueberry (Per Pot)
+  kcal_per_100g: 65
+  protein_per_100g: 10
+  carbs_per_100g: 6
+  fat_per_100g: 0.2
+  brand: Arla Skyr
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt
+  portion_unit: piece
+  unit_grams: 150
+- source: produce
+  source_id: yog_skyr_passionfruit_pot
+  name: Arla Skyr Passionfruit
+  kcal_per_100g: 65
+  protein_per_100g: 10
+  carbs_per_100g: 6
+  fat_per_100g: 0.2
+  brand: Arla Skyr
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt
+  portion_unit: meal
+  unit_grams: 150
+- source: brand
+  source_id: yog_skyr_lemon_pot
+  name: Arla Skyr Lemon
+  kcal_per_100g: 65
+  protein_per_100g: 10
+  carbs_per_100g: 6
+  fat_per_100g: 0.2
+  brand: Arla Skyr
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt
+  portion_unit: meal
+  unit_grams: 150
+- source: brand
+  source_id: yog_skyr_raspberry_pot
+  name: Arla Skyr Raspberry
+  kcal_per_100g: 65
+  protein_per_100g: 10
+  carbs_per_100g: 6
+  fat_per_100g: 0.2
+  brand: Arla Skyr
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt
+  portion_unit: meal
+  unit_grams: 150
+- source: brand
+  source_id: yog_kefir_loving_foods_strawberry
+  name: Loving Foods Kefir Strawberry (Per 100ml)
+  kcal_per_100g: 60
+  protein_per_100g: 4
+  carbs_per_100g: 5
+  fat_per_100g: 3
+  brand: Loving Foods
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: kefir
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: yog_collective_kefir_natural
+  name: The Collective Kefir Natural (Per 100ml)
+  kcal_per_100g: 60
+  protein_per_100g: 4
+  carbs_per_100g: 5
+  fat_per_100g: 3
+  brand: The Collective
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: kefir
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: yog_collective_kefir_blueberry
+  name: The Collective Kefir Blueberry (Per 100ml)
+  kcal_per_100g: 75
+  protein_per_100g: 3
+  carbs_per_100g: 11
+  fat_per_100g: 2
+  brand: The Collective
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: kefir
+  portion_unit: meal
+  unit_grams: 100

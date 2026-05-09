@@ -1,0 +1,1892 @@
+# Fresh produce — fruits and vegetables with portion size standardisation
+
+- source: produce
+  source_id: fruit_apple_braeburn_med
+  name: Apple Braeburn (Medium)
+  kcal_per_100g: 52
+  protein_per_100g: 0.3
+  carbs_per_100g: 14
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 150
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_apple_pink_lady_med
+  name: Apple Pink Lady (Medium)
+  kcal_per_100g: 56
+  protein_per_100g: 0.3
+  carbs_per_100g: 14
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 150
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_apple_gala_med
+  name: Apple Gala (Medium)
+  kcal_per_100g: 52
+  protein_per_100g: 0.3
+  carbs_per_100g: 14
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 150
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_apple_granny_smith_med
+  name: Apple Granny Smith (Medium)
+  kcal_per_100g: 53
+  protein_per_100g: 0.3
+  carbs_per_100g: 14
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 150
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_apple_red_delicious_med
+  name: Apple Red Delicious (Medium)
+  kcal_per_100g: 52
+  protein_per_100g: 0.3
+  carbs_per_100g: 14
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 150
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_banana_med
+  name: Banana (Medium)
+  kcal_per_100g: 89
+  protein_per_100g: 1.1
+  carbs_per_100g: 23
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 118
+  serving_label: 118 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 118
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_banana_large
+  name: Banana (Large)
+  kcal_per_100g: 89
+  protein_per_100g: 1.1
+  carbs_per_100g: 23
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 136
+  serving_label: 136 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 136
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_banana_small
+  name: Banana (Small)
+  kcal_per_100g: 89
+  protein_per_100g: 1.1
+  carbs_per_100g: 23
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 101
+  serving_label: 101 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 101
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_orange_med
+  name: Orange (Medium)
+  kcal_per_100g: 47
+  protein_per_100g: 0.9
+  carbs_per_100g: 12
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 154
+  serving_label: 154 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 154
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_orange_large
+  name: Orange (Large)
+  kcal_per_100g: 47
+  protein_per_100g: 0.9
+  carbs_per_100g: 12
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 184
+  serving_label: 184 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 184
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_satsuma_per_unit
+  name: Satsuma (Per Unit)
+  kcal_per_100g: 35
+  protein_per_100g: 0.7
+  carbs_per_100g: 9
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 80
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_clementine_per_unit
+  name: Clementine (Per Unit)
+  kcal_per_100g: 35
+  protein_per_100g: 0.7
+  carbs_per_100g: 9
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_mandarin_per_unit
+  name: Mandarin (Per Unit)
+  kcal_per_100g: 35
+  protein_per_100g: 0.7
+  carbs_per_100g: 9
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_grapefruit_half
+  name: Grapefruit (Half)
+  kcal_per_100g: 32
+  protein_per_100g: 0.7
+  carbs_per_100g: 8
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_lemon_per_unit
+  name: Lemon (Per Unit)
+  kcal_per_100g: 29
+  protein_per_100g: 1.1
+  carbs_per_100g: 9
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 70
+  serving_label: 70 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 70
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_lime_per_unit
+  name: Lime (Per Unit)
+  kcal_per_100g: 30
+  protein_per_100g: 0.7
+  carbs_per_100g: 11
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 65
+  serving_label: 65 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 65
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_pear_med
+  name: Pear (Medium)
+  kcal_per_100g: 57
+  protein_per_100g: 0.4
+  carbs_per_100g: 15
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 180
+  serving_label: 180 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 180
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_pear_conference
+  name: Pear Conference (Medium)
+  kcal_per_100g: 57
+  protein_per_100g: 0.4
+  carbs_per_100g: 15
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 180
+  serving_label: 180 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 180
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_pear_william
+  name: Pear Williams (Medium)
+  kcal_per_100g: 57
+  protein_per_100g: 0.4
+  carbs_per_100g: 15
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 180
+  serving_label: 180 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 180
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_grapes_red_per_100g
+  name: Red Grapes (100g)
+  kcal_per_100g: 67
+  protein_per_100g: 0.6
+  carbs_per_100g: 17
+  fat_per_100g: 0.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_grapes_white_per_100g
+  name: White Grapes (100g)
+  kcal_per_100g: 67
+  protein_per_100g: 0.6
+  carbs_per_100g: 17
+  fat_per_100g: 0.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_grapes_black_per_100g
+  name: Black Grapes (100g)
+  kcal_per_100g: 67
+  protein_per_100g: 0.6
+  carbs_per_100g: 17
+  fat_per_100g: 0.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_grapes_seedless_handful
+  name: Grapes Seedless (Handful, ~30g)
+  kcal_per_100g: 67
+  protein_per_100g: 0.6
+  carbs_per_100g: 17
+  fat_per_100g: 0.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_strawberries_per_100g
+  name: Strawberries (100g)
+  kcal_per_100g: 32
+  protein_per_100g: 0.7
+  carbs_per_100g: 8
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_strawberries_punnet_400g
+  name: Strawberries Punnet (400g)
+  kcal_per_100g: 32
+  protein_per_100g: 0.7
+  carbs_per_100g: 8
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_blueberries_per_100g
+  name: Blueberries (100g)
+  kcal_per_100g: 57
+  protein_per_100g: 0.7
+  carbs_per_100g: 14
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_blueberries_punnet_125
+  name: Blueberries Punnet (125g)
+  kcal_per_100g: 57
+  protein_per_100g: 0.7
+  carbs_per_100g: 14
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 125
+  serving_label: 125 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 125
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_raspberries_per_100g
+  name: Raspberries (100g)
+  kcal_per_100g: 52
+  protein_per_100g: 1.2
+  carbs_per_100g: 12
+  fat_per_100g: 0.7
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_raspberries_punnet_125
+  name: Raspberries Punnet (125g)
+  kcal_per_100g: 52
+  protein_per_100g: 1.2
+  carbs_per_100g: 12
+  fat_per_100g: 0.7
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 125
+  serving_label: 125 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 125
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_blackberries_per_100g
+  name: Blackberries (100g)
+  kcal_per_100g: 43
+  protein_per_100g: 1.4
+  carbs_per_100g: 10
+  fat_per_100g: 0.5
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_cherries_per_100g
+  name: Cherries (100g)
+  kcal_per_100g: 63
+  protein_per_100g: 1.1
+  carbs_per_100g: 16
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_cherries_handful
+  name: Cherries (Handful, ~80g)
+  kcal_per_100g: 63
+  protein_per_100g: 1.1
+  carbs_per_100g: 16
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 80
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_pineapple_per_100g
+  name: Pineapple (100g)
+  kcal_per_100g: 50
+  protein_per_100g: 0.5
+  carbs_per_100g: 13
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_pineapple_slice
+  name: Pineapple (Slice, ~84g)
+  kcal_per_100g: 50
+  protein_per_100g: 0.5
+  carbs_per_100g: 13
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 84
+  serving_label: 84 g
+  tags: fruit,fresh,produce
+  portion_unit: slice
+  unit_grams: 84
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_mango_per_100g
+  name: Mango (100g)
+  kcal_per_100g: 60
+  protein_per_100g: 0.8
+  carbs_per_100g: 15
+  fat_per_100g: 0.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_mango_per_unit
+  name: Mango (Whole, Per Unit)
+  kcal_per_100g: 60
+  protein_per_100g: 0.8
+  carbs_per_100g: 15
+  fat_per_100g: 0.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_papaya_per_100g
+  name: Papaya (100g)
+  kcal_per_100g: 43
+  protein_per_100g: 0.5
+  carbs_per_100g: 11
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_kiwi_per_unit
+  name: Kiwi (Per Unit)
+  kcal_per_100g: 61
+  protein_per_100g: 1.1
+  carbs_per_100g: 15
+  fat_per_100g: 0.5
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_kiwi_gold_per_unit
+  name: Kiwi Golden (Per Unit)
+  kcal_per_100g: 60
+  protein_per_100g: 1.2
+  carbs_per_100g: 15
+  fat_per_100g: 0.5
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_avocado_half
+  name: Avocado (Half)
+  kcal_per_100g: 160
+  protein_per_100g: 2
+  carbs_per_100g: 9
+  fat_per_100g: 15
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_avocado_whole
+  name: Avocado (Whole)
+  kcal_per_100g: 160
+  protein_per_100g: 2
+  carbs_per_100g: 9
+  fat_per_100g: 15
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_avocado_small
+  name: Avocado (Small)
+  kcal_per_100g: 160
+  protein_per_100g: 2
+  carbs_per_100g: 9
+  fat_per_100g: 15
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 130
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_peach_per_unit
+  name: Peach (Medium)
+  kcal_per_100g: 39
+  protein_per_100g: 0.9
+  carbs_per_100g: 10
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 150
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_nectarine_per_unit
+  name: Nectarine (Medium)
+  kcal_per_100g: 44
+  protein_per_100g: 1.1
+  carbs_per_100g: 11
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 142
+  serving_label: 142 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 142
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_apricot_per_unit
+  name: Apricot (Per Unit)
+  kcal_per_100g: 48
+  protein_per_100g: 1.4
+  carbs_per_100g: 11
+  fat_per_100g: 0.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 35
+  serving_label: 35 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 35
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_plum_per_unit
+  name: Plum (Medium)
+  kcal_per_100g: 46
+  protein_per_100g: 0.7
+  carbs_per_100g: 11
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 66
+  serving_label: 66 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 66
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_watermelon_per_100g
+  name: Watermelon (100g)
+  kcal_per_100g: 30
+  protein_per_100g: 0.6
+  carbs_per_100g: 8
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_watermelon_slice
+  name: Watermelon (Slice, ~280g)
+  kcal_per_100g: 30
+  protein_per_100g: 0.6
+  carbs_per_100g: 8
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: fruit,fresh,produce
+  portion_unit: slice
+  unit_grams: 280
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_cantaloupe_per_100g
+  name: Cantaloupe Melon (100g)
+  kcal_per_100g: 34
+  protein_per_100g: 0.8
+  carbs_per_100g: 8
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_honeydew_per_100g
+  name: Honeydew Melon (100g)
+  kcal_per_100g: 36
+  protein_per_100g: 0.5
+  carbs_per_100g: 9
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_pomegranate_per_100g
+  name: Pomegranate Seeds (100g)
+  kcal_per_100g: 83
+  protein_per_100g: 1.7
+  carbs_per_100g: 19
+  fat_per_100g: 1.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_pomegranate_per_unit
+  name: Pomegranate (Whole)
+  kcal_per_100g: 83
+  protein_per_100g: 1.7
+  carbs_per_100g: 19
+  fat_per_100g: 1.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 280
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_passionfruit_per_unit
+  name: Passionfruit (Per Unit)
+  kcal_per_100g: 97
+  protein_per_100g: 2.2
+  carbs_per_100g: 23
+  fat_per_100g: 0.7
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 18
+  serving_label: 18 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 18
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_dragon_fruit_per_100g
+  name: Dragon Fruit (100g)
+  kcal_per_100g: 60
+  protein_per_100g: 1.2
+  carbs_per_100g: 13
+  fat_per_100g: 0.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_lychee_per_100g
+  name: Lychee (100g)
+  kcal_per_100g: 66
+  protein_per_100g: 0.8
+  carbs_per_100g: 17
+  fat_per_100g: 0.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_dates_medjool_per_unit
+  name: Medjool Date (Per Date)
+  kcal_per_100g: 277
+  protein_per_100g: 1.8
+  carbs_per_100g: 75
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 24
+  serving_label: 24 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 24
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_dates_medjool_per_100g
+  name: Medjool Dates (100g)
+  kcal_per_100g: 277
+  protein_per_100g: 1.8
+  carbs_per_100g: 75
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_dried_apricots_30g
+  name: Dried Apricots (30g)
+  kcal_per_100g: 240
+  protein_per_100g: 3.4
+  carbs_per_100g: 55
+  fat_per_100g: 0.5
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_raisins_30g
+  name: Raisins (30g)
+  kcal_per_100g: 299
+  protein_per_100g: 3.1
+  carbs_per_100g: 79
+  fat_per_100g: 0.5
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_dried_cranberries_30g
+  name: Dried Cranberries (30g)
+  kcal_per_100g: 308
+  protein_per_100g: 0.2
+  carbs_per_100g: 82
+  fat_per_100g: 1.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: fruit,fresh,produce
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_prunes_per_unit
+  name: Prune (Per Unit)
+  kcal_per_100g: 240
+  protein_per_100g: 2.2
+  carbs_per_100g: 64
+  fat_per_100g: 0.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 8
+  serving_label: 8 g
+  tags: fruit,fresh,produce
+  portion_unit: piece
+  unit_grams: 8
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_carrot_med
+  name: Carrot (Medium)
+  kcal_per_100g: 41
+  protein_per_100g: 0.9
+  carbs_per_100g: 10
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 60
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_carrot_baby_handful
+  name: Baby Carrots (Handful, ~80g)
+  kcal_per_100g: 35
+  protein_per_100g: 0.6
+  carbs_per_100g: 8
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 80
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_broccoli_per_100g
+  name: Broccoli (100g)
+  kcal_per_100g: 35
+  protein_per_100g: 2.8
+  carbs_per_100g: 7
+  fat_per_100g: 0.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_broccoli_floret
+  name: Broccoli Florets (1 cup, 91g)
+  kcal_per_100g: 35
+  protein_per_100g: 2.8
+  carbs_per_100g: 7
+  fat_per_100g: 0.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 91
+  serving_label: 91 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 91
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_cauliflower_per_100g
+  name: Cauliflower (100g)
+  kcal_per_100g: 25
+  protein_per_100g: 1.9
+  carbs_per_100g: 5
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_brussels_sprouts_per_100g
+  name: Brussels Sprouts (100g)
+  kcal_per_100g: 43
+  protein_per_100g: 3.4
+  carbs_per_100g: 9
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_cabbage_white_per_100g
+  name: White Cabbage (100g)
+  kcal_per_100g: 25
+  protein_per_100g: 1.3
+  carbs_per_100g: 6
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_cabbage_red_per_100g
+  name: Red Cabbage (100g)
+  kcal_per_100g: 31
+  protein_per_100g: 1.4
+  carbs_per_100g: 7
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_kale_per_100g
+  name: Kale (100g)
+  kcal_per_100g: 49
+  protein_per_100g: 4.3
+  carbs_per_100g: 9
+  fat_per_100g: 0.9
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_spinach_per_100g
+  name: Spinach Raw (100g)
+  kcal_per_100g: 23
+  protein_per_100g: 2.9
+  carbs_per_100g: 4
+  fat_per_100g: 0.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_spinach_handful
+  name: Spinach (Handful, ~30g)
+  kcal_per_100g: 23
+  protein_per_100g: 2.9
+  carbs_per_100g: 4
+  fat_per_100g: 0.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_rocket_per_100g
+  name: Rocket / Arugula (100g)
+  kcal_per_100g: 25
+  protein_per_100g: 2.6
+  carbs_per_100g: 4
+  fat_per_100g: 0.7
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_rocket_handful
+  name: Rocket (Handful, ~25g)
+  kcal_per_100g: 25
+  protein_per_100g: 2.6
+  carbs_per_100g: 4
+  fat_per_100g: 0.7
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 25
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_lettuce_iceberg_per_100g
+  name: Iceberg Lettuce (100g)
+  kcal_per_100g: 14
+  protein_per_100g: 0.9
+  carbs_per_100g: 3
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_lettuce_baby_gem_per_100g
+  name: Baby Gem Lettuce (100g)
+  kcal_per_100g: 17
+  protein_per_100g: 1.4
+  carbs_per_100g: 3
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_lettuce_romaine_per_100g
+  name: Romaine Lettuce (100g)
+  kcal_per_100g: 17
+  protein_per_100g: 1.2
+  carbs_per_100g: 3
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_lettuce_mixed_leaf
+  name: Mixed Leaf Salad (Bag, 100g)
+  kcal_per_100g: 17
+  protein_per_100g: 1.5
+  carbs_per_100g: 3
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_celery_per_100g
+  name: Celery (100g)
+  kcal_per_100g: 14
+  protein_per_100g: 0.7
+  carbs_per_100g: 3
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_celery_stick
+  name: Celery Stick (Per Stick)
+  kcal_per_100g: 14
+  protein_per_100g: 0.7
+  carbs_per_100g: 3
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_cucumber_per_100g
+  name: Cucumber (100g)
+  kcal_per_100g: 16
+  protein_per_100g: 0.7
+  carbs_per_100g: 4
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_cucumber_whole
+  name: Cucumber (Whole)
+  kcal_per_100g: 16
+  protein_per_100g: 0.7
+  carbs_per_100g: 4
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_tomato_med
+  name: Tomato (Medium)
+  kcal_per_100g: 18
+  protein_per_100g: 0.9
+  carbs_per_100g: 4
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 123
+  serving_label: 123 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 123
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_tomato_cherry_per_100g
+  name: Cherry Tomatoes (100g)
+  kcal_per_100g: 18
+  protein_per_100g: 0.9
+  carbs_per_100g: 4
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_tomato_plum_per_unit
+  name: Plum Tomato (Per Unit)
+  kcal_per_100g: 18
+  protein_per_100g: 0.9
+  carbs_per_100g: 4
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 60
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_tomato_baby_plum_per_100g
+  name: Baby Plum Tomatoes (100g)
+  kcal_per_100g: 18
+  protein_per_100g: 0.9
+  carbs_per_100g: 4
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_tomato_beef_per_unit
+  name: Beef Tomato (Per Unit)
+  kcal_per_100g: 18
+  protein_per_100g: 0.9
+  carbs_per_100g: 4
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 220
+  serving_label: 220 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 220
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_pepper_red_per_unit
+  name: Red Pepper (Per Unit)
+  kcal_per_100g: 31
+  protein_per_100g: 1
+  carbs_per_100g: 7
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 150
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_pepper_yellow_per_unit
+  name: Yellow Pepper (Per Unit)
+  kcal_per_100g: 27
+  protein_per_100g: 1
+  carbs_per_100g: 6
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 150
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_pepper_green_per_unit
+  name: Green Pepper (Per Unit)
+  kcal_per_100g: 20
+  protein_per_100g: 0.9
+  carbs_per_100g: 5
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 150
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_pepper_orange_per_unit
+  name: Orange Pepper (Per Unit)
+  kcal_per_100g: 31
+  protein_per_100g: 1
+  carbs_per_100g: 7
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 150
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_courgette_per_unit
+  name: Courgette (Per Unit)
+  kcal_per_100g: 17
+  protein_per_100g: 1.2
+  carbs_per_100g: 3
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 196
+  serving_label: 196 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 196
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_aubergine_per_unit
+  name: Aubergine (Per Unit)
+  kcal_per_100g: 25
+  protein_per_100g: 1
+  carbs_per_100g: 6
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_mushroom_button_per_100g
+  name: Mushrooms Button (100g)
+  kcal_per_100g: 22
+  protein_per_100g: 3.1
+  carbs_per_100g: 3
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_mushroom_chestnut_per_100g
+  name: Mushrooms Chestnut (100g)
+  kcal_per_100g: 22
+  protein_per_100g: 3.1
+  carbs_per_100g: 3
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_mushroom_portobello_per_unit
+  name: Mushroom Portobello (Per Unit)
+  kcal_per_100g: 22
+  protein_per_100g: 3.1
+  carbs_per_100g: 3
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 80
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_onion_per_unit
+  name: Onion White (Medium)
+  kcal_per_100g: 40
+  protein_per_100g: 1.1
+  carbs_per_100g: 9
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 110
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_onion_red_per_unit
+  name: Onion Red (Medium)
+  kcal_per_100g: 40
+  protein_per_100g: 1.1
+  carbs_per_100g: 9
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 110
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_spring_onion_per_unit
+  name: Spring Onion (Per Unit)
+  kcal_per_100g: 32
+  protein_per_100g: 1.8
+  carbs_per_100g: 7
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_garlic_per_clove
+  name: Garlic (Per Clove)
+  kcal_per_100g: 149
+  protein_per_100g: 6.4
+  carbs_per_100g: 33
+  fat_per_100g: 0.5
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 3
+  serving_label: 3 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 3
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_ginger_per_30g
+  name: Ginger Root (30g)
+  kcal_per_100g: 80
+  protein_per_100g: 1.8
+  carbs_per_100g: 18
+  fat_per_100g: 0.8
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_potato_med
+  name: Potato Maris Piper (Medium)
+  kcal_per_100g: 77
+  protein_per_100g: 2
+  carbs_per_100g: 17
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_potato_baby_per_100g
+  name: Baby Potatoes (100g)
+  kcal_per_100g: 77
+  protein_per_100g: 2
+  carbs_per_100g: 17
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_sweet_potato_med
+  name: Sweet Potato (Medium)
+  kcal_per_100g: 86
+  protein_per_100g: 2
+  carbs_per_100g: 20
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 130
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_butternut_squash_per_100g
+  name: Butternut Squash (100g)
+  kcal_per_100g: 45
+  protein_per_100g: 1
+  carbs_per_100g: 12
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_butternut_squash_per_unit
+  name: Butternut Squash (Whole)
+  kcal_per_100g: 45
+  protein_per_100g: 1
+  carbs_per_100g: 12
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 800
+  serving_label: 800 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 800
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_sweetcorn_per_cob
+  name: Sweetcorn (Per Cob)
+  kcal_per_100g: 86
+  protein_per_100g: 3.2
+  carbs_per_100g: 19
+  fat_per_100g: 1.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_peas_frozen_per_100g
+  name: Peas Frozen (100g)
+  kcal_per_100g: 81
+  protein_per_100g: 5
+  carbs_per_100g: 14
+  fat_per_100g: 0.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_peas_garden_serving
+  name: Peas (Serving 80g)
+  kcal_per_100g: 81
+  protein_per_100g: 5
+  carbs_per_100g: 14
+  fat_per_100g: 0.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 80
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_green_beans_per_100g
+  name: Green Beans (100g)
+  kcal_per_100g: 31
+  protein_per_100g: 1.8
+  carbs_per_100g: 7
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_runner_beans_per_100g
+  name: Runner Beans (100g)
+  kcal_per_100g: 22
+  protein_per_100g: 1.5
+  carbs_per_100g: 4
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_asparagus_per_spear
+  name: Asparagus (Per Spear)
+  kcal_per_100g: 20
+  protein_per_100g: 2.2
+  carbs_per_100g: 4
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 16
+  serving_label: 16 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 16
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_asparagus_serving
+  name: Asparagus (Serving 80g)
+  kcal_per_100g: 20
+  protein_per_100g: 2.2
+  carbs_per_100g: 4
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 80
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_radish_per_100g
+  name: Radish (100g)
+  kcal_per_100g: 16
+  protein_per_100g: 0.7
+  carbs_per_100g: 3
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_beetroot_cooked_per_100g
+  name: Beetroot Cooked (100g)
+  kcal_per_100g: 44
+  protein_per_100g: 1.7
+  carbs_per_100g: 10
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_parsnip_per_unit
+  name: Parsnip (Medium)
+  kcal_per_100g: 75
+  protein_per_100g: 1.2
+  carbs_per_100g: 18
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 110
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_swede_per_100g
+  name: Swede (100g)
+  kcal_per_100g: 38
+  protein_per_100g: 1.1
+  carbs_per_100g: 9
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_turnip_per_100g
+  name: Turnip (100g)
+  kcal_per_100g: 28
+  protein_per_100g: 0.9
+  carbs_per_100g: 6
+  fat_per_100g: 0.1
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_leek_per_unit
+  name: Leek (Per Unit)
+  kcal_per_100g: 61
+  protein_per_100g: 1.5
+  carbs_per_100g: 14
+  fat_per_100g: 0.3
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 89
+  serving_label: 89 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 89
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_chilli_red_per_unit
+  name: Red Chilli (Per Unit)
+  kcal_per_100g: 40
+  protein_per_100g: 1.9
+  carbs_per_100g: 9
+  fat_per_100g: 0.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 14
+  serving_label: 14 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 14
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_chilli_green_per_unit
+  name: Green Chilli (Per Unit)
+  kcal_per_100g: 40
+  protein_per_100g: 1.9
+  carbs_per_100g: 9
+  fat_per_100g: 0.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 14
+  serving_label: 14 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 14
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_jalapeno_per_unit
+  name: Jalapeño (Per Unit)
+  kcal_per_100g: 30
+  protein_per_100g: 1.4
+  carbs_per_100g: 7
+  fat_per_100g: 0.4
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 14
+  serving_label: 14 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 14
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_artichoke_per_unit
+  name: Artichoke (Per Unit)
+  kcal_per_100g: 47
+  protein_per_100g: 3.3
+  carbs_per_100g: 11
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 120
+  serving_label: 120 g
+  tags: veg,fresh,produce
+  portion_unit: piece
+  unit_grams: 120
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_fennel_per_100g
+  name: Fennel Bulb (100g)
+  kcal_per_100g: 31
+  protein_per_100g: 1.2
+  carbs_per_100g: 7
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_pak_choi_per_100g
+  name: Pak Choi (100g)
+  kcal_per_100g: 13
+  protein_per_100g: 1.5
+  carbs_per_100g: 2
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_chinese_cabbage_per_100g
+  name: Chinese Cabbage (100g)
+  kcal_per_100g: 13
+  protein_per_100g: 1.2
+  carbs_per_100g: 2
+  fat_per_100g: 0.2
+  brand: Fresh Produce
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg,fresh,produce
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian

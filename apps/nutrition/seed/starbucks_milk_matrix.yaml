@@ -1,0 +1,1376 @@
+# Starbucks — milk × size matrix
+# Latte/Cappuccino × Short/Tall/Grande/Venti × 7 milks
+# Flat White/Mocha × Tall/Grande/Venti × 7 milks (no Short)
+
+- source: starbucks
+  source_id: sbx_latte_short
+  name: Starbucks Latte (Short)
+  kcal_per_100g: 53.5
+  protein_per_100g: 2.89
+  carbs_per_100g: 4.0
+  fat_per_100g: 2.98
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 236
+  serving_label: Short (236ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 236
+- source: starbucks
+  source_id: sbx_cappuccino_short
+  name: Starbucks Cappuccino (Short)
+  kcal_per_100g: 41.0
+  protein_per_100g: 2.21
+  carbs_per_100g: 3.06
+  fat_per_100g: 2.27
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 236
+  serving_label: Short (236ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 236
+- source: starbucks
+  source_id: sbx_latte_short_semi
+  name: Starbucks Latte (Short) with Semi-skimmed Milk
+  kcal_per_100g: 39.1
+  protein_per_100g: 2.89
+  carbs_per_100g: 4.0
+  fat_per_100g: 1.44
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 236
+  serving_label: Short (236ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 236
+- source: starbucks
+  source_id: sbx_cappuccino_short_semi
+  name: Starbucks Cappuccino (Short) with Semi-skimmed Milk
+  kcal_per_100g: 29.9
+  protein_per_100g: 2.21
+  carbs_per_100g: 3.06
+  fat_per_100g: 1.11
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 236
+  serving_label: Short (236ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 236
+- source: starbucks
+  source_id: sbx_latte_short_skim
+  name: Starbucks Latte (Short) with Skimmed Milk
+  kcal_per_100g: 29.7
+  protein_per_100g: 2.98
+  carbs_per_100g: 4.25
+  fat_per_100g: 0.09
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 236
+  serving_label: Short (236ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 236
+- source: starbucks
+  source_id: sbx_cappuccino_short_skim
+  name: Starbucks Cappuccino (Short) with Skimmed Milk
+  kcal_per_100g: 22.8
+  protein_per_100g: 2.27
+  carbs_per_100g: 3.25
+  fat_per_100g: 0.07
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 236
+  serving_label: Short (236ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 236
+- source: starbucks
+  source_id: sbx_latte_short_soya
+  name: Starbucks Latte (Short) with Soya Milk
+  kcal_per_100g: 33.1
+  protein_per_100g: 2.55
+  carbs_per_100g: 2.12
+  fat_per_100g: 1.53
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 236
+  serving_label: Short (236ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 236
+- source: starbucks
+  source_id: sbx_cappuccino_short_soya
+  name: Starbucks Cappuccino (Short) with Soya Milk
+  kcal_per_100g: 25.4
+  protein_per_100g: 1.95
+  carbs_per_100g: 1.62
+  fat_per_100g: 1.17
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 236
+  serving_label: Short (236ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 236
+- source: starbucks
+  source_id: sbx_latte_short_oat
+  name: Starbucks Latte (Short) with Oat Milk
+  kcal_per_100g: 51.0
+  protein_per_100g: 0.85
+  carbs_per_100g: 5.61
+  fat_per_100g: 2.55
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 236
+  serving_label: Short (236ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 236
+- source: starbucks
+  source_id: sbx_cappuccino_short_oat
+  name: Starbucks Cappuccino (Short) with Oat Milk
+  kcal_per_100g: 39.0
+  protein_per_100g: 0.65
+  carbs_per_100g: 4.29
+  fat_per_100g: 1.95
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 236
+  serving_label: Short (236ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 236
+- source: starbucks
+  source_id: sbx_latte_short_almond
+  name: Starbucks Latte (Short) with Almond Milk
+  kcal_per_100g: 11.0
+  protein_per_100g: 0.34
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.94
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 236
+  serving_label: Short (236ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 236
+- source: starbucks
+  source_id: sbx_cappuccino_short_almond
+  name: Starbucks Cappuccino (Short) with Almond Milk
+  kcal_per_100g: 8.5
+  protein_per_100g: 0.26
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.72
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 236
+  serving_label: Short (236ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 236
+- source: starbucks
+  source_id: sbx_latte_short_coconut
+  name: Starbucks Latte (Short) with Coconut Milk
+  kcal_per_100g: 22.9
+  protein_per_100g: 0.09
+  carbs_per_100g: 2.12
+  fat_per_100g: 1.53
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 236
+  serving_label: Short (236ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 236
+- source: starbucks
+  source_id: sbx_cappuccino_short_coconut
+  name: Starbucks Cappuccino (Short) with Coconut Milk
+  kcal_per_100g: 17.6
+  protein_per_100g: 0.07
+  carbs_per_100g: 1.62
+  fat_per_100g: 1.17
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 236
+  serving_label: Short (236ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 236
+- source: starbucks
+  source_id: sbx_latte_tall
+  name: Starbucks Latte (Tall)
+  kcal_per_100g: 53.5
+  protein_per_100g: 2.89
+  carbs_per_100g: 4.0
+  fat_per_100g: 2.98
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_cappuccino_tall
+  name: Starbucks Cappuccino (Tall)
+  kcal_per_100g: 41.0
+  protein_per_100g: 2.21
+  carbs_per_100g: 3.06
+  fat_per_100g: 2.27
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_latte_tall_semi
+  name: Starbucks Latte (Tall) with Semi-skimmed Milk
+  kcal_per_100g: 39.1
+  protein_per_100g: 2.89
+  carbs_per_100g: 4.0
+  fat_per_100g: 1.45
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_cappuccino_tall_semi
+  name: Starbucks Cappuccino (Tall) with Semi-skimmed Milk
+  kcal_per_100g: 29.9
+  protein_per_100g: 2.21
+  carbs_per_100g: 3.06
+  fat_per_100g: 1.1
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_latte_tall_skim
+  name: Starbucks Latte (Tall) with Skimmed Milk
+  kcal_per_100g: 29.8
+  protein_per_100g: 2.98
+  carbs_per_100g: 4.25
+  fat_per_100g: 0.09
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_cappuccino_tall_skim
+  name: Starbucks Cappuccino (Tall) with Skimmed Milk
+  kcal_per_100g: 22.8
+  protein_per_100g: 2.27
+  carbs_per_100g: 3.25
+  fat_per_100g: 0.07
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_latte_tall_soya
+  name: Starbucks Latte (Tall) with Soya Milk
+  kcal_per_100g: 33.1
+  protein_per_100g: 2.55
+  carbs_per_100g: 2.12
+  fat_per_100g: 1.53
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_cappuccino_tall_soya
+  name: Starbucks Cappuccino (Tall) with Soya Milk
+  kcal_per_100g: 25.4
+  protein_per_100g: 1.95
+  carbs_per_100g: 1.62
+  fat_per_100g: 1.17
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_latte_tall_oat
+  name: Starbucks Latte (Tall) with Oat Milk
+  kcal_per_100g: 51.0
+  protein_per_100g: 0.85
+  carbs_per_100g: 5.61
+  fat_per_100g: 2.55
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_cappuccino_tall_oat
+  name: Starbucks Cappuccino (Tall) with Oat Milk
+  kcal_per_100g: 39.0
+  protein_per_100g: 0.65
+  carbs_per_100g: 4.29
+  fat_per_100g: 1.95
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_latte_tall_almond
+  name: Starbucks Latte (Tall) with Almond Milk
+  kcal_per_100g: 11.1
+  protein_per_100g: 0.34
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.94
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_cappuccino_tall_almond
+  name: Starbucks Cappuccino (Tall) with Almond Milk
+  kcal_per_100g: 8.4
+  protein_per_100g: 0.26
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.72
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_latte_tall_coconut
+  name: Starbucks Latte (Tall) with Coconut Milk
+  kcal_per_100g: 22.9
+  protein_per_100g: 0.09
+  carbs_per_100g: 2.12
+  fat_per_100g: 1.53
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_cappuccino_tall_coconut
+  name: Starbucks Cappuccino (Tall) with Coconut Milk
+  kcal_per_100g: 17.6
+  protein_per_100g: 0.07
+  carbs_per_100g: 1.62
+  fat_per_100g: 1.17
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_flatwhite_tall
+  name: Starbucks Flat White (Tall)
+  kcal_per_100g: 44.1
+  protein_per_100g: 2.38
+  carbs_per_100g: 3.29
+  fat_per_100g: 2.45
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_mocha_tall
+  name: Starbucks Mocha (Tall)
+  kcal_per_100g: 95.8
+  protein_per_100g: 3.31
+  carbs_per_100g: 10.47
+  fat_per_100g: 4.95
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_flatwhite_tall_semi
+  name: Starbucks Flat White (Tall) with Semi-skimmed Milk
+  kcal_per_100g: 32.2
+  protein_per_100g: 2.38
+  carbs_per_100g: 3.29
+  fat_per_100g: 1.19
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_mocha_tall_semi
+  name: Starbucks Mocha (Tall) with Semi-skimmed Milk
+  kcal_per_100g: 81.4
+  protein_per_100g: 3.31
+  carbs_per_100g: 10.47
+  fat_per_100g: 3.42
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_flatwhite_tall_skim
+  name: Starbucks Flat White (Tall) with Skimmed Milk
+  kcal_per_100g: 24.5
+  protein_per_100g: 2.45
+  carbs_per_100g: 3.5
+  fat_per_100g: 0.07
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_mocha_tall_skim
+  name: Starbucks Mocha (Tall) with Skimmed Milk
+  kcal_per_100g: 72.0
+  protein_per_100g: 3.4
+  carbs_per_100g: 10.73
+  fat_per_100g: 2.06
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_flatwhite_tall_soya
+  name: Starbucks Flat White (Tall) with Soya Milk
+  kcal_per_100g: 27.3
+  protein_per_100g: 2.1
+  carbs_per_100g: 1.75
+  fat_per_100g: 1.26
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_mocha_tall_soya
+  name: Starbucks Mocha (Tall) with Soya Milk
+  kcal_per_100g: 75.4
+  protein_per_100g: 2.97
+  carbs_per_100g: 8.6
+  fat_per_100g: 3.5
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_flatwhite_tall_oat
+  name: Starbucks Flat White (Tall) with Oat Milk
+  kcal_per_100g: 42.0
+  protein_per_100g: 0.7
+  carbs_per_100g: 4.62
+  fat_per_100g: 2.1
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_mocha_tall_oat
+  name: Starbucks Mocha (Tall) with Oat Milk
+  kcal_per_100g: 93.3
+  protein_per_100g: 1.27
+  carbs_per_100g: 12.09
+  fat_per_100g: 4.52
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_flatwhite_tall_almond
+  name: Starbucks Flat White (Tall) with Almond Milk
+  kcal_per_100g: 9.1
+  protein_per_100g: 0.28
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.77
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_mocha_tall_almond
+  name: Starbucks Mocha (Tall) with Almond Milk
+  kcal_per_100g: 53.3
+  protein_per_100g: 0.76
+  carbs_per_100g: 6.48
+  fat_per_100g: 2.91
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_flatwhite_tall_coconut
+  name: Starbucks Flat White (Tall) with Coconut Milk
+  kcal_per_100g: 18.9
+  protein_per_100g: 0.07
+  carbs_per_100g: 1.75
+  fat_per_100g: 1.26
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_mocha_tall_coconut
+  name: Starbucks Mocha (Tall) with Coconut Milk
+  kcal_per_100g: 65.2
+  protein_per_100g: 0.51
+  carbs_per_100g: 8.6
+  fat_per_100g: 3.5
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Tall (355ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_latte_grande
+  name: Starbucks Latte (Grande)
+  kcal_per_100g: 53.6
+  protein_per_100g: 2.89
+  carbs_per_100g: 4.0
+  fat_per_100g: 2.98
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_cappuccino_grande
+  name: Starbucks Cappuccino (Grande)
+  kcal_per_100g: 40.9
+  protein_per_100g: 2.21
+  carbs_per_100g: 3.06
+  fat_per_100g: 2.27
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_latte_grande_semi
+  name: Starbucks Latte (Grande) with Semi-skimmed Milk
+  kcal_per_100g: 39.1
+  protein_per_100g: 2.89
+  carbs_per_100g: 4.0
+  fat_per_100g: 1.45
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_cappuccino_grande_semi
+  name: Starbucks Cappuccino (Grande) with Semi-skimmed Milk
+  kcal_per_100g: 29.9
+  protein_per_100g: 2.21
+  carbs_per_100g: 3.06
+  fat_per_100g: 1.1
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_latte_grande_skim
+  name: Starbucks Latte (Grande) with Skimmed Milk
+  kcal_per_100g: 29.8
+  protein_per_100g: 2.98
+  carbs_per_100g: 4.25
+  fat_per_100g: 0.09
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_cappuccino_grande_skim
+  name: Starbucks Cappuccino (Grande) with Skimmed Milk
+  kcal_per_100g: 22.8
+  protein_per_100g: 2.27
+  carbs_per_100g: 3.25
+  fat_per_100g: 0.07
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_latte_grande_soya
+  name: Starbucks Latte (Grande) with Soya Milk
+  kcal_per_100g: 33.1
+  protein_per_100g: 2.55
+  carbs_per_100g: 2.12
+  fat_per_100g: 1.53
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_cappuccino_grande_soya
+  name: Starbucks Cappuccino (Grande) with Soya Milk
+  kcal_per_100g: 25.3
+  protein_per_100g: 1.95
+  carbs_per_100g: 1.62
+  fat_per_100g: 1.17
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_latte_grande_oat
+  name: Starbucks Latte (Grande) with Oat Milk
+  kcal_per_100g: 51.0
+  protein_per_100g: 0.85
+  carbs_per_100g: 5.61
+  fat_per_100g: 2.55
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_cappuccino_grande_oat
+  name: Starbucks Cappuccino (Grande) with Oat Milk
+  kcal_per_100g: 39.0
+  protein_per_100g: 0.65
+  carbs_per_100g: 4.29
+  fat_per_100g: 1.95
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_latte_grande_almond
+  name: Starbucks Latte (Grande) with Almond Milk
+  kcal_per_100g: 11.1
+  protein_per_100g: 0.34
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.93
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_cappuccino_grande_almond
+  name: Starbucks Cappuccino (Grande) with Almond Milk
+  kcal_per_100g: 8.4
+  protein_per_100g: 0.26
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.71
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_latte_grande_coconut
+  name: Starbucks Latte (Grande) with Coconut Milk
+  kcal_per_100g: 22.9
+  protein_per_100g: 0.09
+  carbs_per_100g: 2.12
+  fat_per_100g: 1.53
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_cappuccino_grande_coconut
+  name: Starbucks Cappuccino (Grande) with Coconut Milk
+  kcal_per_100g: 17.6
+  protein_per_100g: 0.07
+  carbs_per_100g: 1.62
+  fat_per_100g: 1.17
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_flatwhite_grande
+  name: Starbucks Flat White (Grande)
+  kcal_per_100g: 44.1
+  protein_per_100g: 2.38
+  carbs_per_100g: 3.29
+  fat_per_100g: 2.45
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_mocha_grande
+  name: Starbucks Mocha (Grande)
+  kcal_per_100g: 85.3
+  protein_per_100g: 3.21
+  carbs_per_100g: 8.86
+  fat_per_100g: 4.45
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_flatwhite_grande_semi
+  name: Starbucks Flat White (Grande) with Semi-skimmed Milk
+  kcal_per_100g: 32.2
+  protein_per_100g: 2.38
+  carbs_per_100g: 3.29
+  fat_per_100g: 1.19
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_mocha_grande_semi
+  name: Starbucks Mocha (Grande) with Semi-skimmed Milk
+  kcal_per_100g: 70.8
+  protein_per_100g: 3.21
+  carbs_per_100g: 8.86
+  fat_per_100g: 2.92
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_flatwhite_grande_skim
+  name: Starbucks Flat White (Grande) with Skimmed Milk
+  kcal_per_100g: 24.5
+  protein_per_100g: 2.45
+  carbs_per_100g: 3.5
+  fat_per_100g: 0.07
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_mocha_grande_skim
+  name: Starbucks Mocha (Grande) with Skimmed Milk
+  kcal_per_100g: 61.5
+  protein_per_100g: 3.29
+  carbs_per_100g: 9.11
+  fat_per_100g: 1.56
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_flatwhite_grande_soya
+  name: Starbucks Flat White (Grande) with Soya Milk
+  kcal_per_100g: 27.3
+  protein_per_100g: 2.1
+  carbs_per_100g: 1.75
+  fat_per_100g: 1.26
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_mocha_grande_soya
+  name: Starbucks Mocha (Grande) with Soya Milk
+  kcal_per_100g: 64.9
+  protein_per_100g: 2.87
+  carbs_per_100g: 6.99
+  fat_per_100g: 3.01
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_flatwhite_grande_oat
+  name: Starbucks Flat White (Grande) with Oat Milk
+  kcal_per_100g: 42.0
+  protein_per_100g: 0.7
+  carbs_per_100g: 4.62
+  fat_per_100g: 2.1
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_mocha_grande_oat
+  name: Starbucks Mocha (Grande) with Oat Milk
+  kcal_per_100g: 82.7
+  protein_per_100g: 1.17
+  carbs_per_100g: 10.47
+  fat_per_100g: 4.03
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_flatwhite_grande_almond
+  name: Starbucks Flat White (Grande) with Almond Milk
+  kcal_per_100g: 9.1
+  protein_per_100g: 0.28
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.77
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_mocha_grande_almond
+  name: Starbucks Mocha (Grande) with Almond Milk
+  kcal_per_100g: 42.8
+  protein_per_100g: 0.66
+  carbs_per_100g: 4.86
+  fat_per_100g: 2.41
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_flatwhite_grande_coconut
+  name: Starbucks Flat White (Grande) with Coconut Milk
+  kcal_per_100g: 18.9
+  protein_per_100g: 0.07
+  carbs_per_100g: 1.75
+  fat_per_100g: 1.26
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_mocha_grande_coconut
+  name: Starbucks Mocha (Grande) with Coconut Milk
+  kcal_per_100g: 54.7
+  protein_per_100g: 0.4
+  carbs_per_100g: 6.99
+  fat_per_100g: 3.01
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Grande (473ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_latte_venti
+  name: Starbucks Latte (Venti)
+  kcal_per_100g: 53.5
+  protein_per_100g: 2.89
+  carbs_per_100g: 4.0
+  fat_per_100g: 2.97
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_cappuccino_venti
+  name: Starbucks Cappuccino (Venti)
+  kcal_per_100g: 41.0
+  protein_per_100g: 2.21
+  carbs_per_100g: 3.06
+  fat_per_100g: 2.28
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_latte_venti_semi
+  name: Starbucks Latte (Venti) with Semi-skimmed Milk
+  kcal_per_100g: 39.1
+  protein_per_100g: 2.89
+  carbs_per_100g: 4.0
+  fat_per_100g: 1.44
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_cappuccino_venti_semi
+  name: Starbucks Cappuccino (Venti) with Semi-skimmed Milk
+  kcal_per_100g: 29.9
+  protein_per_100g: 2.21
+  carbs_per_100g: 3.06
+  fat_per_100g: 1.11
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_latte_venti_skim
+  name: Starbucks Latte (Venti) with Skimmed Milk
+  kcal_per_100g: 29.8
+  protein_per_100g: 2.97
+  carbs_per_100g: 4.25
+  fat_per_100g: 0.08
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_cappuccino_venti_skim
+  name: Starbucks Cappuccino (Venti) with Skimmed Milk
+  kcal_per_100g: 22.8
+  protein_per_100g: 2.28
+  carbs_per_100g: 3.25
+  fat_per_100g: 0.07
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_latte_venti_soya
+  name: Starbucks Latte (Venti) with Soya Milk
+  kcal_per_100g: 33.1
+  protein_per_100g: 2.55
+  carbs_per_100g: 2.12
+  fat_per_100g: 1.53
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_cappuccino_venti_soya
+  name: Starbucks Cappuccino (Venti) with Soya Milk
+  kcal_per_100g: 25.4
+  protein_per_100g: 1.95
+  carbs_per_100g: 1.63
+  fat_per_100g: 1.17
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_latte_venti_oat
+  name: Starbucks Latte (Venti) with Oat Milk
+  kcal_per_100g: 51.0
+  protein_per_100g: 0.85
+  carbs_per_100g: 5.61
+  fat_per_100g: 2.55
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_cappuccino_venti_oat
+  name: Starbucks Cappuccino (Venti) with Oat Milk
+  kcal_per_100g: 39.0
+  protein_per_100g: 0.65
+  carbs_per_100g: 4.29
+  fat_per_100g: 1.95
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_latte_venti_almond
+  name: Starbucks Latte (Venti) with Almond Milk
+  kcal_per_100g: 11.0
+  protein_per_100g: 0.34
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.94
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_cappuccino_venti_almond
+  name: Starbucks Cappuccino (Venti) with Almond Milk
+  kcal_per_100g: 8.5
+  protein_per_100g: 0.26
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.72
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_latte_venti_coconut
+  name: Starbucks Latte (Venti) with Coconut Milk
+  kcal_per_100g: 23.0
+  protein_per_100g: 0.08
+  carbs_per_100g: 2.12
+  fat_per_100g: 1.53
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_cappuccino_venti_coconut
+  name: Starbucks Cappuccino (Venti) with Coconut Milk
+  kcal_per_100g: 17.6
+  protein_per_100g: 0.07
+  carbs_per_100g: 1.63
+  fat_per_100g: 1.17
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_flatwhite_venti
+  name: Starbucks Flat White (Venti)
+  kcal_per_100g: 44.1
+  protein_per_100g: 2.38
+  carbs_per_100g: 3.29
+  fat_per_100g: 2.45
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_mocha_venti
+  name: Starbucks Mocha (Venti)
+  kcal_per_100g: 78.9
+  protein_per_100g: 3.14
+  carbs_per_100g: 7.89
+  fat_per_100g: 4.16
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_flatwhite_venti_semi
+  name: Starbucks Flat White (Venti) with Semi-skimmed Milk
+  kcal_per_100g: 32.2
+  protein_per_100g: 2.38
+  carbs_per_100g: 3.29
+  fat_per_100g: 1.19
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_mocha_venti_semi
+  name: Starbucks Mocha (Venti) with Semi-skimmed Milk
+  kcal_per_100g: 64.5
+  protein_per_100g: 3.14
+  carbs_per_100g: 7.89
+  fat_per_100g: 2.63
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_flatwhite_venti_skim
+  name: Starbucks Flat White (Venti) with Skimmed Milk
+  kcal_per_100g: 24.5
+  protein_per_100g: 2.45
+  carbs_per_100g: 3.5
+  fat_per_100g: 0.07
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_mocha_venti_skim
+  name: Starbucks Mocha (Venti) with Skimmed Milk
+  kcal_per_100g: 55.1
+  protein_per_100g: 3.23
+  carbs_per_100g: 8.14
+  fat_per_100g: 1.27
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_flatwhite_venti_soya
+  name: Starbucks Flat White (Venti) with Soya Milk
+  kcal_per_100g: 27.3
+  protein_per_100g: 2.1
+  carbs_per_100g: 1.75
+  fat_per_100g: 1.26
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_mocha_venti_soya
+  name: Starbucks Mocha (Venti) with Soya Milk
+  kcal_per_100g: 58.5
+  protein_per_100g: 2.8
+  carbs_per_100g: 6.02
+  fat_per_100g: 2.71
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_flatwhite_venti_oat
+  name: Starbucks Flat White (Venti) with Oat Milk
+  kcal_per_100g: 42.0
+  protein_per_100g: 0.7
+  carbs_per_100g: 4.62
+  fat_per_100g: 2.1
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_mocha_venti_oat
+  name: Starbucks Mocha (Venti) with Oat Milk
+  kcal_per_100g: 76.4
+  protein_per_100g: 1.1
+  carbs_per_100g: 9.5
+  fat_per_100g: 3.73
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_flatwhite_venti_almond
+  name: Starbucks Flat White (Venti) with Almond Milk
+  kcal_per_100g: 9.1
+  protein_per_100g: 0.28
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.77
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_mocha_venti_almond
+  name: Starbucks Mocha (Venti) with Almond Milk
+  kcal_per_100g: 36.4
+  protein_per_100g: 0.59
+  carbs_per_100g: 3.89
+  fat_per_100g: 2.12
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_flatwhite_venti_coconut
+  name: Starbucks Flat White (Venti) with Coconut Milk
+  kcal_per_100g: 18.9
+  protein_per_100g: 0.07
+  carbs_per_100g: 1.75
+  fat_per_100g: 1.26
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 591
+- source: starbucks
+  source_id: sbx_mocha_venti_coconut
+  name: Starbucks Mocha (Venti) with Coconut Milk
+  kcal_per_100g: 48.3
+  protein_per_100g: 0.34
+  carbs_per_100g: 6.02
+  fat_per_100g: 2.71
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 591
+  serving_label: Venti (591ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 591

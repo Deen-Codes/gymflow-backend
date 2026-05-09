@@ -1,0 +1,1358 @@
+# World cuisines — Mezze (Middle Eastern) / Greek / Turkish / Spanish Tapas /
+# Mexican / Polish / Caribbean / African
+
+- source: world
+  source_id: mez_falafel_per_piece
+  name: Falafel (Per Ball, ~17g)
+  kcal_per_100g: 333
+  protein_per_100g: 13
+  carbs_per_100g: 32
+  fat_per_100g: 18
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 17
+  serving_label: item (17 g)
+  tags: mezze,vegan,vegetarian
+  portion_unit: piece
+  unit_grams: 17
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: mez_falafel_serving_3
+  name: Falafel (3 pieces)
+  kcal_per_100g: 333
+  protein_per_100g: 13
+  carbs_per_100g: 32
+  fat_per_100g: 18
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 51
+  serving_label: item (51 g)
+  tags: mezze,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 51
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: mez_falafel_serving_5
+  name: Falafel (5 pieces)
+  kcal_per_100g: 333
+  protein_per_100g: 13
+  carbs_per_100g: 32
+  fat_per_100g: 18
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 85
+  serving_label: item (85 g)
+  tags: mezze,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 85
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: mez_kibbeh_per_piece
+  name: Kibbeh (Per Piece)
+  kcal_per_100g: 220
+  protein_per_100g: 13
+  carbs_per_100g: 12
+  fat_per_100g: 13
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: mezze,middle-eastern
+  portion_unit: piece
+  unit_grams: 80
+- source: world
+  source_id: mez_baba_ganoush_per_100g
+  name: Baba Ganoush (Per 100g)
+  kcal_per_100g: 180
+  protein_per_100g: 3
+  carbs_per_100g: 6
+  fat_per_100g: 16
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: mezze,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: mez_hummus_classic_per_100g
+  name: Hummus Classic (Per 100g)
+  kcal_per_100g: 305
+  protein_per_100g: 8
+  carbs_per_100g: 13
+  fat_per_100g: 25
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: mezze,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: mez_tabouleh_per_100g
+  name: Tabouleh Salad (Per 100g)
+  kcal_per_100g: 95
+  protein_per_100g: 3
+  carbs_per_100g: 17
+  fat_per_100g: 2.5
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: mezze,vegan,vegetarian,salad
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: mez_fattoush_per_100g
+  name: Fattoush Salad (Per 100g)
+  kcal_per_100g: 95
+  protein_per_100g: 2
+  carbs_per_100g: 11
+  fat_per_100g: 5
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: mezze,vegan,vegetarian,salad
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: mez_muhammara_per_100g
+  name: Muhammara (Per 100g)
+  kcal_per_100g: 245
+  protein_per_100g: 5
+  carbs_per_100g: 13
+  fat_per_100g: 19
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: mezze,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: mez_labneh_per_100g
+  name: Labneh (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 6
+  carbs_per_100g: 5
+  fat_per_100g: 14
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: mezze,vegetarian,middle-eastern
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: world
+  source_id: mez_shawarma_chicken
+  name: Chicken Shawarma (Pita Wrap)
+  kcal_per_100g: 215
+  protein_per_100g: 16
+  carbs_per_100g: 25
+  fat_per_100g: 7
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 280
+  serving_label: item (280 g)
+  tags: mezze,middle-eastern,wrap
+  portion_unit: meal
+  unit_grams: 280
+- source: world
+  source_id: mez_shawarma_lamb
+  name: Lamb Shawarma (Pita Wrap)
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 25
+  fat_per_100g: 11
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 280
+  serving_label: item (280 g)
+  tags: mezze,middle-eastern,wrap
+  portion_unit: meal
+  unit_grams: 280
+- source: world
+  source_id: mez_kebab_doner_lamb_pita
+  name: Doner Kebab Lamb in Pita
+  kcal_per_100g: 280
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 280
+  serving_label: item (280 g)
+  tags: mezze,middle-eastern,kebab
+  portion_unit: meal
+  unit_grams: 280
+- source: world
+  source_id: mez_kofta_lamb_per_skewer
+  name: Lamb Kofta (Per Skewer)
+  kcal_per_100g: 230
+  protein_per_100g: 16
+  carbs_per_100g: 5
+  fat_per_100g: 17
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 75
+  serving_label: item (75 g)
+  tags: mezze,middle-eastern,lamb
+  portion_unit: piece
+  unit_grams: 75
+- source: world
+  source_id: greek_souvlaki_chicken_skewer
+  name: Chicken Souvlaki (Per Skewer)
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 4
+  fat_per_100g: 8
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: greek,chicken
+  portion_unit: meal
+  unit_grams: 100
+- source: world
+  source_id: greek_souvlaki_pork_skewer
+  name: Pork Souvlaki (Per Skewer)
+  kcal_per_100g: 195
+  protein_per_100g: 20
+  carbs_per_100g: 4
+  fat_per_100g: 11
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: greek,pork
+  portion_unit: meal
+  unit_grams: 100
+- source: world
+  source_id: greek_gyros_chicken_pita
+  name: Chicken Gyros in Pita
+  kcal_per_100g: 275
+  protein_per_100g: 16
+  carbs_per_100g: 28
+  fat_per_100g: 12
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 300
+  serving_label: item (300 g)
+  tags: greek,chicken,wrap
+  portion_unit: meal
+  unit_grams: 300
+- source: world
+  source_id: greek_gyros_pork_pita
+  name: Pork Gyros in Pita
+  kcal_per_100g: 290
+  protein_per_100g: 16
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 300
+  serving_label: item (300 g)
+  tags: greek,pork,wrap
+  portion_unit: meal
+  unit_grams: 300
+- source: world
+  source_id: greek_moussaka_per_serving
+  name: Moussaka (Per Serving)
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 9
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: greek,beef
+  portion_unit: meal
+  unit_grams: 350
+- source: world
+  source_id: greek_dolmades_per_piece
+  name: Dolmades (Per Roll)
+  kcal_per_100g: 120
+  protein_per_100g: 3
+  carbs_per_100g: 18
+  fat_per_100g: 4
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: greek,vegan,vegetarian
+  portion_unit: piece
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: greek_spanakopita_slice
+  name: Spanakopita (Per Slice)
+  kcal_per_100g: 285
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 18
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: greek,vegetarian
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: world
+  source_id: greek_tiropita_slice
+  name: Tiropita Cheese Pie (Per Slice)
+  kcal_per_100g: 295
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 19
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: greek,vegetarian
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: world
+  source_id: greek_horiatiki_per_serving
+  name: Greek Salad Horiatiki (Per Serving)
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 6
+  fat_per_100g: 12
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: greek,vegetarian,salad
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: world
+  source_id: greek_keftedes_per_piece
+  name: Greek Meatballs (Keftedes, Per Piece)
+  kcal_per_100g: 235
+  protein_per_100g: 17
+  carbs_per_100g: 4
+  fat_per_100g: 17
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: greek,beef
+  portion_unit: piece
+  unit_grams: 30
+- source: world
+  source_id: greek_pastitsio_per_serving
+  name: Pastitsio (Per Serving)
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: greek,beef,pasta
+  portion_unit: meal
+  unit_grams: 350
+- source: world
+  source_id: greek_baklava_per_piece
+  name: Baklava (Per Piece)
+  kcal_per_100g: 405
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 50
+  serving_label: item (50 g)
+  tags: greek,dessert,vegetarian
+  portion_unit: piece
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: world
+  source_id: greek_loukoumades_per_5
+  name: Loukoumades (5 pieces)
+  kcal_per_100g: 380
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 18
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: greek,dessert,vegetarian
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: world
+  source_id: turk_kebab_iskender
+  name: Iskender Kebab
+  kcal_per_100g: 220
+  protein_per_100g: 16
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 400
+  serving_label: item (400 g)
+  tags: turkish,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: world
+  source_id: turk_kebab_adana_skewer
+  name: Adana Kebab (Per Skewer)
+  kcal_per_100g: 245
+  protein_per_100g: 17
+  carbs_per_100g: 4
+  fat_per_100g: 18
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: turkish,lamb
+  portion_unit: meal
+  unit_grams: 100
+- source: world
+  source_id: turk_kebab_shish_chicken
+  name: Shish Kebab Chicken (Per Skewer)
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 4
+  fat_per_100g: 8
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: turkish,chicken
+  portion_unit: meal
+  unit_grams: 100
+- source: world
+  source_id: turk_kebab_kofte_skewer
+  name: Turkish Kofte Kebab (Per Skewer)
+  kcal_per_100g: 245
+  protein_per_100g: 16
+  carbs_per_100g: 5
+  fat_per_100g: 18
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: turkish,lamb
+  portion_unit: meal
+  unit_grams: 100
+- source: world
+  source_id: turk_lahmacun
+  name: Lahmacun (Turkish Pizza)
+  kcal_per_100g: 235
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 8
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 220
+  serving_label: item (220 g)
+  tags: turkish,bread
+  portion_unit: meal
+  unit_grams: 220
+- source: world
+  source_id: turk_pide_cheese
+  name: Pide Cheese (Turkish Flatbread)
+  kcal_per_100g: 280
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 13
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: turkish,bread,vegetarian
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: world
+  source_id: turk_pide_minced_lamb
+  name: Pide Minced Lamb
+  kcal_per_100g: 290
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 280
+  serving_label: item (280 g)
+  tags: turkish,bread,lamb
+  portion_unit: meal
+  unit_grams: 280
+- source: world
+  source_id: turk_manti_per_serving
+  name: Manti (Turkish Dumplings)
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 11
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: turkish,beef
+  portion_unit: meal
+  unit_grams: 250
+- source: world
+  source_id: turk_borek_cheese_slice
+  name: Borek Cheese (Per Slice)
+  kcal_per_100g: 295
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 19
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: turkish,vegetarian
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: world
+  source_id: turk_borek_meat_slice
+  name: Borek Meat (Per Slice)
+  kcal_per_100g: 305
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 20
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: turkish
+  portion_unit: meal
+  unit_grams: 100
+- source: world
+  source_id: turk_kunefe_per_serving
+  name: Künefe (Per Serving)
+  kcal_per_100g: 425
+  protein_per_100g: 8
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 150
+  serving_label: item (150 g)
+  tags: turkish,dessert,vegetarian
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: world
+  source_id: turk_baklava_pistachio_per_piece
+  name: Pistachio Baklava (Per Piece)
+  kcal_per_100g: 425
+  protein_per_100g: 6
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 50
+  serving_label: item (50 g)
+  tags: turkish,dessert,vegetarian
+  portion_unit: piece
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: world
+  source_id: tap_patatas_bravas_per_serving
+  name: Patatas Bravas (Per Serving)
+  kcal_per_100g: 195
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: spanish,tapas,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegetarian
+- source: world
+  source_id: tap_croquetas_per_piece
+  name: Croquetas (Per Piece)
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: spanish,tapas
+  portion_unit: piece
+  unit_grams: 30
+- source: world
+  source_id: tap_calamari_per_serving
+  name: Calamares (Per Serving)
+  kcal_per_100g: 235
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 13
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 150
+  serving_label: item (150 g)
+  tags: spanish,tapas
+  portion_unit: meal
+  unit_grams: 150
+- source: world
+  source_id: tap_jamon_serrano_per_50g
+  name: Jamón Serrano (Per 50g)
+  kcal_per_100g: 245
+  protein_per_100g: 35
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 50
+  serving_label: item (50 g)
+  tags: spanish,tapas
+  portion_unit: meal
+  unit_grams: 50
+- source: world
+  source_id: tap_jamon_iberico_per_50g
+  name: Jamón Ibérico (Per 50g)
+  kcal_per_100g: 285
+  protein_per_100g: 31
+  carbs_per_100g: 0
+  fat_per_100g: 17
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 50
+  serving_label: item (50 g)
+  tags: spanish,tapas
+  portion_unit: meal
+  unit_grams: 50
+- source: world
+  source_id: tap_chorizo_picante_per_30g
+  name: Chorizo Picante (Per 30g)
+  kcal_per_100g: 455
+  protein_per_100g: 22
+  carbs_per_100g: 1
+  fat_per_100g: 40
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: spanish,tapas
+  portion_unit: meal
+  unit_grams: 30
+- source: world
+  source_id: tap_tortilla_espanola_per_slice
+  name: Tortilla Española (Per Slice)
+  kcal_per_100g: 165
+  protein_per_100g: 7
+  carbs_per_100g: 14
+  fat_per_100g: 9
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: spanish,tapas,vegetarian
+  portion_unit: slice
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: world
+  source_id: tap_albondigas_per_piece
+  name: Albóndigas (Per Meatball)
+  kcal_per_100g: 235
+  protein_per_100g: 17
+  carbs_per_100g: 5
+  fat_per_100g: 17
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: spanish,tapas
+  portion_unit: piece
+  unit_grams: 30
+- source: world
+  source_id: tap_pan_con_tomate_per_serving
+  name: Pan con Tomate (Per Serving)
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 28
+  fat_per_100g: 5
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: spanish,tapas,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: tap_paella_seafood_per_serving
+  name: Paella de Mariscos (Per Serving)
+  kcal_per_100g: 165
+  protein_per_100g: 10
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: spanish,seafood
+  portion_unit: meal
+  unit_grams: 350
+- source: world
+  source_id: tap_paella_chicken_per_serving
+  name: Paella de Pollo (Per Serving)
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: spanish,chicken
+  portion_unit: meal
+  unit_grams: 350
+- source: world
+  source_id: tap_padron_peppers_per_serving
+  name: Padrón Peppers (Per Serving)
+  kcal_per_100g: 95
+  protein_per_100g: 2
+  carbs_per_100g: 8
+  fat_per_100g: 6
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: spanish,tapas,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 80
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: tap_gazpacho_per_serving
+  name: Gazpacho (Per Serving)
+  kcal_per_100g: 65
+  protein_per_100g: 2
+  carbs_per_100g: 10
+  fat_per_100g: 2.5
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: spanish,soup,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: mex_taco_beef_per_taco
+  name: Beef Taco (Per Taco)
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: mexican
+  portion_unit: piece
+  unit_grams: 80
+- source: world
+  source_id: mex_taco_chicken_per_taco
+  name: Chicken Taco (Per Taco)
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 7
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: mexican
+  portion_unit: piece
+  unit_grams: 80
+- source: world
+  source_id: mex_taco_fish_per_taco
+  name: Fish Taco (Per Taco)
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: mexican
+  portion_unit: piece
+  unit_grams: 80
+- source: world
+  source_id: mex_taco_carnitas_per_taco
+  name: Carnitas Taco (Per Taco)
+  kcal_per_100g: 220
+  protein_per_100g: 12
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: mexican
+  portion_unit: piece
+  unit_grams: 80
+- source: world
+  source_id: mex_taco_al_pastor_per_taco
+  name: Al Pastor Taco (Per Taco)
+  kcal_per_100g: 215
+  protein_per_100g: 12
+  carbs_per_100g: 18
+  fat_per_100g: 10
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: mexican
+  portion_unit: piece
+  unit_grams: 80
+- source: world
+  source_id: mex_quesadilla_chicken
+  name: Chicken Quesadilla
+  kcal_per_100g: 285
+  protein_per_100g: 16
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: mexican,chicken
+  portion_unit: meal
+  unit_grams: 250
+- source: world
+  source_id: mex_quesadilla_cheese
+  name: Cheese Quesadilla
+  kcal_per_100g: 310
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 17
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: mexican,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegetarian
+- source: world
+  source_id: mex_burrito_chicken
+  name: Chicken Burrito (Wrap)
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: mexican,wrap
+  portion_unit: meal
+  unit_grams: 350
+- source: world
+  source_id: mex_burrito_beef
+  name: Beef Burrito (Wrap)
+  kcal_per_100g: 230
+  protein_per_100g: 11
+  carbs_per_100g: 21
+  fat_per_100g: 11
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: mexican,wrap
+  portion_unit: meal
+  unit_grams: 350
+- source: world
+  source_id: mex_burrito_carnitas
+  name: Carnitas Burrito (Wrap)
+  kcal_per_100g: 235
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: mexican,wrap
+  portion_unit: meal
+  unit_grams: 350
+- source: world
+  source_id: mex_enchiladas_chicken_per_serving
+  name: Chicken Enchiladas (Per Serving)
+  kcal_per_100g: 195
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: mexican,chicken
+  portion_unit: meal
+  unit_grams: 350
+- source: world
+  source_id: mex_enchiladas_cheese_per_serving
+  name: Cheese Enchiladas (Per Serving)
+  kcal_per_100g: 235
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: mexican,vegetarian
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: world
+  source_id: mex_fajitas_chicken_per_serving
+  name: Chicken Fajitas (Per Serving)
+  kcal_per_100g: 175
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 400
+  serving_label: item (400 g)
+  tags: mexican,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: world
+  source_id: mex_fajitas_steak_per_serving
+  name: Steak Fajitas (Per Serving)
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 7
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 400
+  serving_label: item (400 g)
+  tags: mexican
+  portion_unit: meal
+  unit_grams: 400
+- source: world
+  source_id: mex_nachos_loaded_per_serving
+  name: Loaded Nachos (Per Serving)
+  kcal_per_100g: 280
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: mexican,sharing
+  portion_unit: meal
+  unit_grams: 250
+- source: world
+  source_id: mex_chimichanga_per_serving
+  name: Chimichanga
+  kcal_per_100g: 295
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: mexican,fried
+  portion_unit: meal
+  unit_grams: 350
+- source: world
+  source_id: mex_tortilla_chips_per_50g
+  name: Tortilla Chips (Per 50g)
+  kcal_per_100g: 510
+  protein_per_100g: 7
+  carbs_per_100g: 65
+  fat_per_100g: 25
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 50
+  serving_label: item (50 g)
+  tags: mexican,snack,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: mex_salsa_per_50g
+  name: Salsa Verde (Per 50g)
+  kcal_per_100g: 35
+  protein_per_100g: 1
+  carbs_per_100g: 7
+  fat_per_100g: 0
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 50
+  serving_label: item (50 g)
+  tags: mexican,sauce,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: mex_pico_de_gallo_per_50g
+  name: Pico de Gallo (Per 50g)
+  kcal_per_100g: 25
+  protein_per_100g: 1
+  carbs_per_100g: 5
+  fat_per_100g: 0
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 50
+  serving_label: item (50 g)
+  tags: mexican,salsa,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: mex_guacamole_per_50g
+  name: Guacamole (Per 50g)
+  kcal_per_100g: 155
+  protein_per_100g: 2
+  carbs_per_100g: 8
+  fat_per_100g: 13
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 50
+  serving_label: item (50 g)
+  tags: mexican,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: pol_pierogi_meat_per_piece
+  name: Pierogi Meat (Per Piece)
+  kcal_per_100g: 235
+  protein_per_100g: 9
+  carbs_per_100g: 30
+  fat_per_100g: 8
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: polish
+  portion_unit: piece
+  unit_grams: 30
+- source: world
+  source_id: pol_pierogi_potato_cheese_per_piece
+  name: Pierogi Potato & Cheese (Per Piece)
+  kcal_per_100g: 215
+  protein_per_100g: 7
+  carbs_per_100g: 30
+  fat_per_100g: 7
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: polish,vegetarian
+  portion_unit: piece
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: world
+  source_id: pol_pierogi_sauerkraut_mushroom_per_piece
+  name: Pierogi Sauerkraut & Mushroom (Per Piece)
+  kcal_per_100g: 195
+  protein_per_100g: 6
+  carbs_per_100g: 30
+  fat_per_100g: 5
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: polish,vegan,vegetarian
+  portion_unit: piece
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: pol_bigos_per_serving
+  name: Bigos (Hunter's Stew, Per Serving)
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 8
+  fat_per_100g: 8
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: polish
+  portion_unit: meal
+  unit_grams: 350
+- source: world
+  source_id: pol_kotlet_schabowy_per_piece
+  name: Kotlet Schabowy (Per Piece)
+  kcal_per_100g: 245
+  protein_per_100g: 18
+  carbs_per_100g: 12
+  fat_per_100g: 14
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 130
+  serving_label: item (130 g)
+  tags: polish,pork
+  portion_unit: piece
+  unit_grams: 130
+- source: world
+  source_id: pol_zurek_per_serving
+  name: Żurek (Sour Soup, Per Serving)
+  kcal_per_100g: 95
+  protein_per_100g: 5
+  carbs_per_100g: 7
+  fat_per_100g: 5
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 300
+  serving_label: item (300 g)
+  tags: polish,soup
+  portion_unit: meal
+  unit_grams: 300
+- source: world
+  source_id: pol_kabanos_per_30g
+  name: Kabanos Sausage (Per 30g)
+  kcal_per_100g: 365
+  protein_per_100g: 24
+  carbs_per_100g: 1
+  fat_per_100g: 30
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: polish,sausage
+  portion_unit: meal
+  unit_grams: 30
+- source: world
+  source_id: pol_paczki_per_piece
+  name: Pączki Donut (Per Piece)
+  kcal_per_100g: 290
+  protein_per_100g: 5
+  carbs_per_100g: 38
+  fat_per_100g: 13
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: polish,dessert,vegetarian
+  portion_unit: piece
+  unit_grams: 80
+  dietary_compat: vegetarian
+- source: world
+  source_id: pol_makowiec_per_slice
+  name: Makowiec Poppy Seed Roll (Per Slice)
+  kcal_per_100g: 380
+  protein_per_100g: 8
+  carbs_per_100g: 50
+  fat_per_100g: 16
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: polish,dessert,vegetarian
+  portion_unit: slice
+  unit_grams: 80
+  dietary_compat: vegetarian
+- source: world
+  source_id: crb_jerk_chicken_per_serving
+  name: Jerk Chicken (Per Serving)
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 8
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: caribbean,chicken
+  portion_unit: meal
+  unit_grams: 200
+- source: world
+  source_id: crb_rice_peas_per_serving
+  name: Rice & Peas (Per Serving)
+  kcal_per_100g: 165
+  protein_per_100g: 5
+  carbs_per_100g: 25
+  fat_per_100g: 5
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: caribbean,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: crb_jamaican_patty_beef_per_piece
+  name: Jamaican Beef Patty (Per Piece)
+  kcal_per_100g: 280
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 130
+  serving_label: item (130 g)
+  tags: caribbean,beef
+  portion_unit: piece
+  unit_grams: 130
+- source: world
+  source_id: crb_jamaican_patty_chicken_per_piece
+  name: Jamaican Chicken Patty (Per Piece)
+  kcal_per_100g: 265
+  protein_per_100g: 10
+  carbs_per_100g: 28
+  fat_per_100g: 12
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 130
+  serving_label: item (130 g)
+  tags: caribbean,chicken
+  portion_unit: piece
+  unit_grams: 130
+- source: world
+  source_id: crb_curry_goat_per_serving
+  name: Curry Goat (Per Serving)
+  kcal_per_100g: 175
+  protein_per_100g: 18
+  carbs_per_100g: 5
+  fat_per_100g: 9
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: caribbean
+  portion_unit: meal
+  unit_grams: 350
+- source: world
+  source_id: crb_oxtail_per_serving
+  name: Oxtail Stew (Per Serving)
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 5
+  fat_per_100g: 13
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: caribbean
+  portion_unit: meal
+  unit_grams: 350
+- source: world
+  source_id: crb_ackee_saltfish_per_serving
+  name: Ackee & Saltfish (Per Serving)
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 8
+  fat_per_100g: 12
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 300
+  serving_label: item (300 g)
+  tags: caribbean
+  portion_unit: meal
+  unit_grams: 300
+- source: world
+  source_id: crb_plantain_fried_per_100g
+  name: Fried Plantain (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 1
+  carbs_per_100g: 32
+  fat_per_100g: 5
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: caribbean,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: crb_dumplings_johnny_cake_per_piece
+  name: Caribbean Dumplings (Per Piece)
+  kcal_per_100g: 280
+  protein_per_100g: 6
+  carbs_per_100g: 50
+  fat_per_100g: 6
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 60
+  serving_label: item (60 g)
+  tags: caribbean,vegan,vegetarian
+  portion_unit: piece
+  unit_grams: 60
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: afr_jollof_rice_per_serving
+  name: Jollof Rice (Per Serving)
+  kcal_per_100g: 175
+  protein_per_100g: 4
+  carbs_per_100g: 30
+  fat_per_100g: 5
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 300
+  serving_label: item (300 g)
+  tags: african,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: afr_egusi_per_serving
+  name: Egusi Soup (Per Serving)
+  kcal_per_100g: 215
+  protein_per_100g: 14
+  carbs_per_100g: 8
+  fat_per_100g: 14
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 300
+  serving_label: item (300 g)
+  tags: african
+  portion_unit: meal
+  unit_grams: 300
+- source: world
+  source_id: afr_fufu_per_serving
+  name: Fufu (Per Serving)
+  kcal_per_100g: 145
+  protein_per_100g: 2
+  carbs_per_100g: 32
+  fat_per_100g: 1
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: african,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: world
+  source_id: afr_suya_per_skewer
+  name: Suya Beef Skewer (Per Skewer)
+  kcal_per_100g: 235
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 14
+  brand: Generic World Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: african,beef
+  portion_unit: piece
+  unit_grams: 100

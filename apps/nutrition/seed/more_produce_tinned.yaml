@@ -1,0 +1,1826 @@
+# More fruit variants (apple/pear/orange types, citrus halves, melons wedge, exotic fruits — durian,
+# mangosteen, rambutan, kumquat, jackfruit, starfruit, guava, persimmon, quince, currants, gooseberries),
+# More vegetable variants (artichoke, celeriac, kohlrabi, okra, radicchio, endive, watercress,
+# samphire, lotus root, bamboo shoots, water chestnuts, cassava, yam, taro, plantain),
+# Fresh herbs (basil, parsley, coriander, mint, chives, dill, tarragon, rosemary, thyme, sage,
+# oregano, lemongrass, kaffir lime),
+# More cereal types (porridge oats varieties, granola/muesli homemade),
+# Processed (haggis, black/white pudding, lorne sausage, polony, spam, luncheon meat),
+# Tinned items (beans/lentils/tomatoes/passata/tuna/fruit in juice/pumpkin/peas/carrots/potatoes),
+# Pickles (gherkins, red cabbage, silverskin, pickled eggs, jalapeños, beetroot, olives, capers, sauerkraut)
+
+- source: produce
+  source_id: fruit_apples_braeburn_large
+  name: Apple Braeburn (Large)
+  kcal_per_100g: 52
+  protein_per_100g: 0.3
+  carbs_per_100g: 14
+  fat_per_100g: 0.2
+  brand: fruit
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_apples_braeburn_small
+  name: Apple Braeburn (Small)
+  kcal_per_100g: 52
+  protein_per_100g: 0.3
+  carbs_per_100g: 14
+  fat_per_100g: 0.2
+  brand: fruit
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 110
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_apples_pink_lady_small
+  name: Apple Pink Lady (Small)
+  kcal_per_100g: 56
+  protein_per_100g: 0.3
+  carbs_per_100g: 14
+  fat_per_100g: 0.2
+  brand: fruit
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 110
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_apples_pink_lady_large
+  name: Apple Pink Lady (Large)
+  kcal_per_100g: 56
+  protein_per_100g: 0.3
+  carbs_per_100g: 14
+  fat_per_100g: 0.2
+  brand: fruit
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_apples_gala_small
+  name: Apple Gala (Small)
+  kcal_per_100g: 52
+  protein_per_100g: 0.3
+  carbs_per_100g: 14
+  fat_per_100g: 0.2
+  brand: fruit
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 110
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_apples_gala_large
+  name: Apple Gala (Large)
+  kcal_per_100g: 52
+  protein_per_100g: 0.3
+  carbs_per_100g: 14
+  fat_per_100g: 0.2
+  brand: fruit
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_apples_cox
+  name: Apple Cox (Medium)
+  kcal_per_100g: 50
+  protein_per_100g: 0.4
+  carbs_per_100g: 13
+  fat_per_100g: 0.2
+  brand: fruit
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 130
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_pears_packham
+  name: Pear Packham (Medium)
+  kcal_per_100g: 57
+  protein_per_100g: 0.4
+  carbs_per_100g: 15
+  fat_per_100g: 0.1
+  brand: fruit
+  region_codes: GB
+  serving_grams: 180
+  serving_label: 180 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 180
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_pears_anjou
+  name: Pear Anjou (Medium)
+  kcal_per_100g: 57
+  protein_per_100g: 0.4
+  carbs_per_100g: 15
+  fat_per_100g: 0.1
+  brand: fruit
+  region_codes: GB
+  serving_grams: 180
+  serving_label: 180 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 180
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_pears_concorde
+  name: Pear Concorde (Medium)
+  kcal_per_100g: 57
+  protein_per_100g: 0.4
+  carbs_per_100g: 15
+  fat_per_100g: 0.1
+  brand: fruit
+  region_codes: GB
+  serving_grams: 180
+  serving_label: 180 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 180
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_oranges_navel_med
+  name: Orange Navel (Medium)
+  kcal_per_100g: 47
+  protein_per_100g: 0.9
+  carbs_per_100g: 12
+  fat_per_100g: 0.1
+  brand: fruit
+  region_codes: GB
+  serving_grams: 154
+  serving_label: 154 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 154
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_oranges_blood_med
+  name: Orange Blood (Medium)
+  kcal_per_100g: 49
+  protein_per_100g: 0.9
+  carbs_per_100g: 12
+  fat_per_100g: 0.1
+  brand: fruit
+  region_codes: GB
+  serving_grams: 154
+  serving_label: 154 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 154
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_oranges_valencia_med
+  name: Orange Valencia (Medium)
+  kcal_per_100g: 47
+  protein_per_100g: 0.9
+  carbs_per_100g: 12
+  fat_per_100g: 0.1
+  brand: fruit
+  region_codes: GB
+  serving_grams: 154
+  serving_label: 154 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 154
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_grapefruit_pink_half
+  name: Grapefruit Pink (Half)
+  kcal_per_100g: 32
+  protein_per_100g: 0.6
+  carbs_per_100g: 8
+  fat_per_100g: 0.1
+  brand: fruit
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_grapefruit_white_half
+  name: Grapefruit White (Half)
+  kcal_per_100g: 30
+  protein_per_100g: 0.6
+  carbs_per_100g: 8
+  fat_per_100g: 0.1
+  brand: fruit
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_grapefruit_ruby_red
+  name: Grapefruit Ruby Red (Half)
+  kcal_per_100g: 32
+  protein_per_100g: 0.6
+  carbs_per_100g: 8
+  fat_per_100g: 0.1
+  brand: fruit
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_persimmon_per_unit
+  name: Persimmon (Medium)
+  kcal_per_100g: 70
+  protein_per_100g: 0.6
+  carbs_per_100g: 19
+  fat_per_100g: 0.2
+  brand: fruit
+  region_codes: GB
+  serving_grams: 168
+  serving_label: 168 g
+  tags: fruit
+  portion_unit: piece
+  unit_grams: 168
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_quince_per_unit
+  name: Quince (Medium)
+  kcal_per_100g: 57
+  protein_per_100g: 0.4
+  carbs_per_100g: 15
+  fat_per_100g: 0.1
+  brand: fruit
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: fruit
+  portion_unit: piece
+  unit_grams: 90
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_lychee_per_unit
+  name: Lychee (Per Lychee)
+  kcal_per_100g: 66
+  protein_per_100g: 0.8
+  carbs_per_100g: 17
+  fat_per_100g: 0.4
+  brand: fruit
+  region_codes: GB
+  serving_grams: 10
+  serving_label: 10 g
+  tags: fruit
+  portion_unit: piece
+  unit_grams: 10
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_dragon_fruit_red_per_unit
+  name: Dragon Fruit Red (Per Unit)
+  kcal_per_100g: 60
+  protein_per_100g: 1.2
+  carbs_per_100g: 13
+  fat_per_100g: 0.4
+  brand: fruit
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: fruit
+  portion_unit: piece
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_dragon_fruit_white_per_unit
+  name: Dragon Fruit White (Per Unit)
+  kcal_per_100g: 60
+  protein_per_100g: 1.2
+  carbs_per_100g: 13
+  fat_per_100g: 0.4
+  brand: fruit
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: fruit
+  portion_unit: piece
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_pomegranate_seeds_per_50g
+  name: Pomegranate Seeds (Per 50g)
+  kcal_per_100g: 83
+  protein_per_100g: 1.7
+  carbs_per_100g: 19
+  fat_per_100g: 1.2
+  brand: fruit
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: fruit
+  portion_unit: scoop
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_starfruit_per_unit
+  name: Starfruit (Per Unit)
+  kcal_per_100g: 31
+  protein_per_100g: 1
+  carbs_per_100g: 7
+  fat_per_100g: 0.3
+  brand: fruit
+  region_codes: GB
+  serving_grams: 91
+  serving_label: 91 g
+  tags: fruit
+  portion_unit: piece
+  unit_grams: 91
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_guava_per_unit
+  name: Guava (Per Unit)
+  kcal_per_100g: 68
+  protein_per_100g: 2.6
+  carbs_per_100g: 14
+  fat_per_100g: 1
+  brand: fruit
+  region_codes: GB
+  serving_grams: 55
+  serving_label: 55 g
+  tags: fruit
+  portion_unit: piece
+  unit_grams: 55
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_papaya_per_half
+  name: Papaya (Half)
+  kcal_per_100g: 43
+  protein_per_100g: 0.5
+  carbs_per_100g: 11
+  fat_per_100g: 0.3
+  brand: fruit
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_jackfruit_fresh_per_100g
+  name: Jackfruit Fresh (Per 100g)
+  kcal_per_100g: 95
+  protein_per_100g: 1.7
+  carbs_per_100g: 23
+  fat_per_100g: 0.6
+  brand: fruit
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_durian_per_100g
+  name: Durian (Per 100g)
+  kcal_per_100g: 147
+  protein_per_100g: 1.5
+  carbs_per_100g: 27
+  fat_per_100g: 5.3
+  brand: fruit
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_mangosteen_per_unit
+  name: Mangosteen (Per Unit)
+  kcal_per_100g: 73
+  protein_per_100g: 0.4
+  carbs_per_100g: 18
+  fat_per_100g: 0.6
+  brand: fruit
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: fruit
+  portion_unit: piece
+  unit_grams: 80
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_rambutan_per_unit
+  name: Rambutan (Per Unit)
+  kcal_per_100g: 82
+  protein_per_100g: 0.7
+  carbs_per_100g: 21
+  fat_per_100g: 0.2
+  brand: fruit
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: fruit
+  portion_unit: piece
+  unit_grams: 25
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_kumquat_per_unit
+  name: Kumquat (Per Unit)
+  kcal_per_100g: 71
+  protein_per_100g: 1.9
+  carbs_per_100g: 16
+  fat_per_100g: 0.9
+  brand: fruit
+  region_codes: GB
+  serving_grams: 19
+  serving_label: 19 g
+  tags: fruit
+  portion_unit: piece
+  unit_grams: 19
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_blackberries_per_100g_v2
+  name: Blackberries Fresh (Per 100g)
+  kcal_per_100g: 43
+  protein_per_100g: 1.4
+  carbs_per_100g: 10
+  fat_per_100g: 0.5
+  brand: fruit
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_redcurrants_per_100g
+  name: Redcurrants (Per 100g)
+  kcal_per_100g: 56
+  protein_per_100g: 1.4
+  carbs_per_100g: 14
+  fat_per_100g: 0.2
+  brand: fruit
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_gooseberries_per_100g
+  name: Gooseberries (Per 100g)
+  kcal_per_100g: 44
+  protein_per_100g: 0.9
+  carbs_per_100g: 10
+  fat_per_100g: 0.6
+  brand: fruit
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_loganberries_per_100g
+  name: Loganberries (Per 100g)
+  kcal_per_100g: 55
+  protein_per_100g: 1.5
+  carbs_per_100g: 13
+  fat_per_100g: 0.5
+  brand: fruit
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_cantaloupe_wedge
+  name: Cantaloupe Wedge (Per Wedge)
+  kcal_per_100g: 34
+  protein_per_100g: 0.8
+  carbs_per_100g: 8
+  fat_per_100g: 0.2
+  brand: fruit
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: fruit
+  portion_unit: slice
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_honeydew_wedge
+  name: Honeydew Melon Wedge (Per Wedge)
+  kcal_per_100g: 36
+  protein_per_100g: 0.5
+  carbs_per_100g: 9
+  fat_per_100g: 0.1
+  brand: fruit
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: fruit
+  portion_unit: slice
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_galia_melon_wedge
+  name: Galia Melon Wedge
+  kcal_per_100g: 34
+  protein_per_100g: 0.6
+  carbs_per_100g: 8
+  fat_per_100g: 0.2
+  brand: fruit
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: fruit
+  portion_unit: slice
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_watermelon_per_slice_v2
+  name: Watermelon (Slice ~280g)
+  kcal_per_100g: 30
+  protein_per_100g: 0.6
+  carbs_per_100g: 8
+  fat_per_100g: 0.2
+  brand: fruit
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: fruit
+  portion_unit: slice
+  unit_grams: 280
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: fruit_pineapple_chunks_100g
+  name: Pineapple Chunks (Per 100g)
+  kcal_per_100g: 50
+  protein_per_100g: 0.5
+  carbs_per_100g: 13
+  fat_per_100g: 0.1
+  brand: fruit
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fruit
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_artichoke_heart_per_100g
+  name: Artichoke Hearts (Per 100g)
+  kcal_per_100g: 47
+  protein_per_100g: 3.3
+  carbs_per_100g: 11
+  fat_per_100g: 0.2
+  brand: veg
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_artichoke_jerusalem_per_100g
+  name: Jerusalem Artichoke (Per 100g)
+  kcal_per_100g: 73
+  protein_per_100g: 2
+  carbs_per_100g: 17
+  fat_per_100g: 0.01
+  brand: veg
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_celeriac_per_100g
+  name: Celeriac (Per 100g)
+  kcal_per_100g: 42
+  protein_per_100g: 1.5
+  carbs_per_100g: 9
+  fat_per_100g: 0.3
+  brand: veg
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_kohlrabi_per_100g
+  name: Kohlrabi (Per 100g)
+  kcal_per_100g: 27
+  protein_per_100g: 1.7
+  carbs_per_100g: 6
+  fat_per_100g: 0.1
+  brand: veg
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_okra_per_100g
+  name: Okra (Per 100g)
+  kcal_per_100g: 33
+  protein_per_100g: 1.9
+  carbs_per_100g: 7
+  fat_per_100g: 0.2
+  brand: veg
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_radicchio_per_100g
+  name: Radicchio (Per 100g)
+  kcal_per_100g: 23
+  protein_per_100g: 1.4
+  carbs_per_100g: 4
+  fat_per_100g: 0.2
+  brand: veg
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_endive_per_100g
+  name: Endive (Per 100g)
+  kcal_per_100g: 17
+  protein_per_100g: 1.3
+  carbs_per_100g: 3
+  fat_per_100g: 0.2
+  brand: veg
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_chicory_per_100g
+  name: Chicory (Per 100g)
+  kcal_per_100g: 17
+  protein_per_100g: 1.3
+  carbs_per_100g: 3
+  fat_per_100g: 0.2
+  brand: veg
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_watercress_per_100g
+  name: Watercress (Per 100g)
+  kcal_per_100g: 11
+  protein_per_100g: 2.3
+  carbs_per_100g: 1
+  fat_per_100g: 0.1
+  brand: veg
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_lambs_lettuce_per_100g
+  name: Lamb's Lettuce (Per 100g)
+  kcal_per_100g: 21
+  protein_per_100g: 2
+  carbs_per_100g: 4
+  fat_per_100g: 0.4
+  brand: veg
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_samphire_per_100g
+  name: Samphire (Per 100g)
+  kcal_per_100g: 25
+  protein_per_100g: 2
+  carbs_per_100g: 4
+  fat_per_100g: 0.4
+  brand: veg
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_seaweed_nori_per_5g
+  name: Nori Seaweed (Per Sheet ~3g)
+  kcal_per_100g: 35
+  protein_per_100g: 6
+  carbs_per_100g: 5
+  fat_per_100g: 0.3
+  brand: veg
+  region_codes: GB
+  serving_grams: 3
+  serving_label: 3 g
+  tags: veg
+  portion_unit: tsp
+  unit_grams: 3
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_seaweed_wakame_per_10g
+  name: Wakame Seaweed Dried (Per 10g)
+  kcal_per_100g: 45
+  protein_per_100g: 3
+  carbs_per_100g: 9
+  fat_per_100g: 0.6
+  brand: veg
+  region_codes: GB
+  serving_grams: 10
+  serving_label: 10 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 10
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_lotus_root_per_100g
+  name: Lotus Root (Per 100g)
+  kcal_per_100g: 74
+  protein_per_100g: 2.6
+  carbs_per_100g: 17
+  fat_per_100g: 0.1
+  brand: veg
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_bamboo_shoots_canned_100g
+  name: Bamboo Shoots Canned (Per 100g)
+  kcal_per_100g: 19
+  protein_per_100g: 1.8
+  carbs_per_100g: 3
+  fat_per_100g: 0.4
+  brand: veg
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_water_chestnuts_canned_100g
+  name: Water Chestnuts Canned (Per 100g)
+  kcal_per_100g: 50
+  protein_per_100g: 0.9
+  carbs_per_100g: 11
+  fat_per_100g: 0.1
+  brand: veg
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_cassava_per_100g
+  name: Cassava Cooked (Per 100g)
+  kcal_per_100g: 160
+  protein_per_100g: 1.4
+  carbs_per_100g: 38
+  fat_per_100g: 0.3
+  brand: veg
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_yam_per_100g
+  name: Yam Cooked (Per 100g)
+  kcal_per_100g: 116
+  protein_per_100g: 1.5
+  carbs_per_100g: 27
+  fat_per_100g: 0.2
+  brand: veg
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_taro_per_100g
+  name: Taro Cooked (Per 100g)
+  kcal_per_100g: 142
+  protein_per_100g: 0.5
+  carbs_per_100g: 35
+  fat_per_100g: 0.1
+  brand: veg
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_plantain_raw_per_100g
+  name: Plantain Raw (Per 100g)
+  kcal_per_100g: 122
+  protein_per_100g: 1.3
+  carbs_per_100g: 32
+  fat_per_100g: 0.4
+  brand: veg
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: veg_plantain_boiled_100g
+  name: Plantain Boiled (Per 100g)
+  kcal_per_100g: 116
+  protein_per_100g: 0.8
+  carbs_per_100g: 31
+  fat_per_100g: 0.2
+  brand: veg
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: veg
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: herb_basil_fresh_per_5g
+  name: Basil Fresh (Per 5g)
+  kcal_per_100g: 23
+  protein_per_100g: 3
+  carbs_per_100g: 3
+  fat_per_100g: 0.6
+  brand: herb
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: herb
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: herb_parsley_flat_per_5g
+  name: Parsley Flat-Leaf (Per 5g)
+  kcal_per_100g: 36
+  protein_per_100g: 3
+  carbs_per_100g: 6
+  fat_per_100g: 0.8
+  brand: herb
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: herb
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: herb_parsley_curly_per_5g
+  name: Parsley Curly (Per 5g)
+  kcal_per_100g: 36
+  protein_per_100g: 3
+  carbs_per_100g: 6
+  fat_per_100g: 0.8
+  brand: herb
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: herb
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: herb_coriander_per_5g
+  name: Coriander Fresh (Per 5g)
+  kcal_per_100g: 23
+  protein_per_100g: 2
+  carbs_per_100g: 4
+  fat_per_100g: 0.5
+  brand: herb
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: herb
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: herb_mint_fresh_per_5g
+  name: Mint Fresh (Per 5g)
+  kcal_per_100g: 70
+  protein_per_100g: 4
+  carbs_per_100g: 15
+  fat_per_100g: 0.9
+  brand: herb
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: herb
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: herb_chives_per_5g
+  name: Chives Fresh (Per 5g)
+  kcal_per_100g: 30
+  protein_per_100g: 3
+  carbs_per_100g: 4
+  fat_per_100g: 0.7
+  brand: herb
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: herb
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: herb_dill_fresh_per_5g
+  name: Dill Fresh (Per 5g)
+  kcal_per_100g: 43
+  protein_per_100g: 3
+  carbs_per_100g: 7
+  fat_per_100g: 1.1
+  brand: herb
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: herb
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: herb_tarragon_fresh_per_5g
+  name: Tarragon Fresh (Per 5g)
+  kcal_per_100g: 40
+  protein_per_100g: 3
+  carbs_per_100g: 6
+  fat_per_100g: 0.9
+  brand: herb
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: herb
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: herb_rosemary_fresh_per_5g
+  name: Rosemary Fresh (Per 5g)
+  kcal_per_100g: 131
+  protein_per_100g: 3
+  carbs_per_100g: 21
+  fat_per_100g: 5.9
+  brand: herb
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: herb
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: herb_thyme_fresh_per_5g
+  name: Thyme Fresh (Per 5g)
+  kcal_per_100g: 101
+  protein_per_100g: 6
+  carbs_per_100g: 24
+  fat_per_100g: 1.7
+  brand: herb
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: herb
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: herb_sage_fresh_per_5g
+  name: Sage Fresh (Per 5g)
+  kcal_per_100g: 119
+  protein_per_100g: 4
+  carbs_per_100g: 24
+  fat_per_100g: 4.6
+  brand: herb
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: herb
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: herb_oregano_fresh_per_5g
+  name: Oregano Fresh (Per 5g)
+  kcal_per_100g: 75
+  protein_per_100g: 5
+  carbs_per_100g: 15
+  fat_per_100g: 4.3
+  brand: herb
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: herb
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: herb_lemongrass_per_5g
+  name: Lemongrass Fresh (Per Stalk 5g)
+  kcal_per_100g: 99
+  protein_per_100g: 1.8
+  carbs_per_100g: 25
+  fat_per_100g: 0.5
+  brand: herb
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: herb
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: produce
+  source_id: herb_kaffir_lime_leaf
+  name: Kaffir Lime Leaf (Per Leaf)
+  kcal_per_100g: 30
+  protein_per_100g: 1
+  carbs_per_100g: 7
+  fat_per_100g: 0.3
+  brand: herb
+  region_codes: GB
+  serving_grams: 1
+  serving_label: 1 g
+  tags: herb
+  portion_unit: meal
+  unit_grams: 1
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: brek_cereal_oat_so_simple_per_27g
+  name: Oat So Simple Original (Per 27g sachet, dry)
+  kcal_per_100g: 358
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 7
+  brand: Quaker
+  region_codes: GB
+  serving_grams: 27
+  serving_label: 27 g
+  tags: Quaker
+  portion_unit: scoop
+  unit_grams: 27
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: brek_cereal_porridge_oats_per_40g
+  name: Generic Porridge Oats (Per 40g, dry)
+  kcal_per_100g: 372
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 8
+  brand: Generic
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: Generic
+  portion_unit: piece
+  unit_grams: 40
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: brek_cereal_jumbo_oats_per_40g
+  name: Jumbo Oats (Per 40g, dry)
+  kcal_per_100g: 372
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 8
+  brand: Generic
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: Generic
+  portion_unit: piece
+  unit_grams: 40
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: brek_cereal_steel_cut_oats_per_40g
+  name: Steel Cut Oats (Per 40g, dry)
+  kcal_per_100g: 372
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 8
+  brand: Generic
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: Generic
+  portion_unit: piece
+  unit_grams: 40
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: brek_cereal_quick_oats_per_40g
+  name: Quick Oats (Per 40g, dry)
+  kcal_per_100g: 372
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 8
+  brand: Generic
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: Generic
+  portion_unit: piece
+  unit_grams: 40
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: brek_cereal_granola_homemade_per_50g
+  name: Granola Homemade (Per 50g)
+  kcal_per_100g: 425
+  protein_per_100g: 9
+  carbs_per_100g: 60
+  fat_per_100g: 17
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: Generic
+  portion_unit: scoop
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: brek_cereal_muesli_homemade_per_50g
+  name: Muesli Homemade (Per 50g)
+  kcal_per_100g: 360
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 7
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: Generic
+  portion_unit: scoop
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: brek_cereal_honey_oats_per_40g
+  name: Honey Roasted Oats (Per 40g)
+  kcal_per_100g: 405
+  protein_per_100g: 9
+  carbs_per_100g: 65
+  fat_per_100g: 11
+  brand: Generic
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: Generic
+  portion_unit: piece
+  unit_grams: 40
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: processed_chicken_nugget_homemade_4
+  name: Chicken Nuggets Homemade (Per 4)
+  kcal_per_100g: 230
+  protein_per_100g: 15
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: Homemade
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: processed_chicken_goujon_per_unit
+  name: Chicken Goujon (Per Goujon)
+  kcal_per_100g: 230
+  protein_per_100g: 18
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: Generic
+  portion_unit: piece
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: processed_fish_finger_per_unit
+  name: Fish Finger (Per Finger)
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  brand: Generic
+  region_codes: GB
+  serving_grams: 28
+  serving_label: 28 g
+  tags: Generic
+  portion_unit: piece
+  unit_grams: 28
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: processed_chicken_kiev_per_unit_v2
+  name: Chicken Kiev (Per Kiev)
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 14
+  brand: Generic
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: Generic
+  portion_unit: piece
+  unit_grams: 130
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: processed_breaded_mushroom_per_unit
+  name: Breaded Mushroom (Per Mushroom)
+  kcal_per_100g: 245
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: Generic
+  portion_unit: piece
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: processed_breaded_brie_per_unit
+  name: Breaded Brie Wedge (Per Wedge)
+  kcal_per_100g: 285
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 18
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: Generic
+  portion_unit: piece
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: processed_haggis_per_100g
+  name: Haggis (Per 100g)
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 17
+  fat_per_100g: 16
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: Generic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: processed_black_pudding_per_50g
+  name: Black Pudding (Per 50g)
+  kcal_per_100g: 305
+  protein_per_100g: 13
+  carbs_per_100g: 11
+  fat_per_100g: 22
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: Generic
+  portion_unit: scoop
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: processed_white_pudding_per_50g
+  name: White Pudding (Per 50g)
+  kcal_per_100g: 280
+  protein_per_100g: 7
+  carbs_per_100g: 18
+  fat_per_100g: 19
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: Generic
+  portion_unit: scoop
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: processed_lornes_sausage_per_100g
+  name: Lorne's Sliced Sausage (Per 100g)
+  kcal_per_100g: 285
+  protein_per_100g: 14
+  carbs_per_100g: 11
+  fat_per_100g: 22
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: Generic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: processed_polony_per_30g
+  name: Polony (Per 30g)
+  kcal_per_100g: 240
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 17
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: Generic
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: processed_corned_beef_can_per_50g
+  name: Corned Beef Canned (Per 50g)
+  kcal_per_100g: 250
+  protein_per_100g: 25
+  carbs_per_100g: 1
+  fat_per_100g: 15
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: Generic
+  portion_unit: scoop
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: processed_spam_per_50g
+  name: Spam (Per 50g)
+  kcal_per_100g: 305
+  protein_per_100g: 13
+  carbs_per_100g: 1
+  fat_per_100g: 28
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: Generic
+  portion_unit: scoop
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: processed_luncheon_meat_per_50g
+  name: Luncheon Meat (Per 50g)
+  kcal_per_100g: 295
+  protein_per_100g: 12
+  carbs_per_100g: 4
+  fat_per_100g: 25
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: Generic
+  portion_unit: scoop
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: tinned_baked_beans_generic_400g
+  name: Baked Beans Generic (Per 100g)
+  kcal_per_100g: 75
+  protein_per_100g: 4.7
+  carbs_per_100g: 13
+  fat_per_100g: 0.2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: Generic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: tinned_kidney_beans_400g_drained
+  name: Kidney Beans Tinned Drained (Per 100g)
+  kcal_per_100g: 108
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: Generic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: tinned_lentils_per_100g_drained
+  name: Lentils Tinned (Per 100g)
+  kcal_per_100g: 116
+  protein_per_100g: 9
+  carbs_per_100g: 20
+  fat_per_100g: 0.4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: Generic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: tinned_passata_generic_per_100g
+  name: Passata (Per 100g)
+  kcal_per_100g: 30
+  protein_per_100g: 1.2
+  carbs_per_100g: 5
+  fat_per_100g: 0.3
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: Generic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: tinned_tuna_brine_generic_80g
+  name: Tuna in Brine (Per 80g)
+  kcal_per_100g: 110
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: Generic
+  portion_unit: meal
+  unit_grams: 80
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: tinned_pineapple_in_juice_per_100g
+  name: Pineapple in Juice (Per 100g)
+  kcal_per_100g: 60
+  protein_per_100g: 0.5
+  carbs_per_100g: 14
+  fat_per_100g: 0.1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: Generic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: tinned_peaches_in_juice_per_100g
+  name: Peaches in Juice (Per 100g)
+  kcal_per_100g: 50
+  protein_per_100g: 0.5
+  carbs_per_100g: 11
+  fat_per_100g: 0.1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: Generic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: tinned_pears_in_juice_per_100g
+  name: Pears in Juice (Per 100g)
+  kcal_per_100g: 50
+  protein_per_100g: 0.4
+  carbs_per_100g: 12
+  fat_per_100g: 0.1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: Generic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: tinned_mandarins_in_juice_per_100g
+  name: Mandarins in Juice (Per 100g)
+  kcal_per_100g: 45
+  protein_per_100g: 0.7
+  carbs_per_100g: 11
+  fat_per_100g: 0.1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: Generic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: tinned_apricots_in_juice_per_100g
+  name: Apricots in Juice (Per 100g)
+  kcal_per_100g: 50
+  protein_per_100g: 0.6
+  carbs_per_100g: 11
+  fat_per_100g: 0.1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: Generic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: tinned_pumpkin_per_100g
+  name: Pumpkin Puree Tinned (Per 100g)
+  kcal_per_100g: 35
+  protein_per_100g: 1.1
+  carbs_per_100g: 8
+  fat_per_100g: 0.3
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: Generic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: tinned_sweetcorn_per_100g
+  name: Sweetcorn Tinned (Per 100g)
+  kcal_per_100g: 86
+  protein_per_100g: 3.2
+  carbs_per_100g: 19
+  fat_per_100g: 1.2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: Generic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: tinned_garden_peas_per_100g
+  name: Garden Peas Tinned (Per 100g)
+  kcal_per_100g: 80
+  protein_per_100g: 5
+  carbs_per_100g: 14
+  fat_per_100g: 0.4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: Generic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: tinned_carrots_per_100g
+  name: Carrots Tinned (Per 100g)
+  kcal_per_100g: 35
+  protein_per_100g: 0.9
+  carbs_per_100g: 7
+  fat_per_100g: 0.2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: Generic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: tinned_new_potatoes_per_100g
+  name: New Potatoes Tinned (Per 100g)
+  kcal_per_100g: 80
+  protein_per_100g: 1.7
+  carbs_per_100g: 17
+  fat_per_100g: 0.1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: Generic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: pickle_gherkins_jar_per_30g
+  name: Gherkins Pickled (Per 30g)
+  kcal_per_100g: 12
+  protein_per_100g: 0.4
+  carbs_per_100g: 3
+  fat_per_100g: 0.1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: Generic
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: pickle_red_cabbage_per_30g
+  name: Pickled Red Cabbage (Per 30g)
+  kcal_per_100g: 30
+  protein_per_100g: 0.5
+  carbs_per_100g: 7
+  fat_per_100g: 0.1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: Generic
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: pickle_silverskin_onions_per_30g
+  name: Silverskin Onions (Per 30g)
+  kcal_per_100g: 30
+  protein_per_100g: 0.5
+  carbs_per_100g: 7
+  fat_per_100g: 0.1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: Generic
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: pickle_pickled_eggs_per_egg
+  name: Pickled Egg (Per Egg)
+  kcal_per_100g: 145
+  protein_per_100g: 13
+  carbs_per_100g: 1
+  fat_per_100g: 10
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: Generic
+  portion_unit: piece
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: pickle_pickled_jalapenos_per_30g
+  name: Pickled Jalapeños (Per 30g)
+  kcal_per_100g: 25
+  protein_per_100g: 1
+  carbs_per_100g: 5
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: Generic
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: pickle_pickled_beetroot_per_50g
+  name: Pickled Beetroot (Per 50g)
+  kcal_per_100g: 50
+  protein_per_100g: 1
+  carbs_per_100g: 11
+  fat_per_100g: 0.2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: Generic
+  portion_unit: scoop
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: pickle_pickled_olives_green_per_30g
+  name: Pickled Green Olives (Per 30g)
+  kcal_per_100g: 145
+  protein_per_100g: 1
+  carbs_per_100g: 4
+  fat_per_100g: 15
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: Generic
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: pickle_pickled_olives_kalamata_30g
+  name: Pickled Kalamata Olives (Per 30g)
+  kcal_per_100g: 155
+  protein_per_100g: 1
+  carbs_per_100g: 1
+  fat_per_100g: 16
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: Generic
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: pickle_capers_per_15g
+  name: Capers (Per 15g)
+  kcal_per_100g: 25
+  protein_per_100g: 2
+  carbs_per_100g: 5
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: Generic
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: pickle_sauerkraut_per_50g
+  name: Sauerkraut (Per 50g)
+  kcal_per_100g: 20
+  protein_per_100g: 1
+  carbs_per_100g: 4
+  fat_per_100g: 0.2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: Generic
+  portion_unit: scoop
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian

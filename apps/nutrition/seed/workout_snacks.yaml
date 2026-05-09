@@ -1,0 +1,267 @@
+# Workout & Healthy Snacks — popular tracked snack combos
+# Banana+PB, yogurt+fruit, cottage cheese, rice cakes, nuts, etc.
+
+- source: homemade
+  source_id: banana_pb_slices
+  name: Banana with Peanut Butter
+  kcal_per_100g: 180
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 150
+  serving_label: snack (150 g)
+  tags: snack,fruit,peanut-butter
+  portion_unit: meal
+  unit_grams: 150
+- source: homemade
+  source_id: apple_almond_butter
+  name: Apple with Almond Butter
+  kcal_per_100g: 125
+  protein_per_100g: 3
+  carbs_per_100g: 17
+  fat_per_100g: 6
+  serving_grams: 170
+  serving_label: snack (170 g)
+  tags: snack,fruit,nut-butter
+  portion_unit: meal
+  unit_grams: 170
+- source: homemade
+  source_id: rice_cakes_pb
+  name: Rice Cakes with Peanut Butter
+  kcal_per_100g: 450
+  protein_per_100g: 14
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  serving_grams: 40
+  serving_label: snack (40 g)
+  tags: snack,rice-cake,peanut-butter
+  portion_unit: meal
+  unit_grams: 40
+- source: homemade
+  source_id: rice_cakes_pb_banana
+  name: Rice Cakes, Peanut Butter & Banana
+  kcal_per_100g: 280
+  protein_per_100g: 9
+  carbs_per_100g: 35
+  fat_per_100g: 12
+  serving_grams: 80
+  serving_label: snack (80 g)
+  tags: snack,rice-cake,banana,peanut-butter
+  portion_unit: meal
+  unit_grams: 80
+- source: homemade
+  source_id: greek_yogurt_honey
+  name: Greek Yogurt with Honey
+  kcal_per_100g: 105
+  protein_per_100g: 8
+  carbs_per_100g: 14
+  fat_per_100g: 1.5
+  serving_grams: 170
+  serving_label: pot (170 g)
+  tags: snack,yogurt,greek
+  portion_unit: meal
+  unit_grams: 170
+- source: homemade
+  source_id: greek_yogurt_berries
+  name: Greek Yogurt with Berries
+  kcal_per_100g: 85
+  protein_per_100g: 8
+  carbs_per_100g: 9
+  fat_per_100g: 1
+  serving_grams: 170
+  serving_label: pot (170 g)
+  tags: snack,yogurt,greek,fruit
+  portion_unit: meal
+  unit_grams: 170
+- source: homemade
+  source_id: greek_yogurt_granola
+  name: Greek Yogurt with Granola
+  kcal_per_100g: 155
+  protein_per_100g: 7
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  serving_grams: 200
+  serving_label: pot (200 g)
+  tags: snack,yogurt,greek,granola
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: cottage_cheese_pineapple
+  name: Cottage Cheese with Pineapple
+  kcal_per_100g: 90
+  protein_per_100g: 9
+  carbs_per_100g: 8
+  fat_per_100g: 2.5
+  serving_grams: 200
+  serving_label: pot (200 g)
+  tags: snack,cottage-cheese,fruit
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: cottage_cheese_berries
+  name: Cottage Cheese with Berries
+  kcal_per_100g: 80
+  protein_per_100g: 10
+  carbs_per_100g: 5
+  fat_per_100g: 2.5
+  serving_grams: 200
+  serving_label: pot (200 g)
+  tags: snack,cottage-cheese,fruit
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: tuna_crackers
+  name: Tuna with Crackers
+  kcal_per_100g: 215
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  serving_grams: 120
+  serving_label: snack (120 g)
+  tags: snack,tuna,crackers
+  portion_unit: meal
+  unit_grams: 120
+- source: homemade
+  source_id: boiled_eggs_pair
+  name: Hard-Boiled Eggs (2)
+  kcal_per_100g: 155
+  protein_per_100g: 13
+  carbs_per_100g: 1
+  fat_per_100g: 11
+  serving_grams: 100
+  serving_label: 2 eggs (100 g)
+  tags: snack,eggs,protein
+  portion_unit: meal
+  unit_grams: 100
+- source: homemade
+  source_id: trail_mix_basic
+  name: Trail Mix (Nuts & Raisins)
+  kcal_per_100g: 460
+  protein_per_100g: 14
+  carbs_per_100g: 45
+  fat_per_100g: 25
+  serving_grams: 40
+  serving_label: handful (40 g)
+  tags: snack,nuts,trail-mix
+  portion_unit: meal
+  unit_grams: 40
+- source: homemade
+  source_id: almonds_handful
+  name: Almonds (Handful)
+  kcal_per_100g: 575
+  protein_per_100g: 21
+  carbs_per_100g: 22
+  fat_per_100g: 49
+  serving_grams: 30
+  serving_label: handful (30 g)
+  tags: snack,nuts
+  portion_unit: meal
+  unit_grams: 30
+- source: homemade
+  source_id: cashews_handful
+  name: Cashews (Handful)
+  kcal_per_100g: 555
+  protein_per_100g: 18
+  carbs_per_100g: 30
+  fat_per_100g: 44
+  serving_grams: 30
+  serving_label: handful (30 g)
+  tags: snack,nuts
+  portion_unit: meal
+  unit_grams: 30
+- source: homemade
+  source_id: walnuts_handful
+  name: Walnuts (Handful)
+  kcal_per_100g: 655
+  protein_per_100g: 15
+  carbs_per_100g: 14
+  fat_per_100g: 65
+  serving_grams: 30
+  serving_label: handful (30 g)
+  tags: snack,nuts
+  portion_unit: meal
+  unit_grams: 30
+- source: homemade
+  source_id: edamame_pods
+  name: Edamame (Steamed, Salted)
+  kcal_per_100g: 120
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 5
+  serving_grams: 100
+  serving_label: bowl (100 g)
+  tags: snack,edamame,vegan,protein
+  portion_unit: meal
+  unit_grams: 100
+- source: homemade
+  source_id: hummus_carrots
+  name: Hummus with Carrot Sticks
+  kcal_per_100g: 120
+  protein_per_100g: 4
+  carbs_per_100g: 11
+  fat_per_100g: 7
+  serving_grams: 120
+  serving_label: snack (120 g)
+  tags: snack,hummus,vegan
+  portion_unit: meal
+  unit_grams: 120
+- source: homemade
+  source_id: hummus_pitta
+  name: Hummus with Pitta
+  kcal_per_100g: 255
+  protein_per_100g: 8
+  carbs_per_100g: 35
+  fat_per_100g: 9
+  serving_grams: 120
+  serving_label: snack (120 g)
+  tags: snack,hummus,pitta
+  portion_unit: meal
+  unit_grams: 120
+- source: homemade
+  source_id: guac_chips
+  name: Guacamole with Tortilla Chips
+  kcal_per_100g: 330
+  protein_per_100g: 4
+  carbs_per_100g: 35
+  fat_per_100g: 19
+  serving_grams: 100
+  serving_label: snack (100 g)
+  tags: snack,mexican
+  portion_unit: meal
+  unit_grams: 100
+- source: homemade
+  source_id: protein_overnight_oats
+  name: Protein Overnight Oats
+  kcal_per_100g: 135
+  protein_per_100g: 9
+  carbs_per_100g: 18
+  fat_per_100g: 3
+  serving_grams: 300
+  serving_label: jar (300 g)
+  tags: snack,oats,protein,breakfast
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: chia_pudding
+  name: Chia Pudding (Almond Milk)
+  kcal_per_100g: 110
+  protein_per_100g: 4
+  carbs_per_100g: 12
+  fat_per_100g: 5
+  serving_grams: 200
+  serving_label: pot (200 g)
+  tags: snack,chia,vegan
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: protein_balls_oat
+  name: Protein Balls (Oat & PB)
+  kcal_per_100g: 425
+  protein_per_100g: 16
+  carbs_per_100g: 38
+  fat_per_100g: 22
+  serving_grams: 25
+  serving_label: ball (25 g)
+  tags: snack,protein,oats,homemade
+  portion_unit: piece
+  unit_grams: 25

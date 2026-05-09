@@ -1,0 +1,1558 @@
+# More restaurant chains (Chiquito, Las Iguanas, Giraffe, GBK, Beefeater, Premier Inn) +
+# Holland & Barrett full health-food range +
+# Asian instant noodles (Nissin, Indomie, Samyang Buldak, Shin Ramyun, Maggi, Naked, Batchelors) +
+# Polish kielbasa, Caribbean (Dunn's River, Walkerswood), Halal (Ieat)
+
+- source: chiquito
+  source_id: chiq_chimichanga_chicken
+  name: Chiquito Chicken Chimichanga
+  kcal_per_100g: 295
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Chiquito
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 350
+- source: chiquito
+  source_id: chiq_chimichanga_beef
+  name: Chiquito Beef Chimichanga
+  kcal_per_100g: 305
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 15
+  brand: Chiquito
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 350
+- source: chiquito
+  source_id: chiq_fajitas_beef
+  name: Chiquito Beef Fajitas
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 7
+  brand: Chiquito
+  region_codes: GB
+  serving_grams: 450
+  serving_label: plate (450 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 450
+- source: chiquito
+  source_id: chiq_quesadilla_cheese
+  name: Chiquito Cheese Quesadilla
+  kcal_per_100g: 305
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 17
+  brand: Chiquito
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 250
+- source: chiquito
+  source_id: chiq_enchiladas_chicken
+  name: Chiquito Chicken Enchiladas
+  kcal_per_100g: 195
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Chiquito
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: chiquito
+  source_id: chiq_taco_set_3
+  name: Chiquito Tacos (3 pcs)
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Chiquito
+  region_codes: GB
+  serving_grams: 240
+  serving_label: plate (240 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 240
+- source: chiquito
+  source_id: chiq_chilli_con_carne
+  name: Chiquito Chilli con Carne
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 13
+  fat_per_100g: 6
+  brand: Chiquito
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: las_iguanas
+  source_id: iguana_steak_paulista
+  name: Las Iguanas Steak Paulista
+  kcal_per_100g: 195
+  protein_per_100g: 17
+  carbs_per_100g: 11
+  fat_per_100g: 9
+  brand: Las Iguanas
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: las_iguanas
+  source_id: iguana_chicken_stroganoff
+  name: Las Iguanas Chicken Stroganoff
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 17
+  fat_per_100g: 7
+  brand: Las Iguanas
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: las_iguanas
+  source_id: iguana_moqueca_seafood
+  name: Las Iguanas Moqueca Seafood
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 6
+  brand: Las Iguanas
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: las_iguanas
+  source_id: iguana_xinxim_chicken
+  name: Las Iguanas Xinxim Chicken
+  kcal_per_100g: 165
+  protein_per_100g: 13
+  carbs_per_100g: 11
+  fat_per_100g: 7
+  brand: Las Iguanas
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: las_iguanas
+  source_id: iguana_quesadilla_cheese
+  name: Las Iguanas Cheese Quesadilla
+  kcal_per_100g: 305
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 17
+  brand: Las Iguanas
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 250
+- source: las_iguanas
+  source_id: iguana_caipirinha
+  name: Las Iguanas Caipirinha (Cocktail)
+  kcal_per_100g: 220
+  protein_per_100g: 0
+  carbs_per_100g: 22
+  fat_per_100g: 0
+  brand: Las Iguanas
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 200
+- source: giraffe
+  source_id: giraffe_classic_burger
+  name: Giraffe Classic Beef Burger
+  kcal_per_100g: 280
+  protein_per_100g: 17
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Giraffe
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: giraffe
+  source_id: giraffe_chicken_satay_skewer
+  name: Giraffe Chicken Satay Skewers
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 4
+  fat_per_100g: 8
+  brand: Giraffe
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 200
+- source: giraffe
+  source_id: giraffe_eggs_benedict_giraffe
+  name: Giraffe Eggs Benedict
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 14
+  brand: Giraffe
+  region_codes: GB
+  serving_grams: 280
+  serving_label: plate (280 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 280
+- source: giraffe
+  source_id: giraffe_thai_chicken_curry
+  name: Giraffe Thai Chicken Curry
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 7
+  brand: Giraffe
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: gbk
+  source_id: gbk_classic_burger
+  name: GBK Classic Burger
+  kcal_per_100g: 285
+  protein_per_100g: 18
+  carbs_per_100g: 25
+  fat_per_100g: 14
+  brand: GBK
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 350
+- source: gbk
+  source_id: gbk_avocado_burger
+  name: GBK Avocado Burger
+  kcal_per_100g: 305
+  protein_per_100g: 18
+  carbs_per_100g: 25
+  fat_per_100g: 17
+  brand: GBK
+  region_codes: GB
+  serving_grams: 380
+  serving_label: plate (380 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 380
+- source: gbk
+  source_id: gbk_blue_cheese_burger
+  name: GBK Blue Cheese Burger
+  kcal_per_100g: 320
+  protein_per_100g: 19
+  carbs_per_100g: 25
+  fat_per_100g: 18
+  brand: GBK
+  region_codes: GB
+  serving_grams: 380
+  serving_label: plate (380 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 380
+- source: gbk
+  source_id: gbk_chicken_burger
+  name: GBK Chicken Burger
+  kcal_per_100g: 245
+  protein_per_100g: 22
+  carbs_per_100g: 25
+  fat_per_100g: 9
+  brand: GBK
+  region_codes: GB
+  serving_grams: 320
+  serving_label: plate (320 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 320
+- source: gbk
+  source_id: gbk_kiwi_burger
+  name: GBK Kiwi Burger
+  kcal_per_100g: 305
+  protein_per_100g: 18
+  carbs_per_100g: 28
+  fat_per_100g: 16
+  brand: GBK
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: gbk
+  source_id: gbk_chicken_caesar_salad
+  name: GBK Chicken Caesar Salad
+  kcal_per_100g: 175
+  protein_per_100g: 18
+  carbs_per_100g: 9
+  fat_per_100g: 8
+  brand: GBK
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 350
+- source: gbk
+  source_id: gbk_skinny_chicken
+  name: GBK Skinny Chicken Salad
+  kcal_per_100g: 145
+  protein_per_100g: 22
+  carbs_per_100g: 9
+  fat_per_100g: 4
+  brand: GBK
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 350
+- source: gbk
+  source_id: gbk_skin_on_fries
+  name: GBK Skin On Fries
+  kcal_per_100g: 245
+  protein_per_100g: 4
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  brand: GBK
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 200
+- source: gbk
+  source_id: gbk_sweet_potato_fries
+  name: GBK Sweet Potato Fries
+  kcal_per_100g: 230
+  protein_per_100g: 3
+  carbs_per_100g: 32
+  fat_per_100g: 10
+  brand: GBK
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 200
+- source: beefeater
+  source_id: bf_8oz_rump
+  name: Beefeater 8oz Rump Steak
+  kcal_per_100g: 215
+  protein_per_100g: 19
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  brand: Beefeater
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 250
+- source: beefeater
+  source_id: bf_10oz_sirloin
+  name: Beefeater 10oz Sirloin Steak
+  kcal_per_100g: 220
+  protein_per_100g: 19
+  carbs_per_100g: 0
+  fat_per_100g: 14
+  brand: Beefeater
+  region_codes: GB
+  serving_grams: 280
+  serving_label: plate (280 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 280
+- source: beefeater
+  source_id: bf_chicken_skewers
+  name: Beefeater Chicken Skewers
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 7
+  brand: Beefeater
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 200
+- source: beefeater
+  source_id: bf_mixed_grill
+  name: Beefeater Mixed Grill
+  kcal_per_100g: 215
+  protein_per_100g: 17
+  carbs_per_100g: 14
+  fat_per_100g: 12
+  brand: Beefeater
+  region_codes: GB
+  serving_grams: 600
+  serving_label: plate (600 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 600
+- source: beefeater
+  source_id: bf_unlimited_breakfast
+  name: Beefeater Unlimited Breakfast (Average)
+  kcal_per_100g: 230
+  protein_per_100g: 11
+  carbs_per_100g: 17
+  fat_per_100g: 13
+  brand: Beefeater
+  region_codes: GB
+  serving_grams: 600
+  serving_label: plate (600 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 600
+- source: premier_inn
+  source_id: premier_inn_full_english
+  name: Premier Inn Full English (Plate)
+  kcal_per_100g: 235
+  protein_per_100g: 12
+  carbs_per_100g: 17
+  fat_per_100g: 14
+  brand: Premier Inn
+  region_codes: GB
+  serving_grams: 700
+  serving_label: plate (700 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 700
+- source: premier_inn
+  source_id: premier_inn_continental
+  name: Premier Inn Continental Breakfast (Plate)
+  kcal_per_100g: 245
+  protein_per_100g: 9
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Premier Inn
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: hb_protein_truffles
+  name: Holland & Barrett Protein Truffles (Per Box)
+  kcal_per_100g: 425
+  protein_per_100g: 28
+  carbs_per_100g: 35
+  fat_per_100g: 16
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_dark_chocolate_almonds
+  name: Holland & Barrett Dark Chocolate Almonds (Per 30g)
+  kcal_per_100g: 530
+  protein_per_100g: 11
+  carbs_per_100g: 33
+  fat_per_100g: 36
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_yogurt_coated_raisins
+  name: Holland & Barrett Yogurt Coated Raisins (Per 30g)
+  kcal_per_100g: 415
+  protein_per_100g: 5
+  carbs_per_100g: 67
+  fat_per_100g: 14
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_chocolate_brazil_nuts
+  name: Holland & Barrett Chocolate Brazil Nuts (Per 30g)
+  kcal_per_100g: 555
+  protein_per_100g: 12
+  carbs_per_100g: 33
+  fat_per_100g: 41
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_dried_apricots_per_30g
+  name: Holland & Barrett Dried Apricots (Per 30g)
+  kcal_per_100g: 240
+  protein_per_100g: 3
+  carbs_per_100g: 55
+  fat_per_100g: 0.5
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_dried_mango_per_30g
+  name: Holland & Barrett Dried Mango (Per 30g)
+  kcal_per_100g: 320
+  protein_per_100g: 2
+  carbs_per_100g: 80
+  fat_per_100g: 1
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_pumpkin_seeds_30g
+  name: Holland & Barrett Pumpkin Seeds (Per 30g)
+  kcal_per_100g: 559
+  protein_per_100g: 30
+  carbs_per_100g: 11
+  fat_per_100g: 49
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_chia_seeds_per_15g
+  name: Holland & Barrett Chia Seeds (Per 15g)
+  kcal_per_100g: 486
+  protein_per_100g: 17
+  carbs_per_100g: 42
+  fat_per_100g: 31
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_flaxseed_milled_15g
+  name: Holland & Barrett Milled Flaxseed (Per 15g)
+  kcal_per_100g: 480
+  protein_per_100g: 22
+  carbs_per_100g: 7
+  fat_per_100g: 35
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_organic_oats_per_40g
+  name: Holland & Barrett Organic Oats (Per 40g)
+  kcal_per_100g: 372
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 8
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_organic_quinoa_per_75g
+  name: Holland & Barrett Organic Quinoa (Per 75g)
+  kcal_per_100g: 368
+  protein_per_100g: 14
+  carbs_per_100g: 64
+  fat_per_100g: 6
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_red_lentils_per_50g
+  name: Holland & Barrett Red Lentils (Per 50g)
+  kcal_per_100g: 358
+  protein_per_100g: 24
+  carbs_per_100g: 60
+  fat_per_100g: 1.5
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_chickpeas_dry_per_50g
+  name: Holland & Barrett Dried Chickpeas (Per 50g)
+  kcal_per_100g: 364
+  protein_per_100g: 19
+  carbs_per_100g: 61
+  fat_per_100g: 6
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_brown_rice_per_75g
+  name: Holland & Barrett Brown Rice (Per 75g)
+  kcal_per_100g: 360
+  protein_per_100g: 8
+  carbs_per_100g: 76
+  fat_per_100g: 2.5
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_almond_milk_unsweetened
+  name: Holland & Barrett Almond Milk Unsweetened (Per 100ml)
+  kcal_per_100g: 13
+  protein_per_100g: 0.4
+  carbs_per_100g: 0
+  fat_per_100g: 1.1
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_oat_milk_per_100ml
+  name: Holland & Barrett Oat Milk (Per 100ml)
+  kcal_per_100g: 45
+  protein_per_100g: 1
+  carbs_per_100g: 6.6
+  fat_per_100g: 1.5
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_coconut_oil_per_15g
+  name: Holland & Barrett Coconut Oil (Per 15g)
+  kcal_per_100g: 862
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_olive_oil_per_15ml
+  name: Holland & Barrett Olive Oil (Per 15ml)
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_apple_cider_vinegar_per_15ml
+  name: Holland & Barrett Apple Cider Vinegar (Per 15ml)
+  kcal_per_100g: 22
+  protein_per_100g: 0
+  carbs_per_100g: 0.9
+  fat_per_100g: 0
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_tahini_per_15g
+  name: Holland & Barrett Tahini (Per 15g)
+  kcal_per_100g: 595
+  protein_per_100g: 17
+  carbs_per_100g: 21
+  fat_per_100g: 53
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_almond_butter_per_15g
+  name: Holland & Barrett Almond Butter (Per 15g)
+  kcal_per_100g: 614
+  protein_per_100g: 21
+  carbs_per_100g: 19
+  fat_per_100g: 56
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_peanut_butter_per_15g
+  name: Holland & Barrett Peanut Butter (Per 15g)
+  kcal_per_100g: 600
+  protein_per_100g: 25
+  carbs_per_100g: 16
+  fat_per_100g: 50
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_cashew_butter_per_15g
+  name: Holland & Barrett Cashew Butter (Per 15g)
+  kcal_per_100g: 580
+  protein_per_100g: 18
+  carbs_per_100g: 28
+  fat_per_100g: 47
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_protein_powder_vanilla
+  name: Holland & Barrett Whey Vanilla Protein
+  kcal_per_100g: 380
+  protein_per_100g: 76
+  carbs_per_100g: 5
+  fat_per_100g: 4
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_protein_powder_chocolate
+  name: Holland & Barrett Whey Chocolate Protein
+  kcal_per_100g: 380
+  protein_per_100g: 76
+  carbs_per_100g: 5
+  fat_per_100g: 4
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_vegan_protein_chocolate
+  name: Holland & Barrett Vegan Protein Chocolate
+  kcal_per_100g: 350
+  protein_per_100g: 70
+  carbs_per_100g: 8
+  fat_per_100g: 4
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_vegan_protein_vanilla
+  name: Holland & Barrett Vegan Protein Vanilla
+  kcal_per_100g: 350
+  protein_per_100g: 70
+  carbs_per_100g: 8
+  fat_per_100g: 4
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_collagen_powder
+  name: Holland & Barrett Collagen Peptides Powder
+  kcal_per_100g: 360
+  protein_per_100g: 90
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 10
+  serving_label: 10 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: scoop
+  unit_grams: 10
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_protein_bar_chocolate
+  name: Holland & Barrett Protein Bar Chocolate
+  kcal_per_100g: 380
+  protein_per_100g: 33
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: bar
+  unit_grams: 60
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hb_protein_bar_caramel
+  name: Holland & Barrett Protein Bar Caramel
+  kcal_per_100g: 380
+  protein_per_100g: 33
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Holland & Barrett
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: bar
+  unit_grams: 60
+  dietary_compat: vegetarian
+- source: brand
+  source_id: misfit_protein_brownie_chocolate
+  name: Misfit Protein Brownie Chocolate
+  kcal_per_100g: 415
+  protein_per_100g: 30
+  carbs_per_100g: 30
+  fat_per_100g: 16
+  brand: Misfit
+  region_codes: GB
+  serving_grams: 55
+  serving_label: 55 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 55
+  dietary_compat: vegetarian
+- source: brand
+  source_id: misfit_protein_cookie_chocolate
+  name: Misfit Protein Cookie Chocolate
+  kcal_per_100g: 410
+  protein_per_100g: 30
+  carbs_per_100g: 30
+  fat_per_100g: 15
+  brand: Misfit
+  region_codes: GB
+  serving_grams: 55
+  serving_label: 55 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 55
+  dietary_compat: vegetarian
+- source: brand
+  source_id: misfit_truffles_per_pack
+  name: Misfit Protein Truffles
+  kcal_per_100g: 425
+  protein_per_100g: 28
+  carbs_per_100g: 35
+  fat_per_100g: 16
+  brand: Misfit
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: betteryou_iron_spray
+  name: BetterYou Iron Spray (Per Spray)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: BetterYou
+  region_codes: GB
+  serving_grams: 1
+  serving_label: 1 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: piece
+  unit_grams: 1
+  dietary_compat: vegetarian
+- source: brand
+  source_id: betteryou_d3_spray
+  name: BetterYou D3 Spray (Per Spray)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: BetterYou
+  region_codes: GB
+  serving_grams: 1
+  serving_label: 1 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: piece
+  unit_grams: 1
+  dietary_compat: vegetarian
+- source: brand
+  source_id: betteryou_b12_spray
+  name: BetterYou B12 Spray (Per Spray)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: BetterYou
+  region_codes: GB
+  serving_grams: 1
+  serving_label: 1 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: piece
+  unit_grams: 1
+  dietary_compat: vegetarian
+- source: brand
+  source_id: on_micronised_creatine_5g
+  name: Optimum Nutrition Micronised Creatine (Per 5g)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: scoop
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: on_serious_mass_chocolate
+  name: Optimum Nutrition Serious Mass Chocolate
+  kcal_per_100g: 380
+  protein_per_100g: 25
+  carbs_per_100g: 50
+  fat_per_100g: 4
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegetarian
+- source: brand
+  source_id: on_amino_2222_per_serving
+  name: Optimum Nutrition Amino 2222 (Per Serving)
+  kcal_per_100g: 30
+  protein_per_100g: 4
+  carbs_per_100g: 3
+  fat_per_100g: 0
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 9
+  serving_label: 9 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: scoop
+  unit_grams: 9
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bsn_syntha6_chocolate
+  name: BSN Syntha-6 Chocolate Milkshake
+  kcal_per_100g: 360
+  protein_per_100g: 22
+  carbs_per_100g: 38
+  fat_per_100g: 6
+  brand: BSN
+  region_codes: GB
+  serving_grams: 47
+  serving_label: 47 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 47
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bsn_syntha6_vanilla
+  name: BSN Syntha-6 Vanilla Ice Cream
+  kcal_per_100g: 360
+  protein_per_100g: 22
+  carbs_per_100g: 38
+  fat_per_100g: 6
+  brand: BSN
+  region_codes: GB
+  serving_grams: 47
+  serving_label: 47 g
+  tags: health,supplement,nuts,seeds
+  portion_unit: meal
+  unit_grams: 47
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nissin_cup_noodles_chicken
+  name: Nissin Cup Noodles Chicken (Per Cup)
+  kcal_per_100g: 460
+  protein_per_100g: 8
+  carbs_per_100g: 60
+  fat_per_100g: 18
+  brand: Nissin
+  region_codes: GB
+  serving_grams: 65
+  serving_label: 65 g
+  tags: instant,asian,convenience
+  portion_unit: meal
+  unit_grams: 65
+- source: brand
+  source_id: nissin_cup_noodles_curry
+  name: Nissin Cup Noodles Curry (Per Cup)
+  kcal_per_100g: 470
+  protein_per_100g: 8
+  carbs_per_100g: 60
+  fat_per_100g: 18
+  brand: Nissin
+  region_codes: GB
+  serving_grams: 65
+  serving_label: 65 g
+  tags: instant,asian,convenience
+  portion_unit: meal
+  unit_grams: 65
+- source: brand
+  source_id: nissin_cup_noodles_seafood
+  name: Nissin Cup Noodles Seafood (Per Cup)
+  kcal_per_100g: 460
+  protein_per_100g: 8
+  carbs_per_100g: 60
+  fat_per_100g: 18
+  brand: Nissin
+  region_codes: GB
+  serving_grams: 65
+  serving_label: 65 g
+  tags: instant,asian,convenience
+  portion_unit: meal
+  unit_grams: 65
+- source: brand
+  source_id: nissin_soba_yakisoba_chicken
+  name: Nissin Soba Yakisoba Chicken
+  kcal_per_100g: 460
+  protein_per_100g: 8
+  carbs_per_100g: 65
+  fat_per_100g: 18
+  brand: Nissin
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 110
+- source: brand
+  source_id: indomie_mi_goreng
+  name: Indomie Mi Goreng (Per Pack)
+  kcal_per_100g: 470
+  protein_per_100g: 8
+  carbs_per_100g: 60
+  fat_per_100g: 19
+  brand: Indomie
+  region_codes: GB
+  serving_grams: 85
+  serving_label: 85 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 85
+- source: brand
+  source_id: buldak_noodles_2x_spicy
+  name: Samyang Buldak 2x Spicy Hot Chicken
+  kcal_per_100g: 530
+  protein_per_100g: 11
+  carbs_per_100g: 76
+  fat_per_100g: 17
+  brand: Samyang
+  region_codes: GB
+  serving_grams: 140
+  serving_label: 140 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 140
+- source: brand
+  source_id: buldak_carbonara
+  name: Samyang Buldak Carbonara
+  kcal_per_100g: 540
+  protein_per_100g: 11
+  carbs_per_100g: 78
+  fat_per_100g: 18
+  brand: Samyang
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 130
+- source: brand
+  source_id: buldak_cheese
+  name: Samyang Buldak Hot Chicken Cheese
+  kcal_per_100g: 540
+  protein_per_100g: 11
+  carbs_per_100g: 78
+  fat_per_100g: 18
+  brand: Samyang
+  region_codes: GB
+  serving_grams: 140
+  serving_label: 140 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 140
+- source: brand
+  source_id: shin_ramyun
+  name: Shin Ramyun Spicy (Per Pack)
+  kcal_per_100g: 500
+  protein_per_100g: 10
+  carbs_per_100g: 81
+  fat_per_100g: 16
+  brand: Nongshim
+  region_codes: GB
+  serving_grams: 120
+  serving_label: 120 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 120
+- source: brand
+  source_id: nongshim_kimchi_ramen
+  name: Nongshim Kimchi Ramen
+  kcal_per_100g: 480
+  protein_per_100g: 10
+  carbs_per_100g: 75
+  fat_per_100g: 17
+  brand: Nongshim
+  region_codes: GB
+  serving_grams: 120
+  serving_label: 120 g
+  tags: instant,asian,convenience
+  portion_unit: meal
+  unit_grams: 120
+- source: brand
+  source_id: maggi_chicken_per_pack
+  name: Maggi 2-Minute Noodles Chicken (Per Pack)
+  kcal_per_100g: 470
+  protein_per_100g: 9
+  carbs_per_100g: 60
+  fat_per_100g: 19
+  brand: Maggi
+  region_codes: GB
+  serving_grams: 70
+  serving_label: 70 g
+  tags: instant,asian,convenience
+  portion_unit: piece
+  unit_grams: 70
+- source: brand
+  source_id: maggi_curry_per_pack
+  name: Maggi 2-Minute Noodles Curry (Per Pack)
+  kcal_per_100g: 475
+  protein_per_100g: 9
+  carbs_per_100g: 60
+  fat_per_100g: 19
+  brand: Maggi
+  region_codes: GB
+  serving_grams: 70
+  serving_label: 70 g
+  tags: instant,asian,convenience
+  portion_unit: piece
+  unit_grams: 70
+- source: brand
+  source_id: naked_noodles_chinese_chow_mein
+  name: Naked Noodles Chinese Chow Mein (Per Pot)
+  kcal_per_100g: 305
+  protein_per_100g: 10
+  carbs_per_100g: 55
+  fat_per_100g: 5
+  brand: Naked
+  region_codes: GB
+  serving_grams: 78
+  serving_label: 78 g
+  tags: instant,asian,convenience
+  portion_unit: meal
+  unit_grams: 78
+- source: brand
+  source_id: naked_noodles_thai_chicken
+  name: Naked Noodles Thai Chicken (Per Pot)
+  kcal_per_100g: 305
+  protein_per_100g: 10
+  carbs_per_100g: 55
+  fat_per_100g: 5
+  brand: Naked
+  region_codes: GB
+  serving_grams: 78
+  serving_label: 78 g
+  tags: instant,asian,convenience
+  portion_unit: meal
+  unit_grams: 78
+- source: brand
+  source_id: heinz_cup_soup_tomato
+  name: Heinz Cup Soup Tomato (Per Sachet)
+  kcal_per_100g: 365
+  protein_per_100g: 8
+  carbs_per_100g: 60
+  fat_per_100g: 11
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 22
+  serving_label: 22 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 22
+- source: brand
+  source_id: heinz_cup_soup_chicken
+  name: Heinz Cup Soup Chicken (Per Sachet)
+  kcal_per_100g: 360
+  protein_per_100g: 8
+  carbs_per_100g: 60
+  fat_per_100g: 10
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 22
+  serving_label: 22 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 22
+- source: brand
+  source_id: heinz_cup_soup_minestrone
+  name: Heinz Cup Soup Minestrone (Per Sachet)
+  kcal_per_100g: 350
+  protein_per_100g: 9
+  carbs_per_100g: 65
+  fat_per_100g: 5
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 22
+  serving_label: 22 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 22
+- source: brand
+  source_id: batchelors_super_noodles_chicken
+  name: Batchelors Super Noodles Chicken (Per Pack)
+  kcal_per_100g: 460
+  protein_per_100g: 8
+  carbs_per_100g: 65
+  fat_per_100g: 18
+  brand: Batchelors
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: instant,asian,convenience
+  portion_unit: meal
+  unit_grams: 90
+- source: brand
+  source_id: batchelors_super_noodles_bbq
+  name: Batchelors Super Noodles BBQ Beef
+  kcal_per_100g: 460
+  protein_per_100g: 8
+  carbs_per_100g: 65
+  fat_per_100g: 18
+  brand: Batchelors
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: instant,asian,convenience
+  portion_unit: meal
+  unit_grams: 90
+- source: brand
+  source_id: batchelors_super_noodles_curry
+  name: Batchelors Super Noodles Curry
+  kcal_per_100g: 470
+  protein_per_100g: 8
+  carbs_per_100g: 65
+  fat_per_100g: 19
+  brand: Batchelors
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: instant,asian,convenience
+  portion_unit: meal
+  unit_grams: 90
+- source: brand
+  source_id: batchelors_super_noodles_chow_mein
+  name: Batchelors Super Noodles Chow Mein
+  kcal_per_100g: 460
+  protein_per_100g: 8
+  carbs_per_100g: 65
+  fat_per_100g: 18
+  brand: Batchelors
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: instant,asian,convenience
+  portion_unit: meal
+  unit_grams: 90
+- source: brand
+  source_id: batchelors_pasta_n_sauce_cheese
+  name: Batchelors Pasta 'n' Sauce Cheese, Leek & Ham
+  kcal_per_100g: 360
+  protein_per_100g: 13
+  carbs_per_100g: 65
+  fat_per_100g: 4.5
+  brand: Batchelors
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: batchelors_pasta_n_sauce_macaroni
+  name: Batchelors Pasta 'n' Sauce Macaroni Cheese
+  kcal_per_100g: 360
+  protein_per_100g: 13
+  carbs_per_100g: 65
+  fat_per_100g: 4.5
+  brand: Batchelors
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: batchelors_super_rice_chicken
+  name: Batchelors Super Rice Chicken Flavour
+  kcal_per_100g: 360
+  protein_per_100g: 8
+  carbs_per_100g: 80
+  fat_per_100g: 1
+  brand: Batchelors
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: batchelors_super_rice_savoury
+  name: Batchelors Super Rice Savoury Tomato
+  kcal_per_100g: 360
+  protein_per_100g: 8
+  carbs_per_100g: 80
+  fat_per_100g: 1
+  brand: Batchelors
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: batchelors_pasta_n_sauce_chicken_mushroom
+  name: Batchelors Pasta 'n' Sauce Chicken & Mushroom
+  kcal_per_100g: 360
+  protein_per_100g: 13
+  carbs_per_100g: 65
+  fat_per_100g: 4.5
+  brand: Batchelors
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: batchelors_smash_per_dry_sachet
+  name: Batchelors Smash (Per Dry Sachet)
+  kcal_per_100g: 380
+  protein_per_100g: 8
+  carbs_per_100g: 75
+  fat_per_100g: 4
+  brand: Batchelors
+  region_codes: GB
+  serving_grams: 35
+  serving_label: 35 g
+  tags: instant,asian,convenience
+  portion_unit: meal
+  unit_grams: 35
+- source: brand
+  source_id: krakus_polska_kielbasa_per_30g
+  name: Krakus Polska Kielbasa (Per 30g)
+  kcal_per_100g: 285
+  protein_per_100g: 12
+  carbs_per_100g: 2
+  fat_per_100g: 26
+  brand: Krakus
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: kabanos_chrobry_per_30g
+  name: Chrobry Kabanos Polish Smoked Sausage
+  kcal_per_100g: 365
+  protein_per_100g: 24
+  carbs_per_100g: 1
+  fat_per_100g: 30
+  brand: Chrobry
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: kabanos_smoked_chicken_30g
+  name: Kabanos Smoked Chicken (Per 30g)
+  kcal_per_100g: 285
+  protein_per_100g: 22
+  carbs_per_100g: 1
+  fat_per_100g: 22
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: dunns_river_jerk_chicken_seasoning
+  name: Dunn's River Jerk Chicken Seasoning (Per 5g)
+  kcal_per_100g: 250
+  protein_per_100g: 8
+  carbs_per_100g: 50
+  fat_per_100g: 4
+  brand: Dunn's River
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 5
+- source: brand
+  source_id: walkerswood_jerk_chicken
+  name: Walkerswood Jerk Chicken (Cooked, Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 8
+  brand: Walkerswood
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: ieat_seekh_kebab
+  name: Ieat Lamb Seekh Kebab (Per Skewer)
+  kcal_per_100g: 215
+  protein_per_100g: 17
+  carbs_per_100g: 5
+  fat_per_100g: 14
+  brand: Ieat
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 80
+- source: brand
+  source_id: ieat_chicken_curry_meal
+  name: Ieat Chicken Curry & Rice
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  brand: Ieat
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: world,brand
+  portion_unit: meal
+  unit_grams: 400

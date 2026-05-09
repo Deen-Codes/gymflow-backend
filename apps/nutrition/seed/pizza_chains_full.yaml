@@ -1,0 +1,758 @@
+# Pizza chains full — Domino's, Pizza Hut (Pan/Thin/Stuffed Crust), Pizza Express, Papa John's
+
+- source: dominos
+  source_id: dominos_margherita_med_slice
+  name: Domino's Margherita Pizza (Medium Slice)
+  kcal_per_100g: 286.7
+  protein_per_100g: 12.0
+  carbs_per_100g: 37.33
+  fat_per_100g: 9.33
+  brand: Domino's
+  region_codes: GB
+  serving_grams: 75
+  serving_label: slice (75 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 75
+- source: dominos
+  source_id: dominos_pepperoni_med_slice
+  name: Domino's Pepperoni Passion (Medium Slice)
+  kcal_per_100g: 300.0
+  protein_per_100g: 12.5
+  carbs_per_100g: 35.0
+  fat_per_100g: 11.25
+  brand: Domino's
+  region_codes: GB
+  serving_grams: 80
+  serving_label: slice (80 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 80
+- source: dominos
+  source_id: dominos_meatilicious_med_slice
+  name: Domino's Meateor (Medium Slice)
+  kcal_per_100g: 300.0
+  protein_per_100g: 13.68
+  carbs_per_100g: 29.47
+  fat_per_100g: 13.68
+  brand: Domino's
+  region_codes: GB
+  serving_grams: 95
+  serving_label: slice (95 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 95
+- source: dominos
+  source_id: dominos_texas_bbq_med_slice
+  name: Domino's Texas BBQ (Medium Slice)
+  kcal_per_100g: 277.8
+  protein_per_100g: 11.11
+  carbs_per_100g: 33.33
+  fat_per_100g: 10.0
+  brand: Domino's
+  region_codes: GB
+  serving_grams: 90
+  serving_label: slice (90 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 90
+- source: dominos
+  source_id: dominos_hawaiian_med_slice
+  name: Domino's Hawaiian (Medium Slice)
+  kcal_per_100g: 270.6
+  protein_per_100g: 11.76
+  carbs_per_100g: 34.12
+  fat_per_100g: 9.41
+  brand: Domino's
+  region_codes: GB
+  serving_grams: 85
+  serving_label: slice (85 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 85
+- source: dominos
+  source_id: dominos_mighty_meaty_med_slice
+  name: Domino's Mighty Meaty (Medium Slice)
+  kcal_per_100g: 305.3
+  protein_per_100g: 13.68
+  carbs_per_100g: 29.47
+  fat_per_100g: 13.68
+  brand: Domino's
+  region_codes: GB
+  serving_grams: 95
+  serving_label: slice (95 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 95
+- source: dominos
+  source_id: dominos_vegi_supreme_med_slice
+  name: Domino's Vegi Supreme (Medium Slice)
+  kcal_per_100g: 238.9
+  protein_per_100g: 10.0
+  carbs_per_100g: 32.22
+  fat_per_100g: 7.78
+  brand: Domino's
+  region_codes: GB
+  serving_grams: 90
+  serving_label: slice (90 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 90
+- source: dominos
+  source_id: dominos_chicken_feast_med_slice
+  name: Domino's Chicken Feast (Medium Slice)
+  kcal_per_100g: 272.2
+  protein_per_100g: 13.33
+  carbs_per_100g: 32.22
+  fat_per_100g: 8.89
+  brand: Domino's
+  region_codes: GB
+  serving_grams: 90
+  serving_label: slice (90 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 90
+- source: dominos
+  source_id: dominos_tandoori_hot_med_slice
+  name: Domino's Tandoori Hot One (Medium Slice)
+  kcal_per_100g: 277.8
+  protein_per_100g: 12.22
+  carbs_per_100g: 32.22
+  fat_per_100g: 10.0
+  brand: Domino's
+  region_codes: GB
+  serving_grams: 90
+  serving_label: slice (90 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 90
+- source: dominos
+  source_id: dominos_dominator_med_slice
+  name: Domino's Dominator (Medium Slice)
+  kcal_per_100g: 294.7
+  protein_per_100g: 13.68
+  carbs_per_100g: 29.47
+  fat_per_100g: 12.63
+  brand: Domino's
+  region_codes: GB
+  serving_grams: 95
+  serving_label: slice (95 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 95
+- source: dominos
+  source_id: dominos_garlic_bread
+  name: Domino's Garlic Bread (Per Piece)
+  kcal_per_100g: 290.0
+  protein_per_100g: 8.0
+  carbs_per_100g: 36.0
+  fat_per_100g: 12.0
+  brand: Domino's
+  region_codes: GB
+  serving_grams: 50
+  serving_label: item (50 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: piece
+  unit_grams: 50
+- source: dominos
+  source_id: dominos_garlic_pizza_bread_slice
+  name: Domino's Garlic Pizza Bread (Slice)
+  kcal_per_100g: 266.7
+  protein_per_100g: 9.33
+  carbs_per_100g: 33.33
+  fat_per_100g: 9.33
+  brand: Domino's
+  region_codes: GB
+  serving_grams: 75
+  serving_label: slice (75 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 75
+- source: dominos
+  source_id: dominos_potato_wedges
+  name: Domino's Potato Wedges (Side)
+  kcal_per_100g: 165.0
+  protein_per_100g: 3.0
+  carbs_per_100g: 19.0
+  fat_per_100g: 8.0
+  brand: Domino's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: meal
+  unit_grams: 100
+- source: dominos
+  source_id: dominos_chicken_wings_4
+  name: Domino's Chicken Wings (4 pcs)
+  kcal_per_100g: 245.0
+  protein_per_100g: 18.0
+  carbs_per_100g: 8.0
+  fat_per_100g: 16.0
+  brand: Domino's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: piece
+  unit_grams: 100
+- source: dominos
+  source_id: dominos_chicken_strippers_4
+  name: Domino's Chicken Strippers (4 pcs)
+  kcal_per_100g: 268.2
+  protein_per_100g: 18.18
+  carbs_per_100g: 19.09
+  fat_per_100g: 12.73
+  brand: Domino's
+  region_codes: GB
+  serving_grams: 110
+  serving_label: item (110 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: meal
+  unit_grams: 110
+- source: dominos
+  source_id: dominos_dough_balls_8
+  name: Domino's Dough Balls (8 pcs)
+  kcal_per_100g: 240.9
+  protein_per_100g: 7.27
+  carbs_per_100g: 37.27
+  fat_per_100g: 7.27
+  brand: Domino's
+  region_codes: GB
+  serving_grams: 110
+  serving_label: item (110 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: piece
+  unit_grams: 110
+- source: dominos
+  source_id: dominos_lotus_biscoff_cookie
+  name: Domino's Lotus Biscoff Cookie
+  kcal_per_100g: 422.2
+  protein_per_100g: 4.44
+  carbs_per_100g: 55.56
+  fat_per_100g: 20.0
+  brand: Domino's
+  region_codes: GB
+  serving_grams: 90
+  serving_label: item (90 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: piece
+  unit_grams: 90
+- source: dominos
+  source_id: dominos_chocolate_brownie
+  name: Domino's Chocolate Brownie
+  kcal_per_100g: 466.7
+  protein_per_100g: 5.56
+  carbs_per_100g: 61.11
+  fat_per_100g: 21.11
+  brand: Domino's
+  region_codes: GB
+  serving_grams: 90
+  serving_label: item (90 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: piece
+  unit_grams: 90
+- source: dominos
+  source_id: dominos_chocolate_lava_cake
+  name: Domino's Chocolate Lava Cake
+  kcal_per_100g: 437.5
+  protein_per_100g: 5.0
+  carbs_per_100g: 56.25
+  fat_per_100g: 21.25
+  brand: Domino's
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: piece
+  unit_grams: 80
+- source: pizzahut
+  source_id: ph_pan_pepperoni_med_slice
+  name: Pizza Hut Pepperoni Pan Pizza (Medium Slice)
+  kcal_per_100g: 300.0
+  protein_per_100g: 11.11
+  carbs_per_100g: 32.22
+  fat_per_100g: 13.33
+  brand: Pizza Hut
+  region_codes: GB
+  serving_grams: 90
+  serving_label: slice (90 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 90
+- source: pizzahut
+  source_id: ph_pan_margherita_med_slice
+  name: Pizza Hut Margherita Pan Pizza (Medium Slice)
+  kcal_per_100g: 288.2
+  protein_per_100g: 10.59
+  carbs_per_100g: 34.12
+  fat_per_100g: 11.76
+  brand: Pizza Hut
+  region_codes: GB
+  serving_grams: 85
+  serving_label: slice (85 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 85
+- source: pizzahut
+  source_id: ph_pan_meat_feast_med_slice
+  name: Pizza Hut Meat Feast Pan (Medium Slice)
+  kcal_per_100g: 305.3
+  protein_per_100g: 13.68
+  carbs_per_100g: 29.47
+  fat_per_100g: 13.68
+  brand: Pizza Hut
+  region_codes: GB
+  serving_grams: 95
+  serving_label: slice (95 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 95
+- source: pizzahut
+  source_id: ph_pan_hawaiian_med_slice
+  name: Pizza Hut Hawaiian Pan (Medium Slice)
+  kcal_per_100g: 277.8
+  protein_per_100g: 11.11
+  carbs_per_100g: 33.33
+  fat_per_100g: 11.11
+  brand: Pizza Hut
+  region_codes: GB
+  serving_grams: 90
+  serving_label: slice (90 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 90
+- source: pizzahut
+  source_id: ph_pan_vegetable_supreme
+  name: Pizza Hut Vegetable Supreme Pan (Medium Slice)
+  kcal_per_100g: 255.6
+  protein_per_100g: 10.0
+  carbs_per_100g: 32.22
+  fat_per_100g: 8.89
+  brand: Pizza Hut
+  region_codes: GB
+  serving_grams: 90
+  serving_label: item (90 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: meal
+  unit_grams: 90
+- source: pizzahut
+  source_id: ph_pan_supreme_med_slice
+  name: Pizza Hut Supreme Pan (Medium Slice)
+  kcal_per_100g: 300.0
+  protein_per_100g: 12.63
+  carbs_per_100g: 29.47
+  fat_per_100g: 13.68
+  brand: Pizza Hut
+  region_codes: GB
+  serving_grams: 95
+  serving_label: slice (95 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 95
+- source: pizzahut
+  source_id: ph_thin_pepperoni_med_slice
+  name: Pizza Hut Pepperoni Thin (Medium Slice)
+  kcal_per_100g: 306.7
+  protein_per_100g: 13.33
+  carbs_per_100g: 30.67
+  fat_per_100g: 13.33
+  brand: Pizza Hut
+  region_codes: GB
+  serving_grams: 75
+  serving_label: slice (75 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 75
+- source: pizzahut
+  source_id: ph_stuffed_crust_pepperoni_slice
+  name: Pizza Hut Stuffed Crust Pepperoni (Medium Slice)
+  kcal_per_100g: 268.2
+  protein_per_100g: 11.82
+  carbs_per_100g: 27.27
+  fat_per_100g: 11.82
+  brand: Pizza Hut
+  region_codes: GB
+  serving_grams: 110
+  serving_label: slice (110 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 110
+- source: pizzahut
+  source_id: ph_garlic_bread_classic
+  name: Pizza Hut Garlic Bread (Per Piece)
+  kcal_per_100g: 310.0
+  protein_per_100g: 8.0
+  carbs_per_100g: 38.0
+  fat_per_100g: 14.0
+  brand: Pizza Hut
+  region_codes: GB
+  serving_grams: 50
+  serving_label: item (50 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: piece
+  unit_grams: 50
+- source: pizzahut
+  source_id: ph_chicken_wings_4
+  name: Pizza Hut Chicken Wings (4 pcs)
+  kcal_per_100g: 240.0
+  protein_per_100g: 18.0
+  carbs_per_100g: 8.0
+  fat_per_100g: 16.0
+  brand: Pizza Hut
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: piece
+  unit_grams: 100
+- source: pizzahut
+  source_id: ph_potato_wedges
+  name: Pizza Hut Potato Wedges (Side)
+  kcal_per_100g: 165.0
+  protein_per_100g: 3.0
+  carbs_per_100g: 19.0
+  fat_per_100g: 8.0
+  brand: Pizza Hut
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: meal
+  unit_grams: 100
+- source: pizzahut
+  source_id: ph_macaroni_cheese_side
+  name: Pizza Hut Macaroni Cheese (Side)
+  kcal_per_100g: 140.0
+  protein_per_100g: 6.0
+  carbs_per_100g: 15.0
+  fat_per_100g: 6.5
+  brand: Pizza Hut
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: meal
+  unit_grams: 200
+- source: pizzahut
+  source_id: ph_cookie_dough_chocolate
+  name: Pizza Hut Chocolate Chip Cookie Dough
+  kcal_per_100g: 230.0
+  protein_per_100g: 2.5
+  carbs_per_100g: 27.5
+  fat_per_100g: 11.5
+  brand: Pizza Hut
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: piece
+  unit_grams: 200
+- source: pizzahut
+  source_id: ph_cookie_dough_white_choc
+  name: Pizza Hut White Chocolate Cookie Dough
+  kcal_per_100g: 235.0
+  protein_per_100g: 2.5
+  carbs_per_100g: 27.5
+  fat_per_100g: 12.0
+  brand: Pizza Hut
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: piece
+  unit_grams: 200
+- source: pizzaexpress
+  source_id: pe_margherita_classic_pizza
+  name: Pizza Express Margherita (Whole Classic)
+  kcal_per_100g: 82.1
+  protein_per_100g: 3.57
+  carbs_per_100g: 10.0
+  fat_per_100g: 2.86
+  brand: Pizza Express
+  region_codes: GB
+  serving_grams: 280
+  serving_label: item (280 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: meal
+  unit_grams: 280
+- source: pizzaexpress
+  source_id: pe_pepperoni_pizza_classic
+  name: Pizza Express American (Whole Classic)
+  kcal_per_100g: 98.3
+  protein_per_100g: 4.48
+  carbs_per_100g: 9.66
+  fat_per_100g: 4.48
+  brand: Pizza Express
+  region_codes: GB
+  serving_grams: 290
+  serving_label: item (290 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: meal
+  unit_grams: 290
+- source: pizzaexpress
+  source_id: pe_pollo_ad_astra_classic
+  name: Pizza Express Pollo ad Astra (Whole)
+  kcal_per_100g: 80.3
+  protein_per_100g: 4.59
+  carbs_per_100g: 8.85
+  fat_per_100g: 2.62
+  brand: Pizza Express
+  region_codes: GB
+  serving_grams: 305
+  serving_label: item (305 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: meal
+  unit_grams: 305
+- source: pizzaexpress
+  source_id: pe_la_reine_classic
+  name: Pizza Express La Reine (Whole)
+  kcal_per_100g: 80.3
+  protein_per_100g: 3.93
+  carbs_per_100g: 9.18
+  fat_per_100g: 2.95
+  brand: Pizza Express
+  region_codes: GB
+  serving_grams: 305
+  serving_label: item (305 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: meal
+  unit_grams: 305
+- source: pizzaexpress
+  source_id: pe_giardiniera_classic
+  name: Pizza Express Giardiniera (Whole)
+  kcal_per_100g: 68.8
+  protein_per_100g: 2.81
+  carbs_per_100g: 9.06
+  fat_per_100g: 2.19
+  brand: Pizza Express
+  region_codes: GB
+  serving_grams: 320
+  serving_label: item (320 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: meal
+  unit_grams: 320
+- source: pizzaexpress
+  source_id: pe_quattro_formaggi_classic
+  name: Pizza Express Quattro Formaggi (Whole)
+  kcal_per_100g: 87.9
+  protein_per_100g: 4.48
+  carbs_per_100g: 9.31
+  fat_per_100g: 3.45
+  brand: Pizza Express
+  region_codes: GB
+  serving_grams: 290
+  serving_label: item (290 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: meal
+  unit_grams: 290
+- source: pizzaexpress
+  source_id: pe_dough_balls_8_pe
+  name: Pizza Express Dough Balls (8 pcs)
+  kcal_per_100g: 215.4
+  protein_per_100g: 6.92
+  carbs_per_100g: 37.69
+  fat_per_100g: 4.62
+  brand: Pizza Express
+  region_codes: GB
+  serving_grams: 130
+  serving_label: item (130 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: piece
+  unit_grams: 130
+- source: pizzaexpress
+  source_id: pe_dough_balls_garlic_butter
+  name: Pizza Express Dough Balls with Garlic Butter
+  kcal_per_100g: 271.4
+  protein_per_100g: 5.71
+  carbs_per_100g: 32.14
+  fat_per_100g: 12.86
+  brand: Pizza Express
+  region_codes: GB
+  serving_grams: 140
+  serving_label: item (140 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: piece
+  unit_grams: 140
+- source: pizzaexpress
+  source_id: pe_caesar_salad_pe
+  name: Pizza Express Classic Caesar Salad
+  kcal_per_100g: 106.8
+  protein_per_100g: 4.41
+  carbs_per_100g: 6.44
+  fat_per_100g: 7.12
+  brand: Pizza Express
+  region_codes: GB
+  serving_grams: 295
+  serving_label: item (295 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: meal
+  unit_grams: 295
+- source: pizzaexpress
+  source_id: pe_chicken_caesar_salad_pe
+  name: Pizza Express Chicken Caesar Salad
+  kcal_per_100g: 105.9
+  protein_per_100g: 7.65
+  carbs_per_100g: 5.88
+  fat_per_100g: 5.29
+  brand: Pizza Express
+  region_codes: GB
+  serving_grams: 340
+  serving_label: item (340 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: meal
+  unit_grams: 340
+- source: pizzaexpress
+  source_id: pe_tiramisu
+  name: Pizza Express Tiramisu
+  kcal_per_100g: 226.9
+  protein_per_100g: 3.85
+  carbs_per_100g: 26.92
+  fat_per_100g: 10.77
+  brand: Pizza Express
+  region_codes: GB
+  serving_grams: 130
+  serving_label: item (130 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: piece
+  unit_grams: 130
+- source: pizzaexpress
+  source_id: pe_chocolate_glory
+  name: Pizza Express Chocolate Glory
+  kcal_per_100g: 250.0
+  protein_per_100g: 3.33
+  carbs_per_100g: 33.33
+  fat_per_100g: 11.33
+  brand: Pizza Express
+  region_codes: GB
+  serving_grams: 150
+  serving_label: item (150 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: piece
+  unit_grams: 150
+- source: papajohns
+  source_id: papa_pepperoni_med_slice
+  name: Papa John's Pepperoni Passion (Medium Slice)
+  kcal_per_100g: 300.0
+  protein_per_100g: 12.5
+  carbs_per_100g: 35.0
+  fat_per_100g: 11.25
+  brand: Papa John's
+  region_codes: GB
+  serving_grams: 80
+  serving_label: slice (80 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 80
+- source: papajohns
+  source_id: papa_margherita_med_slice
+  name: Papa John's Margherita (Medium Slice)
+  kcal_per_100g: 286.7
+  protein_per_100g: 12.0
+  carbs_per_100g: 37.33
+  fat_per_100g: 9.33
+  brand: Papa John's
+  region_codes: GB
+  serving_grams: 75
+  serving_label: slice (75 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 75
+- source: papajohns
+  source_id: papa_meat_feast_med_slice
+  name: Papa John's Meatlovers (Medium Slice)
+  kcal_per_100g: 305.3
+  protein_per_100g: 13.68
+  carbs_per_100g: 29.47
+  fat_per_100g: 13.68
+  brand: Papa John's
+  region_codes: GB
+  serving_grams: 95
+  serving_label: slice (95 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 95
+- source: papajohns
+  source_id: papa_works_med_slice
+  name: Papa John's The Works (Medium Slice)
+  kcal_per_100g: 272.2
+  protein_per_100g: 12.22
+  carbs_per_100g: 31.11
+  fat_per_100g: 10.0
+  brand: Papa John's
+  region_codes: GB
+  serving_grams: 90
+  serving_label: slice (90 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 90
+- source: papajohns
+  source_id: papa_hawaiian_med_slice
+  name: Papa John's Hawaiian (Medium Slice)
+  kcal_per_100g: 270.6
+  protein_per_100g: 11.76
+  carbs_per_100g: 34.12
+  fat_per_100g: 9.41
+  brand: Papa John's
+  region_codes: GB
+  serving_grams: 85
+  serving_label: slice (85 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: slice
+  unit_grams: 85
+- source: papajohns
+  source_id: papa_garlic_bread_pizza
+  name: Papa John's Garlic Pizza Sticks (Per Piece)
+  kcal_per_100g: 291.7
+  protein_per_100g: 8.33
+  carbs_per_100g: 40.0
+  fat_per_100g: 10.0
+  brand: Papa John's
+  region_codes: GB
+  serving_grams: 60
+  serving_label: item (60 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: piece
+  unit_grams: 60
+- source: papajohns
+  source_id: papa_chicken_wings_4
+  name: Papa John's Chicken Wings (4 pcs)
+  kcal_per_100g: 240.0
+  protein_per_100g: 18.0
+  carbs_per_100g: 8.0
+  fat_per_100g: 16.0
+  brand: Papa John's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: piece
+  unit_grams: 100
+- source: papajohns
+  source_id: papa_jalapeno_poppers_4
+  name: Papa John's Jalapeño Poppers (4 pcs)
+  kcal_per_100g: 318.2
+  protein_per_100g: 8.18
+  carbs_per_100g: 27.27
+  fat_per_100g: 20.0
+  brand: Papa John's
+  region_codes: GB
+  serving_grams: 110
+  serving_label: item (110 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: piece
+  unit_grams: 110
+- source: papajohns
+  source_id: papa_potato_tots
+  name: Papa John's Potato Tots (Side)
+  kcal_per_100g: 213.6
+  protein_per_100g: 2.73
+  carbs_per_100g: 23.64
+  fat_per_100g: 11.82
+  brand: Papa John's
+  region_codes: GB
+  serving_grams: 110
+  serving_label: item (110 g)
+  tags: fast-food,pizza,takeaway
+  portion_unit: piece
+  unit_grams: 110

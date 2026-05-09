@@ -1,0 +1,632 @@
+# Greggs Full Menu — savouries, pies, doughnuts, cookies, sandwiches, baguettes, breakfast
+
+- source: greggs
+  source_id: greggs_cheese_onion_bake
+  name: Greggs Cheese & Onion Bake
+  kcal_per_100g: 280.8
+  protein_per_100g: 8.46
+  carbs_per_100g: 23.08
+  fat_per_100g: 16.92
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 130
+  serving_label: item (130 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 130
+- source: greggs
+  source_id: greggs_corned_beef_bake
+  name: Greggs Corned Beef Bake
+  kcal_per_100g: 293.1
+  protein_per_100g: 9.66
+  carbs_per_100g: 20.69
+  fat_per_100g: 18.62
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 145
+  serving_label: item (145 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 145
+- source: greggs
+  source_id: greggs_chicken_mushroom_slice
+  name: Greggs Chicken & Mushroom Slice
+  kcal_per_100g: 296.4
+  protein_per_100g: 9.29
+  carbs_per_100g: 22.86
+  fat_per_100g: 17.86
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 140
+  serving_label: item (140 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 140
+- source: greggs
+  source_id: greggs_pizza_pepperoni
+  name: Greggs Pizza Pepperoni Slice
+  kcal_per_100g: 248.3
+  protein_per_100g: 10.34
+  carbs_per_100g: 26.21
+  fat_per_100g: 11.03
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 145
+  serving_label: item (145 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 145
+- source: greggs
+  source_id: greggs_pizza_margherita
+  name: Greggs Pizza Margherita Slice
+  kcal_per_100g: 220.7
+  protein_per_100g: 9.66
+  carbs_per_100g: 26.21
+  fat_per_100g: 7.59
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 145
+  serving_label: item (145 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 145
+- source: greggs
+  source_id: greggs_pizza_meat_feast
+  name: Greggs Pizza Meat Feast Slice
+  kcal_per_100g: 255.2
+  protein_per_100g: 11.03
+  carbs_per_100g: 26.21
+  fat_per_100g: 11.03
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 145
+  serving_label: item (145 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 145
+- source: greggs
+  source_id: greggs_pasty_traditional
+  name: Greggs Traditional Pasty
+  kcal_per_100g: 255.0
+  protein_per_100g: 6.5
+  carbs_per_100g: 25.0
+  fat_per_100g: 14.0
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 200
+- source: greggs
+  source_id: greggs_pasty_cheese_onion
+  name: Greggs Cheese & Onion Pasty
+  kcal_per_100g: 251.3
+  protein_per_100g: 6.67
+  carbs_per_100g: 25.64
+  fat_per_100g: 13.33
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 195
+  serving_label: item (195 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 195
+- source: greggs
+  source_id: greggs_pie_chicken_bacon
+  name: Greggs Chicken Bacon Pie
+  kcal_per_100g: 287.9
+  protein_per_100g: 8.48
+  carbs_per_100g: 21.82
+  fat_per_100g: 18.18
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 165
+  serving_label: item (165 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 165
+- source: greggs
+  source_id: greggs_pie_chicken_mushroom
+  name: Greggs Chicken & Mushroom Pie
+  kcal_per_100g: 278.8
+  protein_per_100g: 7.88
+  carbs_per_100g: 21.82
+  fat_per_100g: 16.97
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 165
+  serving_label: item (165 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 165
+- source: greggs
+  source_id: greggs_pie_steak
+  name: Greggs Steak Pie
+  kcal_per_100g: 309.1
+  protein_per_100g: 8.48
+  carbs_per_100g: 23.03
+  fat_per_100g: 19.39
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 165
+  serving_label: item (165 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 165
+- source: greggs
+  source_id: greggs_doughnut_jam
+  name: Greggs Jam Doughnut
+  kcal_per_100g: 338.9
+  protein_per_100g: 5.56
+  carbs_per_100g: 50.0
+  fat_per_100g: 12.22
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 90
+  serving_label: item (90 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 90
+- source: greggs
+  source_id: greggs_doughnut_yumyum
+  name: Greggs Yum Yum
+  kcal_per_100g: 393.3
+  protein_per_100g: 5.33
+  carbs_per_100g: 48.0
+  fat_per_100g: 18.67
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 75
+  serving_label: item (75 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 75
+- source: greggs
+  source_id: greggs_doughnut_chocolate_ring
+  name: Greggs Chocolate Ring Doughnut
+  kcal_per_100g: 400.0
+  protein_per_100g: 5.0
+  carbs_per_100g: 50.0
+  fat_per_100g: 18.75
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 80
+- source: greggs
+  source_id: greggs_iced_finger
+  name: Greggs Iced Finger
+  kcal_per_100g: 343.8
+  protein_per_100g: 5.0
+  carbs_per_100g: 62.5
+  fat_per_100g: 7.5
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 80
+- source: greggs
+  source_id: greggs_caramel_shortbread
+  name: Greggs Caramel Shortbread
+  kcal_per_100g: 583.3
+  protein_per_100g: 4.44
+  carbs_per_100g: 66.67
+  fat_per_100g: 33.33
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 90
+  serving_label: item (90 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 90
+- source: greggs
+  source_id: greggs_chocolate_eclair
+  name: Greggs Chocolate Eclair
+  kcal_per_100g: 453.3
+  protein_per_100g: 6.67
+  carbs_per_100g: 46.67
+  fat_per_100g: 26.67
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 75
+  serving_label: item (75 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 75
+- source: greggs
+  source_id: greggs_jam_fresh_cream_doughnut
+  name: Greggs Jam & Fresh Cream Doughnut
+  kcal_per_100g: 347.4
+  protein_per_100g: 4.21
+  carbs_per_100g: 42.11
+  fat_per_100g: 17.89
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 95
+  serving_label: item (95 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 95
+- source: greggs
+  source_id: greggs_chocolate_doughnut_filled
+  name: Greggs Chocolate Custard Filled Doughnut
+  kcal_per_100g: 347.4
+  protein_per_100g: 4.21
+  carbs_per_100g: 42.11
+  fat_per_100g: 17.89
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 95
+  serving_label: item (95 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 95
+- source: greggs
+  source_id: greggs_brownie
+  name: Greggs Chocolate Brownie
+  kcal_per_100g: 512.5
+  protein_per_100g: 6.25
+  carbs_per_100g: 62.5
+  fat_per_100g: 27.5
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 80
+- source: greggs
+  source_id: greggs_cookie_choc_chip
+  name: Greggs Chocolate Chip Cookie
+  kcal_per_100g: 783.3
+  protein_per_100g: 8.33
+  carbs_per_100g: 100.0
+  fat_per_100g: 40.0
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 60
+  serving_label: item (60 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 60
+- source: greggs
+  source_id: greggs_cookie_white_choc_raspberry
+  name: Greggs White Chocolate & Raspberry Cookie
+  kcal_per_100g: 775.0
+  protein_per_100g: 8.33
+  carbs_per_100g: 100.0
+  fat_per_100g: 40.0
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 60
+  serving_label: item (60 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 60
+- source: greggs
+  source_id: greggs_cookie_double_choc
+  name: Greggs Double Chocolate Cookie
+  kcal_per_100g: 800.0
+  protein_per_100g: 8.33
+  carbs_per_100g: 100.0
+  fat_per_100g: 41.67
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 60
+  serving_label: item (60 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 60
+- source: greggs
+  source_id: greggs_breakfast_roll_bacon
+  name: Greggs Bacon Breakfast Roll
+  kcal_per_100g: 248.3
+  protein_per_100g: 11.72
+  carbs_per_100g: 24.83
+  fat_per_100g: 11.03
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 145
+  serving_label: item (145 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 145
+- source: greggs
+  source_id: greggs_breakfast_roll_sausage
+  name: Greggs Sausage Breakfast Roll
+  kcal_per_100g: 293.1
+  protein_per_100g: 9.66
+  carbs_per_100g: 26.21
+  fat_per_100g: 16.55
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 145
+  serving_label: item (145 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: piece
+  unit_grams: 145
+- source: greggs
+  source_id: greggs_breakfast_baguette_bacon_omelette
+  name: Greggs Bacon & Omelette Breakfast Baguette
+  kcal_per_100g: 235.0
+  protein_per_100g: 9.5
+  carbs_per_100g: 25.0
+  fat_per_100g: 10.0
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 200
+- source: greggs
+  source_id: greggs_breakfast_baguette_sausage_omelette
+  name: Greggs Sausage & Omelette Breakfast Baguette
+  kcal_per_100g: 245.5
+  protein_per_100g: 9.09
+  carbs_per_100g: 22.73
+  fat_per_100g: 12.73
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 220
+  serving_label: item (220 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 220
+- source: greggs
+  source_id: greggs_breakfast_porridge_pot
+  name: Greggs Porridge Pot
+  kcal_per_100g: 116.0
+  protein_per_100g: 3.6
+  carbs_per_100g: 20.0
+  fat_per_100g: 2.0
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 250
+- source: greggs
+  source_id: greggs_yogurt_granola
+  name: Greggs Yogurt & Granola Pot
+  kcal_per_100g: 123.3
+  protein_per_100g: 3.26
+  carbs_per_100g: 17.67
+  fat_per_100g: 4.19
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 215
+  serving_label: item (215 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 215
+- source: greggs
+  source_id: greggs_sandwich_chicken_bacon
+  name: Greggs Chicken & Bacon Sandwich
+  kcal_per_100g: 212.5
+  protein_per_100g: 13.5
+  carbs_per_100g: 17.5
+  fat_per_100g: 9.5
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 200
+- source: greggs
+  source_id: greggs_sandwich_egg_mayo
+  name: Greggs Egg Mayo Sandwich
+  kcal_per_100g: 205.7
+  protein_per_100g: 8.0
+  carbs_per_100g: 18.29
+  fat_per_100g: 10.86
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 175
+  serving_label: item (175 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 175
+- source: greggs
+  source_id: greggs_sandwich_cheese_pickle
+  name: Greggs Cheese & Pickle Sandwich
+  kcal_per_100g: 212.5
+  protein_per_100g: 8.0
+  carbs_per_100g: 25.0
+  fat_per_100g: 9.5
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 200
+- source: greggs
+  source_id: greggs_sandwich_ham_cheese
+  name: Greggs Ham & Cheese Sandwich
+  kcal_per_100g: 200.0
+  protein_per_100g: 9.47
+  carbs_per_100g: 20.0
+  fat_per_100g: 8.95
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 190
+  serving_label: item (190 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 190
+- source: greggs
+  source_id: greggs_sandwich_tuna_sweetcorn
+  name: Greggs Tuna Sweetcorn Sandwich
+  kcal_per_100g: 200.0
+  protein_per_100g: 9.23
+  carbs_per_100g: 18.46
+  fat_per_100g: 9.74
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 195
+  serving_label: item (195 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 195
+- source: greggs
+  source_id: greggs_sandwich_chicken_salad
+  name: Greggs Chicken Salad Sandwich
+  kcal_per_100g: 164.1
+  protein_per_100g: 11.28
+  carbs_per_100g: 16.41
+  fat_per_100g: 5.64
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 195
+  serving_label: item (195 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 195
+- source: greggs
+  source_id: greggs_sandwich_southern_fried_chicken
+  name: Greggs Southern Fried Chicken Sandwich
+  kcal_per_100g: 214.0
+  protein_per_100g: 10.23
+  carbs_per_100g: 23.26
+  fat_per_100g: 8.84
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 215
+  serving_label: item (215 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 215
+- source: greggs
+  source_id: greggs_baguette_chicken_bacon_caesar
+  name: Greggs Chicken Bacon Caesar Baguette
+  kcal_per_100g: 231.2
+  protein_per_100g: 12.5
+  carbs_per_100g: 22.92
+  fat_per_100g: 9.17
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 240
+  serving_label: item (240 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 240
+- source: greggs
+  source_id: greggs_baguette_ham_cheese
+  name: Greggs Ham & Cheese Baguette
+  kcal_per_100g: 233.3
+  protein_per_100g: 11.11
+  carbs_per_100g: 26.67
+  fat_per_100g: 8.44
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 225
+  serving_label: item (225 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 225
+- source: greggs
+  source_id: greggs_baguette_chicken_salad
+  name: Greggs Chicken Salad Baguette
+  kcal_per_100g: 174.5
+  protein_per_100g: 11.06
+  carbs_per_100g: 23.4
+  fat_per_100g: 3.83
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 235
+  serving_label: item (235 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 235
+- source: greggs
+  source_id: greggs_baguette_tuna_crunch
+  name: Greggs Tuna Crunch Baguette
+  kcal_per_100g: 223.4
+  protein_per_100g: 10.21
+  carbs_per_100g: 23.4
+  fat_per_100g: 9.36
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 235
+  serving_label: item (235 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 235
+- source: greggs
+  source_id: greggs_pasta_pesto
+  name: Greggs Pesto Pasta Salad
+  kcal_per_100g: 183.7
+  protein_per_100g: 5.12
+  carbs_per_100g: 18.6
+  fat_per_100g: 9.77
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 215
+  serving_label: item (215 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 215
+- source: greggs
+  source_id: greggs_salad_chicken_caesar
+  name: Greggs Chicken Caesar Salad
+  kcal_per_100g: 132.6
+  protein_per_100g: 10.87
+  carbs_per_100g: 6.09
+  fat_per_100g: 6.96
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 230
+  serving_label: item (230 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 230
+- source: greggs
+  source_id: greggs_salad_super_grain
+  name: Greggs Super Grain Salad
+  kcal_per_100g: 114.0
+  protein_per_100g: 3.6
+  carbs_per_100g: 12.8
+  fat_per_100g: 5.2
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: meal
+  unit_grams: 250
+- source: greggs
+  source_id: greggs_chocolate_milk
+  name: Greggs Chocolate Milk
+  kcal_per_100g: 42.0
+  protein_per_100g: 1.4
+  carbs_per_100g: 4.8
+  fat_per_100g: 2.0
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: ml
+  unit_grams: 250
+- source: greggs
+  source_id: greggs_lemonade
+  name: Greggs Sparkling Lemonade
+  kcal_per_100g: 18.2
+  protein_per_100g: 0.0
+  carbs_per_100g: 4.24
+  fat_per_100g: 0.0
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 330
+  serving_label: item (330 g)
+  tags: fast-food,greggs,bakery
+  portion_unit: ml
+  unit_grams: 330

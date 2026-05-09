@@ -1,0 +1,1014 @@
+# Cocktails / Spirits / Wines / Beers — UK pub standards
+# Cocktails (mojito, margarita, espresso martini, aperol spritz, etc.)
+# Spirits at single (25ml) and double (50ml) measures
+# Wines at 125/175/250ml (UK standard glasses)
+# More beers + alcohol-free options
+
+- source: alcohol
+  source_id: cocktail_mojito
+  name: Mojito (Per Glass)
+  kcal_per_100g: 70.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 6.4
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 250
+- source: alcohol
+  source_id: cocktail_margarita_classic
+  name: Margarita Classic (Per Glass)
+  kcal_per_100g: 111.42857142857143
+  protein_per_100g: 0.0
+  carbs_per_100g: 6.86
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 175
+- source: alcohol
+  source_id: cocktail_margarita_frozen
+  name: Frozen Margarita (Per Glass)
+  kcal_per_100g: 92.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 8.8
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 250
+- source: alcohol
+  source_id: cocktail_pina_colada
+  name: Piña Colada (Per Glass)
+  kcal_per_100g: 116.0
+  protein_per_100g: 0.4
+  carbs_per_100g: 12.8
+  fat_per_100g: 1.6
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 250
+- source: alcohol
+  source_id: cocktail_strawberry_daiquiri
+  name: Strawberry Daiquiri (Per Glass)
+  kcal_per_100g: 86.0
+  protein_per_100g: 0.2
+  carbs_per_100g: 11.2
+  fat_per_100g: 0.08
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 250
+- source: alcohol
+  source_id: cocktail_long_island_iced_tea
+  name: Long Island Iced Tea
+  kcal_per_100g: 142.5
+  protein_per_100g: 0.0
+  carbs_per_100g: 12.5
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 200
+- source: alcohol
+  source_id: cocktail_cosmopolitan
+  name: Cosmopolitan
+  kcal_per_100g: 116.66666666666667
+  protein_per_100g: 0.0
+  carbs_per_100g: 9.33
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 150
+- source: alcohol
+  source_id: cocktail_manhattan
+  name: Manhattan
+  kcal_per_100g: 165.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 4.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 100
+- source: alcohol
+  source_id: cocktail_martini_classic
+  name: Martini Classic
+  kcal_per_100g: 165.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 100
+- source: alcohol
+  source_id: cocktail_martini_dirty
+  name: Dirty Martini
+  kcal_per_100g: 175.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 1.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 100
+- source: alcohol
+  source_id: cocktail_espresso_martini
+  name: Espresso Martini
+  kcal_per_100g: 156.66666666666666
+  protein_per_100g: 0.67
+  carbs_per_100g: 14.67
+  fat_per_100g: 0.67
+  brand: Generic
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 150
+- source: alcohol
+  source_id: cocktail_aperol_spritz
+  name: Aperol Spritz
+  kcal_per_100g: 87.5
+  protein_per_100g: 0.0
+  carbs_per_100g: 9.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 200
+- source: alcohol
+  source_id: cocktail_bellini
+  name: Bellini
+  kcal_per_100g: 65.0
+  protein_per_100g: 0.25
+  carbs_per_100g: 8.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 200
+- source: alcohol
+  source_id: cocktail_mimosa
+  name: Mimosa
+  kcal_per_100g: 65.0
+  protein_per_100g: 0.5
+  carbs_per_100g: 8.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 200
+- source: alcohol
+  source_id: cocktail_pornstar_martini
+  name: Pornstar Martini
+  kcal_per_100g: 117.5
+  protein_per_100g: 0.25
+  carbs_per_100g: 10.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 200
+- source: alcohol
+  source_id: cocktail_french_75
+  name: French 75
+  kcal_per_100g: 100.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 8.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 175
+- source: alcohol
+  source_id: cocktail_white_russian
+  name: White Russian
+  kcal_per_100g: 200.0
+  protein_per_100g: 0.86
+  carbs_per_100g: 10.29
+  fat_per_100g: 10.29
+  brand: Generic
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 175
+- source: alcohol
+  source_id: cocktail_black_russian
+  name: Black Russian
+  kcal_per_100g: 215.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 17.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 100
+- source: alcohol
+  source_id: cocktail_moscow_mule
+  name: Moscow Mule
+  kcal_per_100g: 87.5
+  protein_per_100g: 0.0
+  carbs_per_100g: 8.5
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 200
+- source: alcohol
+  source_id: cocktail_dark_n_stormy
+  name: Dark 'n' Stormy
+  kcal_per_100g: 87.5
+  protein_per_100g: 0.0
+  carbs_per_100g: 8.5
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 200
+- source: alcohol
+  source_id: cocktail_caipirinha
+  name: Caipirinha
+  kcal_per_100g: 110.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 11.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 200
+- source: alcohol
+  source_id: cocktail_tom_collins
+  name: Tom Collins
+  kcal_per_100g: 87.5
+  protein_per_100g: 0.0
+  carbs_per_100g: 8.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 200
+- source: alcohol
+  source_id: cocktail_gin_tonic_single
+  name: Gin & Tonic (Single 25ml gin + 150ml tonic)
+  kcal_per_100g: 54.285714285714285
+  protein_per_100g: 0.0
+  carbs_per_100g: 6.29
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 175
+- source: alcohol
+  source_id: cocktail_gin_tonic_double
+  name: Gin & Tonic (Double 50ml gin + 200ml tonic)
+  kcal_per_100g: 70.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 6.4
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 250
+- source: alcohol
+  source_id: cocktail_jack_coke
+  name: Jack & Coke (Single 25ml + 150ml Coke)
+  kcal_per_100g: 74.28571428571429
+  protein_per_100g: 0.0
+  carbs_per_100g: 8.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 175
+- source: alcohol
+  source_id: cocktail_vodka_lime_soda
+  name: Vodka, Lime & Soda (Single)
+  kcal_per_100g: 37.142857142857146
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.57
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 175
+- source: alcohol
+  source_id: cocktail_rum_coke_single
+  name: Rum & Coke (Single)
+  kcal_per_100g: 74.28571428571429
+  protein_per_100g: 0.0
+  carbs_per_100g: 8.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 ml
+  tags: alcohol,cocktail
+  portion_unit: ml
+  unit_grams: 175
+- source: alcohol
+  source_id: spirit_gin_25ml
+  name: Gin (Single 25ml)
+  kcal_per_100g: 220.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 ml
+  tags: alcohol,spirit
+  portion_unit: ml
+  unit_grams: 25
+- source: alcohol
+  source_id: spirit_gin_50ml
+  name: Gin (Double 50ml)
+  kcal_per_100g: 220.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 ml
+  tags: alcohol,spirit
+  portion_unit: ml
+  unit_grams: 50
+- source: alcohol
+  source_id: spirit_vodka_25ml
+  name: Vodka (Single 25ml)
+  kcal_per_100g: 220.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 ml
+  tags: alcohol,spirit
+  portion_unit: ml
+  unit_grams: 25
+- source: alcohol
+  source_id: spirit_vodka_50ml
+  name: Vodka (Double 50ml)
+  kcal_per_100g: 220.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 ml
+  tags: alcohol,spirit
+  portion_unit: ml
+  unit_grams: 50
+- source: alcohol
+  source_id: spirit_whisky_25ml
+  name: Whisky (Single 25ml)
+  kcal_per_100g: 240.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 ml
+  tags: alcohol,spirit
+  portion_unit: ml
+  unit_grams: 25
+- source: alcohol
+  source_id: spirit_whisky_50ml
+  name: Whisky (Double 50ml)
+  kcal_per_100g: 240.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 ml
+  tags: alcohol,spirit
+  portion_unit: ml
+  unit_grams: 50
+- source: alcohol
+  source_id: spirit_rum_white_25ml
+  name: White Rum (Single 25ml)
+  kcal_per_100g: 220.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 ml
+  tags: alcohol,spirit
+  portion_unit: ml
+  unit_grams: 25
+- source: alcohol
+  source_id: spirit_rum_dark_25ml
+  name: Dark Rum (Single 25ml)
+  kcal_per_100g: 240.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 4.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 ml
+  tags: alcohol,spirit
+  portion_unit: ml
+  unit_grams: 25
+- source: alcohol
+  source_id: spirit_tequila_25ml
+  name: Tequila (Single 25ml)
+  kcal_per_100g: 220.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 ml
+  tags: alcohol,spirit
+  portion_unit: ml
+  unit_grams: 25
+- source: alcohol
+  source_id: spirit_brandy_25ml
+  name: Brandy (Single 25ml)
+  kcal_per_100g: 260.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 ml
+  tags: alcohol,spirit
+  portion_unit: ml
+  unit_grams: 25
+- source: alcohol
+  source_id: spirit_baileys_25ml
+  name: Baileys (Single 25ml)
+  kcal_per_100g: 320.0
+  protein_per_100g: 4.0
+  carbs_per_100g: 24.0
+  fat_per_100g: 16.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 ml
+  tags: alcohol,spirit
+  portion_unit: ml
+  unit_grams: 25
+- source: alcohol
+  source_id: spirit_baileys_50ml
+  name: Baileys (Double 50ml)
+  kcal_per_100g: 320.0
+  protein_per_100g: 4.0
+  carbs_per_100g: 24.0
+  fat_per_100g: 16.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 ml
+  tags: alcohol,spirit
+  portion_unit: ml
+  unit_grams: 50
+- source: alcohol
+  source_id: spirit_jagermeister_25ml
+  name: Jägermeister (25ml shot)
+  kcal_per_100g: 260.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 28.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 ml
+  tags: alcohol,spirit
+  portion_unit: ml
+  unit_grams: 25
+- source: alcohol
+  source_id: spirit_aperol_25ml
+  name: Aperol (25ml)
+  kcal_per_100g: 140.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 20.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 ml
+  tags: alcohol,spirit
+  portion_unit: ml
+  unit_grams: 25
+- source: alcohol
+  source_id: spirit_campari_25ml
+  name: Campari (25ml)
+  kcal_per_100g: 240.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 24.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 ml
+  tags: alcohol,spirit
+  portion_unit: ml
+  unit_grams: 25
+- source: alcohol
+  source_id: spirit_amaretto_25ml
+  name: Amaretto (25ml)
+  kcal_per_100g: 320.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 36.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 ml
+  tags: alcohol,spirit
+  portion_unit: ml
+  unit_grams: 25
+- source: alcohol
+  source_id: spirit_kahlua_25ml
+  name: Kahlúa (25ml)
+  kcal_per_100g: 360.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 48.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 ml
+  tags: alcohol,spirit
+  portion_unit: ml
+  unit_grams: 25
+- source: alcohol
+  source_id: wine_red_125ml
+  name: Red Wine (125ml)
+  kcal_per_100g: 84.0
+  protein_per_100g: 0.08
+  carbs_per_100g: 2.4
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 125
+  serving_label: 125 ml
+  tags: alcohol,wine
+  portion_unit: ml
+  unit_grams: 125
+- source: alcohol
+  source_id: wine_red_175ml
+  name: Red Wine (175ml Standard Glass)
+  kcal_per_100g: 82.85714285714286
+  protein_per_100g: 0.06
+  carbs_per_100g: 2.29
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 ml
+  tags: alcohol,wine
+  portion_unit: ml
+  unit_grams: 175
+- source: alcohol
+  source_id: wine_white_125ml
+  name: White Wine (125ml)
+  kcal_per_100g: 80.0
+  protein_per_100g: 0.08
+  carbs_per_100g: 2.4
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 125
+  serving_label: 125 ml
+  tags: alcohol,wine
+  portion_unit: ml
+  unit_grams: 125
+- source: alcohol
+  source_id: wine_white_175ml
+  name: White Wine (175ml Standard Glass)
+  kcal_per_100g: 80.0
+  protein_per_100g: 0.06
+  carbs_per_100g: 2.29
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 ml
+  tags: alcohol,wine
+  portion_unit: ml
+  unit_grams: 175
+- source: alcohol
+  source_id: wine_rose_175ml
+  name: Rosé Wine (175ml)
+  kcal_per_100g: 82.85714285714286
+  protein_per_100g: 0.06
+  carbs_per_100g: 2.29
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 ml
+  tags: alcohol,wine
+  portion_unit: ml
+  unit_grams: 175
+- source: alcohol
+  source_id: wine_rose_250ml
+  name: Rosé Wine (250ml)
+  kcal_per_100g: 84.0
+  protein_per_100g: 0.08
+  carbs_per_100g: 2.4
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: alcohol,wine
+  portion_unit: ml
+  unit_grams: 250
+- source: alcohol
+  source_id: wine_prosecco_125ml
+  name: Prosecco (125ml Flute)
+  kcal_per_100g: 72.0
+  protein_per_100g: 0.08
+  carbs_per_100g: 2.4
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 125
+  serving_label: 125 ml
+  tags: alcohol,wine
+  portion_unit: ml
+  unit_grams: 125
+- source: alcohol
+  source_id: wine_prosecco_175ml
+  name: Prosecco (175ml)
+  kcal_per_100g: 74.28571428571429
+  protein_per_100g: 0.06
+  carbs_per_100g: 2.29
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 ml
+  tags: alcohol,wine
+  portion_unit: ml
+  unit_grams: 175
+- source: alcohol
+  source_id: wine_champagne_125ml
+  name: Champagne (125ml)
+  kcal_per_100g: 76.0
+  protein_per_100g: 0.08
+  carbs_per_100g: 0.8
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 125
+  serving_label: 125 ml
+  tags: alcohol,wine
+  portion_unit: ml
+  unit_grams: 125
+- source: alcohol
+  source_id: wine_champagne_175ml
+  name: Champagne (175ml)
+  kcal_per_100g: 74.28571428571429
+  protein_per_100g: 0.06
+  carbs_per_100g: 1.14
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 ml
+  tags: alcohol,wine
+  portion_unit: ml
+  unit_grams: 175
+- source: alcohol
+  source_id: wine_cava_125ml
+  name: Cava (125ml)
+  kcal_per_100g: 76.0
+  protein_per_100g: 0.08
+  carbs_per_100g: 1.6
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 125
+  serving_label: 125 ml
+  tags: alcohol,wine
+  portion_unit: ml
+  unit_grams: 125
+- source: alcohol
+  source_id: wine_dessert_75ml
+  name: Dessert Wine (75ml)
+  kcal_per_100g: 233.33333333333334
+  protein_per_100g: 0.27
+  carbs_per_100g: 22.67
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 ml
+  tags: alcohol,wine
+  portion_unit: ml
+  unit_grams: 75
+- source: alcohol
+  source_id: wine_port_50ml
+  name: Port (50ml)
+  kcal_per_100g: 330.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 18.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 ml
+  tags: alcohol,wine
+  portion_unit: ml
+  unit_grams: 50
+- source: alcohol
+  source_id: wine_sherry_dry_50ml
+  name: Dry Sherry (50ml)
+  kcal_per_100g: 220.0
+  protein_per_100g: 1.0
+  carbs_per_100g: 2.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 ml
+  tags: alcohol,wine
+  portion_unit: ml
+  unit_grams: 50
+- source: alcohol
+  source_id: wine_sherry_sweet_50ml
+  name: Sweet Sherry (50ml)
+  kcal_per_100g: 290.0
+  protein_per_100g: 1.0
+  carbs_per_100g: 10.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 ml
+  tags: alcohol,wine
+  portion_unit: ml
+  unit_grams: 50
+- source: alcohol
+  source_id: wine_vermouth_dry_50ml
+  name: Dry Vermouth (50ml)
+  kcal_per_100g: 210.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 2.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 ml
+  tags: alcohol,wine
+  portion_unit: ml
+  unit_grams: 50
+- source: alcohol
+  source_id: wine_vermouth_sweet_50ml
+  name: Sweet Vermouth (50ml)
+  kcal_per_100g: 290.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 28.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 ml
+  tags: alcohol,wine
+  portion_unit: ml
+  unit_grams: 50
+- source: alcohol
+  source_id: beer_lager_440_can_5pct
+  name: Lager Generic 5% (440ml Can)
+  kcal_per_100g: 44.31818181818182
+  protein_per_100g: 0.23
+  carbs_per_100g: 2.95
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 440
+  serving_label: 440 ml
+  tags: alcohol,beer
+  portion_unit: ml
+  unit_grams: 440
+- source: alcohol
+  source_id: beer_lager_500_can_5pct
+  name: Lager Generic 5% (500ml Can)
+  kcal_per_100g: 44.0
+  protein_per_100g: 0.2
+  carbs_per_100g: 3.0
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: alcohol,beer
+  portion_unit: ml
+  unit_grams: 500
+- source: alcohol
+  source_id: cider_kopparberg_500_strawberry_lime
+  name: Kopparberg Strawberry & Lime Cider (500ml)
+  kcal_per_100g: 47.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 5.4
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: alcohol,beer
+  portion_unit: ml
+  unit_grams: 500
+- source: alcohol
+  source_id: cider_kopparberg_500_mixed_fruit
+  name: Kopparberg Mixed Fruit Cider (500ml)
+  kcal_per_100g: 47.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 5.4
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: alcohol,beer
+  portion_unit: ml
+  unit_grams: 500
+- source: alcohol
+  source_id: cider_old_mout_kiwi_lime
+  name: Old Mout Kiwi & Lime Cider (500ml)
+  kcal_per_100g: 43.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 4.2
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: alcohol,beer
+  portion_unit: ml
+  unit_grams: 500
+- source: alcohol
+  source_id: cider_old_mout_strawberry_pomegranate
+  name: Old Mout Strawberry & Pomegranate Cider (500ml)
+  kcal_per_100g: 43.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 4.2
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: alcohol,beer
+  portion_unit: ml
+  unit_grams: 500
+- source: alcohol
+  source_id: cider_thatchers_haze_440
+  name: Thatchers Haze (440ml Can)
+  kcal_per_100g: 45.45454545454545
+  protein_per_100g: 0.0
+  carbs_per_100g: 3.64
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 440
+  serving_label: 440 ml
+  tags: alcohol,beer
+  portion_unit: ml
+  unit_grams: 440
+- source: alcohol
+  source_id: beer_heineken_zero_330
+  name: Heineken 0.0 Alcohol Free (330ml)
+  kcal_per_100g: 6.363636363636363
+  protein_per_100g: 0.15
+  carbs_per_100g: 1.42
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: alcohol,beer
+  portion_unit: ml
+  unit_grams: 330
+- source: alcohol
+  source_id: beer_corona_cero_330
+  name: Corona Cero (330ml)
+  kcal_per_100g: 5.151515151515151
+  protein_per_100g: 0.15
+  carbs_per_100g: 1.21
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: alcohol,beer
+  portion_unit: ml
+  unit_grams: 330
+- source: alcohol
+  source_id: beer_brewdog_punk_af_330
+  name: BrewDog Punk AF Alcohol Free (330ml)
+  kcal_per_100g: 9.090909090909092
+  protein_per_100g: 0.15
+  carbs_per_100g: 1.97
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: alcohol,beer
+  portion_unit: ml
+  unit_grams: 330
+- source: alcohol
+  source_id: beer_guinness_zero_pint
+  name: Guinness 0.0 (Pint, 568ml)
+  kcal_per_100g: 2.816901408450704
+  protein_per_100g: 0.09
+  carbs_per_100g: 0.7
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 568
+  serving_label: 568 ml
+  tags: alcohol,beer
+  portion_unit: ml
+  unit_grams: 568

@@ -1,0 +1,1110 @@
+# World food sauces & pastes — Patak's, Sharwood's, Loyd Grossman, Dolmio, Ragu, Bertolli,
+# Lee Kum Kee, Blue Dragon, Old El Paso, Discovery, Yutaka, Kikkoman,
+# Encona, Walkerswood, Dunn's River, Krakus, Tahira, Jus-Rol
+
+- source: brand
+  source_id: pataks_tikka_masala_paste
+  name: Patak's Tikka Masala Paste (Per 30g)
+  kcal_per_100g: 220
+  protein_per_100g: 4
+  carbs_per_100g: 12
+  fat_per_100g: 16
+  brand: Patak's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: indian,paste,sauce
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: pataks_korma_paste
+  name: Patak's Korma Paste (Per 30g)
+  kcal_per_100g: 230
+  protein_per_100g: 4
+  carbs_per_100g: 12
+  fat_per_100g: 18
+  brand: Patak's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: indian,paste,sauce
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: pataks_madras_paste
+  name: Patak's Madras Paste (Per 30g)
+  kcal_per_100g: 200
+  protein_per_100g: 4
+  carbs_per_100g: 12
+  fat_per_100g: 14
+  brand: Patak's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: indian,paste,sauce
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: pataks_balti_paste
+  name: Patak's Balti Paste (Per 30g)
+  kcal_per_100g: 195
+  protein_per_100g: 4
+  carbs_per_100g: 12
+  fat_per_100g: 14
+  brand: Patak's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: indian,paste,sauce
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: pataks_jalfrezi_paste
+  name: Patak's Jalfrezi Paste (Per 30g)
+  kcal_per_100g: 195
+  protein_per_100g: 4
+  carbs_per_100g: 12
+  fat_per_100g: 14
+  brand: Patak's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: indian,paste,sauce
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: pataks_tikka_curry_sauce_400g
+  name: Patak's Tikka Masala Sauce (Per 100g)
+  kcal_per_100g: 130
+  protein_per_100g: 2
+  carbs_per_100g: 11
+  fat_per_100g: 9
+  brand: Patak's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: indian,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: pataks_korma_curry_sauce
+  name: Patak's Korma Sauce (Per 100g)
+  kcal_per_100g: 165
+  protein_per_100g: 2
+  carbs_per_100g: 11
+  fat_per_100g: 12
+  brand: Patak's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: indian,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: pataks_madras_sauce
+  name: Patak's Madras Sauce (Per 100g)
+  kcal_per_100g: 110
+  protein_per_100g: 2
+  carbs_per_100g: 11
+  fat_per_100g: 6
+  brand: Patak's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: indian,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: pataks_jalfrezi_sauce
+  name: Patak's Jalfrezi Sauce (Per 100g)
+  kcal_per_100g: 90
+  protein_per_100g: 1.5
+  carbs_per_100g: 11
+  fat_per_100g: 4
+  brand: Patak's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: indian,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: pataks_lime_pickle
+  name: Patak's Lime Pickle (Per 25g)
+  kcal_per_100g: 200
+  protein_per_100g: 1
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Patak's
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: indian,pickle
+  portion_unit: meal
+  unit_grams: 25
+- source: brand
+  source_id: pataks_mango_chutney
+  name: Patak's Major Grey Mango Chutney (Per 25g)
+  kcal_per_100g: 220
+  protein_per_100g: 0.5
+  carbs_per_100g: 55
+  fat_per_100g: 0.1
+  brand: Patak's
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: indian,chutney
+  portion_unit: meal
+  unit_grams: 25
+- source: brand
+  source_id: sharwoods_tikka_masala_sauce
+  name: Sharwood's Tikka Masala Sauce (Per 100g)
+  kcal_per_100g: 130
+  protein_per_100g: 2
+  carbs_per_100g: 11
+  fat_per_100g: 9
+  brand: Sharwood's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: indian,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: sharwoods_korma_sauce
+  name: Sharwood's Korma Sauce (Per 100g)
+  kcal_per_100g: 160
+  protein_per_100g: 2
+  carbs_per_100g: 11
+  fat_per_100g: 12
+  brand: Sharwood's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: indian,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: sharwoods_butter_chicken_sauce
+  name: Sharwood's Butter Chicken Sauce (Per 100g)
+  kcal_per_100g: 145
+  protein_per_100g: 2
+  carbs_per_100g: 11
+  fat_per_100g: 10
+  brand: Sharwood's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: indian,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: sharwoods_naan_plain
+  name: Sharwood's Naan Bread Plain (Per Naan)
+  kcal_per_100g: 290
+  protein_per_100g: 9
+  carbs_per_100g: 47
+  fat_per_100g: 7
+  brand: Sharwood's
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: indian,bread
+  portion_unit: piece
+  unit_grams: 130
+- source: brand
+  source_id: sharwoods_naan_garlic
+  name: Sharwood's Naan Bread Garlic (Per Naan)
+  kcal_per_100g: 305
+  protein_per_100g: 9
+  carbs_per_100g: 47
+  fat_per_100g: 9
+  brand: Sharwood's
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: indian,bread
+  portion_unit: piece
+  unit_grams: 130
+- source: brand
+  source_id: sharwoods_basmati_microwave
+  name: Sharwood's Microwave Basmati Rice
+  kcal_per_100g: 165
+  protein_per_100g: 3
+  carbs_per_100g: 35
+  fat_per_100g: 1
+  brand: Sharwood's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: indian,rice
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: sharwoods_pilau_rice_microwave
+  name: Sharwood's Microwave Pilau Rice
+  kcal_per_100g: 175
+  protein_per_100g: 3
+  carbs_per_100g: 32
+  fat_per_100g: 4
+  brand: Sharwood's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: indian,rice
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: loyd_tomato_basil
+  name: Loyd Grossman Tomato & Basil Pasta Sauce
+  kcal_per_100g: 65
+  protein_per_100g: 1.5
+  carbs_per_100g: 9
+  fat_per_100g: 2.5
+  brand: Loyd Grossman
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: italian,pasta,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: loyd_red_pepper
+  name: Loyd Grossman Roasted Red Pepper Sauce
+  kcal_per_100g: 70
+  protein_per_100g: 1.5
+  carbs_per_100g: 9
+  fat_per_100g: 3
+  brand: Loyd Grossman
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: italian,pasta,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: loyd_bolognese
+  name: Loyd Grossman Bolognese Sauce
+  kcal_per_100g: 75
+  protein_per_100g: 1.5
+  carbs_per_100g: 9
+  fat_per_100g: 3.5
+  brand: Loyd Grossman
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: italian,pasta,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: loyd_carbonara
+  name: Loyd Grossman Carbonara Sauce
+  kcal_per_100g: 105
+  protein_per_100g: 2
+  carbs_per_100g: 8
+  fat_per_100g: 7
+  brand: Loyd Grossman
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: italian,pasta,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: loyd_arrabbiata
+  name: Loyd Grossman Arrabbiata Sauce
+  kcal_per_100g: 70
+  protein_per_100g: 1.5
+  carbs_per_100g: 9
+  fat_per_100g: 2.5
+  brand: Loyd Grossman
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: italian,pasta,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: loyd_tikka_masala_sauce
+  name: Loyd Grossman Tikka Masala Sauce
+  kcal_per_100g: 130
+  protein_per_100g: 2
+  carbs_per_100g: 11
+  fat_per_100g: 9
+  brand: Loyd Grossman
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: indian,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dolmio_bolognese_original
+  name: Dolmio Bolognese Original Sauce
+  kcal_per_100g: 50
+  protein_per_100g: 1.5
+  carbs_per_100g: 9
+  fat_per_100g: 1
+  brand: Dolmio
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: italian,pasta,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dolmio_lasagne_red_sauce
+  name: Dolmio Lasagne Red Sauce
+  kcal_per_100g: 50
+  protein_per_100g: 1.5
+  carbs_per_100g: 9
+  fat_per_100g: 1
+  brand: Dolmio
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: italian,pasta,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dolmio_lasagne_white_sauce
+  name: Dolmio Lasagne White Sauce
+  kcal_per_100g: 80
+  protein_per_100g: 1.5
+  carbs_per_100g: 5
+  fat_per_100g: 6
+  brand: Dolmio
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: italian,pasta,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dolmio_carbonara
+  name: Dolmio Carbonara Sauce
+  kcal_per_100g: 90
+  protein_per_100g: 2
+  carbs_per_100g: 7
+  fat_per_100g: 6
+  brand: Dolmio
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: italian,pasta,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dolmio_alfredo
+  name: Dolmio Alfredo Sauce
+  kcal_per_100g: 120
+  protein_per_100g: 2
+  carbs_per_100g: 5
+  fat_per_100g: 11
+  brand: Dolmio
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: italian,pasta,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: ragu_classic_bolognese
+  name: Ragu Classic Bolognese
+  kcal_per_100g: 50
+  protein_per_100g: 1.5
+  carbs_per_100g: 9
+  fat_per_100g: 1
+  brand: Ragu
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: italian,pasta,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: ragu_chunky_tomato
+  name: Ragu Chunky Tomato
+  kcal_per_100g: 55
+  protein_per_100g: 1.5
+  carbs_per_100g: 11
+  fat_per_100g: 0.5
+  brand: Ragu
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: italian,pasta,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: bertolli_olive_oil_pasta_sauce
+  name: Bertolli Olive Oil Pasta Sauce
+  kcal_per_100g: 60
+  protein_per_100g: 1.5
+  carbs_per_100g: 9
+  fat_per_100g: 2
+  brand: Bertolli
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: italian,pasta,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: lkk_oyster_sauce_per_15g
+  name: Lee Kum Kee Premium Oyster Sauce (Per 15g)
+  kcal_per_100g: 105
+  protein_per_100g: 1.5
+  carbs_per_100g: 25
+  fat_per_100g: 0.1
+  brand: Lee Kum Kee
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: chinese,sauce
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: lkk_soy_sauce_per_15ml
+  name: Lee Kum Kee Premium Soy Sauce (Per 15ml)
+  kcal_per_100g: 60
+  protein_per_100g: 9
+  carbs_per_100g: 8
+  fat_per_100g: 0
+  brand: Lee Kum Kee
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: chinese,sauce
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: lkk_dark_soy_per_15ml
+  name: Lee Kum Kee Dark Soy Sauce (Per 15ml)
+  kcal_per_100g: 65
+  protein_per_100g: 9
+  carbs_per_100g: 9
+  fat_per_100g: 0
+  brand: Lee Kum Kee
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: chinese,sauce
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: lkk_hoisin_per_15g
+  name: Lee Kum Kee Hoisin Sauce (Per 15g)
+  kcal_per_100g: 220
+  protein_per_100g: 2
+  carbs_per_100g: 50
+  fat_per_100g: 0.5
+  brand: Lee Kum Kee
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: chinese,sauce
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: lkk_sweet_sour_per_15g
+  name: Lee Kum Kee Sweet & Sour Sauce (Per 15g)
+  kcal_per_100g: 200
+  protein_per_100g: 0.5
+  carbs_per_100g: 50
+  fat_per_100g: 0
+  brand: Lee Kum Kee
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: chinese,sauce
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: lkk_sriracha_per_5g
+  name: Lee Kum Kee Sriracha Sauce (Per 5g)
+  kcal_per_100g: 90
+  protein_per_100g: 1.5
+  carbs_per_100g: 19
+  fat_per_100g: 0
+  brand: Lee Kum Kee
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: chinese,sauce,spicy
+  portion_unit: meal
+  unit_grams: 5
+- source: brand
+  source_id: bd_thai_red_curry_paste
+  name: Blue Dragon Thai Red Curry Paste (Per 30g)
+  kcal_per_100g: 110
+  protein_per_100g: 2
+  carbs_per_100g: 12
+  fat_per_100g: 6
+  brand: Blue Dragon
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: thai,paste,sauce
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: bd_thai_green_curry_paste
+  name: Blue Dragon Thai Green Curry Paste (Per 30g)
+  kcal_per_100g: 100
+  protein_per_100g: 2
+  carbs_per_100g: 12
+  fat_per_100g: 5
+  brand: Blue Dragon
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: thai,paste,sauce
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: bd_thai_yellow_paste
+  name: Blue Dragon Thai Yellow Curry Paste (Per 30g)
+  kcal_per_100g: 105
+  protein_per_100g: 2
+  carbs_per_100g: 12
+  fat_per_100g: 5.5
+  brand: Blue Dragon
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: thai,paste,sauce
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: bd_pad_thai_sauce
+  name: Blue Dragon Pad Thai Sauce (Per 30g)
+  kcal_per_100g: 130
+  protein_per_100g: 2
+  carbs_per_100g: 28
+  fat_per_100g: 1
+  brand: Blue Dragon
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: thai,sauce
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: bd_oyster_sauce
+  name: Blue Dragon Oyster Sauce (Per 15g)
+  kcal_per_100g: 105
+  protein_per_100g: 1.5
+  carbs_per_100g: 25
+  fat_per_100g: 0.1
+  brand: Blue Dragon
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: chinese,sauce
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: bd_soy_sauce_dark
+  name: Blue Dragon Dark Soy Sauce (Per 15ml)
+  kcal_per_100g: 60
+  protein_per_100g: 7
+  carbs_per_100g: 8
+  fat_per_100g: 0
+  brand: Blue Dragon
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: chinese,sauce
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: bd_soy_sauce_light
+  name: Blue Dragon Light Soy Sauce (Per 15ml)
+  kcal_per_100g: 50
+  protein_per_100g: 8
+  carbs_per_100g: 6
+  fat_per_100g: 0
+  brand: Blue Dragon
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: chinese,sauce
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: bd_sweet_chilli
+  name: Blue Dragon Sweet Chilli Sauce (Per 15g)
+  kcal_per_100g: 220
+  protein_per_100g: 0.5
+  carbs_per_100g: 50
+  fat_per_100g: 0
+  brand: Blue Dragon
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: thai,sauce
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: bd_coconut_milk
+  name: Blue Dragon Coconut Milk (Per 100ml)
+  kcal_per_100g: 150
+  protein_per_100g: 1.5
+  carbs_per_100g: 2
+  fat_per_100g: 15
+  brand: Blue Dragon
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: thai,coconut,sauce
+  portion_unit: ml
+  unit_grams: 100
+- source: brand
+  source_id: bd_coconut_cream
+  name: Blue Dragon Coconut Cream (Per 100ml)
+  kcal_per_100g: 200
+  protein_per_100g: 1.5
+  carbs_per_100g: 2
+  fat_per_100g: 21
+  brand: Blue Dragon
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: thai,coconut,sauce
+  portion_unit: ml
+  unit_grams: 100
+- source: brand
+  source_id: oep_taco_shells_per_unit
+  name: Old El Paso Crunchy Taco Shells (Per Shell)
+  kcal_per_100g: 470
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 22
+  brand: Old El Paso
+  region_codes: GB
+  serving_grams: 13
+  serving_label: 13 g
+  tags: mexican,bread
+  portion_unit: piece
+  unit_grams: 13
+- source: brand
+  source_id: oep_tortillas_white
+  name: Old El Paso Soft Tortillas White (Per Tortilla)
+  kcal_per_100g: 305
+  protein_per_100g: 9
+  carbs_per_100g: 49
+  fat_per_100g: 8
+  brand: Old El Paso
+  region_codes: GB
+  serving_grams: 49
+  serving_label: 49 g
+  tags: mexican,bread
+  portion_unit: piece
+  unit_grams: 49
+- source: brand
+  source_id: oep_tortillas_wholewheat
+  name: Old El Paso Soft Tortillas Wholewheat (Per Tortilla)
+  kcal_per_100g: 295
+  protein_per_100g: 10
+  carbs_per_100g: 46
+  fat_per_100g: 8
+  brand: Old El Paso
+  region_codes: GB
+  serving_grams: 49
+  serving_label: 49 g
+  tags: mexican,bread
+  portion_unit: piece
+  unit_grams: 49
+- source: brand
+  source_id: oep_fajita_seasoning_mix
+  name: Old El Paso Fajita Seasoning Mix
+  kcal_per_100g: 290
+  protein_per_100g: 7
+  carbs_per_100g: 53
+  fat_per_100g: 4
+  brand: Old El Paso
+  region_codes: GB
+  serving_grams: 35
+  serving_label: 35 g
+  tags: mexican,seasoning
+  portion_unit: meal
+  unit_grams: 35
+- source: brand
+  source_id: oep_taco_seasoning_mix
+  name: Old El Paso Taco Seasoning Mix
+  kcal_per_100g: 320
+  protein_per_100g: 9
+  carbs_per_100g: 60
+  fat_per_100g: 4
+  brand: Old El Paso
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: mexican,seasoning
+  portion_unit: meal
+  unit_grams: 25
+- source: brand
+  source_id: oep_smoky_bbq_fajita_kit
+  name: Old El Paso Smoky BBQ Fajita Kit
+  kcal_per_100g: 350
+  protein_per_100g: 9
+  carbs_per_100g: 55
+  fat_per_100g: 9
+  brand: Old El Paso
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: mexican,kit
+  portion_unit: meal
+  unit_grams: 500
+- source: brand
+  source_id: oep_salsa_chunky_mild
+  name: Old El Paso Chunky Salsa Mild (Per 50g)
+  kcal_per_100g: 30
+  protein_per_100g: 1
+  carbs_per_100g: 6
+  fat_per_100g: 0.2
+  brand: Old El Paso
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: mexican,sauce
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: oep_refried_beans
+  name: Old El Paso Refried Beans (Per 100g)
+  kcal_per_100g: 95
+  protein_per_100g: 5
+  carbs_per_100g: 16
+  fat_per_100g: 0.5
+  brand: Old El Paso
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: mexican,beans
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: discovery_chipotle_paste
+  name: Discovery Chipotle Paste (Per 15g)
+  kcal_per_100g: 110
+  protein_per_100g: 1.5
+  carbs_per_100g: 22
+  fat_per_100g: 1
+  brand: Discovery
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: mexican,paste
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: discovery_jalapenos_jar
+  name: Discovery Sliced Jalapeños (Per 50g)
+  kcal_per_100g: 25
+  protein_per_100g: 1
+  carbs_per_100g: 5
+  fat_per_100g: 0.5
+  brand: Discovery
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: mexican
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: yutaka_teriyaki_sauce
+  name: Yutaka Teriyaki Sauce (Per 15ml)
+  kcal_per_100g: 165
+  protein_per_100g: 1
+  carbs_per_100g: 38
+  fat_per_100g: 0
+  brand: Yutaka
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: japanese,sauce
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: yutaka_sushi_seasoning
+  name: Yutaka Sushi Seasoning Vinegar (Per 15ml)
+  kcal_per_100g: 60
+  protein_per_100g: 0
+  carbs_per_100g: 14
+  fat_per_100g: 0
+  brand: Yutaka
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: japanese,vinegar
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: yutaka_panko_breadcrumbs
+  name: Yutaka Panko Breadcrumbs (Per 50g)
+  kcal_per_100g: 360
+  protein_per_100g: 14
+  carbs_per_100g: 70
+  fat_per_100g: 4
+  brand: Yutaka
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: japanese,coating
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: kikkoman_soy_sauce
+  name: Kikkoman Soy Sauce (Per 15ml)
+  kcal_per_100g: 70
+  protein_per_100g: 11
+  carbs_per_100g: 7
+  fat_per_100g: 0
+  brand: Kikkoman
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: japanese,sauce
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: kikkoman_light_soy_50pct
+  name: Kikkoman Less Salt Soy Sauce
+  kcal_per_100g: 65
+  protein_per_100g: 10
+  carbs_per_100g: 7
+  fat_per_100g: 0
+  brand: Kikkoman
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: japanese,sauce
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: kikkoman_teriyaki
+  name: Kikkoman Teriyaki Marinade (Per 15ml)
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 35
+  fat_per_100g: 0
+  brand: Kikkoman
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: japanese,sauce
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: kikkoman_sukiyaki
+  name: Kikkoman Sukiyaki Sauce (Per 15ml)
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 0
+  brand: Kikkoman
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: japanese,sauce
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: encona_west_indian_hot
+  name: Encona West Indian Hot Pepper Sauce
+  kcal_per_100g: 145
+  protein_per_100g: 1
+  carbs_per_100g: 33
+  fat_per_100g: 0
+  brand: Encona
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: caribbean,sauce,spicy
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: encona_jerk_sauce
+  name: Encona Jamaican Jerk Sauce
+  kcal_per_100g: 135
+  protein_per_100g: 1.5
+  carbs_per_100g: 30
+  fat_per_100g: 0.5
+  brand: Encona
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: caribbean,sauce
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: encona_dominican_sauce
+  name: Encona Dominican Hot Sauce
+  kcal_per_100g: 25
+  protein_per_100g: 0.5
+  carbs_per_100g: 5
+  fat_per_100g: 0
+  brand: Encona
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: caribbean,sauce,spicy
+  portion_unit: meal
+  unit_grams: 5
+- source: brand
+  source_id: walkerswood_jerk_paste
+  name: Walkerswood Jerk Seasoning Paste (Per 15g)
+  kcal_per_100g: 70
+  protein_per_100g: 2
+  carbs_per_100g: 13
+  fat_per_100g: 1.5
+  brand: Walkerswood
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: caribbean,paste
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: walkerswood_scotch_bonnet
+  name: Walkerswood Scotch Bonnet Pepper Sauce
+  kcal_per_100g: 30
+  protein_per_100g: 0.5
+  carbs_per_100g: 6
+  fat_per_100g: 0
+  brand: Walkerswood
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: caribbean,sauce,spicy
+  portion_unit: meal
+  unit_grams: 5
+- source: brand
+  source_id: dunns_river_jerk_marinade
+  name: Dunn's River Jerk Marinade (Per 15g)
+  kcal_per_100g: 85
+  protein_per_100g: 2
+  carbs_per_100g: 14
+  fat_per_100g: 2
+  brand: Dunn's River
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: caribbean,marinade
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: krakus_kabanos
+  name: Krakus Kabanos Polish Sausage
+  kcal_per_100g: 365
+  protein_per_100g: 24
+  carbs_per_100g: 1
+  fat_per_100g: 30
+  brand: Krakus
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: polish,sausage
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: krakus_polska_kielbasa
+  name: Krakus Polska Kielbasa
+  kcal_per_100g: 285
+  protein_per_100g: 12
+  carbs_per_100g: 2
+  fat_per_100g: 26
+  brand: Krakus
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: polish,sausage
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: tahira_chicken_seekh_kebab
+  name: Tahira Chicken Seekh Kebab
+  kcal_per_100g: 215
+  protein_per_100g: 17
+  carbs_per_100g: 8
+  fat_per_100g: 13
+  brand: Tahira
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: halal,chicken
+  portion_unit: piece
+  unit_grams: 60
+- source: brand
+  source_id: tahira_lamb_meatballs
+  name: Tahira Lamb Meatballs
+  kcal_per_100g: 245
+  protein_per_100g: 17
+  carbs_per_100g: 5
+  fat_per_100g: 18
+  brand: Tahira
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: halal,lamb
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: jusrol_puff_pastry_sheet
+  name: Jus-Rol Puff Pastry Sheet (Per 100g)
+  kcal_per_100g: 380
+  protein_per_100g: 6
+  carbs_per_100g: 36
+  fat_per_100g: 24
+  brand: Jus-Rol
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: pastry,bakery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: jusrol_shortcrust_pastry
+  name: Jus-Rol Shortcrust Pastry (Per 100g)
+  kcal_per_100g: 405
+  protein_per_100g: 6
+  carbs_per_100g: 40
+  fat_per_100g: 24
+  brand: Jus-Rol
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: pastry,bakery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: jusrol_filo_pastry_sheet
+  name: Jus-Rol Filo Pastry Sheet (Per 100g)
+  kcal_per_100g: 285
+  protein_per_100g: 9
+  carbs_per_100g: 60
+  fat_per_100g: 1.5
+  brand: Jus-Rol
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: pastry,bakery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: jusrol_croissant_dough
+  name: Jus-Rol Croissant Dough
+  kcal_per_100g: 290
+  protein_per_100g: 5
+  carbs_per_100g: 35
+  fat_per_100g: 14
+  brand: Jus-Rol
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: pastry,bakery
+  portion_unit: meal
+  unit_grams: 100

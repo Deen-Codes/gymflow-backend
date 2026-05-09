@@ -1,0 +1,870 @@
+# McDonald's Full Menu Expansion — additional burgers, wraps, breakfasts, McCafé, desserts
+
+- source: mcdonalds
+  source_id: mcd_double_quarter_pounder_cheese
+  name: McDonald's Double Quarter Pounder with Cheese
+  kcal_per_100g: 264.2857142857143
+  protein_per_100g: 17.14
+  carbs_per_100g: 15.0
+  fat_per_100g: 14.64
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 280
+  serving_label: item (280 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 280
+- source: mcdonalds
+  source_id: mcd_triple_cheeseburger
+  name: McDonald's Triple Cheeseburger
+  kcal_per_100g: 300.0
+  protein_per_100g: 17.71
+  carbs_per_100g: 18.86
+  fat_per_100g: 16.0
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 175
+  serving_label: item (175 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 175
+- source: mcdonalds
+  source_id: mcd_double_big_mac
+  name: McDonald's Double Big Mac
+  kcal_per_100g: 248.27586206896552
+  protein_per_100g: 12.07
+  carbs_per_100g: 16.21
+  fat_per_100g: 14.14
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 290
+  serving_label: item (290 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 290
+- source: mcdonalds
+  source_id: mcd_grand_big_mac
+  name: McDonald's Grand Big Mac
+  kcal_per_100g: 232.8125
+  protein_per_100g: 11.88
+  carbs_per_100g: 15.94
+  fat_per_100g: 12.81
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 320
+  serving_label: item (320 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 320
+- source: mcdonalds
+  source_id: mcd_chicken_legend_bbq
+  name: McDonald's Chicken Legend BBQ Smokehouse
+  kcal_per_100g: 214.28571428571428
+  protein_per_100g: 12.7
+  carbs_per_100g: 23.81
+  fat_per_100g: 7.54
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 252
+  serving_label: item (252 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 252
+- source: mcdonalds
+  source_id: mcd_chicken_legend_mayo
+  name: McDonald's Chicken Legend Cool Mayo
+  kcal_per_100g: 220.23809523809524
+  protein_per_100g: 12.7
+  carbs_per_100g: 22.22
+  fat_per_100g: 9.13
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 252
+  serving_label: item (252 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 252
+- source: mcdonalds
+  source_id: mcd_chicken_legend_spicy
+  name: McDonald's Chicken Legend Spicy Tomato
+  kcal_per_100g: 210.31746031746033
+  protein_per_100g: 12.7
+  carbs_per_100g: 23.81
+  fat_per_100g: 7.14
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 252
+  serving_label: item (252 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 252
+- source: mcdonalds
+  source_id: mcd_double_mcchicken
+  name: McDonald's Double McChicken Sandwich
+  kcal_per_100g: 224.48979591836735
+  protein_per_100g: 14.29
+  carbs_per_100g: 20.41
+  fat_per_100g: 8.98
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 245
+  serving_label: item (245 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 245
+- source: mcdonalds
+  source_id: mcd_mcspicy
+  name: McDonald's McSpicy
+  kcal_per_100g: 218.3673469387755
+  protein_per_100g: 11.02
+  carbs_per_100g: 22.86
+  fat_per_100g: 9.39
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 245
+  serving_label: item (245 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 245
+- source: mcdonalds
+  source_id: mcd_double_fish
+  name: McDonald's Double Filet-O-Fish
+  kcal_per_100g: 252.17391304347825
+  protein_per_100g: 13.04
+  carbs_per_100g: 26.09
+  fat_per_100g: 10.43
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 230
+  serving_label: item (230 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 230
+- source: mcdonalds
+  source_id: mcd_veggie_dippers
+  name: McDonald's Veggie Dippers (4 pcs)
+  kcal_per_100g: 217.14285714285714
+  protein_per_100g: 5.14
+  carbs_per_100g: 21.71
+  fat_per_100g: 12.0
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 175
+  serving_label: item (175 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 175
+- source: mcdonalds
+  source_id: mcd_mcplant
+  name: McDonald's McPlant
+  kcal_per_100g: 191.324200913242
+  protein_per_100g: 9.59
+  carbs_per_100g: 21.46
+  fat_per_100g: 7.76
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 219
+  serving_label: item (219 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 219
+- source: mcdonalds
+  source_id: mcd_double_mcplant
+  name: McDonald's Double McPlant
+  kcal_per_100g: 203.50877192982455
+  protein_per_100g: 10.53
+  carbs_per_100g: 17.54
+  fat_per_100g: 9.12
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 285
+  serving_label: item (285 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 285
+- source: mcdonalds
+  source_id: mcd_nuggets_4
+  name: McDonald's Chicken McNuggets (4 pcs)
+  kcal_per_100g: 265.67164179104475
+  protein_per_100g: 16.42
+  carbs_per_100g: 17.91
+  fat_per_100g: 16.42
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 67
+  serving_label: item (67 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 67
+- source: mcdonalds
+  source_id: mcd_nuggets_6
+  name: McDonald's Chicken McNuggets (6 pcs)
+  kcal_per_100g: 268.0
+  protein_per_100g: 17.0
+  carbs_per_100g: 18.0
+  fat_per_100g: 16.0
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 100
+- source: mcdonalds
+  source_id: mcd_nuggets_9
+  name: McDonald's Chicken McNuggets (9 pcs)
+  kcal_per_100g: 268.0
+  protein_per_100g: 16.67
+  carbs_per_100g: 18.0
+  fat_per_100g: 16.0
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 150
+  serving_label: item (150 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 150
+- source: mcdonalds
+  source_id: mcd_nuggets_20_share
+  name: McDonald's Chicken McNuggets Share Box (20 pcs)
+  kcal_per_100g: 268.16816816816817
+  protein_per_100g: 16.82
+  carbs_per_100g: 18.02
+  fat_per_100g: 15.92
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 333
+  serving_label: item (333 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 333
+- source: mcdonalds
+  source_id: mcd_select_chicken_3
+  name: McDonald's Chicken Selects (3 pcs)
+  kcal_per_100g: 304.9586776859504
+  protein_per_100g: 19.01
+  carbs_per_100g: 19.01
+  fat_per_100g: 15.7
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 121
+  serving_label: item (121 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 121
+- source: mcdonalds
+  source_id: mcd_select_chicken_5
+  name: McDonald's Chicken Selects (5 pcs)
+  kcal_per_100g: 304.45544554455444
+  protein_per_100g: 18.81
+  carbs_per_100g: 18.81
+  fat_per_100g: 15.84
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 202
+  serving_label: item (202 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 202
+- source: mcdonalds
+  source_id: mcd_wrap_grilled_chicken_sweet_chilli
+  name: McDonald's Sweet Chilli Chicken Wrap (Grilled)
+  kcal_per_100g: 166.36363636363637
+  protein_per_100g: 11.36
+  carbs_per_100g: 17.27
+  fat_per_100g: 5.45
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 220
+  serving_label: item (220 g)
+  tags: fast-food,mcdonalds
+  portion_unit: wrap
+  unit_grams: 220
+- source: mcdonalds
+  source_id: mcd_wrap_crispy_chicken_sweet_chilli
+  name: McDonald's Sweet Chilli Chicken Wrap (Crispy)
+  kcal_per_100g: 191.869918699187
+  protein_per_100g: 8.94
+  carbs_per_100g: 19.92
+  fat_per_100g: 8.54
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 246
+  serving_label: item (246 g)
+  tags: fast-food,mcdonalds
+  portion_unit: wrap
+  unit_grams: 246
+- source: mcdonalds
+  source_id: mcd_wrap_grilled_chicken_bbq
+  name: McDonald's BBQ Chicken Wrap (Grilled)
+  kcal_per_100g: 159.0909090909091
+  protein_per_100g: 11.36
+  carbs_per_100g: 17.73
+  fat_per_100g: 5.0
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 220
+  serving_label: item (220 g)
+  tags: fast-food,mcdonalds
+  portion_unit: wrap
+  unit_grams: 220
+- source: mcdonalds
+  source_id: mcd_wrap_crispy_chicken_bbq
+  name: McDonald's BBQ Chicken Wrap (Crispy)
+  kcal_per_100g: 188.21138211382114
+  protein_per_100g: 8.94
+  carbs_per_100g: 20.33
+  fat_per_100g: 8.13
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 246
+  serving_label: item (246 g)
+  tags: fast-food,mcdonalds
+  portion_unit: wrap
+  unit_grams: 246
+- source: mcdonalds
+  source_id: mcd_wrap_grilled_chicken_mayo
+  name: McDonald's Mayo Chicken Wrap (Grilled)
+  kcal_per_100g: 167.27272727272728
+  protein_per_100g: 11.36
+  carbs_per_100g: 15.91
+  fat_per_100g: 6.36
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 220
+  serving_label: item (220 g)
+  tags: fast-food,mcdonalds
+  portion_unit: wrap
+  unit_grams: 220
+- source: mcdonalds
+  source_id: mcd_fries_kids
+  name: McDonald's Fries (Kids)
+  kcal_per_100g: 235.71428571428572
+  protein_per_100g: 2.86
+  carbs_per_100g: 30.0
+  fat_per_100g: 11.43
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 70
+  serving_label: item (70 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 70
+- source: mcdonalds
+  source_id: mcd_fries_small_unique
+  name: McDonald's Fries (Small Unique)
+  kcal_per_100g: 275.0
+  protein_per_100g: 3.75
+  carbs_per_100g: 35.0
+  fat_per_100g: 13.75
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 80
+- source: mcdonalds
+  source_id: mcd_potato_wedges
+  name: McDonald's Potato Wedges (Side)
+  kcal_per_100g: 217.0
+  protein_per_100g: 3.0
+  carbs_per_100g: 27.0
+  fat_per_100g: 10.0
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 100
+- source: mcdonalds
+  source_id: mcd_garlic_mayo_dip
+  name: McDonald's Garlic Mayo Dip
+  kcal_per_100g: 280.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 4.0
+  fat_per_100g: 28.0
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 25
+  serving_label: item (25 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 25
+- source: mcdonalds
+  source_id: mcd_sweet_curry_dip
+  name: McDonald's Sweet Curry Dip
+  kcal_per_100g: 140.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 32.0
+  fat_per_100g: 0.0
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 25
+  serving_label: item (25 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 25
+- source: mcdonalds
+  source_id: mcd_sweet_chilli_dip
+  name: McDonald's Sweet Chilli Dip
+  kcal_per_100g: 200.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 48.0
+  fat_per_100g: 0.0
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 25
+  serving_label: item (25 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 25
+- source: mcdonalds
+  source_id: mcd_bbq_dip
+  name: McDonald's BBQ Dip
+  kcal_per_100g: 180.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 44.0
+  fat_per_100g: 0.0
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 25
+  serving_label: item (25 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 25
+- source: mcdonalds
+  source_id: mcd_tangy_tomato_dip
+  name: McDonald's Tangy Tomato Dip
+  kcal_per_100g: 160.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 36.0
+  fat_per_100g: 0.0
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 25
+  serving_label: item (25 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 25
+- source: mcdonalds
+  source_id: mcd_sausage_mcmuffin
+  name: McDonald's Sausage McMuffin
+  kcal_per_100g: 319.35483870967744
+  protein_per_100g: 12.9
+  carbs_per_100g: 21.77
+  fat_per_100g: 20.16
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 124
+  serving_label: item (124 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 124
+- source: mcdonalds
+  source_id: mcd_double_sausage_egg_muffin
+  name: McDonald's Double Sausage & Egg McMuffin
+  kcal_per_100g: 241.93548387096774
+  protein_per_100g: 12.9
+  carbs_per_100g: 12.9
+  fat_per_100g: 15.21
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 217
+  serving_label: item (217 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 217
+- source: mcdonalds
+  source_id: mcd_bacon_egg_mcmuffin
+  name: McDonald's Bacon & Egg McMuffin
+  kcal_per_100g: 225.30864197530863
+  protein_per_100g: 13.58
+  carbs_per_100g: 17.28
+  fat_per_100g: 10.49
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 162
+  serving_label: item (162 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 162
+- source: mcdonalds
+  source_id: mcd_bacon_roll_brown_sauce
+  name: McDonald's Bacon Roll Brown Sauce
+  kcal_per_100g: 207.69230769230768
+  protein_per_100g: 10.77
+  carbs_per_100g: 23.08
+  fat_per_100g: 7.69
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 130
+  serving_label: item (130 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 130
+- source: mcdonalds
+  source_id: mcd_bacon_roll_ketchup
+  name: McDonald's Bacon Roll Ketchup
+  kcal_per_100g: 207.69230769230768
+  protein_per_100g: 10.77
+  carbs_per_100g: 23.08
+  fat_per_100g: 7.69
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 130
+  serving_label: item (130 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 130
+- source: mcdonalds
+  source_id: mcd_breakfast_wrap
+  name: McDonald's Breakfast Wrap (Bacon Sausage Egg)
+  kcal_per_100g: 220.1834862385321
+  protein_per_100g: 8.72
+  carbs_per_100g: 21.56
+  fat_per_100g: 11.01
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 218
+  serving_label: item (218 g)
+  tags: fast-food,mcdonalds
+  portion_unit: wrap
+  unit_grams: 218
+- source: mcdonalds
+  source_id: mcd_hash_brown
+  name: McDonald's Hash Brown
+  kcal_per_100g: 232.14285714285714
+  protein_per_100g: 2.68
+  carbs_per_100g: 25.0
+  fat_per_100g: 13.39
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 56
+  serving_label: item (56 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 56
+- source: mcdonalds
+  source_id: mcd_porridge_plain
+  name: McDonald's Porridge (Plain)
+  kcal_per_100g: 106.97674418604652
+  protein_per_100g: 4.19
+  carbs_per_100g: 16.28
+  fat_per_100g: 2.33
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 215
+  serving_label: item (215 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 215
+- source: mcdonalds
+  source_id: mcd_porridge_strawberry_jam
+  name: McDonald's Porridge with Strawberry Jam
+  kcal_per_100g: 118.36734693877551
+  protein_per_100g: 3.67
+  carbs_per_100g: 20.41
+  fat_per_100g: 2.04
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 245
+  serving_label: item (245 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 245
+- source: mcdonalds
+  source_id: mcd_pancakes_syrup_butter
+  name: McDonald's Pancakes & Syrup
+  kcal_per_100g: 248.4848484848485
+  protein_per_100g: 3.64
+  carbs_per_100g: 38.18
+  fat_per_100g: 8.48
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 165
+  serving_label: item (165 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 165
+- source: mcdonalds
+  source_id: mcd_mccafe_latte_regular
+  name: McDonald's McCafé Latte Regular
+  kcal_per_100g: 30.0
+  protein_per_100g: 1.71
+  carbs_per_100g: 2.57
+  fat_per_100g: 1.43
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 350
+- source: mcdonalds
+  source_id: mcd_mccafe_cappuccino_regular
+  name: McDonald's McCafé Cappuccino Regular
+  kcal_per_100g: 30.0
+  protein_per_100g: 1.6
+  carbs_per_100g: 2.4
+  fat_per_100g: 1.6
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 250
+- source: mcdonalds
+  source_id: mcd_mccafe_flat_white
+  name: McDonald's McCafé Flat White
+  kcal_per_100g: 52.0
+  protein_per_100g: 2.8
+  carbs_per_100g: 4.0
+  fat_per_100g: 2.8
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 250
+- source: mcdonalds
+  source_id: mcd_mccafe_mocha_regular
+  name: McDonald's McCafé Mocha Regular
+  kcal_per_100g: 65.71428571428571
+  protein_per_100g: 2.0
+  carbs_per_100g: 8.57
+  fat_per_100g: 2.57
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 350
+- source: mcdonalds
+  source_id: mcd_mccafe_americano_regular
+  name: McDonald's McCafé Americano Regular
+  kcal_per_100g: 2.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.4
+  fat_per_100g: 0.0
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 250
+- source: mcdonalds
+  source_id: mcd_mccafe_iced_latte_regular
+  name: McDonald's McCafé Iced Latte Regular
+  kcal_per_100g: 25.714285714285715
+  protein_per_100g: 1.43
+  carbs_per_100g: 2.29
+  fat_per_100g: 1.14
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 350
+- source: mcdonalds
+  source_id: mcd_mccafe_caramel_latte
+  name: McDonald's McCafé Caramel Latte
+  kcal_per_100g: 57.142857142857146
+  protein_per_100g: 1.71
+  carbs_per_100g: 8.57
+  fat_per_100g: 1.71
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 350
+- source: mcdonalds
+  source_id: mcd_mccafe_hazelnut_latte
+  name: McDonald's McCafé Hazelnut Latte
+  kcal_per_100g: 57.142857142857146
+  protein_per_100g: 1.71
+  carbs_per_100g: 8.57
+  fat_per_100g: 1.71
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 350
+- source: mcdonalds
+  source_id: mcd_mccafe_vanilla_latte
+  name: McDonald's McCafé Vanilla Latte
+  kcal_per_100g: 57.142857142857146
+  protein_per_100g: 1.71
+  carbs_per_100g: 8.57
+  fat_per_100g: 1.71
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 350
+- source: mcdonalds
+  source_id: mcd_mcflurry_smartie
+  name: McDonald's McFlurry Smarties
+  kcal_per_100g: 184.21052631578948
+  protein_per_100g: 4.61
+  carbs_per_100g: 32.24
+  fat_per_100g: 3.95
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 152
+  serving_label: item (152 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 152
+- source: mcdonalds
+  source_id: mcd_mcflurry_oreo
+  name: McDonald's McFlurry Oreo
+  kcal_per_100g: 166.66666666666666
+  protein_per_100g: 4.32
+  carbs_per_100g: 29.01
+  fat_per_100g: 3.7
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 162
+  serving_label: item (162 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 162
+- source: mcdonalds
+  source_id: mcd_mcflurry_galaxy
+  name: McDonald's McFlurry Galaxy Caramel
+  kcal_per_100g: 190.78947368421052
+  protein_per_100g: 4.61
+  carbs_per_100g: 32.89
+  fat_per_100g: 4.61
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 152
+  serving_label: item (152 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 152
+- source: mcdonalds
+  source_id: mcd_apple_pie
+  name: McDonald's Apple Pie
+  kcal_per_100g: 296.2962962962963
+  protein_per_100g: 2.47
+  carbs_per_100g: 38.27
+  fat_per_100g: 14.81
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 81
+  serving_label: item (81 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 81
+- source: mcdonalds
+  source_id: mcd_donut_chocolate
+  name: McDonald's Chocolate Donut
+  kcal_per_100g: 402.9850746268657
+  protein_per_100g: 5.97
+  carbs_per_100g: 56.72
+  fat_per_100g: 17.91
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 67
+  serving_label: item (67 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 67
+- source: mcdonalds
+  source_id: mcd_donut_sugar
+  name: McDonald's Sugar Donut
+  kcal_per_100g: 408.3333333333333
+  protein_per_100g: 6.67
+  carbs_per_100g: 60.0
+  fat_per_100g: 16.67
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 60
+  serving_label: item (60 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 60
+- source: mcdonalds
+  source_id: mcd_cone_strawberry
+  name: McDonald's Strawberry Cone
+  kcal_per_100g: 146.46464646464648
+  protein_per_100g: 3.03
+  carbs_per_100g: 22.22
+  fat_per_100g: 5.05
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 99
+  serving_label: item (99 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 99
+- source: mcdonalds
+  source_id: mcd_cone_chocolate
+  name: McDonald's Chocolate Cone
+  kcal_per_100g: 151.37614678899084
+  protein_per_100g: 2.75
+  carbs_per_100g: 23.85
+  fat_per_100g: 5.05
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 109
+  serving_label: item (109 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 109
+- source: mcdonalds
+  source_id: mcd_milkshake_chocolate_med
+  name: McDonald's Chocolate Milkshake Medium
+  kcal_per_100g: 86.86440677966101
+  protein_per_100g: 2.33
+  carbs_per_100g: 15.04
+  fat_per_100g: 2.01
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 472
+  serving_label: item (472 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 472
+- source: mcdonalds
+  source_id: mcd_milkshake_vanilla_med
+  name: McDonald's Vanilla Milkshake Medium
+  kcal_per_100g: 83.6864406779661
+  protein_per_100g: 2.33
+  carbs_per_100g: 14.19
+  fat_per_100g: 1.91
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 472
+  serving_label: item (472 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 472
+- source: mcdonalds
+  source_id: mcd_milkshake_banana_med
+  name: McDonald's Banana Milkshake Medium
+  kcal_per_100g: 85.80508474576271
+  protein_per_100g: 2.33
+  carbs_per_100g: 14.83
+  fat_per_100g: 2.01
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 472
+  serving_label: item (472 g)
+  tags: fast-food,mcdonalds
+  portion_unit: meal
+  unit_grams: 472

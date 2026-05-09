@@ -1,0 +1,1968 @@
+# More supermarket sandwiches/wraps/pots (Tesco/Sainsbury's/Asda/Morrisons/M&S Higher Protein/Pret) +
+# Starters (garlic mushrooms/prawns, calamari, breaded brie, satay, prawn cocktail, smoked salmon, pâtés) +
+# Dessert pots (mousses, crème caramel/brûlée, panna cotta, jellies) +
+# Coffee shop pastries (Costa/Starbucks butter/almond croissant, pains au raisin, brownies, muffins, cake pops) +
+# UK staples (Bisto, Paxo, Aunt Bessie's Yorkshires, Bird's custard, Ambrosia carton, Oxo cubes) +
+# Nut butter brands (Meridian, Pip & Nut, Whole Earth, Sun-Pat, KP) +
+# More homemade sandwiches (chicken stuffing/bacon, turkey cranberry, pastrami, brie grape walnut)
+
+- source: ms
+  source_id: ms_higher_protein_pasta_pot_chicken
+  name: M&S Higher Protein Chicken Pasta Pot
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  brand: M&S Higher Protein
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: ms
+  source_id: ms_higher_protein_super_grain_bowl
+  name: M&S Higher Protein Super Grain Bowl
+  kcal_per_100g: 175
+  protein_per_100g: 17
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  brand: M&S Higher Protein
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 280
+- source: ms
+  source_id: ms_higher_protein_egg_pot
+  name: M&S Higher Protein Egg Pot Curry
+  kcal_per_100g: 165
+  protein_per_100g: 14
+  carbs_per_100g: 14
+  fat_per_100g: 6
+  brand: M&S Higher Protein
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: ms
+  source_id: ms_higher_protein_chicken_pesto_pasta
+  name: M&S Higher Protein Chicken & Pesto Pasta
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 7
+  brand: M&S Higher Protein
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: ms
+  source_id: ms_higher_protein_super_seed_grain
+  name: M&S Higher Protein Super Seed Grain Bowl
+  kcal_per_100g: 175
+  protein_per_100g: 17
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  brand: M&S Higher Protein
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 280
+- source: ms
+  source_id: ms_higher_protein_egg_chicken_avocado
+  name: M&S Higher Protein Egg Chicken & Avocado Pot
+  kcal_per_100g: 195
+  protein_per_100g: 17
+  carbs_per_100g: 9
+  fat_per_100g: 11
+  brand: M&S Higher Protein
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: ms
+  source_id: ms_higher_protein_falafel_box
+  name: M&S Higher Protein Falafel & Hummus Box
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 17
+  fat_per_100g: 11
+  brand: M&S Higher Protein
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: ms
+  source_id: ms_higher_protein_grain_chicken_caesar
+  name: M&S Higher Protein Chicken Caesar Grain Bowl
+  kcal_per_100g: 175
+  protein_per_100g: 17
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  brand: M&S Higher Protein
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 280
+- source: ms
+  source_id: ms_higher_protein_chicken_quinoa_box
+  name: M&S Higher Protein Chicken Quinoa Box
+  kcal_per_100g: 165
+  protein_per_100g: 17
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  brand: M&S Higher Protein
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 280
+- source: pret_a_manger
+  source_id: pret_chicken_caesar_brioche
+  name: Pret Chicken Caesar Brioche Roll
+  kcal_per_100g: 305
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 220
+  serving_label: 220 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 220
+- source: pret_a_manger
+  source_id: pret_super_grain_bowl_chicken
+  name: Pret Super Grain Bowl with Chicken
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: pret_a_manger
+  source_id: pret_super_grain_bowl_falafel
+  name: Pret Super Grain Bowl with Falafel
+  kcal_per_100g: 175
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: pret_a_manger
+  source_id: pret_super_grain_bowl_salmon
+  name: Pret Super Grain Bowl with Salmon
+  kcal_per_100g: 175
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 6
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: pret_a_manger
+  source_id: pret_falafel_pomegranate_wrap
+  name: Pret Falafel & Pomegranate Wrap
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 30
+  fat_per_100g: 11
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 230
+  serving_label: 230 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 230
+- source: pret_a_manger
+  source_id: pret_chicken_avocado_brioche
+  name: Pret Chicken & Avocado Brioche
+  kcal_per_100g: 285
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: pret_a_manger
+  source_id: pret_chicken_artisan_baguette
+  name: Pret Chicken Artisan Baguette
+  kcal_per_100g: 285
+  protein_per_100g: 14
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 245
+  serving_label: 245 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 245
+- source: pret_a_manger
+  source_id: pret_egg_avocado_baguette
+  name: Pret Egg & Avocado Baguette
+  kcal_per_100g: 295
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 240
+  serving_label: 240 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 240
+- source: pret_a_manger
+  source_id: pret_smoked_salmon_baguette
+  name: Pret Smoked Salmon Baguette
+  kcal_per_100g: 285
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 12
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 245
+  serving_label: 245 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 245
+- source: pret_a_manger
+  source_id: pret_classic_chicken_salad
+  name: Pret Classic Chicken Salad
+  kcal_per_100g: 165
+  protein_per_100g: 18
+  carbs_per_100g: 11
+  fat_per_100g: 6
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 295
+  serving_label: 295 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 295
+- source: pret_a_manger
+  source_id: pret_salmon_super_salad
+  name: Pret Salmon Super Salad
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 11
+  fat_per_100g: 8
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 295
+  serving_label: 295 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 295
+- source: pret_a_manger
+  source_id: pret_chicken_chorizo_paella_pot
+  name: Pret Chicken & Chorizo Paella Pot
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: pret_a_manger
+  source_id: pret_protein_pot_eggs_avocado
+  name: Pret Protein Pot Eggs & Avocado
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 7
+  fat_per_100g: 14
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 175
+- source: pret_a_manger
+  source_id: pret_protein_pot_chicken_avocado
+  name: Pret Protein Pot Chicken & Avocado
+  kcal_per_100g: 215
+  protein_per_100g: 17
+  carbs_per_100g: 7
+  fat_per_100g: 13
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 175
+- source: pret_a_manger
+  source_id: pret_breakfast_egg_avocado_brioche
+  name: Pret Breakfast Egg & Avocado Brioche
+  kcal_per_100g: 285
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 175
+- source: pret_a_manger
+  source_id: pret_pain_au_chocolat
+  name: Pret Pain au Chocolat
+  kcal_per_100g: 415
+  protein_per_100g: 7
+  carbs_per_100g: 45
+  fat_per_100g: 24
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 70
+  serving_label: 70 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 70
+- source: pret_a_manger
+  source_id: pret_almond_croissant
+  name: Pret Almond Croissant
+  kcal_per_100g: 460
+  protein_per_100g: 9
+  carbs_per_100g: 40
+  fat_per_100g: 28
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 100
+- source: pret_a_manger
+  source_id: pret_chocolate_croissant
+  name: Pret Chocolate Croissant
+  kcal_per_100g: 415
+  protein_per_100g: 7
+  carbs_per_100g: 45
+  fat_per_100g: 24
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 80
+- source: pret_a_manger
+  source_id: pret_classic_butter_croissant
+  name: Pret Classic Butter Croissant
+  kcal_per_100g: 415
+  protein_per_100g: 8
+  carbs_per_100g: 42
+  fat_per_100g: 22
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 70
+  serving_label: 70 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 70
+- source: sainsburys
+  source_id: sains_sandwich_chicken_tikka
+  name: Sainsbury's Chicken Tikka Sandwich
+  kcal_per_100g: 305
+  protein_per_100g: 16
+  carbs_per_100g: 35
+  fat_per_100g: 11
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: sainsburys
+  source_id: sains_sandwich_chicken_sweetcorn
+  name: Sainsbury's Chicken & Sweetcorn Sandwich
+  kcal_per_100g: 305
+  protein_per_100g: 17
+  carbs_per_100g: 32
+  fat_per_100g: 13
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: sainsburys
+  source_id: sains_sandwich_prawn_marie_rose
+  name: Sainsbury's Prawn Marie Rose Sandwich
+  kcal_per_100g: 295
+  protein_per_100g: 13
+  carbs_per_100g: 30
+  fat_per_100g: 14
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: sainsburys
+  source_id: sains_wrap_falafel_humous
+  name: Sainsbury's Falafel & Houmous Wrap
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 30
+  fat_per_100g: 11
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 230
+  serving_label: 230 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 230
+- source: sainsburys
+  source_id: sains_pasta_pot_ham_cheese
+  name: Sainsbury's Ham & Cheese Pasta Pot
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: sainsburys
+  source_id: sains_jacket_potato_pot_chicken_curry
+  name: Sainsbury's Chicken Curry Jacket Potato Pot
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: sainsburys
+  source_id: sains_jacket_potato_pot_tuna
+  name: Sainsbury's Tuna Mayo Jacket Potato Pot
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: sainsburys
+  source_id: sains_jacket_potato_pot_chilli
+  name: Sainsbury's Chilli con Carne Jacket Pot
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: sainsburys
+  source_id: sains_chicken_caesar_pasta_pot
+  name: Sainsbury's Chicken Caesar Pasta Pot
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: sainsburys
+  source_id: sains_falafel_grain_box
+  name: Sainsbury's Falafel Grain Box
+  kcal_per_100g: 195
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 280
+- source: sainsburys
+  source_id: sains_chicken_grain_box
+  name: Sainsbury's Chicken Grain Box
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 280
+- source: sainsburys
+  source_id: sains_bagel_smoked_salmon_cream_cheese
+  name: Sainsbury's Smoked Salmon & Cream Cheese Bagel
+  kcal_per_100g: 295
+  protein_per_100g: 18
+  carbs_per_100g: 32
+  fat_per_100g: 11
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: sainsburys
+  source_id: sains_ttd_chicken_caesar_wrap
+  name: Sainsbury's TTD Chicken Caesar Wrap
+  kcal_per_100g: 270
+  protein_per_100g: 14
+  carbs_per_100g: 25
+  fat_per_100g: 12
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 220
+  serving_label: 220 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 220
+- source: tesco
+  source_id: tesco_sandwich_chicken_tikka
+  name: Tesco Chicken Tikka Sandwich
+  kcal_per_100g: 305
+  protein_per_100g: 16
+  carbs_per_100g: 35
+  fat_per_100g: 11
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: tesco
+  source_id: tesco_sandwich_chicken_sweetcorn
+  name: Tesco Chicken & Sweetcorn Sandwich
+  kcal_per_100g: 305
+  protein_per_100g: 17
+  carbs_per_100g: 32
+  fat_per_100g: 13
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: tesco
+  source_id: tesco_sandwich_prawn_marie_rose
+  name: Tesco Prawn Marie Rose Sandwich
+  kcal_per_100g: 295
+  protein_per_100g: 13
+  carbs_per_100g: 30
+  fat_per_100g: 14
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: tesco
+  source_id: tesco_wrap_falafel_houmous
+  name: Tesco Falafel & Houmous Wrap
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 30
+  fat_per_100g: 11
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 230
+  serving_label: 230 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 230
+- source: tesco
+  source_id: tesco_pasta_ham_cheese_pot
+  name: Tesco Ham & Cheese Pasta Pot
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: tesco
+  source_id: tesco_chicken_avocado_brioche
+  name: Tesco Chicken & Avocado Brioche Roll
+  kcal_per_100g: 285
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: tesco
+  source_id: tesco_smoked_salmon_bagel
+  name: Tesco Smoked Salmon & Cream Cheese Bagel
+  kcal_per_100g: 295
+  protein_per_100g: 18
+  carbs_per_100g: 32
+  fat_per_100g: 11
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: tesco
+  source_id: tesco_finest_chicken_caesar_wrap
+  name: Tesco Finest Chicken Caesar Wrap
+  kcal_per_100g: 270
+  protein_per_100g: 14
+  carbs_per_100g: 25
+  fat_per_100g: 12
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 220
+  serving_label: 220 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 220
+- source: asda
+  source_id: asda_chicken_tikka_sandwich
+  name: Asda Chicken Tikka Sandwich
+  kcal_per_100g: 305
+  protein_per_100g: 16
+  carbs_per_100g: 35
+  fat_per_100g: 11
+  brand: Asda
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: asda
+  source_id: asda_chicken_sweetcorn_sandwich
+  name: Asda Chicken & Sweetcorn Sandwich
+  kcal_per_100g: 305
+  protein_per_100g: 17
+  carbs_per_100g: 32
+  fat_per_100g: 13
+  brand: Asda
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: asda
+  source_id: asda_falafel_houmous_wrap
+  name: Asda Falafel & Houmous Wrap
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 30
+  fat_per_100g: 11
+  brand: Asda
+  region_codes: GB
+  serving_grams: 230
+  serving_label: 230 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 230
+- source: asda
+  source_id: asda_chicken_caesar_pasta_pot
+  name: Asda Chicken Caesar Pasta Pot
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Asda
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: asda
+  source_id: asda_super_grain_pot
+  name: Asda Super Grain Salad Pot
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Asda
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: morrisons
+  source_id: morr_chicken_tikka_sandwich
+  name: Morrisons Chicken Tikka Sandwich
+  kcal_per_100g: 305
+  protein_per_100g: 16
+  carbs_per_100g: 35
+  fat_per_100g: 11
+  brand: Morrisons
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: morrisons
+  source_id: morr_chicken_sweetcorn_sandwich
+  name: Morrisons Chicken & Sweetcorn Sandwich
+  kcal_per_100g: 305
+  protein_per_100g: 17
+  carbs_per_100g: 32
+  fat_per_100g: 13
+  brand: Morrisons
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: morrisons
+  source_id: morr_falafel_houmous_wrap
+  name: Morrisons Falafel & Houmous Wrap
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 30
+  fat_per_100g: 11
+  brand: Morrisons
+  region_codes: GB
+  serving_grams: 230
+  serving_label: 230 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 230
+- source: morrisons
+  source_id: morr_super_grain_pot
+  name: Morrisons Super Grain Salad Pot
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Morrisons
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: sainsburys
+  source_id: sains_sushi_chicken_katsu_pack
+  name: Sainsbury's Chicken Katsu Sushi Pack
+  kcal_per_100g: 165
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: sainsburys
+  source_id: sains_sushi_salmon_avocado_pack
+  name: Sainsbury's Salmon & Avocado Sushi Pack
+  kcal_per_100g: 175
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: tesco
+  source_id: tesco_sushi_chicken_katsu
+  name: Tesco Chicken Katsu Sushi Pack
+  kcal_per_100g: 165
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: tesco
+  source_id: tesco_sushi_tuna_avocado
+  name: Tesco Tuna & Avocado Sushi Pack
+  kcal_per_100g: 175
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: asda
+  source_id: asda_sushi_california_pack
+  name: Asda California Sushi Pack
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 3
+  brand: Asda
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: asda
+  source_id: asda_sushi_salmon_pack
+  name: Asda Salmon Sushi Pack
+  kcal_per_100g: 165
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Asda
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: ms
+  source_id: ms_sushi_california_pack
+  name: M&S California Sushi Pack
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 3
+  brand: M&S
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: ms
+  source_id: starter_garlic_mushrooms_per_serving
+  name: Garlic Mushrooms (Starter Per Serving)
+  kcal_per_100g: 95
+  protein_per_100g: 3
+  carbs_per_100g: 4
+  fat_per_100g: 8
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: starter_garlic_prawns_per_serving
+  name: Garlic Prawns (Starter)
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 4
+  fat_per_100g: 11
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: starter_calamari_starter_per_serving
+  name: Calamari Starter
+  kcal_per_100g: 235
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 13
+  brand: Generic
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 150
+- source: ms
+  source_id: starter_breaded_mushrooms_per_serving
+  name: Breaded Mushrooms (Per Serving)
+  kcal_per_100g: 245
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: starter_breaded_brie_per_serving
+  name: Breaded Brie Wedges
+  kcal_per_100g: 285
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 18
+  brand: Generic
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 150
+- source: brand
+  source_id: starter_chicken_satay_starter
+  name: Chicken Satay Starter (Per Skewer)
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 4
+  fat_per_100g: 8
+  brand: Generic
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 80
+- source: brand
+  source_id: starter_prawn_cocktail_starter
+  name: Prawn Cocktail (Per Serving)
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 7
+  fat_per_100g: 11
+  brand: Generic
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 150
+- source: brand
+  source_id: starter_smoked_salmon_starter
+  name: Smoked Salmon Starter (Per Serving)
+  kcal_per_100g: 145
+  protein_per_100g: 16
+  carbs_per_100g: 1
+  fat_per_100g: 9
+  brand: Generic
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 80
+- source: brand
+  source_id: starter_pâté_chicken_liver_per_30g
+  name: Chicken Liver Pâté (Per 30g)
+  kcal_per_100g: 305
+  protein_per_100g: 14
+  carbs_per_100g: 1
+  fat_per_100g: 27
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: starter_pâté_brussels_per_30g
+  name: Brussels Pâté (Per 30g)
+  kcal_per_100g: 320
+  protein_per_100g: 11
+  carbs_per_100g: 1
+  fat_per_100g: 30
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: starter_pâté_smoked_salmon_per_30g
+  name: Smoked Salmon Pâté (Per 30g)
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 2
+  fat_per_100g: 21
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: starter_houmous_dip_per_50g
+  name: Houmous Dip (Per 50g)
+  kcal_per_100g: 305
+  protein_per_100g: 8
+  carbs_per_100g: 13
+  fat_per_100g: 25
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: starter_avocado_dip_per_50g
+  name: Avocado Dip (Per 50g)
+  kcal_per_100g: 165
+  protein_per_100g: 2
+  carbs_per_100g: 8
+  fat_per_100g: 14
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: starter_taramasalata_per_50g
+  name: Taramasalata (Per 50g)
+  kcal_per_100g: 440
+  protein_per_100g: 4
+  carbs_per_100g: 6
+  fat_per_100g: 45
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: dessert_yogurt_actimel_strawberry_v2
+  name: Actimel Strawberry (Per Bottle)
+  kcal_per_100g: 75
+  protein_per_100g: 3
+  carbs_per_100g: 12
+  fat_per_100g: 1.5
+  brand: Actimel
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dessert_yogurt_yakult_v2
+  name: Yakult Original (Per Bottle)
+  kcal_per_100g: 65
+  protein_per_100g: 1.4
+  carbs_per_100g: 14
+  fat_per_100g: 0.1
+  brand: Yakult
+  region_codes: GB
+  serving_grams: 65
+  serving_label: 65 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 65
+- source: brand
+  source_id: dessert_pot_chocolate_mousse_per_pot
+  name: Chocolate Mousse Pot (Per 60g)
+  kcal_per_100g: 285
+  protein_per_100g: 6
+  carbs_per_100g: 28
+  fat_per_100g: 17
+  brand: Generic
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 60
+- source: brand
+  source_id: dessert_pot_strawberry_mousse
+  name: Strawberry Mousse Pot (Per 60g)
+  kcal_per_100g: 175
+  protein_per_100g: 4
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Generic
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 60
+- source: brand
+  source_id: dessert_pot_lemon_mousse
+  name: Lemon Mousse Pot (Per 60g)
+  kcal_per_100g: 175
+  protein_per_100g: 4
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Generic
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 60
+- source: brand
+  source_id: dessert_pot_creme_caramel_per_unit
+  name: Crème Caramel Pot (Per Pot)
+  kcal_per_100g: 195
+  protein_per_100g: 4
+  carbs_per_100g: 28
+  fat_per_100g: 7
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 100
+- source: brand
+  source_id: dessert_pot_creme_brulee_per_unit
+  name: Crème Brûlée Pot (Per Pot)
+  kcal_per_100g: 365
+  protein_per_100g: 4
+  carbs_per_100g: 30
+  fat_per_100g: 25
+  brand: Generic
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 130
+- source: brand
+  source_id: dessert_pot_panna_cotta_per_unit
+  name: Panna Cotta Pot (Per Pot)
+  kcal_per_100g: 285
+  protein_per_100g: 4
+  carbs_per_100g: 22
+  fat_per_100g: 21
+  brand: Generic
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 130
+- source: brand
+  source_id: dessert_pot_rice_pudding_individual
+  name: Rice Pudding Individual (Per Pot)
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: dessert_pot_strawberry_jelly
+  name: Strawberry Jelly Pot (Per 110g)
+  kcal_per_100g: 65
+  protein_per_100g: 1
+  carbs_per_100g: 14
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 110
+- source: brand
+  source_id: dessert_pot_raspberry_jelly
+  name: Raspberry Jelly Pot (Per 110g)
+  kcal_per_100g: 65
+  protein_per_100g: 1
+  carbs_per_100g: 14
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 110
+- source: costa
+  source_id: costa_butter_croissant_v2
+  name: Costa Butter Croissant
+  kcal_per_100g: 415
+  protein_per_100g: 8
+  carbs_per_100g: 42
+  fat_per_100g: 22
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 70
+  serving_label: 70 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 70
+- source: costa
+  source_id: costa_almond_croissant_v2
+  name: Costa Almond Croissant
+  kcal_per_100g: 460
+  protein_per_100g: 9
+  carbs_per_100g: 40
+  fat_per_100g: 28
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 100
+- source: costa
+  source_id: costa_pain_au_raisin
+  name: Costa Pain aux Raisins
+  kcal_per_100g: 380
+  protein_per_100g: 7
+  carbs_per_100g: 50
+  fat_per_100g: 16
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 90
+- source: costa
+  source_id: costa_cinnamon_roll
+  name: Costa Cinnamon Roll
+  kcal_per_100g: 410
+  protein_per_100g: 7
+  carbs_per_100g: 52
+  fat_per_100g: 18
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 90
+- source: costa
+  source_id: costa_apple_danish
+  name: Costa Apple Danish
+  kcal_per_100g: 375
+  protein_per_100g: 6
+  carbs_per_100g: 47
+  fat_per_100g: 18
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 85
+  serving_label: 85 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 85
+- source: starbucks
+  source_id: starbucks_butter_croissant
+  name: Starbucks Butter Croissant
+  kcal_per_100g: 415
+  protein_per_100g: 8
+  carbs_per_100g: 42
+  fat_per_100g: 22
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 70
+  serving_label: 70 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 70
+- source: starbucks
+  source_id: starbucks_almond_croissant
+  name: Starbucks Almond Croissant
+  kcal_per_100g: 460
+  protein_per_100g: 9
+  carbs_per_100g: 40
+  fat_per_100g: 28
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 100
+- source: starbucks
+  source_id: starbucks_chocolate_chip_cookie
+  name: Starbucks Chocolate Chip Cookie
+  kcal_per_100g: 480
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 75
+- source: starbucks
+  source_id: starbucks_double_chocolate_brownie
+  name: Starbucks Double Chocolate Brownie
+  kcal_per_100g: 425
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 90
+- source: starbucks
+  source_id: starbucks_blueberry_muffin
+  name: Starbucks Blueberry Muffin
+  kcal_per_100g: 360
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 14
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 110
+- source: starbucks
+  source_id: starbucks_skinny_blueberry_muffin
+  name: Starbucks Skinny Blueberry Muffin
+  kcal_per_100g: 305
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 8
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 110
+- source: starbucks
+  source_id: starbucks_birthday_cake_pop
+  name: Starbucks Birthday Cake Pop
+  kcal_per_100g: 380
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 17
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 35
+  serving_label: 35 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 35
+- source: starbucks
+  source_id: starbucks_double_chocolate_cake_pop
+  name: Starbucks Double Chocolate Cake Pop
+  kcal_per_100g: 380
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 17
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 35
+  serving_label: 35 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 35
+- source: brand
+  source_id: staple_bisto_gravy_per_15g
+  name: Bisto Gravy Granules (Per 15g)
+  kcal_per_100g: 290
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 3
+  brand: Bisto
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: staple_paxo_sage_onion_stuffing
+  name: Paxo Sage & Onion Stuffing (Per 15g, Dry)
+  kcal_per_100g: 360
+  protein_per_100g: 9
+  carbs_per_100g: 70
+  fat_per_100g: 4
+  brand: Paxo
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: staple_yorkshire_pudding_mix
+  name: Yorkshire Pudding Mix (Per Pudding)
+  kcal_per_100g: 380
+  protein_per_100g: 11
+  carbs_per_100g: 49
+  fat_per_100g: 16
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: staple_aunt_bessies_yorkshire_per_unit
+  name: Aunt Bessie's Yorkshire Pudding (Per Pudding)
+  kcal_per_100g: 380
+  protein_per_100g: 11
+  carbs_per_100g: 49
+  fat_per_100g: 16
+  brand: Aunt Bessie's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: staple_birds_custard_powder_per_15g
+  name: Bird's Custard Powder (Per 15g)
+  kcal_per_100g: 380
+  protein_per_100g: 0.5
+  carbs_per_100g: 90
+  fat_per_100g: 0.5
+  brand: Bird's
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: staple_birds_instant_custard_per_pot
+  name: Bird's Instant Custard (Per Pot)
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Bird's
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 130
+- source: brand
+  source_id: staple_ambrosia_custard_carton_per_100g
+  name: Ambrosia Custard Carton (Per 100g)
+  kcal_per_100g: 95
+  protein_per_100g: 3
+  carbs_per_100g: 16
+  fat_per_100g: 2.5
+  brand: Ambrosia
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: staple_ambrosia_low_fat_custard
+  name: Ambrosia Low Fat Custard (Per 100g)
+  kcal_per_100g: 75
+  protein_per_100g: 3.5
+  carbs_per_100g: 14
+  fat_per_100g: 0.5
+  brand: Ambrosia
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: staple_oxo_chicken_cube_per_cube
+  name: Oxo Chicken Stock Cube (Per Cube)
+  kcal_per_100g: 195
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 11
+  brand: Oxo
+  region_codes: GB
+  serving_grams: 7.4
+  serving_label: 7.4 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 7.4
+- source: brand
+  source_id: staple_oxo_beef_cube_per_cube
+  name: Oxo Beef Stock Cube (Per Cube)
+  kcal_per_100g: 195
+  protein_per_100g: 8
+  carbs_per_100g: 18
+  fat_per_100g: 10
+  brand: Oxo
+  region_codes: GB
+  serving_grams: 7.4
+  serving_label: 7.4 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 7.4
+- source: brand
+  source_id: staple_oxo_lamb_cube_per_cube
+  name: Oxo Lamb Stock Cube
+  kcal_per_100g: 195
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 11
+  brand: Oxo
+  region_codes: GB
+  serving_grams: 7.4
+  serving_label: 7.4 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 7.4
+- source: brand
+  source_id: staple_oxo_vegetable_cube_per_cube
+  name: Oxo Vegetable Stock Cube
+  kcal_per_100g: 195
+  protein_per_100g: 8
+  carbs_per_100g: 25
+  fat_per_100g: 7
+  brand: Oxo
+  region_codes: GB
+  serving_grams: 7.4
+  serving_label: 7.4 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 7.4
+- source: brand
+  source_id: staple_oxo_chicken_herbs_cube
+  name: Oxo Chicken Herbs Stock Cube
+  kcal_per_100g: 195
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 11
+  brand: Oxo
+  region_codes: GB
+  serving_grams: 7.4
+  serving_label: 7.4 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 7.4
+- source: brand
+  source_id: spread_marmite_squeezy_thick_per_5g
+  name: Marmite Squeezy Thick (Per 5g)
+  kcal_per_100g: 245
+  protein_per_100g: 24
+  carbs_per_100g: 28
+  fat_per_100g: 0.1
+  brand: Marmite
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,grocery
+  portion_unit: tsp
+  unit_grams: 5
+- source: brand
+  source_id: spread_jif_lemon_juice_per_15ml
+  name: Jif Lemon Juice (Per 15ml)
+  kcal_per_100g: 22
+  protein_per_100g: 0
+  carbs_per_100g: 7
+  fat_per_100g: 0
+  brand: Jif
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: spread_meridian_pb_smooth_per_15g
+  name: Meridian Peanut Butter Smooth (Per 15g)
+  kcal_per_100g: 600
+  protein_per_100g: 28
+  carbs_per_100g: 11
+  fat_per_100g: 50
+  brand: Meridian
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: spread_meridian_pb_crunchy_per_15g
+  name: Meridian Peanut Butter Crunchy
+  kcal_per_100g: 600
+  protein_per_100g: 28
+  carbs_per_100g: 11
+  fat_per_100g: 50
+  brand: Meridian
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: spread_meridian_almond_butter_per_15g
+  name: Meridian Almond Butter (Per 15g)
+  kcal_per_100g: 614
+  protein_per_100g: 25
+  carbs_per_100g: 10
+  fat_per_100g: 56
+  brand: Meridian
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: spread_meridian_cashew_butter_per_15g
+  name: Meridian Cashew Butter (Per 15g)
+  kcal_per_100g: 580
+  protein_per_100g: 18
+  carbs_per_100g: 28
+  fat_per_100g: 47
+  brand: Meridian
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: spread_pip_co_pb_smooth
+  name: Pip & Nut Smooth Peanut Butter (Per 15g)
+  kcal_per_100g: 600
+  protein_per_100g: 28
+  carbs_per_100g: 11
+  fat_per_100g: 50
+  brand: Pip & Nut
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: spread_pip_co_pb_crunchy
+  name: Pip & Nut Crunchy Peanut Butter (Per 15g)
+  kcal_per_100g: 600
+  protein_per_100g: 28
+  carbs_per_100g: 11
+  fat_per_100g: 50
+  brand: Pip & Nut
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: spread_pip_co_almond_butter
+  name: Pip & Nut Almond Butter (Per 15g)
+  kcal_per_100g: 614
+  protein_per_100g: 25
+  carbs_per_100g: 10
+  fat_per_100g: 56
+  brand: Pip & Nut
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: spread_pip_co_choc_almond_butter
+  name: Pip & Nut Chocolate Almond Butter
+  kcal_per_100g: 580
+  protein_per_100g: 18
+  carbs_per_100g: 28
+  fat_per_100g: 47
+  brand: Pip & Nut
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: spread_whole_earth_pb_per_15g
+  name: Whole Earth Peanut Butter (Per 15g)
+  kcal_per_100g: 600
+  protein_per_100g: 28
+  carbs_per_100g: 11
+  fat_per_100g: 50
+  brand: Whole Earth
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: spread_sun_pat_pb_smooth_per_15g
+  name: Sun-Pat Peanut Butter Smooth (Per 15g)
+  kcal_per_100g: 600
+  protein_per_100g: 28
+  carbs_per_100g: 11
+  fat_per_100g: 50
+  brand: Sun-Pat
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: spread_sun_pat_pb_crunchy_per_15g
+  name: Sun-Pat Peanut Butter Crunchy
+  kcal_per_100g: 600
+  protein_per_100g: 28
+  carbs_per_100g: 11
+  fat_per_100g: 50
+  brand: Sun-Pat
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: spread_kp_pb_per_15g
+  name: KP Peanut Butter (Per 15g)
+  kcal_per_100g: 600
+  protein_per_100g: 28
+  carbs_per_100g: 11
+  fat_per_100g: 50
+  brand: KP
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: sandwich_chicken_avo_lemon_lime
+  name: Chicken, Avocado & Lemon Mayo Sandwich
+  kcal_per_100g: 305
+  protein_per_100g: 17
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: sandwich_egg_cress_homemade
+  name: Egg & Cress Sandwich (Homemade)
+  kcal_per_100g: 285
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Generic
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 175
+- source: brand
+  source_id: sandwich_chicken_stuffing_homemade
+  name: Chicken & Stuffing Sandwich (Homemade)
+  kcal_per_100g: 305
+  protein_per_100g: 16
+  carbs_per_100g: 32
+  fat_per_100g: 11
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: sandwich_chicken_bacon_homemade
+  name: Chicken Bacon Sandwich (Homemade)
+  kcal_per_100g: 320
+  protein_per_100g: 17
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: sandwich_turkey_cranberry_homemade
+  name: Turkey & Cranberry Sandwich
+  kcal_per_100g: 295
+  protein_per_100g: 16
+  carbs_per_100g: 32
+  fat_per_100g: 9
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: sandwich_pastrami_pickle_homemade
+  name: Pastrami & Pickle Sandwich
+  kcal_per_100g: 295
+  protein_per_100g: 17
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: sandwich_brie_grape_walnut
+  name: Brie, Grape & Walnut Sandwich
+  kcal_per_100g: 305
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 16
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: sandwich_houmous_falafel_homemade
+  name: Houmous & Falafel Sandwich (Homemade)
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 30
+  fat_per_100g: 11
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: sandwich_aubergine_tomato_pesto
+  name: Aubergine, Tomato & Pesto Sandwich
+  kcal_per_100g: 245
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 11
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: sandwich_grilled_chicken_avocado_lime
+  name: Grilled Chicken Avocado Lime Sandwich
+  kcal_per_100g: 305
+  protein_per_100g: 17
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200

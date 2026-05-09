@@ -1,0 +1,534 @@
+# Burger King Full Menu Expansion — Whoppers, chicken, sides, breakfasts, milkshakes, desserts
+
+- source: burgerking
+  source_id: bk_whopper_jr
+  name: Burger King Whopper Jr.
+  kcal_per_100g: 242.4
+  protein_per_100g: 10.61
+  carbs_per_100g: 20.45
+  fat_per_100g: 12.88
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 132
+  serving_label: item (132 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 132
+- source: burgerking
+  source_id: bk_double_whopper
+  name: Burger King Double Whopper
+  kcal_per_100g: 246.6
+  protein_per_100g: 12.81
+  carbs_per_100g: 13.35
+  fat_per_100g: 16.35
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 367
+  serving_label: item (367 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 367
+- source: burgerking
+  source_id: bk_triple_whopper
+  name: Burger King Triple Whopper
+  kcal_per_100g: 247.8
+  protein_per_100g: 14.57
+  carbs_per_100g: 10.65
+  fat_per_100g: 16.3
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 460
+  serving_label: item (460 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 460
+- source: burgerking
+  source_id: bk_steakhouse
+  name: Burger King Steakhouse
+  kcal_per_100g: 227.7
+  protein_per_100g: 11.49
+  carbs_per_100g: 17.45
+  fat_per_100g: 11.91
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 235
+  serving_label: item (235 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 235
+- source: burgerking
+  source_id: bk_bacon_double_cheese
+  name: Burger King Bacon Double Cheeseburger
+  kcal_per_100g: 259.5
+  protein_per_100g: 16.46
+  carbs_per_100g: 19.62
+  fat_per_100g: 13.29
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 158
+  serving_label: item (158 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 158
+- source: burgerking
+  source_id: bk_bacon_king
+  name: Burger King Bacon King
+  kcal_per_100g: 291.7
+  protein_per_100g: 14.72
+  carbs_per_100g: 13.61
+  fat_per_100g: 20.28
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 360
+  serving_label: item (360 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 360
+- source: burgerking
+  source_id: bk_long_chicken
+  name: Burger King Long Chicken
+  kcal_per_100g: 245.6
+  protein_per_100g: 9.73
+  carbs_per_100g: 24.78
+  fat_per_100g: 11.5
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 226
+  serving_label: item (226 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 226
+- source: burgerking
+  source_id: bk_crispy_chicken_sandwich
+  name: Burger King Crispy Chicken Sandwich
+  kcal_per_100g: 241.0
+  protein_per_100g: 11.28
+  carbs_per_100g: 24.1
+  fat_per_100g: 10.77
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 195
+  serving_label: item (195 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 195
+- source: burgerking
+  source_id: bk_chicken_jr
+  name: Burger King Chicken Jr.
+  kcal_per_100g: 233.9
+  protein_per_100g: 11.29
+  carbs_per_100g: 22.58
+  fat_per_100g: 11.29
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 124
+  serving_label: item (124 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 124
+- source: burgerking
+  source_id: bk_chicken_nuggets_4
+  name: Burger King Chicken Nuggets (4 pcs)
+  kcal_per_100g: 273.4
+  protein_per_100g: 14.06
+  carbs_per_100g: 18.75
+  fat_per_100g: 15.62
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 64
+  serving_label: item (64 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 64
+- source: burgerking
+  source_id: bk_chicken_nuggets_6
+  name: Burger King Chicken Nuggets (6 pcs)
+  kcal_per_100g: 276.0
+  protein_per_100g: 14.58
+  carbs_per_100g: 18.75
+  fat_per_100g: 15.62
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 96
+  serving_label: item (96 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 96
+- source: burgerking
+  source_id: bk_chicken_nuggets_9
+  name: Burger King Chicken Nuggets (9 pcs)
+  kcal_per_100g: 274.3
+  protein_per_100g: 14.58
+  carbs_per_100g: 18.75
+  fat_per_100g: 15.97
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 144
+  serving_label: item (144 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 144
+- source: burgerking
+  source_id: bk_chicken_fries_9
+  name: Burger King Chicken Fries (9 pcs)
+  kcal_per_100g: 254.5
+  protein_per_100g: 13.17
+  carbs_per_100g: 21.56
+  fat_per_100g: 13.17
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 167
+  serving_label: item (167 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 167
+- source: burgerking
+  source_id: bk_plant_whopper
+  name: Burger King Plant-Based Whopper
+  kcal_per_100g: 225.0
+  protein_per_100g: 8.93
+  carbs_per_100g: 17.86
+  fat_per_100g: 12.5
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 280
+  serving_label: item (280 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 280
+- source: burgerking
+  source_id: bk_french_fries_small
+  name: Burger King French Fries Small
+  kcal_per_100g: 266.7
+  protein_per_100g: 3.33
+  carbs_per_100g: 34.44
+  fat_per_100g: 12.22
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 90
+  serving_label: item (90 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 90
+- source: burgerking
+  source_id: bk_french_fries_med
+  name: Burger King French Fries Medium
+  kcal_per_100g: 266.7
+  protein_per_100g: 2.96
+  carbs_per_100g: 34.81
+  fat_per_100g: 12.59
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 135
+  serving_label: item (135 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 135
+- source: burgerking
+  source_id: bk_french_fries_large
+  name: Burger King French Fries Large
+  kcal_per_100g: 264.7
+  protein_per_100g: 2.94
+  carbs_per_100g: 35.29
+  fat_per_100g: 12.35
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 170
+  serving_label: item (170 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 170
+- source: burgerking
+  source_id: bk_onion_rings_med
+  name: Burger King Onion Rings Medium
+  kcal_per_100g: 273.5
+  protein_per_100g: 4.27
+  carbs_per_100g: 32.48
+  fat_per_100g: 13.68
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 117
+  serving_label: item (117 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 117
+- source: burgerking
+  source_id: bk_onion_rings_large
+  name: Burger King Onion Rings Large
+  kcal_per_100g: 274.3
+  protein_per_100g: 4.0
+  carbs_per_100g: 32.0
+  fat_per_100g: 13.71
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 175
+  serving_label: item (175 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 175
+- source: burgerking
+  source_id: bk_mozzarella_sticks_4
+  name: Burger King Mozzarella Sticks (4 pcs)
+  kcal_per_100g: 266.7
+  protein_per_100g: 10.83
+  carbs_per_100g: 25.83
+  fat_per_100g: 13.33
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 120
+  serving_label: item (120 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 120
+- source: burgerking
+  source_id: bk_mozzarella_sticks_8
+  name: Burger King Mozzarella Sticks (8 pcs)
+  kcal_per_100g: 266.7
+  protein_per_100g: 10.83
+  carbs_per_100g: 25.83
+  fat_per_100g: 13.33
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 240
+  serving_label: item (240 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 240
+- source: burgerking
+  source_id: bk_chilli_cheese_bites_8
+  name: Burger King Chilli Cheese Bites (8 pcs)
+  kcal_per_100g: 309.1
+  protein_per_100g: 7.88
+  carbs_per_100g: 23.03
+  fat_per_100g: 20.0
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 165
+  serving_label: item (165 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 165
+- source: burgerking
+  source_id: bk_dip_bbq
+  name: Burger King BBQ Dip
+  kcal_per_100g: 178.6
+  protein_per_100g: 0.0
+  carbs_per_100g: 42.86
+  fat_per_100g: 0.0
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 28
+  serving_label: item (28 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 28
+- source: burgerking
+  source_id: bk_dip_sweet_chilli
+  name: Burger King Sweet Chilli Dip
+  kcal_per_100g: 214.3
+  protein_per_100g: 0.0
+  carbs_per_100g: 50.0
+  fat_per_100g: 0.0
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 28
+  serving_label: item (28 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 28
+- source: burgerking
+  source_id: bk_dip_garlic_mayo
+  name: Burger King Garlic Mayo Dip
+  kcal_per_100g: 464.3
+  protein_per_100g: 0.0
+  carbs_per_100g: 3.57
+  fat_per_100g: 50.0
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 28
+  serving_label: item (28 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 28
+- source: burgerking
+  source_id: bk_breakfast_egg_bacon_muffin
+  name: Burger King Egg & Bacon Muffin
+  kcal_per_100g: 276.9
+  protein_per_100g: 12.31
+  carbs_per_100g: 20.0
+  fat_per_100g: 16.15
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 130
+  serving_label: item (130 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 130
+- source: burgerking
+  source_id: bk_breakfast_sausage_muffin
+  name: Burger King Sausage Muffin
+  kcal_per_100g: 306.8
+  protein_per_100g: 10.61
+  carbs_per_100g: 20.45
+  fat_per_100g: 19.7
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 132
+  serving_label: item (132 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 132
+- source: burgerking
+  source_id: bk_breakfast_double_sausage_egg
+  name: Burger King Double Sausage & Egg Muffin
+  kcal_per_100g: 279.5
+  protein_per_100g: 12.31
+  carbs_per_100g: 14.36
+  fat_per_100g: 18.46
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 195
+  serving_label: item (195 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 195
+- source: burgerking
+  source_id: bk_breakfast_hash_browns_3
+  name: Burger King Hash Browns (3 pcs)
+  kcal_per_100g: 285.7
+  protein_per_100g: 2.38
+  carbs_per_100g: 28.57
+  fat_per_100g: 17.86
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 84
+  serving_label: item (84 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 84
+- source: burgerking
+  source_id: bk_breakfast_hash_browns_6
+  name: Burger King Hash Browns (6 pcs)
+  kcal_per_100g: 285.7
+  protein_per_100g: 2.38
+  carbs_per_100g: 28.57
+  fat_per_100g: 17.86
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 168
+  serving_label: item (168 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 168
+- source: burgerking
+  source_id: bk_milkshake_chocolate
+  name: Burger King Chocolate Milkshake
+  kcal_per_100g: 115.0
+  protein_per_100g: 3.0
+  carbs_per_100g: 18.75
+  fat_per_100g: 3.0
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 400
+  serving_label: item (400 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 400
+- source: burgerking
+  source_id: bk_milkshake_strawberry
+  name: Burger King Strawberry Milkshake
+  kcal_per_100g: 110.0
+  protein_per_100g: 3.0
+  carbs_per_100g: 18.0
+  fat_per_100g: 3.0
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 400
+  serving_label: item (400 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 400
+- source: burgerking
+  source_id: bk_milkshake_vanilla
+  name: Burger King Vanilla Milkshake
+  kcal_per_100g: 106.2
+  protein_per_100g: 3.0
+  carbs_per_100g: 17.0
+  fat_per_100g: 3.0
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 400
+  serving_label: item (400 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 400
+- source: burgerking
+  source_id: bk_apple_pie
+  name: Burger King Apple Pie
+  kcal_per_100g: 293.8
+  protein_per_100g: 2.5
+  carbs_per_100g: 37.5
+  fat_per_100g: 15.0
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 80
+- source: burgerking
+  source_id: bk_chocolate_fudge_brownie
+  name: Burger King Chocolate Fudge Brownie
+  kcal_per_100g: 422.2
+  protein_per_100g: 5.56
+  carbs_per_100g: 55.56
+  fat_per_100g: 20.0
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 90
+  serving_label: item (90 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 90
+- source: burgerking
+  source_id: bk_oreo_cookie_pie
+  name: Burger King Oreo Cookie Pie
+  kcal_per_100g: 341.2
+  protein_per_100g: 4.71
+  carbs_per_100g: 44.71
+  fat_per_100g: 15.29
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 85
+  serving_label: item (85 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 85
+- source: burgerking
+  source_id: bk_sundae_chocolate
+  name: Burger King Chocolate Sundae
+  kcal_per_100g: 175.8
+  protein_per_100g: 4.24
+  carbs_per_100g: 28.48
+  fat_per_100g: 5.45
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 165
+  serving_label: item (165 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 165
+- source: burgerking
+  source_id: bk_sundae_strawberry
+  name: Burger King Strawberry Sundae
+  kcal_per_100g: 163.6
+  protein_per_100g: 3.64
+  carbs_per_100g: 27.27
+  fat_per_100g: 4.85
+  brand: Burger King
+  region_codes: GB
+  serving_grams: 165
+  serving_label: item (165 g)
+  tags: fast-food,burger-king
+  portion_unit: meal
+  unit_grams: 165

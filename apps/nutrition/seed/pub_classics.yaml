@@ -1,0 +1,291 @@
+# Pub Classics — pub food not covered by named-chain entries
+# Fish & chips variants, mixed grill, pies, breakfasts, desserts.
+
+- source: homemade
+  source_id: fish_chips_takeaway_large
+  name: Fish & Chips (Takeaway, Large)
+  kcal_per_100g: 230
+  protein_per_100g: 12
+  carbs_per_100g: 26
+  fat_per_100g: 10
+  serving_grams: 550
+  serving_label: portion (550 g)
+  tags: pub,fish,chips,takeaway
+  portion_unit: meal
+  unit_grams: 550
+- source: homemade
+  source_id: fish_chips_takeaway_regular
+  name: Fish & Chips (Takeaway, Regular)
+  kcal_per_100g: 225
+  protein_per_100g: 12
+  carbs_per_100g: 26
+  fat_per_100g: 9.5
+  serving_grams: 400
+  serving_label: portion (400 g)
+  tags: pub,fish,chips,takeaway
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: scampi_chips_pub
+  name: Scampi & Chips (Pub)
+  kcal_per_100g: 245
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 11
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: pub,seafood,chips
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: ham_egg_chips_pub
+  name: Ham, Egg & Chips (Pub)
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 10
+  serving_grams: 450
+  serving_label: plate (450 g)
+  tags: pub,ham,eggs,chips
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: gammon_egg_chips_pub
+  name: Gammon, Egg & Chips (Pub)
+  kcal_per_100g: 210
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  serving_grams: 500
+  serving_label: plate (500 g)
+  tags: pub,gammon,eggs,chips
+  portion_unit: meal
+  unit_grams: 500
+- source: homemade
+  source_id: beef_burger_chips_pub
+  name: Pub Beef Burger & Chips
+  kcal_per_100g: 260
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  serving_grams: 500
+  serving_label: plate (500 g)
+  tags: pub,burger,chips
+  portion_unit: meal
+  unit_grams: 500
+- source: homemade
+  source_id: chicken_burger_chips_pub
+  name: Pub Chicken Burger & Chips
+  kcal_per_100g: 250
+  protein_per_100g: 12
+  carbs_per_100g: 24
+  fat_per_100g: 12
+  serving_grams: 500
+  serving_label: plate (500 g)
+  tags: pub,burger,chicken,chips
+  portion_unit: meal
+  unit_grams: 500
+- source: homemade
+  source_id: ploughmans_lunch
+  name: Ploughman's Lunch
+  kcal_per_100g: 230
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 13
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: pub,cheese,ham,bread
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: steak_pie_pub_chips
+  name: Steak Pie, Chips & Peas (Pub)
+  kcal_per_100g: 225
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 550
+  serving_label: plate (550 g)
+  tags: pub,pie,chips,peas
+  portion_unit: meal
+  unit_grams: 550
+- source: homemade
+  source_id: chicken_pie_pub_chips
+  name: Chicken Pie, Chips & Peas (Pub)
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 10
+  serving_grams: 550
+  serving_label: plate (550 g)
+  tags: pub,pie,chicken,chips
+  portion_unit: meal
+  unit_grams: 550
+- source: homemade
+  source_id: mixed_grill_pub
+  name: Mixed Grill (Pub)
+  kcal_per_100g: 210
+  protein_per_100g: 17
+  carbs_per_100g: 12
+  fat_per_100g: 11
+  serving_grams: 600
+  serving_label: plate (600 g)
+  tags: pub,meat,grill
+  portion_unit: meal
+  unit_grams: 600
+- source: homemade
+  source_id: fish_pie_pub
+  name: Fish Pie (Pub)
+  kcal_per_100g: 130
+  protein_per_100g: 10
+  carbs_per_100g: 12
+  fat_per_100g: 4.5
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: pub,fish,pie
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: shepherds_pie_pub
+  name: Shepherd's Pie (Pub Plate)
+  kcal_per_100g: 125
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: pub,pie,lamb
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: cottage_pie_pub
+  name: Cottage Pie (Pub Plate)
+  kcal_per_100g: 130
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5.5
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: pub,pie,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: lasagne_pub_plate
+  name: Lasagne, Garlic Bread & Salad (Pub)
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 17
+  fat_per_100g: 7.5
+  serving_grams: 500
+  serving_label: plate (500 g)
+  tags: pub,pasta,lasagne
+  portion_unit: meal
+  unit_grams: 500
+- source: homemade
+  source_id: chilli_rice_pub
+  name: Chilli con Carne with Rice (Pub)
+  kcal_per_100g: 150
+  protein_per_100g: 8
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  serving_grams: 450
+  serving_label: plate (450 g)
+  tags: pub,beef,rice
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: scottish_breakfast_full
+  name: Scottish Breakfast (Full, with Haggis)
+  kcal_per_100g: 230
+  protein_per_100g: 11
+  carbs_per_100g: 16
+  fat_per_100g: 13
+  serving_grams: 500
+  serving_label: plate (500 g)
+  tags: pub,breakfast,scottish
+  portion_unit: meal
+  unit_grams: 500
+- source: homemade
+  source_id: irish_breakfast_full
+  name: Irish Breakfast (Full, with Black & White Pudding)
+  kcal_per_100g: 240
+  protein_per_100g: 12
+  carbs_per_100g: 14
+  fat_per_100g: 14
+  serving_grams: 500
+  serving_label: plate (500 g)
+  tags: pub,breakfast,irish
+  portion_unit: meal
+  unit_grams: 500
+- source: homemade
+  source_id: sticky_toffee_pudding
+  name: Sticky Toffee Pudding with Custard
+  kcal_per_100g: 365
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 16
+  serving_grams: 180
+  serving_label: dessert (180 g)
+  tags: pub,dessert
+  portion_unit: meal
+  unit_grams: 180
+- source: homemade
+  source_id: apple_pie_custard_pub
+  name: Apple Pie & Custard (Pub)
+  kcal_per_100g: 245
+  protein_per_100g: 3
+  carbs_per_100g: 35
+  fat_per_100g: 11
+  serving_grams: 200
+  serving_label: dessert (200 g)
+  tags: pub,dessert,apple
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: cheesecake_pub_slice
+  name: Cheesecake (Pub Slice)
+  kcal_per_100g: 330
+  protein_per_100g: 5
+  carbs_per_100g: 30
+  fat_per_100g: 22
+  serving_grams: 130
+  serving_label: slice (130 g)
+  tags: pub,dessert
+  portion_unit: slice
+  unit_grams: 130
+- source: homemade
+  source_id: chocolate_brownie_icecream
+  name: Chocolate Brownie with Ice Cream (Pub)
+  kcal_per_100g: 385
+  protein_per_100g: 5
+  carbs_per_100g: 45
+  fat_per_100g: 21
+  serving_grams: 150
+  serving_label: dessert (150 g)
+  tags: pub,dessert,chocolate
+  portion_unit: meal
+  unit_grams: 150
+- source: homemade
+  source_id: eton_mess
+  name: Eton Mess
+  kcal_per_100g: 215
+  protein_per_100g: 3
+  carbs_per_100g: 26
+  fat_per_100g: 11
+  serving_grams: 180
+  serving_label: dessert (180 g)
+  tags: pub,dessert
+  portion_unit: meal
+  unit_grams: 180
+- source: homemade
+  source_id: trifle_pub
+  name: Trifle (Pub)
+  kcal_per_100g: 180
+  protein_per_100g: 3
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 180
+  serving_label: dessert (180 g)
+  tags: pub,dessert
+  portion_unit: meal
+  unit_grams: 180

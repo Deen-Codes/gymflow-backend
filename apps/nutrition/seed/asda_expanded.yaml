@@ -1,0 +1,959 @@
+# Asda Expanded — Extra Special, Plant Based, Free From, standard ready meals,
+# fresh meat & fish, soups, dips, pizza
+
+- source: asda
+  source_id: asda_es_chicken_kievs
+  name: Asda Extra Special Chicken Kievs
+  kcal_per_100g: 255
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 16
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 145
+  serving_label: kiev (145 g)
+  tags: frozen,chicken,ready-meal
+  portion_unit: meal
+  unit_grams: 145
+- source: asda
+  source_id: asda_es_chicken_in_white_wine
+  name: Asda Extra Special Chicken in White Wine Sauce
+  kcal_per_100g: 130
+  protein_per_100g: 13
+  carbs_per_100g: 5
+  fat_per_100g: 7
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 350
+  serving_label: meal (350 g)
+  tags: ready-meal,chicken
+  portion_unit: meal
+  unit_grams: 350
+- source: asda
+  source_id: asda_es_thai_green_curry
+  name: Asda Extra Special Thai Green Chicken Curry
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 6
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_es_thai_red_curry
+  name: Asda Extra Special Thai Red Chicken Curry
+  kcal_per_100g: 150
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 6.5
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_es_chicken_tikka
+  name: Asda Extra Special Chicken Tikka Masala
+  kcal_per_100g: 140
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 6
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_es_lasagne
+  name: Asda Extra Special Lasagne
+  kcal_per_100g: 155
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_es_macaroni_cheese
+  name: Asda Extra Special Macaroni Cheese
+  kcal_per_100g: 170
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: asda
+  source_id: asda_es_cottage_pie
+  name: Asda Extra Special Cottage Pie
+  kcal_per_100g: 130
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_es_shepherds_pie
+  name: Asda Extra Special Shepherd's Pie
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5.5
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,lamb
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_es_fish_pie
+  name: Asda Extra Special Fish Pie
+  kcal_per_100g: 120
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 4
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,fish
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_es_steak_ale_pie
+  name: Asda Extra Special Steak & Ale Pie
+  kcal_per_100g: 230
+  protein_per_100g: 9
+  carbs_per_100g: 21
+  fat_per_100g: 12
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 400
+  serving_label: pie (400 g)
+  tags: ready-meal,beef,pie
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_es_chicken_mushroom_pie
+  name: Asda Extra Special Chicken & Mushroom Pie
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 19
+  fat_per_100g: 11
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 400
+  serving_label: pie (400 g)
+  tags: ready-meal,chicken,pie
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_es_lamb_shanks
+  name: Asda Extra Special Slow-Cooked Lamb Shanks
+  kcal_per_100g: 170
+  protein_per_100g: 13
+  carbs_per_100g: 8
+  fat_per_100g: 9.5
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 450
+  serving_label: pack (450 g)
+  tags: ready-meal,lamb
+  portion_unit: meal
+  unit_grams: 450
+- source: asda
+  source_id: asda_es_beef_short_rib
+  name: Asda Extra Special Slow-Cooked Beef Short Rib
+  kcal_per_100g: 210
+  protein_per_100g: 17
+  carbs_per_100g: 7
+  fat_per_100g: 12
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 425
+  serving_label: pack (425 g)
+  tags: ready-meal,beef
+  portion_unit: meal
+  unit_grams: 425
+- source: asda
+  source_id: asda_es_pork_belly_slow
+  name: Asda Extra Special Slow-Cooked Pork Belly
+  kcal_per_100g: 275
+  protein_per_100g: 16
+  carbs_per_100g: 5
+  fat_per_100g: 22
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 400
+  serving_label: pack (400 g)
+  tags: ready-meal,pork
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_es_duck_a_l_orange
+  name: Asda Extra Special Duck à l'Orange
+  kcal_per_100g: 170
+  protein_per_100g: 13
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pack (300 g)
+  tags: ready-meal,duck
+  portion_unit: meal
+  unit_grams: 300
+- source: asda
+  source_id: asda_es_salmon_fillets
+  name: Asda Extra Special Scottish Salmon Fillets
+  kcal_per_100g: 200
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: salmon,fresh
+  portion_unit: meal
+  unit_grams: 130
+- source: asda
+  source_id: asda_es_chicken_breast
+  name: Asda Extra Special Free Range Chicken Breasts
+  kcal_per_100g: 110
+  protein_per_100g: 24
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 170
+  serving_label: breast (170 g)
+  tags: chicken,fresh,free-range
+  portion_unit: meal
+  unit_grams: 170
+- source: asda
+  source_id: asda_pb_no_chicken_kiev
+  name: Asda Plant Based No Chicken Kiev
+  kcal_per_100g: 225
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Asda Plant Based
+  region_codes: GB
+  serving_grams: 140
+  serving_label: kiev (140 g)
+  tags: vegan,plant-based,frozen
+  portion_unit: meal
+  unit_grams: 140
+  dietary_compat: vegan,vegetarian
+- source: asda
+  source_id: asda_pb_no_beef_burger
+  name: Asda Plant Based No Beef Burger
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 6
+  fat_per_100g: 13
+  brand: Asda Plant Based
+  region_codes: GB
+  serving_grams: 113
+  serving_label: burger (113 g)
+  tags: vegan,burger
+  portion_unit: meal
+  unit_grams: 113
+  dietary_compat: vegan,vegetarian
+- source: asda
+  source_id: asda_pb_no_chicken_pieces
+  name: Asda Plant Based No Chicken Pieces
+  kcal_per_100g: 155
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 5
+  brand: Asda Plant Based
+  region_codes: GB
+  serving_grams: 160
+  serving_label: pack (160 g)
+  tags: vegan,protein,frozen
+  portion_unit: meal
+  unit_grams: 160
+  dietary_compat: vegan,vegetarian
+- source: asda
+  source_id: asda_pb_meatballs
+  name: Asda Plant Based Meatballs
+  kcal_per_100g: 160
+  protein_per_100g: 16
+  carbs_per_100g: 9
+  fat_per_100g: 5.5
+  brand: Asda Plant Based
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pack (200 g)
+  tags: vegan,protein
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: asda
+  source_id: asda_pb_pulled_jackfruit
+  name: Asda Plant Based Pulled Jackfruit
+  kcal_per_100g: 105
+  protein_per_100g: 2
+  carbs_per_100g: 17
+  fat_per_100g: 2.5
+  brand: Asda Plant Based
+  region_codes: GB
+  serving_grams: 160
+  serving_label: pack (160 g)
+  tags: vegan,bbq
+  portion_unit: meal
+  unit_grams: 160
+  dietary_compat: vegan,vegetarian
+- source: asda
+  source_id: asda_pb_no_sausages
+  name: Asda Plant Based No Pork Sausages
+  kcal_per_100g: 225
+  protein_per_100g: 14
+  carbs_per_100g: 8
+  fat_per_100g: 14
+  brand: Asda Plant Based
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pack (300 g)
+  tags: vegan,sausage
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: asda
+  source_id: asda_chicken_korma_400
+  name: Asda Chicken Korma
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5.5
+  brand: Asda
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_chicken_balti_400
+  name: Asda Chicken Balti
+  kcal_per_100g: 125
+  protein_per_100g: 9
+  carbs_per_100g: 9
+  fat_per_100g: 5
+  brand: Asda
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_chicken_jalfrezi_400
+  name: Asda Chicken Jalfrezi
+  kcal_per_100g: 120
+  protein_per_100g: 9
+  carbs_per_100g: 9
+  fat_per_100g: 4.5
+  brand: Asda
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_chicken_madras_400
+  name: Asda Chicken Madras
+  kcal_per_100g: 115
+  protein_per_100g: 10
+  carbs_per_100g: 8
+  fat_per_100g: 4
+  brand: Asda
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken,spicy
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_sweet_sour_chicken_rice
+  name: Asda Sweet & Sour Chicken & Rice
+  kcal_per_100g: 130
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 2
+  brand: Asda
+  region_codes: GB
+  serving_grams: 450
+  serving_label: meal (450 g)
+  tags: ready-meal,chinese,chicken,rice
+  portion_unit: meal
+  unit_grams: 450
+- source: asda
+  source_id: asda_chicken_chow_mein
+  name: Asda Chicken Chow Mein
+  kcal_per_100g: 120
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: Asda
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,chinese,chicken,noodles
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_lasagne_400
+  name: Asda Beef Lasagne
+  kcal_per_100g: 150
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Asda
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_macaroni_cheese_400
+  name: Asda Macaroni Cheese
+  kcal_per_100g: 165
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 7.5
+  brand: Asda
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: asda
+  source_id: asda_chilli_rice_400
+  name: Asda Chilli con Carne & Rice
+  kcal_per_100g: 120
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: Asda
+  region_codes: GB
+  serving_grams: 450
+  serving_label: meal (450 g)
+  tags: ready-meal,beef,rice
+  portion_unit: meal
+  unit_grams: 450
+- source: asda
+  source_id: asda_spag_bol_400
+  name: Asda Spaghetti Bolognese
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 14
+  fat_per_100g: 4.5
+  brand: Asda
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_carbonara_400
+  name: Asda Spaghetti Carbonara
+  kcal_per_100g: 170
+  protein_per_100g: 7
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  brand: Asda
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_cottage_pie_400
+  name: Asda Cottage Pie
+  kcal_per_100g: 125
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 5
+  brand: Asda
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_fish_pie_400
+  name: Asda Fish Pie
+  kcal_per_100g: 115
+  protein_per_100g: 8
+  carbs_per_100g: 11
+  fat_per_100g: 4
+  brand: Asda
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,fish
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_houmous_classic
+  name: Asda Houmous (Classic)
+  kcal_per_100g: 290
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 23
+  brand: Asda
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pot (200 g)
+  tags: dip,deli
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: asda
+  source_id: asda_houmous_red_pepper
+  name: Asda Red Pepper Houmous
+  kcal_per_100g: 275
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 21
+  brand: Asda
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pot (200 g)
+  tags: dip,deli
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: asda
+  source_id: asda_tzatziki
+  name: Asda Tzatziki
+  kcal_per_100g: 120
+  protein_per_100g: 5
+  carbs_per_100g: 4
+  fat_per_100g: 9.5
+  brand: Asda
+  region_codes: GB
+  serving_grams: 170
+  serving_label: pot (170 g)
+  tags: dip,deli,greek
+  portion_unit: meal
+  unit_grams: 170
+  dietary_compat: vegetarian
+- source: asda
+  source_id: asda_taramasalata
+  name: Asda Taramasalata
+  kcal_per_100g: 440
+  protein_per_100g: 4
+  carbs_per_100g: 6
+  fat_per_100g: 45
+  brand: Asda
+  region_codes: GB
+  serving_grams: 170
+  serving_label: pot (170 g)
+  tags: dip,deli
+  portion_unit: meal
+  unit_grams: 170
+- source: asda
+  source_id: asda_soup_tomato_basil
+  name: Asda Tomato & Basil Soup (Fresh)
+  kcal_per_100g: 45
+  protein_per_100g: 1.5
+  carbs_per_100g: 6
+  fat_per_100g: 1.5
+  brand: Asda
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegetarian
+- source: asda
+  source_id: asda_soup_chicken_noodle
+  name: Asda Chicken Noodle Soup (Fresh)
+  kcal_per_100g: 50
+  protein_per_100g: 4
+  carbs_per_100g: 6
+  fat_per_100g: 1
+  brand: Asda
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup,chicken
+  portion_unit: meal
+  unit_grams: 300
+- source: asda
+  source_id: asda_soup_minestrone
+  name: Asda Minestrone Soup (Fresh)
+  kcal_per_100g: 55
+  protein_per_100g: 2
+  carbs_per_100g: 9
+  fat_per_100g: 1
+  brand: Asda
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: asda
+  source_id: asda_soup_butternut
+  name: Asda Butternut Squash Soup (Fresh)
+  kcal_per_100g: 55
+  protein_per_100g: 1.2
+  carbs_per_100g: 8
+  fat_per_100g: 2
+  brand: Asda
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: asda
+  source_id: asda_stonebaked_margherita
+  name: Asda Stonebaked Margherita Pizza
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Asda
+  region_codes: GB
+  serving_grams: 290
+  serving_label: pizza (290 g)
+  tags: pizza,frozen
+  portion_unit: meal
+  unit_grams: 290
+  dietary_compat: vegetarian
+- source: asda
+  source_id: asda_stonebaked_pepperoni
+  name: Asda Stonebaked Pepperoni Pizza
+  kcal_per_100g: 275
+  protein_per_100g: 12
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  brand: Asda
+  region_codes: GB
+  serving_grams: 320
+  serving_label: pizza (320 g)
+  tags: pizza,frozen
+  portion_unit: meal
+  unit_grams: 320
+- source: asda
+  source_id: asda_stonebaked_meat_feast
+  name: Asda Stonebaked Meat Feast Pizza
+  kcal_per_100g: 280
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Asda
+  region_codes: GB
+  serving_grams: 395
+  serving_label: pizza (395 g)
+  tags: pizza,frozen
+  portion_unit: meal
+  unit_grams: 395
+- source: asda
+  source_id: asda_stonebaked_bbq_chicken
+  name: Asda Stonebaked BBQ Chicken Pizza
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Asda
+  region_codes: GB
+  serving_grams: 370
+  serving_label: pizza (370 g)
+  tags: pizza,frozen,chicken
+  portion_unit: meal
+  unit_grams: 370
+- source: asda
+  source_id: asda_chicken_breast_fresh
+  name: Asda British Chicken Breasts
+  kcal_per_100g: 105
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Asda
+  region_codes: GB
+  serving_grams: 170
+  serving_label: breast (170 g)
+  tags: chicken,fresh
+  portion_unit: meal
+  unit_grams: 170
+- source: asda
+  source_id: asda_chicken_thigh_fresh
+  name: Asda British Chicken Thighs
+  kcal_per_100g: 170
+  protein_per_100g: 19
+  carbs_per_100g: 0
+  fat_per_100g: 10
+  brand: Asda
+  region_codes: GB
+  serving_grams: 120
+  serving_label: thigh (120 g)
+  tags: chicken,fresh
+  portion_unit: meal
+  unit_grams: 120
+- source: asda
+  source_id: asda_chicken_mince_lean
+  name: Asda Lean Chicken Mince
+  kcal_per_100g: 115
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 3
+  brand: Asda
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: chicken,fresh,lean
+  portion_unit: meal
+  unit_grams: 125
+- source: asda
+  source_id: asda_turkey_mince_lean
+  name: Asda Lean Turkey Mince
+  kcal_per_100g: 105
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 2
+  brand: Asda
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: turkey,fresh,lean
+  portion_unit: meal
+  unit_grams: 125
+- source: asda
+  source_id: asda_steak_mince_5pct
+  name: Asda 5% Fat Steak Mince
+  kcal_per_100g: 130
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 5
+  brand: Asda
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: beef,fresh,lean
+  portion_unit: meal
+  unit_grams: 125
+- source: asda
+  source_id: asda_steak_mince_12pct
+  name: Asda 12% Fat Steak Mince
+  kcal_per_100g: 170
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 9
+  brand: Asda
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: beef,fresh
+  portion_unit: meal
+  unit_grams: 125
+- source: asda
+  source_id: asda_pork_mince
+  name: Asda British Pork Mince
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 16
+  brand: Asda
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: pork,fresh
+  portion_unit: meal
+  unit_grams: 125
+- source: asda
+  source_id: asda_diced_chicken
+  name: Asda Diced Chicken Breast
+  kcal_per_100g: 105
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Asda
+  region_codes: GB
+  serving_grams: 150
+  serving_label: portion (150 g)
+  tags: chicken,fresh
+  portion_unit: meal
+  unit_grams: 150
+- source: asda
+  source_id: asda_diced_beef
+  name: Asda British Diced Beef
+  kcal_per_100g: 170
+  protein_per_100g: 24
+  carbs_per_100g: 0
+  fat_per_100g: 8
+  brand: Asda
+  region_codes: GB
+  serving_grams: 150
+  serving_label: portion (150 g)
+  tags: beef,fresh
+  portion_unit: meal
+  unit_grams: 150
+- source: asda
+  source_id: asda_diced_lamb
+  name: Asda British Diced Lamb
+  kcal_per_100g: 215
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 14
+  brand: Asda
+  region_codes: GB
+  serving_grams: 150
+  serving_label: portion (150 g)
+  tags: lamb,fresh
+  portion_unit: meal
+  unit_grams: 150
+- source: asda
+  source_id: asda_salmon_fillets
+  name: Asda Salmon Fillets Skin On
+  kcal_per_100g: 210
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  brand: Asda
+  region_codes: GB
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: salmon,fresh
+  portion_unit: meal
+  unit_grams: 130
+- source: asda
+  source_id: asda_cod_fillets
+  name: Asda Cod Fillets
+  kcal_per_100g: 80
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 0.7
+  brand: Asda
+  region_codes: GB
+  serving_grams: 140
+  serving_label: fillet (140 g)
+  tags: fish,fresh,lean
+  portion_unit: meal
+  unit_grams: 140
+- source: asda
+  source_id: asda_seabass_fillets
+  name: Asda Seabass Fillets
+  kcal_per_100g: 120
+  protein_per_100g: 20
+  carbs_per_100g: 0
+  fat_per_100g: 4
+  brand: Asda
+  region_codes: GB
+  serving_grams: 100
+  serving_label: fillet (100 g)
+  tags: fish,fresh
+  portion_unit: meal
+  unit_grams: 100
+- source: asda
+  source_id: asda_haddock_fillets
+  name: Asda Haddock Fillets
+  kcal_per_100g: 75
+  protein_per_100g: 17
+  carbs_per_100g: 0
+  fat_per_100g: 0.5
+  brand: Asda
+  region_codes: GB
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: fish,fresh,lean
+  portion_unit: meal
+  unit_grams: 130
+- source: asda
+  source_id: asda_king_prawns
+  name: Asda King Prawns (Cooked)
+  kcal_per_100g: 75
+  protein_per_100g: 17
+  carbs_per_100g: 0
+  fat_per_100g: 0.7
+  brand: Asda
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pack (200 g)
+  tags: prawns,seafood
+  portion_unit: meal
+  unit_grams: 200
+- source: asda
+  source_id: asda_ff_white_loaf
+  name: Asda Free From White Loaf
+  kcal_per_100g: 265
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 5
+  brand: Asda Free From
+  region_codes: GB
+  serving_grams: 42
+  serving_label: slice (42 g)
+  tags: gluten-free,bread
+  portion_unit: slice
+  unit_grams: 42
+  dietary_compat: gluten-free,vegetarian
+- source: asda
+  source_id: asda_ff_brown_loaf
+  name: Asda Free From Brown Loaf
+  kcal_per_100g: 275
+  protein_per_100g: 7
+  carbs_per_100g: 47
+  fat_per_100g: 6
+  brand: Asda Free From
+  region_codes: GB
+  serving_grams: 42
+  serving_label: slice (42 g)
+  tags: gluten-free,bread
+  portion_unit: slice
+  unit_grams: 42
+  dietary_compat: gluten-free,vegetarian
+- source: asda
+  source_id: asda_ff_chocolate_brownies
+  name: Asda Free From Chocolate Brownies
+  kcal_per_100g: 435
+  protein_per_100g: 4
+  carbs_per_100g: 55
+  fat_per_100g: 23
+  brand: Asda Free From
+  region_codes: GB
+  serving_grams: 35
+  serving_label: brownie (35 g)
+  tags: gluten-free,dessert
+  portion_unit: piece
+  unit_grams: 35
+  dietary_compat: gluten-free,vegetarian

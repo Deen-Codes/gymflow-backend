@@ -1,0 +1,1408 @@
+# More sports nutrition (My Protein full snacks: brownies/cookies/donuts/pretzels/porridge pots,
+# Optimum Nutrition bars + drinks, Grenade Carb Killa flavours, Quest chips/cookies, Barebells extras,
+# Phizz electrolyte tablets) +
+# Bakery full slice variants (Hovis/Warburtons/Kingsmill thin/medium/thick/extra thick/seeded/protein,
+# in-store fresh bakery — baguettes, sourdough, brioche, focaccia, cinnamon swirls) +
+# More cheese variants (Wensleydale/Caerphilly/Lancashire/Yarg/Stinking Bishop/Shropshire Blue/
+# Manchego/Provolone/Jarlsberg/Taleggio/Burrata/Mascarpone/crème fraîche/sour cream/cream variants)
+
+- source: brand
+  source_id: myp_protein_brownie_chocolate
+  name: My Protein Protein Brownie Chocolate
+  kcal_per_100g: 380
+  protein_per_100g: 30
+  carbs_per_100g: 30
+  fat_per_100g: 16
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 75
+- source: brand
+  source_id: myp_protein_brownie_white_choc
+  name: My Protein Protein Brownie White Chocolate
+  kcal_per_100g: 380
+  protein_per_100g: 30
+  carbs_per_100g: 30
+  fat_per_100g: 16
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 75
+- source: brand
+  source_id: myp_chocolate_pancakes
+  name: My Protein Pancake Mix Chocolate (Per Serving 50g)
+  kcal_per_100g: 380
+  protein_per_100g: 26
+  carbs_per_100g: 35
+  fat_per_100g: 12
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: powder
+  portion_unit: scoop
+  unit_grams: 50
+- source: brand
+  source_id: myp_pancakes_vanilla
+  name: My Protein Pancake Mix Vanilla
+  kcal_per_100g: 380
+  protein_per_100g: 26
+  carbs_per_100g: 35
+  fat_per_100g: 12
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: powder
+  portion_unit: scoop
+  unit_grams: 50
+- source: brand
+  source_id: myp_pancakes_blueberry
+  name: My Protein Pancake Mix Blueberry
+  kcal_per_100g: 380
+  protein_per_100g: 26
+  carbs_per_100g: 35
+  fat_per_100g: 12
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: powder
+  portion_unit: scoop
+  unit_grams: 50
+- source: brand
+  source_id: myp_protein_cookie_chocolate
+  name: My Protein Protein Cookie Chocolate Chip
+  kcal_per_100g: 415
+  protein_per_100g: 25
+  carbs_per_100g: 30
+  fat_per_100g: 18
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 75
+- source: brand
+  source_id: myp_protein_cookie_double_choc
+  name: My Protein Protein Cookie Double Chocolate
+  kcal_per_100g: 415
+  protein_per_100g: 25
+  carbs_per_100g: 30
+  fat_per_100g: 18
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 75
+- source: brand
+  source_id: myp_protein_cookie_white_choc_almond
+  name: My Protein Protein Cookie White Chocolate Almond
+  kcal_per_100g: 415
+  protein_per_100g: 25
+  carbs_per_100g: 30
+  fat_per_100g: 18
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 75
+- source: brand
+  source_id: myp_protein_crisps_per_pack
+  name: My Protein Protein Crisps (Per Pack)
+  kcal_per_100g: 405
+  protein_per_100g: 38
+  carbs_per_100g: 35
+  fat_per_100g: 14
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: snack
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: myp_protein_donuts_choc
+  name: My Protein Protein Donut Chocolate
+  kcal_per_100g: 410
+  protein_per_100g: 25
+  carbs_per_100g: 30
+  fat_per_100g: 22
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: myp_protein_pretzels
+  name: My Protein Protein Pretzels (Per Pack 30g)
+  kcal_per_100g: 380
+  protein_per_100g: 25
+  carbs_per_100g: 50
+  fat_per_100g: 9
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: myp_protein_porridge_pot_chocolate
+  name: My Protein Protein Porridge Pot Chocolate
+  kcal_per_100g: 380
+  protein_per_100g: 26
+  carbs_per_100g: 50
+  fat_per_100g: 8
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 60
+- source: brand
+  source_id: myp_protein_porridge_pot_strawberry
+  name: My Protein Protein Porridge Pot Strawberry
+  kcal_per_100g: 380
+  protein_per_100g: 26
+  carbs_per_100g: 50
+  fat_per_100g: 8
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 60
+- source: brand
+  source_id: myp_protein_overnight_oats_chocolate
+  name: My Protein Protein Overnight Oats Chocolate
+  kcal_per_100g: 380
+  protein_per_100g: 26
+  carbs_per_100g: 50
+  fat_per_100g: 8
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 60
+- source: brand
+  source_id: myp_zero_chocolate_spread_per_15g
+  name: My Protein Zero Chocolate Spread (Per 15g)
+  kcal_per_100g: 165
+  protein_per_100g: 7
+  carbs_per_100g: 21
+  fat_per_100g: 6
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: spread
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: myp_protein_chocolate_milkshake
+  name: My Protein Protein Milkshake Chocolate (Per 250ml)
+  kcal_per_100g: 60
+  protein_per_100g: 9
+  carbs_per_100g: 6
+  fat_per_100g: 0.5
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: myp_protein_strawberry_milkshake
+  name: My Protein Protein Milkshake Strawberry (250ml)
+  kcal_per_100g: 60
+  protein_per_100g: 9
+  carbs_per_100g: 6
+  fat_per_100g: 0.5
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: myp_protein_vanilla_milkshake
+  name: My Protein Protein Milkshake Vanilla (250ml)
+  kcal_per_100g: 60
+  protein_per_100g: 9
+  carbs_per_100g: 6
+  fat_per_100g: 0.5
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: myp_creatine_5g_serving
+  name: My Protein Creatine Monohydrate (Per 5g)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: supplement
+  portion_unit: scoop
+  unit_grams: 5
+- source: brand
+  source_id: myp_bcaa_per_5g
+  name: My Protein BCAA (Per 5g)
+  kcal_per_100g: 30
+  protein_per_100g: 5
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: supplement
+  portion_unit: tsp
+  unit_grams: 5
+- source: brand
+  source_id: myp_glutamine_per_5g
+  name: My Protein L-Glutamine (Per 5g)
+  kcal_per_100g: 30
+  protein_per_100g: 5
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: supplement
+  portion_unit: tsp
+  unit_grams: 5
+- source: brand
+  source_id: myp_pre_workout_blue_raspberry
+  name: My Protein THE Pre-Workout Blue Raspberry (Per 9g)
+  kcal_per_100g: 30
+  protein_per_100g: 1
+  carbs_per_100g: 5
+  fat_per_100g: 0
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 9
+  serving_label: 9 g
+  tags: supplement
+  portion_unit: scoop
+  unit_grams: 9
+- source: brand
+  source_id: on_protein_bar_chocolate_brownie
+  name: Optimum Nutrition Protein Bar Chocolate Brownie
+  kcal_per_100g: 380
+  protein_per_100g: 33
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: on_protein_bar_birthday_cake
+  name: Optimum Nutrition Protein Bar Birthday Cake
+  kcal_per_100g: 380
+  protein_per_100g: 33
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: on_protein_bar_peanut_butter
+  name: Optimum Nutrition Protein Bar Peanut Butter
+  kcal_per_100g: 385
+  protein_per_100g: 33
+  carbs_per_100g: 22
+  fat_per_100g: 15
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: on_protein_bar_vanilla_almond
+  name: Optimum Nutrition Protein Bar Vanilla Almond
+  kcal_per_100g: 380
+  protein_per_100g: 33
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: on_protein_bar_choc_caramel
+  name: Optimum Nutrition Protein Bar Chocolate Caramel
+  kcal_per_100g: 380
+  protein_per_100g: 33
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: on_amino_energy_drink_orange
+  name: Optimum Nutrition Amino Energy Drink Orange (Per 250ml)
+  kcal_per_100g: 8
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: on_protein_drink_chocolate_330
+  name: Optimum Nutrition Protein Drink Chocolate (330ml)
+  kcal_per_100g: 50
+  protein_per_100g: 6
+  carbs_per_100g: 1.6
+  fat_per_100g: 1.5
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: drink
+  portion_unit: ml
+  unit_grams: 330
+- source: brand
+  source_id: on_protein_drink_strawberry_330
+  name: Optimum Nutrition Protein Drink Strawberry (330ml)
+  kcal_per_100g: 50
+  protein_per_100g: 6
+  carbs_per_100g: 1.6
+  fat_per_100g: 1.5
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: drink
+  portion_unit: ml
+  unit_grams: 330
+- source: brand
+  source_id: grenade_carb_killa_dark_chocolate
+  name: Grenade Carb Killa Dark Chocolate Mint
+  kcal_per_100g: 390
+  protein_per_100g: 35
+  carbs_per_100g: 17
+  fat_per_100g: 17
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: grenade_carb_killa_fudge_brownie
+  name: Grenade Carb Killa Fudge Brownie
+  kcal_per_100g: 395
+  protein_per_100g: 35
+  carbs_per_100g: 17
+  fat_per_100g: 18
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: grenade_carb_killa_white_chocolate_cookie
+  name: Grenade Carb Killa White Chocolate Cookie
+  kcal_per_100g: 395
+  protein_per_100g: 35
+  carbs_per_100g: 16
+  fat_per_100g: 18
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: grenade_carb_killa_strawberries_cream
+  name: Grenade Carb Killa Strawberries & Cream
+  kcal_per_100g: 395
+  protein_per_100g: 35
+  carbs_per_100g: 17
+  fat_per_100g: 18
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: grenade_carb_killa_peanut_butter
+  name: Grenade Carb Killa Peanut Butter
+  kcal_per_100g: 395
+  protein_per_100g: 35
+  carbs_per_100g: 16
+  fat_per_100g: 18
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: grenade_high_protein_bar_chocolate
+  name: Grenade High Protein Bar Chocolate
+  kcal_per_100g: 380
+  protein_per_100g: 33
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: grenade_protein_brownie_chocolate
+  name: Grenade Protein Brownie Chocolate
+  kcal_per_100g: 380
+  protein_per_100g: 30
+  carbs_per_100g: 30
+  fat_per_100g: 16
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: quest_chips_cheddar_sour_cream
+  name: Quest Tortilla Style Chips Cheddar Sour Cream
+  kcal_per_100g: 400
+  protein_per_100g: 36
+  carbs_per_100g: 30
+  fat_per_100g: 14
+  brand: Quest
+  region_codes: GB
+  serving_grams: 32
+  serving_label: 32 g
+  tags: snack
+  portion_unit: meal
+  unit_grams: 32
+- source: brand
+  source_id: quest_chips_nacho
+  name: Quest Chips Nacho
+  kcal_per_100g: 400
+  protein_per_100g: 36
+  carbs_per_100g: 30
+  fat_per_100g: 14
+  brand: Quest
+  region_codes: GB
+  serving_grams: 32
+  serving_label: 32 g
+  tags: snack
+  portion_unit: meal
+  unit_grams: 32
+- source: brand
+  source_id: quest_chips_ranch
+  name: Quest Chips Ranch
+  kcal_per_100g: 400
+  protein_per_100g: 36
+  carbs_per_100g: 30
+  fat_per_100g: 14
+  brand: Quest
+  region_codes: GB
+  serving_grams: 32
+  serving_label: 32 g
+  tags: snack
+  portion_unit: meal
+  unit_grams: 32
+- source: brand
+  source_id: quest_protein_cookie_chocolate_chip
+  name: Quest Protein Cookie Chocolate Chip
+  kcal_per_100g: 380
+  protein_per_100g: 25
+  carbs_per_100g: 30
+  fat_per_100g: 16
+  brand: Quest
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 50
+- source: brand
+  source_id: quest_protein_cookie_oatmeal_raisin
+  name: Quest Protein Cookie Oatmeal Raisin
+  kcal_per_100g: 380
+  protein_per_100g: 25
+  carbs_per_100g: 30
+  fat_per_100g: 16
+  brand: Quest
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 50
+- source: brand
+  source_id: barebells_cookies_cream
+  name: Barebells Cookies & Cream Bar
+  kcal_per_100g: 415
+  protein_per_100g: 35
+  carbs_per_100g: 23
+  fat_per_100g: 19
+  brand: Barebells
+  region_codes: GB
+  serving_grams: 55
+  serving_label: 55 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 55
+- source: brand
+  source_id: barebells_chocolate_dough_v2
+  name: Barebells Chocolate Dough
+  kcal_per_100g: 420
+  protein_per_100g: 35
+  carbs_per_100g: 23
+  fat_per_100g: 19
+  brand: Barebells
+  region_codes: GB
+  serving_grams: 55
+  serving_label: 55 g
+  tags: bar
+  portion_unit: bar
+  unit_grams: 55
+- source: brand
+  source_id: barebells_protein_milkshake_choc
+  name: Barebells Protein Milkshake Chocolate (330ml)
+  kcal_per_100g: 50
+  protein_per_100g: 6
+  carbs_per_100g: 2
+  fat_per_100g: 1.5
+  brand: Barebells
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 330
+- source: brand
+  source_id: barebells_protein_milkshake_vanilla
+  name: Barebells Protein Milkshake Vanilla (330ml)
+  kcal_per_100g: 50
+  protein_per_100g: 6
+  carbs_per_100g: 2
+  fat_per_100g: 1.5
+  brand: Barebells
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 330
+- source: brand
+  source_id: barebells_protein_milkshake_strawberry
+  name: Barebells Protein Milkshake Strawberry (330ml)
+  kcal_per_100g: 50
+  protein_per_100g: 6
+  carbs_per_100g: 2
+  fat_per_100g: 1.5
+  brand: Barebells
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 330
+- source: brand
+  source_id: phizz_orange_per_tablet
+  name: Phizz Hydration & Energy Tablet Orange
+  kcal_per_100g: 50
+  protein_per_100g: 0
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Phizz
+  region_codes: GB
+  serving_grams: 4.5
+  serving_label: 4.5 g
+  tags: supplement
+  portion_unit: scoop
+  unit_grams: 4.5
+- source: brand
+  source_id: phizz_lemon_lime_per_tablet
+  name: Phizz Lemon & Lime Tablet
+  kcal_per_100g: 50
+  protein_per_100g: 0
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Phizz
+  region_codes: GB
+  serving_grams: 4.5
+  serving_label: 4.5 g
+  tags: supplement
+  portion_unit: scoop
+  unit_grams: 4.5
+- source: brand
+  source_id: phizz_mixed_berry_per_tablet
+  name: Phizz Mixed Berry Tablet
+  kcal_per_100g: 50
+  protein_per_100g: 0
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Phizz
+  region_codes: GB
+  serving_grams: 4.5
+  serving_label: 4.5 g
+  tags: supplement
+  portion_unit: scoop
+  unit_grams: 4.5
+- source: brand
+  source_id: hovis_seed_sensations_per_thick
+  name: Hovis Seed Sensations Original (Per Thick Slice)
+  kcal_per_100g: 290
+  protein_per_100g: 11
+  carbs_per_100g: 41
+  fat_per_100g: 8
+  brand: Hovis
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: bread
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: hovis_thick_white_per_slice
+  name: Hovis Thick White (Per Slice 50g)
+  kcal_per_100g: 235
+  protein_per_100g: 7.5
+  carbs_per_100g: 47
+  fat_per_100g: 1.4
+  brand: Hovis
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: bread
+  portion_unit: slice
+  unit_grams: 50
+- source: brand
+  source_id: hovis_medium_white_per_slice_v2
+  name: Hovis Medium White (Per Slice 36g)
+  kcal_per_100g: 235
+  protein_per_100g: 7.5
+  carbs_per_100g: 47
+  fat_per_100g: 1.4
+  brand: Hovis
+  region_codes: GB
+  serving_grams: 36
+  serving_label: 36 g
+  tags: bread
+  portion_unit: slice
+  unit_grams: 36
+- source: brand
+  source_id: hovis_lower_carbs_seed_per_slice
+  name: Hovis Lower Carbs Seeded (Per Slice)
+  kcal_per_100g: 220
+  protein_per_100g: 9
+  carbs_per_100g: 32
+  fat_per_100g: 5
+  brand: Hovis
+  region_codes: GB
+  serving_grams: 35
+  serving_label: 35 g
+  tags: bread
+  portion_unit: slice
+  unit_grams: 35
+- source: brand
+  source_id: warb_thin_white_50g
+  name: Warburtons Thin Sliced White (Per Slice)
+  kcal_per_100g: 233
+  protein_per_100g: 7.5
+  carbs_per_100g: 47
+  fat_per_100g: 1.4
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 28
+  serving_label: 28 g
+  tags: bread
+  portion_unit: meal
+  unit_grams: 28
+- source: brand
+  source_id: warb_medium_white_per_slice
+  name: Warburtons Medium White (Per Slice 36g)
+  kcal_per_100g: 233
+  protein_per_100g: 7.5
+  carbs_per_100g: 47
+  fat_per_100g: 1.4
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 36
+  serving_label: 36 g
+  tags: bread
+  portion_unit: slice
+  unit_grams: 36
+- source: brand
+  source_id: warb_thick_white_per_slice
+  name: Warburtons Thick White (Per Slice 44g)
+  kcal_per_100g: 235
+  protein_per_100g: 7.5
+  carbs_per_100g: 47
+  fat_per_100g: 1.5
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 44
+  serving_label: 44 g
+  tags: bread
+  portion_unit: slice
+  unit_grams: 44
+- source: brand
+  source_id: warb_extra_thick_white
+  name: Warburtons Extra Thick White (Per Slice)
+  kcal_per_100g: 235
+  protein_per_100g: 7.5
+  carbs_per_100g: 47
+  fat_per_100g: 1.5
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: bread
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: warb_50_50_thin_per_slice
+  name: Warburtons 50/50 Thin Sliced (Per Slice 28g)
+  kcal_per_100g: 230
+  protein_per_100g: 9
+  carbs_per_100g: 44
+  fat_per_100g: 2
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 28
+  serving_label: 28 g
+  tags: bread
+  portion_unit: slice
+  unit_grams: 28
+- source: brand
+  source_id: warb_seeded_batch_per_slice
+  name: Warburtons Seeded Batch (Per Slice 44g)
+  kcal_per_100g: 290
+  protein_per_100g: 11
+  carbs_per_100g: 41
+  fat_per_100g: 8
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 44
+  serving_label: 44 g
+  tags: bread
+  portion_unit: slice
+  unit_grams: 44
+- source: brand
+  source_id: warb_no_crusts_per_loaf
+  name: Warburtons No Crusts White Loaf (Per Slice)
+  kcal_per_100g: 235
+  protein_per_100g: 7.5
+  carbs_per_100g: 47
+  fat_per_100g: 1.4
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 36
+  serving_label: 36 g
+  tags: bread
+  portion_unit: piece
+  unit_grams: 36
+- source: brand
+  source_id: warb_protein_loaf_per_slice
+  name: Warburtons Protein Loaf (Per Slice)
+  kcal_per_100g: 280
+  protein_per_100g: 19
+  carbs_per_100g: 31
+  fat_per_100g: 6
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: bread
+  portion_unit: slice
+  unit_grams: 50
+- source: brand
+  source_id: warb_thins_white_round
+  name: Warburtons Sandwich Thins White (Per Thin)
+  kcal_per_100g: 220
+  protein_per_100g: 9
+  carbs_per_100g: 41
+  fat_per_100g: 2
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: bread
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: warb_thins_seeded_round
+  name: Warburtons Sandwich Thins Seeded (Per Thin)
+  kcal_per_100g: 230
+  protein_per_100g: 9
+  carbs_per_100g: 35
+  fat_per_100g: 6
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: bread
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: kings_no_crusts_50_50
+  name: Kingsmill No Crusts 50/50 (Per Slice)
+  kcal_per_100g: 230
+  protein_per_100g: 9
+  carbs_per_100g: 44
+  fat_per_100g: 2
+  brand: Kingsmill
+  region_codes: GB
+  serving_grams: 36
+  serving_label: 36 g
+  tags: bread
+  portion_unit: meal
+  unit_grams: 36
+- source: brand
+  source_id: kings_great_white_thick
+  name: Kingsmill Great White Thick (Per Slice)
+  kcal_per_100g: 230
+  protein_per_100g: 8
+  carbs_per_100g: 43
+  fat_per_100g: 1.5
+  brand: Kingsmill
+  region_codes: GB
+  serving_grams: 44
+  serving_label: 44 g
+  tags: bread
+  portion_unit: meal
+  unit_grams: 44
+- source: brand
+  source_id: kings_50_50_thick_per_slice
+  name: Kingsmill 50/50 Thick (Per Slice 44g)
+  kcal_per_100g: 230
+  protein_per_100g: 9
+  carbs_per_100g: 44
+  fat_per_100g: 2
+  brand: Kingsmill
+  region_codes: GB
+  serving_grams: 44
+  serving_label: 44 g
+  tags: bread
+  portion_unit: slice
+  unit_grams: 44
+- source: brand
+  source_id: kings_protein_loaf_per_slice
+  name: Kingsmill Protein Loaf (Per Slice)
+  kcal_per_100g: 280
+  protein_per_100g: 19
+  carbs_per_100g: 31
+  fat_per_100g: 6
+  brand: Kingsmill
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: bread
+  portion_unit: slice
+  unit_grams: 50
+- source: brand
+  source_id: kings_pancakes_2pk
+  name: Kingsmill Scotch Pancakes (Per Pancake)
+  kcal_per_100g: 285
+  protein_per_100g: 8
+  carbs_per_100g: 49
+  fat_per_100g: 6
+  brand: Kingsmill
+  region_codes: GB
+  serving_grams: 35
+  serving_label: 35 g
+  tags: bakery
+  portion_unit: meal
+  unit_grams: 35
+- source: ingredient
+  source_id: bakery_fresh_baguette_half
+  name: Fresh Bakery Baguette (Half, ~125g)
+  kcal_per_100g: 270
+  protein_per_100g: 9
+  carbs_per_100g: 55
+  fat_per_100g: 1.5
+  brand: Bakery Fresh
+  region_codes: GB
+  serving_grams: 125
+  serving_label: 125 g
+  tags: bakery
+  portion_unit: meal
+  unit_grams: 125
+- source: ingredient
+  source_id: bakery_fresh_baguette_full
+  name: Fresh Bakery Baguette (Full, ~250g)
+  kcal_per_100g: 270
+  protein_per_100g: 9
+  carbs_per_100g: 55
+  fat_per_100g: 1.5
+  brand: Bakery Fresh
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: bakery
+  portion_unit: meal
+  unit_grams: 250
+- source: ingredient
+  source_id: bakery_fresh_sourdough_bloomer
+  name: Fresh Bakery Sourdough Bloomer (Per Slice)
+  kcal_per_100g: 240
+  protein_per_100g: 9
+  carbs_per_100g: 47
+  fat_per_100g: 1.5
+  brand: Bakery Fresh
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: bakery
+  portion_unit: meal
+  unit_grams: 50
+- source: ingredient
+  source_id: bakery_fresh_artisan_white
+  name: Fresh Bakery Artisan White Loaf (Per Slice)
+  kcal_per_100g: 245
+  protein_per_100g: 9
+  carbs_per_100g: 47
+  fat_per_100g: 2
+  brand: Bakery Fresh
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: bakery
+  portion_unit: meal
+  unit_grams: 50
+- source: ingredient
+  source_id: bakery_fresh_brioche_burger_bun
+  name: Fresh Bakery Brioche Burger Bun
+  kcal_per_100g: 305
+  protein_per_100g: 9
+  carbs_per_100g: 50
+  fat_per_100g: 8
+  brand: Bakery Fresh
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: bakery
+  portion_unit: meal
+  unit_grams: 80
+- source: ingredient
+  source_id: bakery_fresh_focaccia_bread
+  name: Fresh Bakery Focaccia (Per 100g)
+  kcal_per_100g: 280
+  protein_per_100g: 8
+  carbs_per_100g: 47
+  fat_per_100g: 7
+  brand: Bakery Fresh
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: bakery
+  portion_unit: meal
+  unit_grams: 100
+- source: ingredient
+  source_id: bakery_fresh_cinnamon_swirl
+  name: Fresh Bakery Cinnamon Swirl (Per Pastry)
+  kcal_per_100g: 410
+  protein_per_100g: 7
+  carbs_per_100g: 52
+  fat_per_100g: 18
+  brand: Bakery Fresh
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: bakery
+  portion_unit: meal
+  unit_grams: 90
+- source: ingredient
+  source_id: bakery_fresh_pain_aux_raisins
+  name: Fresh Bakery Pain aux Raisins (Per Pastry)
+  kcal_per_100g: 380
+  protein_per_100g: 7
+  carbs_per_100g: 50
+  fat_per_100g: 16
+  brand: Bakery Fresh
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: bakery
+  portion_unit: meal
+  unit_grams: 90
+- source: ingredient
+  source_id: bakery_fresh_chocolate_brioche
+  name: Fresh Bakery Chocolate Brioche Roll (Per Roll)
+  kcal_per_100g: 340
+  protein_per_100g: 7
+  carbs_per_100g: 45
+  fat_per_100g: 14
+  brand: Bakery Fresh
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: bakery
+  portion_unit: meal
+  unit_grams: 80
+- source: ingredient
+  source_id: cheese_wensleydale_per_30g
+  name: Wensleydale Cheese (Per 30g)
+  kcal_per_100g: 365
+  protein_per_100g: 23
+  carbs_per_100g: 1
+  fat_per_100g: 30
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: meal
+  unit_grams: 30
+- source: ingredient
+  source_id: cheese_wensleydale_cranberries_per_30g
+  name: Wensleydale with Cranberries (Per 30g)
+  kcal_per_100g: 380
+  protein_per_100g: 22
+  carbs_per_100g: 7
+  fat_per_100g: 28
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: meal
+  unit_grams: 30
+- source: ingredient
+  source_id: cheese_caerphilly_per_30g
+  name: Caerphilly (Per 30g)
+  kcal_per_100g: 370
+  protein_per_100g: 22
+  carbs_per_100g: 0.5
+  fat_per_100g: 30
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: meal
+  unit_grams: 30
+- source: ingredient
+  source_id: cheese_lancashire_per_30g
+  name: Lancashire Crumbly (Per 30g)
+  kcal_per_100g: 395
+  protein_per_100g: 22
+  carbs_per_100g: 0.5
+  fat_per_100g: 33
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: meal
+  unit_grams: 30
+- source: ingredient
+  source_id: cheese_cornish_yarg_per_30g
+  name: Cornish Yarg (Per 30g)
+  kcal_per_100g: 380
+  protein_per_100g: 22
+  carbs_per_100g: 1
+  fat_per_100g: 31
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: meal
+  unit_grams: 30
+- source: ingredient
+  source_id: cheese_stinking_bishop_per_30g
+  name: Stinking Bishop (Per 30g)
+  kcal_per_100g: 360
+  protein_per_100g: 19
+  carbs_per_100g: 0.5
+  fat_per_100g: 30
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: meal
+  unit_grams: 30
+- source: ingredient
+  source_id: cheese_shropshire_blue_per_30g
+  name: Shropshire Blue (Per 30g)
+  kcal_per_100g: 410
+  protein_per_100g: 22
+  carbs_per_100g: 0.5
+  fat_per_100g: 35
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: meal
+  unit_grams: 30
+- source: ingredient
+  source_id: cheese_cashel_blue_per_30g
+  name: Cashel Blue (Per 30g)
+  kcal_per_100g: 365
+  protein_per_100g: 19
+  carbs_per_100g: 0.5
+  fat_per_100g: 32
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: meal
+  unit_grams: 30
+- source: ingredient
+  source_id: cheese_dolce_latte_30g_v2
+  name: Dolcelatte (Per 30g)
+  kcal_per_100g: 365
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 32
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: meal
+  unit_grams: 30
+- source: ingredient
+  source_id: cheese_manchego_per_30g
+  name: Manchego (Per 30g)
+  kcal_per_100g: 405
+  protein_per_100g: 26
+  carbs_per_100g: 0
+  fat_per_100g: 33
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: meal
+  unit_grams: 30
+- source: ingredient
+  source_id: cheese_pecorino_romano_per_15g
+  name: Pecorino Romano (Per 15g)
+  kcal_per_100g: 387
+  protein_per_100g: 26
+  carbs_per_100g: 0
+  fat_per_100g: 32
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: cheese
+  portion_unit: tbsp
+  unit_grams: 15
+- source: ingredient
+  source_id: cheese_provolone_per_30g
+  name: Provolone (Per 30g)
+  kcal_per_100g: 351
+  protein_per_100g: 26
+  carbs_per_100g: 2
+  fat_per_100g: 27
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: meal
+  unit_grams: 30
+- source: ingredient
+  source_id: cheese_jarlsberg_per_30g
+  name: Jarlsberg (Per 30g)
+  kcal_per_100g: 350
+  protein_per_100g: 27
+  carbs_per_100g: 0
+  fat_per_100g: 27
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: meal
+  unit_grams: 30
+- source: ingredient
+  source_id: cheese_taleggio_per_30g
+  name: Taleggio (Per 30g)
+  kcal_per_100g: 315
+  protein_per_100g: 19
+  carbs_per_100g: 0.5
+  fat_per_100g: 26
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: meal
+  unit_grams: 30
+- source: ingredient
+  source_id: cheese_burrata_per_50g
+  name: Burrata (Per 50g)
+  kcal_per_100g: 285
+  protein_per_100g: 19
+  carbs_per_100g: 1
+  fat_per_100g: 23
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: cheese
+  portion_unit: meal
+  unit_grams: 50
+- source: ingredient
+  source_id: cheese_mascarpone_per_30g
+  name: Mascarpone (Per 30g)
+  kcal_per_100g: 405
+  protein_per_100g: 5
+  carbs_per_100g: 4
+  fat_per_100g: 41
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: meal
+  unit_grams: 30
+- source: ingredient
+  source_id: cheese_creme_fraiche_per_30g
+  name: Crème Fraîche (Per 30g)
+  kcal_per_100g: 350
+  protein_per_100g: 2
+  carbs_per_100g: 3
+  fat_per_100g: 36
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: meal
+  unit_grams: 30
+- source: ingredient
+  source_id: cheese_sour_cream_per_30g
+  name: Sour Cream (Per 30g)
+  kcal_per_100g: 195
+  protein_per_100g: 2
+  carbs_per_100g: 4
+  fat_per_100g: 19
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: meal
+  unit_grams: 30
+- source: ingredient
+  source_id: cheese_double_cream_per_15ml
+  name: Double Cream (Per 15ml)
+  kcal_per_100g: 467
+  protein_per_100g: 2
+  carbs_per_100g: 3
+  fat_per_100g: 48
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: dairy
+  portion_unit: tbsp
+  unit_grams: 15
+- source: ingredient
+  source_id: cheese_single_cream_per_15ml
+  name: Single Cream (Per 15ml)
+  kcal_per_100g: 195
+  protein_per_100g: 2
+  carbs_per_100g: 4
+  fat_per_100g: 19
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: dairy
+  portion_unit: tbsp
+  unit_grams: 15
+- source: ingredient
+  source_id: cheese_whipping_cream_per_15ml
+  name: Whipping Cream (Per 15ml)
+  kcal_per_100g: 380
+  protein_per_100g: 2
+  carbs_per_100g: 3
+  fat_per_100g: 39
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: dairy
+  portion_unit: tbsp
+  unit_grams: 15
+- source: ingredient
+  source_id: cheese_clotted_cream_per_30g
+  name: Clotted Cream (Per 30g)
+  kcal_per_100g: 580
+  protein_per_100g: 1.5
+  carbs_per_100g: 2
+  fat_per_100g: 60
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: dairy
+  portion_unit: meal
+  unit_grams: 30

@@ -1,0 +1,885 @@
+# Frozen aisle full — Birds Eye / Aunt Bessie's / Quorn / Linda McCartney's /
+# Goodfella's / Chicago Town / Häagen-Dazs / Ben & Jerry's / Halo Top / Oppo
+
+- source: frozen
+  source_id: be_fish_fingers_10
+  name: Birds Eye Fish Fingers (10 pcs)
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 280
+- source: frozen
+  source_id: be_fish_fingers_per_finger
+  name: Birds Eye Fish Finger (Per Finger)
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 28
+  serving_label: 28 g
+  tags: frozen,ready-meal
+  portion_unit: piece
+  unit_grams: 28
+- source: frozen
+  source_id: be_chicken_dippers_10
+  name: Birds Eye Chicken Dippers (10 pcs)
+  kcal_per_100g: 230
+  protein_per_100g: 15
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 250
+- source: frozen
+  source_id: be_chicken_dippers_per
+  name: Birds Eye Chicken Dipper (Per Piece)
+  kcal_per_100g: 230
+  protein_per_100g: 15
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: frozen,ready-meal
+  portion_unit: piece
+  unit_grams: 25
+- source: frozen
+  source_id: be_chicken_grill_steaks
+  name: Birds Eye Chicken Grill Steaks (Per Steak)
+  kcal_per_100g: 195
+  protein_per_100g: 16
+  carbs_per_100g: 8
+  fat_per_100g: 12
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 70
+  serving_label: 70 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 70
+- source: frozen
+  source_id: be_chicken_burgers_2
+  name: Birds Eye Chicken Burgers
+  kcal_per_100g: 235
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 13
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 56
+  serving_label: 56 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 56
+- source: frozen
+  source_id: be_garden_peas_per_100g
+  name: Birds Eye Garden Peas Frozen (Per 100g)
+  kcal_per_100g: 76
+  protein_per_100g: 5
+  carbs_per_100g: 11
+  fat_per_100g: 1
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100
+- source: frozen
+  source_id: be_petit_pois_100g
+  name: Birds Eye Petit Pois (Per 100g)
+  kcal_per_100g: 70
+  protein_per_100g: 5
+  carbs_per_100g: 10
+  fat_per_100g: 0.8
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100
+- source: frozen
+  source_id: be_mixed_veg_100g
+  name: Birds Eye Mixed Vegetables (Per 100g)
+  kcal_per_100g: 50
+  protein_per_100g: 3
+  carbs_per_100g: 8
+  fat_per_100g: 0.5
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100
+- source: frozen
+  source_id: be_country_mix_100g
+  name: Birds Eye Country Mix (Per 100g)
+  kcal_per_100g: 35
+  protein_per_100g: 2
+  carbs_per_100g: 5
+  fat_per_100g: 0.5
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100
+- source: frozen
+  source_id: be_potato_waffles_per_unit
+  name: Birds Eye Potato Waffles (Per Waffle)
+  kcal_per_100g: 230
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 12
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: frozen,ready-meal
+  portion_unit: piece
+  unit_grams: 60
+- source: frozen
+  source_id: be_southern_fried_chicken_2
+  name: Birds Eye Southern Fried Chicken Burger (Per Burger)
+  kcal_per_100g: 285
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 17
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 65
+  serving_label: 65 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 65
+- source: frozen
+  source_id: be_chicken_kievs_2
+  name: Birds Eye Chicken Kievs
+  kcal_per_100g: 270
+  protein_per_100g: 14
+  carbs_per_100g: 16
+  fat_per_100g: 18
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 130
+- source: frozen
+  source_id: be_potato_smiles_per_100g
+  name: Birds Eye Potato Smiles (Per 100g)
+  kcal_per_100g: 200
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100
+- source: frozen
+  source_id: ab_yorkshires_pack
+  name: Aunt Bessie's Yorkshire Puddings (Per Pudding)
+  kcal_per_100g: 380
+  protein_per_100g: 11
+  carbs_per_100g: 49
+  fat_per_100g: 16
+  brand: Aunt Bessie's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 30
+- source: frozen
+  source_id: ab_giant_yorkshires
+  name: Aunt Bessie's Giant Yorkshires (Per Pudding)
+  kcal_per_100g: 380
+  protein_per_100g: 11
+  carbs_per_100g: 49
+  fat_per_100g: 16
+  brand: Aunt Bessie's
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 60
+- source: frozen
+  source_id: ab_homestyle_chips
+  name: Aunt Bessie's Homestyle Chips (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 5
+  brand: Aunt Bessie's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100
+- source: frozen
+  source_id: ab_roast_potatoes
+  name: Aunt Bessie's Crispy Roast Potatoes (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 3
+  carbs_per_100g: 25
+  fat_per_100g: 7
+  brand: Aunt Bessie's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100
+- source: frozen
+  source_id: ab_jacket_potatoes
+  name: Aunt Bessie's Jacket Potatoes (Per Potato)
+  kcal_per_100g: 95
+  protein_per_100g: 2
+  carbs_per_100g: 19
+  fat_per_100g: 0.5
+  brand: Aunt Bessie's
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 200
+- source: frozen
+  source_id: ab_cottage_pie_meal
+  name: Aunt Bessie's Cottage Pie
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 5
+  brand: Aunt Bessie's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 400
+- source: frozen
+  source_id: ab_shepherds_pie_meal
+  name: Aunt Bessie's Shepherd's Pie
+  kcal_per_100g: 135
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 5.5
+  brand: Aunt Bessie's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 400
+- source: frozen
+  source_id: ab_steak_kidney_pud
+  name: Aunt Bessie's Steak & Kidney Pudding
+  kcal_per_100g: 230
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Aunt Bessie's
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 200
+- source: frozen
+  source_id: ab_apple_crumble
+  name: Aunt Bessie's Apple Crumble
+  kcal_per_100g: 235
+  protein_per_100g: 3
+  carbs_per_100g: 35
+  fat_per_100g: 9
+  brand: Aunt Bessie's
+  region_codes: GB
+  serving_grams: 600
+  serving_label: 600 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 600
+- source: frozen
+  source_id: quorn_chicken_pieces_300g
+  name: Quorn Chicken Style Pieces (Per 100g)
+  kcal_per_100g: 102
+  protein_per_100g: 14
+  carbs_per_100g: 4
+  fat_per_100g: 3
+  brand: Quorn
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100
+- source: frozen
+  source_id: quorn_mince_300g
+  name: Quorn Mince (Per 100g)
+  kcal_per_100g: 105
+  protein_per_100g: 14
+  carbs_per_100g: 4
+  fat_per_100g: 3
+  brand: Quorn
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100
+- source: frozen
+  source_id: quorn_fillets_2pk
+  name: Quorn Chicken Style Fillets (Per Fillet)
+  kcal_per_100g: 100
+  protein_per_100g: 14
+  carbs_per_100g: 4
+  fat_per_100g: 3
+  brand: Quorn
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 90
+- source: frozen
+  source_id: quorn_chicken_burgers_2
+  name: Quorn Chicken Style Burgers (Per Burger)
+  kcal_per_100g: 200
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  brand: Quorn
+  region_codes: GB
+  serving_grams: 65
+  serving_label: 65 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 65
+- source: frozen
+  source_id: quorn_swedish_meatballs
+  name: Quorn Swedish Style Balls (Per 100g)
+  kcal_per_100g: 215
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 11
+  brand: Quorn
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100
+- source: frozen
+  source_id: quorn_sausages_6
+  name: Quorn Sausages (Per Sausage)
+  kcal_per_100g: 215
+  protein_per_100g: 14
+  carbs_per_100g: 8
+  fat_per_100g: 14
+  brand: Quorn
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 50
+- source: frozen
+  source_id: quorn_breaded_fillets
+  name: Quorn Breaded Fillets (Per Fillet)
+  kcal_per_100g: 220
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Quorn
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 90
+- source: frozen
+  source_id: quorn_picnic_eggs
+  name: Quorn Picnic Eggs (Per Egg)
+  kcal_per_100g: 235
+  protein_per_100g: 12
+  carbs_per_100g: 18
+  fat_per_100g: 13
+  brand: Quorn
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 50
+- source: frozen
+  source_id: quorn_vegan_chicken_pieces
+  name: Quorn Vegan Pieces (Per 100g)
+  kcal_per_100g: 99
+  protein_per_100g: 13
+  carbs_per_100g: 5
+  fat_per_100g: 3
+  brand: Quorn
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100
+- source: frozen
+  source_id: quorn_vegan_nuggets
+  name: Quorn Vegan Nuggets (Per Nugget)
+  kcal_per_100g: 240
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Quorn
+  region_codes: GB
+  serving_grams: 18
+  serving_label: 18 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 18
+- source: frozen
+  source_id: linda_sausages_2
+  name: Linda McCartney's Vegetarian Sausages (Per Sausage)
+  kcal_per_100g: 220
+  protein_per_100g: 18
+  carbs_per_100g: 8
+  fat_per_100g: 12
+  brand: Linda McCartney's
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 50
+- source: frozen
+  source_id: linda_red_onion_sausages_2
+  name: Linda McCartney's Red Onion & Rosemary Sausages
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 8
+  fat_per_100g: 11
+  brand: Linda McCartney's
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 50
+- source: frozen
+  source_id: linda_chorizo_sausages
+  name: Linda McCartney's Chorizo Sausages (Per Sausage)
+  kcal_per_100g: 235
+  protein_per_100g: 17
+  carbs_per_100g: 8
+  fat_per_100g: 13
+  brand: Linda McCartney's
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 50
+- source: frozen
+  source_id: linda_quarter_pounder
+  name: Linda McCartney's Quarter Pounders (Per Burger)
+  kcal_per_100g: 220
+  protein_per_100g: 16
+  carbs_per_100g: 8
+  fat_per_100g: 13
+  brand: Linda McCartney's
+  region_codes: GB
+  serving_grams: 113
+  serving_label: 113 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 113
+- source: frozen
+  source_id: linda_pulled_pork_burger
+  name: Linda McCartney's Pulled Pork Burger
+  kcal_per_100g: 215
+  protein_per_100g: 16
+  carbs_per_100g: 8
+  fat_per_100g: 12
+  brand: Linda McCartney's
+  region_codes: GB
+  serving_grams: 113
+  serving_label: 113 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 113
+- source: frozen
+  source_id: linda_country_pies_2
+  name: Linda McCartney's Country Pies (Per Pie)
+  kcal_per_100g: 280
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 16
+  brand: Linda McCartney's
+  region_codes: GB
+  serving_grams: 195
+  serving_label: 195 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 195
+- source: frozen
+  source_id: gf_thin_classic_margherita_pizza
+  name: Goodfella's Thin Classic Margherita (Whole)
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Goodfella's
+  region_codes: GB
+  serving_grams: 345
+  serving_label: 345 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 345
+- source: frozen
+  source_id: gf_thin_pepperoni
+  name: Goodfella's Thin Pepperoni Pizza (Whole)
+  kcal_per_100g: 275
+  protein_per_100g: 12
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  brand: Goodfella's
+  region_codes: GB
+  serving_grams: 345
+  serving_label: 345 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 345
+- source: frozen
+  source_id: gf_stonebaked_meat_feast
+  name: Goodfella's Stonebaked Meat Feast (Whole)
+  kcal_per_100g: 280
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Goodfella's
+  region_codes: GB
+  serving_grams: 405
+  serving_label: 405 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 405
+- source: frozen
+  source_id: ct_takeaway_pepperoni
+  name: Chicago Town Takeaway Pepperoni Pizza (Whole)
+  kcal_per_100g: 270
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Chicago Town
+  region_codes: GB
+  serving_grams: 480
+  serving_label: 480 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 480
+- source: frozen
+  source_id: ct_takeaway_chicken_bbq
+  name: Chicago Town Takeaway Chicken & BBQ (Whole)
+  kcal_per_100g: 250
+  protein_per_100g: 13
+  carbs_per_100g: 30
+  fat_per_100g: 9
+  brand: Chicago Town
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 500
+- source: frozen
+  source_id: ct_deep_dish_pepperoni
+  name: Chicago Town Deep Dish Pepperoni (Per Pizza)
+  kcal_per_100g: 295
+  protein_per_100g: 12
+  carbs_per_100g: 32
+  fat_per_100g: 13
+  brand: Chicago Town
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 175
+- source: frozen
+  source_id: ct_deep_dish_four_cheese
+  name: Chicago Town Deep Dish Four Cheese
+  kcal_per_100g: 285
+  protein_per_100g: 13
+  carbs_per_100g: 32
+  fat_per_100g: 12
+  brand: Chicago Town
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 175
+- source: frozen
+  source_id: ic_solero_per_lolly
+  name: Solero Exotic Ice Lolly (Per Lolly)
+  kcal_per_100g: 90
+  protein_per_100g: 1
+  carbs_per_100g: 18
+  fat_per_100g: 1.5
+  brand: Solero
+  region_codes: GB
+  serving_grams: 88
+  serving_label: 88 g
+  tags: frozen,ready-meal
+  portion_unit: piece
+  unit_grams: 88
+- source: frozen
+  source_id: ic_calippo_per_lolly
+  name: Calippo Orange (Per Lolly)
+  kcal_per_100g: 90
+  protein_per_100g: 0
+  carbs_per_100g: 22
+  fat_per_100g: 0
+  brand: Calippo
+  region_codes: GB
+  serving_grams: 105
+  serving_label: 105 g
+  tags: frozen,ready-meal
+  portion_unit: piece
+  unit_grams: 105
+- source: frozen
+  source_id: ic_twister_per_lolly
+  name: Twister Strawberry, Lemon & Pineapple
+  kcal_per_100g: 80
+  protein_per_100g: 0.5
+  carbs_per_100g: 18
+  fat_per_100g: 0.5
+  brand: Twister
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: frozen,ready-meal
+  portion_unit: piece
+  unit_grams: 80
+- source: frozen
+  source_id: ic_mini_milk_per_lolly
+  name: Mini Milk Vanilla (Per Lolly)
+  kcal_per_100g: 30
+  protein_per_100g: 1.2
+  carbs_per_100g: 5
+  fat_per_100g: 0.6
+  brand: Walls Mini Milk
+  region_codes: GB
+  serving_grams: 36
+  serving_label: 36 g
+  tags: frozen,ready-meal
+  portion_unit: piece
+  unit_grams: 36
+- source: frozen
+  source_id: ic_funny_feet
+  name: Funny Feet (Per Lolly)
+  kcal_per_100g: 60
+  protein_per_100g: 1
+  carbs_per_100g: 11
+  fat_per_100g: 1.5
+  brand: Funny Feet
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: frozen,ready-meal
+  portion_unit: piece
+  unit_grams: 75
+- source: frozen
+  source_id: ic_fab_per_lolly
+  name: FAB Strawberry & Vanilla (Per Lolly)
+  kcal_per_100g: 80
+  protein_per_100g: 1
+  carbs_per_100g: 14
+  fat_per_100g: 2
+  brand: FAB
+  region_codes: GB
+  serving_grams: 65
+  serving_label: 65 g
+  tags: frozen,ready-meal
+  portion_unit: piece
+  unit_grams: 65
+- source: frozen
+  source_id: ic_rocket_per_lolly
+  name: Rocket Lolly (Per Lolly)
+  kcal_per_100g: 35
+  protein_per_100g: 0
+  carbs_per_100g: 8
+  fat_per_100g: 0
+  brand: Rocket
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: frozen,ready-meal
+  portion_unit: piece
+  unit_grams: 60
+- source: frozen
+  source_id: ic_zoom_lolly
+  name: Zoom Lolly (Per Lolly)
+  kcal_per_100g: 60
+  protein_per_100g: 1
+  carbs_per_100g: 11
+  fat_per_100g: 1.5
+  brand: Zoom
+  region_codes: GB
+  serving_grams: 70
+  serving_label: 70 g
+  tags: frozen,ready-meal
+  portion_unit: piece
+  unit_grams: 70
+- source: frozen
+  source_id: ic_haagen_dazs_chocolate_choc_chip
+  name: Häagen-Dazs Chocolate Chocolate Chip (Per 100g)
+  kcal_per_100g: 285
+  protein_per_100g: 5
+  carbs_per_100g: 24
+  fat_per_100g: 19
+  brand: Häagen-Dazs
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100
+- source: frozen
+  source_id: ic_haagen_dazs_caramel_biscuit
+  name: Häagen-Dazs Caramel Biscuit & Cream (Per 100g)
+  kcal_per_100g: 280
+  protein_per_100g: 4.5
+  carbs_per_100g: 28
+  fat_per_100g: 17
+  brand: Häagen-Dazs
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100
+- source: frozen
+  source_id: ic_bj_baked_alaska_per_100g
+  name: Ben & Jerry's Baked Alaska (Per 100g)
+  kcal_per_100g: 270
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 14
+  brand: Ben & Jerry's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100
+- source: frozen
+  source_id: ic_oppo_chocolate
+  name: Oppo Brothers Chocolate Lighter (Per 100ml)
+  kcal_per_100g: 100
+  protein_per_100g: 4
+  carbs_per_100g: 13
+  fat_per_100g: 3
+  brand: Oppo Brothers
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100
+- source: frozen
+  source_id: ic_oppo_madagascar_vanilla
+  name: Oppo Brothers Madagascan Vanilla (Per 100ml)
+  kcal_per_100g: 100
+  protein_per_100g: 4
+  carbs_per_100g: 13
+  fat_per_100g: 3
+  brand: Oppo Brothers
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100
+- source: frozen
+  source_id: ic_halo_top_chocolate
+  name: Halo Top Chocolate (Per 100ml)
+  kcal_per_100g: 110
+  protein_per_100g: 6
+  carbs_per_100g: 17
+  fat_per_100g: 2.5
+  brand: Halo Top
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100
+- source: frozen
+  source_id: ic_halo_top_birthday_cake
+  name: Halo Top Birthday Cake (Per 100ml)
+  kcal_per_100g: 120
+  protein_per_100g: 5
+  carbs_per_100g: 19
+  fat_per_100g: 3
+  brand: Halo Top
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100
+- source: frozen
+  source_id: ic_halo_top_vanilla_bean
+  name: Halo Top Vanilla Bean (Per 100ml)
+  kcal_per_100g: 110
+  protein_per_100g: 5
+  carbs_per_100g: 18
+  fat_per_100g: 2.5
+  brand: Halo Top
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100
+- source: frozen
+  source_id: ic_breyers_natural_vanilla
+  name: Breyers Natural Vanilla (Per 100ml)
+  kcal_per_100g: 195
+  protein_per_100g: 3
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Breyers
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,ready-meal
+  portion_unit: meal
+  unit_grams: 100

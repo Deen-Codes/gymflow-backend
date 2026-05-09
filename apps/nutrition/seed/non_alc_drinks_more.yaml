@@ -1,0 +1,1254 @@
+# Non-alcoholic spirits (Seedlip, Lyre's, Caleño, Three Spirit, Pentire) +
+# More Coca-Cola/Pepsi/lemonade portions (per glass/can sizes), tonics, ginger ale/beer +
+# More Costa/Starbucks variants (iced versions, decaf, refreshers, seasonal lattes) +
+# More Greggs (sausage breakfast baguette, doughnuts, baked potatoes) +
+# More Tesco/Sainsbury's/M&S sandwiches/wraps/pasta pots/salad boxes/sushi packs +
+# More crisps brands (Doritos lightly salted, Walkers baked, Quavers, Skips, Pom-Bears, Mini Cheddars,
+# Pringles Light, Seabrook)
+
+- source: alcohol
+  source_id: naf_seedlip_garden_25ml
+  name: Seedlip Garden 108 (25ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Seedlip
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 25
+- source: alcohol
+  source_id: naf_seedlip_grove_25ml
+  name: Seedlip Grove 42 (25ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Seedlip
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 25
+- source: alcohol
+  source_id: naf_seedlip_spice_25ml
+  name: Seedlip Spice 94 (25ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Seedlip
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 25
+- source: alcohol
+  source_id: naf_lyres_amaretti_50ml
+  name: Lyre's Amaretti (50ml)
+  kcal_per_100g: 30
+  protein_per_100g: 0
+  carbs_per_100g: 7
+  fat_per_100g: 0
+  brand: Lyre's
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 50
+- source: alcohol
+  source_id: naf_lyres_dark_cane_spirit_50ml
+  name: Lyre's Dark Cane Spirit (50ml)
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Lyre's
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 50
+- source: alcohol
+  source_id: naf_lyres_white_cane_50ml
+  name: Lyre's White Cane (50ml)
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Lyre's
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 50
+- source: alcohol
+  source_id: naf_lyres_dry_london_spirit
+  name: Lyre's Dry London Spirit (50ml)
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Lyre's
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: alcohol
+  source_id: naf_caleno_dark_spiced_25ml
+  name: Caleño Dark & Spicy (25ml)
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Caleño
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 25
+- source: alcohol
+  source_id: naf_caleno_light_tropical_25ml
+  name: Caleño Light & Zingy (25ml)
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Caleño
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 25
+- source: alcohol
+  source_id: naf_three_spirit_per_50ml
+  name: Three Spirit Livener (50ml)
+  kcal_per_100g: 30
+  protein_per_100g: 0
+  carbs_per_100g: 7
+  fat_per_100g: 0
+  brand: Three Spirit
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 50
+- source: alcohol
+  source_id: naf_pentire_seaward_50ml
+  name: Pentire Seaward (50ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Pentire
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 50
+- source: brand
+  source_id: drink_coke_classic_per_glass
+  name: Coca-Cola (Per Glass 200ml)
+  kcal_per_100g: 42
+  protein_per_100g: 0
+  carbs_per_100g: 10.6
+  fat_per_100g: 0
+  brand: Coca-Cola
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 200
+- source: brand
+  source_id: drink_coke_classic_per_can_330
+  name: Coca-Cola Can 330ml
+  kcal_per_100g: 42
+  protein_per_100g: 0
+  carbs_per_100g: 10.6
+  fat_per_100g: 0
+  brand: Coca-Cola
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 330
+- source: brand
+  source_id: drink_pepsi_per_glass
+  name: Pepsi (Per Glass 200ml)
+  kcal_per_100g: 43
+  protein_per_100g: 0
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Pepsi
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 200
+- source: brand
+  source_id: drink_lemonade_classic_per_glass
+  name: Lemonade Classic (Per Glass 250ml)
+  kcal_per_100g: 35
+  protein_per_100g: 0
+  carbs_per_100g: 8
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 250
+- source: brand
+  source_id: drink_diet_lemonade_glass
+  name: Diet Lemonade (Per Glass 250ml)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: drink_orange_juice_glass_200ml
+  name: Orange Juice (Per Glass 200ml)
+  kcal_per_100g: 41
+  protein_per_100g: 0.6
+  carbs_per_100g: 9
+  fat_per_100g: 0.1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 200
+- source: brand
+  source_id: drink_apple_juice_glass_200ml
+  name: Apple Juice (Per Glass 200ml)
+  kcal_per_100g: 47
+  protein_per_100g: 0.1
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 200
+- source: brand
+  source_id: drink_tonic_water_per_330
+  name: Tonic Water (Per 330ml Can)
+  kcal_per_100g: 30
+  protein_per_100g: 0
+  carbs_per_100g: 7
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 330
+- source: brand
+  source_id: drink_slimline_tonic_per_330
+  name: Slimline Tonic (Per 330ml)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 330
+- source: brand
+  source_id: drink_soda_water_per_330
+  name: Soda Water (Per 330ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 330
+- source: brand
+  source_id: drink_ginger_ale_per_330
+  name: Ginger Ale (Per 330ml)
+  kcal_per_100g: 35
+  protein_per_100g: 0
+  carbs_per_100g: 9
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 330
+- source: brand
+  source_id: drink_ginger_beer_per_330
+  name: Ginger Beer (Per 330ml)
+  kcal_per_100g: 50
+  protein_per_100g: 0
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 330
+- source: brand
+  source_id: drink_lemon_lime_bitters
+  name: Lemon Lime & Bitters (Per Glass 250ml)
+  kcal_per_100g: 50
+  protein_per_100g: 0
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: drink_freshly_squeezed_oj_per_250ml
+  name: Freshly Squeezed OJ (Per 250ml)
+  kcal_per_100g: 41
+  protein_per_100g: 0.6
+  carbs_per_100g: 9
+  fat_per_100g: 0.1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 250
+- source: brand
+  source_id: drink_squeeze_ginger_carrot_orange
+  name: Ginger, Carrot & Orange Juice (Per 250ml)
+  kcal_per_100g: 45
+  protein_per_100g: 0.5
+  carbs_per_100g: 10
+  fat_per_100g: 0.2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: costa
+  source_id: costa_mocha_iced_medio
+  name: Costa Iced Mocha (Medio)
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_mocha_iced_massimo
+  name: Costa Iced Mocha (Massimo)
+  kcal_per_100g: 165
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_iced_chocolate_medio
+  name: Costa Iced Chocolate (Medio)
+  kcal_per_100g: 165
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_iced_chai_latte_medio
+  name: Costa Iced Chai Latte (Medio)
+  kcal_per_100g: 165
+  protein_per_100g: 5
+  carbs_per_100g: 28
+  fat_per_100g: 5
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_red_white_macchiato
+  name: Costa Red Eye / Caramel Macchiato (Medio)
+  kcal_per_100g: 165
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 355
+- source: costa
+  source_id: costa_decaf_latte_medio
+  name: Costa Decaf Latte (Medio)
+  kcal_per_100g: 105
+  protein_per_100g: 6
+  carbs_per_100g: 9
+  fat_per_100g: 5
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_decaf_cappuccino_medio
+  name: Costa Decaf Cappuccino (Medio)
+  kcal_per_100g: 75
+  protein_per_100g: 4
+  carbs_per_100g: 6
+  fat_per_100g: 4
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 250
+- source: costa
+  source_id: costa_chocolate_truffle_costa
+  name: Costa Chocolate Truffle Tower
+  kcal_per_100g: 540
+  protein_per_100g: 4
+  carbs_per_100g: 60
+  fat_per_100g: 30
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 80
+- source: costa
+  source_id: costa_billionaires_shortcake
+  name: Costa Billionaire's Shortbread
+  kcal_per_100g: 525
+  protein_per_100g: 4
+  carbs_per_100g: 60
+  fat_per_100g: 30
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 80
+- source: costa
+  source_id: costa_pastel_de_nata
+  name: Costa Pastel de Nata (Per Tart)
+  kcal_per_100g: 295
+  protein_per_100g: 5
+  carbs_per_100g: 30
+  fat_per_100g: 17
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 75
+- source: costa
+  source_id: costa_gluten_free_brownie
+  name: Costa Gluten Free Brownie
+  kcal_per_100g: 425
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 23
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 90
+- source: starbucks
+  source_id: starbucks_iced_chai_latte_grande
+  name: Starbucks Iced Chai Latte (Grande)
+  kcal_per_100g: 220
+  protein_per_100g: 6
+  carbs_per_100g: 38
+  fat_per_100g: 5
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: starbucks_iced_mocha_grande
+  name: Starbucks Iced Mocha (Grande)
+  kcal_per_100g: 245
+  protein_per_100g: 7
+  carbs_per_100g: 32
+  fat_per_100g: 9
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: starbucks_iced_americano_grande
+  name: Starbucks Iced Americano (Grande)
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: starbucks_caramel_brulée_latte
+  name: Starbucks Caramel Brûlée Latte (Grande)
+  kcal_per_100g: 380
+  protein_per_100g: 14
+  carbs_per_100g: 50
+  fat_per_100g: 14
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 473
+- source: starbucks
+  source_id: starbucks_eggnog_latte
+  name: Starbucks Eggnog Latte (Grande)
+  kcal_per_100g: 365
+  protein_per_100g: 13
+  carbs_per_100g: 47
+  fat_per_100g: 14
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 473
+- source: starbucks
+  source_id: starbucks_white_choc_mocha_iced
+  name: Starbucks Iced White Choc Mocha (Grande)
+  kcal_per_100g: 425
+  protein_per_100g: 11
+  carbs_per_100g: 50
+  fat_per_100g: 19
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 473
+- source: starbucks
+  source_id: starbucks_strawberry_acai_refresher
+  name: Starbucks Strawberry Açaí Refresher (Grande)
+  kcal_per_100g: 90
+  protein_per_100g: 0
+  carbs_per_100g: 21
+  fat_per_100g: 0
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 473
+- source: starbucks
+  source_id: starbucks_kiwi_starfruit_refresher
+  name: Starbucks Kiwi Starfruit Refresher (Grande)
+  kcal_per_100g: 100
+  protein_per_100g: 1
+  carbs_per_100g: 22
+  fat_per_100g: 0
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 473
+- source: starbucks
+  source_id: starbucks_mango_dragonfruit_refresher
+  name: Starbucks Mango Dragonfruit Refresher (Grande)
+  kcal_per_100g: 90
+  protein_per_100g: 0
+  carbs_per_100g: 22
+  fat_per_100g: 0
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 473
+- source: greggs
+  source_id: greggs_breakfast_baguette_sausage
+  name: Greggs Sausage Breakfast Baguette
+  kcal_per_100g: 540
+  protein_per_100g: 20
+  carbs_per_100g: 50
+  fat_per_100g: 28
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 220
+  serving_label: 220 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 220
+- source: greggs
+  source_id: greggs_classic_glazed_doughnut
+  name: Greggs Classic Glazed Doughnut
+  kcal_per_100g: 270
+  protein_per_100g: 4
+  carbs_per_100g: 38
+  fat_per_100g: 12
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 75
+- source: greggs
+  source_id: greggs_strawberry_jam_doughnut_v2
+  name: Greggs Strawberry Jam Doughnut
+  kcal_per_100g: 305
+  protein_per_100g: 5
+  carbs_per_100g: 45
+  fat_per_100g: 11
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 90
+- source: greggs
+  source_id: greggs_lotus_biscoff_doughnut
+  name: Greggs Lotus Biscoff Doughnut
+  kcal_per_100g: 320
+  protein_per_100g: 4
+  carbs_per_100g: 42
+  fat_per_100g: 14
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 90
+- source: greggs
+  source_id: greggs_baked_potato_cheese_beans
+  name: Greggs Baked Potato Cheese & Beans
+  kcal_per_100g: 380
+  protein_per_100g: 17
+  carbs_per_100g: 65
+  fat_per_100g: 7
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: greggs
+  source_id: greggs_baked_potato_chilli
+  name: Greggs Baked Potato Chilli con Carne
+  kcal_per_100g: 365
+  protein_per_100g: 16
+  carbs_per_100g: 60
+  fat_per_100g: 7
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 380
+  serving_label: 380 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 380
+- source: greggs
+  source_id: greggs_baked_potato_tuna
+  name: Greggs Baked Potato Tuna Mayo
+  kcal_per_100g: 395
+  protein_per_100g: 18
+  carbs_per_100g: 60
+  fat_per_100g: 11
+  brand: Greggs
+  region_codes: GB
+  serving_grams: 380
+  serving_label: 380 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 380
+- source: tesco
+  source_id: tesco_sandwiches_chicken_caesar_pack
+  name: Tesco Chicken Caesar Sandwich (Per Pack)
+  kcal_per_100g: 320
+  protein_per_100g: 18
+  carbs_per_100g: 30
+  fat_per_100g: 13
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: tesco
+  source_id: tesco_sandwiches_blt
+  name: Tesco BLT Sandwich (Per Pack)
+  kcal_per_100g: 295
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 14
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: tesco
+  source_id: tesco_sandwiches_chicken_avocado
+  name: Tesco Chicken Avocado Sandwich
+  kcal_per_100g: 305
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: tesco
+  source_id: tesco_sandwiches_cheese_pickle
+  name: Tesco Cheese & Pickle Sandwich
+  kcal_per_100g: 320
+  protein_per_100g: 13
+  carbs_per_100g: 32
+  fat_per_100g: 15
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 175
+- source: tesco
+  source_id: tesco_sandwiches_tuna_sweetcorn
+  name: Tesco Tuna Sweetcorn Sandwich
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 195
+  serving_label: 195 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 195
+- source: tesco
+  source_id: tesco_sandwiches_ploughmans
+  name: Tesco Ploughman's Sandwich
+  kcal_per_100g: 295
+  protein_per_100g: 14
+  carbs_per_100g: 32
+  fat_per_100g: 14
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: tesco
+  source_id: tesco_wraps_chicken_avocado
+  name: Tesco Chicken Avocado Wrap
+  kcal_per_100g: 235
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 220
+  serving_label: 220 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 220
+- source: tesco
+  source_id: tesco_wraps_falafel
+  name: Tesco Falafel Wrap
+  kcal_per_100g: 215
+  protein_per_100g: 7
+  carbs_per_100g: 25
+  fat_per_100g: 9
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: tesco
+  source_id: tesco_pasta_pesto_chicken_pot
+  name: Tesco Pesto Chicken Pasta Pot
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: tesco
+  source_id: tesco_pasta_chicken_caesar_pot
+  name: Tesco Chicken Caesar Pasta Pot
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: tesco
+  source_id: tesco_salad_super_grain_pot
+  name: Tesco Super Grain Salad Pot
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: tesco
+  source_id: tesco_sushi_california_pack
+  name: Tesco California Sushi Pack
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 3
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: sainsburys
+  source_id: sains_sandwich_chicken_caesar
+  name: Sainsbury's Chicken Caesar Sandwich
+  kcal_per_100g: 320
+  protein_per_100g: 18
+  carbs_per_100g: 30
+  fat_per_100g: 13
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: sainsburys
+  source_id: sains_sandwich_egg_mayo
+  name: Sainsbury's Egg Mayo Sandwich
+  kcal_per_100g: 285
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 175
+- source: sainsburys
+  source_id: sains_wrap_chicken_avocado
+  name: Sainsbury's Chicken Avocado Wrap
+  kcal_per_100g: 235
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 220
+  serving_label: 220 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 220
+- source: sainsburys
+  source_id: sains_pasta_pesto_chicken
+  name: Sainsbury's Pesto Chicken Pasta Pot
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: sainsburys
+  source_id: sains_super_grain_pot
+  name: Sainsbury's Super Grain Pot
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: sainsburys
+  source_id: sains_sushi_pack_california
+  name: Sainsbury's California Sushi Pack
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 3
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: ms
+  source_id: ms_ploughmans_sandwich_v2
+  name: M&S Ploughman's Sandwich
+  kcal_per_100g: 295
+  protein_per_100g: 14
+  carbs_per_100g: 32
+  fat_per_100g: 14
+  brand: M&S
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: ms
+  source_id: ms_chicken_avocado_sandwich
+  name: M&S Chicken & Avocado Sandwich
+  kcal_per_100g: 305
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: M&S
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: ms
+  source_id: ms_super_grain_box
+  name: M&S Super Grain Salad Box
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: M&S
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: ms
+  source_id: ms_super_protein_pot
+  name: M&S Super Protein Pot
+  kcal_per_100g: 175
+  protein_per_100g: 17
+  carbs_per_100g: 14
+  fat_per_100g: 6
+  brand: M&S
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: crisps_doritos_lightly_salted
+  name: Doritos Lightly Salted (Per 30g)
+  kcal_per_100g: 505
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 24
+  brand: Doritos
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: crisps_doritos_dippas_lightly
+  name: Doritos Dippas Lightly Salted
+  kcal_per_100g: 505
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 24
+  brand: Doritos
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: crisps_walkers_baked_cheese_onion
+  name: Walkers Baked Cheese & Onion (Per Pack 25g)
+  kcal_per_100g: 405
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 12
+  brand: Walkers
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: brand
+  source_id: crisps_walkers_baked_ready_salted
+  name: Walkers Baked Ready Salted (Per 25g)
+  kcal_per_100g: 405
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 12
+  brand: Walkers
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: brand
+  source_id: crisps_walkers_baked_salt_vinegar
+  name: Walkers Baked Salt & Vinegar
+  kcal_per_100g: 405
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 12
+  brand: Walkers
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: brand
+  source_id: crisps_quavers_prawn_18g
+  name: Quavers Prawn Cocktail (Per 18g)
+  kcal_per_100g: 525
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 29
+  brand: Walkers Quavers
+  region_codes: GB
+  serving_grams: 18
+  serving_label: 18 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 18
+- source: brand
+  source_id: crisps_skips_pickled_onion
+  name: KP Skips Pickled Onion (Per 13g)
+  kcal_per_100g: 470
+  protein_per_100g: 5
+  carbs_per_100g: 67
+  fat_per_100g: 21
+  brand: KP Skips
+  region_codes: GB
+  serving_grams: 13
+  serving_label: 13 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 13
+- source: brand
+  source_id: crisps_pom_bears_per_pack
+  name: Pom-Bears Original (Per Pack 19g)
+  kcal_per_100g: 460
+  protein_per_100g: 5
+  carbs_per_100g: 65
+  fat_per_100g: 18
+  brand: Pom-Bears
+  region_codes: GB
+  serving_grams: 19
+  serving_label: 19 g
+  tags: brand,grocery
+  portion_unit: pack
+  unit_grams: 19
+- source: brand
+  source_id: crisps_jacobs_mini_cheddars_25g
+  name: Jacob's Mini Cheddars Original (Per 25g)
+  kcal_per_100g: 530
+  protein_per_100g: 11
+  carbs_per_100g: 53
+  fat_per_100g: 30
+  brand: Jacob's
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: brand
+  source_id: crisps_walkers_max_strong_chilli
+  name: Walkers Max Strong Hot Chilli
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 56
+  fat_per_100g: 29
+  brand: Walkers Max
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: crisps_pringles_light_per_25g
+  name: Pringles Light Sour Cream & Onion
+  kcal_per_100g: 470
+  protein_per_100g: 4
+  carbs_per_100g: 60
+  fat_per_100g: 22
+  brand: Pringles
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: crisps_kettle_lightly_salted_30g_v2
+  name: Kettle Chips Lightly Salted (Per 30g)
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Kettle
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: crisps_seabrook_salt_vinegar
+  name: Seabrook Salt & Vinegar (Per 25g)
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Seabrook
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: brand
+  source_id: crisps_seabrook_lattice_salted
+  name: Seabrook Lattice Salted
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Seabrook
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30

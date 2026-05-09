@@ -1,0 +1,1791 @@
+# More branded pantry & snacks — Tilda & Uncle Ben's microwave rice, Whitworths/Allinson flours,
+# Napolina/Cirio Italian, Schwartz spices full, Knorr stock pots/cubes, Maggi, Old El Paso/Discovery,
+# Reggae Reggae, Bart's lazy ingredients, Bonne Maman conserves/spreads, Rowse honey, Lyle's syrups,
+# Snack brands (Graze, Itsu seaweed, Eat Real, Hippeas, Tyrrells, Kettle, Burts, Pipers, Popchips,
+# Snack a Jacks, Bear, Munchy Seeds, Forest Feast, Whitworths shots)
+
+- source: brand
+  source_id: tilda_basmati_microwave_per_pack
+  name: Tilda Pure Basmati Microwave Rice (Per Pack)
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 2
+  brand: Tilda
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,pantry,ingredient
+  portion_unit: piece
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: brand
+  source_id: tilda_pilau_microwave
+  name: Tilda Pilau Microwave Rice (Per Pack)
+  kcal_per_100g: 175
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 4
+  brand: Tilda
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: brand
+  source_id: tilda_egg_fried_microwave
+  name: Tilda Egg Fried Microwave Rice
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 32
+  fat_per_100g: 4
+  brand: Tilda
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: brand
+  source_id: tilda_brown_basmati_microwave
+  name: Tilda Brown Basmati Microwave Rice
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 30
+  fat_per_100g: 3
+  brand: Tilda
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: brand
+  source_id: tilda_chinese_microwave
+  name: Tilda Chinese Microwave Rice
+  kcal_per_100g: 175
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 4
+  brand: Tilda
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: brand
+  source_id: tilda_mediterranean_microwave
+  name: Tilda Mediterranean Microwave Rice
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 3
+  brand: Tilda
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: brand
+  source_id: tilda_steamed_basmati_dry
+  name: Tilda Pure Basmati Dry (Per 75g)
+  kcal_per_100g: 350
+  protein_per_100g: 7
+  carbs_per_100g: 78
+  fat_per_100g: 1
+  brand: Tilda
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegetarian
+- source: brand
+  source_id: tilda_steamed_long_grain
+  name: Tilda Long Grain Dry (Per 75g)
+  kcal_per_100g: 350
+  protein_per_100g: 7
+  carbs_per_100g: 78
+  fat_per_100g: 1
+  brand: Tilda
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ubens_long_grain_microwave
+  name: Uncle Ben's Long Grain Rice Microwave (Per Pack)
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 1.5
+  brand: Uncle Ben's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ubens_pilau_microwave
+  name: Uncle Ben's Pilau Rice Microwave
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 2
+  brand: Uncle Ben's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ubens_chinese_microwave
+  name: Uncle Ben's Chinese Rice Microwave
+  kcal_per_100g: 175
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 4
+  brand: Uncle Ben's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ubens_savoury_chicken_microwave
+  name: Uncle Ben's Savoury Chicken Rice
+  kcal_per_100g: 175
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 4
+  brand: Uncle Ben's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ubens_savoury_mushroom_microwave
+  name: Uncle Ben's Savoury Mushroom Rice
+  kcal_per_100g: 175
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 4
+  brand: Uncle Ben's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ubens_express_basmati
+  name: Uncle Ben's Express Basmati
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 2
+  brand: Uncle Ben's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ubens_express_brown_basmati
+  name: Uncle Ben's Express Brown Basmati
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 30
+  fat_per_100g: 3
+  brand: Uncle Ben's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: brand
+  source_id: whit_caster_sugar_per_5g
+  name: Whitworths Caster Sugar (Per 5g)
+  kcal_per_100g: 387
+  protein_per_100g: 0
+  carbs_per_100g: 100
+  fat_per_100g: 0
+  brand: Whitworths
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: whit_brown_sugar_per_5g
+  name: Whitworths Brown Sugar (Per 5g)
+  kcal_per_100g: 380
+  protein_per_100g: 0
+  carbs_per_100g: 98
+  fat_per_100g: 0
+  brand: Whitworths
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: whit_icing_sugar_per_5g
+  name: Whitworths Icing Sugar (Per 5g)
+  kcal_per_100g: 392
+  protein_per_100g: 0
+  carbs_per_100g: 100
+  fat_per_100g: 0
+  brand: Whitworths
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: allinson_dried_yeast_per_5g
+  name: Allinson Easy Bake Dried Yeast (Per 5g)
+  kcal_per_100g: 295
+  protein_per_100g: 50
+  carbs_per_100g: 38
+  fat_per_100g: 8
+  brand: Allinson
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: allinson_strong_white_flour
+  name: Allinson Strong White Bread Flour (Per 50g)
+  kcal_per_100g: 350
+  protein_per_100g: 12
+  carbs_per_100g: 72
+  fat_per_100g: 1.5
+  brand: Allinson
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: allinson_wholemeal_flour
+  name: Allinson Wholemeal Flour (Per 50g)
+  kcal_per_100g: 340
+  protein_per_100g: 13
+  carbs_per_100g: 65
+  fat_per_100g: 2.5
+  brand: Allinson
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: allinson_self_raising_flour
+  name: Allinson Self-Raising Flour (Per 50g)
+  kcal_per_100g: 360
+  protein_per_100g: 10
+  carbs_per_100g: 76
+  fat_per_100g: 1.3
+  brand: Allinson
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: napolina_plum_tomatoes_per_100g
+  name: Napolina Plum Tomatoes (Per 100g)
+  kcal_per_100g: 25
+  protein_per_100g: 1.2
+  carbs_per_100g: 4
+  fat_per_100g: 0.3
+  brand: Napolina
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: napolina_chopped_basil_tomatoes
+  name: Napolina Chopped Tomatoes with Basil
+  kcal_per_100g: 30
+  protein_per_100g: 1.2
+  carbs_per_100g: 5
+  fat_per_100g: 0.3
+  brand: Napolina
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: napolina_olive_oil_per_15ml
+  name: Napolina Extra Virgin Olive Oil (Per 15ml)
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Napolina
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,pantry,ingredient
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: napolina_passata_per_100g
+  name: Napolina Passata (Per 100g)
+  kcal_per_100g: 30
+  protein_per_100g: 1.2
+  carbs_per_100g: 5
+  fat_per_100g: 0.3
+  brand: Napolina
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: napolina_tomato_puree_per_15g
+  name: Napolina Tomato Purée (Per 15g)
+  kcal_per_100g: 95
+  protein_per_100g: 5
+  carbs_per_100g: 17
+  fat_per_100g: 0.5
+  brand: Napolina
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,pantry,ingredient
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cirio_passata_per_100g
+  name: Cirio Passata Rustica (Per 100g)
+  kcal_per_100g: 30
+  protein_per_100g: 1.2
+  carbs_per_100g: 5
+  fat_per_100g: 0.3
+  brand: Cirio
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: geo_watkins_mushroom_ketchup_15ml
+  name: Geo Watkins Mushroom Ketchup (Per 15ml)
+  kcal_per_100g: 75
+  protein_per_100g: 1
+  carbs_per_100g: 17
+  fat_per_100g: 0
+  brand: Geo Watkins
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: schwartz_paprika_per_5g
+  name: Schwartz Paprika (Per Tsp)
+  kcal_per_100g: 282
+  protein_per_100g: 14
+  carbs_per_100g: 54
+  fat_per_100g: 13
+  brand: Schwartz
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: schwartz_cumin_per_5g
+  name: Schwartz Ground Cumin (Per Tsp)
+  kcal_per_100g: 375
+  protein_per_100g: 18
+  carbs_per_100g: 44
+  fat_per_100g: 22
+  brand: Schwartz
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: schwartz_chilli_powder_per_5g
+  name: Schwartz Chilli Powder (Per Tsp)
+  kcal_per_100g: 282
+  protein_per_100g: 13
+  carbs_per_100g: 50
+  fat_per_100g: 14
+  brand: Schwartz
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: schwartz_garam_masala
+  name: Schwartz Garam Masala (Per Tsp)
+  kcal_per_100g: 280
+  protein_per_100g: 13
+  carbs_per_100g: 50
+  fat_per_100g: 14
+  brand: Schwartz
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: schwartz_curry_powder
+  name: Schwartz Curry Powder (Per Tsp)
+  kcal_per_100g: 325
+  protein_per_100g: 14
+  carbs_per_100g: 58
+  fat_per_100g: 14
+  brand: Schwartz
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: schwartz_cinnamon_per_5g
+  name: Schwartz Cinnamon (Per Tsp)
+  kcal_per_100g: 247
+  protein_per_100g: 4
+  carbs_per_100g: 81
+  fat_per_100g: 1.2
+  brand: Schwartz
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: schwartz_oregano_per_5g
+  name: Schwartz Oregano (Per Tsp)
+  kcal_per_100g: 265
+  protein_per_100g: 9
+  carbs_per_100g: 69
+  fat_per_100g: 4.3
+  brand: Schwartz
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: schwartz_basil_per_5g
+  name: Schwartz Basil (Per Tsp)
+  kcal_per_100g: 233
+  protein_per_100g: 23
+  carbs_per_100g: 48
+  fat_per_100g: 4
+  brand: Schwartz
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: schwartz_thyme_per_5g
+  name: Schwartz Thyme (Per Tsp)
+  kcal_per_100g: 276
+  protein_per_100g: 9
+  carbs_per_100g: 64
+  fat_per_100g: 7.4
+  brand: Schwartz
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: schwartz_rosemary_per_5g
+  name: Schwartz Rosemary (Per Tsp)
+  kcal_per_100g: 331
+  protein_per_100g: 5
+  carbs_per_100g: 65
+  fat_per_100g: 15
+  brand: Schwartz
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: schwartz_smoked_paprika
+  name: Schwartz Smoked Paprika (Per Tsp)
+  kcal_per_100g: 282
+  protein_per_100g: 14
+  carbs_per_100g: 54
+  fat_per_100g: 13
+  brand: Schwartz
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: schwartz_garlic_granules
+  name: Schwartz Garlic Granules (Per Tsp)
+  kcal_per_100g: 331
+  protein_per_100g: 17
+  carbs_per_100g: 73
+  fat_per_100g: 1
+  brand: Schwartz
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: schwartz_sea_salt
+  name: Schwartz Sea Salt (Per Pinch)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Schwartz
+  region_codes: GB
+  serving_grams: 3
+  serving_label: 3 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 3
+  dietary_compat: vegetarian
+- source: brand
+  source_id: schwartz_black_pepper
+  name: Schwartz Black Pepper (Per Tsp)
+  kcal_per_100g: 251
+  protein_per_100g: 10
+  carbs_per_100g: 64
+  fat_per_100g: 3
+  brand: Schwartz
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: knorr_chicken_stock_pot
+  name: Knorr Chicken Stock Pot (Per Pot)
+  kcal_per_100g: 230
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 17
+  brand: Knorr
+  region_codes: GB
+  serving_grams: 28
+  serving_label: 28 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 28
+  dietary_compat: vegetarian
+- source: brand
+  source_id: knorr_beef_stock_pot
+  name: Knorr Beef Stock Pot (Per Pot)
+  kcal_per_100g: 230
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 17
+  brand: Knorr
+  region_codes: GB
+  serving_grams: 28
+  serving_label: 28 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 28
+  dietary_compat: vegetarian
+- source: brand
+  source_id: knorr_vegetable_stock_pot
+  name: Knorr Vegetable Stock Pot (Per Pot)
+  kcal_per_100g: 215
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Knorr
+  region_codes: GB
+  serving_grams: 28
+  serving_label: 28 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 28
+  dietary_compat: vegetarian
+- source: brand
+  source_id: knorr_lamb_stock_pot
+  name: Knorr Lamb Stock Pot
+  kcal_per_100g: 230
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 17
+  brand: Knorr
+  region_codes: GB
+  serving_grams: 28
+  serving_label: 28 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 28
+  dietary_compat: vegetarian
+- source: brand
+  source_id: knorr_garlic_stock_pot
+  name: Knorr Garlic Stock Pot
+  kcal_per_100g: 215
+  protein_per_100g: 6
+  carbs_per_100g: 18
+  fat_per_100g: 14
+  brand: Knorr
+  region_codes: GB
+  serving_grams: 28
+  serving_label: 28 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 28
+  dietary_compat: vegetarian
+- source: brand
+  source_id: knorr_chicken_cube
+  name: Knorr Chicken Stock Cube (Per Cube)
+  kcal_per_100g: 195
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 11
+  brand: Knorr
+  region_codes: GB
+  serving_grams: 10
+  serving_label: 10 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 10
+  dietary_compat: vegetarian
+- source: brand
+  source_id: knorr_beef_cube
+  name: Knorr Beef Stock Cube (Per Cube)
+  kcal_per_100g: 195
+  protein_per_100g: 8
+  carbs_per_100g: 18
+  fat_per_100g: 10
+  brand: Knorr
+  region_codes: GB
+  serving_grams: 10
+  serving_label: 10 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 10
+  dietary_compat: vegetarian
+- source: brand
+  source_id: knorr_vegetable_cube
+  name: Knorr Vegetable Stock Cube
+  kcal_per_100g: 195
+  protein_per_100g: 8
+  carbs_per_100g: 25
+  fat_per_100g: 7
+  brand: Knorr
+  region_codes: GB
+  serving_grams: 10
+  serving_label: 10 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 10
+  dietary_compat: vegetarian
+- source: brand
+  source_id: maggi_seasoning_sauce
+  name: Maggi Seasoning Sauce (Per Tsp 5ml)
+  kcal_per_100g: 65
+  protein_per_100g: 5
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Maggi
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oep_smoky_bbq_marinade
+  name: Old El Paso Smoky BBQ Marinade (Per 50g)
+  kcal_per_100g: 145
+  protein_per_100g: 1
+  carbs_per_100g: 30
+  fat_per_100g: 1
+  brand: Old El Paso
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oep_jalapenos_per_50g
+  name: Old El Paso Jalapeños (Per 50g)
+  kcal_per_100g: 25
+  protein_per_100g: 1
+  carbs_per_100g: 5
+  fat_per_100g: 0.5
+  brand: Old El Paso
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oep_taco_kit_extra_mild
+  name: Old El Paso Taco Kit Extra Mild
+  kcal_per_100g: 350
+  protein_per_100g: 9
+  carbs_per_100g: 65
+  fat_per_100g: 6
+  brand: Old El Paso
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 500
+  dietary_compat: vegetarian
+- source: brand
+  source_id: discovery_burrito_kit
+  name: Discovery Burrito Kit
+  kcal_per_100g: 300
+  protein_per_100g: 8
+  carbs_per_100g: 50
+  fat_per_100g: 7
+  brand: Discovery
+  region_codes: GB
+  serving_grams: 480
+  serving_label: 480 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 480
+  dietary_compat: vegetarian
+- source: brand
+  source_id: discovery_fajita_kit
+  name: Discovery Fajita Kit
+  kcal_per_100g: 295
+  protein_per_100g: 8
+  carbs_per_100g: 50
+  fat_per_100g: 7
+  brand: Discovery
+  region_codes: GB
+  serving_grams: 480
+  serving_label: 480 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 480
+  dietary_compat: vegetarian
+- source: brand
+  source_id: reggae_reggae_jerk_sauce
+  name: Reggae Reggae Original Jerk Sauce (Per 15g)
+  kcal_per_100g: 125
+  protein_per_100g: 1.5
+  carbs_per_100g: 28
+  fat_per_100g: 0.5
+  brand: Reggae Reggae
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bart_lazy_garlic
+  name: Bart Lazy Garlic (Per 5g)
+  kcal_per_100g: 145
+  protein_per_100g: 6
+  carbs_per_100g: 32
+  fat_per_100g: 0.5
+  brand: Bart
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bart_lazy_chillies
+  name: Bart Lazy Chillies (Per 5g)
+  kcal_per_100g: 35
+  protein_per_100g: 1.5
+  carbs_per_100g: 7
+  fat_per_100g: 0.4
+  brand: Bart
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bart_lazy_ginger
+  name: Bart Lazy Ginger (Per 5g)
+  kcal_per_100g: 65
+  protein_per_100g: 1.5
+  carbs_per_100g: 14
+  fat_per_100g: 0.5
+  brand: Bart
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bm_strawberry_conserve_per_15g
+  name: Bonne Maman Strawberry Conserve (Per 15g)
+  kcal_per_100g: 254
+  protein_per_100g: 0.5
+  carbs_per_100g: 62
+  fat_per_100g: 0
+  brand: Bonne Maman
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,pantry,ingredient
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bm_raspberry_conserve_per_15g
+  name: Bonne Maman Raspberry Conserve (Per 15g)
+  kcal_per_100g: 254
+  protein_per_100g: 0.5
+  carbs_per_100g: 62
+  fat_per_100g: 0
+  brand: Bonne Maman
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,pantry,ingredient
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bm_apricot_conserve_per_15g
+  name: Bonne Maman Apricot Conserve (Per 15g)
+  kcal_per_100g: 254
+  protein_per_100g: 0.5
+  carbs_per_100g: 62
+  fat_per_100g: 0
+  brand: Bonne Maman
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,pantry,ingredient
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bm_blackcurrant_conserve_per_15g
+  name: Bonne Maman Blackcurrant Conserve (Per 15g)
+  kcal_per_100g: 254
+  protein_per_100g: 0.5
+  carbs_per_100g: 62
+  fat_per_100g: 0
+  brand: Bonne Maman
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,pantry,ingredient
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bm_orange_marmalade_per_15g
+  name: Bonne Maman Orange Marmalade (Per 15g)
+  kcal_per_100g: 254
+  protein_per_100g: 0.3
+  carbs_per_100g: 62
+  fat_per_100g: 0
+  brand: Bonne Maman
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,pantry,ingredient
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bm_lemon_curd_per_15g
+  name: Bonne Maman Lemon Curd (Per 15g)
+  kcal_per_100g: 295
+  protein_per_100g: 1.5
+  carbs_per_100g: 60
+  fat_per_100g: 5
+  brand: Bonne Maman
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,pantry,ingredient
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bm_chocolate_hazelnut_15g
+  name: Bonne Maman Chocolate Hazelnut Spread
+  kcal_per_100g: 539
+  protein_per_100g: 6
+  carbs_per_100g: 58
+  fat_per_100g: 31
+  brand: Bonne Maman
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bm_madeleines_per_unit
+  name: Bonne Maman Madeleines (Per Madeleine)
+  kcal_per_100g: 425
+  protein_per_100g: 6
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  brand: Bonne Maman
+  region_codes: GB
+  serving_grams: 24
+  serving_label: 24 g
+  tags: brand,pantry,ingredient
+  portion_unit: piece
+  unit_grams: 24
+  dietary_compat: vegetarian
+- source: brand
+  source_id: rowse_clear_honey_per_15g
+  name: Rowse Pure Clear Honey (Per 15g)
+  kcal_per_100g: 304
+  protein_per_100g: 0.3
+  carbs_per_100g: 82
+  fat_per_100g: 0
+  brand: Rowse
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,pantry,ingredient
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: rowse_manuka_honey_per_15g
+  name: Rowse Manuka Honey (Per 15g)
+  kcal_per_100g: 320
+  protein_per_100g: 0.3
+  carbs_per_100g: 80
+  fat_per_100g: 0
+  brand: Rowse
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,pantry,ingredient
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: rowse_squeezy_honey
+  name: Rowse Squeezy Honey (Per 15g)
+  kcal_per_100g: 304
+  protein_per_100g: 0.3
+  carbs_per_100g: 82
+  fat_per_100g: 0
+  brand: Rowse
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: lyles_golden_syrup_per_15g
+  name: Lyle's Golden Syrup (Per 15g)
+  kcal_per_100g: 325
+  protein_per_100g: 0.3
+  carbs_per_100g: 81
+  fat_per_100g: 0
+  brand: Lyle's
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,pantry,ingredient
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: lyles_black_treacle
+  name: Lyle's Black Treacle (Per 15g)
+  kcal_per_100g: 290
+  protein_per_100g: 0.5
+  carbs_per_100g: 70
+  fat_per_100g: 0
+  brand: Lyle's
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,pantry,ingredient
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: lyles_maple_per_15ml
+  name: Lyle's Pure Maple Syrup (Per 15ml)
+  kcal_per_100g: 260
+  protein_per_100g: 0
+  carbs_per_100g: 67
+  fat_per_100g: 0
+  brand: Lyle's
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,pantry,ingredient
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: graze_punchy_protein
+  name: Graze Punchy Protein (Per 31g)
+  kcal_per_100g: 510
+  protein_per_100g: 24
+  carbs_per_100g: 28
+  fat_per_100g: 32
+  brand: Graze
+  region_codes: GB
+  serving_grams: 31
+  serving_label: 31 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 31
+  dietary_compat: vegetarian
+- source: brand
+  source_id: graze_sticky_chocolate_pretzel
+  name: Graze Sticky Chocolate Pretzel
+  kcal_per_100g: 460
+  protein_per_100g: 7
+  carbs_per_100g: 70
+  fat_per_100g: 17
+  brand: Graze
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: graze_dark_choc_almonds
+  name: Graze Dark Chocolate Almonds
+  kcal_per_100g: 530
+  protein_per_100g: 11
+  carbs_per_100g: 38
+  fat_per_100g: 35
+  brand: Graze
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: graze_smokehouse_bbq
+  name: Graze Smokehouse BBQ Mix
+  kcal_per_100g: 460
+  protein_per_100g: 11
+  carbs_per_100g: 47
+  fat_per_100g: 23
+  brand: Graze
+  region_codes: GB
+  serving_grams: 28
+  serving_label: 28 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 28
+  dietary_compat: vegetarian
+- source: brand
+  source_id: graze_billionaires_shortbread
+  name: Graze Billionaire's Shortbread
+  kcal_per_100g: 460
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 22
+  brand: Graze
+  region_codes: GB
+  serving_grams: 28
+  serving_label: 28 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 28
+  dietary_compat: vegetarian
+- source: brand
+  source_id: graze_coconut_macaroon
+  name: Graze Coconut Macaroon
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 56
+  fat_per_100g: 26
+  brand: Graze
+  region_codes: GB
+  serving_grams: 28
+  serving_label: 28 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 28
+  dietary_compat: vegetarian
+- source: brand
+  source_id: itsu_crispy_seaweed_thins
+  name: Itsu Crispy Seaweed Thins (Per Pack)
+  kcal_per_100g: 480
+  protein_per_100g: 24
+  carbs_per_100g: 30
+  fat_per_100g: 30
+  brand: Itsu
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: itsu_seaweed_chips_5g
+  name: Itsu Crispy Seaweed Chips Sea Salt
+  kcal_per_100g: 470
+  protein_per_100g: 22
+  carbs_per_100g: 30
+  fat_per_100g: 28
+  brand: Itsu
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: eat_real_humous_chips_sea_salt
+  name: Eat Real Hummus Chips Sea Salt (Per 25g)
+  kcal_per_100g: 460
+  protein_per_100g: 8
+  carbs_per_100g: 65
+  fat_per_100g: 17
+  brand: Eat Real
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 25
+  dietary_compat: vegetarian
+- source: brand
+  source_id: eat_real_lentil_chips_sea_salt
+  name: Eat Real Lentil Chips Sea Salt
+  kcal_per_100g: 460
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 17
+  brand: Eat Real
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 25
+  dietary_compat: vegetarian
+- source: brand
+  source_id: eat_real_quinoa_chips_sour_cream
+  name: Eat Real Quinoa Chips Sour Cream & Onion
+  kcal_per_100g: 460
+  protein_per_100g: 8
+  carbs_per_100g: 65
+  fat_per_100g: 17
+  brand: Eat Real
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 25
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hippeas_sweet_smokin
+  name: Hippeas Sweet & Smokin' (Per 22g)
+  kcal_per_100g: 460
+  protein_per_100g: 21
+  carbs_per_100g: 47
+  fat_per_100g: 18
+  brand: Hippeas
+  region_codes: GB
+  serving_grams: 22
+  serving_label: 22 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 22
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hippeas_take_it_cheesy
+  name: Hippeas Take It Cheesy (Per 22g)
+  kcal_per_100g: 460
+  protein_per_100g: 21
+  carbs_per_100g: 47
+  fat_per_100g: 18
+  brand: Hippeas
+  region_codes: GB
+  serving_grams: 22
+  serving_label: 22 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 22
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hippeas_salt_vinegar
+  name: Hippeas Sea Salt & Vinegar
+  kcal_per_100g: 460
+  protein_per_100g: 21
+  carbs_per_100g: 47
+  fat_per_100g: 18
+  brand: Hippeas
+  region_codes: GB
+  serving_grams: 22
+  serving_label: 22 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 22
+  dietary_compat: vegetarian
+- source: brand
+  source_id: tyrrells_sea_salt_vinegar
+  name: Tyrrells Sea Salt & Cider Vinegar (Per 40g)
+  kcal_per_100g: 470
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 22
+  brand: Tyrrells
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: tyrrells_lightly_salted
+  name: Tyrrells Lightly Salted
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Tyrrells
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: tyrrells_mature_cheddar
+  name: Tyrrells Mature Cheddar & Chive
+  kcal_per_100g: 470
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 22
+  brand: Tyrrells
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: tyrrells_sweet_chilli
+  name: Tyrrells Sweet Chilli & Red Pepper
+  kcal_per_100g: 470
+  protein_per_100g: 6
+  carbs_per_100g: 62
+  fat_per_100g: 21
+  brand: Tyrrells
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: tyrrells_furrows_salt_vinegar
+  name: Tyrrells Furrows Sea Salt & Cider Vinegar
+  kcal_per_100g: 470
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 22
+  brand: Tyrrells
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kettle_sea_salt_per_30g
+  name: Kettle Chips Sea Salt (Per 30g)
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Kettle
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,brand
+  portion_unit: pack
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kettle_mature_cheddar_red_onion
+  name: Kettle Chips Mature Cheddar & Red Onion
+  kcal_per_100g: 480
+  protein_per_100g: 7
+  carbs_per_100g: 58
+  fat_per_100g: 24
+  brand: Kettle
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kettle_lightly_salted
+  name: Kettle Chips Lightly Salted
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Kettle
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kettle_sea_salt_vinegar_kettle
+  name: Kettle Chips Sea Salt & Balsamic Vinegar
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Kettle
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kettle_jalapeno
+  name: Kettle Chips Jalapeño
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Kettle
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: burts_potato_lightly_sea_salt
+  name: Burts Lightly Sea Salted (Per 30g)
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Burts
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: burts_thai_chilli
+  name: Burts Thai Chilli
+  kcal_per_100g: 470
+  protein_per_100g: 6
+  carbs_per_100g: 62
+  fat_per_100g: 22
+  brand: Burts
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: pipers_anglesey_sea_salt
+  name: Pipers Anglesey Sea Salt (Per 40g)
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Pipers
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: pipers_cheese_onion
+  name: Pipers Mature Cheddar & Onion
+  kcal_per_100g: 480
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Pipers
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: popchips_salt_vinegar
+  name: Popchips Salt & Vinegar (Per 23g)
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 13
+  brand: Popchips
+  region_codes: GB
+  serving_grams: 23
+  serving_label: 23 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 23
+  dietary_compat: vegetarian
+- source: brand
+  source_id: popchips_barbeque
+  name: Popchips Barbeque
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 13
+  brand: Popchips
+  region_codes: GB
+  serving_grams: 23
+  serving_label: 23 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 23
+  dietary_compat: vegetarian
+- source: brand
+  source_id: popchips_sour_cream_onion
+  name: Popchips Sour Cream & Onion
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 13
+  brand: Popchips
+  region_codes: GB
+  serving_grams: 23
+  serving_label: 23 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 23
+  dietary_compat: vegetarian
+- source: brand
+  source_id: snack_a_jacks_salt_vinegar
+  name: Snack a Jacks Salt & Vinegar (Per Pack 22g)
+  kcal_per_100g: 380
+  protein_per_100g: 7
+  carbs_per_100g: 80
+  fat_per_100g: 3
+  brand: Snack a Jacks
+  region_codes: GB
+  serving_grams: 22
+  serving_label: 22 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 22
+  dietary_compat: vegetarian
+- source: brand
+  source_id: snack_a_jacks_caramel
+  name: Snack a Jacks Caramel
+  kcal_per_100g: 405
+  protein_per_100g: 7
+  carbs_per_100g: 80
+  fat_per_100g: 5
+  brand: Snack a Jacks
+  region_codes: GB
+  serving_grams: 22
+  serving_label: 22 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 22
+  dietary_compat: vegetarian
+- source: brand
+  source_id: snack_a_jacks_cheese
+  name: Snack a Jacks Cheese
+  kcal_per_100g: 380
+  protein_per_100g: 7
+  carbs_per_100g: 80
+  fat_per_100g: 3
+  brand: Snack a Jacks
+  region_codes: GB
+  serving_grams: 22
+  serving_label: 22 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 22
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bear_yoyos_strawberry
+  name: Bear Yoyos Strawberry (Per Pack 20g)
+  kcal_per_100g: 305
+  protein_per_100g: 0.5
+  carbs_per_100g: 75
+  fat_per_100g: 0.2
+  brand: Bear
+  region_codes: GB
+  serving_grams: 20
+  serving_label: 20 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 20
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bear_alpha_bites_chocolate
+  name: Bear Alphabites Chocolate (Per 30g)
+  kcal_per_100g: 380
+  protein_per_100g: 8
+  carbs_per_100g: 75
+  fat_per_100g: 4
+  brand: Bear
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bear_paws_fruit_strawberry
+  name: Bear Paws Fruit Strawberry
+  kcal_per_100g: 305
+  protein_per_100g: 0.5
+  carbs_per_100g: 75
+  fat_per_100g: 0.2
+  brand: Bear
+  region_codes: GB
+  serving_grams: 20
+  serving_label: 20 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 20
+  dietary_compat: vegetarian
+- source: brand
+  source_id: munchy_seeds_pumpkin_per_30g
+  name: Munchy Seeds Pumpkin (Per 30g)
+  kcal_per_100g: 559
+  protein_per_100g: 30
+  carbs_per_100g: 11
+  fat_per_100g: 49
+  brand: Munchy Seeds
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,brand
+  portion_unit: pack
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: munchy_seeds_savoury_pumpkin
+  name: Munchy Seeds Savoury Pumpkin Mix
+  kcal_per_100g: 559
+  protein_per_100g: 30
+  carbs_per_100g: 11
+  fat_per_100g: 49
+  brand: Munchy Seeds
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: forest_feast_apple_chips
+  name: Forest Feast Apple Chips (Per 30g)
+  kcal_per_100g: 350
+  protein_per_100g: 1
+  carbs_per_100g: 90
+  fat_per_100g: 0.3
+  brand: Forest Feast
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: forest_feast_yogurt_strawberries
+  name: Forest Feast Yogurt Strawberries
+  kcal_per_100g: 415
+  protein_per_100g: 5
+  carbs_per_100g: 67
+  fat_per_100g: 14
+  brand: Forest Feast
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: forest_feast_chilli_lime_corn
+  name: Forest Feast Chilli Lime Corn
+  kcal_per_100g: 480
+  protein_per_100g: 8
+  carbs_per_100g: 60
+  fat_per_100g: 22
+  brand: Forest Feast
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: whitworths_shots_apricot
+  name: Whitworths Apricot Shots (Per Pack 30g)
+  kcal_per_100g: 280
+  protein_per_100g: 3
+  carbs_per_100g: 60
+  fat_per_100g: 0.5
+  brand: Whitworths
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: whitworths_shots_almond_pecan
+  name: Whitworths Shots Almond & Pecan
+  kcal_per_100g: 575
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 49
+  brand: Whitworths
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,brand
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian

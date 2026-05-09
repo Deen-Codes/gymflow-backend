@@ -1,0 +1,843 @@
+# Japanese / Sushi full — Nigiri / Maki / Hand rolls / Sashimi / Donburi / Tempura /
+# Katsu / Yakitori / Gyoza / Ramen / Udon / Soba / Yo Sushi
+
+- source: sushi
+  source_id: sushi_nigiri_salmon
+  name: Salmon Nigiri (Per Piece)
+  kcal_per_100g: 165
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 30
+- source: sushi
+  source_id: sushi_nigiri_tuna
+  name: Tuna Nigiri (Per Piece)
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 1
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 30
+- source: sushi
+  source_id: sushi_nigiri_yellowtail
+  name: Yellowtail Nigiri (Per Piece)
+  kcal_per_100g: 155
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 30
+- source: sushi
+  source_id: sushi_nigiri_eel_unagi
+  name: Eel (Unagi) Nigiri (Per Piece)
+  kcal_per_100g: 175
+  protein_per_100g: 7
+  carbs_per_100g: 23
+  fat_per_100g: 5
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 30
+- source: sushi
+  source_id: sushi_nigiri_prawn
+  name: Prawn (Ebi) Nigiri (Per Piece)
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 0.5
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 30
+- source: sushi
+  source_id: sushi_nigiri_octopus
+  name: Octopus (Tako) Nigiri (Per Piece)
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 0.5
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 30
+- source: sushi
+  source_id: sushi_nigiri_squid
+  name: Squid (Ika) Nigiri (Per Piece)
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 0.5
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 30
+- source: sushi
+  source_id: sushi_nigiri_seabass
+  name: Seabass Nigiri (Per Piece)
+  kcal_per_100g: 145
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 2
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 30
+- source: sushi
+  source_id: sushi_nigiri_egg_tamago
+  name: Tamago (Egg) Nigiri (Per Piece)
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 30
+- source: sushi
+  source_id: sushi_nigiri_mackerel
+  name: Mackerel (Saba) Nigiri (Per Piece)
+  kcal_per_100g: 165
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 30
+- source: sushi
+  source_id: sushi_maki_california_per_piece
+  name: California Roll (Per Piece)
+  kcal_per_100g: 130
+  protein_per_100g: 4
+  carbs_per_100g: 22
+  fat_per_100g: 2
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 25
+  serving_label: item (25 g)
+  tags: japanese,sushi,asian
+  portion_unit: piece
+  unit_grams: 25
+- source: sushi
+  source_id: sushi_maki_california_roll_8pc
+  name: California Roll (8 pcs)
+  kcal_per_100g: 130
+  protein_per_100g: 4
+  carbs_per_100g: 22
+  fat_per_100g: 2
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 200
+- source: sushi
+  source_id: sushi_maki_salmon_avocado_per_piece
+  name: Salmon Avocado Roll (Per Piece)
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 25
+  serving_label: item (25 g)
+  tags: japanese,sushi,asian
+  portion_unit: piece
+  unit_grams: 25
+- source: sushi
+  source_id: sushi_maki_salmon_avocado_8pc
+  name: Salmon Avocado Roll (8 pcs)
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 200
+- source: sushi
+  source_id: sushi_maki_tuna_per_piece
+  name: Tuna Roll (Per Piece)
+  kcal_per_100g: 130
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 1
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 25
+  serving_label: item (25 g)
+  tags: japanese,sushi,asian
+  portion_unit: piece
+  unit_grams: 25
+- source: sushi
+  source_id: sushi_maki_tuna_8pc
+  name: Tuna Roll (8 pcs)
+  kcal_per_100g: 130
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 1
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 200
+- source: sushi
+  source_id: sushi_maki_spicy_tuna_per_piece
+  name: Spicy Tuna Roll (Per Piece)
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 21
+  fat_per_100g: 4
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 25
+  serving_label: item (25 g)
+  tags: japanese,sushi,asian
+  portion_unit: piece
+  unit_grams: 25
+- source: sushi
+  source_id: sushi_maki_dragon_per_piece
+  name: Dragon Roll (Per Piece)
+  kcal_per_100g: 175
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: japanese,sushi,asian
+  portion_unit: piece
+  unit_grams: 30
+- source: sushi
+  source_id: sushi_maki_rainbow_per_piece
+  name: Rainbow Roll (Per Piece)
+  kcal_per_100g: 165
+  protein_per_100g: 7
+  carbs_per_100g: 21
+  fat_per_100g: 5
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: japanese,sushi,asian
+  portion_unit: piece
+  unit_grams: 30
+- source: sushi
+  source_id: sushi_maki_philadelphia_per_piece
+  name: Philadelphia Roll (Per Piece)
+  kcal_per_100g: 175
+  protein_per_100g: 6
+  carbs_per_100g: 21
+  fat_per_100g: 7
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: japanese,sushi,asian
+  portion_unit: piece
+  unit_grams: 30
+- source: sushi
+  source_id: sushi_maki_avocado_cucumber_per_piece
+  name: Avocado & Cucumber Roll (Per Piece)
+  kcal_per_100g: 110
+  protein_per_100g: 2
+  carbs_per_100g: 21
+  fat_per_100g: 2
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 25
+  serving_label: item (25 g)
+  tags: japanese,sushi,asian
+  portion_unit: piece
+  unit_grams: 25
+- source: sushi
+  source_id: sushi_maki_kappa_cucumber_per_piece
+  name: Cucumber (Kappa) Roll (Per Piece)
+  kcal_per_100g: 100
+  protein_per_100g: 2
+  carbs_per_100g: 22
+  fat_per_100g: 0.5
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 25
+  serving_label: item (25 g)
+  tags: japanese,sushi,asian
+  portion_unit: piece
+  unit_grams: 25
+- source: sushi
+  source_id: sushi_maki_tempura_prawn_per_piece
+  name: Tempura Prawn Roll (Per Piece)
+  kcal_per_100g: 195
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: japanese,sushi,asian
+  portion_unit: piece
+  unit_grams: 30
+- source: sushi
+  source_id: sushi_temaki_salmon_avocado
+  name: Salmon & Avocado Hand Roll
+  kcal_per_100g: 195
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 60
+  serving_label: item (60 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 60
+- source: sushi
+  source_id: sushi_temaki_tuna_avocado
+  name: Tuna & Avocado Hand Roll
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 60
+  serving_label: item (60 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 60
+- source: sushi
+  source_id: sushi_temaki_spicy_tuna
+  name: Spicy Tuna Hand Roll
+  kcal_per_100g: 185
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 60
+  serving_label: item (60 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 60
+- source: sushi
+  source_id: sushi_temaki_california
+  name: California Hand Roll
+  kcal_per_100g: 165
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 60
+  serving_label: item (60 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 60
+- source: sushi
+  source_id: sushi_sashimi_salmon_per_piece
+  name: Salmon Sashimi (Per Piece)
+  kcal_per_100g: 170
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 9
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 20
+  serving_label: item (20 g)
+  tags: japanese,sushi,asian
+  portion_unit: piece
+  unit_grams: 20
+- source: sushi
+  source_id: sushi_sashimi_tuna_per_piece
+  name: Tuna Sashimi (Per Piece)
+  kcal_per_100g: 130
+  protein_per_100g: 28
+  carbs_per_100g: 0
+  fat_per_100g: 1
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 20
+  serving_label: item (20 g)
+  tags: japanese,sushi,asian
+  portion_unit: piece
+  unit_grams: 20
+- source: sushi
+  source_id: sushi_sashimi_yellowtail_per_piece
+  name: Yellowtail Sashimi (Per Piece)
+  kcal_per_100g: 145
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 6
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 20
+  serving_label: item (20 g)
+  tags: japanese,sushi,asian
+  portion_unit: piece
+  unit_grams: 20
+- source: sushi
+  source_id: sushi_sashimi_seabass_per_piece
+  name: Seabass Sashimi (Per Piece)
+  kcal_per_100g: 110
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 2
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 20
+  serving_label: item (20 g)
+  tags: japanese,sushi,asian
+  portion_unit: piece
+  unit_grams: 20
+- source: sushi
+  source_id: sushi_donburi_chirashi
+  name: Chirashi Bowl (Mixed Sashimi over Rice)
+  kcal_per_100g: 180
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 350
+- source: sushi
+  source_id: sushi_donburi_unadon
+  name: Unadon (Eel over Rice)
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 26
+  fat_per_100g: 5
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 400
+  serving_label: item (400 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 400
+- source: sushi
+  source_id: sushi_donburi_oyakodon
+  name: Oyakodon (Chicken & Egg over Rice)
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 400
+  serving_label: item (400 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 400
+- source: sushi
+  source_id: sushi_donburi_gyudon
+  name: Gyudon (Beef Bowl)
+  kcal_per_100g: 180
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 400
+  serving_label: item (400 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 400
+- source: sushi
+  source_id: sushi_donburi_katsudon
+  name: Katsudon (Pork Cutlet Bowl)
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 24
+  fat_per_100g: 9
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 400
+  serving_label: item (400 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 400
+- source: japanese
+  source_id: japanese_miso_soup
+  name: Miso Soup
+  kcal_per_100g: 35
+  protein_per_100g: 2
+  carbs_per_100g: 4
+  fat_per_100g: 1
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 250
+- source: japanese
+  source_id: japanese_edamame_steamed
+  name: Edamame Steamed (Per 100g)
+  kcal_per_100g: 120
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 5
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 100
+- source: japanese
+  source_id: japanese_seaweed_salad
+  name: Seaweed Salad (Per 100g)
+  kcal_per_100g: 100
+  protein_per_100g: 1.5
+  carbs_per_100g: 12
+  fat_per_100g: 5
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 100
+- source: japanese
+  source_id: japanese_tempura_prawn_4
+  name: Tempura Prawn (4 pcs)
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 14
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 120
+  serving_label: item (120 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 120
+- source: japanese
+  source_id: japanese_tempura_veg_assort
+  name: Tempura Vegetables (Assortment)
+  kcal_per_100g: 200
+  protein_per_100g: 4
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 130
+  serving_label: item (130 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 130
+- source: japanese
+  source_id: japanese_chicken_katsu_curry
+  name: Chicken Katsu Curry (with Rice)
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 450
+  serving_label: item (450 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 450
+- source: japanese
+  source_id: japanese_pork_katsu
+  name: Pork Tonkatsu (Per Cutlet)
+  kcal_per_100g: 245
+  protein_per_100g: 18
+  carbs_per_100g: 12
+  fat_per_100g: 14
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 130
+  serving_label: item (130 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 130
+- source: japanese
+  source_id: japanese_yakitori_chicken_skewer
+  name: Yakitori Chicken Skewer (Per Skewer)
+  kcal_per_100g: 165
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 6
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 50
+  serving_label: item (50 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 50
+- source: japanese
+  source_id: japanese_takoyaki_per_piece
+  name: Takoyaki (Per Ball)
+  kcal_per_100g: 180
+  protein_per_100g: 6
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 25
+  serving_label: item (25 g)
+  tags: japanese,sushi,asian
+  portion_unit: piece
+  unit_grams: 25
+- source: japanese
+  source_id: japanese_okonomiyaki
+  name: Okonomiyaki (Savoury Pancake)
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 18
+  fat_per_100g: 7
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 250
+- source: japanese
+  source_id: japanese_gyoza_pork_per_piece
+  name: Pork Gyoza (Per Piece)
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 13
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 25
+  serving_label: item (25 g)
+  tags: japanese,sushi,asian
+  portion_unit: piece
+  unit_grams: 25
+- source: japanese
+  source_id: japanese_gyoza_chicken_per_piece
+  name: Chicken Gyoza (Per Piece)
+  kcal_per_100g: 220
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 25
+  serving_label: item (25 g)
+  tags: japanese,sushi,asian
+  portion_unit: piece
+  unit_grams: 25
+- source: japanese
+  source_id: japanese_gyoza_veg_per_piece
+  name: Vegetable Gyoza (Per Piece)
+  kcal_per_100g: 205
+  protein_per_100g: 5
+  carbs_per_100g: 25
+  fat_per_100g: 9
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 25
+  serving_label: item (25 g)
+  tags: japanese,sushi,asian
+  portion_unit: piece
+  unit_grams: 25
+- source: japanese
+  source_id: japanese_ramen_tonkotsu
+  name: Tonkotsu Ramen
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 14
+  fat_per_100g: 6
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 600
+  serving_label: item (600 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 600
+- source: japanese
+  source_id: japanese_ramen_shoyu
+  name: Shoyu Ramen
+  kcal_per_100g: 110
+  protein_per_100g: 7
+  carbs_per_100g: 14
+  fat_per_100g: 3
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 600
+  serving_label: item (600 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 600
+- source: japanese
+  source_id: japanese_ramen_miso
+  name: Miso Ramen
+  kcal_per_100g: 115
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 4
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 600
+  serving_label: item (600 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 600
+- source: japanese
+  source_id: japanese_ramen_spicy_chicken
+  name: Spicy Chicken Ramen
+  kcal_per_100g: 120
+  protein_per_100g: 8
+  carbs_per_100g: 13
+  fat_per_100g: 4
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 600
+  serving_label: item (600 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 600
+- source: japanese
+  source_id: japanese_udon_chicken
+  name: Chicken Udon
+  kcal_per_100g: 115
+  protein_per_100g: 6
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 500
+  serving_label: item (500 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 500
+- source: japanese
+  source_id: japanese_udon_beef
+  name: Beef Udon
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 500
+  serving_label: item (500 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 500
+- source: japanese
+  source_id: japanese_soba_cold
+  name: Cold Soba Noodles (Zaru Soba)
+  kcal_per_100g: 105
+  protein_per_100g: 5
+  carbs_per_100g: 21
+  fat_per_100g: 0.7
+  brand: Japanese / Sushi
+  region_codes: GB
+  serving_grams: 300
+  serving_label: item (300 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 300
+- source: yo_sushi
+  source_id: yo_sushi_chicken_katsu_curry
+  name: Yo Sushi Chicken Katsu Curry
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Yo Sushi
+  region_codes: GB
+  serving_grams: 450
+  serving_label: item (450 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 450
+- source: yo_sushi
+  source_id: yo_sushi_salmon_teriyaki
+  name: Yo Sushi Salmon Teriyaki
+  kcal_per_100g: 175
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  brand: Yo Sushi
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 350
+- source: yo_sushi
+  source_id: yo_sushi_tuna_avocado_uramaki
+  name: Yo Sushi Tuna Avocado Uramaki (8 pcs)
+  kcal_per_100g: 165
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Yo Sushi
+  region_codes: GB
+  serving_grams: 220
+  serving_label: item (220 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 220
+- source: yo_sushi
+  source_id: yo_sushi_california_uramaki
+  name: Yo Sushi California Uramaki (8 pcs)
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 3
+  brand: Yo Sushi
+  region_codes: GB
+  serving_grams: 220
+  serving_label: item (220 g)
+  tags: japanese,sushi,asian
+  portion_unit: meal
+  unit_grams: 220

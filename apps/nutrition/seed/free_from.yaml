@@ -1,0 +1,237 @@
+# free_from.yaml — gluten-free / Free From: Genius bread (white/seeded), Schar pasta/baguette/cookies/crackers, BFree wraps (white/multigrain), Newburn Bakehouse Tiger Loaf, Warburtons GF white/wraps, GF corn flakes, GF sausages, GF tomato sauce, GF breadcrumbs.
+- source: gymflow
+  source_id: genius_white_bread_slice
+  name: Genius Gluten Free White Bread (1 slice)
+  brand: Genius
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 3
+  carbs_per_100g: 47
+  fat_per_100g: 4
+  serving_grams: 35
+  serving_label: 1 slice (35 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,gluten_free,supermarket
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 35
+- source: gymflow
+  source_id: genius_seeded_bread_slice
+  name: Genius Gluten Free Seeded Bread (1 slice)
+  brand: Genius
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 4
+  carbs_per_100g: 42
+  fat_per_100g: 7
+  serving_grams: 35
+  serving_label: 1 slice (35 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,gluten_free,supermarket
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: sesame
+  unit_grams: 35
+- source: gymflow
+  source_id: schar_classic_pasta_per_100
+  name: Schar Gluten Free Pasta, dry (per 100g)
+  brand: Schar
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 6
+  carbs_per_100g: 80
+  fat_per_100g: 1
+  serving_grams: 75
+  serving_label: 1 grams (75 g)
+  portion_unit: grams
+  tags: pantry,branded,pasta,gluten_free
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: schar_baguette_2_pack
+  name: Schar Gluten Free Baguette (1)
+  brand: Schar
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 4
+  serving_grams: 75
+  serving_label: 1 piece (75 g)
+  portion_unit: piece
+  tags: bakery,branded,bread,gluten_free
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 75
+- source: gymflow
+  source_id: bfree_white_wraps
+  name: BFree Gluten Free White Wraps (1)
+  brand: BFree
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 3
+  carbs_per_100g: 45
+  fat_per_100g: 3
+  serving_grams: 56
+  serving_label: 1 wrap (56 g)
+  portion_unit: wrap
+  tags: bakery,branded,bread,wrap,gluten_free,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 56
+- source: gymflow
+  source_id: bfree_multigrain_wraps
+  name: BFree Multigrain Wraps (1)
+  brand: BFree
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 4
+  carbs_per_100g: 42
+  fat_per_100g: 5
+  serving_grams: 56
+  serving_label: 1 wrap (56 g)
+  portion_unit: wrap
+  tags: bakery,branded,bread,wrap,gluten_free,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: sesame
+  unit_grams: 56
+- source: gymflow
+  source_id: newburn_bakehouse_white_loaf_slice
+  name: Newburn Bakehouse Gluten Free Tiger Loaf (1 slice)
+  brand: Newburn Bakehouse
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 3
+  carbs_per_100g: 48
+  fat_per_100g: 4
+  serving_grams: 35
+  serving_label: 1 slice (35 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,gluten_free
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 35
+- source: gymflow
+  source_id: warburtons_gluten_free_white_loaf
+  name: Warburtons Gluten Free White (1 slice)
+  brand: Warburtons
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 3
+  carbs_per_100g: 47
+  fat_per_100g: 4
+  serving_grams: 35
+  serving_label: 1 slice (35 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,gluten_free
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 35
+- source: gymflow
+  source_id: warburtons_gluten_free_wraps
+  name: Warburtons Gluten Free Wraps (1)
+  brand: Warburtons
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 3
+  carbs_per_100g: 45
+  fat_per_100g: 5
+  serving_grams: 60
+  serving_label: 1 wrap (60 g)
+  portion_unit: wrap
+  tags: bakery,branded,bread,wrap,gluten_free,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 60
+- source: gymflow
+  source_id: free_from_corn_flakes_30g
+  name: Gluten Free Corn Flakes (30g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 7.5
+  carbs_per_100g: 84
+  fat_per_100g: 0.9
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: cereal,gluten_free,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: schar_chocolate_cookies_pack
+  name: Schar Gluten Free Chocolate Cookies (1 pack)
+  brand: Schar
+  region_codes: gb
+  kcal_per_100g: 470
+  protein_per_100g: 4
+  carbs_per_100g: 65
+  fat_per_100g: 22
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,branded,biscuit,gluten_free
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,eggs,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: schar_crackers_per_100
+  name: Schar Gluten Free Crackers (per 100g)
+  brand: Schar
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 9
+  carbs_per_100g: 70
+  fat_per_100g: 11
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,branded,gluten_free,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: free_from_sausages_pork_4
+  name: Gluten Free Pork Sausages (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 14
+  carbs_per_100g: 8
+  fat_per_100g: 22
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: meat,gluten_free
+  dietary_compat: pescatarian,gluten_free
+  allergens: sulphites
+  unit_grams: 60
+- source: gymflow
+  source_id: free_from_pasta_sauce_tomato
+  name: Gluten Free Tomato Pasta Sauce (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 55
+  protein_per_100g: 2
+  carbs_per_100g: 8
+  fat_per_100g: 1.5
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: sauce,gluten_free,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: free_from_breadcrumbs_per_100
+  name: Gluten Free Breadcrumbs (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 7
+  carbs_per_100g: 78
+  fat_per_100g: 4
+  serving_grams: 30
+  serving_label: 1 grams (30 g)
+  portion_unit: grams
+  tags: pantry,gluten_free,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''

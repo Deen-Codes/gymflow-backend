@@ -1,5 +1,6 @@
 # branded_pantry.yaml — branded items sold across multiple UK supermarkets.
 # Migrated from chains_starter to live separately from any single-supermarket YAML.
+
 - source: gymflow
   source_id: warburtons_toastie
   name: Warburtons Toastie Thick White
@@ -2929,3 +2930,2289 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 50
+- source: brand
+  source_id: heinz_baked_beans_415
+  name: Heinz Baked Beans (per 100g)
+  kcal_per_100g: 75
+  protein_per_100g: 4.7
+  carbs_per_100g: 13
+  fat_per_100g: 0.2
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 415
+  serving_label: 415 ml
+  tags: tinned,beans
+  portion_unit: ml
+  unit_grams: 415
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: heinz_baked_beans_5pct
+  name: Heinz Baked Beans 5% Less Sugar & Salt
+  kcal_per_100g: 73
+  protein_per_100g: 4.7
+  carbs_per_100g: 12.5
+  fat_per_100g: 0.2
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 415
+  serving_label: 415 g
+  tags: tinned,beans,reduced
+  portion_unit: meal
+  unit_grams: 415
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: heinz_baked_beans_no_added
+  name: Heinz Baked Beans No Added Sugar
+  kcal_per_100g: 72
+  protein_per_100g: 4.7
+  carbs_per_100g: 12
+  fat_per_100g: 0.2
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 415
+  serving_label: 415 g
+  tags: tinned,beans
+  portion_unit: meal
+  unit_grams: 415
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: heinz_baked_beans_curry
+  name: Heinz Curry Baked Beans
+  kcal_per_100g: 95
+  protein_per_100g: 5
+  carbs_per_100g: 14
+  fat_per_100g: 1.5
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 415
+  serving_label: 415 g
+  tags: tinned,beans
+  portion_unit: meal
+  unit_grams: 415
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: heinz_baked_beans_bbq
+  name: Heinz BBQ Baked Beans
+  kcal_per_100g: 92
+  protein_per_100g: 4.5
+  carbs_per_100g: 17
+  fat_per_100g: 0.5
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 415
+  serving_label: 415 g
+  tags: tinned,beans
+  portion_unit: meal
+  unit_grams: 415
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: heinz_beanz_meatballs
+  name: Heinz Beanz & Meatballs
+  kcal_per_100g: 95
+  protein_per_100g: 6
+  carbs_per_100g: 11
+  fat_per_100g: 3
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 410
+  serving_label: 410 g
+  tags: tinned,beans,beef
+  portion_unit: meal
+  unit_grams: 410
+- source: brand
+  source_id: heinz_beanz_pork_sausages
+  name: Heinz Beanz & Pork Sausages
+  kcal_per_100g: 100
+  protein_per_100g: 6
+  carbs_per_100g: 12
+  fat_per_100g: 3.5
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 415
+  serving_label: 415 g
+  tags: tinned,beans,sausage
+  portion_unit: meal
+  unit_grams: 415
+- source: brand
+  source_id: heinz_spaghetti_hoops
+  name: Heinz Spaghetti Hoops
+  kcal_per_100g: 60
+  protein_per_100g: 1.6
+  carbs_per_100g: 13
+  fat_per_100g: 0.2
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: tinned,pasta
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: heinz_spaghetti_in_tomato
+  name: Heinz Spaghetti in Tomato Sauce
+  kcal_per_100g: 60
+  protein_per_100g: 1.6
+  carbs_per_100g: 13
+  fat_per_100g: 0.2
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: tinned,pasta
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: heinz_macaroni_cheese_400
+  name: Heinz Macaroni Cheese
+  kcal_per_100g: 100
+  protein_per_100g: 4
+  carbs_per_100g: 12
+  fat_per_100g: 4
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 ml
+  tags: tinned,pasta
+  portion_unit: ml
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: brand
+  source_id: heinz_tomato_soup_400
+  name: Heinz Cream of Tomato Soup
+  kcal_per_100g: 60
+  protein_per_100g: 1.5
+  carbs_per_100g: 8
+  fat_per_100g: 2.5
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 ml
+  tags: tinned,soup
+  portion_unit: ml
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: brand
+  source_id: heinz_tomato_soup_no_added
+  name: Heinz Tomato Soup No Added Sugar
+  kcal_per_100g: 50
+  protein_per_100g: 1.5
+  carbs_per_100g: 7
+  fat_per_100g: 2
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: tinned,soup
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: brand
+  source_id: heinz_chicken_soup_400
+  name: Heinz Cream of Chicken Soup
+  kcal_per_100g: 50
+  protein_per_100g: 2
+  carbs_per_100g: 5
+  fat_per_100g: 2.5
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 ml
+  tags: tinned,soup,chicken
+  portion_unit: ml
+  unit_grams: 400
+- source: brand
+  source_id: heinz_mushroom_soup_400
+  name: Heinz Cream of Mushroom Soup
+  kcal_per_100g: 50
+  protein_per_100g: 1
+  carbs_per_100g: 5
+  fat_per_100g: 2.8
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 ml
+  tags: tinned,soup
+  portion_unit: ml
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: brand
+  source_id: heinz_chicken_noodle_soup_400
+  name: Heinz Chicken Noodle Soup
+  kcal_per_100g: 35
+  protein_per_100g: 1.6
+  carbs_per_100g: 5
+  fat_per_100g: 0.8
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 ml
+  tags: tinned,soup,chicken
+  portion_unit: ml
+  unit_grams: 400
+- source: brand
+  source_id: heinz_oxtail_soup_400
+  name: Heinz Oxtail Soup
+  kcal_per_100g: 40
+  protein_per_100g: 2
+  carbs_per_100g: 5
+  fat_per_100g: 1
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 ml
+  tags: tinned,soup,beef
+  portion_unit: ml
+  unit_grams: 400
+- source: brand
+  source_id: heinz_minestrone_soup_400
+  name: Heinz Minestrone Soup
+  kcal_per_100g: 35
+  protein_per_100g: 1.2
+  carbs_per_100g: 6
+  fat_per_100g: 0.5
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 ml
+  tags: tinned,soup
+  portion_unit: ml
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: heinz_lentil_soup_400
+  name: Heinz Lentil Soup
+  kcal_per_100g: 50
+  protein_per_100g: 3
+  carbs_per_100g: 8
+  fat_per_100g: 0.5
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 ml
+  tags: tinned,soup
+  portion_unit: ml
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: heinz_scotch_broth_400
+  name: Heinz Scotch Broth
+  kcal_per_100g: 45
+  protein_per_100g: 2
+  carbs_per_100g: 7
+  fat_per_100g: 0.7
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 ml
+  tags: tinned,soup
+  portion_unit: ml
+  unit_grams: 400
+- source: brand
+  source_id: heinz_ketchup_per_15g
+  name: Heinz Tomato Ketchup
+  kcal_per_100g: 105
+  protein_per_100g: 1.2
+  carbs_per_100g: 24
+  fat_per_100g: 0.1
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,sauce
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: heinz_ketchup_50pct_less
+  name: Heinz 50% Less Sugar Ketchup
+  kcal_per_100g: 80
+  protein_per_100g: 1.2
+  carbs_per_100g: 17
+  fat_per_100g: 0.1
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,sauce
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: heinz_salad_cream
+  name: Heinz Salad Cream
+  kcal_per_100g: 320
+  protein_per_100g: 1.5
+  carbs_per_100g: 14
+  fat_per_100g: 28
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,sauce
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: heinz_mayo_real
+  name: Heinz Real Mayonnaise
+  kcal_per_100g: 720
+  protein_per_100g: 1
+  carbs_per_100g: 0.6
+  fat_per_100g: 79
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,sauce
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: heinz_mayo_light
+  name: Heinz Lightest Mayonnaise
+  kcal_per_100g: 280
+  protein_per_100g: 0.5
+  carbs_per_100g: 5
+  fat_per_100g: 28
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,sauce
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: heinz_brown_sauce
+  name: Heinz Brown Sauce
+  kcal_per_100g: 160
+  protein_per_100g: 1.3
+  carbs_per_100g: 36
+  fat_per_100g: 0
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,sauce
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: heinz_bbq_sauce
+  name: Heinz BBQ Sauce Classic
+  kcal_per_100g: 195
+  protein_per_100g: 1
+  carbs_per_100g: 45
+  fat_per_100g: 0
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,sauce
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: heinz_burger_sauce
+  name: Heinz Burger Sauce
+  kcal_per_100g: 380
+  protein_per_100g: 1
+  carbs_per_100g: 22
+  fat_per_100g: 31
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,sauce
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hellmanns_real_mayo
+  name: Hellmann's Real Mayonnaise
+  kcal_per_100g: 722
+  protein_per_100g: 1.1
+  carbs_per_100g: 1
+  fat_per_100g: 79
+  brand: Hellmann's
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,sauce
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hellmanns_light_mayo
+  name: Hellmann's Light Mayonnaise
+  kcal_per_100g: 287
+  protein_per_100g: 0.7
+  carbs_per_100g: 6
+  fat_per_100g: 28
+  brand: Hellmann's
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,sauce
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hellmanns_lighter_mayo
+  name: Hellmann's Lighter than Light Mayonnaise
+  kcal_per_100g: 76
+  protein_per_100g: 0.7
+  carbs_per_100g: 8.5
+  fat_per_100g: 4
+  brand: Hellmann's
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,sauce
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hellmanns_garlic_mayo
+  name: Hellmann's Garlic Mayonnaise
+  kcal_per_100g: 700
+  protein_per_100g: 1
+  carbs_per_100g: 3
+  fat_per_100g: 76
+  brand: Hellmann's
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,sauce
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hellmanns_chipotle_mayo
+  name: Hellmann's Chipotle Mayonnaise
+  kcal_per_100g: 525
+  protein_per_100g: 1
+  carbs_per_100g: 6
+  fat_per_100g: 55
+  brand: Hellmann's
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,sauce
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hellmanns_vegan_mayo
+  name: Hellmann's Vegan Mayo
+  kcal_per_100g: 595
+  protein_per_100g: 0.5
+  carbs_per_100g: 1
+  fat_per_100g: 65
+  brand: Hellmann's
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,sauce
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: hellmanns_thousand_island
+  name: Hellmann's Thousand Island Dressing
+  kcal_per_100g: 410
+  protein_per_100g: 1
+  carbs_per_100g: 18
+  fat_per_100g: 36
+  brand: Hellmann's
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,dressing
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: hellmanns_caesar_dressing
+  name: Hellmann's Caesar Dressing
+  kcal_per_100g: 415
+  protein_per_100g: 4
+  carbs_per_100g: 5
+  fat_per_100g: 42
+  brand: Hellmann's
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,dressing
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: hellmanns_french_dressing
+  name: Hellmann's French Dressing
+  kcal_per_100g: 270
+  protein_per_100g: 0.5
+  carbs_per_100g: 13
+  fat_per_100g: 24
+  brand: Hellmann's
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,dressing
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: hp_sauce
+  name: HP Sauce (Brown Sauce)
+  kcal_per_100g: 130
+  protein_per_100g: 1
+  carbs_per_100g: 30
+  fat_per_100g: 0
+  brand: HP
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,sauce
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: hp_bbq_classic
+  name: HP Classic BBQ Sauce
+  kcal_per_100g: 195
+  protein_per_100g: 1
+  carbs_per_100g: 45
+  fat_per_100g: 0
+  brand: HP
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,sauce
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: lea_perrins_worcester
+  name: Lea & Perrins Worcestershire Sauce
+  kcal_per_100g: 90
+  protein_per_100g: 0.7
+  carbs_per_100g: 22
+  fat_per_100g: 0
+  brand: Lea & Perrins
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: condiment,sauce
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: branston_pickle_original
+  name: Branston Original Pickle
+  kcal_per_100g: 130
+  protein_per_100g: 1
+  carbs_per_100g: 31
+  fat_per_100g: 0.2
+  brand: Branston
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: condiment,pickle
+  portion_unit: meal
+  unit_grams: 25
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: branston_pickle_small_chunk
+  name: Branston Small Chunk Pickle
+  kcal_per_100g: 130
+  protein_per_100g: 1
+  carbs_per_100g: 31
+  fat_per_100g: 0.2
+  brand: Branston
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: condiment,pickle
+  portion_unit: meal
+  unit_grams: 25
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: branston_baked_beans
+  name: Branston Baked Beans
+  kcal_per_100g: 78
+  protein_per_100g: 4.7
+  carbs_per_100g: 13
+  fat_per_100g: 0.3
+  brand: Branston
+  region_codes: GB
+  serving_grams: 410
+  serving_label: 410 g
+  tags: tinned,beans
+  portion_unit: meal
+  unit_grams: 410
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: branston_relish_burger
+  name: Branston Burger Relish
+  kcal_per_100g: 175
+  protein_per_100g: 1
+  carbs_per_100g: 40
+  fat_per_100g: 0.5
+  brand: Branston
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: condiment,relish
+  portion_unit: meal
+  unit_grams: 25
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: marmite_per_4g
+  name: Marmite
+  kcal_per_100g: 245
+  protein_per_100g: 24
+  carbs_per_100g: 28
+  fat_per_100g: 0.1
+  brand: Marmite
+  region_codes: GB
+  serving_grams: 4
+  serving_label: 4 g
+  tags: spread
+  portion_unit: meal
+  unit_grams: 4
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: vegemite_per_5g
+  name: Vegemite
+  kcal_per_100g: 180
+  protein_per_100g: 22
+  carbs_per_100g: 18
+  fat_per_100g: 0.1
+  brand: Vegemite
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: spread
+  portion_unit: meal
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: bovril_per_8g
+  name: Bovril Beef Drink
+  kcal_per_100g: 230
+  protein_per_100g: 38
+  carbs_per_100g: 22
+  fat_per_100g: 0.7
+  brand: Bovril
+  region_codes: GB
+  serving_grams: 8
+  serving_label: 8 g
+  tags: drink,beef
+  portion_unit: meal
+  unit_grams: 8
+- source: brand
+  source_id: colmans_english_mustard
+  name: Colman's English Mustard
+  kcal_per_100g: 165
+  protein_per_100g: 8
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  brand: Colman's
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: condiment,mustard
+  portion_unit: meal
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: colmans_dijon_mustard
+  name: Colman's Dijon Mustard
+  kcal_per_100g: 150
+  protein_per_100g: 7
+  carbs_per_100g: 7
+  fat_per_100g: 11
+  brand: Colman's
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: condiment,mustard
+  portion_unit: meal
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: frenchs_yellow_mustard
+  name: French's Classic Yellow Mustard
+  kcal_per_100g: 60
+  protein_per_100g: 4
+  carbs_per_100g: 4
+  fat_per_100g: 3.5
+  brand: French's
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: condiment,mustard
+  portion_unit: meal
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: muller_corner_chocolate_balls
+  name: Müller Corner Chocolate Balls
+  kcal_per_100g: 130
+  protein_per_100g: 4.5
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  brand: Müller
+  region_codes: GB
+  serving_grams: 135
+  serving_label: 135 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 135
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_corner_mint_choc
+  name: Müller Corner Mint Chocolate
+  kcal_per_100g: 120
+  protein_per_100g: 4
+  carbs_per_100g: 16
+  fat_per_100g: 4
+  brand: Müller
+  region_codes: GB
+  serving_grams: 135
+  serving_label: 135 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 135
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_corner_oreo
+  name: Müller Corner Oreo
+  kcal_per_100g: 130
+  protein_per_100g: 4
+  carbs_per_100g: 18
+  fat_per_100g: 4.5
+  brand: Müller
+  region_codes: GB
+  serving_grams: 135
+  serving_label: 135 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 135
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_corner_kitkat
+  name: Müller Corner KitKat
+  kcal_per_100g: 130
+  protein_per_100g: 4
+  carbs_per_100g: 18
+  fat_per_100g: 4.5
+  brand: Müller
+  region_codes: GB
+  serving_grams: 135
+  serving_label: 135 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 135
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_corner_caramel_shortcake
+  name: Müller Corner Caramel Shortcake
+  kcal_per_100g: 150
+  protein_per_100g: 4
+  carbs_per_100g: 20
+  fat_per_100g: 5.5
+  brand: Müller
+  region_codes: GB
+  serving_grams: 135
+  serving_label: 135 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 135
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_corner_crunch_chocolate_hoops
+  name: Müller Corner Crunch Chocolate Hoops
+  kcal_per_100g: 130
+  protein_per_100g: 4
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  brand: Müller
+  region_codes: GB
+  serving_grams: 135
+  serving_label: 135 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 135
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_light_strawberry
+  name: Müller Light Strawberry
+  kcal_per_100g: 50
+  protein_per_100g: 4.5
+  carbs_per_100g: 7
+  fat_per_100g: 0.1
+  brand: Müller Light
+  region_codes: GB
+  serving_grams: 160
+  serving_label: 160 g
+  tags: yogurt,dairy,light
+  portion_unit: meal
+  unit_grams: 160
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_light_vanilla
+  name: Müller Light Vanilla
+  kcal_per_100g: 50
+  protein_per_100g: 4.5
+  carbs_per_100g: 7
+  fat_per_100g: 0.1
+  brand: Müller Light
+  region_codes: GB
+  serving_grams: 160
+  serving_label: 160 g
+  tags: yogurt,dairy,light
+  portion_unit: meal
+  unit_grams: 160
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_light_toffee
+  name: Müller Light Toffee
+  kcal_per_100g: 50
+  protein_per_100g: 4.5
+  carbs_per_100g: 7
+  fat_per_100g: 0.1
+  brand: Müller Light
+  region_codes: GB
+  serving_grams: 160
+  serving_label: 160 g
+  tags: yogurt,dairy,light
+  portion_unit: meal
+  unit_grams: 160
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_light_cherry
+  name: Müller Light Cherry
+  kcal_per_100g: 50
+  protein_per_100g: 4.5
+  carbs_per_100g: 7
+  fat_per_100g: 0.1
+  brand: Müller Light
+  region_codes: GB
+  serving_grams: 160
+  serving_label: 160 g
+  tags: yogurt,dairy,light
+  portion_unit: meal
+  unit_grams: 160
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_light_raspberry
+  name: Müller Light Raspberry
+  kcal_per_100g: 50
+  protein_per_100g: 4.5
+  carbs_per_100g: 7
+  fat_per_100g: 0.1
+  brand: Müller Light
+  region_codes: GB
+  serving_grams: 160
+  serving_label: 160 g
+  tags: yogurt,dairy,light
+  portion_unit: meal
+  unit_grams: 160
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_light_lemon_cheesecake
+  name: Müller Light Lemon Cheesecake
+  kcal_per_100g: 55
+  protein_per_100g: 4
+  carbs_per_100g: 8
+  fat_per_100g: 0.2
+  brand: Müller Light
+  region_codes: GB
+  serving_grams: 160
+  serving_label: 160 g
+  tags: yogurt,dairy,light
+  portion_unit: meal
+  unit_grams: 160
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_rice_original
+  name: Müller Rice Original
+  kcal_per_100g: 110
+  protein_per_100g: 4
+  carbs_per_100g: 18
+  fat_per_100g: 2.5
+  brand: Müller Rice
+  region_codes: GB
+  serving_grams: 180
+  serving_label: 180 g
+  tags: yogurt,rice,dairy
+  portion_unit: meal
+  unit_grams: 180
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_rice_strawberry
+  name: Müller Rice Strawberry
+  kcal_per_100g: 115
+  protein_per_100g: 3.5
+  carbs_per_100g: 19
+  fat_per_100g: 2.5
+  brand: Müller Rice
+  region_codes: GB
+  serving_grams: 180
+  serving_label: 180 g
+  tags: yogurt,rice,dairy
+  portion_unit: meal
+  unit_grams: 180
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_rice_chocolate
+  name: Müller Rice Chocolate
+  kcal_per_100g: 130
+  protein_per_100g: 4
+  carbs_per_100g: 21
+  fat_per_100g: 3
+  brand: Müller Rice
+  region_codes: GB
+  serving_grams: 180
+  serving_label: 180 g
+  tags: yogurt,rice,dairy
+  portion_unit: meal
+  unit_grams: 180
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_rice_apple
+  name: Müller Rice Apple
+  kcal_per_100g: 110
+  protein_per_100g: 3.5
+  carbs_per_100g: 19
+  fat_per_100g: 2
+  brand: Müller Rice
+  region_codes: GB
+  serving_grams: 180
+  serving_label: 180 g
+  tags: yogurt,rice,dairy
+  portion_unit: meal
+  unit_grams: 180
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_rice_vanilla_custard
+  name: Müller Rice Vanilla Custard
+  kcal_per_100g: 120
+  protein_per_100g: 3.5
+  carbs_per_100g: 19
+  fat_per_100g: 3
+  brand: Müller Rice
+  region_codes: GB
+  serving_grams: 180
+  serving_label: 180 g
+  tags: yogurt,rice,dairy
+  portion_unit: meal
+  unit_grams: 180
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_vitality_strawberry
+  name: Müller Vitality Strawberry Drink
+  kcal_per_100g: 60
+  protein_per_100g: 3
+  carbs_per_100g: 10
+  fat_per_100g: 0.8
+  brand: Müller Vitality
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt-drink,probiotic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_vitality_blueberry
+  name: Müller Vitality Blueberry Drink
+  kcal_per_100g: 60
+  protein_per_100g: 3
+  carbs_per_100g: 10
+  fat_per_100g: 0.8
+  brand: Müller Vitality
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt-drink,probiotic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_frijj_chocolate
+  name: FRijj Chocolate Milkshake
+  kcal_per_100g: 78
+  protein_per_100g: 3.6
+  carbs_per_100g: 11
+  fat_per_100g: 1.8
+  brand: FRijj
+  region_codes: GB
+  serving_grams: 471
+  serving_label: 471 g
+  tags: milkshake,dairy
+  portion_unit: meal
+  unit_grams: 471
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_frijj_strawberry
+  name: FRijj Strawberry Milkshake
+  kcal_per_100g: 78
+  protein_per_100g: 3.6
+  carbs_per_100g: 11
+  fat_per_100g: 1.8
+  brand: FRijj
+  region_codes: GB
+  serving_grams: 471
+  serving_label: 471 g
+  tags: milkshake,dairy
+  portion_unit: meal
+  unit_grams: 471
+  dietary_compat: vegetarian
+- source: brand
+  source_id: muller_frijj_banana
+  name: FRijj Banana Milkshake
+  kcal_per_100g: 78
+  protein_per_100g: 3.6
+  carbs_per_100g: 11
+  fat_per_100g: 1.8
+  brand: FRijj
+  region_codes: GB
+  serving_grams: 471
+  serving_label: 471 g
+  tags: milkshake,dairy
+  portion_unit: meal
+  unit_grams: 471
+  dietary_compat: vegetarian
+- source: brand
+  source_id: activia_natural_125
+  name: Activia Natural
+  kcal_per_100g: 75
+  protein_per_100g: 4.5
+  carbs_per_100g: 6
+  fat_per_100g: 3.6
+  brand: Activia
+  region_codes: GB
+  serving_grams: 125
+  serving_label: 125 g
+  tags: yogurt,probiotic
+  portion_unit: meal
+  unit_grams: 125
+  dietary_compat: vegetarian
+- source: brand
+  source_id: activia_peach_125
+  name: Activia Peach
+  kcal_per_100g: 80
+  protein_per_100g: 3.6
+  carbs_per_100g: 12
+  fat_per_100g: 1.8
+  brand: Activia
+  region_codes: GB
+  serving_grams: 125
+  serving_label: 125 g
+  tags: yogurt,probiotic
+  portion_unit: meal
+  unit_grams: 125
+  dietary_compat: vegetarian
+- source: brand
+  source_id: activia_cherry_125
+  name: Activia Cherry
+  kcal_per_100g: 80
+  protein_per_100g: 3.6
+  carbs_per_100g: 12
+  fat_per_100g: 1.8
+  brand: Activia
+  region_codes: GB
+  serving_grams: 125
+  serving_label: 125 g
+  tags: yogurt,probiotic
+  portion_unit: meal
+  unit_grams: 125
+  dietary_compat: vegetarian
+- source: brand
+  source_id: activia_fat_free_strawberry
+  name: Activia Fat Free Strawberry
+  kcal_per_100g: 50
+  protein_per_100g: 4
+  carbs_per_100g: 8
+  fat_per_100g: 0.1
+  brand: Activia
+  region_codes: GB
+  serving_grams: 125
+  serving_label: 125 g
+  tags: yogurt,probiotic,fat-free
+  portion_unit: meal
+  unit_grams: 125
+  dietary_compat: vegetarian
+- source: brand
+  source_id: activia_kefir_natural
+  name: Activia Kefir Natural
+  kcal_per_100g: 50
+  protein_per_100g: 3.5
+  carbs_per_100g: 5
+  fat_per_100g: 1.5
+  brand: Activia Kefir
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: kefir,probiotic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: activia_kefir_strawberry
+  name: Activia Kefir Strawberry
+  kcal_per_100g: 60
+  protein_per_100g: 3
+  carbs_per_100g: 9
+  fat_per_100g: 1.2
+  brand: Activia Kefir
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: kefir,probiotic
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: innocent_mango_passion_smoothie
+  name: Innocent Mango & Passion Fruit Smoothie
+  kcal_per_100g: 60
+  protein_per_100g: 0.5
+  carbs_per_100g: 13
+  fat_per_100g: 0.2
+  brand: Innocent
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: smoothie,drink
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: innocent_super_smoothie_energise
+  name: Innocent Super Smoothie Energise
+  kcal_per_100g: 55
+  protein_per_100g: 1
+  carbs_per_100g: 12
+  fat_per_100g: 0.3
+  brand: Innocent
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: smoothie,drink
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: innocent_super_smoothie_antioxidant
+  name: Innocent Super Smoothie Antioxidant
+  kcal_per_100g: 55
+  protein_per_100g: 0.6
+  carbs_per_100g: 12
+  fat_per_100g: 0.3
+  brand: Innocent
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: smoothie,drink
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: innocent_smoothie_kids_pure_fruit
+  name: Innocent Kids Smoothie Pure Fruit
+  kcal_per_100g: 60
+  protein_per_100g: 0.5
+  carbs_per_100g: 13
+  fat_per_100g: 0.2
+  brand: Innocent
+  region_codes: GB
+  serving_grams: 180
+  serving_label: 180 g
+  tags: smoothie,drink
+  portion_unit: meal
+  unit_grams: 180
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: innocent_orange_juice_smooth
+  name: Innocent Orange Juice Smooth
+  kcal_per_100g: 41
+  protein_per_100g: 0.6
+  carbs_per_100g: 9
+  fat_per_100g: 0.1
+  brand: Innocent
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: juice,drink
+  portion_unit: meal
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: innocent_apple_juice
+  name: Innocent Apple Juice
+  kcal_per_100g: 47
+  protein_per_100g: 0.1
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Innocent
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: juice,drink
+  portion_unit: meal
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: innocent_coconut_water
+  name: Innocent Coconut Water
+  kcal_per_100g: 17
+  protein_per_100g: 0
+  carbs_per_100g: 4
+  fat_per_100g: 0
+  brand: Innocent
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: drink
+  portion_unit: meal
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: tropicana_smooth_orange
+  name: Tropicana Smooth Orange
+  kcal_per_100g: 41
+  protein_per_100g: 0.6
+  carbs_per_100g: 9
+  fat_per_100g: 0.1
+  brand: Tropicana
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: juice,drink
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: tropicana_pure_apple
+  name: Tropicana Pure Apple
+  kcal_per_100g: 47
+  protein_per_100g: 0.1
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Tropicana
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: juice,drink
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: tropicana_orange_pineapple
+  name: Tropicana Orange & Pineapple
+  kcal_per_100g: 45
+  protein_per_100g: 0.5
+  carbs_per_100g: 10
+  fat_per_100g: 0.1
+  brand: Tropicana
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: juice,drink
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: tropicana_pure_premium_grapefruit
+  name: Tropicana Pure Premium Grapefruit
+  kcal_per_100g: 38
+  protein_per_100g: 0.5
+  carbs_per_100g: 8
+  fat_per_100g: 0.1
+  brand: Tropicana
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: juice,drink
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: robinsons_squash_orange_diluted
+  name: Robinsons Orange Squash (Diluted Per 100ml)
+  kcal_per_100g: 8
+  protein_per_100g: 0.1
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Robinsons
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: squash,drink,low-cal
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: ribena_light_500
+  name: Ribena Light 500ml
+  kcal_per_100g: 12
+  protein_per_100g: 0.1
+  carbs_per_100g: 2.5
+  fat_per_100g: 0
+  brand: Ribena
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,low-cal
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: coke_classic_330
+  name: Coca-Cola Classic 330ml
+  kcal_per_100g: 42
+  protein_per_100g: 0
+  carbs_per_100g: 10.6
+  fat_per_100g: 0
+  brand: Coca-Cola
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: coke_classic_500
+  name: Coca-Cola Classic 500ml
+  kcal_per_100g: 42
+  protein_per_100g: 0
+  carbs_per_100g: 10.6
+  fat_per_100g: 0
+  brand: Coca-Cola
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,carbonated
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: coke_classic_600
+  name: Coca-Cola Classic 600ml
+  kcal_per_100g: 42
+  protein_per_100g: 0
+  carbs_per_100g: 10.6
+  fat_per_100g: 0
+  brand: Coca-Cola
+  region_codes: GB
+  serving_grams: 600
+  serving_label: 600 ml
+  tags: drink,carbonated
+  portion_unit: ml
+  unit_grams: 600
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: coke_zero_330
+  name: Coca-Cola Zero Sugar 330ml
+  kcal_per_100g: 0.3
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Coca-Cola
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated,zero
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: coke_zero_500
+  name: Coca-Cola Zero Sugar 500ml
+  kcal_per_100g: 0.3
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Coca-Cola
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,carbonated,zero
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: coke_diet_330
+  name: Diet Coke 330ml
+  kcal_per_100g: 0.4
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Coca-Cola
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated,diet
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: coke_diet_500
+  name: Diet Coke 500ml
+  kcal_per_100g: 0.4
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Coca-Cola
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,carbonated,diet
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: pepsi_max_330
+  name: Pepsi Max 330ml
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Pepsi
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated,zero
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: pepsi_max_500
+  name: Pepsi Max 500ml
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Pepsi
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,carbonated,zero
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: pepsi_diet_330
+  name: Diet Pepsi 330ml
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Pepsi
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated,diet
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: pepsi_regular_330
+  name: Pepsi 330ml
+  kcal_per_100g: 43
+  protein_per_100g: 0
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Pepsi
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: fanta_orange_330
+  name: Fanta Orange 330ml
+  kcal_per_100g: 28
+  protein_per_100g: 0
+  carbs_per_100g: 7
+  fat_per_100g: 0
+  brand: Fanta
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: fanta_orange_500
+  name: Fanta Orange 500ml
+  kcal_per_100g: 28
+  protein_per_100g: 0
+  carbs_per_100g: 7
+  fat_per_100g: 0
+  brand: Fanta
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,carbonated
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: fanta_lemon_330
+  name: Fanta Lemon 330ml
+  kcal_per_100g: 28
+  protein_per_100g: 0
+  carbs_per_100g: 7
+  fat_per_100g: 0
+  brand: Fanta
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: fanta_zero_orange_330
+  name: Fanta Zero Orange 330ml
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Fanta
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated,zero
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: fanta_grape_330
+  name: Fanta Grape 330ml
+  kcal_per_100g: 28
+  protein_per_100g: 0
+  carbs_per_100g: 7
+  fat_per_100g: 0
+  brand: Fanta
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: sprite_330
+  name: Sprite 330ml
+  kcal_per_100g: 19
+  protein_per_100g: 0
+  carbs_per_100g: 5
+  fat_per_100g: 0
+  brand: Sprite
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: sprite_500
+  name: Sprite 500ml
+  kcal_per_100g: 19
+  protein_per_100g: 0
+  carbs_per_100g: 5
+  fat_per_100g: 0
+  brand: Sprite
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,carbonated
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: sprite_zero_330
+  name: Sprite Zero 330ml
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Sprite
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated,zero
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: dr_pepper_330
+  name: Dr Pepper 330ml
+  kcal_per_100g: 41
+  protein_per_100g: 0
+  carbs_per_100g: 10
+  fat_per_100g: 0
+  brand: Dr Pepper
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: dr_pepper_zero_330
+  name: Dr Pepper Zero 330ml
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Dr Pepper
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated,zero
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: 7up_330
+  name: 7UP 330ml
+  kcal_per_100g: 30
+  protein_per_100g: 0
+  carbs_per_100g: 7.5
+  fat_per_100g: 0
+  brand: 7UP
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: 7up_free_330
+  name: 7UP Free 330ml
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: 7UP
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated,zero
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: tango_orange_330
+  name: Tango Orange 330ml
+  kcal_per_100g: 25
+  protein_per_100g: 0
+  carbs_per_100g: 6
+  fat_per_100g: 0
+  brand: Tango
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: tango_apple_330
+  name: Tango Apple 330ml
+  kcal_per_100g: 25
+  protein_per_100g: 0
+  carbs_per_100g: 6
+  fat_per_100g: 0
+  brand: Tango
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: tango_dark_berry_330
+  name: Tango Dark Berry 330ml
+  kcal_per_100g: 25
+  protein_per_100g: 0
+  carbs_per_100g: 6
+  fat_per_100g: 0
+  brand: Tango
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: rubicon_mango_500
+  name: Rubicon Mango Sparkling 500ml
+  kcal_per_100g: 50
+  protein_per_100g: 0
+  carbs_per_100g: 12
+  fat_per_100g: 0
+  brand: Rubicon
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,carbonated
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: rubicon_lychee_500
+  name: Rubicon Lychee Sparkling 500ml
+  kcal_per_100g: 50
+  protein_per_100g: 0
+  carbs_per_100g: 12
+  fat_per_100g: 0
+  brand: Rubicon
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,carbonated
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: rubicon_passion_500
+  name: Rubicon Passion Fruit Sparkling 500ml
+  kcal_per_100g: 50
+  protein_per_100g: 0
+  carbs_per_100g: 12
+  fat_per_100g: 0
+  brand: Rubicon
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,carbonated
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: irn_bru_330
+  name: Irn-Bru 330ml
+  kcal_per_100g: 41
+  protein_per_100g: 0
+  carbs_per_100g: 10
+  fat_per_100g: 0
+  brand: Irn-Bru
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: irn_bru_xtra_330
+  name: Irn-Bru Xtra 330ml
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Irn-Bru
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,carbonated,zero
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: lucozade_sport_orange_500
+  name: Lucozade Sport Orange 500ml
+  kcal_per_100g: 28
+  protein_per_100g: 0
+  carbs_per_100g: 6.4
+  fat_per_100g: 0
+  brand: Lucozade Sport
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,sport
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: lucozade_sport_raspberry_500
+  name: Lucozade Sport Raspberry 500ml
+  kcal_per_100g: 28
+  protein_per_100g: 0
+  carbs_per_100g: 6.4
+  fat_per_100g: 0
+  brand: Lucozade Sport
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,sport
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: lucozade_sport_zero_orange_500
+  name: Lucozade Sport Zero Orange 500ml
+  kcal_per_100g: 9
+  protein_per_100g: 0
+  carbs_per_100g: 2
+  fat_per_100g: 0
+  brand: Lucozade Sport
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,sport,zero
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: lucozade_energy_original_380
+  name: Lucozade Energy Original 380ml
+  kcal_per_100g: 70
+  protein_per_100g: 0
+  carbs_per_100g: 17
+  fat_per_100g: 0
+  brand: Lucozade
+  region_codes: GB
+  serving_grams: 380
+  serving_label: 380 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 380
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: lucozade_energy_zero_380
+  name: Lucozade Energy Zero 380ml
+  kcal_per_100g: 4
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Lucozade
+  region_codes: GB
+  serving_grams: 380
+  serving_label: 380 ml
+  tags: drink,energy,zero
+  portion_unit: ml
+  unit_grams: 380
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: red_bull_250
+  name: Red Bull 250ml
+  kcal_per_100g: 45
+  protein_per_100g: 0.5
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Red Bull
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: red_bull_355
+  name: Red Bull 355ml
+  kcal_per_100g: 45
+  protein_per_100g: 0.5
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Red Bull
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 355
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: red_bull_473
+  name: Red Bull 473ml
+  kcal_per_100g: 45
+  protein_per_100g: 0.5
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Red Bull
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 473
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: red_bull_sugar_free_250
+  name: Red Bull Sugar Free 250ml
+  kcal_per_100g: 3
+  protein_per_100g: 0.4
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Red Bull
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,energy,zero
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: red_bull_zero_250
+  name: Red Bull Zero 250ml
+  kcal_per_100g: 5
+  protein_per_100g: 0.4
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Red Bull
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,energy,zero
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: red_bull_yellow_edition_250
+  name: Red Bull Yellow Edition (Tropical) 250ml
+  kcal_per_100g: 45
+  protein_per_100g: 0.5
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Red Bull
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: red_bull_red_edition_250
+  name: Red Bull Red Edition (Watermelon) 250ml
+  kcal_per_100g: 45
+  protein_per_100g: 0.5
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Red Bull
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: red_bull_blue_edition_250
+  name: Red Bull Blue Edition (Blueberry) 250ml
+  kcal_per_100g: 45
+  protein_per_100g: 0.5
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Red Bull
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: yorkshire_tea_per_bag
+  name: Yorkshire Tea (per brewed cup, no milk)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Yorkshire Tea
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink,tea
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: pg_tips_per_bag
+  name: PG Tips (per brewed cup, no milk)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: PG Tips
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: drink,tea
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: twinings_earl_grey_brewed
+  name: Twinings Earl Grey (brewed)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Twinings
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,tea
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: twinings_english_breakfast_brewed
+  name: Twinings English Breakfast (brewed)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Twinings
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,tea
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: twinings_green_tea_brewed
+  name: Twinings Green Tea (brewed)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Twinings
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,tea
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: twinings_camomile_brewed
+  name: Twinings Camomile (brewed)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Twinings
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,tea
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: twinings_peppermint_brewed
+  name: Twinings Peppermint (brewed)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Twinings
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,tea
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: tetley_per_bag_brewed
+  name: Tetley Tea (brewed, no milk)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Tetley
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,tea
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: nescafe_gold_dry_2g
+  name: Nescafé Gold Instant Coffee (per 2g)
+  kcal_per_100g: 350
+  protein_per_100g: 18
+  carbs_per_100g: 27
+  fat_per_100g: 1
+  brand: Nescafé Gold
+  region_codes: GB
+  serving_grams: 2
+  serving_label: 2 g
+  tags: drink,coffee
+  portion_unit: meal
+  unit_grams: 2
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: nescafe_original_dry_2g
+  name: Nescafé Original Instant Coffee (per 2g)
+  kcal_per_100g: 350
+  protein_per_100g: 14
+  carbs_per_100g: 35
+  fat_per_100g: 0.5
+  brand: Nescafé
+  region_codes: GB
+  serving_grams: 2
+  serving_label: 2 g
+  tags: drink,coffee
+  portion_unit: meal
+  unit_grams: 2
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: kenco_smooth_dry_2g
+  name: Kenco Smooth Instant Coffee (per 2g)
+  kcal_per_100g: 360
+  protein_per_100g: 14
+  carbs_per_100g: 38
+  fat_per_100g: 1
+  brand: Kenco
+  region_codes: GB
+  serving_grams: 2
+  serving_label: 2 g
+  tags: drink,coffee
+  portion_unit: meal
+  unit_grams: 2
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: kenco_rich_dry_2g
+  name: Kenco Rich Instant Coffee (per 2g)
+  kcal_per_100g: 360
+  protein_per_100g: 14
+  carbs_per_100g: 38
+  fat_per_100g: 1
+  brand: Kenco
+  region_codes: GB
+  serving_grams: 2
+  serving_label: 2 g
+  tags: drink,coffee
+  portion_unit: meal
+  unit_grams: 2
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: douwe_egberts_pure_indulgence
+  name: Douwe Egberts Pure Indulgence Instant
+  kcal_per_100g: 365
+  protein_per_100g: 16
+  carbs_per_100g: 32
+  fat_per_100g: 0.5
+  brand: Douwe Egberts
+  region_codes: GB
+  serving_grams: 2
+  serving_label: 2 g
+  tags: drink,coffee
+  portion_unit: meal
+  unit_grams: 2
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: lavazza_qualita_oro_dry
+  name: Lavazza Qualità Oro Ground Coffee
+  kcal_per_100g: 200
+  protein_per_100g: 14
+  carbs_per_100g: 0
+  fat_per_100g: 14
+  brand: Lavazza
+  region_codes: GB
+  serving_grams: 7
+  serving_label: 7 g
+  tags: drink,coffee
+  portion_unit: meal
+  unit_grams: 7
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: lavazza_crema_e_gusto_dry
+  name: Lavazza Crema e Gusto Ground Coffee
+  kcal_per_100g: 200
+  protein_per_100g: 14
+  carbs_per_100g: 0
+  fat_per_100g: 14
+  brand: Lavazza
+  region_codes: GB
+  serving_grams: 7
+  serving_label: 7 g
+  tags: drink,coffee
+  portion_unit: meal
+  unit_grams: 7
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: horlicks_dry_30g
+  name: Horlicks Original Drink Powder
+  kcal_per_100g: 380
+  protein_per_100g: 13
+  carbs_per_100g: 73
+  fat_per_100g: 4
+  brand: Horlicks
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: drink,malt
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ovaltine_dry_30g
+  name: Ovaltine Original Drink Powder
+  kcal_per_100g: 370
+  protein_per_100g: 8
+  carbs_per_100g: 79
+  fat_per_100g: 1.5
+  brand: Ovaltine
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: drink,malt
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cadbury_hot_chocolate_dry_28g
+  name: Cadbury Drinking Chocolate (per 28g)
+  kcal_per_100g: 365
+  protein_per_100g: 8
+  carbs_per_100g: 73
+  fat_per_100g: 5
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 28
+  serving_label: 28 g
+  tags: drink,chocolate
+  portion_unit: meal
+  unit_grams: 28
+  dietary_compat: vegetarian
+- source: brand
+  source_id: galaxy_hot_chocolate_dry
+  name: Galaxy Hot Chocolate Powder
+  kcal_per_100g: 410
+  protein_per_100g: 9
+  carbs_per_100g: 70
+  fat_per_100g: 12
+  brand: Galaxy
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: drink,chocolate
+  portion_unit: meal
+  unit_grams: 25
+  dietary_compat: vegetarian

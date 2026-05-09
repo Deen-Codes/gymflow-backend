@@ -1,0 +1,1012 @@
+# Final batch to break 10K — Common workout meals (chicken+brown rice+broccoli, salmon+quinoa, etc.),
+# Quick meals (jacket potato variants), UK staples (bacon/sausage sandwiches, BLT, ploughman's),
+# Cafe seasonal items (Costa/Pret porridge, super grain bowls, chia pots),
+# Combo plates (curry+rice, biryani, fajitas, quesadillas, tacos, burrito bowls, pho/ramen/udon bowls),
+# Greek/Italian classics (souvlaki, carbonara, lasagne, risotto, homemade pizza),
+# Protein shakes (with milk/water, post-workout/pre-workout)
+
+- source: homemade
+  source_id: misc_avocado_brown_rice_bowl
+  name: Avocado & Brown Rice Bowl
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: misc_chicken_pesto_brown_rice
+  name: Chicken Pesto with Brown Rice
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: misc_quinoa_kale_chickpea_bowl
+  name: Quinoa Kale & Chickpea Bowl
+  kcal_per_100g: 165
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: misc_tuna_avocado_brown_rice
+  name: Tuna & Avocado Brown Rice Bowl
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: misc_chicken_sweet_potato_kale
+  name: Chicken, Sweet Potato & Kale
+  kcal_per_100g: 165
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: misc_grilled_salmon_quinoa
+  name: Grilled Salmon with Quinoa
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: misc_grilled_chicken_brown_rice_avo
+  name: Grilled Chicken, Brown Rice & Avocado
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: misc_lamb_kofta_couscous
+  name: Lamb Kofta with Couscous
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: misc_chicken_chickpea_curry
+  name: Chicken & Chickpea Curry
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: misc_tofu_stir_fry_brown_rice
+  name: Tofu Stir Fry with Brown Rice
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  brand: Homemade,vegan,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: misc_chicken_teriyaki_rice
+  name: Chicken Teriyaki with Rice
+  kcal_per_100g: 175
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: misc_salmon_teriyaki_rice
+  name: Salmon Teriyaki with Rice
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: misc_beef_teriyaki_rice
+  name: Beef Teriyaki with Rice
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: misc_chicken_yakitori_rice
+  name: Chicken Yakitori with Rice
+  kcal_per_100g: 175
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: misc_tuna_jacket_potato
+  name: Tuna Mayo Jacket Potato
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: misc_chilli_jacket_potato_homemade
+  name: Chilli Jacket Potato Homemade
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: homemade
+  source_id: misc_baked_beans_jacket_potato
+  name: Baked Beans Jacket Potato
+  kcal_per_100g: 145
+  protein_per_100g: 7
+  carbs_per_100g: 25
+  fat_per_100g: 2
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: misc_cheese_baked_beans_jacket
+  name: Cheese & Baked Beans Jacket Potato
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: misc_cheese_jacket_potato
+  name: Cheese Jacket Potato
+  kcal_per_100g: 175
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: misc_chicken_mayo_jacket
+  name: Chicken Mayo Jacket Potato
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: misc_coleslaw_jacket_potato
+  name: Coleslaw Jacket Potato
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: misc_curry_jacket_potato
+  name: Curry Jacket Potato
+  kcal_per_100g: 165
+  protein_per_100g: 10
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: homemade
+  source_id: misc_uk_bacon_sandwich
+  name: Bacon Sandwich (Per Sandwich)
+  kcal_per_100g: 360
+  protein_per_100g: 16
+  carbs_per_100g: 30
+  fat_per_100g: 18
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: misc_uk_sausage_sandwich
+  name: Sausage Sandwich (Per Sandwich)
+  kcal_per_100g: 365
+  protein_per_100g: 15
+  carbs_per_100g: 32
+  fat_per_100g: 18
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 220
+  serving_label: 220 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 220
+- source: homemade
+  source_id: misc_uk_bacon_sausage_sandwich
+  name: Bacon & Sausage Sandwich
+  kcal_per_100g: 405
+  protein_per_100g: 18
+  carbs_per_100g: 30
+  fat_per_100g: 22
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 240
+  serving_label: 240 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 240
+- source: homemade
+  source_id: misc_uk_egg_sandwich
+  name: Egg Mayo Sandwich (Homemade)
+  kcal_per_100g: 285
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 175
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: misc_uk_blt_homemade
+  name: BLT (Homemade)
+  kcal_per_100g: 295
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 14
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: misc_uk_ploughmans_homemade
+  name: Ploughman's Lunch (Homemade)
+  kcal_per_100g: 295
+  protein_per_100g: 14
+  carbs_per_100g: 32
+  fat_per_100g: 14
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: costa
+  source_id: cafe_costa_fruit_toast
+  name: Costa Fruit Toast (Per Slice)
+  kcal_per_100g: 215
+  protein_per_100g: 5
+  carbs_per_100g: 38
+  fat_per_100g: 5
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: costa
+  source_id: cafe_costa_porridge_with_compote
+  name: Costa Porridge with Mixed Berries
+  kcal_per_100g: 195
+  protein_per_100g: 5
+  carbs_per_100g: 32
+  fat_per_100g: 5
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 280
+- source: costa
+  source_id: cafe_costa_protein_pot
+  name: Costa Protein Pot Egg & Bacon
+  kcal_per_100g: 285
+  protein_per_100g: 17
+  carbs_per_100g: 5
+  fat_per_100g: 22
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 130
+- source: pret_a_manger
+  source_id: cafe_pret_porridge_compote
+  name: Pret Porridge with Mixed Berry Compote
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 25
+  fat_per_100g: 5
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: pret_a_manger
+  source_id: cafe_pret_ham_cheese_baguette
+  name: Pret Ham & Cheese Baguette
+  kcal_per_100g: 285
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 240
+  serving_label: 240 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 240
+- source: pret_a_manger
+  source_id: cafe_pret_super_grain_bowl_chicken_v2
+  name: Pret Super Grain Bowl Chicken
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: pret_a_manger
+  source_id: cafe_pret_super_seed_grain_bowl
+  name: Pret Super Seed Grain Bowl
+  kcal_per_100g: 175
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: pret_a_manger
+  source_id: cafe_pret_chocolate_mousse_pot
+  name: Pret Chocolate Mousse Pot
+  kcal_per_100g: 285
+  protein_per_100g: 5
+  carbs_per_100g: 30
+  fat_per_100g: 17
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: pret_a_manger
+  source_id: cafe_pret_chia_pot_strawberry
+  name: Pret Chia Pot Strawberry
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 17
+  fat_per_100g: 6
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: pret_a_manger
+  source_id: cafe_pret_chia_pot_chocolate
+  name: Pret Chia Pot Chocolate
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 17
+  fat_per_100g: 9
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: misc_chicken_curry_naan_combo
+  name: Chicken Curry & Naan (Combo Plate)
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 30
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 550
+  serving_label: 550 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 550
+- source: homemade
+  source_id: misc_lamb_curry_rice_combo
+  name: Lamb Curry & Rice (Combo Plate)
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 550
+  serving_label: 550 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 550
+- source: homemade
+  source_id: misc_chicken_biryani_naan
+  name: Chicken Biryani with Naan
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: homemade
+  source_id: misc_chicken_burger_chips_homemade
+  name: Homemade Chicken Burger & Chips
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 25
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: homemade
+  source_id: misc_beef_burger_chips_homemade
+  name: Homemade Beef Burger & Chips
+  kcal_per_100g: 280
+  protein_per_100g: 14
+  carbs_per_100g: 25
+  fat_per_100g: 14
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: homemade
+  source_id: misc_chicken_fajita_homemade
+  name: Homemade Chicken Fajitas
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: misc_steak_fajita_homemade
+  name: Homemade Steak Fajitas
+  kcal_per_100g: 215
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: misc_chicken_quesadilla_homemade
+  name: Homemade Chicken Quesadilla
+  kcal_per_100g: 285
+  protein_per_100g: 16
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: homemade
+  source_id: misc_chicken_enchiladas_homemade
+  name: Homemade Chicken Enchiladas
+  kcal_per_100g: 195
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: misc_chicken_tacos_homemade_3
+  name: Homemade Chicken Tacos (3 pcs)
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 240
+  serving_label: 240 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 240
+- source: homemade
+  source_id: misc_beef_tacos_homemade_3
+  name: Homemade Beef Tacos (3 pcs)
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 240
+  serving_label: 240 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 240
+- source: homemade
+  source_id: misc_burrito_bowl_chicken_homemade
+  name: Homemade Chicken Burrito Bowl
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: misc_burrito_bowl_steak_homemade
+  name: Homemade Steak Burrito Bowl
+  kcal_per_100g: 175
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: misc_pho_homemade_combo
+  name: Pho Bowl Homemade
+  kcal_per_100g: 110
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 3
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 600
+  serving_label: 600 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 600
+- source: homemade
+  source_id: misc_ramen_homemade_combo
+  name: Homemade Ramen Bowl
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 600
+  serving_label: 600 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 600
+- source: homemade
+  source_id: misc_udon_homemade_combo
+  name: Homemade Udon Bowl
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: homemade
+  source_id: misc_shawarma_chicken_plate
+  name: Chicken Shawarma Plate (Homemade)
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: misc_falafel_plate_homemade
+  name: Homemade Falafel Plate
+  kcal_per_100g: 175
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Homemade,vegan,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: misc_meze_plate_homemade
+  name: Mezze Plate (Homemade)
+  kcal_per_100g: 195
+  protein_per_100g: 7
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: misc_grilled_halloumi_salad
+  name: Grilled Halloumi & Salad
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 9
+  fat_per_100g: 17
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: misc_greek_chicken_souvlaki_plate
+  name: Greek Chicken Souvlaki Plate
+  kcal_per_100g: 175
+  protein_per_100g: 18
+  carbs_per_100g: 14
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: misc_greek_lamb_souvlaki_plate
+  name: Greek Lamb Souvlaki Plate
+  kcal_per_100g: 195
+  protein_per_100g: 16
+  carbs_per_100g: 14
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: misc_italian_carbonara_plate
+  name: Italian Carbonara Plate
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: misc_italian_lasagne_plate
+  name: Italian Lasagne Plate
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: misc_italian_risotto_plate
+  name: Italian Risotto Plate (Mushroom)
+  kcal_per_100g: 195
+  protein_per_100g: 6
+  carbs_per_100g: 28
+  fat_per_100g: 7
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: misc_italian_pizza_homemade_slice
+  name: Homemade Pizza (Per Slice)
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: misc_italian_pasta_pomodoro
+  name: Pasta Pomodoro
+  kcal_per_100g: 165
+  protein_per_100g: 6
+  carbs_per_100g: 28
+  fat_per_100g: 4
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: misc_protein_shake_chocolate_homemade
+  name: Chocolate Protein Shake (Homemade with Milk)
+  kcal_per_100g: 175
+  protein_per_100g: 25
+  carbs_per_100g: 12
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: misc_protein_shake_vanilla_homemade
+  name: Vanilla Protein Shake (Homemade with Milk)
+  kcal_per_100g: 175
+  protein_per_100g: 25
+  carbs_per_100g: 12
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: misc_protein_shake_strawberry_water
+  name: Strawberry Protein Shake with Water
+  kcal_per_100g: 110
+  protein_per_100g: 25
+  carbs_per_100g: 4
+  fat_per_100g: 1
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: misc_protein_shake_chocolate_water
+  name: Chocolate Protein Shake with Water
+  kcal_per_100g: 110
+  protein_per_100g: 25
+  carbs_per_100g: 4
+  fat_per_100g: 1
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: misc_post_workout_protein_oat_shake
+  name: Post-Workout Protein Oat Shake
+  kcal_per_100g: 245
+  protein_per_100g: 25
+  carbs_per_100g: 30
+  fat_per_100g: 3
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: misc_pre_workout_carb_protein_shake
+  name: Pre-Workout Carb + Protein Shake
+  kcal_per_100g: 215
+  protein_per_100g: 17
+  carbs_per_100g: 28
+  fat_per_100g: 3
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400

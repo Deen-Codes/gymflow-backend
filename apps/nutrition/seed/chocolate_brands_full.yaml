@@ -1,0 +1,829 @@
+# Chocolate brands — Mars, Snickers, Twix, Bounty, Maltesers, Galaxy, Milky Way,
+# KitKat, Smarties, Aero, Yorkie, Rolo, Toffee Crisp, Lion, Munchies, Milkybar,
+# Ferrero Rocher, Kinder
+
+- source: brand
+  source_id: mars_twix_50
+  name: Twix (Twin Pack)
+  kcal_per_100g: 495
+  protein_per_100g: 5
+  carbs_per_100g: 64
+  fat_per_100g: 24
+  brand: Twix
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bar (50 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mars_bounty_57
+  name: Bounty Bar (Twin)
+  kcal_per_100g: 478
+  protein_per_100g: 4
+  carbs_per_100g: 58
+  fat_per_100g: 26
+  brand: Bounty
+  region_codes: GB
+  serving_grams: 57
+  serving_label: bar (57 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 57
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mars_maltesers_37
+  name: Maltesers Bag
+  kcal_per_100g: 505
+  protein_per_100g: 8
+  carbs_per_100g: 61
+  fat_per_100g: 25
+  brand: Maltesers
+  region_codes: GB
+  serving_grams: 37
+  serving_label: bar (37 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 37
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mars_maltesers_pouch
+  name: Maltesers Pouch (102g)
+  kcal_per_100g: 505
+  protein_per_100g: 8
+  carbs_per_100g: 61
+  fat_per_100g: 25
+  brand: Maltesers
+  region_codes: GB
+  serving_grams: 102
+  serving_label: bar (102 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 102
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mars_maltesers_buttons
+  name: Maltesers Buttons
+  kcal_per_100g: 530
+  protein_per_100g: 8
+  carbs_per_100g: 56
+  fat_per_100g: 30
+  brand: Maltesers
+  region_codes: GB
+  serving_grams: 32.4
+  serving_label: bar (32.4 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 32.4
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mars_galaxy_42
+  name: Galaxy Smooth Milk Chocolate
+  kcal_per_100g: 549
+  protein_per_100g: 7
+  carbs_per_100g: 57
+  fat_per_100g: 32
+  brand: Galaxy
+  region_codes: GB
+  serving_grams: 42
+  serving_label: bar (42 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 42
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mars_galaxy_caramel
+  name: Galaxy Caramel
+  kcal_per_100g: 482
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Galaxy
+  region_codes: GB
+  serving_grams: 48
+  serving_label: bar (48 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 48
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mars_galaxy_minstrels
+  name: Galaxy Minstrels
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 25
+  brand: Galaxy
+  region_codes: GB
+  serving_grams: 42
+  serving_label: bar (42 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 42
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mars_galaxy_ripple
+  name: Galaxy Ripple
+  kcal_per_100g: 553
+  protein_per_100g: 7
+  carbs_per_100g: 56
+  fat_per_100g: 33
+  brand: Galaxy
+  region_codes: GB
+  serving_grams: 33
+  serving_label: bar (33 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 33
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mars_galaxy_truffle
+  name: Galaxy Truffle
+  kcal_per_100g: 558
+  protein_per_100g: 7
+  carbs_per_100g: 55
+  fat_per_100g: 33
+  brand: Galaxy
+  region_codes: GB
+  serving_grams: 38
+  serving_label: bar (38 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 38
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mars_milky_way
+  name: Milky Way
+  kcal_per_100g: 446
+  protein_per_100g: 5
+  carbs_per_100g: 70
+  fat_per_100g: 16
+  brand: Milky Way
+  region_codes: GB
+  serving_grams: 21.5
+  serving_label: bar (21.5 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 21.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mars_milky_way_magic_stars
+  name: Milky Way Magic Stars
+  kcal_per_100g: 553
+  protein_per_100g: 8
+  carbs_per_100g: 57
+  fat_per_100g: 32
+  brand: Milky Way
+  region_codes: GB
+  serving_grams: 33
+  serving_label: bar (33 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 33
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mars_milky_way_crispy_rolls
+  name: Milky Way Crispy Rolls
+  kcal_per_100g: 530
+  protein_per_100g: 7
+  carbs_per_100g: 57
+  fat_per_100g: 30
+  brand: Milky Way
+  region_codes: GB
+  serving_grams: 22.5
+  serving_label: bar (22.5 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 22.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mars_celebrations
+  name: Mars Celebrations (per piece avg)
+  kcal_per_100g: 488
+  protein_per_100g: 5
+  carbs_per_100g: 62
+  fat_per_100g: 24
+  brand: Celebrations
+  region_codes: GB
+  serving_grams: 9
+  serving_label: bar (9 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 9
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mars_skittles_45
+  name: Skittles
+  kcal_per_100g: 405
+  protein_per_100g: 0
+  carbs_per_100g: 90
+  fat_per_100g: 4.5
+  brand: Skittles
+  region_codes: GB
+  serving_grams: 45
+  serving_label: bar (45 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mars_skittles_165g
+  name: Skittles Big Pack 165g
+  kcal_per_100g: 405
+  protein_per_100g: 0
+  carbs_per_100g: 90
+  fat_per_100g: 4.5
+  brand: Skittles
+  region_codes: GB
+  serving_grams: 165
+  serving_label: bar (165 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 165
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mars_starburst_45
+  name: Starburst Original
+  kcal_per_100g: 410
+  protein_per_100g: 0
+  carbs_per_100g: 84
+  fat_per_100g: 8
+  brand: Starburst
+  region_codes: GB
+  serving_grams: 45
+  serving_label: bar (45 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mars_revels
+  name: Mars Revels
+  kcal_per_100g: 495
+  protein_per_100g: 6
+  carbs_per_100g: 62
+  fat_per_100g: 24
+  brand: Revels
+  region_codes: GB
+  serving_grams: 35
+  serving_label: bar (35 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 35
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kitkat_4finger
+  name: KitKat 4-Finger
+  kcal_per_100g: 518
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 27
+  brand: Nestlé KitKat
+  region_codes: GB
+  serving_grams: 41.5
+  serving_label: bar (41.5 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 41.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kitkat_2finger
+  name: KitKat 2-Finger
+  kcal_per_100g: 518
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 27
+  brand: Nestlé KitKat
+  region_codes: GB
+  serving_grams: 21
+  serving_label: bar (21 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 21
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kitkat_chunky_milk
+  name: KitKat Chunky Milk
+  kcal_per_100g: 530
+  protein_per_100g: 7
+  carbs_per_100g: 57
+  fat_per_100g: 29
+  brand: Nestlé KitKat
+  region_codes: GB
+  serving_grams: 40
+  serving_label: bar (40 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kitkat_chunky_white
+  name: KitKat Chunky White
+  kcal_per_100g: 547
+  protein_per_100g: 7
+  carbs_per_100g: 56
+  fat_per_100g: 32
+  brand: Nestlé KitKat
+  region_codes: GB
+  serving_grams: 40
+  serving_label: bar (40 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kitkat_chunky_peanut_butter
+  name: KitKat Chunky Peanut Butter
+  kcal_per_100g: 535
+  protein_per_100g: 9
+  carbs_per_100g: 53
+  fat_per_100g: 30
+  brand: Nestlé KitKat
+  region_codes: GB
+  serving_grams: 42
+  serving_label: bar (42 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 42
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kitkat_chunky_caramel
+  name: KitKat Chunky Caramel
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 27
+  brand: Nestlé KitKat
+  region_codes: GB
+  serving_grams: 43.5
+  serving_label: bar (43.5 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 43.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kitkat_chunky_salted_caramel
+  name: KitKat Chunky Salted Caramel
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 27
+  brand: Nestlé KitKat
+  region_codes: GB
+  serving_grams: 43.5
+  serving_label: bar (43.5 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 43.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kitkat_dark
+  name: KitKat Dark
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 56
+  fat_per_100g: 28
+  brand: Nestlé KitKat
+  region_codes: GB
+  serving_grams: 41.5
+  serving_label: bar (41.5 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 41.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kitkat_white
+  name: KitKat White
+  kcal_per_100g: 530
+  protein_per_100g: 7
+  carbs_per_100g: 58
+  fat_per_100g: 29
+  brand: Nestlé KitKat
+  region_codes: GB
+  serving_grams: 41.5
+  serving_label: bar (41.5 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 41.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kitkat_senses
+  name: KitKat Senses
+  kcal_per_100g: 540
+  protein_per_100g: 7
+  carbs_per_100g: 55
+  fat_per_100g: 31
+  brand: Nestlé KitKat
+  region_codes: GB
+  serving_grams: 31.5
+  serving_label: bar (31.5 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 31.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: smarties_38
+  name: Smarties
+  kcal_per_100g: 470
+  protein_per_100g: 5
+  carbs_per_100g: 75
+  fat_per_100g: 17
+  brand: Nestlé Smarties
+  region_codes: GB
+  serving_grams: 38
+  serving_label: bar (38 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 38
+  dietary_compat: vegetarian
+- source: brand
+  source_id: aero_bubbly_milk
+  name: Aero Bubbly Milk
+  kcal_per_100g: 520
+  protein_per_100g: 7
+  carbs_per_100g: 58
+  fat_per_100g: 29
+  brand: Nestlé Aero
+  region_codes: GB
+  serving_grams: 27
+  serving_label: bar (27 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 27
+  dietary_compat: vegetarian
+- source: brand
+  source_id: aero_bubbly_mint
+  name: Aero Bubbly Mint
+  kcal_per_100g: 520
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 29
+  brand: Nestlé Aero
+  region_codes: GB
+  serving_grams: 27
+  serving_label: bar (27 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 27
+  dietary_compat: vegetarian
+- source: brand
+  source_id: aero_bubbly_orange
+  name: Aero Bubbly Orange
+  kcal_per_100g: 520
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 29
+  brand: Nestlé Aero
+  region_codes: GB
+  serving_grams: 27
+  serving_label: bar (27 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 27
+  dietary_compat: vegetarian
+- source: brand
+  source_id: aero_bubbly_caramel
+  name: Aero Bubbly Caramel
+  kcal_per_100g: 510
+  protein_per_100g: 5
+  carbs_per_100g: 62
+  fat_per_100g: 28
+  brand: Nestlé Aero
+  region_codes: GB
+  serving_grams: 27
+  serving_label: bar (27 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 27
+  dietary_compat: vegetarian
+- source: brand
+  source_id: yorkie_milk
+  name: Yorkie Milk
+  kcal_per_100g: 540
+  protein_per_100g: 7
+  carbs_per_100g: 58
+  fat_per_100g: 30
+  brand: Nestlé Yorkie
+  region_codes: GB
+  serving_grams: 46
+  serving_label: bar (46 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 46
+  dietary_compat: vegetarian
+- source: brand
+  source_id: yorkie_raisin_biscuit
+  name: Yorkie Raisin & Biscuit
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 62
+  fat_per_100g: 26
+  brand: Nestlé Yorkie
+  region_codes: GB
+  serving_grams: 44
+  serving_label: bar (44 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 44
+  dietary_compat: vegetarian
+- source: brand
+  source_id: rolo
+  name: Rolo
+  kcal_per_100g: 491
+  protein_per_100g: 5
+  carbs_per_100g: 67
+  fat_per_100g: 22
+  brand: Nestlé Rolo
+  region_codes: GB
+  serving_grams: 41.6
+  serving_label: bar (41.6 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 41.6
+  dietary_compat: vegetarian
+- source: brand
+  source_id: toffee_crisp
+  name: Toffee Crisp
+  kcal_per_100g: 500
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 27
+  brand: Nestlé Toffee Crisp
+  region_codes: GB
+  serving_grams: 38
+  serving_label: bar (38 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 38
+  dietary_compat: vegetarian
+- source: brand
+  source_id: lion_bar
+  name: Lion Bar
+  kcal_per_100g: 488
+  protein_per_100g: 5
+  carbs_per_100g: 65
+  fat_per_100g: 22
+  brand: Nestlé Lion
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bar (50 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: lion_white
+  name: Lion White
+  kcal_per_100g: 500
+  protein_per_100g: 5
+  carbs_per_100g: 64
+  fat_per_100g: 24
+  brand: Nestlé Lion
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bar (50 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: munchies
+  name: Nestlé Munchies
+  kcal_per_100g: 480
+  protein_per_100g: 5
+  carbs_per_100g: 65
+  fat_per_100g: 22
+  brand: Nestlé Munchies
+  region_codes: GB
+  serving_grams: 36
+  serving_label: bar (36 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 36
+  dietary_compat: vegetarian
+- source: brand
+  source_id: after_eight
+  name: Nestlé After Eight (per mint)
+  kcal_per_100g: 425
+  protein_per_100g: 3
+  carbs_per_100g: 75
+  fat_per_100g: 12
+  brand: Nestlé After Eight
+  region_codes: GB
+  serving_grams: 7.5
+  serving_label: bar (7.5 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 7.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: polo_mints
+  name: Polo Mints
+  kcal_per_100g: 400
+  protein_per_100g: 0
+  carbs_per_100g: 99
+  fat_per_100g: 0.5
+  brand: Nestlé Polo
+  region_codes: GB
+  serving_grams: 34
+  serving_label: bar (34 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 34
+  dietary_compat: vegetarian
+- source: brand
+  source_id: polo_fruit
+  name: Polo Fruits
+  kcal_per_100g: 380
+  protein_per_100g: 0
+  carbs_per_100g: 95
+  fat_per_100g: 0
+  brand: Nestlé Polo
+  region_codes: GB
+  serving_grams: 33
+  serving_label: bar (33 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 33
+  dietary_compat: vegetarian
+- source: brand
+  source_id: milky_bar
+  name: Milkybar Kid
+  kcal_per_100g: 555
+  protein_per_100g: 8
+  carbs_per_100g: 56
+  fat_per_100g: 32
+  brand: Nestlé Milkybar
+  region_codes: GB
+  serving_grams: 25
+  serving_label: bar (25 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 25
+  dietary_compat: vegetarian
+- source: brand
+  source_id: milky_bar_buttons
+  name: Milkybar Buttons
+  kcal_per_100g: 555
+  protein_per_100g: 8
+  carbs_per_100g: 56
+  fat_per_100g: 32
+  brand: Nestlé Milkybar
+  region_codes: GB
+  serving_grams: 30
+  serving_label: bar (30 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: quality_street
+  name: Quality Street (per piece avg)
+  kcal_per_100g: 460
+  protein_per_100g: 4
+  carbs_per_100g: 64
+  fat_per_100g: 21
+  brand: Nestlé Quality Street
+  region_codes: GB
+  serving_grams: 9
+  serving_label: bar (9 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 9
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ferrero_rocher_3pk
+  name: Ferrero Rocher (3-pack)
+  kcal_per_100g: 580
+  protein_per_100g: 8
+  carbs_per_100g: 45
+  fat_per_100g: 41
+  brand: Ferrero Rocher
+  region_codes: GB
+  serving_grams: 37.5
+  serving_label: bar (37.5 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 37.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ferrero_rocher_per_piece
+  name: Ferrero Rocher (per piece)
+  kcal_per_100g: 580
+  protein_per_100g: 8
+  carbs_per_100g: 45
+  fat_per_100g: 41
+  brand: Ferrero Rocher
+  region_codes: GB
+  serving_grams: 12.5
+  serving_label: bar (12.5 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 12.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ferrero_kinder_bueno
+  name: Kinder Bueno
+  kcal_per_100g: 568
+  protein_per_100g: 9
+  carbs_per_100g: 51
+  fat_per_100g: 36
+  brand: Kinder
+  region_codes: GB
+  serving_grams: 43
+  serving_label: bar (43 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 43
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ferrero_kinder_bueno_white
+  name: Kinder Bueno White
+  kcal_per_100g: 580
+  protein_per_100g: 8
+  carbs_per_100g: 53
+  fat_per_100g: 37
+  brand: Kinder
+  region_codes: GB
+  serving_grams: 39
+  serving_label: bar (39 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 39
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ferrero_kinder_chocolate
+  name: Kinder Chocolate
+  kcal_per_100g: 565
+  protein_per_100g: 9
+  carbs_per_100g: 53
+  fat_per_100g: 35
+  brand: Kinder
+  region_codes: GB
+  serving_grams: 12.5
+  serving_label: bar (12.5 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 12.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ferrero_kinder_surprise
+  name: Kinder Surprise Egg
+  kcal_per_100g: 565
+  protein_per_100g: 8
+  carbs_per_100g: 56
+  fat_per_100g: 33
+  brand: Kinder
+  region_codes: GB
+  serving_grams: 20
+  serving_label: bar (20 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 20
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ferrero_kinder_happy_hippo
+  name: Kinder Happy Hippo (per piece)
+  kcal_per_100g: 575
+  protein_per_100g: 9
+  carbs_per_100g: 53
+  fat_per_100g: 37
+  brand: Kinder
+  region_codes: GB
+  serving_grams: 20.7
+  serving_label: bar (20.7 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 20.7
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ferrero_nutella_per_15g
+  name: Ferrero Nutella (per 15 g)
+  kcal_per_100g: 539
+  protein_per_100g: 6
+  carbs_per_100g: 58
+  fat_per_100g: 31
+  brand: Nutella
+  region_codes: GB
+  serving_grams: 15
+  serving_label: bar (15 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ferrero_nutella_b_ready
+  name: Nutella B-Ready
+  kcal_per_100g: 530
+  protein_per_100g: 7
+  carbs_per_100g: 58
+  fat_per_100g: 29
+  brand: Nutella
+  region_codes: GB
+  serving_grams: 22
+  serving_label: bar (22 g)
+  tags: chocolate,sweet,confectionery
+  portion_unit: bar
+  unit_grams: 22
+  dietary_compat: vegetarian

@@ -1,0 +1,738 @@
+# Biscuits brands — McVitie's full / Walkers Shortbread / Tunnock's / Mr Kipling /
+# Cadbury Fingers / Maryland / Fox's / Oreo / Bahlsen / Lotus / Kallo
+
+- source: brand
+  source_id: mcv_digestives_per_biscuit
+  name: McVitie's Digestive (Per Biscuit)
+  kcal_per_100g: 470
+  protein_per_100g: 7
+  carbs_per_100g: 63
+  fat_per_100g: 21
+  brand: McVitie's
+  region_codes: GB
+  serving_grams: 14.6
+  serving_label: biscuit (14.6 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 14.6
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mcv_digestives_chocolate
+  name: McVitie's Chocolate Digestive
+  kcal_per_100g: 490
+  protein_per_100g: 7
+  carbs_per_100g: 64
+  fat_per_100g: 23
+  brand: McVitie's
+  region_codes: GB
+  serving_grams: 16.7
+  serving_label: biscuit (16.7 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 16.7
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mcv_digestives_milk_chocolate
+  name: McVitie's Milk Chocolate Digestive
+  kcal_per_100g: 490
+  protein_per_100g: 7
+  carbs_per_100g: 64
+  fat_per_100g: 23
+  brand: McVitie's
+  region_codes: GB
+  serving_grams: 16.7
+  serving_label: biscuit (16.7 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 16.7
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mcv_digestives_dark_chocolate
+  name: McVitie's Dark Chocolate Digestive
+  kcal_per_100g: 480
+  protein_per_100g: 7
+  carbs_per_100g: 64
+  fat_per_100g: 22
+  brand: McVitie's
+  region_codes: GB
+  serving_grams: 16.7
+  serving_label: biscuit (16.7 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 16.7
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mcv_digestives_thins
+  name: McVitie's Digestive Thins
+  kcal_per_100g: 470
+  protein_per_100g: 7
+  carbs_per_100g: 65
+  fat_per_100g: 20
+  brand: McVitie's
+  region_codes: GB
+  serving_grams: 8
+  serving_label: biscuit (8 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 8
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mcv_hobnobs
+  name: McVitie's Hobnobs (Per Biscuit)
+  kcal_per_100g: 470
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 21
+  brand: McVitie's
+  region_codes: GB
+  serving_grams: 14.4
+  serving_label: biscuit (14.4 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 14.4
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mcv_hobnobs_chocolate
+  name: McVitie's Hobnobs Chocolate
+  kcal_per_100g: 490
+  protein_per_100g: 7
+  carbs_per_100g: 62
+  fat_per_100g: 23
+  brand: McVitie's
+  region_codes: GB
+  serving_grams: 16
+  serving_label: biscuit (16 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 16
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mcv_hobnobs_milk_chocolate
+  name: McVitie's Hobnobs Milk Chocolate
+  kcal_per_100g: 490
+  protein_per_100g: 7
+  carbs_per_100g: 62
+  fat_per_100g: 23
+  brand: McVitie's
+  region_codes: GB
+  serving_grams: 16
+  serving_label: biscuit (16 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 16
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mcv_hobnobs_dark_chocolate
+  name: McVitie's Hobnobs Dark Chocolate
+  kcal_per_100g: 480
+  protein_per_100g: 7
+  carbs_per_100g: 62
+  fat_per_100g: 22
+  brand: McVitie's
+  region_codes: GB
+  serving_grams: 16
+  serving_label: biscuit (16 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 16
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mcv_hobnobs_flapjacks
+  name: McVitie's Hobnobs Flapjacks
+  kcal_per_100g: 480
+  protein_per_100g: 5
+  carbs_per_100g: 63
+  fat_per_100g: 22
+  brand: McVitie's
+  region_codes: GB
+  serving_grams: 17
+  serving_label: biscuit (17 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 17
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mcv_jaffa_cakes
+  name: McVitie's Jaffa Cakes (Per Cake)
+  kcal_per_100g: 365
+  protein_per_100g: 5
+  carbs_per_100g: 70
+  fat_per_100g: 7
+  brand: McVitie's
+  region_codes: GB
+  serving_grams: 12.2
+  serving_label: biscuit (12.2 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 12.2
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mcv_club_milk_chocolate
+  name: McVitie's Club Milk Chocolate
+  kcal_per_100g: 510
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 28
+  brand: McVitie's
+  region_codes: GB
+  serving_grams: 22
+  serving_label: biscuit (22 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 22
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mcv_club_mint
+  name: McVitie's Club Mint
+  kcal_per_100g: 510
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 28
+  brand: McVitie's
+  region_codes: GB
+  serving_grams: 22
+  serving_label: biscuit (22 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 22
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mcv_penguin
+  name: McVitie's Penguin
+  kcal_per_100g: 510
+  protein_per_100g: 5
+  carbs_per_100g: 65
+  fat_per_100g: 25
+  brand: McVitie's
+  region_codes: GB
+  serving_grams: 24.6
+  serving_label: biscuit (24.6 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 24.6
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mcv_gold_bar
+  name: McVitie's Gold Bar
+  kcal_per_100g: 525
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 28
+  brand: McVitie's
+  region_codes: GB
+  serving_grams: 18
+  serving_label: biscuit (18 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 18
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mcv_rich_tea
+  name: McVitie's Rich Tea (Per Biscuit)
+  kcal_per_100g: 460
+  protein_per_100g: 7
+  carbs_per_100g: 75
+  fat_per_100g: 14
+  brand: McVitie's
+  region_codes: GB
+  serving_grams: 8.3
+  serving_label: biscuit (8.3 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 8.3
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mcv_rich_tea_classic
+  name: McVitie's Rich Tea Classic
+  kcal_per_100g: 460
+  protein_per_100g: 7
+  carbs_per_100g: 75
+  fat_per_100g: 14
+  brand: McVitie's
+  region_codes: GB
+  serving_grams: 8.3
+  serving_label: biscuit (8.3 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 8.3
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mcv_ginger_nuts
+  name: McVitie's Ginger Nuts
+  kcal_per_100g: 465
+  protein_per_100g: 6
+  carbs_per_100g: 73
+  fat_per_100g: 16
+  brand: McVitie's
+  region_codes: GB
+  serving_grams: 10
+  serving_label: biscuit (10 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 10
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mcv_breakfast_biscuits_milk_choc
+  name: McVitie's Breakfast Biscuits Milk Choc
+  kcal_per_100g: 460
+  protein_per_100g: 7
+  carbs_per_100g: 64
+  fat_per_100g: 19
+  brand: McVitie's
+  region_codes: GB
+  serving_grams: 50
+  serving_label: biscuit (50 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: walkers_shortbread_finger
+  name: Walkers Shortbread Finger (Per Finger)
+  kcal_per_100g: 530
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 30
+  brand: Walkers Shortbread
+  region_codes: GB
+  serving_grams: 20
+  serving_label: biscuit (20 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 20
+  dietary_compat: vegetarian
+- source: brand
+  source_id: walkers_shortbread_round
+  name: Walkers Shortbread Round (Per Biscuit)
+  kcal_per_100g: 530
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 30
+  brand: Walkers Shortbread
+  region_codes: GB
+  serving_grams: 16
+  serving_label: biscuit (16 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 16
+  dietary_compat: vegetarian
+- source: brand
+  source_id: walkers_shortbread_chocolate_chip
+  name: Walkers Shortbread Chocolate Chip Round
+  kcal_per_100g: 525
+  protein_per_100g: 5
+  carbs_per_100g: 62
+  fat_per_100g: 28
+  brand: Walkers Shortbread
+  region_codes: GB
+  serving_grams: 16
+  serving_label: biscuit (16 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 16
+  dietary_compat: vegetarian
+- source: brand
+  source_id: tunnocks_caramel_wafer
+  name: Tunnock's Caramel Wafer (Per Bar)
+  kcal_per_100g: 502
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 27
+  brand: Tunnock's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: biscuit (30 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: tunnocks_caramel_log
+  name: Tunnock's Caramel Log
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 28
+  brand: Tunnock's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: biscuit (30 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: tunnocks_tea_cake
+  name: Tunnock's Tea Cake (Per Cake)
+  kcal_per_100g: 432
+  protein_per_100g: 5
+  carbs_per_100g: 65
+  fat_per_100g: 16
+  brand: Tunnock's
+  region_codes: GB
+  serving_grams: 24
+  serving_label: biscuit (24 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 24
+  dietary_compat: vegetarian
+- source: brand
+  source_id: tunnocks_snowball
+  name: Tunnock's Snowball
+  kcal_per_100g: 425
+  protein_per_100g: 4
+  carbs_per_100g: 65
+  fat_per_100g: 16
+  brand: Tunnock's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: biscuit (30 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mr_kipling_french_fancies
+  name: Mr Kipling French Fancies (Per Cake)
+  kcal_per_100g: 350
+  protein_per_100g: 2
+  carbs_per_100g: 65
+  fat_per_100g: 8
+  brand: Mr Kipling
+  region_codes: GB
+  serving_grams: 27
+  serving_label: biscuit (27 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 27
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mr_kipling_battenberg_per_slice
+  name: Mr Kipling Battenberg (Per Slice)
+  kcal_per_100g: 410
+  protein_per_100g: 4
+  carbs_per_100g: 65
+  fat_per_100g: 14
+  brand: Mr Kipling
+  region_codes: GB
+  serving_grams: 36
+  serving_label: biscuit (36 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 36
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mr_kipling_almond_slices
+  name: Mr Kipling Almond Slices
+  kcal_per_100g: 425
+  protein_per_100g: 4
+  carbs_per_100g: 60
+  fat_per_100g: 19
+  brand: Mr Kipling
+  region_codes: GB
+  serving_grams: 30
+  serving_label: biscuit (30 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mr_kipling_lemon_slices
+  name: Mr Kipling Lemon Slices
+  kcal_per_100g: 410
+  protein_per_100g: 3
+  carbs_per_100g: 65
+  fat_per_100g: 15
+  brand: Mr Kipling
+  region_codes: GB
+  serving_grams: 30
+  serving_label: biscuit (30 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mr_kipling_jam_n_cream_sponge
+  name: Mr Kipling Jam 'n' Cream Sponge
+  kcal_per_100g: 380
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 18
+  brand: Mr Kipling
+  region_codes: GB
+  serving_grams: 35
+  serving_label: biscuit (35 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 35
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mr_kipling_country_slices
+  name: Mr Kipling Country Slices
+  kcal_per_100g: 395
+  protein_per_100g: 4
+  carbs_per_100g: 60
+  fat_per_100g: 15
+  brand: Mr Kipling
+  region_codes: GB
+  serving_grams: 28
+  serving_label: biscuit (28 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 28
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mr_kipling_mince_pies
+  name: Mr Kipling Mince Pies (Per Pie)
+  kcal_per_100g: 410
+  protein_per_100g: 4
+  carbs_per_100g: 60
+  fat_per_100g: 17
+  brand: Mr Kipling
+  region_codes: GB
+  serving_grams: 53
+  serving_label: biscuit (53 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 53
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mr_kipling_apple_pies
+  name: Mr Kipling Apple Pies
+  kcal_per_100g: 395
+  protein_per_100g: 3
+  carbs_per_100g: 60
+  fat_per_100g: 16
+  brand: Mr Kipling
+  region_codes: GB
+  serving_grams: 60
+  serving_label: biscuit (60 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 60
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cadbury_fingers_per_finger
+  name: Cadbury Fingers (Per Finger)
+  kcal_per_100g: 525
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 27
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 8.5
+  serving_label: biscuit (8.5 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 8.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: maryland_double_choc
+  name: Maryland Double Chocolate Cookies
+  kcal_per_100g: 470
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 20
+  brand: Maryland
+  region_codes: GB
+  serving_grams: 11
+  serving_label: biscuit (11 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 11
+  dietary_compat: vegetarian
+- source: brand
+  source_id: maryland_choc_chip_hazelnut
+  name: Maryland Chocolate Chip & Hazelnut
+  kcal_per_100g: 480
+  protein_per_100g: 7
+  carbs_per_100g: 63
+  fat_per_100g: 22
+  brand: Maryland
+  region_codes: GB
+  serving_grams: 11
+  serving_label: biscuit (11 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 11
+  dietary_compat: vegetarian
+- source: brand
+  source_id: foxs_party_rings
+  name: Fox's Party Rings (Per Ring)
+  kcal_per_100g: 460
+  protein_per_100g: 5
+  carbs_per_100g: 75
+  fat_per_100g: 16
+  brand: Fox's
+  region_codes: GB
+  serving_grams: 5
+  serving_label: biscuit (5 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: foxs_chocolate_viennese
+  name: Fox's Chocolatey Viennese
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 27
+  brand: Fox's
+  region_codes: GB
+  serving_grams: 12
+  serving_label: biscuit (12 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 12
+  dietary_compat: vegetarian
+- source: brand
+  source_id: foxs_classic_chocolate_chunkie
+  name: Fox's Classic Chocolate Chunkie
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 22
+  brand: Fox's
+  region_codes: GB
+  serving_grams: 16
+  serving_label: biscuit (16 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 16
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oreo_original_per_biscuit
+  name: Oreo Original (Per Biscuit)
+  kcal_per_100g: 480
+  protein_per_100g: 5
+  carbs_per_100g: 70
+  fat_per_100g: 20
+  brand: Oreo
+  region_codes: GB
+  serving_grams: 11.3
+  serving_label: biscuit (11.3 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 11.3
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oreo_double_stuf
+  name: Oreo Double Stuf (Per Biscuit)
+  kcal_per_100g: 490
+  protein_per_100g: 5
+  carbs_per_100g: 68
+  fat_per_100g: 21
+  brand: Oreo
+  region_codes: GB
+  serving_grams: 14.5
+  serving_label: biscuit (14.5 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 14.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oreo_strawberry
+  name: Oreo Strawberry (Per Biscuit)
+  kcal_per_100g: 480
+  protein_per_100g: 5
+  carbs_per_100g: 70
+  fat_per_100g: 20
+  brand: Oreo
+  region_codes: GB
+  serving_grams: 11.3
+  serving_label: biscuit (11.3 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 11.3
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oreo_minis_pack
+  name: Oreo Mini Pack
+  kcal_per_100g: 485
+  protein_per_100g: 5
+  carbs_per_100g: 70
+  fat_per_100g: 21
+  brand: Oreo
+  region_codes: GB
+  serving_grams: 35
+  serving_label: biscuit (35 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 35
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bahlsen_choco_leibniz
+  name: Bahlsen Choco Leibniz
+  kcal_per_100g: 500
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 27
+  brand: Bahlsen
+  region_codes: GB
+  serving_grams: 10
+  serving_label: biscuit (10 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 10
+  dietary_compat: vegetarian
+- source: brand
+  source_id: lotus_biscoff_per_biscuit
+  name: Lotus Biscoff Caramelised Biscuit (Per Biscuit)
+  kcal_per_100g: 481
+  protein_per_100g: 6
+  carbs_per_100g: 75
+  fat_per_100g: 20
+  brand: Lotus
+  region_codes: GB
+  serving_grams: 6.25
+  serving_label: biscuit (6.25 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 6.25
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kallo_rice_cakes_lightly_salted
+  name: Kallo Lightly Salted Rice Cakes (Per Cake)
+  kcal_per_100g: 380
+  protein_per_100g: 7
+  carbs_per_100g: 80
+  fat_per_100g: 3
+  brand: Kallo
+  region_codes: GB
+  serving_grams: 8
+  serving_label: biscuit (8 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 8
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kallo_rice_cakes_chocolate
+  name: Kallo Milk Chocolate Rice Cakes (Per Cake)
+  kcal_per_100g: 460
+  protein_per_100g: 7
+  carbs_per_100g: 70
+  fat_per_100g: 17
+  brand: Kallo
+  region_codes: GB
+  serving_grams: 16
+  serving_label: biscuit (16 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 16
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kallo_rice_cakes_caramel
+  name: Kallo Caramel Rice Cakes (Per Cake)
+  kcal_per_100g: 405
+  protein_per_100g: 7
+  carbs_per_100g: 80
+  fat_per_100g: 5
+  brand: Kallo
+  region_codes: GB
+  serving_grams: 9
+  serving_label: biscuit (9 g)
+  tags: biscuits,sweet,confectionery
+  portion_unit: piece
+  unit_grams: 9
+  dietary_compat: vegetarian

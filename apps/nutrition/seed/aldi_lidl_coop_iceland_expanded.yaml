@@ -1,0 +1,2063 @@
+# Aldi / Lidl / Co-op / Iceland expansion — premium ranges (Specially Selected, Deluxe, 
+# Irresistible, Luxury), standard ready meals, fresh meat & fish, soups, dips, 
+# pizza, vegan ranges (Simply Nature / Vemondo / GRO), bakery (Brooklea Skyr, etc.)
+
+- source: aldi
+  source_id: aldi_ss_chicken_kievs
+  name: Aldi Specially Selected Chicken Kievs
+  kcal_per_100g: 255
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 16
+  brand: Aldi Specially Selected
+  region_codes: GB
+  serving_grams: 145
+  serving_label: kiev (145 g)
+  tags: frozen,chicken,ready-meal
+  portion_unit: piece
+  unit_grams: 145
+- source: aldi
+  source_id: aldi_ss_thai_green_curry
+  name: Aldi Specially Selected Thai Green Curry
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 6
+  brand: Aldi Specially Selected
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: aldi
+  source_id: aldi_ss_chicken_tikka
+  name: Aldi Specially Selected Chicken Tikka Masala
+  kcal_per_100g: 140
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 6
+  brand: Aldi Specially Selected
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: aldi
+  source_id: aldi_ss_lasagne
+  name: Aldi Specially Selected Lasagne
+  kcal_per_100g: 155
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Aldi Specially Selected
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: aldi
+  source_id: aldi_ss_cottage_pie
+  name: Aldi Specially Selected Cottage Pie
+  kcal_per_100g: 130
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5
+  brand: Aldi Specially Selected
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: aldi
+  source_id: aldi_ss_lamb_shanks
+  name: Aldi Specially Selected Slow-Cooked Lamb Shanks
+  kcal_per_100g: 170
+  protein_per_100g: 13
+  carbs_per_100g: 8
+  fat_per_100g: 9.5
+  brand: Aldi Specially Selected
+  region_codes: GB
+  serving_grams: 450
+  serving_label: pack (450 g)
+  tags: ready-meal,lamb
+  portion_unit: meal
+  unit_grams: 450
+- source: aldi
+  source_id: aldi_ss_beef_short_rib
+  name: Aldi Specially Selected Slow-Cooked Beef Short Rib
+  kcal_per_100g: 210
+  protein_per_100g: 17
+  carbs_per_100g: 7
+  fat_per_100g: 12
+  brand: Aldi Specially Selected
+  region_codes: GB
+  serving_grams: 425
+  serving_label: pack (425 g)
+  tags: ready-meal,beef
+  portion_unit: meal
+  unit_grams: 425
+- source: aldi
+  source_id: aldi_ss_salmon_fillets
+  name: Aldi Specially Selected Scottish Salmon Fillets
+  kcal_per_100g: 200
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  brand: Aldi Specially Selected
+  region_codes: GB
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: salmon,fresh
+  portion_unit: meal
+  unit_grams: 130
+- source: aldi
+  source_id: aldi_chicken_korma_400
+  name: Aldi Chicken Korma
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5.5
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: aldi
+  source_id: aldi_chicken_jalfrezi_400
+  name: Aldi Chicken Jalfrezi
+  kcal_per_100g: 120
+  protein_per_100g: 9
+  carbs_per_100g: 9
+  fat_per_100g: 4.5
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: aldi
+  source_id: aldi_chicken_madras_400
+  name: Aldi Chicken Madras
+  kcal_per_100g: 115
+  protein_per_100g: 10
+  carbs_per_100g: 8
+  fat_per_100g: 4
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken,spicy
+  portion_unit: meal
+  unit_grams: 400
+- source: aldi
+  source_id: aldi_macaroni_cheese_400
+  name: Aldi Macaroni Cheese
+  kcal_per_100g: 165
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 7.5
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: aldi
+  source_id: aldi_spag_bol_400
+  name: Aldi Spaghetti Bolognese
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 14
+  fat_per_100g: 4.5
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: aldi
+  source_id: aldi_carbonara_400
+  name: Aldi Spaghetti Carbonara
+  kcal_per_100g: 170
+  protein_per_100g: 7
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta
+  portion_unit: meal
+  unit_grams: 400
+- source: aldi
+  source_id: aldi_shepherds_pie_400
+  name: Aldi Shepherd's Pie
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 5
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,lamb
+  portion_unit: meal
+  unit_grams: 400
+- source: aldi
+  source_id: aldi_fish_pie_400
+  name: Aldi Fish Pie
+  kcal_per_100g: 115
+  protein_per_100g: 8
+  carbs_per_100g: 11
+  fat_per_100g: 4
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,fish
+  portion_unit: meal
+  unit_grams: 400
+- source: aldi
+  source_id: aldi_chilli_rice_400
+  name: Aldi Chilli con Carne & Rice
+  kcal_per_100g: 120
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 450
+  serving_label: meal (450 g)
+  tags: ready-meal,beef,rice
+  portion_unit: meal
+  unit_grams: 450
+- source: aldi
+  source_id: aldi_sweet_sour_rice_400
+  name: Aldi Sweet & Sour Chicken & Rice
+  kcal_per_100g: 130
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 2
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 450
+  serving_label: meal (450 g)
+  tags: ready-meal,chinese,chicken,rice
+  portion_unit: meal
+  unit_grams: 450
+- source: aldi
+  source_id: aldi_chicken_chow_mein
+  name: Aldi Chicken Chow Mein
+  kcal_per_100g: 120
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,chinese,chicken,noodles
+  portion_unit: meal
+  unit_grams: 400
+- source: aldi
+  source_id: aldi_chicken_breast_fresh
+  name: Aldi British Chicken Breasts
+  kcal_per_100g: 105
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 170
+  serving_label: breast (170 g)
+  tags: chicken,fresh
+  portion_unit: meal
+  unit_grams: 170
+- source: aldi
+  source_id: aldi_chicken_thigh_fresh
+  name: Aldi British Chicken Thighs
+  kcal_per_100g: 170
+  protein_per_100g: 19
+  carbs_per_100g: 0
+  fat_per_100g: 10
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 120
+  serving_label: thigh (120 g)
+  tags: chicken,fresh
+  portion_unit: meal
+  unit_grams: 120
+- source: aldi
+  source_id: aldi_chicken_mince_lean
+  name: Aldi Lean Chicken Mince
+  kcal_per_100g: 115
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 3
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: chicken,fresh,lean
+  portion_unit: meal
+  unit_grams: 125
+- source: aldi
+  source_id: aldi_turkey_mince_lean
+  name: Aldi Lean Turkey Mince
+  kcal_per_100g: 105
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 2
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: turkey,fresh,lean
+  portion_unit: meal
+  unit_grams: 125
+- source: aldi
+  source_id: aldi_steak_mince_5pct
+  name: Aldi 5% Fat Steak Mince
+  kcal_per_100g: 130
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 5
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: beef,fresh,lean
+  portion_unit: meal
+  unit_grams: 125
+- source: aldi
+  source_id: aldi_pork_mince
+  name: Aldi British Pork Mince
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 16
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: pork,fresh
+  portion_unit: meal
+  unit_grams: 125
+- source: aldi
+  source_id: aldi_diced_chicken
+  name: Aldi Diced Chicken Breast
+  kcal_per_100g: 105
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 150
+  serving_label: portion (150 g)
+  tags: chicken,fresh
+  portion_unit: meal
+  unit_grams: 150
+- source: aldi
+  source_id: aldi_diced_beef
+  name: Aldi British Diced Beef
+  kcal_per_100g: 170
+  protein_per_100g: 24
+  carbs_per_100g: 0
+  fat_per_100g: 8
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 150
+  serving_label: portion (150 g)
+  tags: beef,fresh
+  portion_unit: meal
+  unit_grams: 150
+- source: aldi
+  source_id: aldi_salmon_fillets
+  name: Aldi Salmon Fillets Skin On
+  kcal_per_100g: 210
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: salmon,fresh
+  portion_unit: meal
+  unit_grams: 130
+- source: aldi
+  source_id: aldi_haddock_fillets
+  name: Aldi Haddock Fillets
+  kcal_per_100g: 75
+  protein_per_100g: 17
+  carbs_per_100g: 0
+  fat_per_100g: 0.5
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: fish,fresh,lean
+  portion_unit: meal
+  unit_grams: 130
+- source: aldi
+  source_id: aldi_king_prawns
+  name: Aldi King Prawns (Cooked)
+  kcal_per_100g: 75
+  protein_per_100g: 17
+  carbs_per_100g: 0
+  fat_per_100g: 0.7
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pack (200 g)
+  tags: prawns,seafood
+  portion_unit: meal
+  unit_grams: 200
+- source: aldi
+  source_id: aldi_houmous_classic
+  name: Aldi Houmous Classic
+  kcal_per_100g: 290
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 23
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pot (200 g)
+  tags: dip,deli
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: aldi
+  source_id: aldi_tzatziki
+  name: Aldi Tzatziki
+  kcal_per_100g: 120
+  protein_per_100g: 5
+  carbs_per_100g: 4
+  fat_per_100g: 9.5
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 170
+  serving_label: pot (170 g)
+  tags: dip,deli,greek
+  portion_unit: meal
+  unit_grams: 170
+  dietary_compat: vegetarian
+- source: aldi
+  source_id: aldi_taramasalata
+  name: Aldi Taramasalata
+  kcal_per_100g: 440
+  protein_per_100g: 4
+  carbs_per_100g: 6
+  fat_per_100g: 45
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 170
+  serving_label: pot (170 g)
+  tags: dip,deli
+  portion_unit: meal
+  unit_grams: 170
+- source: aldi
+  source_id: aldi_soup_tomato_basil
+  name: Aldi Tomato & Basil Soup (Fresh)
+  kcal_per_100g: 45
+  protein_per_100g: 1.5
+  carbs_per_100g: 6
+  fat_per_100g: 1.5
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegetarian
+- source: aldi
+  source_id: aldi_soup_chicken_noodle
+  name: Aldi Chicken Noodle Soup (Fresh)
+  kcal_per_100g: 50
+  protein_per_100g: 4
+  carbs_per_100g: 6
+  fat_per_100g: 1
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup,chicken
+  portion_unit: meal
+  unit_grams: 300
+- source: aldi
+  source_id: aldi_soup_minestrone
+  name: Aldi Minestrone Soup (Fresh)
+  kcal_per_100g: 55
+  protein_per_100g: 2
+  carbs_per_100g: 9
+  fat_per_100g: 1
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: aldi
+  source_id: aldi_stonebaked_margherita
+  name: Aldi Stonebaked Margherita Pizza
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 290
+  serving_label: pizza (290 g)
+  tags: pizza,frozen
+  portion_unit: meal
+  unit_grams: 290
+  dietary_compat: vegetarian
+- source: aldi
+  source_id: aldi_stonebaked_pepperoni
+  name: Aldi Stonebaked Pepperoni Pizza
+  kcal_per_100g: 275
+  protein_per_100g: 12
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 320
+  serving_label: pizza (320 g)
+  tags: pizza,frozen
+  portion_unit: meal
+  unit_grams: 320
+- source: aldi
+  source_id: aldi_stonebaked_meat_feast
+  name: Aldi Stonebaked Meat Feast Pizza
+  kcal_per_100g: 280
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 395
+  serving_label: pizza (395 g)
+  tags: pizza,frozen
+  portion_unit: meal
+  unit_grams: 395
+- source: aldi
+  source_id: aldi_belmont_chocolate_chip_cookies
+  name: Aldi Belmont Chocolate Chip Cookies (Per Cookie)
+  kcal_per_100g: 470
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 22
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 11
+  serving_label: cookie (11 g)
+  tags: biscuits,sweet
+  portion_unit: meal
+  unit_grams: 11
+  dietary_compat: vegetarian
+- source: aldi
+  source_id: aldi_belmont_double_choc_cookies
+  name: Aldi Belmont Double Chocolate Cookies
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 22
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 11
+  serving_label: cookie (11 g)
+  tags: biscuits,sweet
+  portion_unit: meal
+  unit_grams: 11
+  dietary_compat: vegetarian
+- source: aldi
+  source_id: aldi_norpak_butter
+  name: Aldi Norpak Spreadable Butter
+  kcal_per_100g: 720
+  protein_per_100g: 0.5
+  carbs_per_100g: 0.5
+  fat_per_100g: 80
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 10
+  serving_label: butter (10 g)
+  tags: butter,dairy
+  portion_unit: meal
+  unit_grams: 10
+  dietary_compat: vegetarian
+- source: aldi
+  source_id: aldi_brooklea_skyr_natural
+  name: Aldi Brooklea Skyr Natural
+  kcal_per_100g: 60
+  protein_per_100g: 11
+  carbs_per_100g: 4
+  fat_per_100g: 0.2
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 150
+  serving_label: pot (150 g)
+  tags: yogurt,icelandic,high-protein
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: aldi
+  source_id: aldi_brooklea_protein_pudding
+  name: Aldi Brooklea Protein Pudding (Per Pot)
+  kcal_per_100g: 75
+  protein_per_100g: 9
+  carbs_per_100g: 8
+  fat_per_100g: 1
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pot (200 g)
+  tags: high-protein,dessert
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegetarian
+- source: aldi
+  source_id: aldi_eat_well_chicken_caesar
+  name: Aldi Eat Well Chicken Caesar Salad
+  kcal_per_100g: 125
+  protein_per_100g: 12
+  carbs_per_100g: 6
+  fat_per_100g: 6
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 240
+  serving_label: pot (240 g)
+  tags: salad,chicken,light
+  portion_unit: meal
+  unit_grams: 240
+- source: aldi
+  source_id: aldi_eat_well_super_grain
+  name: Aldi Eat Well Super Grain Bowl
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 18
+  fat_per_100g: 6
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 250
+  serving_label: bowl (250 g)
+  tags: salad,grain,light
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: aldi
+  source_id: aldi_simply_nature_no_chicken
+  name: Aldi Simply Nature No Chicken Burger
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 8
+  fat_per_100g: 11
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 113
+  serving_label: burger (113 g)
+  tags: vegan,burger
+  portion_unit: meal
+  unit_grams: 113
+  dietary_compat: vegan,vegetarian
+- source: aldi
+  source_id: aldi_simply_nature_no_beef
+  name: Aldi Simply Nature No Beef Burger
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 6
+  fat_per_100g: 13
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 113
+  serving_label: burger (113 g)
+  tags: vegan,burger
+  portion_unit: meal
+  unit_grams: 113
+  dietary_compat: vegan,vegetarian
+- source: aldi
+  source_id: aldi_simply_nature_meatballs
+  name: Aldi Simply Nature Plant Meatballs
+  kcal_per_100g: 160
+  protein_per_100g: 16
+  carbs_per_100g: 9
+  fat_per_100g: 5.5
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pack (200 g)
+  tags: vegan,protein
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: lidl
+  source_id: lidl_dlx_chicken_kievs
+  name: Lidl Deluxe Chicken Kievs
+  kcal_per_100g: 255
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 16
+  brand: Lidl Deluxe
+  region_codes: GB
+  serving_grams: 145
+  serving_label: kiev (145 g)
+  tags: frozen,chicken,ready-meal
+  portion_unit: piece
+  unit_grams: 145
+- source: lidl
+  source_id: lidl_dlx_thai_green_curry
+  name: Lidl Deluxe Thai Green Curry
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 6
+  brand: Lidl Deluxe
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: lidl
+  source_id: lidl_dlx_chicken_tikka
+  name: Lidl Deluxe Chicken Tikka Masala
+  kcal_per_100g: 140
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 6
+  brand: Lidl Deluxe
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: lidl
+  source_id: lidl_dlx_lasagne
+  name: Lidl Deluxe Lasagne
+  kcal_per_100g: 155
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Lidl Deluxe
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: lidl
+  source_id: lidl_dlx_cottage_pie
+  name: Lidl Deluxe Cottage Pie
+  kcal_per_100g: 130
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5
+  brand: Lidl Deluxe
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: lidl
+  source_id: lidl_dlx_lamb_shanks
+  name: Lidl Deluxe Slow-Cooked Lamb Shanks
+  kcal_per_100g: 170
+  protein_per_100g: 13
+  carbs_per_100g: 8
+  fat_per_100g: 9.5
+  brand: Lidl Deluxe
+  region_codes: GB
+  serving_grams: 450
+  serving_label: pack (450 g)
+  tags: ready-meal,lamb
+  portion_unit: meal
+  unit_grams: 450
+- source: lidl
+  source_id: lidl_dlx_salmon_fillets
+  name: Lidl Deluxe Scottish Salmon Fillets
+  kcal_per_100g: 200
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  brand: Lidl Deluxe
+  region_codes: GB
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: salmon,fresh
+  portion_unit: meal
+  unit_grams: 130
+- source: lidl
+  source_id: lidl_chicken_korma_400
+  name: Lidl Chicken Korma
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5.5
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: lidl
+  source_id: lidl_chicken_jalfrezi_400
+  name: Lidl Chicken Jalfrezi
+  kcal_per_100g: 120
+  protein_per_100g: 9
+  carbs_per_100g: 9
+  fat_per_100g: 4.5
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: lidl
+  source_id: lidl_lasagne_400
+  name: Lidl Beef Lasagne
+  kcal_per_100g: 150
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: lidl
+  source_id: lidl_macaroni_cheese_400
+  name: Lidl Macaroni Cheese
+  kcal_per_100g: 165
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 7.5
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: lidl
+  source_id: lidl_spag_bol_400
+  name: Lidl Spaghetti Bolognese
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 14
+  fat_per_100g: 4.5
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: lidl
+  source_id: lidl_cottage_pie_400
+  name: Lidl Cottage Pie
+  kcal_per_100g: 125
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 5
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: lidl
+  source_id: lidl_chilli_rice_400
+  name: Lidl Chilli con Carne & Rice
+  kcal_per_100g: 120
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 450
+  serving_label: meal (450 g)
+  tags: ready-meal,beef,rice
+  portion_unit: meal
+  unit_grams: 450
+- source: lidl
+  source_id: lidl_sweet_sour_rice_400
+  name: Lidl Sweet & Sour Chicken & Rice
+  kcal_per_100g: 130
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 2
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 450
+  serving_label: meal (450 g)
+  tags: ready-meal,chinese,chicken,rice
+  portion_unit: meal
+  unit_grams: 450
+- source: lidl
+  source_id: lidl_chicken_breast_fresh
+  name: Lidl British Chicken Breasts
+  kcal_per_100g: 105
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 170
+  serving_label: breast (170 g)
+  tags: chicken,fresh
+  portion_unit: meal
+  unit_grams: 170
+- source: lidl
+  source_id: lidl_chicken_mince_lean
+  name: Lidl Lean Chicken Mince
+  kcal_per_100g: 115
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 3
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: chicken,fresh,lean
+  portion_unit: meal
+  unit_grams: 125
+- source: lidl
+  source_id: lidl_turkey_mince_lean
+  name: Lidl Lean Turkey Mince
+  kcal_per_100g: 105
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 2
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: turkey,fresh,lean
+  portion_unit: meal
+  unit_grams: 125
+- source: lidl
+  source_id: lidl_steak_mince_5pct
+  name: Lidl 5% Fat Steak Mince
+  kcal_per_100g: 130
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 5
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: beef,fresh,lean
+  portion_unit: meal
+  unit_grams: 125
+- source: lidl
+  source_id: lidl_salmon_fillets
+  name: Lidl Salmon Fillets Skin On
+  kcal_per_100g: 210
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: salmon,fresh
+  portion_unit: meal
+  unit_grams: 130
+- source: lidl
+  source_id: lidl_cod_fillets
+  name: Lidl Cod Fillets
+  kcal_per_100g: 80
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 0.7
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 140
+  serving_label: fillet (140 g)
+  tags: fish,fresh,lean
+  portion_unit: meal
+  unit_grams: 140
+- source: lidl
+  source_id: lidl_king_prawns
+  name: Lidl King Prawns Cooked
+  kcal_per_100g: 75
+  protein_per_100g: 17
+  carbs_per_100g: 0
+  fat_per_100g: 0.7
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pack (200 g)
+  tags: prawns,seafood
+  portion_unit: meal
+  unit_grams: 200
+- source: lidl
+  source_id: lidl_houmous_classic
+  name: Lidl Houmous Classic
+  kcal_per_100g: 290
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 23
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pot (200 g)
+  tags: dip,deli
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: lidl
+  source_id: lidl_tzatziki
+  name: Lidl Tzatziki
+  kcal_per_100g: 120
+  protein_per_100g: 5
+  carbs_per_100g: 4
+  fat_per_100g: 9.5
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 170
+  serving_label: pot (170 g)
+  tags: dip,deli,greek
+  portion_unit: meal
+  unit_grams: 170
+  dietary_compat: vegetarian
+- source: lidl
+  source_id: lidl_soup_tomato_basil
+  name: Lidl Tomato & Basil Soup
+  kcal_per_100g: 45
+  protein_per_100g: 1.5
+  carbs_per_100g: 6
+  fat_per_100g: 1.5
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegetarian
+- source: lidl
+  source_id: lidl_stonebaked_margherita
+  name: Lidl Stonebaked Margherita Pizza
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 290
+  serving_label: pizza (290 g)
+  tags: pizza,frozen
+  portion_unit: meal
+  unit_grams: 290
+  dietary_compat: vegetarian
+- source: lidl
+  source_id: lidl_stonebaked_pepperoni
+  name: Lidl Stonebaked Pepperoni Pizza
+  kcal_per_100g: 275
+  protein_per_100g: 12
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 320
+  serving_label: pizza (320 g)
+  tags: pizza,frozen
+  portion_unit: meal
+  unit_grams: 320
+- source: lidl
+  source_id: lidl_chocolate_chip_cookies
+  name: Lidl Sondey Chocolate Chip Cookies
+  kcal_per_100g: 470
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 22
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 11
+  serving_label: cookie (11 g)
+  tags: biscuits,sweet
+  portion_unit: meal
+  unit_grams: 11
+  dietary_compat: vegetarian
+- source: lidl
+  source_id: lidl_milbona_skyr_natural
+  name: Lidl Milbona Skyr Natural
+  kcal_per_100g: 60
+  protein_per_100g: 11
+  carbs_per_100g: 4
+  fat_per_100g: 0.2
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 150
+  serving_label: pot (150 g)
+  tags: yogurt,icelandic,high-protein
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: lidl
+  source_id: lidl_milbona_protein_pudding
+  name: Lidl Milbona Protein Pudding (Per Pot)
+  kcal_per_100g: 75
+  protein_per_100g: 9
+  carbs_per_100g: 8
+  fat_per_100g: 1
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pot (200 g)
+  tags: high-protein,dessert
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegetarian
+- source: lidl
+  source_id: lidl_vemondo_no_chicken
+  name: Lidl Vemondo No Chicken Pieces
+  kcal_per_100g: 155
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 5
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 175
+  serving_label: pack (175 g)
+  tags: vegan,protein
+  portion_unit: meal
+  unit_grams: 175
+  dietary_compat: vegan,vegetarian
+- source: lidl
+  source_id: lidl_vemondo_no_burger
+  name: Lidl Vemondo No Beef Burger
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 6
+  fat_per_100g: 13
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 113
+  serving_label: burger (113 g)
+  tags: vegan,burger
+  portion_unit: piece
+  unit_grams: 113
+  dietary_compat: vegan,vegetarian
+- source: lidl
+  source_id: lidl_vemondo_no_meatballs
+  name: Lidl Vemondo Plant Meatballs
+  kcal_per_100g: 160
+  protein_per_100g: 16
+  carbs_per_100g: 9
+  fat_per_100g: 5.5
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pack (200 g)
+  tags: vegan,protein
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: coop
+  source_id: coop_irr_chicken_kievs
+  name: Co-op Irresistible Chicken Kievs
+  kcal_per_100g: 255
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 16
+  brand: Co-op Irresistible
+  region_codes: GB
+  serving_grams: 145
+  serving_label: kiev (145 g)
+  tags: frozen,chicken,ready-meal
+  portion_unit: piece
+  unit_grams: 145
+- source: coop
+  source_id: coop_irr_thai_green_curry
+  name: Co-op Irresistible Thai Green Curry
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 6
+  brand: Co-op Irresistible
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: coop
+  source_id: coop_irr_chicken_tikka
+  name: Co-op Irresistible Chicken Tikka Masala
+  kcal_per_100g: 140
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 6
+  brand: Co-op Irresistible
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: coop
+  source_id: coop_irr_lasagne
+  name: Co-op Irresistible Lasagne
+  kcal_per_100g: 155
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Co-op Irresistible
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: coop
+  source_id: coop_irr_cottage_pie
+  name: Co-op Irresistible Cottage Pie
+  kcal_per_100g: 130
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5
+  brand: Co-op Irresistible
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: coop
+  source_id: coop_irr_lamb_shanks
+  name: Co-op Irresistible Slow-Cooked Lamb Shanks
+  kcal_per_100g: 170
+  protein_per_100g: 13
+  carbs_per_100g: 8
+  fat_per_100g: 9.5
+  brand: Co-op Irresistible
+  region_codes: GB
+  serving_grams: 450
+  serving_label: pack (450 g)
+  tags: ready-meal,lamb
+  portion_unit: meal
+  unit_grams: 450
+- source: coop
+  source_id: coop_irr_salmon_fillets
+  name: Co-op Irresistible Scottish Salmon Fillets
+  kcal_per_100g: 200
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  brand: Co-op Irresistible
+  region_codes: GB
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: salmon,fresh
+  portion_unit: meal
+  unit_grams: 130
+- source: coop
+  source_id: coop_chicken_korma_400
+  name: Co-op Chicken Korma
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5.5
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: coop
+  source_id: coop_chicken_jalfrezi_400
+  name: Co-op Chicken Jalfrezi
+  kcal_per_100g: 120
+  protein_per_100g: 9
+  carbs_per_100g: 9
+  fat_per_100g: 4.5
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: coop
+  source_id: coop_macaroni_cheese_400
+  name: Co-op Macaroni Cheese
+  kcal_per_100g: 165
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 7.5
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: coop
+  source_id: coop_spag_bol_400
+  name: Co-op Spaghetti Bolognese
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 14
+  fat_per_100g: 4.5
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: coop
+  source_id: coop_fish_pie_400
+  name: Co-op Fish Pie
+  kcal_per_100g: 115
+  protein_per_100g: 8
+  carbs_per_100g: 11
+  fat_per_100g: 4
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,fish
+  portion_unit: meal
+  unit_grams: 400
+- source: coop
+  source_id: coop_chilli_rice_400
+  name: Co-op Chilli con Carne & Rice
+  kcal_per_100g: 120
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 450
+  serving_label: meal (450 g)
+  tags: ready-meal,beef,rice
+  portion_unit: meal
+  unit_grams: 450
+- source: coop
+  source_id: coop_sweet_sour_rice_400
+  name: Co-op Sweet & Sour Chicken & Rice
+  kcal_per_100g: 130
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 2
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 450
+  serving_label: meal (450 g)
+  tags: ready-meal,chinese,chicken,rice
+  portion_unit: meal
+  unit_grams: 450
+- source: coop
+  source_id: coop_chicken_chow_mein
+  name: Co-op Chicken Chow Mein
+  kcal_per_100g: 120
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,chinese,chicken,noodles
+  portion_unit: meal
+  unit_grams: 400
+- source: coop
+  source_id: coop_chicken_breast_fresh
+  name: Co-op British Chicken Breasts
+  kcal_per_100g: 105
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 170
+  serving_label: breast (170 g)
+  tags: chicken,fresh
+  portion_unit: meal
+  unit_grams: 170
+- source: coop
+  source_id: coop_chicken_mince_lean
+  name: Co-op Lean Chicken Mince
+  kcal_per_100g: 115
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 3
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: chicken,fresh,lean
+  portion_unit: meal
+  unit_grams: 125
+- source: coop
+  source_id: coop_steak_mince_5pct
+  name: Co-op 5% Fat Steak Mince
+  kcal_per_100g: 130
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 5
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: beef,fresh,lean
+  portion_unit: meal
+  unit_grams: 125
+- source: coop
+  source_id: coop_salmon_fillets
+  name: Co-op Salmon Fillets Skin On
+  kcal_per_100g: 210
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: salmon,fresh
+  portion_unit: meal
+  unit_grams: 130
+- source: coop
+  source_id: coop_cod_fillets
+  name: Co-op Cod Fillets
+  kcal_per_100g: 80
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 0.7
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 140
+  serving_label: fillet (140 g)
+  tags: fish,fresh,lean
+  portion_unit: meal
+  unit_grams: 140
+- source: coop
+  source_id: coop_king_prawns
+  name: Co-op King Prawns Cooked
+  kcal_per_100g: 75
+  protein_per_100g: 17
+  carbs_per_100g: 0
+  fat_per_100g: 0.7
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pack (200 g)
+  tags: prawns,seafood
+  portion_unit: meal
+  unit_grams: 200
+- source: coop
+  source_id: coop_houmous_classic
+  name: Co-op Houmous Classic
+  kcal_per_100g: 290
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 23
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pot (200 g)
+  tags: dip,deli
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: coop
+  source_id: coop_tzatziki
+  name: Co-op Tzatziki
+  kcal_per_100g: 120
+  protein_per_100g: 5
+  carbs_per_100g: 4
+  fat_per_100g: 9.5
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 170
+  serving_label: pot (170 g)
+  tags: dip,deli,greek
+  portion_unit: meal
+  unit_grams: 170
+  dietary_compat: vegetarian
+- source: coop
+  source_id: coop_soup_tomato_basil
+  name: Co-op Tomato & Basil Soup
+  kcal_per_100g: 45
+  protein_per_100g: 1.5
+  carbs_per_100g: 6
+  fat_per_100g: 1.5
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegetarian
+- source: coop
+  source_id: coop_stonebaked_margherita
+  name: Co-op Stonebaked Margherita Pizza
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 290
+  serving_label: pizza (290 g)
+  tags: pizza,frozen
+  portion_unit: meal
+  unit_grams: 290
+  dietary_compat: vegetarian
+- source: coop
+  source_id: coop_stonebaked_pepperoni
+  name: Co-op Stonebaked Pepperoni Pizza
+  kcal_per_100g: 275
+  protein_per_100g: 12
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 320
+  serving_label: pizza (320 g)
+  tags: pizza,frozen
+  portion_unit: meal
+  unit_grams: 320
+- source: coop
+  source_id: coop_gro_no_chicken
+  name: Co-op GRO No Chicken Pieces
+  kcal_per_100g: 155
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 5
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 175
+  serving_label: pack (175 g)
+  tags: vegan,protein
+  portion_unit: meal
+  unit_grams: 175
+  dietary_compat: vegan,vegetarian
+- source: coop
+  source_id: coop_gro_no_burger
+  name: Co-op GRO No Beef Burger
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 6
+  fat_per_100g: 13
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 113
+  serving_label: burger (113 g)
+  tags: vegan,burger
+  portion_unit: piece
+  unit_grams: 113
+  dietary_compat: vegan,vegetarian
+- source: coop
+  source_id: coop_gro_meatballs
+  name: Co-op GRO Plant Meatballs
+  kcal_per_100g: 160
+  protein_per_100g: 16
+  carbs_per_100g: 9
+  fat_per_100g: 5.5
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pack (200 g)
+  tags: vegan,protein
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: iceland
+  source_id: iceland_lux_chicken_kievs
+  name: Iceland Luxury Chicken Kievs
+  kcal_per_100g: 255
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 16
+  brand: Iceland Luxury
+  region_codes: GB
+  serving_grams: 145
+  serving_label: kiev (145 g)
+  tags: frozen,chicken,ready-meal
+  portion_unit: piece
+  unit_grams: 145
+- source: iceland
+  source_id: iceland_lux_chicken_tikka
+  name: Iceland Luxury Chicken Tikka Masala
+  kcal_per_100g: 140
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 6
+  brand: Iceland Luxury
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken,frozen
+  portion_unit: meal
+  unit_grams: 400
+- source: iceland
+  source_id: iceland_lux_thai_green_curry
+  name: Iceland Luxury Thai Green Curry
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 6
+  brand: Iceland Luxury
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken,frozen
+  portion_unit: meal
+  unit_grams: 400
+- source: iceland
+  source_id: iceland_lux_lasagne
+  name: Iceland Luxury Lasagne
+  kcal_per_100g: 155
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Iceland Luxury
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef,frozen
+  portion_unit: meal
+  unit_grams: 400
+- source: iceland
+  source_id: iceland_lux_lamb_shanks
+  name: Iceland Luxury Slow-Cooked Lamb Shanks
+  kcal_per_100g: 170
+  protein_per_100g: 13
+  carbs_per_100g: 8
+  fat_per_100g: 9.5
+  brand: Iceland Luxury
+  region_codes: GB
+  serving_grams: 450
+  serving_label: pack (450 g)
+  tags: ready-meal,lamb,frozen
+  portion_unit: meal
+  unit_grams: 450
+- source: iceland
+  source_id: iceland_lux_beef_short_rib
+  name: Iceland Luxury Slow-Cooked Beef Short Rib
+  kcal_per_100g: 210
+  protein_per_100g: 17
+  carbs_per_100g: 7
+  fat_per_100g: 12
+  brand: Iceland Luxury
+  region_codes: GB
+  serving_grams: 425
+  serving_label: pack (425 g)
+  tags: ready-meal,beef,frozen
+  portion_unit: meal
+  unit_grams: 425
+- source: iceland
+  source_id: iceland_lux_salmon_fillets
+  name: Iceland Luxury Salmon Fillets
+  kcal_per_100g: 200
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  brand: Iceland Luxury
+  region_codes: GB
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: salmon,frozen
+  portion_unit: meal
+  unit_grams: 130
+- source: iceland
+  source_id: iceland_chicken_korma_400
+  name: Iceland Chicken Korma
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5.5
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken,frozen
+  portion_unit: meal
+  unit_grams: 400
+- source: iceland
+  source_id: iceland_fish_pie_400
+  name: Iceland Fish Pie (Frozen)
+  kcal_per_100g: 115
+  protein_per_100g: 8
+  carbs_per_100g: 11
+  fat_per_100g: 4
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,fish,frozen
+  portion_unit: meal
+  unit_grams: 400
+- source: iceland
+  source_id: iceland_chilli_rice_400
+  name: Iceland Chilli con Carne & Rice (Frozen)
+  kcal_per_100g: 120
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 450
+  serving_label: meal (450 g)
+  tags: ready-meal,beef,rice,frozen
+  portion_unit: meal
+  unit_grams: 450
+- source: iceland
+  source_id: iceland_chicken_balti_400
+  name: Iceland Chicken Balti
+  kcal_per_100g: 125
+  protein_per_100g: 9
+  carbs_per_100g: 9
+  fat_per_100g: 5
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken,frozen
+  portion_unit: meal
+  unit_grams: 400
+- source: iceland
+  source_id: iceland_doner_kebab_meal
+  name: Iceland Doner Kebab Meal Kit
+  kcal_per_100g: 215
+  protein_per_100g: 16
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 600
+  serving_label: meal (600 g)
+  tags: ready-meal,kebab,frozen
+  portion_unit: meal
+  unit_grams: 600
+- source: iceland
+  source_id: iceland_chip_shop_curry
+  name: Iceland Chip Shop Curry
+  kcal_per_100g: 80
+  protein_per_100g: 1
+  carbs_per_100g: 12
+  fat_per_100g: 3
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 350
+  serving_label: meal (350 g)
+  tags: ready-meal,curry,frozen
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: iceland
+  source_id: iceland_diced_chicken_frozen
+  name: Iceland Diced Chicken Frozen
+  kcal_per_100g: 105
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 150
+  serving_label: portion (150 g)
+  tags: chicken,frozen
+  portion_unit: meal
+  unit_grams: 150
+- source: iceland
+  source_id: iceland_5pct_steak_mince_frozen
+  name: Iceland 5% Steak Mince Frozen
+  kcal_per_100g: 130
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 5
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: beef,frozen,lean
+  portion_unit: meal
+  unit_grams: 125
+- source: iceland
+  source_id: iceland_chicken_korma_meal
+  name: Iceland Chicken Korma Meal Kit
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 13
+  fat_per_100g: 6
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 600
+  serving_label: meal (600 g)
+  tags: ready-meal,curry,frozen
+  portion_unit: meal
+  unit_grams: 600
+- source: iceland
+  source_id: iceland_kievs_4pk
+  name: Iceland Chicken Kievs Frozen (4-pack)
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 14
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 130
+  serving_label: kiev (130 g)
+  tags: frozen,chicken
+  portion_unit: piece
+  unit_grams: 130
+- source: iceland
+  source_id: iceland_chicken_dippers_500g
+  name: Iceland Chicken Dippers
+  kcal_per_100g: 230
+  protein_per_100g: 15
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 25
+  serving_label: dipper (25 g)
+  tags: frozen,chicken
+  portion_unit: meal
+  unit_grams: 25
+- source: iceland
+  source_id: iceland_southern_fried_chicken
+  name: Iceland Southern Fried Chicken Burger
+  kcal_per_100g: 285
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 17
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 100
+  serving_label: burger (100 g)
+  tags: frozen,chicken
+  portion_unit: meal
+  unit_grams: 100
+- source: iceland
+  source_id: iceland_xl_chicken_kiev
+  name: Iceland XL Chicken Kiev (Per Kiev)
+  kcal_per_100g: 285
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 18
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 200
+  serving_label: kiev (200 g)
+  tags: frozen,chicken
+  portion_unit: piece
+  unit_grams: 200
+- source: iceland
+  source_id: iceland_chicken_dippers_kids
+  name: Iceland Chicken Dippers Kids Box
+  kcal_per_100g: 230
+  protein_per_100g: 15
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pack (200 g)
+  tags: frozen,chicken,kids
+  portion_unit: meal
+  unit_grams: 200
+- source: iceland
+  source_id: iceland_burger_4pk
+  name: Iceland 4 Beef Burgers
+  kcal_per_100g: 235
+  protein_per_100g: 17
+  carbs_per_100g: 5
+  fat_per_100g: 17
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 113
+  serving_label: burger (113 g)
+  tags: frozen,beef
+  portion_unit: piece
+  unit_grams: 113
+- source: iceland
+  source_id: iceland_breaded_scampi
+  name: Iceland Breaded Whole Tail Scampi
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 23
+  fat_per_100g: 10
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 220
+  serving_label: pack (220 g)
+  tags: frozen,seafood
+  portion_unit: meal
+  unit_grams: 220
+- source: iceland
+  source_id: iceland_breaded_cod_fillet
+  name: Iceland Breaded Cod Fillet
+  kcal_per_100g: 200
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: frozen,fish
+  portion_unit: meal
+  unit_grams: 130
+- source: iceland
+  source_id: iceland_battered_cod
+  name: Iceland Battered Cod Fillet
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: frozen,fish
+  portion_unit: meal
+  unit_grams: 130
+- source: iceland
+  source_id: iceland_yorkshire_puddings
+  name: Iceland Yorkshire Puddings
+  kcal_per_100g: 380
+  protein_per_100g: 11
+  carbs_per_100g: 49
+  fat_per_100g: 16
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 30
+  serving_label: pudding (30 g)
+  tags: frozen,bakery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: iceland
+  source_id: iceland_roast_potatoes
+  name: Iceland Crispy Roast Potatoes
+  kcal_per_100g: 175
+  protein_per_100g: 3
+  carbs_per_100g: 25
+  fat_per_100g: 7
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,sides
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: iceland
+  source_id: iceland_chips_thick
+  name: Iceland Thick Cut Chips
+  kcal_per_100g: 175
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 5
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,chips
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: iceland
+  source_id: iceland_french_fries
+  name: Iceland French Fries
+  kcal_per_100g: 165
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 4.5
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,chips
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: iceland
+  source_id: iceland_potato_smiles
+  name: Iceland Potato Smiles
+  kcal_per_100g: 200
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,sides
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: iceland
+  source_id: iceland_potato_waffles
+  name: Iceland Potato Waffles
+  kcal_per_100g: 230
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 12
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 60
+  serving_label: waffle (60 g)
+  tags: frozen,sides
+  portion_unit: meal
+  unit_grams: 60
+  dietary_compat: vegan,vegetarian
+- source: iceland
+  source_id: iceland_no_chicken_burgers
+  name: Iceland No Chicken Burgers (Vegan)
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 8
+  fat_per_100g: 11
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 113
+  serving_label: burger (113 g)
+  tags: vegan,burger,frozen
+  portion_unit: piece
+  unit_grams: 113
+  dietary_compat: vegan,vegetarian
+- source: iceland
+  source_id: iceland_no_chicken_pieces
+  name: Iceland No Chicken Pieces (Vegan)
+  kcal_per_100g: 155
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 5
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 175
+  serving_label: pack (175 g)
+  tags: vegan,frozen
+  portion_unit: meal
+  unit_grams: 175
+  dietary_compat: vegan,vegetarian

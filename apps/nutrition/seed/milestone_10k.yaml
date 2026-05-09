@@ -1,0 +1,410 @@
+# Milestone batch — final 30 high-quality common items to comfortably clear 10K MVP target.
+# Common breakfast/lunch combinations (oats variants, chia puddings, yogurt combos, smoothies,
+# açaí bowls, protein smoothie bowls, salads, grain bowls, protein pancakes).
+
+- source: homemade
+  source_id: milestone_oats_milk_banana
+  name: Oats with Milk & Banana
+  kcal_per_100g: 175
+  protein_per_100g: 7
+  carbs_per_100g: 28
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: milestone_oats_water_berries
+  name: Oats with Water & Berries
+  kcal_per_100g: 110
+  protein_per_100g: 4
+  carbs_per_100g: 18
+  fat_per_100g: 2
+  brand: Homemade,vegan,vegetarian
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: milestone_oats_almond_milk_pb
+  name: Oats with Almond Milk & PB
+  kcal_per_100g: 195
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: milestone_chia_overnight_oats_classic
+  name: Chia Overnight Oats Classic (Homemade)
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 280
+- source: homemade
+  source_id: milestone_chia_pudding_coconut_homemade
+  name: Coconut Chia Pudding (Homemade)
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 14
+  fat_per_100g: 8
+  brand: Homemade,vegan,vegetarian
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: milestone_yogurt_granola_berries
+  name: Yogurt with Granola & Berries
+  kcal_per_100g: 145
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 3
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 250
+- source: homemade
+  source_id: milestone_yogurt_honey_walnuts
+  name: Greek Yogurt with Honey & Walnuts
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 14
+  fat_per_100g: 9
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: milestone_yogurt_seeds_berries
+  name: Yogurt with Seeds & Berries
+  kcal_per_100g: 130
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 4
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 250
+- source: homemade
+  source_id: milestone_smoothie_strawberry_protein_water
+  name: Strawberry Protein Smoothie (Water)
+  kcal_per_100g: 110
+  protein_per_100g: 21
+  carbs_per_100g: 6
+  fat_per_100g: 1
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: milestone_smoothie_choc_pb_oat_milk
+  name: Chocolate PB Smoothie with Oat Milk
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 25
+  fat_per_100g: 9
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: milestone_smoothie_green_kale_apple
+  name: Green Kale Apple Smoothie
+  kcal_per_100g: 65
+  protein_per_100g: 2
+  carbs_per_100g: 14
+  fat_per_100g: 0.5
+  brand: Homemade,vegan,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: milestone_smoothie_avocado_chocolate
+  name: Avocado Chocolate Smoothie
+  kcal_per_100g: 195
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: milestone_acai_pb_bowl
+  name: Açaí PB Bowl Homemade
+  kcal_per_100g: 175
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Homemade,vegan,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: milestone_protein_smoothie_bowl
+  name: Protein Smoothie Bowl
+  kcal_per_100g: 175
+  protein_per_100g: 17
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: milestone_chicken_avocado_salad
+  name: Chicken Avocado Salad (Homemade)
+  kcal_per_100g: 175
+  protein_per_100g: 17
+  carbs_per_100g: 9
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: milestone_salmon_avocado_salad
+  name: Salmon Avocado Salad (Homemade)
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 9
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: milestone_tuna_avocado_salad
+  name: Tuna Avocado Salad (Homemade)
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 9
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: milestone_grilled_chicken_salad
+  name: Grilled Chicken Salad (Plain)
+  kcal_per_100g: 145
+  protein_per_100g: 17
+  carbs_per_100g: 9
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: milestone_kale_chicken_caesar
+  name: Kale Chicken Caesar (Homemade)
+  kcal_per_100g: 175
+  protein_per_100g: 17
+  carbs_per_100g: 9
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: milestone_buddha_grain_bowl
+  name: Buddha Grain Bowl (Homemade)
+  kcal_per_100g: 165
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade,vegan,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: milestone_falafel_quinoa_bowl
+  name: Falafel Quinoa Bowl Homemade
+  kcal_per_100g: 175
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Homemade,vegan,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: milestone_chicken_quinoa_bowl_v2
+  name: Chicken Quinoa Bowl Homemade
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: milestone_salmon_quinoa_bowl
+  name: Salmon Quinoa Bowl Homemade
+  kcal_per_100g: 175
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: milestone_steak_quinoa_bowl
+  name: Steak Quinoa Bowl Homemade
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: milestone_chicken_brown_rice_bowl_classic
+  name: Chicken Brown Rice Bowl Classic
+  kcal_per_100g: 165
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: milestone_protein_pancakes_blueberry
+  name: Protein Blueberry Pancakes Homemade
+  kcal_per_100g: 195
+  protein_per_100g: 17
+  carbs_per_100g: 18
+  fat_per_100g: 6
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 250
+- source: homemade
+  source_id: milestone_protein_pancakes_chocolate
+  name: Protein Chocolate Pancakes Homemade
+  kcal_per_100g: 195
+  protein_per_100g: 17
+  carbs_per_100g: 18
+  fat_per_100g: 6
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 250
+- source: homemade
+  source_id: milestone_protein_pancakes_pb_banana_v2
+  name: Protein Pancakes with PB & Banana
+  kcal_per_100g: 215
+  protein_per_100g: 17
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 280
+- source: homemade
+  source_id: milestone_acai_protein_bowl_homemade
+  name: Açaí Protein Bowl Homemade
+  kcal_per_100g: 175
+  protein_per_100g: 17
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: homemade,meal
+  portion_unit: meal
+  unit_grams: 400

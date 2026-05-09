@@ -1,0 +1,244 @@
+# Pasta Classics — homemade pasta dishes
+# Spag bol, carbonara, arrabbiata, pesto, alfredo, lasagne, gnocchi, etc.
+# Macros are typical per 100g of plated dish.
+
+- source: homemade
+  source_id: spaghetti_carbonara
+  name: Spaghetti Carbonara
+  kcal_per_100g: 180
+  protein_per_100g: 8
+  carbs_per_100g: 18
+  fat_per_100g: 8.5
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: pasta,italian,carbonara,homemade
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: spaghetti_arrabbiata
+  name: Spaghetti Arrabbiata
+  kcal_per_100g: 125
+  protein_per_100g: 4
+  carbs_per_100g: 20
+  fat_per_100g: 3.0
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: pasta,italian,vegan,homemade
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: penne_arrabbiata
+  name: Penne Arrabbiata
+  kcal_per_100g: 125
+  protein_per_100g: 4
+  carbs_per_100g: 20
+  fat_per_100g: 3.0
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: pasta,italian,vegan,homemade
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: penne_pesto
+  name: Penne Pesto
+  kcal_per_100g: 210
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 320
+  serving_label: plate (320 g)
+  tags: pasta,italian,pesto,vegetarian,homemade
+  portion_unit: meal
+  unit_grams: 320
+- source: homemade
+  source_id: spaghetti_pesto
+  name: Spaghetti Pesto
+  kcal_per_100g: 210
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 320
+  serving_label: plate (320 g)
+  tags: pasta,italian,pesto,vegetarian,homemade
+  portion_unit: meal
+  unit_grams: 320
+- source: homemade
+  source_id: pasta_alfredo
+  name: Pasta Alfredo
+  kcal_per_100g: 210
+  protein_per_100g: 6
+  carbs_per_100g: 21
+  fat_per_100g: 11
+  serving_grams: 320
+  serving_label: plate (320 g)
+  tags: pasta,italian,alfredo,vegetarian,homemade
+  portion_unit: meal
+  unit_grams: 320
+- source: homemade
+  source_id: chicken_alfredo
+  name: Chicken Alfredo Pasta
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  serving_grams: 380
+  serving_label: plate (380 g)
+  tags: pasta,italian,chicken,homemade
+  portion_unit: meal
+  unit_grams: 380
+- source: homemade
+  source_id: macaroni_cheese
+  name: Macaroni Cheese (Homemade)
+  kcal_per_100g: 225
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 300
+  serving_label: bowl (300 g)
+  tags: pasta,cheese,vegetarian,homemade
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: spaghetti_meatballs
+  name: Spaghetti & Meatballs
+  kcal_per_100g: 170
+  protein_per_100g: 9
+  carbs_per_100g: 18
+  fat_per_100g: 6.5
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: pasta,italian,beef,homemade
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: lasagne_homemade_beef
+  name: Lasagne (Beef, Homemade)
+  kcal_per_100g: 170
+  protein_per_100g: 10
+  carbs_per_100g: 14
+  fat_per_100g: 8
+  serving_grams: 350
+  serving_label: serving (350 g)
+  tags: pasta,italian,beef,homemade
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: lasagne_vegetable
+  name: Vegetable Lasagne (Homemade)
+  kcal_per_100g: 130
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 5
+  serving_grams: 350
+  serving_label: serving (350 g)
+  tags: pasta,italian,vegetarian,homemade
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: ravioli_tomato_sauce
+  name: Ravioli with Tomato Sauce
+  kcal_per_100g: 140
+  protein_per_100g: 6
+  carbs_per_100g: 19
+  fat_per_100g: 4.5
+  serving_grams: 300
+  serving_label: plate (300 g)
+  tags: pasta,italian,homemade
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: tortellini_cheese
+  name: Cheese Tortellini in Tomato Sauce
+  kcal_per_100g: 170
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 5.5
+  serving_grams: 300
+  serving_label: plate (300 g)
+  tags: pasta,italian,vegetarian,homemade
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: gnocchi_tomato_basil
+  name: Gnocchi in Tomato & Basil
+  kcal_per_100g: 135
+  protein_per_100g: 4
+  carbs_per_100g: 23
+  fat_per_100g: 3
+  serving_grams: 300
+  serving_label: plate (300 g)
+  tags: pasta,italian,vegetarian,homemade
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: gnocchi_pesto
+  name: Gnocchi al Pesto
+  kcal_per_100g: 195
+  protein_per_100g: 5
+  carbs_per_100g: 24
+  fat_per_100g: 9
+  serving_grams: 300
+  serving_label: plate (300 g)
+  tags: pasta,italian,vegetarian,homemade
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: spag_bol_lean
+  name: Spaghetti Bolognese (Lean Mince)
+  kcal_per_100g: 135
+  protein_per_100g: 9
+  carbs_per_100g: 16
+  fat_per_100g: 3.5
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: pasta,italian,beef,homemade,lean
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: tuna_pasta_bake
+  name: Tuna Pasta Bake
+  kcal_per_100g: 155
+  protein_per_100g: 10
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: pasta,tuna,homemade
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: creamy_chicken_pasta
+  name: Creamy Chicken & Mushroom Pasta
+  kcal_per_100g: 175
+  protein_per_100g: 10
+  carbs_per_100g: 17
+  fat_per_100g: 7.5
+  serving_grams: 380
+  serving_label: plate (380 g)
+  tags: pasta,chicken,creamy,homemade
+  portion_unit: meal
+  unit_grams: 380
+- source: homemade
+  source_id: prawn_pasta_garlic
+  name: Garlic Prawn Linguine
+  kcal_per_100g: 155
+  protein_per_100g: 10
+  carbs_per_100g: 19
+  fat_per_100g: 4
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: pasta,seafood,homemade
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: cacio_e_pepe
+  name: Cacio e Pepe
+  kcal_per_100g: 230
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  serving_grams: 300
+  serving_label: plate (300 g)
+  tags: pasta,italian,cheese,vegetarian,homemade
+  portion_unit: meal
+  unit_grams: 300

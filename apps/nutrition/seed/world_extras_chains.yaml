@@ -1,0 +1,1696 @@
+# Extra cuisines + restaurant chains — Korean (bibimbap, bulgogi, KFC, tteokbokki, kimchi, jjigae),
+# Vietnamese (pho, banh mi, bun cha, summer rolls), Lebanese/Persian (shawarma, fattoush, kibbeh,
+# manakish, kabab, ghormeh sabzi, fesenjan), Filipino (adobo, kaldereta, sinigang, lumpia),
+# ASK Italian, Bill's, The Ivy, Loungers, Carluccio's, Honest Burgers, Shake Shack, Wahaca, Zizzi
+
+- source: korean
+  source_id: kor_kimchi_per_50g
+  name: Kimchi (Per 50g)
+  kcal_per_100g: 30
+  protein_per_100g: 2
+  carbs_per_100g: 4
+  fat_per_100g: 0.5
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: korean,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: korean
+  source_id: kor_bibimbap_beef
+  name: Bibimbap with Beef
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: korean,beef
+  portion_unit: meal
+  unit_grams: 450
+- source: korean
+  source_id: kor_bibimbap_chicken
+  name: Bibimbap with Chicken
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 3
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: korean,chicken
+  portion_unit: meal
+  unit_grams: 450
+- source: korean
+  source_id: kor_bibimbap_tofu
+  name: Bibimbap with Tofu
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 3
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: korean,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 450
+  dietary_compat: vegan,vegetarian
+- source: korean
+  source_id: kor_bulgogi_beef
+  name: Beef Bulgogi
+  kcal_per_100g: 175
+  protein_per_100g: 18
+  carbs_per_100g: 7
+  fat_per_100g: 9
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: korean,beef
+  portion_unit: meal
+  unit_grams: 200
+- source: korean
+  source_id: kor_bulgogi_chicken
+  name: Chicken Bulgogi
+  kcal_per_100g: 145
+  protein_per_100g: 17
+  carbs_per_100g: 7
+  fat_per_100g: 5
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: korean,chicken
+  portion_unit: meal
+  unit_grams: 200
+- source: korean
+  source_id: kor_galbi_short_ribs
+  name: Galbi (Korean Short Ribs)
+  kcal_per_100g: 230
+  protein_per_100g: 17
+  carbs_per_100g: 8
+  fat_per_100g: 14
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: korean,beef
+  portion_unit: meal
+  unit_grams: 200
+- source: korean
+  source_id: kor_japchae_per_serving
+  name: Japchae (Glass Noodles, Per Serving)
+  kcal_per_100g: 165
+  protein_per_100g: 5
+  carbs_per_100g: 25
+  fat_per_100g: 5
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: korean,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: korean
+  source_id: kor_korean_fried_chicken_per_piece
+  name: Korean Fried Chicken (Per Piece)
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 14
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: korean,chicken
+  portion_unit: piece
+  unit_grams: 80
+- source: korean
+  source_id: kor_korean_fried_chicken_yangnyeom
+  name: Korean Fried Chicken Yangnyeom (Spicy)
+  kcal_per_100g: 265
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: korean,chicken,spicy
+  portion_unit: meal
+  unit_grams: 100
+- source: korean
+  source_id: kor_dak_galbi
+  name: Dak Galbi (Spicy Stir-fried Chicken)
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 9
+  fat_per_100g: 9
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: korean,chicken,spicy
+  portion_unit: meal
+  unit_grams: 350
+- source: korean
+  source_id: kor_tteokbokki_per_serving
+  name: Tteokbokki (Spicy Rice Cakes)
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 30
+  fat_per_100g: 3
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: korean,spicy,vegetarian
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegetarian
+- source: korean
+  source_id: kor_kimbap_per_roll
+  name: Kimbap (Per Roll)
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: korean
+  portion_unit: piece
+  unit_grams: 250
+- source: korean
+  source_id: kor_mandu_per_dumpling
+  name: Mandu Dumpling (Per Piece)
+  kcal_per_100g: 220
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: korean
+  portion_unit: piece
+  unit_grams: 30
+- source: korean
+  source_id: kor_pajeon_per_serving
+  name: Pajeon Pancake (Per Serving)
+  kcal_per_100g: 175
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: korean,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegetarian
+- source: korean
+  source_id: kor_haemul_pajeon
+  name: Haemul Pajeon (Seafood Pancake)
+  kcal_per_100g: 195
+  protein_per_100g: 10
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: korean,seafood
+  portion_unit: meal
+  unit_grams: 250
+- source: korean
+  source_id: kor_kimchi_jjigae
+  name: Kimchi Jjigae (Stew)
+  kcal_per_100g: 95
+  protein_per_100g: 6
+  carbs_per_100g: 7
+  fat_per_100g: 5
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: korean,spicy
+  portion_unit: meal
+  unit_grams: 300
+- source: korean
+  source_id: kor_doenjang_jjigae
+  name: Doenjang Jjigae (Soybean Stew)
+  kcal_per_100g: 80
+  protein_per_100g: 6
+  carbs_per_100g: 6
+  fat_per_100g: 4
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: korean,vegetarian
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegetarian
+- source: korean
+  source_id: kor_sundubu_jjigae
+  name: Sundubu Jjigae (Soft Tofu Stew)
+  kcal_per_100g: 85
+  protein_per_100g: 6
+  carbs_per_100g: 6
+  fat_per_100g: 4
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: korean,vegetarian
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegetarian
+- source: korean
+  source_id: kor_kimchi_fried_rice
+  name: Kimchi Fried Rice
+  kcal_per_100g: 165
+  protein_per_100g: 5
+  carbs_per_100g: 25
+  fat_per_100g: 5
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: korean,vegetarian
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegetarian
+- source: korean
+  source_id: kor_korean_bbq_pork_belly_per_100g
+  name: Korean BBQ Pork Belly (Per 100g)
+  kcal_per_100g: 320
+  protein_per_100g: 14
+  carbs_per_100g: 0
+  fat_per_100g: 28
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: korean,pork,bbq
+  portion_unit: meal
+  unit_grams: 100
+- source: korean
+  source_id: kor_kalbi_jjim
+  name: Kalbi Jjim (Braised Short Ribs)
+  kcal_per_100g: 235
+  protein_per_100g: 17
+  carbs_per_100g: 9
+  fat_per_100g: 14
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: korean,beef
+  portion_unit: meal
+  unit_grams: 350
+- source: korean
+  source_id: kor_bingsu_per_serving
+  name: Bingsu (Korean Shaved Ice)
+  kcal_per_100g: 175
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 4
+  brand: Korean Cuisine
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: korean,dessert,vegetarian
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegetarian
+- source: vietnamese
+  source_id: viet_pho_bo_homemade
+  name: Pho Bo (Homemade)
+  kcal_per_100g: 110
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 3
+  brand: Vietnamese Cuisine
+  region_codes: GB
+  serving_grams: 600
+  serving_label: 600 g
+  tags: vietnamese,beef
+  portion_unit: meal
+  unit_grams: 600
+- source: vietnamese
+  source_id: viet_pho_ga_homemade
+  name: Pho Ga (Homemade)
+  kcal_per_100g: 95
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 2.5
+  brand: Vietnamese Cuisine
+  region_codes: GB
+  serving_grams: 600
+  serving_label: 600 g
+  tags: vietnamese,chicken
+  portion_unit: meal
+  unit_grams: 600
+- source: vietnamese
+  source_id: viet_banh_mi_chicken
+  name: Banh Mi (Chicken)
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 30
+  fat_per_100g: 8
+  brand: Vietnamese Cuisine
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: vietnamese,sandwich,chicken
+  portion_unit: meal
+  unit_grams: 250
+- source: vietnamese
+  source_id: viet_banh_mi_pork
+  name: Banh Mi (Pork)
+  kcal_per_100g: 265
+  protein_per_100g: 13
+  carbs_per_100g: 30
+  fat_per_100g: 11
+  brand: Vietnamese Cuisine
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: vietnamese,sandwich,pork
+  portion_unit: meal
+  unit_grams: 250
+- source: vietnamese
+  source_id: viet_banh_mi_tofu
+  name: Banh Mi (Tofu)
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 30
+  fat_per_100g: 6
+  brand: Vietnamese Cuisine
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: vietnamese,sandwich,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: vietnamese
+  source_id: viet_summer_roll_per_unit
+  name: Vietnamese Summer Roll (Per Roll)
+  kcal_per_100g: 95
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 1.5
+  brand: Vietnamese Cuisine
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: vietnamese,vegetarian
+  portion_unit: piece
+  unit_grams: 60
+  dietary_compat: vegetarian
+- source: vietnamese
+  source_id: viet_summer_roll_prawn
+  name: Vietnamese Summer Roll Prawn (Per Roll)
+  kcal_per_100g: 105
+  protein_per_100g: 7
+  carbs_per_100g: 14
+  fat_per_100g: 2
+  brand: Vietnamese Cuisine
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: vietnamese,seafood
+  portion_unit: meal
+  unit_grams: 60
+- source: vietnamese
+  source_id: viet_spring_roll_fried_per_unit
+  name: Vietnamese Fried Spring Roll (Per Roll)
+  kcal_per_100g: 245
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Vietnamese Cuisine
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: vietnamese
+  portion_unit: piece
+  unit_grams: 60
+- source: vietnamese
+  source_id: viet_bun_cha
+  name: Bun Cha (Pork & Noodles)
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Vietnamese Cuisine
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: vietnamese,pork
+  portion_unit: meal
+  unit_grams: 450
+- source: vietnamese
+  source_id: viet_bun_bo_hue
+  name: Bun Bo Hue (Spicy Beef Noodle Soup)
+  kcal_per_100g: 135
+  protein_per_100g: 9
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  brand: Vietnamese Cuisine
+  region_codes: GB
+  serving_grams: 600
+  serving_label: 600 g
+  tags: vietnamese,beef,spicy
+  portion_unit: meal
+  unit_grams: 600
+- source: vietnamese
+  source_id: viet_bun_thit_nuong
+  name: Bun Thit Nuong (Grilled Pork Vermicelli)
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Vietnamese Cuisine
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: vietnamese,pork
+  portion_unit: meal
+  unit_grams: 400
+- source: vietnamese
+  source_id: viet_chicken_pho
+  name: Vietnamese Chicken Pho
+  kcal_per_100g: 95
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 2.5
+  brand: Vietnamese Cuisine
+  region_codes: GB
+  serving_grams: 600
+  serving_label: 600 g
+  tags: vietnamese,chicken
+  portion_unit: meal
+  unit_grams: 600
+- source: vietnamese
+  source_id: viet_lemongrass_chicken
+  name: Lemongrass Chicken (Vietnamese)
+  kcal_per_100g: 165
+  protein_per_100g: 22
+  carbs_per_100g: 8
+  fat_per_100g: 5
+  brand: Vietnamese Cuisine
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: vietnamese,chicken
+  portion_unit: meal
+  unit_grams: 250
+- source: vietnamese
+  source_id: viet_caramel_pork_homemade
+  name: Caramel Pork (Vietnamese)
+  kcal_per_100g: 235
+  protein_per_100g: 15
+  carbs_per_100g: 12
+  fat_per_100g: 16
+  brand: Vietnamese Cuisine
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: vietnamese,pork
+  portion_unit: meal
+  unit_grams: 250
+- source: vietnamese
+  source_id: viet_pho_tai
+  name: Pho Tai (Rare Beef Pho)
+  kcal_per_100g: 110
+  protein_per_100g: 9
+  carbs_per_100g: 12
+  fat_per_100g: 3
+  brand: Vietnamese Cuisine
+  region_codes: GB
+  serving_grams: 600
+  serving_label: 600 g
+  tags: vietnamese,beef
+  portion_unit: meal
+  unit_grams: 600
+- source: vietnamese
+  source_id: viet_com_tam
+  name: Com Tam (Broken Rice with Pork)
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 25
+  fat_per_100g: 8
+  brand: Vietnamese Cuisine
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: vietnamese,pork
+  portion_unit: meal
+  unit_grams: 400
+- source: vietnamese
+  source_id: viet_che_dau_xanh
+  name: Che Dau Xanh (Mung Bean Dessert)
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Vietnamese Cuisine
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: vietnamese,dessert,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: levant
+  source_id: leb_shawarma_chicken_plate
+  name: Lebanese Chicken Shawarma Plate
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 6
+  brand: Levant Cuisine
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: lebanese,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: levant
+  source_id: leb_shawarma_lamb_plate
+  name: Lebanese Lamb Shawarma Plate
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 9
+  brand: Levant Cuisine
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: lebanese,lamb
+  portion_unit: meal
+  unit_grams: 400
+- source: levant
+  source_id: leb_kibbeh_per_piece
+  name: Lebanese Kibbeh (Per Piece)
+  kcal_per_100g: 230
+  protein_per_100g: 13
+  carbs_per_100g: 11
+  fat_per_100g: 14
+  brand: Levant Cuisine
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: lebanese
+  portion_unit: piece
+  unit_grams: 80
+- source: levant
+  source_id: leb_fattoush
+  name: Fattoush (Lebanese Salad)
+  kcal_per_100g: 95
+  protein_per_100g: 2
+  carbs_per_100g: 11
+  fat_per_100g: 5
+  brand: Levant Cuisine
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: lebanese,vegan,vegetarian,salad
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: levant
+  source_id: leb_tabbouleh_homemade
+  name: Tabbouleh (Homemade)
+  kcal_per_100g: 95
+  protein_per_100g: 3
+  carbs_per_100g: 17
+  fat_per_100g: 2.5
+  brand: Levant Cuisine
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: lebanese,vegan,vegetarian,salad
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: levant
+  source_id: leb_manakish_zaatar
+  name: Manakish Zaatar (Per Pizza)
+  kcal_per_100g: 295
+  protein_per_100g: 9
+  carbs_per_100g: 35
+  fat_per_100g: 13
+  brand: Levant Cuisine
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: lebanese,bread,vegetarian
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: levant
+  source_id: leb_manakish_cheese
+  name: Manakish Cheese (Per Pizza)
+  kcal_per_100g: 305
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 16
+  brand: Levant Cuisine
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: lebanese,bread,vegetarian
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: levant
+  source_id: leb_warak_enab
+  name: Warak Enab (Stuffed Vine Leaves)
+  kcal_per_100g: 145
+  protein_per_100g: 3
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Levant Cuisine
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: lebanese,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: levant
+  source_id: leb_tabouleh_grain_per_serving
+  name: Lebanese Tabouleh (Per Serving)
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  brand: Levant Cuisine
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: lebanese,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: levant
+  source_id: leb_baba_ganoush_serving
+  name: Baba Ganoush (Serving)
+  kcal_per_100g: 215
+  protein_per_100g: 4
+  carbs_per_100g: 7
+  fat_per_100g: 19
+  brand: Levant Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: lebanese,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: levant
+  source_id: leb_makdous_per_piece
+  name: Makdous (Stuffed Aubergines, Per Piece)
+  kcal_per_100g: 235
+  protein_per_100g: 4
+  carbs_per_100g: 9
+  fat_per_100g: 21
+  brand: Levant Cuisine
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: lebanese,vegan,vegetarian
+  portion_unit: piece
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: levant
+  source_id: per_chelo_kabab
+  name: Chelo Kabab (Persian)
+  kcal_per_100g: 235
+  protein_per_100g: 17
+  carbs_per_100g: 25
+  fat_per_100g: 9
+  brand: Levant Cuisine
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: persian,beef
+  portion_unit: meal
+  unit_grams: 450
+- source: levant
+  source_id: per_chelo_joojeh
+  name: Chelo Joojeh (Persian Saffron Chicken)
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 25
+  fat_per_100g: 6
+  brand: Levant Cuisine
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: persian,chicken
+  portion_unit: meal
+  unit_grams: 450
+- source: levant
+  source_id: per_ghormeh_sabzi
+  name: Ghormeh Sabzi (Persian Herb Stew)
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 8
+  fat_per_100g: 8
+  brand: Levant Cuisine
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: persian
+  portion_unit: meal
+  unit_grams: 400
+- source: levant
+  source_id: per_fesenjan
+  name: Fesenjan (Persian Walnut Pomegranate Stew)
+  kcal_per_100g: 195
+  protein_per_100g: 12
+  carbs_per_100g: 11
+  fat_per_100g: 11
+  brand: Levant Cuisine
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: persian,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: levant
+  source_id: per_zereshk_polo
+  name: Zereshk Polo (Persian Rice with Barberries)
+  kcal_per_100g: 175
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 4
+  brand: Levant Cuisine
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: persian,vegetarian
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegetarian
+- source: levant
+  source_id: per_kashk_e_bademjan
+  name: Kashk-e Bademjan (Persian Aubergine)
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 11
+  fat_per_100g: 13
+  brand: Levant Cuisine
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: persian,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegetarian
+- source: levant
+  source_id: per_dolmeh
+  name: Dolmeh (Persian Stuffed Vine Leaves)
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Levant Cuisine
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: persian,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: filipino
+  source_id: fil_chicken_adobo
+  name: Chicken Adobo (Filipino)
+  kcal_per_100g: 175
+  protein_per_100g: 17
+  carbs_per_100g: 7
+  fat_per_100g: 9
+  brand: Filipino Cuisine
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: filipino,chicken
+  portion_unit: meal
+  unit_grams: 350
+- source: filipino
+  source_id: fil_pork_adobo
+  name: Pork Adobo
+  kcal_per_100g: 215
+  protein_per_100g: 14
+  carbs_per_100g: 7
+  fat_per_100g: 14
+  brand: Filipino Cuisine
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: filipino,pork
+  portion_unit: meal
+  unit_grams: 350
+- source: filipino
+  source_id: fil_beef_kaldereta
+  name: Beef Kaldereta
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 9
+  fat_per_100g: 12
+  brand: Filipino Cuisine
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: filipino,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: filipino
+  source_id: fil_pancit_canton
+  name: Pancit Canton (Filipino Noodles)
+  kcal_per_100g: 175
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Filipino Cuisine
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: filipino
+  portion_unit: meal
+  unit_grams: 400
+- source: filipino
+  source_id: fil_pancit_palabok
+  name: Pancit Palabok
+  kcal_per_100g: 175
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Filipino Cuisine
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: filipino,seafood
+  portion_unit: meal
+  unit_grams: 400
+- source: filipino
+  source_id: fil_lumpia_per_unit
+  name: Lumpia Filipino Spring Roll (Per Roll)
+  kcal_per_100g: 245
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Filipino Cuisine
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: filipino
+  portion_unit: piece
+  unit_grams: 60
+- source: filipino
+  source_id: fil_sinigang_pork
+  name: Sinigang na Baboy (Pork)
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 7
+  fat_per_100g: 8
+  brand: Filipino Cuisine
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: filipino,pork
+  portion_unit: meal
+  unit_grams: 400
+- source: filipino
+  source_id: fil_sinigang_shrimp
+  name: Sinigang na Hipon (Shrimp)
+  kcal_per_100g: 95
+  protein_per_100g: 9
+  carbs_per_100g: 8
+  fat_per_100g: 3
+  brand: Filipino Cuisine
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: filipino,seafood
+  portion_unit: meal
+  unit_grams: 400
+- source: filipino
+  source_id: fil_lechon_kawali_per_100g
+  name: Lechon Kawali (Crispy Pork Belly, Per 100g)
+  kcal_per_100g: 380
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 33
+  brand: Filipino Cuisine
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: filipino,pork
+  portion_unit: meal
+  unit_grams: 100
+- source: filipino
+  source_id: fil_halo_halo
+  name: Halo-Halo (Filipino Dessert)
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 30
+  fat_per_100g: 4
+  brand: Filipino Cuisine
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: filipino,dessert,vegetarian
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: filipino
+  source_id: fil_leche_flan
+  name: Leche Flan
+  kcal_per_100g: 245
+  protein_per_100g: 7
+  carbs_per_100g: 32
+  fat_per_100g: 11
+  brand: Filipino Cuisine
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: filipino,dessert,vegetarian
+  portion_unit: meal
+  unit_grams: 130
+  dietary_compat: vegetarian
+- source: ask_italian
+  source_id: ask_classic_margherita
+  name: ASK Italian Classic Margherita Pizza
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 8
+  brand: ASK Italian
+  region_codes: GB
+  serving_grams: 320
+  serving_label: plate (320 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 320
+- source: ask_italian
+  source_id: ask_classic_pepperoni
+  name: ASK Italian Pepperoni Pizza
+  kcal_per_100g: 280
+  protein_per_100g: 12
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: ASK Italian
+  region_codes: GB
+  serving_grams: 320
+  serving_label: plate (320 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 320
+- source: ask_italian
+  source_id: ask_chicken_caesar_salad
+  name: ASK Italian Chicken Caesar Salad
+  kcal_per_100g: 175
+  protein_per_100g: 18
+  carbs_per_100g: 9
+  fat_per_100g: 8
+  brand: ASK Italian
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 350
+- source: ask_italian
+  source_id: ask_lasagne_classic
+  name: ASK Italian Lasagne
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  brand: ASK Italian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: ask_italian
+  source_id: ask_carbonara_classico
+  name: ASK Italian Carbonara Classico
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: ASK Italian
+  region_codes: GB
+  serving_grams: 380
+  serving_label: plate (380 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 380
+- source: ask_italian
+  source_id: ask_dough_balls_8
+  name: ASK Italian Dough Balls (8 pcs)
+  kcal_per_100g: 280
+  protein_per_100g: 9
+  carbs_per_100g: 49
+  fat_per_100g: 6
+  brand: ASK Italian
+  region_codes: GB
+  serving_grams: 130
+  serving_label: plate (130 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 130
+- source: ask_italian
+  source_id: ask_bruschetta_classico
+  name: ASK Italian Bruschetta Classico
+  kcal_per_100g: 215
+  protein_per_100g: 5
+  carbs_per_100g: 30
+  fat_per_100g: 9
+  brand: ASK Italian
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 250
+- source: ask_italian
+  source_id: ask_tiramisu
+  name: ASK Italian Tiramisu
+  kcal_per_100g: 295
+  protein_per_100g: 5
+  carbs_per_100g: 35
+  fat_per_100g: 14
+  brand: ASK Italian
+  region_codes: GB
+  serving_grams: 130
+  serving_label: plate (130 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 130
+- source: slug_and_lettuce
+  source_id: slug_chicken_burger
+  name: Slug & Lettuce Chicken Burger
+  kcal_per_100g: 295
+  protein_per_100g: 15
+  carbs_per_100g: 25
+  fat_per_100g: 14
+  brand: Slug & Lettuce
+  region_codes: GB
+  serving_grams: 380
+  serving_label: plate (380 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 380
+- source: slug_and_lettuce
+  source_id: slug_classic_chicken_caesar
+  name: Slug & Lettuce Classic Chicken Caesar
+  kcal_per_100g: 175
+  protein_per_100g: 18
+  carbs_per_100g: 9
+  fat_per_100g: 8
+  brand: Slug & Lettuce
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 350
+- source: slug_and_lettuce
+  source_id: slug_loaded_nachos
+  name: Slug & Lettuce Loaded Nachos
+  kcal_per_100g: 280
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Slug & Lettuce
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 350
+- source: slug_and_lettuce
+  source_id: slug_skinny_chicken
+  name: Slug & Lettuce Skinny Chicken Salad
+  kcal_per_100g: 145
+  protein_per_100g: 22
+  carbs_per_100g: 9
+  fat_per_100g: 4
+  brand: Slug & Lettuce
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 350
+- source: bills
+  source_id: bills_chicken_burger_bills
+  name: Bill's Chicken Burger
+  kcal_per_100g: 285
+  protein_per_100g: 14
+  carbs_per_100g: 25
+  fat_per_100g: 13
+  brand: Bill's
+  region_codes: GB
+  serving_grams: 360
+  serving_label: plate (360 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 360
+- source: bills
+  source_id: bills_steak_frites
+  name: Bill's Steak Frites
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  brand: Bill's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: bills
+  source_id: bills_bills_breakfast
+  name: Bill's Breakfast Big
+  kcal_per_100g: 235
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 14
+  brand: Bill's
+  region_codes: GB
+  serving_grams: 700
+  serving_label: plate (700 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 700
+- source: bills
+  source_id: bills_avocado_smash
+  name: Bill's Avocado Smash
+  kcal_per_100g: 245
+  protein_per_100g: 7
+  carbs_per_100g: 25
+  fat_per_100g: 12
+  brand: Bill's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 250
+- source: the_ivy
+  source_id: ivy_eggs_benedict
+  name: The Ivy Eggs Benedict
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 14
+  brand: The Ivy
+  region_codes: GB
+  serving_grams: 280
+  serving_label: plate (280 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 280
+- source: the_ivy
+  source_id: ivy_truffle_arancini
+  name: The Ivy Truffle Arancini
+  kcal_per_100g: 285
+  protein_per_100g: 8
+  carbs_per_100g: 30
+  fat_per_100g: 15
+  brand: The Ivy
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 200
+- source: the_ivy
+  source_id: ivy_classic_caesar
+  name: The Ivy Classic Caesar Salad
+  kcal_per_100g: 175
+  protein_per_100g: 6
+  carbs_per_100g: 11
+  fat_per_100g: 13
+  brand: The Ivy
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 250
+- source: the_ivy
+  source_id: ivy_chicken_milanese
+  name: The Ivy Chicken Milanese
+  kcal_per_100g: 240
+  protein_per_100g: 19
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: The Ivy
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: the_ivy
+  source_id: ivy_steak_frites
+  name: The Ivy Steak Frites
+  kcal_per_100g: 200
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  brand: The Ivy
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: the_ivy
+  source_id: ivy_shepherds_pie
+  name: The Ivy Shepherd's Pie
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 14
+  fat_per_100g: 6
+  brand: The Ivy
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: loungers
+  source_id: lounge_breakfast_full
+  name: Lounge Café Full Breakfast
+  kcal_per_100g: 230
+  protein_per_100g: 11
+  carbs_per_100g: 17
+  fat_per_100g: 13
+  brand: Loungers
+  region_codes: GB
+  serving_grams: 600
+  serving_label: plate (600 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 600
+- source: loungers
+  source_id: lounge_eggs_florentine
+  name: Lounge Café Eggs Florentine
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 14
+  brand: Loungers
+  region_codes: GB
+  serving_grams: 280
+  serving_label: plate (280 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 280
+- source: loungers
+  source_id: lounge_tapas_board
+  name: Lounge Café Tapas Board
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 17
+  fat_per_100g: 11
+  brand: Loungers
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: carluccios
+  source_id: carluccio_lasagne_classico
+  name: Carluccio's Lasagne Classico
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  brand: Carluccio's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: carluccios
+  source_id: carluccio_carbonara
+  name: Carluccio's Spaghetti Carbonara
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Carluccio's
+  region_codes: GB
+  serving_grams: 380
+  serving_label: plate (380 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 380
+- source: carluccios
+  source_id: carluccio_panettone
+  name: Carluccio's Panettone
+  kcal_per_100g: 380
+  protein_per_100g: 9
+  carbs_per_100g: 50
+  fat_per_100g: 17
+  brand: Carluccio's
+  region_codes: GB
+  serving_grams: 80
+  serving_label: plate (80 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 80
+- source: honest_burgers
+  source_id: honest_classic
+  name: Honest Burgers The Honest
+  kcal_per_100g: 320
+  protein_per_100g: 17
+  carbs_per_100g: 22
+  fat_per_100g: 18
+  brand: Honest Burgers
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: honest_burgers
+  source_id: honest_chicken
+  name: Honest Burgers The Chicken
+  kcal_per_100g: 305
+  protein_per_100g: 18
+  carbs_per_100g: 25
+  fat_per_100g: 14
+  brand: Honest Burgers
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: honest_burgers
+  source_id: honest_rosemary_chips
+  name: Honest Burgers Rosemary Salt Chips
+  kcal_per_100g: 260
+  protein_per_100g: 4
+  carbs_per_100g: 30
+  fat_per_100g: 13
+  brand: Honest Burgers
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 200
+- source: shake_shack
+  source_id: shake_shackburger
+  name: Shake Shack ShackBurger
+  kcal_per_100g: 320
+  protein_per_100g: 15
+  carbs_per_100g: 22
+  fat_per_100g: 18
+  brand: Shake Shack
+  region_codes: GB
+  serving_grams: 220
+  serving_label: plate (220 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 220
+- source: shake_shack
+  source_id: shake_double_shackburger
+  name: Shake Shack Double ShackBurger
+  kcal_per_100g: 285
+  protein_per_100g: 18
+  carbs_per_100g: 18
+  fat_per_100g: 16
+  brand: Shake Shack
+  region_codes: GB
+  serving_grams: 320
+  serving_label: plate (320 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 320
+- source: shake_shack
+  source_id: shake_shroom_burger
+  name: Shake Shack 'Shroom Burger
+  kcal_per_100g: 285
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 16
+  brand: Shake Shack
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 200
+- source: shake_shack
+  source_id: shake_chicken_shack
+  name: Shake Shack Chicken Shack
+  kcal_per_100g: 305
+  protein_per_100g: 15
+  carbs_per_100g: 25
+  fat_per_100g: 15
+  brand: Shake Shack
+  region_codes: GB
+  serving_grams: 220
+  serving_label: plate (220 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 220
+- source: shake_shack
+  source_id: shake_fries_regular
+  name: Shake Shack Crinkle Cut Fries
+  kcal_per_100g: 295
+  protein_per_100g: 4
+  carbs_per_100g: 38
+  fat_per_100g: 14
+  brand: Shake Shack
+  region_codes: GB
+  serving_grams: 130
+  serving_label: plate (130 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 130
+- source: shake_shack
+  source_id: shake_cheese_fries
+  name: Shake Shack Cheese Fries
+  kcal_per_100g: 320
+  protein_per_100g: 6
+  carbs_per_100g: 38
+  fat_per_100g: 16
+  brand: Shake Shack
+  region_codes: GB
+  serving_grams: 130
+  serving_label: plate (130 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 130
+- source: wahaca
+  source_id: wahaca_burrito
+  name: Wahaca Burrito
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Wahaca
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: wahaca
+  source_id: wahaca_quesadilla
+  name: Wahaca Quesadilla
+  kcal_per_100g: 285
+  protein_per_100g: 16
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Wahaca
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 250
+- source: wahaca
+  source_id: wahaca_taco_3
+  name: Wahaca Tacos (3 pieces)
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Wahaca
+  region_codes: GB
+  serving_grams: 240
+  serving_label: plate (240 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 240
+- source: wahaca
+  source_id: wahaca_chicken_chipotle
+  name: Wahaca Grilled Chicken Chipotle
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 8
+  fat_per_100g: 7
+  brand: Wahaca
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 250
+- source: pho
+  source_id: pho_pho_bo_premium
+  name: Pho Premium Pho Bo
+  kcal_per_100g: 115
+  protein_per_100g: 9
+  carbs_per_100g: 14
+  fat_per_100g: 3
+  brand: Pho
+  region_codes: GB
+  serving_grams: 700
+  serving_label: plate (700 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 700
+- source: pho
+  source_id: pho_lemongrass_chicken_skewer
+  name: Pho Lemongrass Chicken Skewer
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 4
+  fat_per_100g: 8
+  brand: Pho
+  region_codes: GB
+  serving_grams: 100
+  serving_label: plate (100 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 100
+- source: pho
+  source_id: pho_vietnamese_iced_coffee
+  name: Pho Vietnamese Iced Coffee
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 25
+  fat_per_100g: 5
+  brand: Pho
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 250
+- source: cote_brasserie
+  source_id: cote_steak_haché
+  name: Côte Steak Haché
+  kcal_per_100g: 215
+  protein_per_100g: 17
+  carbs_per_100g: 5
+  fat_per_100g: 14
+  brand: Côte Brasserie
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 250
+- source: cote_brasserie
+  source_id: cote_poulet_grand_mère
+  name: Côte Poulet Grand-Mère
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 8
+  brand: Côte Brasserie
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 350
+- source: cote_brasserie
+  source_id: cote_classic_burger_cote
+  name: Côte Burger Classic
+  kcal_per_100g: 285
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 16
+  brand: Côte Brasserie
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: zizzi
+  source_id: zizzi_pollo_picante
+  name: Zizzi Pollo Piccante Pizza
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 10
+  brand: Zizzi
+  region_codes: GB
+  serving_grams: 320
+  serving_label: plate (320 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 320
+- source: zizzi
+  source_id: zizzi_classic_bolognese
+  name: Zizzi Classic Bolognese
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Zizzi
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 400
+- source: zizzi
+  source_id: zizzi_dough_sticks
+  name: Zizzi Dough Sticks
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 38
+  fat_per_100g: 8
+  brand: Zizzi
+  region_codes: GB
+  serving_grams: 100
+  serving_label: plate (100 g)
+  tags: restaurant,chain
+  portion_unit: meal
+  unit_grams: 100

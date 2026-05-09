@@ -1,0 +1,1610 @@
+# More homemade meals (burgers, sandwiches, pizzas, calzones, pies, pasties, scotch eggs,
+# Sunday roast variants, gammon, toad in the hole, bangers & mash, jacket potato variants,
+# pasta dishes, more curries, chicken dishes named); restaurant classics (lobster thermidor,
+# carpaccio, tartare, oysters, soups, beef wellington, paella, risotto, osso buco);
+# pub classics (curries, burgers, fish & chips, scampi, carvery, Sunday roasts);
+# kids meals (fish finger sandwich, cheesy pasta, beans on toast, toast variants);
+# more drinks (smoothies, milkshakes); seasonal (Brussels, pigs in blankets, Christmas sandwich,
+# Terry's chocolate orange, After Eight, Quality Street);
+# nutrition staples (PB powder, nutritional yeast, spirulina, chlorella, maca, açaí powder,
+# cacao nibs/powder, hemp protein, pea protein, collagen, pre-workout, BCAA, glutamine, psyllium)
+
+- source: homemade
+  source_id: home_chicken_caesar_burger
+  name: Chicken Caesar Burger Homemade
+  kcal_per_100g: 285
+  protein_per_100g: 22
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 320
+  serving_label: 320 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 320
+- source: homemade
+  source_id: home_buffalo_chicken_wrap
+  name: Buffalo Chicken Wrap Homemade
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 280
+- source: homemade
+  source_id: home_steak_sandwich_homemade
+  name: Steak Sandwich Homemade
+  kcal_per_100g: 305
+  protein_per_100g: 18
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 280
+- source: homemade
+  source_id: home_meatball_sub_homemade
+  name: Meatball Sub Homemade
+  kcal_per_100g: 295
+  protein_per_100g: 14
+  carbs_per_100g: 30
+  fat_per_100g: 13
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: home_philly_cheesesteak
+  name: Philly Cheesesteak Homemade
+  kcal_per_100g: 305
+  protein_per_100g: 18
+  carbs_per_100g: 25
+  fat_per_100g: 14
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 280
+- source: homemade
+  source_id: home_french_dip_sandwich
+  name: French Dip Sandwich
+  kcal_per_100g: 295
+  protein_per_100g: 18
+  carbs_per_100g: 28
+  fat_per_100g: 12
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 280
+- source: homemade
+  source_id: home_pulled_pork_burger
+  name: Pulled Pork Burger Homemade
+  kcal_per_100g: 295
+  protein_per_100g: 17
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 280
+- source: homemade
+  source_id: home_buffalo_chicken_pizza
+  name: Buffalo Chicken Pizza Homemade
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 350
+- source: ingredient
+  source_id: home_homemade_pizza_margherita
+  name: Homemade Margherita Pizza
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 8
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: home_homemade_pizza_pepperoni
+  name: Homemade Pepperoni Pizza
+  kcal_per_100g: 280
+  protein_per_100g: 12
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 350
+- source: ingredient
+  source_id: home_homemade_pizza_veggie
+  name: Homemade Veggie Pizza
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 8
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: home_homemade_calzone_chicken
+  name: Homemade Chicken Calzone
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: home_chicken_pot_pie_homemade
+  name: Chicken Pot Pie Homemade
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: home_beef_pot_pie_homemade
+  name: Beef Pot Pie Homemade
+  kcal_per_100g: 250
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 13
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: home_steak_kidney_pie
+  name: Steak & Kidney Pie
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: home_pork_pie_homemade
+  name: Pork Pie Homemade
+  kcal_per_100g: 380
+  protein_per_100g: 13
+  carbs_per_100g: 25
+  fat_per_100g: 25
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: home_scotch_egg_homemade
+  name: Scotch Egg Homemade
+  kcal_per_100g: 295
+  protein_per_100g: 14
+  carbs_per_100g: 11
+  fat_per_100g: 22
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 100
+- source: homemade
+  source_id: home_sausage_roll_homemade
+  name: Sausage Roll Homemade (Per Roll)
+  kcal_per_100g: 327
+  protein_per_100g: 9
+  carbs_per_100g: 25
+  fat_per_100g: 22
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 80
+- source: homemade
+  source_id: home_pasty_homemade
+  name: Cornish Pasty Homemade (Per Pasty)
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 28
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 250
+- source: homemade
+  source_id: home_gammon_pineapple
+  name: Gammon with Pineapple
+  kcal_per_100g: 215
+  protein_per_100g: 30
+  carbs_per_100g: 9
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: home_toad_in_hole_homemade
+  name: Toad in the Hole Homemade
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 13
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: home_bangers_mash_homemade
+  name: Bangers & Mash Homemade
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_jacket_potato_curry
+  name: Jacket Potato with Chicken Curry
+  kcal_per_100g: 135
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 3
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 500
+- source: homemade
+  source_id: home_chicken_caesar_pasta
+  name: Chicken Caesar Pasta
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: home_lemon_chicken_pasta
+  name: Lemon Chicken Pasta
+  kcal_per_100g: 175
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: home_homemade_chicken_curry_naan
+  name: Chicken Curry with Naan
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 450
+- source: ingredient
+  source_id: home_lentil_curry_with_rice
+  name: Lentil Curry & Rice (Homemade)
+  kcal_per_100g: 145
+  protein_per_100g: 6
+  carbs_per_100g: 25
+  fat_per_100g: 3
+  brand: Homemade,vegan,vegetarian
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: home_butter_bean_stew
+  name: Butter Bean Stew
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  brand: Homemade,vegan,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: home_chicken_chasseur_homemade
+  name: Chicken Chasseur Homemade
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_chicken_provencal
+  name: Chicken Provençal
+  kcal_per_100g: 145
+  protein_per_100g: 13
+  carbs_per_100g: 8
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_chicken_marsala
+  name: Chicken Marsala
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 11
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: home_chicken_piccata
+  name: Chicken Piccata
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 250
+- source: homemade
+  source_id: home_chicken_marengo
+  name: Chicken Marengo
+  kcal_per_100g: 165
+  protein_per_100g: 13
+  carbs_per_100g: 9
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: home_chicken_curry_thai_red
+  name: Thai Red Chicken Curry Homemade
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 10
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: home_chicken_curry_thai_yellow
+  name: Thai Yellow Chicken Curry
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 450
+- source: restaurant
+  source_id: rest_lobster_thermidor
+  name: Lobster Thermidor (Restaurant)
+  kcal_per_100g: 195
+  protein_per_100g: 17
+  carbs_per_100g: 7
+  fat_per_100g: 11
+  brand: Restaurant
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 350
+- source: restaurant
+  source_id: rest_beef_carpaccio
+  name: Beef Carpaccio Starter
+  kcal_per_100g: 165
+  protein_per_100g: 22
+  carbs_per_100g: 1
+  fat_per_100g: 9
+  brand: Restaurant
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 130
+- source: restaurant
+  source_id: rest_steak_tartare
+  name: Steak Tartare
+  kcal_per_100g: 195
+  protein_per_100g: 22
+  carbs_per_100g: 4
+  fat_per_100g: 11
+  brand: Restaurant
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 200
+- source: restaurant
+  source_id: rest_oysters_3_natural
+  name: Oysters Natural (3 oysters)
+  kcal_per_100g: 70
+  protein_per_100g: 8
+  carbs_per_100g: 4
+  fat_per_100g: 2
+  brand: Restaurant
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 100
+- source: restaurant
+  source_id: rest_oysters_kilpatrick_3
+  name: Oysters Kilpatrick (3 oysters)
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 4
+  fat_per_100g: 9
+  brand: Restaurant
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 130
+- source: restaurant
+  source_id: rest_french_onion_soup_per_serving
+  name: French Onion Soup with Cheese
+  kcal_per_100g: 195
+  protein_per_100g: 8
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Restaurant
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 350
+- source: restaurant
+  source_id: rest_lobster_bisque
+  name: Lobster Bisque
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 9
+  fat_per_100g: 8
+  brand: Restaurant
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 300
+- source: restaurant
+  source_id: rest_seafood_chowder
+  name: Seafood Chowder
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 7
+  brand: Restaurant
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 350
+- source: restaurant
+  source_id: rest_beef_wellington
+  name: Beef Wellington (Restaurant)
+  kcal_per_100g: 285
+  protein_per_100g: 14
+  carbs_per_100g: 19
+  fat_per_100g: 17
+  brand: Restaurant
+  region_codes: GB
+  serving_grams: 275
+  serving_label: 275 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 275
+- source: restaurant
+  source_id: rest_duck_a_orange
+  name: Duck à l'Orange Restaurant
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 13
+  fat_per_100g: 10
+  brand: Restaurant
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 300
+- source: restaurant
+  source_id: rest_coq_au_vin_restaurant
+  name: Coq au Vin Restaurant
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 8
+  fat_per_100g: 11
+  brand: Restaurant
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 400
+- source: restaurant
+  source_id: rest_cassoulet_restaurant
+  name: Cassoulet Restaurant
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 14
+  fat_per_100g: 9
+  brand: Restaurant
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 400
+- source: restaurant
+  source_id: rest_bouillabaisse
+  name: Bouillabaisse
+  kcal_per_100g: 145
+  protein_per_100g: 13
+  carbs_per_100g: 9
+  fat_per_100g: 6
+  brand: Restaurant
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 400
+- source: restaurant
+  source_id: rest_paella_valenciana
+  name: Paella Valenciana Traditional
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Restaurant
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 400
+- source: restaurant
+  source_id: rest_fideua_seafood
+  name: Fideuà Seafood
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Restaurant
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 400
+- source: ingredient
+  source_id: rest_risotto_milanese
+  name: Risotto Milanese
+  kcal_per_100g: 215
+  protein_per_100g: 7
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: Restaurant,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: ingredient
+  source_id: rest_risotto_ai_funghi
+  name: Risotto ai Funghi
+  kcal_per_100g: 195
+  protein_per_100g: 6
+  carbs_per_100g: 28
+  fat_per_100g: 7
+  brand: Restaurant,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: restaurant
+  source_id: rest_osso_buco_restaurant
+  name: Osso Buco
+  kcal_per_100g: 215
+  protein_per_100g: 17
+  carbs_per_100g: 11
+  fat_per_100g: 12
+  brand: Restaurant
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 350
+- source: restaurant
+  source_id: rest_carbonara_restaurant
+  name: Spaghetti Carbonara Restaurant
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Restaurant
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 350
+- source: restaurant
+  source_id: rest_amatriciana_restaurant
+  name: Bucatini Amatriciana Restaurant
+  kcal_per_100g: 175
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Restaurant
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 350
+- source: ingredient
+  source_id: rest_tiramisu_restaurant
+  name: Tiramisu Restaurant
+  kcal_per_100g: 295
+  protein_per_100g: 5
+  carbs_per_100g: 32
+  fat_per_100g: 15
+  brand: Restaurant,vegetarian
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 130
+  dietary_compat: vegetarian
+- source: pub
+  source_id: pub_chicken_balti_pub
+  name: Pub Chicken Balti
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 6
+  brand: Pub
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 450
+- source: pub
+  source_id: pub_chicken_madras_pub
+  name: Pub Chicken Madras
+  kcal_per_100g: 130
+  protein_per_100g: 10
+  carbs_per_100g: 9
+  fat_per_100g: 6
+  brand: Pub
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 450
+- source: pub
+  source_id: pub_chicken_jalfrezi_pub
+  name: Pub Chicken Jalfrezi
+  kcal_per_100g: 125
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 5
+  brand: Pub
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 450
+- source: pub
+  source_id: pub_thai_green_curry_pub
+  name: Pub Thai Green Curry
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 6
+  brand: Pub
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 450
+- source: pub
+  source_id: pub_burger_classic_pub
+  name: Pub Classic Burger & Chips
+  kcal_per_100g: 280
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Pub
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 500
+- source: pub
+  source_id: pub_chicken_burger_chips_pub
+  name: Pub Chicken Burger & Chips
+  kcal_per_100g: 245
+  protein_per_100g: 15
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Pub
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 500
+- source: pub
+  source_id: pub_steak_sandwich_chips
+  name: Pub Steak Sandwich & Chips
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: Pub
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 500
+- source: pub
+  source_id: pub_fish_chips_mushy_peas_pub
+  name: Pub Fish, Chips & Mushy Peas
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 11
+  brand: Pub
+  region_codes: GB
+  serving_grams: 600
+  serving_label: 600 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 600
+- source: pub
+  source_id: pub_scampi_chips_peas_pub
+  name: Pub Scampi, Chips & Peas
+  kcal_per_100g: 245
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 11
+  brand: Pub
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 500
+- source: pub
+  source_id: pub_lasagne_chips_pub
+  name: Pub Lasagne with Chips
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Pub
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 500
+- source: pub
+  source_id: pub_carvery_per_plate
+  name: Pub Carvery (Plated)
+  kcal_per_100g: 195
+  protein_per_100g: 17
+  carbs_per_100g: 14
+  fat_per_100g: 9
+  brand: Pub
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 500
+- source: pub
+  source_id: pub_sunday_roast_chicken
+  name: Sunday Roast Chicken Pub
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 14
+  fat_per_100g: 9
+  brand: Pub
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 500
+- source: pub
+  source_id: pub_sunday_roast_beef
+  name: Sunday Roast Beef Pub
+  kcal_per_100g: 215
+  protein_per_100g: 15
+  carbs_per_100g: 14
+  fat_per_100g: 11
+  brand: Pub
+  region_codes: GB
+  serving_grams: 550
+  serving_label: 550 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 550
+- source: pub
+  source_id: pub_sunday_roast_lamb
+  name: Sunday Roast Lamb Pub
+  kcal_per_100g: 235
+  protein_per_100g: 14
+  carbs_per_100g: 14
+  fat_per_100g: 13
+  brand: Pub
+  region_codes: GB
+  serving_grams: 550
+  serving_label: 550 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 550
+- source: pub
+  source_id: pub_sunday_roast_pork
+  name: Sunday Roast Pork Pub
+  kcal_per_100g: 220
+  protein_per_100g: 15
+  carbs_per_100g: 14
+  fat_per_100g: 12
+  brand: Pub
+  region_codes: GB
+  serving_grams: 550
+  serving_label: 550 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 550
+- source: pub
+  source_id: pub_steak_pie_chips_pub_v2
+  name: Pub Steak Pie Chips & Peas
+  kcal_per_100g: 230
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Pub
+  region_codes: GB
+  serving_grams: 550
+  serving_label: 550 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 550
+- source: homemade
+  source_id: kids_fish_finger_sandwich_homemade
+  name: Fish Finger Sandwich Homemade
+  kcal_per_100g: 295
+  protein_per_100g: 13
+  carbs_per_100g: 32
+  fat_per_100g: 14
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 220
+  serving_label: 220 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 220
+- source: homemade
+  source_id: kids_chicken_nugget_sandwich
+  name: Chicken Nugget Sandwich Homemade
+  kcal_per_100g: 305
+  protein_per_100g: 14
+  carbs_per_100g: 30
+  fat_per_100g: 14
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 220
+  serving_label: 220 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 220
+- source: homemade
+  source_id: kids_grilled_cheese_homemade
+  name: Grilled Cheese Homemade
+  kcal_per_100g: 305
+  protein_per_100g: 14
+  carbs_per_100g: 30
+  fat_per_100g: 14
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 200
+- source: ingredient
+  source_id: kids_pasta_butter
+  name: Buttered Pasta
+  kcal_per_100g: 195
+  protein_per_100g: 7
+  carbs_per_100g: 30
+  fat_per_100g: 6
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: ingredient
+  source_id: kids_pasta_cheese
+  name: Cheesy Pasta Kids
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 8
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: ingredient
+  source_id: kids_pasta_tomato
+  name: Tomato Pasta Kids
+  kcal_per_100g: 165
+  protein_per_100g: 5
+  carbs_per_100g: 30
+  fat_per_100g: 3
+  brand: Homemade,vegan,vegetarian
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: kids_chicken_rice_kids
+  name: Chicken & Rice Kids
+  kcal_per_100g: 130
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 2
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: meal
+  portion_unit: meal
+  unit_grams: 250
+- source: ingredient
+  source_id: kids_beans_toast_homemade
+  name: Beans on Toast
+  kcal_per_100g: 145
+  protein_per_100g: 7
+  carbs_per_100g: 25
+  fat_per_100g: 2
+  brand: Homemade,vegan,vegetarian
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: kids_toast_marmite
+  name: Toast with Marmite
+  kcal_per_100g: 165
+  protein_per_100g: 6
+  carbs_per_100g: 28
+  fat_per_100g: 3
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: ingredient
+  source_id: kids_toast_jam
+  name: Toast with Jam
+  kcal_per_100g: 195
+  protein_per_100g: 5
+  carbs_per_100g: 35
+  fat_per_100g: 3
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: ingredient
+  source_id: kids_toast_butter
+  name: Toast with Butter
+  kcal_per_100g: 215
+  protein_per_100g: 5
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: ingredient
+  source_id: kids_toast_peanut_butter
+  name: Toast with Peanut Butter
+  kcal_per_100g: 245
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 11
+  brand: Homemade,vegan,vegetarian
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: kids_toast_honey
+  name: Toast with Honey
+  kcal_per_100g: 215
+  protein_per_100g: 4
+  carbs_per_100g: 38
+  fat_per_100g: 4
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: ingredient
+  source_id: kids_toast_marmalade
+  name: Toast with Marmalade
+  kcal_per_100g: 215
+  protein_per_100g: 4
+  carbs_per_100g: 38
+  fat_per_100g: 4
+  brand: Homemade,vegan,vegetarian
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: drink_smoothie_orange_pineapple
+  name: Orange & Pineapple Smoothie
+  kcal_per_100g: 55
+  protein_per_100g: 1
+  carbs_per_100g: 13
+  fat_per_100g: 0.2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 350
+- source: ingredient
+  source_id: drink_smoothie_strawberry_blueberry
+  name: Strawberry & Blueberry Smoothie
+  kcal_per_100g: 60
+  protein_per_100g: 1
+  carbs_per_100g: 13
+  fat_per_100g: 0.3
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 350
+- source: ingredient
+  source_id: drink_smoothie_cherry_almond
+  name: Cherry & Almond Smoothie
+  kcal_per_100g: 95
+  protein_per_100g: 2
+  carbs_per_100g: 16
+  fat_per_100g: 3
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 350
+- source: ingredient
+  source_id: drink_milkshake_oreo_homemade
+  name: Oreo Milkshake Homemade
+  kcal_per_100g: 305
+  protein_per_100g: 8
+  carbs_per_100g: 38
+  fat_per_100g: 14
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 350
+- source: ingredient
+  source_id: drink_milkshake_kit_kat_homemade
+  name: KitKat Milkshake Homemade
+  kcal_per_100g: 295
+  protein_per_100g: 8
+  carbs_per_100g: 38
+  fat_per_100g: 13
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 350
+- source: ingredient
+  source_id: drink_milkshake_peanut_butter_homemade
+  name: Peanut Butter Milkshake Homemade
+  kcal_per_100g: 320
+  protein_per_100g: 9
+  carbs_per_100g: 35
+  fat_per_100g: 16
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 350
+- source: seasonal
+  source_id: xmas_brussels_sprouts_per_100g_xmas
+  name: Christmas Brussels Sprouts (Per 100g)
+  kcal_per_100g: 36
+  protein_per_100g: 2.5
+  carbs_per_100g: 7
+  fat_per_100g: 0.4
+  brand: Christmas
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 100
+- source: seasonal
+  source_id: xmas_pigs_in_blankets_3_xmas
+  name: Christmas Pigs in Blankets (3 pieces)
+  kcal_per_100g: 295
+  protein_per_100g: 13
+  carbs_per_100g: 5
+  fat_per_100g: 25
+  brand: Christmas
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 90
+- source: seasonal
+  source_id: xmas_christmas_sandwich_turkey_stuffing
+  name: Christmas Turkey & Stuffing Sandwich
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 25
+  fat_per_100g: 9
+  brand: Christmas
+  region_codes: GB
+  serving_grams: 220
+  serving_label: 220 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 220
+- source: brand
+  source_id: xmas_chocolate_orange_per_segment
+  name: Terry's Chocolate Orange (Per Segment)
+  kcal_per_100g: 540
+  protein_per_100g: 4
+  carbs_per_100g: 60
+  fat_per_100g: 30
+  brand: Terry's
+  region_codes: GB
+  serving_grams: 8
+  serving_label: 8 g
+  tags: ingredient,supplement
+  portion_unit: piece
+  unit_grams: 8
+- source: brand
+  source_id: xmas_after_eight_per_unit
+  name: After Eight Mint (Per Unit)
+  kcal_per_100g: 425
+  protein_per_100g: 3
+  carbs_per_100g: 75
+  fat_per_100g: 12
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 8
+  serving_label: 8 g
+  tags: ingredient,supplement
+  portion_unit: piece
+  unit_grams: 8
+- source: brand
+  source_id: xmas_quality_street_per_unit
+  name: Quality Street Mixed (Per Unit)
+  kcal_per_100g: 460
+  protein_per_100g: 4
+  carbs_per_100g: 64
+  fat_per_100g: 21
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 9
+  serving_label: 9 g
+  tags: ingredient,supplement
+  portion_unit: piece
+  unit_grams: 9
+- source: ingredient
+  source_id: nut_pb_powder_per_30g
+  name: Peanut Butter Powder (Per 30g)
+  kcal_per_100g: 380
+  protein_per_100g: 50
+  carbs_per_100g: 30
+  fat_per_100g: 10
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: ingredient,supplement
+  portion_unit: scoop
+  unit_grams: 30
+- source: ingredient
+  source_id: nut_nutritional_yeast_per_15g
+  name: Nutritional Yeast (Per 15g)
+  kcal_per_100g: 360
+  protein_per_100g: 50
+  carbs_per_100g: 38
+  fat_per_100g: 6
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: ingredient,supplement
+  portion_unit: tbsp
+  unit_grams: 15
+- source: ingredient
+  source_id: nut_spirulina_powder_per_5g
+  name: Spirulina Powder (Per 5g)
+  kcal_per_100g: 290
+  protein_per_100g: 57
+  carbs_per_100g: 24
+  fat_per_100g: 8
+  brand: Generic
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: ingredient,supplement
+  portion_unit: tsp
+  unit_grams: 5
+- source: ingredient
+  source_id: nut_chlorella_powder_per_5g
+  name: Chlorella Powder (Per 5g)
+  kcal_per_100g: 410
+  protein_per_100g: 55
+  carbs_per_100g: 17
+  fat_per_100g: 11
+  brand: Generic
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: ingredient,supplement
+  portion_unit: tsp
+  unit_grams: 5
+- source: ingredient
+  source_id: nut_maca_powder_per_5g
+  name: Maca Powder (Per 5g)
+  kcal_per_100g: 325
+  protein_per_100g: 14
+  carbs_per_100g: 60
+  fat_per_100g: 1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: ingredient,supplement
+  portion_unit: tsp
+  unit_grams: 5
+- source: ingredient
+  source_id: nut_acai_powder_per_5g
+  name: Açaí Powder (Per 5g)
+  kcal_per_100g: 480
+  protein_per_100g: 8
+  carbs_per_100g: 52
+  fat_per_100g: 32
+  brand: Generic
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: ingredient,supplement
+  portion_unit: tsp
+  unit_grams: 5
+- source: ingredient
+  source_id: nut_cacao_nibs_per_15g
+  name: Cacao Nibs (Per 15g)
+  kcal_per_100g: 595
+  protein_per_100g: 14
+  carbs_per_100g: 30
+  fat_per_100g: 50
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: ingredient,supplement
+  portion_unit: tbsp
+  unit_grams: 15
+- source: ingredient
+  source_id: nut_cacao_powder_per_5g
+  name: Cacao Powder (Per 5g)
+  kcal_per_100g: 230
+  protein_per_100g: 19
+  carbs_per_100g: 58
+  fat_per_100g: 14
+  brand: Generic
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: ingredient,supplement
+  portion_unit: tsp
+  unit_grams: 5
+- source: ingredient
+  source_id: nut_hemp_protein_per_30g
+  name: Hemp Protein Powder (Per 30g)
+  kcal_per_100g: 380
+  protein_per_100g: 50
+  carbs_per_100g: 18
+  fat_per_100g: 10
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: ingredient,supplement
+  portion_unit: scoop
+  unit_grams: 30
+- source: ingredient
+  source_id: nut_pea_protein_per_30g
+  name: Pea Protein Powder (Per 30g)
+  kcal_per_100g: 380
+  protein_per_100g: 80
+  carbs_per_100g: 5
+  fat_per_100g: 5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: ingredient,supplement
+  portion_unit: scoop
+  unit_grams: 30
+- source: ingredient
+  source_id: nut_collagen_powder_per_10g
+  name: Collagen Peptides (Per 10g)
+  kcal_per_100g: 360
+  protein_per_100g: 90
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 10
+  serving_label: 10 g
+  tags: ingredient,supplement
+  portion_unit: scoop
+  unit_grams: 10
+- source: ingredient
+  source_id: nut_pre_workout_powder_10g
+  name: Pre-Workout Powder Generic (Per 10g)
+  kcal_per_100g: 30
+  protein_per_100g: 1
+  carbs_per_100g: 5
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 10
+  serving_label: 10 g
+  tags: ingredient,supplement
+  portion_unit: meal
+  unit_grams: 10
+- source: ingredient
+  source_id: nut_bcaa_powder_per_5g
+  name: BCAA Powder (Per 5g)
+  kcal_per_100g: 30
+  protein_per_100g: 5
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: ingredient,supplement
+  portion_unit: tsp
+  unit_grams: 5
+- source: ingredient
+  source_id: nut_glutamine_per_5g
+  name: L-Glutamine (Per 5g)
+  kcal_per_100g: 30
+  protein_per_100g: 5
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: ingredient,supplement
+  portion_unit: tsp
+  unit_grams: 5
+- source: ingredient
+  source_id: nut_psyllium_husk_per_15g
+  name: Psyllium Husk (Per 15g)
+  kcal_per_100g: 360
+  protein_per_100g: 10
+  carbs_per_100g: 80
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: ingredient,supplement
+  portion_unit: tbsp
+  unit_grams: 15

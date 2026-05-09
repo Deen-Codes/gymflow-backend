@@ -1,0 +1,1151 @@
+# More pub chains expansion — Wetherspoons full menu, Harvester, Toby Carvery,
+# Hungry Horse, Beefeater, Pho, Busaba, Five Guys (full burger combos)
+
+- source: wetherspoons
+  source_id: spoons_large_breakfast
+  name: Wetherspoons Large Breakfast
+  kcal_per_100g: 235
+  protein_per_100g: 12
+  carbs_per_100g: 17
+  fat_per_100g: 14
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 800
+  serving_label: item (800 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 800
+- source: wetherspoons
+  source_id: spoons_small_breakfast
+  name: Wetherspoons Small Breakfast
+  kcal_per_100g: 220
+  protein_per_100g: 10
+  carbs_per_100g: 17
+  fat_per_100g: 12
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 400
+  serving_label: item (400 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 400
+- source: wetherspoons
+  source_id: spoons_eggs_benedict
+  name: Wetherspoons Eggs Benedict
+  kcal_per_100g: 235
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 14
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 280
+  serving_label: item (280 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 280
+- source: wetherspoons
+  source_id: spoons_egg_florentine
+  name: Wetherspoons Eggs Florentine
+  kcal_per_100g: 225
+  protein_per_100g: 12
+  carbs_per_100g: 18
+  fat_per_100g: 13
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 280
+  serving_label: item (280 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 280
+- source: wetherspoons
+  source_id: spoons_egg_royale
+  name: Wetherspoons Eggs Royale
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 14
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 280
+  serving_label: item (280 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 280
+- source: wetherspoons
+  source_id: spoons_chicken_burger
+  name: Wetherspoons Chicken Burger
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: wetherspoons
+  source_id: spoons_classic_cheeseburger
+  name: Wetherspoons Classic Cheeseburger
+  kcal_per_100g: 270
+  protein_per_100g: 16
+  carbs_per_100g: 20
+  fat_per_100g: 15
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: wetherspoons
+  source_id: spoons_double_burger
+  name: Wetherspoons Empire State Double Burger
+  kcal_per_100g: 320
+  protein_per_100g: 18
+  carbs_per_100g: 18
+  fat_per_100g: 22
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 450
+  serving_label: item (450 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 450
+- source: wetherspoons
+  source_id: spoons_chicken_tikka
+  name: Wetherspoons Chicken Tikka Masala
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 12
+  fat_per_100g: 6
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 500
+  serving_label: item (500 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 500
+- source: wetherspoons
+  source_id: spoons_chicken_madras
+  name: Wetherspoons Chicken Madras
+  kcal_per_100g: 130
+  protein_per_100g: 10
+  carbs_per_100g: 8
+  fat_per_100g: 6
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 500
+  serving_label: item (500 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 500
+- source: wetherspoons
+  source_id: spoons_lasagne
+  name: Wetherspoons Lasagne
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 14
+  fat_per_100g: 7.5
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 450
+  serving_label: item (450 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 450
+- source: wetherspoons
+  source_id: spoons_macaroni_cheese
+  name: Wetherspoons Macaroni Cheese
+  kcal_per_100g: 180
+  protein_per_100g: 8
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 400
+  serving_label: item (400 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 400
+- source: wetherspoons
+  source_id: spoons_chilli_con_carne
+  name: Wetherspoons Chilli con Carne
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 6
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 450
+  serving_label: item (450 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 450
+- source: wetherspoons
+  source_id: spoons_steak_ale_pie
+  name: Wetherspoons Steak & Ale Pie
+  kcal_per_100g: 235
+  protein_per_100g: 9
+  carbs_per_100g: 21
+  fat_per_100g: 12
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 500
+  serving_label: item (500 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 500
+- source: wetherspoons
+  source_id: spoons_chicken_wrap_chipotle
+  name: Wetherspoons Chipotle Chicken Wrap
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: wetherspoons
+  source_id: spoons_fish_chips_small
+  name: Wetherspoons Fish & Chips Small
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 10
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 450
+  serving_label: item (450 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 450
+- source: wetherspoons
+  source_id: spoons_scampi_chips
+  name: Wetherspoons Scampi & Chips
+  kcal_per_100g: 245
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 11
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 450
+  serving_label: item (450 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 450
+- source: wetherspoons
+  source_id: spoons_chicken_chips
+  name: Wetherspoons Chicken & Chips
+  kcal_per_100g: 215
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 500
+  serving_label: item (500 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 500
+- source: wetherspoons
+  source_id: spoons_pizza_pepperoni
+  name: Wetherspoons Pepperoni Pizza
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 9
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: wetherspoons
+  source_id: spoons_pizza_margherita
+  name: Wetherspoons Margherita Pizza
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 30
+  fat_per_100g: 7
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: wetherspoons
+  source_id: spoons_loaded_nachos
+  name: Wetherspoons Loaded Nachos
+  kcal_per_100g: 280
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: wetherspoons
+  source_id: spoons_brownie
+  name: Wetherspoons Chocolate Brownie
+  kcal_per_100g: 410
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 130
+  serving_label: item (130 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 130
+- source: wetherspoons
+  source_id: spoons_cheesecake
+  name: Wetherspoons Vanilla Cheesecake
+  kcal_per_100g: 335
+  protein_per_100g: 5
+  carbs_per_100g: 35
+  fat_per_100g: 20
+  brand: Wetherspoons
+  region_codes: GB
+  serving_grams: 130
+  serving_label: item (130 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 130
+- source: harvester
+  source_id: harvester_chicken_chargrill
+  name: Harvester Original Chargrill Chicken
+  kcal_per_100g: 175
+  protein_per_100g: 28
+  carbs_per_100g: 5
+  fat_per_100g: 5
+  brand: Harvester
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 250
+- source: harvester
+  source_id: harvester_chicken_combo_quarter_chips
+  name: Harvester Half Chicken with Chips
+  kcal_per_100g: 195
+  protein_per_100g: 18
+  carbs_per_100g: 18
+  fat_per_100g: 7
+  brand: Harvester
+  region_codes: GB
+  serving_grams: 500
+  serving_label: item (500 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 500
+- source: harvester
+  source_id: harvester_rump_steak_8oz
+  name: Harvester Rump Steak 8oz with Chips
+  kcal_per_100g: 220
+  protein_per_100g: 18
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Harvester
+  region_codes: GB
+  serving_grams: 500
+  serving_label: item (500 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 500
+- source: harvester
+  source_id: harvester_rump_steak_10oz
+  name: Harvester Rump Steak 10oz with Chips
+  kcal_per_100g: 225
+  protein_per_100g: 19
+  carbs_per_100g: 21
+  fat_per_100g: 9
+  brand: Harvester
+  region_codes: GB
+  serving_grams: 550
+  serving_label: item (550 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 550
+- source: harvester
+  source_id: harvester_sirloin_8oz
+  name: Harvester Sirloin Steak 8oz
+  kcal_per_100g: 225
+  protein_per_100g: 19
+  carbs_per_100g: 0
+  fat_per_100g: 14
+  brand: Harvester
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 250
+- source: harvester
+  source_id: harvester_chicken_skewers
+  name: Harvester Chicken Skewers
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 7
+  brand: Harvester
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 200
+- source: harvester
+  source_id: harvester_combo_grill
+  name: Harvester Combo Grill Plate
+  kcal_per_100g: 215
+  protein_per_100g: 17
+  carbs_per_100g: 14
+  fat_per_100g: 11
+  brand: Harvester
+  region_codes: GB
+  serving_grams: 600
+  serving_label: item (600 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 600
+- source: harvester
+  source_id: harvester_bbq_ribs_full
+  name: Harvester BBQ Pork Ribs Full Rack
+  kcal_per_100g: 225
+  protein_per_100g: 18
+  carbs_per_100g: 14
+  fat_per_100g: 12
+  brand: Harvester
+  region_codes: GB
+  serving_grams: 600
+  serving_label: item (600 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 600
+- source: harvester
+  source_id: harvester_chicken_caesar_salad
+  name: Harvester Chicken Caesar Salad
+  kcal_per_100g: 175
+  protein_per_100g: 18
+  carbs_per_100g: 9
+  fat_per_100g: 8
+  brand: Harvester
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: harvester
+  source_id: harvester_unlimited_salad_bowl
+  name: Harvester Unlimited Salad Bowl (with dressing)
+  kcal_per_100g: 95
+  protein_per_100g: 3
+  carbs_per_100g: 8
+  fat_per_100g: 5
+  brand: Harvester
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 200
+- source: harvester
+  source_id: harvester_dirty_fries
+  name: Harvester Dirty Fries (Side)
+  kcal_per_100g: 245
+  protein_per_100g: 7
+  carbs_per_100g: 28
+  fat_per_100g: 12
+  brand: Harvester
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 200
+- source: harvester
+  source_id: harvester_onion_rings_side
+  name: Harvester Onion Rings (Side)
+  kcal_per_100g: 320
+  protein_per_100g: 5
+  carbs_per_100g: 38
+  fat_per_100g: 16
+  brand: Harvester
+  region_codes: GB
+  serving_grams: 117
+  serving_label: item (117 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 117
+- source: toby_carvery
+  source_id: toby_carvery_chicken_breast_per_100g
+  name: Toby Carvery Chicken Breast (Per 100g)
+  kcal_per_100g: 145
+  protein_per_100g: 28
+  carbs_per_100g: 0
+  fat_per_100g: 4
+  brand: Toby Carvery
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 100
+- source: toby_carvery
+  source_id: toby_carvery_turkey_per_100g
+  name: Toby Carvery Turkey (Per 100g)
+  kcal_per_100g: 145
+  protein_per_100g: 28
+  carbs_per_100g: 0
+  fat_per_100g: 4
+  brand: Toby Carvery
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 100
+- source: toby_carvery
+  source_id: toby_carvery_beef_per_100g
+  name: Toby Carvery Beef (Per 100g)
+  kcal_per_100g: 165
+  protein_per_100g: 26
+  carbs_per_100g: 0
+  fat_per_100g: 7
+  brand: Toby Carvery
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 100
+- source: toby_carvery
+  source_id: toby_carvery_gammon_per_100g
+  name: Toby Carvery Gammon (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 9
+  brand: Toby Carvery
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 100
+- source: toby_carvery
+  source_id: toby_carvery_pork_per_100g
+  name: Toby Carvery Pork (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 26
+  carbs_per_100g: 0
+  fat_per_100g: 8
+  brand: Toby Carvery
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 100
+- source: toby_carvery
+  source_id: toby_carvery_yorkshire_pudding
+  name: Toby Carvery Yorkshire Pudding (Per Pudding)
+  kcal_per_100g: 380
+  protein_per_100g: 11
+  carbs_per_100g: 49
+  fat_per_100g: 16
+  brand: Toby Carvery
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 30
+- source: toby_carvery
+  source_id: toby_carvery_roast_potatoes_per_100g
+  name: Toby Carvery Roast Potatoes (Per 100g)
+  kcal_per_100g: 195
+  protein_per_100g: 3
+  carbs_per_100g: 25
+  fat_per_100g: 9
+  brand: Toby Carvery
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 100
+- source: toby_carvery
+  source_id: toby_carvery_stuffing_per_serving
+  name: Toby Carvery Stuffing
+  kcal_per_100g: 210
+  protein_per_100g: 5
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: Toby Carvery
+  region_codes: GB
+  serving_grams: 60
+  serving_label: item (60 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 60
+- source: toby_carvery
+  source_id: toby_carvery_pigs_in_blankets
+  name: Toby Carvery Pigs in Blankets (Per Piece)
+  kcal_per_100g: 295
+  protein_per_100g: 13
+  carbs_per_100g: 5
+  fat_per_100g: 25
+  brand: Toby Carvery
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 30
+- source: toby_carvery
+  source_id: toby_carvery_gravy_per_serving
+  name: Toby Carvery Gravy (Per Serving)
+  kcal_per_100g: 35
+  protein_per_100g: 0.5
+  carbs_per_100g: 4
+  fat_per_100g: 1.5
+  brand: Toby Carvery
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 100
+- source: toby_carvery
+  source_id: toby_carvery_carrots_per_100g
+  name: Toby Carvery Honey Carrots (Per 100g)
+  kcal_per_100g: 60
+  protein_per_100g: 1
+  carbs_per_100g: 13
+  fat_per_100g: 0.5
+  brand: Toby Carvery
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 100
+- source: toby_carvery
+  source_id: toby_carvery_cauliflower_cheese
+  name: Toby Carvery Cauliflower Cheese (Per Serving)
+  kcal_per_100g: 145
+  protein_per_100g: 7
+  carbs_per_100g: 7
+  fat_per_100g: 11
+  brand: Toby Carvery
+  region_codes: GB
+  serving_grams: 150
+  serving_label: item (150 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 150
+- source: toby_carvery
+  source_id: toby_carvery_mash_per_100g
+  name: Toby Carvery Mashed Potatoes (Per 100g)
+  kcal_per_100g: 110
+  protein_per_100g: 2
+  carbs_per_100g: 18
+  fat_per_100g: 3.5
+  brand: Toby Carvery
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 100
+- source: hungry_horse
+  source_id: hh_kong_burger
+  name: Hungry Horse Kong Burger
+  kcal_per_100g: 320
+  protein_per_100g: 17
+  carbs_per_100g: 25
+  fat_per_100g: 18
+  brand: Hungry Horse
+  region_codes: GB
+  serving_grams: 450
+  serving_label: item (450 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 450
+- source: hungry_horse
+  source_id: hh_world_famous_mixed_grill
+  name: Hungry Horse World Famous Mixed Grill
+  kcal_per_100g: 245
+  protein_per_100g: 17
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Hungry Horse
+  region_codes: GB
+  serving_grams: 700
+  serving_label: item (700 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 700
+- source: beefeater
+  source_id: beefeater_classic_steak
+  name: Beefeater 8oz Sirloin Steak
+  kcal_per_100g: 215
+  protein_per_100g: 19
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  brand: Beefeater
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 250
+- source: beefeater
+  source_id: beefeater_chicken_caesar
+  name: Beefeater Chicken Caesar Salad
+  kcal_per_100g: 175
+  protein_per_100g: 18
+  carbs_per_100g: 9
+  fat_per_100g: 8
+  brand: Beefeater
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: beefeater
+  source_id: beefeater_classic_burger
+  name: Beefeater Classic Burger
+  kcal_per_100g: 320
+  protein_per_100g: 17
+  carbs_per_100g: 22
+  fat_per_100g: 18
+  brand: Beefeater
+  region_codes: GB
+  serving_grams: 380
+  serving_label: item (380 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 380
+- source: pho
+  source_id: pho_pho_bo
+  name: Pho Bo (Beef Pho)
+  kcal_per_100g: 115
+  protein_per_100g: 9
+  carbs_per_100g: 14
+  fat_per_100g: 3
+  brand: Pho
+  region_codes: GB
+  serving_grams: 700
+  serving_label: item (700 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 700
+- source: pho
+  source_id: pho_pho_ga
+  name: Pho Ga (Chicken Pho)
+  kcal_per_100g: 95
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 2.5
+  brand: Pho
+  region_codes: GB
+  serving_grams: 700
+  serving_label: item (700 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 700
+- source: pho
+  source_id: pho_pho_chay
+  name: Pho Chay (Vegan Pho)
+  kcal_per_100g: 75
+  protein_per_100g: 4
+  carbs_per_100g: 13
+  fat_per_100g: 1.5
+  brand: Pho
+  region_codes: GB
+  serving_grams: 700
+  serving_label: item (700 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 700
+- source: pho
+  source_id: pho_summer_rolls_2
+  name: Pho Summer Rolls (2 pieces)
+  kcal_per_100g: 175
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Pho
+  region_codes: GB
+  serving_grams: 130
+  serving_label: item (130 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 130
+- source: pho
+  source_id: pho_bun_bo_nam_bo
+  name: Pho Bun Bo Nam Bo (Beef Vermicelli Salad)
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  brand: Pho
+  region_codes: GB
+  serving_grams: 400
+  serving_label: item (400 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 400
+- source: pho
+  source_id: pho_chicken_curry
+  name: Pho Vietnamese Chicken Curry
+  kcal_per_100g: 145
+  protein_per_100g: 10
+  carbs_per_100g: 12
+  fat_per_100g: 7
+  brand: Pho
+  region_codes: GB
+  serving_grams: 400
+  serving_label: item (400 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 400
+- source: pho
+  source_id: pho_caramel_pork_belly
+  name: Pho Caramel Pork Belly
+  kcal_per_100g: 235
+  protein_per_100g: 14
+  carbs_per_100g: 12
+  fat_per_100g: 16
+  brand: Pho
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: pho
+  source_id: pho_chicken_satay_skewer
+  name: Pho Chicken Satay Skewer (Per Skewer)
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 4
+  fat_per_100g: 8
+  brand: Pho
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 100
+- source: busaba
+  source_id: busaba_pad_thai_chicken
+  name: Busaba Chicken Pad Thai
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Busaba
+  region_codes: GB
+  serving_grams: 400
+  serving_label: item (400 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 400
+- source: busaba
+  source_id: busaba_green_curry_chicken
+  name: Busaba Green Chicken Curry
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 7
+  brand: Busaba
+  region_codes: GB
+  serving_grams: 400
+  serving_label: item (400 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 400
+- source: busaba
+  source_id: busaba_red_curry_duck
+  name: Busaba Red Duck Curry
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 11
+  fat_per_100g: 9
+  brand: Busaba
+  region_codes: GB
+  serving_grams: 400
+  serving_label: item (400 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 400
+- source: busaba
+  source_id: busaba_thai_calamari
+  name: Busaba Thai Calamari
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Busaba
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 200
+- source: busaba
+  source_id: busaba_chicken_satay
+  name: Busaba Chicken Satay (Per Skewer)
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 4
+  fat_per_100g: 8
+  brand: Busaba
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 80
+- source: five_guys
+  source_id: fg_little_hamburger
+  name: Five Guys Little Hamburger
+  kcal_per_100g: 295
+  protein_per_100g: 15
+  carbs_per_100g: 22
+  fat_per_100g: 16
+  brand: Five Guys
+  region_codes: GB
+  serving_grams: 220
+  serving_label: item (220 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 220
+- source: five_guys
+  source_id: fg_little_cheeseburger
+  name: Five Guys Little Cheeseburger
+  kcal_per_100g: 320
+  protein_per_100g: 17
+  carbs_per_100g: 22
+  fat_per_100g: 19
+  brand: Five Guys
+  region_codes: GB
+  serving_grams: 240
+  serving_label: item (240 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 240
+- source: five_guys
+  source_id: fg_bacon_burger
+  name: Five Guys Bacon Burger
+  kcal_per_100g: 305
+  protein_per_100g: 18
+  carbs_per_100g: 18
+  fat_per_100g: 19
+  brand: Five Guys
+  region_codes: GB
+  serving_grams: 300
+  serving_label: item (300 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 300
+- source: five_guys
+  source_id: fg_bacon_cheeseburger
+  name: Five Guys Bacon Cheeseburger
+  kcal_per_100g: 320
+  protein_per_100g: 19
+  carbs_per_100g: 18
+  fat_per_100g: 21
+  brand: Five Guys
+  region_codes: GB
+  serving_grams: 320
+  serving_label: item (320 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 320
+- source: five_guys
+  source_id: fg_little_bacon_burger
+  name: Five Guys Little Bacon Burger
+  kcal_per_100g: 320
+  protein_per_100g: 17
+  carbs_per_100g: 22
+  fat_per_100g: 19
+  brand: Five Guys
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 250
+- source: five_guys
+  source_id: fg_little_bacon_cheeseburger
+  name: Five Guys Little Bacon Cheeseburger
+  kcal_per_100g: 340
+  protein_per_100g: 18
+  carbs_per_100g: 22
+  fat_per_100g: 22
+  brand: Five Guys
+  region_codes: GB
+  serving_grams: 270
+  serving_label: item (270 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 270
+- source: five_guys
+  source_id: fg_grilled_cheese
+  name: Five Guys Grilled Cheese Sandwich
+  kcal_per_100g: 295
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 16
+  brand: Five Guys
+  region_codes: GB
+  serving_grams: 180
+  serving_label: item (180 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 180
+- source: five_guys
+  source_id: fg_veggie_sandwich
+  name: Five Guys Veggie Sandwich
+  kcal_per_100g: 195
+  protein_per_100g: 7
+  carbs_per_100g: 30
+  fat_per_100g: 6
+  brand: Five Guys
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 200
+- source: five_guys
+  source_id: fg_kosher_dog
+  name: Five Guys Hot Dog
+  kcal_per_100g: 280
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 17
+  brand: Five Guys
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 200
+- source: five_guys
+  source_id: fg_bacon_dog
+  name: Five Guys Bacon Dog
+  kcal_per_100g: 295
+  protein_per_100g: 14
+  carbs_per_100g: 21
+  fat_per_100g: 19
+  brand: Five Guys
+  region_codes: GB
+  serving_grams: 220
+  serving_label: item (220 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 220
+- source: five_guys
+  source_id: fg_cheese_dog
+  name: Five Guys Cheese Dog
+  kcal_per_100g: 305
+  protein_per_100g: 15
+  carbs_per_100g: 22
+  fat_per_100g: 19
+  brand: Five Guys
+  region_codes: GB
+  serving_grams: 220
+  serving_label: item (220 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 220
+- source: five_guys
+  source_id: fg_milkshake_chocolate
+  name: Five Guys Chocolate Milkshake
+  kcal_per_100g: 285
+  protein_per_100g: 5
+  carbs_per_100g: 35
+  fat_per_100g: 13
+  brand: Five Guys
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: five_guys
+  source_id: fg_milkshake_strawberry
+  name: Five Guys Strawberry Milkshake
+  kcal_per_100g: 280
+  protein_per_100g: 5
+  carbs_per_100g: 35
+  fat_per_100g: 12
+  brand: Five Guys
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: five_guys
+  source_id: fg_milkshake_vanilla
+  name: Five Guys Vanilla Milkshake
+  kcal_per_100g: 280
+  protein_per_100g: 5
+  carbs_per_100g: 35
+  fat_per_100g: 12
+  brand: Five Guys
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: five_guys
+  source_id: fg_milkshake_oreo
+  name: Five Guys Oreo Milkshake
+  kcal_per_100g: 305
+  protein_per_100g: 5
+  carbs_per_100g: 38
+  fat_per_100g: 14
+  brand: Five Guys
+  region_codes: GB
+  serving_grams: 380
+  serving_label: item (380 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 380
+- source: five_guys
+  source_id: fg_milkshake_peanut_butter
+  name: Five Guys Peanut Butter Milkshake
+  kcal_per_100g: 320
+  protein_per_100g: 6
+  carbs_per_100g: 35
+  fat_per_100g: 16
+  brand: Five Guys
+  region_codes: GB
+  serving_grams: 380
+  serving_label: item (380 g)
+  tags: pub,restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 380

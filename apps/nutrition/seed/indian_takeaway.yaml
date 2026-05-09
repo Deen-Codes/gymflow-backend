@@ -1,0 +1,459 @@
+# Indian Takeaway — most-tracked curries, rices, breads, starters
+# Macros per 100g; serving sizes are typical UK takeaway portions.
+
+- source: homemade
+  source_id: chicken_tikka_masala
+  name: Chicken Tikka Masala
+  kcal_per_100g: 150
+  protein_per_100g: 11
+  carbs_per_100g: 6
+  fat_per_100g: 9
+  serving_grams: 350
+  serving_label: curry (350 g)
+  tags: indian,curry,chicken,takeaway
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: chicken_korma
+  name: Chicken Korma
+  kcal_per_100g: 170
+  protein_per_100g: 9
+  carbs_per_100g: 8
+  fat_per_100g: 11
+  serving_grams: 350
+  serving_label: curry (350 g)
+  tags: indian,curry,chicken,takeaway
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: chicken_jalfrezi
+  name: Chicken Jalfrezi
+  kcal_per_100g: 125
+  protein_per_100g: 11
+  carbs_per_100g: 6
+  fat_per_100g: 6
+  serving_grams: 350
+  serving_label: curry (350 g)
+  tags: indian,curry,chicken,takeaway
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: chicken_madras
+  name: Chicken Madras
+  kcal_per_100g: 130
+  protein_per_100g: 11
+  carbs_per_100g: 5
+  fat_per_100g: 7
+  serving_grams: 350
+  serving_label: curry (350 g)
+  tags: indian,curry,chicken,takeaway,spicy
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: chicken_vindaloo
+  name: Chicken Vindaloo
+  kcal_per_100g: 135
+  protein_per_100g: 12
+  carbs_per_100g: 5
+  fat_per_100g: 7.5
+  serving_grams: 350
+  serving_label: curry (350 g)
+  tags: indian,curry,chicken,takeaway,spicy
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: chicken_dopiaza
+  name: Chicken Dopiaza
+  kcal_per_100g: 120
+  protein_per_100g: 11
+  carbs_per_100g: 6
+  fat_per_100g: 5.5
+  serving_grams: 350
+  serving_label: curry (350 g)
+  tags: indian,curry,chicken,takeaway
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: chicken_balti
+  name: Chicken Balti
+  kcal_per_100g: 125
+  protein_per_100g: 11
+  carbs_per_100g: 5
+  fat_per_100g: 6
+  serving_grams: 350
+  serving_label: curry (350 g)
+  tags: indian,curry,chicken,takeaway
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: chicken_rogan_josh
+  name: Chicken Rogan Josh
+  kcal_per_100g: 130
+  protein_per_100g: 11
+  carbs_per_100g: 6
+  fat_per_100g: 6.5
+  serving_grams: 350
+  serving_label: curry (350 g)
+  tags: indian,curry,chicken,takeaway
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: lamb_rogan_josh
+  name: Lamb Rogan Josh
+  kcal_per_100g: 170
+  protein_per_100g: 14
+  carbs_per_100g: 5
+  fat_per_100g: 10
+  serving_grams: 350
+  serving_label: curry (350 g)
+  tags: indian,curry,lamb,takeaway
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: lamb_madras
+  name: Lamb Madras
+  kcal_per_100g: 175
+  protein_per_100g: 13
+  carbs_per_100g: 5
+  fat_per_100g: 11
+  serving_grams: 350
+  serving_label: curry (350 g)
+  tags: indian,curry,lamb,takeaway,spicy
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: lamb_bhuna
+  name: Lamb Bhuna
+  kcal_per_100g: 170
+  protein_per_100g: 14
+  carbs_per_100g: 4
+  fat_per_100g: 10
+  serving_grams: 350
+  serving_label: curry (350 g)
+  tags: indian,curry,lamb,takeaway
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: beef_madras
+  name: Beef Madras
+  kcal_per_100g: 155
+  protein_per_100g: 13
+  carbs_per_100g: 5
+  fat_per_100g: 9
+  serving_grams: 350
+  serving_label: curry (350 g)
+  tags: indian,curry,beef,takeaway
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: prawn_curry
+  name: Prawn Curry (Indian)
+  kcal_per_100g: 120
+  protein_per_100g: 10
+  carbs_per_100g: 6
+  fat_per_100g: 6
+  serving_grams: 350
+  serving_label: curry (350 g)
+  tags: indian,curry,seafood,takeaway
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: saag_paneer
+  name: Saag Paneer
+  kcal_per_100g: 155
+  protein_per_100g: 7
+  carbs_per_100g: 5
+  fat_per_100g: 12
+  serving_grams: 300
+  serving_label: curry (300 g)
+  tags: indian,curry,vegetarian,takeaway
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: palak_paneer
+  name: Palak Paneer
+  kcal_per_100g: 150
+  protein_per_100g: 7
+  carbs_per_100g: 5
+  fat_per_100g: 11
+  serving_grams: 300
+  serving_label: curry (300 g)
+  tags: indian,curry,vegetarian,takeaway
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: dal_makhani
+  name: Dal Makhani
+  kcal_per_100g: 155
+  protein_per_100g: 7
+  carbs_per_100g: 16
+  fat_per_100g: 7
+  serving_grams: 300
+  serving_label: dal (300 g)
+  tags: indian,curry,vegetarian,takeaway,lentils
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: tarka_dal
+  name: Tarka Dal
+  kcal_per_100g: 120
+  protein_per_100g: 7
+  carbs_per_100g: 16
+  fat_per_100g: 3
+  serving_grams: 300
+  serving_label: dal (300 g)
+  tags: indian,curry,vegan,takeaway,lentils
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: chana_masala
+  name: Chana Masala
+  kcal_per_100g: 120
+  protein_per_100g: 5
+  carbs_per_100g: 16
+  fat_per_100g: 4
+  serving_grams: 300
+  serving_label: curry (300 g)
+  tags: indian,curry,vegan,chickpeas,takeaway
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: aloo_gobi
+  name: Aloo Gobi
+  kcal_per_100g: 85
+  protein_per_100g: 3
+  carbs_per_100g: 12
+  fat_per_100g: 3
+  serving_grams: 300
+  serving_label: curry (300 g)
+  tags: indian,vegan,takeaway
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: vegetable_biryani
+  name: Vegetable Biryani
+  kcal_per_100g: 155
+  protein_per_100g: 4
+  carbs_per_100g: 25
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: biryani (400 g)
+  tags: indian,rice,vegetarian,takeaway
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: chicken_biryani
+  name: Chicken Biryani
+  kcal_per_100g: 170
+  protein_per_100g: 8
+  carbs_per_100g: 24
+  fat_per_100g: 4.5
+  serving_grams: 400
+  serving_label: biryani (400 g)
+  tags: indian,rice,chicken,takeaway
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: lamb_biryani
+  name: Lamb Biryani
+  kcal_per_100g: 185
+  protein_per_100g: 9
+  carbs_per_100g: 23
+  fat_per_100g: 6
+  serving_grams: 400
+  serving_label: biryani (400 g)
+  tags: indian,rice,lamb,takeaway
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: naan_plain
+  name: Naan Bread (Plain)
+  kcal_per_100g: 290
+  protein_per_100g: 9
+  carbs_per_100g: 47
+  fat_per_100g: 7
+  serving_grams: 130
+  serving_label: naan (130 g)
+  tags: indian,bread,takeaway
+  portion_unit: piece
+  unit_grams: 130
+- source: homemade
+  source_id: naan_garlic
+  name: Naan Bread (Garlic)
+  kcal_per_100g: 305
+  protein_per_100g: 9
+  carbs_per_100g: 47
+  fat_per_100g: 9
+  serving_grams: 130
+  serving_label: naan (130 g)
+  tags: indian,bread,takeaway
+  portion_unit: piece
+  unit_grams: 130
+- source: homemade
+  source_id: naan_peshwari
+  name: Naan Bread (Peshwari)
+  kcal_per_100g: 330
+  protein_per_100g: 8
+  carbs_per_100g: 50
+  fat_per_100g: 11
+  serving_grams: 130
+  serving_label: naan (130 g)
+  tags: indian,bread,takeaway
+  portion_unit: piece
+  unit_grams: 130
+- source: homemade
+  source_id: chapati_plain
+  name: Chapati / Roti (Plain)
+  kcal_per_100g: 290
+  protein_per_100g: 9
+  carbs_per_100g: 53
+  fat_per_100g: 4.5
+  serving_grams: 50
+  serving_label: chapati (50 g)
+  tags: indian,bread,takeaway
+  portion_unit: piece
+  unit_grams: 50
+- source: homemade
+  source_id: pilau_rice
+  name: Pilau Rice
+  kcal_per_100g: 170
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 5
+  serving_grams: 200
+  serving_label: portion (200 g)
+  tags: indian,rice,takeaway
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: boiled_basmati_rice_indian
+  name: Boiled Basmati Rice (Takeaway Portion)
+  kcal_per_100g: 130
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 0.5
+  serving_grams: 200
+  serving_label: portion (200 g)
+  tags: indian,rice,takeaway
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: samosa_vegetable
+  name: Vegetable Samosa
+  kcal_per_100g: 295
+  protein_per_100g: 6
+  carbs_per_100g: 30
+  fat_per_100g: 17
+  serving_grams: 60
+  serving_label: samosa (60 g)
+  tags: indian,starter,vegetarian,takeaway
+  portion_unit: piece
+  unit_grams: 60
+- source: homemade
+  source_id: samosa_meat
+  name: Meat Samosa
+  kcal_per_100g: 300
+  protein_per_100g: 8
+  carbs_per_100g: 28
+  fat_per_100g: 17
+  serving_grams: 60
+  serving_label: samosa (60 g)
+  tags: indian,starter,takeaway
+  portion_unit: piece
+  unit_grams: 60
+- source: homemade
+  source_id: onion_bhaji
+  name: Onion Bhaji
+  kcal_per_100g: 255
+  protein_per_100g: 5
+  carbs_per_100g: 25
+  fat_per_100g: 15
+  serving_grams: 50
+  serving_label: bhaji (50 g)
+  tags: indian,starter,vegetarian,takeaway
+  portion_unit: piece
+  unit_grams: 50
+- source: homemade
+  source_id: chicken_pakora
+  name: Chicken Pakora
+  kcal_per_100g: 230
+  protein_per_100g: 17
+  carbs_per_100g: 12
+  fat_per_100g: 13
+  serving_grams: 120
+  serving_label: portion (120 g)
+  tags: indian,starter,chicken,takeaway
+  portion_unit: meal
+  unit_grams: 120
+- source: homemade
+  source_id: tandoori_chicken
+  name: Tandoori Chicken (Takeaway)
+  kcal_per_100g: 155
+  protein_per_100g: 25
+  carbs_per_100g: 2
+  fat_per_100g: 5.5
+  serving_grams: 200
+  serving_label: portion (200 g)
+  tags: indian,chicken,grilled,takeaway
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: chicken_tikka_dry
+  name: Chicken Tikka (Dry, Starter)
+  kcal_per_100g: 170
+  protein_per_100g: 26
+  carbs_per_100g: 2
+  fat_per_100g: 7
+  serving_grams: 200
+  serving_label: portion (200 g)
+  tags: indian,chicken,starter,takeaway
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: poppadom_plain
+  name: Poppadom (Plain)
+  kcal_per_100g: 365
+  protein_per_100g: 19
+  carbs_per_100g: 49
+  fat_per_100g: 10
+  serving_grams: 10
+  serving_label: poppadom (10 g)
+  tags: indian,starter,takeaway
+  portion_unit: piece
+  unit_grams: 10
+- source: homemade
+  source_id: mango_chutney
+  name: Mango Chutney
+  kcal_per_100g: 220
+  protein_per_100g: 0.5
+  carbs_per_100g: 55
+  fat_per_100g: 0.1
+  serving_grams: 15
+  serving_label: tbsp (15 g)
+  tags: indian,condiment,takeaway
+  portion_unit: tbsp
+  unit_grams: 15
+- source: homemade
+  source_id: mint_yogurt_dip
+  name: Mint Yogurt Dip
+  kcal_per_100g: 55
+  protein_per_100g: 3.5
+  carbs_per_100g: 5
+  fat_per_100g: 2.5
+  serving_grams: 30
+  serving_label: portion (30 g)
+  tags: indian,condiment,takeaway
+  portion_unit: tbsp
+  unit_grams: 30
+- source: homemade
+  source_id: raita
+  name: Raita
+  kcal_per_100g: 55
+  protein_per_100g: 3.5
+  carbs_per_100g: 5
+  fat_per_100g: 2.5
+  serving_grams: 60
+  serving_label: portion (60 g)
+  tags: indian,condiment,takeaway
+  portion_unit: meal
+  unit_grams: 60

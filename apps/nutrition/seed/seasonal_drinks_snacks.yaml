@@ -1,0 +1,2269 @@
+# Seasonal items + Energy drinks expansion + Sweets/Crackers/Snacks
+# Monster (Ultra/Juice/Assault/Khaos), Bang, Reign, Prime (Hydration + Energy),
+# Relentless, Rockstar, Boost
+# Haribo, Skittles, Starburst, Maoam, Bassetts, Werther's, Fox's, Rowntree's, Swizzels, Wrigley's
+# Ritz, TUC, Jacob's, Carr's, Ryvita, Nairn's oatcakes
+# Dried fruit, olives, popcorn, pretzels, pork scratchings, scampi/bacon fries
+# Christmas (pudding, cake, mince pies, pigs in blankets, stuffing, brandy butter, panettone),
+# Easter (eggs, hot cross buns, simnel), Halloween (toffee apple, parkin), Pancake Day, BBQ
+
+- source: brand
+  source_id: monster_original_500
+  name: Monster Energy Original (500ml)
+  kcal_per_100g: 9.4
+  protein_per_100g: 0.08
+  carbs_per_100g: 2.2
+  fat_per_100g: 0.0
+  brand: Monster
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: monster_ultra_white_500
+  name: Monster Ultra White Zero (500ml)
+  kcal_per_100g: 0.6
+  protein_per_100g: 0.08
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Monster
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: monster_ultra_red_500
+  name: Monster Ultra Red Zero (500ml)
+  kcal_per_100g: 0.6
+  protein_per_100g: 0.08
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Monster
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: monster_ultra_paradise_500
+  name: Monster Ultra Paradise Zero (500ml)
+  kcal_per_100g: 0.6
+  protein_per_100g: 0.08
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Monster
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: monster_ultra_violet_500
+  name: Monster Ultra Violet Zero (500ml)
+  kcal_per_100g: 0.6
+  protein_per_100g: 0.08
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Monster
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: monster_ultra_sunrise_500
+  name: Monster Ultra Sunrise Zero (500ml)
+  kcal_per_100g: 0.6
+  protein_per_100g: 0.08
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Monster
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: monster_ultra_rosa_500
+  name: Monster Ultra Rosá Zero (500ml)
+  kcal_per_100g: 0.6
+  protein_per_100g: 0.08
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Monster
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: monster_ultra_fiesta_500
+  name: Monster Ultra Fiesta Zero (500ml)
+  kcal_per_100g: 0.6
+  protein_per_100g: 0.08
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Monster
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: monster_ultra_gold_500
+  name: Monster Ultra Gold Zero (500ml)
+  kcal_per_100g: 0.6
+  protein_per_100g: 0.08
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Monster
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: monster_juice_pacific_punch_500
+  name: Monster Juice Pacific Punch (500ml)
+  kcal_per_100g: 10.0
+  protein_per_100g: 0.08
+  carbs_per_100g: 2.4
+  fat_per_100g: 0.0
+  brand: Monster
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: monster_juice_pipeline_punch_500
+  name: Monster Juice Pipeline Punch (500ml)
+  kcal_per_100g: 10.0
+  protein_per_100g: 0.08
+  carbs_per_100g: 2.4
+  fat_per_100g: 0.0
+  brand: Monster
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: monster_juice_mango_loco_500
+  name: Monster Juice Mango Loco (500ml)
+  kcal_per_100g: 10.0
+  protein_per_100g: 0.08
+  carbs_per_100g: 2.4
+  fat_per_100g: 0.0
+  brand: Monster
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: monster_khaos_500
+  name: Monster Khaos (500ml)
+  kcal_per_100g: 10.0
+  protein_per_100g: 0.08
+  carbs_per_100g: 2.4
+  fat_per_100g: 0.0
+  brand: Monster
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: monster_lewis_hamilton_zero
+  name: Monster Lewis Hamilton Zero (500ml)
+  kcal_per_100g: 0.6
+  protein_per_100g: 0.08
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Monster
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: bang_birthday_cake_473
+  name: Bang Energy Birthday Cake (473ml)
+  kcal_per_100g: 0.10570824524312897
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Bang
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 473
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: bang_radical_skadattle_473
+  name: Bang Energy Radical Skadattle (473ml)
+  kcal_per_100g: 0.10570824524312897
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Bang
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 473
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: bang_rainbow_unicorn_473
+  name: Bang Energy Rainbow Unicorn (473ml)
+  kcal_per_100g: 0.10570824524312897
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Bang
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 473
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: bang_blue_razz_473
+  name: Bang Energy Blue Razz (473ml)
+  kcal_per_100g: 0.10570824524312897
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Bang
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 473
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: bang_cherry_blade_473
+  name: Bang Energy Cherry Blade Lemonade (473ml)
+  kcal_per_100g: 0.10570824524312897
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Bang
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 473
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: bang_peach_mango_473
+  name: Bang Energy Peach Mango (473ml)
+  kcal_per_100g: 0.10570824524312897
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Bang
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 473
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: reign_melon_mania_500
+  name: Reign Melon Mania (500ml)
+  kcal_per_100g: 1.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Reign
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: reign_orange_dreamsicle_500
+  name: Reign Orange Dreamsicle (500ml)
+  kcal_per_100g: 1.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: Reign
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: prime_ice_pop_500
+  name: Prime Hydration Ice Pop (500ml)
+  kcal_per_100g: 1.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.2
+  fat_per_100g: 0.0
+  brand: Prime
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: prime_orange_500
+  name: Prime Hydration Orange (500ml)
+  kcal_per_100g: 1.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.2
+  fat_per_100g: 0.0
+  brand: Prime
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: prime_grape_500
+  name: Prime Hydration Grape (500ml)
+  kcal_per_100g: 1.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.2
+  fat_per_100g: 0.0
+  brand: Prime
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: prime_strawberry_watermelon_500
+  name: Prime Hydration Strawberry Watermelon (500ml)
+  kcal_per_100g: 1.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.2
+  fat_per_100g: 0.0
+  brand: Prime
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: prime_glowberry_500
+  name: Prime Hydration Glowberry (500ml)
+  kcal_per_100g: 1.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.2
+  fat_per_100g: 0.0
+  brand: Prime
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: prime_energy_blue_raspberry_355
+  name: Prime Energy Blue Raspberry (355ml)
+  kcal_per_100g: 1.6901408450704225
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.28
+  fat_per_100g: 0.0
+  brand: Prime Energy
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 355
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: prime_energy_lemon_lime_355
+  name: Prime Energy Lemon Lime (355ml)
+  kcal_per_100g: 1.6901408450704225
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.28
+  fat_per_100g: 0.0
+  brand: Prime Energy
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 355
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: prime_energy_strawberry_watermelon_355
+  name: Prime Energy Strawberry Watermelon (355ml)
+  kcal_per_100g: 1.6901408450704225
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.28
+  fat_per_100g: 0.0
+  brand: Prime Energy
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 355
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: relentless_passion_punch_500
+  name: Relentless Passion Punch (500ml)
+  kcal_per_100g: 7.6
+  protein_per_100g: 0.0
+  carbs_per_100g: 1.88
+  fat_per_100g: 0.0
+  brand: Relentless
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: rockstar_xdurance_500
+  name: Rockstar XDurance (500ml)
+  kcal_per_100g: 1.2
+  protein_per_100g: 0.08
+  carbs_per_100g: 0.2
+  fat_per_100g: 0.0
+  brand: Rockstar
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: boost_original_250
+  name: Boost Original (250ml)
+  kcal_per_100g: 20.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 4.8
+  fat_per_100g: 0.0
+  brand: Boost
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: boost_red_berry_250
+  name: Boost Red Berry (250ml)
+  kcal_per_100g: 20.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 4.8
+  fat_per_100g: 0.0
+  brand: Boost
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: boost_tropical_250
+  name: Boost Tropical (250ml)
+  kcal_per_100g: 20.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 4.8
+  fat_per_100g: 0.0
+  brand: Boost
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,energy
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: haribo_starmix_per_30g
+  name: Haribo Starmix (Per 30g)
+  kcal_per_100g: 343
+  protein_per_100g: 6.9
+  carbs_per_100g: 78
+  fat_per_100g: 0.2
+  brand: Haribo
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: haribo_tangfastics_per_30g
+  name: Haribo Tangfastics (Per 30g)
+  kcal_per_100g: 343
+  protein_per_100g: 6.9
+  carbs_per_100g: 78
+  fat_per_100g: 0.2
+  brand: Haribo
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: haribo_supermix_per_30g
+  name: Haribo Supermix (Per 30g)
+  kcal_per_100g: 343
+  protein_per_100g: 6.9
+  carbs_per_100g: 78
+  fat_per_100g: 0.2
+  brand: Haribo
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: haribo_goldbears_per_30g
+  name: Haribo Goldbears (Per 30g)
+  kcal_per_100g: 343
+  protein_per_100g: 6.9
+  carbs_per_100g: 78
+  fat_per_100g: 0.2
+  brand: Haribo
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: haribo_giant_strawbs_per_30g
+  name: Haribo Giant Strawbs (Per 30g)
+  kcal_per_100g: 320
+  protein_per_100g: 5
+  carbs_per_100g: 75
+  fat_per_100g: 0
+  brand: Haribo
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: haribo_horror_mix_30g
+  name: Haribo Horror Mix (Per 30g)
+  kcal_per_100g: 343
+  protein_per_100g: 6.9
+  carbs_per_100g: 78
+  fat_per_100g: 0.2
+  brand: Haribo
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: haribo_giant_cola_bottles_30g
+  name: Haribo Giant Cola Bottles (Per 30g)
+  kcal_per_100g: 343
+  protein_per_100g: 7
+  carbs_per_100g: 78
+  fat_per_100g: 0
+  brand: Haribo
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: haribo_balla_stixx_strawberry_per_unit
+  name: Haribo Balla Stixx Strawberry (Per Stick)
+  kcal_per_100g: 320
+  protein_per_100g: 4
+  carbs_per_100g: 75
+  fat_per_100g: 0
+  brand: Haribo
+  region_codes: GB
+  serving_grams: 18
+  serving_label: 18 g
+  tags: sweets,confectionery
+  portion_unit: piece
+  unit_grams: 18
+  dietary_compat: vegetarian
+- source: brand
+  source_id: maoam_kracher_per_30g
+  name: Maoam Kracher (Per 30g)
+  kcal_per_100g: 380
+  protein_per_100g: 0.5
+  carbs_per_100g: 90
+  fat_per_100g: 5
+  brand: Maoam
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: maoam_pinballs_per_30g
+  name: Maoam Pinballs (Per 30g)
+  kcal_per_100g: 380
+  protein_per_100g: 0.5
+  carbs_per_100g: 90
+  fat_per_100g: 5
+  brand: Maoam
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: maoam_stripes_per_30g
+  name: Maoam Stripes (Per 30g)
+  kcal_per_100g: 395
+  protein_per_100g: 0.5
+  carbs_per_100g: 90
+  fat_per_100g: 5
+  brand: Maoam
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: skittles_original_45g
+  name: Skittles Original (45g)
+  kcal_per_100g: 410
+  protein_per_100g: 0
+  carbs_per_100g: 91
+  fat_per_100g: 4.5
+  brand: Skittles
+  region_codes: GB
+  serving_grams: 45
+  serving_label: 45 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: skittles_sour_45g
+  name: Skittles Sour (45g)
+  kcal_per_100g: 410
+  protein_per_100g: 0
+  carbs_per_100g: 91
+  fat_per_100g: 4.5
+  brand: Skittles
+  region_codes: GB
+  serving_grams: 45
+  serving_label: 45 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: skittles_wild_berry_45g
+  name: Skittles Wild Berry (45g)
+  kcal_per_100g: 410
+  protein_per_100g: 0
+  carbs_per_100g: 91
+  fat_per_100g: 4.5
+  brand: Skittles
+  region_codes: GB
+  serving_grams: 45
+  serving_label: 45 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: skittles_tropical_45g
+  name: Skittles Tropical (45g)
+  kcal_per_100g: 410
+  protein_per_100g: 0
+  carbs_per_100g: 91
+  fat_per_100g: 4.5
+  brand: Skittles
+  region_codes: GB
+  serving_grams: 45
+  serving_label: 45 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: starburst_original_45g
+  name: Starburst Original (45g)
+  kcal_per_100g: 410
+  protein_per_100g: 0
+  carbs_per_100g: 84
+  fat_per_100g: 8
+  brand: Starburst
+  region_codes: GB
+  serving_grams: 45
+  serving_label: 45 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: starburst_sour_45g
+  name: Starburst Sour (45g)
+  kcal_per_100g: 410
+  protein_per_100g: 0
+  carbs_per_100g: 84
+  fat_per_100g: 8
+  brand: Starburst
+  region_codes: GB
+  serving_grams: 45
+  serving_label: 45 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: starburst_tropical_45g
+  name: Starburst Tropical (45g)
+  kcal_per_100g: 410
+  protein_per_100g: 0
+  carbs_per_100g: 84
+  fat_per_100g: 8
+  brand: Starburst
+  region_codes: GB
+  serving_grams: 45
+  serving_label: 45 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: jellybabies_per_30g
+  name: Bassetts Jelly Babies (Per 30g)
+  kcal_per_100g: 343
+  protein_per_100g: 5
+  carbs_per_100g: 79
+  fat_per_100g: 0
+  brand: Bassetts
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: liquorice_allsorts_30g
+  name: Bassetts Liquorice Allsorts (Per 30g)
+  kcal_per_100g: 365
+  protein_per_100g: 4
+  carbs_per_100g: 79
+  fat_per_100g: 4
+  brand: Bassetts
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: wine_gums_per_30g
+  name: Maynards Bassetts Wine Gums (Per 30g)
+  kcal_per_100g: 320
+  protein_per_100g: 6
+  carbs_per_100g: 75
+  fat_per_100g: 0
+  brand: Maynards Bassetts
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: midget_gems_per_30g
+  name: Maynards Bassetts Midget Gems (Per 30g)
+  kcal_per_100g: 326
+  protein_per_100g: 7
+  carbs_per_100g: 75
+  fat_per_100g: 0
+  brand: Maynards Bassetts
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: sour_patch_per_30g
+  name: Sour Patch Kids (Per 30g)
+  kcal_per_100g: 332
+  protein_per_100g: 0.5
+  carbs_per_100g: 84
+  fat_per_100g: 0
+  brand: Sour Patch
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: trolli_per_30g
+  name: Trolli Sour Brite Crawlers (Per 30g)
+  kcal_per_100g: 320
+  protein_per_100g: 6
+  carbs_per_100g: 80
+  fat_per_100g: 0
+  brand: Trolli
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: polo_per_pack_25g
+  name: Polo Mints (Per Pack 25g)
+  kcal_per_100g: 400
+  protein_per_100g: 0
+  carbs_per_100g: 99
+  fat_per_100g: 0.5
+  brand: Polo
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 25
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mentos_mint_per_38g
+  name: Mentos Mint (Per Roll 38g)
+  kcal_per_100g: 405
+  protein_per_100g: 0
+  carbs_per_100g: 86
+  fat_per_100g: 6
+  brand: Mentos
+  region_codes: GB
+  serving_grams: 38
+  serving_label: 38 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 38
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mentos_fruit_per_38g
+  name: Mentos Fruit (Per Roll 38g)
+  kcal_per_100g: 405
+  protein_per_100g: 0
+  carbs_per_100g: 86
+  fat_per_100g: 6
+  brand: Mentos
+  region_codes: GB
+  serving_grams: 38
+  serving_label: 38 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 38
+  dietary_compat: vegetarian
+- source: brand
+  source_id: werthers_original_per_30g
+  name: Werther's Original (Per 30g)
+  kcal_per_100g: 425
+  protein_per_100g: 0.5
+  carbs_per_100g: 71
+  fat_per_100g: 14
+  brand: Werther's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: foxes_glacier_mints_per_30g
+  name: Fox's Glacier Mints (Per 30g)
+  kcal_per_100g: 380
+  protein_per_100g: 0
+  carbs_per_100g: 95
+  fat_per_100g: 0
+  brand: Fox's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: rowntrees_fruit_pastilles_30g
+  name: Rowntree's Fruit Pastilles (Per 30g)
+  kcal_per_100g: 343
+  protein_per_100g: 5
+  carbs_per_100g: 79
+  fat_per_100g: 0
+  brand: Rowntree's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: rowntrees_jelly_tots_30g
+  name: Rowntree's Jelly Tots (Per 30g)
+  kcal_per_100g: 343
+  protein_per_100g: 4
+  carbs_per_100g: 80
+  fat_per_100g: 0
+  brand: Rowntree's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: rowntrees_fruit_gums_30g
+  name: Rowntree's Fruit Gums (Per 30g)
+  kcal_per_100g: 343
+  protein_per_100g: 5
+  carbs_per_100g: 80
+  fat_per_100g: 0
+  brand: Rowntree's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: refreshers_per_30g
+  name: Refreshers (Per 30g)
+  kcal_per_100g: 380
+  protein_per_100g: 0
+  carbs_per_100g: 90
+  fat_per_100g: 0
+  brand: Swizzels
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: drumstick_per_30g
+  name: Drumstick Lollies (Per 30g)
+  kcal_per_100g: 380
+  protein_per_100g: 0
+  carbs_per_100g: 90
+  fat_per_100g: 0
+  brand: Swizzels
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: parma_violets_per_18g
+  name: Parma Violets (Per Roll 18g)
+  kcal_per_100g: 392
+  protein_per_100g: 0
+  carbs_per_100g: 96
+  fat_per_100g: 0
+  brand: Swizzels
+  region_codes: GB
+  serving_grams: 18
+  serving_label: 18 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 18
+  dietary_compat: vegetarian
+- source: brand
+  source_id: loveheart_per_18g
+  name: Love Hearts (Per Roll 18g)
+  kcal_per_100g: 380
+  protein_per_100g: 0
+  carbs_per_100g: 95
+  fat_per_100g: 0
+  brand: Swizzels
+  region_codes: GB
+  serving_grams: 18
+  serving_label: 18 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 18
+  dietary_compat: vegetarian
+- source: brand
+  source_id: gum_extra_white_pack_per_pellet
+  name: Wrigley's Extra White (Per Pellet)
+  kcal_per_100g: 188
+  protein_per_100g: 0
+  carbs_per_100g: 60
+  fat_per_100g: 0
+  brand: Wrigley's
+  region_codes: GB
+  serving_grams: 1.5
+  serving_label: 1.5 g
+  tags: sweets,confectionery
+  portion_unit: piece
+  unit_grams: 1.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: gum_orbit_pack_per_pellet
+  name: Orbit Spearmint (Per Pellet)
+  kcal_per_100g: 188
+  protein_per_100g: 0
+  carbs_per_100g: 60
+  fat_per_100g: 0
+  brand: Orbit
+  region_codes: GB
+  serving_grams: 1.5
+  serving_label: 1.5 g
+  tags: sweets,confectionery
+  portion_unit: piece
+  unit_grams: 1.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: gum_airwaves_per_pellet
+  name: Wrigley's Airwaves (Per Pellet)
+  kcal_per_100g: 188
+  protein_per_100g: 0
+  carbs_per_100g: 60
+  fat_per_100g: 0
+  brand: Wrigley's
+  region_codes: GB
+  serving_grams: 1.5
+  serving_label: 1.5 g
+  tags: sweets,confectionery
+  portion_unit: piece
+  unit_grams: 1.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: gum_freedent_5pellets
+  name: Trident Spearmint (Per Pellet)
+  kcal_per_100g: 188
+  protein_per_100g: 0
+  carbs_per_100g: 60
+  fat_per_100g: 0
+  brand: Trident
+  region_codes: GB
+  serving_grams: 1.5
+  serving_label: 1.5 g
+  tags: sweets,confectionery
+  portion_unit: meal
+  unit_grams: 1.5
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ritz_crackers_per_5
+  name: Ritz Crackers (Per 5)
+  kcal_per_100g: 510
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 27
+  brand: Ritz
+  region_codes: GB
+  serving_grams: 16
+  serving_label: 16 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 16
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ritz_cheese_per_5
+  name: Ritz Cheese Sandwich (Per Sandwich)
+  kcal_per_100g: 535
+  protein_per_100g: 8
+  carbs_per_100g: 56
+  fat_per_100g: 32
+  brand: Ritz
+  region_codes: GB
+  serving_grams: 14
+  serving_label: 14 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 14
+  dietary_compat: vegetarian
+- source: brand
+  source_id: tuc_crackers_per_5
+  name: TUC Crackers Original (Per 5)
+  kcal_per_100g: 525
+  protein_per_100g: 7
+  carbs_per_100g: 64
+  fat_per_100g: 27
+  brand: TUC
+  region_codes: GB
+  serving_grams: 17
+  serving_label: 17 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 17
+  dietary_compat: vegetarian
+- source: brand
+  source_id: tuc_cheese_per_5
+  name: TUC Cheese (Per 5)
+  kcal_per_100g: 535
+  protein_per_100g: 9
+  carbs_per_100g: 60
+  fat_per_100g: 28
+  brand: TUC
+  region_codes: GB
+  serving_grams: 17
+  serving_label: 17 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 17
+  dietary_compat: vegetarian
+- source: brand
+  source_id: jacobs_cream_crackers_per_2
+  name: Jacob's Cream Crackers (Per 2)
+  kcal_per_100g: 432
+  protein_per_100g: 9
+  carbs_per_100g: 70
+  fat_per_100g: 13
+  brand: Jacob's
+  region_codes: GB
+  serving_grams: 16
+  serving_label: 16 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 16
+  dietary_compat: vegetarian
+- source: brand
+  source_id: jacobs_cracker_thins_per_5
+  name: Jacob's Cracker Thins (Per 5)
+  kcal_per_100g: 470
+  protein_per_100g: 9
+  carbs_per_100g: 65
+  fat_per_100g: 18
+  brand: Jacob's
+  region_codes: GB
+  serving_grams: 18
+  serving_label: 18 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 18
+  dietary_compat: vegetarian
+- source: brand
+  source_id: jacobs_choice_grain_per_5
+  name: Jacob's Choice Grain (Per 5)
+  kcal_per_100g: 460
+  protein_per_100g: 9
+  carbs_per_100g: 65
+  fat_per_100g: 17
+  brand: Jacob's
+  region_codes: GB
+  serving_grams: 18
+  serving_label: 18 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 18
+  dietary_compat: vegetarian
+- source: brand
+  source_id: water_biscuits_per_5
+  name: Carr's Water Biscuits (Per 5)
+  kcal_per_100g: 432
+  protein_per_100g: 10
+  carbs_per_100g: 75
+  fat_per_100g: 10
+  brand: Carr's
+  region_codes: GB
+  serving_grams: 18
+  serving_label: 18 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 18
+  dietary_compat: vegetarian
+- source: brand
+  source_id: rich_tea_per_2
+  name: Crawford's Rich Tea (Per 2)
+  kcal_per_100g: 460
+  protein_per_100g: 7
+  carbs_per_100g: 75
+  fat_per_100g: 14
+  brand: Crawford's
+  region_codes: GB
+  serving_grams: 16
+  serving_label: 16 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 16
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oatcakes_nairn_per_2
+  name: Nairn's Rough Oatcakes (Per 2)
+  kcal_per_100g: 425
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 16
+  brand: Nairn's
+  region_codes: GB
+  serving_grams: 22
+  serving_label: 22 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 22
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oatcakes_nairn_fine_per_4
+  name: Nairn's Fine Milled Oatcakes (Per 4)
+  kcal_per_100g: 425
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 16
+  brand: Nairn's
+  region_codes: GB
+  serving_grams: 28
+  serving_label: 28 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 28
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oatcakes_nairn_cheese_per_4
+  name: Nairn's Cheese Oatcakes (Per 4)
+  kcal_per_100g: 460
+  protein_per_100g: 12
+  carbs_per_100g: 60
+  fat_per_100g: 19
+  brand: Nairn's
+  region_codes: GB
+  serving_grams: 28
+  serving_label: 28 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 28
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ryvita_original_per_2
+  name: Ryvita Original Crispbread (Per 2)
+  kcal_per_100g: 322
+  protein_per_100g: 9
+  carbs_per_100g: 65
+  fat_per_100g: 1.7
+  brand: Ryvita
+  region_codes: GB
+  serving_grams: 18
+  serving_label: 18 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 18
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ryvita_dark_rye_per_2
+  name: Ryvita Dark Rye Crispbread (Per 2)
+  kcal_per_100g: 305
+  protein_per_100g: 9
+  carbs_per_100g: 67
+  fat_per_100g: 1.5
+  brand: Ryvita
+  region_codes: GB
+  serving_grams: 18
+  serving_label: 18 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 18
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ryvita_pumpkin_seed_per_2
+  name: Ryvita Pumpkin Seed (Per 2)
+  kcal_per_100g: 365
+  protein_per_100g: 11
+  carbs_per_100g: 56
+  fat_per_100g: 9.5
+  brand: Ryvita
+  region_codes: GB
+  serving_grams: 18
+  serving_label: 18 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 18
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ryvita_thins_sea_salt_per_5
+  name: Ryvita Thins Sea Salt (Per 5)
+  kcal_per_100g: 405
+  protein_per_100g: 9
+  carbs_per_100g: 70
+  fat_per_100g: 9
+  brand: Ryvita
+  region_codes: GB
+  serving_grams: 18
+  serving_label: 18 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 18
+  dietary_compat: vegetarian
+- source: brand
+  source_id: twiglets_per_25g
+  name: Twiglets (Per 25g)
+  kcal_per_100g: 380
+  protein_per_100g: 12
+  carbs_per_100g: 70
+  fat_per_100g: 6
+  brand: Jacob's Twiglets
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 25
+  dietary_compat: vegetarian
+- source: brand
+  source_id: scampi_fries_per_25g
+  name: Scampi Fries (Per 25g)
+  kcal_per_100g: 480
+  protein_per_100g: 4
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Smith's
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 25
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bacon_fries_per_25g
+  name: Bacon Fries (Per 25g)
+  kcal_per_100g: 470
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 23
+  brand: Smith's
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 25
+  dietary_compat: vegetarian
+- source: brand
+  source_id: pork_scratchings_per_30g
+  name: Pork Scratchings (Per 30g)
+  kcal_per_100g: 565
+  protein_per_100g: 56
+  carbs_per_100g: 0
+  fat_per_100g: 38
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: pretzels_salted_per_25g
+  name: Salted Pretzels (Per 25g)
+  kcal_per_100g: 380
+  protein_per_100g: 9
+  carbs_per_100g: 78
+  fat_per_100g: 3
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 25
+  dietary_compat: vegetarian
+- source: brand
+  source_id: popcorn_butter_per_30g
+  name: Butter Popcorn (Per 30g)
+  kcal_per_100g: 480
+  protein_per_100g: 7
+  carbs_per_100g: 65
+  fat_per_100g: 22
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: popcorn_sweet_per_30g
+  name: Sweet Popcorn (Per 30g)
+  kcal_per_100g: 480
+  protein_per_100g: 7
+  carbs_per_100g: 70
+  fat_per_100g: 19
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: popcorn_propercorn_sweet_salty
+  name: Propercorn Sweet & Salty (Per 25g)
+  kcal_per_100g: 470
+  protein_per_100g: 7
+  carbs_per_100g: 70
+  fat_per_100g: 18
+  brand: Propercorn
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 25
+  dietary_compat: vegetarian
+- source: brand
+  source_id: popcorn_propercorn_lightly_salted
+  name: Propercorn Lightly Salted (Per 25g)
+  kcal_per_100g: 460
+  protein_per_100g: 8
+  carbs_per_100g: 65
+  fat_per_100g: 19
+  brand: Propercorn
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 25
+  dietary_compat: vegetarian
+- source: brand
+  source_id: popcorn_metcalfes_skinny_sweet_n_salt
+  name: Metcalfe's Skinny Topcorn Sweet 'n' Salty (Per 20g)
+  kcal_per_100g: 425
+  protein_per_100g: 8
+  carbs_per_100g: 75
+  fat_per_100g: 13
+  brand: Metcalfe's
+  region_codes: GB
+  serving_grams: 20
+  serving_label: 20 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 20
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dried_apricot_per_30g
+  name: Dried Apricots (Per 30g)
+  kcal_per_100g: 240
+  protein_per_100g: 3
+  carbs_per_100g: 55
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dried_raisins_per_30g
+  name: Raisins (Per 30g)
+  kcal_per_100g: 299
+  protein_per_100g: 3
+  carbs_per_100g: 79
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dried_sultanas_per_30g
+  name: Sultanas (Per 30g)
+  kcal_per_100g: 305
+  protein_per_100g: 3
+  carbs_per_100g: 80
+  fat_per_100g: 0.4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dried_currants_per_30g
+  name: Currants (Per 30g)
+  kcal_per_100g: 290
+  protein_per_100g: 4
+  carbs_per_100g: 78
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dried_cranberries_per_30g
+  name: Dried Cranberries (Per 30g)
+  kcal_per_100g: 308
+  protein_per_100g: 0.2
+  carbs_per_100g: 82
+  fat_per_100g: 1.4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dried_dates_pitted_per_30g
+  name: Pitted Dates (Per 30g)
+  kcal_per_100g: 282
+  protein_per_100g: 2.5
+  carbs_per_100g: 75
+  fat_per_100g: 0.4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dried_dates_medjool_per_unit
+  name: Medjool Date (Per Date)
+  kcal_per_100g: 277
+  protein_per_100g: 2
+  carbs_per_100g: 75
+  fat_per_100g: 0.2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 24
+  serving_label: 24 g
+  tags: snack,crackers,savoury
+  portion_unit: piece
+  unit_grams: 24
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dried_figs_per_30g
+  name: Dried Figs (Per 30g)
+  kcal_per_100g: 249
+  protein_per_100g: 3
+  carbs_per_100g: 64
+  fat_per_100g: 0.9
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dried_prunes_per_30g
+  name: Dried Prunes (Per 30g)
+  kcal_per_100g: 240
+  protein_per_100g: 2.2
+  carbs_per_100g: 64
+  fat_per_100g: 0.4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dried_mango_per_30g
+  name: Dried Mango (Per 30g)
+  kcal_per_100g: 320
+  protein_per_100g: 2
+  carbs_per_100g: 80
+  fat_per_100g: 1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dried_pineapple_per_30g
+  name: Dried Pineapple (Per 30g)
+  kcal_per_100g: 320
+  protein_per_100g: 2
+  carbs_per_100g: 80
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dried_apple_per_30g
+  name: Dried Apple (Per 30g)
+  kcal_per_100g: 350
+  protein_per_100g: 0.9
+  carbs_per_100g: 90
+  fat_per_100g: 0.3
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dried_banana_chips_per_30g
+  name: Banana Chips (Per 30g)
+  kcal_per_100g: 519
+  protein_per_100g: 2
+  carbs_per_100g: 58
+  fat_per_100g: 34
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dried_coconut_chips_per_30g
+  name: Coconut Chips Toasted (Per 30g)
+  kcal_per_100g: 660
+  protein_per_100g: 7
+  carbs_per_100g: 24
+  fat_per_100g: 60
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: olive_green_pitted_per_30g
+  name: Green Olives Pitted (Per 30g)
+  kcal_per_100g: 145
+  protein_per_100g: 1
+  carbs_per_100g: 4
+  fat_per_100g: 15
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: olive_kalamata_per_30g
+  name: Kalamata Olives (Per 30g)
+  kcal_per_100g: 155
+  protein_per_100g: 1
+  carbs_per_100g: 1
+  fat_per_100g: 16
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: olive_black_pitted_per_30g
+  name: Black Olives Pitted (Per 30g)
+  kcal_per_100g: 115
+  protein_per_100g: 0.8
+  carbs_per_100g: 6
+  fat_per_100g: 11
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack,crackers,savoury
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: seasonal
+  source_id: xmas_pudding_per_serving
+  name: Christmas Pudding (Per Serving)
+  kcal_per_100g: 305
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 9
+  brand: Christmas
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: seasonal,sweet
+  portion_unit: meal
+  unit_grams: 100
+- source: seasonal
+  source_id: xmas_cake_per_slice
+  name: Christmas Cake (Per Slice)
+  kcal_per_100g: 340
+  protein_per_100g: 4
+  carbs_per_100g: 60
+  fat_per_100g: 11
+  brand: Christmas
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: seasonal,sweet
+  portion_unit: slice
+  unit_grams: 80
+- source: seasonal
+  source_id: xmas_mince_pie_per_unit
+  name: Mince Pie (Per Pie)
+  kcal_per_100g: 410
+  protein_per_100g: 4
+  carbs_per_100g: 60
+  fat_per_100g: 17
+  brand: Christmas
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: seasonal,sweet
+  portion_unit: piece
+  unit_grams: 60
+- source: seasonal
+  source_id: xmas_pigs_in_blankets_per_piece
+  name: Pigs in Blankets (Per Piece)
+  kcal_per_100g: 295
+  protein_per_100g: 13
+  carbs_per_100g: 5
+  fat_per_100g: 25
+  brand: Christmas
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: seasonal,sweet
+  portion_unit: piece
+  unit_grams: 30
+- source: seasonal
+  source_id: xmas_stuffing_balls_per_piece
+  name: Stuffing Balls (Per Piece)
+  kcal_per_100g: 215
+  protein_per_100g: 5
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: Christmas
+  region_codes: GB
+  serving_grams: 35
+  serving_label: 35 g
+  tags: seasonal,sweet
+  portion_unit: piece
+  unit_grams: 35
+- source: seasonal
+  source_id: xmas_cranberry_sauce_per_30g
+  name: Cranberry Sauce (Per 30g)
+  kcal_per_100g: 145
+  protein_per_100g: 0.3
+  carbs_per_100g: 36
+  fat_per_100g: 0
+  brand: Christmas
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: seasonal,sweet
+  portion_unit: meal
+  unit_grams: 30
+- source: seasonal
+  source_id: xmas_bread_sauce_per_50g
+  name: Bread Sauce (Per 50g)
+  kcal_per_100g: 110
+  protein_per_100g: 4
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  brand: Christmas
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: seasonal,sweet
+  portion_unit: meal
+  unit_grams: 50
+- source: seasonal
+  source_id: xmas_brandy_butter_per_15g
+  name: Brandy Butter (Per 15g)
+  kcal_per_100g: 555
+  protein_per_100g: 0.5
+  carbs_per_100g: 30
+  fat_per_100g: 47
+  brand: Christmas
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: seasonal,sweet
+  portion_unit: meal
+  unit_grams: 15
+- source: seasonal
+  source_id: xmas_yule_log_per_slice
+  name: Yule Log Chocolate (Per Slice)
+  kcal_per_100g: 410
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  brand: Christmas
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: seasonal,sweet
+  portion_unit: slice
+  unit_grams: 80
+- source: seasonal
+  source_id: xmas_panettone_per_slice
+  name: Panettone (Per Slice)
+  kcal_per_100g: 380
+  protein_per_100g: 9
+  carbs_per_100g: 50
+  fat_per_100g: 17
+  brand: Christmas
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: seasonal,sweet
+  portion_unit: slice
+  unit_grams: 80
+- source: seasonal
+  source_id: xmas_stollen_per_slice
+  name: Stollen (Per Slice)
+  kcal_per_100g: 380
+  protein_per_100g: 6
+  carbs_per_100g: 55
+  fat_per_100g: 14
+  brand: Christmas
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: seasonal,sweet
+  portion_unit: slice
+  unit_grams: 80
+- source: seasonal
+  source_id: xmas_advent_calendar_per_chocolate
+  name: Advent Calendar Chocolate (Per Piece)
+  kcal_per_100g: 530
+  protein_per_100g: 7
+  carbs_per_100g: 57
+  fat_per_100g: 30
+  brand: Christmas
+  region_codes: GB
+  serving_grams: 4
+  serving_label: 4 g
+  tags: seasonal,sweet
+  portion_unit: meal
+  unit_grams: 4
+- source: seasonal
+  source_id: easter_chocolate_egg_small
+  name: Easter Chocolate Egg Small (~80g)
+  kcal_per_100g: 530
+  protein_per_100g: 7
+  carbs_per_100g: 57
+  fat_per_100g: 30
+  brand: Easter
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: seasonal,sweet
+  portion_unit: meal
+  unit_grams: 80
+- source: seasonal
+  source_id: easter_chocolate_egg_medium
+  name: Easter Chocolate Egg Medium (~150g)
+  kcal_per_100g: 530
+  protein_per_100g: 7
+  carbs_per_100g: 57
+  fat_per_100g: 30
+  brand: Easter
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: seasonal,sweet
+  portion_unit: meal
+  unit_grams: 150
+- source: seasonal
+  source_id: easter_chocolate_egg_large
+  name: Easter Chocolate Egg Large (~250g)
+  kcal_per_100g: 530
+  protein_per_100g: 7
+  carbs_per_100g: 57
+  fat_per_100g: 30
+  brand: Easter
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: seasonal,sweet
+  portion_unit: meal
+  unit_grams: 250
+- source: seasonal
+  source_id: easter_creme_egg_per_unit
+  name: Cadbury Creme Egg (Per Egg)
+  kcal_per_100g: 380
+  protein_per_100g: 3
+  carbs_per_100g: 58
+  fat_per_100g: 14
+  brand: Easter
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: seasonal,sweet
+  portion_unit: piece
+  unit_grams: 40
+- source: seasonal
+  source_id: easter_simnel_cake_per_slice
+  name: Simnel Cake (Per Slice)
+  kcal_per_100g: 340
+  protein_per_100g: 5
+  carbs_per_100g: 55
+  fat_per_100g: 11
+  brand: Easter
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: seasonal,sweet
+  portion_unit: slice
+  unit_grams: 80
+- source: seasonal
+  source_id: easter_hot_cross_bun_per_unit
+  name: Hot Cross Bun (Per Bun)
+  kcal_per_100g: 270
+  protein_per_100g: 7
+  carbs_per_100g: 50
+  fat_per_100g: 5
+  brand: Easter
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: seasonal,sweet
+  portion_unit: piece
+  unit_grams: 75
+- source: seasonal
+  source_id: easter_chocolate_mini_egg_per_unit
+  name: Mini Eggs (Per Egg)
+  kcal_per_100g: 489
+  protein_per_100g: 6
+  carbs_per_100g: 67
+  fat_per_100g: 22
+  brand: Easter
+  region_codes: GB
+  serving_grams: 4
+  serving_label: 4 g
+  tags: seasonal,sweet
+  portion_unit: piece
+  unit_grams: 4
+- source: seasonal
+  source_id: hallow_toffee_apple_per_apple
+  name: Toffee Apple (Per Apple)
+  kcal_per_100g: 250
+  protein_per_100g: 0.5
+  carbs_per_100g: 60
+  fat_per_100g: 4
+  brand: Halloween
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: seasonal,sweet
+  portion_unit: piece
+  unit_grams: 200
+- source: seasonal
+  source_id: hallow_parkin_per_slice
+  name: Parkin Cake (Per Slice)
+  kcal_per_100g: 405
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 16
+  brand: Bonfire
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: seasonal,sweet
+  portion_unit: slice
+  unit_grams: 80
+- source: seasonal
+  source_id: hallow_treacle_toffee_per_30g
+  name: Treacle Toffee (Per 30g)
+  kcal_per_100g: 410
+  protein_per_100g: 0.5
+  carbs_per_100g: 75
+  fat_per_100g: 12
+  brand: Bonfire
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: seasonal,sweet
+  portion_unit: meal
+  unit_grams: 30
+- source: seasonal
+  source_id: pancake_day_classic_per_pancake
+  name: Pancake (Classic UK Style, Per Pancake)
+  kcal_per_100g: 245
+  protein_per_100g: 7
+  carbs_per_100g: 32
+  fat_per_100g: 9
+  brand: Pancake Day
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: seasonal,sweet
+  portion_unit: piece
+  unit_grams: 60
+- source: seasonal
+  source_id: pancake_day_with_lemon_sugar
+  name: Pancake with Lemon & Sugar
+  kcal_per_100g: 280
+  protein_per_100g: 7
+  carbs_per_100g: 40
+  fat_per_100g: 9
+  brand: Pancake Day
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: seasonal,sweet
+  portion_unit: meal
+  unit_grams: 75
+- source: seasonal
+  source_id: pancake_day_with_nutella
+  name: Pancake with Nutella
+  kcal_per_100g: 365
+  protein_per_100g: 8
+  carbs_per_100g: 45
+  fat_per_100g: 17
+  brand: Pancake Day
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: seasonal,sweet
+  portion_unit: meal
+  unit_grams: 90
+- source: seasonal
+  source_id: bbq_corn_on_cob
+  name: BBQ Corn on the Cob (Buttered)
+  kcal_per_100g: 130
+  protein_per_100g: 3
+  carbs_per_100g: 19
+  fat_per_100g: 5
+  brand: BBQ
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: bbq
+  portion_unit: meal
+  unit_grams: 100
+- source: seasonal
+  source_id: bbq_grilled_courgette
+  name: BBQ Grilled Courgette (Per 100g)
+  kcal_per_100g: 35
+  protein_per_100g: 1.5
+  carbs_per_100g: 4
+  fat_per_100g: 1.5
+  brand: BBQ
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: bbq
+  portion_unit: meal
+  unit_grams: 100
+- source: seasonal
+  source_id: bbq_grilled_pepper
+  name: BBQ Grilled Pepper (Per Half)
+  kcal_per_100g: 30
+  protein_per_100g: 1
+  carbs_per_100g: 7
+  fat_per_100g: 0.3
+  brand: BBQ
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: bbq
+  portion_unit: meal
+  unit_grams: 75
+- source: seasonal
+  source_id: bbq_halloumi_grilled_per_50g
+  name: BBQ Grilled Halloumi (Per 50g)
+  kcal_per_100g: 320
+  protein_per_100g: 22
+  carbs_per_100g: 2
+  fat_per_100g: 25
+  brand: BBQ
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: bbq
+  portion_unit: meal
+  unit_grams: 50
+- source: seasonal
+  source_id: bbq_chicken_thigh_skewer
+  name: BBQ Chicken Thigh Skewer
+  kcal_per_100g: 195
+  protein_per_100g: 21
+  carbs_per_100g: 4
+  fat_per_100g: 10
+  brand: BBQ
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: bbq
+  portion_unit: meal
+  unit_grams: 100
+- source: seasonal
+  source_id: bbq_lamb_chop
+  name: BBQ Lamb Chop
+  kcal_per_100g: 270
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 19
+  brand: BBQ
+  region_codes: GB
+  serving_grams: 120
+  serving_label: 120 g
+  tags: bbq
+  portion_unit: meal
+  unit_grams: 120
+- source: seasonal
+  source_id: bbq_burger_with_bun_homemade
+  name: BBQ Burger in Bun (Homemade)
+  kcal_per_100g: 260
+  protein_per_100g: 14
+  carbs_per_100g: 26
+  fat_per_100g: 12
+  brand: BBQ
+  region_codes: GB
+  serving_grams: 220
+  serving_label: 220 g
+  tags: bbq
+  portion_unit: meal
+  unit_grams: 220
+- source: seasonal
+  source_id: bbq_hot_dog_with_bun
+  name: BBQ Hot Dog in Bun
+  kcal_per_100g: 285
+  protein_per_100g: 11
+  carbs_per_100g: 26
+  fat_per_100g: 16
+  brand: BBQ
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: bbq
+  portion_unit: meal
+  unit_grams: 200
+- source: seasonal
+  source_id: bbq_richmond_sausage_per_unit
+  name: BBQ Richmond Sausage (Grilled)
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 8
+  fat_per_100g: 19
+  brand: BBQ
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: bbq
+  portion_unit: piece
+  unit_grams: 50
+- source: seasonal
+  source_id: bbq_spareribs_per_100g
+  name: BBQ Spare Ribs (Per 100g)
+  kcal_per_100g: 280
+  protein_per_100g: 19
+  carbs_per_100g: 8
+  fat_per_100g: 18
+  brand: BBQ
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: bbq
+  portion_unit: meal
+  unit_grams: 100

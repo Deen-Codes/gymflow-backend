@@ -1,0 +1,962 @@
+# Cereals full range — Kellogg's, Nestlé, Quaker, Weetabix, Jordans, Dorset, Alpen
+
+- source: brand
+  source_id: kelloggs_cornflakes_30
+  name: Kellogg's Cornflakes
+  kcal_per_100g: 378
+  protein_per_100g: 7
+  carbs_per_100g: 84
+  fat_per_100g: 0.9
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kelloggs_crunchy_nut_30
+  name: Kellogg's Crunchy Nut Cornflakes
+  kcal_per_100g: 405
+  protein_per_100g: 6
+  carbs_per_100g: 82
+  fat_per_100g: 4.5
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kelloggs_crunchy_nut_clusters
+  name: Kellogg's Crunchy Nut Clusters Honey & Nut
+  kcal_per_100g: 425
+  protein_per_100g: 8
+  carbs_per_100g: 73
+  fat_per_100g: 11
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kelloggs_special_k_original
+  name: Kellogg's Special K Original
+  kcal_per_100g: 374
+  protein_per_100g: 14
+  carbs_per_100g: 75
+  fat_per_100g: 1.5
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kelloggs_special_k_red_berries
+  name: Kellogg's Special K Red Berries
+  kcal_per_100g: 382
+  protein_per_100g: 11
+  carbs_per_100g: 76
+  fat_per_100g: 2
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kelloggs_special_k_chocolate
+  name: Kellogg's Special K Chocolate Caramel
+  kcal_per_100g: 412
+  protein_per_100g: 10
+  carbs_per_100g: 75
+  fat_per_100g: 6.5
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kelloggs_coco_pops_30
+  name: Kellogg's Coco Pops
+  kcal_per_100g: 391
+  protein_per_100g: 5
+  carbs_per_100g: 88
+  fat_per_100g: 2
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kelloggs_rice_krispies_30
+  name: Kellogg's Rice Krispies
+  kcal_per_100g: 386
+  protein_per_100g: 6
+  carbs_per_100g: 86
+  fat_per_100g: 1
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kelloggs_frosties_30
+  name: Kellogg's Frosties
+  kcal_per_100g: 383
+  protein_per_100g: 5
+  carbs_per_100g: 87
+  fat_per_100g: 0.6
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kelloggs_bran_flakes_30
+  name: Kellogg's Bran Flakes
+  kcal_per_100g: 348
+  protein_per_100g: 10
+  carbs_per_100g: 67
+  fat_per_100g: 1.7
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 40
+  serving_label: serving (40 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kelloggs_all_bran_40
+  name: Kellogg's All-Bran
+  kcal_per_100g: 334
+  protein_per_100g: 13
+  carbs_per_100g: 51
+  fat_per_100g: 3.5
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 40
+  serving_label: serving (40 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kelloggs_just_right_30
+  name: Kellogg's Just Right
+  kcal_per_100g: 362
+  protein_per_100g: 9
+  carbs_per_100g: 73
+  fat_per_100g: 2.5
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 40
+  serving_label: serving (40 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kelloggs_krave_chocolate
+  name: Kellogg's Krave Chocolate Hazelnut
+  kcal_per_100g: 433
+  protein_per_100g: 7
+  carbs_per_100g: 67
+  fat_per_100g: 14
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kelloggs_krave_double_choc
+  name: Kellogg's Krave Double Choc
+  kcal_per_100g: 436
+  protein_per_100g: 7
+  carbs_per_100g: 66
+  fat_per_100g: 15
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kelloggs_corn_pops
+  name: Kellogg's Corn Pops
+  kcal_per_100g: 387
+  protein_per_100g: 5
+  carbs_per_100g: 88
+  fat_per_100g: 1.5
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kelloggs_chocos
+  name: Kellogg's Chocos
+  kcal_per_100g: 400
+  protein_per_100g: 6
+  carbs_per_100g: 80
+  fat_per_100g: 4
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kelloggs_corn_flakes_chocolate
+  name: Kellogg's Chocolate Cornflakes
+  kcal_per_100g: 391
+  protein_per_100g: 6
+  carbs_per_100g: 82
+  fat_per_100g: 3
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kelloggs_smacks_30
+  name: Kellogg's Smacks
+  kcal_per_100g: 384
+  protein_per_100g: 7
+  carbs_per_100g: 81
+  fat_per_100g: 2
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nestle_cheerios_30
+  name: Nestlé Cheerios
+  kcal_per_100g: 374
+  protein_per_100g: 9
+  carbs_per_100g: 71
+  fat_per_100g: 4
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nestle_honey_cheerios
+  name: Nestlé Honey Cheerios
+  kcal_per_100g: 379
+  protein_per_100g: 8
+  carbs_per_100g: 75
+  fat_per_100g: 3
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nestle_shreddies_45
+  name: Nestlé Shreddies
+  kcal_per_100g: 357
+  protein_per_100g: 11
+  carbs_per_100g: 67
+  fat_per_100g: 2
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 45
+  serving_label: serving (45 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nestle_frosted_shreddies_45
+  name: Nestlé Frosted Shreddies
+  kcal_per_100g: 367
+  protein_per_100g: 10
+  carbs_per_100g: 75
+  fat_per_100g: 2
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 45
+  serving_label: serving (45 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nestle_chocolate_shreddies
+  name: Nestlé Chocolate Shreddies
+  kcal_per_100g: 378
+  protein_per_100g: 10
+  carbs_per_100g: 73
+  fat_per_100g: 4
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 45
+  serving_label: serving (45 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nestle_curiously_cinnamon
+  name: Nestlé Curiously Cinnamon
+  kcal_per_100g: 437
+  protein_per_100g: 6
+  carbs_per_100g: 64
+  fat_per_100g: 17
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nestle_cookie_crisp
+  name: Nestlé Cookie Crisp
+  kcal_per_100g: 385
+  protein_per_100g: 6
+  carbs_per_100g: 77
+  fat_per_100g: 4
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nestle_nesquik
+  name: Nestlé Nesquik
+  kcal_per_100g: 386
+  protein_per_100g: 7
+  carbs_per_100g: 76
+  fat_per_100g: 4
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nestle_lion_cereal
+  name: Nestlé Lion Cereal
+  kcal_per_100g: 432
+  protein_per_100g: 6
+  carbs_per_100g: 72
+  fat_per_100g: 13
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nestle_oat_cheerios
+  name: Nestlé Oat Cheerios
+  kcal_per_100g: 386
+  protein_per_100g: 9
+  carbs_per_100g: 70
+  fat_per_100g: 6
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: quaker_oats_porridge_40
+  name: Quaker Oats (Porridge Oats, Dry)
+  kcal_per_100g: 372
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 8
+  brand: Quaker
+  region_codes: GB
+  serving_grams: 40
+  serving_label: serving (40 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: quaker_oat_so_simple_original
+  name: Quaker Oat So Simple Original (Sachet)
+  kcal_per_100g: 358
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 7
+  brand: Quaker
+  region_codes: GB
+  serving_grams: 27
+  serving_label: serving (27 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 27
+  dietary_compat: vegetarian
+- source: brand
+  source_id: quaker_oat_so_simple_golden_syrup
+  name: Quaker Oat So Simple Golden Syrup
+  kcal_per_100g: 374
+  protein_per_100g: 9
+  carbs_per_100g: 70
+  fat_per_100g: 5.5
+  brand: Quaker
+  region_codes: GB
+  serving_grams: 36
+  serving_label: serving (36 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 36
+  dietary_compat: vegetarian
+- source: brand
+  source_id: quaker_oat_so_simple_strawberry
+  name: Quaker Oat So Simple Strawberry
+  kcal_per_100g: 374
+  protein_per_100g: 9
+  carbs_per_100g: 70
+  fat_per_100g: 5.5
+  brand: Quaker
+  region_codes: GB
+  serving_grams: 36
+  serving_label: serving (36 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 36
+  dietary_compat: vegetarian
+- source: brand
+  source_id: quaker_oat_so_simple_apple_blueberry
+  name: Quaker Oat So Simple Apple & Blueberry
+  kcal_per_100g: 374
+  protein_per_100g: 9
+  carbs_per_100g: 70
+  fat_per_100g: 5.5
+  brand: Quaker
+  region_codes: GB
+  serving_grams: 36
+  serving_label: serving (36 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 36
+  dietary_compat: vegetarian
+- source: brand
+  source_id: quaker_oat_so_simple_chocolate
+  name: Quaker Oat So Simple Chocolate
+  kcal_per_100g: 386
+  protein_per_100g: 9
+  carbs_per_100g: 65
+  fat_per_100g: 9
+  brand: Quaker
+  region_codes: GB
+  serving_grams: 36
+  serving_label: serving (36 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 36
+  dietary_compat: vegetarian
+- source: brand
+  source_id: quaker_oats_jumbo
+  name: Quaker Jumbo Oats
+  kcal_per_100g: 372
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 8
+  brand: Quaker
+  region_codes: GB
+  serving_grams: 40
+  serving_label: serving (40 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: quaker_oats_super
+  name: Quaker Super Oats Maple & Pecan
+  kcal_per_100g: 405
+  protein_per_100g: 10
+  carbs_per_100g: 65
+  fat_per_100g: 11
+  brand: Quaker
+  region_codes: GB
+  serving_grams: 50
+  serving_label: serving (50 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: quaker_oats_protein_plain
+  name: Quaker Oats Protein
+  kcal_per_100g: 380
+  protein_per_100g: 16
+  carbs_per_100g: 50
+  fat_per_100g: 9
+  brand: Quaker
+  region_codes: GB
+  serving_grams: 40
+  serving_label: serving (40 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: quaker_oats_protein_chocolate
+  name: Quaker Oats Protein Chocolate
+  kcal_per_100g: 390
+  protein_per_100g: 16
+  carbs_per_100g: 50
+  fat_per_100g: 10
+  brand: Quaker
+  region_codes: GB
+  serving_grams: 40
+  serving_label: serving (40 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: quaker_oats_so_simple_pots_orig
+  name: Quaker Oat So Simple Pot Original
+  kcal_per_100g: 365
+  protein_per_100g: 9
+  carbs_per_100g: 55
+  fat_per_100g: 8
+  brand: Quaker
+  region_codes: GB
+  serving_grams: 50
+  serving_label: serving (50 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: quaker_oats_so_simple_pots_golden
+  name: Quaker Oat So Simple Pot Golden Syrup
+  kcal_per_100g: 380
+  protein_per_100g: 8
+  carbs_per_100g: 60
+  fat_per_100g: 8
+  brand: Quaker
+  region_codes: GB
+  serving_grams: 57
+  serving_label: serving (57 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 57
+  dietary_compat: vegetarian
+- source: brand
+  source_id: weetabix_2_biscuits
+  name: Weetabix Original (per biscuit)
+  kcal_per_100g: 358
+  protein_per_100g: 12
+  carbs_per_100g: 67
+  fat_per_100g: 2
+  brand: Weetabix
+  region_codes: GB
+  serving_grams: 19
+  serving_label: serving (19 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 19
+  dietary_compat: vegetarian
+- source: brand
+  source_id: weetabix_chocolate_2
+  name: Weetabix Chocolate (per biscuit)
+  kcal_per_100g: 367
+  protein_per_100g: 9
+  carbs_per_100g: 71
+  fat_per_100g: 4
+  brand: Weetabix
+  region_codes: GB
+  serving_grams: 19
+  serving_label: serving (19 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 19
+  dietary_compat: vegetarian
+- source: brand
+  source_id: weetabix_banana_2
+  name: Weetabix Banana (per biscuit)
+  kcal_per_100g: 360
+  protein_per_100g: 10
+  carbs_per_100g: 70
+  fat_per_100g: 3
+  brand: Weetabix
+  region_codes: GB
+  serving_grams: 19
+  serving_label: serving (19 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 19
+  dietary_compat: vegetarian
+- source: brand
+  source_id: weetabix_protein_2
+  name: Weetabix Protein (per biscuit)
+  kcal_per_100g: 365
+  protein_per_100g: 16
+  carbs_per_100g: 56
+  fat_per_100g: 5
+  brand: Weetabix
+  region_codes: GB
+  serving_grams: 22
+  serving_label: serving (22 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 22
+  dietary_compat: vegetarian
+- source: brand
+  source_id: weetabix_minis_chocolate
+  name: Weetabix Minis Chocolate Crunch
+  kcal_per_100g: 387
+  protein_per_100g: 9
+  carbs_per_100g: 73
+  fat_per_100g: 5
+  brand: Weetabix
+  region_codes: GB
+  serving_grams: 40
+  serving_label: serving (40 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: weetabix_minis_banana_milk
+  name: Weetabix Minis Banana
+  kcal_per_100g: 380
+  protein_per_100g: 9
+  carbs_per_100g: 75
+  fat_per_100g: 4
+  brand: Weetabix
+  region_codes: GB
+  serving_grams: 40
+  serving_label: serving (40 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: weetabix_oatibix_orig
+  name: Oatibix (per 2 biscuits)
+  kcal_per_100g: 360
+  protein_per_100g: 10
+  carbs_per_100g: 65
+  fat_per_100g: 6
+  brand: Weetabix
+  region_codes: GB
+  serving_grams: 48
+  serving_label: serving (48 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 48
+  dietary_compat: vegetarian
+- source: brand
+  source_id: jordans_country_crisp_chunky_nuts
+  name: Jordans Country Crisp Chunky Nuts
+  kcal_per_100g: 470
+  protein_per_100g: 9
+  carbs_per_100g: 56
+  fat_per_100g: 22
+  brand: Jordans
+  region_codes: GB
+  serving_grams: 45
+  serving_label: serving (45 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: jordans_country_crisp_strawberry
+  name: Jordans Country Crisp Strawberry
+  kcal_per_100g: 425
+  protein_per_100g: 8
+  carbs_per_100g: 64
+  fat_per_100g: 14
+  brand: Jordans
+  region_codes: GB
+  serving_grams: 45
+  serving_label: serving (45 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: jordans_country_crisp_choc
+  name: Jordans Country Crisp Chocolate
+  kcal_per_100g: 460
+  protein_per_100g: 8
+  carbs_per_100g: 60
+  fat_per_100g: 20
+  brand: Jordans
+  region_codes: GB
+  serving_grams: 45
+  serving_label: serving (45 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: jordans_super_nutty_granola
+  name: Jordans Super Nutty Granola
+  kcal_per_100g: 480
+  protein_per_100g: 11
+  carbs_per_100g: 51
+  fat_per_100g: 25
+  brand: Jordans
+  region_codes: GB
+  serving_grams: 45
+  serving_label: serving (45 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dorset_simply_delicious_muesli
+  name: Dorset Cereals Simply Delicious Muesli
+  kcal_per_100g: 360
+  protein_per_100g: 9
+  carbs_per_100g: 60
+  fat_per_100g: 7
+  brand: Dorset Cereals
+  region_codes: GB
+  serving_grams: 50
+  serving_label: serving (50 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dorset_super_high_fibre
+  name: Dorset Cereals Super High Fibre Muesli
+  kcal_per_100g: 350
+  protein_per_100g: 11
+  carbs_per_100g: 55
+  fat_per_100g: 7
+  brand: Dorset Cereals
+  region_codes: GB
+  serving_grams: 50
+  serving_label: serving (50 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dorset_classic_fruit_nuts
+  name: Dorset Cereals Classic Fruits & Nuts Muesli
+  kcal_per_100g: 380
+  protein_per_100g: 9
+  carbs_per_100g: 60
+  fat_per_100g: 11
+  brand: Dorset Cereals
+  region_codes: GB
+  serving_grams: 50
+  serving_label: serving (50 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dorset_berries_cherries
+  name: Dorset Cereals Berries & Cherries Muesli
+  kcal_per_100g: 365
+  protein_per_100g: 9
+  carbs_per_100g: 65
+  fat_per_100g: 6
+  brand: Dorset Cereals
+  region_codes: GB
+  serving_grams: 50
+  serving_label: serving (50 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: alpen_original_45
+  name: Alpen Original Muesli
+  kcal_per_100g: 374
+  protein_per_100g: 11
+  carbs_per_100g: 67
+  fat_per_100g: 5.5
+  brand: Alpen
+  region_codes: GB
+  serving_grams: 45
+  serving_label: serving (45 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: alpen_no_added_sugar
+  name: Alpen No Added Sugar Muesli
+  kcal_per_100g: 365
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 7
+  brand: Alpen
+  region_codes: GB
+  serving_grams: 45
+  serving_label: serving (45 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ready_brek_27
+  name: Ready Brek Original
+  kcal_per_100g: 358
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 8
+  brand: Ready Brek
+  region_codes: GB
+  serving_grams: 27
+  serving_label: serving (27 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 27
+  dietary_compat: vegetarian
+- source: brand
+  source_id: scotts_porage_oats
+  name: Scott's Porage Oats
+  kcal_per_100g: 372
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 8
+  brand: Scott's
+  region_codes: GB
+  serving_grams: 40
+  serving_label: serving (40 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oatibix_flakes
+  name: Oatibix Flakes
+  kcal_per_100g: 360
+  protein_per_100g: 10
+  carbs_per_100g: 65
+  fat_per_100g: 6
+  brand: Oatibix
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nakd_breakfast_pots_oats
+  name: Nakd Breakfast Pot Oats Berry
+  kcal_per_100g: 360
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 9
+  brand: Nakd
+  region_codes: GB
+  serving_grams: 70
+  serving_label: serving (70 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 70
+  dietary_compat: vegetarian
+- source: brand
+  source_id: graze_oat_boost_chocolate
+  name: Graze Oat Boost Chocolate
+  kcal_per_100g: 405
+  protein_per_100g: 12
+  carbs_per_100g: 50
+  fat_per_100g: 14
+  brand: Graze
+  region_codes: GB
+  serving_grams: 50
+  serving_label: serving (50 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: graze_oat_boost_apple_almond
+  name: Graze Oat Boost Apple Almond
+  kcal_per_100g: 400
+  protein_per_100g: 11
+  carbs_per_100g: 53
+  fat_per_100g: 13
+  brand: Graze
+  region_codes: GB
+  serving_grams: 50
+  serving_label: serving (50 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: eat_natural_protein_packed
+  name: Eat Natural Protein Packed Granola
+  kcal_per_100g: 460
+  protein_per_100g: 17
+  carbs_per_100g: 49
+  fat_per_100g: 22
+  brand: Eat Natural
+  region_codes: GB
+  serving_grams: 50
+  serving_label: serving (50 g)
+  tags: cereal,breakfast
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian

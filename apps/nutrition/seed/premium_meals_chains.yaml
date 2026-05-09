@@ -1,0 +1,1265 @@
+# Premium ready meals — Charlie Bigham's, Cook!, Wiltshire Farm Foods +
+# Slimming World / WeightWatchers light meals +
+# Restaurant chains (Dishoom, Hawksmoor, Padella, Three Joes, Honest Burgers, Pizza Pilgrims,
+# Cinnabon, Auntie Anne's, Tortilla, Boots Meal Deal items)
+
+- source: charlie_bighams
+  source_id: cb_chicken_tikka_masala
+  name: Charlie Bigham's Chicken Tikka Masala
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 8
+  brand: Charlie Bigham's
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 350
+- source: charlie_bighams
+  source_id: cb_thai_green_curry
+  name: Charlie Bigham's Thai Green Curry
+  kcal_per_100g: 155
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Charlie Bigham's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: charlie_bighams
+  source_id: cb_chicken_jalfrezi
+  name: Charlie Bigham's Chicken Jalfrezi
+  kcal_per_100g: 130
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 5
+  brand: Charlie Bigham's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: charlie_bighams
+  source_id: cb_lamb_shepherds_pie
+  name: Charlie Bigham's Lamb Shepherd's Pie
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 6
+  brand: Charlie Bigham's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: charlie_bighams
+  source_id: cb_fish_pie
+  name: Charlie Bigham's Fish Pie
+  kcal_per_100g: 135
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 5
+  brand: Charlie Bigham's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: charlie_bighams
+  source_id: cb_chicken_pie
+  name: Charlie Bigham's Chicken & Mushroom Pie
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Charlie Bigham's
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 350
+- source: charlie_bighams
+  source_id: cb_carbonara
+  name: Charlie Bigham's Spaghetti Carbonara
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Charlie Bigham's
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 350
+- source: charlie_bighams
+  source_id: cb_steak_chips
+  name: Charlie Bigham's Steak & Chips
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  brand: Charlie Bigham's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: charlie_bighams
+  source_id: cb_macaroni_cheese
+  name: Charlie Bigham's Macaroni Cheese
+  kcal_per_100g: 175
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  brand: Charlie Bigham's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: charlie_bighams
+  source_id: cb_paella
+  name: Charlie Bigham's Paella
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Charlie Bigham's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: charlie_bighams
+  source_id: cb_chicken_chasseur
+  name: Charlie Bigham's Chicken Chasseur
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 7
+  brand: Charlie Bigham's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: charlie_bighams
+  source_id: cb_meatballs
+  name: Charlie Bigham's Italian Meatballs
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 14
+  fat_per_100g: 7
+  brand: Charlie Bigham's
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 350
+- source: cook
+  source_id: cook_chicken_kievs
+  name: Cook Chicken Kiev (Per Kiev)
+  kcal_per_100g: 285
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 18
+  brand: Cook!
+  region_codes: GB
+  serving_grams: 165
+  serving_label: plate (165 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 165
+- source: cook
+  source_id: cook_thai_green_curry
+  name: Cook Thai Green Curry
+  kcal_per_100g: 155
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Cook!
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: cook
+  source_id: cook_chicken_tikka_masala
+  name: Cook Chicken Tikka Masala
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 8
+  brand: Cook!
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: cook
+  source_id: cook_lasagne_homemade
+  name: Cook Italian Lasagne
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 8
+  brand: Cook!
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: cook
+  source_id: cook_cottage_pie
+  name: Cook Cottage Pie
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 5
+  brand: Cook!
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: cook
+  source_id: cook_fish_pie
+  name: Cook Fish Pie
+  kcal_per_100g: 130
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 5
+  brand: Cook!
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: cook
+  source_id: cook_macaroni_cheese
+  name: Cook Macaroni Cheese
+  kcal_per_100g: 175
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  brand: Cook!
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: cook
+  source_id: cook_chicken_pie
+  name: Cook Chicken & Leek Pie
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Cook!
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 350
+- source: cook
+  source_id: cook_chilli_con_carne
+  name: Cook Chilli con Carne
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 6
+  brand: Cook!
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: cook
+  source_id: cook_paella
+  name: Cook Spanish Chicken Paella
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Cook!
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: cook
+  source_id: cook_lamb_tagine
+  name: Cook Lamb Tagine
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 8
+  brand: Cook!
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: cook
+  source_id: cook_beef_bourguignon
+  name: Cook Beef Bourguignon
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 8
+  fat_per_100g: 11
+  brand: Cook!
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: wiltshire_farm_foods
+  source_id: wff_chicken_tikka_masala
+  name: Wiltshire Farm Foods Chicken Tikka Masala
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 12
+  fat_per_100g: 6
+  brand: Wiltshire Farm Foods
+  region_codes: GB
+  serving_grams: 380
+  serving_label: plate (380 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 380
+- source: wiltshire_farm_foods
+  source_id: wff_cottage_pie
+  name: Wiltshire Farm Foods Cottage Pie
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 5
+  brand: Wiltshire Farm Foods
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: wiltshire_farm_foods
+  source_id: wff_fish_pie
+  name: Wiltshire Farm Foods Fish Pie
+  kcal_per_100g: 120
+  protein_per_100g: 8
+  carbs_per_100g: 11
+  fat_per_100g: 4
+  brand: Wiltshire Farm Foods
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: wiltshire_farm_foods
+  source_id: wff_lasagne
+  name: Wiltshire Farm Foods Lasagne
+  kcal_per_100g: 150
+  protein_per_100g: 8
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Wiltshire Farm Foods
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: wiltshire_farm_foods
+  source_id: wff_macaroni_cheese
+  name: Wiltshire Farm Foods Macaroni Cheese
+  kcal_per_100g: 165
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 7.5
+  brand: Wiltshire Farm Foods
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: wiltshire_farm_foods
+  source_id: wff_roast_chicken_dinner
+  name: Wiltshire Farm Foods Roast Chicken Dinner
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 13
+  fat_per_100g: 5
+  brand: Wiltshire Farm Foods
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: wiltshire_farm_foods
+  source_id: wff_roast_beef_dinner
+  name: Wiltshire Farm Foods Roast Beef Dinner
+  kcal_per_100g: 155
+  protein_per_100g: 11
+  carbs_per_100g: 13
+  fat_per_100g: 6
+  brand: Wiltshire Farm Foods
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: wiltshire_farm_foods
+  source_id: wff_sausage_mash
+  name: Wiltshire Farm Foods Sausage & Mash
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 14
+  fat_per_100g: 8
+  brand: Wiltshire Farm Foods
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: wiltshire_farm_foods
+  source_id: wff_breakfast_full_english
+  name: Wiltshire Farm Foods Full English Breakfast
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 9
+  brand: Wiltshire Farm Foods
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: wiltshire_farm_foods
+  source_id: wff_chicken_curry
+  name: Wiltshire Farm Foods Chicken Curry
+  kcal_per_100g: 135
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 5
+  brand: Wiltshire Farm Foods
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: wiltshire_farm_foods
+  source_id: wff_apple_crumble_custard
+  name: Wiltshire Farm Foods Apple Crumble & Custard
+  kcal_per_100g: 195
+  protein_per_100g: 3
+  carbs_per_100g: 30
+  fat_per_100g: 7
+  brand: Wiltshire Farm Foods
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 200
+- source: slimming_world
+  source_id: sw_chicken_tikka_masala
+  name: Slimming World Chicken Tikka Masala
+  kcal_per_100g: 95
+  protein_per_100g: 8
+  carbs_per_100g: 11
+  fat_per_100g: 2.5
+  brand: Slimming World
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: slimming_world
+  source_id: sw_thai_green_curry
+  name: Slimming World Thai Green Curry
+  kcal_per_100g: 95
+  protein_per_100g: 8
+  carbs_per_100g: 11
+  fat_per_100g: 2.5
+  brand: Slimming World
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: slimming_world
+  source_id: sw_lasagne
+  name: Slimming World Lasagne
+  kcal_per_100g: 95
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 2
+  brand: Slimming World
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: slimming_world
+  source_id: sw_macaroni_cheese
+  name: Slimming World Macaroni Cheese
+  kcal_per_100g: 105
+  protein_per_100g: 7
+  carbs_per_100g: 14
+  fat_per_100g: 2.5
+  brand: Slimming World
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: slimming_world
+  source_id: sw_spag_bol
+  name: Slimming World Spaghetti Bolognese
+  kcal_per_100g: 95
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 1.5
+  brand: Slimming World
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: slimming_world
+  source_id: sw_chilli_con_carne
+  name: Slimming World Chilli con Carne
+  kcal_per_100g: 95
+  protein_per_100g: 8
+  carbs_per_100g: 11
+  fat_per_100g: 1.5
+  brand: Slimming World
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: slimming_world
+  source_id: sw_chicken_jalfrezi
+  name: Slimming World Chicken Jalfrezi
+  kcal_per_100g: 95
+  protein_per_100g: 8
+  carbs_per_100g: 9
+  fat_per_100g: 2
+  brand: Slimming World
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: slimming_world
+  source_id: sw_sweet_sour_chicken
+  name: Slimming World Sweet & Sour Chicken
+  kcal_per_100g: 95
+  protein_per_100g: 8
+  carbs_per_100g: 13
+  fat_per_100g: 1
+  brand: Slimming World
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: slimming_world
+  source_id: sw_chicken_tikka_naan
+  name: Slimming World Chicken Tikka Naan Wrap
+  kcal_per_100g: 215
+  protein_per_100g: 13
+  carbs_per_100g: 25
+  fat_per_100g: 6
+  brand: Slimming World
+  region_codes: GB
+  serving_grams: 230
+  serving_label: plate (230 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 230
+- source: slimming_world
+  source_id: sw_breakfast_pot
+  name: Slimming World Breakfast Pot
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 18
+  fat_per_100g: 4
+  brand: Slimming World
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 200
+- source: slimming_world
+  source_id: sw_overnight_oats_strawberry
+  name: Slimming World Overnight Oats Strawberry
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 3
+  brand: Slimming World
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 200
+- source: weightwatchers
+  source_id: ww_chicken_tikka
+  name: WW Chicken Tikka Masala
+  kcal_per_100g: 95
+  protein_per_100g: 9
+  carbs_per_100g: 9
+  fat_per_100g: 2.5
+  brand: WeightWatchers
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: weightwatchers
+  source_id: ww_thai_green
+  name: WW Thai Green Curry
+  kcal_per_100g: 100
+  protein_per_100g: 8
+  carbs_per_100g: 10
+  fat_per_100g: 3
+  brand: WeightWatchers
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: weightwatchers
+  source_id: ww_lasagne
+  name: WW Lasagne
+  kcal_per_100g: 105
+  protein_per_100g: 8
+  carbs_per_100g: 14
+  fat_per_100g: 2
+  brand: WeightWatchers
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: weightwatchers
+  source_id: ww_chocolate_brownie
+  name: WW Chocolate Brownie
+  kcal_per_100g: 305
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 9
+  brand: WeightWatchers
+  region_codes: GB
+  serving_grams: 60
+  serving_label: plate (60 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 60
+- source: weightwatchers
+  source_id: ww_chocolate_caramel_bar
+  name: WW Chocolate Caramel Bar
+  kcal_per_100g: 350
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 14
+  brand: WeightWatchers
+  region_codes: GB
+  serving_grams: 25
+  serving_label: plate (25 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 25
+- source: weightwatchers
+  source_id: ww_macaroni_cheese
+  name: WW Macaroni Cheese
+  kcal_per_100g: 110
+  protein_per_100g: 7
+  carbs_per_100g: 14
+  fat_per_100g: 2.5
+  brand: WeightWatchers
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: dishoom
+  source_id: dishoom_chicken_ruby
+  name: Dishoom Chicken Ruby
+  kcal_per_100g: 155
+  protein_per_100g: 13
+  carbs_per_100g: 8
+  fat_per_100g: 9
+  brand: Dishoom
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 350
+- source: dishoom
+  source_id: dishoom_house_black_dal
+  name: Dishoom House Black Daal
+  kcal_per_100g: 165
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 7
+  brand: Dishoom
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 350
+- source: dishoom
+  source_id: dishoom_chicken_berry_britannia
+  name: Dishoom Chicken Berry Britannia
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Dishoom
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: dishoom
+  source_id: dishoom_lamb_raan_per_serving
+  name: Dishoom Lamb Raan
+  kcal_per_100g: 235
+  protein_per_100g: 17
+  carbs_per_100g: 5
+  fat_per_100g: 16
+  brand: Dishoom
+  region_codes: GB
+  serving_grams: 300
+  serving_label: plate (300 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 300
+- source: dishoom
+  source_id: dishoom_bacon_naan
+  name: Dishoom Bacon Naan Roll
+  kcal_per_100g: 405
+  protein_per_100g: 14
+  carbs_per_100g: 50
+  fat_per_100g: 17
+  brand: Dishoom
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 200
+- source: dishoom
+  source_id: dishoom_keema_per_pao
+  name: Dishoom Keema Per Pao
+  kcal_per_100g: 320
+  protein_per_100g: 14
+  carbs_per_100g: 35
+  fat_per_100g: 14
+  brand: Dishoom
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: piece
+  unit_grams: 200
+- source: dishoom
+  source_id: dishoom_paneer_pineapple_tikka
+  name: Dishoom Paneer & Pineapple Tikka
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 11
+  fat_per_100g: 11
+  brand: Dishoom
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 250
+- source: hawksmoor
+  source_id: hawksmoor_8oz_rump
+  name: Hawksmoor 8oz Rump Steak
+  kcal_per_100g: 215
+  protein_per_100g: 19
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  brand: Hawksmoor
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 250
+- source: hawksmoor
+  source_id: hawksmoor_10oz_ribeye
+  name: Hawksmoor 10oz Ribeye Steak
+  kcal_per_100g: 290
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 22
+  brand: Hawksmoor
+  region_codes: GB
+  serving_grams: 300
+  serving_label: plate (300 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 300
+- source: hawksmoor
+  source_id: hawksmoor_dripping_chips
+  name: Hawksmoor Beef Dripping Fries
+  kcal_per_100g: 280
+  protein_per_100g: 4
+  carbs_per_100g: 28
+  fat_per_100g: 16
+  brand: Hawksmoor
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 200
+- source: hawksmoor
+  source_id: hawksmoor_kimchi_burger
+  name: Hawksmoor Kimchi Burger
+  kcal_per_100g: 320
+  protein_per_100g: 18
+  carbs_per_100g: 24
+  fat_per_100g: 16
+  brand: Hawksmoor
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 350
+- source: padella
+  source_id: padella_pici_cacio_pepe
+  name: Padella Pici Cacio e Pepe
+  kcal_per_100g: 230
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Padella
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 250
+- source: padella
+  source_id: padella_pappardelle_ragu
+  name: Padella Pappardelle Beef Shin Ragù
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Padella
+  region_codes: GB
+  serving_grams: 300
+  serving_label: plate (300 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 300
+- source: padella
+  source_id: padella_burrata_with_focaccia
+  name: Padella Burrata with Focaccia
+  kcal_per_100g: 285
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 17
+  brand: Padella
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 200
+- source: three_joes
+  source_id: 3joes_margherita_pizza_classic
+  name: Three Joes Margherita Pizza
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 8
+  brand: Three Joes
+  region_codes: GB
+  serving_grams: 320
+  serving_label: plate (320 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 320
+- source: three_joes
+  source_id: 3joes_pepperoni_pizza
+  name: Three Joes Pepperoni Pizza
+  kcal_per_100g: 280
+  protein_per_100g: 12
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Three Joes
+  region_codes: GB
+  serving_grams: 320
+  serving_label: plate (320 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 320
+- source: honest_burgers
+  source_id: honest_tribute
+  name: Honest Burgers The Tribute
+  kcal_per_100g: 320
+  protein_per_100g: 18
+  carbs_per_100g: 25
+  fat_per_100g: 17
+  brand: Honest Burgers
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: honest_burgers
+  source_id: honest_winter_special
+  name: Honest Burgers Winter Special
+  kcal_per_100g: 305
+  protein_per_100g: 18
+  carbs_per_100g: 25
+  fat_per_100g: 16
+  brand: Honest Burgers
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: pizza_pilgrims
+  source_id: pp_margherita_neapolitan
+  name: Pizza Pilgrims Margherita Neapolitan
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 8
+  brand: Pizza Pilgrims
+  region_codes: GB
+  serving_grams: 320
+  serving_label: plate (320 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 320
+- source: pizza_pilgrims
+  source_id: pp_funghi_pizza
+  name: Pizza Pilgrims Funghi Pizza
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 8
+  brand: Pizza Pilgrims
+  region_codes: GB
+  serving_grams: 320
+  serving_label: plate (320 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 320
+- source: pizza_pilgrims
+  source_id: pp_nduja_pizza
+  name: Pizza Pilgrims Nduja Pizza
+  kcal_per_100g: 280
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Pizza Pilgrims
+  region_codes: GB
+  serving_grams: 320
+  serving_label: plate (320 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 320
+- source: cinnabon
+  source_id: cinnabon_classic_roll_per_unit
+  name: Cinnabon Classic Roll
+  kcal_per_100g: 880
+  protein_per_100g: 14
+  carbs_per_100g: 117
+  fat_per_100g: 36
+  brand: Cinnabon
+  region_codes: GB
+  serving_grams: 220
+  serving_label: plate (220 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: piece
+  unit_grams: 220
+- source: cinnabon
+  source_id: cinnabon_minibon_per_unit
+  name: Cinnabon MiniBon
+  kcal_per_100g: 350
+  protein_per_100g: 5
+  carbs_per_100g: 47
+  fat_per_100g: 14
+  brand: Cinnabon
+  region_codes: GB
+  serving_grams: 88
+  serving_label: plate (88 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: piece
+  unit_grams: 88
+- source: cinnabon
+  source_id: cinnabon_caramelpecanbon_per_unit
+  name: Cinnabon Caramel Pecanbon
+  kcal_per_100g: 1080
+  protein_per_100g: 12
+  carbs_per_100g: 138
+  fat_per_100g: 51
+  brand: Cinnabon
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: piece
+  unit_grams: 250
+- source: auntie_annes
+  source_id: auntie_annes_original_pretzel
+  name: Auntie Anne's Original Pretzel
+  kcal_per_100g: 340
+  protein_per_100g: 10
+  carbs_per_100g: 72
+  fat_per_100g: 1.5
+  brand: Auntie Anne's
+  region_codes: GB
+  serving_grams: 116
+  serving_label: plate (116 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 116
+- source: auntie_annes
+  source_id: auntie_annes_cinnamon_sugar
+  name: Auntie Anne's Cinnamon Sugar Pretzel
+  kcal_per_100g: 470
+  protein_per_100g: 8
+  carbs_per_100g: 80
+  fat_per_100g: 14
+  brand: Auntie Anne's
+  region_codes: GB
+  serving_grams: 120
+  serving_label: plate (120 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 120
+- source: auntie_annes
+  source_id: auntie_annes_pepperoni_pretzel
+  name: Auntie Anne's Pepperoni Pretzel
+  kcal_per_100g: 415
+  protein_per_100g: 16
+  carbs_per_100g: 47
+  fat_per_100g: 18
+  brand: Auntie Anne's
+  region_codes: GB
+  serving_grams: 130
+  serving_label: plate (130 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 130
+- source: tortilla
+  source_id: tortilla_burrito_steak
+  name: Tortilla Steak Burrito
+  kcal_per_100g: 265
+  protein_per_100g: 16
+  carbs_per_100g: 28
+  fat_per_100g: 11
+  brand: Tortilla
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: tortilla
+  source_id: tortilla_burrito_carnitas
+  name: Tortilla Carnitas Burrito
+  kcal_per_100g: 270
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 12
+  brand: Tortilla
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 400
+- source: tortilla
+  source_id: tortilla_taco_chicken
+  name: Tortilla Chicken Taco (Per Taco)
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Tortilla
+  region_codes: GB
+  serving_grams: 130
+  serving_label: plate (130 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 130
+- source: boots
+  source_id: boots_lunch_meal_deal_avg
+  name: Boots Meal Deal (Sandwich + Drink + Snack)
+  kcal_per_100g: 170
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Boots
+  region_codes: GB
+  serving_grams: 600
+  serving_label: plate (600 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 600
+- source: boots
+  source_id: boots_chicken_caesar_wrap_meal_deal
+  name: Boots Chicken Caesar Wrap (Meal Deal)
+  kcal_per_100g: 295
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Boots
+  region_codes: GB
+  serving_grams: 220
+  serving_label: plate (220 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 220
+- source: boots
+  source_id: boots_chicken_salad_sandwich_meal
+  name: Boots Chicken Salad Sandwich
+  kcal_per_100g: 295
+  protein_per_100g: 14
+  carbs_per_100g: 35
+  fat_per_100g: 9
+  brand: Boots
+  region_codes: GB
+  serving_grams: 220
+  serving_label: plate (220 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 220
+- source: boots
+  source_id: boots_egg_mayo_sandwich_meal
+  name: Boots Egg Mayo Sandwich
+  kcal_per_100g: 280
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Boots
+  region_codes: GB
+  serving_grams: 175
+  serving_label: plate (175 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 175
+- source: boots
+  source_id: boots_tuna_sweetcorn_sandwich
+  name: Boots Tuna Sweetcorn Sandwich
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: Boots
+  region_codes: GB
+  serving_grams: 195
+  serving_label: plate (195 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 195
+- source: boots
+  source_id: boots_chicken_avocado_wrap
+  name: Boots Chicken & Avocado Wrap
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: Boots
+  region_codes: GB
+  serving_grams: 220
+  serving_label: plate (220 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 220
+- source: boots
+  source_id: boots_pasta_pesto_pot
+  name: Boots Pesto Chicken Pasta Pot
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Boots
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 250
+- source: boots
+  source_id: boots_super_grain_bowl
+  name: Boots Super Grain Bowl
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Boots
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: ready-meal,brand,restaurant
+  portion_unit: meal
+  unit_grams: 250

@@ -1,0 +1,1008 @@
+# Bakery full — Warburtons / Hovis / Kingsmill / Roberts loaves & wraps & bagels & crumpets,
+# plus speciality breads, pittas, tortillas, buns, croissants, pastries
+
+- source: bakery
+  source_id: warb_toastie_thick_white_800
+  name: Warburtons Toastie Thick White (800g loaf)
+  kcal_per_100g: 235
+  protein_per_100g: 7.5
+  carbs_per_100g: 47
+  fat_per_100g: 1.5
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 44
+  serving_label: slice (44 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 44
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_medium_white_800
+  name: Warburtons Medium White (800g loaf)
+  kcal_per_100g: 233
+  protein_per_100g: 7.5
+  carbs_per_100g: 47
+  fat_per_100g: 1.4
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 36
+  serving_label: slice (36 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 36
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_thick_white_800
+  name: Warburtons Thick White (800g loaf)
+  kcal_per_100g: 235
+  protein_per_100g: 7.5
+  carbs_per_100g: 47
+  fat_per_100g: 1.5
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 44
+  serving_label: slice (44 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 44
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_thin_white_800
+  name: Warburtons Thin White (800g loaf)
+  kcal_per_100g: 233
+  protein_per_100g: 7.5
+  carbs_per_100g: 47
+  fat_per_100g: 1.4
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 28
+  serving_label: slice (28 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 28
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_seeded_batch_800
+  name: Warburtons Seeded Batch (800g loaf)
+  kcal_per_100g: 290
+  protein_per_100g: 11
+  carbs_per_100g: 41
+  fat_per_100g: 8
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 44
+  serving_label: slice (44 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 44
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_wholemeal_medium_800
+  name: Warburtons Wholemeal Medium (800g)
+  kcal_per_100g: 220
+  protein_per_100g: 11
+  carbs_per_100g: 38
+  fat_per_100g: 2.7
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 36
+  serving_label: slice (36 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 36
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_wholemeal_thick_800
+  name: Warburtons Wholemeal Thick (800g)
+  kcal_per_100g: 220
+  protein_per_100g: 11
+  carbs_per_100g: 38
+  fat_per_100g: 2.7
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 44
+  serving_label: slice (44 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 44
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_50_50_medium
+  name: Warburtons 50/50 Medium
+  kcal_per_100g: 230
+  protein_per_100g: 9
+  carbs_per_100g: 44
+  fat_per_100g: 2
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 36
+  serving_label: slice (36 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 36
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_50_50_thick
+  name: Warburtons 50/50 Thick
+  kcal_per_100g: 230
+  protein_per_100g: 9
+  carbs_per_100g: 44
+  fat_per_100g: 2
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 44
+  serving_label: slice (44 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 44
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_brioche_loaf
+  name: Warburtons Brioche Loaf (per slice)
+  kcal_per_100g: 320
+  protein_per_100g: 9
+  carbs_per_100g: 50
+  fat_per_100g: 9
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 35
+  serving_label: item (35 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 35
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_crumpet_per_unit
+  name: Warburtons Crumpet (Per Crumpet)
+  kcal_per_100g: 175
+  protein_per_100g: 6
+  carbs_per_100g: 33
+  fat_per_100g: 0.6
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 51
+  serving_label: item (51 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 51
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_giant_crumpet
+  name: Warburtons Giant Crumpet
+  kcal_per_100g: 175
+  protein_per_100g: 6
+  carbs_per_100g: 33
+  fat_per_100g: 0.6
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 65
+  serving_label: item (65 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 65
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_pancakes_scotch
+  name: Warburtons Scotch Pancakes (per pancake)
+  kcal_per_100g: 285
+  protein_per_100g: 8
+  carbs_per_100g: 49
+  fat_per_100g: 5.5
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 35
+  serving_label: item (35 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 35
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_potato_cakes
+  name: Warburtons Potato Cakes (per cake)
+  kcal_per_100g: 245
+  protein_per_100g: 5
+  carbs_per_100g: 47
+  fat_per_100g: 4
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 50
+  serving_label: slice (50 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_brioche_burger_bun
+  name: Warburtons Brioche Burger Bun
+  kcal_per_100g: 305
+  protein_per_100g: 9
+  carbs_per_100g: 50
+  fat_per_100g: 8
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 70
+  serving_label: item (70 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 70
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_brioche_hot_dog_bun
+  name: Warburtons Brioche Hot Dog Bun
+  kcal_per_100g: 305
+  protein_per_100g: 9
+  carbs_per_100g: 50
+  fat_per_100g: 8
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 60
+  serving_label: item (60 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 60
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_giant_white_wraps
+  name: Warburtons Giant White Wraps
+  kcal_per_100g: 290
+  protein_per_100g: 9
+  carbs_per_100g: 50
+  fat_per_100g: 6
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 70
+  serving_label: slice (70 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 70
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_giant_wholemeal_wraps
+  name: Warburtons Giant Wholemeal Wraps
+  kcal_per_100g: 285
+  protein_per_100g: 10
+  carbs_per_100g: 47
+  fat_per_100g: 6.5
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 70
+  serving_label: slice (70 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 70
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_protein_wraps
+  name: Warburtons Protein Wraps
+  kcal_per_100g: 280
+  protein_per_100g: 19
+  carbs_per_100g: 36
+  fat_per_100g: 6
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 65
+  serving_label: slice (65 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 65
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_thins_white
+  name: Warburtons Sandwich Thins White
+  kcal_per_100g: 220
+  protein_per_100g: 9
+  carbs_per_100g: 41
+  fat_per_100g: 2
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 50
+  serving_label: slice (50 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_thins_brown
+  name: Warburtons Sandwich Thins Brown
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 38
+  fat_per_100g: 2.5
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 50
+  serving_label: slice (50 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_thins_protein
+  name: Warburtons Sandwich Thins Protein
+  kcal_per_100g: 230
+  protein_per_100g: 19
+  carbs_per_100g: 31
+  fat_per_100g: 4
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 50
+  serving_label: slice (50 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_bagels_plain
+  name: Warburtons Bagels Plain
+  kcal_per_100g: 280
+  protein_per_100g: 11
+  carbs_per_100g: 50
+  fat_per_100g: 3
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 80
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_bagels_seeded
+  name: Warburtons Bagels Seeded
+  kcal_per_100g: 290
+  protein_per_100g: 12
+  carbs_per_100g: 47
+  fat_per_100g: 5
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 80
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: warb_bagels_cinnamon_raisin
+  name: Warburtons Bagels Cinnamon & Raisin
+  kcal_per_100g: 290
+  protein_per_100g: 9
+  carbs_per_100g: 56
+  fat_per_100g: 3
+  brand: Warburtons
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 80
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: hovis_white_thick
+  name: Hovis White Thick (800g)
+  kcal_per_100g: 235
+  protein_per_100g: 7.5
+  carbs_per_100g: 47
+  fat_per_100g: 1.4
+  brand: Hovis
+  region_codes: GB
+  serving_grams: 44
+  serving_label: slice (44 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 44
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: hovis_white_medium
+  name: Hovis White Medium (800g)
+  kcal_per_100g: 235
+  protein_per_100g: 7.5
+  carbs_per_100g: 47
+  fat_per_100g: 1.4
+  brand: Hovis
+  region_codes: GB
+  serving_grams: 36
+  serving_label: slice (36 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 36
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: hovis_wholemeal_thick
+  name: Hovis Wholemeal Thick (800g)
+  kcal_per_100g: 220
+  protein_per_100g: 11
+  carbs_per_100g: 38
+  fat_per_100g: 2.7
+  brand: Hovis
+  region_codes: GB
+  serving_grams: 44
+  serving_label: slice (44 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 44
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: hovis_wholemeal_medium
+  name: Hovis Wholemeal Medium (800g)
+  kcal_per_100g: 220
+  protein_per_100g: 11
+  carbs_per_100g: 38
+  fat_per_100g: 2.7
+  brand: Hovis
+  region_codes: GB
+  serving_grams: 36
+  serving_label: slice (36 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 36
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: hovis_50_50_medium
+  name: Hovis 50/50 Medium
+  kcal_per_100g: 230
+  protein_per_100g: 9
+  carbs_per_100g: 44
+  fat_per_100g: 2
+  brand: Hovis
+  region_codes: GB
+  serving_grams: 36
+  serving_label: slice (36 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 36
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: hovis_50_50_thick
+  name: Hovis 50/50 Thick
+  kcal_per_100g: 230
+  protein_per_100g: 9
+  carbs_per_100g: 44
+  fat_per_100g: 2
+  brand: Hovis
+  region_codes: GB
+  serving_grams: 44
+  serving_label: slice (44 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 44
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: hovis_granary_medium
+  name: Hovis Granary Medium
+  kcal_per_100g: 240
+  protein_per_100g: 11
+  carbs_per_100g: 41
+  fat_per_100g: 3
+  brand: Hovis
+  region_codes: GB
+  serving_grams: 36
+  serving_label: slice (36 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 36
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: hovis_granary_thick
+  name: Hovis Granary Thick
+  kcal_per_100g: 240
+  protein_per_100g: 11
+  carbs_per_100g: 41
+  fat_per_100g: 3
+  brand: Hovis
+  region_codes: GB
+  serving_grams: 44
+  serving_label: slice (44 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 44
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: hovis_best_of_both_medium
+  name: Hovis Best of Both Medium
+  kcal_per_100g: 235
+  protein_per_100g: 9
+  carbs_per_100g: 43
+  fat_per_100g: 3
+  brand: Hovis
+  region_codes: GB
+  serving_grams: 36
+  serving_label: slice (36 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 36
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: hovis_seed_sensations_original
+  name: Hovis Seed Sensations Original
+  kcal_per_100g: 290
+  protein_per_100g: 12
+  carbs_per_100g: 39
+  fat_per_100g: 8.5
+  brand: Hovis
+  region_codes: GB
+  serving_grams: 44
+  serving_label: slice (44 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 44
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: hovis_lower_carbs_white
+  name: Hovis Lower Carbs White
+  kcal_per_100g: 220
+  protein_per_100g: 9
+  carbs_per_100g: 35
+  fat_per_100g: 4
+  brand: Hovis
+  region_codes: GB
+  serving_grams: 35
+  serving_label: slice (35 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 35
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: hovis_lower_carbs_brown
+  name: Hovis Lower Carbs Brown
+  kcal_per_100g: 220
+  protein_per_100g: 9
+  carbs_per_100g: 32
+  fat_per_100g: 5
+  brand: Hovis
+  region_codes: GB
+  serving_grams: 35
+  serving_label: slice (35 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 35
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: kings_white_thick
+  name: Kingsmill Thick Sliced White (800g)
+  kcal_per_100g: 235
+  protein_per_100g: 7.5
+  carbs_per_100g: 47
+  fat_per_100g: 1.4
+  brand: Kingsmill
+  region_codes: GB
+  serving_grams: 44
+  serving_label: slice (44 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 44
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: kings_white_medium
+  name: Kingsmill Medium Sliced White (800g)
+  kcal_per_100g: 235
+  protein_per_100g: 7.5
+  carbs_per_100g: 47
+  fat_per_100g: 1.4
+  brand: Kingsmill
+  region_codes: GB
+  serving_grams: 36
+  serving_label: slice (36 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 36
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: kings_50_50_medium
+  name: Kingsmill 50/50 Medium
+  kcal_per_100g: 230
+  protein_per_100g: 9
+  carbs_per_100g: 44
+  fat_per_100g: 2
+  brand: Kingsmill
+  region_codes: GB
+  serving_grams: 36
+  serving_label: slice (36 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 36
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: kings_great_white_medium
+  name: Kingsmill Great White Medium
+  kcal_per_100g: 230
+  protein_per_100g: 8
+  carbs_per_100g: 43
+  fat_per_100g: 1.5
+  brand: Kingsmill
+  region_codes: GB
+  serving_grams: 36
+  serving_label: slice (36 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 36
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: kings_wholemeal_thick
+  name: Kingsmill Wholemeal Thick
+  kcal_per_100g: 220
+  protein_per_100g: 11
+  carbs_per_100g: 38
+  fat_per_100g: 2.7
+  brand: Kingsmill
+  region_codes: GB
+  serving_grams: 44
+  serving_label: slice (44 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 44
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: kings_seven_seeds
+  name: Kingsmill Seven Seeds
+  kcal_per_100g: 290
+  protein_per_100g: 12
+  carbs_per_100g: 41
+  fat_per_100g: 8
+  brand: Kingsmill
+  region_codes: GB
+  serving_grams: 40
+  serving_label: slice (40 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: kings_pancakes
+  name: Kingsmill Pancakes (per pancake)
+  kcal_per_100g: 285
+  protein_per_100g: 8
+  carbs_per_100g: 49
+  fat_per_100g: 6
+  brand: Kingsmill
+  region_codes: GB
+  serving_grams: 35
+  serving_label: item (35 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 35
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: kings_crumpets
+  name: Kingsmill Crumpets (per crumpet)
+  kcal_per_100g: 175
+  protein_per_100g: 6
+  carbs_per_100g: 33
+  fat_per_100g: 0.5
+  brand: Kingsmill
+  region_codes: GB
+  serving_grams: 50
+  serving_label: item (50 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: roberts_thick_white
+  name: Roberts Bakery Thick White Loaf
+  kcal_per_100g: 235
+  protein_per_100g: 7.5
+  carbs_per_100g: 47
+  fat_per_100g: 1.4
+  brand: Roberts
+  region_codes: GB
+  serving_grams: 44
+  serving_label: slice (44 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 44
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: roberts_seeded_batch
+  name: Roberts Bakery Seeded Batch
+  kcal_per_100g: 285
+  protein_per_100g: 11
+  carbs_per_100g: 41
+  fat_per_100g: 7.5
+  brand: Roberts
+  region_codes: GB
+  serving_grams: 44
+  serving_label: slice (44 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 44
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: ciabatta_white_per_unit
+  name: Ciabatta Roll (Per Roll)
+  kcal_per_100g: 270
+  protein_per_100g: 9
+  carbs_per_100g: 53
+  fat_per_100g: 2
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 60
+  serving_label: item (60 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 60
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: focaccia_per_100g
+  name: Focaccia Bread
+  kcal_per_100g: 280
+  protein_per_100g: 8
+  carbs_per_100g: 47
+  fat_per_100g: 7
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 60
+  serving_label: item (60 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 60
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: baguette_french_per_100g
+  name: French Baguette
+  kcal_per_100g: 270
+  protein_per_100g: 9
+  carbs_per_100g: 55
+  fat_per_100g: 1.5
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: brioche_loaf_per_slice
+  name: Brioche Loaf (Per Slice)
+  kcal_per_100g: 320
+  protein_per_100g: 9
+  carbs_per_100g: 50
+  fat_per_100g: 9
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: sourdough_loaf_per_slice
+  name: Sourdough Loaf (Per Slice)
+  kcal_per_100g: 240
+  protein_per_100g: 9
+  carbs_per_100g: 47
+  fat_per_100g: 1.5
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 50
+  serving_label: slice (50 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: tiger_bread_loaf
+  name: Tiger/Giraffe Bread (Per Slice)
+  kcal_per_100g: 260
+  protein_per_100g: 9
+  carbs_per_100g: 50
+  fat_per_100g: 2.5
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 60
+  serving_label: item (60 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 60
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: pitta_white_per_unit
+  name: White Pitta Bread (Per Pitta)
+  kcal_per_100g: 265
+  protein_per_100g: 9
+  carbs_per_100g: 53
+  fat_per_100g: 1
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 60
+  serving_label: item (60 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 60
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: pitta_wholemeal_per_unit
+  name: Wholemeal Pitta Bread (Per Pitta)
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 45
+  fat_per_100g: 1.5
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 60
+  serving_label: item (60 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 60
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: flour_tortilla_white
+  name: Flour Tortilla White (8")
+  kcal_per_100g: 305
+  protein_per_100g: 9
+  carbs_per_100g: 49
+  fat_per_100g: 8
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 49
+  serving_label: item (49 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 49
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: flour_tortilla_wholemeal
+  name: Flour Tortilla Wholemeal (8")
+  kcal_per_100g: 295
+  protein_per_100g: 10
+  carbs_per_100g: 46
+  fat_per_100g: 8
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 49
+  serving_label: item (49 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 49
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: corn_tortilla_white
+  name: Corn Tortilla (Per Tortilla)
+  kcal_per_100g: 218
+  protein_per_100g: 6
+  carbs_per_100g: 45
+  fat_per_100g: 2
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 30
+  serving_label: item (30 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: naan_garlic_per_unit
+  name: Garlic Naan (Mini, Per Naan)
+  kcal_per_100g: 305
+  protein_per_100g: 9
+  carbs_per_100g: 47
+  fat_per_100g: 9
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 80
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: burger_bun_brioche_per_unit
+  name: Brioche Burger Bun
+  kcal_per_100g: 305
+  protein_per_100g: 9
+  carbs_per_100g: 50
+  fat_per_100g: 8
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 80
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: burger_bun_seeded_per_unit
+  name: Seeded Burger Bun
+  kcal_per_100g: 270
+  protein_per_100g: 9
+  carbs_per_100g: 47
+  fat_per_100g: 5
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 60
+  serving_label: item (60 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 60
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: hot_dog_bun_per_unit
+  name: Hot Dog Bun (Soft)
+  kcal_per_100g: 270
+  protein_per_100g: 9
+  carbs_per_100g: 49
+  fat_per_100g: 4
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 50
+  serving_label: item (50 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: english_muffin_white_per_unit
+  name: English Muffin White
+  kcal_per_100g: 220
+  protein_per_100g: 9
+  carbs_per_100g: 41
+  fat_per_100g: 1.5
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 65
+  serving_label: item (65 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 65
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: english_muffin_wholemeal_per_unit
+  name: English Muffin Wholemeal
+  kcal_per_100g: 215
+  protein_per_100g: 10
+  carbs_per_100g: 38
+  fat_per_100g: 2
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 65
+  serving_label: item (65 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 65
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: croissant_butter_per_unit
+  name: Butter Croissant (Bakery)
+  kcal_per_100g: 415
+  protein_per_100g: 9
+  carbs_per_100g: 42
+  fat_per_100g: 22
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 70
+  serving_label: item (70 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 70
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: pain_au_chocolat_per_unit
+  name: Pain au Chocolat (Bakery)
+  kcal_per_100g: 435
+  protein_per_100g: 7
+  carbs_per_100g: 45
+  fat_per_100g: 25
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 60
+  serving_label: slice (60 g)
+  tags: bakery,bread
+  portion_unit: slice
+  unit_grams: 60
+  dietary_compat: vegetarian
+- source: bakery
+  source_id: almond_croissant_per_unit
+  name: Almond Croissant (Bakery)
+  kcal_per_100g: 450
+  protein_per_100g: 9
+  carbs_per_100g: 40
+  fat_per_100g: 28
+  brand: Bakery
+  region_codes: GB
+  serving_grams: 85
+  serving_label: item (85 g)
+  tags: bakery,bread
+  portion_unit: piece
+  unit_grams: 85
+  dietary_compat: vegetarian

@@ -1,0 +1,1333 @@
+# Sports nutrition expansion — My Protein, Optimum Nutrition, Grenade, PhD,
+# Quest, Barebells, Misfits, Pulsin, Bulk, USN, Maximuscle, Foodspring, TPW, Awesome
+
+- source: brand
+  source_id: myp_iw_chocolate_smooth
+  name: My Protein Impact Whey Chocolate Smooth
+  kcal_per_100g: 1572.0
+  protein_per_100g: 320.0
+  carbs_per_100g: 20.0
+  fat_per_100g: 30.0
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: myp_iw_vanilla
+  name: My Protein Impact Whey Vanilla
+  kcal_per_100g: 1568.0
+  protein_per_100g: 324.0
+  carbs_per_100g: 16.0
+  fat_per_100g: 30.0
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: myp_iw_strawberry_cream
+  name: My Protein Impact Whey Strawberry Cream
+  kcal_per_100g: 1568.0
+  protein_per_100g: 320.0
+  carbs_per_100g: 20.0
+  fat_per_100g: 30.0
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: myp_iw_banana
+  name: My Protein Impact Whey Banana
+  kcal_per_100g: 1568.0
+  protein_per_100g: 320.0
+  carbs_per_100g: 20.0
+  fat_per_100g: 30.0
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: myp_iw_choc_mint
+  name: My Protein Impact Whey Chocolate Mint
+  kcal_per_100g: 1572.0
+  protein_per_100g: 320.0
+  carbs_per_100g: 20.0
+  fat_per_100g: 30.0
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: myp_iw_chocolate_brownie
+  name: My Protein Impact Whey Chocolate Brownie
+  kcal_per_100g: 1572.0
+  protein_per_100g: 320.0
+  carbs_per_100g: 20.0
+  fat_per_100g: 30.0
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: myp_iw_choc_orange
+  name: My Protein Impact Whey Chocolate Orange
+  kcal_per_100g: 1572.0
+  protein_per_100g: 320.0
+  carbs_per_100g: 20.0
+  fat_per_100g: 30.0
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: myp_iw_white_chocolate
+  name: My Protein Impact Whey White Chocolate
+  kcal_per_100g: 1568.0
+  protein_per_100g: 320.0
+  carbs_per_100g: 20.0
+  fat_per_100g: 30.0
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: myp_iw_cookies_cream
+  name: My Protein Impact Whey Cookies & Cream
+  kcal_per_100g: 1568.0
+  protein_per_100g: 320.0
+  carbs_per_100g: 20.0
+  fat_per_100g: 30.0
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: myp_iw_salted_caramel
+  name: My Protein Impact Whey Salted Caramel
+  kcal_per_100g: 1568.0
+  protein_per_100g: 320.0
+  carbs_per_100g: 24.0
+  fat_per_100g: 30.0
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: myp_iw_chocolate_peanut_butter
+  name: My Protein Impact Whey Chocolate Peanut Butter
+  kcal_per_100g: 1584.0
+  protein_per_100g: 316.0
+  carbs_per_100g: 24.0
+  fat_per_100g: 32.0
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: myp_iw_unflavoured
+  name: My Protein Impact Whey Unflavoured
+  kcal_per_100g: 1640.0
+  protein_per_100g: 336.0
+  carbs_per_100g: 16.0
+  fat_per_100g: 30.0
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: myp_iw_natural_chocolate
+  name: My Protein Impact Whey Natural Chocolate
+  kcal_per_100g: 1572.0
+  protein_per_100g: 320.0
+  carbs_per_100g: 20.0
+  fat_per_100g: 30.0
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: myp_iw_natural_strawberry
+  name: My Protein Impact Whey Natural Strawberry
+  kcal_per_100g: 1568.0
+  protein_per_100g: 320.0
+  carbs_per_100g: 20.0
+  fat_per_100g: 30.0
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: myp_clear_whey_orange_mango
+  name: My Protein Clear Whey Orange Mango
+  kcal_per_100g: 360.0
+  protein_per_100g: 80.0
+  carbs_per_100g: 4.0
+  fat_per_100g: 1.6
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: myp_clear_whey_peach_tea
+  name: My Protein Clear Whey Peach Tea
+  kcal_per_100g: 360.0
+  protein_per_100g: 80.0
+  carbs_per_100g: 4.0
+  fat_per_100g: 1.6
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: myp_clear_whey_apple_lime
+  name: My Protein Clear Whey Apple Lime
+  kcal_per_100g: 360.0
+  protein_per_100g: 80.0
+  carbs_per_100g: 4.0
+  fat_per_100g: 1.6
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: myp_the_whey_chocolate
+  name: My Protein THE Whey+ Chocolate
+  kcal_per_100g: 1253.3333333333333
+  protein_per_100g: 250.0
+  carbs_per_100g: 16.67
+  fat_per_100g: 16.67
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: myp_the_whey_vanilla
+  name: My Protein THE Whey+ Vanilla
+  kcal_per_100g: 1253.3333333333333
+  protein_per_100g: 250.0
+  carbs_per_100g: 16.67
+  fat_per_100g: 16.67
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: myp_casein_chocolate
+  name: My Protein Slow Release Casein Chocolate
+  kcal_per_100g: 1216.6666666666667
+  protein_per_100g: 260.0
+  carbs_per_100g: 16.67
+  fat_per_100g: 6.67
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: myp_casein_vanilla
+  name: My Protein Slow Release Casein Vanilla
+  kcal_per_100g: 1216.6666666666667
+  protein_per_100g: 260.0
+  carbs_per_100g: 16.67
+  fat_per_100g: 6.67
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: myp_vegan_blend_chocolate
+  name: My Protein Vegan Protein Blend Chocolate
+  kcal_per_100g: 1166.6666666666667
+  protein_per_100g: 233.33
+  carbs_per_100g: 26.67
+  fat_per_100g: 13.33
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: myp_vegan_blend_vanilla
+  name: My Protein Vegan Protein Blend Vanilla
+  kcal_per_100g: 1166.6666666666667
+  protein_per_100g: 233.33
+  carbs_per_100g: 26.67
+  fat_per_100g: 13.33
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: myp_layered_bar_chocolate_brownie
+  name: My Protein Layered Bar Chocolate Brownie
+  kcal_per_100g: 666.6666666666666
+  protein_per_100g: 46.67
+  carbs_per_100g: 66.67
+  fat_per_100g: 26.67
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 60
+  serving_label: serving (60 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: myp_layered_bar_white_chocolate
+  name: My Protein Layered Bar White Chocolate
+  kcal_per_100g: 666.6666666666666
+  protein_per_100g: 46.67
+  carbs_per_100g: 66.67
+  fat_per_100g: 26.67
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 60
+  serving_label: serving (60 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: myp_six_pack_quest_replacement_chocolate
+  name: My Protein 6 Pack Bar Chocolate
+  kcal_per_100g: 745.4545454545455
+  protein_per_100g: 60.0
+  carbs_per_100g: 58.18
+  fat_per_100g: 32.73
+  brand: My Protein
+  region_codes: GB
+  serving_grams: 55
+  serving_label: serving (55 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 55
+- source: brand
+  source_id: on_gold_standard_chocolate
+  name: Optimum Nutrition Gold Standard Whey Double Rich Chocolate
+  kcal_per_100g: 1266.6666666666667
+  protein_per_100g: 253.33
+  carbs_per_100g: 16.67
+  fat_per_100g: 13.33
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: on_gold_standard_vanilla
+  name: Optimum Nutrition Gold Standard Whey Vanilla Ice Cream
+  kcal_per_100g: 1266.6666666666667
+  protein_per_100g: 253.33
+  carbs_per_100g: 16.67
+  fat_per_100g: 13.33
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: on_gold_standard_strawberry
+  name: Optimum Nutrition Gold Standard Whey Delicious Strawberry
+  kcal_per_100g: 1266.6666666666667
+  protein_per_100g: 253.33
+  carbs_per_100g: 16.67
+  fat_per_100g: 13.33
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: on_gold_standard_choc_mint
+  name: Optimum Nutrition Gold Standard Whey Mint Chocolate Chip
+  kcal_per_100g: 1266.6666666666667
+  protein_per_100g: 253.33
+  carbs_per_100g: 16.67
+  fat_per_100g: 13.33
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: on_gold_standard_banana_cream
+  name: Optimum Nutrition Gold Standard Whey Banana Cream
+  kcal_per_100g: 1266.6666666666667
+  protein_per_100g: 253.33
+  carbs_per_100g: 16.67
+  fat_per_100g: 13.33
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: on_gold_standard_cookies_cream
+  name: Optimum Nutrition Gold Standard Whey Cookies & Cream
+  kcal_per_100g: 1266.6666666666667
+  protein_per_100g: 253.33
+  carbs_per_100g: 16.67
+  fat_per_100g: 13.33
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: on_gold_standard_chocolate_peanut
+  name: Optimum Nutrition Gold Standard Whey Chocolate Peanut Butter
+  kcal_per_100g: 1266.6666666666667
+  protein_per_100g: 253.33
+  carbs_per_100g: 16.67
+  fat_per_100g: 13.33
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: on_gold_standard_french_vanilla
+  name: Optimum Nutrition Gold Standard Whey French Vanilla Crème
+  kcal_per_100g: 1266.6666666666667
+  protein_per_100g: 253.33
+  carbs_per_100g: 16.67
+  fat_per_100g: 13.33
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: on_gold_standard_extreme_milk_choc
+  name: Optimum Nutrition Gold Standard Whey Extreme Milk Chocolate
+  kcal_per_100g: 1266.6666666666667
+  protein_per_100g: 253.33
+  carbs_per_100g: 16.67
+  fat_per_100g: 13.33
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: on_gold_standard_rocky_road
+  name: Optimum Nutrition Gold Standard Whey Rocky Road
+  kcal_per_100g: 1266.6666666666667
+  protein_per_100g: 253.33
+  carbs_per_100g: 16.67
+  fat_per_100g: 13.33
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: on_amino_energy_orange
+  name: Optimum Nutrition Amino Energy Orange Cooler
+  kcal_per_100g: 388.8888888888889
+  protein_per_100g: 0.0
+  carbs_per_100g: 44.44
+  fat_per_100g: 0.0
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 9
+  serving_label: serving (9 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 9
+- source: brand
+  source_id: on_amino_energy_grape
+  name: Optimum Nutrition Amino Energy Concord Grape
+  kcal_per_100g: 388.8888888888889
+  protein_per_100g: 0.0
+  carbs_per_100g: 44.44
+  fat_per_100g: 0.0
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 9
+  serving_label: serving (9 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 9
+- source: brand
+  source_id: on_pre_workout_gold
+  name: Optimum Nutrition Gold Standard Pre-Workout Fruit Punch
+  kcal_per_100g: 227.27272727272728
+  protein_per_100g: 0.0
+  carbs_per_100g: 36.36
+  fat_per_100g: 0.0
+  brand: Optimum Nutrition
+  region_codes: GB
+  serving_grams: 11
+  serving_label: serving (11 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 11
+- source: brand
+  source_id: grenade_carb_killa_chocolate_chip_salted_caramel
+  name: Grenade Carb Killa Chocolate Chip Salted Caramel
+  kcal_per_100g: 650.0
+  protein_per_100g: 58.33
+  carbs_per_100g: 28.33
+  fat_per_100g: 28.33
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 60
+  serving_label: serving (60 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 60
+- source: brand
+  source_id: grenade_carb_killa_white_chocolate_salted_peanut
+  name: Grenade Carb Killa White Chocolate Salted Peanut
+  kcal_per_100g: 658.3333333333334
+  protein_per_100g: 58.33
+  carbs_per_100g: 26.67
+  fat_per_100g: 30.0
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 60
+  serving_label: serving (60 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 60
+- source: brand
+  source_id: grenade_carb_killa_birthday_cake
+  name: Grenade Carb Killa Birthday Cake
+  kcal_per_100g: 658.3333333333334
+  protein_per_100g: 58.33
+  carbs_per_100g: 28.33
+  fat_per_100g: 30.0
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 60
+  serving_label: serving (60 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 60
+- source: brand
+  source_id: grenade_carb_killa_caramel_chaos
+  name: Grenade Carb Killa Caramel Chaos
+  kcal_per_100g: 658.3333333333334
+  protein_per_100g: 58.33
+  carbs_per_100g: 30.0
+  fat_per_100g: 28.33
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 60
+  serving_label: serving (60 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 60
+- source: brand
+  source_id: grenade_carb_killa_chocolate_crunch
+  name: Grenade Carb Killa Chocolate Crunch
+  kcal_per_100g: 650.0
+  protein_per_100g: 58.33
+  carbs_per_100g: 28.33
+  fat_per_100g: 28.33
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 60
+  serving_label: serving (60 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 60
+- source: brand
+  source_id: grenade_carb_killa_dark_chocolate_raspberry
+  name: Grenade Carb Killa Dark Chocolate Raspberry
+  kcal_per_100g: 650.0
+  protein_per_100g: 58.33
+  carbs_per_100g: 28.33
+  fat_per_100g: 28.33
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 60
+  serving_label: serving (60 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 60
+- source: brand
+  source_id: grenade_carb_killa_oreo_white
+  name: Grenade Carb Killa Oreo White
+  kcal_per_100g: 658.3333333333334
+  protein_per_100g: 58.33
+  carbs_per_100g: 28.33
+  fat_per_100g: 30.0
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 60
+  serving_label: serving (60 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 60
+- source: brand
+  source_id: grenade_carb_killa_jaffa_quake
+  name: Grenade Carb Killa Jaffa Quake
+  kcal_per_100g: 650.0
+  protein_per_100g: 58.33
+  carbs_per_100g: 28.33
+  fat_per_100g: 28.33
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 60
+  serving_label: serving (60 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 60
+- source: brand
+  source_id: grenade_protein_shake_chocolate
+  name: Grenade Protein Shake Chocolate (330ml)
+  kcal_per_100g: 15.151515151515152
+  protein_per_100g: 1.82
+  carbs_per_100g: 0.48
+  fat_per_100g: 0.45
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 330
+  serving_label: serving (330 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: ml
+  unit_grams: 330
+- source: brand
+  source_id: grenade_protein_shake_vanilla
+  name: Grenade Protein Shake Vanilla (330ml)
+  kcal_per_100g: 15.151515151515152
+  protein_per_100g: 1.82
+  carbs_per_100g: 0.48
+  fat_per_100g: 0.45
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 330
+  serving_label: serving (330 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: ml
+  unit_grams: 330
+- source: brand
+  source_id: grenade_protein_shake_strawberry
+  name: Grenade Protein Shake Strawberry (330ml)
+  kcal_per_100g: 15.151515151515152
+  protein_per_100g: 1.82
+  carbs_per_100g: 0.48
+  fat_per_100g: 0.45
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 330
+  serving_label: serving (330 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: ml
+  unit_grams: 330
+- source: brand
+  source_id: grenade_hydra_6_blue_raspberry
+  name: Grenade Hydra 6 BCAA Blue Raspberry (Per Scoop)
+  kcal_per_100g: 333.3333333333333
+  protein_per_100g: 66.67
+  carbs_per_100g: 11.11
+  fat_per_100g: 0.0
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 9
+  serving_label: serving (9 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 9
+- source: brand
+  source_id: phd_smart_bar_chocolate_brownie
+  name: PhD Smart Bar Chocolate Brownie
+  kcal_per_100g: 593.75
+  protein_per_100g: 51.56
+  carbs_per_100g: 37.5
+  fat_per_100g: 26.56
+  brand: PhD Nutrition
+  region_codes: GB
+  serving_grams: 64
+  serving_label: serving (64 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 64
+- source: brand
+  source_id: phd_smart_bar_choc_cookie_dough
+  name: PhD Smart Bar Chocolate Cookie Dough
+  kcal_per_100g: 593.75
+  protein_per_100g: 51.56
+  carbs_per_100g: 37.5
+  fat_per_100g: 26.56
+  brand: PhD Nutrition
+  region_codes: GB
+  serving_grams: 64
+  serving_label: serving (64 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 64
+- source: brand
+  source_id: phd_smart_bar_birthday_cake
+  name: PhD Smart Bar Birthday Cake
+  kcal_per_100g: 593.75
+  protein_per_100g: 51.56
+  carbs_per_100g: 37.5
+  fat_per_100g: 26.56
+  brand: PhD Nutrition
+  region_codes: GB
+  serving_grams: 64
+  serving_label: serving (64 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 64
+- source: brand
+  source_id: phd_smart_bar_white_chocolate_raspberry
+  name: PhD Smart Bar White Chocolate Raspberry
+  kcal_per_100g: 593.75
+  protein_per_100g: 51.56
+  carbs_per_100g: 37.5
+  fat_per_100g: 26.56
+  brand: PhD Nutrition
+  region_codes: GB
+  serving_grams: 64
+  serving_label: serving (64 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 64
+- source: brand
+  source_id: phd_diet_whey_chocolate
+  name: PhD Diet Whey Chocolate
+  kcal_per_100g: 1440.0
+  protein_per_100g: 300.0
+  carbs_per_100g: 24.0
+  fat_per_100g: 8.0
+  brand: PhD Nutrition
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: phd_diet_whey_strawberry
+  name: PhD Diet Whey Strawberry
+  kcal_per_100g: 1440.0
+  protein_per_100g: 300.0
+  carbs_per_100g: 24.0
+  fat_per_100g: 8.0
+  brand: PhD Nutrition
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: phd_pharma_whey_chocolate
+  name: PhD Pharma Whey Chocolate
+  kcal_per_100g: 1266.6666666666667
+  protein_per_100g: 260.0
+  carbs_per_100g: 16.67
+  fat_per_100g: 13.33
+  brand: PhD Nutrition
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: quest_bar_cookies_cream
+  name: Quest Bar Cookies & Cream
+  kcal_per_100g: 533.3333333333334
+  protein_per_100g: 55.0
+  carbs_per_100g: 36.67
+  fat_per_100g: 21.67
+  brand: Quest
+  region_codes: GB
+  serving_grams: 60
+  serving_label: serving (60 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: quest_bar_chocolate_chip_cookie_dough
+  name: Quest Bar Chocolate Chip Cookie Dough
+  kcal_per_100g: 533.3333333333334
+  protein_per_100g: 55.0
+  carbs_per_100g: 36.67
+  fat_per_100g: 21.67
+  brand: Quest
+  region_codes: GB
+  serving_grams: 60
+  serving_label: serving (60 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: quest_bar_birthday_cake
+  name: Quest Bar Birthday Cake
+  kcal_per_100g: 533.3333333333334
+  protein_per_100g: 55.0
+  carbs_per_100g: 36.67
+  fat_per_100g: 21.67
+  brand: Quest
+  region_codes: GB
+  serving_grams: 60
+  serving_label: serving (60 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: quest_bar_chocolate_brownie
+  name: Quest Bar Chocolate Brownie
+  kcal_per_100g: 533.3333333333334
+  protein_per_100g: 55.0
+  carbs_per_100g: 36.67
+  fat_per_100g: 21.67
+  brand: Quest
+  region_codes: GB
+  serving_grams: 60
+  serving_label: serving (60 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: quest_bar_double_chocolate_chunk
+  name: Quest Bar Double Chocolate Chunk
+  kcal_per_100g: 533.3333333333334
+  protein_per_100g: 55.0
+  carbs_per_100g: 36.67
+  fat_per_100g: 21.67
+  brand: Quest
+  region_codes: GB
+  serving_grams: 60
+  serving_label: serving (60 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: quest_bar_smores
+  name: Quest Bar S'mores
+  kcal_per_100g: 533.3333333333334
+  protein_per_100g: 55.0
+  carbs_per_100g: 36.67
+  fat_per_100g: 21.67
+  brand: Quest
+  region_codes: GB
+  serving_grams: 60
+  serving_label: serving (60 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: quest_bar_oatmeal_chocolate_chip
+  name: Quest Bar Oatmeal Chocolate Chip
+  kcal_per_100g: 533.3333333333334
+  protein_per_100g: 55.0
+  carbs_per_100g: 36.67
+  fat_per_100g: 21.67
+  brand: Quest
+  region_codes: GB
+  serving_grams: 60
+  serving_label: serving (60 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: quest_bar_peanut_butter_supreme
+  name: Quest Bar Peanut Butter Supreme
+  kcal_per_100g: 533.3333333333334
+  protein_per_100g: 55.0
+  carbs_per_100g: 36.67
+  fat_per_100g: 21.67
+  brand: Quest
+  region_codes: GB
+  serving_grams: 60
+  serving_label: serving (60 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: barebells_caramel_cashew
+  name: Barebells Caramel Cashew Bar
+  kcal_per_100g: 763.6363636363636
+  protein_per_100g: 63.64
+  carbs_per_100g: 41.82
+  fat_per_100g: 34.55
+  brand: Barebells
+  region_codes: GB
+  serving_grams: 55
+  serving_label: serving (55 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 55
+- source: brand
+  source_id: barebells_creamy_crisp
+  name: Barebells Creamy Crisp Bar
+  kcal_per_100g: 754.5454545454545
+  protein_per_100g: 63.64
+  carbs_per_100g: 41.82
+  fat_per_100g: 34.55
+  brand: Barebells
+  region_codes: GB
+  serving_grams: 55
+  serving_label: serving (55 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 55
+- source: brand
+  source_id: barebells_chocolate_dough
+  name: Barebells Chocolate Dough Bar
+  kcal_per_100g: 763.6363636363636
+  protein_per_100g: 63.64
+  carbs_per_100g: 41.82
+  fat_per_100g: 34.55
+  brand: Barebells
+  region_codes: GB
+  serving_grams: 55
+  serving_label: serving (55 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 55
+- source: brand
+  source_id: barebells_white_chocolate_almond
+  name: Barebells White Chocolate Almond Bar
+  kcal_per_100g: 763.6363636363636
+  protein_per_100g: 63.64
+  carbs_per_100g: 41.82
+  fat_per_100g: 34.55
+  brand: Barebells
+  region_codes: GB
+  serving_grams: 55
+  serving_label: serving (55 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 55
+- source: brand
+  source_id: barebells_hazelnut_nougat
+  name: Barebells Hazelnut Nougat Bar
+  kcal_per_100g: 763.6363636363636
+  protein_per_100g: 63.64
+  carbs_per_100g: 41.82
+  fat_per_100g: 34.55
+  brand: Barebells
+  region_codes: GB
+  serving_grams: 55
+  serving_label: serving (55 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 55
+- source: brand
+  source_id: barebells_salty_peanut
+  name: Barebells Salty Peanut Bar
+  kcal_per_100g: 772.7272727272727
+  protein_per_100g: 63.64
+  carbs_per_100g: 40.0
+  fat_per_100g: 36.36
+  brand: Barebells
+  region_codes: GB
+  serving_grams: 55
+  serving_label: serving (55 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 55
+- source: brand
+  source_id: barebells_strawberry_cheesecake
+  name: Barebells Strawberry Cheesecake Bar
+  kcal_per_100g: 754.5454545454545
+  protein_per_100g: 63.64
+  carbs_per_100g: 41.82
+  fat_per_100g: 34.55
+  brand: Barebells
+  region_codes: GB
+  serving_grams: 55
+  serving_label: serving (55 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 55
+- source: brand
+  source_id: misfits_chocolate_caramel
+  name: Misfits Chocolate Caramel Bar
+  kcal_per_100g: 754.5454545454545
+  protein_per_100g: 54.55
+  carbs_per_100g: 54.55
+  fat_per_100g: 29.09
+  brand: Misfits
+  region_codes: GB
+  serving_grams: 55
+  serving_label: serving (55 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 55
+- source: brand
+  source_id: misfits_choc_brownie_dough
+  name: Misfits Chocolate Brownie Dough Bar
+  kcal_per_100g: 745.4545454545455
+  protein_per_100g: 54.55
+  carbs_per_100g: 54.55
+  fat_per_100g: 27.27
+  brand: Misfits
+  region_codes: GB
+  serving_grams: 55
+  serving_label: serving (55 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 55
+- source: brand
+  source_id: misfits_white_chocolate
+  name: Misfits White Chocolate Bar
+  kcal_per_100g: 754.5454545454545
+  protein_per_100g: 54.55
+  carbs_per_100g: 54.55
+  fat_per_100g: 29.09
+  brand: Misfits
+  region_codes: GB
+  serving_grams: 55
+  serving_label: serving (55 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 55
+- source: brand
+  source_id: pulsin_choco_fudge_brownie
+  name: Pulsin Choc Fudge Brownie
+  kcal_per_100g: 820.0
+  protein_per_100g: 56.0
+  carbs_per_100g: 60.0
+  fat_per_100g: 34.0
+  brand: Pulsin
+  region_codes: GB
+  serving_grams: 50
+  serving_label: serving (50 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 50
+- source: brand
+  source_id: pulsin_orange_choc_chip
+  name: Pulsin Orange Choc Chip
+  kcal_per_100g: 820.0
+  protein_per_100g: 56.0
+  carbs_per_100g: 60.0
+  fat_per_100g: 34.0
+  brand: Pulsin
+  region_codes: GB
+  serving_grams: 50
+  serving_label: serving (50 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 50
+- source: brand
+  source_id: bulk_complete_protein_chocolate
+  name: Bulk Complete Protein Chocolate
+  kcal_per_100g: 1266.6666666666667
+  protein_per_100g: 253.33
+  carbs_per_100g: 16.67
+  fat_per_100g: 13.33
+  brand: Bulk
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: bulk_complete_protein_vanilla
+  name: Bulk Complete Protein Vanilla
+  kcal_per_100g: 1266.6666666666667
+  protein_per_100g: 253.33
+  carbs_per_100g: 16.67
+  fat_per_100g: 13.33
+  brand: Bulk
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: bulk_pure_whey_chocolate
+  name: Bulk Pure Whey Chocolate
+  kcal_per_100g: 1316.6666666666667
+  protein_per_100g: 266.67
+  carbs_per_100g: 16.67
+  fat_per_100g: 20.0
+  brand: Bulk
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: bulk_pure_whey_vanilla
+  name: Bulk Pure Whey Vanilla
+  kcal_per_100g: 1316.6666666666667
+  protein_per_100g: 266.67
+  carbs_per_100g: 16.67
+  fat_per_100g: 20.0
+  brand: Bulk
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: bulk_clear_whey_orange_mango
+  name: Bulk Clear Whey Orange Mango
+  kcal_per_100g: 360.0
+  protein_per_100g: 80.0
+  carbs_per_100g: 4.0
+  fat_per_100g: 1.6
+  brand: Bulk
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: usn_diet_fuel_chocolate
+  name: USN Diet Fuel UltraLean Chocolate
+  kcal_per_100g: 663.6363636363636
+  protein_per_100g: 74.55
+  carbs_per_100g: 60.0
+  fat_per_100g: 12.73
+  brand: USN
+  region_codes: GB
+  serving_grams: 55
+  serving_label: serving (55 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 55
+- source: brand
+  source_id: usn_diet_fuel_vanilla
+  name: USN Diet Fuel UltraLean Vanilla
+  kcal_per_100g: 663.6363636363636
+  protein_per_100g: 74.55
+  carbs_per_100g: 60.0
+  fat_per_100g: 12.73
+  brand: USN
+  region_codes: GB
+  serving_grams: 55
+  serving_label: serving (55 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 55
+- source: brand
+  source_id: usn_blue_lab_whey_chocolate
+  name: USN Blue Lab Whey Chocolate
+  kcal_per_100g: 1266.6666666666667
+  protein_per_100g: 253.33
+  carbs_per_100g: 20.0
+  fat_per_100g: 13.33
+  brand: USN
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: usn_creatine_5g
+  name: USN Creatine Monohydrate (5g serving)
+  kcal_per_100g: 0.0
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.0
+  brand: USN
+  region_codes: GB
+  serving_grams: 5
+  serving_label: serving (5 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 5
+- source: brand
+  source_id: usn_pre_workout_blue_raspberry
+  name: USN B4 Bomb Pre-Workout Blue Raspberry
+  kcal_per_100g: 156.25
+  protein_per_100g: 0.0
+  carbs_per_100g: 25.0
+  fat_per_100g: 0.0
+  brand: USN
+  region_codes: GB
+  serving_grams: 16
+  serving_label: serving (16 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 16
+- source: brand
+  source_id: max_promax_strawberry
+  name: Maximuscle Promax Strawberry
+  kcal_per_100g: 1266.6666666666667
+  protein_per_100g: 250.0
+  carbs_per_100g: 20.0
+  fat_per_100g: 13.33
+  brand: Maximuscle
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: max_progain_chocolate
+  name: Maximuscle Progain Chocolate
+  kcal_per_100g: 486.6666666666667
+  protein_per_100g: 37.33
+  carbs_per_100g: 66.67
+  fat_per_100g: 5.33
+  brand: Maximuscle
+  region_codes: GB
+  serving_grams: 75
+  serving_label: serving (75 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 75
+- source: brand
+  source_id: fs_whey_chocolate
+  name: Foodspring Whey Protein Chocolate
+  kcal_per_100g: 1316.6666666666667
+  protein_per_100g: 266.67
+  carbs_per_100g: 16.67
+  fat_per_100g: 16.67
+  brand: Foodspring
+  region_codes: GB
+  serving_grams: 30
+  serving_label: serving (30 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 30
+- source: brand
+  source_id: fs_protein_bar_chocolate
+  name: Foodspring Protein Bar Extra Chocolate
+  kcal_per_100g: 633.3333333333334
+  protein_per_100g: 55.0
+  carbs_per_100g: 36.67
+  fat_per_100g: 23.33
+  brand: Foodspring
+  region_codes: GB
+  serving_grams: 60
+  serving_label: serving (60 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: tpw_whey_chocolate
+  name: The Protein Works Whey 80 Chocolate
+  kcal_per_100g: 1520.0
+  protein_per_100g: 304.0
+  carbs_per_100g: 20.0
+  fat_per_100g: 16.0
+  brand: The Protein Works
+  region_codes: GB
+  serving_grams: 25
+  serving_label: serving (25 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 25
+- source: brand
+  source_id: tpw_diet_meal_chocolate
+  name: The Protein Works Diet Meal Replacement Chocolate
+  kcal_per_100g: 720.0
+  protein_per_100g: 70.0
+  carbs_per_100g: 70.0
+  fat_per_100g: 14.0
+  brand: The Protein Works
+  region_codes: GB
+  serving_grams: 50
+  serving_label: serving (50 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: scoop
+  unit_grams: 50
+- source: brand
+  source_id: awesome_bar_chocolate_peanut
+  name: Awesome Foods Chocolate Peanut Protein Bar
+  kcal_per_100g: 727.2727272727273
+  protein_per_100g: 54.55
+  carbs_per_100g: 45.45
+  fat_per_100g: 32.73
+  brand: Awesome
+  region_codes: GB
+  serving_grams: 55
+  serving_label: serving (55 g)
+  tags: supplement,protein,sports-nutrition
+  portion_unit: bar
+  unit_grams: 55

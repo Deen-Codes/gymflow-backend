@@ -1,0 +1,717 @@
+# Crisps full range — Walkers + Doritos + Quavers + Wotsits + Frazzles + Mini Cheddars
+# + Hula Hoops + Monster Munch + Sunbites + Skips + French Fries + Squares + Sensations + Max
+
+- source: brand
+  source_id: walkers_ready_salted_25
+  name: Walkers Ready Salted Crisps
+  kcal_per_100g: 525
+  protein_per_100g: 6
+  carbs_per_100g: 51
+  fat_per_100g: 33
+  brand: Walkers
+  region_codes: GB
+  serving_grams: 25
+  serving_label: bag (25 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: walkers_salt_vinegar_25
+  name: Walkers Salt & Vinegar Crisps
+  kcal_per_100g: 525
+  protein_per_100g: 6
+  carbs_per_100g: 51
+  fat_per_100g: 33
+  brand: Walkers
+  region_codes: GB
+  serving_grams: 25
+  serving_label: bag (25 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: walkers_prawn_cocktail_25
+  name: Walkers Prawn Cocktail Crisps
+  kcal_per_100g: 525
+  protein_per_100g: 6
+  carbs_per_100g: 51
+  fat_per_100g: 33
+  brand: Walkers
+  region_codes: GB
+  serving_grams: 25
+  serving_label: bag (25 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: walkers_smoky_bacon_25
+  name: Walkers Smoky Bacon Crisps
+  kcal_per_100g: 525
+  protein_per_100g: 6
+  carbs_per_100g: 51
+  fat_per_100g: 33
+  brand: Walkers
+  region_codes: GB
+  serving_grams: 25
+  serving_label: bag (25 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: walkers_pickled_onion_25
+  name: Walkers Pickled Onion Crisps
+  kcal_per_100g: 525
+  protein_per_100g: 6
+  carbs_per_100g: 51
+  fat_per_100g: 33
+  brand: Walkers
+  region_codes: GB
+  serving_grams: 25
+  serving_label: bag (25 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: walkers_marmite_25
+  name: Walkers Marmite Crisps
+  kcal_per_100g: 520
+  protein_per_100g: 7
+  carbs_per_100g: 50
+  fat_per_100g: 32
+  brand: Walkers
+  region_codes: GB
+  serving_grams: 25
+  serving_label: bag (25 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: walkers_worcester_sauce_25
+  name: Walkers Worcester Sauce Crisps
+  kcal_per_100g: 525
+  protein_per_100g: 6
+  carbs_per_100g: 51
+  fat_per_100g: 33
+  brand: Walkers
+  region_codes: GB
+  serving_grams: 25
+  serving_label: bag (25 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: walkers_steak_onion_25
+  name: Walkers Steak & Onion Crisps
+  kcal_per_100g: 525
+  protein_per_100g: 6
+  carbs_per_100g: 51
+  fat_per_100g: 33
+  brand: Walkers
+  region_codes: GB
+  serving_grams: 25
+  serving_label: bag (25 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: walkers_tomato_ketchup_25
+  name: Walkers Tomato Ketchup Crisps
+  kcal_per_100g: 520
+  protein_per_100g: 6
+  carbs_per_100g: 52
+  fat_per_100g: 32
+  brand: Walkers
+  region_codes: GB
+  serving_grams: 25
+  serving_label: bag (25 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: walkers_sens_thai_sweet_chilli
+  name: Walkers Sensations Thai Sweet Chilli
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 55
+  fat_per_100g: 30
+  brand: Walkers Sensations
+  region_codes: GB
+  serving_grams: 35
+  serving_label: bag (35 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 35
+- source: brand
+  source_id: walkers_sens_balsamic_vinegar
+  name: Walkers Sensations Balsamic Vinegar & Caramelised Onion
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 55
+  fat_per_100g: 30
+  brand: Walkers Sensations
+  region_codes: GB
+  serving_grams: 35
+  serving_label: bag (35 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 35
+- source: brand
+  source_id: walkers_sens_sea_salt_cracked_pepper
+  name: Walkers Sensations Sea Salt & Cracked Pepper
+  kcal_per_100g: 505
+  protein_per_100g: 6
+  carbs_per_100g: 55
+  fat_per_100g: 29
+  brand: Walkers Sensations
+  region_codes: GB
+  serving_grams: 35
+  serving_label: bag (35 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 35
+- source: brand
+  source_id: walkers_sens_lime_coriander
+  name: Walkers Sensations Lime & Coriander Chutney
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 55
+  fat_per_100g: 30
+  brand: Walkers Sensations
+  region_codes: GB
+  serving_grams: 35
+  serving_label: bag (35 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 35
+- source: brand
+  source_id: walkers_sens_aromatic_thai
+  name: Walkers Sensations Aromatic Thai Chilli
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 55
+  fat_per_100g: 30
+  brand: Walkers Sensations
+  region_codes: GB
+  serving_grams: 35
+  serving_label: bag (35 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 35
+- source: brand
+  source_id: walkers_sens_oven_roasted_chicken_thyme
+  name: Walkers Sensations Oven Roasted Chicken & Thyme
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 55
+  fat_per_100g: 30
+  brand: Walkers Sensations
+  region_codes: GB
+  serving_grams: 35
+  serving_label: bag (35 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 35
+- source: brand
+  source_id: walkers_max_double_crunch
+  name: Walkers Max Double Crunch
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 56
+  fat_per_100g: 29
+  brand: Walkers Max
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bag (50 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 50
+- source: brand
+  source_id: walkers_max_paprika
+  name: Walkers Max Paprika
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 56
+  fat_per_100g: 29
+  brand: Walkers Max
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bag (50 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 50
+- source: brand
+  source_id: walkers_max_flame_grilled_steak
+  name: Walkers Max Flame Grilled Steak
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 55
+  fat_per_100g: 30
+  brand: Walkers Max
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bag (50 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 50
+- source: brand
+  source_id: walkers_max_chicken_strong_roast
+  name: Walkers Max Chicken Strong Roast
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 56
+  fat_per_100g: 29
+  brand: Walkers Max
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bag (50 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 50
+- source: brand
+  source_id: quavers_cheese
+  name: Quavers Cheese
+  kcal_per_100g: 525
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 29
+  brand: Walkers Quavers
+  region_codes: GB
+  serving_grams: 16
+  serving_label: bag (16 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 16
+- source: brand
+  source_id: quavers_prawn_cocktail
+  name: Quavers Prawn Cocktail
+  kcal_per_100g: 520
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 29
+  brand: Walkers Quavers
+  region_codes: GB
+  serving_grams: 16
+  serving_label: bag (16 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 16
+- source: brand
+  source_id: quavers_salt_vinegar
+  name: Quavers Salt & Vinegar
+  kcal_per_100g: 525
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 29
+  brand: Walkers Quavers
+  region_codes: GB
+  serving_grams: 16
+  serving_label: bag (16 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 16
+- source: brand
+  source_id: wotsits_cheese_22
+  name: Wotsits Really Cheesy
+  kcal_per_100g: 540
+  protein_per_100g: 7
+  carbs_per_100g: 53
+  fat_per_100g: 33
+  brand: Walkers Wotsits
+  region_codes: GB
+  serving_grams: 22
+  serving_label: bag (22 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 22
+- source: brand
+  source_id: wotsits_flamin_hot
+  name: Wotsits Flamin' Hot
+  kcal_per_100g: 540
+  protein_per_100g: 6
+  carbs_per_100g: 54
+  fat_per_100g: 32
+  brand: Walkers Wotsits
+  region_codes: GB
+  serving_grams: 22
+  serving_label: bag (22 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 22
+- source: brand
+  source_id: frazzles_smoky_bacon
+  name: Frazzles Smoky Bacon
+  kcal_per_100g: 510
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 27
+  brand: Walkers Frazzles
+  region_codes: GB
+  serving_grams: 18
+  serving_label: bag (18 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 18
+- source: brand
+  source_id: frazzles_crispy_bacon
+  name: Frazzles Crispy Bacon
+  kcal_per_100g: 510
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 27
+  brand: Walkers Frazzles
+  region_codes: GB
+  serving_grams: 18
+  serving_label: bag (18 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 18
+- source: brand
+  source_id: french_fries_salt_vinegar
+  name: Walkers French Fries Salt & Vinegar
+  kcal_per_100g: 460
+  protein_per_100g: 7
+  carbs_per_100g: 70
+  fat_per_100g: 17
+  brand: Walkers
+  region_codes: GB
+  serving_grams: 18
+  serving_label: bag (18 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 18
+- source: brand
+  source_id: french_fries_cheese_onion
+  name: Walkers French Fries Cheese & Onion
+  kcal_per_100g: 465
+  protein_per_100g: 7
+  carbs_per_100g: 70
+  fat_per_100g: 17
+  brand: Walkers
+  region_codes: GB
+  serving_grams: 18
+  serving_label: bag (18 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 18
+- source: brand
+  source_id: french_fries_worcester
+  name: Walkers French Fries Worcester Sauce
+  kcal_per_100g: 460
+  protein_per_100g: 7
+  carbs_per_100g: 70
+  fat_per_100g: 17
+  brand: Walkers
+  region_codes: GB
+  serving_grams: 18
+  serving_label: bag (18 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 18
+- source: brand
+  source_id: squares_cheese_onion
+  name: Walkers Squares Cheese & Onion
+  kcal_per_100g: 510
+  protein_per_100g: 7
+  carbs_per_100g: 56
+  fat_per_100g: 29
+  brand: Walkers
+  region_codes: GB
+  serving_grams: 27.5
+  serving_label: bag (27.5 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 27.5
+- source: brand
+  source_id: squares_salt_vinegar
+  name: Walkers Squares Salt & Vinegar
+  kcal_per_100g: 510
+  protein_per_100g: 7
+  carbs_per_100g: 56
+  fat_per_100g: 29
+  brand: Walkers
+  region_codes: GB
+  serving_grams: 27.5
+  serving_label: bag (27.5 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 27.5
+- source: brand
+  source_id: squares_prawn_cocktail
+  name: Walkers Squares Prawn Cocktail
+  kcal_per_100g: 510
+  protein_per_100g: 7
+  carbs_per_100g: 56
+  fat_per_100g: 29
+  brand: Walkers
+  region_codes: GB
+  serving_grams: 27.5
+  serving_label: bag (27.5 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 27.5
+- source: brand
+  source_id: doritos_lightly_salted
+  name: Doritos Lightly Salted
+  kcal_per_100g: 505
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 24
+  brand: Doritos
+  region_codes: GB
+  serving_grams: 30
+  serving_label: bag (30 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 30
+- source: brand
+  source_id: doritos_flame_grilled_steak
+  name: Doritos Flame Grilled Steak
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 63
+  fat_per_100g: 25
+  brand: Doritos
+  region_codes: GB
+  serving_grams: 30
+  serving_label: bag (30 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 30
+- source: brand
+  source_id: doritos_dippers
+  name: Doritos Dippers (Lightly Salted Tortilla Chips)
+  kcal_per_100g: 510
+  protein_per_100g: 7
+  carbs_per_100g: 63
+  fat_per_100g: 25
+  brand: Doritos
+  region_codes: GB
+  serving_grams: 175
+  serving_label: bag (175 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 175
+- source: brand
+  source_id: sunbites_sweet_chilli
+  name: Sunbites Sweet Chilli
+  kcal_per_100g: 460
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 21
+  brand: Sunbites
+  region_codes: GB
+  serving_grams: 28
+  serving_label: bag (28 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 28
+- source: brand
+  source_id: sunbites_sour_cream_cracked_pepper
+  name: Sunbites Sour Cream & Cracked Pepper
+  kcal_per_100g: 460
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 21
+  brand: Sunbites
+  region_codes: GB
+  serving_grams: 28
+  serving_label: bag (28 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 28
+- source: brand
+  source_id: sunbites_lightly_salted
+  name: Sunbites Lightly Salted
+  kcal_per_100g: 455
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 21
+  brand: Sunbites
+  region_codes: GB
+  serving_grams: 28
+  serving_label: bag (28 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 28
+- source: brand
+  source_id: monster_munch_pickled_onion
+  name: Monster Munch Pickled Onion
+  kcal_per_100g: 510
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 28
+  brand: Monster Munch
+  region_codes: GB
+  serving_grams: 22
+  serving_label: bag (22 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 22
+- source: brand
+  source_id: monster_munch_flamin_hot
+  name: Monster Munch Flamin' Hot
+  kcal_per_100g: 510
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 28
+  brand: Monster Munch
+  region_codes: GB
+  serving_grams: 22
+  serving_label: bag (22 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 22
+- source: brand
+  source_id: monster_munch_roast_beef
+  name: Monster Munch Roast Beef
+  kcal_per_100g: 510
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 28
+  brand: Monster Munch
+  region_codes: GB
+  serving_grams: 22
+  serving_label: bag (22 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 22
+- source: brand
+  source_id: mini_cheddars_original
+  name: Mini Cheddars Original
+  kcal_per_100g: 530
+  protein_per_100g: 11
+  carbs_per_100g: 53
+  fat_per_100g: 30
+  brand: Jacob's Mini Cheddars
+  region_codes: GB
+  serving_grams: 25
+  serving_label: bag (25 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: mini_cheddars_smoky_bbq
+  name: Mini Cheddars Smoky BBQ
+  kcal_per_100g: 530
+  protein_per_100g: 11
+  carbs_per_100g: 54
+  fat_per_100g: 29
+  brand: Jacob's Mini Cheddars
+  region_codes: GB
+  serving_grams: 25
+  serving_label: bag (25 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: mini_cheddars_branston_pickle
+  name: Mini Cheddars Branston Pickle
+  kcal_per_100g: 525
+  protein_per_100g: 11
+  carbs_per_100g: 54
+  fat_per_100g: 29
+  brand: Jacob's Mini Cheddars
+  region_codes: GB
+  serving_grams: 25
+  serving_label: bag (25 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: skips_prawn
+  name: KP Skips Prawn Cocktail
+  kcal_per_100g: 470
+  protein_per_100g: 5
+  carbs_per_100g: 67
+  fat_per_100g: 21
+  brand: KP Skips
+  region_codes: GB
+  serving_grams: 13
+  serving_label: bag (13 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 13
+- source: brand
+  source_id: ringos_salt_vinegar
+  name: Ringos Salt & Vinegar
+  kcal_per_100g: 470
+  protein_per_100g: 4
+  carbs_per_100g: 70
+  fat_per_100g: 19
+  brand: Golden Wonder Ringos
+  region_codes: GB
+  serving_grams: 16
+  serving_label: bag (16 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 16
+- source: brand
+  source_id: hula_hoops_original
+  name: Hula Hoops Original
+  kcal_per_100g: 525
+  protein_per_100g: 5
+  carbs_per_100g: 56
+  fat_per_100g: 31
+  brand: KP Hula Hoops
+  region_codes: GB
+  serving_grams: 24
+  serving_label: bag (24 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 24
+- source: brand
+  source_id: hula_hoops_salt_vinegar
+  name: Hula Hoops Salt & Vinegar
+  kcal_per_100g: 525
+  protein_per_100g: 5
+  carbs_per_100g: 56
+  fat_per_100g: 31
+  brand: KP Hula Hoops
+  region_codes: GB
+  serving_grams: 24
+  serving_label: bag (24 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 24
+- source: brand
+  source_id: hula_hoops_bbq_beef
+  name: Hula Hoops BBQ Beef
+  kcal_per_100g: 525
+  protein_per_100g: 5
+  carbs_per_100g: 57
+  fat_per_100g: 30
+  brand: KP Hula Hoops
+  region_codes: GB
+  serving_grams: 24
+  serving_label: bag (24 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 24
+- source: brand
+  source_id: hula_hoops_cheese_onion
+  name: Hula Hoops Cheese & Onion
+  kcal_per_100g: 525
+  protein_per_100g: 5
+  carbs_per_100g: 56
+  fat_per_100g: 31
+  brand: KP Hula Hoops
+  region_codes: GB
+  serving_grams: 24
+  serving_label: bag (24 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 24
+- source: brand
+  source_id: skips_pickled_onion
+  name: KP Skips Pickled Onion
+  kcal_per_100g: 470
+  protein_per_100g: 5
+  carbs_per_100g: 67
+  fat_per_100g: 21
+  brand: KP Skips
+  region_codes: GB
+  serving_grams: 13
+  serving_label: bag (13 g)
+  tags: snack,crisps
+  portion_unit: pack
+  unit_grams: 13

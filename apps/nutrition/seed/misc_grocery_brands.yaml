@@ -1,0 +1,1268 @@
+# More brands — Yorkshire Provender / Baxters soups, Loyd Grossman pastes, Ainsley Harriott,
+# Halal range (kebabs, mince, tikka, doner), Kosher (challah, matzo, gefilte, latkes, pastrami),
+# Asian (Kewpie, Yutaka panko/sushi rice/nori, Amoy noodles, Kohinoor),
+# Reese's, Hershey's, Toblerone, Lindt, Milka chocolate +
+# RXBAR, Clif Builders, Oh Yeah! protein bars +
+# Doritos, Boursin/Philadelphia/Laughing Cow/Babybel cheese variants,
+# pickles (Branston, Haywards), fermented (Loving Foods)
+
+- source: brand
+  source_id: yorkshire_provender_tom_basil
+  name: Yorkshire Provender Tomato & Basil Soup
+  kcal_per_100g: 65
+  protein_per_100g: 2
+  carbs_per_100g: 9
+  fat_per_100g: 2.5
+  brand: Yorkshire Provender
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: soup
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: yorkshire_provender_chunky_chicken
+  name: Yorkshire Provender Chunky Chicken Soup
+  kcal_per_100g: 75
+  protein_per_100g: 5
+  carbs_per_100g: 7
+  fat_per_100g: 3
+  brand: Yorkshire Provender
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: soup
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: yorkshire_provender_thai_coconut
+  name: Yorkshire Provender Thai Coconut Chicken
+  kcal_per_100g: 95
+  protein_per_100g: 6
+  carbs_per_100g: 8
+  fat_per_100g: 5
+  brand: Yorkshire Provender
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: soup
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: baxters_chunky_country
+  name: Baxters Chunky Country Vegetable
+  kcal_per_100g: 50
+  protein_per_100g: 1.5
+  carbs_per_100g: 8
+  fat_per_100g: 1
+  brand: Baxters
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: soup
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: baxters_lentil_soup
+  name: Baxters Lentil & Bacon
+  kcal_per_100g: 65
+  protein_per_100g: 4
+  carbs_per_100g: 9
+  fat_per_100g: 1.5
+  brand: Baxters
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: soup
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: baxters_scotch_broth
+  name: Baxters Scotch Broth
+  kcal_per_100g: 55
+  protein_per_100g: 3
+  carbs_per_100g: 8
+  fat_per_100g: 1
+  brand: Baxters
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: soup
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: baxters_french_onion
+  name: Baxters French Onion
+  kcal_per_100g: 35
+  protein_per_100g: 1.5
+  carbs_per_100g: 5
+  fat_per_100g: 1
+  brand: Baxters
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: soup
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: baxters_minestrone
+  name: Baxters Minestrone
+  kcal_per_100g: 50
+  protein_per_100g: 2
+  carbs_per_100g: 9
+  fat_per_100g: 0.5
+  brand: Baxters
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: soup
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: baxters_creamy_mushroom
+  name: Baxters Creamy Mushroom
+  kcal_per_100g: 55
+  protein_per_100g: 1.5
+  carbs_per_100g: 6
+  fat_per_100g: 2.5
+  brand: Baxters
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: soup
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: loyd_grossman_thai_red_paste
+  name: Loyd Grossman Thai Red Paste
+  kcal_per_100g: 195
+  protein_per_100g: 3
+  carbs_per_100g: 11
+  fat_per_100g: 16
+  brand: Loyd Grossman
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: paste
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: loyd_grossman_thai_green_paste
+  name: Loyd Grossman Thai Green Paste
+  kcal_per_100g: 165
+  protein_per_100g: 3
+  carbs_per_100g: 11
+  fat_per_100g: 13
+  brand: Loyd Grossman
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: paste
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: ainsley_cous_cous_garlic_coriander
+  name: Ainsley Harriott Cous Cous Garlic & Coriander
+  kcal_per_100g: 360
+  protein_per_100g: 13
+  carbs_per_100g: 70
+  fat_per_100g: 2
+  brand: Ainsley Harriott
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: grain
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: ainsley_cous_cous_spice_sensation
+  name: Ainsley Harriott Cous Cous Spice Sensation
+  kcal_per_100g: 360
+  protein_per_100g: 13
+  carbs_per_100g: 70
+  fat_per_100g: 2
+  brand: Ainsley Harriott
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: grain
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: ainsley_cous_cous_mediterranean
+  name: Ainsley Harriott Cous Cous Mediterranean
+  kcal_per_100g: 360
+  protein_per_100g: 13
+  carbs_per_100g: 70
+  fat_per_100g: 2
+  brand: Ainsley Harriott
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: grain
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: ainsley_pasta_n_sauce_tomato
+  name: Ainsley Harriott Pasta 'n' Sauce Tomato Onion
+  kcal_per_100g: 360
+  protein_per_100g: 13
+  carbs_per_100g: 65
+  fat_per_100g: 4.5
+  brand: Ainsley Harriott
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: halal_chicken_seekh_kebab_per_skewer
+  name: Halal Chicken Seekh Kebab (Per Skewer)
+  kcal_per_100g: 215
+  protein_per_100g: 17
+  carbs_per_100g: 8
+  fat_per_100g: 13
+  brand: Halal
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: halal,chicken
+  portion_unit: piece
+  unit_grams: 60
+- source: brand
+  source_id: halal_chicken_tikka_per_100g
+  name: Halal Chicken Tikka Cooked (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 26
+  carbs_per_100g: 2
+  fat_per_100g: 7
+  brand: Halal
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: halal,chicken
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: halal_chicken_breast_per_100g
+  name: Halal Chicken Breast Raw (Per 100g)
+  kcal_per_100g: 110
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Halal
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: halal,chicken
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: halal_lamb_mince_per_100g
+  name: Halal Lamb Mince Raw (Per 100g)
+  kcal_per_100g: 245
+  protein_per_100g: 17
+  carbs_per_100g: 0
+  fat_per_100g: 19
+  brand: Halal
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: halal,lamb
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: halal_beef_mince_per_100g
+  name: Halal Beef Mince Raw 5% Fat (Per 100g)
+  kcal_per_100g: 130
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 5
+  brand: Halal
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: halal,beef
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: halal_beef_kofta_per_skewer
+  name: Halal Beef Kofta (Per Skewer)
+  kcal_per_100g: 245
+  protein_per_100g: 17
+  carbs_per_100g: 5
+  fat_per_100g: 18
+  brand: Halal
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: halal,beef
+  portion_unit: piece
+  unit_grams: 80
+- source: brand
+  source_id: halal_doner_meat_lamb
+  name: Halal Doner Meat Lamb (Per 100g)
+  kcal_per_100g: 285
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 19
+  brand: Halal
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: halal,lamb
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: halal_doner_meat_chicken
+  name: Halal Doner Meat Chicken (Per 100g)
+  kcal_per_100g: 195
+  protein_per_100g: 22
+  carbs_per_100g: 4
+  fat_per_100g: 11
+  brand: Halal
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: halal,chicken
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: halal_chicken_strips_breaded_per_100g
+  name: Halal Breaded Chicken Strips (Per 100g)
+  kcal_per_100g: 245
+  protein_per_100g: 18
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Halal
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: halal,chicken
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: halal_chicken_wings_marinated
+  name: Halal Marinated Chicken Wings (Per 100g)
+  kcal_per_100g: 245
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 14
+  brand: Halal
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: halal,chicken
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: kosher_chicken_breast_per_100g
+  name: Kosher Chicken Breast Raw (Per 100g)
+  kcal_per_100g: 110
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Kosher
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: kosher,chicken
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: kosher_beef_brisket_per_100g
+  name: Kosher Beef Brisket Cooked (Per 100g)
+  kcal_per_100g: 280
+  protein_per_100g: 28
+  carbs_per_100g: 0
+  fat_per_100g: 18
+  brand: Kosher
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: kosher,beef
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: kosher_salami_beef_per_30g
+  name: Kosher Beef Salami (Per 30g)
+  kcal_per_100g: 380
+  protein_per_100g: 21
+  carbs_per_100g: 1
+  fat_per_100g: 33
+  brand: Kosher
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: kosher,beef
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: kosher_pastrami_per_30g
+  name: Kosher Pastrami (Per 30g)
+  kcal_per_100g: 145
+  protein_per_100g: 22
+  carbs_per_100g: 1
+  fat_per_100g: 6
+  brand: Kosher
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: kosher,beef
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: kosher_challah_bread_slice
+  name: Kosher Challah Bread (Per Slice)
+  kcal_per_100g: 305
+  protein_per_100g: 9
+  carbs_per_100g: 53
+  fat_per_100g: 6
+  brand: Kosher
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: kosher,bread
+  portion_unit: slice
+  unit_grams: 50
+- source: brand
+  source_id: kosher_matzo_per_unit
+  name: Matzo Cracker (Per Unit)
+  kcal_per_100g: 415
+  protein_per_100g: 11
+  carbs_per_100g: 88
+  fat_per_100g: 1.4
+  brand: Kosher
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: kosher
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: kosher_gefilte_fish_per_piece
+  name: Gefilte Fish (Per Piece)
+  kcal_per_100g: 95
+  protein_per_100g: 9
+  carbs_per_100g: 7
+  fat_per_100g: 3
+  brand: Kosher
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: kosher,fish
+  portion_unit: meal
+  unit_grams: 60
+- source: brand
+  source_id: kosher_rugelach_per_piece
+  name: Rugelach (Per Piece)
+  kcal_per_100g: 405
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  brand: Kosher
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: kosher,sweet
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: kosher_latkes_per_piece
+  name: Potato Latke (Per Piece)
+  kcal_per_100g: 245
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 11
+  brand: Kosher
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: kosher
+  portion_unit: meal
+  unit_grams: 60
+- source: brand
+  source_id: kewpie_mayo_per_15g
+  name: Kewpie Japanese Mayonnaise (Per 15g)
+  kcal_per_100g: 720
+  protein_per_100g: 1
+  carbs_per_100g: 1
+  fat_per_100g: 80
+  brand: Kewpie
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: japanese,sauce
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: yutaka_panko_per_30g
+  name: Yutaka Panko Breadcrumbs (Per 30g)
+  kcal_per_100g: 360
+  protein_per_100g: 14
+  carbs_per_100g: 70
+  fat_per_100g: 4
+  brand: Yutaka
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: japanese,coating
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: yutaka_sushi_rice_dry_per_75g
+  name: Yutaka Sushi Rice (Dry, Per 75g)
+  kcal_per_100g: 365
+  protein_per_100g: 7
+  carbs_per_100g: 80
+  fat_per_100g: 0.5
+  brand: Yutaka
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: japanese,rice
+  portion_unit: meal
+  unit_grams: 75
+- source: brand
+  source_id: yutaka_nori_sheets_per_3
+  name: Yutaka Nori Sheets (Per 3 Sheets)
+  kcal_per_100g: 415
+  protein_per_100g: 39
+  carbs_per_100g: 0
+  fat_per_100g: 4
+  brand: Yutaka
+  region_codes: GB
+  serving_grams: 9
+  serving_label: 9 g
+  tags: japanese
+  portion_unit: piece
+  unit_grams: 9
+- source: brand
+  source_id: amoy_egg_noodles_dry_per_75g
+  name: Amoy Egg Noodles (Dry, Per 75g)
+  kcal_per_100g: 360
+  protein_per_100g: 12
+  carbs_per_100g: 72
+  fat_per_100g: 2
+  brand: Amoy
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: asian,pasta
+  portion_unit: meal
+  unit_grams: 75
+- source: brand
+  source_id: amoy_straight_to_wok_egg_noodles
+  name: Amoy Straight to Wok Egg Noodles (Per Pack)
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 32
+  fat_per_100g: 3
+  brand: Amoy
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: asian,pasta
+  portion_unit: meal
+  unit_grams: 150
+- source: brand
+  source_id: amoy_straight_to_wok_udon
+  name: Amoy Straight to Wok Udon Noodles
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 32
+  fat_per_100g: 3
+  brand: Amoy
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: asian,pasta
+  portion_unit: meal
+  unit_grams: 150
+- source: brand
+  source_id: amoy_singapore_style_noodles
+  name: Amoy Straight to Wok Singapore Noodles
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 32
+  fat_per_100g: 3
+  brand: Amoy
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: asian,pasta
+  portion_unit: meal
+  unit_grams: 150
+- source: brand
+  source_id: amoy_kimchi_paste_per_15g
+  name: Amoy Kimchi Paste (Per 15g)
+  kcal_per_100g: 95
+  protein_per_100g: 1
+  carbs_per_100g: 18
+  fat_per_100g: 1.5
+  brand: Amoy
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: korean,sauce
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: kohinoor_basmati_dry_per_75g
+  name: Kohinoor Pure Basmati Rice (Dry, Per 75g)
+  kcal_per_100g: 350
+  protein_per_100g: 7
+  carbs_per_100g: 78
+  fat_per_100g: 1
+  brand: Kohinoor
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: rice
+  portion_unit: meal
+  unit_grams: 75
+- source: brand
+  source_id: kohinoor_microwave_basmati
+  name: Kohinoor Microwave Basmati Rice
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 2
+  brand: Kohinoor
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: rice
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: kohinoor_cooking_sauce_butter_chicken
+  name: Kohinoor Butter Chicken Sauce
+  kcal_per_100g: 145
+  protein_per_100g: 2
+  carbs_per_100g: 11
+  fat_per_100g: 10
+  brand: Kohinoor
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: indian,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: kohinoor_cooking_sauce_tikka_masala
+  name: Kohinoor Tikka Masala Sauce
+  kcal_per_100g: 130
+  protein_per_100g: 2
+  carbs_per_100g: 11
+  fat_per_100g: 9
+  brand: Kohinoor
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: indian,sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: kohinoor_garam_masala_per_5g
+  name: Kohinoor Garam Masala (Per Tsp)
+  kcal_per_100g: 280
+  protein_per_100g: 13
+  carbs_per_100g: 50
+  fat_per_100g: 14
+  brand: Kohinoor
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: indian,spice
+  portion_unit: tsp
+  unit_grams: 5
+- source: brand
+  source_id: reeses_pb_cups_per_pack
+  name: Reese's Peanut Butter Cups (Per 2-pack)
+  kcal_per_100g: 540
+  protein_per_100g: 11
+  carbs_per_100g: 50
+  fat_per_100g: 32
+  brand: Reese's
+  region_codes: GB
+  serving_grams: 42
+  serving_label: 42 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 42
+- source: brand
+  source_id: reeses_pieces_per_pack
+  name: Reese's Pieces (Per Pack)
+  kcal_per_100g: 525
+  protein_per_100g: 11
+  carbs_per_100g: 65
+  fat_per_100g: 24
+  brand: Reese's
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 50
+- source: brand
+  source_id: reeses_nut_bar
+  name: Reese's Nutrageous Bar
+  kcal_per_100g: 510
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 26
+  brand: Reese's
+  region_codes: GB
+  serving_grams: 47
+  serving_label: 47 g
+  tags: chocolate
+  portion_unit: meal
+  unit_grams: 47
+- source: brand
+  source_id: hersheys_milk_chocolate
+  name: Hershey's Milk Chocolate Bar
+  kcal_per_100g: 535
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 31
+  brand: Hershey's
+  region_codes: GB
+  serving_grams: 43
+  serving_label: 43 g
+  tags: chocolate
+  portion_unit: meal
+  unit_grams: 43
+- source: brand
+  source_id: hersheys_kisses_per_pack
+  name: Hershey's Kisses (Per Pack)
+  kcal_per_100g: 535
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 31
+  brand: Hershey's
+  region_codes: GB
+  serving_grams: 43
+  serving_label: 43 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 43
+- source: brand
+  source_id: trolli_planet_gummi_per_30g
+  name: Trolli Planet Gummi (Per 30g)
+  kcal_per_100g: 320
+  protein_per_100g: 6
+  carbs_per_100g: 80
+  fat_per_100g: 0
+  brand: Trolli
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: sweets
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: milka_alpine_milk_chocolate_100g
+  name: Milka Alpine Milk Chocolate (Per 100g)
+  kcal_per_100g: 535
+  protein_per_100g: 7
+  carbs_per_100g: 58
+  fat_per_100g: 30
+  brand: Milka
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: chocolate
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: milka_oreo_bar_100g
+  name: Milka Oreo Bar (Per 100g)
+  kcal_per_100g: 525
+  protein_per_100g: 6
+  carbs_per_100g: 58
+  fat_per_100g: 30
+  brand: Milka
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: chocolate
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: toblerone_per_100g
+  name: Toblerone Milk Chocolate (Per 100g)
+  kcal_per_100g: 535
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 30
+  brand: Toblerone
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: chocolate
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: toblerone_per_35g
+  name: Toblerone Milk Chocolate (Per 35g)
+  kcal_per_100g: 535
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 30
+  brand: Toblerone
+  region_codes: GB
+  serving_grams: 35
+  serving_label: 35 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 35
+- source: brand
+  source_id: toblerone_dark_per_100g
+  name: Toblerone Dark (Per 100g)
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 55
+  fat_per_100g: 31
+  brand: Toblerone
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: chocolate
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: lindt_lindor_milk_truffle_per_3
+  name: Lindt Lindor Milk Truffles (Per 3)
+  kcal_per_100g: 600
+  protein_per_100g: 6
+  carbs_per_100g: 50
+  fat_per_100g: 41
+  brand: Lindt
+  region_codes: GB
+  serving_grams: 36
+  serving_label: 36 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 36
+- source: brand
+  source_id: lindt_excellence_70_per_30g
+  name: Lindt Excellence 70% Dark (Per 30g)
+  kcal_per_100g: 530
+  protein_per_100g: 9
+  carbs_per_100g: 30
+  fat_per_100g: 40
+  brand: Lindt
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: lindt_excellence_85_per_30g
+  name: Lindt Excellence 85% Dark (Per 30g)
+  kcal_per_100g: 555
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 46
+  brand: Lindt
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: rxbar_peanut_butter
+  name: RXBAR Peanut Butter
+  kcal_per_100g: 380
+  protein_per_100g: 23
+  carbs_per_100g: 41
+  fat_per_100g: 15
+  brand: RXBAR
+  region_codes: GB
+  serving_grams: 52
+  serving_label: 52 g
+  tags: bar
+  portion_unit: meal
+  unit_grams: 52
+- source: brand
+  source_id: rxbar_blueberry
+  name: RXBAR Blueberry
+  kcal_per_100g: 370
+  protein_per_100g: 23
+  carbs_per_100g: 43
+  fat_per_100g: 13
+  brand: RXBAR
+  region_codes: GB
+  serving_grams: 52
+  serving_label: 52 g
+  tags: bar
+  portion_unit: meal
+  unit_grams: 52
+- source: brand
+  source_id: kirkland_protein_bar_chocolate
+  name: Kirkland Protein Bar Chocolate
+  kcal_per_100g: 380
+  protein_per_100g: 33
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Kirkland
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: bar
+  portion_unit: meal
+  unit_grams: 60
+- source: brand
+  source_id: clif_builders_chocolate
+  name: Clif Builders Chocolate Protein Bar
+  kcal_per_100g: 380
+  protein_per_100g: 33
+  carbs_per_100g: 35
+  fat_per_100g: 14
+  brand: Clif
+  region_codes: GB
+  serving_grams: 68
+  serving_label: 68 g
+  tags: bar
+  portion_unit: meal
+  unit_grams: 68
+- source: brand
+  source_id: oh_yeah_one_bar_birthday_cake
+  name: Oh Yeah! One Bar Birthday Cake
+  kcal_per_100g: 380
+  protein_per_100g: 33
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Oh Yeah!
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: bar
+  portion_unit: meal
+  unit_grams: 60
+- source: brand
+  source_id: oh_yeah_one_bar_chocolate_chip
+  name: Oh Yeah! One Bar Chocolate Chip
+  kcal_per_100g: 380
+  protein_per_100g: 33
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Oh Yeah!
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: bar
+  portion_unit: meal
+  unit_grams: 60
+- source: brand
+  source_id: doritos_cool_original_per_30g
+  name: Doritos Cool Original (Per 30g)
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 64
+  fat_per_100g: 25
+  brand: Doritos
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: doritos_chilli_heatwave_30g
+  name: Doritos Chilli Heatwave (Per 30g)
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 64
+  fat_per_100g: 25
+  brand: Doritos
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: doritos_blaze_30g
+  name: Doritos Blaze (Per 30g)
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 63
+  fat_per_100g: 25
+  brand: Doritos
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: snack
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: boursin_garlic_herb_per_30g
+  name: Boursin Garlic & Herbs (Per 30g)
+  kcal_per_100g: 405
+  protein_per_100g: 7
+  carbs_per_100g: 2
+  fat_per_100g: 41
+  brand: Boursin
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: boursin_pepper_per_30g
+  name: Boursin Cracked Black Pepper (Per 30g)
+  kcal_per_100g: 405
+  protein_per_100g: 7
+  carbs_per_100g: 2
+  fat_per_100g: 41
+  brand: Boursin
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: philly_original_per_30g
+  name: Philadelphia Original (Per 30g)
+  kcal_per_100g: 245
+  protein_per_100g: 6
+  carbs_per_100g: 4
+  fat_per_100g: 23
+  brand: Philadelphia
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: philly_lightest_per_30g
+  name: Philadelphia Lightest (Per 30g)
+  kcal_per_100g: 105
+  protein_per_100g: 7
+  carbs_per_100g: 5
+  fat_per_100g: 6
+  brand: Philadelphia
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese,light
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: philly_chives_per_30g
+  name: Philadelphia with Chives (Per 30g)
+  kcal_per_100g: 245
+  protein_per_100g: 6
+  carbs_per_100g: 5
+  fat_per_100g: 22
+  brand: Philadelphia
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: philly_garlic_herbs_per_30g
+  name: Philadelphia with Garlic & Herbs (Per 30g)
+  kcal_per_100g: 245
+  protein_per_100g: 6
+  carbs_per_100g: 4
+  fat_per_100g: 23
+  brand: Philadelphia
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: cheese
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: laughing_cow_original_per_unit
+  name: Laughing Cow Original Cheese (Per Triangle)
+  kcal_per_100g: 230
+  protein_per_100g: 10
+  carbs_per_100g: 7
+  fat_per_100g: 19
+  brand: The Laughing Cow
+  region_codes: GB
+  serving_grams: 17.5
+  serving_label: 17.5 g
+  tags: cheese
+  portion_unit: piece
+  unit_grams: 17.5
+- source: brand
+  source_id: laughing_cow_light_per_unit
+  name: Laughing Cow Light Cheese (Per Triangle)
+  kcal_per_100g: 130
+  protein_per_100g: 11
+  carbs_per_100g: 7
+  fat_per_100g: 7
+  brand: The Laughing Cow
+  region_codes: GB
+  serving_grams: 17.5
+  serving_label: 17.5 g
+  tags: cheese,light
+  portion_unit: piece
+  unit_grams: 17.5
+- source: brand
+  source_id: laughing_cow_blue_per_unit
+  name: Laughing Cow Blue Cheese (Per Triangle)
+  kcal_per_100g: 240
+  protein_per_100g: 10
+  carbs_per_100g: 5
+  fat_per_100g: 21
+  brand: The Laughing Cow
+  region_codes: GB
+  serving_grams: 17.5
+  serving_label: 17.5 g
+  tags: cheese
+  portion_unit: piece
+  unit_grams: 17.5
+- source: brand
+  source_id: babybel_blue_cheese_per_unit
+  name: Mini Babybel Blue Cheese (Per Unit)
+  kcal_per_100g: 280
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 23
+  brand: Babybel
+  region_codes: GB
+  serving_grams: 20
+  serving_label: 20 g
+  tags: cheese
+  portion_unit: piece
+  unit_grams: 20
+- source: brand
+  source_id: babybel_emmental_per_unit
+  name: Mini Babybel Emmental (Per Unit)
+  kcal_per_100g: 297
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 23
+  brand: Babybel
+  region_codes: GB
+  serving_grams: 20
+  serving_label: 20 g
+  tags: cheese
+  portion_unit: piece
+  unit_grams: 20
+- source: brand
+  source_id: babybel_goat_per_unit
+  name: Mini Babybel Goat (Per Unit)
+  kcal_per_100g: 285
+  protein_per_100g: 19
+  carbs_per_100g: 0
+  fat_per_100g: 23
+  brand: Babybel
+  region_codes: GB
+  serving_grams: 20
+  serving_label: 20 g
+  tags: cheese
+  portion_unit: piece
+  unit_grams: 20
+- source: brand
+  source_id: pickle_branston_baby_burgers_per_30g
+  name: Branston Baby Burger Relish (Per 30g)
+  kcal_per_100g: 175
+  protein_per_100g: 1
+  carbs_per_100g: 40
+  fat_per_100g: 0.5
+  brand: Branston
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: condiment
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: pickle_haywards_silverskin_per_30g
+  name: Haywards Silverskin Onions (Per 30g)
+  kcal_per_100g: 30
+  protein_per_100g: 0.5
+  carbs_per_100g: 7
+  fat_per_100g: 0.1
+  brand: Haywards
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: condiment
+  portion_unit: piece
+  unit_grams: 30
+- source: brand
+  source_id: pickle_haywards_pickled_eggs
+  name: Haywards Pickled Eggs (Per Egg)
+  kcal_per_100g: 145
+  protein_per_100g: 13
+  carbs_per_100g: 1
+  fat_per_100g: 10
+  brand: Haywards
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: condiment
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: pickle_haywards_picallili
+  name: Haywards Piccalilli (Per 30g)
+  kcal_per_100g: 95
+  protein_per_100g: 1
+  carbs_per_100g: 22
+  fat_per_100g: 0.3
+  brand: Haywards
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: condiment
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: kimchi_loving_foods_per_50g
+  name: Loving Foods Kimchi (Per 50g)
+  kcal_per_100g: 30
+  protein_per_100g: 2
+  carbs_per_100g: 4
+  fat_per_100g: 0.5
+  brand: Loving Foods
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: fermented
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: sauerkraut_loving_foods_per_50g
+  name: Loving Foods Sauerkraut (Per 50g)
+  kcal_per_100g: 20
+  protein_per_100g: 1
+  carbs_per_100g: 4
+  fat_per_100g: 0.2
+  brand: Loving Foods
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: fermented
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: kefir_loving_foods_per_100ml
+  name: Loving Foods Kefir (Per 100ml)
+  kcal_per_100g: 60
+  protein_per_100g: 4
+  carbs_per_100g: 5
+  fat_per_100g: 3
+  brand: Loving Foods
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fermented
+  portion_unit: ml
+  unit_grams: 100

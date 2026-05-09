@@ -1,0 +1,257 @@
+# coffee_addons.yaml — coffee shop add-ons: syrup pumps (vanilla, caramel, hazelnut, gingerbread + sugar-free), whipped cream small/large, chocolate powder, cinnamon dust, chocolate/caramel drizzle, marshmallow, extra/decaf espresso shots.
+- source: gymflow
+  source_id: coffee_syrup_vanilla_pump
+  name: Vanilla Syrup (1 pump/5ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 0
+  carbs_per_100g: 80
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 tbsp (5 g)
+  portion_unit: tbsp
+  tags: coffee,addon
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: coffee_syrup_caramel_pump
+  name: Caramel Syrup (1 pump/5ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 0
+  carbs_per_100g: 80
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 tbsp (5 g)
+  portion_unit: tbsp
+  tags: coffee,addon
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: coffee_syrup_hazelnut_pump
+  name: Hazelnut Syrup (1 pump/5ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 0
+  carbs_per_100g: 80
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 tbsp (5 g)
+  portion_unit: tbsp
+  tags: coffee,addon
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: coffee_syrup_gingerbread_pump
+  name: Gingerbread Syrup (1 pump/5ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 0
+  carbs_per_100g: 80
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 tbsp (5 g)
+  portion_unit: tbsp
+  tags: coffee,addon
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: coffee_syrup_sf_vanilla_pump
+  name: Sugar-Free Vanilla Syrup (1 pump)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 tbsp (5 g)
+  portion_unit: tbsp
+  tags: coffee,addon,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: coffee_syrup_sf_caramel_pump
+  name: Sugar-Free Caramel Syrup (1 pump)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 tbsp (5 g)
+  portion_unit: tbsp
+  tags: coffee,addon,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: coffee_syrup_sf_hazelnut_pump
+  name: Sugar-Free Hazelnut Syrup (1 pump)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 tbsp (5 g)
+  portion_unit: tbsp
+  tags: coffee,addon,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: coffee_whipped_cream_topping
+  name: Whipped Cream Topping (small/15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 340
+  protein_per_100g: 2
+  carbs_per_100g: 4
+  fat_per_100g: 35
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: coffee,addon
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 15
+- source: gymflow
+  source_id: coffee_whipped_cream_large
+  name: Whipped Cream Topping (large/30g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 340
+  protein_per_100g: 2
+  carbs_per_100g: 4
+  fat_per_100g: 35
+  serving_grams: 30
+  serving_label: 1 tbsp (30 g)
+  portion_unit: tbsp
+  tags: coffee,addon
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 30
+- source: gymflow
+  source_id: coffee_chocolate_powder_topping
+  name: Chocolate Powder Topping (1g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 20
+  carbs_per_100g: 58
+  fat_per_100g: 14
+  serving_grams: 1
+  serving_label: 1 tsp (1 g)
+  portion_unit: tsp
+  tags: coffee,addon
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 1
+- source: gymflow
+  source_id: coffee_cinnamon_dust
+  name: Cinnamon Dust Topping (1g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 4
+  carbs_per_100g: 81
+  fat_per_100g: 1.2
+  serving_grams: 1
+  serving_label: 1 tsp (1 g)
+  portion_unit: tsp
+  tags: coffee,addon,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 1
+- source: gymflow
+  source_id: coffee_chocolate_drizzle
+  name: Chocolate Drizzle (5ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 1
+  carbs_per_100g: 65
+  fat_per_100g: 6
+  serving_grams: 5
+  serving_label: 1 tbsp (5 g)
+  portion_unit: tbsp
+  tags: coffee,addon
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk,soy
+  unit_grams: 5
+- source: gymflow
+  source_id: coffee_caramel_drizzle
+  name: Caramel Drizzle (5ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 0.5
+  carbs_per_100g: 70
+  fat_per_100g: 5
+  serving_grams: 5
+  serving_label: 1 tbsp (5 g)
+  portion_unit: tbsp
+  tags: coffee,addon
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 5
+- source: gymflow
+  source_id: coffee_marshmallow_topping
+  name: Marshmallow Topping (5g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 2
+  carbs_per_100g: 80
+  fat_per_100g: 0
+  serving_grams: 5
+  serving_label: 1 tbsp (5 g)
+  portion_unit: tbsp
+  tags: coffee,addon,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 5
+- source: gymflow
+  source_id: coffee_extra_espresso_shot
+  name: Extra Espresso Shot
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 shot (30 g)
+  portion_unit: shot
+  tags: coffee,addon,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: coffee_decaf_shot
+  name: Decaf Espresso Shot
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 30
+  serving_label: 1 shot (30 g)
+  portion_unit: shot
+  tags: coffee,addon,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30

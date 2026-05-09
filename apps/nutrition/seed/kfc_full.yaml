@@ -1,0 +1,492 @@
+# KFC Full Menu Expansion — chicken pieces, burgers, twisters, rice boxes, sides, drinks, desserts
+
+- source: kfc
+  source_id: kfc_chicken_piece_original
+  name: KFC Original Recipe Chicken (Piece)
+  kcal_per_100g: 266.7
+  protein_per_100g: 24.44
+  carbs_per_100g: 8.89
+  fat_per_100g: 15.56
+  brand: KFC
+  region_codes: GB
+  serving_grams: 90
+  serving_label: item (90 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 90
+- source: kfc
+  source_id: kfc_chicken_piece_hot_spicy
+  name: KFC Hot & Spicy Chicken (Piece)
+  kcal_per_100g: 277.8
+  protein_per_100g: 23.33
+  carbs_per_100g: 10.0
+  fat_per_100g: 16.67
+  brand: KFC
+  region_codes: GB
+  serving_grams: 90
+  serving_label: item (90 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 90
+- source: kfc
+  source_id: kfc_thigh_original
+  name: KFC Thigh Original Recipe
+  kcal_per_100g: 280.0
+  protein_per_100g: 21.0
+  carbs_per_100g: 9.0
+  fat_per_100g: 18.0
+  brand: KFC
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 100
+- source: kfc
+  source_id: kfc_drumstick_original
+  name: KFC Drumstick Original Recipe
+  kcal_per_100g: 235.7
+  protein_per_100g: 22.86
+  carbs_per_100g: 7.14
+  fat_per_100g: 12.86
+  brand: KFC
+  region_codes: GB
+  serving_grams: 70
+  serving_label: item (70 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 70
+- source: kfc
+  source_id: kfc_wing_original
+  name: KFC Wing Original Recipe
+  kcal_per_100g: 300.0
+  protein_per_100g: 25.71
+  carbs_per_100g: 11.43
+  fat_per_100g: 17.14
+  brand: KFC
+  region_codes: GB
+  serving_grams: 35
+  serving_label: item (35 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 35
+- source: kfc
+  source_id: kfc_breast_fillet_original
+  name: KFC Breast Fillet Original Recipe
+  kcal_per_100g: 276.9
+  protein_per_100g: 25.38
+  carbs_per_100g: 9.23
+  fat_per_100g: 14.62
+  brand: KFC
+  region_codes: GB
+  serving_grams: 130
+  serving_label: item (130 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 130
+- source: kfc
+  source_id: kfc_zinger_tower
+  name: KFC Zinger Tower Burger
+  kcal_per_100g: 222.4
+  protein_per_100g: 10.63
+  carbs_per_100g: 19.69
+  fat_per_100g: 11.02
+  brand: KFC
+  region_codes: GB
+  serving_grams: 254
+  serving_label: item (254 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 254
+- source: kfc
+  source_id: kfc_fillet_burger
+  name: KFC Fillet Burger
+  kcal_per_100g: 234.3
+  protein_per_100g: 15.43
+  carbs_per_100g: 22.29
+  fat_per_100g: 9.14
+  brand: KFC
+  region_codes: GB
+  serving_grams: 175
+  serving_label: item (175 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 175
+- source: kfc
+  source_id: kfc_fillet_tower
+  name: KFC Fillet Tower Burger
+  kcal_per_100g: 221.5
+  protein_per_100g: 13.5
+  carbs_per_100g: 18.57
+  fat_per_100g: 10.13
+  brand: KFC
+  region_codes: GB
+  serving_grams: 237
+  serving_label: item (237 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 237
+- source: kfc
+  source_id: kfc_double_down
+  name: KFC Double Down
+  kcal_per_100g: 260.9
+  protein_per_100g: 21.74
+  carbs_per_100g: 5.22
+  fat_per_100g: 16.96
+  brand: KFC
+  region_codes: GB
+  serving_grams: 230
+  serving_label: item (230 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 230
+- source: kfc
+  source_id: kfc_mighty_bucket
+  name: KFC Mighty Bucket (per piece avg)
+  kcal_per_100g: 266.7
+  protein_per_100g: 24.44
+  carbs_per_100g: 8.89
+  fat_per_100g: 15.56
+  brand: KFC
+  region_codes: GB
+  serving_grams: 90
+  serving_label: item (90 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 90
+- source: kfc
+  source_id: kfc_popcorn_chicken_large
+  name: KFC Popcorn Chicken (Large)
+  kcal_per_100g: 262.5
+  protein_per_100g: 20.5
+  carbs_per_100g: 15.5
+  fat_per_100g: 13.0
+  brand: KFC
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 200
+- source: kfc
+  source_id: kfc_mini_fillet
+  name: KFC Mini Fillet
+  kcal_per_100g: 290.0
+  protein_per_100g: 22.0
+  carbs_per_100g: 26.0
+  fat_per_100g: 11.0
+  brand: KFC
+  region_codes: GB
+  serving_grams: 50
+  serving_label: item (50 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 50
+- source: kfc
+  source_id: kfc_mini_fillet_burger
+  name: KFC Mini Fillet Burger
+  kcal_per_100g: 239.5
+  protein_per_100g: 11.76
+  carbs_per_100g: 27.73
+  fat_per_100g: 9.24
+  brand: KFC
+  region_codes: GB
+  serving_grams: 119
+  serving_label: item (119 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 119
+- source: kfc
+  source_id: kfc_streetwise_twister
+  name: KFC Original Recipe Twister Wrap
+  kcal_per_100g: 217.2
+  protein_per_100g: 10.25
+  carbs_per_100g: 20.9
+  fat_per_100g: 10.25
+  brand: KFC
+  region_codes: GB
+  serving_grams: 244
+  serving_label: item (244 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 244
+- source: kfc
+  source_id: kfc_zinger_twister
+  name: KFC Zinger Twister Wrap
+  kcal_per_100g: 227.5
+  protein_per_100g: 10.25
+  carbs_per_100g: 21.72
+  fat_per_100g: 11.07
+  brand: KFC
+  region_codes: GB
+  serving_grams: 244
+  serving_label: item (244 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 244
+- source: kfc
+  source_id: kfc_chicken_strips_3
+  name: KFC Chicken Strips (3 pcs)
+  kcal_per_100g: 254.5
+  protein_per_100g: 24.55
+  carbs_per_100g: 14.55
+  fat_per_100g: 10.91
+  brand: KFC
+  region_codes: GB
+  serving_grams: 110
+  serving_label: item (110 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 110
+- source: kfc
+  source_id: kfc_chicken_strips_5
+  name: KFC Chicken Strips (5 pcs)
+  kcal_per_100g: 255.4
+  protein_per_100g: 24.46
+  carbs_per_100g: 14.67
+  fat_per_100g: 10.87
+  brand: KFC
+  region_codes: GB
+  serving_grams: 184
+  serving_label: item (184 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 184
+- source: kfc
+  source_id: kfc_hot_wings_3
+  name: KFC Hot Wings (3 pcs)
+  kcal_per_100g: 260.0
+  protein_per_100g: 18.67
+  carbs_per_100g: 12.0
+  fat_per_100g: 14.67
+  brand: KFC
+  region_codes: GB
+  serving_grams: 75
+  serving_label: item (75 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 75
+- source: kfc
+  source_id: kfc_hot_wings_5
+  name: KFC Hot Wings (5 pcs)
+  kcal_per_100g: 256.0
+  protein_per_100g: 18.4
+  carbs_per_100g: 12.0
+  fat_per_100g: 15.2
+  brand: KFC
+  region_codes: GB
+  serving_grams: 125
+  serving_label: item (125 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 125
+- source: kfc
+  source_id: kfc_fries_large
+  name: KFC Fries (Large)
+  kcal_per_100g: 278.8
+  protein_per_100g: 4.24
+  carbs_per_100g: 36.36
+  fat_per_100g: 12.73
+  brand: KFC
+  region_codes: GB
+  serving_grams: 165
+  serving_label: item (165 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 165
+- source: kfc
+  source_id: kfc_corn_cob
+  name: KFC Corn on the Cob
+  kcal_per_100g: 100.0
+  protein_per_100g: 3.33
+  carbs_per_100g: 20.0
+  fat_per_100g: 1.11
+  brand: KFC
+  region_codes: GB
+  serving_grams: 90
+  serving_label: item (90 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 90
+- source: kfc
+  source_id: kfc_beans_regular
+  name: KFC BBQ Beans (Regular)
+  kcal_per_100g: 86.4
+  protein_per_100g: 5.45
+  carbs_per_100g: 15.45
+  fat_per_100g: 0.45
+  brand: KFC
+  region_codes: GB
+  serving_grams: 110
+  serving_label: item (110 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 110
+- source: kfc
+  source_id: kfc_coleslaw
+  name: KFC Coleslaw
+  kcal_per_100g: 138.1
+  protein_per_100g: 0.95
+  carbs_per_100g: 7.62
+  fat_per_100g: 11.43
+  brand: KFC
+  region_codes: GB
+  serving_grams: 105
+  serving_label: item (105 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 105
+- source: kfc
+  source_id: kfc_rice_box_zinger
+  name: KFC Zinger Rice Box
+  kcal_per_100g: 192.9
+  protein_per_100g: 8.57
+  carbs_per_100g: 23.93
+  fat_per_100g: 6.07
+  brand: KFC
+  region_codes: GB
+  serving_grams: 280
+  serving_label: item (280 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 280
+- source: kfc
+  source_id: kfc_rice_box_original
+  name: KFC Original Recipe Rice Box
+  kcal_per_100g: 182.1
+  protein_per_100g: 8.57
+  carbs_per_100g: 22.86
+  fat_per_100g: 5.71
+  brand: KFC
+  region_codes: GB
+  serving_grams: 280
+  serving_label: item (280 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 280
+- source: kfc
+  source_id: kfc_rice_box_smoky_bbq
+  name: KFC Smoky BBQ Rice Box
+  kcal_per_100g: 187.9
+  protein_per_100g: 8.28
+  carbs_per_100g: 24.14
+  fat_per_100g: 5.86
+  brand: KFC
+  region_codes: GB
+  serving_grams: 290
+  serving_label: item (290 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 290
+- source: kfc
+  source_id: kfc_salad_zinger_no_dressing
+  name: KFC Zinger Salad (No Dressing)
+  kcal_per_100g: 87.2
+  protein_per_100g: 8.09
+  carbs_per_100g: 5.11
+  fat_per_100g: 3.83
+  brand: KFC
+  region_codes: GB
+  serving_grams: 235
+  serving_label: item (235 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 235
+- source: kfc
+  source_id: kfc_salad_grilled_chicken_no_dressing
+  name: KFC Grilled Chicken Salad (No Dressing)
+  kcal_per_100g: 74.5
+  protein_per_100g: 9.79
+  carbs_per_100g: 3.4
+  fat_per_100g: 2.13
+  brand: KFC
+  region_codes: GB
+  serving_grams: 235
+  serving_label: item (235 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 235
+- source: kfc
+  source_id: kfc_krushem_oreo
+  name: KFC Krushem Oreo
+  kcal_per_100g: 125.0
+  protein_per_100g: 2.14
+  carbs_per_100g: 17.86
+  fat_per_100g: 5.0
+  brand: KFC
+  region_codes: GB
+  serving_grams: 280
+  serving_label: item (280 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 280
+- source: kfc
+  source_id: kfc_krushem_kitkat
+  name: KFC Krushem KitKat
+  kcal_per_100g: 128.6
+  protein_per_100g: 2.14
+  carbs_per_100g: 18.21
+  fat_per_100g: 5.0
+  brand: KFC
+  region_codes: GB
+  serving_grams: 280
+  serving_label: item (280 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 280
+- source: kfc
+  source_id: kfc_krushem_smarties
+  name: KFC Krushem Smarties
+  kcal_per_100g: 125.0
+  protein_per_100g: 2.14
+  carbs_per_100g: 17.86
+  fat_per_100g: 5.0
+  brand: KFC
+  region_codes: GB
+  serving_grams: 280
+  serving_label: item (280 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 280
+- source: kfc
+  source_id: kfc_milkshake_chocolate
+  name: KFC Chocolate Milkshake
+  kcal_per_100g: 100.0
+  protein_per_100g: 2.89
+  carbs_per_100g: 14.74
+  fat_per_100g: 3.42
+  brand: KFC
+  region_codes: GB
+  serving_grams: 380
+  serving_label: item (380 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 380
+- source: kfc
+  source_id: kfc_milkshake_vanilla
+  name: KFC Vanilla Milkshake
+  kcal_per_100g: 96.1
+  protein_per_100g: 2.89
+  carbs_per_100g: 13.95
+  fat_per_100g: 3.42
+  brand: KFC
+  region_codes: GB
+  serving_grams: 380
+  serving_label: item (380 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 380
+- source: kfc
+  source_id: kfc_milkshake_strawberry
+  name: KFC Strawberry Milkshake
+  kcal_per_100g: 96.1
+  protein_per_100g: 2.89
+  carbs_per_100g: 14.21
+  fat_per_100g: 3.16
+  brand: KFC
+  region_codes: GB
+  serving_grams: 380
+  serving_label: item (380 g)
+  tags: fast-food,kfc,chicken
+  portion_unit: meal
+  unit_grams: 380

@@ -1,0 +1,1505 @@
+# More UK brands — Birds Eye full, Youfoodz, M&S/Tesco Indian range, The Collective high-protein,
+# Danone Oykos Greek + Actimel, Crosta & Mollica pizza & focaccia, more pasta dishes,
+# Marmite/Promite/Sacla/Loyd Grossman pestos, Aldi/Lidl/Asda specifics,
+# Coffee/tea brands (Costa decaf, Starbucks decaf, Pret filter, Pukka/Clipper/Typhoo/Taylors teas),
+# BBQ/marinade brands (Levi Roots, Henderson's, dipping sauces),
+# Drink concentrates (Robinsons, Vimto)
+
+- source: brand
+  source_id: birds_eye_fish_finger_sandwich
+  name: Birds Eye Fish Finger Sandwich Generic
+  kcal_per_100g: 305
+  protein_per_100g: 13
+  carbs_per_100g: 32
+  fat_per_100g: 14
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 220
+  serving_label: 220 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 220
+- source: brand
+  source_id: birds_eye_omega_3_fish_fingers
+  name: Birds Eye Omega-3 Fish Fingers (Per 4 Fingers)
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 112
+  serving_label: 112 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 112
+- source: brand
+  source_id: birds_eye_chicken_burger_per_burger
+  name: Birds Eye Chicken Burger (Per Burger)
+  kcal_per_100g: 235
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 13
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 56
+  serving_label: 56 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 56
+- source: brand
+  source_id: birds_eye_pure_breast_chicken_strips
+  name: Birds Eye Chicken Breast Strips (Per 100g)
+  kcal_per_100g: 195
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 9
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: birds_eye_omelette_3_egg
+  name: Birds Eye Omelette 3-Egg (Per Pack)
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 4
+  fat_per_100g: 14
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 130
+- source: brand
+  source_id: birds_eye_steam_fresh_broccoli
+  name: Birds Eye Steamfresh Broccoli (Per 80g)
+  kcal_per_100g: 35
+  protein_per_100g: 2.4
+  carbs_per_100g: 5
+  fat_per_100g: 0.4
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 80
+- source: brand
+  source_id: birds_eye_steam_fresh_carrots_peas
+  name: Birds Eye Steamfresh Carrots & Peas (Per 80g)
+  kcal_per_100g: 60
+  protein_per_100g: 3
+  carbs_per_100g: 9
+  fat_per_100g: 0.4
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 80
+- source: brand
+  source_id: youfoodz_chicken_korma
+  name: Youfoodz Chicken Korma
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 6
+  brand: Youfoodz
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: youfoodz_chicken_pad_thai
+  name: Youfoodz Chicken Pad Thai
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Youfoodz
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: ms_chicken_madras
+  name: M&S Chicken Madras
+  kcal_per_100g: 130
+  protein_per_100g: 11
+  carbs_per_100g: 8
+  fat_per_100g: 6
+  brand: M&S
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: ms_chicken_balti
+  name: M&S Chicken Balti
+  kcal_per_100g: 125
+  protein_per_100g: 11
+  carbs_per_100g: 8
+  fat_per_100g: 5
+  brand: M&S
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: ms_chicken_dopiaza
+  name: M&S Chicken Dopiaza
+  kcal_per_100g: 120
+  protein_per_100g: 11
+  carbs_per_100g: 7
+  fat_per_100g: 5
+  brand: M&S
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: ms_lamb_dansak
+  name: M&S Lamb Dansak
+  kcal_per_100g: 145
+  protein_per_100g: 12
+  carbs_per_100g: 11
+  fat_per_100g: 6
+  brand: M&S
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: ms_chicken_pasanda
+  name: M&S Chicken Pasanda
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 11
+  brand: M&S
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: ms_makhani_dal
+  name: M&S Makhani Dal
+  kcal_per_100g: 145
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  brand: M&S
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 300
+- source: brand
+  source_id: ms_naan_garlic_2pack
+  name: M&S Garlic Naan (Per Naan)
+  kcal_per_100g: 305
+  protein_per_100g: 9
+  carbs_per_100g: 47
+  fat_per_100g: 9
+  brand: M&S
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 130
+- source: brand
+  source_id: ms_pilau_rice_meal
+  name: M&S Pilau Rice (Side)
+  kcal_per_100g: 175
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 4
+  brand: M&S
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: ms_basmati_rice_meal
+  name: M&S Basmati Rice (Side)
+  kcal_per_100g: 130
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 0.5
+  brand: M&S
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: tesco_chicken_madras_v2
+  name: Tesco Chicken Madras (Standard)
+  kcal_per_100g: 115
+  protein_per_100g: 10
+  carbs_per_100g: 8
+  fat_per_100g: 4
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: tesco_chicken_dopiaza
+  name: Tesco Chicken Dopiaza
+  kcal_per_100g: 120
+  protein_per_100g: 11
+  carbs_per_100g: 7
+  fat_per_100g: 5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: tesco_chicken_pathia
+  name: Tesco Chicken Pathia
+  kcal_per_100g: 130
+  protein_per_100g: 12
+  carbs_per_100g: 11
+  fat_per_100g: 5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: tesco_lamb_madras
+  name: Tesco Lamb Madras
+  kcal_per_100g: 145
+  protein_per_100g: 13
+  carbs_per_100g: 7
+  fat_per_100g: 8
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: collective_dairy_high_protein_strawberry
+  name: The Collective High Protein Strawberry
+  kcal_per_100g: 75
+  protein_per_100g: 9
+  carbs_per_100g: 9
+  fat_per_100g: 0.5
+  brand: The Collective
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 150
+- source: brand
+  source_id: collective_dairy_high_protein_vanilla
+  name: The Collective High Protein Vanilla
+  kcal_per_100g: 75
+  protein_per_100g: 9
+  carbs_per_100g: 9
+  fat_per_100g: 0.5
+  brand: The Collective
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 150
+- source: brand
+  source_id: collective_dairy_high_protein_passionfruit
+  name: The Collective High Protein Passionfruit
+  kcal_per_100g: 75
+  protein_per_100g: 9
+  carbs_per_100g: 9
+  fat_per_100g: 0.5
+  brand: The Collective
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 150
+- source: brand
+  source_id: collective_dairy_high_protein_natural
+  name: The Collective High Protein Natural
+  kcal_per_100g: 75
+  protein_per_100g: 12
+  carbs_per_100g: 5
+  fat_per_100g: 0.5
+  brand: The Collective
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 150
+- source: brand
+  source_id: danone_actimel_lemon
+  name: Danone Actimel Lemon
+  kcal_per_100g: 75
+  protein_per_100g: 3
+  carbs_per_100g: 12
+  fat_per_100g: 1.5
+  brand: Danone
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: danone_actimel_pomegranate
+  name: Danone Actimel Pomegranate
+  kcal_per_100g: 75
+  protein_per_100g: 3
+  carbs_per_100g: 12
+  fat_per_100g: 1.5
+  brand: Danone
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: danone_oykos_strawberry
+  name: Danone Oykos Strawberry Greek
+  kcal_per_100g: 110
+  protein_per_100g: 4
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  brand: Danone
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 110
+- source: brand
+  source_id: danone_oykos_peach
+  name: Danone Oykos Peach Greek
+  kcal_per_100g: 110
+  protein_per_100g: 4
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  brand: Danone
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 110
+- source: brand
+  source_id: danone_oykos_blueberry
+  name: Danone Oykos Blueberry Greek
+  kcal_per_100g: 110
+  protein_per_100g: 4
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  brand: Danone
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 110
+- source: brand
+  source_id: danone_natural_yogurt_500g
+  name: Danone Natural Yogurt (Per 100g)
+  kcal_per_100g: 60
+  protein_per_100g: 4.5
+  carbs_per_100g: 5
+  fat_per_100g: 3
+  brand: Danone
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: crosta_mollica_margherita_per_100g
+  name: Crosta & Mollica Margherita Pizza (Per 100g)
+  kcal_per_100g: 240
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Crosta & Mollica
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: crosta_mollica_quattro_formaggi
+  name: Crosta & Mollica Quattro Formaggi (Per 100g)
+  kcal_per_100g: 270
+  protein_per_100g: 13
+  carbs_per_100g: 30
+  fat_per_100g: 11
+  brand: Crosta & Mollica
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: crosta_mollica_diavola_per_100g
+  name: Crosta & Mollica Diavola Pepperoni (Per 100g)
+  kcal_per_100g: 280
+  protein_per_100g: 13
+  carbs_per_100g: 30
+  fat_per_100g: 13
+  brand: Crosta & Mollica
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: crosta_mollica_focaccia_classic
+  name: Crosta & Mollica Focaccia Classica
+  kcal_per_100g: 280
+  protein_per_100g: 8
+  carbs_per_100g: 47
+  fat_per_100g: 7
+  brand: Crosta & Mollica
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: crosta_mollica_grissini_per_pack
+  name: Crosta & Mollica Grissini Breadsticks (Per Pack)
+  kcal_per_100g: 425
+  protein_per_100g: 11
+  carbs_per_100g: 65
+  fat_per_100g: 14
+  brand: Crosta & Mollica
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 50
+- source: brand
+  source_id: pasta_chicken_alfredo_homemade
+  name: Chicken Alfredo Pasta Homemade
+  kcal_per_100g: 215
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: pasta_pesto_chicken_homemade
+  name: Pesto Chicken Pasta Homemade
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: pasta_creamy_mushroom_homemade
+  name: Creamy Mushroom Pasta
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: pasta_aglio_olio_peperoncino
+  name: Aglio e Olio e Peperoncino
+  kcal_per_100g: 195
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Homemade,vegan
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: pasta_alla_norma
+  name: Pasta alla Norma
+  kcal_per_100g: 155
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: pasta_amatriciana
+  name: Pasta all'Amatriciana
+  kcal_per_100g: 165
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: pasta_puttanesca
+  name: Pasta Puttanesca
+  kcal_per_100g: 165
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: pasta_genovese_pesto
+  name: Pasta al Pesto Genovese
+  kcal_per_100g: 230
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 13
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 320
+  serving_label: 320 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 320
+- source: brand
+  source_id: pasta_chicken_tomato_basil
+  name: Chicken Tomato Basil Pasta
+  kcal_per_100g: 165
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: pasta_prawn_lemon_garlic
+  name: Prawn, Lemon & Garlic Linguine
+  kcal_per_100g: 155
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: pasta_baked_ziti
+  name: Baked Ziti
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: pasta_baked_pasta_chicken
+  name: Baked Pasta with Chicken
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: pasta_chicken_chorizo_creamy
+  name: Creamy Chicken & Chorizo Pasta
+  kcal_per_100g: 215
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: pasta_lasagne_white_sauce_homemade
+  name: White Sauce Lasagne Homemade
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 17
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: pasta_cannelloni_spinach_ricotta
+  name: Spinach & Ricotta Cannelloni
+  kcal_per_100g: 165
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 6
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: pasta_cannelloni_beef
+  name: Beef Cannelloni
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 17
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: pasta_ravioli_pumpkin_homemade
+  name: Pumpkin Ravioli
+  kcal_per_100g: 195
+  protein_per_100g: 8
+  carbs_per_100g: 30
+  fat_per_100g: 5
+  brand: Homemade,vegetarian
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 300
+- source: brand
+  source_id: pasta_ravioli_lobster_seafood
+  name: Lobster Ravioli
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 25
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 300
+- source: brand
+  source_id: brands_marmite_squeezy_per_4g
+  name: Marmite Squeezy (Per 4g)
+  kcal_per_100g: 245
+  protein_per_100g: 24
+  carbs_per_100g: 28
+  fat_per_100g: 0.1
+  brand: Marmite
+  region_codes: GB
+  serving_grams: 4
+  serving_label: 4 g
+  tags: brand,grocery
+  portion_unit: tsp
+  unit_grams: 4
+- source: brand
+  source_id: brands_marmite_dark_per_4g
+  name: Marmite Dark (Per 4g)
+  kcal_per_100g: 245
+  protein_per_100g: 24
+  carbs_per_100g: 28
+  fat_per_100g: 0.1
+  brand: Marmite
+  region_codes: GB
+  serving_grams: 4
+  serving_label: 4 g
+  tags: brand,grocery
+  portion_unit: tsp
+  unit_grams: 4
+- source: brand
+  source_id: brands_promite_per_4g
+  name: Promite (Per 4g)
+  kcal_per_100g: 175
+  protein_per_100g: 16
+  carbs_per_100g: 18
+  fat_per_100g: 0.5
+  brand: Promite
+  region_codes: GB
+  serving_grams: 4
+  serving_label: 4 g
+  tags: brand,grocery
+  portion_unit: tsp
+  unit_grams: 4
+- source: brand
+  source_id: brands_lloyd_grossman_pesto
+  name: Loyd Grossman Pesto Genovese (Per 15g)
+  kcal_per_100g: 460
+  protein_per_100g: 5
+  carbs_per_100g: 4
+  fat_per_100g: 47
+  brand: Loyd Grossman
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: brands_sacla_classic_pesto_per_15g
+  name: Sacla Classic Pesto (Per 15g)
+  kcal_per_100g: 460
+  protein_per_100g: 5
+  carbs_per_100g: 4
+  fat_per_100g: 47
+  brand: Sacla
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: brands_sacla_red_pesto
+  name: Sacla Red Pesto Sundried Tomato
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 8
+  fat_per_100g: 36
+  brand: Sacla
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: brands_sacla_vegan_pesto
+  name: Sacla Vegan Pesto
+  kcal_per_100g: 460
+  protein_per_100g: 5
+  carbs_per_100g: 4
+  fat_per_100g: 47
+  brand: Sacla
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: aldi_corale_pasta_sauce_arrabbiata
+  name: Aldi Corale Arrabbiata Pasta Sauce
+  kcal_per_100g: 70
+  protein_per_100g: 1.5
+  carbs_per_100g: 9
+  fat_per_100g: 2.5
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: aldi_corale_tom_basil_sauce
+  name: Aldi Corale Tomato & Basil Pasta Sauce
+  kcal_per_100g: 65
+  protein_per_100g: 1.5
+  carbs_per_100g: 9
+  fat_per_100g: 2.5
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: aldi_brooklea_protein_pudding_chocolate
+  name: Aldi Brooklea Protein Pudding Chocolate
+  kcal_per_100g: 75
+  protein_per_100g: 9
+  carbs_per_100g: 8
+  fat_per_100g: 1
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: aldi_brooklea_protein_pudding_vanilla
+  name: Aldi Brooklea Protein Pudding Vanilla
+  kcal_per_100g: 75
+  protein_per_100g: 9
+  carbs_per_100g: 8
+  fat_per_100g: 1
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: aldi_specially_select_chicken_kievs_x2
+  name: Aldi Specially Selected Garlic Chicken Kievs (Per Kiev)
+  kcal_per_100g: 285
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 18
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 165
+  serving_label: 165 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 165
+- source: brand
+  source_id: lidl_combino_pasta_arrabbiata
+  name: Lidl Combino Arrabbiata Sauce
+  kcal_per_100g: 70
+  protein_per_100g: 1.5
+  carbs_per_100g: 9
+  fat_per_100g: 2.5
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: lidl_combino_carbonara_sauce
+  name: Lidl Combino Carbonara Sauce
+  kcal_per_100g: 105
+  protein_per_100g: 2
+  carbs_per_100g: 8
+  fat_per_100g: 7
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: lidl_milbona_tzatziki
+  name: Lidl Milbona Tzatziki
+  kcal_per_100g: 120
+  protein_per_100g: 5
+  carbs_per_100g: 4
+  fat_per_100g: 9.5
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 170
+  serving_label: 170 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 170
+- source: brand
+  source_id: lidl_eridanous_feta
+  name: Lidl Eridanous Feta (Per 30g)
+  kcal_per_100g: 264
+  protein_per_100g: 14
+  carbs_per_100g: 4
+  fat_per_100g: 21
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: lidl_oh_so_chocolate_bar
+  name: Lidl Oh So Chocolate Bar
+  kcal_per_100g: 535
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 30
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: lidl_jd_gross_chocolate_70_per_30g
+  name: Lidl J.D. Gross 70% Dark (Per 30g)
+  kcal_per_100g: 530
+  protein_per_100g: 9
+  carbs_per_100g: 30
+  fat_per_100g: 40
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: asda_lite_chocolate_brownie
+  name: Asda Lite Chocolate Brownie (Per Slice)
+  kcal_per_100g: 305
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 9
+  brand: Asda
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 60
+- source: brand
+  source_id: asda_extra_special_pasta_carbonara
+  name: Asda Extra Special Spaghetti Carbonara
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Asda
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: asda_extra_special_lobster_ravioli
+  name: Asda Extra Special Lobster Ravioli
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 6
+  brand: Asda
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: coffee_costa_decaf_americano_medio
+  name: Costa Decaf Americano (Medio)
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 355
+- source: brand
+  source_id: coffee_costa_americano_medio
+  name: Costa Americano (Medio)
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 355
+- source: brand
+  source_id: coffee_sbx_caffe_latte_grande_decaf
+  name: Starbucks Caffè Latte Decaf (Grande)
+  kcal_per_100g: 95
+  protein_per_100g: 5
+  carbs_per_100g: 9
+  fat_per_100g: 4
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 473
+- source: brand
+  source_id: coffee_pret_organic_filter
+  name: Pret Organic Filter Coffee (Standard)
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 350
+- source: brand
+  source_id: coffee_starbucks_blonde_roast_grande
+  name: Starbucks Blonde Roast (Grande)
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 473
+- source: brand
+  source_id: tea_pukka_three_chamomile
+  name: Pukka Three Chamomile (brewed)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Pukka
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: tea_pukka_lemon_ginger
+  name: Pukka Lemon Ginger Manuka (brewed)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Pukka
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: tea_pukka_revitalise
+  name: Pukka Revitalise (brewed)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Pukka
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: tea_clipper_decaf_breakfast
+  name: Clipper Decaf English Breakfast (brewed)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Clipper
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: tea_clipper_pure_green_tea
+  name: Clipper Pure Green Tea (brewed)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Clipper
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: tea_clipper_organic_chai
+  name: Clipper Organic Chai (brewed)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Clipper
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: tea_typhoo_classic_brewed
+  name: Typhoo Classic Tea (brewed)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Typhoo
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 250
+- source: brand
+  source_id: tea_typhoo_decaf_brewed
+  name: Typhoo Decaf (brewed)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Typhoo
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 250
+- source: brand
+  source_id: tea_taylors_yorkshire_decaf
+  name: Taylors Yorkshire Decaf (brewed)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Taylors
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: tea_taylors_lapsang_souchong
+  name: Taylors Lapsang Souchong (brewed)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Taylors
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: tea_taylors_assam_brewed
+  name: Taylors Pure Assam (brewed)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Taylors
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 250
+- source: brand
+  source_id: tea_dragonfly_organic_chai_brewed
+  name: Dragonfly Organic Chai (brewed)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Dragonfly
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 250
+- source: brand
+  source_id: tea_higher_living_organic_brewed
+  name: Higher Living Organic Tea (brewed)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Higher Living
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 250
+- source: brand
+  source_id: sauce_levi_roots_reggae_jerk_15g
+  name: Levi Roots Reggae Reggae Original Jerk Sauce (Per 15g)
+  kcal_per_100g: 125
+  protein_per_100g: 1.5
+  carbs_per_100g: 28
+  fat_per_100g: 0.5
+  brand: Levi Roots
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: sauce_henderson_relish_15ml
+  name: Henderson's Relish (Per 15ml)
+  kcal_per_100g: 75
+  protein_per_100g: 1
+  carbs_per_100g: 18
+  fat_per_100g: 0
+  brand: Henderson's
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: sauce_lazy_garlic_per_5g
+  name: Lazy Garlic Easy Garlic (Per 5g)
+  kcal_per_100g: 145
+  protein_per_100g: 6
+  carbs_per_100g: 32
+  fat_per_100g: 0.5
+  brand: Bart
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,grocery
+  portion_unit: tsp
+  unit_grams: 5
+- source: brand
+  source_id: sauce_dipping_chinese_sweet_chilli
+  name: Chinese Sweet Chilli Dipping Sauce (Per 15g)
+  kcal_per_100g: 220
+  protein_per_100g: 0.5
+  carbs_per_100g: 50
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: sauce_dipping_curry_per_15g
+  name: Chinese Curry Dipping Sauce (Per 15g)
+  kcal_per_100g: 70
+  protein_per_100g: 1
+  carbs_per_100g: 11
+  fat_per_100g: 2.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: sauce_dipping_satay_per_15g
+  name: Satay Dipping Sauce (Per 15g)
+  kcal_per_100g: 235
+  protein_per_100g: 7
+  carbs_per_100g: 11
+  fat_per_100g: 18
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+- source: brand
+  source_id: sauce_marinade_jamaican_jerk
+  name: Jamaican Jerk Marinade (Per 15g)
+  kcal_per_100g: 85
+  protein_per_100g: 2
+  carbs_per_100g: 14
+  fat_per_100g: 2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: sauce_marinade_teriyaki_japanese
+  name: Teriyaki Marinade Japanese (Per 15g)
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 35
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: sauce_marinade_korean_bbq
+  name: Korean BBQ Marinade (Per 15g)
+  kcal_per_100g: 140
+  protein_per_100g: 3
+  carbs_per_100g: 30
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: squash_robinsons_summer_fruits_diluted
+  name: Robinsons Summer Fruits Squash (Diluted, Per 250ml)
+  kcal_per_100g: 8
+  protein_per_100g: 0.1
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Robinsons
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 250
+- source: brand
+  source_id: squash_robinsons_lemon_barley
+  name: Robinsons Lemon Barley Water (Diluted)
+  kcal_per_100g: 25
+  protein_per_100g: 0.1
+  carbs_per_100g: 6
+  fat_per_100g: 0
+  brand: Robinsons
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: squash_vimto_diluted
+  name: Vimto Squash Diluted (Per 250ml)
+  kcal_per_100g: 12
+  protein_per_100g: 0
+  carbs_per_100g: 3
+  fat_per_100g: 0
+  brand: Vimto
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 250
+- source: brand
+  source_id: squash_vimto_remix_no_added_sugar
+  name: Vimto No Added Sugar (Diluted)
+  kcal_per_100g: 4
+  protein_per_100g: 0
+  carbs_per_100g: 0.5
+  fat_per_100g: 0
+  brand: Vimto
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250

@@ -1,0 +1,1241 @@
+# More fresh-pasta brands (Giovanni Rana, Dell'Ugo, De Cecco, Barilla, Napolina dry pasta) +
+# More chocolate/sweets variants (Celebrations/Quality Street/Heroes/Roses/Kinder Mini/KitKat varieties,
+# Galaxy flavours, Cadbury minis) +
+# Lollies & confectionery (Drumstick/Refreshers/Chupa Chups/Dip Dab/Pez/Haribo Giant/Skittles pouch) +
+# More tinned items (ackee, callaloo, artichoke hearts, anchovies, smoked oysters/mussels, jackfruit) +
+# Frozen veg & fruit specifics (Birds Eye/Iceland chopped peppers/onions, garlic kale, butternut/sweet potato/avocado chunks,
+# Iceland frozen berries/mango/pineapple) +
+# More premium ice cream (Carte D'Or, Häagen-Dazs flavours, Ben & Jerry's range, Jude's)
+
+- source: brand
+  source_id: pasta_giovanni_rana_chicken_filled_pasta
+  name: Giovanni Rana Chicken & Mushroom Filled Pasta (Per 100g)
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 7
+  brand: Giovanni Rana
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: pasta_giovanni_rana_4_cheese_filled
+  name: Giovanni Rana 4 Cheese Tortelloni (Per 100g)
+  kcal_per_100g: 240
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Giovanni Rana
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: pasta_giovanni_rana_spinach_ricotta
+  name: Giovanni Rana Spinach & Ricotta Tortelloni
+  kcal_per_100g: 230
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Giovanni Rana
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: pasta_giovanni_rana_lasagne_sheets
+  name: Giovanni Rana Lasagne Sheets (Per 100g)
+  kcal_per_100g: 280
+  protein_per_100g: 11
+  carbs_per_100g: 50
+  fat_per_100g: 4
+  brand: Giovanni Rana
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: pasta_giovanni_rana_carbonara_sauce
+  name: Giovanni Rana Carbonara Pasta Sauce (Per 100g)
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 6
+  fat_per_100g: 11
+  brand: Giovanni Rana
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: pasta-sauce
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: pasta_dell_ugo_chicken_pesto
+  name: Dell'Ugo Chicken & Pesto Filled (Per 100g)
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 7
+  brand: Dell'Ugo
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: pasta_dell_ugo_butternut
+  name: Dell'Ugo Butternut & Sage Tortelloni
+  kcal_per_100g: 230
+  protein_per_100g: 8
+  carbs_per_100g: 32
+  fat_per_100g: 7
+  brand: Dell'Ugo
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: pasta_dell_ugo_4_cheese
+  name: Dell'Ugo 4 Cheese Tortelloni
+  kcal_per_100g: 240
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Dell'Ugo
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: pasta_de_cecco_spaghetti
+  name: De Cecco Spaghetti (Dry, Per 75g)
+  kcal_per_100g: 357
+  protein_per_100g: 13
+  carbs_per_100g: 71
+  fat_per_100g: 1.5
+  brand: De Cecco
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 75
+- source: brand
+  source_id: pasta_de_cecco_penne_rigate
+  name: De Cecco Penne Rigate (Dry, Per 75g)
+  kcal_per_100g: 357
+  protein_per_100g: 13
+  carbs_per_100g: 71
+  fat_per_100g: 1.5
+  brand: De Cecco
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 75
+- source: brand
+  source_id: pasta_de_cecco_fusilli
+  name: De Cecco Fusilli (Dry, Per 75g)
+  kcal_per_100g: 357
+  protein_per_100g: 13
+  carbs_per_100g: 71
+  fat_per_100g: 1.5
+  brand: De Cecco
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 75
+- source: brand
+  source_id: pasta_barilla_spaghetti
+  name: Barilla Spaghetti (Dry, Per 75g)
+  kcal_per_100g: 357
+  protein_per_100g: 13
+  carbs_per_100g: 71
+  fat_per_100g: 1.5
+  brand: Barilla
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 75
+- source: brand
+  source_id: pasta_barilla_penne_rigate
+  name: Barilla Penne Rigate (Dry, Per 75g)
+  kcal_per_100g: 357
+  protein_per_100g: 13
+  carbs_per_100g: 71
+  fat_per_100g: 1.5
+  brand: Barilla
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 75
+- source: brand
+  source_id: pasta_barilla_fusilli
+  name: Barilla Fusilli (Dry, Per 75g)
+  kcal_per_100g: 357
+  protein_per_100g: 13
+  carbs_per_100g: 71
+  fat_per_100g: 1.5
+  brand: Barilla
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 75
+- source: brand
+  source_id: pasta_barilla_lasagne_sheets
+  name: Barilla Lasagne Sheets
+  kcal_per_100g: 357
+  protein_per_100g: 13
+  carbs_per_100g: 71
+  fat_per_100g: 1.5
+  brand: Barilla
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 75
+- source: brand
+  source_id: pasta_napolina_spaghetti
+  name: Napolina Spaghetti (Dry, Per 75g)
+  kcal_per_100g: 357
+  protein_per_100g: 13
+  carbs_per_100g: 71
+  fat_per_100g: 1.5
+  brand: Napolina
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 75
+- source: brand
+  source_id: pasta_napolina_penne
+  name: Napolina Penne (Dry, Per 75g)
+  kcal_per_100g: 357
+  protein_per_100g: 13
+  carbs_per_100g: 71
+  fat_per_100g: 1.5
+  brand: Napolina
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 75
+- source: brand
+  source_id: pasta_napolina_macaroni_dry
+  name: Napolina Macaroni (Dry, Per 75g)
+  kcal_per_100g: 357
+  protein_per_100g: 13
+  carbs_per_100g: 71
+  fat_per_100g: 1.5
+  brand: Napolina
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 75
+- source: brand
+  source_id: brand_celebrations_per_piece_avg
+  name: Celebrations Pouch (Per Piece)
+  kcal_per_100g: 488
+  protein_per_100g: 5
+  carbs_per_100g: 62
+  fat_per_100g: 24
+  brand: Celebrations
+  region_codes: GB
+  serving_grams: 9
+  serving_label: 9 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 9
+- source: brand
+  source_id: brand_quality_street_per_piece_avg
+  name: Quality Street (Per Piece)
+  kcal_per_100g: 460
+  protein_per_100g: 4
+  carbs_per_100g: 64
+  fat_per_100g: 21
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 9
+  serving_label: 9 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 9
+- source: brand
+  source_id: brand_heroes_per_piece_avg
+  name: Cadbury Heroes (Per Piece)
+  kcal_per_100g: 490
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 25
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 8
+  serving_label: 8 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 8
+- source: brand
+  source_id: brand_roses_per_piece_avg
+  name: Cadbury Roses (Per Piece)
+  kcal_per_100g: 480
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 9
+  serving_label: 9 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 9
+- source: brand
+  source_id: brand_kinder_chocolate_per_unit
+  name: Kinder Chocolate Mini (Per Unit)
+  kcal_per_100g: 565
+  protein_per_100g: 9
+  carbs_per_100g: 53
+  fat_per_100g: 35
+  brand: Kinder
+  region_codes: GB
+  serving_grams: 12.5
+  serving_label: 12.5 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 12.5
+- source: brand
+  source_id: brand_creme_egg_mini_per_unit
+  name: Creme Egg Mini (Per Unit)
+  kcal_per_100g: 380
+  protein_per_100g: 3
+  carbs_per_100g: 58
+  fat_per_100g: 14
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 12
+  serving_label: 12 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 12
+- source: brand
+  source_id: brand_dairy_milk_buttons_giant_per_unit
+  name: Cadbury Giant Buttons (Per Bag)
+  kcal_per_100g: 530
+  protein_per_100g: 7.5
+  carbs_per_100g: 57
+  fat_per_100g: 30
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 95
+  serving_label: 95 g
+  tags: chocolate
+  portion_unit: piece
+  unit_grams: 95
+- source: brand
+  source_id: brand_galaxy_sea_salt_caramel_42g
+  name: Galaxy Sea Salt Caramel (Per 42g)
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 28
+  brand: Galaxy
+  region_codes: GB
+  serving_grams: 42
+  serving_label: 42 g
+  tags: chocolate
+  portion_unit: meal
+  unit_grams: 42
+- source: brand
+  source_id: brand_galaxy_orange_42g
+  name: Galaxy Orange (Per 42g)
+  kcal_per_100g: 555
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 32
+  brand: Galaxy
+  region_codes: GB
+  serving_grams: 42
+  serving_label: 42 g
+  tags: chocolate
+  portion_unit: meal
+  unit_grams: 42
+- source: brand
+  source_id: brand_dairy_milk_caramel_minis_30g
+  name: Cadbury Dairy Milk Caramel Minis (Per 30g)
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chocolate
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: brand_kit_kat_white_2_finger
+  name: KitKat White (Per 2-Finger)
+  kcal_per_100g: 530
+  protein_per_100g: 7
+  carbs_per_100g: 58
+  fat_per_100g: 29
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 21
+  serving_label: 21 g
+  tags: chocolate
+  portion_unit: meal
+  unit_grams: 21
+- source: brand
+  source_id: brand_kit_kat_dark_2_finger
+  name: KitKat Dark (Per 2-Finger)
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 56
+  fat_per_100g: 28
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 21
+  serving_label: 21 g
+  tags: chocolate
+  portion_unit: meal
+  unit_grams: 21
+- source: brand
+  source_id: brand_kit_kat_chunky_caramel
+  name: KitKat Chunky Caramel (Per Bar)
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 27
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 43.5
+  serving_label: 43.5 g
+  tags: chocolate
+  portion_unit: meal
+  unit_grams: 43.5
+- source: brand
+  source_id: brand_kit_kat_chunky_orange
+  name: KitKat Chunky Orange (Per Bar)
+  kcal_per_100g: 530
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 28
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: chocolate
+  portion_unit: meal
+  unit_grams: 40
+- source: brand
+  source_id: brand_drumstick_lolly_per_unit
+  name: Swizzels Drumstick Lolly (Per Unit)
+  kcal_per_100g: 380
+  protein_per_100g: 0
+  carbs_per_100g: 95
+  fat_per_100g: 0
+  brand: Swizzels
+  region_codes: GB
+  serving_grams: 12
+  serving_label: 12 g
+  tags: sweets
+  portion_unit: piece
+  unit_grams: 12
+- source: brand
+  source_id: brand_double_lolly_per_unit
+  name: Swizzels Double Dip Lolly (Per Unit)
+  kcal_per_100g: 380
+  protein_per_100g: 0
+  carbs_per_100g: 95
+  fat_per_100g: 0
+  brand: Swizzels
+  region_codes: GB
+  serving_grams: 12
+  serving_label: 12 g
+  tags: sweets
+  portion_unit: piece
+  unit_grams: 12
+- source: brand
+  source_id: brand_swizzels_lolly_per_unit
+  name: Swizzels Refresher Lolly (Per Unit)
+  kcal_per_100g: 380
+  protein_per_100g: 0
+  carbs_per_100g: 95
+  fat_per_100g: 0
+  brand: Swizzels
+  region_codes: GB
+  serving_grams: 12
+  serving_label: 12 g
+  tags: sweets
+  portion_unit: piece
+  unit_grams: 12
+- source: brand
+  source_id: brand_chupa_chups_per_lolly
+  name: Chupa Chups (Per Lolly)
+  kcal_per_100g: 380
+  protein_per_100g: 0
+  carbs_per_100g: 95
+  fat_per_100g: 0
+  brand: Chupa Chups
+  region_codes: GB
+  serving_grams: 11
+  serving_label: 11 g
+  tags: sweets
+  portion_unit: piece
+  unit_grams: 11
+- source: brand
+  source_id: brand_dip_dab_per_pack
+  name: Dip Dab (Per Pack)
+  kcal_per_100g: 380
+  protein_per_100g: 0
+  carbs_per_100g: 95
+  fat_per_100g: 0
+  brand: Swizzels
+  region_codes: GB
+  serving_grams: 23
+  serving_label: 23 g
+  tags: sweets
+  portion_unit: piece
+  unit_grams: 23
+- source: brand
+  source_id: brand_pez_per_pack
+  name: Pez Sweets (Per Pack)
+  kcal_per_100g: 360
+  protein_per_100g: 0
+  carbs_per_100g: 90
+  fat_per_100g: 0
+  brand: Pez
+  region_codes: GB
+  serving_grams: 8.5
+  serving_label: 8.5 g
+  tags: sweets
+  portion_unit: piece
+  unit_grams: 8.5
+- source: brand
+  source_id: brand_haribo_strawbs_giant
+  name: Haribo Giant Strawbs (Per Bag 140g)
+  kcal_per_100g: 320
+  protein_per_100g: 5
+  carbs_per_100g: 75
+  fat_per_100g: 0
+  brand: Haribo
+  region_codes: GB
+  serving_grams: 140
+  serving_label: 140 g
+  tags: sweets
+  portion_unit: meal
+  unit_grams: 140
+- source: brand
+  source_id: brand_skittles_pouch_174g
+  name: Skittles Pouch (Per Bag 174g)
+  kcal_per_100g: 405
+  protein_per_100g: 0
+  carbs_per_100g: 90
+  fat_per_100g: 4.5
+  brand: Skittles
+  region_codes: GB
+  serving_grams: 174
+  serving_label: 174 g
+  tags: sweets
+  portion_unit: meal
+  unit_grams: 174
+- source: brand
+  source_id: brand_starburst_pouch_192g
+  name: Starburst Pouch (Per Bag 192g)
+  kcal_per_100g: 410
+  protein_per_100g: 0
+  carbs_per_100g: 84
+  fat_per_100g: 8
+  brand: Starburst
+  region_codes: GB
+  serving_grams: 192
+  serving_label: 192 g
+  tags: sweets
+  portion_unit: meal
+  unit_grams: 192
+- source: brand
+  source_id: brand_jolly_rancher_per_25g
+  name: Jolly Rancher (Per 25g)
+  kcal_per_100g: 405
+  protein_per_100g: 0
+  carbs_per_100g: 95
+  fat_per_100g: 0
+  brand: Jolly Rancher
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: sweets
+  portion_unit: piece
+  unit_grams: 25
+- source: brand
+  source_id: tinned_ackee_per_100g
+  name: Ackee Tinned (Per 100g)
+  kcal_per_100g: 165
+  protein_per_100g: 2
+  carbs_per_100g: 4
+  fat_per_100g: 16
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: tinned
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: tinned_callaloo_per_100g
+  name: Callaloo Tinned (Per 100g)
+  kcal_per_100g: 25
+  protein_per_100g: 2.5
+  carbs_per_100g: 4
+  fat_per_100g: 0.4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: tinned
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: tinned_artichoke_hearts_per_100g
+  name: Artichoke Hearts Tinned (Per 100g)
+  kcal_per_100g: 47
+  protein_per_100g: 3
+  carbs_per_100g: 11
+  fat_per_100g: 0.2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: tinned
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: tinned_anchovies_per_50g
+  name: Anchovies Tinned (Per 50g)
+  kcal_per_100g: 210
+  protein_per_100g: 29
+  carbs_per_100g: 0
+  fat_per_100g: 10
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: tinned
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: tinned_smoked_oysters_per_85g
+  name: Smoked Oysters Tinned (Per 85g)
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 4
+  fat_per_100g: 9
+  brand: Generic
+  region_codes: GB
+  serving_grams: 85
+  serving_label: 85 g
+  tags: tinned
+  portion_unit: meal
+  unit_grams: 85
+- source: brand
+  source_id: tinned_smoked_mussels_per_85g
+  name: Smoked Mussels Tinned (Per 85g)
+  kcal_per_100g: 145
+  protein_per_100g: 14
+  carbs_per_100g: 6
+  fat_per_100g: 7
+  brand: Generic
+  region_codes: GB
+  serving_grams: 85
+  serving_label: 85 g
+  tags: tinned
+  portion_unit: meal
+  unit_grams: 85
+- source: brand
+  source_id: tinned_smoked_salmon_per_100g
+  name: Smoked Salmon Tinned (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 9
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: tinned
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: tinned_chestnuts_pouch_per_50g
+  name: Chestnuts Pouch Cooked (Per 50g)
+  kcal_per_100g: 170
+  protein_per_100g: 2
+  carbs_per_100g: 36
+  fat_per_100g: 1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: tinned
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: tinned_jackfruit_per_100g
+  name: Jackfruit Tinned in Brine (Per 100g)
+  kcal_per_100g: 95
+  protein_per_100g: 1.7
+  carbs_per_100g: 23
+  fat_per_100g: 0.6
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: tinned
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: tinned_palm_hearts_per_100g
+  name: Palm Hearts Tinned (Per 100g)
+  kcal_per_100g: 36
+  protein_per_100g: 2.5
+  carbs_per_100g: 7
+  fat_per_100g: 0.6
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: tinned
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_veg_birds_eye_garden_peas
+  name: Birds Eye Garden Peas Frozen (Per 80g)
+  kcal_per_100g: 76
+  protein_per_100g: 5
+  carbs_per_100g: 11
+  fat_per_100g: 1
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: frozen-veg
+  portion_unit: meal
+  unit_grams: 80
+- source: brand
+  source_id: frozen_veg_birds_eye_country_mix
+  name: Birds Eye Country Mix (Per 80g)
+  kcal_per_100g: 35
+  protein_per_100g: 2
+  carbs_per_100g: 5
+  fat_per_100g: 0.5
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: frozen-veg
+  portion_unit: meal
+  unit_grams: 80
+- source: brand
+  source_id: frozen_veg_birds_eye_steamfresh_carrots
+  name: Birds Eye Steamfresh Carrots Sliced (Per 80g)
+  kcal_per_100g: 35
+  protein_per_100g: 0.9
+  carbs_per_100g: 7
+  fat_per_100g: 0.2
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: frozen-veg
+  portion_unit: meal
+  unit_grams: 80
+- source: brand
+  source_id: frozen_veg_iceland_chopped_onions
+  name: Iceland Chopped Onions Frozen (Per 80g)
+  kcal_per_100g: 35
+  protein_per_100g: 1
+  carbs_per_100g: 7
+  fat_per_100g: 0.1
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: frozen-veg
+  portion_unit: meal
+  unit_grams: 80
+- source: brand
+  source_id: frozen_veg_iceland_chopped_peppers
+  name: Iceland Chopped Peppers Frozen (Per 80g)
+  kcal_per_100g: 25
+  protein_per_100g: 0.8
+  carbs_per_100g: 5
+  fat_per_100g: 0.2
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: frozen-veg
+  portion_unit: meal
+  unit_grams: 80
+- source: brand
+  source_id: frozen_veg_iceland_garlic_kale
+  name: Iceland Garlic Kale Frozen (Per 80g)
+  kcal_per_100g: 50
+  protein_per_100g: 4
+  carbs_per_100g: 8
+  fat_per_100g: 1
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: frozen-veg
+  portion_unit: meal
+  unit_grams: 80
+- source: brand
+  source_id: frozen_veg_iceland_spinach_per_80g
+  name: Iceland Spinach Frozen (Per 80g)
+  kcal_per_100g: 25
+  protein_per_100g: 3
+  carbs_per_100g: 4
+  fat_per_100g: 0.4
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: frozen-veg
+  portion_unit: meal
+  unit_grams: 80
+- source: brand
+  source_id: frozen_veg_iceland_brussels_per_80g
+  name: Iceland Brussels Sprouts Frozen (Per 80g)
+  kcal_per_100g: 36
+  protein_per_100g: 2.5
+  carbs_per_100g: 7
+  fat_per_100g: 0.4
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: frozen-veg
+  portion_unit: meal
+  unit_grams: 80
+- source: brand
+  source_id: frozen_veg_iceland_broccoli_florets
+  name: Iceland Broccoli Florets Frozen (Per 80g)
+  kcal_per_100g: 35
+  protein_per_100g: 2.4
+  carbs_per_100g: 5
+  fat_per_100g: 0.4
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: frozen-veg
+  portion_unit: meal
+  unit_grams: 80
+- source: brand
+  source_id: frozen_veg_iceland_cauliflower_florets
+  name: Iceland Cauliflower Florets (Per 80g)
+  kcal_per_100g: 23
+  protein_per_100g: 1.9
+  carbs_per_100g: 4
+  fat_per_100g: 0.3
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: frozen-veg
+  portion_unit: meal
+  unit_grams: 80
+- source: brand
+  source_id: frozen_veg_iceland_butternut_chunks
+  name: Iceland Butternut Chunks Frozen (Per 100g)
+  kcal_per_100g: 45
+  protein_per_100g: 1
+  carbs_per_100g: 12
+  fat_per_100g: 0.1
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen-veg
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_veg_iceland_sweet_potato_chunks
+  name: Iceland Sweet Potato Chunks Frozen (Per 100g)
+  kcal_per_100g: 86
+  protein_per_100g: 2
+  carbs_per_100g: 20
+  fat_per_100g: 0.1
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen-veg
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_veg_iceland_avocado_chunks
+  name: Iceland Avocado Chunks Frozen (Per 100g)
+  kcal_per_100g: 160
+  protein_per_100g: 2
+  carbs_per_100g: 9
+  fat_per_100g: 15
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen-veg
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_veg_iceland_mango_chunks_frozen
+  name: Iceland Mango Chunks Frozen (Per 100g)
+  kcal_per_100g: 60
+  protein_per_100g: 0.8
+  carbs_per_100g: 15
+  fat_per_100g: 0.4
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen-fruit
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_fruit_iceland_summer_fruits
+  name: Iceland Summer Fruits Frozen Mix (Per 100g)
+  kcal_per_100g: 50
+  protein_per_100g: 1
+  carbs_per_100g: 12
+  fat_per_100g: 0.3
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen-fruit
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_fruit_iceland_blueberries_frozen
+  name: Iceland Blueberries Frozen (Per 100g)
+  kcal_per_100g: 57
+  protein_per_100g: 0.7
+  carbs_per_100g: 14
+  fat_per_100g: 0.3
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen-fruit
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_fruit_iceland_strawberries_frozen
+  name: Iceland Strawberries Frozen (Per 100g)
+  kcal_per_100g: 32
+  protein_per_100g: 0.7
+  carbs_per_100g: 8
+  fat_per_100g: 0.3
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen-fruit
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_fruit_iceland_raspberries_frozen
+  name: Iceland Raspberries Frozen (Per 100g)
+  kcal_per_100g: 52
+  protein_per_100g: 1.2
+  carbs_per_100g: 12
+  fat_per_100g: 0.7
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen-fruit
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_fruit_iceland_pineapple_chunks
+  name: Iceland Pineapple Chunks Frozen (Per 100g)
+  kcal_per_100g: 50
+  protein_per_100g: 0.5
+  carbs_per_100g: 13
+  fat_per_100g: 0.1
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen-fruit
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dessert_carte_dor_chocolate_per_100ml
+  name: Carte D'Or Belgian Chocolate (Per 100ml)
+  kcal_per_100g: 195
+  protein_per_100g: 4
+  carbs_per_100g: 22
+  fat_per_100g: 10
+  brand: Carte D'Or
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ice-cream
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dessert_carte_dor_strawberry_per_100ml
+  name: Carte D'Or Strawberry (Per 100ml)
+  kcal_per_100g: 175
+  protein_per_100g: 3
+  carbs_per_100g: 25
+  fat_per_100g: 7
+  brand: Carte D'Or
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ice-cream
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dessert_carte_dor_salted_caramel
+  name: Carte D'Or Salted Caramel (Per 100ml)
+  kcal_per_100g: 195
+  protein_per_100g: 3
+  carbs_per_100g: 25
+  fat_per_100g: 9
+  brand: Carte D'Or
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ice-cream
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dessert_carte_dor_mint_choc
+  name: Carte D'Or Mint Choc Chip (Per 100ml)
+  kcal_per_100g: 195
+  protein_per_100g: 3
+  carbs_per_100g: 25
+  fat_per_100g: 9
+  brand: Carte D'Or
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ice-cream
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dessert_haagen_choc_choc_chip_500
+  name: Häagen-Dazs Chocolate Chocolate Chip (Per 500ml)
+  kcal_per_100g: 285
+  protein_per_100g: 5
+  carbs_per_100g: 24
+  fat_per_100g: 19
+  brand: Häagen-Dazs
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: ice-cream
+  portion_unit: meal
+  unit_grams: 500
+- source: brand
+  source_id: dessert_haagen_strawberries_cream_per_100
+  name: Häagen-Dazs Strawberries & Cream (Per 100ml)
+  kcal_per_100g: 250
+  protein_per_100g: 4
+  carbs_per_100g: 24
+  fat_per_100g: 16
+  brand: Häagen-Dazs
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ice-cream
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dessert_haagen_macadamia_nut_brittle
+  name: Häagen-Dazs Macadamia Nut Brittle (Per 100ml)
+  kcal_per_100g: 295
+  protein_per_100g: 5
+  carbs_per_100g: 26
+  fat_per_100g: 19
+  brand: Häagen-Dazs
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ice-cream
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dessert_haagen_belgian_choc_per_100ml
+  name: Häagen-Dazs Belgian Chocolate (Per 100ml)
+  kcal_per_100g: 285
+  protein_per_100g: 5
+  carbs_per_100g: 24
+  fat_per_100g: 19
+  brand: Häagen-Dazs
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ice-cream
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dessert_bj_cookie_dough_500ml
+  name: Ben & Jerry's Cookie Dough (Per 500ml)
+  kcal_per_100g: 270
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 14
+  brand: Ben & Jerry's
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: ice-cream
+  portion_unit: meal
+  unit_grams: 500
+- source: brand
+  source_id: dessert_bj_cookie_dough_per_100ml
+  name: Ben & Jerry's Cookie Dough (Per 100ml)
+  kcal_per_100g: 270
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 14
+  brand: Ben & Jerry's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ice-cream
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dessert_bj_half_baked_per_100ml
+  name: Ben & Jerry's Half Baked (Per 100ml)
+  kcal_per_100g: 270
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 14
+  brand: Ben & Jerry's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ice-cream
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dessert_bj_strawberry_cheesecake_per_100ml
+  name: Ben & Jerry's Strawberry Cheesecake (Per 100ml)
+  kcal_per_100g: 250
+  protein_per_100g: 4
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Ben & Jerry's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ice-cream
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dessert_bj_topped_brownie_buzz
+  name: Ben & Jerry's Topped Brownie Buzz (Per 100ml)
+  kcal_per_100g: 280
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 14
+  brand: Ben & Jerry's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ice-cream
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dessert_bj_dough_ble_chocolate
+  name: Ben & Jerry's Dough-Ble Chocolate (Per 100ml)
+  kcal_per_100g: 290
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 16
+  brand: Ben & Jerry's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ice-cream
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dessert_bj_moo_phoria_chocolate_v2
+  name: Ben & Jerry's Moo-Phoria Chocolate (Per 100ml)
+  kcal_per_100g: 195
+  protein_per_100g: 5
+  carbs_per_100g: 30
+  fat_per_100g: 6
+  brand: Ben & Jerry's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ice-cream
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dessert_jude_chocolate_collection
+  name: Jude's Honeycomb (Per 100ml)
+  kcal_per_100g: 195
+  protein_per_100g: 3
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Jude's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ice-cream
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: dessert_jude_dairy_free_chocolate
+  name: Jude's Dairy Free Chocolate (Per 100ml)
+  kcal_per_100g: 175
+  protein_per_100g: 1.5
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Jude's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: ice-cream
+  portion_unit: meal
+  unit_grams: 100

@@ -1,0 +1,303 @@
+# Chinese Takeaway — most-tracked dishes
+# Sweet & sour, chow mein, black bean, salt & pepper, fried rice, soups, starters.
+
+- source: homemade
+  source_id: sweet_sour_chicken
+  name: Sweet & Sour Chicken (Battered)
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  serving_grams: 350
+  serving_label: portion (350 g)
+  tags: chinese,chicken,takeaway
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: sweet_sour_pork
+  name: Sweet & Sour Pork (Battered)
+  kcal_per_100g: 210
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 350
+  serving_label: portion (350 g)
+  tags: chinese,pork,takeaway
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: kung_pao_chicken
+  name: Kung Pao Chicken
+  kcal_per_100g: 155
+  protein_per_100g: 13
+  carbs_per_100g: 8
+  fat_per_100g: 8
+  serving_grams: 350
+  serving_label: portion (350 g)
+  tags: chinese,chicken,takeaway
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: lemon_chicken
+  name: Lemon Chicken (Battered, Chinese)
+  kcal_per_100g: 210
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 350
+  serving_label: portion (350 g)
+  tags: chinese,chicken,takeaway
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: chicken_chow_mein
+  name: Chicken Chow Mein
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: portion (400 g)
+  tags: chinese,chicken,noodles,takeaway
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: beef_chow_mein
+  name: Beef Chow Mein
+  kcal_per_100g: 150
+  protein_per_100g: 9
+  carbs_per_100g: 16
+  fat_per_100g: 5.5
+  serving_grams: 400
+  serving_label: portion (400 g)
+  tags: chinese,beef,noodles,takeaway
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: veg_chow_mein
+  name: Vegetable Chow Mein
+  kcal_per_100g: 120
+  protein_per_100g: 4
+  carbs_per_100g: 19
+  fat_per_100g: 3.5
+  serving_grams: 400
+  serving_label: portion (400 g)
+  tags: chinese,vegetarian,noodles,takeaway
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: singapore_noodles
+  name: Singapore Noodles
+  kcal_per_100g: 140
+  protein_per_100g: 7
+  carbs_per_100g: 19
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: portion (400 g)
+  tags: chinese,noodles,takeaway,spicy
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: chicken_black_bean
+  name: Chicken in Black Bean Sauce
+  kcal_per_100g: 130
+  protein_per_100g: 12
+  carbs_per_100g: 8
+  fat_per_100g: 5
+  serving_grams: 350
+  serving_label: portion (350 g)
+  tags: chinese,chicken,takeaway
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: beef_black_bean
+  name: Beef in Black Bean Sauce
+  kcal_per_100g: 155
+  protein_per_100g: 13
+  carbs_per_100g: 8
+  fat_per_100g: 7
+  serving_grams: 350
+  serving_label: portion (350 g)
+  tags: chinese,beef,takeaway
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: beef_oyster_sauce
+  name: Beef in Oyster Sauce
+  kcal_per_100g: 150
+  protein_per_100g: 13
+  carbs_per_100g: 7
+  fat_per_100g: 7
+  serving_grams: 350
+  serving_label: portion (350 g)
+  tags: chinese,beef,takeaway
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: chicken_curry_chinese
+  name: Chinese Chicken Curry
+  kcal_per_100g: 130
+  protein_per_100g: 10
+  carbs_per_100g: 11
+  fat_per_100g: 4
+  serving_grams: 350
+  serving_label: portion (350 g)
+  tags: chinese,chicken,curry,takeaway
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: salt_pepper_chicken
+  name: Salt & Pepper Chicken
+  kcal_per_100g: 230
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  serving_grams: 300
+  serving_label: portion (300 g)
+  tags: chinese,chicken,takeaway
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: salt_pepper_chips
+  name: Salt & Pepper Chips
+  kcal_per_100g: 250
+  protein_per_100g: 4
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  serving_grams: 300
+  serving_label: portion (300 g)
+  tags: chinese,sides,takeaway
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: egg_fried_rice
+  name: Egg Fried Rice (Chinese)
+  kcal_per_100g: 170
+  protein_per_100g: 5
+  carbs_per_100g: 25
+  fat_per_100g: 5
+  serving_grams: 300
+  serving_label: portion (300 g)
+  tags: chinese,rice,takeaway
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: special_fried_rice
+  name: Special Fried Rice
+  kcal_per_100g: 175
+  protein_per_100g: 7
+  carbs_per_100g: 24
+  fat_per_100g: 5.5
+  serving_grams: 300
+  serving_label: portion (300 g)
+  tags: chinese,rice,takeaway
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: boiled_rice_chinese
+  name: Boiled Rice (Chinese Takeaway)
+  kcal_per_100g: 130
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 0.5
+  serving_grams: 300
+  serving_label: portion (300 g)
+  tags: chinese,rice,takeaway
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: spring_roll_veg
+  name: Vegetable Spring Roll
+  kcal_per_100g: 245
+  protein_per_100g: 5
+  carbs_per_100g: 30
+  fat_per_100g: 11
+  serving_grams: 70
+  serving_label: roll (70 g)
+  tags: chinese,starter,vegetarian,takeaway
+  portion_unit: piece
+  unit_grams: 70
+- source: homemade
+  source_id: spring_roll_meat
+  name: Meat Spring Roll
+  kcal_per_100g: 255
+  protein_per_100g: 7
+  carbs_per_100g: 28
+  fat_per_100g: 12
+  serving_grams: 70
+  serving_label: roll (70 g)
+  tags: chinese,starter,takeaway
+  portion_unit: piece
+  unit_grams: 70
+- source: homemade
+  source_id: prawn_toast
+  name: Sesame Prawn Toast
+  kcal_per_100g: 330
+  protein_per_100g: 12
+  carbs_per_100g: 25
+  fat_per_100g: 19
+  serving_grams: 25
+  serving_label: piece (25 g)
+  tags: chinese,starter,seafood,takeaway
+  portion_unit: piece
+  unit_grams: 25
+- source: homemade
+  source_id: crispy_duck_pancakes
+  name: Crispy Duck with Pancakes (Plate)
+  kcal_per_100g: 225
+  protein_per_100g: 18
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: chinese,duck,takeaway
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: wonton_soup
+  name: Wonton Soup
+  kcal_per_100g: 55
+  protein_per_100g: 3
+  carbs_per_100g: 6
+  fat_per_100g: 1.5
+  serving_grams: 300
+  serving_label: bowl (300 g)
+  tags: chinese,soup,takeaway
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: hot_and_sour_soup
+  name: Hot & Sour Soup
+  kcal_per_100g: 45
+  protein_per_100g: 2.5
+  carbs_per_100g: 5
+  fat_per_100g: 1.5
+  serving_grams: 300
+  serving_label: bowl (300 g)
+  tags: chinese,soup,takeaway
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: sweetcorn_soup_chicken
+  name: Chicken & Sweetcorn Soup
+  kcal_per_100g: 55
+  protein_per_100g: 3
+  carbs_per_100g: 7
+  fat_per_100g: 1.5
+  serving_grams: 300
+  serving_label: bowl (300 g)
+  tags: chinese,soup,takeaway
+  portion_unit: meal
+  unit_grams: 300
+- source: homemade
+  source_id: char_siu_pork
+  name: Char Siu Pork
+  kcal_per_100g: 210
+  protein_per_100g: 17
+  carbs_per_100g: 12
+  fat_per_100g: 11
+  serving_grams: 200
+  serving_label: portion (200 g)
+  tags: chinese,pork,takeaway
+  portion_unit: meal
+  unit_grams: 200

@@ -1,0 +1,787 @@
+# Restaurant chains expansion — Wagamama / Itsu food / Pret expansion / Côte / Bill's /
+# TGI Fridays / Frankie & Benny's
+
+- source: wagamama
+  source_id: waga_yasai_katsu_curry
+  name: Wagamama Yasai Katsu Curry
+  kcal_per_100g: 165
+  protein_per_100g: 5
+  carbs_per_100g: 25
+  fat_per_100g: 5
+  brand: Wagamama
+  region_codes: GB
+  serving_grams: 535
+  serving_label: plate (535 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 535
+- source: wagamama
+  source_id: waga_chicken_firecracker
+  name: Wagamama Firecracker Chicken
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Wagamama
+  region_codes: GB
+  serving_grams: 425
+  serving_label: plate (425 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 425
+- source: wagamama
+  source_id: waga_yaki_soba_chicken
+  name: Wagamama Yaki Soba Chicken
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  brand: Wagamama
+  region_codes: GB
+  serving_grams: 460
+  serving_label: plate (460 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 460
+- source: wagamama
+  source_id: waga_yaki_soba_prawn
+  name: Wagamama Yaki Soba Prawn
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 18
+  fat_per_100g: 3
+  brand: Wagamama
+  region_codes: GB
+  serving_grams: 460
+  serving_label: plate (460 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 460
+- source: wagamama
+  source_id: waga_steamed_dumplings_pork
+  name: Wagamama Pork Steamed Dumplings (6)
+  kcal_per_100g: 235
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Wagamama
+  region_codes: GB
+  serving_grams: 150
+  serving_label: plate (150 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 150
+- source: wagamama
+  source_id: waga_steamed_dumplings_chicken_kale
+  name: Wagamama Chicken & Kale Steamed Dumplings (6)
+  kcal_per_100g: 195
+  protein_per_100g: 10
+  carbs_per_100g: 21
+  fat_per_100g: 8
+  brand: Wagamama
+  region_codes: GB
+  serving_grams: 150
+  serving_label: plate (150 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 150
+- source: wagamama
+  source_id: waga_edamame_garlic_chilli
+  name: Wagamama Garlic Chilli Edamame
+  kcal_per_100g: 155
+  protein_per_100g: 12
+  carbs_per_100g: 9
+  fat_per_100g: 7
+  brand: Wagamama
+  region_codes: GB
+  serving_grams: 150
+  serving_label: plate (150 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 150
+- source: wagamama
+  source_id: waga_chicken_gyoza
+  name: Wagamama Chicken Gyoza
+  kcal_per_100g: 235
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Wagamama
+  region_codes: GB
+  serving_grams: 130
+  serving_label: plate (130 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 130
+- source: wagamama
+  source_id: waga_kare_lomen
+  name: Wagamama Kare Lomen
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  brand: Wagamama
+  region_codes: GB
+  serving_grams: 600
+  serving_label: plate (600 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 600
+- source: wagamama
+  source_id: waga_chilli_squid
+  name: Wagamama Chilli Squid
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 19
+  fat_per_100g: 9
+  brand: Wagamama
+  region_codes: GB
+  serving_grams: 130
+  serving_label: plate (130 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 130
+- source: wagamama
+  source_id: waga_chicken_yakitori
+  name: Wagamama Chicken Yakitori
+  kcal_per_100g: 175
+  protein_per_100g: 16
+  carbs_per_100g: 9
+  fat_per_100g: 9
+  brand: Wagamama
+  region_codes: GB
+  serving_grams: 150
+  serving_label: plate (150 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 150
+- source: wagamama
+  source_id: waga_pad_thai_chicken
+  name: Wagamama Pad Thai Chicken
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 21
+  fat_per_100g: 5
+  brand: Wagamama
+  region_codes: GB
+  serving_grams: 480
+  serving_label: plate (480 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 480
+- source: wagamama
+  source_id: waga_avant_gard_n
+  name: Wagamama Avant Gard'n
+  kcal_per_100g: 110
+  protein_per_100g: 5
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  brand: Wagamama
+  region_codes: GB
+  serving_grams: 380
+  serving_label: plate (380 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 380
+- source: wagamama
+  source_id: waga_bbq_pork_buns_2
+  name: Wagamama BBQ Pork Buns (2)
+  kcal_per_100g: 270
+  protein_per_100g: 7
+  carbs_per_100g: 32
+  fat_per_100g: 12
+  brand: Wagamama
+  region_codes: GB
+  serving_grams: 150
+  serving_label: plate (150 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 150
+- source: itsu
+  source_id: itsu_chicken_katsu_curry_pot
+  name: Itsu Chicken Katsu Curry Pot
+  kcal_per_100g: 145
+  protein_per_100g: 7
+  carbs_per_100g: 21
+  fat_per_100g: 4
+  brand: Itsu
+  region_codes: GB
+  serving_grams: 430
+  serving_label: plate (430 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 430
+- source: itsu
+  source_id: itsu_dynamite_rice_pot
+  name: Itsu Dynamite Rice Pot
+  kcal_per_100g: 130
+  protein_per_100g: 4
+  carbs_per_100g: 21
+  fat_per_100g: 3.5
+  brand: Itsu
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: itsu
+  source_id: itsu_ginger_chicken_brown_rice
+  name: Itsu Ginger Chicken Brown Rice
+  kcal_per_100g: 140
+  protein_per_100g: 9
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  brand: Itsu
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: itsu
+  source_id: itsu_potstickers_chicken_5
+  name: Itsu Chicken Potstickers (5 pcs)
+  kcal_per_100g: 215
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Itsu
+  region_codes: GB
+  serving_grams: 125
+  serving_label: plate (125 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 125
+- source: itsu
+  source_id: itsu_potstickers_veg_5
+  name: Itsu Vegetable Potstickers (5 pcs)
+  kcal_per_100g: 195
+  protein_per_100g: 5
+  carbs_per_100g: 25
+  fat_per_100g: 9
+  brand: Itsu
+  region_codes: GB
+  serving_grams: 125
+  serving_label: plate (125 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 125
+- source: itsu
+  source_id: itsu_yaki_chicken_5
+  name: Itsu Yaki Chicken Skewers (5 pcs)
+  kcal_per_100g: 155
+  protein_per_100g: 18
+  carbs_per_100g: 6
+  fat_per_100g: 7
+  brand: Itsu
+  region_codes: GB
+  serving_grams: 150
+  serving_label: plate (150 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 150
+- source: itsu
+  source_id: itsu_miso_classic
+  name: Itsu Miso Classic
+  kcal_per_100g: 95
+  protein_per_100g: 5
+  carbs_per_100g: 11
+  fat_per_100g: 3
+  brand: Itsu
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 200
+- source: itsu
+  source_id: itsu_chicken_super_brown
+  name: Itsu Chicken Super Brown
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  brand: Itsu
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: pret_a_manger
+  source_id: pret_avocado_super_club
+  name: Pret Avocado, Bacon & Egg Super Club
+  kcal_per_100g: 240
+  protein_per_100g: 11
+  carbs_per_100g: 21
+  fat_per_100g: 12
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 215
+  serving_label: plate (215 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 215
+- source: pret_a_manger
+  source_id: pret_artisan_chicken_baguette
+  name: Pret Artisan Chicken Baguette
+  kcal_per_100g: 280
+  protein_per_100g: 13
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 240
+  serving_label: plate (240 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 240
+- source: pret_a_manger
+  source_id: pret_kale_quinoa_super_salad
+  name: Pret Kale & Quinoa Super Salad
+  kcal_per_100g: 145
+  protein_per_100g: 6
+  carbs_per_100g: 12
+  fat_per_100g: 8
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 290
+  serving_label: plate (290 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 290
+- source: pret_a_manger
+  source_id: pret_chicken_caesar_baguette
+  name: Pret Chicken Caesar Baguette
+  kcal_per_100g: 260
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 11
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 245
+  serving_label: plate (245 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 245
+- source: pret_a_manger
+  source_id: pret_falafel_avocado_baguette
+  name: Pret Falafel & Avocado Baguette
+  kcal_per_100g: 275
+  protein_per_100g: 9
+  carbs_per_100g: 30
+  fat_per_100g: 13
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 245
+  serving_label: plate (245 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 245
+- source: pret_a_manger
+  source_id: pret_super_greens_soup
+  name: Pret Super Greens Soup
+  kcal_per_100g: 70
+  protein_per_100g: 4
+  carbs_per_100g: 8
+  fat_per_100g: 2.5
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 300
+  serving_label: plate (300 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 300
+- source: pret_a_manger
+  source_id: pret_chicken_avocado_wrap
+  name: Pret Chicken & Avocado Wrap
+  kcal_per_100g: 235
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 215
+  serving_label: plate (215 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 215
+- source: pret_a_manger
+  source_id: pret_smoked_salmon_artisan_baguette
+  name: Pret Smoked Salmon Artisan Baguette
+  kcal_per_100g: 260
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 11
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 245
+  serving_label: plate (245 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 245
+- source: pret_a_manger
+  source_id: pret_egg_mayo_brioche
+  name: Pret Egg Mayo Brioche
+  kcal_per_100g: 285
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 175
+  serving_label: plate (175 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 175
+- source: pret_a_manger
+  source_id: pret_dark_chocolate_yogurt_pot
+  name: Pret Dark Chocolate Yogurt Pot
+  kcal_per_100g: 165
+  protein_per_100g: 6
+  carbs_per_100g: 16
+  fat_per_100g: 9
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 180
+  serving_label: plate (180 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 180
+- source: pret_a_manger
+  source_id: pret_porridge_pot
+  name: Pret Porridge Pot Original
+  kcal_per_100g: 155
+  protein_per_100g: 5
+  carbs_per_100g: 21
+  fat_per_100g: 5
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: pret_a_manger
+  source_id: pret_porridge_dates
+  name: Pret Porridge with Dates
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 28
+  fat_per_100g: 4
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: cote_brasserie
+  source_id: cote_steak_frites_classic
+  name: Côte Steak Frites (Bavette)
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 12
+  fat_per_100g: 11
+  brand: Côte Brasserie
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 400
+- source: cote_brasserie
+  source_id: cote_moules_marinière
+  name: Côte Moules Marinière
+  kcal_per_100g: 145
+  protein_per_100g: 12
+  carbs_per_100g: 6
+  fat_per_100g: 7
+  brand: Côte Brasserie
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 400
+- source: cote_brasserie
+  source_id: cote_chicken_paillard
+  name: Côte Chicken Paillard
+  kcal_per_100g: 165
+  protein_per_100g: 22
+  carbs_per_100g: 4
+  fat_per_100g: 7
+  brand: Côte Brasserie
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: cote_brasserie
+  source_id: cote_salade_nicoise
+  name: Côte Salade Niçoise
+  kcal_per_100g: 145
+  protein_per_100g: 14
+  carbs_per_100g: 8
+  fat_per_100g: 6
+  brand: Côte Brasserie
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: cote_brasserie
+  source_id: cote_french_onion_soup
+  name: Côte French Onion Soup
+  kcal_per_100g: 115
+  protein_per_100g: 4
+  carbs_per_100g: 12
+  fat_per_100g: 5
+  brand: Côte Brasserie
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: cote_brasserie
+  source_id: cote_croque_monsieur
+  name: Côte Croque Monsieur
+  kcal_per_100g: 295
+  protein_per_100g: 16
+  carbs_per_100g: 22
+  fat_per_100g: 16
+  brand: Côte Brasserie
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 250
+- source: cote_brasserie
+  source_id: cote_creme_brulee
+  name: Côte Crème Brûlée
+  kcal_per_100g: 365
+  protein_per_100g: 4
+  carbs_per_100g: 30
+  fat_per_100g: 25
+  brand: Côte Brasserie
+  region_codes: GB
+  serving_grams: 130
+  serving_label: plate (130 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 130
+- source: bills
+  source_id: bills_halloumi_burger
+  name: Bill's Halloumi Burger
+  kcal_per_100g: 285
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Bill's
+  region_codes: GB
+  serving_grams: 320
+  serving_label: plate (320 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 320
+- source: bills
+  source_id: bills_chicken_caesar
+  name: Bill's Chicken Caesar Salad
+  kcal_per_100g: 175
+  protein_per_100g: 18
+  carbs_per_100g: 9
+  fat_per_100g: 8
+  brand: Bill's
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: bills
+  source_id: bills_buttermilk_pancakes_classic
+  name: Bill's Buttermilk Pancakes Classic
+  kcal_per_100g: 320
+  protein_per_100g: 7
+  carbs_per_100g: 45
+  fat_per_100g: 12
+  brand: Bill's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 250
+- source: tgi_fridays
+  source_id: tgi_jack_daniels_chicken_burger
+  name: TGI Fridays Jack Daniel's Chicken Burger
+  kcal_per_100g: 280
+  protein_per_100g: 17
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  brand: TGI Fridays
+  region_codes: GB
+  serving_grams: 380
+  serving_label: plate (380 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 380
+- source: tgi_fridays
+  source_id: tgi_sesame_chicken_strips
+  name: TGI Fridays Sesame Chicken Strips
+  kcal_per_100g: 295
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 16
+  brand: TGI Fridays
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 250
+- source: tgi_fridays
+  source_id: tgi_loaded_potato_skins
+  name: TGI Fridays Loaded Potato Skins
+  kcal_per_100g: 295
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 18
+  brand: TGI Fridays
+  region_codes: GB
+  serving_grams: 280
+  serving_label: plate (280 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 280
+- source: tgi_fridays
+  source_id: tgi_jd_ribs_full
+  name: TGI Fridays JD Glazed Pork Ribs (Full Rack)
+  kcal_per_100g: 320
+  protein_per_100g: 21
+  carbs_per_100g: 14
+  fat_per_100g: 19
+  brand: TGI Fridays
+  region_codes: GB
+  serving_grams: 600
+  serving_label: plate (600 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 600
+- source: tgi_fridays
+  source_id: tgi_classic_burger
+  name: TGI Fridays Classic Burger
+  kcal_per_100g: 295
+  protein_per_100g: 15
+  carbs_per_100g: 25
+  fat_per_100g: 14
+  brand: TGI Fridays
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350
+- source: tgi_fridays
+  source_id: tgi_brownie_obsession
+  name: TGI Fridays Brownie Obsession
+  kcal_per_100g: 540
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 30
+  brand: TGI Fridays
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 200
+- source: frankie_and_bennys
+  source_id: fbennys_classic_lasagne
+  name: Frankie & Benny's Classic Lasagne
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 14
+  fat_per_100g: 7.5
+  brand: Frankie & Benny's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 400
+- source: frankie_and_bennys
+  source_id: fbennys_pollo_milanese
+  name: Frankie & Benny's Pollo Milanese
+  kcal_per_100g: 235
+  protein_per_100g: 19
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Frankie & Benny's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 400
+- source: frankie_and_bennys
+  source_id: fbennys_meatball_marinara
+  name: Frankie & Benny's Meatball Marinara
+  kcal_per_100g: 165
+  protein_per_100g: 10
+  carbs_per_100g: 17
+  fat_per_100g: 6
+  brand: Frankie & Benny's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 400
+- source: frankie_and_bennys
+  source_id: fbennys_classic_pepperoni_pizza
+  name: Frankie & Benny's Classic Pepperoni Pizza (Whole)
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 10
+  brand: Frankie & Benny's
+  region_codes: GB
+  serving_grams: 320
+  serving_label: plate (320 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 320
+- source: frankie_and_bennys
+  source_id: fbennys_classic_margherita_pizza
+  name: Frankie & Benny's Classic Margherita Pizza (Whole)
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 7
+  brand: Frankie & Benny's
+  region_codes: GB
+  serving_grams: 320
+  serving_label: plate (320 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 320
+- source: frankie_and_bennys
+  source_id: fbennys_chicken_caesar_salad
+  name: Frankie & Benny's Chicken Caesar Salad
+  kcal_per_100g: 165
+  protein_per_100g: 18
+  carbs_per_100g: 8
+  fat_per_100g: 7
+  brand: Frankie & Benny's
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: restaurant,casual-dining
+  portion_unit: meal
+  unit_grams: 350

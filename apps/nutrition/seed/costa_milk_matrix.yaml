@@ -1,0 +1,1083 @@
+# Costa Coffee — milk × size matrix
+# Latte/Cappuccino/Mocha × Primo/Medio/Massimo × 7 milks
+# Flat White × Primo/Medio only (Massimo is non-standard)
+# Per-100ml macros computed from milk composition; espresso negligible.
+
+- source: costa
+  source_id: costa_latte_primo
+  name: Costa Latte (Primo)
+  kcal_per_100g: 53.5
+  protein_per_100g: 2.89
+  carbs_per_100g: 3.99
+  fat_per_100g: 2.97
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_cappuccino_primo
+  name: Costa Cappuccino (Primo)
+  kcal_per_100g: 41.0
+  protein_per_100g: 2.21
+  carbs_per_100g: 3.06
+  fat_per_100g: 2.28
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_mocha_primo
+  name: Costa Mocha (Primo)
+  kcal_per_100g: 116.8
+  protein_per_100g: 3.52
+  carbs_per_100g: 13.7
+  fat_per_100g: 5.93
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_latte_primo_semi
+  name: Costa Latte (Primo) with Semi-skimmed Milk
+  kcal_per_100g: 39.1
+  protein_per_100g: 2.89
+  carbs_per_100g: 3.99
+  fat_per_100g: 1.44
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_cappuccino_primo_semi
+  name: Costa Cappuccino (Primo) with Semi-skimmed Milk
+  kcal_per_100g: 29.9
+  protein_per_100g: 2.21
+  carbs_per_100g: 3.06
+  fat_per_100g: 1.1
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_mocha_primo_semi
+  name: Costa Mocha (Primo) with Semi-skimmed Milk
+  kcal_per_100g: 102.4
+  protein_per_100g: 3.52
+  carbs_per_100g: 13.7
+  fat_per_100g: 4.4
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_latte_primo_skim
+  name: Costa Latte (Primo) with Skimmed Milk
+  kcal_per_100g: 29.7
+  protein_per_100g: 2.97
+  carbs_per_100g: 4.25
+  fat_per_100g: 0.08
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_cappuccino_primo_skim
+  name: Costa Cappuccino (Primo) with Skimmed Milk
+  kcal_per_100g: 22.8
+  protein_per_100g: 2.28
+  carbs_per_100g: 3.25
+  fat_per_100g: 0.07
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_mocha_primo_skim
+  name: Costa Mocha (Primo) with Skimmed Milk
+  kcal_per_100g: 93.0
+  protein_per_100g: 3.61
+  carbs_per_100g: 13.95
+  fat_per_100g: 3.04
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_latte_primo_soya
+  name: Costa Latte (Primo) with Soya Milk
+  kcal_per_100g: 33.1
+  protein_per_100g: 2.55
+  carbs_per_100g: 2.12
+  fat_per_100g: 1.53
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_cappuccino_primo_soya
+  name: Costa Cappuccino (Primo) with Soya Milk
+  kcal_per_100g: 25.4
+  protein_per_100g: 1.95
+  carbs_per_100g: 1.62
+  fat_per_100g: 1.17
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_mocha_primo_soya
+  name: Costa Mocha (Primo) with Soya Milk
+  kcal_per_100g: 96.4
+  protein_per_100g: 3.18
+  carbs_per_100g: 11.83
+  fat_per_100g: 4.48
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_latte_primo_oat
+  name: Costa Latte (Primo) with Oat Milk
+  kcal_per_100g: 51.0
+  protein_per_100g: 0.85
+  carbs_per_100g: 5.61
+  fat_per_100g: 2.55
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_cappuccino_primo_oat
+  name: Costa Cappuccino (Primo) with Oat Milk
+  kcal_per_100g: 39.0
+  protein_per_100g: 0.65
+  carbs_per_100g: 4.29
+  fat_per_100g: 1.95
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_mocha_primo_oat
+  name: Costa Mocha (Primo) with Oat Milk
+  kcal_per_100g: 114.3
+  protein_per_100g: 1.48
+  carbs_per_100g: 15.31
+  fat_per_100g: 5.5
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_latte_primo_almond
+  name: Costa Latte (Primo) with Almond Milk
+  kcal_per_100g: 11.0
+  protein_per_100g: 0.34
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.93
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_cappuccino_primo_almond
+  name: Costa Cappuccino (Primo) with Almond Milk
+  kcal_per_100g: 8.5
+  protein_per_100g: 0.26
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.72
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_mocha_primo_almond
+  name: Costa Mocha (Primo) with Almond Milk
+  kcal_per_100g: 74.3
+  protein_per_100g: 0.97
+  carbs_per_100g: 9.7
+  fat_per_100g: 3.89
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_latte_primo_coconut
+  name: Costa Latte (Primo) with Coconut Milk
+  kcal_per_100g: 22.9
+  protein_per_100g: 0.08
+  carbs_per_100g: 2.12
+  fat_per_100g: 1.53
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_cappuccino_primo_coconut
+  name: Costa Cappuccino (Primo) with Coconut Milk
+  kcal_per_100g: 17.6
+  protein_per_100g: 0.07
+  carbs_per_100g: 1.62
+  fat_per_100g: 1.17
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_mocha_primo_coconut
+  name: Costa Mocha (Primo) with Coconut Milk
+  kcal_per_100g: 86.2
+  protein_per_100g: 0.72
+  carbs_per_100g: 11.83
+  fat_per_100g: 4.48
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_flatwhite_primo
+  name: Costa Flat White (Primo)
+  kcal_per_100g: 44.1
+  protein_per_100g: 2.38
+  carbs_per_100g: 3.29
+  fat_per_100g: 2.45
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_flatwhite_primo_semi
+  name: Costa Flat White (Primo) with Semi-skimmed Milk
+  kcal_per_100g: 32.2
+  protein_per_100g: 2.38
+  carbs_per_100g: 3.29
+  fat_per_100g: 1.19
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_flatwhite_primo_skim
+  name: Costa Flat White (Primo) with Skimmed Milk
+  kcal_per_100g: 24.5
+  protein_per_100g: 2.45
+  carbs_per_100g: 3.5
+  fat_per_100g: 0.07
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_flatwhite_primo_soya
+  name: Costa Flat White (Primo) with Soya Milk
+  kcal_per_100g: 27.3
+  protein_per_100g: 2.1
+  carbs_per_100g: 1.75
+  fat_per_100g: 1.26
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_flatwhite_primo_oat
+  name: Costa Flat White (Primo) with Oat Milk
+  kcal_per_100g: 42.0
+  protein_per_100g: 0.7
+  carbs_per_100g: 4.62
+  fat_per_100g: 2.1
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_flatwhite_primo_almond
+  name: Costa Flat White (Primo) with Almond Milk
+  kcal_per_100g: 9.1
+  protein_per_100g: 0.28
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.77
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_flatwhite_primo_coconut
+  name: Costa Flat White (Primo) with Coconut Milk
+  kcal_per_100g: 18.9
+  protein_per_100g: 0.07
+  carbs_per_100g: 1.75
+  fat_per_100g: 1.26
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 237
+  serving_label: Primo (237ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 237
+- source: costa
+  source_id: costa_latte_medio
+  name: Costa Latte (Medio)
+  kcal_per_100g: 53.5
+  protein_per_100g: 2.89
+  carbs_per_100g: 4.0
+  fat_per_100g: 2.98
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_cappuccino_medio
+  name: Costa Cappuccino (Medio)
+  kcal_per_100g: 41.0
+  protein_per_100g: 2.21
+  carbs_per_100g: 3.06
+  fat_per_100g: 2.27
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_mocha_medio
+  name: Costa Mocha (Medio)
+  kcal_per_100g: 95.8
+  protein_per_100g: 3.31
+  carbs_per_100g: 10.47
+  fat_per_100g: 4.95
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_latte_medio_semi
+  name: Costa Latte (Medio) with Semi-skimmed Milk
+  kcal_per_100g: 39.1
+  protein_per_100g: 2.89
+  carbs_per_100g: 4.0
+  fat_per_100g: 1.45
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_cappuccino_medio_semi
+  name: Costa Cappuccino (Medio) with Semi-skimmed Milk
+  kcal_per_100g: 29.9
+  protein_per_100g: 2.21
+  carbs_per_100g: 3.06
+  fat_per_100g: 1.1
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_mocha_medio_semi
+  name: Costa Mocha (Medio) with Semi-skimmed Milk
+  kcal_per_100g: 81.4
+  protein_per_100g: 3.31
+  carbs_per_100g: 10.47
+  fat_per_100g: 3.42
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_latte_medio_skim
+  name: Costa Latte (Medio) with Skimmed Milk
+  kcal_per_100g: 29.8
+  protein_per_100g: 2.98
+  carbs_per_100g: 4.25
+  fat_per_100g: 0.09
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_cappuccino_medio_skim
+  name: Costa Cappuccino (Medio) with Skimmed Milk
+  kcal_per_100g: 22.8
+  protein_per_100g: 2.27
+  carbs_per_100g: 3.25
+  fat_per_100g: 0.07
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_mocha_medio_skim
+  name: Costa Mocha (Medio) with Skimmed Milk
+  kcal_per_100g: 72.0
+  protein_per_100g: 3.4
+  carbs_per_100g: 10.73
+  fat_per_100g: 2.06
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_latte_medio_soya
+  name: Costa Latte (Medio) with Soya Milk
+  kcal_per_100g: 33.1
+  protein_per_100g: 2.55
+  carbs_per_100g: 2.12
+  fat_per_100g: 1.53
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_cappuccino_medio_soya
+  name: Costa Cappuccino (Medio) with Soya Milk
+  kcal_per_100g: 25.4
+  protein_per_100g: 1.95
+  carbs_per_100g: 1.62
+  fat_per_100g: 1.17
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_mocha_medio_soya
+  name: Costa Mocha (Medio) with Soya Milk
+  kcal_per_100g: 75.4
+  protein_per_100g: 2.97
+  carbs_per_100g: 8.6
+  fat_per_100g: 3.5
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_latte_medio_oat
+  name: Costa Latte (Medio) with Oat Milk
+  kcal_per_100g: 51.0
+  protein_per_100g: 0.85
+  carbs_per_100g: 5.61
+  fat_per_100g: 2.55
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_cappuccino_medio_oat
+  name: Costa Cappuccino (Medio) with Oat Milk
+  kcal_per_100g: 39.0
+  protein_per_100g: 0.65
+  carbs_per_100g: 4.29
+  fat_per_100g: 1.95
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_mocha_medio_oat
+  name: Costa Mocha (Medio) with Oat Milk
+  kcal_per_100g: 93.3
+  protein_per_100g: 1.27
+  carbs_per_100g: 12.09
+  fat_per_100g: 4.52
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_latte_medio_almond
+  name: Costa Latte (Medio) with Almond Milk
+  kcal_per_100g: 11.1
+  protein_per_100g: 0.34
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.94
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_cappuccino_medio_almond
+  name: Costa Cappuccino (Medio) with Almond Milk
+  kcal_per_100g: 8.4
+  protein_per_100g: 0.26
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.72
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_mocha_medio_almond
+  name: Costa Mocha (Medio) with Almond Milk
+  kcal_per_100g: 53.3
+  protein_per_100g: 0.76
+  carbs_per_100g: 6.48
+  fat_per_100g: 2.91
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_latte_medio_coconut
+  name: Costa Latte (Medio) with Coconut Milk
+  kcal_per_100g: 22.9
+  protein_per_100g: 0.09
+  carbs_per_100g: 2.12
+  fat_per_100g: 1.53
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_cappuccino_medio_coconut
+  name: Costa Cappuccino (Medio) with Coconut Milk
+  kcal_per_100g: 17.6
+  protein_per_100g: 0.07
+  carbs_per_100g: 1.62
+  fat_per_100g: 1.17
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_mocha_medio_coconut
+  name: Costa Mocha (Medio) with Coconut Milk
+  kcal_per_100g: 65.2
+  protein_per_100g: 0.51
+  carbs_per_100g: 8.6
+  fat_per_100g: 3.5
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_flatwhite_medio
+  name: Costa Flat White (Medio)
+  kcal_per_100g: 44.1
+  protein_per_100g: 2.38
+  carbs_per_100g: 3.29
+  fat_per_100g: 2.45
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_flatwhite_medio_semi
+  name: Costa Flat White (Medio) with Semi-skimmed Milk
+  kcal_per_100g: 32.2
+  protein_per_100g: 2.38
+  carbs_per_100g: 3.29
+  fat_per_100g: 1.19
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_flatwhite_medio_skim
+  name: Costa Flat White (Medio) with Skimmed Milk
+  kcal_per_100g: 24.5
+  protein_per_100g: 2.45
+  carbs_per_100g: 3.5
+  fat_per_100g: 0.07
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_flatwhite_medio_soya
+  name: Costa Flat White (Medio) with Soya Milk
+  kcal_per_100g: 27.3
+  protein_per_100g: 2.1
+  carbs_per_100g: 1.75
+  fat_per_100g: 1.26
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_flatwhite_medio_oat
+  name: Costa Flat White (Medio) with Oat Milk
+  kcal_per_100g: 42.0
+  protein_per_100g: 0.7
+  carbs_per_100g: 4.62
+  fat_per_100g: 2.1
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_flatwhite_medio_almond
+  name: Costa Flat White (Medio) with Almond Milk
+  kcal_per_100g: 9.1
+  protein_per_100g: 0.28
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.77
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_flatwhite_medio_coconut
+  name: Costa Flat White (Medio) with Coconut Milk
+  kcal_per_100g: 18.9
+  protein_per_100g: 0.07
+  carbs_per_100g: 1.75
+  fat_per_100g: 1.26
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: Medio (355ml)
+  tags: coffee,flat-white,hot-drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: costa_latte_massimo
+  name: Costa Latte (Massimo)
+  kcal_per_100g: 53.6
+  protein_per_100g: 2.89
+  carbs_per_100g: 4.0
+  fat_per_100g: 2.98
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_cappuccino_massimo
+  name: Costa Cappuccino (Massimo)
+  kcal_per_100g: 40.9
+  protein_per_100g: 2.21
+  carbs_per_100g: 3.06
+  fat_per_100g: 2.27
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_mocha_massimo
+  name: Costa Mocha (Massimo)
+  kcal_per_100g: 85.3
+  protein_per_100g: 3.21
+  carbs_per_100g: 8.86
+  fat_per_100g: 4.45
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_latte_massimo_semi
+  name: Costa Latte (Massimo) with Semi-skimmed Milk
+  kcal_per_100g: 39.1
+  protein_per_100g: 2.89
+  carbs_per_100g: 4.0
+  fat_per_100g: 1.45
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_cappuccino_massimo_semi
+  name: Costa Cappuccino (Massimo) with Semi-skimmed Milk
+  kcal_per_100g: 29.9
+  protein_per_100g: 2.21
+  carbs_per_100g: 3.06
+  fat_per_100g: 1.1
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_mocha_massimo_semi
+  name: Costa Mocha (Massimo) with Semi-skimmed Milk
+  kcal_per_100g: 70.8
+  protein_per_100g: 3.21
+  carbs_per_100g: 8.86
+  fat_per_100g: 2.92
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_latte_massimo_skim
+  name: Costa Latte (Massimo) with Skimmed Milk
+  kcal_per_100g: 29.8
+  protein_per_100g: 2.98
+  carbs_per_100g: 4.25
+  fat_per_100g: 0.09
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_cappuccino_massimo_skim
+  name: Costa Cappuccino (Massimo) with Skimmed Milk
+  kcal_per_100g: 22.8
+  protein_per_100g: 2.27
+  carbs_per_100g: 3.25
+  fat_per_100g: 0.07
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_mocha_massimo_skim
+  name: Costa Mocha (Massimo) with Skimmed Milk
+  kcal_per_100g: 61.5
+  protein_per_100g: 3.29
+  carbs_per_100g: 9.11
+  fat_per_100g: 1.56
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_latte_massimo_soya
+  name: Costa Latte (Massimo) with Soya Milk
+  kcal_per_100g: 33.1
+  protein_per_100g: 2.55
+  carbs_per_100g: 2.12
+  fat_per_100g: 1.53
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_cappuccino_massimo_soya
+  name: Costa Cappuccino (Massimo) with Soya Milk
+  kcal_per_100g: 25.3
+  protein_per_100g: 1.95
+  carbs_per_100g: 1.62
+  fat_per_100g: 1.17
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_mocha_massimo_soya
+  name: Costa Mocha (Massimo) with Soya Milk
+  kcal_per_100g: 64.9
+  protein_per_100g: 2.87
+  carbs_per_100g: 6.99
+  fat_per_100g: 3.01
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_latte_massimo_oat
+  name: Costa Latte (Massimo) with Oat Milk
+  kcal_per_100g: 51.0
+  protein_per_100g: 0.85
+  carbs_per_100g: 5.61
+  fat_per_100g: 2.55
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_cappuccino_massimo_oat
+  name: Costa Cappuccino (Massimo) with Oat Milk
+  kcal_per_100g: 39.0
+  protein_per_100g: 0.65
+  carbs_per_100g: 4.29
+  fat_per_100g: 1.95
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_mocha_massimo_oat
+  name: Costa Mocha (Massimo) with Oat Milk
+  kcal_per_100g: 82.7
+  protein_per_100g: 1.17
+  carbs_per_100g: 10.47
+  fat_per_100g: 4.03
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_latte_massimo_almond
+  name: Costa Latte (Massimo) with Almond Milk
+  kcal_per_100g: 11.1
+  protein_per_100g: 0.34
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.93
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_cappuccino_massimo_almond
+  name: Costa Cappuccino (Massimo) with Almond Milk
+  kcal_per_100g: 8.4
+  protein_per_100g: 0.26
+  carbs_per_100g: 0.0
+  fat_per_100g: 0.71
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_mocha_massimo_almond
+  name: Costa Mocha (Massimo) with Almond Milk
+  kcal_per_100g: 42.8
+  protein_per_100g: 0.66
+  carbs_per_100g: 4.86
+  fat_per_100g: 2.41
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_latte_massimo_coconut
+  name: Costa Latte (Massimo) with Coconut Milk
+  kcal_per_100g: 22.9
+  protein_per_100g: 0.09
+  carbs_per_100g: 2.12
+  fat_per_100g: 1.53
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,latte,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_cappuccino_massimo_coconut
+  name: Costa Cappuccino (Massimo) with Coconut Milk
+  kcal_per_100g: 17.6
+  protein_per_100g: 0.07
+  carbs_per_100g: 1.62
+  fat_per_100g: 1.17
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,cappuccino,hot-drink
+  portion_unit: ml
+  unit_grams: 473
+- source: costa
+  source_id: costa_mocha_massimo_coconut
+  name: Costa Mocha (Massimo) with Coconut Milk
+  kcal_per_100g: 54.7
+  protein_per_100g: 0.4
+  carbs_per_100g: 6.99
+  fat_per_100g: 3.01
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 473
+  serving_label: Massimo (473ml)
+  tags: coffee,mocha,hot-drink
+  portion_unit: ml
+  unit_grams: 473

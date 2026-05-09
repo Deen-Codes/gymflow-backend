@@ -1,0 +1,1328 @@
+# Cooking ingredients — oils (olive/rapeseed/coconut/sesame/avocado), vinegars (balsamic/ACV/wine),
+# sugars/sweeteners (white/brown/honey/maple/agave/stevia), flours (plain/SR/strong/wholemeal/almond/coconut/rice/buckwheat/chickpea),
+# rice & grains (basmati/brown/jasmine/arborio/quinoa/couscous/bulgur/oats),
+# pasta dry (spaghetti/penne/fusilli/macaroni/lasagne/egg-noodles/rice-noodles/udon),
+# legumes (chickpeas/lentils/kidney/butter/cannellini/black/borlotti),
+# nuts & seeds (almonds/cashews/walnuts/pistachios/brazil/pecans/macadamia/hazelnuts/pine/peanut-butter),
+# seeds (chia/flax/pumpkin/sunflower/sesame/hemp), spreads (jam/marmalade/lemon-curd/Nutella)
+
+- source: ingredient
+  source_id: oil_olive_extra_virgin_per_15ml
+  name: Extra Virgin Olive Oil (Per 15ml)
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: oil,fat
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: oil_olive_pure_per_15ml
+  name: Pure Olive Oil (Per 15ml)
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: oil,fat
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: oil_rapeseed_per_15ml
+  name: Rapeseed Oil (Per 15ml)
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: oil,fat
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: oil_sunflower_per_15ml
+  name: Sunflower Oil (Per 15ml)
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: oil,fat
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: oil_coconut_per_15g
+  name: Coconut Oil (Per 15g)
+  kcal_per_100g: 862
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: oil,fat
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: oil_sesame_per_15ml
+  name: Sesame Oil (Per 15ml)
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: oil,fat
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: oil_avocado_per_15ml
+  name: Avocado Oil (Per 15ml)
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: oil,fat
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: oil_vegetable_per_15ml
+  name: Vegetable Oil (Per 15ml)
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: oil,fat
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: oil_groundnut_per_15ml
+  name: Groundnut/Peanut Oil (Per 15ml)
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: oil,fat
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: vin_balsamic_per_15ml
+  name: Balsamic Vinegar (Per 15ml)
+  kcal_per_100g: 88
+  protein_per_100g: 0.5
+  carbs_per_100g: 17
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: vinegar,condiment
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: vin_balsamic_glaze_per_15ml
+  name: Balsamic Glaze (Per 15ml)
+  kcal_per_100g: 175
+  protein_per_100g: 0.4
+  carbs_per_100g: 42
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: vinegar,condiment
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: vin_white_wine_per_15ml
+  name: White Wine Vinegar (Per 15ml)
+  kcal_per_100g: 19
+  protein_per_100g: 0
+  carbs_per_100g: 0.4
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: vinegar,condiment
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: vin_red_wine_per_15ml
+  name: Red Wine Vinegar (Per 15ml)
+  kcal_per_100g: 19
+  protein_per_100g: 0
+  carbs_per_100g: 0.4
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: vinegar,condiment
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: vin_apple_cider_per_15ml
+  name: Apple Cider Vinegar (Per 15ml)
+  kcal_per_100g: 22
+  protein_per_100g: 0
+  carbs_per_100g: 0.9
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: vinegar,condiment
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: vin_malt_per_15ml
+  name: Malt Vinegar (Per 15ml)
+  kcal_per_100g: 12
+  protein_per_100g: 0
+  carbs_per_100g: 0.4
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: vinegar,condiment
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: vin_rice_per_15ml
+  name: Rice Vinegar (Per 15ml)
+  kcal_per_100g: 18
+  protein_per_100g: 0
+  carbs_per_100g: 0.5
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: vinegar,condiment
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: sug_white_per_5g
+  name: White Sugar (Per Tsp ~5g)
+  kcal_per_100g: 387
+  protein_per_100g: 0
+  carbs_per_100g: 100
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: sugar,sweetener
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: sug_brown_per_5g
+  name: Brown Sugar (Per Tsp ~5g)
+  kcal_per_100g: 380
+  protein_per_100g: 0
+  carbs_per_100g: 98
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: sugar,sweetener
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: sug_caster_per_5g
+  name: Caster Sugar (Per Tsp ~5g)
+  kcal_per_100g: 387
+  protein_per_100g: 0
+  carbs_per_100g: 100
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: sugar,sweetener
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: sug_demerara_per_5g
+  name: Demerara Sugar (Per Tsp ~5g)
+  kcal_per_100g: 384
+  protein_per_100g: 0
+  carbs_per_100g: 99
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: sugar,sweetener
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: sug_icing_per_5g
+  name: Icing Sugar (Per Tsp ~5g)
+  kcal_per_100g: 392
+  protein_per_100g: 0
+  carbs_per_100g: 100
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: sugar,sweetener
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: sug_honey_per_15g
+  name: Honey (Per Tbsp ~15g)
+  kcal_per_100g: 304
+  protein_per_100g: 0.3
+  carbs_per_100g: 82
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: sweetener
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: sug_maple_syrup_per_15ml
+  name: Maple Syrup (Per Tbsp ~15ml)
+  kcal_per_100g: 260
+  protein_per_100g: 0
+  carbs_per_100g: 67
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: sweetener,vegan,vegetarian
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: sug_golden_syrup_per_15g
+  name: Golden Syrup (Per Tbsp ~15g)
+  kcal_per_100g: 325
+  protein_per_100g: 0.3
+  carbs_per_100g: 81
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: sweetener,vegan,vegetarian
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: sug_agave_per_15ml
+  name: Agave Syrup (Per Tbsp ~15ml)
+  kcal_per_100g: 310
+  protein_per_100g: 0
+  carbs_per_100g: 76
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: sweetener,vegan,vegetarian
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: sug_stevia_per_5g
+  name: Stevia (Per Tsp)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: sweetener,zero-cal,vegan,vegetarian
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: sug_canderel_per_5g
+  name: Canderel (Per Tsp)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: sweetener,zero-cal,vegan,vegetarian
+  portion_unit: tsp
+  unit_grams: 5
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: flour_plain_per_50g
+  name: Plain Flour (Per 50g)
+  kcal_per_100g: 365
+  protein_per_100g: 10
+  carbs_per_100g: 78
+  fat_per_100g: 1.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: flour,baking
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: flour_self_raising_per_50g
+  name: Self-Raising Flour (Per 50g)
+  kcal_per_100g: 360
+  protein_per_100g: 10
+  carbs_per_100g: 76
+  fat_per_100g: 1.3
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: flour,baking
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: flour_strong_white_per_50g
+  name: Strong White Bread Flour (Per 50g)
+  kcal_per_100g: 350
+  protein_per_100g: 12
+  carbs_per_100g: 72
+  fat_per_100g: 1.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: flour,baking
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: flour_wholemeal_per_50g
+  name: Wholemeal Flour (Per 50g)
+  kcal_per_100g: 340
+  protein_per_100g: 13
+  carbs_per_100g: 65
+  fat_per_100g: 2.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: flour,baking
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: flour_almond_per_30g
+  name: Ground Almonds (Per 30g)
+  kcal_per_100g: 575
+  protein_per_100g: 22
+  carbs_per_100g: 9
+  fat_per_100g: 50
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: flour,baking
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: flour_coconut_per_30g
+  name: Coconut Flour (Per 30g)
+  kcal_per_100g: 400
+  protein_per_100g: 19
+  carbs_per_100g: 21
+  fat_per_100g: 13
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: flour,baking,gluten-free
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: flour_rice_per_50g
+  name: Rice Flour (Per 50g)
+  kcal_per_100g: 366
+  protein_per_100g: 6
+  carbs_per_100g: 80
+  fat_per_100g: 1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: flour,baking,gluten-free
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: flour_buckwheat_per_50g
+  name: Buckwheat Flour (Per 50g)
+  kcal_per_100g: 343
+  protein_per_100g: 13
+  carbs_per_100g: 71
+  fat_per_100g: 3.4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: flour,baking,gluten-free
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: flour_chickpea_gram_per_50g
+  name: Chickpea/Gram Flour (Per 50g)
+  kcal_per_100g: 387
+  protein_per_100g: 22
+  carbs_per_100g: 58
+  fat_per_100g: 6
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: flour,baking,gluten-free
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: grain_basmati_dry_per_75g
+  name: Basmati Rice (Dry, Per 75g)
+  kcal_per_100g: 350
+  protein_per_100g: 7
+  carbs_per_100g: 78
+  fat_per_100g: 1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: grain,rice
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: grain_long_grain_dry_per_75g
+  name: Long Grain White Rice (Dry, Per 75g)
+  kcal_per_100g: 350
+  protein_per_100g: 7
+  carbs_per_100g: 78
+  fat_per_100g: 1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: grain,rice
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: grain_brown_rice_dry_per_75g
+  name: Brown Rice (Dry, Per 75g)
+  kcal_per_100g: 360
+  protein_per_100g: 8
+  carbs_per_100g: 76
+  fat_per_100g: 2.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: grain,rice
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: grain_jasmine_dry_per_75g
+  name: Jasmine Rice (Dry, Per 75g)
+  kcal_per_100g: 350
+  protein_per_100g: 7
+  carbs_per_100g: 78
+  fat_per_100g: 1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: grain,rice
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: grain_arborio_dry_per_75g
+  name: Arborio Rice (Dry, Per 75g)
+  kcal_per_100g: 365
+  protein_per_100g: 7
+  carbs_per_100g: 80
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: grain,rice
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: grain_quinoa_dry_per_75g
+  name: Quinoa (Dry, Per 75g)
+  kcal_per_100g: 368
+  protein_per_100g: 14
+  carbs_per_100g: 64
+  fat_per_100g: 6
+  brand: Generic
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: grain,gluten-free
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: grain_couscous_dry_per_75g
+  name: Couscous (Dry, Per 75g)
+  kcal_per_100g: 376
+  protein_per_100g: 13
+  carbs_per_100g: 77
+  fat_per_100g: 1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: grain
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: grain_bulgur_dry_per_75g
+  name: Bulgur Wheat (Dry, Per 75g)
+  kcal_per_100g: 342
+  protein_per_100g: 12
+  carbs_per_100g: 76
+  fat_per_100g: 1.3
+  brand: Generic
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: grain
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: grain_pearl_barley_dry_per_75g
+  name: Pearl Barley (Dry, Per 75g)
+  kcal_per_100g: 354
+  protein_per_100g: 9
+  carbs_per_100g: 78
+  fat_per_100g: 1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: grain
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: grain_oats_rolled_dry_per_40g
+  name: Rolled Oats (Dry, Per 40g)
+  kcal_per_100g: 372
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 8
+  brand: Generic
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: grain
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: grain_oats_steel_cut_dry_per_40g
+  name: Steel Cut Oats (Dry, Per 40g)
+  kcal_per_100g: 372
+  protein_per_100g: 11
+  carbs_per_100g: 60
+  fat_per_100g: 8
+  brand: Generic
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: grain
+  portion_unit: meal
+  unit_grams: 40
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: pasta_spaghetti_dry_per_75g
+  name: Spaghetti (Dry, Per 75g)
+  kcal_per_100g: 357
+  protein_per_100g: 13
+  carbs_per_100g: 71
+  fat_per_100g: 1.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: pasta_penne_dry_per_75g
+  name: Penne (Dry, Per 75g)
+  kcal_per_100g: 357
+  protein_per_100g: 13
+  carbs_per_100g: 71
+  fat_per_100g: 1.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: pasta_fusilli_dry_per_75g
+  name: Fusilli (Dry, Per 75g)
+  kcal_per_100g: 357
+  protein_per_100g: 13
+  carbs_per_100g: 71
+  fat_per_100g: 1.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: pasta_macaroni_dry_per_75g
+  name: Macaroni (Dry, Per 75g)
+  kcal_per_100g: 357
+  protein_per_100g: 13
+  carbs_per_100g: 71
+  fat_per_100g: 1.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: pasta_lasagne_sheets_per_75g
+  name: Lasagne Sheets (Dry, Per 75g)
+  kcal_per_100g: 357
+  protein_per_100g: 13
+  carbs_per_100g: 71
+  fat_per_100g: 1.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: pasta_egg_noodles_dry_per_75g
+  name: Egg Noodles (Dry, Per 75g)
+  kcal_per_100g: 360
+  protein_per_100g: 12
+  carbs_per_100g: 72
+  fat_per_100g: 2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: pasta_rice_noodles_dry_per_75g
+  name: Rice Noodles (Dry, Per 75g)
+  kcal_per_100g: 350
+  protein_per_100g: 7
+  carbs_per_100g: 80
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: pasta,gluten-free
+  portion_unit: meal
+  unit_grams: 75
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: pasta_udon_per_180g
+  name: Udon Noodles Cooked (Per 180g)
+  kcal_per_100g: 130
+  protein_per_100g: 5
+  carbs_per_100g: 25
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 180
+  serving_label: 180 g
+  tags: pasta
+  portion_unit: meal
+  unit_grams: 180
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: legume_chickpeas_dry_per_50g
+  name: Chickpeas (Dry, Per 50g)
+  kcal_per_100g: 364
+  protein_per_100g: 19
+  carbs_per_100g: 61
+  fat_per_100g: 6
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: legume,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: legume_chickpeas_tinned_per_100g
+  name: Chickpeas (Tinned, Drained, Per 100g)
+  kcal_per_100g: 138
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 2.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: legume,tinned,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: legume_lentils_red_dry_per_50g
+  name: Red Lentils (Dry, Per 50g)
+  kcal_per_100g: 358
+  protein_per_100g: 24
+  carbs_per_100g: 60
+  fat_per_100g: 1.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: legume,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: legume_lentils_green_dry_per_50g
+  name: Green Lentils (Dry, Per 50g)
+  kcal_per_100g: 353
+  protein_per_100g: 25
+  carbs_per_100g: 60
+  fat_per_100g: 1.1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: legume,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: legume_lentils_puy_dry_per_50g
+  name: Puy Lentils (Dry, Per 50g)
+  kcal_per_100g: 348
+  protein_per_100g: 24
+  carbs_per_100g: 60
+  fat_per_100g: 1.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: legume,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: legume_kidney_beans_tinned_per_100g
+  name: Kidney Beans (Tinned, Per 100g)
+  kcal_per_100g: 108
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: legume,tinned,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: legume_butter_beans_tinned_per_100g
+  name: Butter Beans (Tinned, Per 100g)
+  kcal_per_100g: 90
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: legume,tinned,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: legume_cannellini_tinned_per_100g
+  name: Cannellini Beans (Tinned, Per 100g)
+  kcal_per_100g: 108
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: legume,tinned,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: legume_black_beans_tinned_per_100g
+  name: Black Beans (Tinned, Per 100g)
+  kcal_per_100g: 132
+  protein_per_100g: 9
+  carbs_per_100g: 19
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: legume,tinned,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: legume_borlotti_tinned_per_100g
+  name: Borlotti Beans (Tinned, Per 100g)
+  kcal_per_100g: 105
+  protein_per_100g: 7
+  carbs_per_100g: 16
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: legume,tinned,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: nut_peanuts_salted_per_30g
+  name: Peanuts Roasted Salted (Per 30g)
+  kcal_per_100g: 595
+  protein_per_100g: 24
+  carbs_per_100g: 18
+  fat_per_100g: 49
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: nuts,snack
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: nut_peanut_butter_smooth_per_15g
+  name: Peanut Butter Smooth (Per 15g)
+  kcal_per_100g: 600
+  protein_per_100g: 25
+  carbs_per_100g: 16
+  fat_per_100g: 50
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: nuts,spread
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: ingredient
+  source_id: nut_peanut_butter_crunchy_per_15g
+  name: Peanut Butter Crunchy (Per 15g)
+  kcal_per_100g: 600
+  protein_per_100g: 25
+  carbs_per_100g: 16
+  fat_per_100g: 50
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: nuts,spread
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: ingredient
+  source_id: nut_almond_butter_per_15g
+  name: Almond Butter (Per 15g)
+  kcal_per_100g: 614
+  protein_per_100g: 21
+  carbs_per_100g: 19
+  fat_per_100g: 56
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: nuts,spread
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: ingredient
+  source_id: nut_cashew_butter_per_15g
+  name: Cashew Butter (Per 15g)
+  kcal_per_100g: 580
+  protein_per_100g: 18
+  carbs_per_100g: 28
+  fat_per_100g: 47
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: nuts,spread
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: ingredient
+  source_id: nut_pistachios_shelled_per_30g
+  name: Pistachios Shelled (Per 30g)
+  kcal_per_100g: 562
+  protein_per_100g: 20
+  carbs_per_100g: 28
+  fat_per_100g: 45
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: nuts,snack
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: nut_brazil_nuts_per_30g
+  name: Brazil Nuts (Per 30g)
+  kcal_per_100g: 656
+  protein_per_100g: 14
+  carbs_per_100g: 12
+  fat_per_100g: 67
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: nuts,snack
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: nut_pecans_per_30g
+  name: Pecans (Per 30g)
+  kcal_per_100g: 691
+  protein_per_100g: 9
+  carbs_per_100g: 14
+  fat_per_100g: 72
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: nuts,snack
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: nut_macadamia_per_30g
+  name: Macadamia Nuts (Per 30g)
+  kcal_per_100g: 718
+  protein_per_100g: 8
+  carbs_per_100g: 14
+  fat_per_100g: 76
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: nuts,snack
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: nut_hazelnuts_per_30g
+  name: Hazelnuts (Per 30g)
+  kcal_per_100g: 628
+  protein_per_100g: 15
+  carbs_per_100g: 17
+  fat_per_100g: 61
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: nuts,snack
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: nut_pine_nuts_per_30g
+  name: Pine Nuts (Per 30g)
+  kcal_per_100g: 673
+  protein_per_100g: 14
+  carbs_per_100g: 13
+  fat_per_100g: 68
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: nuts
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: seed_chia_per_15g
+  name: Chia Seeds (Per Tbsp ~15g)
+  kcal_per_100g: 486
+  protein_per_100g: 17
+  carbs_per_100g: 42
+  fat_per_100g: 31
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: seeds
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: seed_flax_per_15g
+  name: Flax Seeds (Per Tbsp ~15g)
+  kcal_per_100g: 534
+  protein_per_100g: 18
+  carbs_per_100g: 29
+  fat_per_100g: 42
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: seeds
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: seed_pumpkin_per_30g
+  name: Pumpkin Seeds (Per 30g)
+  kcal_per_100g: 559
+  protein_per_100g: 30
+  carbs_per_100g: 11
+  fat_per_100g: 49
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: seeds,snack
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: seed_sunflower_per_30g
+  name: Sunflower Seeds (Per 30g)
+  kcal_per_100g: 584
+  protein_per_100g: 21
+  carbs_per_100g: 20
+  fat_per_100g: 51
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: seeds,snack
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: seed_sesame_per_15g
+  name: Sesame Seeds (Per Tbsp ~15g)
+  kcal_per_100g: 573
+  protein_per_100g: 18
+  carbs_per_100g: 23
+  fat_per_100g: 50
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: seeds
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: seed_hemp_per_15g
+  name: Hemp Hearts (Per Tbsp ~15g)
+  kcal_per_100g: 553
+  protein_per_100g: 32
+  carbs_per_100g: 9
+  fat_per_100g: 49
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: seeds
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegan,vegetarian
+- source: ingredient
+  source_id: spread_jam_strawberry_per_15g
+  name: Strawberry Jam (Per 15g)
+  kcal_per_100g: 254
+  protein_per_100g: 0.5
+  carbs_per_100g: 62
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: spread,sweet
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: ingredient
+  source_id: spread_jam_raspberry_per_15g
+  name: Raspberry Jam (Per 15g)
+  kcal_per_100g: 254
+  protein_per_100g: 0.5
+  carbs_per_100g: 62
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: spread,sweet
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: ingredient
+  source_id: spread_jam_blackcurrant_per_15g
+  name: Blackcurrant Jam (Per 15g)
+  kcal_per_100g: 254
+  protein_per_100g: 0.5
+  carbs_per_100g: 62
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: spread,sweet
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: ingredient
+  source_id: spread_marmalade_per_15g
+  name: Orange Marmalade (Per 15g)
+  kcal_per_100g: 254
+  protein_per_100g: 0.3
+  carbs_per_100g: 62
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: spread,sweet
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: ingredient
+  source_id: spread_lemon_curd_per_15g
+  name: Lemon Curd (Per 15g)
+  kcal_per_100g: 295
+  protein_per_100g: 1.5
+  carbs_per_100g: 60
+  fat_per_100g: 5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: spread,sweet
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: ingredient
+  source_id: spread_chocolate_hazelnut_per_15g
+  name: Chocolate Hazelnut Spread (Per 15g)
+  kcal_per_100g: 539
+  protein_per_100g: 6
+  carbs_per_100g: 58
+  fat_per_100g: 31
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: spread,sweet
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian

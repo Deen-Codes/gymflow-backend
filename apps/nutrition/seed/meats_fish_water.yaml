@@ -1,0 +1,1791 @@
+# More meat cuts (beef brisket/chuck/topside/silverside/oxtail/short rib/T-bone/skirt/bavette,
+# pastrami, corned beef; pork loin/shoulder/belly/tenderloin/ribs/gammon; bacon variants;
+# pancetta/chorizo/salami/pepperoni; lamb leg/shoulder/neck/rack/loin; chicken liver; duck/turkey/goose/game/venison/rabbit) +
+# Fish & seafood (smoked salmon, tuna canned variants, mackerel/sardines/anchovies/pilchards, kippers,
+# pollock/plaice/skate/monkfish/sea bream/red mullet/lemon sole, lobster/crab/scallops/squid/octopus/clams/mussels/oysters/prawns/shrimp) +
+# Water brands (Evian, Volvic, Buxton, Highland Spring, San Pellegrino, Perrier, Voss, Smartwater, AquaPura) +
+# Kombucha (Lo Bros, Remedy, Chia Co, Jus) + Pukka/Clipper/Yogi teas + sparkling water brands
+
+- source: meat
+  source_id: beef_brisket_raw_per_100g
+  name: Beef Brisket Raw (Per 100g)
+  kcal_per_100g: 215
+  protein_per_100g: 19
+  carbs_per_100g: 0
+  fat_per_100g: 15
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: beef
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: beef_brisket_cooked_per_100g
+  name: Beef Brisket Cooked (Per 100g)
+  kcal_per_100g: 280
+  protein_per_100g: 28
+  carbs_per_100g: 0
+  fat_per_100g: 18
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: beef
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: beef_chuck_steak_raw
+  name: Beef Chuck Steak Raw (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 9
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: beef
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: beef_chuck_steak_cooked
+  name: Beef Chuck Steak Cooked (Per 100g)
+  kcal_per_100g: 230
+  protein_per_100g: 28
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: beef
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: beef_topside_raw_100g
+  name: Beef Topside Raw (Per 100g)
+  kcal_per_100g: 130
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: beef,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: beef_topside_roasted_100g
+  name: Beef Topside Roasted (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 31
+  carbs_per_100g: 0
+  fat_per_100g: 5.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: beef,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: beef_silverside_raw_100g
+  name: Beef Silverside Raw (Per 100g)
+  kcal_per_100g: 125
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: beef,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: beef_oxtail_cooked_100g
+  name: Beef Oxtail Cooked (Per 100g)
+  kcal_per_100g: 245
+  protein_per_100g: 30
+  carbs_per_100g: 0
+  fat_per_100g: 14
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: beef
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: beef_short_rib_raw
+  name: Beef Short Rib Raw (Per 100g)
+  kcal_per_100g: 250
+  protein_per_100g: 16
+  carbs_per_100g: 0
+  fat_per_100g: 21
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: beef
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: beef_t_bone_steak_grilled
+  name: Beef T-Bone Steak Grilled (Per 100g)
+  kcal_per_100g: 270
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 19
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: beef
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: beef_skirt_steak_grilled
+  name: Beef Skirt Steak Grilled (Per 100g)
+  kcal_per_100g: 230
+  protein_per_100g: 27
+  carbs_per_100g: 0
+  fat_per_100g: 14
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: beef
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: beef_bavette_grilled
+  name: Beef Bavette/Flank Grilled (Per 100g)
+  kcal_per_100g: 215
+  protein_per_100g: 26
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: beef
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: beef_corned_beef_per_50g
+  name: Corned Beef (Per 50g)
+  kcal_per_100g: 250
+  protein_per_100g: 25
+  carbs_per_100g: 1
+  fat_per_100g: 15
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: beef
+  portion_unit: meal
+  unit_grams: 50
+- source: meat
+  source_id: beef_pastrami_per_30g
+  name: Pastrami (Per 30g)
+  kcal_per_100g: 145
+  protein_per_100g: 22
+  carbs_per_100g: 1
+  fat_per_100g: 6
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: beef
+  portion_unit: piece
+  unit_grams: 30
+- source: meat
+  source_id: pork_loin_chop_raw
+  name: Pork Loin Chop Raw (Per 100g)
+  kcal_per_100g: 195
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: pork
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: pork_loin_chop_cooked
+  name: Pork Loin Chop Cooked (Per 100g)
+  kcal_per_100g: 245
+  protein_per_100g: 30
+  carbs_per_100g: 0
+  fat_per_100g: 14
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: pork
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: pork_shoulder_raw
+  name: Pork Shoulder Raw (Per 100g)
+  kcal_per_100g: 245
+  protein_per_100g: 17
+  carbs_per_100g: 0
+  fat_per_100g: 19
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: pork
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: pork_shoulder_pulled_cooked
+  name: Pulled Pork Shoulder Cooked (Per 100g)
+  kcal_per_100g: 230
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 14
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: pork
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: pork_belly_raw_100g
+  name: Pork Belly Raw (Per 100g)
+  kcal_per_100g: 295
+  protein_per_100g: 14
+  carbs_per_100g: 0
+  fat_per_100g: 27
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: pork
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: pork_belly_cooked_100g
+  name: Pork Belly Roasted (Per 100g)
+  kcal_per_100g: 380
+  protein_per_100g: 19
+  carbs_per_100g: 0
+  fat_per_100g: 33
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: pork
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: pork_tenderloin_raw
+  name: Pork Tenderloin Raw (Per 100g)
+  kcal_per_100g: 145
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 6
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: pork,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: pork_ribs_back_cooked
+  name: Pork Back Ribs Cooked (Per 100g)
+  kcal_per_100g: 280
+  protein_per_100g: 20
+  carbs_per_100g: 0
+  fat_per_100g: 21
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: pork
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: pork_ribs_baby_back_cooked
+  name: Pork Baby Back Ribs (Per 100g)
+  kcal_per_100g: 310
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 24
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: pork
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: pork_gammon_steak_grilled
+  name: Pork Gammon Steak Grilled (Per 100g)
+  kcal_per_100g: 215
+  protein_per_100g: 30
+  carbs_per_100g: 0
+  fat_per_100g: 9
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: pork
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: pork_back_bacon_grilled
+  name: Back Bacon Grilled (Per Rasher)
+  kcal_per_100g: 285
+  protein_per_100g: 25
+  carbs_per_100g: 1
+  fat_per_100g: 20
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: pork
+  portion_unit: piece
+  unit_grams: 30
+- source: meat
+  source_id: pork_streaky_bacon_grilled
+  name: Streaky Bacon Grilled (Per Rasher)
+  kcal_per_100g: 320
+  protein_per_100g: 25
+  carbs_per_100g: 1
+  fat_per_100g: 24
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: pork
+  portion_unit: piece
+  unit_grams: 25
+- source: meat
+  source_id: pork_smoked_bacon_grilled
+  name: Smoked Bacon Grilled (Per Rasher)
+  kcal_per_100g: 290
+  protein_per_100g: 25
+  carbs_per_100g: 1
+  fat_per_100g: 21
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: pork
+  portion_unit: piece
+  unit_grams: 30
+- source: meat
+  source_id: pork_pancetta_per_30g
+  name: Pancetta (Per 30g)
+  kcal_per_100g: 365
+  protein_per_100g: 17
+  carbs_per_100g: 0
+  fat_per_100g: 33
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: pork
+  portion_unit: piece
+  unit_grams: 30
+- source: meat
+  source_id: pork_chorizo_per_30g
+  name: Chorizo Sausage (Per 30g)
+  kcal_per_100g: 455
+  protein_per_100g: 22
+  carbs_per_100g: 1
+  fat_per_100g: 40
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: pork
+  portion_unit: piece
+  unit_grams: 30
+- source: meat
+  source_id: pork_salami_per_30g
+  name: Salami (Per 30g)
+  kcal_per_100g: 380
+  protein_per_100g: 21
+  carbs_per_100g: 1
+  fat_per_100g: 33
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: pork
+  portion_unit: piece
+  unit_grams: 30
+- source: meat
+  source_id: pork_pepperoni_per_30g
+  name: Pepperoni (Per 30g)
+  kcal_per_100g: 460
+  protein_per_100g: 23
+  carbs_per_100g: 1
+  fat_per_100g: 41
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: pork
+  portion_unit: piece
+  unit_grams: 30
+- source: meat
+  source_id: lamb_leg_steak_grilled
+  name: Lamb Leg Steak Grilled (Per 100g)
+  kcal_per_100g: 220
+  protein_per_100g: 28
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: lamb
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: lamb_shoulder_roasted
+  name: Lamb Shoulder Roasted (Per 100g)
+  kcal_per_100g: 280
+  protein_per_100g: 24
+  carbs_per_100g: 0
+  fat_per_100g: 21
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: lamb
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: lamb_neck_fillet_grilled
+  name: Lamb Neck Fillet Grilled (Per 100g)
+  kcal_per_100g: 245
+  protein_per_100g: 24
+  carbs_per_100g: 0
+  fat_per_100g: 16
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: lamb
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: lamb_rack_grilled
+  name: Lamb Rack Grilled (Per 100g)
+  kcal_per_100g: 300
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 22
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: lamb
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: lamb_loin_chop_grilled
+  name: Lamb Loin Chop Grilled (Per 100g)
+  kcal_per_100g: 260
+  protein_per_100g: 26
+  carbs_per_100g: 0
+  fat_per_100g: 18
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: lamb
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: lamb_kidneys_grilled
+  name: Lamb Kidneys Grilled (Per 100g)
+  kcal_per_100g: 145
+  protein_per_100g: 26
+  carbs_per_100g: 1
+  fat_per_100g: 4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: lamb
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: lamb_liver_pan_fried
+  name: Lamb Liver Pan-Fried (Per 100g)
+  kcal_per_100g: 235
+  protein_per_100g: 27
+  carbs_per_100g: 4
+  fat_per_100g: 12
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: lamb
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: chicken_skin_roasted
+  name: Chicken Skin Roasted (Per 30g)
+  kcal_per_100g: 450
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 41
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: chicken
+  portion_unit: piece
+  unit_grams: 30
+- source: meat
+  source_id: chicken_liver_pan_fried
+  name: Chicken Liver Pan-Fried (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 25
+  carbs_per_100g: 1
+  fat_per_100g: 7
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: chicken
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: chicken_breast_fillet_skin_on_grilled
+  name: Chicken Breast Skin On Grilled (Per 100g)
+  kcal_per_100g: 215
+  protein_per_100g: 27
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: chicken
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: chicken_quarter_leg_roasted
+  name: Chicken Quarter Leg Roasted (Per 100g)
+  kcal_per_100g: 235
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 17
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: chicken
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: chicken_drumstick_skinless_grilled
+  name: Chicken Drumstick Skinless Grilled (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 26
+  carbs_per_100g: 0
+  fat_per_100g: 8
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: chicken
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: chicken_thigh_boneless_skin_on
+  name: Chicken Thigh Boneless Skin On Roasted (Per 100g)
+  kcal_per_100g: 235
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 17
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: chicken
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: duck_breast_skin_on_pan_fried
+  name: Duck Breast Skin On Pan-Fried (Per 100g)
+  kcal_per_100g: 285
+  protein_per_100g: 24
+  carbs_per_100g: 0
+  fat_per_100g: 21
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: duck
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: duck_breast_skin_off_grilled
+  name: Duck Breast Skinless Grilled (Per 100g)
+  kcal_per_100g: 165
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 7
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: duck
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: turkey_breast_roasted_skinless
+  name: Turkey Breast Skinless Roasted (Per 100g)
+  kcal_per_100g: 145
+  protein_per_100g: 30
+  carbs_per_100g: 0
+  fat_per_100g: 2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: turkey,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: turkey_thigh_roasted_skinless
+  name: Turkey Thigh Skinless Roasted (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 26
+  carbs_per_100g: 0
+  fat_per_100g: 7
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: turkey
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: turkey_drumstick_roasted
+  name: Turkey Drumstick Roasted (Per 100g)
+  kcal_per_100g: 195
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 10
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: turkey
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: goose_roasted_per_100g
+  name: Goose Roasted Skinless (Per 100g)
+  kcal_per_100g: 240
+  protein_per_100g: 30
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: goose
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: partridge_roasted_per_100g
+  name: Partridge Roasted (Per 100g)
+  kcal_per_100g: 215
+  protein_per_100g: 30
+  carbs_per_100g: 0
+  fat_per_100g: 11
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: game
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: pheasant_roasted_per_100g
+  name: Pheasant Roasted (Per 100g)
+  kcal_per_100g: 220
+  protein_per_100g: 32
+  carbs_per_100g: 0
+  fat_per_100g: 10
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: game
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: venison_steak_grilled
+  name: Venison Steak Grilled (Per 100g)
+  kcal_per_100g: 165
+  protein_per_100g: 30
+  carbs_per_100g: 0
+  fat_per_100g: 5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: game,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: venison_mince_cooked
+  name: Venison Mince Cooked (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 28
+  carbs_per_100g: 0
+  fat_per_100g: 7
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: game,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: meat
+  source_id: rabbit_cooked_per_100g
+  name: Rabbit Cooked (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 33
+  carbs_per_100g: 0
+  fat_per_100g: 5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: game,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: fish_salmon_smoked_per_30g
+  name: Smoked Salmon (Per 30g)
+  kcal_per_100g: 175
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: salmon,fish
+  portion_unit: meal
+  unit_grams: 30
+- source: fish
+  source_id: fish_salmon_hot_smoked_100g
+  name: Hot Smoked Salmon (Per 100g)
+  kcal_per_100g: 215
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: salmon,fish
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: fish_salmon_canned_pink_per_100g
+  name: Canned Pink Salmon (Per 100g)
+  kcal_per_100g: 145
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 6
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: salmon,fish
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: fish_salmon_canned_red_per_100g
+  name: Canned Red Salmon (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 9
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: salmon,fish
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: fish_tuna_canned_in_brine_per_80g
+  name: Tuna in Brine (Per 80g Tin)
+  kcal_per_100g: 110
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: tuna,fish,lean
+  portion_unit: meal
+  unit_grams: 80
+- source: fish
+  source_id: fish_tuna_canned_in_oil_per_80g
+  name: Tuna in Oil (Per 80g Tin)
+  kcal_per_100g: 195
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  brand: Generic
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: tuna,fish
+  portion_unit: meal
+  unit_grams: 80
+- source: fish
+  source_id: fish_tuna_canned_in_sunflower_oil_80g
+  name: Tuna in Sunflower Oil (Per 80g Tin)
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 9
+  brand: Generic
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: tuna,fish
+  portion_unit: meal
+  unit_grams: 80
+- source: fish
+  source_id: fish_tuna_chunks_in_water_80g
+  name: Tuna Chunks in Spring Water (Per 80g Tin)
+  kcal_per_100g: 105
+  protein_per_100g: 24
+  carbs_per_100g: 0
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 80
+  serving_label: 80 g
+  tags: tuna,fish,lean
+  portion_unit: meal
+  unit_grams: 80
+- source: fish
+  source_id: fish_mackerel_smoked_per_100g
+  name: Smoked Mackerel (Per 100g)
+  kcal_per_100g: 305
+  protein_per_100g: 20
+  carbs_per_100g: 0
+  fat_per_100g: 25
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fish
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: fish_mackerel_canned_in_oil
+  name: Canned Mackerel in Oil (Per 100g)
+  kcal_per_100g: 245
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 18
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fish
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: fish_mackerel_canned_tomato
+  name: Canned Mackerel in Tomato Sauce (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 17
+  carbs_per_100g: 4
+  fat_per_100g: 11
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fish
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: fish_sardines_in_oil_per_120g
+  name: Sardines in Olive Oil (Per 120g Tin)
+  kcal_per_100g: 215
+  protein_per_100g: 24
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  brand: Generic
+  region_codes: GB
+  serving_grams: 120
+  serving_label: 120 g
+  tags: fish
+  portion_unit: meal
+  unit_grams: 120
+- source: fish
+  source_id: fish_sardines_in_tomato_per_120g
+  name: Sardines in Tomato Sauce (Per 120g Tin)
+  kcal_per_100g: 165
+  protein_per_100g: 19
+  carbs_per_100g: 4
+  fat_per_100g: 9
+  brand: Generic
+  region_codes: GB
+  serving_grams: 120
+  serving_label: 120 g
+  tags: fish
+  portion_unit: meal
+  unit_grams: 120
+- source: fish
+  source_id: fish_sardines_in_brine_per_120g
+  name: Sardines in Brine (Per 120g Tin)
+  kcal_per_100g: 130
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 120
+  serving_label: 120 g
+  tags: fish
+  portion_unit: meal
+  unit_grams: 120
+- source: fish
+  source_id: fish_anchovies_in_oil_per_50g
+  name: Anchovies in Oil (Per 50g)
+  kcal_per_100g: 210
+  protein_per_100g: 29
+  carbs_per_100g: 0
+  fat_per_100g: 10
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: fish
+  portion_unit: meal
+  unit_grams: 50
+- source: fish
+  source_id: fish_pilchards_canned_100g
+  name: Canned Pilchards (Per 100g)
+  kcal_per_100g: 130
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 7
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fish
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: fish_kippers_per_100g
+  name: Kippers (Per 100g)
+  kcal_per_100g: 245
+  protein_per_100g: 26
+  carbs_per_100g: 0
+  fat_per_100g: 16
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fish
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: fish_kipper_canned_per_100g
+  name: Canned Kipper Fillets (Per 100g)
+  kcal_per_100g: 195
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fish
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: fish_pollock_grilled_per_100g
+  name: Pollock Grilled (Per 100g)
+  kcal_per_100g: 95
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fish,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: fish_plaice_grilled_per_100g
+  name: Plaice Grilled (Per 100g)
+  kcal_per_100g: 95
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fish,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: fish_skate_grilled_per_100g
+  name: Skate Grilled (Per 100g)
+  kcal_per_100g: 95
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fish,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: fish_monkfish_grilled_per_100g
+  name: Monkfish Grilled (Per 100g)
+  kcal_per_100g: 110
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fish,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: fish_seabream_grilled_per_100g
+  name: Sea Bream Grilled (Per 100g)
+  kcal_per_100g: 115
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fish
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: fish_red_mullet_grilled
+  name: Red Mullet Grilled (Per 100g)
+  kcal_per_100g: 120
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fish
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: fish_smoked_haddock_per_100g
+  name: Smoked Haddock (Per 100g)
+  kcal_per_100g: 105
+  protein_per_100g: 24
+  carbs_per_100g: 0
+  fat_per_100g: 1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fish,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: fish_lemon_sole_grilled
+  name: Lemon Sole Grilled (Per 100g)
+  kcal_per_100g: 95
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: fish,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: seafood_lobster_cooked_per_100g
+  name: Lobster Cooked (Per 100g)
+  kcal_per_100g: 90
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: seafood,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: seafood_crab_cooked_per_100g
+  name: Crab Meat Cooked (Per 100g)
+  kcal_per_100g: 105
+  protein_per_100g: 20
+  carbs_per_100g: 0
+  fat_per_100g: 2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: seafood,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: seafood_scallops_grilled_per_100g
+  name: Scallops Grilled (Per 100g)
+  kcal_per_100g: 95
+  protein_per_100g: 19
+  carbs_per_100g: 5
+  fat_per_100g: 1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: seafood,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: seafood_squid_calamari_grilled
+  name: Squid/Calamari Grilled (Per 100g)
+  kcal_per_100g: 95
+  protein_per_100g: 18
+  carbs_per_100g: 3
+  fat_per_100g: 1.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: seafood,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: seafood_clams_cooked_per_100g
+  name: Clams Cooked (Per 100g)
+  kcal_per_100g: 145
+  protein_per_100g: 25
+  carbs_per_100g: 5
+  fat_per_100g: 2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: seafood
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: seafood_mussels_cooked_per_100g
+  name: Mussels Cooked (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 24
+  carbs_per_100g: 7
+  fat_per_100g: 4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: seafood
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: seafood_oysters_per_6_unit
+  name: Oysters (6 oysters)
+  kcal_per_100g: 70
+  protein_per_100g: 8
+  carbs_per_100g: 4
+  fat_per_100g: 2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: seafood
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: seafood_prawns_king_raw_per_100g
+  name: King Prawns Raw (Per 100g)
+  kcal_per_100g: 75
+  protein_per_100g: 17
+  carbs_per_100g: 1
+  fat_per_100g: 0.7
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: seafood,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: seafood_shrimp_cooked_per_100g
+  name: Shrimp Cooked (Per 100g)
+  kcal_per_100g: 95
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: seafood,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: seafood_langoustine_per_100g
+  name: Langoustine Cooked (Per 100g)
+  kcal_per_100g: 95
+  protein_per_100g: 19
+  carbs_per_100g: 1
+  fat_per_100g: 1.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: seafood,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: fish
+  source_id: seafood_tiger_prawns_per_100g
+  name: Tiger Prawns Cooked (Per 100g)
+  kcal_per_100g: 95
+  protein_per_100g: 21
+  carbs_per_100g: 1
+  fat_per_100g: 1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: seafood,lean
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: water_evian_500ml
+  name: Evian Still (500ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Evian
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_evian_1l
+  name: Evian Still (1L)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Evian
+  region_codes: GB
+  serving_grams: 1000
+  serving_label: 1000 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 1000
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_volvic_500ml
+  name: Volvic Still (500ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Volvic
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_volvic_1l
+  name: Volvic Still (1L)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Volvic
+  region_codes: GB
+  serving_grams: 1000
+  serving_label: 1000 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 1000
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_volvic_strawberry_500
+  name: Volvic Touch of Fruit Strawberry (500ml)
+  kcal_per_100g: 2.4
+  protein_per_100g: 0
+  carbs_per_100g: 0.6
+  fat_per_100g: 0
+  brand: Volvic
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_volvic_lemon_lime_500
+  name: Volvic Touch of Fruit Lemon & Lime (500ml)
+  kcal_per_100g: 2.4
+  protein_per_100g: 0
+  carbs_per_100g: 0.6
+  fat_per_100g: 0
+  brand: Volvic
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_buxton_still_500
+  name: Buxton Still (500ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Buxton
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_buxton_sparkling_500
+  name: Buxton Sparkling (500ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Buxton
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_highland_spring_500
+  name: Highland Spring Still (500ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Highland Spring
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_highland_spring_sparkling_500
+  name: Highland Spring Sparkling (500ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Highland Spring
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_san_pellegrino_500
+  name: San Pellegrino Sparkling (500ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: San Pellegrino
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_san_pellegrino_1l
+  name: San Pellegrino Sparkling (1L)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: San Pellegrino
+  region_codes: GB
+  serving_grams: 1000
+  serving_label: 1000 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 1000
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_perrier_750
+  name: Perrier Sparkling (750ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Perrier
+  region_codes: GB
+  serving_grams: 750
+  serving_label: 750 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 750
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_voss_500
+  name: Voss Still (500ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Voss
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_smartwater_600
+  name: Smartwater (600ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Smartwater
+  region_codes: GB
+  serving_grams: 600
+  serving_label: 600 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 600
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_smartwater_1l
+  name: Smartwater (1L)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Smartwater
+  region_codes: GB
+  serving_grams: 1000
+  serving_label: 1000 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 1000
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_aquapura_500
+  name: AquaPura Still (500ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: AquaPura
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_tap_per_500ml
+  name: Tap Water (Per 500ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_kombucha_lo_bros_strawberry
+  name: Lo Bros Kombucha Strawberry (250ml)
+  kcal_per_100g: 8.8
+  protein_per_100g: 0
+  carbs_per_100g: 2.0
+  fat_per_100g: 0
+  brand: Lo Bros
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_kombucha_remedy_raspberry_lemon
+  name: Remedy Kombucha Raspberry Lemonade (250ml)
+  kcal_per_100g: 4.8
+  protein_per_100g: 0
+  carbs_per_100g: 1.2
+  fat_per_100g: 0
+  brand: Remedy
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_kombucha_remedy_ginger_lemon
+  name: Remedy Kombucha Ginger Lemon (250ml)
+  kcal_per_100g: 4.8
+  protein_per_100g: 0
+  carbs_per_100g: 1.2
+  fat_per_100g: 0
+  brand: Remedy
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_kombucha_remedy_pineapple
+  name: Remedy Kombucha Pineapple Crush (250ml)
+  kcal_per_100g: 4.8
+  protein_per_100g: 0
+  carbs_per_100g: 1.2
+  fat_per_100g: 0
+  brand: Remedy
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_kombucha_kefir_chia_co_ginger
+  name: Chia Co Kombucha Ginger (250ml)
+  kcal_per_100g: 8.8
+  protein_per_100g: 0
+  carbs_per_100g: 2.0
+  fat_per_100g: 0
+  brand: Chia Co
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_jus_organic_kombucha_apple
+  name: Jus Organic Kombucha Apple (250ml)
+  kcal_per_100g: 11.2
+  protein_per_100g: 0
+  carbs_per_100g: 2.8
+  fat_per_100g: 0
+  brand: Jus Organic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_pukka_peppermint_tea
+  name: Pukka Three Mint Tea (Per Bag, brewed)
+  kcal_per_100g: 0.4
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Pukka
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_pukka_turmeric_tea
+  name: Pukka Turmeric Gold Tea (brewed)
+  kcal_per_100g: 0.4
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Pukka
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_clipper_organic_breakfast
+  name: Clipper Organic English Breakfast (brewed)
+  kcal_per_100g: 0.4
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Clipper
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: water_yogi_chai_tea
+  name: Yogi Chai Tea (brewed)
+  kcal_per_100g: 0.4
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Yogi
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: drink_aqualibra_500
+  name: Aqua Libra (500ml)
+  kcal_per_100g: 1.6
+  protein_per_100g: 0
+  carbs_per_100g: 0.4
+  fat_per_100g: 0
+  brand: Aqua Libra
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 ml
+  tags: drink
+  portion_unit: ml
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: drink_la_croix_grapefruit_330
+  name: La Croix Grapefruit Sparkling (330ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: La Croix
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: drink_dash_water_cucumber_330
+  name: Dash Water Cucumber (330ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Dash
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: drink_dash_water_raspberry_330
+  name: Dash Water Raspberry (330ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Dash
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian
+- source: brand
+  source_id: drink_dash_water_lemon_330
+  name: Dash Water Lemon (330ml)
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Dash
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 ml
+  tags: drink,water
+  portion_unit: ml
+  unit_grams: 330
+  dietary_compat: vegan,vegetarian

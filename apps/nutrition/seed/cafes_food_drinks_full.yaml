@@ -1,0 +1,1418 @@
+# Cafés food + drinks — Pret food expansion / Costa food / Caffè Nero food /
+# Iced coffees + Frappuccinos + Frostinos / Smoothies / Milkshakes / Fresh juices /
+# Hot chocolate variants
+
+- source: pret_a_manger
+  source_id: pret_chicken_pesto_baguette
+  name: Pret Chicken & Pesto Baguette
+  kcal_per_100g: 118.75
+  protein_per_100g: 5.83
+  carbs_per_100g: 11.67
+  fat_per_100g: 5.0
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 240
+  serving_label: item (240 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 240
+- source: pret_a_manger
+  source_id: pret_chicken_caesar_super_club
+  name: Pret Chicken Caesar Super Club
+  kcal_per_100g: 97.91666666666667
+  protein_per_100g: 5.83
+  carbs_per_100g: 8.75
+  fat_per_100g: 4.17
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 240
+  serving_label: item (240 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 240
+- source: pret_a_manger
+  source_id: pret_egg_avocado_brioche
+  name: Pret Egg & Avocado Brioche
+  kcal_per_100g: 157.14285714285714
+  protein_per_100g: 6.29
+  carbs_per_100g: 16.0
+  fat_per_100g: 8.0
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 175
+  serving_label: item (175 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 175
+- source: pret_a_manger
+  source_id: pret_smoked_salmon_brioche
+  name: Pret Smoked Salmon Brioche
+  kcal_per_100g: 162.85714285714286
+  protein_per_100g: 8.0
+  carbs_per_100g: 16.0
+  fat_per_100g: 7.43
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 175
+  serving_label: item (175 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 175
+- source: pret_a_manger
+  source_id: pret_classic_super_club
+  name: Pret Classic Super Club
+  kcal_per_100g: 109.30232558139535
+  protein_per_100g: 6.51
+  carbs_per_100g: 10.23
+  fat_per_100g: 4.65
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 215
+  serving_label: item (215 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 215
+- source: pret_a_manger
+  source_id: pret_chargrilled_chicken_caesar_baguette
+  name: Pret Chargrilled Chicken Caesar Baguette
+  kcal_per_100g: 110.20408163265306
+  protein_per_100g: 5.71
+  carbs_per_100g: 11.43
+  fat_per_100g: 4.49
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 245
+  serving_label: item (245 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 245
+- source: pret_a_manger
+  source_id: pret_carrot_ginger_soup
+  name: Pret Carrot & Ginger Soup
+  kcal_per_100g: 21.666666666666668
+  protein_per_100g: 0.5
+  carbs_per_100g: 3.33
+  fat_per_100g: 0.67
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 300
+  serving_label: item (300 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 300
+- source: pret_a_manger
+  source_id: pret_lentil_chickpea_soup
+  name: Pret Lentil & Chickpea Soup
+  kcal_per_100g: 31.666666666666668
+  protein_per_100g: 1.67
+  carbs_per_100g: 4.67
+  fat_per_100g: 0.67
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 300
+  serving_label: item (300 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 300
+- source: pret_a_manger
+  source_id: pret_thai_chicken_soup
+  name: Pret Thai Chicken Soup
+  kcal_per_100g: 31.666666666666668
+  protein_per_100g: 2.0
+  carbs_per_100g: 3.0
+  fat_per_100g: 1.33
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 300
+  serving_label: item (300 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 300
+- source: pret_a_manger
+  source_id: pret_classic_caesar_salad
+  name: Pret Classic Caesar Salad
+  kcal_per_100g: 59.32203389830509
+  protein_per_100g: 3.73
+  carbs_per_100g: 3.05
+  fat_per_100g: 3.73
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 295
+  serving_label: item (295 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 295
+- source: pret_a_manger
+  source_id: pret_wild_crayfish_avocado
+  name: Pret Wild Crayfish & Avocado Salad
+  kcal_per_100g: 67.24137931034483
+  protein_per_100g: 4.83
+  carbs_per_100g: 2.76
+  fat_per_100g: 3.79
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 290
+  serving_label: item (290 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 290
+- source: pret_a_manger
+  source_id: pret_brown_rice_chicken_curry
+  name: Pret Brown Rice Chicken Curry
+  kcal_per_100g: 47.142857142857146
+  protein_per_100g: 3.14
+  carbs_per_100g: 5.14
+  fat_per_100g: 1.43
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 350
+- source: pret_a_manger
+  source_id: pret_chicken_chorizo_paella
+  name: Pret Chicken & Chorizo Paella
+  kcal_per_100g: 52.857142857142854
+  protein_per_100g: 3.14
+  carbs_per_100g: 6.29
+  fat_per_100g: 1.43
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 350
+- source: pret_a_manger
+  source_id: pret_porridge_pot_oat_milk
+  name: Pret Porridge with Oat Milk
+  kcal_per_100g: 47.142857142857146
+  protein_per_100g: 1.43
+  carbs_per_100g: 6.29
+  fat_per_100g: 1.43
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 350
+- source: pret_a_manger
+  source_id: pret_greek_yogurt_granola_pot
+  name: Pret Greek Yogurt & Granola Pot
+  kcal_per_100g: 97.5
+  protein_per_100g: 4.0
+  carbs_per_100g: 11.0
+  fat_per_100g: 4.0
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 200
+- source: pret_a_manger
+  source_id: pret_almond_butter_yogurt_pot
+  name: Pret Almond Butter Yogurt Pot
+  kcal_per_100g: 134.28571428571428
+  protein_per_100g: 4.0
+  carbs_per_100g: 9.71
+  fat_per_100g: 8.0
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 175
+  serving_label: item (175 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 175
+- source: pret_a_manger
+  source_id: pret_overnight_oats_pot
+  name: Pret Overnight Oats Pot
+  kcal_per_100g: 87.5
+  protein_per_100g: 3.0
+  carbs_per_100g: 11.0
+  fat_per_100g: 3.0
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 200
+- source: pret_a_manger
+  source_id: pret_overnight_oats_chia
+  name: Pret Chia Oat Pot
+  kcal_per_100g: 82.5
+  protein_per_100g: 3.0
+  carbs_per_100g: 10.5
+  fat_per_100g: 3.0
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 200
+- source: pret_a_manger
+  source_id: pret_egg_pot_classic
+  name: Pret Egg & Bacon Pot
+  kcal_per_100g: 219.23076923076923
+  protein_per_100g: 13.08
+  carbs_per_100g: 3.85
+  fat_per_100g: 16.92
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 130
+  serving_label: item (130 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 130
+- source: pret_a_manger
+  source_id: pret_cookie_dark_chocolate
+  name: Pret Dark Chocolate Cookie
+  kcal_per_100g: 640.0
+  protein_per_100g: 6.67
+  carbs_per_100g: 80.0
+  fat_per_100g: 32.0
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 75
+  serving_label: item (75 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: piece
+  unit_grams: 75
+- source: pret_a_manger
+  source_id: pret_cookie_choc_orange_almond
+  name: Pret Chocolate Orange Almond Cookie
+  kcal_per_100g: 626.6666666666666
+  protein_per_100g: 8.0
+  carbs_per_100g: 77.33
+  fat_per_100g: 32.0
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 75
+  serving_label: item (75 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: piece
+  unit_grams: 75
+- source: pret_a_manger
+  source_id: pret_bircher_muesli_pot
+  name: Pret Bircher Muesli Pot
+  kcal_per_100g: 97.5
+  protein_per_100g: 2.5
+  carbs_per_100g: 14.0
+  fat_per_100g: 3.5
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 200
+- source: pret_a_manger
+  source_id: pret_bircher_muesli_apple
+  name: Pret Bircher Muesli with Apple
+  kcal_per_100g: 88.63636363636364
+  protein_per_100g: 2.27
+  carbs_per_100g: 13.64
+  fat_per_100g: 2.73
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 220
+  serving_label: item (220 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 220
+- source: pret_a_manger
+  source_id: pret_chocolate_loaf_cake
+  name: Pret Chocolate Loaf Cake
+  kcal_per_100g: 377.27272727272725
+  protein_per_100g: 4.55
+  carbs_per_100g: 45.45
+  fat_per_100g: 20.0
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 110
+  serving_label: item (110 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: piece
+  unit_grams: 110
+- source: pret_a_manger
+  source_id: pret_carrot_cake_slice
+  name: Pret Carrot Cake (Slice)
+  kcal_per_100g: 359.09090909090907
+  protein_per_100g: 4.55
+  carbs_per_100g: 45.45
+  fat_per_100g: 17.27
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 110
+  serving_label: item (110 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: piece
+  unit_grams: 110
+- source: costa_coffee
+  source_id: costa_egg_bacon_brioche
+  name: Costa Bacon & Egg Brioche Roll
+  kcal_per_100g: 184.84848484848484
+  protein_per_100g: 7.88
+  carbs_per_100g: 18.18
+  fat_per_100g: 8.48
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 165
+  serving_label: item (165 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 165
+- source: costa_coffee
+  source_id: costa_sausage_butty
+  name: Costa Sausage Bacon Butty
+  kcal_per_100g: 207.69230769230768
+  protein_per_100g: 8.72
+  carbs_per_100g: 19.49
+  fat_per_100g: 9.74
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 195
+  serving_label: item (195 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 195
+- source: costa_coffee
+  source_id: costa_sausage_egg_brioche
+  name: Costa Sausage & Egg Brioche
+  kcal_per_100g: 205.0
+  protein_per_100g: 8.0
+  carbs_per_100g: 16.0
+  fat_per_100g: 11.0
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 200
+- source: costa_coffee
+  source_id: costa_avocado_toast
+  name: Costa Avocado Toast
+  kcal_per_100g: 148.4848484848485
+  protein_per_100g: 4.24
+  carbs_per_100g: 14.55
+  fat_per_100g: 7.27
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 165
+  serving_label: item (165 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 165
+- source: costa_coffee
+  source_id: costa_porridge_classic
+  name: Costa Classic Porridge
+  kcal_per_100g: 71.42857142857143
+  protein_per_100g: 2.04
+  carbs_per_100g: 9.8
+  fat_per_100g: 2.45
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 245
+  serving_label: item (245 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 245
+- source: costa_coffee
+  source_id: costa_porridge_apple_blueberry
+  name: Costa Apple & Blueberry Porridge
+  kcal_per_100g: 79.59183673469387
+  protein_per_100g: 2.04
+  carbs_per_100g: 11.43
+  fat_per_100g: 2.45
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 245
+  serving_label: item (245 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 245
+- source: costa_coffee
+  source_id: costa_oat_pot_pomegranate
+  name: Costa Oat Pot Pomegranate
+  kcal_per_100g: 122.5
+  protein_per_100g: 3.0
+  carbs_per_100g: 17.5
+  fat_per_100g: 4.0
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 200
+- source: costa_coffee
+  source_id: costa_bacon_butty_classic
+  name: Costa Bacon Butty (Classic)
+  kcal_per_100g: 200.0
+  protein_per_100g: 8.0
+  carbs_per_100g: 17.14
+  fat_per_100g: 10.29
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 175
+  serving_label: item (175 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 175
+- source: costa_coffee
+  source_id: costa_chicken_caesar_panini
+  name: Costa Chicken Caesar Panini
+  kcal_per_100g: 180.43478260869566
+  protein_per_100g: 10.43
+  carbs_per_100g: 16.52
+  fat_per_100g: 7.83
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 230
+  serving_label: item (230 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 230
+- source: costa_coffee
+  source_id: costa_ham_cheese_panini
+  name: Costa Ham & Cheese Panini
+  kcal_per_100g: 193.1818181818182
+  protein_per_100g: 10.0
+  carbs_per_100g: 17.27
+  fat_per_100g: 9.09
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 220
+  serving_label: item (220 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 220
+- source: costa_coffee
+  source_id: costa_cheese_tomato_panini
+  name: Costa Cheese & Tomato Panini
+  kcal_per_100g: 184.0909090909091
+  protein_per_100g: 7.73
+  carbs_per_100g: 17.27
+  fat_per_100g: 9.55
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 220
+  serving_label: item (220 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 220
+- source: costa_coffee
+  source_id: costa_chicken_pesto_wrap
+  name: Costa Chicken Pesto Wrap
+  kcal_per_100g: 165.2173913043478
+  protein_per_100g: 9.57
+  carbs_per_100g: 16.52
+  fat_per_100g: 6.09
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 230
+  serving_label: item (230 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 230
+- source: costa_coffee
+  source_id: costa_chicken_avocado_wrap
+  name: Costa Chicken & Avocado Wrap
+  kcal_per_100g: 163.63636363636363
+  protein_per_100g: 8.18
+  carbs_per_100g: 16.36
+  fat_per_100g: 7.27
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 220
+  serving_label: item (220 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 220
+- source: costa_coffee
+  source_id: costa_falafel_wrap
+  name: Costa Falafel Wrap
+  kcal_per_100g: 165.9090909090909
+  protein_per_100g: 4.09
+  carbs_per_100g: 19.09
+  fat_per_100g: 7.27
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 220
+  serving_label: item (220 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 220
+- source: costa_coffee
+  source_id: costa_chicken_salad_box
+  name: Costa Chicken Salad Box
+  kcal_per_100g: 76.78571428571429
+  protein_per_100g: 7.86
+  carbs_per_100g: 5.0
+  fat_per_100g: 2.86
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 280
+  serving_label: item (280 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 280
+- source: costa_coffee
+  source_id: costa_falafel_salad_box
+  name: Costa Falafel Salad Box
+  kcal_per_100g: 105.35714285714286
+  protein_per_100g: 3.21
+  carbs_per_100g: 11.43
+  fat_per_100g: 5.0
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 280
+  serving_label: item (280 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 280
+- source: costa_coffee
+  source_id: costa_pasta_chicken_pesto_pot
+  name: Costa Chicken Pesto Pasta Pot
+  kcal_per_100g: 123.72881355932203
+  protein_per_100g: 5.76
+  carbs_per_100g: 12.88
+  fat_per_100g: 5.42
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 295
+  serving_label: item (295 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 295
+- source: costa_coffee
+  source_id: costa_chocolate_brownie_costa
+  name: Costa Chocolate Brownie
+  kcal_per_100g: 472.22222222222223
+  protein_per_100g: 5.56
+  carbs_per_100g: 55.56
+  fat_per_100g: 24.44
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 90
+  serving_label: item (90 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: piece
+  unit_grams: 90
+- source: costa_coffee
+  source_id: costa_chocolate_chunk_cookie
+  name: Costa Chocolate Chunk Cookie
+  kcal_per_100g: 640.0
+  protein_per_100g: 6.67
+  carbs_per_100g: 80.0
+  fat_per_100g: 32.0
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 75
+  serving_label: item (75 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: piece
+  unit_grams: 75
+- source: costa_coffee
+  source_id: costa_white_chocolate_cookie
+  name: Costa White Chocolate Cookie
+  kcal_per_100g: 640.0
+  protein_per_100g: 6.67
+  carbs_per_100g: 80.0
+  fat_per_100g: 33.33
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 75
+  serving_label: item (75 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: piece
+  unit_grams: 75
+- source: costa_coffee
+  source_id: costa_lemon_drizzle_slice
+  name: Costa Lemon Drizzle Slice
+  kcal_per_100g: 365.0
+  protein_per_100g: 5.0
+  carbs_per_100g: 55.0
+  fat_per_100g: 14.0
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: piece
+  unit_grams: 100
+- source: costa_coffee
+  source_id: costa_carrot_cake
+  name: Costa Carrot Cake
+  kcal_per_100g: 359.09090909090907
+  protein_per_100g: 4.55
+  carbs_per_100g: 45.45
+  fat_per_100g: 17.27
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 110
+  serving_label: item (110 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: piece
+  unit_grams: 110
+- source: costa_coffee
+  source_id: costa_caramel_shortcake
+  name: Costa Caramel Shortcake
+  kcal_per_100g: 656.25
+  protein_per_100g: 5.0
+  carbs_per_100g: 75.0
+  fat_per_100g: 37.5
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 80
+  serving_label: item (80 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: piece
+  unit_grams: 80
+- source: caffe_nero
+  source_id: nero_avocado_toast
+  name: Caffè Nero Avocado on Toast
+  kcal_per_100g: 140.0
+  protein_per_100g: 4.0
+  carbs_per_100g: 14.29
+  fat_per_100g: 6.86
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 175
+  serving_label: item (175 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 175
+- source: caffe_nero
+  source_id: nero_bacon_panini
+  name: Caffè Nero Bacon Panini
+  kcal_per_100g: 207.5
+  protein_per_100g: 8.0
+  carbs_per_100g: 19.0
+  fat_per_100g: 9.5
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 200
+- source: caffe_nero
+  source_id: nero_chicken_pesto_panini
+  name: Caffè Nero Chicken Pesto Panini
+  kcal_per_100g: 193.1818181818182
+  protein_per_100g: 10.0
+  carbs_per_100g: 17.27
+  fat_per_100g: 8.18
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 220
+  serving_label: item (220 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 220
+- source: caffe_nero
+  source_id: nero_classic_panini
+  name: Caffè Nero Classic Panini (Cheese & Tomato)
+  kcal_per_100g: 193.1818181818182
+  protein_per_100g: 7.27
+  carbs_per_100g: 17.27
+  fat_per_100g: 10.0
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 220
+  serving_label: item (220 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 220
+- source: caffe_nero
+  source_id: nero_chicken_caesar_wrap
+  name: Caffè Nero Chicken Caesar Wrap
+  kcal_per_100g: 165.9090909090909
+  protein_per_100g: 10.0
+  carbs_per_100g: 15.91
+  fat_per_100g: 6.36
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 220
+  serving_label: item (220 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 220
+- source: caffe_nero
+  source_id: nero_super_seed_porridge
+  name: Caffè Nero Super Seed Porridge
+  kcal_per_100g: 79.59183673469387
+  protein_per_100g: 2.45
+  carbs_per_100g: 9.8
+  fat_per_100g: 3.27
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 245
+  serving_label: item (245 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 245
+- source: caffe_nero
+  source_id: nero_yogurt_granola_pot
+  name: Caffè Nero Yogurt & Granola Pot
+  kcal_per_100g: 107.5
+  protein_per_100g: 4.0
+  carbs_per_100g: 12.5
+  fat_per_100g: 4.5
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 200
+  serving_label: item (200 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 200
+- source: caffe_nero
+  source_id: nero_egg_brioche
+  name: Caffè Nero Egg Brioche
+  kcal_per_100g: 168.57142857142858
+  protein_per_100g: 6.29
+  carbs_per_100g: 16.0
+  fat_per_100g: 8.57
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 175
+  serving_label: item (175 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: meal
+  unit_grams: 175
+- source: caffe_nero
+  source_id: nero_brownie_chocolate
+  name: Caffè Nero Chocolate Brownie
+  kcal_per_100g: 472.22222222222223
+  protein_per_100g: 5.56
+  carbs_per_100g: 55.56
+  fat_per_100g: 24.44
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 90
+  serving_label: item (90 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: piece
+  unit_grams: 90
+- source: caffe_nero
+  source_id: nero_carrot_cake_nero
+  name: Caffè Nero Carrot Cake
+  kcal_per_100g: 359.09090909090907
+  protein_per_100g: 4.55
+  carbs_per_100g: 45.45
+  fat_per_100g: 17.27
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 110
+  serving_label: item (110 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: piece
+  unit_grams: 110
+- source: caffe_nero
+  source_id: nero_choc_chip_cookie
+  name: Caffè Nero Chocolate Chip Cookie
+  kcal_per_100g: 640.0
+  protein_per_100g: 6.67
+  carbs_per_100g: 80.0
+  fat_per_100g: 32.0
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 75
+  serving_label: item (75 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: piece
+  unit_grams: 75
+- source: caffe_nero
+  source_id: nero_almond_croissant
+  name: Caffè Nero Almond Croissant
+  kcal_per_100g: 465.0
+  protein_per_100g: 9.0
+  carbs_per_100g: 40.0
+  fat_per_100g: 28.0
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 100
+  serving_label: item (100 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: piece
+  unit_grams: 100
+- source: caffe_nero
+  source_id: nero_pain_au_chocolat
+  name: Caffè Nero Pain au Chocolat
+  kcal_per_100g: 621.4285714285714
+  protein_per_100g: 10.0
+  carbs_per_100g: 64.29
+  fat_per_100g: 35.71
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 70
+  serving_label: item (70 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: piece
+  unit_grams: 70
+- source: costa_coffee
+  source_id: costa_iced_latte_medio
+  name: Costa Iced Latte (Medio)
+  kcal_per_100g: 22.535211267605632
+  protein_per_100g: 1.13
+  carbs_per_100g: 2.25
+  fat_per_100g: 0.99
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa_coffee
+  source_id: costa_iced_americano_medio
+  name: Costa Iced Americano (Medio)
+  kcal_per_100g: 1.408450704225352
+  protein_per_100g: 0.0
+  carbs_per_100g: 0.28
+  fat_per_100g: 0.0
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa_coffee
+  source_id: costa_caramel_frostino_medio
+  name: Costa Caramel Frostino (Medio)
+  kcal_per_100g: 69.01408450704226
+  protein_per_100g: 1.13
+  carbs_per_100g: 12.68
+  fat_per_100g: 1.69
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa_coffee
+  source_id: costa_strawberry_frostino_medio
+  name: Costa Strawberry Frostino (Medio)
+  kcal_per_100g: 54.929577464788736
+  protein_per_100g: 0.85
+  carbs_per_100g: 11.27
+  fat_per_100g: 1.13
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 355
+- source: costa_coffee
+  source_id: costa_chocolate_frostino_medio
+  name: Costa Chocolate Frostino (Medio)
+  kcal_per_100g: 76.05633802816901
+  protein_per_100g: 1.41
+  carbs_per_100g: 12.68
+  fat_per_100g: 2.54
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: item (355 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: piece
+  unit_grams: 355
+- source: costa_coffee
+  source_id: costa_mint_frostino_medio
+  name: Costa Mint Frostino (Medio)
+  kcal_per_100g: 69.01408450704226
+  protein_per_100g: 1.13
+  carbs_per_100g: 12.68
+  fat_per_100g: 1.69
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 355
+- source: starbucks
+  source_id: sbx_iced_latte_grande
+  name: Starbucks Iced Latte (Grande)
+  kcal_per_100g: 20.084566596194502
+  protein_per_100g: 1.06
+  carbs_per_100g: 1.9
+  fat_per_100g: 0.85
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_iced_caramel_macchiato_grande
+  name: Starbucks Iced Caramel Macchiato (Grande)
+  kcal_per_100g: 49.68287526427061
+  protein_per_100g: 1.48
+  carbs_per_100g: 7.4
+  fat_per_100g: 1.48
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_mocha_frappuccino_grande
+  name: Starbucks Mocha Frappuccino (Grande)
+  kcal_per_100g: 77.16701902748414
+  protein_per_100g: 1.27
+  carbs_per_100g: 11.21
+  fat_per_100g: 3.17
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_white_choc_mocha_grande
+  name: Starbucks White Chocolate Mocha (Grande)
+  kcal_per_100g: 90.9090909090909
+  protein_per_100g: 2.54
+  carbs_per_100g: 11.63
+  fat_per_100g: 3.81
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_chai_latte_grande
+  name: Starbucks Chai Latte (Grande)
+  kcal_per_100g: 50.7399577167019
+  protein_per_100g: 1.27
+  carbs_per_100g: 8.88
+  fat_per_100g: 1.06
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_pumpkin_spice_latte_grande
+  name: Starbucks Pumpkin Spice Latte (Grande)
+  kcal_per_100g: 80.33826638477801
+  protein_per_100g: 2.96
+  carbs_per_100g: 10.57
+  fat_per_100g: 2.96
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: sbx_hot_chocolate_grande
+  name: Starbucks Hot Chocolate (Grande)
+  kcal_per_100g: 78.22410147991543
+  protein_per_100g: 2.96
+  carbs_per_100g: 10.36
+  fat_per_100g: 2.96
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: item (473 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: piece
+  unit_grams: 473
+- source: generic
+  source_id: smoothie_classic_strawberry_banana
+  name: Strawberry Banana Smoothie (Standard)
+  kcal_per_100g: 50.0
+  protein_per_100g: 1.14
+  carbs_per_100g: 10.86
+  fat_per_100g: 0.43
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 350
+- source: generic
+  source_id: smoothie_mango_passion
+  name: Mango & Passion Fruit Smoothie
+  kcal_per_100g: 47.142857142857146
+  protein_per_100g: 0.57
+  carbs_per_100g: 10.86
+  fat_per_100g: 0.29
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 350
+- source: generic
+  source_id: smoothie_acai_berry
+  name: Açaí Berry Smoothie
+  kcal_per_100g: 50.0
+  protein_per_100g: 0.86
+  carbs_per_100g: 10.0
+  fat_per_100g: 0.86
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 350
+- source: generic
+  source_id: smoothie_green_kale
+  name: Green Kale Smoothie
+  kcal_per_100g: 37.142857142857146
+  protein_per_100g: 1.14
+  carbs_per_100g: 8.0
+  fat_per_100g: 0.43
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 350
+- source: generic
+  source_id: smoothie_protein_chocolate
+  name: Chocolate Protein Smoothie
+  kcal_per_100g: 70.0
+  protein_per_100g: 6.0
+  carbs_per_100g: 8.0
+  fat_per_100g: 1.43
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: piece
+  unit_grams: 350
+- source: generic
+  source_id: smoothie_protein_vanilla
+  name: Vanilla Protein Smoothie
+  kcal_per_100g: 67.14285714285714
+  protein_per_100g: 6.0
+  carbs_per_100g: 8.0
+  fat_per_100g: 1.14
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 350
+- source: generic
+  source_id: smoothie_pb_banana
+  name: Peanut Butter Banana Smoothie
+  kcal_per_100g: 81.42857142857143
+  protein_per_100g: 2.57
+  carbs_per_100g: 9.14
+  fat_per_100g: 4.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 350
+- source: generic
+  source_id: smoothie_blueberry_oat
+  name: Blueberry Oat Smoothie
+  kcal_per_100g: 61.42857142857143
+  protein_per_100g: 2.0
+  carbs_per_100g: 10.86
+  fat_per_100g: 1.14
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 350
+- source: generic
+  source_id: milkshake_chocolate_classic
+  name: Chocolate Milkshake
+  kcal_per_100g: 81.42857142857143
+  protein_per_100g: 2.57
+  carbs_per_100g: 10.86
+  fat_per_100g: 3.14
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: item (350 g)
+  tags: cafe,coffee-shop,drink
+  portion_unit: piece
+  unit_grams: 350
+- source: generic
+  source_id: milkshake_strawberry_classic
+  name: Strawberry Milkshake
+  kcal_per_100g: 77.14285714285714
+  protein_per_100g: 2.57
+  carbs_per_100g: 10.86
+  fat_per_100g: 2.57
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 350
+- source: generic
+  source_id: milkshake_vanilla_classic
+  name: Vanilla Milkshake
+  kcal_per_100g: 75.71428571428571
+  protein_per_100g: 2.57
+  carbs_per_100g: 10.0
+  fat_per_100g: 2.86
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 350
+- source: generic
+  source_id: milkshake_banana_classic
+  name: Banana Milkshake
+  kcal_per_100g: 78.57142857142857
+  protein_per_100g: 2.57
+  carbs_per_100g: 10.86
+  fat_per_100g: 2.57
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 350
+- source: generic
+  source_id: milkshake_oreo
+  name: Oreo Milkshake
+  kcal_per_100g: 84.21052631578948
+  protein_per_100g: 2.37
+  carbs_per_100g: 11.05
+  fat_per_100g: 3.42
+  brand: Generic
+  region_codes: GB
+  serving_grams: 380
+  serving_label: 380 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 380
+- source: generic
+  source_id: juice_orange_fresh
+  name: Fresh Orange Juice
+  kcal_per_100g: 18.0
+  protein_per_100g: 0.28
+  carbs_per_100g: 4.0
+  fat_per_100g: 0.08
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 250
+- source: generic
+  source_id: juice_apple_fresh
+  name: Fresh Apple Juice
+  kcal_per_100g: 18.8
+  protein_per_100g: 0.04
+  carbs_per_100g: 4.4
+  fat_per_100g: 0.0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 250
+- source: generic
+  source_id: juice_carrot_fresh
+  name: Fresh Carrot Juice
+  kcal_per_100g: 16.0
+  protein_per_100g: 0.4
+  carbs_per_100g: 3.6
+  fat_per_100g: 0.08
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 250
+- source: generic
+  source_id: juice_beetroot_fresh
+  name: Fresh Beetroot Juice
+  kcal_per_100g: 24.0
+  protein_per_100g: 0.6
+  carbs_per_100g: 5.6
+  fat_per_100g: 0.08
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 250
+- source: generic
+  source_id: juice_grapefruit_fresh
+  name: Fresh Grapefruit Juice
+  kcal_per_100g: 15.2
+  protein_per_100g: 0.2
+  carbs_per_100g: 3.2
+  fat_per_100g: 0.04
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 250
+- source: generic
+  source_id: juice_pomegranate_fresh
+  name: Fresh Pomegranate Juice
+  kcal_per_100g: 26.0
+  protein_per_100g: 0.2
+  carbs_per_100g: 6.4
+  fat_per_100g: 0.12
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 250
+- source: generic
+  source_id: juice_celery_fresh
+  name: Fresh Celery Juice
+  kcal_per_100g: 5.6
+  protein_per_100g: 0.28
+  carbs_per_100g: 1.2
+  fat_per_100g: 0.08
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 250
+- source: generic
+  source_id: juice_green_kale_apple
+  name: Green Juice (Kale, Apple, Lemon)
+  kcal_per_100g: 14.0
+  protein_per_100g: 0.4
+  carbs_per_100g: 3.2
+  fat_per_100g: 0.12
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 250
+- source: generic
+  source_id: hot_choc_classic_with_milk
+  name: Hot Chocolate (with Milk, Standard)
+  kcal_per_100g: 50.0
+  protein_per_100g: 2.0
+  carbs_per_100g: 7.14
+  fat_per_100g: 1.71
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 350
+- source: generic
+  source_id: hot_choc_with_oat_milk
+  name: Hot Chocolate (with Oat Milk)
+  kcal_per_100g: 47.142857142857146
+  protein_per_100g: 1.14
+  carbs_per_100g: 7.71
+  fat_per_100g: 1.43
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 350
+- source: generic
+  source_id: hot_choc_with_almond_milk
+  name: Hot Chocolate (with Almond Milk)
+  kcal_per_100g: 41.42857142857143
+  protein_per_100g: 0.86
+  carbs_per_100g: 7.14
+  fat_per_100g: 1.14
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 350
+- source: generic
+  source_id: hot_choc_with_water
+  name: Hot Chocolate (with Water)
+  kcal_per_100g: 27.142857142857142
+  protein_per_100g: 0.29
+  carbs_per_100g: 6.29
+  fat_per_100g: 0.29
+  brand: Generic
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 350
+- source: generic
+  source_id: hot_choc_with_marshmallows
+  name: Hot Chocolate with Marshmallows
+  kcal_per_100g: 56.578947368421055
+  protein_per_100g: 1.84
+  carbs_per_100g: 8.42
+  fat_per_100g: 1.58
+  brand: Generic
+  region_codes: GB
+  serving_grams: 380
+  serving_label: 380 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 380
+- source: generic
+  source_id: hot_choc_with_cream
+  name: Hot Chocolate with Whipped Cream
+  kcal_per_100g: 64.47368421052632
+  protein_per_100g: 1.84
+  carbs_per_100g: 7.37
+  fat_per_100g: 3.16
+  brand: Generic
+  region_codes: GB
+  serving_grams: 380
+  serving_label: 380 ml
+  tags: cafe,coffee-shop,drink
+  portion_unit: ml
+  unit_grams: 380

@@ -1,0 +1,1377 @@
+# More supermarket chilled/frozen ready meals — Tesco/Sainsbury's/Asda/Morrisons/M&S/Waitrose
+# (TTD/Finest/The Best/Waitrose 1 lines) +
+# Pad Thai, Singapore Noodles, Butter Chicken, Lobster Ravioli, Paella with Chorizo, Lamb Tagine,
+# Thai Red Curry, Diavolo/4-Cheese/Napoletana pizza variants
+
+- source: tesco
+  source_id: tesco_chicken_pad_thai_meal
+  name: Tesco Chicken Pad Thai
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_chicken_singapore_noodles
+  name: Tesco Chicken Singapore Noodles
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_beef_chow_mein_400
+  name: Tesco Beef Chow Mein
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_chicken_tagliatelle
+  name: Tesco Chicken & Mushroom Tagliatelle
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 18
+  fat_per_100g: 7
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_lasagne_verdi
+  name: Tesco Lasagne al Forno Verde
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 8
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_pesto_chicken_pasta
+  name: Tesco Pesto Chicken Pasta
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_butter_chicken_meal
+  name: Tesco Butter Chicken
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 7
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_lamb_rogan_josh_meal
+  name: Tesco Lamb Rogan Josh
+  kcal_per_100g: 175
+  protein_per_100g: 12
+  carbs_per_100g: 9
+  fat_per_100g: 9
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco_finest
+  source_id: tesco_finest_lobster_ravioli
+  name: Tesco Finest Lobster Ravioli
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 6
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 250
+- source: tesco_finest
+  source_id: tesco_finest_beef_ragu_pappardelle
+  name: Tesco Finest Beef Ragu Pappardelle
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 350
+- source: tesco_finest
+  source_id: tesco_finest_chicken_milanese
+  name: Tesco Finest Chicken Milanese
+  kcal_per_100g: 240
+  protein_per_100g: 19
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 280
+- source: tesco_finest
+  source_id: tesco_finest_paella_chorizo
+  name: Tesco Finest Chicken & Chorizo Paella
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco_finest
+  source_id: tesco_finest_thai_red_curry_meal
+  name: Tesco Finest Thai Red Curry
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 8
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco_finest
+  source_id: tesco_finest_butter_chicken_meal
+  name: Tesco Finest Butter Chicken
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 9
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco_finest
+  source_id: tesco_finest_lamb_tagine
+  name: Tesco Finest Lamb Tagine
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 8
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_pizza_margherita_classico
+  name: Tesco Stonebaked Margherita Classico
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 290
+  serving_label: 290 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 290
+- source: tesco
+  source_id: tesco_pizza_diavolo
+  name: Tesco Stonebaked Diavolo Pepperoni
+  kcal_per_100g: 280
+  protein_per_100g: 13
+  carbs_per_100g: 30
+  fat_per_100g: 13
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 320
+  serving_label: 320 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 320
+- source: tesco
+  source_id: tesco_pizza_chicken_caesar
+  name: Tesco Stonebaked Chicken Caesar
+  kcal_per_100g: 250
+  protein_per_100g: 13
+  carbs_per_100g: 30
+  fat_per_100g: 9
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 350
+- source: tesco_finest
+  source_id: tesco_finest_pizza_napoletana
+  name: Tesco Finest Pizza Napoletana Margherita
+  kcal_per_100g: 230
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 8
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 320
+  serving_label: 320 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 320
+- source: tesco_finest
+  source_id: tesco_finest_pizza_4_cheese
+  name: Tesco Finest 4 Formaggi Pizza
+  kcal_per_100g: 270
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 320
+  serving_label: 320 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 320
+- source: tesco_finest
+  source_id: tesco_finest_pizza_prosciutto
+  name: Tesco Finest Pizza with Prosciutto
+  kcal_per_100g: 260
+  protein_per_100g: 13
+  carbs_per_100g: 30
+  fat_per_100g: 11
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 320
+  serving_label: 320 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 320
+- source: sainsburys
+  source_id: sains_pad_thai_400
+  name: Sainsbury's Chicken Pad Thai
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_singapore_noodles
+  name: Sainsbury's Chicken Singapore Noodles
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_lasagne_verdi
+  name: Sainsbury's Lasagne al Forno Verde
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 8
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_butter_chicken_400
+  name: Sainsbury's Butter Chicken
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 7
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys_taste_the_difference
+  source_id: sains_ttd_lobster_ravioli
+  name: Sainsbury's TTD Lobster Ravioli
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 6
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 250
+- source: sainsburys_taste_the_difference
+  source_id: sains_ttd_paella_chorizo
+  name: Sainsbury's TTD Paella with Chorizo
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys_taste_the_difference
+  source_id: sains_ttd_thai_red_curry
+  name: Sainsbury's TTD Thai Red Curry
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 8
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys_taste_the_difference
+  source_id: sains_ttd_lamb_tagine
+  name: Sainsbury's TTD Lamb Tagine
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 8
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_pizza_margherita_classico
+  name: Sainsbury's Stonebaked Classico Margherita
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 290
+  serving_label: 290 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 290
+- source: sainsburys
+  source_id: sains_pizza_diavolo_classic
+  name: Sainsbury's Stonebaked Diavolo
+  kcal_per_100g: 280
+  protein_per_100g: 13
+  carbs_per_100g: 30
+  fat_per_100g: 13
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 320
+  serving_label: 320 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 320
+- source: sainsburys_taste_the_difference
+  source_id: sains_ttd_pizza_napoletana
+  name: Sainsbury's TTD Pizza Napoletana Margherita
+  kcal_per_100g: 230
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 8
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 320
+  serving_label: 320 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 320
+- source: sainsburys
+  source_id: sains_pesto_chicken_pasta
+  name: Sainsbury's Pesto Chicken Pasta
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_chicken_arrabbiata
+  name: Sainsbury's Chicken Arrabbiata Pasta
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 15
+  fat_per_100g: 4
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_lamb_rogan_josh
+  name: Sainsbury's Lamb Rogan Josh
+  kcal_per_100g: 175
+  protein_per_100g: 12
+  carbs_per_100g: 9
+  fat_per_100g: 9
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_chicken_pad_thai_400
+  name: Asda Chicken Pad Thai
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Asda
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_butter_chicken_400
+  name: Asda Butter Chicken
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 7
+  brand: Asda
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_chicken_arrabbiata_pasta
+  name: Asda Chicken Arrabbiata Pasta
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 15
+  fat_per_100g: 4
+  brand: Asda
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_pesto_chicken_pasta
+  name: Asda Pesto Chicken Pasta
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Asda
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_lamb_rogan_josh
+  name: Asda Lamb Rogan Josh
+  kcal_per_100g: 175
+  protein_per_100g: 12
+  carbs_per_100g: 9
+  fat_per_100g: 9
+  brand: Asda
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_lasagne_verdi
+  name: Asda Lasagne al Forno Verde
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 8
+  brand: Asda
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: asda
+  source_id: asda_singapore_noodles
+  name: Asda Chicken Singapore Noodles
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Asda
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: asda_extra_special
+  source_id: asda_es_lobster_ravioli_pasta
+  name: Asda Extra Special Lobster Ravioli Pasta
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 6
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 250
+- source: asda_extra_special
+  source_id: asda_es_paella_chorizo
+  name: Asda Extra Special Paella with Chorizo
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: asda_extra_special
+  source_id: asda_es_thai_red_curry
+  name: Asda Extra Special Thai Red Curry
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 8
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: asda_extra_special
+  source_id: asda_es_pizza_napoletana
+  name: Asda Extra Special Pizza Napoletana Margherita
+  kcal_per_100g: 230
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 8
+  brand: Asda Extra Special
+  region_codes: GB
+  serving_grams: 320
+  serving_label: 320 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 320
+- source: morrisons
+  source_id: morr_chicken_pad_thai_400
+  name: Morrisons Chicken Pad Thai
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Morrisons
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: morrisons
+  source_id: morr_butter_chicken_400
+  name: Morrisons Butter Chicken
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 7
+  brand: Morrisons
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: morrisons
+  source_id: morr_chicken_arrabbiata_pasta
+  name: Morrisons Chicken Arrabbiata Pasta
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 15
+  fat_per_100g: 4
+  brand: Morrisons
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: morrisons
+  source_id: morr_pesto_chicken_pasta
+  name: Morrisons Pesto Chicken Pasta
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Morrisons
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: morrisons
+  source_id: morr_singapore_noodles
+  name: Morrisons Chicken Singapore Noodles
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Morrisons
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: morrisons_the_best
+  source_id: morr_best_lobster_ravioli
+  name: Morrisons The Best Lobster Ravioli
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 6
+  brand: Morrisons The Best
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 250
+- source: morrisons_the_best
+  source_id: morr_best_thai_red_curry
+  name: Morrisons The Best Thai Red Curry
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 8
+  brand: Morrisons The Best
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: morrisons_the_best
+  source_id: morr_best_pizza_napoletana
+  name: Morrisons The Best Napoletana Margherita Pizza
+  kcal_per_100g: 230
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 8
+  brand: Morrisons The Best
+  region_codes: GB
+  serving_grams: 320
+  serving_label: 320 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 320
+- source: mands
+  source_id: ms_chilled_pad_thai
+  name: M&S Chicken Pad Thai
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: M&S
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: mands
+  source_id: ms_chilled_butter_chicken
+  name: M&S Butter Chicken
+  kcal_per_100g: 175
+  protein_per_100g: 12
+  carbs_per_100g: 9
+  fat_per_100g: 11
+  brand: M&S
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: mands
+  source_id: ms_pesto_chicken_pasta_meal
+  name: M&S Pesto Chicken Pasta
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: M&S
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: mands
+  source_id: ms_chicken_arrabbiata_meal
+  name: M&S Chicken Arrabbiata Pasta
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 15
+  fat_per_100g: 5
+  brand: M&S
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: mands
+  source_id: ms_singapore_noodles
+  name: M&S Chicken Singapore Noodles
+  kcal_per_100g: 155
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: M&S
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: mands
+  source_id: ms_chilled_lobster_ravioli
+  name: M&S Lobster Ravioli
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 8
+  brand: M&S
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 250
+- source: mands
+  source_id: ms_paella_seafood_chorizo
+  name: M&S Seafood & Chorizo Paella
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: M&S
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: mands
+  source_id: ms_lamb_tagine
+  name: M&S Lamb Tagine
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 8
+  brand: M&S
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: mands
+  source_id: ms_pizza_diavolo
+  name: M&S Stonebaked Diavolo Pizza
+  kcal_per_100g: 280
+  protein_per_100g: 13
+  carbs_per_100g: 30
+  fat_per_100g: 13
+  brand: M&S
+  region_codes: GB
+  serving_grams: 320
+  serving_label: 320 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 320
+- source: mands
+  source_id: ms_pizza_napoletana
+  name: M&S Pizza Napoletana Margherita
+  kcal_per_100g: 230
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 8
+  brand: M&S
+  region_codes: GB
+  serving_grams: 320
+  serving_label: 320 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 320
+- source: mands
+  source_id: ms_pizza_quattro_formaggi
+  name: M&S 4 Formaggi Pizza
+  kcal_per_100g: 270
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: M&S
+  region_codes: GB
+  serving_grams: 320
+  serving_label: 320 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 320
+- source: waitrose
+  source_id: wait_chicken_pad_thai_400
+  name: Waitrose Chicken Pad Thai
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Waitrose
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: waitrose
+  source_id: wait_butter_chicken_400
+  name: Waitrose Butter Chicken
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 7
+  brand: Waitrose
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: waitrose
+  source_id: wait_pesto_chicken_pasta
+  name: Waitrose Pesto Chicken Pasta
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Waitrose
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: waitrose
+  source_id: wait_singapore_noodles
+  name: Waitrose Chicken Singapore Noodles
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Waitrose
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: waitrose_1
+  source_id: wait_w1_lobster_ravioli
+  name: Waitrose 1 Lobster Ravioli
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 8
+  brand: Waitrose 1
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 250
+- source: waitrose_1
+  source_id: wait_w1_paella_chorizo
+  name: Waitrose 1 Paella with Chorizo
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Waitrose 1
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: waitrose_1
+  source_id: wait_w1_lamb_tagine
+  name: Waitrose 1 Lamb Tagine
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 8
+  brand: Waitrose 1
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: waitrose
+  source_id: wait_pizza_margherita_classico
+  name: Waitrose Stonebaked Margherita
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Waitrose
+  region_codes: GB
+  serving_grams: 290
+  serving_label: 290 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 290
+- source: waitrose
+  source_id: wait_pizza_diavolo
+  name: Waitrose Stonebaked Diavolo
+  kcal_per_100g: 280
+  protein_per_100g: 13
+  carbs_per_100g: 30
+  fat_per_100g: 13
+  brand: Waitrose
+  region_codes: GB
+  serving_grams: 320
+  serving_label: 320 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 320
+- source: waitrose_1
+  source_id: wait_w1_pizza_napoletana
+  name: Waitrose 1 Pizza Napoletana Margherita
+  kcal_per_100g: 230
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 8
+  brand: Waitrose 1
+  region_codes: GB
+  serving_grams: 320
+  serving_label: 320 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 320
+- source: aldi
+  source_id: aldi_pesto_chicken_pasta
+  name: Aldi Pesto Chicken Pasta
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: aldi
+  source_id: aldi_butter_chicken_400
+  name: Aldi Butter Chicken
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 7
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: aldi
+  source_id: aldi_lasagne_verdi
+  name: Aldi Lasagne al Forno Verde
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 8
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: aldi
+  source_id: aldi_chicken_pad_thai_400
+  name: Aldi Chicken Pad Thai
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Aldi
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: lidl
+  source_id: lidl_pesto_chicken_pasta
+  name: Lidl Pesto Chicken Pasta
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: lidl
+  source_id: lidl_butter_chicken_400
+  name: Lidl Butter Chicken
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 7
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: lidl
+  source_id: lidl_chicken_arrabbiata_pasta
+  name: Lidl Chicken Arrabbiata Pasta
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 15
+  fat_per_100g: 4
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: lidl
+  source_id: lidl_chicken_pad_thai_400
+  name: Lidl Chicken Pad Thai
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: lidl
+  source_id: lidl_singapore_noodles
+  name: Lidl Chicken Singapore Noodles
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: lidl
+  source_id: lidl_lasagne_verdi
+  name: Lidl Lasagne al Forno Verde
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 8
+  brand: Lidl
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: co_op
+  source_id: coop_pesto_chicken_pasta
+  name: Co-op Pesto Chicken Pasta
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: co_op
+  source_id: coop_butter_chicken_400
+  name: Co-op Butter Chicken
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 7
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: co_op
+  source_id: coop_chicken_pad_thai_400
+  name: Co-op Chicken Pad Thai
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: co_op
+  source_id: coop_singapore_noodles
+  name: Co-op Chicken Singapore Noodles
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: co_op
+  source_id: coop_lasagne_verdi
+  name: Co-op Lasagne al Forno Verde
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 8
+  brand: Co-op
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: iceland
+  source_id: iceland_chicken_pad_thai_meal
+  name: Iceland Chicken Pad Thai (Frozen)
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: iceland
+  source_id: iceland_pesto_chicken_pasta
+  name: Iceland Pesto Chicken Pasta (Frozen)
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: iceland
+  source_id: iceland_butter_chicken_meal
+  name: Iceland Butter Chicken (Frozen)
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 7
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: iceland
+  source_id: iceland_singapore_noodles_frozen
+  name: Iceland Chicken Singapore Noodles (Frozen)
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: iceland
+  source_id: iceland_pizza_diavolo_frozen
+  name: Iceland Diavolo Pepperoni Pizza (Frozen)
+  kcal_per_100g: 280
+  protein_per_100g: 13
+  carbs_per_100g: 30
+  fat_per_100g: 13
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 320
+  serving_label: 320 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 320
+- source: iceland
+  source_id: iceland_pizza_quattro_formaggi
+  name: Iceland 4 Cheese Pizza (Frozen)
+  kcal_per_100g: 270
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 320
+  serving_label: 320 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 320
+- source: iceland
+  source_id: iceland_thai_chicken_red_curry
+  name: Iceland Thai Red Chicken Curry (Frozen)
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 8
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: iceland
+  source_id: iceland_lamb_rogan_josh_meal_frozen
+  name: Iceland Lamb Rogan Josh (Frozen)
+  kcal_per_100g: 175
+  protein_per_100g: 12
+  carbs_per_100g: 9
+  fat_per_100g: 9
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400

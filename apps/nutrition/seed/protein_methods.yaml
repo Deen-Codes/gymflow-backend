@@ -1,0 +1,315 @@
+# Protein cooking methods — most-tracked workout food
+# Chicken/beef/fish/pork/lamb/turkey across cooking methods.
+
+- source: homemade
+  source_id: chicken_breast_grilled_plain
+  name: Chicken Breast (Grilled, No Oil)
+  kcal_per_100g: 165
+  protein_per_100g: 31
+  carbs_per_100g: 0
+  fat_per_100g: 3.6
+  serving_grams: 150
+  serving_label: breast (150 g)
+  tags: chicken,protein,workout-food
+  portion_unit: meal
+  unit_grams: 150
+- source: homemade
+  source_id: chicken_breast_pan_oil
+  name: Chicken Breast (Pan-fried, 1 tsp oil)
+  kcal_per_100g: 200
+  protein_per_100g: 30
+  carbs_per_100g: 0
+  fat_per_100g: 8
+  serving_grams: 150
+  serving_label: breast (150 g)
+  tags: chicken,protein,workout-food
+  portion_unit: meal
+  unit_grams: 150
+- source: homemade
+  source_id: chicken_breast_baked_seasoned
+  name: Chicken Breast (Baked, Seasoned)
+  kcal_per_100g: 170
+  protein_per_100g: 31
+  carbs_per_100g: 1
+  fat_per_100g: 4
+  serving_grams: 150
+  serving_label: breast (150 g)
+  tags: chicken,protein,workout-food
+  portion_unit: meal
+  unit_grams: 150
+- source: homemade
+  source_id: chicken_thigh_grilled
+  name: Chicken Thigh (Grilled, Skinless)
+  kcal_per_100g: 210
+  protein_per_100g: 26
+  carbs_per_100g: 0
+  fat_per_100g: 11
+  serving_grams: 120
+  serving_label: thigh (120 g)
+  tags: chicken,protein,workout-food
+  portion_unit: meal
+  unit_grams: 120
+- source: homemade
+  source_id: chicken_thigh_skin_on
+  name: Chicken Thigh (Roasted, Skin On)
+  kcal_per_100g: 255
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 18
+  serving_grams: 120
+  serving_label: thigh (120 g)
+  tags: chicken,protein,workout-food
+  portion_unit: meal
+  unit_grams: 120
+- source: homemade
+  source_id: chicken_drumstick_roasted
+  name: Chicken Drumstick (Roasted)
+  kcal_per_100g: 215
+  protein_per_100g: 24
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  serving_grams: 110
+  serving_label: drumstick (110 g)
+  tags: chicken,protein
+  portion_unit: meal
+  unit_grams: 110
+- source: homemade
+  source_id: chicken_wings_baked
+  name: Chicken Wings (Baked)
+  kcal_per_100g: 230
+  protein_per_100g: 24
+  carbs_per_100g: 0
+  fat_per_100g: 15
+  serving_grams: 80
+  serving_label: wing (80 g)
+  tags: chicken,protein
+  portion_unit: meal
+  unit_grams: 80
+- source: homemade
+  source_id: lean_beef_mince_5pct_cooked
+  name: Lean Beef Mince (5%, Cooked)
+  kcal_per_100g: 175
+  protein_per_100g: 26
+  carbs_per_100g: 0
+  fat_per_100g: 8
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: beef,protein,workout-food,lean
+  portion_unit: meal
+  unit_grams: 125
+- source: homemade
+  source_id: beef_mince_15pct_cooked
+  name: Beef Mince (15%, Cooked)
+  kcal_per_100g: 230
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 16
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: beef,protein
+  portion_unit: meal
+  unit_grams: 125
+- source: homemade
+  source_id: beef_mince_20pct_cooked
+  name: Beef Mince (20%, Cooked)
+  kcal_per_100g: 265
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 21
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: beef,protein
+  portion_unit: meal
+  unit_grams: 125
+- source: homemade
+  source_id: sirloin_steak_grilled
+  name: Sirloin Steak (Grilled)
+  kcal_per_100g: 225
+  protein_per_100g: 30
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  serving_grams: 200
+  serving_label: steak (200 g)
+  tags: beef,protein,workout-food
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: rump_steak_grilled
+  name: Rump Steak (Grilled)
+  kcal_per_100g: 215
+  protein_per_100g: 30
+  carbs_per_100g: 0
+  fat_per_100g: 11
+  serving_grams: 200
+  serving_label: steak (200 g)
+  tags: beef,protein,workout-food
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: ribeye_grilled
+  name: Ribeye Steak (Grilled)
+  kcal_per_100g: 290
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 22
+  serving_grams: 225
+  serving_label: steak (225 g)
+  tags: beef,protein
+  portion_unit: meal
+  unit_grams: 225
+- source: homemade
+  source_id: fillet_steak_grilled
+  name: Fillet Steak (Grilled)
+  kcal_per_100g: 210
+  protein_per_100g: 31
+  carbs_per_100g: 0
+  fat_per_100g: 10
+  serving_grams: 200
+  serving_label: steak (200 g)
+  tags: beef,protein,workout-food
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: salmon_fillet_baked
+  name: Salmon Fillet (Baked, No Oil)
+  kcal_per_100g: 210
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: salmon,fish,protein,workout-food
+  portion_unit: meal
+  unit_grams: 130
+- source: homemade
+  source_id: salmon_fillet_pan
+  name: Salmon Fillet (Pan-fried)
+  kcal_per_100g: 235
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 16
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: salmon,fish,protein
+  portion_unit: meal
+  unit_grams: 130
+- source: homemade
+  source_id: cod_fillet_baked
+  name: Cod Fillet (Baked)
+  kcal_per_100g: 105
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  serving_grams: 140
+  serving_label: fillet (140 g)
+  tags: cod,fish,protein,workout-food,lean
+  portion_unit: meal
+  unit_grams: 140
+- source: homemade
+  source_id: haddock_fillet_baked
+  name: Haddock Fillet (Baked)
+  kcal_per_100g: 100
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 1
+  serving_grams: 140
+  serving_label: fillet (140 g)
+  tags: haddock,fish,protein,workout-food,lean
+  portion_unit: meal
+  unit_grams: 140
+- source: homemade
+  source_id: tuna_steak_grilled
+  name: Tuna Steak (Grilled)
+  kcal_per_100g: 150
+  protein_per_100g: 32
+  carbs_per_100g: 0
+  fat_per_100g: 2.5
+  serving_grams: 150
+  serving_label: steak (150 g)
+  tags: tuna,fish,protein,workout-food
+  portion_unit: meal
+  unit_grams: 150
+- source: homemade
+  source_id: pork_loin_grilled
+  name: Pork Loin Steak (Grilled)
+  kcal_per_100g: 195
+  protein_per_100g: 29
+  carbs_per_100g: 0
+  fat_per_100g: 9
+  serving_grams: 130
+  serving_label: steak (130 g)
+  tags: pork,protein
+  portion_unit: meal
+  unit_grams: 130
+- source: homemade
+  source_id: pork_chop_grilled
+  name: Pork Chop (Grilled)
+  kcal_per_100g: 230
+  protein_per_100g: 27
+  carbs_per_100g: 0
+  fat_per_100g: 14
+  serving_grams: 170
+  serving_label: chop (170 g)
+  tags: pork,protein
+  portion_unit: meal
+  unit_grams: 170
+- source: homemade
+  source_id: pork_tenderloin_roasted
+  name: Pork Tenderloin (Roasted)
+  kcal_per_100g: 170
+  protein_per_100g: 30
+  carbs_per_100g: 0
+  fat_per_100g: 5.5
+  serving_grams: 130
+  serving_label: portion (130 g)
+  tags: pork,protein,lean
+  portion_unit: meal
+  unit_grams: 130
+- source: homemade
+  source_id: lamb_chops_grilled
+  name: Lamb Chops (Grilled)
+  kcal_per_100g: 270
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 19
+  serving_grams: 120
+  serving_label: chops (120 g)
+  tags: lamb,protein
+  portion_unit: meal
+  unit_grams: 120
+- source: homemade
+  source_id: lamb_steak_grilled
+  name: Lamb Steak (Grilled)
+  kcal_per_100g: 215
+  protein_per_100g: 28
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  serving_grams: 160
+  serving_label: steak (160 g)
+  tags: lamb,protein
+  portion_unit: meal
+  unit_grams: 160
+- source: homemade
+  source_id: turkey_breast_grilled
+  name: Turkey Breast (Grilled)
+  kcal_per_100g: 155
+  protein_per_100g: 30
+  carbs_per_100g: 0
+  fat_per_100g: 3
+  serving_grams: 150
+  serving_label: portion (150 g)
+  tags: turkey,protein,workout-food,lean
+  portion_unit: meal
+  unit_grams: 150
+- source: homemade
+  source_id: turkey_mince_cooked
+  name: Turkey Mince (Cooked)
+  kcal_per_100g: 170
+  protein_per_100g: 27
+  carbs_per_100g: 0
+  fat_per_100g: 7
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: turkey,protein,lean
+  portion_unit: meal
+  unit_grams: 125

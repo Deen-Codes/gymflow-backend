@@ -1,0 +1,1760 @@
+# More takeaway specifics (kebabs, burgers, wings, nuggets, chips variations, pizza slices,
+# Chinese/Indian curry takeaway portions) +
+# More mixer drinks (Fever-Tree full, Schweppes, San Pellegrino aranciata/limonata, Orangina, Appletiser) +
+# Iced tea brands (Lipton, Arizona) +
+# More cola variants (Cherry Coke, Vanilla Coke, Pepsi Max flavours, Dr Pepper variants) +
+# More health bars (Eat Natural, Grenade Carb Killa flavours, PhD Smart Bar variants, Quest chips,
+# Barebells more flavours) +
+# More pub food variants (Caesar/burger/steak/lamb shank/pies/jacket potato variants) +
+# More coffee shop drinks (McDonald's coffee menu, Pret/Starbucks plant-based milk lattes)
+
+- source: brand
+  source_id: nightout_kebab_chicken_donner
+  name: Chicken Doner Kebab (Takeaway)
+  kcal_per_100g: 215
+  protein_per_100g: 16
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: nightout_kebab_lamb_donner
+  name: Lamb Doner Kebab (Takeaway)
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: nightout_kebab_chicken_shish
+  name: Chicken Shish Kebab Wrap
+  kcal_per_100g: 215
+  protein_per_100g: 16
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: nightout_kebab_lamb_shish
+  name: Lamb Shish Kebab Wrap
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: nightout_kebab_mixed
+  name: Mixed Kebab Plate
+  kcal_per_100g: 215
+  protein_per_100g: 16
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: brand
+  source_id: nightout_chicken_burger_takeaway
+  name: Chicken Burger Takeaway
+  kcal_per_100g: 245
+  protein_per_100g: 15
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 280
+- source: brand
+  source_id: nightout_beef_burger_takeaway
+  name: Beef Burger Takeaway
+  kcal_per_100g: 280
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 280
+- source: brand
+  source_id: nightout_double_cheeseburger_takeaway
+  name: Double Cheeseburger (Takeaway)
+  kcal_per_100g: 320
+  protein_per_100g: 18
+  carbs_per_100g: 22
+  fat_per_100g: 18
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 320
+  serving_label: 320 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 320
+- source: brand
+  source_id: nightout_chicken_strips_takeaway
+  name: Chicken Strips (Takeaway, 4 pcs)
+  kcal_per_100g: 245
+  protein_per_100g: 18
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: nightout_chicken_wings_10
+  name: Chicken Wings (Takeaway, 10 pcs)
+  kcal_per_100g: 245
+  protein_per_100g: 18
+  carbs_per_100g: 5
+  fat_per_100g: 18
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: nightout_chicken_wings_5_buffalo
+  name: Buffalo Wings (5 pcs)
+  kcal_per_100g: 245
+  protein_per_100g: 18
+  carbs_per_100g: 5
+  fat_per_100g: 18
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 175
+- source: brand
+  source_id: nightout_chicken_nuggets_10_takeaway
+  name: Chicken Nuggets (Takeaway, 10 pcs)
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 14
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: nightout_pizza_pepperoni_per_slice_large
+  name: Pepperoni Pizza Large (Per Slice)
+  kcal_per_100g: 280
+  protein_per_100g: 12
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: slice
+  unit_grams: 100
+- source: brand
+  source_id: nightout_pizza_margherita_per_slice_large
+  name: Margherita Pizza Large (Per Slice)
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: slice
+  unit_grams: 100
+- source: brand
+  source_id: nightout_pizza_meat_feast_per_slice
+  name: Meat Feast Pizza (Per Slice)
+  kcal_per_100g: 295
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: slice
+  unit_grams: 100
+- source: brand
+  source_id: nightout_pizza_hawaiian_per_slice
+  name: Hawaiian Pizza (Per Slice)
+  kcal_per_100g: 250
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 9
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: slice
+  unit_grams: 100
+- source: brand
+  source_id: nightout_pizza_bbq_chicken_per_slice
+  name: BBQ Chicken Pizza (Per Slice)
+  kcal_per_100g: 250
+  protein_per_100g: 13
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: slice
+  unit_grams: 100
+- source: brand
+  source_id: nightout_pizza_veggie_per_slice
+  name: Veggie Pizza (Per Slice)
+  kcal_per_100g: 220
+  protein_per_100g: 9
+  carbs_per_100g: 30
+  fat_per_100g: 7
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: slice
+  unit_grams: 100
+- source: brand
+  source_id: nightout_garlic_bread_takeaway
+  name: Garlic Bread (Takeaway, Per Slice)
+  kcal_per_100g: 295
+  protein_per_100g: 6
+  carbs_per_100g: 30
+  fat_per_100g: 16
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 60
+- source: brand
+  source_id: nightout_chips_takeaway_large
+  name: Chips Takeaway (Large)
+  kcal_per_100g: 250
+  protein_per_100g: 4
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: nightout_chips_takeaway_regular
+  name: Chips Takeaway (Regular)
+  kcal_per_100g: 250
+  protein_per_100g: 4
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 200
+- source: brand
+  source_id: nightout_cheesy_chips
+  name: Cheesy Chips (Takeaway)
+  kcal_per_100g: 280
+  protein_per_100g: 8
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: nightout_loaded_chips_takeaway
+  name: Loaded Chips (Takeaway, with Cheese & Bacon)
+  kcal_per_100g: 295
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 16
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 280
+- source: brand
+  source_id: nightout_chicken_kebab_pita
+  name: Chicken Kebab in Pita (Takeaway)
+  kcal_per_100g: 245
+  protein_per_100g: 16
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 300
+- source: brand
+  source_id: nightout_chicken_burger_chips_drink
+  name: Chicken Burger Meal (Burger + Chips + Drink)
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 25
+  fat_per_100g: 10
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 600
+  serving_label: 600 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 600
+- source: brand
+  source_id: nightout_dirty_burger
+  name: Dirty Burger Loaded (Takeaway)
+  kcal_per_100g: 320
+  protein_per_100g: 17
+  carbs_per_100g: 25
+  fat_per_100g: 18
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: nightout_smashed_burger
+  name: Smashed Burger (Takeaway)
+  kcal_per_100g: 305
+  protein_per_100g: 17
+  carbs_per_100g: 22
+  fat_per_100g: 17
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 280
+- source: brand
+  source_id: nightout_curry_chicken_special
+  name: Chicken Curry & Rice Special (Takeaway)
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 600
+  serving_label: 600 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 600
+- source: brand
+  source_id: nightout_chinese_meal_special
+  name: Chinese Meal Deal (Per Plate)
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 600
+  serving_label: 600 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 600
+- source: brand
+  source_id: nightout_special_fried_rice_takeaway
+  name: Special Fried Rice (Chinese Takeaway)
+  kcal_per_100g: 175
+  protein_per_100g: 8
+  carbs_per_100g: 25
+  fat_per_100g: 5
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: nightout_egg_fried_rice_takeaway
+  name: Egg Fried Rice (Chinese Takeaway)
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 25
+  fat_per_100g: 5
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: nightout_prawn_fried_rice_takeaway
+  name: Prawn Fried Rice (Chinese Takeaway)
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: nightout_chicken_korma_takeaway
+  name: Chicken Korma (Takeaway)
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 8
+  fat_per_100g: 14
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: nightout_chicken_jalfrezi_takeaway
+  name: Chicken Jalfrezi (Takeaway)
+  kcal_per_100g: 145
+  protein_per_100g: 12
+  carbs_per_100g: 9
+  fat_per_100g: 6
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: nightout_chicken_vindaloo_takeaway
+  name: Chicken Vindaloo (Takeaway)
+  kcal_per_100g: 165
+  protein_per_100g: 12
+  carbs_per_100g: 8
+  fat_per_100g: 9
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: nightout_lamb_curry_takeaway
+  name: Lamb Curry (Takeaway)
+  kcal_per_100g: 215
+  protein_per_100g: 14
+  carbs_per_100g: 8
+  fat_per_100g: 14
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: nightout_chicken_balti_takeaway
+  name: Chicken Balti (Takeaway)
+  kcal_per_100g: 145
+  protein_per_100g: 12
+  carbs_per_100g: 9
+  fat_per_100g: 6
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: nightout_chicken_dopiaza_takeaway
+  name: Chicken Dopiaza (Takeaway)
+  kcal_per_100g: 145
+  protein_per_100g: 12
+  carbs_per_100g: 8
+  fat_per_100g: 7
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: nightout_chicken_dansak_takeaway
+  name: Chicken Dansak (Takeaway)
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 13
+  fat_per_100g: 5
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: nightout_chicken_pasanda_takeaway
+  name: Chicken Pasanda (Takeaway)
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 8
+  fat_per_100g: 13
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: nightout_chicken_madras_takeaway
+  name: Chicken Madras (Takeaway)
+  kcal_per_100g: 165
+  protein_per_100g: 12
+  carbs_per_100g: 8
+  fat_per_100g: 11
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: nightout_naan_garlic_takeaway
+  name: Garlic Naan (Takeaway, Per Naan)
+  kcal_per_100g: 305
+  protein_per_100g: 9
+  carbs_per_100g: 47
+  fat_per_100g: 9
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 130
+- source: brand
+  source_id: nightout_naan_peshwari_takeaway
+  name: Peshwari Naan (Takeaway)
+  kcal_per_100g: 330
+  protein_per_100g: 8
+  carbs_per_100g: 50
+  fat_per_100g: 11
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 130
+- source: brand
+  source_id: nightout_pilau_rice_takeaway
+  name: Pilau Rice (Takeaway, Per Portion)
+  kcal_per_100g: 175
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 4
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: nightout_basmati_rice_takeaway
+  name: Basmati Rice (Takeaway)
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 2
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: nightout_tikka_masala_takeaway_chicken
+  name: Chicken Tikka Masala (Takeaway)
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 8
+  fat_per_100g: 11
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: nightout_butter_chicken_takeaway
+  name: Butter Chicken (Takeaway)
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 8
+  fat_per_100g: 14
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: nightout_lamb_rogan_josh_takeaway
+  name: Lamb Rogan Josh (Takeaway)
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 8
+  fat_per_100g: 12
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: nightout_thai_green_takeaway
+  name: Thai Green Curry (Takeaway)
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 9
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 450
+- source: brand
+  source_id: nightout_thai_red_takeaway
+  name: Thai Red Curry (Takeaway)
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 10
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 450
+- source: brand
+  source_id: nightout_pad_thai_takeaway
+  name: Pad Thai (Takeaway)
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Takeaway
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 450
+- source: brand
+  source_id: drink_fever_tree_tonic_200
+  name: Fever-Tree Indian Tonic Water (200ml)
+  kcal_per_100g: 30
+  protein_per_100g: 0
+  carbs_per_100g: 7
+  fat_per_100g: 0
+  brand: Fever-Tree
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: drink_fever_tree_naturally_light
+  name: Fever-Tree Naturally Light Tonic (200ml)
+  kcal_per_100g: 12
+  protein_per_100g: 0
+  carbs_per_100g: 3
+  fat_per_100g: 0
+  brand: Fever-Tree
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: drink_fever_tree_mediterranean
+  name: Fever-Tree Mediterranean Tonic (200ml)
+  kcal_per_100g: 30
+  protein_per_100g: 0
+  carbs_per_100g: 7
+  fat_per_100g: 0
+  brand: Fever-Tree
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: drink_fever_tree_elderflower_tonic
+  name: Fever-Tree Elderflower Tonic (200ml)
+  kcal_per_100g: 32
+  protein_per_100g: 0
+  carbs_per_100g: 8
+  fat_per_100g: 0
+  brand: Fever-Tree
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: drink_fever_tree_ginger_ale
+  name: Fever-Tree Ginger Ale (200ml)
+  kcal_per_100g: 35
+  protein_per_100g: 0
+  carbs_per_100g: 9
+  fat_per_100g: 0
+  brand: Fever-Tree
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: drink_fever_tree_ginger_beer
+  name: Fever-Tree Ginger Beer (200ml)
+  kcal_per_100g: 40
+  protein_per_100g: 0
+  carbs_per_100g: 10
+  fat_per_100g: 0
+  brand: Fever-Tree
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: drink_schweppes_tonic_200
+  name: Schweppes Indian Tonic Water (200ml)
+  kcal_per_100g: 30
+  protein_per_100g: 0
+  carbs_per_100g: 7
+  fat_per_100g: 0
+  brand: Schweppes
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: drink_schweppes_slimline_tonic_200
+  name: Schweppes Slimline Tonic (200ml)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Schweppes
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: drink_schweppes_lemonade_330
+  name: Schweppes Lemonade (330ml)
+  kcal_per_100g: 35
+  protein_per_100g: 0
+  carbs_per_100g: 8
+  fat_per_100g: 0
+  brand: Schweppes
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 330
+- source: brand
+  source_id: drink_schweppes_bitter_lemon_200
+  name: Schweppes Bitter Lemon (200ml)
+  kcal_per_100g: 35
+  protein_per_100g: 0
+  carbs_per_100g: 9
+  fat_per_100g: 0
+  brand: Schweppes
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: drink_san_pellegrino_aranciata_330
+  name: San Pellegrino Aranciata (330ml)
+  kcal_per_100g: 40
+  protein_per_100g: 0
+  carbs_per_100g: 10
+  fat_per_100g: 0
+  brand: San Pellegrino
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 330
+- source: brand
+  source_id: drink_san_pellegrino_limonata_330
+  name: San Pellegrino Limonata (330ml)
+  kcal_per_100g: 35
+  protein_per_100g: 0
+  carbs_per_100g: 8
+  fat_per_100g: 0
+  brand: San Pellegrino
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 330
+- source: brand
+  source_id: drink_san_pellegrino_aranciata_rossa
+  name: San Pellegrino Aranciata Rossa (330ml)
+  kcal_per_100g: 40
+  protein_per_100g: 0
+  carbs_per_100g: 10
+  fat_per_100g: 0
+  brand: San Pellegrino
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 330
+- source: brand
+  source_id: drink_san_pellegrino_pompelmo
+  name: San Pellegrino Pompelmo (330ml)
+  kcal_per_100g: 35
+  protein_per_100g: 0
+  carbs_per_100g: 8
+  fat_per_100g: 0
+  brand: San Pellegrino
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 330
+- source: brand
+  source_id: drink_orangina_330
+  name: Orangina (330ml)
+  kcal_per_100g: 39
+  protein_per_100g: 0
+  carbs_per_100g: 10
+  fat_per_100g: 0
+  brand: Orangina
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 330
+- source: brand
+  source_id: drink_appletiser_275
+  name: Appletiser (275ml)
+  kcal_per_100g: 47
+  protein_per_100g: 0
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Appletiser
+  region_codes: GB
+  serving_grams: 275
+  serving_label: 275 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 275
+- source: brand
+  source_id: drink_grape_tiser_275
+  name: Grapetiser (275ml)
+  kcal_per_100g: 50
+  protein_per_100g: 0
+  carbs_per_100g: 12
+  fat_per_100g: 0
+  brand: Grapetiser
+  region_codes: GB
+  serving_grams: 275
+  serving_label: 275 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 275
+- source: brand
+  source_id: drink_iced_tea_lipton_500
+  name: Lipton Ice Tea Lemon (500ml)
+  kcal_per_100g: 25
+  protein_per_100g: 0
+  carbs_per_100g: 6
+  fat_per_100g: 0
+  brand: Lipton
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 500
+- source: brand
+  source_id: drink_iced_tea_lipton_peach
+  name: Lipton Ice Tea Peach (500ml)
+  kcal_per_100g: 25
+  protein_per_100g: 0
+  carbs_per_100g: 6
+  fat_per_100g: 0
+  brand: Lipton
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: brand
+  source_id: drink_iced_tea_lipton_mango
+  name: Lipton Ice Tea Mango (500ml)
+  kcal_per_100g: 25
+  protein_per_100g: 0
+  carbs_per_100g: 6
+  fat_per_100g: 0
+  brand: Lipton
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: brand
+  source_id: drink_arizona_green_tea_500
+  name: Arizona Green Tea Honey (500ml)
+  kcal_per_100g: 35
+  protein_per_100g: 0
+  carbs_per_100g: 9
+  fat_per_100g: 0
+  brand: Arizona
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 500
+- source: brand
+  source_id: drink_arizona_lemon_iced_tea
+  name: Arizona Lemon Iced Tea (500ml)
+  kcal_per_100g: 35
+  protein_per_100g: 0
+  carbs_per_100g: 9
+  fat_per_100g: 0
+  brand: Arizona
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: brand
+  source_id: drink_arizona_watermelon_500
+  name: Arizona Watermelon (500ml)
+  kcal_per_100g: 35
+  protein_per_100g: 0
+  carbs_per_100g: 9
+  fat_per_100g: 0
+  brand: Arizona
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 500
+- source: brand
+  source_id: drink_coke_cherry_330
+  name: Coca-Cola Cherry (330ml)
+  kcal_per_100g: 42
+  protein_per_100g: 0
+  carbs_per_100g: 10.6
+  fat_per_100g: 0
+  brand: Coca-Cola
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 330
+- source: brand
+  source_id: drink_coke_vanilla_330
+  name: Coca-Cola Vanilla (330ml)
+  kcal_per_100g: 42
+  protein_per_100g: 0
+  carbs_per_100g: 10.6
+  fat_per_100g: 0
+  brand: Coca-Cola
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 330
+- source: brand
+  source_id: drink_coke_zero_cherry_330
+  name: Coca-Cola Zero Cherry (330ml)
+  kcal_per_100g: 0.4
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Coca-Cola
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 330
+- source: brand
+  source_id: drink_pepsi_max_cherry_500
+  name: Pepsi Max Cherry (500ml)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Pepsi
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 500
+- source: brand
+  source_id: drink_pepsi_max_lime_500
+  name: Pepsi Max Lime (500ml)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Pepsi
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 500
+- source: brand
+  source_id: drink_pepsi_max_mango_500
+  name: Pepsi Max Mango (500ml)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Pepsi
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 500
+- source: brand
+  source_id: drink_dr_pepper_zero_500
+  name: Dr Pepper Zero (500ml)
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Dr Pepper
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 500
+- source: brand
+  source_id: drink_dr_pepper_cherry
+  name: Dr Pepper Cherry (330ml)
+  kcal_per_100g: 41
+  protein_per_100g: 0
+  carbs_per_100g: 10
+  fat_per_100g: 0
+  brand: Dr Pepper
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 330
+- source: brand
+  source_id: drink_dr_pepper_strawberry_cream
+  name: Dr Pepper Strawberries & Cream (330ml)
+  kcal_per_100g: 41
+  protein_per_100g: 0
+  carbs_per_100g: 10
+  fat_per_100g: 0
+  brand: Dr Pepper
+  region_codes: GB
+  serving_grams: 330
+  serving_label: 330 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 330
+- source: brand
+  source_id: brand_eat_natural_bar_dark_choc_brazil
+  name: Eat Natural Dark Chocolate Brazil Nut Bar (Per 45g)
+  kcal_per_100g: 480
+  protein_per_100g: 10
+  carbs_per_100g: 47
+  fat_per_100g: 26
+  brand: Eat Natural
+  region_codes: GB
+  serving_grams: 45
+  serving_label: 45 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 45
+- source: brand
+  source_id: brand_eat_natural_bar_apricot_yogurt
+  name: Eat Natural Apricot Yogurt Coated Bar (Per 50g)
+  kcal_per_100g: 460
+  protein_per_100g: 9
+  carbs_per_100g: 55
+  fat_per_100g: 22
+  brand: Eat Natural
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: brand_grenade_carb_killa_chocolate_chip_cookie_dough
+  name: Grenade Carb Killa Chocolate Chip Cookie Dough
+  kcal_per_100g: 395
+  protein_per_100g: 35
+  carbs_per_100g: 17
+  fat_per_100g: 18
+  brand: Grenade
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: brand,grocery
+  portion_unit: bar
+  unit_grams: 60
+- source: brand
+  source_id: brand_phd_smart_bar_white_chocolate_blondie
+  name: PhD Smart Bar White Chocolate Blondie
+  kcal_per_100g: 380
+  protein_per_100g: 33
+  carbs_per_100g: 24
+  fat_per_100g: 17
+  brand: PhD Nutrition
+  region_codes: GB
+  serving_grams: 64
+  serving_label: 64 g
+  tags: brand,grocery
+  portion_unit: bar
+  unit_grams: 64
+- source: brand
+  source_id: brand_phd_smart_jack_chocolate_orange
+  name: PhD Smart Jack Chocolate Orange
+  kcal_per_100g: 380
+  protein_per_100g: 24
+  carbs_per_100g: 38
+  fat_per_100g: 14
+  brand: PhD Nutrition
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 60
+- source: brand
+  source_id: brand_phd_smart_bar_plant_choc_brownie
+  name: PhD Smart Bar Plant Chocolate Brownie
+  kcal_per_100g: 380
+  protein_per_100g: 33
+  carbs_per_100g: 24
+  fat_per_100g: 17
+  brand: PhD Nutrition
+  region_codes: GB
+  serving_grams: 64
+  serving_label: 64 g
+  tags: brand,grocery
+  portion_unit: bar
+  unit_grams: 64
+- source: brand
+  source_id: brand_quest_protein_chips_chili_lime
+  name: Quest Tortilla Chips Chili Lime
+  kcal_per_100g: 400
+  protein_per_100g: 36
+  carbs_per_100g: 30
+  fat_per_100g: 14
+  brand: Quest
+  region_codes: GB
+  serving_grams: 32
+  serving_label: 32 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 32
+- source: brand
+  source_id: brand_quest_protein_chips_loaded_taco
+  name: Quest Tortilla Chips Loaded Taco
+  kcal_per_100g: 400
+  protein_per_100g: 36
+  carbs_per_100g: 30
+  fat_per_100g: 14
+  brand: Quest
+  region_codes: GB
+  serving_grams: 32
+  serving_label: 32 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 32
+- source: brand
+  source_id: brand_quest_protein_chips_spicy_sweet_chili
+  name: Quest Tortilla Chips Spicy Sweet Chili
+  kcal_per_100g: 400
+  protein_per_100g: 36
+  carbs_per_100g: 30
+  fat_per_100g: 14
+  brand: Quest
+  region_codes: GB
+  serving_grams: 32
+  serving_label: 32 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 32
+- source: brand
+  source_id: brand_barebells_protein_bar_strawberry
+  name: Barebells Protein Bar Strawberry & Cream
+  kcal_per_100g: 415
+  protein_per_100g: 35
+  carbs_per_100g: 23
+  fat_per_100g: 19
+  brand: Barebells
+  region_codes: GB
+  serving_grams: 55
+  serving_label: 55 g
+  tags: brand,grocery
+  portion_unit: bar
+  unit_grams: 55
+- source: brand
+  source_id: pub_chicken_caesar_pub
+  name: Pub Chicken Caesar Salad
+  kcal_per_100g: 195
+  protein_per_100g: 22
+  carbs_per_100g: 9
+  fat_per_100g: 11
+  brand: Pub
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: pub_chicken_burger_chips_pub_v2
+  name: Pub Chicken Burger with Chips
+  kcal_per_100g: 245
+  protein_per_100g: 15
+  carbs_per_100g: 25
+  fat_per_100g: 10
+  brand: Pub
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: brand
+  source_id: pub_steak_chips_peas
+  name: Pub Steak Frites with Peas
+  kcal_per_100g: 215
+  protein_per_100g: 17
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Pub
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: brand
+  source_id: pub_lamb_shank_with_mash
+  name: Pub Lamb Shank with Mash
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 9
+  brand: Pub
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: brand
+  source_id: pub_chicken_pie_chips_pub_v2
+  name: Pub Chicken & Mushroom Pie with Chips
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 10
+  brand: Pub
+  region_codes: GB
+  serving_grams: 600
+  serving_label: 600 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 600
+- source: brand
+  source_id: pub_chicken_kievs_chips
+  name: Pub Chicken Kiev with Chips
+  kcal_per_100g: 215
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Pub
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: brand
+  source_id: pub_gammon_pineapple_chips
+  name: Pub Gammon, Pineapple & Chips
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Pub
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: brand
+  source_id: pub_fishermans_pie_pub
+  name: Pub Fisherman's Pie
+  kcal_per_100g: 130
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 5
+  brand: Pub
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: pub_jacket_potato_cheese_beans_pub
+  name: Pub Jacket Potato with Cheese & Beans
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Pub
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: pub_jacket_potato_tuna_mayo_pub
+  name: Pub Jacket Potato with Tuna Mayo
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Pub
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: pub_jacket_potato_chilli_pub
+  name: Pub Jacket Potato with Chilli
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Pub
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: brand
+  source_id: pub_lamb_kofta_pub
+  name: Pub Lamb Kofta Plate
+  kcal_per_100g: 215
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 11
+  brand: Pub
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: pub_chicken_skewers_rice
+  name: Pub Chicken Skewers with Rice
+  kcal_per_100g: 175
+  protein_per_100g: 17
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  brand: Pub
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: cafe_mcdonalds_americano_regular
+  name: McDonald's Americano (Regular)
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 250
+- source: brand
+  source_id: cafe_mcdonalds_white_coffee_regular
+  name: McDonald's White Coffee (Regular)
+  kcal_per_100g: 75
+  protein_per_100g: 4
+  carbs_per_100g: 6
+  fat_per_100g: 4
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 250
+- source: brand
+  source_id: cafe_mcdonalds_black_coffee_regular
+  name: McDonald's Black Coffee (Regular)
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 250
+- source: brand
+  source_id: cafe_mcdonalds_iced_coffee_regular
+  name: McDonald's Iced Coffee (Regular)
+  kcal_per_100g: 80
+  protein_per_100g: 5
+  carbs_per_100g: 8
+  fat_per_100g: 4
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 350
+- source: brand
+  source_id: cafe_mcdonalds_iced_caramel_macchiato
+  name: McDonald's Iced Caramel Macchiato
+  kcal_per_100g: 195
+  protein_per_100g: 6
+  carbs_per_100g: 28
+  fat_per_100g: 6
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: cafe_mcdonalds_iced_white_choc_mocha
+  name: McDonald's Iced White Chocolate Mocha
+  kcal_per_100g: 235
+  protein_per_100g: 7
+  carbs_per_100g: 32
+  fat_per_100g: 9
+  brand: McDonald's
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: cafe_costa_coffee_filter_americano
+  name: Costa Filter Americano (Standard)
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: cafe_costa_decaf_filter
+  name: Costa Decaf Filter Coffee (Standard)
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: cafe_costa_iced_caramel_macchiato_medio
+  name: Costa Iced Caramel Macchiato (Medio)
+  kcal_per_100g: 195
+  protein_per_100g: 6
+  carbs_per_100g: 28
+  fat_per_100g: 6
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 355
+- source: brand
+  source_id: cafe_costa_iced_white_choc_mocha_medio
+  name: Costa Iced White Choc Mocha (Medio)
+  kcal_per_100g: 235
+  protein_per_100g: 7
+  carbs_per_100g: 32
+  fat_per_100g: 9
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 355
+- source: brand
+  source_id: cafe_costa_iced_chocolate_milkshake_medio
+  name: Costa Iced Chocolate Milkshake (Medio)
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 355
+- source: brand
+  source_id: cafe_costa_strawberry_milkshake_medio
+  name: Costa Strawberry Milkshake (Medio)
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 25
+  fat_per_100g: 6
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 355
+- source: brand
+  source_id: cafe_costa_vanilla_milkshake_medio
+  name: Costa Vanilla Milkshake (Medio)
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 355
+- source: brand
+  source_id: cafe_pret_coconut_latte
+  name: Pret Coconut Latte (Regular)
+  kcal_per_100g: 130
+  protein_per_100g: 4
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: cafe_pret_oat_latte_regular
+  name: Pret Oat Latte (Regular)
+  kcal_per_100g: 95
+  protein_per_100g: 3
+  carbs_per_100g: 13
+  fat_per_100g: 4
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 350
+- source: brand
+  source_id: cafe_pret_almond_latte_regular
+  name: Pret Almond Latte (Regular)
+  kcal_per_100g: 75
+  protein_per_100g: 3
+  carbs_per_100g: 9
+  fat_per_100g: 3
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 350
+- source: brand
+  source_id: cafe_starbucks_oat_latte_grande
+  name: Starbucks Oat Latte (Grande)
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 17
+  fat_per_100g: 7
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 473
+- source: brand
+  source_id: cafe_starbucks_almond_latte_grande
+  name: Starbucks Almond Latte (Grande)
+  kcal_per_100g: 105
+  protein_per_100g: 3
+  carbs_per_100g: 9
+  fat_per_100g: 5
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 473
+- source: brand
+  source_id: cafe_starbucks_coconut_latte_grande
+  name: Starbucks Coconut Latte (Grande)
+  kcal_per_100g: 135
+  protein_per_100g: 3
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 473

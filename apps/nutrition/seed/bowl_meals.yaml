@@ -1,0 +1,196 @@
+# Bowl Meals — homemade & cafe-style bowls
+# Poke / Burrito / Buddha / Grain / Acai / Smoothie / Bibimbap variants
+# Macros are typical estimates per 100g — adjust per recipe.
+
+- source: homemade
+  source_id: poke_bowl_salmon_brown_rice
+  name: Salmon Poke Bowl with Brown Rice
+  kcal_per_100g: 155
+  protein_per_100g: 12
+  carbs_per_100g: 17
+  fat_per_100g: 4.5
+  serving_grams: 400
+  serving_label: bowl (400 g)
+  tags: poke,salmon,bowl,homemade
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: poke_bowl_salmon_white_rice
+  name: Salmon Poke Bowl with White Rice
+  kcal_per_100g: 160
+  protein_per_100g: 11
+  carbs_per_100g: 19
+  fat_per_100g: 4.0
+  serving_grams: 400
+  serving_label: bowl (400 g)
+  tags: poke,salmon,bowl,homemade
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: poke_bowl_tuna
+  name: Tuna Poke Bowl
+  kcal_per_100g: 150
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 3.5
+  serving_grams: 400
+  serving_label: bowl (400 g)
+  tags: poke,tuna,bowl,homemade
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: poke_bowl_tofu
+  name: Tofu Poke Bowl
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 18
+  fat_per_100g: 3.5
+  serving_grams: 400
+  serving_label: bowl (400 g)
+  tags: poke,tofu,bowl,vegan,homemade
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: burrito_bowl_chicken
+  name: Chicken Burrito Bowl
+  kcal_per_100g: 155
+  protein_per_100g: 11
+  carbs_per_100g: 16
+  fat_per_100g: 5.5
+  serving_grams: 450
+  serving_label: bowl (450 g)
+  tags: mexican,chicken,bowl,homemade
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: burrito_bowl_beef
+  name: Beef Burrito Bowl
+  kcal_per_100g: 170
+  protein_per_100g: 11
+  carbs_per_100g: 14
+  fat_per_100g: 7.5
+  serving_grams: 450
+  serving_label: bowl (450 g)
+  tags: mexican,beef,bowl,homemade
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: burrito_bowl_steak
+  name: Steak Burrito Bowl
+  kcal_per_100g: 175
+  protein_per_100g: 13
+  carbs_per_100g: 14
+  fat_per_100g: 7.5
+  serving_grams: 450
+  serving_label: bowl (450 g)
+  tags: mexican,steak,bowl,homemade
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: burrito_bowl_veg
+  name: Vegetable Burrito Bowl
+  kcal_per_100g: 130
+  protein_per_100g: 5
+  carbs_per_100g: 19
+  fat_per_100g: 4.0
+  serving_grams: 400
+  serving_label: bowl (400 g)
+  tags: mexican,vegan,bowl,homemade
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: buddha_bowl_quinoa
+  name: Buddha Bowl with Quinoa & Chickpeas
+  kcal_per_100g: 155
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 4.5
+  serving_grams: 420
+  serving_label: bowl (420 g)
+  tags: vegan,quinoa,bowl,homemade
+  portion_unit: meal
+  unit_grams: 420
+- source: homemade
+  source_id: buddha_bowl_falafel
+  name: Buddha Bowl with Falafel & Hummus
+  kcal_per_100g: 175
+  protein_per_100g: 7
+  carbs_per_100g: 19
+  fat_per_100g: 7.5
+  serving_grams: 420
+  serving_label: bowl (420 g)
+  tags: vegan,falafel,bowl,homemade
+  portion_unit: meal
+  unit_grams: 420
+- source: homemade
+  source_id: grain_bowl_chicken
+  name: Chicken & Grain Bowl
+  kcal_per_100g: 165
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 4.5
+  serving_grams: 420
+  serving_label: bowl (420 g)
+  tags: chicken,grains,bowl,homemade
+  portion_unit: meal
+  unit_grams: 420
+- source: homemade
+  source_id: acai_bowl_basic
+  name: Açaí Bowl (Basic — Banana, Granola, Berries)
+  kcal_per_100g: 130
+  protein_per_100g: 3
+  carbs_per_100g: 24
+  fat_per_100g: 3.0
+  serving_grams: 400
+  serving_label: bowl (400 g)
+  tags: acai,breakfast,bowl,vegetarian
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: acai_bowl_pb
+  name: Açaí Bowl with Peanut Butter & Granola
+  kcal_per_100g: 165
+  protein_per_100g: 4.5
+  carbs_per_100g: 22
+  fat_per_100g: 6.5
+  serving_grams: 400
+  serving_label: bowl (400 g)
+  tags: acai,breakfast,bowl
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: smoothie_bowl_berry
+  name: Berry Smoothie Bowl
+  kcal_per_100g: 120
+  protein_per_100g: 3
+  carbs_per_100g: 22
+  fat_per_100g: 2.5
+  serving_grams: 400
+  serving_label: bowl (400 g)
+  tags: smoothie,breakfast,bowl,vegetarian
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: korean_bibimbap_beef
+  name: Korean Bibimbap with Beef
+  kcal_per_100g: 155
+  protein_per_100g: 9
+  carbs_per_100g: 17
+  fat_per_100g: 5.0
+  serving_grams: 450
+  serving_label: bowl (450 g)
+  tags: korean,beef,bowl,homemade
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: korean_bibimbap_tofu
+  name: Korean Bibimbap with Tofu
+  kcal_per_100g: 135
+  protein_per_100g: 6
+  carbs_per_100g: 19
+  fat_per_100g: 4.0
+  serving_grams: 450
+  serving_label: bowl (450 g)
+  tags: korean,tofu,bowl,vegan,homemade
+  portion_unit: meal
+  unit_grams: 450

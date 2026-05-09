@@ -1,0 +1,758 @@
+# Subway Full Menu — 6"/Footlong subs across proteins, salads, wraps, cookies, breakfast
+
+- source: subway
+  source_id: subway_chicken_teriyaki_6
+  name: Subway Chicken Teriyaki (6")
+  kcal_per_100g: 140.5
+  protein_per_100g: 9.48
+  carbs_per_100g: 22.84
+  fat_per_100g: 1.94
+  brand: Subway
+  region_codes: GB
+  serving_grams: 232
+  serving_label: item (232 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 232
+- source: subway
+  source_id: subway_chicken_teriyaki_ft
+  name: Subway Chicken Teriyaki (Footlong)
+  kcal_per_100g: 140.5
+  protein_per_100g: 9.48
+  carbs_per_100g: 22.84
+  fat_per_100g: 1.94
+  brand: Subway
+  region_codes: GB
+  serving_grams: 464
+  serving_label: item (464 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 464
+- source: subway
+  source_id: subway_meatball_marinara_6
+  name: Subway Meatball Marinara (6")
+  kcal_per_100g: 196.0
+  protein_per_100g: 8.5
+  carbs_per_100g: 21.86
+  fat_per_100g: 8.1
+  brand: Subway
+  region_codes: GB
+  serving_grams: 247
+  serving_label: item (247 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 247
+- source: subway
+  source_id: subway_meatball_marinara_ft
+  name: Subway Meatball Marinara (Footlong)
+  kcal_per_100g: 196.0
+  protein_per_100g: 8.5
+  carbs_per_100g: 21.86
+  fat_per_100g: 8.1
+  brand: Subway
+  region_codes: GB
+  serving_grams: 494
+  serving_label: item (494 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 494
+- source: subway
+  source_id: subway_steak_cheese_6
+  name: Subway Steak & Cheese (6")
+  kcal_per_100g: 156.7
+  protein_per_100g: 10.61
+  carbs_per_100g: 20.0
+  fat_per_100g: 4.08
+  brand: Subway
+  region_codes: GB
+  serving_grams: 245
+  serving_label: item (245 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 245
+- source: subway
+  source_id: subway_steak_cheese_ft
+  name: Subway Steak & Cheese (Footlong)
+  kcal_per_100g: 156.7
+  protein_per_100g: 10.61
+  carbs_per_100g: 20.0
+  fat_per_100g: 4.08
+  brand: Subway
+  region_codes: GB
+  serving_grams: 490
+  serving_label: item (490 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 490
+- source: subway
+  source_id: subway_meatlovers_6
+  name: Subway Meatlovers (6")
+  kcal_per_100g: 218.4
+  protein_per_100g: 11.02
+  carbs_per_100g: 20.0
+  fat_per_100g: 10.61
+  brand: Subway
+  region_codes: GB
+  serving_grams: 245
+  serving_label: item (245 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 245
+- source: subway
+  source_id: subway_meatlovers_ft
+  name: Subway Meatlovers (Footlong)
+  kcal_per_100g: 218.4
+  protein_per_100g: 11.02
+  carbs_per_100g: 20.0
+  fat_per_100g: 10.61
+  brand: Subway
+  region_codes: GB
+  serving_grams: 490
+  serving_label: item (490 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 490
+- source: subway
+  source_id: subway_chicken_tikka_6
+  name: Subway Chicken Tikka (6")
+  kcal_per_100g: 152.1
+  protein_per_100g: 10.0
+  carbs_per_100g: 21.67
+  fat_per_100g: 2.71
+  brand: Subway
+  region_codes: GB
+  serving_grams: 240
+  serving_label: item (240 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 240
+- source: subway
+  source_id: subway_chicken_tikka_ft
+  name: Subway Chicken Tikka (Footlong)
+  kcal_per_100g: 152.1
+  protein_per_100g: 10.0
+  carbs_per_100g: 21.67
+  fat_per_100g: 2.71
+  brand: Subway
+  region_codes: GB
+  serving_grams: 480
+  serving_label: item (480 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 480
+- source: subway
+  source_id: subway_chicken_caesar_6
+  name: Subway Chicken Caesar (6")
+  kcal_per_100g: 163.1
+  protein_per_100g: 10.73
+  carbs_per_100g: 21.03
+  fat_per_100g: 3.43
+  brand: Subway
+  region_codes: GB
+  serving_grams: 233
+  serving_label: item (233 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 233
+- source: subway
+  source_id: subway_italian_bmt_6
+  name: Subway Italian BMT (6")
+  kcal_per_100g: 173.3
+  protein_per_100g: 8.75
+  carbs_per_100g: 19.58
+  fat_per_100g: 7.08
+  brand: Subway
+  region_codes: GB
+  serving_grams: 240
+  serving_label: item (240 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 240
+- source: subway
+  source_id: subway_italian_bmt_ft
+  name: Subway Italian BMT (Footlong)
+  kcal_per_100g: 173.3
+  protein_per_100g: 8.75
+  carbs_per_100g: 19.58
+  fat_per_100g: 7.08
+  brand: Subway
+  region_codes: GB
+  serving_grams: 480
+  serving_label: item (480 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 480
+- source: subway
+  source_id: subway_spicy_italian_6
+  name: Subway Spicy Italian (6")
+  kcal_per_100g: 204.3
+  protein_per_100g: 8.09
+  carbs_per_100g: 19.15
+  fat_per_100g: 10.64
+  brand: Subway
+  region_codes: GB
+  serving_grams: 235
+  serving_label: item (235 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 235
+- source: subway
+  source_id: subway_tuna_6
+  name: Subway Tuna (6")
+  kcal_per_100g: 212.5
+  protein_per_100g: 7.92
+  carbs_per_100g: 19.58
+  fat_per_100g: 11.25
+  brand: Subway
+  region_codes: GB
+  serving_grams: 240
+  serving_label: item (240 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 240
+- source: subway
+  source_id: subway_tuna_ft
+  name: Subway Tuna (Footlong)
+  kcal_per_100g: 212.5
+  protein_per_100g: 7.92
+  carbs_per_100g: 19.58
+  fat_per_100g: 11.25
+  brand: Subway
+  region_codes: GB
+  serving_grams: 480
+  serving_label: item (480 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 480
+- source: subway
+  source_id: subway_chicken_breast_6
+  name: Subway Chicken Breast (6")
+  kcal_per_100g: 140.5
+  protein_per_100g: 10.78
+  carbs_per_100g: 21.55
+  fat_per_100g: 1.72
+  brand: Subway
+  region_codes: GB
+  serving_grams: 232
+  serving_label: item (232 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 232
+- source: subway
+  source_id: subway_chicken_breast_ft
+  name: Subway Chicken Breast (Footlong)
+  kcal_per_100g: 140.5
+  protein_per_100g: 10.78
+  carbs_per_100g: 21.55
+  fat_per_100g: 1.72
+  brand: Subway
+  region_codes: GB
+  serving_grams: 464
+  serving_label: item (464 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 464
+- source: subway
+  source_id: subway_turkey_6
+  name: Subway Turkey (6")
+  kcal_per_100g: 133.9
+  protein_per_100g: 8.26
+  carbs_per_100g: 22.17
+  fat_per_100g: 1.74
+  brand: Subway
+  region_codes: GB
+  serving_grams: 230
+  serving_label: item (230 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 230
+- source: subway
+  source_id: subway_turkey_ft
+  name: Subway Turkey (Footlong)
+  kcal_per_100g: 133.9
+  protein_per_100g: 8.26
+  carbs_per_100g: 22.17
+  fat_per_100g: 1.74
+  brand: Subway
+  region_codes: GB
+  serving_grams: 460
+  serving_label: item (460 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 460
+- source: subway
+  source_id: subway_turkey_ham_6
+  name: Subway Turkey & Ham (6")
+  kcal_per_100g: 137.9
+  protein_per_100g: 9.05
+  carbs_per_100g: 21.55
+  fat_per_100g: 2.16
+  brand: Subway
+  region_codes: GB
+  serving_grams: 232
+  serving_label: item (232 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 232
+- source: subway
+  source_id: subway_ham_6
+  name: Subway Ham (6")
+  kcal_per_100g: 128.3
+  protein_per_100g: 7.83
+  carbs_per_100g: 22.17
+  fat_per_100g: 1.52
+  brand: Subway
+  region_codes: GB
+  serving_grams: 230
+  serving_label: item (230 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 230
+- source: subway
+  source_id: subway_ham_ft
+  name: Subway Ham (Footlong)
+  kcal_per_100g: 128.3
+  protein_per_100g: 7.83
+  carbs_per_100g: 22.17
+  fat_per_100g: 1.52
+  brand: Subway
+  region_codes: GB
+  serving_grams: 460
+  serving_label: item (460 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 460
+- source: subway
+  source_id: subway_veggie_delite_6
+  name: Subway Veggie Delite (6")
+  kcal_per_100g: 125.6
+  protein_per_100g: 4.62
+  carbs_per_100g: 24.1
+  fat_per_100g: 1.54
+  brand: Subway
+  region_codes: GB
+  serving_grams: 195
+  serving_label: item (195 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 195
+- source: subway
+  source_id: subway_veggie_delite_ft
+  name: Subway Veggie Delite (Footlong)
+  kcal_per_100g: 125.6
+  protein_per_100g: 4.62
+  carbs_per_100g: 24.1
+  fat_per_100g: 1.54
+  brand: Subway
+  region_codes: GB
+  serving_grams: 390
+  serving_label: item (390 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 390
+- source: subway
+  source_id: subway_veggie_patty_6
+  name: Subway Veggie Patty (6")
+  kcal_per_100g: 158.7
+  protein_per_100g: 6.96
+  carbs_per_100g: 24.35
+  fat_per_100g: 3.48
+  brand: Subway
+  region_codes: GB
+  serving_grams: 230
+  serving_label: item (230 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 230
+- source: subway
+  source_id: subway_meatless_meatball_6
+  name: Subway Meatless Meatball Marinara (6")
+  kcal_per_100g: 173.5
+  protein_per_100g: 7.35
+  carbs_per_100g: 22.86
+  fat_per_100g: 5.71
+  brand: Subway
+  region_codes: GB
+  serving_grams: 245
+  serving_label: item (245 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 245
+- source: subway
+  source_id: subway_plant_steak_6
+  name: Subway TLC (Plant-Based Crayfish, 6")
+  kcal_per_100g: 134.8
+  protein_per_100g: 6.96
+  carbs_per_100g: 21.74
+  fat_per_100g: 2.17
+  brand: Subway
+  region_codes: GB
+  serving_grams: 230
+  serving_label: item (230 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 230
+- source: subway
+  source_id: subway_salad_chicken_breast
+  name: Subway Chicken Breast Salad
+  kcal_per_100g: 60.9
+  protein_per_100g: 7.81
+  carbs_per_100g: 4.38
+  fat_per_100g: 1.56
+  brand: Subway
+  region_codes: GB
+  serving_grams: 320
+  serving_label: item (320 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 320
+- source: subway
+  source_id: subway_salad_chicken_teriyaki
+  name: Subway Chicken Teriyaki Salad
+  kcal_per_100g: 71.2
+  protein_per_100g: 7.58
+  carbs_per_100g: 6.67
+  fat_per_100g: 1.52
+  brand: Subway
+  region_codes: GB
+  serving_grams: 330
+  serving_label: item (330 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 330
+- source: subway
+  source_id: subway_salad_chicken_tikka
+  name: Subway Chicken Tikka Salad
+  kcal_per_100g: 74.2
+  protein_per_100g: 7.27
+  carbs_per_100g: 5.76
+  fat_per_100g: 2.42
+  brand: Subway
+  region_codes: GB
+  serving_grams: 330
+  serving_label: item (330 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 330
+- source: subway
+  source_id: subway_salad_chicken_caesar
+  name: Subway Chicken Caesar Salad
+  kcal_per_100g: 76.6
+  protein_per_100g: 7.81
+  carbs_per_100g: 4.38
+  fat_per_100g: 2.81
+  brand: Subway
+  region_codes: GB
+  serving_grams: 320
+  serving_label: item (320 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 320
+- source: subway
+  source_id: subway_salad_steak_cheese
+  name: Subway Steak & Cheese Salad
+  kcal_per_100g: 89.1
+  protein_per_100g: 8.75
+  carbs_per_100g: 3.44
+  fat_per_100g: 4.06
+  brand: Subway
+  region_codes: GB
+  serving_grams: 320
+  serving_label: item (320 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 320
+- source: subway
+  source_id: subway_salad_italian_bmt
+  name: Subway Italian BMT Salad
+  kcal_per_100g: 100.0
+  protein_per_100g: 6.88
+  carbs_per_100g: 3.75
+  fat_per_100g: 5.94
+  brand: Subway
+  region_codes: GB
+  serving_grams: 320
+  serving_label: item (320 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 320
+- source: subway
+  source_id: subway_salad_meatball
+  name: Subway Meatball Marinara Salad
+  kcal_per_100g: 110.6
+  protein_per_100g: 6.36
+  carbs_per_100g: 5.45
+  fat_per_100g: 6.36
+  brand: Subway
+  region_codes: GB
+  serving_grams: 330
+  serving_label: item (330 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 330
+- source: subway
+  source_id: subway_salad_tuna
+  name: Subway Tuna Salad
+  kcal_per_100g: 128.1
+  protein_per_100g: 6.25
+  carbs_per_100g: 3.75
+  fat_per_100g: 9.38
+  brand: Subway
+  region_codes: GB
+  serving_grams: 320
+  serving_label: item (320 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 320
+- source: subway
+  source_id: subway_salad_veggie_delite
+  name: Subway Veggie Delite Salad
+  kcal_per_100g: 33.9
+  protein_per_100g: 1.43
+  carbs_per_100g: 5.0
+  fat_per_100g: 0.54
+  brand: Subway
+  region_codes: GB
+  serving_grams: 280
+  serving_label: item (280 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 280
+- source: subway
+  source_id: subway_wrap_chicken_teriyaki
+  name: Subway Chicken Teriyaki Wrap
+  kcal_per_100g: 128.8
+  protein_per_100g: 9.49
+  carbs_per_100g: 18.31
+  fat_per_100g: 1.69
+  brand: Subway
+  region_codes: GB
+  serving_grams: 295
+  serving_label: item (295 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 295
+- source: subway
+  source_id: subway_wrap_chicken_tikka
+  name: Subway Chicken Tikka Wrap
+  kcal_per_100g: 136.7
+  protein_per_100g: 9.0
+  carbs_per_100g: 17.67
+  fat_per_100g: 3.0
+  brand: Subway
+  region_codes: GB
+  serving_grams: 300
+  serving_label: item (300 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 300
+- source: subway
+  source_id: subway_wrap_chicken_caesar
+  name: Subway Chicken Caesar Wrap
+  kcal_per_100g: 144.1
+  protein_per_100g: 9.15
+  carbs_per_100g: 16.61
+  fat_per_100g: 4.07
+  brand: Subway
+  region_codes: GB
+  serving_grams: 295
+  serving_label: item (295 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 295
+- source: subway
+  source_id: subway_wrap_steak_cheese
+  name: Subway Steak & Cheese Wrap
+  kcal_per_100g: 145.9
+  protein_per_100g: 9.84
+  carbs_per_100g: 16.07
+  fat_per_100g: 4.26
+  brand: Subway
+  region_codes: GB
+  serving_grams: 305
+  serving_label: item (305 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 305
+- source: subway
+  source_id: subway_wrap_meatball
+  name: Subway Meatball Marinara Wrap
+  kcal_per_100g: 177.0
+  protein_per_100g: 8.2
+  carbs_per_100g: 18.36
+  fat_per_100g: 7.54
+  brand: Subway
+  region_codes: GB
+  serving_grams: 305
+  serving_label: item (305 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 305
+- source: subway
+  source_id: subway_wrap_tuna
+  name: Subway Tuna Wrap
+  kcal_per_100g: 194.9
+  protein_per_100g: 7.46
+  carbs_per_100g: 16.61
+  fat_per_100g: 10.17
+  brand: Subway
+  region_codes: GB
+  serving_grams: 295
+  serving_label: item (295 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 295
+- source: subway
+  source_id: subway_wrap_italian_bmt
+  name: Subway Italian BMT Wrap
+  kcal_per_100g: 156.7
+  protein_per_100g: 8.0
+  carbs_per_100g: 16.33
+  fat_per_100g: 6.67
+  brand: Subway
+  region_codes: GB
+  serving_grams: 300
+  serving_label: item (300 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 300
+- source: subway
+  source_id: subway_cookie_choc_chip
+  name: Subway Chocolate Chip Cookie
+  kcal_per_100g: 477.8
+  protein_per_100g: 4.44
+  carbs_per_100g: 66.67
+  fat_per_100g: 22.22
+  brand: Subway
+  region_codes: GB
+  serving_grams: 45
+  serving_label: item (45 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 45
+- source: subway
+  source_id: subway_cookie_double_choc
+  name: Subway Double Chocolate Cookie
+  kcal_per_100g: 477.8
+  protein_per_100g: 4.44
+  carbs_per_100g: 66.67
+  fat_per_100g: 22.22
+  brand: Subway
+  region_codes: GB
+  serving_grams: 45
+  serving_label: item (45 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 45
+- source: subway
+  source_id: subway_cookie_white_choc
+  name: Subway White Chocolate Macadamia Cookie
+  kcal_per_100g: 477.8
+  protein_per_100g: 4.44
+  carbs_per_100g: 66.67
+  fat_per_100g: 22.22
+  brand: Subway
+  region_codes: GB
+  serving_grams: 45
+  serving_label: item (45 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 45
+- source: subway
+  source_id: subway_cookie_oatmeal_raisin
+  name: Subway Oatmeal Raisin Cookie
+  kcal_per_100g: 444.4
+  protein_per_100g: 6.67
+  carbs_per_100g: 71.11
+  fat_per_100g: 15.56
+  brand: Subway
+  region_codes: GB
+  serving_grams: 45
+  serving_label: item (45 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 45
+- source: subway
+  source_id: subway_cookie_double_choc_chunk
+  name: Subway Triple Chocolate Cookie
+  kcal_per_100g: 488.9
+  protein_per_100g: 4.44
+  carbs_per_100g: 68.89
+  fat_per_100g: 22.22
+  brand: Subway
+  region_codes: GB
+  serving_grams: 45
+  serving_label: item (45 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 45
+- source: subway
+  source_id: subway_hash_browns_2
+  name: Subway Hash Browns (2 pcs)
+  kcal_per_100g: 241.7
+  protein_per_100g: 3.33
+  carbs_per_100g: 28.33
+  fat_per_100g: 13.33
+  brand: Subway
+  region_codes: GB
+  serving_grams: 60
+  serving_label: item (60 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 60
+- source: subway
+  source_id: subway_hash_browns_4
+  name: Subway Hash Browns (4 pcs)
+  kcal_per_100g: 241.7
+  protein_per_100g: 3.33
+  carbs_per_100g: 28.33
+  fat_per_100g: 13.33
+  brand: Subway
+  region_codes: GB
+  serving_grams: 120
+  serving_label: item (120 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 120
+- source: subway
+  source_id: subway_brek_egg_cheese_6
+  name: Subway Egg & Cheese Breakfast (6")
+  kcal_per_100g: 163.6
+  protein_per_100g: 8.18
+  carbs_per_100g: 21.36
+  fat_per_100g: 5.45
+  brand: Subway
+  region_codes: GB
+  serving_grams: 220
+  serving_label: item (220 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 220
+- source: subway
+  source_id: subway_brek_bacon_egg_cheese_6
+  name: Subway Bacon Egg & Cheese (6")
+  kcal_per_100g: 177.1
+  protein_per_100g: 9.17
+  carbs_per_100g: 20.0
+  fat_per_100g: 7.08
+  brand: Subway
+  region_codes: GB
+  serving_grams: 240
+  serving_label: item (240 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 240
+- source: subway
+  source_id: subway_brek_sausage_egg_cheese_6
+  name: Subway Sausage Egg & Cheese (6")
+  kcal_per_100g: 204.0
+  protein_per_100g: 9.2
+  carbs_per_100g: 18.8
+  fat_per_100g: 10.8
+  brand: Subway
+  region_codes: GB
+  serving_grams: 250
+  serving_label: item (250 g)
+  tags: fast-food,subway,sandwich
+  portion_unit: meal
+  unit_grams: 250

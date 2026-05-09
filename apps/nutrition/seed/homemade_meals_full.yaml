@@ -1,0 +1,2068 @@
+# Homemade meals — Breakfasts (avocado toast variants, eggs benedict/florentine/royale,
+# overnight oats, porridge, pancakes, French toast, smoothies, yogurt parfaits, açaí, full English),
+# Lunches (wraps, salads, sandwiches, jacket potatoes), Dinners (stir-fries, fajitas, curries,
+# Thai/Indian curries, pies, roast dinners, kebabs, burgers), Soups (pho, ramen, French onion,
+# mushroom), Desserts (brownie, cakes, cookies, cheesecakes, crumbles, panna cotta, tiramisu)
+
+- source: homemade
+  source_id: hm_avocado_toast_classic
+  name: Avocado on Toast
+  kcal_per_100g: 240
+  protein_per_100g: 6
+  carbs_per_100g: 25
+  fat_per_100g: 13
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 150
+  serving_label: plate (150 g)
+  tags: homemade,breakfast,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_avocado_toast_egg
+  name: Avocado on Toast with Poached Egg
+  kcal_per_100g: 280
+  protein_per_100g: 12
+  carbs_per_100g: 25
+  fat_per_100g: 16
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: homemade,breakfast,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_avocado_toast_chilli
+  name: Avocado on Toast with Chilli & Lime
+  kcal_per_100g: 245
+  protein_per_100g: 6
+  carbs_per_100g: 25
+  fat_per_100g: 13
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 150
+  serving_label: plate (150 g)
+  tags: homemade,breakfast,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_avocado_smoked_salmon_toast
+  name: Avocado & Smoked Salmon on Toast
+  kcal_per_100g: 285
+  protein_per_100g: 16
+  carbs_per_100g: 25
+  fat_per_100g: 14
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: homemade,breakfast
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: hm_avocado_feta_toast
+  name: Avocado & Feta on Toast
+  kcal_per_100g: 295
+  protein_per_100g: 9
+  carbs_per_100g: 25
+  fat_per_100g: 18
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 180
+  serving_label: plate (180 g)
+  tags: homemade,breakfast,vegetarian
+  portion_unit: meal
+  unit_grams: 180
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_eggs_florentine
+  name: Eggs Florentine
+  kcal_per_100g: 310
+  protein_per_100g: 18
+  carbs_per_100g: 18
+  fat_per_100g: 19
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 280
+  serving_label: plate (280 g)
+  tags: homemade,breakfast,vegetarian
+  portion_unit: meal
+  unit_grams: 280
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_eggs_royale
+  name: Eggs Royale (Smoked Salmon)
+  kcal_per_100g: 295
+  protein_per_100g: 19
+  carbs_per_100g: 18
+  fat_per_100g: 17
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 280
+  serving_label: plate (280 g)
+  tags: homemade,breakfast
+  portion_unit: meal
+  unit_grams: 280
+- source: homemade
+  source_id: hm_eggs_benedict_2
+  name: Eggs Benedict (2)
+  kcal_per_100g: 285
+  protein_per_100g: 18
+  carbs_per_100g: 18
+  fat_per_100g: 16
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 280
+  serving_label: plate (280 g)
+  tags: homemade,breakfast
+  portion_unit: meal
+  unit_grams: 280
+- source: homemade
+  source_id: hm_chia_pudding_almond_milk
+  name: Chia Pudding (Almond Milk, 200g)
+  kcal_per_100g: 110
+  protein_per_100g: 4
+  carbs_per_100g: 12
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: homemade,breakfast,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_chia_pudding_coconut
+  name: Chia Pudding (Coconut Milk)
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 12
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: homemade,breakfast,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_overnight_oats_basic
+  name: Overnight Oats (Basic)
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: homemade,breakfast,vegetarian
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_overnight_oats_berries
+  name: Overnight Oats with Berries
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 23
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 280
+  serving_label: plate (280 g)
+  tags: homemade,breakfast,vegetarian
+  portion_unit: meal
+  unit_grams: 280
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_overnight_oats_pb_banana
+  name: Overnight Oats with PB & Banana
+  kcal_per_100g: 175
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 280
+  serving_label: plate (280 g)
+  tags: homemade,breakfast,vegetarian
+  portion_unit: meal
+  unit_grams: 280
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_overnight_oats_chocolate
+  name: Chocolate Overnight Oats
+  kcal_per_100g: 165
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: homemade,breakfast,vegetarian
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_porridge_water
+  name: Porridge (Cooked, Water)
+  kcal_per_100g: 70
+  protein_per_100g: 2.5
+  carbs_per_100g: 12
+  fat_per_100g: 1.5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: homemade,breakfast,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_porridge_milk_whole
+  name: Porridge (Cooked, Whole Milk)
+  kcal_per_100g: 110
+  protein_per_100g: 4
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: homemade,breakfast,vegetarian
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_porridge_milk_oat
+  name: Porridge (Cooked, Oat Milk)
+  kcal_per_100g: 95
+  protein_per_100g: 3
+  carbs_per_100g: 14
+  fat_per_100g: 2.5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: homemade,breakfast,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_porridge_protein
+  name: Porridge with Protein Powder
+  kcal_per_100g: 130
+  protein_per_100g: 11
+  carbs_per_100g: 14
+  fat_per_100g: 2
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 280
+  serving_label: plate (280 g)
+  tags: homemade,breakfast,high-protein,vegetarian
+  portion_unit: meal
+  unit_grams: 280
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_pancakes_classic_3
+  name: Pancakes Classic (3 American)
+  kcal_per_100g: 230
+  protein_per_100g: 5
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 220
+  serving_label: plate (220 g)
+  tags: homemade,breakfast,vegetarian
+  portion_unit: meal
+  unit_grams: 220
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_pancakes_protein_3
+  name: Protein Pancakes (3)
+  kcal_per_100g: 195
+  protein_per_100g: 17
+  carbs_per_100g: 18
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 220
+  serving_label: plate (220 g)
+  tags: homemade,breakfast,high-protein,vegetarian
+  portion_unit: meal
+  unit_grams: 220
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_pancakes_oat_banana
+  name: Oat & Banana Pancakes (3)
+  kcal_per_100g: 195
+  protein_per_100g: 8
+  carbs_per_100g: 28
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 220
+  serving_label: plate (220 g)
+  tags: homemade,breakfast,vegetarian
+  portion_unit: meal
+  unit_grams: 220
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_french_toast_2_slices
+  name: French Toast (2 slices)
+  kcal_per_100g: 245
+  protein_per_100g: 9
+  carbs_per_100g: 25
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 150
+  serving_label: plate (150 g)
+  tags: homemade,breakfast,vegetarian
+  portion_unit: slice
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_breakfast_burrito
+  name: Breakfast Burrito
+  kcal_per_100g: 225
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 280
+  serving_label: plate (280 g)
+  tags: homemade,breakfast,wrap
+  portion_unit: meal
+  unit_grams: 280
+- source: homemade
+  source_id: hm_breakfast_wrap_egg_avo
+  name: Egg & Avocado Breakfast Wrap
+  kcal_per_100g: 230
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 220
+  serving_label: plate (220 g)
+  tags: homemade,breakfast,wrap,vegetarian
+  portion_unit: wrap
+  unit_grams: 220
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_yogurt_parfait_basic
+  name: Yogurt Parfait (Yogurt, Granola, Berries)
+  kcal_per_100g: 145
+  protein_per_100g: 7
+  carbs_per_100g: 19
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 300
+  serving_label: plate (300 g)
+  tags: homemade,breakfast,vegetarian
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_smoothie_green
+  name: Green Smoothie (Spinach, Banana, Apple)
+  kcal_per_100g: 60
+  protein_per_100g: 1.5
+  carbs_per_100g: 14
+  fat_per_100g: 0.4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,breakfast,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_smoothie_berry_protein
+  name: Berry Protein Smoothie
+  kcal_per_100g: 95
+  protein_per_100g: 9
+  carbs_per_100g: 12
+  fat_per_100g: 1
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,breakfast,high-protein,vegetarian
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_smoothie_chocolate_pb
+  name: Chocolate Peanut Butter Protein Smoothie
+  kcal_per_100g: 145
+  protein_per_100g: 10
+  carbs_per_100g: 14
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,breakfast,high-protein,vegetarian
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_smoothie_tropical
+  name: Tropical Smoothie (Mango, Pineapple, Coconut)
+  kcal_per_100g: 75
+  protein_per_100g: 1
+  carbs_per_100g: 17
+  fat_per_100g: 1
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,breakfast,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_smoothie_strawberry_banana
+  name: Strawberry Banana Smoothie
+  kcal_per_100g: 75
+  protein_per_100g: 1.5
+  carbs_per_100g: 17
+  fat_per_100g: 0.5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,breakfast,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_acai_bowl_full
+  name: Açaí Bowl (Full)
+  kcal_per_100g: 135
+  protein_per_100g: 3
+  carbs_per_100g: 25
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,breakfast,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_full_english_classic
+  name: Full English Breakfast
+  kcal_per_100g: 215
+  protein_per_100g: 10
+  carbs_per_100g: 14
+  fat_per_100g: 13
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 600
+  serving_label: plate (600 g)
+  tags: homemade,breakfast
+  portion_unit: meal
+  unit_grams: 600
+- source: homemade
+  source_id: hm_veggie_fry_up
+  name: Veggie Fry-Up
+  kcal_per_100g: 175
+  protein_per_100g: 8
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 500
+  serving_label: plate (500 g)
+  tags: homemade,breakfast,vegetarian
+  portion_unit: meal
+  unit_grams: 500
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_breakfast_smoothie_oat
+  name: Oats Smoothie (Oats, Banana, Almond Milk)
+  kcal_per_100g: 80
+  protein_per_100g: 2
+  carbs_per_100g: 15
+  fat_per_100g: 1.5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,breakfast,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_chicken_caesar_wrap
+  name: Chicken Caesar Wrap (Homemade)
+  kcal_per_100g: 250
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 220
+  serving_label: plate (220 g)
+  tags: homemade,lunch,wrap,chicken
+  portion_unit: wrap
+  unit_grams: 220
+- source: homemade
+  source_id: hm_tuna_mayo_wrap
+  name: Tuna Mayo Wrap
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: homemade,lunch,wrap
+  portion_unit: wrap
+  unit_grams: 200
+- source: homemade
+  source_id: hm_egg_mayo_wrap
+  name: Egg Mayo Wrap
+  kcal_per_100g: 235
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: homemade,lunch,wrap,vegetarian
+  portion_unit: wrap
+  unit_grams: 200
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_chicken_avocado_wrap
+  name: Chicken & Avocado Wrap
+  kcal_per_100g: 230
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 220
+  serving_label: plate (220 g)
+  tags: homemade,lunch,wrap,chicken
+  portion_unit: wrap
+  unit_grams: 220
+- source: homemade
+  source_id: hm_falafel_wrap
+  name: Falafel Wrap
+  kcal_per_100g: 215
+  protein_per_100g: 7
+  carbs_per_100g: 25
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: homemade,lunch,wrap,vegan,vegetarian
+  portion_unit: wrap
+  unit_grams: 250
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_hummus_veg_wrap
+  name: Hummus & Veg Wrap
+  kcal_per_100g: 195
+  protein_per_100g: 6
+  carbs_per_100g: 25
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: homemade,lunch,wrap,vegan,vegetarian
+  portion_unit: wrap
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_chicken_pesto_pasta_salad
+  name: Chicken & Pesto Pasta Salad
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,lunch,salad
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: hm_tuna_pasta_salad
+  name: Tuna Pasta Salad
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 19
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,lunch,salad
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: hm_greek_salad_with_chicken
+  name: Greek Salad with Chicken
+  kcal_per_100g: 145
+  protein_per_100g: 14
+  carbs_per_100g: 8
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,lunch,salad,chicken
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: hm_caesar_salad_classic
+  name: Classic Caesar Salad (No Chicken)
+  kcal_per_100g: 175
+  protein_per_100g: 6
+  carbs_per_100g: 11
+  fat_per_100g: 13
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: homemade,lunch,salad,vegetarian
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_caesar_salad_chicken
+  name: Chicken Caesar Salad (Homemade)
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 9
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,lunch,salad,chicken
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: hm_cobb_salad
+  name: Cobb Salad
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 8
+  fat_per_100g: 12
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,lunch,salad
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: hm_nicoise_salad
+  name: Niçoise Salad
+  kcal_per_100g: 145
+  protein_per_100g: 14
+  carbs_per_100g: 8
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,lunch,salad
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: hm_caprese_salad
+  name: Caprese Salad
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 5
+  fat_per_100g: 13
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: homemade,lunch,salad,vegetarian
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_quinoa_salad_basic
+  name: Quinoa Salad (Basic)
+  kcal_per_100g: 165
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 300
+  serving_label: plate (300 g)
+  tags: homemade,lunch,salad,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_couscous_salad_med
+  name: Mediterranean Couscous Salad
+  kcal_per_100g: 155
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 300
+  serving_label: plate (300 g)
+  tags: homemade,lunch,salad,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_chicken_quinoa_salad
+  name: Chicken Quinoa Salad
+  kcal_per_100g: 165
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,lunch,salad,chicken
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: hm_jacket_potato_beans_cheese
+  name: Jacket Potato with Beans & Cheese
+  kcal_per_100g: 145
+  protein_per_100g: 7
+  carbs_per_100g: 24
+  fat_per_100g: 3
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,lunch,vegetarian
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_jacket_potato_tuna_mayo
+  name: Jacket Potato with Tuna Mayo
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,lunch
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: hm_jacket_potato_chilli_con_carne
+  name: Jacket Potato with Chilli con Carne
+  kcal_per_100g: 155
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 500
+  serving_label: plate (500 g)
+  tags: homemade,lunch,beef
+  portion_unit: meal
+  unit_grams: 500
+- source: homemade
+  source_id: hm_jacket_potato_butter
+  name: Jacket Potato with Butter
+  kcal_per_100g: 95
+  protein_per_100g: 2.5
+  carbs_per_100g: 18
+  fat_per_100g: 2
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,lunch,vegetarian
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_jacket_potato_cottage_cheese
+  name: Jacket Potato with Cottage Cheese
+  kcal_per_100g: 110
+  protein_per_100g: 6
+  carbs_per_100g: 18
+  fat_per_100g: 2
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,lunch,vegetarian
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_chicken_salad_sandwich
+  name: Chicken Salad Sandwich
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: homemade,lunch,sandwich
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: hm_egg_mayo_sandwich
+  name: Egg Mayo Sandwich
+  kcal_per_100g: 285
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 175
+  serving_label: plate (175 g)
+  tags: homemade,lunch,sandwich,vegetarian
+  portion_unit: meal
+  unit_grams: 175
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_cheese_pickle_sandwich
+  name: Cheese & Pickle Sandwich
+  kcal_per_100g: 320
+  protein_per_100g: 13
+  carbs_per_100g: 32
+  fat_per_100g: 15
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 175
+  serving_label: plate (175 g)
+  tags: homemade,lunch,sandwich,vegetarian
+  portion_unit: meal
+  unit_grams: 175
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_ham_cheese_sandwich
+  name: Ham & Cheese Sandwich
+  kcal_per_100g: 285
+  protein_per_100g: 15
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 180
+  serving_label: plate (180 g)
+  tags: homemade,lunch,sandwich
+  portion_unit: meal
+  unit_grams: 180
+- source: homemade
+  source_id: hm_blt_sandwich
+  name: BLT Sandwich
+  kcal_per_100g: 295
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 14
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: homemade,lunch,sandwich
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: hm_chicken_mayo_sandwich
+  name: Chicken Mayo Sandwich
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 195
+  serving_label: plate (195 g)
+  tags: homemade,lunch,sandwich
+  portion_unit: meal
+  unit_grams: 195
+- source: homemade
+  source_id: hm_tuna_sweetcorn_sandwich
+  name: Tuna Sweetcorn Mayo Sandwich
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 195
+  serving_label: plate (195 g)
+  tags: homemade,lunch,sandwich
+  portion_unit: meal
+  unit_grams: 195
+- source: homemade
+  source_id: hm_avocado_egg_sandwich
+  name: Avocado & Egg Sandwich
+  kcal_per_100g: 235
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 10
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: homemade,lunch,sandwich,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_smoked_salmon_cream_cheese_bagel
+  name: Smoked Salmon & Cream Cheese Bagel
+  kcal_per_100g: 295
+  protein_per_100g: 18
+  carbs_per_100g: 32
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: homemade,lunch,sandwich
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: hm_chicken_stir_fry_veg
+  name: Chicken & Vegetable Stir Fry
+  kcal_per_100g: 145
+  protein_per_100g: 14
+  carbs_per_100g: 13
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,dinner,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: hm_chicken_stir_fry_noodles
+  name: Chicken Stir Fry with Noodles
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 3
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: plate (450 g)
+  tags: homemade,dinner,chicken,asian
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: hm_beef_stir_fry_noodles
+  name: Beef Stir Fry with Noodles
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: plate (450 g)
+  tags: homemade,dinner,beef,asian
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: hm_prawn_stir_fry_noodles
+  name: Prawn Stir Fry with Noodles
+  kcal_per_100g: 130
+  protein_per_100g: 11
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: plate (450 g)
+  tags: homemade,dinner,seafood,asian
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: hm_tofu_veg_stir_fry
+  name: Tofu & Vegetable Stir Fry
+  kcal_per_100g: 110
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,dinner,vegan,vegetarian,asian
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_chicken_fajitas_homemade
+  name: Chicken Fajitas (Homemade)
+  kcal_per_100g: 175
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: plate (450 g)
+  tags: homemade,dinner,mexican,chicken
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: hm_beef_fajitas_homemade
+  name: Beef Fajitas (Homemade)
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: plate (450 g)
+  tags: homemade,dinner,mexican,beef
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: hm_chicken_curry_homemade
+  name: Homemade Chicken Curry & Rice
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 500
+  serving_label: plate (500 g)
+  tags: homemade,dinner,chicken,curry
+  portion_unit: meal
+  unit_grams: 500
+- source: homemade
+  source_id: hm_chickpea_curry_rice
+  name: Chickpea Curry & Rice
+  kcal_per_100g: 135
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 3
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 500
+  serving_label: plate (500 g)
+  tags: homemade,dinner,vegan,vegetarian,curry
+  portion_unit: meal
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_lentil_dahl_rice
+  name: Lentil Dahl with Rice
+  kcal_per_100g: 130
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 2.5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 500
+  serving_label: plate (500 g)
+  tags: homemade,dinner,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 500
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_butter_chicken_homemade
+  name: Butter Chicken (Homemade)
+  kcal_per_100g: 170
+  protein_per_100g: 11
+  carbs_per_100g: 8
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,dinner,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: hm_chicken_jalfrezi_homemade
+  name: Chicken Jalfrezi (Homemade)
+  kcal_per_100g: 130
+  protein_per_100g: 13
+  carbs_per_100g: 7
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,dinner,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: hm_chicken_korma_homemade
+  name: Chicken Korma (Homemade)
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 10
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,dinner,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: hm_chicken_madras_homemade
+  name: Chicken Madras (Homemade)
+  kcal_per_100g: 135
+  protein_per_100g: 13
+  carbs_per_100g: 6
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,dinner,curry,chicken,spicy
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: hm_thai_green_curry_homemade
+  name: Thai Green Curry (Chicken, Homemade)
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: plate (450 g)
+  tags: homemade,dinner,curry,thai
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: hm_thai_red_curry_homemade
+  name: Thai Red Curry (Chicken, Homemade)
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 10
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: plate (450 g)
+  tags: homemade,dinner,curry,thai
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: hm_chicken_pad_thai_homemade
+  name: Pad Thai Chicken (Homemade)
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: plate (450 g)
+  tags: homemade,dinner,thai,chicken
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: hm_pork_belly_homemade
+  name: Slow-Cooked Pork Belly (Homemade)
+  kcal_per_100g: 285
+  protein_per_100g: 17
+  carbs_per_100g: 5
+  fat_per_100g: 22
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: homemade,dinner,pork
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: hm_shepherds_pie_homemade
+  name: Shepherd's Pie (Homemade)
+  kcal_per_100g: 135
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,dinner,lamb
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: hm_cottage_pie_homemade
+  name: Cottage Pie (Homemade)
+  kcal_per_100g: 130
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 4.5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,dinner,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: hm_fish_pie_homemade
+  name: Fish Pie (Homemade)
+  kcal_per_100g: 125
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,dinner,fish
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: hm_chilli_con_carne_homemade
+  name: Chilli con Carne (Homemade)
+  kcal_per_100g: 135
+  protein_per_100g: 11
+  carbs_per_100g: 11
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,dinner,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: hm_vegetarian_chilli
+  name: Vegetarian Chilli
+  kcal_per_100g: 110
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 2
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,dinner,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_chicken_pie_homemade
+  name: Chicken Pie (Homemade)
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,dinner,chicken
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: hm_steak_chips_peas
+  name: Steak, Chips & Peas (Homemade)
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 500
+  serving_label: plate (500 g)
+  tags: homemade,dinner,beef
+  portion_unit: meal
+  unit_grams: 500
+- source: homemade
+  source_id: hm_grilled_salmon_veg
+  name: Grilled Salmon with Vegetables
+  kcal_per_100g: 175
+  protein_per_100g: 18
+  carbs_per_100g: 8
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,dinner,salmon
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: hm_baked_salmon_rice
+  name: Baked Salmon with Rice
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,dinner,salmon
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: hm_grilled_chicken_rice_veg
+  name: Grilled Chicken, Rice & Veg
+  kcal_per_100g: 145
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 3
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,dinner,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: hm_grilled_chicken_potato_veg
+  name: Grilled Chicken, Potato & Veg
+  kcal_per_100g: 130
+  protein_per_100g: 14
+  carbs_per_100g: 13
+  fat_per_100g: 3
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: plate (450 g)
+  tags: homemade,dinner,chicken
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: hm_chicken_kievs_chips
+  name: Chicken Kievs with Chips
+  kcal_per_100g: 215
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,dinner,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: hm_roast_dinner_chicken
+  name: Roast Chicken Dinner (Full Plate)
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 14
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 500
+  serving_label: plate (500 g)
+  tags: homemade,dinner,chicken,roast
+  portion_unit: meal
+  unit_grams: 500
+- source: homemade
+  source_id: hm_roast_dinner_beef
+  name: Roast Beef Dinner (Full Plate)
+  kcal_per_100g: 185
+  protein_per_100g: 15
+  carbs_per_100g: 14
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 550
+  serving_label: plate (550 g)
+  tags: homemade,dinner,beef,roast
+  portion_unit: meal
+  unit_grams: 550
+- source: homemade
+  source_id: hm_roast_dinner_lamb
+  name: Roast Lamb Dinner (Full Plate)
+  kcal_per_100g: 215
+  protein_per_100g: 14
+  carbs_per_100g: 14
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 550
+  serving_label: plate (550 g)
+  tags: homemade,dinner,lamb,roast
+  portion_unit: meal
+  unit_grams: 550
+- source: homemade
+  source_id: hm_roast_dinner_pork
+  name: Roast Pork Dinner (Full Plate)
+  kcal_per_100g: 195
+  protein_per_100g: 15
+  carbs_per_100g: 14
+  fat_per_100g: 10
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 550
+  serving_label: plate (550 g)
+  tags: homemade,dinner,pork,roast
+  portion_unit: meal
+  unit_grams: 550
+- source: homemade
+  source_id: hm_roast_dinner_turkey
+  name: Roast Turkey Dinner (Full Plate)
+  kcal_per_100g: 165
+  protein_per_100g: 15
+  carbs_per_100g: 14
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 550
+  serving_label: plate (550 g)
+  tags: homemade,dinner,turkey,roast
+  portion_unit: meal
+  unit_grams: 550
+- source: homemade
+  source_id: hm_roast_dinner_nut_loaf
+  name: Vegetarian Nut Loaf Roast Dinner
+  kcal_per_100g: 195
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 500
+  serving_label: plate (500 g)
+  tags: homemade,dinner,vegetarian,roast
+  portion_unit: meal
+  unit_grams: 500
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_lamb_curry_homemade
+  name: Lamb Curry (Homemade)
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 8
+  fat_per_100g: 10
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,dinner,lamb,curry
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: hm_pork_chops_apple_sauce
+  name: Pork Chops with Apple Sauce
+  kcal_per_100g: 195
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 10
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: homemade,dinner,pork
+  portion_unit: meal
+  unit_grams: 250
+- source: homemade
+  source_id: hm_lamb_chops_grilled
+  name: Lamb Chops Grilled (with Veg)
+  kcal_per_100g: 215
+  protein_per_100g: 17
+  carbs_per_100g: 7
+  fat_per_100g: 14
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,dinner,lamb
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: hm_meatloaf
+  name: Meatloaf with Mash & Veg
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 11
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: homemade,dinner,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: hm_burgers_homemade
+  name: Homemade Beef Burger with Bun
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: homemade,dinner,beef,burger
+  portion_unit: meal
+  unit_grams: 250
+- source: homemade
+  source_id: hm_chicken_burger_homemade
+  name: Homemade Chicken Burger with Bun
+  kcal_per_100g: 235
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: homemade,dinner,chicken,burger
+  portion_unit: meal
+  unit_grams: 250
+- source: homemade
+  source_id: hm_veg_burger_homemade
+  name: Homemade Veggie Burger with Bun
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 25
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: homemade,dinner,vegetarian,burger
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_chicken_satay_skewers
+  name: Chicken Satay Skewers (Homemade)
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 8
+  fat_per_100g: 12
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: homemade,dinner,chicken,asian
+  portion_unit: piece
+  unit_grams: 200
+- source: homemade
+  source_id: hm_kebab_doner_chicken
+  name: Doner Kebab Chicken (Homemade)
+  kcal_per_100g: 215
+  protein_per_100g: 15
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,dinner,chicken,kebab
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: hm_kebab_shish_chicken
+  name: Chicken Shish Kebab (Homemade)
+  kcal_per_100g: 175
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: homemade,dinner,chicken,kebab
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: hm_kebab_lamb_shish
+  name: Lamb Shish Kebab (Homemade)
+  kcal_per_100g: 245
+  protein_per_100g: 17
+  carbs_per_100g: 5
+  fat_per_100g: 18
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: homemade,dinner,lamb,kebab
+  portion_unit: meal
+  unit_grams: 200
+- source: homemade
+  source_id: hm_soup_tomato_basil_homemade
+  name: Homemade Tomato Basil Soup
+  kcal_per_100g: 75
+  protein_per_100g: 2
+  carbs_per_100g: 11
+  fat_per_100g: 2.5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,soup,vegetarian
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_soup_chicken_noodle_homemade
+  name: Homemade Chicken Noodle Soup
+  kcal_per_100g: 65
+  protein_per_100g: 5
+  carbs_per_100g: 8
+  fat_per_100g: 1.5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,soup,chicken
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: hm_soup_minestrone_homemade
+  name: Homemade Minestrone Soup
+  kcal_per_100g: 70
+  protein_per_100g: 3
+  carbs_per_100g: 11
+  fat_per_100g: 1.5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,soup,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_soup_butternut_homemade
+  name: Homemade Butternut Squash Soup
+  kcal_per_100g: 75
+  protein_per_100g: 2
+  carbs_per_100g: 12
+  fat_per_100g: 2.5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,soup,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_soup_potato_leek_homemade
+  name: Homemade Potato & Leek Soup
+  kcal_per_100g: 65
+  protein_per_100g: 2
+  carbs_per_100g: 11
+  fat_per_100g: 1.5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,soup,vegetarian
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_soup_lentil_homemade
+  name: Homemade Lentil Soup
+  kcal_per_100g: 95
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 1
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,soup,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_soup_chicken_sweetcorn_homemade
+  name: Homemade Chicken Sweetcorn Soup
+  kcal_per_100g: 85
+  protein_per_100g: 6
+  carbs_per_100g: 11
+  fat_per_100g: 2
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,soup,chicken
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: hm_soup_pho_chicken
+  name: Homemade Chicken Pho
+  kcal_per_100g: 95
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 2
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 500
+  serving_label: plate (500 g)
+  tags: homemade,soup,vietnamese
+  portion_unit: meal
+  unit_grams: 500
+- source: homemade
+  source_id: hm_soup_ramen_chicken
+  name: Homemade Chicken Ramen
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 500
+  serving_label: plate (500 g)
+  tags: homemade,soup,asian,chicken
+  portion_unit: meal
+  unit_grams: 500
+- source: homemade
+  source_id: hm_soup_french_onion
+  name: Homemade French Onion Soup
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 14
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,soup,french,vegetarian
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_soup_mushroom_cream
+  name: Homemade Cream of Mushroom Soup
+  kcal_per_100g: 95
+  protein_per_100g: 3
+  carbs_per_100g: 9
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: plate (350 g)
+  tags: homemade,soup,vegetarian
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_brownie_chocolate
+  name: Homemade Chocolate Brownie (Per Square)
+  kcal_per_100g: 425
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 60
+  serving_label: plate (60 g)
+  tags: homemade,dessert,vegetarian
+  portion_unit: meal
+  unit_grams: 60
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_cake_chocolate_slice
+  name: Homemade Chocolate Cake (Slice)
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 18
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 100
+  serving_label: plate (100 g)
+  tags: homemade,dessert,vegetarian
+  portion_unit: slice
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_cake_victoria_sponge_slice
+  name: Homemade Victoria Sponge (Slice)
+  kcal_per_100g: 320
+  protein_per_100g: 5
+  carbs_per_100g: 45
+  fat_per_100g: 13
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 100
+  serving_label: plate (100 g)
+  tags: homemade,dessert,vegetarian
+  portion_unit: slice
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_cake_lemon_drizzle_slice
+  name: Homemade Lemon Drizzle Cake (Slice)
+  kcal_per_100g: 365
+  protein_per_100g: 5
+  carbs_per_100g: 55
+  fat_per_100g: 14
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 100
+  serving_label: plate (100 g)
+  tags: homemade,dessert,vegetarian
+  portion_unit: slice
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_cake_carrot_slice
+  name: Homemade Carrot Cake (Slice)
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 18
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 100
+  serving_label: plate (100 g)
+  tags: homemade,dessert,vegetarian
+  portion_unit: slice
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_cookies_chocolate_chip_2
+  name: Homemade Chocolate Chip Cookies (Each)
+  kcal_per_100g: 470
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 22
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 25
+  serving_label: plate (25 g)
+  tags: homemade,dessert,vegetarian
+  portion_unit: meal
+  unit_grams: 25
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_cheesecake_baked_slice
+  name: Homemade Baked Cheesecake (Slice)
+  kcal_per_100g: 360
+  protein_per_100g: 7
+  carbs_per_100g: 30
+  fat_per_100g: 24
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 130
+  serving_label: plate (130 g)
+  tags: homemade,dessert,vegetarian
+  portion_unit: slice
+  unit_grams: 130
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_cheesecake_no_bake_slice
+  name: Homemade No-Bake Cheesecake (Slice)
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 32
+  fat_per_100g: 26
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 130
+  serving_label: plate (130 g)
+  tags: homemade,dessert,vegetarian
+  portion_unit: slice
+  unit_grams: 130
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_apple_crumble_per_serving
+  name: Homemade Apple Crumble (Per Serving)
+  kcal_per_100g: 245
+  protein_per_100g: 3
+  carbs_per_100g: 35
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: homemade,dessert,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_rice_pudding_homemade
+  name: Homemade Rice Pudding
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: homemade,dessert,vegetarian
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_bread_pudding_per_serving
+  name: Homemade Bread & Butter Pudding (Per Serving)
+  kcal_per_100g: 285
+  protein_per_100g: 9
+  carbs_per_100g: 35
+  fat_per_100g: 12
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: homemade,dessert,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_pavlova_per_slice
+  name: Pavlova (Per Slice)
+  kcal_per_100g: 245
+  protein_per_100g: 3
+  carbs_per_100g: 40
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 130
+  serving_label: plate (130 g)
+  tags: homemade,dessert,vegetarian
+  portion_unit: slice
+  unit_grams: 130
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_eton_mess_homemade
+  name: Homemade Eton Mess
+  kcal_per_100g: 195
+  protein_per_100g: 3
+  carbs_per_100g: 24
+  fat_per_100g: 11
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 180
+  serving_label: plate (180 g)
+  tags: homemade,dessert,vegetarian
+  portion_unit: meal
+  unit_grams: 180
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_tiramisu_homemade
+  name: Homemade Tiramisu (Per Serving)
+  kcal_per_100g: 295
+  protein_per_100g: 5
+  carbs_per_100g: 32
+  fat_per_100g: 15
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 130
+  serving_label: plate (130 g)
+  tags: homemade,dessert,vegetarian
+  portion_unit: meal
+  unit_grams: 130
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_panna_cotta_homemade
+  name: Homemade Panna Cotta
+  kcal_per_100g: 285
+  protein_per_100g: 4
+  carbs_per_100g: 22
+  fat_per_100g: 21
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 130
+  serving_label: plate (130 g)
+  tags: homemade,dessert,vegetarian
+  portion_unit: meal
+  unit_grams: 130
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_creme_brulee_homemade
+  name: Homemade Crème Brûlée
+  kcal_per_100g: 365
+  protein_per_100g: 4
+  carbs_per_100g: 30
+  fat_per_100g: 25
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 130
+  serving_label: plate (130 g)
+  tags: homemade,dessert,vegetarian
+  portion_unit: meal
+  unit_grams: 130
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_chocolate_mousse_homemade
+  name: Homemade Chocolate Mousse
+  kcal_per_100g: 320
+  protein_per_100g: 6
+  carbs_per_100g: 30
+  fat_per_100g: 21
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 130
+  serving_label: plate (130 g)
+  tags: homemade,dessert,vegetarian
+  portion_unit: meal
+  unit_grams: 130
+  dietary_compat: vegetarian
+- source: homemade
+  source_id: hm_fruit_salad_homemade
+  name: Homemade Fruit Salad
+  kcal_per_100g: 50
+  protein_per_100g: 1
+  carbs_per_100g: 12
+  fat_per_100g: 0.3
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: homemade,dessert,vegan,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: homemade
+  source_id: hm_yogurt_pot_homemade
+  name: Yogurt with Berries & Honey (Homemade)
+  kcal_per_100g: 110
+  protein_per_100g: 6
+  carbs_per_100g: 15
+  fat_per_100g: 3
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: plate (250 g)
+  tags: homemade,dessert,vegetarian
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian

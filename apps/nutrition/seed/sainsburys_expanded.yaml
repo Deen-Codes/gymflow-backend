@@ -1,0 +1,1161 @@
+# Sainsbury's Expanded — TTD, Plant Pioneers, Be Good To Yourself, Free From,
+# standard ready meals, fresh meat & fish, soups, dips, pizza
+
+- source: sainsburys
+  source_id: sains_ttd_chicken_kievs
+  name: Sainsbury's TTD Chicken Kievs
+  kcal_per_100g: 255
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 15
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 140
+  serving_label: kiev (140 g)
+  tags: frozen,chicken,ready-meal
+  portion_unit: meal
+  unit_grams: 140
+- source: sainsburys
+  source_id: sains_ttd_chicken_in_tarragon
+  name: Sainsbury's TTD Chicken in Tarragon Sauce
+  kcal_per_100g: 135
+  protein_per_100g: 13
+  carbs_per_100g: 5
+  fat_per_100g: 7.5
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 350
+  serving_label: meal (350 g)
+  tags: ready-meal,chicken
+  portion_unit: meal
+  unit_grams: 350
+- source: sainsburys
+  source_id: sains_ttd_thai_green_curry
+  name: Sainsbury's TTD Thai Green Chicken Curry
+  kcal_per_100g: 150
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 6.5
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_ttd_thai_red_curry
+  name: Sainsbury's TTD Thai Red Chicken Curry
+  kcal_per_100g: 150
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 6.5
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_ttd_chicken_tikka
+  name: Sainsbury's TTD Chicken Tikka Masala
+  kcal_per_100g: 145
+  protein_per_100g: 10
+  carbs_per_100g: 11
+  fat_per_100g: 6
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_ttd_lasagne
+  name: Sainsbury's TTD Lasagne al Forno
+  kcal_per_100g: 155
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_ttd_macaroni_cheese
+  name: Sainsbury's TTD Macaroni Cheese
+  kcal_per_100g: 170
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: sainsburys
+  source_id: sains_ttd_cottage_pie
+  name: Sainsbury's TTD Cottage Pie
+  kcal_per_100g: 130
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_ttd_shepherds_pie
+  name: Sainsbury's TTD Shepherd's Pie
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5.5
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,lamb
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_ttd_fish_pie
+  name: Sainsbury's TTD Fish Pie
+  kcal_per_100g: 120
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 4
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,fish
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_ttd_steak_ale_pie
+  name: Sainsbury's TTD Steak & Ale Pie
+  kcal_per_100g: 230
+  protein_per_100g: 9
+  carbs_per_100g: 21
+  fat_per_100g: 12
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 400
+  serving_label: pie (400 g)
+  tags: ready-meal,beef,pie
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_ttd_chicken_mushroom_pie
+  name: Sainsbury's TTD Chicken & Mushroom Pie
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 19
+  fat_per_100g: 11
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 400
+  serving_label: pie (400 g)
+  tags: ready-meal,chicken,pie
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_ttd_lamb_shanks
+  name: Sainsbury's TTD Slow-Cooked Lamb Shanks
+  kcal_per_100g: 170
+  protein_per_100g: 13
+  carbs_per_100g: 8
+  fat_per_100g: 9.5
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 450
+  serving_label: pack (450 g)
+  tags: ready-meal,lamb
+  portion_unit: meal
+  unit_grams: 450
+- source: sainsburys
+  source_id: sains_ttd_beef_short_rib
+  name: Sainsbury's TTD Slow-Cooked Beef Short Rib
+  kcal_per_100g: 210
+  protein_per_100g: 17
+  carbs_per_100g: 7
+  fat_per_100g: 12
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 425
+  serving_label: pack (425 g)
+  tags: ready-meal,beef
+  portion_unit: meal
+  unit_grams: 425
+- source: sainsburys
+  source_id: sains_ttd_pork_belly
+  name: Sainsbury's TTD Slow-Cooked Pork Belly
+  kcal_per_100g: 275
+  protein_per_100g: 16
+  carbs_per_100g: 5
+  fat_per_100g: 22
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 400
+  serving_label: pack (400 g)
+  tags: ready-meal,pork
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_ttd_duck_a_l_orange
+  name: Sainsbury's TTD Duck à l'Orange
+  kcal_per_100g: 170
+  protein_per_100g: 13
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pack (300 g)
+  tags: ready-meal,duck
+  portion_unit: meal
+  unit_grams: 300
+- source: sainsburys
+  source_id: sains_ttd_salmon_fillets
+  name: Sainsbury's TTD Scottish Salmon Fillets
+  kcal_per_100g: 200
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: salmon,fresh
+  portion_unit: meal
+  unit_grams: 130
+- source: sainsburys
+  source_id: sains_ttd_chicken_breast
+  name: Sainsbury's TTD Free Range Chicken Breasts
+  kcal_per_100g: 110
+  protein_per_100g: 24
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Sainsbury's Taste the Difference
+  region_codes: GB
+  serving_grams: 170
+  serving_label: breast (170 g)
+  tags: chicken,fresh,free-range
+  portion_unit: meal
+  unit_grams: 170
+- source: sainsburys
+  source_id: sains_pp_no_chicken_kiev
+  name: Sainsbury's Plant Pioneers No Chicken Kiev
+  kcal_per_100g: 225
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Sainsbury's Plant Pioneers
+  region_codes: GB
+  serving_grams: 140
+  serving_label: kiev (140 g)
+  tags: vegan,plant-based,frozen
+  portion_unit: meal
+  unit_grams: 140
+  dietary_compat: vegan,vegetarian
+- source: sainsburys
+  source_id: sains_pp_no_beef_burger
+  name: Sainsbury's Plant Pioneers No Beef Burger
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 6
+  fat_per_100g: 13
+  brand: Sainsbury's Plant Pioneers
+  region_codes: GB
+  serving_grams: 113
+  serving_label: burger (113 g)
+  tags: vegan,burger
+  portion_unit: meal
+  unit_grams: 113
+  dietary_compat: vegan,vegetarian
+- source: sainsburys
+  source_id: sains_pp_no_chicken_burger
+  name: Sainsbury's Plant Pioneers No Chicken Burger
+  kcal_per_100g: 210
+  protein_per_100g: 17
+  carbs_per_100g: 9
+  fat_per_100g: 11
+  brand: Sainsbury's Plant Pioneers
+  region_codes: GB
+  serving_grams: 113
+  serving_label: burger (113 g)
+  tags: vegan,burger
+  portion_unit: meal
+  unit_grams: 113
+  dietary_compat: vegan,vegetarian
+- source: sainsburys
+  source_id: sains_pp_no_chicken_pieces
+  name: Sainsbury's Plant Pioneers No Chicken Pieces
+  kcal_per_100g: 155
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 5
+  brand: Sainsbury's Plant Pioneers
+  region_codes: GB
+  serving_grams: 160
+  serving_label: pack (160 g)
+  tags: vegan,protein,frozen
+  portion_unit: meal
+  unit_grams: 160
+  dietary_compat: vegan,vegetarian
+- source: sainsburys
+  source_id: sains_pp_meatballs
+  name: Sainsbury's Plant Pioneers Meatballs
+  kcal_per_100g: 160
+  protein_per_100g: 16
+  carbs_per_100g: 9
+  fat_per_100g: 5.5
+  brand: Sainsbury's Plant Pioneers
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pack (200 g)
+  tags: vegan,protein
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: sainsburys
+  source_id: sains_pp_pulled_jackfruit
+  name: Sainsbury's Plant Pioneers Pulled Jackfruit
+  kcal_per_100g: 105
+  protein_per_100g: 2
+  carbs_per_100g: 17
+  fat_per_100g: 2.5
+  brand: Sainsbury's Plant Pioneers
+  region_codes: GB
+  serving_grams: 160
+  serving_label: pack (160 g)
+  tags: vegan,bbq
+  portion_unit: meal
+  unit_grams: 160
+  dietary_compat: vegan,vegetarian
+- source: sainsburys
+  source_id: sains_pp_no_sausages
+  name: Sainsbury's Plant Pioneers No Pork Sausages
+  kcal_per_100g: 225
+  protein_per_100g: 14
+  carbs_per_100g: 8
+  fat_per_100g: 14
+  brand: Sainsbury's Plant Pioneers
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pack (300 g)
+  tags: vegan,sausage
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: sainsburys
+  source_id: sains_pp_quarter_pounder
+  name: Sainsbury's Plant Pioneers Quarter Pounder
+  kcal_per_100g: 230
+  protein_per_100g: 18
+  carbs_per_100g: 8
+  fat_per_100g: 13
+  brand: Sainsbury's Plant Pioneers
+  region_codes: GB
+  serving_grams: 113
+  serving_label: burger (113 g)
+  tags: vegan,burger
+  portion_unit: meal
+  unit_grams: 113
+  dietary_compat: vegan,vegetarian
+- source: sainsburys
+  source_id: sains_pp_aubergine_lasagne
+  name: Sainsbury's Plant Pioneers Aubergine Lasagne
+  kcal_per_100g: 135
+  protein_per_100g: 5
+  carbs_per_100g: 14
+  fat_per_100g: 5.5
+  brand: Sainsbury's Plant Pioneers
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: vegan,pasta,ready-meal
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: sainsburys
+  source_id: sains_pp_thai_green
+  name: Sainsbury's Plant Pioneers Thai Green Curry
+  kcal_per_100g: 125
+  protein_per_100g: 4
+  carbs_per_100g: 15
+  fat_per_100g: 5.5
+  brand: Sainsbury's Plant Pioneers
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: vegan,curry,ready-meal
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: sainsburys
+  source_id: sains_bgty_chicken_tikka
+  name: Sainsbury's BGTY Chicken Tikka Masala
+  kcal_per_100g: 95
+  protein_per_100g: 9
+  carbs_per_100g: 9
+  fat_per_100g: 2.5
+  brand: Sainsbury's Be Good To Yourself
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken,light
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_bgty_thai_green
+  name: Sainsbury's BGTY Thai Green Curry
+  kcal_per_100g: 100
+  protein_per_100g: 8
+  carbs_per_100g: 10
+  fat_per_100g: 3
+  brand: Sainsbury's Be Good To Yourself
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,light
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_bgty_lasagne
+  name: Sainsbury's BGTY Lasagne
+  kcal_per_100g: 105
+  protein_per_100g: 8
+  carbs_per_100g: 14
+  fat_per_100g: 2
+  brand: Sainsbury's Be Good To Yourself
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,light
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_bgty_macaroni
+  name: Sainsbury's BGTY Macaroni Cheese
+  kcal_per_100g: 110
+  protein_per_100g: 7
+  carbs_per_100g: 14
+  fat_per_100g: 2.5
+  brand: Sainsbury's Be Good To Yourself
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,light
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: sainsburys
+  source_id: sains_bgty_chilli
+  name: Sainsbury's BGTY Chilli con Carne
+  kcal_per_100g: 90
+  protein_per_100g: 8
+  carbs_per_100g: 11
+  fat_per_100g: 1.5
+  brand: Sainsbury's Be Good To Yourself
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,beef,light
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_bgty_spag_bol
+  name: Sainsbury's BGTY Spaghetti Bolognese
+  kcal_per_100g: 100
+  protein_per_100g: 8
+  carbs_per_100g: 13
+  fat_per_100g: 1.5
+  brand: Sainsbury's Be Good To Yourself
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef,light
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_bgty_cottage_pie
+  name: Sainsbury's BGTY Cottage Pie
+  kcal_per_100g: 105
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 2.5
+  brand: Sainsbury's Be Good To Yourself
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,beef,light
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_chicken_korma_400
+  name: Sainsbury's Chicken Korma
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5.5
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_chicken_balti_400
+  name: Sainsbury's Chicken Balti
+  kcal_per_100g: 125
+  protein_per_100g: 9
+  carbs_per_100g: 9
+  fat_per_100g: 5
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_chicken_jalfrezi_400
+  name: Sainsbury's Chicken Jalfrezi
+  kcal_per_100g: 120
+  protein_per_100g: 9
+  carbs_per_100g: 9
+  fat_per_100g: 4.5
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_chicken_madras_400
+  name: Sainsbury's Chicken Madras
+  kcal_per_100g: 115
+  protein_per_100g: 10
+  carbs_per_100g: 8
+  fat_per_100g: 4
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken,spicy
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_sweet_sour_chicken_rice
+  name: Sainsbury's Sweet & Sour Chicken & Rice
+  kcal_per_100g: 130
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 2
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 450
+  serving_label: meal (450 g)
+  tags: ready-meal,chinese,chicken,rice
+  portion_unit: meal
+  unit_grams: 450
+- source: sainsburys
+  source_id: sains_chicken_chow_mein
+  name: Sainsbury's Chicken Chow Mein
+  kcal_per_100g: 120
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,chinese,chicken,noodles
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_lasagne_400
+  name: Sainsbury's Beef Lasagne
+  kcal_per_100g: 150
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_macaroni_cheese_400
+  name: Sainsbury's Macaroni Cheese
+  kcal_per_100g: 165
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 7.5
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: sainsburys
+  source_id: sains_chilli_rice_400
+  name: Sainsbury's Chilli con Carne & Rice
+  kcal_per_100g: 120
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 450
+  serving_label: meal (450 g)
+  tags: ready-meal,beef,rice
+  portion_unit: meal
+  unit_grams: 450
+- source: sainsburys
+  source_id: sains_spag_bol_400
+  name: Sainsbury's Spaghetti Bolognese
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 14
+  fat_per_100g: 4.5
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_carbonara_400
+  name: Sainsbury's Spaghetti Carbonara
+  kcal_per_100g: 170
+  protein_per_100g: 7
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_cottage_pie_400
+  name: Sainsbury's Cottage Pie
+  kcal_per_100g: 125
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 5
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_shepherds_pie_400
+  name: Sainsbury's Shepherd's Pie
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 5
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,lamb
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_fish_pie_400
+  name: Sainsbury's Fish Pie
+  kcal_per_100g: 115
+  protein_per_100g: 8
+  carbs_per_100g: 11
+  fat_per_100g: 4
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,fish
+  portion_unit: meal
+  unit_grams: 400
+- source: sainsburys
+  source_id: sains_houmous_classic
+  name: Sainsbury's Houmous (Classic)
+  kcal_per_100g: 290
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 23
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pot (200 g)
+  tags: dip,deli
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: sainsburys
+  source_id: sains_houmous_red_pepper
+  name: Sainsbury's Red Pepper Houmous
+  kcal_per_100g: 275
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 21
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pot (200 g)
+  tags: dip,deli
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: sainsburys
+  source_id: sains_tzatziki
+  name: Sainsbury's Tzatziki
+  kcal_per_100g: 120
+  protein_per_100g: 5
+  carbs_per_100g: 4
+  fat_per_100g: 9.5
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 170
+  serving_label: pot (170 g)
+  tags: dip,deli,greek
+  portion_unit: meal
+  unit_grams: 170
+  dietary_compat: vegetarian
+- source: sainsburys
+  source_id: sains_taramasalata
+  name: Sainsbury's Taramasalata
+  kcal_per_100g: 440
+  protein_per_100g: 4
+  carbs_per_100g: 6
+  fat_per_100g: 45
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 170
+  serving_label: pot (170 g)
+  tags: dip,deli
+  portion_unit: meal
+  unit_grams: 170
+- source: sainsburys
+  source_id: sains_soup_tomato_basil
+  name: Sainsbury's Tomato & Basil Soup
+  kcal_per_100g: 45
+  protein_per_100g: 1.5
+  carbs_per_100g: 6
+  fat_per_100g: 1.5
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegetarian
+- source: sainsburys
+  source_id: sains_soup_chicken_noodle
+  name: Sainsbury's Chicken Noodle Soup
+  kcal_per_100g: 50
+  protein_per_100g: 4
+  carbs_per_100g: 6
+  fat_per_100g: 1
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup,chicken
+  portion_unit: meal
+  unit_grams: 300
+- source: sainsburys
+  source_id: sains_soup_minestrone
+  name: Sainsbury's Minestrone Soup
+  kcal_per_100g: 55
+  protein_per_100g: 2
+  carbs_per_100g: 9
+  fat_per_100g: 1
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: sainsburys
+  source_id: sains_soup_potato_leek
+  name: Sainsbury's Potato & Leek Soup
+  kcal_per_100g: 50
+  protein_per_100g: 1.5
+  carbs_per_100g: 7
+  fat_per_100g: 1.5
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegetarian
+- source: sainsburys
+  source_id: sains_soup_butternut
+  name: Sainsbury's Butternut Squash Soup
+  kcal_per_100g: 55
+  protein_per_100g: 1.2
+  carbs_per_100g: 8
+  fat_per_100g: 2
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: sainsburys
+  source_id: sains_soup_thai_chicken
+  name: Sainsbury's Thai Chicken Soup
+  kcal_per_100g: 75
+  protein_per_100g: 5
+  carbs_per_100g: 7
+  fat_per_100g: 3
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup,thai
+  portion_unit: meal
+  unit_grams: 300
+- source: sainsburys
+  source_id: sains_ff_white_loaf
+  name: Sainsbury's Free From White Loaf
+  kcal_per_100g: 265
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 5
+  brand: Sainsbury's Free From
+  region_codes: GB
+  serving_grams: 42
+  serving_label: slice (42 g)
+  tags: gluten-free,bread
+  portion_unit: slice
+  unit_grams: 42
+  dietary_compat: gluten-free,vegetarian
+- source: sainsburys
+  source_id: sains_ff_brown_loaf
+  name: Sainsbury's Free From Brown Loaf
+  kcal_per_100g: 275
+  protein_per_100g: 7
+  carbs_per_100g: 47
+  fat_per_100g: 6
+  brand: Sainsbury's Free From
+  region_codes: GB
+  serving_grams: 42
+  serving_label: slice (42 g)
+  tags: gluten-free,bread
+  portion_unit: slice
+  unit_grams: 42
+  dietary_compat: gluten-free,vegetarian
+- source: sainsburys
+  source_id: sains_ff_chocolate_brownies
+  name: Sainsbury's Free From Chocolate Brownies
+  kcal_per_100g: 435
+  protein_per_100g: 4
+  carbs_per_100g: 55
+  fat_per_100g: 23
+  brand: Sainsbury's Free From
+  region_codes: GB
+  serving_grams: 35
+  serving_label: brownie (35 g)
+  tags: gluten-free,dessert
+  portion_unit: piece
+  unit_grams: 35
+  dietary_compat: gluten-free,vegetarian
+- source: sainsburys
+  source_id: sains_stonebaked_margherita
+  name: Sainsbury's Stonebaked Margherita Pizza
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 290
+  serving_label: pizza (290 g)
+  tags: pizza,frozen
+  portion_unit: meal
+  unit_grams: 290
+  dietary_compat: vegetarian
+- source: sainsburys
+  source_id: sains_stonebaked_pepperoni
+  name: Sainsbury's Stonebaked Pepperoni Pizza
+  kcal_per_100g: 275
+  protein_per_100g: 12
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 320
+  serving_label: pizza (320 g)
+  tags: pizza,frozen
+  portion_unit: meal
+  unit_grams: 320
+- source: sainsburys
+  source_id: sains_stonebaked_meat_feast
+  name: Sainsbury's Stonebaked Meat Feast Pizza
+  kcal_per_100g: 280
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 395
+  serving_label: pizza (395 g)
+  tags: pizza,frozen
+  portion_unit: meal
+  unit_grams: 395
+- source: sainsburys
+  source_id: sains_stonebaked_bbq_chicken
+  name: Sainsbury's Stonebaked BBQ Chicken Pizza
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 370
+  serving_label: pizza (370 g)
+  tags: pizza,frozen,chicken
+  portion_unit: meal
+  unit_grams: 370
+- source: sainsburys
+  source_id: sains_chicken_breast_fresh
+  name: Sainsbury's British Chicken Breasts
+  kcal_per_100g: 105
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 170
+  serving_label: breast (170 g)
+  tags: chicken,fresh
+  portion_unit: meal
+  unit_grams: 170
+- source: sainsburys
+  source_id: sains_chicken_thigh_fresh
+  name: Sainsbury's British Chicken Thighs
+  kcal_per_100g: 170
+  protein_per_100g: 19
+  carbs_per_100g: 0
+  fat_per_100g: 10
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 120
+  serving_label: thigh (120 g)
+  tags: chicken,fresh
+  portion_unit: meal
+  unit_grams: 120
+- source: sainsburys
+  source_id: sains_chicken_mince_lean
+  name: Sainsbury's Lean Chicken Mince
+  kcal_per_100g: 115
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 3
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: chicken,fresh,lean
+  portion_unit: meal
+  unit_grams: 125
+- source: sainsburys
+  source_id: sains_turkey_mince_lean
+  name: Sainsbury's Lean Turkey Mince
+  kcal_per_100g: 105
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 2
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: turkey,fresh,lean
+  portion_unit: meal
+  unit_grams: 125
+- source: sainsburys
+  source_id: sains_steak_mince_5pct
+  name: Sainsbury's 5% Fat Steak Mince
+  kcal_per_100g: 130
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 5
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: beef,fresh,lean
+  portion_unit: meal
+  unit_grams: 125
+- source: sainsburys
+  source_id: sains_steak_mince_12pct
+  name: Sainsbury's 12% Fat Steak Mince
+  kcal_per_100g: 170
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 9
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: beef,fresh
+  portion_unit: meal
+  unit_grams: 125
+- source: sainsburys
+  source_id: sains_pork_mince
+  name: Sainsbury's British Pork Mince
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 16
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: pork,fresh
+  portion_unit: meal
+  unit_grams: 125
+- source: sainsburys
+  source_id: sains_diced_chicken
+  name: Sainsbury's Diced Chicken Breast
+  kcal_per_100g: 105
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 150
+  serving_label: portion (150 g)
+  tags: chicken,fresh
+  portion_unit: meal
+  unit_grams: 150
+- source: sainsburys
+  source_id: sains_diced_beef
+  name: Sainsbury's British Diced Beef
+  kcal_per_100g: 170
+  protein_per_100g: 24
+  carbs_per_100g: 0
+  fat_per_100g: 8
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 150
+  serving_label: portion (150 g)
+  tags: beef,fresh
+  portion_unit: meal
+  unit_grams: 150
+- source: sainsburys
+  source_id: sains_diced_lamb
+  name: Sainsbury's British Diced Lamb
+  kcal_per_100g: 215
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 14
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 150
+  serving_label: portion (150 g)
+  tags: lamb,fresh
+  portion_unit: meal
+  unit_grams: 150
+- source: sainsburys
+  source_id: sains_salmon_fillets
+  name: Sainsbury's Salmon Fillets Skin On
+  kcal_per_100g: 210
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: salmon,fresh
+  portion_unit: meal
+  unit_grams: 130
+- source: sainsburys
+  source_id: sains_cod_fillets
+  name: Sainsbury's Cod Fillets
+  kcal_per_100g: 80
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 0.7
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 140
+  serving_label: fillet (140 g)
+  tags: fish,fresh,lean
+  portion_unit: meal
+  unit_grams: 140
+- source: sainsburys
+  source_id: sains_seabass_fillets
+  name: Sainsbury's Seabass Fillets
+  kcal_per_100g: 120
+  protein_per_100g: 20
+  carbs_per_100g: 0
+  fat_per_100g: 4
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: fillet (100 g)
+  tags: fish,fresh
+  portion_unit: meal
+  unit_grams: 100
+- source: sainsburys
+  source_id: sains_haddock_fillets
+  name: Sainsbury's Haddock Fillets
+  kcal_per_100g: 75
+  protein_per_100g: 17
+  carbs_per_100g: 0
+  fat_per_100g: 0.5
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: fish,fresh,lean
+  portion_unit: meal
+  unit_grams: 130
+- source: sainsburys
+  source_id: sains_king_prawns
+  name: Sainsbury's King Prawns (Cooked)
+  kcal_per_100g: 75
+  protein_per_100g: 17
+  carbs_per_100g: 0
+  fat_per_100g: 0.7
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pack (200 g)
+  tags: prawns,seafood
+  portion_unit: meal
+  unit_grams: 200

@@ -1,0 +1,858 @@
+# Health bars — Nakd, Trek, 9bar, Eat Natural, Bounce, Pulsin, Linwoods, KIND,
+# Cliff Bar, Belvita, Special K, Rice Krispies Squares
+
+- source: brand
+  source_id: nakd_cocoa_orange
+  name: Nakd Cocoa Orange
+  kcal_per_100g: 405
+  protein_per_100g: 8
+  carbs_per_100g: 53
+  fat_per_100g: 16
+  brand: Nakd
+  region_codes: GB
+  serving_grams: 35
+  serving_label: bar (35 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 35
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nakd_cocoa_delight
+  name: Nakd Cocoa Delight
+  kcal_per_100g: 405
+  protein_per_100g: 8
+  carbs_per_100g: 53
+  fat_per_100g: 16
+  brand: Nakd
+  region_codes: GB
+  serving_grams: 35
+  serving_label: bar (35 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 35
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nakd_cocoa_mint
+  name: Nakd Cocoa Mint
+  kcal_per_100g: 400
+  protein_per_100g: 8
+  carbs_per_100g: 53
+  fat_per_100g: 15
+  brand: Nakd
+  region_codes: GB
+  serving_grams: 35
+  serving_label: bar (35 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 35
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nakd_apple_crunch
+  name: Nakd Apple Crunch
+  kcal_per_100g: 380
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 13
+  brand: Nakd
+  region_codes: GB
+  serving_grams: 30
+  serving_label: bar (30 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nakd_caramel_cashew
+  name: Nakd Caramel Cashew
+  kcal_per_100g: 415
+  protein_per_100g: 9
+  carbs_per_100g: 50
+  fat_per_100g: 17
+  brand: Nakd
+  region_codes: GB
+  serving_grams: 35
+  serving_label: bar (35 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 35
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nakd_strawberry_crunch
+  name: Nakd Strawberry Crunch
+  kcal_per_100g: 380
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 13
+  brand: Nakd
+  region_codes: GB
+  serving_grams: 30
+  serving_label: bar (30 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nakd_blueberry_muffin
+  name: Nakd Blueberry Muffin
+  kcal_per_100g: 385
+  protein_per_100g: 7
+  carbs_per_100g: 58
+  fat_per_100g: 14
+  brand: Nakd
+  region_codes: GB
+  serving_grams: 35
+  serving_label: bar (35 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 35
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nakd_carrot_cake
+  name: Nakd Carrot Cake
+  kcal_per_100g: 400
+  protein_per_100g: 8
+  carbs_per_100g: 55
+  fat_per_100g: 15
+  brand: Nakd
+  region_codes: GB
+  serving_grams: 35
+  serving_label: bar (35 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 35
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nakd_chocolate_orange
+  name: Nakd Chocolate Orange Brownie
+  kcal_per_100g: 400
+  protein_per_100g: 8
+  carbs_per_100g: 55
+  fat_per_100g: 15
+  brand: Nakd
+  region_codes: GB
+  serving_grams: 35
+  serving_label: bar (35 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 35
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nakd_lemon_drizzle
+  name: Nakd Lemon Drizzle
+  kcal_per_100g: 380
+  protein_per_100g: 6
+  carbs_per_100g: 58
+  fat_per_100g: 13
+  brand: Nakd
+  region_codes: GB
+  serving_grams: 35
+  serving_label: bar (35 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 35
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nakd_pecan_pie
+  name: Nakd Pecan Pie
+  kcal_per_100g: 415
+  protein_per_100g: 8
+  carbs_per_100g: 50
+  fat_per_100g: 18
+  brand: Nakd
+  region_codes: GB
+  serving_grams: 35
+  serving_label: bar (35 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 35
+  dietary_compat: vegetarian
+- source: brand
+  source_id: nakd_salted_caramel
+  name: Nakd Salted Caramel
+  kcal_per_100g: 415
+  protein_per_100g: 9
+  carbs_per_100g: 50
+  fat_per_100g: 17
+  brand: Nakd
+  region_codes: GB
+  serving_grams: 35
+  serving_label: bar (35 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 35
+  dietary_compat: vegetarian
+- source: brand
+  source_id: trek_chocolate_brownie
+  name: Trek Chocolate Brownie
+  kcal_per_100g: 395
+  protein_per_100g: 12
+  carbs_per_100g: 47
+  fat_per_100g: 16
+  brand: Trek
+  region_codes: GB
+  serving_grams: 55
+  serving_label: bar (55 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 55
+  dietary_compat: vegetarian
+- source: brand
+  source_id: trek_cocoa_chaos
+  name: Trek Cocoa Chaos
+  kcal_per_100g: 395
+  protein_per_100g: 11
+  carbs_per_100g: 49
+  fat_per_100g: 16
+  brand: Trek
+  region_codes: GB
+  serving_grams: 55
+  serving_label: bar (55 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 55
+  dietary_compat: vegetarian
+- source: brand
+  source_id: trek_oatie_outrageous
+  name: Trek Oatie Outrageous
+  kcal_per_100g: 405
+  protein_per_100g: 9
+  carbs_per_100g: 55
+  fat_per_100g: 15
+  brand: Trek
+  region_codes: GB
+  serving_grams: 55
+  serving_label: bar (55 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 55
+  dietary_compat: vegetarian
+- source: brand
+  source_id: trek_apple_crunchie_oat
+  name: Trek Crunchie Oat
+  kcal_per_100g: 395
+  protein_per_100g: 9
+  carbs_per_100g: 55
+  fat_per_100g: 14
+  brand: Trek
+  region_codes: GB
+  serving_grams: 55
+  serving_label: bar (55 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 55
+  dietary_compat: vegetarian
+- source: brand
+  source_id: trek_protein_bar_cocoa
+  name: Trek Protein Bar Cocoa
+  kcal_per_100g: 380
+  protein_per_100g: 14
+  carbs_per_100g: 50
+  fat_per_100g: 13
+  brand: Trek
+  region_codes: GB
+  serving_grams: 55
+  serving_label: bar (55 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 55
+  dietary_compat: vegetarian
+- source: brand
+  source_id: trek_protein_bar_chocolate
+  name: Trek Protein Bar Chocolate Salt Caramel
+  kcal_per_100g: 380
+  protein_per_100g: 14
+  carbs_per_100g: 48
+  fat_per_100g: 14
+  brand: Trek
+  region_codes: GB
+  serving_grams: 55
+  serving_label: bar (55 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 55
+  dietary_compat: vegetarian
+- source: brand
+  source_id: 9bar_original
+  name: 9bar Original
+  kcal_per_100g: 525
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 38
+  brand: 9bar
+  region_codes: GB
+  serving_grams: 40
+  serving_label: bar (40 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: 9bar_carob
+  name: 9bar Carob
+  kcal_per_100g: 525
+  protein_per_100g: 14
+  carbs_per_100g: 28
+  fat_per_100g: 38
+  brand: 9bar
+  region_codes: GB
+  serving_grams: 40
+  serving_label: bar (40 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: 9bar_lemon
+  name: 9bar Lemon
+  kcal_per_100g: 520
+  protein_per_100g: 14
+  carbs_per_100g: 30
+  fat_per_100g: 36
+  brand: 9bar
+  region_codes: GB
+  serving_grams: 40
+  serving_label: bar (40 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: 9bar_breakfast_oats_red_berries
+  name: 9bar Breakfast Oats & Red Berries
+  kcal_per_100g: 425
+  protein_per_100g: 11
+  carbs_per_100g: 50
+  fat_per_100g: 18
+  brand: 9bar
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bar (50 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: en_almond_apricot
+  name: Eat Natural Almond & Apricot
+  kcal_per_100g: 460
+  protein_per_100g: 10
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  brand: Eat Natural
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bar (50 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: en_dark_choc_brazil
+  name: Eat Natural Dark Chocolate & Brazil Nut
+  kcal_per_100g: 480
+  protein_per_100g: 10
+  carbs_per_100g: 47
+  fat_per_100g: 26
+  brand: Eat Natural
+  region_codes: GB
+  serving_grams: 45
+  serving_label: bar (45 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: en_protein_packed_choc
+  name: Eat Natural Protein Packed Chocolate
+  kcal_per_100g: 460
+  protein_per_100g: 17
+  carbs_per_100g: 49
+  fat_per_100g: 22
+  brand: Eat Natural
+  region_codes: GB
+  serving_grams: 45
+  serving_label: bar (45 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: en_protein_packed_peanut
+  name: Eat Natural Protein Packed Peanut
+  kcal_per_100g: 470
+  protein_per_100g: 17
+  carbs_per_100g: 47
+  fat_per_100g: 23
+  brand: Eat Natural
+  region_codes: GB
+  serving_grams: 45
+  serving_label: bar (45 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 45
+  dietary_compat: vegetarian
+- source: brand
+  source_id: en_yogurt_coated_cranberry
+  name: Eat Natural Yogurt Coated Cranberry & Macadamia
+  kcal_per_100g: 470
+  protein_per_100g: 9
+  carbs_per_100g: 55
+  fat_per_100g: 23
+  brand: Eat Natural
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bar (50 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bounce_protein_ball_almond
+  name: Bounce Protein Ball Almond Crunch
+  kcal_per_100g: 410
+  protein_per_100g: 26
+  carbs_per_100g: 33
+  fat_per_100g: 20
+  brand: Bounce
+  region_codes: GB
+  serving_grams: 42
+  serving_label: bar (42 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 42
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bounce_protein_ball_peanut
+  name: Bounce Protein Ball Peanut Cocoa
+  kcal_per_100g: 415
+  protein_per_100g: 26
+  carbs_per_100g: 32
+  fat_per_100g: 20
+  brand: Bounce
+  region_codes: GB
+  serving_grams: 42
+  serving_label: bar (42 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 42
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bounce_protein_ball_coconut
+  name: Bounce Protein Ball Coconut Macadamia
+  kcal_per_100g: 425
+  protein_per_100g: 25
+  carbs_per_100g: 33
+  fat_per_100g: 22
+  brand: Bounce
+  region_codes: GB
+  serving_grams: 42
+  serving_label: bar (42 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 42
+  dietary_compat: vegetarian
+- source: brand
+  source_id: pulsin_choc_brownie_pea
+  name: Pulsin Chocolate Fudge Pea Protein Bar
+  kcal_per_100g: 400
+  protein_per_100g: 25
+  carbs_per_100g: 30
+  fat_per_100g: 18
+  brand: Pulsin
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bar (50 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: pulsin_chocolate_orange_pea
+  name: Pulsin Chocolate Orange Pea Protein Bar
+  kcal_per_100g: 400
+  protein_per_100g: 25
+  carbs_per_100g: 30
+  fat_per_100g: 18
+  brand: Pulsin
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bar (50 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: pulsin_keto_chocolate_almond
+  name: Pulsin Keto Chocolate Almond
+  kcal_per_100g: 480
+  protein_per_100g: 12
+  carbs_per_100g: 25
+  fat_per_100g: 35
+  brand: Pulsin
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bar (50 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: pulsin_keto_lemon
+  name: Pulsin Keto Lemon
+  kcal_per_100g: 480
+  protein_per_100g: 12
+  carbs_per_100g: 25
+  fat_per_100g: 35
+  brand: Pulsin
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bar (50 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: linwoods_milled_flax_per_30g
+  name: Linwoods Milled Flaxseed (Per 30g)
+  kcal_per_100g: 480
+  protein_per_100g: 22
+  carbs_per_100g: 7
+  fat_per_100g: 35
+  brand: Linwoods
+  region_codes: GB
+  serving_grams: 30
+  serving_label: bar (30 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: linwoods_milled_flax_almonds_brazil
+  name: Linwoods Milled Flaxseed Almonds Brazil Walnuts (Per 30g)
+  kcal_per_100g: 540
+  protein_per_100g: 19
+  carbs_per_100g: 7
+  fat_per_100g: 44
+  brand: Linwoods
+  region_codes: GB
+  serving_grams: 30
+  serving_label: bar (30 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kind_dark_chocolate_nuts_sea_salt
+  name: KIND Dark Chocolate Nuts & Sea Salt
+  kcal_per_100g: 525
+  protein_per_100g: 13
+  carbs_per_100g: 33
+  fat_per_100g: 36
+  brand: KIND
+  region_codes: GB
+  serving_grams: 40
+  serving_label: bar (40 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kind_almond_coconut
+  name: KIND Almond & Coconut
+  kcal_per_100g: 530
+  protein_per_100g: 13
+  carbs_per_100g: 32
+  fat_per_100g: 36
+  brand: KIND
+  region_codes: GB
+  serving_grams: 40
+  serving_label: bar (40 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kind_caramel_almond_sea_salt
+  name: KIND Caramel Almond & Sea Salt
+  kcal_per_100g: 510
+  protein_per_100g: 9
+  carbs_per_100g: 38
+  fat_per_100g: 32
+  brand: KIND
+  region_codes: GB
+  serving_grams: 40
+  serving_label: bar (40 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kind_dark_chocolate_almond_coconut
+  name: KIND Dark Chocolate Almond & Coconut
+  kcal_per_100g: 530
+  protein_per_100g: 13
+  carbs_per_100g: 32
+  fat_per_100g: 36
+  brand: KIND
+  region_codes: GB
+  serving_grams: 40
+  serving_label: bar (40 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kind_peanut_butter_dark_chocolate
+  name: KIND Peanut Butter Dark Chocolate
+  kcal_per_100g: 535
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 38
+  brand: KIND
+  region_codes: GB
+  serving_grams: 40
+  serving_label: bar (40 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 40
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kind_protein_double_dark_chocolate
+  name: KIND Protein Double Dark Chocolate
+  kcal_per_100g: 480
+  protein_per_100g: 22
+  carbs_per_100g: 28
+  fat_per_100g: 28
+  brand: KIND
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bar (50 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kind_protein_almond_butter_dark_chocolate
+  name: KIND Protein Almond Butter Dark Chocolate
+  kcal_per_100g: 480
+  protein_per_100g: 22
+  carbs_per_100g: 28
+  fat_per_100g: 28
+  brand: KIND
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bar (50 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cliff_chocolate_chip
+  name: Cliff Bar Chocolate Chip
+  kcal_per_100g: 365
+  protein_per_100g: 11
+  carbs_per_100g: 64
+  fat_per_100g: 7
+  brand: Cliff Bar
+  region_codes: GB
+  serving_grams: 68
+  serving_label: bar (68 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 68
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cliff_chocolate_brownie
+  name: Cliff Bar Chocolate Brownie
+  kcal_per_100g: 365
+  protein_per_100g: 11
+  carbs_per_100g: 65
+  fat_per_100g: 7
+  brand: Cliff Bar
+  region_codes: GB
+  serving_grams: 68
+  serving_label: bar (68 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 68
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cliff_peanut_butter_banana
+  name: Cliff Bar Peanut Butter Banana
+  kcal_per_100g: 375
+  protein_per_100g: 12
+  carbs_per_100g: 64
+  fat_per_100g: 8
+  brand: Cliff Bar
+  region_codes: GB
+  serving_grams: 68
+  serving_label: bar (68 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 68
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cliff_white_choc_macadamia
+  name: Cliff Bar White Chocolate Macadamia
+  kcal_per_100g: 365
+  protein_per_100g: 11
+  carbs_per_100g: 64
+  fat_per_100g: 7
+  brand: Cliff Bar
+  region_codes: GB
+  serving_grams: 68
+  serving_label: bar (68 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 68
+  dietary_compat: vegetarian
+- source: brand
+  source_id: belvita_milk_cereals
+  name: Belvita Milk & Cereals (Per Pack 4)
+  kcal_per_100g: 450
+  protein_per_100g: 8
+  carbs_per_100g: 65
+  fat_per_100g: 17
+  brand: Belvita
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bar (50 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: belvita_choc_chip
+  name: Belvita Chocolate Chip (Per Pack 4)
+  kcal_per_100g: 460
+  protein_per_100g: 8
+  carbs_per_100g: 65
+  fat_per_100g: 18
+  brand: Belvita
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bar (50 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: belvita_honey_nuts
+  name: Belvita Honey & Nuts (Per Pack 4)
+  kcal_per_100g: 460
+  protein_per_100g: 9
+  carbs_per_100g: 65
+  fat_per_100g: 18
+  brand: Belvita
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bar (50 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: belvita_breakfast_blueberry
+  name: Belvita Breakfast Blueberry (Per Pack 4)
+  kcal_per_100g: 450
+  protein_per_100g: 8
+  carbs_per_100g: 65
+  fat_per_100g: 17
+  brand: Belvita
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bar (50 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: belvita_soft_bakes_choc_chip
+  name: Belvita Soft Bakes Chocolate Chip (Per Bake)
+  kcal_per_100g: 410
+  protein_per_100g: 7
+  carbs_per_100g: 65
+  fat_per_100g: 14
+  brand: Belvita
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bar (50 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: belvita_soft_bakes_red_fruit
+  name: Belvita Soft Bakes Red Fruit (Per Bake)
+  kcal_per_100g: 405
+  protein_per_100g: 7
+  carbs_per_100g: 65
+  fat_per_100g: 14
+  brand: Belvita
+  region_codes: GB
+  serving_grams: 50
+  serving_label: bar (50 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: specialk_red_berries_bar
+  name: Special K Red Berries Bar
+  kcal_per_100g: 376
+  protein_per_100g: 6
+  carbs_per_100g: 73
+  fat_per_100g: 7
+  brand: Special K
+  region_codes: GB
+  serving_grams: 22
+  serving_label: bar (22 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 22
+  dietary_compat: vegetarian
+- source: brand
+  source_id: specialk_chocolate_caramel_bar
+  name: Special K Chocolate Caramel Bar
+  kcal_per_100g: 393
+  protein_per_100g: 6
+  carbs_per_100g: 75
+  fat_per_100g: 8
+  brand: Special K
+  region_codes: GB
+  serving_grams: 22
+  serving_label: bar (22 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 22
+  dietary_compat: vegetarian
+- source: brand
+  source_id: rk_squares_marshmallow
+  name: Rice Krispies Squares Marshmallow
+  kcal_per_100g: 415
+  protein_per_100g: 4
+  carbs_per_100g: 75
+  fat_per_100g: 11
+  brand: Rice Krispies
+  region_codes: GB
+  serving_grams: 28
+  serving_label: bar (28 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 28
+  dietary_compat: vegetarian
+- source: brand
+  source_id: rk_squares_chocolate
+  name: Rice Krispies Squares Chocolate
+  kcal_per_100g: 425
+  protein_per_100g: 4
+  carbs_per_100g: 73
+  fat_per_100g: 12
+  brand: Rice Krispies
+  region_codes: GB
+  serving_grams: 28
+  serving_label: bar (28 g)
+  tags: snack,bar,health
+  portion_unit: bar
+  unit_grams: 28
+  dietary_compat: vegetarian

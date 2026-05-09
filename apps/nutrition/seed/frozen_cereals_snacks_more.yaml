@@ -1,0 +1,1522 @@
+# More frozen aisle (Birds Eye, Findus, Iglo, McCain full chips/fries/wedges/smiles, Quorn full,
+# Linda McCartney's, Strong Roots, Young's frozen fish) +
+# More cereals (Curiously Cinnamon, Dorset, Jordans Country Crisp variants, Lizi's, Special K Protein/Nourish) +
+# Pringles full flavour range +
+# More mayos/sauces (Hellmann's garlic/Heinz Seriously Good/truffle/chipotle/Korean chilli/Buffalo) +
+# RTE soups (Glorious, Yorkshire Provender, New Covent Garden, Baxters) +
+# More yogurts (Fage Split Pot variants, Skyr Chocolate Caramel, Lindahls Kvarg, Yoplait Frubes) +
+# More microwave rice/grain pouches (Basmati/Brown/Pilau/Chinese/Thai jasmine/Egg fried/Couscous/Quinoa) +
+# Workout snack combos (apple+almond butter, celery+PB, carrot+hummus, protein yogurt+berries)
+
+- source: brand
+  source_id: frozen_birds_eye_chicken_burgers_4
+  name: Birds Eye Chicken Burgers (Per Burger)
+  kcal_per_100g: 235
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 13
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 56
+  serving_label: 56 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 56
+- source: brand
+  source_id: frozen_birds_eye_chicken_dippers_per_5
+  name: Birds Eye Chicken Dippers (Per 5)
+  kcal_per_100g: 230
+  protein_per_100g: 15
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 125
+  serving_label: 125 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 125
+- source: brand
+  source_id: frozen_birds_eye_breaded_fish_4
+  name: Birds Eye Breaded Fish Fillets (Per Fillet)
+  kcal_per_100g: 200
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_birds_eye_battered_fish_2
+  name: Birds Eye Battered Fish Fillets (Per Fillet)
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Birds Eye
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_findus_crispy_pancakes_3
+  name: Findus Crispy Pancakes (Per Pancake)
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  brand: Findus
+  region_codes: GB
+  serving_grams: 70
+  serving_label: 70 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 70
+- source: brand
+  source_id: frozen_findus_chicken_pancakes
+  name: Findus Chicken Crispy Pancakes (Per Pancake)
+  kcal_per_100g: 175
+  protein_per_100g: 6
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  brand: Findus
+  region_codes: GB
+  serving_grams: 70
+  serving_label: 70 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 70
+- source: brand
+  source_id: frozen_iglo_steamfresh_per_100g
+  name: Iglo Steamfresh Mixed Vegetables (Per 100g)
+  kcal_per_100g: 50
+  protein_per_100g: 3
+  carbs_per_100g: 8
+  fat_per_100g: 0.5
+  brand: Iglo
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_mccain_oven_chips
+  name: McCain Oven Chips (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 5
+  brand: McCain
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_mccain_chunky_oven_chips
+  name: McCain Chunky Oven Chips (Per 100g)
+  kcal_per_100g: 165
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 4
+  brand: McCain
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_mccain_french_fries
+  name: McCain French Fries (Per 100g)
+  kcal_per_100g: 195
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 8
+  brand: McCain
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_mccain_skin_on_per_100g
+  name: McCain Skin On Fries (Per 100g)
+  kcal_per_100g: 200
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: McCain
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_mccain_smiles_per_100g
+  name: McCain Potato Smiles (Per 100g)
+  kcal_per_100g: 200
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 9
+  brand: McCain
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_mccain_wedges_seasoned
+  name: McCain Seasoned Wedges (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 5
+  brand: McCain
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_quorn_smoky_ham_slices_per_30g
+  name: Quorn Smoky Ham Slices (Per 30g)
+  kcal_per_100g: 105
+  protein_per_100g: 14
+  carbs_per_100g: 4
+  fat_per_100g: 3
+  brand: Quorn
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: frozen_quorn_pepperoni_per_30g
+  name: Quorn Pepperoni Slices (Per 30g)
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 5
+  fat_per_100g: 11
+  brand: Quorn
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: frozen_quorn_lasagne_meal
+  name: Quorn Vegetarian Lasagne
+  kcal_per_100g: 130
+  protein_per_100g: 9
+  carbs_per_100g: 14
+  fat_per_100g: 5
+  brand: Quorn
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: frozen_quorn_cottage_pie_meal
+  name: Quorn Cottage Pie
+  kcal_per_100g: 105
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 3
+  brand: Quorn
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: frozen_quorn_chicken_kievs_2
+  name: Quorn Chicken Style Kievs (Per Kiev)
+  kcal_per_100g: 235
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 13
+  brand: Quorn
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 130
+- source: brand
+  source_id: frozen_quorn_chunks_per_100g
+  name: Quorn Pieces (Per 100g)
+  kcal_per_100g: 102
+  protein_per_100g: 14
+  carbs_per_100g: 4
+  fat_per_100g: 3
+  brand: Quorn
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_quorn_meatless_chicken_nuggets
+  name: Quorn Vegan Crispy Nuggets (Per 100g)
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Quorn
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_linda_lasagne_meal
+  name: Linda McCartney's Lasagne
+  kcal_per_100g: 130
+  protein_per_100g: 9
+  carbs_per_100g: 14
+  fat_per_100g: 5
+  brand: Linda McCartney's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: frozen_linda_shepherds_pie_meal
+  name: Linda McCartney's Shepherd's Pie
+  kcal_per_100g: 105
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 3
+  brand: Linda McCartney's
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: frozen_strong_roots_jackfruit_burger
+  name: Strong Roots Jackfruit Burger (Per Burger)
+  kcal_per_100g: 215
+  protein_per_100g: 8
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Strong Roots
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_strong_roots_kale_quinoa_burger
+  name: Strong Roots Kale & Quinoa Burger
+  kcal_per_100g: 195
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Strong Roots
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_strong_roots_sweet_potato_chips
+  name: Strong Roots Sweet Potato Fries (Per 100g)
+  kcal_per_100g: 175
+  protein_per_100g: 2
+  carbs_per_100g: 25
+  fat_per_100g: 7
+  brand: Strong Roots
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_iceland_scampi_per_100g
+  name: Iceland Whole Tail Scampi (Per 100g)
+  kcal_per_100g: 195
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_youngs_battered_cod
+  name: Young's Battered Cod Fillets (Per Fillet)
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Young's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_youngs_breaded_haddock
+  name: Young's Breaded Haddock (Per Fillet)
+  kcal_per_100g: 200
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 9
+  brand: Young's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_youngs_chip_shop_battered_cod
+  name: Young's Chip Shop Battered Cod (Per Fillet)
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 14
+  brand: Young's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: frozen_youngs_admiral_pie
+  name: Young's Admiral's Pie (Per Pie)
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 11
+  fat_per_100g: 7
+  brand: Young's
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 300
+- source: brand
+  source_id: frozen_youngs_4_omega_3_fish_fingers
+  name: Young's Omega-3 Fish Fingers (Per 4)
+  kcal_per_100g: 195
+  protein_per_100g: 13
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  brand: Young's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: cereal_curiously_cinnamon
+  name: Nestlé Curiously Cinnamon (Per 30g)
+  kcal_per_100g: 437
+  protein_per_100g: 6
+  carbs_per_100g: 64
+  fat_per_100g: 17
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: cereal_dorset_cherry_almond
+  name: Dorset Cereals Cherry Bakewell (Per 50g)
+  kcal_per_100g: 380
+  protein_per_100g: 8
+  carbs_per_100g: 60
+  fat_per_100g: 12
+  brand: Dorset Cereals
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: cereal_jordans_country_crisp_4_nut
+  name: Jordans Country Crisp 4 Nut Combo
+  kcal_per_100g: 470
+  protein_per_100g: 10
+  carbs_per_100g: 53
+  fat_per_100g: 23
+  brand: Jordans
+  region_codes: GB
+  serving_grams: 45
+  serving_label: 45 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 45
+- source: brand
+  source_id: cereal_jordans_country_crisp_dark_choc
+  name: Jordans Country Crisp Dark Chocolate
+  kcal_per_100g: 460
+  protein_per_100g: 8
+  carbs_per_100g: 60
+  fat_per_100g: 19
+  brand: Jordans
+  region_codes: GB
+  serving_grams: 45
+  serving_label: 45 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 45
+- source: brand
+  source_id: cereal_jordans_super_berry_granola
+  name: Jordans Super Berry Granola
+  kcal_per_100g: 425
+  protein_per_100g: 8
+  carbs_per_100g: 65
+  fat_per_100g: 14
+  brand: Jordans
+  region_codes: GB
+  serving_grams: 45
+  serving_label: 45 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 45
+- source: brand
+  source_id: cereal_jordans_super_seed_granola
+  name: Jordans Super Seed Granola
+  kcal_per_100g: 470
+  protein_per_100g: 11
+  carbs_per_100g: 51
+  fat_per_100g: 22
+  brand: Jordans
+  region_codes: GB
+  serving_grams: 45
+  serving_label: 45 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 45
+- source: brand
+  source_id: cereal_lizi_low_sugar_granola
+  name: Lizi's Low Sugar Granola (Per 50g)
+  kcal_per_100g: 450
+  protein_per_100g: 11
+  carbs_per_100g: 50
+  fat_per_100g: 21
+  brand: Lizi's
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: cereal_lizi_original_granola
+  name: Lizi's Original Granola (Per 50g)
+  kcal_per_100g: 460
+  protein_per_100g: 11
+  carbs_per_100g: 51
+  fat_per_100g: 22
+  brand: Lizi's
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: cereal_lizi_passionfruit_pomegranate
+  name: Lizi's Passionfruit & Pomegranate Granola
+  kcal_per_100g: 460
+  protein_per_100g: 11
+  carbs_per_100g: 51
+  fat_per_100g: 22
+  brand: Lizi's
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: cereal_eat_natural_super_oaty
+  name: Eat Natural Super Oaty (Per 50g)
+  kcal_per_100g: 460
+  protein_per_100g: 9
+  carbs_per_100g: 60
+  fat_per_100g: 19
+  brand: Eat Natural
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: cereal_kelloggs_corn_pops_30g
+  name: Kellogg's Corn Pops (Per 30g)
+  kcal_per_100g: 387
+  protein_per_100g: 5
+  carbs_per_100g: 88
+  fat_per_100g: 1.5
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: cereal_oat_so_simple_apple_blueberry
+  name: Quaker Oat So Simple Apple & Blueberry (Per 36g)
+  kcal_per_100g: 374
+  protein_per_100g: 9
+  carbs_per_100g: 70
+  fat_per_100g: 5.5
+  brand: Quaker
+  region_codes: GB
+  serving_grams: 36
+  serving_label: 36 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 36
+- source: brand
+  source_id: cereal_kelloggs_special_k_protein
+  name: Kellogg's Special K Protein (Per 30g)
+  kcal_per_100g: 360
+  protein_per_100g: 17
+  carbs_per_100g: 60
+  fat_per_100g: 5
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: cereal_kelloggs_special_k_nourish
+  name: Kellogg's Special K Nourish (Per 30g)
+  kcal_per_100g: 380
+  protein_per_100g: 11
+  carbs_per_100g: 65
+  fat_per_100g: 7
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: cereal_nestle_crunch_per_30g
+  name: Nestlé Crunch (Per 30g)
+  kcal_per_100g: 440
+  protein_per_100g: 7
+  carbs_per_100g: 65
+  fat_per_100g: 16
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: cereal_kelloggs_disney_frozen_per_30g
+  name: Kellogg's Disney Frozen (Per 30g)
+  kcal_per_100g: 387
+  protein_per_100g: 6
+  carbs_per_100g: 86
+  fat_per_100g: 2
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: cereal_weetabix_protein_30g
+  name: Weetabix Protein Crunch (Per 30g)
+  kcal_per_100g: 365
+  protein_per_100g: 14
+  carbs_per_100g: 60
+  fat_per_100g: 7
+  brand: Weetabix
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: brand_pringles_original_per_25g
+  name: Pringles Original (Per 25g)
+  kcal_per_100g: 540
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 36
+  brand: Pringles
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: brand_pringles_salt_vinegar
+  name: Pringles Salt & Vinegar
+  kcal_per_100g: 540
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 36
+  brand: Pringles
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: brand_pringles_paprika
+  name: Pringles Paprika
+  kcal_per_100g: 540
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 36
+  brand: Pringles
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: brand_pringles_texas_bbq
+  name: Pringles Texas BBQ
+  kcal_per_100g: 540
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 36
+  brand: Pringles
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: brand_pringles_minis_per_25g
+  name: Pringles Minis (Per 25g)
+  kcal_per_100g: 540
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 36
+  brand: Pringles
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: brand_pringles_pizza
+  name: Pringles Pizza
+  kcal_per_100g: 540
+  protein_per_100g: 4
+  carbs_per_100g: 50
+  fat_per_100g: 36
+  brand: Pringles
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: pack
+  unit_grams: 25
+- source: brand
+  source_id: brand_hellmann_garlic_15g
+  name: Hellmann's Garlic Mayo (Per 15g)
+  kcal_per_100g: 700
+  protein_per_100g: 1
+  carbs_per_100g: 3
+  fat_per_100g: 76
+  brand: Hellmann's
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: brand_heinz_seriously_good_15g
+  name: Heinz Seriously Good Mayo (Per 15g)
+  kcal_per_100g: 700
+  protein_per_100g: 1
+  carbs_per_100g: 1
+  fat_per_100g: 78
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: brand_heinz_truffle_mayo_15g
+  name: Heinz Truffle Mayo (Per 15g)
+  kcal_per_100g: 720
+  protein_per_100g: 1
+  carbs_per_100g: 1
+  fat_per_100g: 79
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: brand_heinz_chipotle_15g
+  name: Heinz Chipotle Mayo (Per 15g)
+  kcal_per_100g: 525
+  protein_per_100g: 1
+  carbs_per_100g: 6
+  fat_per_100g: 55
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: brand_heinz_korean_chilli_15g
+  name: Heinz Korean Chilli Mayo (Per 15g)
+  kcal_per_100g: 540
+  protein_per_100g: 1
+  carbs_per_100g: 6
+  fat_per_100g: 55
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: brand_heinz_steak_sauce_15g
+  name: Heinz Steak Sauce (Per 15g)
+  kcal_per_100g: 130
+  protein_per_100g: 1
+  carbs_per_100g: 30
+  fat_per_100g: 0
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: brand_heinz_jalapeno_ketchup_15g
+  name: Heinz Hot Chilli Ketchup (Per 15g)
+  kcal_per_100g: 105
+  protein_per_100g: 1
+  carbs_per_100g: 24
+  fat_per_100g: 0.1
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: brand_heinz_smoky_baconnaise_15g
+  name: Heinz Smoky Baconnaise (Per 15g)
+  kcal_per_100g: 525
+  protein_per_100g: 1
+  carbs_per_100g: 6
+  fat_per_100g: 55
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: brand_heinz_buffalo_15g
+  name: Heinz Buffalo Sauce (Per 15g)
+  kcal_per_100g: 95
+  protein_per_100g: 1
+  carbs_per_100g: 8
+  fat_per_100g: 7
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: brand_heinz_garlic_aioli_15g
+  name: Heinz Garlic Aioli (Per 15g)
+  kcal_per_100g: 700
+  protein_per_100g: 1
+  carbs_per_100g: 2
+  fat_per_100g: 76
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+- source: brand
+  source_id: soup_glorious_chicken_lemon
+  name: Glorious Chicken & Lemon Soup (Per Pot)
+  kcal_per_100g: 65
+  protein_per_100g: 5
+  carbs_per_100g: 7
+  fat_per_100g: 1.5
+  brand: Glorious
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 300
+- source: brand
+  source_id: soup_glorious_thai_chicken
+  name: Glorious Thai Chicken (Per Pot)
+  kcal_per_100g: 95
+  protein_per_100g: 6
+  carbs_per_100g: 9
+  fat_per_100g: 4
+  brand: Glorious
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 300
+- source: brand
+  source_id: soup_glorious_moroccan_chickpea
+  name: Glorious Moroccan Chickpea (Per Pot)
+  kcal_per_100g: 95
+  protein_per_100g: 5
+  carbs_per_100g: 14
+  fat_per_100g: 2
+  brand: Glorious
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 300
+- source: brand
+  source_id: soup_yorkshire_provender_pumpkin
+  name: Yorkshire Provender Spiced Pumpkin
+  kcal_per_100g: 75
+  protein_per_100g: 2
+  carbs_per_100g: 12
+  fat_per_100g: 2.5
+  brand: Yorkshire Provender
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 300
+- source: brand
+  source_id: soup_new_covent_garden_carrot_coriander
+  name: New Covent Garden Carrot & Coriander
+  kcal_per_100g: 50
+  protein_per_100g: 1
+  carbs_per_100g: 7
+  fat_per_100g: 2
+  brand: New Covent Garden
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 300
+- source: brand
+  source_id: soup_new_covent_garden_minestrone
+  name: New Covent Garden Minestrone
+  kcal_per_100g: 55
+  protein_per_100g: 2
+  carbs_per_100g: 9
+  fat_per_100g: 1
+  brand: New Covent Garden
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 300
+- source: brand
+  source_id: soup_new_covent_garden_thai_chicken
+  name: New Covent Garden Thai Chicken
+  kcal_per_100g: 75
+  protein_per_100g: 5
+  carbs_per_100g: 7
+  fat_per_100g: 3
+  brand: New Covent Garden
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 300
+- source: brand
+  source_id: soup_baxters_french_onion
+  name: Baxters French Onion (Per 300g)
+  kcal_per_100g: 35
+  protein_per_100g: 1.5
+  carbs_per_100g: 5
+  fat_per_100g: 1
+  brand: Baxters
+  region_codes: GB
+  serving_grams: 300
+  serving_label: 300 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 300
+- source: brand
+  source_id: soup_heinz_classic_tomato_400_v2
+  name: Heinz Classic Cream of Tomato (Per 400g)
+  kcal_per_100g: 60
+  protein_per_100g: 1.5
+  carbs_per_100g: 8
+  fat_per_100g: 2.5
+  brand: Heinz
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: yog_total_2pct_greek
+  name: Fage Total 2% (Per 100g)
+  kcal_per_100g: 75
+  protein_per_100g: 9.5
+  carbs_per_100g: 4
+  fat_per_100g: 2
+  brand: Fage
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: yog_total_5pct_split_pomegranate
+  name: Fage Total Split Pot Pomegranate (Per 170g)
+  kcal_per_100g: 110
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 3
+  brand: Fage
+  region_codes: GB
+  serving_grams: 170
+  serving_label: 170 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 170
+- source: brand
+  source_id: yog_total_5pct_split_mango
+  name: Fage Total Split Pot Mango (Per 170g)
+  kcal_per_100g: 110
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 3
+  brand: Fage
+  region_codes: GB
+  serving_grams: 170
+  serving_label: 170 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 170
+- source: brand
+  source_id: yog_total_split_pot_lime_zest
+  name: Fage Total Split Pot Lime Zest (Per 170g)
+  kcal_per_100g: 105
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 3
+  brand: Fage
+  region_codes: GB
+  serving_grams: 170
+  serving_label: 170 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 170
+- source: brand
+  source_id: yog_total_split_pot_blueberry
+  name: Fage Total Split Pot Blueberry (Per 170g)
+  kcal_per_100g: 105
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 3
+  brand: Fage
+  region_codes: GB
+  serving_grams: 170
+  serving_label: 170 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 170
+- source: brand
+  source_id: yog_skyr_chocolate_caramel_per_pot
+  name: Arla Skyr Chocolate Caramel (Per Pot)
+  kcal_per_100g: 80
+  protein_per_100g: 11
+  carbs_per_100g: 7
+  fat_per_100g: 0.5
+  brand: Arla Skyr
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 150
+- source: brand
+  source_id: yog_lindahls_kvarg_strawberry
+  name: Lindahls Kvarg Strawberry (Per Pot)
+  kcal_per_100g: 60
+  protein_per_100g: 11
+  carbs_per_100g: 5
+  fat_per_100g: 0.2
+  brand: Lindahls
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 150
+- source: brand
+  source_id: yog_lindahls_kvarg_raspberry
+  name: Lindahls Kvarg Raspberry (Per Pot)
+  kcal_per_100g: 60
+  protein_per_100g: 11
+  carbs_per_100g: 5
+  fat_per_100g: 0.2
+  brand: Lindahls
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 150
+- source: brand
+  source_id: yog_lindahls_kvarg_vanilla
+  name: Lindahls Kvarg Vanilla (Per Pot)
+  kcal_per_100g: 60
+  protein_per_100g: 11
+  carbs_per_100g: 5
+  fat_per_100g: 0.2
+  brand: Lindahls
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 150
+- source: brand
+  source_id: yog_lindahls_kvarg_passionfruit
+  name: Lindahls Kvarg Passionfruit (Per Pot)
+  kcal_per_100g: 60
+  protein_per_100g: 11
+  carbs_per_100g: 5
+  fat_per_100g: 0.2
+  brand: Lindahls
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 150
+- source: brand
+  source_id: yog_yoplait_petits_filous_strawberry
+  name: Yoplait Petits Filous Strawberry (Per Pot)
+  kcal_per_100g: 95
+  protein_per_100g: 4
+  carbs_per_100g: 14
+  fat_per_100g: 2.5
+  brand: Yoplait
+  region_codes: GB
+  serving_grams: 47
+  serving_label: 47 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 47
+- source: brand
+  source_id: yog_yoplait_frubes_strawberry
+  name: Yoplait Frubes Strawberry (Per Tube)
+  kcal_per_100g: 90
+  protein_per_100g: 3
+  carbs_per_100g: 14
+  fat_per_100g: 2.5
+  brand: Yoplait
+  region_codes: GB
+  serving_grams: 37
+  serving_label: 37 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 37
+- source: brand
+  source_id: yog_yoplait_frubes_chocolate
+  name: Yoplait Frubes Chocolate (Per Tube)
+  kcal_per_100g: 100
+  protein_per_100g: 3
+  carbs_per_100g: 15
+  fat_per_100g: 3
+  brand: Yoplait
+  region_codes: GB
+  serving_grams: 37
+  serving_label: 37 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 37
+- source: brand
+  source_id: rice_basmati_pouch_microwave_v2
+  name: Basmati Microwave Rice Pouch (Per Pouch 250g)
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: rice_brown_basmati_microwave_pouch
+  name: Brown Basmati Microwave Rice Pouch
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 30
+  fat_per_100g: 3
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: rice_pilau_microwave_pouch
+  name: Pilau Microwave Rice Pouch
+  kcal_per_100g: 175
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: rice_chinese_microwave_pouch
+  name: Chinese Microwave Rice Pouch
+  kcal_per_100g: 175
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: rice_thai_jasmine_microwave_pouch
+  name: Thai Jasmine Microwave Rice Pouch
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: rice_egg_fried_microwave_pouch
+  name: Egg Fried Microwave Rice Pouch
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 32
+  fat_per_100g: 4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: rice_vegetable_microwave_pouch
+  name: Vegetable Microwave Rice Pouch
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 28
+  fat_per_100g: 2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: rice_savoury_chicken_microwave
+  name: Savoury Chicken Microwave Rice
+  kcal_per_100g: 175
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: grain_couscous_microwave_pouch
+  name: Couscous Microwave Pouch
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 28
+  fat_per_100g: 1.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: grain_quinoa_microwave_pouch
+  name: Quinoa Microwave Pouch
+  kcal_per_100g: 135
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 3
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: grain_bulgur_microwave_pouch
+  name: Bulgur Wheat Microwave Pouch
+  kcal_per_100g: 130
+  protein_per_100g: 4
+  carbs_per_100g: 26
+  fat_per_100g: 1.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: brand
+  source_id: snack_apple_almond_butter_homemade
+  name: Apple Slices with Almond Butter (Homemade)
+  kcal_per_100g: 145
+  protein_per_100g: 3
+  carbs_per_100g: 16
+  fat_per_100g: 8
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 150
+- source: brand
+  source_id: snack_celery_peanut_butter
+  name: Celery Sticks with Peanut Butter
+  kcal_per_100g: 195
+  protein_per_100g: 7
+  carbs_per_100g: 8
+  fat_per_100g: 16
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: snack_carrot_hummus_homemade
+  name: Carrot Sticks with Hummus
+  kcal_per_100g: 145
+  protein_per_100g: 5
+  carbs_per_100g: 11
+  fat_per_100g: 9
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 150
+- source: brand
+  source_id: snack_protein_yogurt_berries
+  name: Protein Yogurt with Berries
+  kcal_per_100g: 95
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 1
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: snack_skyr_almond_butter
+  name: Skyr with Almond Butter
+  kcal_per_100g: 145
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: snack_quark_strawberry
+  name: Quark with Strawberry
+  kcal_per_100g: 75
+  protein_per_100g: 11
+  carbs_per_100g: 7
+  fat_per_100g: 0.5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: snack_cottage_cheese_blueberry
+  name: Cottage Cheese with Blueberry
+  kcal_per_100g: 95
+  protein_per_100g: 11
+  carbs_per_100g: 6
+  fat_per_100g: 2
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: snack_protein_porridge_post_workout
+  name: Post-Workout Protein Porridge
+  kcal_per_100g: 175
+  protein_per_100g: 17
+  carbs_per_100g: 18
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 280
+- source: brand
+  source_id: snack_avocado_eggs_toast_post_workout
+  name: Avocado, Eggs & Toast Post-Workout
+  kcal_per_100g: 295
+  protein_per_100g: 14
+  carbs_per_100g: 25
+  fat_per_100g: 16
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 200
+- source: brand
+  source_id: snack_chicken_rice_bowl_post_workout
+  name: Chicken Rice Bowl Post-Workout
+  kcal_per_100g: 165
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: brand
+  source_id: snack_protein_smoothie_post_workout
+  name: Protein Smoothie Post-Workout
+  kcal_per_100g: 245
+  protein_per_100g: 25
+  carbs_per_100g: 30
+  fat_per_100g: 3
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400

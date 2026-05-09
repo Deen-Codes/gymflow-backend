@@ -1,0 +1,1363 @@
+# Tesco Expanded — Finest, Plant Chef, Healthy Living, Wicked Kitchen, Free From,
+# Hearty Food Co., standard ready meals, fresh meat & fish, soups, dips, pizza
+
+- source: tesco
+  source_id: tesco_finest_chicken_kievs
+  name: Tesco Finest Chicken Kievs
+  kcal_per_100g: 255
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 16
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 145
+  serving_label: kiev (145 g)
+  tags: frozen,chicken,ready-meal
+  portion_unit: meal
+  unit_grams: 145
+- source: tesco
+  source_id: tesco_finest_chicken_in_tarragon
+  name: Tesco Finest Chicken in Tarragon Sauce
+  kcal_per_100g: 130
+  protein_per_100g: 13
+  carbs_per_100g: 5
+  fat_per_100g: 7
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 350
+  serving_label: meal (350 g)
+  tags: ready-meal,chicken
+  portion_unit: meal
+  unit_grams: 350
+- source: tesco
+  source_id: tesco_finest_thai_green_curry
+  name: Tesco Finest Thai Green Chicken Curry
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 6
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_finest_thai_red_curry
+  name: Tesco Finest Thai Red Chicken Curry
+  kcal_per_100g: 150
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 6.5
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_finest_chicken_tikka
+  name: Tesco Finest Chicken Tikka Masala
+  kcal_per_100g: 140
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 6
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_finest_lasagne
+  name: Tesco Finest Lasagne al Forno
+  kcal_per_100g: 155
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 7.5
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_finest_macaroni_cheese
+  name: Tesco Finest Macaroni Cheese
+  kcal_per_100g: 170
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 8
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,vegetarian
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: tesco
+  source_id: tesco_finest_cottage_pie
+  name: Tesco Finest Cottage Pie
+  kcal_per_100g: 130
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_finest_fish_pie
+  name: Tesco Finest Fish Pie
+  kcal_per_100g: 120
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 4
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,fish
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_finest_steak_ale_pie
+  name: Tesco Finest Steak & Ale Pie
+  kcal_per_100g: 230
+  protein_per_100g: 9
+  carbs_per_100g: 21
+  fat_per_100g: 12
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 400
+  serving_label: pie (400 g)
+  tags: ready-meal,beef,pie
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_finest_chicken_mushroom_pie
+  name: Tesco Finest Chicken & Mushroom Pie
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 19
+  fat_per_100g: 11
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 400
+  serving_label: pie (400 g)
+  tags: ready-meal,chicken,pie
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_finest_lamb_shanks
+  name: Tesco Finest Slow-Cooked Lamb Shanks
+  kcal_per_100g: 170
+  protein_per_100g: 13
+  carbs_per_100g: 8
+  fat_per_100g: 9.5
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 450
+  serving_label: pack (450 g)
+  tags: ready-meal,lamb
+  portion_unit: meal
+  unit_grams: 450
+- source: tesco
+  source_id: tesco_finest_beef_short_rib
+  name: Tesco Finest Slow-Cooked Beef Short Rib
+  kcal_per_100g: 210
+  protein_per_100g: 17
+  carbs_per_100g: 7
+  fat_per_100g: 12
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 425
+  serving_label: pack (425 g)
+  tags: ready-meal,beef
+  portion_unit: meal
+  unit_grams: 425
+- source: tesco
+  source_id: tesco_finest_duck_legs
+  name: Tesco Finest Confit Duck Legs
+  kcal_per_100g: 230
+  protein_per_100g: 16
+  carbs_per_100g: 0
+  fat_per_100g: 19
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pack (300 g)
+  tags: ready-meal,duck
+  portion_unit: meal
+  unit_grams: 300
+- source: tesco
+  source_id: tesco_finest_pork_belly_slow
+  name: Tesco Finest Slow-Cooked Pork Belly
+  kcal_per_100g: 275
+  protein_per_100g: 16
+  carbs_per_100g: 5
+  fat_per_100g: 22
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 400
+  serving_label: pack (400 g)
+  tags: ready-meal,pork
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_finest_salmon_fillets_skin_on
+  name: Tesco Finest Scottish Salmon Fillets
+  kcal_per_100g: 200
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 12
+  brand: Tesco Finest
+  region_codes: GB
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: salmon,fish,fresh
+  portion_unit: meal
+  unit_grams: 130
+- source: tesco
+  source_id: tesco_pc_no_chicken_kiev
+  name: Tesco Plant Chef No Chicken Kiev
+  kcal_per_100g: 225
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Tesco Plant Chef
+  region_codes: GB
+  serving_grams: 140
+  serving_label: kiev (140 g)
+  tags: vegan,plant-based,frozen
+  portion_unit: meal
+  unit_grams: 140
+  dietary_compat: vegan,vegetarian
+- source: tesco
+  source_id: tesco_pc_no_chicken_burger
+  name: Tesco Plant Chef No Chicken Burger
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 8
+  fat_per_100g: 11
+  brand: Tesco Plant Chef
+  region_codes: GB
+  serving_grams: 113
+  serving_label: burger (113 g)
+  tags: vegan,burger
+  portion_unit: meal
+  unit_grams: 113
+  dietary_compat: vegan,vegetarian
+- source: tesco
+  source_id: tesco_pc_no_beef_burger
+  name: Tesco Plant Chef No Beef Burger
+  kcal_per_100g: 210
+  protein_per_100g: 17
+  carbs_per_100g: 6
+  fat_per_100g: 13
+  brand: Tesco Plant Chef
+  region_codes: GB
+  serving_grams: 113
+  serving_label: burger (113 g)
+  tags: vegan,burger
+  portion_unit: meal
+  unit_grams: 113
+  dietary_compat: vegan,vegetarian
+- source: tesco
+  source_id: tesco_pc_meatballs
+  name: Tesco Plant Chef Plant-Based Meatballs
+  kcal_per_100g: 155
+  protein_per_100g: 16
+  carbs_per_100g: 8
+  fat_per_100g: 5.5
+  brand: Tesco Plant Chef
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pack (200 g)
+  tags: vegan,protein
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: tesco
+  source_id: tesco_pc_no_chicken_pieces
+  name: Tesco Plant Chef No Chicken Pieces
+  kcal_per_100g: 155
+  protein_per_100g: 22
+  carbs_per_100g: 5
+  fat_per_100g: 5
+  brand: Tesco Plant Chef
+  region_codes: GB
+  serving_grams: 160
+  serving_label: pack (160 g)
+  tags: vegan,protein,frozen
+  portion_unit: meal
+  unit_grams: 160
+  dietary_compat: vegan,vegetarian
+- source: tesco
+  source_id: tesco_pc_jackfruit_pulled
+  name: Tesco Plant Chef Smoky Pulled Jackfruit
+  kcal_per_100g: 105
+  protein_per_100g: 2
+  carbs_per_100g: 17
+  fat_per_100g: 2.5
+  brand: Tesco Plant Chef
+  region_codes: GB
+  serving_grams: 160
+  serving_label: pack (160 g)
+  tags: vegan,bbq
+  portion_unit: meal
+  unit_grams: 160
+  dietary_compat: vegan,vegetarian
+- source: tesco
+  source_id: tesco_pc_aubergine_lasagne
+  name: Tesco Plant Chef Aubergine Lasagne
+  kcal_per_100g: 130
+  protein_per_100g: 5
+  carbs_per_100g: 14
+  fat_per_100g: 5.5
+  brand: Tesco Plant Chef
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: vegan,pasta,ready-meal
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: tesco
+  source_id: tesco_pc_thai_green_curry
+  name: Tesco Plant Chef Thai Green Curry
+  kcal_per_100g: 125
+  protein_per_100g: 4
+  carbs_per_100g: 15
+  fat_per_100g: 5.5
+  brand: Tesco Plant Chef
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: vegan,curry,ready-meal
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: tesco
+  source_id: tesco_pc_butternut_dahl
+  name: Tesco Plant Chef Butternut Dahl
+  kcal_per_100g: 120
+  protein_per_100g: 5
+  carbs_per_100g: 15
+  fat_per_100g: 4
+  brand: Tesco Plant Chef
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: vegan,curry,ready-meal
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: tesco
+  source_id: tesco_chicken_korma_400
+  name: Tesco Chicken Korma (Standard)
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5.5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_chicken_balti_400
+  name: Tesco Chicken Balti
+  kcal_per_100g: 125
+  protein_per_100g: 9
+  carbs_per_100g: 9
+  fat_per_100g: 5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_chicken_jalfrezi_400
+  name: Tesco Chicken Jalfrezi
+  kcal_per_100g: 120
+  protein_per_100g: 9
+  carbs_per_100g: 9
+  fat_per_100g: 4.5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_chicken_madras_400
+  name: Tesco Chicken Madras
+  kcal_per_100g: 115
+  protein_per_100g: 10
+  carbs_per_100g: 8
+  fat_per_100g: 4
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken,spicy
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_chicken_korma_rice_meal
+  name: Tesco Chicken Korma & Rice (Meal)
+  kcal_per_100g: 135
+  protein_per_100g: 6
+  carbs_per_100g: 19
+  fat_per_100g: 4.5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 450
+  serving_label: meal (450 g)
+  tags: ready-meal,curry,chicken,rice
+  portion_unit: meal
+  unit_grams: 450
+- source: tesco
+  source_id: tesco_chicken_tikka_rice_meal
+  name: Tesco Chicken Tikka Masala & Rice
+  kcal_per_100g: 140
+  protein_per_100g: 7
+  carbs_per_100g: 19
+  fat_per_100g: 4.5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 450
+  serving_label: meal (450 g)
+  tags: ready-meal,curry,chicken,rice
+  portion_unit: meal
+  unit_grams: 450
+- source: tesco
+  source_id: tesco_chinese_chicken_curry_rice
+  name: Tesco Chinese Chicken Curry & Rice
+  kcal_per_100g: 125
+  protein_per_100g: 6
+  carbs_per_100g: 18
+  fat_per_100g: 3
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 450
+  serving_label: meal (450 g)
+  tags: ready-meal,chinese,chicken,rice
+  portion_unit: meal
+  unit_grams: 450
+- source: tesco
+  source_id: tesco_sweet_sour_chicken_rice
+  name: Tesco Sweet & Sour Chicken & Rice
+  kcal_per_100g: 130
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 2
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 450
+  serving_label: meal (450 g)
+  tags: ready-meal,chinese,chicken,rice
+  portion_unit: meal
+  unit_grams: 450
+- source: tesco
+  source_id: tesco_chicken_chow_mein_meal
+  name: Tesco Chicken Chow Mein
+  kcal_per_100g: 120
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,chinese,chicken,noodles
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_beef_lasagne_400
+  name: Tesco Beef Lasagne
+  kcal_per_100g: 150
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_macaroni_cheese_400
+  name: Tesco Macaroni Cheese
+  kcal_per_100g: 165
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 7.5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,vegetarian
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: tesco
+  source_id: tesco_chilli_con_carne_rice
+  name: Tesco Chilli con Carne & Rice
+  kcal_per_100g: 120
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 450
+  serving_label: meal (450 g)
+  tags: ready-meal,beef,rice
+  portion_unit: meal
+  unit_grams: 450
+- source: tesco
+  source_id: tesco_spag_bol_400
+  name: Tesco Spaghetti Bolognese
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 14
+  fat_per_100g: 4.5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_carbonara_400
+  name: Tesco Spaghetti Carbonara
+  kcal_per_100g: 170
+  protein_per_100g: 7
+  carbs_per_100g: 18
+  fat_per_100g: 8
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_chicken_arrabbiata_400
+  name: Tesco Chicken Arrabbiata Pasta
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 15
+  fat_per_100g: 4
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,chicken
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_cottage_pie_400
+  name: Tesco Cottage Pie
+  kcal_per_100g: 125
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,beef
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_shepherds_pie_400
+  name: Tesco Shepherd's Pie
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,lamb
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_fish_pie_400
+  name: Tesco Fish Pie
+  kcal_per_100g: 115
+  protein_per_100g: 8
+  carbs_per_100g: 11
+  fat_per_100g: 4
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,fish
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_hl_chicken_tikka
+  name: Tesco Healthy Living Chicken Tikka Masala
+  kcal_per_100g: 95
+  protein_per_100g: 9
+  carbs_per_100g: 8
+  fat_per_100g: 2.5
+  brand: Tesco Healthy Living
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken,light
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_hl_thai_green
+  name: Tesco Healthy Living Thai Green Curry
+  kcal_per_100g: 100
+  protein_per_100g: 8
+  carbs_per_100g: 10
+  fat_per_100g: 3
+  brand: Tesco Healthy Living
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,light
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_hl_lasagne
+  name: Tesco Healthy Living Lasagne
+  kcal_per_100g: 105
+  protein_per_100g: 8
+  carbs_per_100g: 14
+  fat_per_100g: 2
+  brand: Tesco Healthy Living
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,light
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_hl_macaroni
+  name: Tesco Healthy Living Macaroni Cheese
+  kcal_per_100g: 110
+  protein_per_100g: 7
+  carbs_per_100g: 14
+  fat_per_100g: 2.5
+  brand: Tesco Healthy Living
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,light
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: tesco
+  source_id: tesco_hl_spag_bol
+  name: Tesco Healthy Living Spaghetti Bolognese
+  kcal_per_100g: 100
+  protein_per_100g: 8
+  carbs_per_100g: 13
+  fat_per_100g: 1.5
+  brand: Tesco Healthy Living
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef,light
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_hl_chilli
+  name: Tesco Healthy Living Chilli con Carne
+  kcal_per_100g: 90
+  protein_per_100g: 8
+  carbs_per_100g: 11
+  fat_per_100g: 1.5
+  brand: Tesco Healthy Living
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,beef,light
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_soup_tomato_basil
+  name: Tesco Tomato & Basil Soup (Fresh)
+  kcal_per_100g: 45
+  protein_per_100g: 1.5
+  carbs_per_100g: 6
+  fat_per_100g: 1.5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup,lunch
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegetarian
+- source: tesco
+  source_id: tesco_soup_chicken_noodle
+  name: Tesco Chicken Noodle Soup (Fresh)
+  kcal_per_100g: 50
+  protein_per_100g: 4
+  carbs_per_100g: 6
+  fat_per_100g: 1
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup,lunch,chicken
+  portion_unit: meal
+  unit_grams: 300
+- source: tesco
+  source_id: tesco_soup_minestrone
+  name: Tesco Minestrone Soup (Fresh)
+  kcal_per_100g: 55
+  protein_per_100g: 2
+  carbs_per_100g: 9
+  fat_per_100g: 1
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup,lunch
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: tesco
+  source_id: tesco_soup_potato_leek
+  name: Tesco Potato & Leek Soup (Fresh)
+  kcal_per_100g: 50
+  protein_per_100g: 1.5
+  carbs_per_100g: 7
+  fat_per_100g: 1.5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup,lunch
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegetarian
+- source: tesco
+  source_id: tesco_soup_butternut
+  name: Tesco Butternut Squash Soup (Fresh)
+  kcal_per_100g: 55
+  protein_per_100g: 1.2
+  carbs_per_100g: 8
+  fat_per_100g: 2
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup,lunch
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: tesco
+  source_id: tesco_soup_chunky_veg
+  name: Tesco Chunky Vegetable Soup (Fresh)
+  kcal_per_100g: 40
+  protein_per_100g: 1.5
+  carbs_per_100g: 6
+  fat_per_100g: 0.8
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup,lunch
+  portion_unit: meal
+  unit_grams: 300
+  dietary_compat: vegan,vegetarian
+- source: tesco
+  source_id: tesco_soup_thai_chicken
+  name: Tesco Thai Chicken Soup (Fresh)
+  kcal_per_100g: 75
+  protein_per_100g: 5
+  carbs_per_100g: 7
+  fat_per_100g: 3
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 300
+  serving_label: pot (300 g)
+  tags: soup,lunch,thai
+  portion_unit: meal
+  unit_grams: 300
+- source: tesco
+  source_id: tesco_houmous_classic
+  name: Tesco Houmous (Classic)
+  kcal_per_100g: 290
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 23
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pot (200 g)
+  tags: dip,deli,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: tesco
+  source_id: tesco_houmous_red_pepper
+  name: Tesco Red Pepper Houmous
+  kcal_per_100g: 275
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 21
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pot (200 g)
+  tags: dip,deli,vegetarian
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegan,vegetarian
+- source: tesco
+  source_id: tesco_tzatziki
+  name: Tesco Tzatziki
+  kcal_per_100g: 120
+  protein_per_100g: 5
+  carbs_per_100g: 4
+  fat_per_100g: 9.5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 170
+  serving_label: pot (170 g)
+  tags: dip,deli,greek
+  portion_unit: meal
+  unit_grams: 170
+  dietary_compat: vegetarian
+- source: tesco
+  source_id: tesco_taramasalata
+  name: Tesco Taramasalata
+  kcal_per_100g: 440
+  protein_per_100g: 4
+  carbs_per_100g: 6
+  fat_per_100g: 45
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 170
+  serving_label: pot (170 g)
+  tags: dip,deli
+  portion_unit: meal
+  unit_grams: 170
+- source: tesco
+  source_id: tesco_wk_carrot_ribbon_pasta
+  name: Tesco Wicked Kitchen Carrot Ribbon Pasta
+  kcal_per_100g: 135
+  protein_per_100g: 4
+  carbs_per_100g: 18
+  fat_per_100g: 4
+  brand: Tesco Wicked Kitchen
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: vegan,pasta,ready-meal
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: tesco
+  source_id: tesco_wk_burrito_bowl
+  name: Tesco Wicked Kitchen Burrito Bowl
+  kcal_per_100g: 135
+  protein_per_100g: 5
+  carbs_per_100g: 18
+  fat_per_100g: 4.5
+  brand: Tesco Wicked Kitchen
+  region_codes: GB
+  serving_grams: 400
+  serving_label: bowl (400 g)
+  tags: vegan,bowl,ready-meal
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: tesco
+  source_id: tesco_wk_aubergine_curry
+  name: Tesco Wicked Kitchen Aubergine Curry
+  kcal_per_100g: 120
+  protein_per_100g: 4
+  carbs_per_100g: 14
+  fat_per_100g: 5
+  brand: Tesco Wicked Kitchen
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: vegan,curry,ready-meal
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegan,vegetarian
+- source: tesco
+  source_id: tesco_wk_satay_kebabs
+  name: Tesco Wicked Kitchen Satay Kebabs
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 18
+  fat_per_100g: 11
+  brand: Tesco Wicked Kitchen
+  region_codes: GB
+  serving_grams: 185
+  serving_label: pack (185 g)
+  tags: vegan,asian
+  portion_unit: meal
+  unit_grams: 185
+  dietary_compat: vegan,vegetarian
+- source: tesco
+  source_id: tesco_ff_white_loaf
+  name: Tesco Free From White Loaf
+  kcal_per_100g: 265
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 5
+  brand: Tesco Free From
+  region_codes: GB
+  serving_grams: 42
+  serving_label: slice (42 g)
+  tags: gluten-free,bread
+  portion_unit: slice
+  unit_grams: 42
+  dietary_compat: gluten-free,vegetarian
+- source: tesco
+  source_id: tesco_ff_brown_loaf
+  name: Tesco Free From Brown Loaf
+  kcal_per_100g: 275
+  protein_per_100g: 7
+  carbs_per_100g: 47
+  fat_per_100g: 6
+  brand: Tesco Free From
+  region_codes: GB
+  serving_grams: 42
+  serving_label: slice (42 g)
+  tags: gluten-free,bread
+  portion_unit: slice
+  unit_grams: 42
+  dietary_compat: gluten-free,vegetarian
+- source: tesco
+  source_id: tesco_ff_chocolate_brownies
+  name: Tesco Free From Chocolate Brownies
+  kcal_per_100g: 435
+  protein_per_100g: 4
+  carbs_per_100g: 55
+  fat_per_100g: 23
+  brand: Tesco Free From
+  region_codes: GB
+  serving_grams: 35
+  serving_label: brownie (35 g)
+  tags: gluten-free,dessert
+  portion_unit: piece
+  unit_grams: 35
+  dietary_compat: gluten-free,vegetarian
+- source: tesco
+  source_id: tesco_ff_chocolate_cookies
+  name: Tesco Free From Chocolate Chip Cookies
+  kcal_per_100g: 490
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 25
+  brand: Tesco Free From
+  region_codes: GB
+  serving_grams: 160
+  serving_label: pack (160 g)
+  tags: gluten-free,biscuits
+  portion_unit: pack
+  unit_grams: 160
+  dietary_compat: gluten-free,vegetarian
+- source: tesco
+  source_id: tesco_hf_chicken_tikka
+  name: Tesco Hearty Food Chicken Tikka Masala
+  kcal_per_100g: 120
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 4
+  brand: Tesco Hearty Food Co.
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,curry,chicken,value
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_hf_lasagne
+  name: Tesco Hearty Food Lasagne
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 14
+  fat_per_100g: 5
+  brand: Tesco Hearty Food Co.
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef,value
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_hf_macaroni
+  name: Tesco Hearty Food Macaroni Cheese
+  kcal_per_100g: 150
+  protein_per_100g: 6
+  carbs_per_100g: 16
+  fat_per_100g: 7
+  brand: Tesco Hearty Food Co.
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,value
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: tesco
+  source_id: tesco_hf_spag_bol
+  name: Tesco Hearty Food Spaghetti Bolognese
+  kcal_per_100g: 125
+  protein_per_100g: 7
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  brand: Tesco Hearty Food Co.
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,beef,value
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_hf_cottage_pie
+  name: Tesco Hearty Food Cottage Pie
+  kcal_per_100g: 120
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 4.5
+  brand: Tesco Hearty Food Co.
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,beef,value
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_hf_chicken_arrabbiata
+  name: Tesco Hearty Food Chicken Arrabbiata
+  kcal_per_100g: 125
+  protein_per_100g: 8
+  carbs_per_100g: 15
+  fat_per_100g: 3.5
+  brand: Tesco Hearty Food Co.
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,pasta,chicken,value
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_hf_sweet_sour_chicken
+  name: Tesco Hearty Food Sweet & Sour Chicken
+  kcal_per_100g: 120
+  protein_per_100g: 6
+  carbs_per_100g: 19
+  fat_per_100g: 2
+  brand: Tesco Hearty Food Co.
+  region_codes: GB
+  serving_grams: 400
+  serving_label: meal (400 g)
+  tags: ready-meal,chinese,chicken,value
+  portion_unit: meal
+  unit_grams: 400
+- source: tesco
+  source_id: tesco_stonebaked_margherita
+  name: Tesco Stonebaked Margherita Pizza
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 290
+  serving_label: pizza (290 g)
+  tags: pizza,frozen
+  portion_unit: meal
+  unit_grams: 290
+  dietary_compat: vegetarian
+- source: tesco
+  source_id: tesco_stonebaked_pepperoni
+  name: Tesco Stonebaked Pepperoni Pizza
+  kcal_per_100g: 275
+  protein_per_100g: 12
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 320
+  serving_label: pizza (320 g)
+  tags: pizza,frozen
+  portion_unit: meal
+  unit_grams: 320
+- source: tesco
+  source_id: tesco_stonebaked_meat_feast
+  name: Tesco Stonebaked Meat Feast Pizza
+  kcal_per_100g: 280
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 13
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 395
+  serving_label: pizza (395 g)
+  tags: pizza,frozen
+  portion_unit: meal
+  unit_grams: 395
+- source: tesco
+  source_id: tesco_stonebaked_bbq_chicken
+  name: Tesco Stonebaked BBQ Chicken Pizza
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 370
+  serving_label: pizza (370 g)
+  tags: pizza,frozen,chicken
+  portion_unit: meal
+  unit_grams: 370
+- source: tesco
+  source_id: tesco_stonebaked_hawaiian
+  name: Tesco Stonebaked Hawaiian Pizza
+  kcal_per_100g: 225
+  protein_per_100g: 11
+  carbs_per_100g: 31
+  fat_per_100g: 7
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 350
+  serving_label: pizza (350 g)
+  tags: pizza,frozen
+  portion_unit: meal
+  unit_grams: 350
+- source: tesco
+  source_id: tesco_chicken_breast_fresh
+  name: Tesco British Chicken Breasts (Fresh)
+  kcal_per_100g: 105
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 170
+  serving_label: breast (170 g)
+  tags: chicken,fresh
+  portion_unit: meal
+  unit_grams: 170
+- source: tesco
+  source_id: tesco_chicken_thigh_fresh
+  name: Tesco British Chicken Thighs (Fresh)
+  kcal_per_100g: 170
+  protein_per_100g: 19
+  carbs_per_100g: 0
+  fat_per_100g: 10
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 120
+  serving_label: thigh (120 g)
+  tags: chicken,fresh
+  portion_unit: meal
+  unit_grams: 120
+- source: tesco
+  source_id: tesco_chicken_mince_lean
+  name: Tesco Lean Chicken Mince
+  kcal_per_100g: 115
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 3
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: chicken,fresh,lean
+  portion_unit: meal
+  unit_grams: 125
+- source: tesco
+  source_id: tesco_turkey_mince_lean
+  name: Tesco Lean Turkey Mince
+  kcal_per_100g: 105
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 2
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: turkey,fresh,lean
+  portion_unit: meal
+  unit_grams: 125
+- source: tesco
+  source_id: tesco_steak_mince_5pct
+  name: Tesco British 5% Fat Steak Mince
+  kcal_per_100g: 130
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: beef,fresh,lean
+  portion_unit: meal
+  unit_grams: 125
+- source: tesco
+  source_id: tesco_steak_mince_12pct
+  name: Tesco British 12% Fat Steak Mince
+  kcal_per_100g: 170
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 9
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: beef,fresh
+  portion_unit: meal
+  unit_grams: 125
+- source: tesco
+  source_id: tesco_pork_mince_fresh
+  name: Tesco British Pork Mince
+  kcal_per_100g: 215
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 16
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 125
+  serving_label: portion (125 g)
+  tags: pork,fresh
+  portion_unit: meal
+  unit_grams: 125
+- source: tesco
+  source_id: tesco_diced_chicken
+  name: Tesco Diced Chicken Breast
+  kcal_per_100g: 105
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 150
+  serving_label: portion (150 g)
+  tags: chicken,fresh
+  portion_unit: meal
+  unit_grams: 150
+- source: tesco
+  source_id: tesco_diced_beef
+  name: Tesco British Diced Beef
+  kcal_per_100g: 170
+  protein_per_100g: 24
+  carbs_per_100g: 0
+  fat_per_100g: 8
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 150
+  serving_label: portion (150 g)
+  tags: beef,fresh
+  portion_unit: meal
+  unit_grams: 150
+- source: tesco
+  source_id: tesco_diced_lamb
+  name: Tesco British Diced Lamb
+  kcal_per_100g: 215
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 14
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 150
+  serving_label: portion (150 g)
+  tags: lamb,fresh
+  portion_unit: meal
+  unit_grams: 150
+- source: tesco
+  source_id: tesco_salmon_fillets_skin_on
+  name: Tesco Salmon Fillets Skin On
+  kcal_per_100g: 210
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: salmon,fresh
+  portion_unit: meal
+  unit_grams: 130
+- source: tesco
+  source_id: tesco_cod_fillets_fresh
+  name: Tesco Cod Fillets (Fresh)
+  kcal_per_100g: 80
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 0.7
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 140
+  serving_label: fillet (140 g)
+  tags: fish,fresh,lean
+  portion_unit: meal
+  unit_grams: 140
+- source: tesco
+  source_id: tesco_seabass_fillets
+  name: Tesco Seabass Fillets
+  kcal_per_100g: 120
+  protein_per_100g: 20
+  carbs_per_100g: 0
+  fat_per_100g: 4
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 100
+  serving_label: fillet (100 g)
+  tags: fish,fresh
+  portion_unit: meal
+  unit_grams: 100
+- source: tesco
+  source_id: tesco_haddock_fillets
+  name: Tesco Haddock Fillets
+  kcal_per_100g: 75
+  protein_per_100g: 17
+  carbs_per_100g: 0
+  fat_per_100g: 0.5
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 130
+  serving_label: fillet (130 g)
+  tags: fish,fresh,lean
+  portion_unit: meal
+  unit_grams: 130
+- source: tesco
+  source_id: tesco_prawn_king_cooked
+  name: Tesco King Prawns (Cooked)
+  kcal_per_100g: 75
+  protein_per_100g: 17
+  carbs_per_100g: 0
+  fat_per_100g: 0.7
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 200
+  serving_label: pack (200 g)
+  tags: prawns,seafood
+  portion_unit: meal
+  unit_grams: 200

@@ -1,0 +1,287 @@
+# uk_takeaway_generic.yaml — chip shop classics: fish & chips, cod/haddock & chips, chicken kebab, doner kebab, mixed kebab, chicken shish, battered sausage, saveloy, pickled egg, curry sauce, mushy peas, gravy, large chips, doner meat, garlic pizza bread, Chinese/Indian buffet plate.
+- source: gymflow
+  source_id: takeaway_fish_chips_full
+  name: Fish & Chips (chip shop)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 12
+  carbs_per_100g: 24
+  fat_per_100g: 9
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: takeaway,meal,fish
+  dietary_compat: pescatarian
+  allergens: fish,gluten,eggs
+  unit_grams: 600
+- source: gymflow
+  source_id: takeaway_cod_chips
+  name: Cod & Chips (chip shop)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 12
+  carbs_per_100g: 24
+  fat_per_100g: 9
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: takeaway,meal,fish
+  dietary_compat: pescatarian
+  allergens: fish,gluten,eggs
+  unit_grams: 600
+- source: gymflow
+  source_id: takeaway_haddock_chips
+  name: Haddock & Chips (chip shop)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 210
+  protein_per_100g: 12
+  carbs_per_100g: 24
+  fat_per_100g: 8
+  serving_grams: 600
+  serving_label: 1 portion (600 g)
+  portion_unit: meal
+  tags: takeaway,meal,fish
+  dietary_compat: pescatarian
+  allergens: fish,gluten,eggs
+  unit_grams: 600
+- source: gymflow
+  source_id: takeaway_chicken_kebab_pita
+  name: Chicken Kebab in Pita (takeaway)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 16
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: takeaway,meal,wrap,chicken,turkish
+  dietary_compat: halal,pescatarian
+  allergens: gluten,milk
+  unit_grams: 350
+- source: gymflow
+  source_id: takeaway_doner_kebab_pita
+  name: Doner Kebab in Pita (takeaway)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: takeaway,meal,wrap,turkish
+  dietary_compat: halal,pescatarian
+  allergens: gluten,milk
+  unit_grams: 350
+- source: gymflow
+  source_id: takeaway_mixed_kebab_meat
+  name: Mixed Meat Kebab Plate
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 18
+  carbs_per_100g: 14
+  fat_per_100g: 11
+  serving_grams: 500
+  serving_label: 1 portion (500 g)
+  portion_unit: meal
+  tags: takeaway,meal,turkish,high_protein
+  dietary_compat: halal,pescatarian,dairy_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: takeaway_chicken_shish
+  name: Chicken Shish Skewer (takeaway)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 24
+  carbs_per_100g: 4
+  fat_per_100g: 7
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: meal
+  tags: takeaway,meal,chicken,turkish,high_protein,low_carb
+  dietary_compat: halal,pescatarian,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 200
+- source: gymflow
+  source_id: takeaway_battered_sausage
+  name: Battered Sausage (chip shop)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 12
+  carbs_per_100g: 14
+  fat_per_100g: 21
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: takeaway
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 100
+- source: gymflow
+  source_id: takeaway_saveloy
+  name: Saveloy (chip shop)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 295
+  protein_per_100g: 14
+  carbs_per_100g: 4
+  fat_per_100g: 25
+  serving_grams: 90
+  serving_label: 1 piece (90 g)
+  portion_unit: piece
+  tags: takeaway
+  dietary_compat: pescatarian,gluten_free
+  allergens: sulphites
+  unit_grams: 90
+- source: gymflow
+  source_id: takeaway_pickled_egg
+  name: Pickled Egg
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 13
+  carbs_per_100g: 1
+  fat_per_100g: 11
+  serving_grams: 50
+  serving_label: 1 egg (50 g)
+  portion_unit: egg
+  tags: takeaway,whole,eggs,low_carb
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free,dairy_free
+  allergens: eggs
+  unit_grams: 50
+- source: gymflow
+  source_id: takeaway_curry_sauce_chip_shop
+  name: Chip Shop Curry Sauce (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 70
+  protein_per_100g: 1.5
+  carbs_per_100g: 13
+  fat_per_100g: 1.5
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: takeaway,sauce
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,celery
+  unit_grams: 150
+- source: gymflow
+  source_id: takeaway_mushy_peas_chip_shop
+  name: Chip Shop Mushy Peas (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 5
+  carbs_per_100g: 13
+  fat_per_100g: 0.5
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: takeaway,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 150
+- source: gymflow
+  source_id: takeaway_gravy_chip_shop
+  name: Chip Shop Gravy (per 100ml)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 30
+  protein_per_100g: 1
+  carbs_per_100g: 5
+  fat_per_100g: 0.5
+  serving_grams: 100
+  serving_label: 1 ml (100 g)
+  portion_unit: ml
+  tags: takeaway,sauce,low_calorie
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,celery
+- source: gymflow
+  source_id: takeaway_chip_shop_chips_large
+  name: Chip Shop Chips (large)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 4
+  carbs_per_100g: 36
+  fat_per_100g: 9
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: pack
+  tags: takeaway,side
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 350
+- source: gymflow
+  source_id: takeaway_donner_meat_only_per_100
+  name: Doner Meat (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 18
+  carbs_per_100g: 4
+  fat_per_100g: 22
+  serving_grams: 150
+  serving_label: 1 grams (150 g)
+  portion_unit: grams
+  tags: takeaway,meat,turkish,high_protein
+  dietary_compat: halal,pescatarian,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: takeaway_garlic_pizza_bread_slice
+  name: Garlic Pizza Bread (1 slice)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 8
+  carbs_per_100g: 36
+  fat_per_100g: 12
+  serving_grams: 50
+  serving_label: 1 slice (50 g)
+  portion_unit: slice
+  tags: takeaway,bakery
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 50
+- source: gymflow
+  source_id: takeaway_chinese_buffet_plate
+  name: Chinese Buffet (mixed plate)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: takeaway,chinese,meal
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,soy,eggs,sesame
+  unit_grams: 400
+- source: gymflow
+  source_id: takeaway_indian_buffet_plate
+  name: Indian Buffet (mixed plate)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 7
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: takeaway,indian,meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 400

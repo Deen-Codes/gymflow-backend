@@ -1,0 +1,1818 @@
+# More exotic fruits (pomelo, blood orange, currants, açaí pulp, Camu Camu, amla, loquat) +
+# More cereal/breakfast bars (Kellogg's Extra, Alpen Lights, Special K, Belvita variants) +
+# More confectionery (KitKat Chunky, Smarties, Aero Giant, Munchies, Lion White, Yorkie Orange,
+# Kinder Bueno White/Country/Hippo, Cadbury Caramel/Oreo Egg) +
+# More coffee shop (skinny variants, iced versions, Pumpkin Spice) +
+# Meal-replacement brands (Huel full range — Black/v3/Ready-to-Drink/Hot & Savoury, Soylent, YFood) +
+# More alcohol (Pimm's, Aperol/Chambord/St-Germain, Cognac/Armagnac/Grappa, Mezcal/Pisco/Cachaça,
+# Soju/Sake/Plum Wine, low-alcohol variants) +
+# RTE Innocent Veg Pots, M&S Higher Meal Boxes +
+# More cheese servings (Feta/Halloumi/Paneer/Ricotta/Quark per 50g/100g) +
+# More workout meals (chicken+brown rice+avocado, salmon+rice+veg, post-workout combos)
+
+- source: produce
+  source_id: fruit_pomelo_per_unit
+  name: Pomelo (Per Unit)
+  kcal_per_100g: 38
+  protein_per_100g: 0.8
+  carbs_per_100g: 10
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 600
+  serving_label: 600 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 600
+- source: produce
+  source_id: fruit_blood_orange_per_unit
+  name: Blood Orange (Per Unit)
+  kcal_per_100g: 49
+  protein_per_100g: 0.9
+  carbs_per_100g: 12
+  fat_per_100g: 0.1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 154
+  serving_label: 154 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 154
+- source: produce
+  source_id: fruit_white_currants_per_100g
+  name: White Currants (Per 100g)
+  kcal_per_100g: 56
+  protein_per_100g: 1.4
+  carbs_per_100g: 14
+  fat_per_100g: 0.2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: produce
+  source_id: fruit_blackcurrants_per_100g_v2
+  name: Blackcurrants (Per 100g)
+  kcal_per_100g: 63
+  protein_per_100g: 1.4
+  carbs_per_100g: 15
+  fat_per_100g: 0.4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: produce
+  source_id: fruit_elderberries_per_100g
+  name: Elderberries (Per 100g)
+  kcal_per_100g: 73
+  protein_per_100g: 0.7
+  carbs_per_100g: 18
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: produce
+  source_id: fruit_mulberries_per_100g
+  name: Mulberries (Per 100g)
+  kcal_per_100g: 43
+  protein_per_100g: 1.4
+  carbs_per_100g: 10
+  fat_per_100g: 0.4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: produce
+  source_id: fruit_acai_pulp_per_100g
+  name: Açaí Pulp Frozen (Per 100g)
+  kcal_per_100g: 70
+  protein_per_100g: 1
+  carbs_per_100g: 4
+  fat_per_100g: 5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: produce
+  source_id: fruit_camu_camu_per_5g
+  name: Camu Camu Powder (Per 5g)
+  kcal_per_100g: 235
+  protein_per_100g: 9
+  carbs_per_100g: 56
+  fat_per_100g: 0.4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 5
+  serving_label: 5 g
+  tags: brand,grocery
+  portion_unit: tsp
+  unit_grams: 5
+- source: produce
+  source_id: fruit_amla_per_100g
+  name: Amla Indian Gooseberry (Per 100g)
+  kcal_per_100g: 44
+  protein_per_100g: 0.9
+  carbs_per_100g: 10
+  fat_per_100g: 0.6
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: produce
+  source_id: fruit_loquat_per_unit
+  name: Loquat (Per Unit)
+  kcal_per_100g: 47
+  protein_per_100g: 0.4
+  carbs_per_100g: 12
+  fat_per_100g: 0.2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 16
+  serving_label: 16 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 16
+- source: brand
+  source_id: brand_kelloggs_extra_belgian_choc
+  name: Kellogg's Extra Belgian Chocolate Granola (Per 30g)
+  kcal_per_100g: 410
+  protein_per_100g: 7
+  carbs_per_100g: 70
+  fat_per_100g: 11
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: brand_kelloggs_extra_smooth_caramel
+  name: Kellogg's Extra Smooth Caramel Granola
+  kcal_per_100g: 410
+  protein_per_100g: 7
+  carbs_per_100g: 70
+  fat_per_100g: 11
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: brand_kelloggs_oat_pots_overnight
+  name: Kellogg's Oat Pots Overnight (Per Pot 50g)
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: brand_alpen_lights_summer_fruits
+  name: Alpen Lights Summer Fruits Bar
+  kcal_per_100g: 365
+  protein_per_100g: 7
+  carbs_per_100g: 70
+  fat_per_100g: 6
+  brand: Alpen
+  region_codes: GB
+  serving_grams: 19
+  serving_label: 19 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 19
+- source: brand
+  source_id: brand_alpen_lights_chocolate
+  name: Alpen Lights Chocolate Bar
+  kcal_per_100g: 380
+  protein_per_100g: 7
+  carbs_per_100g: 65
+  fat_per_100g: 8
+  brand: Alpen
+  region_codes: GB
+  serving_grams: 21
+  serving_label: 21 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 21
+- source: brand
+  source_id: brand_alpen_lights_apple_sultana
+  name: Alpen Lights Apple & Sultana
+  kcal_per_100g: 365
+  protein_per_100g: 7
+  carbs_per_100g: 72
+  fat_per_100g: 5
+  brand: Alpen
+  region_codes: GB
+  serving_grams: 19
+  serving_label: 19 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 19
+- source: brand
+  source_id: brand_special_k_strawberry_bar
+  name: Special K Red Berries Bar
+  kcal_per_100g: 376
+  protein_per_100g: 6
+  carbs_per_100g: 73
+  fat_per_100g: 7
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 22
+  serving_label: 22 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 22
+- source: brand
+  source_id: brand_special_k_yogurt_lemon_cheesecake
+  name: Special K Yogurty Lemon Cheesecake (Per Pack)
+  kcal_per_100g: 175
+  protein_per_100g: 6
+  carbs_per_100g: 25
+  fat_per_100g: 6
+  brand: Kellogg's
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: brand_belvita_choc_chip_per_4_biscuits
+  name: Belvita Chocolate Chip (Per 4 Biscuits)
+  kcal_per_100g: 460
+  protein_per_100g: 8
+  carbs_per_100g: 65
+  fat_per_100g: 18
+  brand: Belvita
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 50
+- source: brand
+  source_id: brand_belvita_milk_cereals_per_4
+  name: Belvita Milk & Cereals (Per 4 Biscuits)
+  kcal_per_100g: 450
+  protein_per_100g: 8
+  carbs_per_100g: 65
+  fat_per_100g: 17
+  brand: Belvita
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: brand_belvita_breakfast_bar_4
+  name: Belvita Breakfast Bar (Per 4)
+  kcal_per_100g: 460
+  protein_per_100g: 8
+  carbs_per_100g: 65
+  fat_per_100g: 18
+  brand: Belvita
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: brand
+  source_id: brand_organix_breakfast_oatie
+  name: Organix Breakfast Oatie Bar
+  kcal_per_100g: 380
+  protein_per_100g: 8
+  carbs_per_100g: 65
+  fat_per_100g: 9
+  brand: Organix
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: brand_kit_kat_white_chunky
+  name: KitKat Chunky White (Per Bar)
+  kcal_per_100g: 547
+  protein_per_100g: 7
+  carbs_per_100g: 56
+  fat_per_100g: 32
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 40
+- source: brand
+  source_id: brand_kit_kat_chunky_collection
+  name: KitKat Chunky Collection (Per Bar)
+  kcal_per_100g: 530
+  protein_per_100g: 7
+  carbs_per_100g: 57
+  fat_per_100g: 29
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 40
+- source: brand
+  source_id: brand_smarties_giant_tube
+  name: Smarties Giant Tube (Per Tube 130g)
+  kcal_per_100g: 470
+  protein_per_100g: 5
+  carbs_per_100g: 75
+  fat_per_100g: 17
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 130
+  serving_label: 130 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 130
+- source: brand
+  source_id: brand_smarties_mini_pouch
+  name: Smarties Mini Pouch (Per 30g)
+  kcal_per_100g: 470
+  protein_per_100g: 5
+  carbs_per_100g: 75
+  fat_per_100g: 17
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: brand_aero_milk_giant_per_36g
+  name: Aero Milk Giant Bar (Per 36g)
+  kcal_per_100g: 520
+  protein_per_100g: 7
+  carbs_per_100g: 58
+  fat_per_100g: 29
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 36
+  serving_label: 36 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 36
+- source: brand
+  source_id: brand_aero_mint_giant_per_36g
+  name: Aero Mint Giant Bar
+  kcal_per_100g: 520
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 29
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 36
+  serving_label: 36 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 36
+- source: brand
+  source_id: brand_munchies_milk_chocolate
+  name: Nestlé Munchies (Per 36g Bag)
+  kcal_per_100g: 480
+  protein_per_100g: 5
+  carbs_per_100g: 65
+  fat_per_100g: 22
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 36
+  serving_label: 36 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 36
+- source: brand
+  source_id: brand_quality_street_tin_per_piece
+  name: Quality Street Tin (Per Piece avg)
+  kcal_per_100g: 460
+  protein_per_100g: 4
+  carbs_per_100g: 64
+  fat_per_100g: 21
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 9
+  serving_label: 9 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 9
+- source: brand
+  source_id: brand_lion_bar_white_per_50g
+  name: Lion Bar White (Per 50g)
+  kcal_per_100g: 500
+  protein_per_100g: 5
+  carbs_per_100g: 64
+  fat_per_100g: 24
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 50
+- source: brand
+  source_id: brand_yorkie_orange_per_46g
+  name: Yorkie Orange (Per 46g)
+  kcal_per_100g: 540
+  protein_per_100g: 7
+  carbs_per_100g: 58
+  fat_per_100g: 30
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 46
+  serving_label: 46 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 46
+- source: brand
+  source_id: brand_kinder_chocolate_per_2_pack
+  name: Kinder Chocolate (Per 2-Pack)
+  kcal_per_100g: 565
+  protein_per_100g: 9
+  carbs_per_100g: 53
+  fat_per_100g: 35
+  brand: Kinder
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 25
+- source: brand
+  source_id: brand_kinder_bueno_white_per_unit
+  name: Kinder Bueno White (Per Bar)
+  kcal_per_100g: 580
+  protein_per_100g: 8
+  carbs_per_100g: 53
+  fat_per_100g: 37
+  brand: Kinder
+  region_codes: GB
+  serving_grams: 39
+  serving_label: 39 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 39
+- source: brand
+  source_id: brand_kinder_country_per_unit
+  name: Kinder Country (Per Bar)
+  kcal_per_100g: 525
+  protein_per_100g: 7
+  carbs_per_100g: 57
+  fat_per_100g: 30
+  brand: Kinder
+  region_codes: GB
+  serving_grams: 23.5
+  serving_label: 23.5 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 23.5
+- source: brand
+  source_id: brand_kinder_happy_hippo_chocolate
+  name: Kinder Happy Hippo Chocolate (Per Piece)
+  kcal_per_100g: 575
+  protein_per_100g: 9
+  carbs_per_100g: 53
+  fat_per_100g: 37
+  brand: Kinder
+  region_codes: GB
+  serving_grams: 20.7
+  serving_label: 20.7 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 20.7
+- source: brand
+  source_id: brand_kinder_happy_hippo_cocoa
+  name: Kinder Happy Hippo Cocoa (Per Piece)
+  kcal_per_100g: 575
+  protein_per_100g: 9
+  carbs_per_100g: 53
+  fat_per_100g: 37
+  brand: Kinder
+  region_codes: GB
+  serving_grams: 20.7
+  serving_label: 20.7 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 20.7
+- source: brand
+  source_id: brand_milky_bar_chunky_white
+  name: Milkybar Chunky White (Per 40g)
+  kcal_per_100g: 555
+  protein_per_100g: 8
+  carbs_per_100g: 56
+  fat_per_100g: 32
+  brand: Nestlé
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 40
+- source: brand
+  source_id: brand_creme_egg_per_unit_v2
+  name: Cadbury Creme Egg (Per Egg)
+  kcal_per_100g: 380
+  protein_per_100g: 3
+  carbs_per_100g: 58
+  fat_per_100g: 14
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 40
+- source: brand
+  source_id: brand_caramel_egg_per_unit
+  name: Cadbury Caramel Egg (Per Egg)
+  kcal_per_100g: 380
+  protein_per_100g: 3
+  carbs_per_100g: 58
+  fat_per_100g: 14
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 40
+- source: brand
+  source_id: brand_oreo_egg_per_unit
+  name: Cadbury Oreo Egg (Per Egg)
+  kcal_per_100g: 380
+  protein_per_100g: 3
+  carbs_per_100g: 58
+  fat_per_100g: 14
+  brand: Cadbury
+  region_codes: GB
+  serving_grams: 40
+  serving_label: 40 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 40
+- source: pret_a_manger
+  source_id: drink_pret_iced_lemonade_homemade
+  name: Pret Iced Lemonade
+  kcal_per_100g: 60
+  protein_per_100g: 0
+  carbs_per_100g: 14
+  fat_per_100g: 0
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: pret_a_manger
+  source_id: drink_pret_iced_americano
+  name: Pret Iced Americano
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: pret_a_manger
+  source_id: drink_pret_iced_caramel_macchiato
+  name: Pret Iced Caramel Macchiato
+  kcal_per_100g: 195
+  protein_per_100g: 6
+  carbs_per_100g: 28
+  fat_per_100g: 6
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: pret_a_manger
+  source_id: drink_pret_iced_mocha
+  name: Pret Iced Mocha
+  kcal_per_100g: 195
+  protein_per_100g: 6
+  carbs_per_100g: 28
+  fat_per_100g: 7
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: starbucks
+  source_id: drink_starbucks_pumpkin_spice_iced
+  name: Starbucks Iced Pumpkin Spice Latte (Grande)
+  kcal_per_100g: 305
+  protein_per_100g: 11
+  carbs_per_100g: 40
+  fat_per_100g: 11
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 473
+- source: starbucks
+  source_id: drink_starbucks_brown_sugar_oat_shaken
+  name: Starbucks Brown Sugar Oat Shaken Espresso (Grande)
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 17
+  fat_per_100g: 7
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 473
+- source: starbucks
+  source_id: drink_starbucks_iced_chai_oat
+  name: Starbucks Iced Chai Latte with Oat (Grande)
+  kcal_per_100g: 235
+  protein_per_100g: 6
+  carbs_per_100g: 38
+  fat_per_100g: 7
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 473
+- source: starbucks
+  source_id: drink_starbucks_skinny_latte_grande
+  name: Starbucks Skinny Latte (Grande)
+  kcal_per_100g: 75
+  protein_per_100g: 7
+  carbs_per_100g: 9
+  fat_per_100g: 0.4
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: drink_starbucks_skinny_cappuccino_grande
+  name: Starbucks Skinny Cappuccino (Grande)
+  kcal_per_100g: 65
+  protein_per_100g: 6
+  carbs_per_100g: 8
+  fat_per_100g: 0.3
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 473
+- source: starbucks
+  source_id: drink_starbucks_iced_skinny_latte_grande
+  name: Starbucks Iced Skinny Latte (Grande)
+  kcal_per_100g: 65
+  protein_per_100g: 6
+  carbs_per_100g: 8
+  fat_per_100g: 0.3
+  brand: Starbucks
+  region_codes: GB
+  serving_grams: 473
+  serving_label: 473 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 473
+- source: pret_a_manger
+  source_id: drink_pret_skinny_latte
+  name: Pret Skinny Latte (Regular)
+  kcal_per_100g: 75
+  protein_per_100g: 7
+  carbs_per_100g: 9
+  fat_per_100g: 0.4
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: pret_a_manger
+  source_id: drink_pret_skinny_cappuccino
+  name: Pret Skinny Cappuccino (Regular)
+  kcal_per_100g: 65
+  protein_per_100g: 6
+  carbs_per_100g: 8
+  fat_per_100g: 0.3
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: costa
+  source_id: drink_costa_skinny_latte_medio
+  name: Costa Skinny Latte (Medio)
+  kcal_per_100g: 75
+  protein_per_100g: 7
+  carbs_per_100g: 9
+  fat_per_100g: 0.4
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 355
+  serving_label: 355 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 355
+- source: costa
+  source_id: drink_costa_skinny_cappuccino_medio
+  name: Costa Skinny Cappuccino (Medio)
+  kcal_per_100g: 65
+  protein_per_100g: 6
+  carbs_per_100g: 8
+  fat_per_100g: 0.3
+  brand: Costa Coffee
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 250
+- source: brand
+  source_id: brand_huel_black_chocolate
+  name: Huel Black Edition Chocolate (Per 100g powder)
+  kcal_per_100g: 400
+  protein_per_100g: 40
+  carbs_per_100g: 17
+  fat_per_100g: 13
+  brand: Huel
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: brand_huel_black_vanilla
+  name: Huel Black Vanilla (Per 100g)
+  kcal_per_100g: 400
+  protein_per_100g: 40
+  carbs_per_100g: 17
+  fat_per_100g: 13
+  brand: Huel
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: brand_huel_v3_chocolate
+  name: Huel v3.1 Chocolate (Per 100g)
+  kcal_per_100g: 400
+  protein_per_100g: 30
+  carbs_per_100g: 35
+  fat_per_100g: 14
+  brand: Huel
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: brand_huel_v3_vanilla
+  name: Huel v3.1 Vanilla (Per 100g)
+  kcal_per_100g: 400
+  protein_per_100g: 30
+  carbs_per_100g: 35
+  fat_per_100g: 14
+  brand: Huel
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: brand_huel_ready_drink_chocolate
+  name: Huel Ready-to-Drink Chocolate (Per 500ml)
+  kcal_per_100g: 80
+  protein_per_100g: 5
+  carbs_per_100g: 9
+  fat_per_100g: 2.5
+  brand: Huel
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: brand
+  source_id: brand_huel_ready_drink_vanilla
+  name: Huel Ready-to-Drink Vanilla (Per 500ml)
+  kcal_per_100g: 80
+  protein_per_100g: 5
+  carbs_per_100g: 9
+  fat_per_100g: 2.5
+  brand: Huel
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: brand
+  source_id: brand_huel_ready_drink_banana
+  name: Huel Ready-to-Drink Banana (Per 500ml)
+  kcal_per_100g: 80
+  protein_per_100g: 5
+  carbs_per_100g: 9
+  fat_per_100g: 2.5
+  brand: Huel
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: brand
+  source_id: brand_huel_ready_drink_strawberry
+  name: Huel Ready-to-Drink Strawberry (Per 500ml)
+  kcal_per_100g: 80
+  protein_per_100g: 5
+  carbs_per_100g: 9
+  fat_per_100g: 2.5
+  brand: Huel
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: brand
+  source_id: brand_huel_hot_savoury_mexican_chilli
+  name: Huel Hot & Savoury Mexican Chilli (Per 100g powder)
+  kcal_per_100g: 380
+  protein_per_100g: 25
+  carbs_per_100g: 50
+  fat_per_100g: 7
+  brand: Huel
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: brand_huel_hot_savoury_tomato_herb
+  name: Huel Hot & Savoury Tomato & Herb
+  kcal_per_100g: 380
+  protein_per_100g: 25
+  carbs_per_100g: 50
+  fat_per_100g: 7
+  brand: Huel
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: brand_huel_complete_protein_chocolate
+  name: Huel Complete Protein Chocolate (Per 30g)
+  kcal_per_100g: 400
+  protein_per_100g: 75
+  carbs_per_100g: 8
+  fat_per_100g: 7
+  brand: Huel
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+- source: brand
+  source_id: brand_soylent_chocolate_per_400ml
+  name: Soylent Chocolate (Per 400ml)
+  kcal_per_100g: 100
+  protein_per_100g: 5
+  carbs_per_100g: 9
+  fat_per_100g: 5
+  brand: Soylent
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 400
+- source: brand
+  source_id: brand_yfood_chocolate_500ml
+  name: YFood Chocolate (Per 500ml)
+  kcal_per_100g: 100
+  protein_per_100g: 5
+  carbs_per_100g: 9
+  fat_per_100g: 5
+  brand: YFood
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: brand
+  source_id: brand_yfood_vanilla_500ml
+  name: YFood Vanilla (Per 500ml)
+  kcal_per_100g: 100
+  protein_per_100g: 5
+  carbs_per_100g: 9
+  fat_per_100g: 5
+  brand: YFood
+  region_codes: GB
+  serving_grams: 500
+  serving_label: 500 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 500
+- source: alcohol
+  source_id: alc_baileys_25ml_v2
+  name: Baileys (25ml)
+  kcal_per_100g: 80
+  protein_per_100g: 1
+  carbs_per_100g: 6
+  fat_per_100g: 4
+  brand: Baileys
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: alcohol
+  source_id: alc_kahlua_25ml_v2
+  name: Kahlúa (25ml)
+  kcal_per_100g: 90
+  protein_per_100g: 0
+  carbs_per_100g: 12
+  fat_per_100g: 0
+  brand: Kahlúa
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: alcohol
+  source_id: alc_pimms_50ml
+  name: Pimm's No. 1 (50ml)
+  kcal_per_100g: 60
+  protein_per_100g: 0
+  carbs_per_100g: 6
+  fat_per_100g: 0
+  brand: Pimm's
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: alcohol
+  source_id: alc_pimms_pint_drink
+  name: Pimm's Cup (Pint, with Lemonade)
+  kcal_per_100g: 215
+  protein_per_100g: 0.5
+  carbs_per_100g: 22
+  fat_per_100g: 0
+  brand: Pimm's
+  region_codes: GB
+  serving_grams: 568
+  serving_label: 568 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 568
+- source: alcohol
+  source_id: alc_aperol_50ml
+  name: Aperol (50ml)
+  kcal_per_100g: 70
+  protein_per_100g: 0
+  carbs_per_100g: 9
+  fat_per_100g: 0
+  brand: Aperol
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: alcohol
+  source_id: alc_chambord_50ml
+  name: Chambord (50ml)
+  kcal_per_100g: 165
+  protein_per_100g: 0
+  carbs_per_100g: 22
+  fat_per_100g: 0
+  brand: Chambord
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: alcohol
+  source_id: alc_st_germain_25ml
+  name: St-Germain Elderflower (25ml)
+  kcal_per_100g: 95
+  protein_per_100g: 0
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: St-Germain
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: alcohol
+  source_id: alc_pernod_25ml
+  name: Pernod (25ml)
+  kcal_per_100g: 65
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Pernod
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: alcohol
+  source_id: alc_ouzo_25ml
+  name: Ouzo (25ml)
+  kcal_per_100g: 65
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: alcohol
+  source_id: alc_sambuca_25ml
+  name: Sambuca (25ml)
+  kcal_per_100g: 105
+  protein_per_100g: 0
+  carbs_per_100g: 12
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: alcohol
+  source_id: alc_brandy_double_50ml
+  name: Brandy (Double 50ml)
+  kcal_per_100g: 130
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: alcohol
+  source_id: alc_cognac_25ml
+  name: Cognac (25ml)
+  kcal_per_100g: 65
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: alcohol
+  source_id: alc_armagnac_25ml
+  name: Armagnac (25ml)
+  kcal_per_100g: 65
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: alcohol
+  source_id: alc_grappa_25ml
+  name: Grappa (25ml)
+  kcal_per_100g: 65
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: alcohol
+  source_id: alc_calvados_25ml
+  name: Calvados (25ml)
+  kcal_per_100g: 65
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: alcohol
+  source_id: alc_japanese_whisky_25ml
+  name: Japanese Whisky (25ml)
+  kcal_per_100g: 60
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: alcohol
+  source_id: alc_irish_whiskey_25ml
+  name: Irish Whiskey (25ml)
+  kcal_per_100g: 60
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: alcohol
+  source_id: alc_scotch_whisky_25ml
+  name: Scotch Whisky (25ml)
+  kcal_per_100g: 60
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: alcohol
+  source_id: alc_bourbon_25ml
+  name: Bourbon Whiskey (25ml)
+  kcal_per_100g: 60
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: alcohol
+  source_id: alc_rye_whiskey_25ml
+  name: Rye Whiskey (25ml)
+  kcal_per_100g: 60
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: alcohol
+  source_id: alc_mezcal_25ml
+  name: Mezcal (25ml)
+  kcal_per_100g: 65
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: alcohol
+  source_id: alc_pisco_25ml
+  name: Pisco (25ml)
+  kcal_per_100g: 60
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: alcohol
+  source_id: alc_cachaca_25ml
+  name: Cachaça (25ml)
+  kcal_per_100g: 60
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 25
+  serving_label: 25 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 25
+- source: alcohol
+  source_id: alc_soju_50ml
+  name: Soju (50ml)
+  kcal_per_100g: 35
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: alcohol
+  source_id: alc_sake_warm_per_75ml
+  name: Sake Warm (Per 75ml)
+  kcal_per_100g: 40
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 75
+- source: alcohol
+  source_id: alc_sake_cold_per_75ml
+  name: Sake Cold (Per 75ml)
+  kcal_per_100g: 40
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 75
+  serving_label: 75 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 75
+- source: alcohol
+  source_id: alc_plum_wine_per_50ml
+  name: Plum Wine Umeshu (50ml)
+  kcal_per_100g: 95
+  protein_per_100g: 0
+  carbs_per_100g: 14
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 50
+- source: alcohol
+  source_id: alc_lager_low_alcohol_pint
+  name: Low Alcohol Lager 0.5% (Pint)
+  kcal_per_100g: 14
+  protein_per_100g: 0.4
+  carbs_per_100g: 3
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 568
+  serving_label: 568 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 568
+- source: alcohol
+  source_id: alc_cider_low_alcohol_pint
+  name: Low Alcohol Cider 0.5% (Pint)
+  kcal_per_100g: 12
+  protein_per_100g: 0
+  carbs_per_100g: 3
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 568
+  serving_label: 568 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 568
+- source: brand
+  source_id: rte_innocent_veg_pot_thai_curry
+  name: Innocent Veg Pot Thai Curry
+  kcal_per_100g: 95
+  protein_per_100g: 4
+  carbs_per_100g: 13
+  fat_per_100g: 3
+  brand: Innocent
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: rte_innocent_veg_pot_mexican_chilli
+  name: Innocent Veg Pot Mexican Chilli
+  kcal_per_100g: 95
+  protein_per_100g: 5
+  carbs_per_100g: 13
+  fat_per_100g: 2.5
+  brand: Innocent
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: rte_innocent_veg_pot_madras_dahl
+  name: Innocent Veg Pot Madras Dahl
+  kcal_per_100g: 95
+  protein_per_100g: 5
+  carbs_per_100g: 13
+  fat_per_100g: 2.5
+  brand: Innocent
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: ms
+  source_id: rte_higher_meal_box_chicken_pesto
+  name: M&S Higher Meal Box Chicken Pesto
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 6
+  brand: M&S
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: ms
+  source_id: rte_higher_meal_box_falafel
+  name: M&S Higher Meal Box Falafel
+  kcal_per_100g: 175
+  protein_per_100g: 8
+  carbs_per_100g: 17
+  fat_per_100g: 9
+  brand: M&S
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: ms
+  source_id: rte_higher_meal_box_chicken_caesar
+  name: M&S Higher Meal Box Chicken Caesar
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 13
+  fat_per_100g: 8
+  brand: M&S
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: brand
+  source_id: cheese_feta_per_50g_v2
+  name: Feta Cheese (Per 50g)
+  kcal_per_100g: 264
+  protein_per_100g: 14
+  carbs_per_100g: 4
+  fat_per_100g: 21
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 50
+- source: brand
+  source_id: cheese_haloumi_per_50g_v2
+  name: Halloumi Cheese (Per 50g)
+  kcal_per_100g: 320
+  protein_per_100g: 22
+  carbs_per_100g: 2
+  fat_per_100g: 25
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 50
+- source: brand
+  source_id: cheese_paneer_per_50g_v2
+  name: Paneer (Per 50g)
+  kcal_per_100g: 296
+  protein_per_100g: 18
+  carbs_per_100g: 6
+  fat_per_100g: 22
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 50
+- source: brand
+  source_id: cheese_ricotta_per_100g
+  name: Ricotta (Per 100g)
+  kcal_per_100g: 174
+  protein_per_100g: 11
+  carbs_per_100g: 3
+  fat_per_100g: 13
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+- source: brand
+  source_id: cheese_mascarpone_per_50g
+  name: Mascarpone (Per 50g)
+  kcal_per_100g: 405
+  protein_per_100g: 5
+  carbs_per_100g: 4
+  fat_per_100g: 41
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 50
+- source: brand
+  source_id: cheese_creme_fraiche_per_50g
+  name: Crème Fraîche (Per 50g)
+  kcal_per_100g: 350
+  protein_per_100g: 2
+  carbs_per_100g: 3
+  fat_per_100g: 36
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 50
+- source: brand
+  source_id: cheese_sour_cream_per_50g
+  name: Sour Cream (Per 50g)
+  kcal_per_100g: 195
+  protein_per_100g: 2
+  carbs_per_100g: 4
+  fat_per_100g: 19
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 50
+- source: brand
+  source_id: cheese_clotted_cream_per_50g
+  name: Clotted Cream (Per 50g)
+  kcal_per_100g: 580
+  protein_per_100g: 1.5
+  carbs_per_100g: 2
+  fat_per_100g: 60
+  brand: Generic
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: piece
+  unit_grams: 50
+- source: homemade
+  source_id: workout_chicken_brown_rice_avocado
+  name: Chicken, Brown Rice & Avocado Bowl
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: workout_grilled_chicken_quinoa_veg
+  name: Grilled Chicken, Quinoa & Veg
+  kcal_per_100g: 175
+  protein_per_100g: 17
+  carbs_per_100g: 17
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: workout_steak_quinoa_veg
+  name: Steak, Quinoa & Veg
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 450
+  serving_label: 450 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 450
+- source: homemade
+  source_id: workout_salmon_brown_rice_veg
+  name: Salmon, Brown Rice & Veg
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 17
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: workout_turkey_brown_rice_veg
+  name: Turkey Mince, Brown Rice & Veg
+  kcal_per_100g: 145
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: workout_beef_mince_pasta_veg
+  name: Beef Mince, Pasta & Veg
+  kcal_per_100g: 165
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 6
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: workout_chicken_mash_veg
+  name: Chicken Breast, Mash & Veg
+  kcal_per_100g: 145
+  protein_per_100g: 14
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: workout_chicken_jacket_potato_veg
+  name: Chicken & Jacket Potato with Veg
+  kcal_per_100g: 145
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: workout_chicken_tikka_basmati_veg
+  name: Chicken Tikka, Basmati & Veg
+  kcal_per_100g: 175
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: workout_chicken_curry_basmati
+  name: Chicken Curry & Basmati
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 18
+  fat_per_100g: 5
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 400
+- source: homemade
+  source_id: workout_protein_pancakes_pb_homemade
+  name: Protein Pancakes with PB Topping
+  kcal_per_100g: 215
+  protein_per_100g: 17
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 280
+- source: homemade
+  source_id: workout_protein_oats_chocolate_homemade
+  name: Protein Oats Chocolate Homemade
+  kcal_per_100g: 175
+  protein_per_100g: 17
+  carbs_per_100g: 18
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 280
+- source: homemade
+  source_id: workout_protein_oats_strawberry
+  name: Protein Oats Strawberry Homemade
+  kcal_per_100g: 175
+  protein_per_100g: 17
+  carbs_per_100g: 18
+  fat_per_100g: 4
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 280
+  serving_label: 280 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 280
+- source: homemade
+  source_id: workout_post_chicken_rice
+  name: Post-Workout Chicken & Rice
+  kcal_per_100g: 145
+  protein_per_100g: 14
+  carbs_per_100g: 18
+  fat_per_100g: 3
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+- source: homemade
+  source_id: workout_pre_oats_banana
+  name: Pre-Workout Oats & Banana
+  kcal_per_100g: 165
+  protein_per_100g: 6
+  carbs_per_100g: 30
+  fat_per_100g: 3
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+- source: homemade
+  source_id: workout_pre_rice_cake_pb
+  name: Pre-Workout Rice Cake & PB
+  kcal_per_100g: 320
+  protein_per_100g: 9
+  carbs_per_100g: 38
+  fat_per_100g: 14
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50
+- source: homemade
+  source_id: workout_pre_dates_almonds
+  name: Pre-Workout Dates & Almonds
+  kcal_per_100g: 380
+  protein_per_100g: 9
+  carbs_per_100g: 50
+  fat_per_100g: 17
+  brand: Homemade
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 50

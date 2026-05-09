@@ -1,0 +1,1495 @@
+# More dairy fresh (Devon cream, A2 milk, goats milk, buffalo yogurt) +
+# More protein brands (Kinetica, Applied Nutrition, Efectiv, Trained by JP, EHP Labs, Dymatize,
+# Transparent Labs, Naked Nutrition) +
+# Protein bar versions of classic chocolates (Snickers/Mars/Twix/Milky Way/Kinder Bueno/Bounty Hi Protein) +
+# More cooking oils (Filippo Berio/Napolina/Pukka/Lucy Bee/Mr Organic) +
+# More UK sauces (Henderson's, Yorkshire, Mrs Dunton's, Daddies, Tracklements, Neal's Yard) +
+# More condiments (chipotle/garlic/truffle/sriracha mayos, Korean pastes, Yemeni zhug, amba) +
+# Coffee shop variants (Pret + Caffè Nero full coffee menu) +
+# Branded milks (Cravendale, Lactofree, Almond Breeze, Provamel, Rice Dream, Sproud pea milk)
+
+- source: brand
+  source_id: dairy_double_devon_cream_30g
+  name: Double Devon Cream (Per 30g)
+  kcal_per_100g: 467
+  protein_per_100g: 2
+  carbs_per_100g: 3
+  fat_per_100g: 48
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dairy_extra_thick_cream_30g
+  name: Extra Thick Cream (Per 30g)
+  kcal_per_100g: 380
+  protein_per_100g: 2
+  carbs_per_100g: 3
+  fat_per_100g: 38
+  brand: Generic
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dairy_buffalo_yogurt_per_100g
+  name: Buffalo Yogurt (Per 100g)
+  kcal_per_100g: 90
+  protein_per_100g: 5
+  carbs_per_100g: 5
+  fat_per_100g: 5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dairy_goats_milk_per_100ml
+  name: Goats Milk (Per 100ml)
+  kcal_per_100g: 70
+  protein_per_100g: 3.6
+  carbs_per_100g: 4.5
+  fat_per_100g: 4.1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dairy_a2_milk_per_100ml
+  name: A2 Whole Milk (Per 100ml)
+  kcal_per_100g: 63
+  protein_per_100g: 3.4
+  carbs_per_100g: 4.7
+  fat_per_100g: 3.5
+  brand: A2
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kinetica_whey_chocolate
+  name: Kinetica Whey Protein Chocolate
+  kcal_per_100g: 380
+  protein_per_100g: 76
+  carbs_per_100g: 5
+  fat_per_100g: 4
+  brand: Kinetica
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kinetica_whey_vanilla
+  name: Kinetica Whey Protein Vanilla
+  kcal_per_100g: 380
+  protein_per_100g: 76
+  carbs_per_100g: 5
+  fat_per_100g: 4
+  brand: Kinetica
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: applied_iso_xp_chocolate
+  name: Applied Nutrition ISO-XP Chocolate
+  kcal_per_100g: 380
+  protein_per_100g: 90
+  carbs_per_100g: 1
+  fat_per_100g: 1
+  brand: Applied Nutrition
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: applied_critical_whey_chocolate
+  name: Applied Nutrition Critical Whey Chocolate
+  kcal_per_100g: 380
+  protein_per_100g: 76
+  carbs_per_100g: 5
+  fat_per_100g: 4
+  brand: Applied Nutrition
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: applied_protein_bar_chocolate
+  name: Applied Nutrition Protein Bar Chocolate
+  kcal_per_100g: 380
+  protein_per_100g: 33
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Applied Nutrition
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: brand,grocery
+  portion_unit: bar
+  unit_grams: 60
+  dietary_compat: vegetarian
+- source: brand
+  source_id: efectiv_whey_chocolate
+  name: Efectiv Nutrition Whey Chocolate
+  kcal_per_100g: 380
+  protein_per_100g: 76
+  carbs_per_100g: 5
+  fat_per_100g: 4
+  brand: Efectiv
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: efectiv_whey_strawberry
+  name: Efectiv Nutrition Whey Strawberry
+  kcal_per_100g: 380
+  protein_per_100g: 76
+  carbs_per_100g: 5
+  fat_per_100g: 4
+  brand: Efectiv
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: trained_by_jp_pro_chocolate
+  name: Trained by JP Pro Whey Chocolate
+  kcal_per_100g: 380
+  protein_per_100g: 76
+  carbs_per_100g: 5
+  fat_per_100g: 4
+  brand: Trained by JP
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: trained_by_jp_pro_vanilla
+  name: Trained by JP Pro Whey Vanilla
+  kcal_per_100g: 380
+  protein_per_100g: 76
+  carbs_per_100g: 5
+  fat_per_100g: 4
+  brand: Trained by JP
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ehp_oxywhey_chocolate
+  name: EHP Labs OxyWhey Chocolate
+  kcal_per_100g: 380
+  protein_per_100g: 76
+  carbs_per_100g: 5
+  fat_per_100g: 4
+  brand: EHP Labs
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ehp_oxyshred_blue_raspberry
+  name: EHP Labs OxyShred Blue Raspberry (Per Scoop)
+  kcal_per_100g: 30
+  protein_per_100g: 1
+  carbs_per_100g: 5
+  fat_per_100g: 0
+  brand: EHP Labs
+  region_codes: GB
+  serving_grams: 6
+  serving_label: 6 g
+  tags: brand,grocery
+  portion_unit: scoop
+  unit_grams: 6
+  dietary_compat: vegetarian
+- source: brand
+  source_id: ehp_beyond_bcaa
+  name: EHP Labs Beyond BCAA (Per 12g)
+  kcal_per_100g: 30
+  protein_per_100g: 5
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  brand: EHP Labs
+  region_codes: GB
+  serving_grams: 12
+  serving_label: 12 g
+  tags: brand,grocery
+  portion_unit: scoop
+  unit_grams: 12
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dymatize_iso100_chocolate
+  name: Dymatize ISO100 Hydrolyzed Whey Chocolate
+  kcal_per_100g: 380
+  protein_per_100g: 90
+  carbs_per_100g: 1
+  fat_per_100g: 1
+  brand: Dymatize
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: dymatize_iso100_birthday_cake
+  name: Dymatize ISO100 Birthday Cake
+  kcal_per_100g: 380
+  protein_per_100g: 90
+  carbs_per_100g: 1
+  fat_per_100g: 1
+  brand: Dymatize
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: transparent_labs_whey_chocolate
+  name: Transparent Labs Whey Isolate Chocolate
+  kcal_per_100g: 380
+  protein_per_100g: 90
+  carbs_per_100g: 1
+  fat_per_100g: 1
+  brand: Transparent Labs
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: naked_whey_unflavoured
+  name: Naked Whey Unflavoured
+  kcal_per_100g: 410
+  protein_per_100g: 84
+  carbs_per_100g: 4
+  fat_per_100g: 7.5
+  brand: Naked Nutrition
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: naked_casein_chocolate
+  name: Naked Casein Chocolate
+  kcal_per_100g: 365
+  protein_per_100g: 78
+  carbs_per_100g: 5
+  fat_per_100g: 2
+  brand: Naked Nutrition
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: naked_pea_chocolate
+  name: Naked Pea Protein Chocolate
+  kcal_per_100g: 380
+  protein_per_100g: 80
+  carbs_per_100g: 5
+  fat_per_100g: 5
+  brand: Naked Nutrition
+  region_codes: GB
+  serving_grams: 30
+  serving_label: 30 g
+  tags: brand,grocery
+  portion_unit: scoop
+  unit_grams: 30
+  dietary_compat: vegetarian
+- source: brand
+  source_id: snickers_protein_bar
+  name: Snickers Protein Bar
+  kcal_per_100g: 415
+  protein_per_100g: 33
+  carbs_per_100g: 22
+  fat_per_100g: 18
+  brand: Snickers
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: brand,grocery
+  portion_unit: bar
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: brand
+  source_id: snickers_hi_protein
+  name: Snickers Hi Protein
+  kcal_per_100g: 380
+  protein_per_100g: 33
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Snickers
+  region_codes: GB
+  serving_grams: 57
+  serving_label: 57 g
+  tags: brand,grocery
+  portion_unit: bar
+  unit_grams: 57
+  dietary_compat: vegetarian
+- source: brand
+  source_id: mars_hi_protein
+  name: Mars Hi Protein
+  kcal_per_100g: 380
+  protein_per_100g: 33
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Mars
+  region_codes: GB
+  serving_grams: 59
+  serving_label: 59 g
+  tags: brand,grocery
+  portion_unit: bar
+  unit_grams: 59
+  dietary_compat: vegetarian
+- source: brand
+  source_id: twix_protein_bar
+  name: Twix Protein Bar
+  kcal_per_100g: 410
+  protein_per_100g: 30
+  carbs_per_100g: 30
+  fat_per_100g: 16
+  brand: Twix
+  region_codes: GB
+  serving_grams: 46
+  serving_label: 46 g
+  tags: brand,grocery
+  portion_unit: bar
+  unit_grams: 46
+  dietary_compat: vegetarian
+- source: brand
+  source_id: milky_way_protein_bar
+  name: Milky Way Protein Bar
+  kcal_per_100g: 380
+  protein_per_100g: 33
+  carbs_per_100g: 22
+  fat_per_100g: 14
+  brand: Milky Way
+  region_codes: GB
+  serving_grams: 51
+  serving_label: 51 g
+  tags: brand,grocery
+  portion_unit: bar
+  unit_grams: 51
+  dietary_compat: vegetarian
+- source: brand
+  source_id: kinder_bueno_protein_bar
+  name: Kinder Bueno Protein Bar
+  kcal_per_100g: 415
+  protein_per_100g: 33
+  carbs_per_100g: 22
+  fat_per_100g: 18
+  brand: Kinder
+  region_codes: GB
+  serving_grams: 52
+  serving_label: 52 g
+  tags: brand,grocery
+  portion_unit: bar
+  unit_grams: 52
+  dietary_compat: vegetarian
+- source: brand
+  source_id: bounty_protein_bar
+  name: Bounty Protein Bar
+  kcal_per_100g: 415
+  protein_per_100g: 33
+  carbs_per_100g: 22
+  fat_per_100g: 18
+  brand: Bounty
+  region_codes: GB
+  serving_grams: 51
+  serving_label: 51 g
+  tags: brand,grocery
+  portion_unit: bar
+  unit_grams: 51
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oil_filippo_berio_extra_virgin
+  name: Filippo Berio Extra Virgin Olive Oil (Per 15ml)
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Filippo Berio
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oil_napolina_olive_oil_per_15ml
+  name: Napolina Olive Oil (Per 15ml)
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Napolina
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oil_sainsbury_olive_oil_per_15ml
+  name: Sainsbury's Olive Oil (Per 15ml)
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Sainsbury's
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oil_tesco_olive_oil_per_15ml
+  name: Tesco Olive Oil (Per 15ml)
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Tesco
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oil_kerrygold_garlic_butter_15g
+  name: Kerrygold Garlic Butter (Per 15g)
+  kcal_per_100g: 720
+  protein_per_100g: 1
+  carbs_per_100g: 1
+  fat_per_100g: 78
+  brand: Kerrygold
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oil_truff_white_truffle_per_15ml
+  name: Truff White Truffle Oil (Per 15ml)
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Truff
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oil_pukka_coconut_per_15g
+  name: Pukka Organic Coconut Oil (Per 15g)
+  kcal_per_100g: 862
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Pukka
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oil_lucy_bee_coconut_oil
+  name: Lucy Bee Coconut Oil (Per 15g)
+  kcal_per_100g: 862
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Lucy Bee
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oil_kobe_avocado_oil
+  name: Kobe Avocado Oil (Per 15ml)
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Kobe
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: oil_mr_organic_olive_oil
+  name: Mr Organic Olive Oil (Per 15ml)
+  kcal_per_100g: 884
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 100
+  brand: Mr Organic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: sauce_yorkshire_relish_per_15ml
+  name: Yorkshire Relish (Per 15ml)
+  kcal_per_100g: 75
+  protein_per_100g: 1
+  carbs_per_100g: 18
+  fat_per_100g: 0
+  brand: Yorkshire
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: sauce_msduntons_brown_sauce
+  name: Mrs Dunton's Brown Sauce (Per 15g)
+  kcal_per_100g: 130
+  protein_per_100g: 1
+  carbs_per_100g: 30
+  fat_per_100g: 0
+  brand: Mrs Dunton's
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: sauce_daddies_brown_per_15g
+  name: Daddies Brown Sauce (Per 15g)
+  kcal_per_100g: 130
+  protein_per_100g: 1
+  carbs_per_100g: 30
+  fat_per_100g: 0
+  brand: Daddies
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: sauce_tracklements_per_15g
+  name: Tracklements Tomato Ketchup (Per 15g)
+  kcal_per_100g: 105
+  protein_per_100g: 1
+  carbs_per_100g: 24
+  fat_per_100g: 0.1
+  brand: Tracklements
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: sauce_neals_yard_relish
+  name: Neal's Yard Tomato Relish (Per 15g)
+  kcal_per_100g: 130
+  protein_per_100g: 1
+  carbs_per_100g: 30
+  fat_per_100g: 0
+  brand: Neal's Yard
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_sweet_thai_chilli_per_15g
+  name: Sweet Thai Chilli Sauce (Per 15g)
+  kcal_per_100g: 220
+  protein_per_100g: 0.5
+  carbs_per_100g: 50
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_chipotle_mayo_per_15g
+  name: Chipotle Mayonnaise (Per 15g)
+  kcal_per_100g: 525
+  protein_per_100g: 1
+  carbs_per_100g: 6
+  fat_per_100g: 55
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_garlic_aioli_per_15g
+  name: Garlic Aioli (Per 15g)
+  kcal_per_100g: 700
+  protein_per_100g: 1
+  carbs_per_100g: 2
+  fat_per_100g: 76
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_truffle_mayo_per_15g
+  name: Truffle Mayonnaise (Per 15g)
+  kcal_per_100g: 720
+  protein_per_100g: 1
+  carbs_per_100g: 1
+  fat_per_100g: 79
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_sriracha_mayo_per_15g
+  name: Sriracha Mayo (Per 15g)
+  kcal_per_100g: 525
+  protein_per_100g: 1
+  carbs_per_100g: 6
+  fat_per_100g: 55
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_burger_relish_per_15g
+  name: Burger Relish (Per 15g)
+  kcal_per_100g: 175
+  protein_per_100g: 1
+  carbs_per_100g: 40
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_red_pepper_relish_per_15g
+  name: Red Pepper Relish (Per 15g)
+  kcal_per_100g: 175
+  protein_per_100g: 1
+  carbs_per_100g: 40
+  fat_per_100g: 0.2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_chilli_jam_per_15g_v2
+  name: Chilli Jam (Per 15g)
+  kcal_per_100g: 245
+  protein_per_100g: 1
+  carbs_per_100g: 60
+  fat_per_100g: 0.2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_satay_sauce_per_15g
+  name: Satay Sauce (Per 15g)
+  kcal_per_100g: 235
+  protein_per_100g: 7
+  carbs_per_100g: 11
+  fat_per_100g: 18
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_hoisin_per_15g
+  name: Hoisin Sauce (Per 15g)
+  kcal_per_100g: 220
+  protein_per_100g: 2
+  carbs_per_100g: 50
+  fat_per_100g: 0.5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_plum_sauce_per_15g
+  name: Plum Sauce (Per 15g)
+  kcal_per_100g: 175
+  protein_per_100g: 1
+  carbs_per_100g: 40
+  fat_per_100g: 0.2
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_oyster_sauce_per_15g
+  name: Oyster Sauce (Per 15g)
+  kcal_per_100g: 105
+  protein_per_100g: 1.5
+  carbs_per_100g: 25
+  fat_per_100g: 0.1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_fish_sauce_per_15ml
+  name: Fish Sauce (Per 15ml)
+  kcal_per_100g: 35
+  protein_per_100g: 5
+  carbs_per_100g: 4
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_soy_dark_per_15ml
+  name: Dark Soy Sauce (Per 15ml)
+  kcal_per_100g: 65
+  protein_per_100g: 9
+  carbs_per_100g: 9
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_soy_light_per_15ml
+  name: Light Soy Sauce (Per 15ml)
+  kcal_per_100g: 60
+  protein_per_100g: 9
+  carbs_per_100g: 8
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_tamari_per_15ml
+  name: Tamari Soy Sauce (Per 15ml)
+  kcal_per_100g: 70
+  protein_per_100g: 11
+  carbs_per_100g: 6
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_coconut_aminos_per_15ml
+  name: Coconut Aminos (Per 15ml)
+  kcal_per_100g: 90
+  protein_per_100g: 0.4
+  carbs_per_100g: 22
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_ponzu_per_15ml
+  name: Ponzu Sauce (Per 15ml)
+  kcal_per_100g: 65
+  protein_per_100g: 4
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_xxx_korean_chilli_per_15g
+  name: Korean Chilli Paste Gochujang (Per 15g)
+  kcal_per_100g: 165
+  protein_per_100g: 4
+  carbs_per_100g: 32
+  fat_per_100g: 1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_doenjang_per_15g
+  name: Korean Soybean Paste Doenjang (Per 15g)
+  kcal_per_100g: 145
+  protein_per_100g: 12
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_ssamjang_per_15g
+  name: Korean Ssamjang (Per 15g)
+  kcal_per_100g: 195
+  protein_per_100g: 5
+  carbs_per_100g: 25
+  fat_per_100g: 8
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_chimichurri_homemade
+  name: Chimichurri Sauce Homemade (Per 15g)
+  kcal_per_100g: 275
+  protein_per_100g: 1
+  carbs_per_100g: 4
+  fat_per_100g: 28
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_zhug_per_15g
+  name: Zhug Yemeni Hot Sauce (Per 15g)
+  kcal_per_100g: 175
+  protein_per_100g: 4
+  carbs_per_100g: 17
+  fat_per_100g: 11
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: cond_amba_per_15g
+  name: Amba Mango Sauce (Per 15g)
+  kcal_per_100g: 145
+  protein_per_100g: 1
+  carbs_per_100g: 32
+  fat_per_100g: 1
+  brand: Generic
+  region_codes: GB
+  serving_grams: 15
+  serving_label: 15 g
+  tags: brand,grocery
+  portion_unit: tbsp
+  unit_grams: 15
+  dietary_compat: vegetarian
+- source: brand
+  source_id: coffee_pret_flat_white
+  name: Pret Flat White (Standard)
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 10
+  fat_per_100g: 7
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 230
+  serving_label: 230 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 230
+  dietary_compat: vegetarian
+- source: brand
+  source_id: coffee_pret_latte_regular
+  name: Pret Latte (Regular)
+  kcal_per_100g: 105
+  protein_per_100g: 6
+  carbs_per_100g: 9
+  fat_per_100g: 5
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: brand
+  source_id: coffee_pret_cappuccino
+  name: Pret Cappuccino (Regular)
+  kcal_per_100g: 75
+  protein_per_100g: 4
+  carbs_per_100g: 6
+  fat_per_100g: 4
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: brand
+  source_id: coffee_pret_mocha
+  name: Pret Mocha (Regular)
+  kcal_per_100g: 230
+  protein_per_100g: 7
+  carbs_per_100g: 30
+  fat_per_100g: 9
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: brand
+  source_id: coffee_pret_iced_latte
+  name: Pret Iced Latte (Regular)
+  kcal_per_100g: 90
+  protein_per_100g: 5
+  carbs_per_100g: 8
+  fat_per_100g: 4
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: brand
+  source_id: coffee_pret_chai_latte
+  name: Pret Chai Latte (Regular)
+  kcal_per_100g: 240
+  protein_per_100g: 6
+  carbs_per_100g: 42
+  fat_per_100g: 5
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: brand
+  source_id: coffee_pret_decaf_americano
+  name: Pret Decaf Americano
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: brand
+  source_id: coffee_pret_hot_chocolate
+  name: Pret Hot Chocolate (Regular)
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 8
+  brand: Pret A Manger
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: brand
+  source_id: coffee_nero_flat_white
+  name: Caffè Nero Flat White (Regular)
+  kcal_per_100g: 130
+  protein_per_100g: 7
+  carbs_per_100g: 10
+  fat_per_100g: 7
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 230
+  serving_label: 230 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 230
+  dietary_compat: vegetarian
+- source: brand
+  source_id: coffee_nero_latte_regular
+  name: Caffè Nero Latte (Regular)
+  kcal_per_100g: 105
+  protein_per_100g: 6
+  carbs_per_100g: 9
+  fat_per_100g: 5
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: brand
+  source_id: coffee_nero_cappuccino_regular
+  name: Caffè Nero Cappuccino (Regular)
+  kcal_per_100g: 75
+  protein_per_100g: 4
+  carbs_per_100g: 6
+  fat_per_100g: 4
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: brand
+  source_id: coffee_nero_mocha_regular
+  name: Caffè Nero Mocha (Regular)
+  kcal_per_100g: 230
+  protein_per_100g: 7
+  carbs_per_100g: 30
+  fat_per_100g: 9
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: brand
+  source_id: coffee_nero_americano_regular
+  name: Caffè Nero Americano (Regular)
+  kcal_per_100g: 5
+  protein_per_100g: 0
+  carbs_per_100g: 1
+  fat_per_100g: 0
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: brand
+  source_id: coffee_nero_iced_latte
+  name: Caffè Nero Iced Latte
+  kcal_per_100g: 90
+  protein_per_100g: 5
+  carbs_per_100g: 8
+  fat_per_100g: 4
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: brand
+  source_id: coffee_nero_milano_iced_coffee
+  name: Caffè Nero Milano Iced Coffee
+  kcal_per_100g: 60
+  protein_per_100g: 2
+  carbs_per_100g: 8
+  fat_per_100g: 2
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: brand
+  source_id: coffee_nero_hot_chocolate
+  name: Caffè Nero Hot Chocolate (Regular)
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 28
+  fat_per_100g: 8
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: brand
+  source_id: coffee_nero_chai_latte
+  name: Caffè Nero Chai Latte (Regular)
+  kcal_per_100g: 240
+  protein_per_100g: 6
+  carbs_per_100g: 42
+  fat_per_100g: 5
+  brand: Caffè Nero
+  region_codes: GB
+  serving_grams: 350
+  serving_label: 350 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 350
+  dietary_compat: vegetarian
+- source: brand
+  source_id: milk_cravendale_whole
+  name: Cravendale Whole Milk (Per 100ml)
+  kcal_per_100g: 63
+  protein_per_100g: 3.4
+  carbs_per_100g: 4.7
+  fat_per_100g: 3.5
+  brand: Cravendale
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: milk_cravendale_semi
+  name: Cravendale Semi-Skimmed (Per 100ml)
+  kcal_per_100g: 46
+  protein_per_100g: 3.4
+  carbs_per_100g: 4.7
+  fat_per_100g: 1.7
+  brand: Cravendale
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: milk_cravendale_skimmed
+  name: Cravendale Skimmed (Per 100ml)
+  kcal_per_100g: 35
+  protein_per_100g: 3.5
+  carbs_per_100g: 5
+  fat_per_100g: 0.1
+  brand: Cravendale
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: milk_lactofree_chocolate_per_100ml
+  name: Lactofree Chocolate Milk (Per 100ml)
+  kcal_per_100g: 65
+  protein_per_100g: 3.4
+  carbs_per_100g: 9
+  fat_per_100g: 1.7
+  brand: Lactofree
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: milk_jersey_per_100ml
+  name: Jersey Cow Milk (Per 100ml)
+  kcal_per_100g: 75
+  protein_per_100g: 4
+  carbs_per_100g: 4.5
+  fat_per_100g: 5
+  brand: Generic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: milk_almond_breeze_unsweetened
+  name: Almond Breeze Unsweetened (Per 100ml)
+  kcal_per_100g: 13
+  protein_per_100g: 0.4
+  carbs_per_100g: 0
+  fat_per_100g: 1.1
+  brand: Almond Breeze
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: milk_almond_breeze_original
+  name: Almond Breeze Original (Per 100ml)
+  kcal_per_100g: 24
+  protein_per_100g: 0.4
+  carbs_per_100g: 3
+  fat_per_100g: 1.1
+  brand: Almond Breeze
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: milk_almond_breeze_chocolate
+  name: Almond Breeze Chocolate (Per 100ml)
+  kcal_per_100g: 50
+  protein_per_100g: 0.5
+  carbs_per_100g: 9
+  fat_per_100g: 1.5
+  brand: Almond Breeze
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: milk_provamel_oat_per_100ml
+  name: Provamel Oat Milk (Per 100ml)
+  kcal_per_100g: 45
+  protein_per_100g: 0.5
+  carbs_per_100g: 7
+  fat_per_100g: 1.5
+  brand: Provamel
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: milk_provamel_almond_per_100ml
+  name: Provamel Almond Milk (Per 100ml)
+  kcal_per_100g: 24
+  protein_per_100g: 0.4
+  carbs_per_100g: 3
+  fat_per_100g: 1.1
+  brand: Provamel
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: milk_provamel_soya_per_100ml
+  name: Provamel Soya Milk (Per 100ml)
+  kcal_per_100g: 39
+  protein_per_100g: 3.5
+  carbs_per_100g: 1.5
+  fat_per_100g: 1.8
+  brand: Provamel
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: milk_dream_rice_per_100ml
+  name: Rice Dream Rice Milk (Per 100ml)
+  kcal_per_100g: 49
+  protein_per_100g: 0.1
+  carbs_per_100g: 10
+  fat_per_100g: 1
+  brand: Rice Dream
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: brand
+  source_id: milk_pea_milk_per_100ml
+  name: Pea Milk Sproud (Per 100ml)
+  kcal_per_100g: 30
+  protein_per_100g: 1.5
+  carbs_per_100g: 3
+  fat_per_100g: 1.5
+  brand: Sproud
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: brand,grocery
+  portion_unit: ml
+  unit_grams: 100
+  dietary_compat: vegetarian

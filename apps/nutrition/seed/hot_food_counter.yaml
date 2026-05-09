@@ -1,0 +1,202 @@
+# hot_food_counter.yaml — supermarket hot counter: Tesco/M&S/Asda/Sainsbury's rotisserie whole chicken + hot pieces (drumsticks/thighs/wings), pork ribs, hot Kievs, pork pies, sausage rolls, Scotch eggs.
+- source: gymflow
+  source_id: tesco_rotisserie_whole_chicken_per_100
+  name: Tesco Rotisserie Whole Chicken (per 100g)
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 11
+  serving_grams: 1100
+  serving_label: 1 grams (1100 g)
+  portion_unit: grams
+  tags: meat,branded,chicken,high_protein,supermarket
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: tesco_hot_chicken_drumstick
+  name: Tesco Hot Chicken Drumstick (1)
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 27
+  carbs_per_100g: 0
+  fat_per_100g: 7
+  serving_grams: 75
+  serving_label: 1 piece (75 g)
+  portion_unit: piece
+  tags: meat,branded,chicken,high_protein,supermarket
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: ''
+  unit_grams: 75
+- source: gymflow
+  source_id: tesco_hot_chicken_thigh
+  name: Tesco Hot Chicken Thigh (1)
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 24
+  carbs_per_100g: 0
+  fat_per_100g: 13
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: meat,branded,chicken,high_protein,supermarket
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: ''
+  unit_grams: 100
+- source: gymflow
+  source_id: mands_rotisserie_whole_chicken
+  name: M&S Rotisserie Whole Chicken (per 100g)
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 11
+  serving_grams: 1100
+  serving_label: 1 grams (1100 g)
+  portion_unit: grams
+  tags: meat,branded,chicken,high_protein,supermarket
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: mands_hot_chicken_pieces
+  name: M&S Hot Chicken Pieces (per 100g)
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 11
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: meat,branded,chicken,high_protein,supermarket
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: asda_rotisserie_whole_chicken
+  name: Asda Rotisserie Whole Chicken (per 100g)
+  brand: Asda
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 11
+  serving_grams: 1100
+  serving_label: 1 grams (1100 g)
+  portion_unit: grams
+  tags: meat,branded,chicken,high_protein,supermarket
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: sainsburys_rotisserie_chicken
+  name: Sainsbury's Rotisserie Whole Chicken (per 100g)
+  brand: Sainsbury's
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 11
+  serving_grams: 1100
+  serving_label: 1 grams (1100 g)
+  portion_unit: grams
+  tags: meat,branded,chicken,high_protein,supermarket
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: sainsburys_hot_chicken_wings
+  name: Sainsbury's Hot Chicken Wings (per 100g)
+  brand: Sainsbury's
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 22
+  carbs_per_100g: 4
+  fat_per_100g: 14
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: meat,branded,chicken,supermarket
+  dietary_compat: halal,pescatarian,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: hot_food_pork_ribs_rack
+  name: Hot Pork Ribs Rack (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 25
+  carbs_per_100g: 14
+  fat_per_100g: 11
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: meat,supermarket,high_protein
+  dietary_compat: pescatarian,dairy_free
+  allergens: sulphites
+- source: gymflow
+  source_id: hot_food_chicken_kievs_2
+  name: Hot Chicken Kievs (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 14
+  carbs_per_100g: 14
+  fat_per_100g: 13
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: meat,branded,chicken,supermarket
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 130
+- source: gymflow
+  source_id: hot_food_pork_pie
+  name: Pork Pie (1 small)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 9
+  carbs_per_100g: 25
+  fat_per_100g: 27
+  serving_grams: 140
+  serving_label: 1 piece (140 g)
+  portion_unit: piece
+  tags: meat,branded,bakery
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 140
+- source: gymflow
+  source_id: hot_food_sausage_roll_gourmet
+  name: Sausage Roll (gourmet, large)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 24
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: meat,bakery
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 130
+- source: gymflow
+  source_id: hot_food_scotch_egg
+  name: Scotch Egg (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 12
+  carbs_per_100g: 14
+  fat_per_100g: 16
+  serving_grams: 113
+  serving_label: 1 piece (113 g)
+  portion_unit: piece
+  tags: meat,branded,bakery
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 113

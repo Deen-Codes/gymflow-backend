@@ -1,0 +1,302 @@
+# drink_size_variants.yaml — Costa Primo/Massimo size variants for Latte/Americano/Cappuccino/Mocha/Hot Choc, Starbucks Short/Tall variants, McDonald's/KFC drink sizes (small/large), kids fries.
+- source: gymflow
+  source_id: costa_latte_primo_semi
+  name: Costa Latte Primo (small, semi)
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 3.5
+  carbs_per_100g: 4.5
+  fat_per_100g: 2.0
+  serving_grams: 240
+  serving_label: 1 ml (240 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: costa_latte_massimo_semi
+  name: Costa Latte Massimo (extra large, semi)
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 3.5
+  carbs_per_100g: 4.5
+  fat_per_100g: 2.0
+  serving_grams: 600
+  serving_label: 1 ml (600 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: costa_americano_primo
+  name: Costa Americano (small/primo)
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 2
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.3
+  fat_per_100g: 0
+  serving_grams: 240
+  serving_label: 1 ml (240 g)
+  portion_unit: ml
+  tags: chain,coffee,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: costa_americano_massimo
+  name: Costa Americano (XL/massimo)
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 2
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.3
+  fat_per_100g: 0
+  serving_grams: 600
+  serving_label: 1 ml (600 g)
+  portion_unit: ml
+  tags: chain,coffee,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: costa_cappuccino_primo_semi
+  name: Costa Cappuccino Primo (small, semi)
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 38
+  protein_per_100g: 2.5
+  carbs_per_100g: 3.5
+  fat_per_100g: 1.5
+  serving_grams: 240
+  serving_label: 1 ml (240 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: costa_cappuccino_massimo_semi
+  name: Costa Cappuccino Massimo (XL, semi)
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 38
+  protein_per_100g: 2.5
+  carbs_per_100g: 3.5
+  fat_per_100g: 1.5
+  serving_grams: 600
+  serving_label: 1 ml (600 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: costa_mocha_primo_semi
+  name: Costa Mocha Primo (small, semi)
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 3.5
+  carbs_per_100g: 14.0
+  fat_per_100g: 3.0
+  serving_grams: 240
+  serving_label: 1 ml (240 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+- source: gymflow
+  source_id: costa_hot_choc_primo
+  name: Costa Hot Chocolate Primo (small, semi)
+  brand: Costa Coffee
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 4.5
+  carbs_per_100g: 14.0
+  fat_per_100g: 3.5
+  serving_grams: 240
+  serving_label: 1 ml (240 g)
+  portion_unit: ml
+  tags: chain,drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+- source: gymflow
+  source_id: starbucks_latte_short_semi
+  name: Starbucks Caffe Latte Short (semi)
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 3.5
+  carbs_per_100g: 4.5
+  fat_per_100g: 2.0
+  serving_grams: 240
+  serving_label: 1 ml (240 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: starbucks_latte_tall_semi
+  name: Starbucks Caffe Latte Tall (semi)
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 3.5
+  carbs_per_100g: 4.5
+  fat_per_100g: 2.0
+  serving_grams: 350
+  serving_label: 1 ml (350 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: starbucks_americano_short
+  name: Starbucks Americano Short
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 2
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.3
+  fat_per_100g: 0
+  serving_grams: 240
+  serving_label: 1 ml (240 g)
+  portion_unit: ml
+  tags: chain,coffee,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: starbucks_americano_tall
+  name: Starbucks Americano Tall
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 2
+  protein_per_100g: 0.1
+  carbs_per_100g: 0.3
+  fat_per_100g: 0
+  serving_grams: 350
+  serving_label: 1 ml (350 g)
+  portion_unit: ml
+  tags: chain,coffee,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: starbucks_cappuccino_short_semi
+  name: Starbucks Cappuccino Short (semi)
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 38
+  protein_per_100g: 2.5
+  carbs_per_100g: 3.5
+  fat_per_100g: 1.5
+  serving_grams: 240
+  serving_label: 1 ml (240 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: starbucks_cappuccino_tall_semi
+  name: Starbucks Cappuccino Tall (semi)
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 38
+  protein_per_100g: 2.5
+  carbs_per_100g: 3.5
+  fat_per_100g: 1.5
+  serving_grams: 350
+  serving_label: 1 ml (350 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: starbucks_mocha_tall_semi
+  name: Starbucks Mocha Tall (semi)
+  brand: Starbucks
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 3.5
+  carbs_per_100g: 14.0
+  fat_per_100g: 3.0
+  serving_grams: 350
+  serving_label: 1 ml (350 g)
+  portion_unit: ml
+  tags: chain,coffee
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,soy
+- source: gymflow
+  source_id: mcd_coke_small
+  name: McDonald's Coca-Cola (small)
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 0
+  carbs_per_100g: 10.6
+  fat_per_100g: 0
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: chain,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: mcd_coke_large
+  name: McDonald's Coca-Cola (large)
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 0
+  carbs_per_100g: 10.6
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 ml (500 g)
+  portion_unit: ml
+  tags: chain,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: kfc_pepsi_small
+  name: KFC Pepsi (small)
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 41
+  protein_per_100g: 0
+  carbs_per_100g: 10
+  fat_per_100g: 0
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: chain,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: kfc_pepsi_large
+  name: KFC Pepsi (large)
+  brand: KFC
+  region_codes: gb
+  kcal_per_100g: 41
+  protein_per_100g: 0
+  carbs_per_100g: 10
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 ml (500 g)
+  portion_unit: ml
+  tags: chain,drink
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: mcd_fries_kids
+  name: McDonald's Kids' Fries
+  brand: McDonald's
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 3
+  carbs_per_100g: 34
+  fat_per_100g: 15
+  serving_grams: 50
+  serving_label: 1 portion (50 g)
+  portion_unit: pack
+  tags: chain,fast_food,side
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 50

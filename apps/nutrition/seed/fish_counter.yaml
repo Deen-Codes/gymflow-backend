@@ -1,0 +1,254 @@
+# fish_counter.yaml — fresh fish counter: whole sea bass/mackerel, sea bream, smoked mackerel/trout, dressed crab, crab claws, lobster tail, mussels, plaice, halibut, swordfish, kingfish, squid/calamari, octopus.
+- source: gymflow
+  source_id: fish_sea_bass_whole_cooked
+  name: Whole Sea Bass, cooked (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 20
+  carbs_per_100g: 0
+  fat_per_100g: 9.5
+  serving_grams: 250
+  serving_label: 1 piece (250 g)
+  portion_unit: piece
+  tags: fish,whole,high_protein,omega3
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 250
+- source: gymflow
+  source_id: fish_sea_bass_2_fillets
+  name: Sea Bass Fillets (2)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 20
+  carbs_per_100g: 0
+  fat_per_100g: 9.5
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: fish,high_protein,omega3
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 130
+- source: gymflow
+  source_id: fish_sea_bream_fillets
+  name: Sea Bream Fillet, cooked
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 20
+  carbs_per_100g: 0
+  fat_per_100g: 9
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: fish,high_protein,omega3
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 130
+- source: gymflow
+  source_id: fish_whole_mackerel_cooked
+  name: Whole Mackerel, cooked
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 262
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 19
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: fish,whole,high_protein,omega3
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 200
+- source: gymflow
+  source_id: fish_smoked_mackerel_fillet
+  name: Smoked Mackerel Fillet (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 305
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 26
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: fish,high_protein,omega3
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 130
+- source: gymflow
+  source_id: fish_smoked_trout_slice
+  name: Smoked Trout Slice
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 21
+  carbs_per_100g: 0
+  fat_per_100g: 7
+  serving_grams: 25
+  serving_label: 1 slice (25 g)
+  portion_unit: slice
+  tags: fish,high_protein,omega3
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 25
+- source: gymflow
+  source_id: fish_dressed_crab_per_100
+  name: Dressed Crab (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 20
+  carbs_per_100g: 0.5
+  fat_per_100g: 5
+  serving_grams: 100
+  serving_label: 1 portion (100 g)
+  portion_unit: pack
+  tags: fish,high_protein,low_fat
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: crustaceans,eggs,mustard
+  unit_grams: 100
+- source: gymflow
+  source_id: fish_crab_claws_2_cooked
+  name: Crab Claws, cooked (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 87
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 1
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: fish,high_protein,low_fat,low_carb
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: crustaceans
+- source: gymflow
+  source_id: fish_lobster_tail_cooked
+  name: Lobster Tail, cooked (1)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 89
+  protein_per_100g: 19
+  carbs_per_100g: 0
+  fat_per_100g: 1
+  serving_grams: 100
+  serving_label: 1 piece (100 g)
+  portion_unit: piece
+  tags: fish,high_protein,low_fat,low_carb
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: crustaceans
+  unit_grams: 100
+- source: gymflow
+  source_id: fish_mussels_cooked_pot
+  name: Mussels in Shells, cooked (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 86
+  protein_per_100g: 12
+  carbs_per_100g: 4
+  fat_per_100g: 2.2
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: fish,high_protein,low_fat
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: molluscs
+  unit_grams: 250
+- source: gymflow
+  source_id: fish_plaice_fillet_cooked
+  name: Plaice Fillet, cooked
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 91
+  protein_per_100g: 18
+  carbs_per_100g: 0
+  fat_per_100g: 2
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: fish,high_protein,low_fat
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 130
+- source: gymflow
+  source_id: fish_halibut_steak_cooked
+  name: Halibut Steak, cooked
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 140
+  protein_per_100g: 27
+  carbs_per_100g: 0
+  fat_per_100g: 3
+  serving_grams: 150
+  serving_label: 1 piece (150 g)
+  portion_unit: piece
+  tags: fish,high_protein,low_fat
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 150
+- source: gymflow
+  source_id: fish_swordfish_steak_cooked
+  name: Swordfish Steak, cooked
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 155
+  protein_per_100g: 25
+  carbs_per_100g: 0
+  fat_per_100g: 5
+  serving_grams: 150
+  serving_label: 1 piece (150 g)
+  portion_unit: piece
+  tags: fish,high_protein
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 150
+- source: gymflow
+  source_id: fish_kingfish_cooked
+  name: King Fish (Kingfish), cooked
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 150
+  protein_per_100g: 24
+  carbs_per_100g: 0
+  fat_per_100g: 5
+  serving_grams: 150
+  serving_label: 1 piece (150 g)
+  portion_unit: piece
+  tags: fish,high_protein
+  dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
+  allergens: fish
+  unit_grams: 150
+- source: gymflow
+  source_id: fish_squid_calamari_per_100
+  name: Squid (Calamari), cooked plain (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 18
+  carbs_per_100g: 7
+  fat_per_100g: 7
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: fish,high_protein
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: molluscs
+- source: gymflow
+  source_id: fish_octopus_cooked_per_100
+  name: Octopus, cooked (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 30
+  carbs_per_100g: 4
+  fat_per_100g: 2
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: fish,high_protein,low_fat
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: molluscs

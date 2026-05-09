@@ -1,0 +1,2233 @@
+# Dairy brands expansion (Onken / Liberté / Activia / Yeo Valley / Müller / Arla / Skyr /
+# Biotiful / The Collective / Alpro / Coconut Collaborative / Rachel's / Fage extras /
+# Hartley's jellies / Ambrosia)
+# + Booths / Ocado / Spar / Nisa supermarket convenience expansion
+# + More frozen ice creams (Jude's, Magnum full, Cornetto, Wall's Viennetta, Little Moons full)
+
+- source: dairy
+  source_id: onken_natural_set_per_100g
+  name: Onken Natural Set Yogurt (Per 100g)
+  kcal_per_100g: 60
+  protein_per_100g: 5
+  carbs_per_100g: 4
+  fat_per_100g: 3
+  brand: Onken
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: onken_natural_biopot_500g
+  name: Onken Natural Biopot (Per 100g)
+  kcal_per_100g: 60
+  protein_per_100g: 5
+  carbs_per_100g: 4
+  fat_per_100g: 3
+  brand: Onken
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: onken_strawberry_biopot
+  name: Onken Strawberry Biopot (Per 100g)
+  kcal_per_100g: 80
+  protein_per_100g: 4
+  carbs_per_100g: 12
+  fat_per_100g: 2
+  brand: Onken
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: onken_raspberry_biopot
+  name: Onken Raspberry Biopot (Per 100g)
+  kcal_per_100g: 80
+  protein_per_100g: 4
+  carbs_per_100g: 12
+  fat_per_100g: 2
+  brand: Onken
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: onken_peach_biopot
+  name: Onken Peach Biopot (Per 100g)
+  kcal_per_100g: 80
+  protein_per_100g: 4
+  carbs_per_100g: 12
+  fat_per_100g: 2
+  brand: Onken
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: onken_cherry_biopot
+  name: Onken Cherry Biopot (Per 100g)
+  kcal_per_100g: 80
+  protein_per_100g: 4
+  carbs_per_100g: 12
+  fat_per_100g: 2
+  brand: Onken
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: onken_blueberry_biopot
+  name: Onken Blueberry Biopot (Per 100g)
+  kcal_per_100g: 80
+  protein_per_100g: 4
+  carbs_per_100g: 12
+  fat_per_100g: 2
+  brand: Onken
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: onken_fat_free_natural
+  name: Onken Fat Free Natural Yogurt (Per 100g)
+  kcal_per_100g: 50
+  protein_per_100g: 5
+  carbs_per_100g: 7
+  fat_per_100g: 0.1
+  brand: Onken
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: onken_fat_free_strawberry
+  name: Onken Fat Free Strawberry (Per 100g)
+  kcal_per_100g: 60
+  protein_per_100g: 4
+  carbs_per_100g: 11
+  fat_per_100g: 0.1
+  brand: Onken
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: liberte_greek_strawberry_per_pot
+  name: Liberté Greek Strawberry (Per Pot)
+  kcal_per_100g: 110
+  protein_per_100g: 5
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  brand: Liberté
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: liberte_greek_blueberry
+  name: Liberté Greek Blueberry (Per Pot)
+  kcal_per_100g: 110
+  protein_per_100g: 5
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  brand: Liberté
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: liberte_greek_coconut
+  name: Liberté Greek Coconut (Per Pot)
+  kcal_per_100g: 130
+  protein_per_100g: 4
+  carbs_per_100g: 14
+  fat_per_100g: 7
+  brand: Liberté
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: liberte_greek_vanilla
+  name: Liberté Greek Vanilla (Per Pot)
+  kcal_per_100g: 110
+  protein_per_100g: 5
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  brand: Liberté
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: liberte_greek_lemon
+  name: Liberté Greek Lemon (Per Pot)
+  kcal_per_100g: 110
+  protein_per_100g: 5
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  brand: Liberté
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: activia_intensely_creamy_strawberry
+  name: Activia Intensely Creamy Strawberry (Per Pot)
+  kcal_per_100g: 90
+  protein_per_100g: 5
+  carbs_per_100g: 11
+  fat_per_100g: 3
+  brand: Activia
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 110
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: activia_intensely_creamy_vanilla
+  name: Activia Intensely Creamy Vanilla (Per Pot)
+  kcal_per_100g: 90
+  protein_per_100g: 5
+  carbs_per_100g: 11
+  fat_per_100g: 3
+  brand: Activia
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 110
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: activia_breakfast_oats_strawberry
+  name: Activia Breakfast Oats Strawberry (Per Pot)
+  kcal_per_100g: 110
+  protein_per_100g: 5
+  carbs_per_100g: 17
+  fat_per_100g: 2
+  brand: Activia
+  region_codes: GB
+  serving_grams: 165
+  serving_label: 165 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 165
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: activia_breakfast_oats_pomegranate
+  name: Activia Breakfast Oats Pomegranate (Per Pot)
+  kcal_per_100g: 110
+  protein_per_100g: 5
+  carbs_per_100g: 17
+  fat_per_100g: 2
+  brand: Activia
+  region_codes: GB
+  serving_grams: 165
+  serving_label: 165 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 165
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: activia_drink_strawberry
+  name: Activia Drink Strawberry (Per Bottle)
+  kcal_per_100g: 65
+  protein_per_100g: 3
+  carbs_per_100g: 12
+  fat_per_100g: 1.2
+  brand: Activia
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: activia_drink_vanilla
+  name: Activia Drink Vanilla (Per Bottle)
+  kcal_per_100g: 65
+  protein_per_100g: 3
+  carbs_per_100g: 12
+  fat_per_100g: 1.2
+  brand: Activia
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: activia_drink_pomegranate
+  name: Activia Drink Pomegranate (Per Bottle)
+  kcal_per_100g: 65
+  protein_per_100g: 3
+  carbs_per_100g: 12
+  fat_per_100g: 1.2
+  brand: Activia
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: activia_protein_strawberry
+  name: Activia Protein Strawberry (Per Pot)
+  kcal_per_100g: 95
+  protein_per_100g: 8
+  carbs_per_100g: 9
+  fat_per_100g: 3
+  brand: Activia
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: activia_protein_vanilla
+  name: Activia Protein Vanilla (Per Pot)
+  kcal_per_100g: 95
+  protein_per_100g: 8
+  carbs_per_100g: 9
+  fat_per_100g: 3
+  brand: Activia
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: yeo_organic_strawberry_per_pot
+  name: Yeo Valley Organic Strawberry (Per Pot)
+  kcal_per_100g: 95
+  protein_per_100g: 4
+  carbs_per_100g: 14
+  fat_per_100g: 3
+  brand: Yeo Valley
+  region_codes: GB
+  serving_grams: 120
+  serving_label: 120 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 120
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: yeo_organic_blueberry
+  name: Yeo Valley Organic Blueberry (Per Pot)
+  kcal_per_100g: 95
+  protein_per_100g: 4
+  carbs_per_100g: 14
+  fat_per_100g: 3
+  brand: Yeo Valley
+  region_codes: GB
+  serving_grams: 120
+  serving_label: 120 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 120
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: yeo_organic_vanilla
+  name: Yeo Valley Organic Vanilla (Per Pot)
+  kcal_per_100g: 95
+  protein_per_100g: 4
+  carbs_per_100g: 14
+  fat_per_100g: 3
+  brand: Yeo Valley
+  region_codes: GB
+  serving_grams: 120
+  serving_label: 120 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 120
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: yeo_organic_natural_500g
+  name: Yeo Valley Organic Natural Yogurt (Per 100g)
+  kcal_per_100g: 60
+  protein_per_100g: 4.5
+  carbs_per_100g: 5
+  fat_per_100g: 3
+  brand: Yeo Valley
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: yeo_organic_greek_natural
+  name: Yeo Valley Organic Greek Natural (Per 100g)
+  kcal_per_100g: 90
+  protein_per_100g: 5
+  carbs_per_100g: 5
+  fat_per_100g: 6
+  brand: Yeo Valley
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: yeo_organic_kefir_strawberry
+  name: Yeo Valley Organic Kefir Strawberry
+  kcal_per_100g: 65
+  protein_per_100g: 3.5
+  carbs_per_100g: 9
+  fat_per_100g: 1.5
+  brand: Yeo Valley
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: yeo_super_thick_strawberry
+  name: Yeo Valley Super Thick Strawberry (Per Pot)
+  kcal_per_100g: 105
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 3
+  brand: Yeo Valley
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: yeo_super_thick_natural
+  name: Yeo Valley Super Thick Natural
+  kcal_per_100g: 95
+  protein_per_100g: 6
+  carbs_per_100g: 5
+  fat_per_100g: 6
+  brand: Yeo Valley
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: muller_corner_blueberry
+  name: Müller Corner Blueberry
+  kcal_per_100g: 100
+  protein_per_100g: 4
+  carbs_per_100g: 13
+  fat_per_100g: 3.5
+  brand: Müller
+  region_codes: GB
+  serving_grams: 135
+  serving_label: 135 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 135
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: muller_corner_raspberry
+  name: Müller Corner Raspberry
+  kcal_per_100g: 100
+  protein_per_100g: 4
+  carbs_per_100g: 13
+  fat_per_100g: 3.5
+  brand: Müller
+  region_codes: GB
+  serving_grams: 135
+  serving_label: 135 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 135
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: muller_corner_peach_apricot
+  name: Müller Corner Peach & Apricot
+  kcal_per_100g: 100
+  protein_per_100g: 4
+  carbs_per_100g: 13
+  fat_per_100g: 3.5
+  brand: Müller
+  region_codes: GB
+  serving_grams: 135
+  serving_label: 135 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 135
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: muller_corner_lemon_cheesecake
+  name: Müller Corner Lemon Cheesecake
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 18
+  fat_per_100g: 6
+  brand: Müller
+  region_codes: GB
+  serving_grams: 135
+  serving_label: 135 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 135
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: muller_corner_strawberry_shortcake
+  name: Müller Corner Strawberry Shortcake
+  kcal_per_100g: 145
+  protein_per_100g: 4
+  carbs_per_100g: 18
+  fat_per_100g: 6
+  brand: Müller
+  region_codes: GB
+  serving_grams: 135
+  serving_label: 135 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 135
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: arla_protein_strawberry
+  name: Arla Protein Strawberry (Per Pot)
+  kcal_per_100g: 75
+  protein_per_100g: 11
+  carbs_per_100g: 8
+  fat_per_100g: 0.4
+  brand: Arla
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: arla_protein_vanilla
+  name: Arla Protein Vanilla (Per Pot)
+  kcal_per_100g: 75
+  protein_per_100g: 11
+  carbs_per_100g: 8
+  fat_per_100g: 0.4
+  brand: Arla
+  region_codes: GB
+  serving_grams: 200
+  serving_label: 200 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 200
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: arla_protein_drink_chocolate
+  name: Arla Protein Drink Chocolate (Per Bottle 250ml)
+  kcal_per_100g: 60
+  protein_per_100g: 9
+  carbs_per_100g: 6
+  fat_per_100g: 0.4
+  brand: Arla
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: yogurt,dairy
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: arla_protein_drink_strawberry
+  name: Arla Protein Drink Strawberry (Per Bottle 250ml)
+  kcal_per_100g: 60
+  protein_per_100g: 9
+  carbs_per_100g: 6
+  fat_per_100g: 0.4
+  brand: Arla
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: yogurt,dairy
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: arla_lactofree_yogurt_strawberry
+  name: Arla Lactofree Strawberry Yogurt (Per Pot)
+  kcal_per_100g: 95
+  protein_per_100g: 5
+  carbs_per_100g: 13
+  fat_per_100g: 2.5
+  brand: Arla Lactofree
+  region_codes: GB
+  serving_grams: 175
+  serving_label: 175 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 175
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: biotiful_kefir_natural_500ml
+  name: Biotiful Kefir Natural (Per 100ml)
+  kcal_per_100g: 56
+  protein_per_100g: 3.5
+  carbs_per_100g: 5
+  fat_per_100g: 1.5
+  brand: Biotiful
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: ml
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: biotiful_kefir_blueberry
+  name: Biotiful Kefir Blueberry
+  kcal_per_100g: 60
+  protein_per_100g: 3
+  carbs_per_100g: 9
+  fat_per_100g: 1.2
+  brand: Biotiful
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: biotiful_kefir_raspberry
+  name: Biotiful Kefir Raspberry
+  kcal_per_100g: 60
+  protein_per_100g: 3
+  carbs_per_100g: 9
+  fat_per_100g: 1.2
+  brand: Biotiful
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: biotiful_kefir_peach_passion
+  name: Biotiful Kefir Peach Passion
+  kcal_per_100g: 60
+  protein_per_100g: 3
+  carbs_per_100g: 9
+  fat_per_100g: 1.2
+  brand: Biotiful
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: collective_kefir_strawberry
+  name: The Collective Kefir Strawberry
+  kcal_per_100g: 75
+  protein_per_100g: 3
+  carbs_per_100g: 11
+  fat_per_100g: 2
+  brand: The Collective
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: collective_kefir_passionfruit
+  name: The Collective Kefir Passion Fruit
+  kcal_per_100g: 75
+  protein_per_100g: 3
+  carbs_per_100g: 11
+  fat_per_100g: 2
+  brand: The Collective
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: collective_yogurt_strawberry
+  name: The Collective Yogurt Strawberry (Per Pot)
+  kcal_per_100g: 110
+  protein_per_100g: 4
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: The Collective
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: collective_yogurt_passionfruit
+  name: The Collective Yogurt Passion Fruit (Per Pot)
+  kcal_per_100g: 110
+  protein_per_100g: 4
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: The Collective
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: alpro_plain_per_100g
+  name: Alpro Plain (Per 100g)
+  kcal_per_100g: 50
+  protein_per_100g: 4
+  carbs_per_100g: 2.5
+  fat_per_100g: 2.3
+  brand: Alpro
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: alpro_strawberry_yogurt
+  name: Alpro Strawberry Yogurt
+  kcal_per_100g: 65
+  protein_per_100g: 3
+  carbs_per_100g: 11
+  fat_per_100g: 1.5
+  brand: Alpro
+  region_codes: GB
+  serving_grams: 125
+  serving_label: 125 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 125
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: alpro_blueberry_yogurt
+  name: Alpro Blueberry Yogurt
+  kcal_per_100g: 65
+  protein_per_100g: 3
+  carbs_per_100g: 11
+  fat_per_100g: 1.5
+  brand: Alpro
+  region_codes: GB
+  serving_grams: 125
+  serving_label: 125 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 125
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: alpro_vanilla_yogurt
+  name: Alpro Vanilla Yogurt
+  kcal_per_100g: 65
+  protein_per_100g: 3
+  carbs_per_100g: 11
+  fat_per_100g: 1.5
+  brand: Alpro
+  region_codes: GB
+  serving_grams: 125
+  serving_label: 125 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 125
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: alpro_greek_style_natural
+  name: Alpro Greek Style Natural
+  kcal_per_100g: 75
+  protein_per_100g: 4
+  carbs_per_100g: 4
+  fat_per_100g: 4.5
+  brand: Alpro
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: alpro_greek_style_vanilla
+  name: Alpro Greek Style Vanilla
+  kcal_per_100g: 95
+  protein_per_100g: 4
+  carbs_per_100g: 11
+  fat_per_100g: 4
+  brand: Alpro
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: alpro_protein_chocolate
+  name: Alpro Protein Chocolate
+  kcal_per_100g: 95
+  protein_per_100g: 9
+  carbs_per_100g: 7
+  fat_per_100g: 3
+  brand: Alpro
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: alpro_protein_strawberry
+  name: Alpro Protein Strawberry
+  kcal_per_100g: 95
+  protein_per_100g: 9
+  carbs_per_100g: 7
+  fat_per_100g: 3
+  brand: Alpro
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: alpro_dark_chocolate_dessert
+  name: Alpro Dark Chocolate Dessert
+  kcal_per_100g: 105
+  protein_per_100g: 3
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: Alpro
+  region_codes: GB
+  serving_grams: 125
+  serving_label: 125 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 125
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: coco_collab_natural
+  name: Coconut Collaborative Natural
+  kcal_per_100g: 145
+  protein_per_100g: 1.5
+  carbs_per_100g: 4
+  fat_per_100g: 14
+  brand: Coconut Collaborative
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: coco_collab_chocolate_pots
+  name: Coconut Collaborative Chocolate Pots
+  kcal_per_100g: 165
+  protein_per_100g: 2
+  carbs_per_100g: 16
+  fat_per_100g: 11
+  brand: Coconut Collaborative
+  region_codes: GB
+  serving_grams: 60
+  serving_label: 60 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 60
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: coco_collab_strawberry_yogurt
+  name: Coconut Collaborative Strawberry
+  kcal_per_100g: 130
+  protein_per_100g: 1.5
+  carbs_per_100g: 12
+  fat_per_100g: 9
+  brand: Coconut Collaborative
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 90
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: rachels_greek_strawberry
+  name: Rachel's Greek Style Strawberry (Per Pot)
+  kcal_per_100g: 130
+  protein_per_100g: 4
+  carbs_per_100g: 14
+  fat_per_100g: 7
+  brand: Rachel's Organic
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: rachels_greek_natural
+  name: Rachel's Greek Natural
+  kcal_per_100g: 95
+  protein_per_100g: 5
+  carbs_per_100g: 5
+  fat_per_100g: 7
+  brand: Rachel's Organic
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: rachels_greek_honey
+  name: Rachel's Greek Honey
+  kcal_per_100g: 130
+  protein_per_100g: 4
+  carbs_per_100g: 16
+  fat_per_100g: 6
+  brand: Rachel's Organic
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: fage_total_split_pot_strawberry
+  name: Fage Total Split Pot Strawberry
+  kcal_per_100g: 105
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 2.5
+  brand: Fage
+  region_codes: GB
+  serving_grams: 170
+  serving_label: 170 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 170
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: fage_total_split_pot_blueberry
+  name: Fage Total Split Pot Blueberry
+  kcal_per_100g: 105
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 2.5
+  brand: Fage
+  region_codes: GB
+  serving_grams: 170
+  serving_label: 170 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 170
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: fage_total_split_pot_pineapple
+  name: Fage Total Split Pot Pineapple
+  kcal_per_100g: 105
+  protein_per_100g: 6
+  carbs_per_100g: 14
+  fat_per_100g: 2.5
+  brand: Fage
+  region_codes: GB
+  serving_grams: 170
+  serving_label: 170 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 170
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: skyr_high_protein_chocolate
+  name: Arla Skyr High Protein Chocolate (Per Pot)
+  kcal_per_100g: 75
+  protein_per_100g: 11
+  carbs_per_100g: 6
+  fat_per_100g: 0.5
+  brand: Arla Skyr
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: skyr_high_protein_pomegranate
+  name: Arla Skyr High Protein Pomegranate
+  kcal_per_100g: 70
+  protein_per_100g: 11
+  carbs_per_100g: 5
+  fat_per_100g: 0.5
+  brand: Arla Skyr
+  region_codes: GB
+  serving_grams: 150
+  serving_label: 150 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 150
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: skyr_drink_strawberry
+  name: Arla Skyr Drink Strawberry (Per 250ml)
+  kcal_per_100g: 50
+  protein_per_100g: 8
+  carbs_per_100g: 4
+  fat_per_100g: 0.5
+  brand: Arla Skyr
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: yogurt,dairy
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: skyr_drink_pomegranate
+  name: Arla Skyr Drink Pomegranate (Per 250ml)
+  kcal_per_100g: 50
+  protein_per_100g: 8
+  carbs_per_100g: 4
+  fat_per_100g: 0.5
+  brand: Arla Skyr
+  region_codes: GB
+  serving_grams: 250
+  serving_label: 250 g
+  tags: yogurt,dairy
+  portion_unit: ml
+  unit_grams: 250
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: hartleys_strawberry_jelly_pot
+  name: Hartley's Strawberry Jelly Pot
+  kcal_per_100g: 65
+  protein_per_100g: 1
+  carbs_per_100g: 14
+  fat_per_100g: 0
+  brand: Hartley's
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 110
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: hartleys_raspberry_jelly_pot
+  name: Hartley's Raspberry Jelly Pot
+  kcal_per_100g: 65
+  protein_per_100g: 1
+  carbs_per_100g: 14
+  fat_per_100g: 0
+  brand: Hartley's
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 110
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: hartleys_no_added_sugar_jelly
+  name: Hartley's No Added Sugar Jelly Pot
+  kcal_per_100g: 8
+  protein_per_100g: 0.5
+  carbs_per_100g: 0.5
+  fat_per_100g: 0
+  brand: Hartley's
+  region_codes: GB
+  serving_grams: 110
+  serving_label: 110 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 110
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: ambrosia_devon_custard_per_100g
+  name: Ambrosia Devon Custard (Per 100g)
+  kcal_per_100g: 95
+  protein_per_100g: 3
+  carbs_per_100g: 16
+  fat_per_100g: 2.5
+  brand: Ambrosia
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: ambrosia_chocolate_custard
+  name: Ambrosia Chocolate Custard (Per 100g)
+  kcal_per_100g: 105
+  protein_per_100g: 3
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: Ambrosia
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: ambrosia_rice_pudding_per_100g
+  name: Ambrosia Creamed Rice Pudding (Per 100g)
+  kcal_per_100g: 95
+  protein_per_100g: 3
+  carbs_per_100g: 14
+  fat_per_100g: 3
+  brand: Ambrosia
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: ambrosia_rice_pudding_chocolate
+  name: Ambrosia Creamed Rice Chocolate
+  kcal_per_100g: 110
+  protein_per_100g: 3
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: Ambrosia
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: dairy
+  source_id: ambrosia_rice_pudding_strawberry
+  name: Ambrosia Creamed Rice Strawberry
+  kcal_per_100g: 100
+  protein_per_100g: 3
+  carbs_per_100g: 16
+  fat_per_100g: 2.5
+  brand: Ambrosia
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: yogurt,dairy
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: booths
+  source_id: booths_chicken_kievs
+  name: Booths Chicken Kievs
+  kcal_per_100g: 255
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 16
+  brand: Booths
+  region_codes: GB
+  serving_grams: 145
+  serving_label: plate (145 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 145
+- source: booths
+  source_id: booths_thai_green_curry
+  name: Booths Thai Green Curry
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 6
+  brand: Booths
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: booths
+  source_id: booths_chicken_tikka_masala
+  name: Booths Chicken Tikka Masala
+  kcal_per_100g: 140
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 6
+  brand: Booths
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: booths
+  source_id: booths_lasagne_classic
+  name: Booths Lasagne
+  kcal_per_100g: 155
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Booths
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: booths
+  source_id: booths_cottage_pie
+  name: Booths Cottage Pie
+  kcal_per_100g: 130
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5
+  brand: Booths
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: booths
+  source_id: booths_fish_pie
+  name: Booths Fish Pie
+  kcal_per_100g: 120
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 4
+  brand: Booths
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: booths
+  source_id: booths_steak_pie
+  name: Booths Steak Pie
+  kcal_per_100g: 230
+  protein_per_100g: 9
+  carbs_per_100g: 21
+  fat_per_100g: 12
+  brand: Booths
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: booths
+  source_id: booths_houmous_classic
+  name: Booths Houmous
+  kcal_per_100g: 290
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 23
+  brand: Booths
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 200
+- source: booths
+  source_id: booths_seabass_fillets
+  name: Booths Seabass Fillets (Fresh)
+  kcal_per_100g: 120
+  protein_per_100g: 20
+  carbs_per_100g: 0
+  fat_per_100g: 4
+  brand: Booths
+  region_codes: GB
+  serving_grams: 100
+  serving_label: plate (100 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 100
+- source: booths
+  source_id: booths_chicken_breast_organic
+  name: Booths Organic Chicken Breasts
+  kcal_per_100g: 110
+  protein_per_100g: 24
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Booths
+  region_codes: GB
+  serving_grams: 170
+  serving_label: plate (170 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 170
+- source: ocado
+  source_id: ocado_chicken_kievs
+  name: Ocado Chicken Kievs
+  kcal_per_100g: 255
+  protein_per_100g: 13
+  carbs_per_100g: 17
+  fat_per_100g: 16
+  brand: Ocado
+  region_codes: GB
+  serving_grams: 145
+  serving_label: plate (145 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 145
+- source: ocado
+  source_id: ocado_thai_green_curry
+  name: Ocado Thai Green Curry
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 6
+  brand: Ocado
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: ocado
+  source_id: ocado_chicken_tikka
+  name: Ocado Chicken Tikka Masala
+  kcal_per_100g: 140
+  protein_per_100g: 9
+  carbs_per_100g: 11
+  fat_per_100g: 6
+  brand: Ocado
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: ocado
+  source_id: ocado_macaroni_cheese
+  name: Ocado Macaroni Cheese
+  kcal_per_100g: 165
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 7.5
+  brand: Ocado
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: ocado
+  source_id: ocado_lasagne
+  name: Ocado Beef Lasagne
+  kcal_per_100g: 150
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Ocado
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: ocado
+  source_id: ocado_cottage_pie
+  name: Ocado Cottage Pie
+  kcal_per_100g: 125
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 5
+  brand: Ocado
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: ocado
+  source_id: ocado_chicken_breast_fresh
+  name: Ocado British Chicken Breasts
+  kcal_per_100g: 105
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Ocado
+  region_codes: GB
+  serving_grams: 170
+  serving_label: plate (170 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 170
+- source: ocado
+  source_id: ocado_houmous_classic
+  name: Ocado Houmous
+  kcal_per_100g: 290
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 23
+  brand: Ocado
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 200
+- source: ocado
+  source_id: ocado_soup_tomato_basil
+  name: Ocado Tomato & Basil Soup
+  kcal_per_100g: 45
+  protein_per_100g: 1.5
+  carbs_per_100g: 6
+  fat_per_100g: 1.5
+  brand: Ocado
+  region_codes: GB
+  serving_grams: 300
+  serving_label: plate (300 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 300
+- source: ocado
+  source_id: ocado_stonebaked_pizza
+  name: Ocado Stonebaked Margherita Pizza
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Ocado
+  region_codes: GB
+  serving_grams: 290
+  serving_label: plate (290 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 290
+- source: spar
+  source_id: spar_chicken_korma
+  name: Spar Chicken Korma
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5.5
+  brand: Spar
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: spar
+  source_id: spar_lasagne_400
+  name: Spar Beef Lasagne
+  kcal_per_100g: 150
+  protein_per_100g: 9
+  carbs_per_100g: 13
+  fat_per_100g: 7
+  brand: Spar
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: spar
+  source_id: spar_macaroni_cheese
+  name: Spar Macaroni Cheese
+  kcal_per_100g: 165
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 7.5
+  brand: Spar
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: spar
+  source_id: spar_chicken_chow_mein
+  name: Spar Chicken Chow Mein
+  kcal_per_100g: 120
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 3
+  brand: Spar
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: spar
+  source_id: spar_chicken_breast_fresh
+  name: Spar Chicken Breasts
+  kcal_per_100g: 105
+  protein_per_100g: 23
+  carbs_per_100g: 0
+  fat_per_100g: 1.5
+  brand: Spar
+  region_codes: GB
+  serving_grams: 170
+  serving_label: plate (170 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 170
+- source: spar
+  source_id: spar_chicken_thigh_fresh
+  name: Spar Chicken Thighs
+  kcal_per_100g: 170
+  protein_per_100g: 19
+  carbs_per_100g: 0
+  fat_per_100g: 10
+  brand: Spar
+  region_codes: GB
+  serving_grams: 120
+  serving_label: plate (120 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 120
+- source: spar
+  source_id: spar_houmous
+  name: Spar Houmous
+  kcal_per_100g: 290
+  protein_per_100g: 7
+  carbs_per_100g: 13
+  fat_per_100g: 23
+  brand: Spar
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 200
+- source: spar
+  source_id: spar_pizza_pepperoni
+  name: Spar Stonebaked Pepperoni Pizza
+  kcal_per_100g: 275
+  protein_per_100g: 12
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  brand: Spar
+  region_codes: GB
+  serving_grams: 320
+  serving_label: plate (320 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 320
+- source: spar
+  source_id: spar_chocolate_brownie
+  name: Spar Chocolate Brownie
+  kcal_per_100g: 425
+  protein_per_100g: 5
+  carbs_per_100g: 50
+  fat_per_100g: 22
+  brand: Spar
+  region_codes: GB
+  serving_grams: 60
+  serving_label: plate (60 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 60
+- source: spar
+  source_id: spar_egg_mayo_sandwich
+  name: Spar Egg Mayo Sandwich
+  kcal_per_100g: 285
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Spar
+  region_codes: GB
+  serving_grams: 175
+  serving_label: plate (175 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 175
+- source: spar
+  source_id: spar_chicken_caesar_wrap
+  name: Spar Chicken Caesar Wrap
+  kcal_per_100g: 250
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Spar
+  region_codes: GB
+  serving_grams: 220
+  serving_label: plate (220 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 220
+- source: spar
+  source_id: spar_blt_sandwich
+  name: Spar BLT Sandwich
+  kcal_per_100g: 295
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 14
+  brand: Spar
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 200
+- source: nisa
+  source_id: nisa_chicken_korma_400
+  name: Nisa Heritage Chicken Korma
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 12
+  fat_per_100g: 5.5
+  brand: Nisa
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: nisa
+  source_id: nisa_macaroni_cheese
+  name: Nisa Heritage Macaroni Cheese
+  kcal_per_100g: 165
+  protein_per_100g: 7
+  carbs_per_100g: 17
+  fat_per_100g: 7.5
+  brand: Nisa
+  region_codes: GB
+  serving_grams: 400
+  serving_label: plate (400 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 400
+- source: nisa
+  source_id: nisa_chicken_caesar_wrap
+  name: Nisa Chicken Caesar Wrap
+  kcal_per_100g: 250
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  brand: Nisa
+  region_codes: GB
+  serving_grams: 220
+  serving_label: plate (220 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 220
+- source: nisa
+  source_id: nisa_blt_sandwich
+  name: Nisa BLT Sandwich
+  kcal_per_100g: 295
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 14
+  brand: Nisa
+  region_codes: GB
+  serving_grams: 200
+  serving_label: plate (200 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 200
+- source: nisa
+  source_id: nisa_egg_mayo_sandwich
+  name: Nisa Egg Mayo Sandwich
+  kcal_per_100g: 285
+  protein_per_100g: 11
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  brand: Nisa
+  region_codes: GB
+  serving_grams: 175
+  serving_label: plate (175 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 175
+- source: nisa
+  source_id: nisa_pizza_margherita
+  name: Nisa Margherita Pizza
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 32
+  fat_per_100g: 8
+  brand: Nisa
+  region_codes: GB
+  serving_grams: 290
+  serving_label: plate (290 g)
+  tags: ready-meal,supermarket
+  portion_unit: meal
+  unit_grams: 290
+- source: frozen
+  source_id: frosty_jude_strawberry_cheesecake_per_100ml
+  name: Jude's Strawberry Cheesecake (Per 100ml)
+  kcal_per_100g: 175
+  protein_per_100g: 3
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Jude's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,dessert
+  portion_unit: ml
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: frosty_jude_chocolate_per_100ml
+  name: Jude's Chocolate Ice Cream (Per 100ml)
+  kcal_per_100g: 195
+  protein_per_100g: 3
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Jude's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,dessert
+  portion_unit: ml
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: frosty_jude_vanilla_per_100ml
+  name: Jude's Vanilla Ice Cream (Per 100ml)
+  kcal_per_100g: 175
+  protein_per_100g: 3
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Jude's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,dessert
+  portion_unit: ml
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: frosty_jude_salted_caramel_per_100ml
+  name: Jude's Salted Caramel (Per 100ml)
+  kcal_per_100g: 195
+  protein_per_100g: 3
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Jude's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,dessert
+  portion_unit: ml
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: magnum_classic_per_unit
+  name: Magnum Classic (Per Unit)
+  kcal_per_100g: 245
+  protein_per_100g: 3
+  carbs_per_100g: 24
+  fat_per_100g: 16
+  brand: Magnum
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,dessert
+  portion_unit: piece
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: magnum_almond_per_unit
+  name: Magnum Almond (Per Unit)
+  kcal_per_100g: 270
+  protein_per_100g: 4
+  carbs_per_100g: 24
+  fat_per_100g: 18
+  brand: Magnum
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,dessert
+  portion_unit: piece
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: magnum_white_per_unit
+  name: Magnum White (Per Unit)
+  kcal_per_100g: 270
+  protein_per_100g: 3
+  carbs_per_100g: 25
+  fat_per_100g: 17
+  brand: Magnum
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,dessert
+  portion_unit: piece
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: magnum_double_caramel_per_unit
+  name: Magnum Double Caramel (Per Unit)
+  kcal_per_100g: 320
+  protein_per_100g: 3
+  carbs_per_100g: 30
+  fat_per_100g: 20
+  brand: Magnum
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,dessert
+  portion_unit: piece
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: magnum_double_chocolate_per_unit
+  name: Magnum Double Chocolate (Per Unit)
+  kcal_per_100g: 345
+  protein_per_100g: 4
+  carbs_per_100g: 31
+  fat_per_100g: 22
+  brand: Magnum
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,dessert
+  portion_unit: piece
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: magnum_mini_classic
+  name: Magnum Mini Classic (Per Unit)
+  kcal_per_100g: 130
+  protein_per_100g: 1.5
+  carbs_per_100g: 12
+  fat_per_100g: 8
+  brand: Magnum
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: frozen,dessert
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: magnum_mini_almond
+  name: Magnum Mini Almond (Per Unit)
+  kcal_per_100g: 145
+  protein_per_100g: 2
+  carbs_per_100g: 12
+  fat_per_100g: 9
+  brand: Magnum
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: frozen,dessert
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: magnum_mini_white
+  name: Magnum Mini White (Per Unit)
+  kcal_per_100g: 130
+  protein_per_100g: 1.5
+  carbs_per_100g: 13
+  fat_per_100g: 8
+  brand: Magnum
+  region_codes: GB
+  serving_grams: 50
+  serving_label: 50 g
+  tags: frozen,dessert
+  portion_unit: meal
+  unit_grams: 50
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: cornetto_classic_per_unit
+  name: Cornetto Classic (Per Unit)
+  kcal_per_100g: 175
+  protein_per_100g: 2
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Cornetto
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: frozen,dessert
+  portion_unit: piece
+  unit_grams: 90
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: cornetto_strawberry_per_unit
+  name: Cornetto Strawberry (Per Unit)
+  kcal_per_100g: 165
+  protein_per_100g: 2
+  carbs_per_100g: 22
+  fat_per_100g: 8
+  brand: Cornetto
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: frozen,dessert
+  portion_unit: piece
+  unit_grams: 90
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: cornetto_mint_per_unit
+  name: Cornetto Mint (Per Unit)
+  kcal_per_100g: 175
+  protein_per_100g: 2
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Cornetto
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: frozen,dessert
+  portion_unit: piece
+  unit_grams: 90
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: cornetto_buttermilk_per_unit
+  name: Cornetto Salted Caramel (Per Unit)
+  kcal_per_100g: 175
+  protein_per_100g: 2
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  brand: Cornetto
+  region_codes: GB
+  serving_grams: 90
+  serving_label: 90 g
+  tags: frozen,dessert
+  portion_unit: piece
+  unit_grams: 90
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: walls_carte_dor_vanilla_per_100ml
+  name: Wall's Carte D'Or Vanilla (Per 100ml)
+  kcal_per_100g: 195
+  protein_per_100g: 4
+  carbs_per_100g: 22
+  fat_per_100g: 10
+  brand: Wall's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,dessert
+  portion_unit: ml
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: walls_carte_dor_strawberry_per_100ml
+  name: Wall's Carte D'Or Strawberry
+  kcal_per_100g: 175
+  protein_per_100g: 3
+  carbs_per_100g: 25
+  fat_per_100g: 7
+  brand: Wall's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,dessert
+  portion_unit: ml
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: walls_soft_scoop_vanilla
+  name: Wall's Soft Scoop Vanilla (Per 100ml)
+  kcal_per_100g: 195
+  protein_per_100g: 3
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Wall's
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,dessert
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: walls_viennetta_vanilla
+  name: Wall's Viennetta Vanilla (Per Slice)
+  kcal_per_100g: 195
+  protein_per_100g: 3
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Wall's
+  region_codes: GB
+  serving_grams: 70
+  serving_label: 70 g
+  tags: frozen,dessert
+  portion_unit: meal
+  unit_grams: 70
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: walls_viennetta_strawberry
+  name: Wall's Viennetta Strawberry (Per Slice)
+  kcal_per_100g: 175
+  protein_per_100g: 3
+  carbs_per_100g: 25
+  fat_per_100g: 8
+  brand: Wall's
+  region_codes: GB
+  serving_grams: 70
+  serving_label: 70 g
+  tags: frozen,dessert
+  portion_unit: meal
+  unit_grams: 70
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: walls_viennetta_chocolate
+  name: Wall's Viennetta Chocolate (Per Slice)
+  kcal_per_100g: 195
+  protein_per_100g: 3
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  brand: Wall's
+  region_codes: GB
+  serving_grams: 70
+  serving_label: 70 g
+  tags: frozen,dessert
+  portion_unit: meal
+  unit_grams: 70
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: little_moons_strawberry_per_unit
+  name: Little Moons Strawberry Cheesecake Mochi (Per Piece)
+  kcal_per_100g: 95
+  protein_per_100g: 1.5
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  brand: Little Moons
+  region_codes: GB
+  serving_grams: 32
+  serving_label: 32 g
+  tags: frozen,dessert
+  portion_unit: piece
+  unit_grams: 32
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: little_moons_passionfruit_mango_per_unit
+  name: Little Moons Passionfruit & Mango Mochi
+  kcal_per_100g: 95
+  protein_per_100g: 1.5
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  brand: Little Moons
+  region_codes: GB
+  serving_grams: 32
+  serving_label: 32 g
+  tags: frozen,dessert
+  portion_unit: piece
+  unit_grams: 32
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: little_moons_chocolate_per_unit
+  name: Little Moons Chocolate Mochi
+  kcal_per_100g: 105
+  protein_per_100g: 2
+  carbs_per_100g: 14
+  fat_per_100g: 5
+  brand: Little Moons
+  region_codes: GB
+  serving_grams: 32
+  serving_label: 32 g
+  tags: frozen,dessert
+  portion_unit: piece
+  unit_grams: 32
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: little_moons_cookies_cream_per_unit
+  name: Little Moons Cookies & Cream Mochi
+  kcal_per_100g: 105
+  protein_per_100g: 2
+  carbs_per_100g: 14
+  fat_per_100g: 5
+  brand: Little Moons
+  region_codes: GB
+  serving_grams: 32
+  serving_label: 32 g
+  tags: frozen,dessert
+  portion_unit: piece
+  unit_grams: 32
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: little_moons_pistachio_per_unit
+  name: Little Moons Pistachio Mochi
+  kcal_per_100g: 110
+  protein_per_100g: 2
+  carbs_per_100g: 14
+  fat_per_100g: 5
+  brand: Little Moons
+  region_codes: GB
+  serving_grams: 32
+  serving_label: 32 g
+  tags: frozen,dessert
+  portion_unit: piece
+  unit_grams: 32
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: little_moons_alphonso_mango_per_unit
+  name: Little Moons Alphonso Mango Mochi
+  kcal_per_100g: 95
+  protein_per_100g: 1.5
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  brand: Little Moons
+  region_codes: GB
+  serving_grams: 32
+  serving_label: 32 g
+  tags: frozen,dessert
+  portion_unit: piece
+  unit_grams: 32
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: little_moons_salted_caramel_per_unit
+  name: Little Moons Salted Caramel Mochi
+  kcal_per_100g: 105
+  protein_per_100g: 1.5
+  carbs_per_100g: 14
+  fat_per_100g: 5
+  brand: Little Moons
+  region_codes: GB
+  serving_grams: 32
+  serving_label: 32 g
+  tags: frozen,dessert
+  portion_unit: piece
+  unit_grams: 32
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: little_moons_raspberry_white_choc_unit
+  name: Little Moons Raspberry White Chocolate Mochi
+  kcal_per_100g: 100
+  protein_per_100g: 1.5
+  carbs_per_100g: 14
+  fat_per_100g: 4.5
+  brand: Little Moons
+  region_codes: GB
+  serving_grams: 32
+  serving_label: 32 g
+  tags: frozen,dessert
+  portion_unit: meal
+  unit_grams: 32
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: iceland_bombay_potato
+  name: Iceland Bombay Potato (Per 100g)
+  kcal_per_100g: 90
+  protein_per_100g: 2
+  carbs_per_100g: 14
+  fat_per_100g: 3
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 100
+  serving_label: 100 g
+  tags: frozen,dessert
+  portion_unit: meal
+  unit_grams: 100
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: iceland_chicken_balti_meal_kit
+  name: Iceland Chicken Balti Meal Kit
+  kcal_per_100g: 125
+  protein_per_100g: 9
+  carbs_per_100g: 9
+  fat_per_100g: 5
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 600
+  serving_label: 600 g
+  tags: frozen,dessert
+  portion_unit: meal
+  unit_grams: 600
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: iceland_paella_seafood_meal
+  name: Iceland Seafood Paella Meal
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: frozen,dessert
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
+- source: frozen
+  source_id: iceland_chicken_arrabbiata_meal
+  name: Iceland Chicken Arrabbiata Meal
+  kcal_per_100g: 135
+  protein_per_100g: 8
+  carbs_per_100g: 15
+  fat_per_100g: 4
+  brand: Iceland
+  region_codes: GB
+  serving_grams: 400
+  serving_label: 400 g
+  tags: frozen,dessert
+  portion_unit: meal
+  unit_grams: 400
+  dietary_compat: vegetarian
