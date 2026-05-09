@@ -1,0 +1,593 @@
+# lunch_range.yaml — supermarket lunch range: M&S/Tesco/Sainsbury's protein bowls + salads + sandwiches + wraps, M&S Plant Kitchen + Made Without, Tesco Plant Chef.
+- source: gymflow
+  source_id: mands_higher_protein_chicken_bowl
+  name: M&S Higher Protein Chicken Salad Bowl
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 12
+  carbs_per_100g: 14
+  fat_per_100g: 5
+  serving_grams: 280
+  serving_label: 1 portion (280 g)
+  portion_unit: meal
+  tags: salad,bowl,chicken,high_protein,supermarket
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,mustard
+  unit_grams: 280
+- source: gymflow
+  source_id: mands_higher_protein_falafel_bowl
+  name: M&S Higher Protein Falafel Bowl
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 5
+  serving_grams: 280
+  serving_label: 1 portion (280 g)
+  portion_unit: meal
+  tags: salad,bowl,vegan,high_protein,supermarket
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: sesame,sulphites
+  unit_grams: 280
+- source: gymflow
+  source_id: mands_higher_protein_tuna_bowl
+  name: M&S Higher Protein Tuna Niçoise
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 13
+  carbs_per_100g: 12
+  fat_per_100g: 5
+  serving_grams: 280
+  serving_label: 1 portion (280 g)
+  portion_unit: meal
+  tags: salad,bowl,fish,high_protein,supermarket
+  dietary_compat: pescatarian
+  allergens: fish,eggs,mustard
+  unit_grams: 280
+- source: gymflow
+  source_id: mands_super_seed_salad
+  name: M&S Super Seed Salad
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 7
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  serving_grams: 280
+  serving_label: 1 portion (280 g)
+  portion_unit: meal
+  tags: salad,bowl,vegan,supermarket
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: sesame
+  unit_grams: 280
+- source: gymflow
+  source_id: mands_chicken_caesar_lunch
+  name: M&S Chicken Caesar Salad
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 13
+  carbs_per_100g: 9
+  fat_per_100g: 6
+  serving_grams: 280
+  serving_label: 1 portion (280 g)
+  portion_unit: meal
+  tags: salad,chicken,supermarket
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,fish
+  unit_grams: 280
+- source: gymflow
+  source_id: mands_kale_quinoa_salad
+  name: M&S Kale & Quinoa Salad
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 6
+  carbs_per_100g: 20
+  fat_per_100g: 6
+  serving_grams: 280
+  serving_label: 1 portion (280 g)
+  portion_unit: meal
+  tags: salad,vegan,supermarket
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: sesame,mustard,sulphites
+  unit_grams: 280
+- source: gymflow
+  source_id: mands_chicken_pesto_pasta_salad
+  name: M&S Chicken Pesto Pasta Salad
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 7
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: meal
+  tags: salad,chicken,supermarket
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,tree_nuts
+  unit_grams: 250
+- source: gymflow
+  source_id: mands_egg_cress_sandwich
+  name: M&S Egg & Cress Sandwich
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 180
+  serving_label: 1 piece (180 g)
+  portion_unit: piece
+  tags: sandwich,supermarket,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,mustard
+  unit_grams: 180
+- source: gymflow
+  source_id: mands_chicken_caesar_sandwich
+  name: M&S Chicken Caesar Wrap
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 23
+  fat_per_100g: 8
+  serving_grams: 220
+  serving_label: 1 wrap (220 g)
+  portion_unit: wrap
+  tags: wrap,chicken,supermarket
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,fish
+  unit_grams: 220
+- source: gymflow
+  source_id: mands_blt_sandwich
+  name: M&S BLT Sandwich
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: sandwich,supermarket
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,mustard
+  unit_grams: 200
+- source: gymflow
+  source_id: mands_ham_cheese_sandwich
+  name: M&S Ham & Cheese Sandwich
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 25
+  fat_per_100g: 10
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: sandwich,supermarket
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 200
+- source: gymflow
+  source_id: mands_tuna_crunch_sandwich
+  name: M&S Tuna Crunch Sandwich
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 12
+  carbs_per_100g: 25
+  fat_per_100g: 9
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: sandwich,supermarket
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,fish,mustard
+  unit_grams: 200
+- source: gymflow
+  source_id: mands_prawn_mayo_sandwich
+  name: M&S Prawn Mayo Sandwich
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 22
+  fat_per_100g: 10
+  serving_grams: 180
+  serving_label: 1 piece (180 g)
+  portion_unit: piece
+  tags: sandwich,supermarket
+  dietary_compat: pescatarian
+  allergens: gluten,crustaceans,milk,eggs,mustard
+  unit_grams: 180
+- source: gymflow
+  source_id: mands_chicken_avocado_wrap
+  name: M&S Chicken & Avocado Wrap
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 220
+  serving_label: 1 wrap (220 g)
+  portion_unit: wrap
+  tags: wrap,chicken,supermarket
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 220
+- source: gymflow
+  source_id: mands_plant_kitchen_butternut_dahl
+  name: M&S Plant Kitchen Butternut Dahl
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 5
+  carbs_per_100g: 18
+  fat_per_100g: 4
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: ready_meal,vegan,supermarket,plant_kitchen
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: celery
+  unit_grams: 380
+- source: gymflow
+  source_id: mands_plant_kitchen_no_bull_burger
+  name: M&S Plant Kitchen No Beef Burger
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 13
+  carbs_per_100g: 22
+  fat_per_100g: 9
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: ready_meal,vegan,burger,supermarket,plant_kitchen
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sesame,soy
+  unit_grams: 380
+- source: gymflow
+  source_id: mands_plant_kitchen_chicken_pieces
+  name: M&S Plant Kitchen No Chicken Pieces
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 16
+  carbs_per_100g: 8
+  fat_per_100g: 5
+  serving_grams: 175
+  serving_label: 1 portion (175 g)
+  portion_unit: pack
+  tags: meat_alternative,vegan,supermarket,plant_kitchen,high_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+  unit_grams: 175
+- source: gymflow
+  source_id: mands_plant_kitchen_tikka_masala
+  name: M&S Plant Kitchen Tikka Masala
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 5
+  carbs_per_100g: 17
+  fat_per_100g: 4
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: ready_meal,vegan,curry,supermarket,plant_kitchen
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy
+  unit_grams: 380
+- source: gymflow
+  source_id: mands_made_without_lasagne
+  name: M&S Made Without Lasagne (gluten free)
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 14
+  fat_per_100g: 6
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: ready_meal,supermarket,gluten_free
+  dietary_compat: pescatarian,gluten_free
+  allergens: milk,eggs
+  unit_grams: 400
+- source: gymflow
+  source_id: mands_made_without_chicken_korma
+  name: M&S Made Without Chicken Korma
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 11
+  carbs_per_100g: 15
+  fat_per_100g: 7
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: ready_meal,curry,chicken,supermarket,gluten_free
+  dietary_compat: pescatarian,gluten_free
+  allergens: milk,tree_nuts
+  unit_grams: 400
+- source: gymflow
+  source_id: tesco_plant_chef_no_chicken_kievs
+  name: Tesco Plant Chef No Chicken Kievs (1)
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 14
+  carbs_per_100g: 14
+  fat_per_100g: 13
+  serving_grams: 130
+  serving_label: 1 piece (130 g)
+  portion_unit: piece
+  tags: meat_alternative,vegan,frozen,supermarket
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy
+  unit_grams: 130
+- source: gymflow
+  source_id: tesco_plant_chef_no_chicken_pieces
+  name: Tesco Plant Chef No Chicken Pieces
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 140
+  protein_per_100g: 16
+  carbs_per_100g: 7
+  fat_per_100g: 5
+  serving_grams: 175
+  serving_label: 1 portion (175 g)
+  portion_unit: pack
+  tags: meat_alternative,vegan,supermarket,high_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+  unit_grams: 175
+- source: gymflow
+  source_id: tesco_plant_chef_lasagne_meal
+  name: Tesco Plant Chef Lasagne
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 8
+  carbs_per_100g: 14
+  fat_per_100g: 7
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: meal
+  tags: ready_meal,vegan,supermarket
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy
+  unit_grams: 400
+- source: gymflow
+  source_id: tesco_higher_protein_chicken_box
+  name: Tesco Higher Protein Chicken Salad Box
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 140
+  protein_per_100g: 14
+  carbs_per_100g: 9
+  fat_per_100g: 5
+  serving_grams: 280
+  serving_label: 1 portion (280 g)
+  portion_unit: meal
+  tags: salad,chicken,high_protein,supermarket
+  dietary_compat: pescatarian
+  allergens: eggs,mustard
+  unit_grams: 280
+- source: gymflow
+  source_id: tesco_chicken_caesar_wrap_lunch
+  name: Tesco Chicken Caesar Wrap
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 11
+  carbs_per_100g: 23
+  fat_per_100g: 8
+  serving_grams: 220
+  serving_label: 1 wrap (220 g)
+  portion_unit: wrap
+  tags: wrap,chicken,supermarket
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,fish
+  unit_grams: 220
+- source: gymflow
+  source_id: tesco_blt_sandwich_lunch
+  name: Tesco BLT Sandwich
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: sandwich,supermarket
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,mustard
+  unit_grams: 200
+- source: gymflow
+  source_id: tesco_egg_mayo_sandwich
+  name: Tesco Egg Mayo Sandwich
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 180
+  serving_label: 1 piece (180 g)
+  portion_unit: piece
+  tags: sandwich,supermarket,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,mustard
+  unit_grams: 180
+- source: gymflow
+  source_id: tesco_chicken_salad_sandwich
+  name: Tesco Chicken Salad Sandwich
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 6
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: sandwich,chicken,supermarket
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,mustard
+  unit_grams: 200
+- source: gymflow
+  source_id: tesco_ham_cheese_sandwich
+  name: Tesco Ham & Cheese Sandwich
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 13
+  carbs_per_100g: 25
+  fat_per_100g: 10
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: sandwich,supermarket
+  dietary_compat: pescatarian
+  allergens: gluten,milk
+  unit_grams: 200
+- source: gymflow
+  source_id: sainsburys_higher_protein_chicken_bowl
+  name: Sainsbury's Higher Protein Chicken Bowl
+  brand: Sainsbury's
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 12
+  carbs_per_100g: 14
+  fat_per_100g: 5
+  serving_grams: 280
+  serving_label: 1 portion (280 g)
+  portion_unit: meal
+  tags: salad,bowl,chicken,high_protein,supermarket
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 280
+- source: gymflow
+  source_id: sainsburys_blt_sandwich
+  name: Sainsbury's BLT Sandwich
+  brand: Sainsbury's
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 12
+  carbs_per_100g: 22
+  fat_per_100g: 12
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: sandwich,supermarket
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,mustard
+  unit_grams: 200
+- source: gymflow
+  source_id: sainsburys_egg_cress_sandwich
+  name: Sainsbury's Egg & Cress Sandwich
+  brand: Sainsbury's
+  region_codes: gb
+  kcal_per_100g: 215
+  protein_per_100g: 9
+  carbs_per_100g: 22
+  fat_per_100g: 11
+  serving_grams: 180
+  serving_label: 1 piece (180 g)
+  portion_unit: piece
+  tags: sandwich,supermarket,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,mustard
+  unit_grams: 180
+- source: gymflow
+  source_id: caesar_salad_classic
+  name: Caesar Salad with Chicken (per portion)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 13
+  carbs_per_100g: 9
+  fat_per_100g: 6
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: salad,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,fish
+  unit_grams: 350
+- source: gymflow
+  source_id: greek_salad_classic
+  name: Greek Salad
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 5
+  carbs_per_100g: 7
+  fat_per_100g: 7
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: salad,vegetarian,low_calorie
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 350
+- source: gymflow
+  source_id: quinoa_salad_classic
+  name: Quinoa & Roasted Vegetable Salad
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 6
+  carbs_per_100g: 22
+  fat_per_100g: 4
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: salad,vegan,bowl
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 350
+- source: gymflow
+  source_id: cobb_salad_classic
+  name: Cobb Salad
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 14
+  carbs_per_100g: 7
+  fat_per_100g: 12
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: salad,high_protein
+  dietary_compat: pescatarian
+  allergens: milk,eggs
+  unit_grams: 380
+- source: gymflow
+  source_id: niçoise_salad_classic
+  name: Niçoise Salad
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 11
+  carbs_per_100g: 9
+  fat_per_100g: 5
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: salad,fish
+  dietary_compat: pescatarian,gluten_free
+  allergens: fish,eggs,mustard
+  unit_grams: 350

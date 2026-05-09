@@ -1,0 +1,592 @@
+# drinks_extra.yaml — Monster variants (Pipeline Punch, Mango Loco, Ultra Sunrise/Paradise, Ripper, Assault), Bang variants (Cotton Candy, Star Blast, Blue Razz), Reign variants, Prime variants, tea brands (Tetley, Twinings Lady Grey/Chamomile/Lemon Ginger, Teapigs, Whittard, Clipper, Dragonfly), instant coffee (Nescafé Gold/Original/Azera, Douwe Egberts, Kenco, Lavazza, Jacobs, Yorkshire Gold), juice brands (Tropicana, Cawston Press, Drench, Naked).
+- source: gymflow
+  source_id: monster_pipeline_punch
+  name: Monster Pipeline Punch (500ml)
+  brand: Monster
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 0
+  carbs_per_100g: 12
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 can (500 g)
+  portion_unit: can
+  tags: energy_drink,branded
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: monster_mango_loco
+  name: Monster Mango Loco (500ml)
+  brand: Monster
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 0
+  carbs_per_100g: 12
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 can (500 g)
+  portion_unit: can
+  tags: energy_drink,branded
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: monster_ultra_sunrise
+  name: Monster Ultra Sunrise (500ml)
+  brand: Monster
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 can (500 g)
+  portion_unit: can
+  tags: energy_drink,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: monster_ultra_paradise
+  name: Monster Ultra Paradise (500ml)
+  brand: Monster
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 can (500 g)
+  portion_unit: can
+  tags: energy_drink,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: monster_ripper_juiced
+  name: Monster Ripper (500ml)
+  brand: Monster
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 0
+  carbs_per_100g: 12
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 can (500 g)
+  portion_unit: can
+  tags: energy_drink,branded
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: monster_assault
+  name: Monster Assault (500ml)
+  brand: Monster
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 0
+  carbs_per_100g: 12
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 can (500 g)
+  portion_unit: can
+  tags: energy_drink,branded
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: bang_cotton_candy
+  name: Bang Cotton Candy (500ml)
+  brand: Bang
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 can (500 g)
+  portion_unit: can
+  tags: energy_drink,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: bang_star_blast
+  name: Bang Star Blast (500ml)
+  brand: Bang
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 can (500 g)
+  portion_unit: can
+  tags: energy_drink,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: bang_blue_razz
+  name: Bang Blue Razz (500ml)
+  brand: Bang
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 can (500 g)
+  portion_unit: can
+  tags: energy_drink,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: reign_sour_apple
+  name: Reign Sour Apple (500ml)
+  brand: Reign
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 can (500 g)
+  portion_unit: can
+  tags: energy_drink,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: reign_razzle_berry
+  name: Reign Razzle Berry (500ml)
+  brand: Reign
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 can (500 g)
+  portion_unit: can
+  tags: energy_drink,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: reign_white_gummy
+  name: Reign White Gummy Bear (500ml)
+  brand: Reign
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 can (500 g)
+  portion_unit: can
+  tags: energy_drink,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: prime_meta_moon
+  name: Prime Hydration Meta Moon (500ml)
+  brand: Prime
+  region_codes: gb
+  kcal_per_100g: 4
+  protein_per_100g: 0
+  carbs_per_100g: 0.5
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: sports_drink,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: prime_lemon_lime
+  name: Prime Hydration Lemon Lime (500ml)
+  brand: Prime
+  region_codes: gb
+  kcal_per_100g: 4
+  protein_per_100g: 0
+  carbs_per_100g: 0.5
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: sports_drink,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: prime_tropical_punch
+  name: Prime Hydration Tropical Punch (500ml)
+  brand: Prime
+  region_codes: gb
+  kcal_per_100g: 4
+  protein_per_100g: 0
+  carbs_per_100g: 0.5
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: sports_drink,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: tetley_tea_white
+  name: Tetley Tea with Milk (mug)
+  brand: Tetley
+  region_codes: gb
+  kcal_per_100g: 13
+  protein_per_100g: 0.7
+  carbs_per_100g: 1.6
+  fat_per_100g: 0.4
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: tea,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: twinings_lady_grey
+  name: Twinings Lady Grey (mug, black)
+  brand: Twinings
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0.2
+  fat_per_100g: 0
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: tea,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: twinings_chamomile
+  name: Twinings Pure Chamomile (mug)
+  brand: Twinings
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0.2
+  fat_per_100g: 0
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: tea,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: twinings_lemon_ginger
+  name: Twinings Lemon & Ginger (mug)
+  brand: Twinings
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0.2
+  fat_per_100g: 0
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: tea,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: teapigs_everyday_brew
+  name: Teapigs Everyday Brew (mug, black)
+  brand: Teapigs
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0.2
+  fat_per_100g: 0
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: tea,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: teapigs_chai
+  name: Teapigs Chai (mug, white)
+  brand: Teapigs
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 2
+  carbs_per_100g: 6
+  fat_per_100g: 2
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: tea,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: whittard_english_breakfast
+  name: Whittard English Breakfast (mug, black)
+  brand: Whittard
+  region_codes: gb
+  kcal_per_100g: 1
+  protein_per_100g: 0
+  carbs_per_100g: 0.2
+  fat_per_100g: 0
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: tea,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: clipper_organic_everyday
+  name: Clipper Organic Everyday (mug, white)
+  brand: Clipper
+  region_codes: gb
+  kcal_per_100g: 13
+  protein_per_100g: 0.7
+  carbs_per_100g: 1.6
+  fat_per_100g: 0.4
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: tea,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: dragonfly_chai_red
+  name: Dragonfly Tea Red Chai (mug, white)
+  brand: Dragonfly
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 2
+  carbs_per_100g: 6
+  fat_per_100g: 2
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: tea,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: nescafe_gold_blend_2g
+  name: Nescafé Gold Blend (1 mug, 1.7g + water)
+  brand: Nescafé
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 200
+  serving_label: 1 ml (200 g)
+  portion_unit: ml
+  tags: coffee,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: nescafe_original_2g
+  name: Nescafé Original (1 mug, 1.7g + water)
+  brand: Nescafé
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 200
+  serving_label: 1 ml (200 g)
+  portion_unit: ml
+  tags: coffee,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: nescafe_azera_americano
+  name: Nescafé Azera Americano (1 mug, white)
+  brand: Nescafé
+  region_codes: gb
+  kcal_per_100g: 35
+  protein_per_100g: 1.5
+  carbs_per_100g: 4
+  fat_per_100g: 1.5
+  serving_grams: 200
+  serving_label: 1 ml (200 g)
+  portion_unit: ml
+  tags: coffee,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: douwe_egberts_pure_gold
+  name: Douwe Egberts Pure Gold (1 mug, white)
+  brand: Douwe Egberts
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 200
+  serving_label: 1 ml (200 g)
+  portion_unit: ml
+  tags: coffee,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: kenco_smooth
+  name: Kenco Smooth (1 mug, black)
+  brand: Kenco
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 200
+  serving_label: 1 ml (200 g)
+  portion_unit: ml
+  tags: coffee,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: lavazza_qualita_oro
+  name: Lavazza Qualità Oro (1 mug, black)
+  brand: Lavazza
+  region_codes: gb
+  kcal_per_100g: 0
+  protein_per_100g: 0
+  carbs_per_100g: 0
+  fat_per_100g: 0
+  serving_grams: 200
+  serving_label: 1 ml (200 g)
+  portion_unit: ml
+  tags: coffee,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+- source: gymflow
+  source_id: jacobs_kronung_white
+  name: Jacobs Krönung (1 mug, white)
+  brand: Jacobs
+  region_codes: gb
+  kcal_per_100g: 35
+  protein_per_100g: 1.5
+  carbs_per_100g: 4
+  fat_per_100g: 1.5
+  serving_grams: 200
+  serving_label: 1 ml (200 g)
+  portion_unit: ml
+  tags: coffee,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: taylors_yorkshire_gold
+  name: Yorkshire Gold (1 mug, white)
+  brand: Taylor's
+  region_codes: gb
+  kcal_per_100g: 13
+  protein_per_100g: 0.7
+  carbs_per_100g: 1.6
+  fat_per_100g: 0.4
+  serving_grams: 250
+  serving_label: 1 ml (250 g)
+  portion_unit: ml
+  tags: tea,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: tropicana_orange_smooth_300
+  name: Tropicana Smooth Orange (300ml)
+  brand: Tropicana
+  region_codes: gb
+  kcal_per_100g: 42
+  protein_per_100g: 0.7
+  carbs_per_100g: 9.5
+  fat_per_100g: 0.2
+  serving_grams: 300
+  serving_label: 1 bottle (300 g)
+  portion_unit: bottle
+  tags: drink,branded,juice
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 300
+- source: gymflow
+  source_id: tropicana_pure_juice_apple_300
+  name: Tropicana Pure Apple Juice (300ml)
+  brand: Tropicana
+  region_codes: gb
+  kcal_per_100g: 47
+  protein_per_100g: 0.1
+  carbs_per_100g: 11
+  fat_per_100g: 0
+  serving_grams: 300
+  serving_label: 1 bottle (300 g)
+  portion_unit: bottle
+  tags: drink,branded,juice
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 300
+- source: gymflow
+  source_id: cawston_press_apple_carrot_330
+  name: Cawston Press Apple & Carrot (330ml)
+  brand: Cawston Press
+  region_codes: gb
+  kcal_per_100g: 45
+  protein_per_100g: 0.5
+  carbs_per_100g: 10.5
+  fat_per_100g: 0
+  serving_grams: 330
+  serving_label: 1 bottle (330 g)
+  portion_unit: bottle
+  tags: drink,branded,juice
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 330
+- source: gymflow
+  source_id: drench_juicy_water_500
+  name: Drench Juicy Water Apple (500ml)
+  brand: Drench
+  region_codes: gb
+  kcal_per_100g: 8
+  protein_per_100g: 0
+  carbs_per_100g: 2
+  fat_per_100g: 0
+  serving_grams: 500
+  serving_label: 1 bottle (500 g)
+  portion_unit: bottle
+  tags: drink,branded,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 500
+- source: gymflow
+  source_id: naked_blue_machine_smoothie
+  name: Naked Blue Machine Smoothie (450ml)
+  brand: Naked
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 1
+  carbs_per_100g: 14
+  fat_per_100g: 0.3
+  serving_grams: 450
+  serving_label: 1 bottle (450 g)
+  portion_unit: bottle
+  tags: drink,branded,smoothie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 450
+- source: gymflow
+  source_id: naked_green_machine_smoothie
+  name: Naked Green Machine Smoothie (450ml)
+  brand: Naked
+  region_codes: gb
+  kcal_per_100g: 70
+  protein_per_100g: 2
+  carbs_per_100g: 15
+  fat_per_100g: 0.3
+  serving_grams: 450
+  serving_label: 1 bottle (450 g)
+  portion_unit: bottle
+  tags: drink,branded,smoothie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 450

@@ -1,0 +1,177 @@
+# frozen_pizza_brands.yaml — Gino D'Acampo, San Marco, Pizza Express frozen, more Goodfella's, Birds Eye Inspirations, WW low-cal.
+- source: gymflow
+  source_id: gino_dacampo_margherita_pizza
+  name: Gino D'Acampo Margherita Pizza (1)
+  brand: Gino D'Acampo
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 8
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: frozen,branded,pizza,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 350
+- source: gymflow
+  source_id: gino_dacampo_pepperoni_pizza
+  name: Gino D'Acampo Pepperoni Pizza (1)
+  brand: Gino D'Acampo
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 12
+  carbs_per_100g: 30
+  fat_per_100g: 11
+  serving_grams: 350
+  serving_label: 1 portion (350 g)
+  portion_unit: meal
+  tags: frozen,branded,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sulphites
+  unit_grams: 350
+- source: gymflow
+  source_id: san_marco_pepperoni_pizza
+  name: San Marco Pepperoni Pizza (1)
+  brand: San Marco
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 12
+  carbs_per_100g: 30
+  fat_per_100g: 12
+  serving_grams: 320
+  serving_label: 1 portion (320 g)
+  portion_unit: meal
+  tags: frozen,branded,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sulphites
+  unit_grams: 320
+- source: gymflow
+  source_id: pizza_express_dough_balls_freezer
+  name: Pizza Express Dough Balls (frozen, per 100g)
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 8
+  carbs_per_100g: 36
+  fat_per_100g: 11
+  serving_grams: 200
+  serving_label: 1 portion (200 g)
+  portion_unit: pack
+  tags: frozen,branded,bakery,italian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 200
+- source: gymflow
+  source_id: pizza_express_margherita_freezer
+  name: Pizza Express Margherita Pizza (frozen, 1)
+  brand: Pizza Express
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 11
+  carbs_per_100g: 30
+  fat_per_100g: 8
+  serving_grams: 245
+  serving_label: 1 portion (245 g)
+  portion_unit: meal
+  tags: frozen,branded,pizza,italian,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 245
+- source: gymflow
+  source_id: goodfellas_loaded_pepperoni_pizza
+  name: Goodfella's Loaded Pepperoni Pizza (1)
+  brand: Goodfella's
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 13
+  carbs_per_100g: 28
+  fat_per_100g: 14
+  serving_grams: 432
+  serving_label: 1 portion (432 g)
+  portion_unit: meal
+  tags: frozen,branded,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sulphites
+  unit_grams: 432
+- source: gymflow
+  source_id: goodfellas_thin_loaded_pepperoni
+  name: Goodfella's Thin Loaded Pepperoni (1)
+  brand: Goodfella's
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 12
+  carbs_per_100g: 30
+  fat_per_100g: 11
+  serving_grams: 365
+  serving_label: 1 portion (365 g)
+  portion_unit: meal
+  tags: frozen,branded,pizza
+  dietary_compat: pescatarian
+  allergens: gluten,milk,sulphites
+  unit_grams: 365
+- source: gymflow
+  source_id: birds_eye_inspirations_chicken_pasta
+  name: Birds Eye Inspirations Chicken & Mushroom Pasta
+  brand: Birds Eye
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 8
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: frozen,branded,ready_meal,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,celery
+  unit_grams: 380
+- source: gymflow
+  source_id: birds_eye_inspirations_thai_chicken
+  name: Birds Eye Inspirations Thai Sweet Chilli Chicken
+  brand: Birds Eye
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 9
+  carbs_per_100g: 18
+  fat_per_100g: 4
+  serving_grams: 380
+  serving_label: 1 portion (380 g)
+  portion_unit: meal
+  tags: frozen,branded,ready_meal,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,fish,sesame,soy
+  unit_grams: 380
+- source: gymflow
+  source_id: weight_watchers_lasagne
+  name: WW Beef Lasagne (per 100g)
+  brand: WW
+  region_codes: gb
+  kcal_per_100g: 100
+  protein_per_100g: 7
+  carbs_per_100g: 12
+  fat_per_100g: 2
+  serving_grams: 320
+  serving_label: 1 portion (320 g)
+  portion_unit: meal
+  tags: frozen,branded,ready_meal,low_calorie,low_fat
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 320
+- source: gymflow
+  source_id: weight_watchers_chicken_curry
+  name: WW Chicken Tikka Masala (per 100g)
+  brand: WW
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 8
+  carbs_per_100g: 11
+  fat_per_100g: 1.5
+  serving_grams: 320
+  serving_label: 1 portion (320 g)
+  portion_unit: meal
+  tags: frozen,branded,ready_meal,curry,chicken,low_calorie,low_fat
+  dietary_compat: pescatarian,dairy_free
+  allergens: milk,celery
+  unit_grams: 320

@@ -1,0 +1,321 @@
+# crisps_brands.yaml — Tyrrells (Lightly Salted/Cheddar Chive/Sweet Chilli), Burts (Lightly Salted/Sea Salt Balsamic), McCoy's (Flame Grilled Steak/Salt Malt Vinegar), Walkers Max + Squares + French Fries + Baked, Discos, Hula Hoops BBQ + Big Feet, Popchips, Mexican tortilla chips.
+- source: gymflow
+  source_id: tyrrells_lightly_sea_salted
+  name: Tyrrells Lightly Sea Salted (40g)
+  brand: Tyrrells
+  region_codes: gb
+  kcal_per_100g: 470
+  protein_per_100g: 7
+  carbs_per_100g: 56
+  fat_per_100g: 24
+  serving_grams: 40
+  serving_label: 1 portion (40 g)
+  portion_unit: pack
+  tags: snack,branded,crisps
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 40
+- source: gymflow
+  source_id: tyrrells_mature_cheddar_chive
+  name: Tyrrells Mature Cheddar & Chive (40g)
+  brand: Tyrrells
+  region_codes: gb
+  kcal_per_100g: 480
+  protein_per_100g: 7
+  carbs_per_100g: 55
+  fat_per_100g: 25
+  serving_grams: 40
+  serving_label: 1 portion (40 g)
+  portion_unit: pack
+  tags: snack,branded,crisps
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 40
+- source: gymflow
+  source_id: tyrrells_sweet_chilli_red_pepper
+  name: Tyrrells Sweet Chilli & Red Pepper (40g)
+  brand: Tyrrells
+  region_codes: gb
+  kcal_per_100g: 470
+  protein_per_100g: 6
+  carbs_per_100g: 56
+  fat_per_100g: 24
+  serving_grams: 40
+  serving_label: 1 portion (40 g)
+  portion_unit: pack
+  tags: snack,branded,crisps
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 40
+- source: gymflow
+  source_id: burts_crisps_lightly_salted
+  name: Burts Lightly Salted Hand Cooked (40g)
+  brand: Burts
+  region_codes: gb
+  kcal_per_100g: 470
+  protein_per_100g: 7
+  carbs_per_100g: 56
+  fat_per_100g: 24
+  serving_grams: 40
+  serving_label: 1 portion (40 g)
+  portion_unit: pack
+  tags: snack,branded,crisps
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 40
+- source: gymflow
+  source_id: burts_sea_salt_balsamic_vinegar
+  name: Burts Sea Salt & Balsamic (40g)
+  brand: Burts
+  region_codes: gb
+  kcal_per_100g: 475
+  protein_per_100g: 7
+  carbs_per_100g: 55
+  fat_per_100g: 25
+  serving_grams: 40
+  serving_label: 1 portion (40 g)
+  portion_unit: pack
+  tags: snack,branded,crisps
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: sulphites
+  unit_grams: 40
+- source: gymflow
+  source_id: mccoys_flame_grilled_steak
+  name: McCoy's Flame Grilled Steak (35g)
+  brand: McCoy's
+  region_codes: gb
+  kcal_per_100g: 500
+  protein_per_100g: 6
+  carbs_per_100g: 56
+  fat_per_100g: 27
+  serving_grams: 35
+  serving_label: 1 portion (35 g)
+  portion_unit: pack
+  tags: snack,branded,crisps
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 35
+- source: gymflow
+  source_id: mccoys_salt_malt_vinegar
+  name: McCoy's Salt & Malt Vinegar (35g)
+  brand: McCoy's
+  region_codes: gb
+  kcal_per_100g: 495
+  protein_per_100g: 6
+  carbs_per_100g: 56
+  fat_per_100g: 26
+  serving_grams: 35
+  serving_label: 1 portion (35 g)
+  portion_unit: pack
+  tags: snack,branded,crisps
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sulphites
+  unit_grams: 35
+- source: gymflow
+  source_id: walkers_max_paprika
+  name: Walkers Max Paprika (45g)
+  brand: Walkers
+  region_codes: gb
+  kcal_per_100g: 530
+  protein_per_100g: 6
+  carbs_per_100g: 50
+  fat_per_100g: 33
+  serving_grams: 45
+  serving_label: 1 portion (45 g)
+  portion_unit: pack
+  tags: snack,branded,crisps
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 45
+- source: gymflow
+  source_id: walkers_max_chilli
+  name: Walkers Max Chilli & Lime (45g)
+  brand: Walkers
+  region_codes: gb
+  kcal_per_100g: 525
+  protein_per_100g: 6
+  carbs_per_100g: 51
+  fat_per_100g: 32
+  serving_grams: 45
+  serving_label: 1 portion (45 g)
+  portion_unit: pack
+  tags: snack,branded,crisps
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 45
+- source: gymflow
+  source_id: walkers_baked_cheese_onion
+  name: Walkers Baked Cheese & Onion (25g)
+  brand: Walkers
+  region_codes: gb
+  kcal_per_100g: 415
+  protein_per_100g: 7
+  carbs_per_100g: 70
+  fat_per_100g: 11
+  serving_grams: 25
+  serving_label: 1 portion (25 g)
+  portion_unit: pack
+  tags: snack,branded,crisps,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 25
+- source: gymflow
+  source_id: walkers_french_fries_salt_vinegar
+  name: Walkers French Fries Salt & Vinegar (1 pack)
+  brand: Walkers
+  region_codes: gb
+  kcal_per_100g: 470
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 20
+  serving_grams: 22
+  serving_label: 1 portion (22 g)
+  portion_unit: pack
+  tags: snack,branded,crisps,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 22
+- source: gymflow
+  source_id: walkers_squares_cheese_onion
+  name: Walkers Squares Cheese & Onion (1 pack)
+  brand: Walkers
+  region_codes: gb
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  serving_grams: 22
+  serving_label: 1 portion (22 g)
+  portion_unit: pack
+  tags: snack,branded,crisps
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 22
+- source: gymflow
+  source_id: discos_salt_vinegar_30g
+  name: Discos Salt & Vinegar (30g)
+  brand: KP
+  region_codes: gb
+  kcal_per_100g: 510
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 28
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,branded,crisps
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: hula_hoops_bbq_24g
+  name: Hula Hoops BBQ (24g)
+  brand: Hula Hoops
+  region_codes: gb
+  kcal_per_100g: 510
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 28
+  serving_grams: 24
+  serving_label: 1 portion (24 g)
+  portion_unit: pack
+  tags: snack,branded,crisps
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 24
+- source: gymflow
+  source_id: hula_hoops_bigfeet_27g
+  name: Hula Hoops Big Feet (27g)
+  brand: Hula Hoops
+  region_codes: gb
+  kcal_per_100g: 510
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 28
+  serving_grams: 27
+  serving_label: 1 portion (27 g)
+  portion_unit: pack
+  tags: snack,branded,crisps
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 27
+- source: gymflow
+  source_id: walkers_squares_smokey_bacon_22g
+  name: Walkers Squares Smokey Bacon (22g)
+  brand: Walkers
+  region_codes: gb
+  kcal_per_100g: 480
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 24
+  serving_grams: 22
+  serving_label: 1 portion (22 g)
+  portion_unit: pack
+  tags: snack,branded,crisps
+  dietary_compat: pescatarian,gluten_free
+  allergens: ''
+  unit_grams: 22
+- source: gymflow
+  source_id: popchips_salt_vinegar_23g
+  name: Popchips Salt & Vinegar (23g)
+  brand: Popchips
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 70
+  fat_per_100g: 9
+  serving_grams: 23
+  serving_label: 1 portion (23 g)
+  portion_unit: pack
+  tags: snack,branded,crisps,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 23
+- source: gymflow
+  source_id: popchips_sour_cream_onion_23g
+  name: Popchips Sour Cream & Onion (23g)
+  brand: Popchips
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 5
+  carbs_per_100g: 70
+  fat_per_100g: 9
+  serving_grams: 23
+  serving_label: 1 portion (23 g)
+  portion_unit: pack
+  tags: snack,branded,crisps,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 23
+- source: gymflow
+  source_id: squirrel_corn_chips_30g
+  name: Squirrel Corn Chips Lightly Salted (30g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 470
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 22
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,crisps
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: mexican_tortilla_chips_30g
+  name: Mexican Tortilla Chips Salted (30g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 480
+  protein_per_100g: 7
+  carbs_per_100g: 60
+  fat_per_100g: 22
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,crisps,mexican
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30

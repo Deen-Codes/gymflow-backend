@@ -1,0 +1,299 @@
+# sausages_branded.yaml — Richmond (Thick Pork, Irish Recipe, Meat Free), Wall's, Heck (Chicken Italia, Pork Chipolatas, Meatballs), The Black Farmer, Cumberland, Lincolnshire, cooking chorizo, Quorn sausages, fresh burgers (Heck, M&S Aberdeen Angus, Tesco), fresh chicken (M&S Oakham, Tesco Finest).
+- source: gymflow
+  source_id: richmond_pork_thick_8
+  name: Richmond Thick Pork Sausages (1)
+  brand: Richmond
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 13
+  carbs_per_100g: 9
+  fat_per_100g: 23
+  serving_grams: 50
+  serving_label: 1 piece (50 g)
+  portion_unit: piece
+  tags: meat,branded,processed
+  dietary_compat: pescatarian
+  allergens: gluten,sulphites
+  unit_grams: 50
+- source: gymflow
+  source_id: richmond_irish_recipe_sausages
+  name: Richmond Irish Recipe Sausages (1)
+  brand: Richmond
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 13
+  carbs_per_100g: 9
+  fat_per_100g: 22
+  serving_grams: 50
+  serving_label: 1 piece (50 g)
+  portion_unit: piece
+  tags: meat,branded,processed
+  dietary_compat: pescatarian
+  allergens: gluten,sulphites
+  unit_grams: 50
+- source: gymflow
+  source_id: richmond_meat_free_8
+  name: Richmond Meat Free Sausages (1)
+  brand: Richmond
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 14
+  carbs_per_100g: 12
+  fat_per_100g: 11
+  serving_grams: 50
+  serving_label: 1 piece (50 g)
+  portion_unit: piece
+  tags: meat_alternative,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy
+  unit_grams: 50
+- source: gymflow
+  source_id: walls_pork_sausages_8
+  name: Walls Classic Pork Sausages (1)
+  brand: Wall's
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 13
+  carbs_per_100g: 9
+  fat_per_100g: 23
+  serving_grams: 50
+  serving_label: 1 piece (50 g)
+  portion_unit: piece
+  tags: meat,branded,processed
+  dietary_compat: pescatarian
+  allergens: gluten,sulphites
+  unit_grams: 50
+- source: gymflow
+  source_id: heck_chicken_italia_sausages
+  name: Heck Chicken Italia Sausages (1)
+  brand: Heck
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 19
+  carbs_per_100g: 4
+  fat_per_100g: 9
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: meat,branded,chicken,high_protein
+  dietary_compat: pescatarian,gluten_free
+  allergens: ''
+  unit_grams: 60
+- source: gymflow
+  source_id: heck_pork_chipolatas_12
+  name: Heck Pork Chipolatas (1)
+  brand: Heck
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 17
+  carbs_per_100g: 1
+  fat_per_100g: 23
+  serving_grams: 30
+  serving_label: 1 piece (30 g)
+  portion_unit: piece
+  tags: meat,branded,processed
+  dietary_compat: pescatarian,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: heck_meatballs_classic
+  name: Heck Classic Pork Meatballs (1)
+  brand: Heck
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 17
+  carbs_per_100g: 5
+  fat_per_100g: 15
+  serving_grams: 22
+  serving_label: 1 piece (22 g)
+  portion_unit: piece
+  tags: meat,branded,high_protein
+  dietary_compat: pescatarian,gluten_free
+  allergens: ''
+  unit_grams: 22
+- source: gymflow
+  source_id: heck_chicken_italia_meatballs
+  name: Heck Chicken Italia Meatballs (1)
+  brand: Heck
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 19
+  carbs_per_100g: 4
+  fat_per_100g: 9
+  serving_grams: 22
+  serving_label: 1 piece (22 g)
+  portion_unit: piece
+  tags: meat,branded,chicken,high_protein
+  dietary_compat: pescatarian,gluten_free
+  allergens: ''
+  unit_grams: 22
+- source: gymflow
+  source_id: the_black_farmer_sausages
+  name: The Black Farmer Premium Pork Sausages (1)
+  brand: The Black Farmer
+  region_codes: gb
+  kcal_per_100g: 295
+  protein_per_100g: 16
+  carbs_per_100g: 4
+  fat_per_100g: 24
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: meat,branded,gluten_free
+  dietary_compat: pescatarian,gluten_free,dairy_free
+  allergens: ''
+  unit_grams: 60
+- source: gymflow
+  source_id: cumberland_sausage_per_100
+  name: Cumberland Sausage (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 14
+  carbs_per_100g: 9
+  fat_per_100g: 22
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: meat,processed
+  dietary_compat: pescatarian
+  allergens: gluten,sulphites
+- source: gymflow
+  source_id: lincolnshire_sausages_per_100
+  name: Lincolnshire Sausages (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 13
+  carbs_per_100g: 9
+  fat_per_100g: 22
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: meat,processed
+  dietary_compat: pescatarian
+  allergens: gluten,sulphites
+- source: gymflow
+  source_id: chorizo_cooking_per_100
+  name: Cooking Chorizo (per 100g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 320
+  protein_per_100g: 18
+  carbs_per_100g: 2
+  fat_per_100g: 27
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: meat,charcuterie,processed
+  dietary_compat: pescatarian,gluten_free,dairy_free
+  allergens: sulphites
+- source: gymflow
+  source_id: quorn_classic_sausages
+  name: Quorn Classic Sausages (1)
+  brand: Quorn
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 14
+  carbs_per_100g: 9
+  fat_per_100g: 8
+  serving_grams: 42
+  serving_label: 1 piece (42 g)
+  portion_unit: piece
+  tags: meat_alternative,branded,vegetarian,high_protein
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: eggs,milk,gluten
+  unit_grams: 42
+- source: gymflow
+  source_id: heck_beef_burgers_4
+  name: Heck 100% Beef Burgers (1)
+  brand: Heck
+  region_codes: gb
+  kcal_per_100g: 220
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 14
+  serving_grams: 113
+  serving_label: 1 piece (113 g)
+  portion_unit: piece
+  tags: meat,branded,burger,gluten_free,high_protein
+  dietary_compat: pescatarian,gluten_free,dairy_free
+  allergens: ''
+  unit_grams: 113
+- source: gymflow
+  source_id: mands_aberdeen_angus_burger
+  name: M&S Aberdeen Angus Beef Burger (1)
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 22
+  carbs_per_100g: 1
+  fat_per_100g: 17
+  serving_grams: 170
+  serving_label: 1 piece (170 g)
+  portion_unit: piece
+  tags: meat,branded,burger,supermarket,gluten_free,high_protein
+  dietary_compat: pescatarian,gluten_free
+  allergens: ''
+  unit_grams: 170
+- source: gymflow
+  source_id: tesco_beef_burgers_4
+  name: Tesco British Beef Burgers (1)
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 22
+  carbs_per_100g: 1
+  fat_per_100g: 17
+  serving_grams: 113
+  serving_label: 1 piece (113 g)
+  portion_unit: piece
+  tags: meat,branded,burger,supermarket,gluten_free
+  dietary_compat: pescatarian,gluten_free
+  allergens: ''
+  unit_grams: 113
+- source: gymflow
+  source_id: mands_oakham_chicken_breast
+  name: M&S Oakham Chicken Breast Fillets (per 100g)
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 23.5
+  carbs_per_100g: 0
+  fat_per_100g: 1.6
+  serving_grams: 150
+  serving_label: 1 grams (150 g)
+  portion_unit: grams
+  tags: meat,chicken,high_protein,low_fat,low_carb,supermarket
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: mands_oakham_chicken_thighs
+  name: M&S Oakham Chicken Thighs (per 100g)
+  brand: M&S
+  region_codes: gb
+  kcal_per_100g: 119
+  protein_per_100g: 22
+  carbs_per_100g: 0
+  fat_per_100g: 3.5
+  serving_grams: 100
+  serving_label: 1 grams (100 g)
+  portion_unit: grams
+  tags: meat,chicken,high_protein,supermarket
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: ''
+- source: gymflow
+  source_id: tesco_finest_chicken_breasts
+  name: Tesco Finest British Chicken Breast (per 100g)
+  brand: Tesco
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 23.5
+  carbs_per_100g: 0
+  fat_per_100g: 1.6
+  serving_grams: 150
+  serving_label: 1 grams (150 g)
+  portion_unit: grams
+  tags: meat,chicken,high_protein,low_fat,low_carb,supermarket
+  dietary_compat: halal,pescatarian,gluten_free,dairy_free
+  allergens: ''

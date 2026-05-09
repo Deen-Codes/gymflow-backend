@@ -1,0 +1,449 @@
+# world_snacks.yaml — Pocky 3 flavours, Hi-Chew, Pepero choc/almond, Lotte Choco Pie, Honey Butter Chip, Calbee Shrimp Chips, Takis Fuego, Cheetos Flamin' Hot, Fritos, Seabrook, prawn crackers, Bombay mix, Chevda, Dukkah, instant noodles (Indomie Mi Goreng + Special Chicken, Nissin Cup Noodle Chicken/Curry, Mama Tom Yum, Shin Ramyun, Buldak 2x Spicy, Pot Noodle Chicken Mushroom + Bombay Bad Boy, Batchelors Super Noodles).
+- source: gymflow
+  source_id: pocky_chocolate_pack
+  name: Pocky Chocolate (1 pack)
+  brand: Pocky
+  region_codes: gb
+  kcal_per_100g: 510
+  protein_per_100g: 7
+  carbs_per_100g: 65
+  fat_per_100g: 25
+  serving_grams: 40
+  serving_label: 1 portion (40 g)
+  portion_unit: pack
+  tags: snack,branded,asian,japanese
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,soy
+  unit_grams: 40
+- source: gymflow
+  source_id: pocky_strawberry_pack
+  name: Pocky Strawberry (1 pack)
+  brand: Pocky
+  region_codes: gb
+  kcal_per_100g: 510
+  protein_per_100g: 7
+  carbs_per_100g: 65
+  fat_per_100g: 25
+  serving_grams: 40
+  serving_label: 1 portion (40 g)
+  portion_unit: pack
+  tags: snack,branded,asian,japanese
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,soy
+  unit_grams: 40
+- source: gymflow
+  source_id: pocky_matcha_pack
+  name: Pocky Matcha (1 pack)
+  brand: Pocky
+  region_codes: gb
+  kcal_per_100g: 510
+  protein_per_100g: 7
+  carbs_per_100g: 65
+  fat_per_100g: 25
+  serving_grams: 40
+  serving_label: 1 portion (40 g)
+  portion_unit: pack
+  tags: snack,branded,asian,japanese
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,soy
+  unit_grams: 40
+- source: gymflow
+  source_id: hi_chew_pack
+  name: Hi-Chew Mixed Pack (1)
+  brand: Hi-Chew
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 0.5
+  carbs_per_100g: 90
+  fat_per_100g: 6
+  serving_grams: 35
+  serving_label: 1 portion (35 g)
+  portion_unit: pack
+  tags: snack,branded,asian,japanese,confectionery
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 35
+- source: gymflow
+  source_id: pepero_chocolate_pack
+  name: Pepero Chocolate (1 pack)
+  brand: Pepero
+  region_codes: gb
+  kcal_per_100g: 510
+  protein_per_100g: 7
+  carbs_per_100g: 65
+  fat_per_100g: 25
+  serving_grams: 50
+  serving_label: 1 portion (50 g)
+  portion_unit: pack
+  tags: snack,branded,korean
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,soy
+  unit_grams: 50
+- source: gymflow
+  source_id: pepero_almond_pack
+  name: Pepero Almond (1 pack)
+  brand: Pepero
+  region_codes: gb
+  kcal_per_100g: 530
+  protein_per_100g: 8
+  carbs_per_100g: 60
+  fat_per_100g: 27
+  serving_grams: 32
+  serving_label: 1 portion (32 g)
+  portion_unit: pack
+  tags: snack,branded,korean
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,tree_nuts,soy
+  unit_grams: 32
+- source: gymflow
+  source_id: choco_pie_korean_1
+  name: Lotte Choco Pie (1 piece)
+  brand: Lotte
+  region_codes: gb
+  kcal_per_100g: 480
+  protein_per_100g: 5
+  carbs_per_100g: 60
+  fat_per_100g: 23
+  serving_grams: 28
+  serving_label: 1 piece (28 g)
+  portion_unit: piece
+  tags: snack,branded,korean,confectionery
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 28
+- source: gymflow
+  source_id: honey_butter_chip_60g
+  name: Honey Butter Chip (60g)
+  brand: Calbee
+  region_codes: gb
+  kcal_per_100g: 520
+  protein_per_100g: 5
+  carbs_per_100g: 55
+  fat_per_100g: 30
+  serving_grams: 60
+  serving_label: 1 portion (60 g)
+  portion_unit: pack
+  tags: snack,branded,korean,crisps
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk
+  unit_grams: 60
+- source: gymflow
+  source_id: calbee_shrimp_chips_30g
+  name: Calbee Shrimp Chips (30g)
+  brand: Calbee
+  region_codes: gb
+  kcal_per_100g: 480
+  protein_per_100g: 5
+  carbs_per_100g: 65
+  fat_per_100g: 22
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,branded,asian,crisps
+  dietary_compat: pescatarian
+  allergens: crustaceans,gluten
+  unit_grams: 30
+- source: gymflow
+  source_id: takis_fuego_30g
+  name: Takis Fuego (30g)
+  brand: Takis
+  region_codes: gb
+  kcal_per_100g: 500
+  protein_per_100g: 6
+  carbs_per_100g: 60
+  fat_per_100g: 25
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,branded,mexican,crisps
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 30
+- source: gymflow
+  source_id: hot_cheetos_28g
+  name: Cheetos Crunchy Flamin' Hot (28g)
+  brand: Cheetos
+  region_codes: gb
+  kcal_per_100g: 540
+  protein_per_100g: 7
+  carbs_per_100g: 56
+  fat_per_100g: 32
+  serving_grams: 28
+  serving_label: 1 portion (28 g)
+  portion_unit: pack
+  tags: snack,branded,crisps
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: milk,gluten
+  unit_grams: 28
+- source: gymflow
+  source_id: fritos_original_28g
+  name: Fritos Original (28g)
+  brand: Fritos
+  region_codes: gb
+  kcal_per_100g: 530
+  protein_per_100g: 7
+  carbs_per_100g: 56
+  fat_per_100g: 30
+  serving_grams: 28
+  serving_label: 1 portion (28 g)
+  portion_unit: pack
+  tags: snack,branded,crisps
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 28
+- source: gymflow
+  source_id: seabrook_crinkle_cut
+  name: Seabrook Crinkle Cut Crisps (25g)
+  brand: Seabrook
+  region_codes: gb
+  kcal_per_100g: 530
+  protein_per_100g: 6
+  carbs_per_100g: 55
+  fat_per_100g: 30
+  serving_grams: 25
+  serving_label: 1 portion (25 g)
+  portion_unit: pack
+  tags: snack,branded,crisps
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 25
+- source: gymflow
+  source_id: chinese_prawn_crackers_30g
+  name: Prawn Crackers (30g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 520
+  protein_per_100g: 4
+  carbs_per_100g: 64
+  fat_per_100g: 27
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,asian
+  dietary_compat: pescatarian,dairy_free
+  allergens: crustaceans,gluten
+  unit_grams: 30
+- source: gymflow
+  source_id: bombay_mix_30g_extra
+  name: Bombay Mix (30g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 525
+  protein_per_100g: 16
+  carbs_per_100g: 40
+  fat_per_100g: 30
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,asian,indian
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: peanuts
+  unit_grams: 30
+- source: gymflow
+  source_id: chevda_30g
+  name: Chevda (30g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 525
+  protein_per_100g: 14
+  carbs_per_100g: 50
+  fat_per_100g: 25
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,asian,indian
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: peanuts
+  unit_grams: 30
+- source: gymflow
+  source_id: moroccan_dukkah_15g
+  name: Dukkah (1 tbsp/15g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 480
+  protein_per_100g: 14
+  carbs_per_100g: 22
+  fat_per_100g: 38
+  serving_grams: 15
+  serving_label: 1 tbsp (15 g)
+  portion_unit: tbsp
+  tags: pantry,middle_eastern,seasoning
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: tree_nuts,sesame
+  unit_grams: 15
+- source: gymflow
+  source_id: indomie_mi_goreng_pack
+  name: Indomie Mi Goreng (1 pack)
+  brand: Indomie
+  region_codes: gb
+  kcal_per_100g: 460
+  protein_per_100g: 9
+  carbs_per_100g: 58
+  fat_per_100g: 20
+  serving_grams: 85
+  serving_label: 1 portion (85 g)
+  portion_unit: pack
+  tags: pantry,branded,asian,noodles
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy,sesame
+  unit_grams: 85
+- source: gymflow
+  source_id: indomie_special_chicken
+  name: Indomie Special Chicken (1 pack)
+  brand: Indomie
+  region_codes: gb
+  kcal_per_100g: 460
+  protein_per_100g: 9
+  carbs_per_100g: 58
+  fat_per_100g: 20
+  serving_grams: 75
+  serving_label: 1 portion (75 g)
+  portion_unit: pack
+  tags: pantry,branded,asian,noodles,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,soy,fish
+  unit_grams: 75
+- source: gymflow
+  source_id: nissin_cup_noodle_chicken
+  name: Nissin Cup Noodle Chicken (1 cup)
+  brand: Nissin
+  region_codes: gb
+  kcal_per_100g: 440
+  protein_per_100g: 8
+  carbs_per_100g: 60
+  fat_per_100g: 18
+  serving_grams: 75
+  serving_label: 1 portion (75 g)
+  portion_unit: pack
+  tags: pantry,branded,asian,noodles,chicken
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,soy,sesame
+  unit_grams: 75
+- source: gymflow
+  source_id: nissin_cup_noodle_curry
+  name: Nissin Cup Noodle Curry (1 cup)
+  brand: Nissin
+  region_codes: gb
+  kcal_per_100g: 450
+  protein_per_100g: 8
+  carbs_per_100g: 60
+  fat_per_100g: 19
+  serving_grams: 75
+  serving_label: 1 portion (75 g)
+  portion_unit: pack
+  tags: pantry,branded,asian,noodles,curry
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,soy,celery
+  unit_grams: 75
+- source: gymflow
+  source_id: mama_thai_tom_yum
+  name: Mama Tom Yum Shrimp (1 pack)
+  brand: Mama
+  region_codes: gb
+  kcal_per_100g: 425
+  protein_per_100g: 8
+  carbs_per_100g: 60
+  fat_per_100g: 16
+  serving_grams: 60
+  serving_label: 1 portion (60 g)
+  portion_unit: pack
+  tags: pantry,branded,asian,noodles,thai
+  dietary_compat: pescatarian,dairy_free
+  allergens: crustaceans,gluten,soy,fish
+  unit_grams: 60
+- source: gymflow
+  source_id: shin_ramyun_pack
+  name: Shin Ramyun (1 pack)
+  brand: Nongshim
+  region_codes: gb
+  kcal_per_100g: 510
+  protein_per_100g: 11
+  carbs_per_100g: 78
+  fat_per_100g: 16
+  serving_grams: 120
+  serving_label: 1 portion (120 g)
+  portion_unit: pack
+  tags: pantry,branded,asian,noodles,korean
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,soy,fish
+  unit_grams: 120
+- source: gymflow
+  source_id: buldak_2x_spicy_pack
+  name: Buldak 2x Spicy (1 pack)
+  brand: Samyang
+  region_codes: gb
+  kcal_per_100g: 530
+  protein_per_100g: 10
+  carbs_per_100g: 80
+  fat_per_100g: 18
+  serving_grams: 140
+  serving_label: 1 portion (140 g)
+  portion_unit: pack
+  tags: pantry,branded,asian,noodles,korean
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,soy
+  unit_grams: 140
+- source: gymflow
+  source_id: pot_noodle_chicken_mushroom
+  name: Pot Noodle Chicken & Mushroom (1)
+  brand: Pot Noodle
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 9
+  carbs_per_100g: 64
+  fat_per_100g: 14
+  serving_grams: 90
+  serving_label: 1 portion (90 g)
+  portion_unit: pack
+  tags: pantry,branded,noodles
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,milk,soy
+  unit_grams: 90
+- source: gymflow
+  source_id: pot_noodle_bombay_bad_boy
+  name: Pot Noodle Bombay Bad Boy (1)
+  brand: Pot Noodle
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 8
+  carbs_per_100g: 65
+  fat_per_100g: 13
+  serving_grams: 90
+  serving_label: 1 portion (90 g)
+  portion_unit: pack
+  tags: pantry,branded,noodles
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,milk,soy
+  unit_grams: 90
+- source: gymflow
+  source_id: super_noodles_chicken
+  name: Batchelors Super Noodles Chicken (1 pack)
+  brand: Batchelors
+  region_codes: gb
+  kcal_per_100g: 450
+  protein_per_100g: 9
+  carbs_per_100g: 65
+  fat_per_100g: 17
+  serving_grams: 90
+  serving_label: 1 portion (90 g)
+  portion_unit: pack
+  tags: pantry,branded,noodles
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,milk,soy,celery
+  unit_grams: 90
+- source: gymflow
+  source_id: super_noodles_curry
+  name: Batchelors Super Noodles Curry (1 pack)
+  brand: Batchelors
+  region_codes: gb
+  kcal_per_100g: 450
+  protein_per_100g: 9
+  carbs_per_100g: 65
+  fat_per_100g: 17
+  serving_grams: 90
+  serving_label: 1 portion (90 g)
+  portion_unit: pack
+  tags: pantry,branded,noodles
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,milk,soy,celery
+  unit_grams: 90

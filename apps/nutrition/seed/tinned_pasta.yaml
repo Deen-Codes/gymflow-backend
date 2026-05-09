@@ -1,0 +1,321 @@
+# tinned_pasta.yaml — Heinz Spaghetti Bolognese + Macaroni Cheese + Ravioli + Lasagne, Five Beanz, No Added Sugar Beans, chilli con carne, Napolina, Uncle Ben's + Tilda Express rice, more soups (Heinz lentil/minestrone/oxtail/chicken noodle, Crosse & Blackwell, Campbells).
+- source: gymflow
+  source_id: heinz_spaghetti_bolognese_400
+  name: Heinz Spaghetti Bolognese (per 100g)
+  brand: Heinz
+  region_codes: gb
+  kcal_per_100g: 85
+  protein_per_100g: 4
+  carbs_per_100g: 12
+  fat_per_100g: 2
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: pack
+  tags: pantry,canned,branded,pasta
+  dietary_compat: pescatarian
+  allergens: gluten,milk,celery
+  unit_grams: 400
+- source: gymflow
+  source_id: heinz_macaroni_cheese_400
+  name: Heinz Macaroni Cheese (per 100g)
+  brand: Heinz
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 4
+  carbs_per_100g: 13
+  fat_per_100g: 3
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: pack
+  tags: pantry,canned,branded,pasta
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 400
+- source: gymflow
+  source_id: heinz_ravioli_400
+  name: Heinz Ravioli in Tomato Sauce (per 100g)
+  brand: Heinz
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 3
+  carbs_per_100g: 14
+  fat_per_100g: 1.5
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: pack
+  tags: pantry,canned,branded,pasta
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,eggs,celery
+  unit_grams: 400
+- source: gymflow
+  source_id: heinz_lasagne_400
+  name: Heinz Lasagne (per 100g)
+  brand: Heinz
+  region_codes: gb
+  kcal_per_100g: 90
+  protein_per_100g: 4
+  carbs_per_100g: 12
+  fat_per_100g: 3
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: pack
+  tags: pantry,canned,branded,pasta
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,celery
+  unit_grams: 400
+- source: gymflow
+  source_id: heinz_baked_beans_xl
+  name: Heinz Baked Beans Big Tin (415g)
+  brand: Heinz
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 4.8
+  carbs_per_100g: 13
+  fat_per_100g: 0.6
+  serving_grams: 415
+  serving_label: 1 portion (415 g)
+  portion_unit: pack
+  tags: pantry,canned,branded,pulses
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 415
+- source: gymflow
+  source_id: heinz_5_beanz
+  name: Heinz Five Beanz (per 100g)
+  brand: Heinz
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 5
+  carbs_per_100g: 16
+  fat_per_100g: 0.8
+  serving_grams: 415
+  serving_label: 1 portion (415 g)
+  portion_unit: pack
+  tags: pantry,canned,branded,pulses
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 415
+- source: gymflow
+  source_id: heinz_no_added_sugar_beans
+  name: Heinz No Added Sugar Beans (per 100g)
+  brand: Heinz
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 4.8
+  carbs_per_100g: 9
+  fat_per_100g: 0.5
+  serving_grams: 415
+  serving_label: 1 portion (415 g)
+  portion_unit: pack
+  tags: pantry,canned,branded,pulses,low_sugar
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 415
+- source: gymflow
+  source_id: heinz_chilli_con_carne_can
+  name: Heinz Chilli Con Carne (per 100g)
+  brand: Heinz
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 7
+  carbs_per_100g: 12
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: pack
+  tags: pantry,canned,branded
+  dietary_compat: pescatarian,dairy_free
+  allergens: celery,sulphites
+  unit_grams: 400
+- source: gymflow
+  source_id: napolina_macaroni_cheese
+  name: Napolina Macaroni Cheese (per 100g)
+  brand: Napolina
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 4
+  carbs_per_100g: 13
+  fat_per_100g: 3
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: pack
+  tags: pantry,canned,branded,pasta
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 400
+- source: gymflow
+  source_id: uncle_bens_express_basmati
+  name: Uncle Ben's Express Basmati Rice (per 100g)
+  brand: Uncle Ben's
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 3
+  carbs_per_100g: 32
+  fat_per_100g: 2
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: pantry,branded,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: uncle_bens_express_pilau_rice
+  name: Uncle Ben's Express Pilau Rice (per 100g)
+  brand: Uncle Ben's
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 4
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: pantry,branded,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: uncle_bens_express_egg_fried
+  name: Uncle Ben's Express Egg Fried Rice (per 100g)
+  brand: Uncle Ben's
+  region_codes: gb
+  kcal_per_100g: 175
+  protein_per_100g: 5
+  carbs_per_100g: 28
+  fat_per_100g: 5
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: pantry,branded,grain
+  dietary_compat: pescatarian,dairy_free
+  allergens: eggs,soy,sesame
+  unit_grams: 250
+- source: gymflow
+  source_id: tilda_basmati_express
+  name: Tilda Steamed Basmati Rice (per 100g)
+  brand: Tilda
+  region_codes: gb
+  kcal_per_100g: 125
+  protein_per_100g: 3
+  carbs_per_100g: 25
+  fat_per_100g: 1
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: pantry,branded,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: tilda_pilau_express
+  name: Tilda Pilau Rice (per 100g)
+  brand: Tilda
+  region_codes: gb
+  kcal_per_100g: 165
+  protein_per_100g: 3
+  carbs_per_100g: 28
+  fat_per_100g: 4
+  serving_grams: 250
+  serving_label: 1 portion (250 g)
+  portion_unit: pack
+  tags: pantry,branded,grain
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 250
+- source: gymflow
+  source_id: heinz_lentil_soup_can
+  name: Heinz Lentil Soup (per 100g)
+  brand: Heinz
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 4
+  carbs_per_100g: 13
+  fat_per_100g: 0.5
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: pack
+  tags: soup,canned,branded,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: celery
+  unit_grams: 400
+- source: gymflow
+  source_id: heinz_minestrone_soup
+  name: Heinz Minestrone Soup (per 100g)
+  brand: Heinz
+  region_codes: gb
+  kcal_per_100g: 50
+  protein_per_100g: 1.5
+  carbs_per_100g: 10
+  fat_per_100g: 0.5
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: pack
+  tags: soup,canned,branded,vegan,low_calorie
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,celery
+  unit_grams: 400
+- source: gymflow
+  source_id: heinz_oxtail_soup
+  name: Heinz Oxtail Soup (per 100g)
+  brand: Heinz
+  region_codes: gb
+  kcal_per_100g: 55
+  protein_per_100g: 2
+  carbs_per_100g: 9
+  fat_per_100g: 1
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: pack
+  tags: soup,canned,branded
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,celery
+  unit_grams: 400
+- source: gymflow
+  source_id: heinz_chicken_noodle_soup
+  name: Heinz Chicken Noodle Soup (per 100g)
+  brand: Heinz
+  region_codes: gb
+  kcal_per_100g: 35
+  protein_per_100g: 2
+  carbs_per_100g: 6
+  fat_per_100g: 0.5
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: pack
+  tags: soup,canned,branded,chicken,low_calorie
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,celery,eggs
+  unit_grams: 400
+- source: gymflow
+  source_id: crosse_blackwell_oxtail
+  name: Crosse & Blackwell Oxtail Soup (per 100g)
+  brand: Crosse & Blackwell
+  region_codes: gb
+  kcal_per_100g: 55
+  protein_per_100g: 2
+  carbs_per_100g: 9
+  fat_per_100g: 1
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: pack
+  tags: soup,canned,branded
+  dietary_compat: pescatarian,dairy_free
+  allergens: gluten,celery
+  unit_grams: 400
+- source: gymflow
+  source_id: campbells_chicken_mushroom
+  name: Campbells Cream of Chicken & Mushroom (per 100g)
+  brand: Campbells
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 2
+  carbs_per_100g: 7
+  fat_per_100g: 4
+  serving_grams: 400
+  serving_label: 1 portion (400 g)
+  portion_unit: pack
+  tags: soup,canned,branded
+  dietary_compat: pescatarian
+  allergens: gluten,milk,celery
+  unit_grams: 400

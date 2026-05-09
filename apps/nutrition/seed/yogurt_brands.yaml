@@ -1,0 +1,319 @@
+# yogurt_brands.yaml — Onken natural/strawberry, Liberté Greek/strawberry, The Collective, Yeo Valley natural/strawberry, Rachel's Organic, Alpro plant yogurts, Coconut Collaborative, Actimel, Benecol, Yakult Light, Elmlea creams, soured cream.
+- source: gymflow
+  source_id: onken_natural_500
+  name: Onken Natural Yogurt (per 100g)
+  brand: Onken
+  region_codes: gb
+  kcal_per_100g: 75
+  protein_per_100g: 4.5
+  carbs_per_100g: 6
+  fat_per_100g: 4
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: dairy,branded,yogurt
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 150
+- source: gymflow
+  source_id: onken_strawberry_pot
+  name: Onken Strawberry Yogurt (450g pot per 100g)
+  brand: Onken
+  region_codes: gb
+  kcal_per_100g: 80
+  protein_per_100g: 3.5
+  carbs_per_100g: 13
+  fat_per_100g: 1.5
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: dairy,branded,yogurt,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 150
+- source: gymflow
+  source_id: liberte_greek_natural
+  name: Liberté Greek Natural (per 100g)
+  brand: Liberté
+  region_codes: gb
+  kcal_per_100g: 90
+  protein_per_100g: 8
+  carbs_per_100g: 5
+  fat_per_100g: 4
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: dairy,branded,yogurt,high_protein
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 150
+- source: gymflow
+  source_id: liberte_strawberry_175
+  name: Liberté Strawberry (175g)
+  brand: Liberté
+  region_codes: gb
+  kcal_per_100g: 105
+  protein_per_100g: 4
+  carbs_per_100g: 14
+  fat_per_100g: 4
+  serving_grams: 175
+  serving_label: 1 portion (175 g)
+  portion_unit: pack
+  tags: dairy,branded,yogurt
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 175
+- source: gymflow
+  source_id: the_collective_dairy_natural
+  name: The Collective Natural (per 100g)
+  brand: The Collective
+  region_codes: gb
+  kcal_per_100g: 90
+  protein_per_100g: 5
+  carbs_per_100g: 6
+  fat_per_100g: 5
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: dairy,branded,yogurt
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 150
+- source: gymflow
+  source_id: the_collective_strawberry_pomegranate
+  name: The Collective Strawberry & Pomegranate (per 100g)
+  brand: The Collective
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 4
+  carbs_per_100g: 16
+  fat_per_100g: 3
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: dairy,branded,yogurt
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 150
+- source: gymflow
+  source_id: yeo_valley_natural_500
+  name: Yeo Valley Natural Greek Style (per 100g)
+  brand: Yeo Valley
+  region_codes: gb
+  kcal_per_100g: 110
+  protein_per_100g: 4
+  carbs_per_100g: 6
+  fat_per_100g: 8
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: dairy,branded,yogurt
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 150
+- source: gymflow
+  source_id: yeo_valley_strawberry_4_pack
+  name: Yeo Valley Strawberry (1 pot/120g)
+  brand: Yeo Valley
+  region_codes: gb
+  kcal_per_100g: 95
+  protein_per_100g: 4
+  carbs_per_100g: 14
+  fat_per_100g: 2.5
+  serving_grams: 120
+  serving_label: 1 portion (120 g)
+  portion_unit: pack
+  tags: dairy,branded,yogurt
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 120
+- source: gymflow
+  source_id: rachels_organic_greek_500
+  name: Rachel's Organic Greek (per 100g)
+  brand: Rachel's Organic
+  region_codes: gb
+  kcal_per_100g: 130
+  protein_per_100g: 4.5
+  carbs_per_100g: 5
+  fat_per_100g: 11
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: dairy,branded,yogurt,organic
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 150
+- source: gymflow
+  source_id: rachels_organic_low_fat_natural
+  name: Rachel's Organic Low Fat Natural (per 100g)
+  brand: Rachel's Organic
+  region_codes: gb
+  kcal_per_100g: 60
+  protein_per_100g: 5
+  carbs_per_100g: 6
+  fat_per_100g: 1.5
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: dairy,branded,yogurt,organic,low_fat
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 150
+- source: gymflow
+  source_id: alpro_plain_no_sugar_500
+  name: Alpro Plain No Sugars (per 100g)
+  brand: Alpro
+  region_codes: gb
+  kcal_per_100g: 40
+  protein_per_100g: 4
+  carbs_per_100g: 0
+  fat_per_100g: 2
+  serving_grams: 150
+  serving_label: 1 portion (150 g)
+  portion_unit: pack
+  tags: dairy_alternative,branded,yogurt,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+  unit_grams: 150
+- source: gymflow
+  source_id: alpro_strawberry_yogurt_125
+  name: Alpro Strawberry Yogurt (125g)
+  brand: Alpro
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 3.5
+  carbs_per_100g: 9
+  fat_per_100g: 1.7
+  serving_grams: 125
+  serving_label: 1 portion (125 g)
+  portion_unit: pack
+  tags: dairy_alternative,branded,yogurt,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: soy
+  unit_grams: 125
+- source: gymflow
+  source_id: coconut_collab_strawberry_125
+  name: Coconut Collaborative Strawberry (125g)
+  brand: Coconut Collaborative
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 1.5
+  carbs_per_100g: 14
+  fat_per_100g: 9
+  serving_grams: 125
+  serving_label: 1 portion (125 g)
+  portion_unit: pack
+  tags: dairy_alternative,branded,yogurt,vegan
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
+  allergens: ''
+  unit_grams: 125
+- source: gymflow
+  source_id: actimel_strawberry_4_pack
+  name: Actimel Strawberry (1 bottle/100g)
+  brand: Actimel
+  region_codes: gb
+  kcal_per_100g: 70
+  protein_per_100g: 2.7
+  carbs_per_100g: 11
+  fat_per_100g: 1.5
+  serving_grams: 100
+  serving_label: 1 bottle (100 g)
+  portion_unit: bottle
+  tags: dairy,branded,yogurt_drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 100
+- source: gymflow
+  source_id: actimel_blueberry_4_pack
+  name: Actimel Blueberry (1 bottle/100g)
+  brand: Actimel
+  region_codes: gb
+  kcal_per_100g: 70
+  protein_per_100g: 2.7
+  carbs_per_100g: 11
+  fat_per_100g: 1.5
+  serving_grams: 100
+  serving_label: 1 bottle (100 g)
+  portion_unit: bottle
+  tags: dairy,branded,yogurt_drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 100
+- source: gymflow
+  source_id: benecol_yogurt_drink_70
+  name: Benecol Yogurt Drink (70ml)
+  brand: Benecol
+  region_codes: gb
+  kcal_per_100g: 65
+  protein_per_100g: 2.5
+  carbs_per_100g: 9
+  fat_per_100g: 1.7
+  serving_grams: 70
+  serving_label: 1 bottle (70 g)
+  portion_unit: bottle
+  tags: dairy,branded,yogurt_drink
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 70
+- source: gymflow
+  source_id: yakult_light_pack_5
+  name: Yakult Light (1 bottle/65ml)
+  brand: Yakult
+  region_codes: gb
+  kcal_per_100g: 32
+  protein_per_100g: 1.4
+  carbs_per_100g: 7
+  fat_per_100g: 0
+  serving_grams: 65
+  serving_label: 1 bottle (65 g)
+  portion_unit: bottle
+  tags: dairy,branded,yogurt_drink,low_calorie
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 65
+- source: gymflow
+  source_id: elmlea_double_cream_300
+  name: Elmlea Double (per 100ml)
+  brand: Elmlea
+  region_codes: gb
+  kcal_per_100g: 295
+  protein_per_100g: 2.3
+  carbs_per_100g: 3
+  fat_per_100g: 30
+  serving_grams: 100
+  serving_label: 1 ml (100 g)
+  portion_unit: ml
+  tags: dairy,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: elmlea_single_cream
+  name: Elmlea Single (per 100ml)
+  brand: Elmlea
+  region_codes: gb
+  kcal_per_100g: 145
+  protein_per_100g: 2.5
+  carbs_per_100g: 3.5
+  fat_per_100g: 14
+  serving_grams: 100
+  serving_label: 1 ml (100 g)
+  portion_unit: ml
+  tags: dairy,branded
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+- source: gymflow
+  source_id: soured_cream_30g
+  name: Soured Cream (30g)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 200
+  protein_per_100g: 2.5
+  carbs_per_100g: 4
+  fat_per_100g: 20
+  serving_grams: 30
+  serving_label: 1 tbsp (30 g)
+  portion_unit: tbsp
+  tags: dairy
+  dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
+  allergens: milk
+  unit_grams: 30

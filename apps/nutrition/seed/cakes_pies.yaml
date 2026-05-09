@@ -1,0 +1,321 @@
+# cakes_pies.yaml — Mr Kipling French Fancies/Angel Slice/Battenberg/Bakewell Tart/Country Slice/Apple Pies/Cherry Bakewells/Viennese Whirls, Cadbury Mini Rolls + Chocolate Fingers, McVitie's Jaffa Cakes/Choc Digestives/Caramel, Pukka Pies (Chicken & Mushroom, Steak & Kidney, Steak & Ale), Holland's Pies, Pieminister.
+- source: gymflow
+  source_id: mr_kipling_french_fancies_2
+  name: Mr Kipling French Fancies (2)
+  brand: Mr Kipling
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 4
+  carbs_per_100g: 76
+  fat_per_100g: 11
+  serving_grams: 50
+  serving_label: 1 piece (50 g)
+  portion_unit: piece
+  tags: snack,branded,cake,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 25
+- source: gymflow
+  source_id: mr_kipling_angel_slice_1
+  name: Mr Kipling Angel Slice (1)
+  brand: Mr Kipling
+  region_codes: gb
+  kcal_per_100g: 415
+  protein_per_100g: 4
+  carbs_per_100g: 60
+  fat_per_100g: 17
+  serving_grams: 32
+  serving_label: 1 piece (32 g)
+  portion_unit: piece
+  tags: snack,branded,cake,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 32
+- source: gymflow
+  source_id: mr_kipling_battenberg_slice
+  name: Mr Kipling Battenberg (1 slice)
+  brand: Mr Kipling
+  region_codes: gb
+  kcal_per_100g: 410
+  protein_per_100g: 4
+  carbs_per_100g: 60
+  fat_per_100g: 17
+  serving_grams: 33
+  serving_label: 1 slice (33 g)
+  portion_unit: slice
+  tags: snack,branded,cake,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,tree_nuts
+  unit_grams: 33
+- source: gymflow
+  source_id: mr_kipling_bakewell_tart
+  name: Mr Kipling Bakewell Tart (1)
+  brand: Mr Kipling
+  region_codes: gb
+  kcal_per_100g: 425
+  protein_per_100g: 4
+  carbs_per_100g: 56
+  fat_per_100g: 21
+  serving_grams: 50
+  serving_label: 1 piece (50 g)
+  portion_unit: piece
+  tags: snack,branded,cake,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,tree_nuts
+  unit_grams: 50
+- source: gymflow
+  source_id: mr_kipling_country_slice
+  name: Mr Kipling Country Slice (1)
+  brand: Mr Kipling
+  region_codes: gb
+  kcal_per_100g: 380
+  protein_per_100g: 4
+  carbs_per_100g: 58
+  fat_per_100g: 14
+  serving_grams: 35
+  serving_label: 1 piece (35 g)
+  portion_unit: piece
+  tags: snack,branded,cake,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 35
+- source: gymflow
+  source_id: mr_kipling_apple_pies_6
+  name: Mr Kipling Apple Pies (1)
+  brand: Mr Kipling
+  region_codes: gb
+  kcal_per_100g: 360
+  protein_per_100g: 3
+  carbs_per_100g: 50
+  fat_per_100g: 16
+  serving_grams: 65
+  serving_label: 1 piece (65 g)
+  portion_unit: piece
+  tags: snack,branded,cake,dessert
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 65
+- source: gymflow
+  source_id: mr_kipling_cherry_bakewells_6
+  name: Mr Kipling Cherry Bakewells (1)
+  brand: Mr Kipling
+  region_codes: gb
+  kcal_per_100g: 405
+  protein_per_100g: 4
+  carbs_per_100g: 58
+  fat_per_100g: 17
+  serving_grams: 38
+  serving_label: 1 piece (38 g)
+  portion_unit: piece
+  tags: snack,branded,cake,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,tree_nuts
+  unit_grams: 38
+- source: gymflow
+  source_id: mr_kipling_viennese_whirls
+  name: Mr Kipling Viennese Whirls (1)
+  brand: Mr Kipling
+  region_codes: gb
+  kcal_per_100g: 480
+  protein_per_100g: 4
+  carbs_per_100g: 55
+  fat_per_100g: 27
+  serving_grams: 28
+  serving_label: 1 piece (28 g)
+  portion_unit: piece
+  tags: snack,branded,cake,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 28
+- source: gymflow
+  source_id: cadbury_mini_rolls_6
+  name: Cadbury Mini Rolls (1)
+  brand: Cadbury
+  region_codes: gb
+  kcal_per_100g: 480
+  protein_per_100g: 4
+  carbs_per_100g: 56
+  fat_per_100g: 26
+  serving_grams: 27
+  serving_label: 1 piece (27 g)
+  portion_unit: piece
+  tags: snack,branded,cake,dessert
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 27
+- source: gymflow
+  source_id: cadbury_chocolate_fingers
+  name: Cadbury Chocolate Fingers (1 pack)
+  brand: Cadbury
+  region_codes: gb
+  kcal_per_100g: 510
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 25
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,branded,biscuit
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: mcvities_jaffa_cake_pack
+  name: McVitie's Jaffa Cakes (1 pack)
+  brand: McVitie's
+  region_codes: gb
+  kcal_per_100g: 370
+  protein_per_100g: 4
+  carbs_per_100g: 71
+  fat_per_100g: 7
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,branded,biscuit,cake
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: mcvities_chocolate_digestives_pack
+  name: McVitie's Milk Chocolate Digestives (1 pack)
+  brand: McVitie's
+  region_codes: gb
+  kcal_per_100g: 495
+  protein_per_100g: 6
+  carbs_per_100g: 65
+  fat_per_100g: 23
+  serving_grams: 30
+  serving_label: 1 portion (30 g)
+  portion_unit: pack
+  tags: snack,branded,biscuit
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,soy
+  unit_grams: 30
+- source: gymflow
+  source_id: mcvities_caramel_digestives
+  name: McVitie's Caramel Digestives (1 biscuit)
+  brand: McVitie's
+  region_codes: gb
+  kcal_per_100g: 500
+  protein_per_100g: 5
+  carbs_per_100g: 64
+  fat_per_100g: 24
+  serving_grams: 18
+  serving_label: 1 piece (18 g)
+  portion_unit: piece
+  tags: snack,branded,biscuit
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,soy
+  unit_grams: 18
+- source: gymflow
+  source_id: pukka_chicken_mushroom_pie
+  name: Pukka Chicken & Mushroom Pie (1)
+  brand: Pukka
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 7
+  carbs_per_100g: 26
+  fat_per_100g: 17
+  serving_grams: 233
+  serving_label: 1 piece (233 g)
+  portion_unit: piece
+  tags: frozen,branded,meal,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 233
+- source: gymflow
+  source_id: pukka_steak_kidney_pie
+  name: Pukka Steak & Kidney Pie (1)
+  brand: Pukka
+  region_codes: gb
+  kcal_per_100g: 285
+  protein_per_100g: 9
+  carbs_per_100g: 24
+  fat_per_100g: 17
+  serving_grams: 233
+  serving_label: 1 piece (233 g)
+  portion_unit: piece
+  tags: frozen,branded,meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 233
+- source: gymflow
+  source_id: pukka_steak_ale_pie
+  name: Pukka Steak & Ale Pie (1)
+  brand: Pukka
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 9
+  carbs_per_100g: 25
+  fat_per_100g: 17
+  serving_grams: 233
+  serving_label: 1 piece (233 g)
+  portion_unit: piece
+  tags: frozen,branded,meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 233
+- source: gymflow
+  source_id: hollands_chicken_mushroom
+  name: Holland's Chicken & Mushroom Pie (1)
+  brand: Holland's
+  region_codes: gb
+  kcal_per_100g: 295
+  protein_per_100g: 8
+  carbs_per_100g: 26
+  fat_per_100g: 17
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: frozen,branded,meal,chicken
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 200
+- source: gymflow
+  source_id: hollands_meat_potato_pie
+  name: Holland's Meat & Potato Pie (1)
+  brand: Holland's
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 8
+  carbs_per_100g: 25
+  fat_per_100g: 16
+  serving_grams: 200
+  serving_label: 1 piece (200 g)
+  portion_unit: piece
+  tags: frozen,branded,meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs
+  unit_grams: 200
+- source: gymflow
+  source_id: pieminister_heidi_pie
+  name: Pieminister Heidi Pie (1)
+  brand: Pieminister
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 7
+  carbs_per_100g: 24
+  fat_per_100g: 16
+  serving_grams: 270
+  serving_label: 1 piece (270 g)
+  portion_unit: piece
+  tags: frozen,branded,meal,vegetarian
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 270
+- source: gymflow
+  source_id: pieminister_moo_pie
+  name: Pieminister Moo Pie (1)
+  brand: Pieminister
+  region_codes: gb
+  kcal_per_100g: 290
+  protein_per_100g: 9
+  carbs_per_100g: 24
+  fat_per_100g: 17
+  serving_grams: 270
+  serving_label: 1 piece (270 g)
+  portion_unit: piece
+  tags: frozen,branded,meal
+  dietary_compat: pescatarian
+  allergens: gluten,milk,eggs,sulphites
+  unit_grams: 270
