@@ -417,3 +417,675 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 36
+- source: gymflow
+  source_id: warburtons_toastie_white_slice
+  name: Warburtons Toastie Thick White (1 slice)
+  brand: Warburtons
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 8.5
+  carbs_per_100g: 47
+  fat_per_100g: 2.5
+  serving_grams: 44
+  serving_label: 1 slice (44 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,white,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 44
+- source: gymflow
+  source_id: warburtons_medium_white_slice
+  name: Warburtons Medium White (1 slice)
+  brand: Warburtons
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 8.5
+  carbs_per_100g: 47
+  fat_per_100g: 2.5
+  serving_grams: 38
+  serving_label: 1 slice (38 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,white,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 38
+- source: gymflow
+  source_id: warburtons_wholemeal_medium_slice
+  name: Warburtons Wholemeal Medium (1 slice)
+  brand: Warburtons
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 9.5
+  carbs_per_100g: 41
+  fat_per_100g: 2.5
+  serving_grams: 38
+  serving_label: 1 slice (38 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,wholemeal,brown,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 38
+- source: gymflow
+  source_id: warburtons_wholemeal_thick_slice
+  name: Warburtons Wholemeal Thick (1 slice)
+  brand: Warburtons
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 9.5
+  carbs_per_100g: 41
+  fat_per_100g: 2.5
+  serving_grams: 44
+  serving_label: 1 slice (44 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,wholemeal,brown,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 44
+- source: gymflow
+  source_id: warburtons_50_50_medium_slice
+  name: Warburtons Half & Half Medium (1 slice)
+  brand: Warburtons
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 9
+  carbs_per_100g: 44
+  fat_per_100g: 2.5
+  serving_grams: 36
+  serving_label: 1 slice (36 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 36
+- source: gymflow
+  source_id: warburtons_50_50_thick_slice
+  name: Warburtons Half & Half Thick (1 slice)
+  brand: Warburtons
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 9
+  carbs_per_100g: 44
+  fat_per_100g: 2.5
+  serving_grams: 42
+  serving_label: 1 slice (42 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 42
+- source: gymflow
+  source_id: warburtons_seeded_batch_slice
+  name: Warburtons Seeded Batch (1 slice)
+  brand: Warburtons
+  region_codes: gb
+  kcal_per_100g: 260
+  protein_per_100g: 11
+  carbs_per_100g: 39
+  fat_per_100g: 5.5
+  serving_grams: 50
+  serving_label: 1 slice (50 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,seeded,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sesame
+  unit_grams: 50
+- source: gymflow
+  source_id: warburtons_tiger_loaf_slice
+  name: Warburtons Tiger Loaf (1 slice)
+  brand: Warburtons
+  region_codes: gb
+  kcal_per_100g: 260
+  protein_per_100g: 9
+  carbs_per_100g: 50
+  fat_per_100g: 2
+  serving_grams: 40
+  serving_label: 1 slice (40 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sesame
+  unit_grams: 40
+- source: gymflow
+  source_id: warburtons_brioche_finger_rolls_4
+  name: Warburtons Brioche Finger Rolls (1)
+  brand: Warburtons
+  region_codes: gb
+  kcal_per_100g: 305
+  protein_per_100g: 10
+  carbs_per_100g: 50
+  fat_per_100g: 7
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: bakery,branded,bread
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk,eggs
+  unit_grams: 60
+- source: gymflow
+  source_id: warburtons_seeded_batch_rolls
+  name: Warburtons Seeded Batch Rolls (1)
+  brand: Warburtons
+  region_codes: gb
+  kcal_per_100g: 260
+  protein_per_100g: 11
+  carbs_per_100g: 39
+  fat_per_100g: 5.5
+  serving_grams: 70
+  serving_label: 1 piece (70 g)
+  portion_unit: piece
+  tags: bakery,branded,bread,seeded
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sesame
+  unit_grams: 70
+- source: gymflow
+  source_id: warburtons_white_baps_4
+  name: Warburtons White Baps (1)
+  brand: Warburtons
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 9
+  carbs_per_100g: 51
+  fat_per_100g: 3
+  serving_grams: 67
+  serving_label: 1 piece (67 g)
+  portion_unit: piece
+  tags: bakery,branded,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 67
+- source: gymflow
+  source_id: warburtons_giant_white_wraps_4
+  name: Warburtons Giant White Wraps (1)
+  brand: Warburtons
+  region_codes: gb
+  kcal_per_100g: 295
+  protein_per_100g: 9
+  carbs_per_100g: 52
+  fat_per_100g: 6
+  serving_grams: 64
+  serving_label: 1 wrap (64 g)
+  portion_unit: wrap
+  tags: bakery,branded,bread,wrap
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 64
+- source: gymflow
+  source_id: warburtons_protein_wraps_2
+  name: Warburtons Protein Wraps (1)
+  brand: Warburtons
+  region_codes: gb
+  kcal_per_100g: 280
+  protein_per_100g: 17
+  carbs_per_100g: 30
+  fat_per_100g: 8
+  serving_grams: 60
+  serving_label: 1 wrap (60 g)
+  portion_unit: wrap
+  tags: bakery,branded,bread,wrap,high_protein
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,soy
+  unit_grams: 60
+- source: gymflow
+  source_id: warburtons_thins_white_2
+  name: Warburtons Sandwich Thins White (1)
+  brand: Warburtons
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 9
+  carbs_per_100g: 49
+  fat_per_100g: 1.5
+  serving_grams: 50
+  serving_label: 1 piece (50 g)
+  portion_unit: piece
+  tags: bakery,branded,bread,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 50
+- source: gymflow
+  source_id: warburtons_thins_seeded_2
+  name: Warburtons Sandwich Thins Seeded (1)
+  brand: Warburtons
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 11
+  carbs_per_100g: 41
+  fat_per_100g: 4
+  serving_grams: 50
+  serving_label: 1 piece (50 g)
+  portion_unit: piece
+  tags: bakery,branded,bread,seeded
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sesame
+  unit_grams: 50
+- source: gymflow
+  source_id: warburtons_pittas_white_6
+  name: Warburtons White Pittas (1)
+  brand: Warburtons
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 9
+  carbs_per_100g: 55
+  fat_per_100g: 1.5
+  serving_grams: 60
+  serving_label: 1 piece (60 g)
+  portion_unit: piece
+  tags: bakery,branded,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 60
+- source: gymflow
+  source_id: warburtons_crumpets_6
+  name: Warburtons Crumpets (1)
+  brand: Warburtons
+  region_codes: gb
+  kcal_per_100g: 195
+  protein_per_100g: 6
+  carbs_per_100g: 39
+  fat_per_100g: 0.7
+  serving_grams: 50
+  serving_label: 1 piece (50 g)
+  portion_unit: piece
+  tags: bakery,branded,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 50
+- source: gymflow
+  source_id: hovis_soft_white_thick_slice
+  name: Hovis Soft White Thick (1 slice)
+  brand: Hovis
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 47
+  fat_per_100g: 2.5
+  serving_grams: 44
+  serving_label: 1 slice (44 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,white,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 44
+- source: gymflow
+  source_id: hovis_soft_white_medium_slice
+  name: Hovis Soft White Medium (1 slice)
+  brand: Hovis
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 47
+  fat_per_100g: 2.5
+  serving_grams: 38
+  serving_label: 1 slice (38 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,white,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 38
+- source: gymflow
+  source_id: hovis_wholemeal_medium_slice
+  name: Hovis Wholemeal Medium (1 slice)
+  brand: Hovis
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 10
+  carbs_per_100g: 39
+  fat_per_100g: 2.5
+  serving_grams: 38
+  serving_label: 1 slice (38 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,wholemeal,brown,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 38
+- source: gymflow
+  source_id: hovis_best_of_both_slice
+  name: Hovis Best of Both (1 slice)
+  brand: Hovis
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 9
+  carbs_per_100g: 45
+  fat_per_100g: 2.5
+  serving_grams: 38
+  serving_label: 1 slice (38 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 38
+- source: gymflow
+  source_id: hovis_50_50_slice
+  name: Hovis 50/50 (1 slice)
+  brand: Hovis
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 9
+  carbs_per_100g: 44
+  fat_per_100g: 2.5
+  serving_grams: 36
+  serving_label: 1 slice (36 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 36
+- source: gymflow
+  source_id: hovis_seed_sensations_slice
+  name: Hovis Seed Sensations (1 slice)
+  brand: Hovis
+  region_codes: gb
+  kcal_per_100g: 270
+  protein_per_100g: 10
+  carbs_per_100g: 40
+  fat_per_100g: 7
+  serving_grams: 50
+  serving_label: 1 slice (50 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,seeded
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sesame
+  unit_grams: 50
+- source: gymflow
+  source_id: hovis_granary_slice_v2
+  name: Hovis Granary (1 slice)
+  brand: Hovis
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 10
+  carbs_per_100g: 42
+  fat_per_100g: 3
+  serving_grams: 38
+  serving_label: 1 slice (38 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,brown,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 38
+- source: gymflow
+  source_id: hovis_low_gi_slice
+  name: Hovis Low GI Bread (1 slice)
+  brand: Hovis
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 10
+  carbs_per_100g: 40
+  fat_per_100g: 3
+  serving_grams: 42
+  serving_label: 1 slice (42 g)
+  portion_unit: slice
+  tags: bakery,branded,bread
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 42
+- source: gymflow
+  source_id: kingsmill_great_everyday_white_slice
+  name: Kingsmill Great Everyday White (1 slice)
+  brand: Kingsmill
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 47
+  fat_per_100g: 2.5
+  serving_grams: 38
+  serving_label: 1 slice (38 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,white,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 38
+- source: gymflow
+  source_id: kingsmill_50_50_slice_v2
+  name: Kingsmill 50/50 (1 slice)
+  brand: Kingsmill
+  region_codes: gb
+  kcal_per_100g: 240
+  protein_per_100g: 9
+  carbs_per_100g: 44
+  fat_per_100g: 2.5
+  serving_grams: 36
+  serving_label: 1 slice (36 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 36
+- source: gymflow
+  source_id: kingsmill_wholemeal_slice
+  name: Kingsmill Wholemeal Medium (1 slice)
+  brand: Kingsmill
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 10
+  carbs_per_100g: 41
+  fat_per_100g: 2.5
+  serving_grams: 38
+  serving_label: 1 slice (38 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,wholemeal,brown,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 38
+- source: gymflow
+  source_id: kingsmill_no_crusts_slice
+  name: Kingsmill No Crusts White (1 slice)
+  brand: Kingsmill
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 47
+  fat_per_100g: 2.5
+  serving_grams: 32
+  serving_label: 1 slice (32 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,white,sliced,kids
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 32
+- source: gymflow
+  source_id: kingsmill_little_big_loaf_slice
+  name: Kingsmill Little Big Loaf (1 slice)
+  brand: Kingsmill
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 47
+  fat_per_100g: 2.5
+  serving_grams: 22
+  serving_label: 1 slice (22 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,white,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 22
+- source: gymflow
+  source_id: kingsmill_seeded_batch_slice
+  name: Kingsmill Seeded Batch (1 slice)
+  brand: Kingsmill
+  region_codes: gb
+  kcal_per_100g: 255
+  protein_per_100g: 11
+  carbs_per_100g: 38
+  fat_per_100g: 5
+  serving_grams: 50
+  serving_label: 1 slice (50 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,seeded,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sesame
+  unit_grams: 50
+- source: gymflow
+  source_id: kingsmill_burger_buns_4
+  name: Kingsmill Skinny Burger Buns (1)
+  brand: Kingsmill
+  region_codes: gb
+  kcal_per_100g: 235
+  protein_per_100g: 8
+  carbs_per_100g: 44
+  fat_per_100g: 2.5
+  serving_grams: 50
+  serving_label: 1 piece (50 g)
+  portion_unit: piece
+  tags: bakery,branded,bread,low_fat
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 50
+- source: gymflow
+  source_id: bread_brown_medium_slice_alias
+  name: Brown Bread, Medium Slice (generic)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 9.5
+  carbs_per_100g: 41
+  fat_per_100g: 2.5
+  serving_grams: 38
+  serving_label: 1 slice (38 g)
+  portion_unit: slice
+  tags: bakery,bread,wholemeal,brown,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 38
+- source: gymflow
+  source_id: bread_brown_thick_slice_alias
+  name: Brown Bread, Thick Slice (generic)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 230
+  protein_per_100g: 9.5
+  carbs_per_100g: 41
+  fat_per_100g: 2.5
+  serving_grams: 44
+  serving_label: 1 slice (44 g)
+  portion_unit: slice
+  tags: bakery,bread,wholemeal,brown,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 44
+- source: gymflow
+  source_id: bread_granary_slice
+  name: Granary Bread (1 slice)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 9
+  carbs_per_100g: 45
+  fat_per_100g: 3
+  serving_grams: 40
+  serving_label: 1 slice (40 g)
+  portion_unit: slice
+  tags: bakery,bread,brown,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 40
+- source: gymflow
+  source_id: bread_multigrain_slice
+  name: Multigrain Bread (1 slice)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 10
+  carbs_per_100g: 42
+  fat_per_100g: 3.5
+  serving_grams: 40
+  serving_label: 1 slice (40 g)
+  portion_unit: slice
+  tags: bakery,bread,brown,seeded,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten,sesame
+  unit_grams: 40
+- source: gymflow
+  source_id: bread_white_thick_slice_generic
+  name: White Bread, Thick Slice (generic)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 8.5
+  carbs_per_100g: 47
+  fat_per_100g: 2.5
+  serving_grams: 44
+  serving_label: 1 slice (44 g)
+  portion_unit: slice
+  tags: bakery,bread,white,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 44
+- source: gymflow
+  source_id: roberts_white_loaf_slice
+  name: Roberts Bakery White (1 slice)
+  brand: Roberts
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 47
+  fat_per_100g: 2.5
+  serving_grams: 38
+  serving_label: 1 slice (38 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,white,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 38
+- source: gymflow
+  source_id: jacksons_yorkshire_white_slice
+  name: Jackson's Yorkshire White (1 slice)
+  brand: Jackson's
+  region_codes: gb
+  kcal_per_100g: 245
+  protein_per_100g: 8
+  carbs_per_100g: 47
+  fat_per_100g: 2.5
+  serving_grams: 38
+  serving_label: 1 slice (38 g)
+  portion_unit: slice
+  tags: bakery,branded,bread,white,sliced
+  dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 38
+- source: gymflow
+  source_id: mcgrains_irish_soda_slice
+  name: Irish Soda Bread (1 slice)
+  brand: Generic
+  region_codes: gb
+  kcal_per_100g: 250
+  protein_per_100g: 7
+  carbs_per_100g: 47
+  fat_per_100g: 3
+  serving_grams: 50
+  serving_label: 1 slice (50 g)
+  portion_unit: slice
+  tags: bakery,bread,sliced
+  dietary_compat: vegetarian,pescatarian,halal,kosher
+  allergens: gluten,milk
+  unit_grams: 50
+- source: gymflow
+  source_id: soreen_original_malt_slice
+  name: Soreen Original Malt Loaf (1 slice)
+  brand: Soreen
+  region_codes: gb
+  kcal_per_100g: 295
+  protein_per_100g: 8
+  carbs_per_100g: 60
+  fat_per_100g: 2
+  serving_grams: 30
+  serving_label: 1 slice (30 g)
+  portion_unit: slice
+  tags: bakery,branded,bread
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 30
+- source: gymflow
+  source_id: soreen_lunchbox_loaf
+  name: Soreen Lunchbox Loaf (1)
+  brand: Soreen
+  region_codes: gb
+  kcal_per_100g: 295
+  protein_per_100g: 8
+  carbs_per_100g: 60
+  fat_per_100g: 2
+  serving_grams: 30
+  serving_label: 1 piece (30 g)
+  portion_unit: piece
+  tags: bakery,branded,snack
+  dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
+  allergens: gluten
+  unit_grams: 30

@@ -228,33 +228,57 @@ def food_search(request):
 
     region = (request.query_params.get("region") or "").strip().lower()
 
-    # Tiered ranking — same shape as the Solo search, so trainers and
-    # clients see the same results for the same query.
-    base = CuratedFood.objects.all()
-    exact      = list(base.filter(name__iexact=q)[:20])
-    starts     = list(base.filter(name__istartswith=q).exclude(name__iexact=q)[:20])
-    contains   = list(base.filter(name__icontains=q).exclude(name__istartswith=q)[:20])
-    brand_hits = list(base.filter(brand__icontains=q).exclude(name__icontains=q)[:20])
-    tag_hits   = list(base.filter(tags__icontains=q)
-                          .exclude(name__icontains=q)
-                          .exclude(brand__icontains=q)[:20])
+    # Normalise (apostrophe-insensitive, multi-token) — see solo
+    # search for the rationale.
+    import re
+    def _normalise(s: str) -> str:
+        return re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
+    q_norm = _normalise(q)
+    if not q_norm:
+        return Response({"results": [], "source": "catalog"})
+    q_tokens = [t for t in q_norm.split() if t]
 
-    ordered = []
-    seen = set()
-    for bucket in (exact, starts, contains, brand_hits, tag_hits):
-        for f in bucket:
-            if f.id in seen:
-                continue
-            seen.add(f.id)
-            ordered.append(f)
+    from django.db.models import Q
+    qfilter = Q()
+    for tok in q_tokens:
+        qfilter |= Q(name__icontains=tok) | Q(brand__icontains=tok) | Q(tags__icontains=tok)
+    candidates = CuratedFood.objects.filter(qfilter)[:400]
 
-    # Region prioritisation — if the trainer passed a locale region,
-    # bubble matching items above world-wide ones. Items NOT tagged
-    # for that region still appear, just lower.
-    if region:
-        in_region = [f for f in ordered if region in (f.region_codes or "").lower().split(",")]
-        rest      = [f for f in ordered if f not in in_region]
-        ordered   = in_region + rest
+    ranked = []
+    for f in candidates:
+        name_n = _normalise(f.name)
+        brand_n = _normalise(f.brand)
+        tags_n = _normalise(f.tags)
+        haystack = f"{name_n} {brand_n} {tags_n}".strip()
+        regions_l = (f.region_codes or "").lower()
+
+        if not all(tok in haystack for tok in q_tokens):
+            continue
+
+        if name_n == q_norm:
+            tier = 0
+        elif name_n.startswith(q_norm):
+            tier = 1
+        elif brand_n.startswith(q_tokens[0]) and len(q_tokens) == 1:
+            tier = 2
+        elif all(tok in name_n for tok in q_tokens):
+            tier = 3
+        elif brand_n.startswith(q_tokens[0]) and all(tok in name_n for tok in q_tokens[1:]):
+            tier = 5
+        elif q_norm in name_n:
+            tier = 6
+        elif q_norm in brand_n:
+            tier = 7
+        else:
+            tier = 8
+
+        region_bonus = 0
+        if region and region in regions_l.split(","):
+            region_bonus = -1
+        ranked.append((tier, region_bonus, len(name_n), f))
+
+    ranked.sort(key=lambda t: (t[0], t[1], t[2]))
+    ordered = [t[3] for t in ranked]
 
     rows = [_curated_to_row(f) for f in ordered[:20]]
     rows = _annotate_in_library(trainer, rows)

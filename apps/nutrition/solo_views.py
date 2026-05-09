@@ -302,38 +302,71 @@ def solo_nutrition_food_search(request):
 
     region = (request.query_params.get("region") or "").strip().lower()[:8]
 
-    q_lower = q.lower()
+    # Normalise: lowercase + strip non-alphanumeric. This makes
+    # "nandos" match "Nando's", "mcdonalds" match "McDonald's",
+    # "lyles" match "Lyle's", "cadburys" match "Cadbury's".
+    import re
+    def _normalise(s: str) -> str:
+        return re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
 
-    # Pull a wider pool than `limit` so we can rank in Python without
-    # paying for a complex SQL query. With a curated DB capped at
-    # ~10k rows, any iexact / icontains hit set fits comfortably in
-    # memory.
+    q_norm = _normalise(q)
+    if not q_norm:
+        return Response({"results": []})
+    q_tokens = [t for t in q_norm.split() if t]
+
+    # Pull a wide candidate pool. For multi-token queries we want
+    # items where ANY token matches name OR brand OR tags so we
+    # can rank across the combined hits. For single-token, the OR
+    # filter is the same.
     from django.db.models import Q
-    candidates = CuratedFood.objects.filter(
-        Q(name__icontains=q) |
-        Q(brand__icontains=q) |
-        Q(tags__icontains=q),
-    )[:200]
+    qfilter = Q()
+    for tok in q_tokens:
+        qfilter |= Q(name__icontains=tok) | Q(brand__icontains=tok) | Q(tags__icontains=tok)
+    candidates = CuratedFood.objects.filter(qfilter)[:400]
 
     ranked = []
     for f in candidates:
-        name_l = (f.name or "").lower()
-        brand_l = (f.brand or "").lower()
-        tags_l = (f.tags or "").lower()
-        regions_l = (f.region_codes or "").lower()
+        name_n = _normalise(f.name)
+        brand_n = _normalise(f.brand)
+        tags_n = _normalise(f.tags)
+        haystack = f"{name_n} {brand_n} {tags_n}".strip()
+        regions_l = (f.regions_l if hasattr(f, 'regions_l') else (f.region_codes or "").lower())
 
-        if name_l == q_lower:
+        # Tokens must ALL appear somewhere across name+brand+tags for
+        # the row to be considered relevant. This is what enables
+        # multi-word queries — "nandos chicken" requires both tokens.
+        if not all(tok in haystack for tok in q_tokens):
+            continue
+
+        # Tier — best match shape wins:
+        #   0  exact name match
+        #   1  name starts with full query
+        #   2  brand starts with first token (Nando's, McDonald's, etc.)
+        #   3  every token matches the name
+        #   4  every token matches name+brand combo
+        #   5  brand + name combo (multi-token: brand starts AND name has rest)
+        #   6  name contains query phrase
+        #   7  brand contains query
+        #   8  tags
+        if name_n == q_norm:
             tier = 0
-        elif name_l.startswith(q_lower):
+        elif name_n.startswith(q_norm):
             tier = 1
-        elif brand_l.startswith(q_lower):
+        elif brand_n.startswith(q_tokens[0]) and len(q_tokens) == 1:
+            # Single-token brand-prefix search — pull up the whole brand
             tier = 2
-        elif q_lower in name_l:
+        elif all(tok in name_n for tok in q_tokens):
             tier = 3
-        elif q_lower in brand_l:
-            tier = 4
-        elif q_lower in tags_l:
+        elif brand_n.startswith(q_tokens[0]) and all(tok in name_n for tok in q_tokens[1:]):
+            # "nandos chicken" → brand matches first token, rest in name
             tier = 5
+        elif q_norm in name_n:
+            tier = 6
+        elif q_norm in brand_n:
+            tier = 7
+        elif all(tok in haystack for tok in q_tokens):
+            # All tokens spread across name+brand+tags
+            tier = 8
         else:
             tier = 9
 
@@ -343,7 +376,7 @@ def solo_nutrition_food_search(request):
         if region and region in regions_l.split(","):
             region_bonus = -1  # negative pulls earlier in sort
 
-        ranked.append((tier, region_bonus, len(name_l), f))
+        ranked.append((tier, region_bonus, len(name_n), f))
 
     ranked.sort(key=lambda t: (t[0], t[1], t[2]))
     top = ranked[:limit]
