@@ -801,6 +801,56 @@ def _build_user_context(user) -> str:
             f"{int(rem_p)}p / {int(rem_c)}c / {int(rem_f)}f"
         )
 
+    # T2.1 / T2.2 — calculated AI context fields. Pulled from helpers
+    # so the same lines appear in chat AND in the cross-domain AI
+    # build prompts. All optional — helpers return None when there's
+    # not enough data to compute, and we silently skip those lines.
+    try:
+        from .ai_context_helpers import (
+            recent_weight_slope_kg_per_week,
+            food_adherence_14d,
+            workout_completion_14d,
+            active_workout_summary,
+            active_nutrition_summary,
+            recent_user_edits_summary,
+        )
+        slope = recent_weight_slope_kg_per_week(user)
+        if slope is not None:
+            lines.append(f"- 4-wk weight slope: {slope:+.2f}kg/wk")
+
+        adh = food_adherence_14d(user)
+        if adh is not None:
+            lines.append(
+                f"- Last 14d food: {adh['days_protein_hit']}/{adh['days_with_log']} "
+                f"days hit protein, avg kcal {adh['avg_kcal_vs_target']}× target"
+            )
+
+        comp = workout_completion_14d(user)
+        if comp is not None:
+            lines.append(
+                f"- Last 14d workouts: {comp['completed']}/{comp['scheduled']} "
+                f"({int(comp['ratio'] * 100)}%)"
+            )
+
+        # Cross-domain summaries — surface the *other* side so the
+        # AI can fuse decisions even when the active call is single-
+        # domain (e.g. asking the AI to swap an exercise should still
+        # let it nudge "this changes weekly burn — bump kcal by 100?").
+        wsum = active_workout_summary(user)
+        if wsum:
+            lines.append(f"- Active workout: {wsum}")
+        nsum = active_nutrition_summary(user)
+        if nsum:
+            lines.append(f"- Active nutrition: {nsum}")
+
+        edits = recent_user_edits_summary(user)
+        if edits:
+            lines.append(f"- Recent user edits: {edits}")
+    except Exception:
+        # Defensive — context build must never fail because of an
+        # optional helper. The rest of the block stands without it.
+        pass
+
     return "\n".join(lines)
 
 
