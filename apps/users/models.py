@@ -625,3 +625,85 @@ class MagicLoginToken(models.Model):
             from django.utils import timezone
             self.expires_at = timezone.now() + timedelta(minutes=self.DEFAULT_TTL_MINUTES)
         super().save(*args, **kwargs)
+
+
+# ====================================================================
+# T2.10 — RecentEditLog
+#
+# Lightweight log of user-side edits (workout swaps, sets/reps
+# changes, manual meal builds, macro target overrides). Powers the
+# AI PT context line "Recent user edits: ..." so chat / weekly
+# review can comment intelligently on what the user changed without
+# the AI having to ask. Capped to the last 30 days, 50 rows per
+# user — bigger windows arent useful and uncapped logs grow
+# unbounded.
+#
+# Write sites:
+#   • T2.8 in-place workout edits (swap, set/rep change, add/remove)
+#   • T2.9 nutrition manual builder (meal create/edit/delete)
+#   • /api/nutrition/solo/macro-targets/ direct user-typed updates
+# ====================================================================
+class RecentEditLog(models.Model):
+    user = models.ForeignKey(
+        "User", on_delete=models.CASCADE, related_name="recent_edits",
+    )
+    KIND_WORKOUT_SWAP    = "workout_swap"
+    KIND_WORKOUT_SET     = "workout_set"
+    KIND_WORKOUT_REPS    = "workout_reps"
+    KIND_WORKOUT_REST    = "workout_rest"
+    KIND_WORKOUT_ADD     = "workout_add"
+    KIND_WORKOUT_REMOVE  = "workout_remove"
+    KIND_NUTRITION_MEAL  = "nutrition_meal"
+    KIND_NUTRITION_MACRO = "nutrition_macro"
+    KIND_OTHER           = "other"
+    KIND_CHOICES = [
+        (KIND_WORKOUT_SWAP,    "Workout: swap exercise"),
+        (KIND_WORKOUT_SET,     "Workout: change sets"),
+        (KIND_WORKOUT_REPS,    "Workout: change reps"),
+        (KIND_WORKOUT_REST,    "Workout: change rest"),
+        (KIND_WORKOUT_ADD,     "Workout: add exercise"),
+        (KIND_WORKOUT_REMOVE,  "Workout: remove exercise"),
+        (KIND_NUTRITION_MEAL,  "Nutrition: edit meal"),
+        (KIND_NUTRITION_MACRO, "Nutrition: edit macros"),
+        (KIND_OTHER,           "Other"),
+    ]
+    kind     = models.CharField(max_length=24, choices=KIND_CHOICES)
+    summary  = models.CharField(max_length=240)
+    payload  = models.JSONField(default=dict, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True, db_index=True)
+
+    class Meta:
+        ordering = ["-created_at"]
+        indexes = [
+            models.Index(fields=["user", "-created_at"]),
+        ]
+
+    def __str__(self):
+        return f"{self.user_id}/{self.kind}@{self.created_at:%Y-%m-%d}"
+
+    @classmethod
+    def record(cls, user, kind: str, summary: str, payload: dict | None = None) -> "RecentEditLog":
+        """Create a row + prune the oldest rows beyond the 50-row cap.
+
+        Best-effort: swallows any DB errors so a failed log write
+        never breaks the user-facing edit. The log is a coaching
+        nicety, not source-of-truth.
+        """
+        try:
+            row = cls.objects.create(
+                user=user, kind=kind,
+                summary=(summary or "")[:240],
+                payload=payload or {},
+            )
+            # Prune anything past the 50-row cap.
+            ids = list(
+                cls.objects.filter(user=user)
+                .order_by("-created_at")
+                .values_list("id", flat=True)[50:]
+            )
+            if ids:
+                cls.objects.filter(id__in=ids).delete()
+            return row
+        except Exception:
+            return None
+
