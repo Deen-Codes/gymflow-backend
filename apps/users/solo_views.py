@@ -418,11 +418,16 @@ def solo_signup_view(request):
         user.date_of_birth = dob
         user.save(update_fields=["date_of_birth"])
 
-    # Re-derive macro targets if the goals changed — the user picked
-    # "lose fat" vs "build muscle" and we owe them a fresh recommended
-    # daily intake on the Nutrition tab. Idempotent + cheap.
-    if goals:
-        profile.compute_default_macro_targets(save=True)
+    # NUTRITION-ONBOARDING-FIX — historically we auto-computed
+    # macro targets here whenever the signup payload included
+    # goals. That meant every fresh signup landed on the Nutrition
+    # tab with bogus pre-populated macros and the cinematic
+    # onboarding (NutritionAIOnboardingFlow) never surfaced because
+    # iOS gates the empty-state on `target_calories == 0`. We now
+    # leave the targets at the model default (0) and let the user
+    # finish the onboarding properly — they pick AI / manual /
+    # unsure on the Nutrition tab and the chosen macros land via
+    # /api/nutrition/solo/macro-targets/ or the AI build flow.
 
     # Send the magic link unconditionally on signup — this is how the
     # user logs in. Reusing the same token plumbing as the regular

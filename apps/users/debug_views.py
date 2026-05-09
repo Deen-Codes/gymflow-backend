@@ -174,8 +174,10 @@ def solo_debug_factory_reset(request):
       • SoloProfile.assigned_workout_plan        → None
       • SoloProfile.goals / experience /         → defaults
         equipment / days_per_week
-      • SoloProfile.target_calories /            → 2200/140/240/70
-        protein / carbs / fats
+      • SoloProfile.target_calories /            → 0/0/0/0
+        protein / carbs / fats                     (so the cinematic
+                                                    nutrition onboarding
+                                                    re-surfaces)
       • SoloProfile.bodyweight_kg                → None
       • SoloProfile.tier                         → free
       • SoloProfile.trial_*                      → None
@@ -260,10 +262,15 @@ def solo_debug_factory_reset(request):
         profile.experience            = ""
         profile.equipment             = ""
         profile.days_per_week         = 3
-        profile.target_calories       = 2200
-        profile.target_protein        = 140
-        profile.target_carbs          = 240
-        profile.target_fats           = 70
+        # NUTRITION-ONBOARDING-FIX — reset macros to 0 (not the
+        # historical 2200/140/240/70 defaults) so the iOS empty-
+        # state correctly fires the cinematic onboarding on the
+        # next launch. Targets land back via /macro-targets/ once
+        # the user picks an AI / manual / unsure path.
+        profile.target_calories       = 0
+        profile.target_protein        = 0
+        profile.target_carbs          = 0
+        profile.target_fats           = 0
         profile.bodyweight_kg         = None
         profile.tier                  = SoloProfile.TIER_FREE
         profile.tier_active_until     = None

@@ -74,13 +74,23 @@ def _entry_payload(entry: SoloFoodLogEntry) -> dict:
 
 
 def _ensure_solo(user) -> SoloProfile | None:
-    """Get-or-create + ensure macro targets exist. Returns None for
-    non-solo callers."""
+    """Get-or-create the SoloProfile for solo callers. Returns None
+    for non-solo callers.
+
+    NUTRITION-ONBOARDING-FIX — previously this auto-populated
+    macro targets on first read by calling
+    `compute_default_macro_targets`. That meant every fresh signup
+    landed on the Nutrition tab with bogus 2200 kcal targets and
+    the empty-state onboarding never surfaced. Now targets stay at
+    0 until the user explicitly completes the cinematic onboarding
+    (which posts the chosen macros via /macro-targets/) or via the
+    AI build path. Both /solo/today/ and the synthesised /me/today/
+    response gate on `target_calories > 0`, so 0 cleanly signals
+    "needs onboarding".
+    """
     if user.role != User.SOLO:
         return None
-    profile, created = SoloProfile.objects.get_or_create(user=user)
-    if created or profile.target_calories == 0:
-        profile.compute_default_macro_targets(save=True)
+    profile, _ = SoloProfile.objects.get_or_create(user=user)
     return profile
 
 

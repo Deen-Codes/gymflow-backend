@@ -243,21 +243,27 @@ class SoloProfile(models.Model):
     # on free.
     stripe_subscription_id = models.CharField(max_length=64, blank=True, default="")
 
-    # N.1.1 — daily macro targets. Set on first nutrition tab render
-    # by `compute_default_macro_targets` using the user's goal stack
-    # (or by AI PT for Pro AI users). Stored on the SoloProfile so
-    # they survive the user editing their goals later — explicit
-    # values, not derived on-the-fly.
+    # N.1.1 — daily macro targets. NUTRITION-ONBOARDING-FIX —
+    # defaults dropped to 0 so the iOS Nutrition tab can use
+    # `target_calories == 0` as the "first-time setup" gate. The
+    # cinematic onboarding (NutritionAIOnboardingFlow) writes
+    # explicit values via /api/nutrition/solo/macro-targets/ once
+    # the user picks an AI / manual / unsure path — until then,
+    # the empty-state card is what the user sees.
+    #
+    # Previously these defaulted to 2200/140/240/70, which meant
+    # every fresh signup landed straight on a populated macro hero
+    # with bogus default targets and the onboarding never showed.
     #
     # Bodyweight is needed for protein-per-kg calc; we don't capture
     # it in onboarding (per the user's "minimal questions" pivot) so
     # it lands either via Apple Health sync (#81) or when the user
-    # logs their first weight check-in. Until then we use a sensible
-    # default (75 kg).
-    target_calories = models.PositiveIntegerField(default=2200)
-    target_protein  = models.PositiveSmallIntegerField(default=140)  # grams
-    target_carbs    = models.PositiveSmallIntegerField(default=240)  # grams
-    target_fats     = models.PositiveSmallIntegerField(default=70)   # grams
+    # logs their first weight check-in. Until then `compute_default_
+    # macro_targets` falls back to 75 kg.
+    target_calories = models.PositiveIntegerField(default=0)
+    target_protein  = models.PositiveSmallIntegerField(default=0)  # grams
+    target_carbs    = models.PositiveSmallIntegerField(default=0)  # grams
+    target_fats     = models.PositiveSmallIntegerField(default=0)  # grams
     bodyweight_kg   = models.FloatField(null=True, blank=True)
 
     # Phase A — goal weight. Optional; the user sets it from the
