@@ -405,8 +405,66 @@ def setup_progress_view(request):
         setattr(profile, field, bool(raw_done))
         changed_fields.append(field)
 
+    # NUTRITION-QUICK-START — optional `step_data` dict applies the
+    # underlying SoloProfile fields the step captured, so iOS only
+    # needs one round-trip per step (vs separate /profile-update/ +
+    # setup-progress calls). Quietly ignores fields not in the
+    # allow-list so callers can't smuggle arbitrary writes.
+    step_data = data.get("step_data") or {}
+    if isinstance(step_data, dict):
+        for key, raw in step_data.items():
+            if key == "bodyweight_kg":
+                try:
+                    profile.bodyweight_kg = float(raw)
+                    changed_fields.append("bodyweight_kg")
+                except (TypeError, ValueError):
+                    pass
+            elif key == "height_cm":
+                try:
+                    profile.height_cm = int(float(raw))
+                    changed_fields.append("height_cm")
+                except (TypeError, ValueError):
+                    pass
+            elif key == "gender":
+                if isinstance(raw, str) and raw:
+                    profile.gender = raw[:16]
+                    changed_fields.append("gender")
+            elif key == "goals":
+                if isinstance(raw, list):
+                    profile.goals = [str(x) for x in raw][:8]
+                    changed_fields.append("goals")
+            elif key == "experience":
+                if isinstance(raw, str):
+                    profile.experience = raw[:20]
+                    changed_fields.append("experience")
+            elif key == "days_per_week":
+                try:
+                    val = int(raw)
+                    if 1 <= val <= 7:
+                        profile.days_per_week = val
+                        changed_fields.append("days_per_week")
+                except (TypeError, ValueError):
+                    pass
+            elif key == "dietary_pattern":
+                if isinstance(raw, str):
+                    profile.dietary_pattern = raw[:32]
+                    changed_fields.append("dietary_pattern")
+            elif key == "allergies":
+                # Store free-text in notification_prefs JSON
+                # alongside personal_details — we don't have a
+                # dedicated SoloProfile column yet.
+                if isinstance(raw, str):
+                    prefs = request.user.notification_prefs or {}
+                    pd = dict(prefs.get("personal_details") or {})
+                    pd["allergies"] = raw[:500]
+                    prefs["personal_details"] = pd
+                    request.user.notification_prefs = prefs
+                    request.user.save(update_fields=["notification_prefs"])
+
     if changed_fields:
-        profile.save(update_fields=changed_fields)
+        # Dedupe so save() doesn't repeat columns when both
+        # done-flag and step-data write the same field.
+        profile.save(update_fields=list(set(changed_fields)))
 
     # Award the trophy when the user crosses 4→5 for the first time.
     # `evaluate_and_award` is idempotent so re-running for an already-
