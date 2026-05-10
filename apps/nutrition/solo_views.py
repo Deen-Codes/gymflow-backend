@@ -180,6 +180,37 @@ def solo_macro_targets_update(request):
 
 
 # --------------------------------------------------------------------
+# DAILY-MEAL-PLAN — nutrition mode toggle
+# --------------------------------------------------------------------
+@csrf_exempt
+@api_view(["GET", "PATCH"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def solo_nutrition_mode(request):
+    """Get or set the user's nutrition mode (`ad_hoc` | `meal_plan`).
+
+    GET  → {"mode": "ad_hoc"}
+    PATCH body: {"mode": "meal_plan"}
+    """
+    profile = _ensure_solo(request.user)
+    if profile is None:
+        return Response({"detail": "Solo accounts only."},
+                        status=status.HTTP_403_FORBIDDEN)
+
+    if request.method == "GET":
+        return Response({"mode": profile.nutrition_mode})
+
+    mode = (request.data or {}).get("mode")
+    valid = {SoloProfile.NUTRITION_MODE_AD_HOC, SoloProfile.NUTRITION_MODE_MEAL_PLAN}
+    if mode not in valid:
+        return Response({"detail": f"mode must be one of {sorted(valid)}"},
+                        status=400)
+    profile.nutrition_mode = mode
+    profile.save(update_fields=["nutrition_mode"])
+    return Response({"mode": profile.nutrition_mode})
+
+
+# --------------------------------------------------------------------
 # Daily totals + targets
 # --------------------------------------------------------------------
 @csrf_exempt

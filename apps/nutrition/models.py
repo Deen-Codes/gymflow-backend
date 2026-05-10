@@ -697,6 +697,12 @@ class MealTemplate(models.Model):
     notes     = models.CharField(max_length=240, blank=True)
     source    = models.CharField(max_length=16, choices=SOURCE_CHOICES, default=SOURCE_USER)
     is_favourite = models.BooleanField(default=True)
+    # DAILY-MEAL-PLAN — when SoloProfile.nutrition_mode is "meal_plan",
+    # MealTemplate rows flagged is_in_daily_plan=True are surfaced as
+    # the user's set daily plan. The same set shows every day with
+    # one-tap "Log" buttons. Toggling this flag is how the user
+    # builds / removes meals from their plan.
+    is_in_daily_plan = models.BooleanField(default=False, db_index=True)
     created_at = models.DateTimeField(auto_now_add=True, db_index=True)
     updated_at = models.DateTimeField(auto_now=True)
 

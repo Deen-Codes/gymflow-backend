@@ -11,6 +11,7 @@ from .solo_views import (
     solo_nutrition_food_search,
     solo_nutrition_food_create,
     solo_macro_targets_update,
+    solo_nutrition_mode,
 )
 from .ai_describe_views import solo_ai_describe_food
 from .ai_build_views import solo_ai_nutrition_build
@@ -47,6 +48,11 @@ urlpatterns = [
     # R5-2 — first-time macro target setup ("Set them myself"
     # path on iOS).
     path("solo/macro-targets/",          solo_macro_targets_update,      name="solo-macro-targets"),
+
+    # DAILY-MEAL-PLAN — toggle between "eat as you go" and
+    # "set meal plan". Both modes coexist; this just decides what
+    # the Nutrition tab shows above the LOG.
+    path("solo/nutrition-mode/",         solo_nutrition_mode,            name="solo-nutrition-mode"),
 
     # N.1.2 — AI describe (Pro AI gated)
     path("solo/ai-describe/",            solo_ai_describe_food,          name="solo-ai-describe"),

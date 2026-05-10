@@ -67,16 +67,17 @@ def _serialize_template(t: MealTemplate) -> dict:
             "order":      it.order,
         })
     return {
-        "id":           t.id,
-        "title":        t.title,
-        "slot":         t.slot,
-        "notes":        t.notes,
-        "source":       t.source,
-        "is_favourite": t.is_favourite,
-        "items":        items,
-        "totals":       t.totals(),
-        "created_at":   t.created_at.isoformat(),
-        "updated_at":   t.updated_at.isoformat(),
+        "id":               t.id,
+        "title":            t.title,
+        "slot":             t.slot,
+        "notes":            t.notes,
+        "source":           t.source,
+        "is_favourite":     t.is_favourite,
+        "is_in_daily_plan": t.is_in_daily_plan,
+        "items":            items,
+        "totals":           t.totals(),
+        "created_at":       t.created_at.isoformat(),
+        "updated_at":       t.updated_at.isoformat(),
     }
 
 
@@ -177,6 +178,12 @@ def meal_template_detail(request, template_id: int):
         tpl.slot = body["slot"]
     if "is_favourite" in body:
         tpl.is_favourite = bool(body["is_favourite"])
+    # DAILY-MEAL-PLAN — toggle inclusion in the user's daily plan.
+    # Side-effect-free elsewhere; the Nutrition tab reads this flag
+    # to decide which meals to surface as "today's plan" when
+    # SoloProfile.nutrition_mode = "meal_plan".
+    if "is_in_daily_plan" in body:
+        tpl.is_in_daily_plan = bool(body["is_in_daily_plan"])
 
     items_payload = body.get("items")
     if isinstance(items_payload, list):

@@ -266,6 +266,27 @@ class SoloProfile(models.Model):
     target_fats     = models.PositiveSmallIntegerField(default=0)  # grams
     bodyweight_kg   = models.FloatField(null=True, blank=True)
 
+    # DAILY-MEAL-PLAN — two top-level nutrition modes:
+    #   "ad_hoc"     → log foods freely to hit macros (default)
+    #   "meal_plan"  → fixed daily plan; the same set of MealTemplate
+    #                 rows show every day as the planned meals, each
+    #                 with one-tap "Log" buttons.
+    # Switchable anytime from the Meals hub. The plan itself is
+    # encoded by `MealTemplate.is_in_daily_plan` flags rather than a
+    # separate join table — keeps the data model boring + matches
+    # the "saved meals are the unit" mental model.
+    NUTRITION_MODE_AD_HOC    = "ad_hoc"
+    NUTRITION_MODE_MEAL_PLAN = "meal_plan"
+    NUTRITION_MODE_CHOICES   = [
+        (NUTRITION_MODE_AD_HOC,    "Eat as you go"),
+        (NUTRITION_MODE_MEAL_PLAN, "Set meal plan"),
+    ]
+    nutrition_mode = models.CharField(
+        max_length=16,
+        choices=NUTRITION_MODE_CHOICES,
+        default=NUTRITION_MODE_AD_HOC,
+    )
+
     # Phase A — goal weight. Optional; the user sets it from the
     # Profile → Personal Details sheet (or by replying in chat —
     # the AI surfaces a Profile shortcut). The AI PT context block
