@@ -130,9 +130,17 @@ PROGRAMME_TOOL = {
                                 "type": "object",
                                 "properties": {
                                     "name": {"type": "string"},
+                                    "exercise_catalog_id": {
+                                        "type": "integer",
+                                        "description": "T3.1 — REQUIRED. Must be one of the IDs in the CATALOG SLICE block. Hallucinated IDs cause the build to be rejected.",
+                                    },
                                     "label": {
                                         "type": "string",
                                         "description": "Single letter label A-G",
+                                    },
+                                    "rest_seconds": {
+                                        "type": "integer",
+                                        "description": "Optional rest between sets in seconds. Default 90 if omitted.",
                                     },
                                     "sets": {
                                         "type": "array",
@@ -147,7 +155,7 @@ PROGRAMME_TOOL = {
                                         },
                                     },
                                 },
-                                "required": ["name", "label", "sets"],
+                                "required": ["name", "exercise_catalog_id", "label", "sets"],
                             },
                         },
                     },
@@ -213,8 +221,19 @@ def _mark_preview_used(user) -> None:
     user.save(update_fields=["notification_prefs"])
 
 
-def _call_claude_for_programme(user) -> tuple[dict | None, str | None]:
-    """Returns (programme_json, error_string)."""
+def _call_claude_for_programme(user, *, retry: bool = False) -> tuple[dict | None, str | None]:
+    """Returns (programme_json, error_string).
+
+    T3.1 — catalog-grounded: pre-fetches a ~200-row slice of
+    ExerciseCatalog (filtered by user equipment / level / avoidances,
+    ranked by goal-aligned muscle priority) and injects it into the
+    Claude system prompt as the candidate set. The tool spec then
+    requires every returned exercise to include an
+    `exercise_catalog_id` from the slice. After the response we
+    validate every id; on hallucination we retry once with a
+    stricter prompt; on second failure we return a clean 503.
+    """
+    import json
     import requests
 
     if not ANTHROPIC_API_KEY:
@@ -227,8 +246,37 @@ def _call_claude_for_programme(user) -> tuple[dict | None, str | None]:
         )
         return None, "AI build temporarily unavailable."
 
+    # T3.1 — catalog candidate slice. Pulled per-call from the
+    # workouts.ai_filter helper. Falls back to an empty list
+    # gracefully if the helper / models aren't importable so the
+    # AI build never hard-fails on a catalog issue.
+    try:
+        from apps.workouts.ai_filter import candidate_exercises
+        from apps.users.models import SoloProfile
+        profile, _ = SoloProfile.objects.get_or_create(user=user)
+        candidates = candidate_exercises(profile, max_n=200)
+    except Exception:
+        log.exception("AI build: catalog slice failed, sending empty candidates")
+        candidates = []
+
     context = _build_user_context(user)
-    system = SYSTEM_TEMPLATE.format(context=context)
+    catalog_block = json.dumps(candidates, separators=(",", ":"))
+    grounding_clause = (
+        "\n\nCATALOG SLICE (use ONLY these exercise_catalog_id values):\n"
+        + catalog_block
+        + "\n\nEvery exercise in your output MUST include an "
+        "`exercise_catalog_id` that appears in the CATALOG SLICE above. "
+        "If no row in the slice fits a slot, pick the closest match — "
+        "do not invent IDs. The user's UI renders animations + form "
+        "copy from these catalog rows, so a hallucinated ID = a "
+        "blank exercise card."
+    )
+    if retry:
+        grounding_clause += (
+            "\n\nThis is a RETRY. The previous response contained "
+            "hallucinated catalog IDs. Be precise this time."
+        )
+    system = SYSTEM_TEMPLATE.format(context=context) + grounding_clause
 
     body = {
         "model": ANTHROPIC_MODEL,
@@ -323,6 +371,35 @@ def _call_claude_for_programme(user) -> tuple[dict | None, str | None]:
             payload.get("stop_reason"),
         )
         return None, "AI returned an empty programme."
+
+    # T3.1 — validate every catalog_id resolves. If any are
+    # hallucinated, retry once with the stricter "this is a retry"
+    # prompt; on second failure return a clean error so iOS shows a
+    # meaningful try-again rather than silently storing a bad plan.
+    if candidates:
+        valid_ids = {c["id"] for c in candidates}
+        bad_ids: list[int] = []
+        for day in (programme.get("days") or []):
+            for ex in (day.get("exercises") or []):
+                cid = ex.get("exercise_catalog_id")
+                if cid is None or int(cid) not in valid_ids:
+                    bad_ids.append(cid)
+        if bad_ids:
+            log.warning(
+                "AI build: %d hallucinated catalog ids (retry=%s): %s",
+                len(bad_ids), retry, bad_ids[:8],
+            )
+            if not retry:
+                # Single retry with stricter prompt.
+                return _call_claude_for_programme(user, retry=True)
+            # Second hallucination — surface a clean 503 so the iOS
+            # error panel can prompt try-again rather than persisting
+            # broken catalog refs.
+            return None, (
+                "AI couldn't pick from the catalog cleanly. "
+                "Try again — this usually works second time."
+            )
+
     return programme, None
 
 
@@ -488,12 +565,33 @@ def solo_ai_build_assign(request):
                     continue
                 ex_name = (ex.get("name") or "Exercise")[:255]
                 ex_label = (ex.get("label") or chr(ord("A") + ex_idx))[:10]
+                # T3.1 — wire catalog_item FK from the AI's
+                # exercise_catalog_id when present. iOS reads this
+                # to render animations + form copy directly without
+                # fuzzy name matching.
+                catalog_item = None
+                cid = ex.get("exercise_catalog_id")
+                if cid:
+                    try:
+                        from apps.workouts.models import ExerciseCatalog
+                        catalog_item = ExerciseCatalog.objects.filter(pk=int(cid)).first()
+                    except Exception:
+                        catalog_item = None
+                rest_secs = 90
+                try:
+                    rs = int(ex.get("rest_seconds") or 0)
+                    if 0 < rs <= 600:
+                        rest_secs = rs
+                except (TypeError, ValueError):
+                    pass
                 new_ex = Exercise.objects.create(
                     workout_day=new_day,
                     name=ex_name,
                     label=ex_label,
                     order=ex_idx,
                     provenance=Exercise.PROVENANCE_AI,
+                    catalog_item=catalog_item,
+                    rest_seconds=rest_secs,
                 )
                 sets = ex.get("sets") or []
                 for set_idx, st in enumerate(sets):

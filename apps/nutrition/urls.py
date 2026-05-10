@@ -14,6 +14,7 @@ from .solo_views import (
 )
 from .ai_describe_views import solo_ai_describe_food
 from .ai_build_views import solo_ai_nutrition_build
+from .ai_meals_views import solo_ai_meals_suggest
 from .template_views import recommend_templates
 
 urlpatterns = [
@@ -56,4 +57,11 @@ urlpatterns = [
     # + dietary pattern + bodyweight and returns the top 3 (or
     # whatever ?top= asks for, capped at 8).
     path("templates/recommend/",         recommend_templates,            name="nutrition-templates-recommend"),
+
+    # T3.2 — catalog-grounded AI meal suggestions. Pro-AI gated.
+    # Pulls a slot-aware slice of CuratedFood, asks Claude to
+    # assemble meals that hit the user's saved macro target using
+    # ONLY food_ids from that slice. Validates IDs + retries once
+    # on hallucination.
+    path("solo/ai-meals/",               solo_ai_meals_suggest,          name="solo-ai-meals-suggest"),
 ]

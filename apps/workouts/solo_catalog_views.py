@@ -303,11 +303,36 @@ def solo_programmes_create_custom(request):
                 order=d_idx,
             )
             for e_idx, ex_spec in enumerate(day_spec.get("exercises") or []):
+                # T2.7 / T1.9 — accept catalog_id from the iOS picker
+                # so the saved Exercise carries a real ExerciseCatalog
+                # FK instead of free-text name. Stamp provenance=
+                # user_edit because the user is authoring this row
+                # directly. Fall back to free-text if no catalog_id
+                # supplied (old client builds + AI-PT-driven custom
+                # programmes still work).
+                catalog_item = None
+                cid = ex_spec.get("catalog_id") or ex_spec.get("exercise_catalog_id")
+                if cid:
+                    try:
+                        from .models import ExerciseCatalog
+                        catalog_item = ExerciseCatalog.objects.filter(pk=int(cid)).first()
+                    except Exception:
+                        catalog_item = None
+                rest_secs = 90
+                try:
+                    rs = int(ex_spec.get("rest_seconds") or 0)
+                    if 0 < rs <= 600:
+                        rest_secs = rs
+                except (TypeError, ValueError):
+                    pass
                 ex = Exercise.objects.create(
                     workout_day=day,
                     name=str(ex_spec.get("name", "Exercise"))[:255],
                     label=str(ex_spec.get("label", chr(65 + e_idx)))[:10],
                     order=e_idx,
+                    catalog_item=catalog_item,
+                    rest_seconds=rest_secs,
+                    provenance=Exercise.PROVENANCE_USER,
                 )
                 for s_idx, s in enumerate(ex_spec.get("sets") or []):
                     ExerciseSetTarget.objects.create(
