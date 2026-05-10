@@ -301,6 +301,14 @@ class ExerciseCatalog(models.Model):
     external_id = models.CharField(max_length=64, blank=True, db_index=True)
 
     is_published = models.BooleanField(default=True)
+
+    # DEEN-PLAN — Icon production priority. 0 = default queue. Higher
+    # values bubble to the top of the EXERCISE-ICONS commission queue
+    # (#237). The first batch of 30 lifts come from Deen's own PT-built
+    # plan so the founder dogfood loop is fully visual end-to-end before
+    # we expand to the long tail of the 1,500-row catalog.
+    icon_priority = models.PositiveSmallIntegerField(default=0, db_index=True)
+
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
