@@ -125,10 +125,21 @@ def meal_templates_collection(request):
     if missing:
         return Response({"detail": f"Unknown food_id(s): {missing[:5]}"}, status=400)
 
+    # Optional flags — defaults preserve existing behaviour for older
+    # callers, but the AI-meal "Add to plan" path needs to set both
+    # `source=ai_generated` and `is_in_daily_plan=true` upfront
+    # rather than POST-then-PATCH (saves a roundtrip + avoids the
+    # template briefly existing in the wrong state).
+    source_in = (body.get("source") or "").strip()
+    valid_sources = {MealTemplate.SOURCE_USER, MealTemplate.SOURCE_AI}
+    source = source_in if source_in in valid_sources else MealTemplate.SOURCE_USER
+    in_plan = bool(body.get("is_in_daily_plan", False))
+
     with transaction.atomic():
         tpl = MealTemplate.objects.create(
             user=user, title=title, slot=slot, notes=notes,
-            source=MealTemplate.SOURCE_USER,
+            source=source,
+            is_in_daily_plan=in_plan,
         )
         for idx, it in enumerate(items):
             try:
