@@ -16,6 +16,11 @@ from .ai_describe_views import solo_ai_describe_food
 from .ai_build_views import solo_ai_nutrition_build
 from .ai_meals_views import solo_ai_meals_suggest
 from .template_views import recommend_templates
+from .meal_template_views import (
+    meal_templates_collection,
+    meal_template_detail,
+    meal_template_log,
+)
 
 urlpatterns = [
     path("me/today/",        nutrition_today_for_me, name="me-nutrition-today"),
@@ -64,4 +69,10 @@ urlpatterns = [
     # ONLY food_ids from that slice. Validates IDs + retries once
     # on hallucination.
     path("solo/ai-meals/",               solo_ai_meals_suggest,          name="solo-ai-meals-suggest"),
+
+    # T2.9 — user-saved meal templates from the food catalog.
+    # CRUD + one-tap log to the food diary. Idempotent on retry.
+    path("meal-templates/",                          meal_templates_collection, name="meal-templates-collection"),
+    path("meal-templates/<int:template_id>/",        meal_template_detail,      name="meal-template-detail"),
+    path("meal-templates/<int:template_id>/log/",    meal_template_log,         name="meal-template-log"),
 ]

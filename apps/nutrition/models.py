@@ -644,3 +644,104 @@ class NutritionTemplate(models.Model):
             "carbs":    int(carbs_g),
             "fats":     int(fat_g),
         }
+
+
+# ====================================================================
+# T2.9 — MealTemplate
+#
+# User-authored or AI-suggested meal that the user can save as a
+# reusable favourite ("my usual breakfast") and one-tap log to the
+# food diary later. Each MealTemplate has a list of MealTemplateItem
+# rows pointing at CuratedFood with a portion_g.
+#
+# Endpoints (apps/nutrition/meal_template_views.py):
+#   • GET  /api/nutrition/meal-templates/
+#   • POST /api/nutrition/meal-templates/
+#   • PATCH /api/nutrition/meal-templates/<id>/
+#   • DELETE /api/nutrition/meal-templates/<id>/
+#   • POST /api/nutrition/meal-templates/<id>/log/   ← one-tap log
+#
+# When the user logs a template, each item becomes a SoloFoodLogEntry
+# row with the food FK populated + a derived `name`/macros snapshot.
+# ====================================================================
+class MealTemplate(models.Model):
+    SLOT_BREAKFAST     = "breakfast"
+    SLOT_LUNCH         = "lunch"
+    SLOT_DINNER        = "dinner"
+    SLOT_SNACK         = "snack"
+    SLOT_PRE_WORKOUT   = "pre_workout"
+    SLOT_INTRA_WORKOUT = "intra_workout"
+    SLOT_POST_WORKOUT  = "post_workout"
+    SLOT_CHOICES = [
+        (SLOT_BREAKFAST,     "Breakfast"),
+        (SLOT_LUNCH,         "Lunch"),
+        (SLOT_DINNER,        "Dinner"),
+        (SLOT_SNACK,         "Snack"),
+        (SLOT_PRE_WORKOUT,   "Pre-workout"),
+        (SLOT_INTRA_WORKOUT, "Intra-workout"),
+        (SLOT_POST_WORKOUT,  "Post-workout"),
+    ]
+
+    SOURCE_USER = "user_edit"
+    SOURCE_AI   = "ai_generated"
+    SOURCE_CHOICES = [
+        (SOURCE_USER, "User-built"),
+        (SOURCE_AI,   "AI-generated"),
+    ]
+
+    user      = models.ForeignKey(
+        "users.User", on_delete=models.CASCADE, related_name="meal_templates",
+    )
+    title     = models.CharField(max_length=120)
+    slot      = models.CharField(max_length=20, choices=SLOT_CHOICES, default=SLOT_BREAKFAST, db_index=True)
+    notes     = models.CharField(max_length=240, blank=True)
+    source    = models.CharField(max_length=16, choices=SOURCE_CHOICES, default=SOURCE_USER)
+    is_favourite = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True, db_index=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ["-is_favourite", "-updated_at"]
+        indexes = [
+            models.Index(fields=["user", "slot"]),
+        ]
+
+    def __str__(self):
+        return f"{self.user_id}/{self.title} ({self.slot})"
+
+    def totals(self) -> dict:
+        """Sum macros across all items. Computed live so item edits
+        don't need a denormalised cache field."""
+        kcal = 0.0; p = 0.0; c = 0.0; f = 0.0
+        for it in self.items.all().select_related("food"):
+            scale = (it.portion_g or 0.0) / 100.0
+            food = it.food
+            if food is None:
+                continue
+            kcal += food.kcal_per_100g    * scale
+            p    += food.protein_per_100g * scale
+            c    += food.carbs_per_100g   * scale
+            f    += food.fat_per_100g     * scale
+        return {
+            "calories": round(kcal, 1),
+            "protein":  round(p, 1),
+            "carbs":    round(c, 1),
+            "fats":     round(f, 1),
+        }
+
+
+class MealTemplateItem(models.Model):
+    template  = models.ForeignKey(
+        MealTemplate, on_delete=models.CASCADE, related_name="items",
+    )
+    food      = models.ForeignKey(
+        CuratedFood, on_delete=models.PROTECT, related_name="meal_template_items",
+    )
+    portion_g = models.FloatField()
+    order     = models.PositiveSmallIntegerField(default=0)
+
+    class Meta:
+        ordering = ["order", "id"]
+
+    def __str__(self):
+        return f"{self.template_id}/{self.food.name} @ {self.portion_g}g"
