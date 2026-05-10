@@ -460,6 +460,32 @@ def setup_progress_view(request):
                     prefs["personal_details"] = pd
                     request.user.notification_prefs = prefs
                     request.user.save(update_fields=["notification_prefs"])
+            elif key == "age_years":
+                # Convert age → synthetic DOB (Jan 1 of birth year)
+                # so we land in the existing `User.date_of_birth`
+                # column. Year-precision is plenty for the macro
+                # engine; we'll add full-DOB capture later when
+                # the Apple Health step pulls the real one.
+                try:
+                    age = int(raw)
+                    if 12 <= age <= 100:
+                        from django.utils import timezone
+                        from datetime import date
+                        today = timezone.localdate()
+                        request.user.date_of_birth = date(today.year - age, 1, 1)
+                        request.user.save(update_fields=["date_of_birth"])
+                except (TypeError, ValueError):
+                    pass
+            elif key == "date_of_birth":
+                # Apple Health path — we get the real DOB.
+                from datetime import date
+                try:
+                    if isinstance(raw, str) and len(raw) >= 10:
+                        y, m, d = raw[:10].split("-")
+                        request.user.date_of_birth = date(int(y), int(m), int(d))
+                        request.user.save(update_fields=["date_of_birth"])
+                except (ValueError, AttributeError):
+                    pass
 
     if changed_fields:
         # Dedupe so save() doesn't repeat columns when both

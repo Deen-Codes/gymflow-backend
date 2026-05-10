@@ -294,6 +294,15 @@ def solo_debug_factory_reset(request):
         profile.trial_started_at      = None
         profile.trial_ends_at         = None
         profile.stripe_subscription_id = ""
+        # ONBOARDING-QUICK-START — reset the new setup-strip flags
+        # so the hub re-fires on the next launch. Without this the
+        # user reports "I reset everything but the strip's gone" —
+        # the underlying fields cleared but the done-flags lingered.
+        profile.setup_apple_health_done    = False
+        profile.setup_body_stats_done      = False
+        profile.setup_goal_done            = False
+        profile.setup_training_done        = False
+        profile.setup_nutrition_style_done = False
         profile.save()
 
         # 3. Wipe the JSON cache that AI usage / preview / recent
