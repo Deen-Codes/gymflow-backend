@@ -444,10 +444,15 @@ def _client_ip(request):
 @authentication_classes([])
 @permission_classes([AllowAny])
 def magic_link_request_view(request):
-    """Send a one-tap sign-in link to `email` if the address is on
-    file. Always responds 200 — the success message is the same
-    whether or not we recognised the email so attackers can't probe
-    for valid accounts via this endpoint."""
+    """Send a one-tap sign-in link to `email`. If the address is
+    new, also create a fresh Solo user on the fly so the same flow
+    handles both login and signup. iOS detects the missing name
+    post-auth and shows the name-capture step on first launch.
+
+    Always responds 200 (well-formed input only — 400 on bad
+    email). The success message is generic on purpose so attackers
+    still can't probe for valid accounts via this endpoint.
+    """
     email = (request.data.get("email") or "").strip().lower()
     if not email or "@" not in email:
         return Response(
@@ -456,26 +461,47 @@ def magic_link_request_view(request):
         )
 
     user = User.objects.filter(email__iexact=email).first()
-    if user is not None:
-        # Generate a random URL-safe token. ~43 chars at entropy 256.
-        token_str = secrets.token_urlsafe(32)
-        record = MagicLoginToken.objects.create(
-            user=user,
-            token=token_str,
-            requested_ip=_client_ip(request),
+    if user is None:
+        # ONBOARDING-QUICK-START — auto-create a Solo user so the
+        # magic-link request works as the single signup-or-login
+        # entry point. Username derived from the email's local part
+        # with a numeric suffix if it collides. Password left
+        # unusable; magic link is the only auth path on this account
+        # unless they later set one via the dashboard.
+        local_part = email.split("@", 1)[0]
+        base = "".join(c for c in local_part if c.isalnum() or c in "_-")[:24] or "user"
+        username = base
+        suffix = 0
+        while User.objects.filter(username=username).exists():
+            suffix += 1
+            username = f"{base}{suffix}"
+        user = User.objects.create(
+            username=username,
+            email=email,
+            role=User.SOLO,
         )
-        deep_link, web_link = _magic_link_urls(record.token)
-        try:
-            _send_magic_link_email(user=user, deep_link=deep_link, web_link=web_link)
-        except Exception:
-            # Don't leak email-send failures to the caller — the
-            # attacker shouldn't be able to distinguish "we sent it"
-            # from "we tried and failed". Surface to logs.
-            import logging
-            logging.exception("Magic-link email send failed for %s", email)
+        user.set_unusable_password()
+        user.save()
+
+    # Generate a random URL-safe token. ~43 chars at entropy 256.
+    token_str = secrets.token_urlsafe(32)
+    record = MagicLoginToken.objects.create(
+        user=user,
+        token=token_str,
+        requested_ip=_client_ip(request),
+    )
+    deep_link, web_link = _magic_link_urls(record.token)
+    try:
+        _send_magic_link_email(user=user, deep_link=deep_link, web_link=web_link)
+    except Exception:
+        # Don't leak email-send failures to the caller — the
+        # attacker shouldn't be able to distinguish "we sent it"
+        # from "we tried and failed". Surface to logs.
+        import logging
+        logging.exception("Magic-link email send failed for %s", email)
 
     return Response(
-        {"detail": "If that email is on file, a sign-in link is on its way. The link expires in 10 minutes."},
+        {"detail": "A sign-in link is on its way. The link expires in 10 minutes."},
         status=status.HTTP_200_OK,
     )
 
