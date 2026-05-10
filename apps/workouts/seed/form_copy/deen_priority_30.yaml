@@ -1,0 +1,484 @@
+# DEEN-PLAN — form copy for the 30 priority lifts on Deen's PT plan.
+#
+# Voice: calm coach. Instructional, not aspirational. UK gym
+# vocabulary ("dumbbells" not "dbs", "bar" not "barbell" when context
+# is clear). 3-5 sentences for form_description, 3-5 bullets for
+# common_mistakes, 1-2 sentences for breathing_cues.
+#
+# Loaded via:
+#   python manage.py seed_exercise_form_copy \
+#       --path apps/workouts/seed/form_copy/deen_priority_30.yaml
+#
+# Match key: `name` (case-insensitive). Entries align with names set
+# by `seed_deen_priority_plan` so re-running both is idempotent.
+
+# ============================================================
+# Day 1 — Upper
+# ============================================================
+
+- name: Pec Deck Chest Fly
+  form_description: |
+    Sit tall with your back flat against the pad and feet planted. Grip
+    the handles with elbows softly bent — not locked straight, not
+    deeply bent. Drive the handles together using your chest, not your
+    arms, and squeeze for a beat in the middle position. Control the
+    return; let the stretch open the chest before the next rep.
+  common_mistakes: |
+    - Bending the elbows mid-rep to turn it into a press
+    - Shrugging the shoulders up to assist
+    - Letting the handles fly open at the bottom and yank the joint
+    - Bouncing reps for momentum instead of squeezing the chest
+  breathing_cues: |
+    Inhale as the handles open, exhale as you squeeze them together.
+
+- name: Incline Machine Chest Press
+  form_description: |
+    Set the bench around 30°. Grip the handles with wrists stacked over
+    elbows. Lower the handles until the elbows pass roughly the line of
+    the body, then press up and slightly together. Keep your shoulder
+    blades pinned back and down through the whole rep — no rocking.
+  common_mistakes: |
+    - Flaring the elbows to 90° and stressing the front delt
+    - Lifting the hips off the seat to press more weight
+    - Bouncing the handles off the chest at the bottom
+    - Locking out so hard the shoulders roll forward
+  breathing_cues: |
+    Inhale on the way down, exhale through the press.
+
+- name: Chest Supported T-Bar Row
+  form_description: |
+    Lay your chest flat against the pad and grip the handles with arms
+    fully extended. Drive the elbows back and down, leading with the
+    elbows rather than yanking with the hands. Pull until your hands
+    reach the lower ribs and squeeze through the mid-back. Lower under
+    control without losing chest contact with the pad.
+  common_mistakes: |
+    - Coming off the pad to use body english
+    - Pulling with the biceps instead of the back
+    - Shrugging the shoulders up at the top
+    - Cutting the bottom range short — let the lats stretch fully
+  breathing_cues: |
+    Inhale at the bottom stretch, exhale as you pull the handles in.
+
+- name: Neutral Grip Lat Pulldown
+  form_description: |
+    Set the thigh pad snug. Grip with palms facing each other and lean
+    back maybe 15° — no further. Pull the handle to your upper chest by
+    driving the elbows down and back, not by pulling with the hands.
+    Feel the lats engage before the biceps. Control the bar back up to
+    a full overhead stretch.
+  common_mistakes: |
+    - Leaning back hard to make it a row
+    - Pulling the bar behind the neck (rotator cuff stress)
+    - Letting the shoulders roll forward at the top stretch
+    - Stopping the bar at the chin instead of upper chest
+  breathing_cues: |
+    Inhale as the bar travels up, exhale as you pull it down.
+
+- name: Torso Supported Lateral Raise
+  form_description: |
+    Chest braced against the pad, dumbbells hanging straight down. Raise
+    them out to the side in a smooth arc, leading with the elbows and
+    keeping a slight bend. Stop when the upper arm is parallel to the
+    floor — going higher recruits the traps. Lower slowly; the lengthening
+    phase is where the side delts grow.
+  common_mistakes: |
+    - Swinging the dumbbells up with momentum
+    - Going past parallel and shrugging the traps in
+    - Locking the elbows straight and stressing the joint
+    - Rotating the wrists down (pour-the-jug) — this shifts work off
+      the side delt
+  breathing_cues: |
+    Inhale at the bottom, exhale as you raise the dumbbells.
+
+- name: Shoulder Press Machine
+  form_description: |
+    Sit tall, back firm against the pad, feet flat. Grip the handles
+    with wrists stacked over elbows. Press up smoothly until the elbows
+    are nearly straight — don't slam the lockout. Lower until the elbows
+    sit roughly at shoulder height; deeper than that puts the front delt
+    under unfriendly stretch.
+  common_mistakes: |
+    - Arching the lower back to assist the press
+    - Letting the elbows flare wider than the line of the wrists
+    - Bouncing out of the bottom for momentum
+    - Pressing chin-forward instead of staying neutral
+  breathing_cues: |
+    Inhale on the descent, exhale through the press.
+
+- name: Cross Body Tricep Extension
+  form_description: |
+    Stand side-on to a high cable, single-handle attached. Grip with the
+    far hand and pull the handle across your chest in a controlled arc.
+    Keep the working elbow pinned in place and let only the forearm move.
+    The path travels across the body, finishing past the opposite hip.
+  common_mistakes: |
+    - Letting the elbow drift forward to use the shoulder
+    - Twisting the torso to chase the weight
+    - Cutting the range short before full elbow extension
+    - Yanking the cable with the lats
+  breathing_cues: |
+    Inhale at the top, exhale as you extend across the body.
+
+- name: Dual Arm Cable Bicep Curl
+  form_description: |
+    Stand mid-stack with a straight or EZ bar attached low. Grip
+    shoulder-width, elbows pinned to your sides. Curl up by flexing
+    the biceps — the elbows should stay locked in place, not drift
+    forward. Squeeze at the top, then lower to a full stretch without
+    letting the shoulders roll forward.
+  common_mistakes: |
+    - Swinging the elbows forward to fold the weight up
+    - Using the lower back to heave the bar
+    - Stopping short of the bottom — you lose the stretch
+    - Letting the wrists curl under load
+  breathing_cues: |
+    Inhale at the bottom, exhale as you curl up.
+
+- name: Dumbbell Skull Crusher
+  form_description: |
+    Lie on a flat bench with dumbbells held straight up over the chest,
+    palms facing each other. Hinge at the elbows only — upper arms stay
+    vertical — and lower the dumbbells toward the sides of your forehead.
+    Extend back up by driving through the triceps. Keep the elbows tucked,
+    not flaring out.
+  common_mistakes: |
+    - Letting the upper arms drift back so the shoulders take over
+    - Flaring the elbows wide
+    - Banging the dumbbells off your skull (pick a slightly different
+      angle so the path lands beside the head)
+    - Locking out so hard the elbows hyperextend
+  breathing_cues: |
+    Inhale on the way down, exhale through the extension.
+
+- name: Single Arm Dumbbell Preacher Curl
+  form_description: |
+    Set the preacher pad so your armpit sits firmly on the top edge.
+    Hold the dumbbell at the bottom with the elbow against the pad and
+    the arm fully extended. Curl up by flexing the bicep, keeping the
+    upper arm glued to the pad. Lower under tight control — the bottom
+    stretch is the whole point of this lift.
+  common_mistakes: |
+    - Letting the elbow lift off the pad to cheat
+    - Jerking out of the bottom instead of controlling it
+    - Cutting the range short at the top (shooting past the contraction)
+    - Wrist curling at the top to add range with the forearm
+  breathing_cues: |
+    Inhale at the bottom stretch, exhale as you curl up.
+
+# ============================================================
+# Day 2 — Lower
+# ============================================================
+
+- name: Seated Calf Raise
+  form_description: |
+    Sit with the balls of your feet on the platform and the pad snug
+    over your knees. Drop the heels as low as the platform allows for a
+    full stretch, then drive up onto your toes and squeeze the calves
+    hard at the top. The slow lengthening phase matters most — three
+    seconds down beats a fast bounce every time.
+  common_mistakes: |
+    - Bouncing reps for tendon spring rather than calf work
+    - Cutting the bottom range short
+    - Going through the motion without pausing at full contraction
+    - Letting the knees drift inward under the pad
+  breathing_cues: |
+    Steady — inhale on the descent, exhale at the top squeeze.
+
+- name: Lying Hamstring Curl
+  form_description: |
+    Lie face down with the pad sitting just above the heels, knees
+    just past the bench edge. Curl the heels toward your glutes by
+    contracting the hamstrings, not by jerking the hips up. Pause for
+    a beat at the top, then lower under control to a near-full
+    extension.
+  common_mistakes: |
+    - Lifting the hips off the bench to gain range
+    - Banging the weight stack at the bottom (no eccentric)
+    - Not curling far enough — the top contraction is where it matters
+    - Pad placed too high up the calf, working the achilles
+  breathing_cues: |
+    Inhale at the bottom, exhale as you curl up.
+
+- name: Leg Extension
+  form_description: |
+    Sit with the back pad supporting the spine, the lower-shin pad just
+    above the ankle. Extend the legs by contracting the quads — pause
+    briefly at full extension. Lower under control to roughly 90° of
+    knee bend before the next rep. Keep the hips planted on the seat.
+  common_mistakes: |
+    - Slamming into full extension and stressing the knee
+    - Lifting the hips off the seat for leverage
+    - Half-repping (not fully extending — the top contraction is key)
+    - Gripping the handles so hard you body-english the rep
+  breathing_cues: |
+    Inhale at the bottom, exhale as you extend.
+
+- name: Leg Press
+  form_description: |
+    Place feet shoulder-width on the platform, mid-foot. Lower the sled
+    by bending the knees and hips together — knees track over the toes.
+    Stop when the lower back is about to round off the pad; that's your
+    bottom. Drive the platform back up through the mid-foot, stopping
+    just short of locking out at the top.
+  common_mistakes: |
+    - Letting the lower back round (butt wink) at the bottom
+    - Locking out and resting on the joint instead of the muscles
+    - Knees collapsing inward
+    - Pushing through the toes instead of mid-foot
+  breathing_cues: |
+    Inhale on the descent, exhale through the drive up.
+
+- name: Hack Squat
+  form_description: |
+    Set feet shoulder-width on the platform with a slight toe-out.
+    Brace the back firmly against the pad and lower under control by
+    bending the knees and hips — the back stays glued to the pad the
+    whole rep. Descend until your thighs are at parallel or just below.
+    Drive up by pushing through the mid-foot.
+  common_mistakes: |
+    - Half-squatting and never reaching parallel
+    - Knees caving inward on the drive up
+    - Coming off the back pad mid-rep
+    - Locking out and resting at the top
+  breathing_cues: |
+    Inhale at the top, brace through the descent, exhale on the drive up.
+
+- name: Dumbbell Bulgarian Split Squat
+  form_description: |
+    Place the back foot on a bench behind you, front foot far enough
+    forward that when you descend the front knee tracks over the
+    mid-foot. Hold a dumbbell in each hand. Lower by bending the front
+    knee and hip together until the back knee almost touches the floor.
+    Drive up through the front mid-foot. Switch sides each set.
+  common_mistakes: |
+    - Front foot too close — the knee shoots past the toes
+    - Pushing off the back foot like a lunge (this is a single-leg lift)
+    - Letting the front knee cave inward
+    - Bending forward at the waist instead of staying upright
+  breathing_cues: |
+    Inhale on the descent, exhale on the drive up.
+
+- name: Adductor Machine
+  form_description: |
+    Sit with the pads pressed against the inner thighs, knees and hips
+    at a comfortable angle. Squeeze the legs together by driving from
+    the inner thighs. Pause briefly in the middle. Open back up under
+    control — the controlled stretch is most of the work here.
+  common_mistakes: |
+    - Slamming the pads together with momentum
+    - Letting the pads fly open at the bottom and yank the joint
+    - Sitting hunched forward and shifting work to the back
+    - Going too heavy and using hip flexors / adductor magnus only
+  breathing_cues: |
+    Inhale as the legs open, exhale as you squeeze them together.
+
+# ============================================================
+# Day 3 — Push (Incline Machine Chest Press shared with Day 1)
+# ============================================================
+
+- name: Dumbbell Shoulder Press
+  form_description: |
+    Sit on a bench with back support. Hold dumbbells at shoulder
+    height, palms facing forward, wrists stacked over elbows. Press up
+    by driving the dumbbells until the elbows are nearly straight — the
+    dumbbells finish slightly above and just inside the line of the
+    shoulders. Lower under control to roughly ear height.
+  common_mistakes: |
+    - Arching the lower back hard to push the press
+    - Smashing the dumbbells together at the top
+    - Locking out so hard the shoulders shrug up
+    - Letting the elbows flare wider than the line of the wrists
+  breathing_cues: |
+    Inhale on the descent, exhale through the press.
+
+- name: Seated Machine Chest Press
+  form_description: |
+    Sit tall, feet flat, back firm against the pad. Grip the handles
+    with wrists stacked over elbows. Press the handles forward until
+    the elbows are nearly straight, squeezing the chest at the
+    midpoint. Lower under control until the elbows pass roughly the
+    line of the body. Don't let the shoulders roll forward at the top.
+  common_mistakes: |
+    - Lifting the hips off the seat for leverage
+    - Flaring the elbows up to 90° and stressing the front delt
+    - Letting the shoulders round forward at lockout
+    - Half-repping — let the chest stretch open at the bottom
+  breathing_cues: |
+    Inhale on the descent, exhale through the press.
+
+- name: Lying Cuffed Lateral Raise
+  form_description: |
+    Lie on your side on a bench, cuff attached to the low cable. Grip
+    the cable with the top arm, elbow softly bent. Raise the upper arm
+    away from the body in a smooth arc until parallel with the floor —
+    no further. Lower under tight control. The fixed cable angle keeps
+    constant tension on the side delt through the whole range.
+  common_mistakes: |
+    - Going past parallel and pulling the traps in
+    - Bending the elbow mid-rep to add range
+    - Rolling onto the back to use the front delt
+    - Yanking the cable from the bottom
+  breathing_cues: |
+    Inhale at the bottom, exhale as you raise the arm.
+
+- name: Cable Crossover
+  form_description: |
+    Set both pulleys high, grip a handle in each hand, step forward
+    into a slight stagger stance. Bring the handles together in front
+    of the body in a smooth arc, leading with the chest, elbows softly
+    bent. Squeeze at the midpoint. Open back up under control until you
+    feel the chest stretch — don't let the shoulders roll forward.
+  common_mistakes: |
+    - Bending the elbows mid-rep to turn it into a press
+    - Standing too far back so the line of pull goes wrong
+    - Letting the handles fly open at the top stretch
+    - Twisting the torso to bring the handles together
+  breathing_cues: |
+    Inhale as the handles open, exhale as you bring them together.
+
+- name: Machine Dip
+  form_description: |
+    Sit upright in the machine with the pads / handles set so the
+    elbows can bend to roughly 90° at the bottom. Press the handles
+    down by extending at the elbows — the upper body stays upright and
+    still. Pause briefly at lockout, then return under control. Don't
+    let the shoulders shrug up under load.
+  common_mistakes: |
+    - Leaning forward to involve the chest (this should be triceps-led)
+    - Locking out so hard the elbows hyperextend
+    - Stopping short of the bottom and missing the stretch
+    - Bouncing reps off the bottom for momentum
+  breathing_cues: |
+    Inhale at the bottom, exhale as you press down.
+
+- name: Single Arm Tricep Pushdown
+  form_description: |
+    Stand square to a high cable, single handle attached. Grip with the
+    elbow pinned to your side. Press the handle down by extending the
+    elbow, finishing with the arm fully straight beside the hip.
+    Squeeze the triceps at lockout. Return under control without letting
+    the elbow drift forward.
+  common_mistakes: |
+    - Letting the elbow flare out from the body
+    - Using the shoulder to press the handle down (elbow drifts forward)
+    - Cutting the range short before full extension
+    - Leaning the torso over the handle to push the weight
+  breathing_cues: |
+    Inhale at the top, exhale as you press down.
+
+# ============================================================
+# Day 4 — Pull
+# ============================================================
+
+- name: Reverse Bench Single Arm Pulldown
+  form_description: |
+    Set a bench backward against a pulldown machine so your back faces
+    the cable. Sit with the chest up. Grip the high cable single-handed
+    and pull the handle down and behind you toward the lower lat. Lead
+    with the elbow, squeezing the lat at the bottom. Control the
+    return all the way to a full overhead stretch.
+  common_mistakes: |
+    - Pulling with the bicep instead of the lat
+    - Twisting the torso to gain range
+    - Cutting the top stretch short
+    - Yanking the cable with body english
+  breathing_cues: |
+    Inhale at the top stretch, exhale as you pull down and back.
+
+- name: Hammer Strength Low to High Row
+  form_description: |
+    Grip the handles low, chest braced against the pad, feet planted.
+    Pull the handles up and back in a smooth diagonal — the path
+    finishes near the upper chest, elbows driving up and out. Squeeze
+    through the mid-back at the top. Lower under control to a full
+    forward stretch without losing contact with the pad.
+  common_mistakes: |
+    - Coming off the chest pad to use body english
+    - Pulling with the arms instead of leading with the elbows
+    - Cutting the bottom range short and missing the stretch
+    - Shrugging the shoulders up at the top instead of squeezing back
+  breathing_cues: |
+    Inhale at the bottom, exhale as you pull up and back.
+
+- name: Single Arm D-Handle Low Row
+  form_description: |
+    Sit at a low cable with a D-handle, feet braced. Grip with one hand,
+    arm extended forward, chest up. Pull the handle to the lower ribs
+    by driving the elbow back, leading with the elbow not the hand.
+    Squeeze the lat and mid-back. Return under control to a full
+    forward stretch — let the lat lengthen.
+  common_mistakes: |
+    - Twisting the torso to crank the cable in
+    - Pulling with the bicep instead of the back
+    - Letting the shoulder roll forward at the stretch
+    - Cutting the bottom range short
+  breathing_cues: |
+    Inhale at the stretch, exhale as you pull the handle in.
+
+- name: EZ Bar Cable Bicep Curl
+  form_description: |
+    Stand at a low cable with an EZ bar attached. Grip with the angled
+    sections, elbows pinned to your sides. Curl the bar up by flexing
+    the biceps — the elbows stay glued in place. Squeeze hard at the
+    top. Lower to a full stretch without letting the shoulders roll
+    forward.
+  common_mistakes: |
+    - Swinging the elbows forward to fold the weight up
+    - Using the lower back to heave the bar
+    - Cutting the bottom stretch short
+    - Letting the wrists hyperextend under load
+  breathing_cues: |
+    Inhale at the bottom, exhale as you curl up.
+
+- name: Alternating Hammer Curl
+  form_description: |
+    Stand tall with a dumbbell in each hand, palms facing each other
+    (neutral grip). Curl one dumbbell at a time by flexing the bicep,
+    keeping the elbow pinned to your side. Squeeze at the top, then
+    lower under control. The other arm waits at the bottom. The
+    neutral grip recruits the brachialis hard — that's the point.
+  common_mistakes: |
+    - Swinging the elbow forward to fold the weight up
+    - Rotating the wrist palm-up mid-curl (turns it into a regular curl)
+    - Heaving with the lower back
+    - Cutting the bottom range short
+  breathing_cues: |
+    Inhale at the bottom, exhale as you curl each rep up.
+
+# ============================================================
+# Day 5 — Legs
+# ============================================================
+
+- name: Seated Hamstring Curl
+  form_description: |
+    Sit upright, lap pad snug across the thighs, lower-shin pad just
+    above the heel. Curl the heels back under the seat by contracting
+    the hamstrings. Pause briefly at the bottom of the curl, then return
+    under control to near-full extension. The seated position emphasises
+    the hamstrings near the long-stretched position — slow eccentrics
+    pay off here.
+  common_mistakes: |
+    - Lifting the hips off the seat for leverage
+    - Banging the stack at the bottom (no controlled return)
+    - Half-repping — not contracting fully
+    - Pad placed too low on the calf, putting the achilles under load
+  breathing_cues: |
+    Inhale at the top, exhale as you curl down.
+
+- name: Glute Drive Machine
+  form_description: |
+    Sit on the seat with the upper-back pad firm against the upper
+    back, feet planted shoulder-width on the platform. Brace the core
+    and drive the hips up by squeezing the glutes — the upper back
+    stays in contact with the pad. Pause for a beat at the top
+    contraction. Lower under control. Don't extend the lower back to
+    chase more range.
+  common_mistakes: |
+    - Hyperextending the lower back at the top instead of driving from
+      the glutes
+    - Pushing through the toes instead of mid-foot
+    - Cutting the top contraction short — pause at lockout
+    - Letting the knees cave inward
+  breathing_cues: |
+    Inhale at the bottom, exhale as you drive the hips up.
