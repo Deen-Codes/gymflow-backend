@@ -17,6 +17,8 @@ from .exercise_edit_views import (
     exercise_edit_view,
     exercise_swap_view,
     workout_day_add_exercise_view,
+    workout_day_add_view,
+    workout_day_delete_view,
 )
 
 urlpatterns = [
@@ -52,4 +54,12 @@ urlpatterns = [
          name="exercise-edit"),
     path("days/<int:day_id>/exercises/",           workout_day_add_exercise_view,
          name="workout-day-add-exercise"),
+
+    # T4.2 — Add / remove training day. Cross-domain chip in response
+    # tells iOS to surface a kcal-bump (or trim) suggestion next to the
+    # day-list update.
+    path("plans/<int:plan_id>/days/",              workout_day_add_view,
+         name="workout-day-add"),
+    path("days/<int:day_id>/",                     workout_day_delete_view,
+         name="workout-day-delete"),
 ]

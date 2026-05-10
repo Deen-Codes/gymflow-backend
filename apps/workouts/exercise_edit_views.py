@@ -28,8 +28,11 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from apps.users.models import User
+from apps.users.cross_domain_alignment import (
+    alignment_chip_after_workout_change,
+)
 from .models import (
-    Exercise, ExerciseCatalog, ExerciseSetTarget, WorkoutDay,
+    Exercise, ExerciseCatalog, ExerciseSetTarget, WorkoutDay, WorkoutPlan,
 )
 
 
@@ -55,6 +58,15 @@ def _user_owns_day(user, day: WorkoutDay) -> bool:
     if profile is None:
         return False
     return profile.assigned_workout_plan_id == day.plan_id
+
+
+def _user_owns_plan(user, plan: WorkoutPlan) -> bool:
+    if user.role != User.SOLO:
+        return False
+    profile = getattr(user, "solo_profile", None)
+    if profile is None:
+        return False
+    return profile.assigned_workout_plan_id == plan.id
 
 
 def _log_edit(user, kind: str, summary: str, payload: dict) -> None:
@@ -266,3 +278,85 @@ def workout_day_add_exercise_view(request, day_id: int):
         "chip":         None,
     }
     return Response(response_payload, status=status.HTTP_201_CREATED)
+
+
+@api_view(["POST"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def workout_day_add_view(request, plan_id: int):
+    """Add a new training day to the user's assigned plan. Body:
+    {"title": "Day 5 — Arms"}. Title optional — defaults to
+    "Day N" where N is the next sequence number.
+
+    Returns the new day + a cross-domain chip (T4.2) since adding
+    training days typically warrants a kcal target bump."""
+    plan = get_object_or_404(WorkoutPlan, pk=plan_id)
+    if not _user_owns_plan(request.user, plan):
+        return Response({"detail": "Not your plan."}, status=status.HTTP_403_FORBIDDEN)
+
+    body = request.data or {}
+    next_order = (
+        WorkoutDay.objects.filter(plan=plan)
+        .order_by("-order").values_list("order", flat=True).first() or 0
+    ) + 1
+    title = (body.get("title") or f"Day {next_order}")[:100]
+
+    with transaction.atomic():
+        day = WorkoutDay.objects.create(
+            plan=plan,
+            title=title,
+            order=next_order,
+        )
+
+    _log_edit(
+        request.user,
+        kind="workout_add_day",
+        summary=f"+training day: {title}",
+        payload={"plan_id": plan.id, "day_id": day.id, "title": title},
+    )
+
+    # T4.2 — adding a day shifts weekly volume meaningfully; surface
+    # a kcal-bump chip so the user can keep nutrition in step.
+    chip = alignment_chip_after_workout_change(request.user, day_added=1)
+
+    return Response({
+        "ok":    True,
+        "day": {
+            "id":    day.id,
+            "title": day.title,
+            "order": day.order,
+        },
+        "chip":  chip,
+    }, status=status.HTTP_201_CREATED)
+
+
+@api_view(["DELETE"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def workout_day_delete_view(request, day_id: int):
+    """Remove a training day from the user's assigned plan. Cascades
+    to the day's exercises + set targets. Returns a cross-domain chip
+    suggesting a kcal trim (T4.2)."""
+    day = get_object_or_404(WorkoutDay, pk=day_id)
+    if not _user_owns_day(request.user, day):
+        return Response({"detail": "Not your day."}, status=status.HTTP_403_FORBIDDEN)
+
+    plan_id = day.plan_id
+    title = day.title
+
+    with transaction.atomic():
+        day.delete()
+
+    _log_edit(
+        request.user,
+        kind="workout_remove_day",
+        summary=f"-training day: {title}",
+        payload={"plan_id": plan_id, "title": title},
+    )
+
+    chip = alignment_chip_after_workout_change(request.user, day_removed=1)
+
+    return Response({
+        "ok":   True,
+        "chip": chip,
+    })
