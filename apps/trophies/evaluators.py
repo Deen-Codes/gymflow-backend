@@ -961,6 +961,25 @@ def _six_month_transform(user):
 
 
 # =====================================================================
+# Onboarding — fires once the user has marked all five setup-strip
+# steps done. Read from SoloProfile flags so the evaluator stays
+# cheap (no joins).
+# =====================================================================
+def _setup_strong(user):
+    profile = getattr(user, "solo_profile", None)
+    if profile is None:
+        return (0, 1)
+    done = (
+        bool(profile.setup_apple_health_done)
+        + bool(profile.setup_body_stats_done)
+        + bool(profile.setup_goal_done)
+        + bool(profile.setup_training_done)
+        + bool(profile.setup_nutrition_style_done)
+    )
+    return (1 if done == 5 else 0, 1)
+
+
+# =====================================================================
 # Master mapping. Every code in seed.TROPHY_CATALOGUE must have a key
 # here — `assert_evaluators_match_catalogue()` enforces this in the
 # data migration.
@@ -1084,6 +1103,9 @@ EVALUATORS = {
     "lost_20":                 _weight_loss_kg(20),
     "reached_goal_weight":     _reached_goal_weight,
     "six_month_transform":     _six_month_transform,
+
+    # Onboarding
+    "set_up_strong":           _setup_strong,
 }
 
 

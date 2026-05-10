@@ -287,6 +287,33 @@ class SoloProfile(models.Model):
         default=NUTRITION_MODE_AD_HOC,
     )
 
+    # ONBOARDING-QUICK-START — per-step completion flags for the
+    # in-app setup strip. The strip on Home shows progress of 1/5
+    # through 5/5 and disappears at 5/5. These are explicit booleans
+    # (not derived from other fields) so we can distinguish "user
+    # filled this in via the setup hub" from "field happens to be
+    # non-null for another reason". Each step's `_done` flag flips
+    # true via PATCH /api/users/me/setup-progress/ or via the data
+    # migration backfill for users who'd already filled the relevant
+    # fields before this feature shipped.
+    setup_apple_health_done    = models.BooleanField(default=False)
+    setup_body_stats_done      = models.BooleanField(default=False)
+    setup_goal_done            = models.BooleanField(default=False)
+    setup_training_done        = models.BooleanField(default=False)
+    setup_nutrition_style_done = models.BooleanField(default=False)
+
+    @property
+    def setup_complete(self) -> bool:
+        """All five setup steps marked done. Drives the trophy
+        `set_up_strong` award and the iOS strip's visibility."""
+        return (
+            self.setup_apple_health_done
+            and self.setup_body_stats_done
+            and self.setup_goal_done
+            and self.setup_training_done
+            and self.setup_nutrition_style_done
+        )
+
     # Phase A — goal weight. Optional; the user sets it from the
     # Profile → Personal Details sheet (or by replying in chat —
     # the AI surfaces a Profile shortcut). The AI PT context block

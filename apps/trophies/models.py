@@ -37,6 +37,7 @@ class Trophy(models.Model):
         ("check_ins",      "Check-ins & Progress"),
         ("nutrition",      "Nutrition & Hydration"),
         ("body",           "Body Composition"),
+        ("onboarding",     "Onboarding"),
     ]
 
     # Rarity drives the card colour + sort weight in the iOS collection.

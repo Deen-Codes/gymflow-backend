@@ -140,6 +140,9 @@ TROPHY_CATALOGUE = [
     ("lost_20",                "Lost 20 kg",            "Down 20 kg. Major transformation.",                         "body", _L, "arrow.down.circle.fill",             50),
     ("reached_goal_weight",    "Goal Weight Reached",   "Hit your trainer-set goal weight.",                         "body", _L, "flag.checkered",                     60),
     ("six_month_transform",    "6-Month Transformation", "Six months of consistent weight tracking.",               "body", _E, "calendar",                           70),
+
+    # ----- Onboarding (1) -----
+    ("set_up_strong",          "Set Up Strong",         "Completed your profile setup. The AI knows you now.",       "onboarding", _C, "checkmark.seal.fill",         10),
 ]
 
 

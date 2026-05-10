@@ -298,3 +298,128 @@ def delete_account_view(request):
     user.delete()
     log.info("Deleted account %s (id=%s)", username, user_id)
     return Response({"detail": "Account deleted."})
+
+
+# ---------------------------------------------------------------------
+# Setup progress — drives the in-app setup strip
+# ---------------------------------------------------------------------
+
+
+# Stable step IDs the iOS strip uses to address individual flags via
+# PATCH. Keep these in sync with `SoloProfile.setup_*_done` fields.
+SETUP_STEP_IDS = [
+    ("apple_health",    "Sync Apple Health",  "Auto-fills your stats and syncs workouts."),
+    ("body_stats",      "Body stats",         "Height, weight, age, sex."),
+    ("goal",            "Your goal",          "Lose, maintain, or gain."),
+    ("training",        "Training style",     "Experience and days per week."),
+    ("nutrition_style", "Nutrition style",    "Dietary pattern and allergies."),
+]
+
+# Map step_id → SoloProfile field name. One source of truth.
+_STEP_TO_FIELD = {
+    "apple_health":    "setup_apple_health_done",
+    "body_stats":      "setup_body_stats_done",
+    "goal":            "setup_goal_done",
+    "training":        "setup_training_done",
+    "nutrition_style": "setup_nutrition_style_done",
+}
+
+
+def _setup_progress_payload(profile, *, trophy_awarded_now: bool = False) -> dict:
+    """Build the wire shape consumed by the iOS SetupProgressStrip."""
+    steps = []
+    done_count = 0
+    for step_id, label, hint in SETUP_STEP_IDS:
+        done = bool(getattr(profile, _STEP_TO_FIELD[step_id]))
+        if done:
+            done_count += 1
+        steps.append({
+            "id":    step_id,
+            "label": label,
+            "hint":  hint,
+            "done":  done,
+        })
+    return {
+        "steps":           steps,
+        "completed_count": done_count,
+        "total":           len(steps),
+        "complete":        done_count == len(steps),
+        "trophy_awarded":  trophy_awarded_now,
+    }
+
+
+@csrf_exempt
+@api_view(["GET", "PATCH"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def setup_progress_view(request):
+    """ONBOARDING-QUICK-START — drives the Home setup strip.
+
+    GET — return the user's per-step done flags.
+    PATCH — flip one or many done flags. Body shapes:
+        {"step_id": "goal", "done": true}
+        {"updates": {"goal": true, "training": true}}
+
+    Non-solo users get an empty steps list (the strip is solo-only;
+    PT-managed clients have a different onboarding path).
+
+    Awards the `set_up_strong` trophy when all 5 flip true. The
+    response includes `trophy_awarded: true` on the request that
+    unlocked it, so iOS can fire the unlock-toast immediately.
+    """
+    if request.user.role != User.SOLO:
+        return Response({
+            "steps": [], "completed_count": 0, "total": 0,
+            "complete": True, "trophy_awarded": False,
+        })
+
+    # SoloProfile is auto-created on first access via the related
+    # manager — same pattern as the rest of the solo namespace.
+    try:
+        profile = request.user.solo_profile
+    except Exception:
+        from .models import SoloProfile
+        profile, _ = SoloProfile.objects.get_or_create(user=request.user)
+
+    if request.method == "GET":
+        return Response(_setup_progress_payload(profile))
+
+    # PATCH
+    data = request.data or {}
+    updates = data.get("updates")
+    if updates is None and "step_id" in data:
+        updates = {data["step_id"]: bool(data.get("done", True))}
+    if not isinstance(updates, dict):
+        return Response(
+            {"detail": "Body must include either {step_id, done} or {updates: {...}}."},
+            status=status.HTTP_400_BAD_REQUEST,
+        )
+
+    was_complete = profile.setup_complete
+
+    changed_fields = []
+    for step_id, raw_done in updates.items():
+        field = _STEP_TO_FIELD.get(step_id)
+        if field is None:
+            continue  # Unknown step ID — ignore, don't 400 on noise.
+        setattr(profile, field, bool(raw_done))
+        changed_fields.append(field)
+
+    if changed_fields:
+        profile.save(update_fields=changed_fields)
+
+    # Award the trophy when the user crosses 4→5 for the first time.
+    # `evaluate_and_award` is idempotent so re-running for an already-
+    # awarded user is safe — it just returns an empty list.
+    trophy_awarded_now = False
+    if not was_complete and profile.setup_complete:
+        try:
+            from apps.trophies.services import evaluate_and_award
+            newly = evaluate_and_award(request.user)
+            trophy_awarded_now = any(t.code == "set_up_strong" for t in newly)
+        except Exception:
+            log.exception("set_up_strong trophy award failed")
+
+    return Response(_setup_progress_payload(
+        profile, trophy_awarded_now=trophy_awarded_now,
+    ))

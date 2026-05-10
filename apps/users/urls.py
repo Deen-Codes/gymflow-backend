@@ -37,6 +37,7 @@ from .profile_views import (
     change_username_view,
     notification_prefs_for_me,
     delete_account_view,
+    setup_progress_view,
 )
 
 urlpatterns = [
@@ -144,6 +145,8 @@ urlpatterns = [
     path("me/username/",            change_username_view,     name="me-username"),
     path("username/check/",         username_check_view,      name="username-check"),
     path("me/notification-prefs/",  notification_prefs_for_me, name="me-notification-prefs"),
+    # ONBOARDING-QUICK-START — Home setup-strip progress.
+    path("me/setup-progress/",      setup_progress_view,       name="me-setup-progress"),
     path("me/delete/",              delete_account_view,      name="me-delete"),
     path("clients/create/", create_client_view, name="create-client"),
     path("clients/", trainer_clients_view, name="trainer-clients"),
