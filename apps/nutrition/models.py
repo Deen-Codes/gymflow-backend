@@ -383,6 +383,20 @@ class SoloFoodLogEntry(models.Model):
     # planned for.
     from_meal_plan = models.BooleanField(default=False, db_index=True)
 
+    # NUTRITION-V3 — back-reference to the MealTemplateItem the user
+    # ticked. Populated alongside from_meal_plan=true. Lets the iOS
+    # card rebuild its tick map from server state on re-mount /
+    # tab re-entry, so ticks survive navigation and the user can't
+    # accidentally double-log the same item by tapping it twice
+    # across two sessions. SET_NULL on item delete so the historical
+    # log row survives meal-template edits.
+    meal_template_item = models.ForeignKey(
+        "MealTemplateItem",
+        on_delete=models.SET_NULL,
+        null=True, blank=True,
+        related_name="solo_log_entries",
+    )
+
     class Meta:
         ordering = ["-consumed_on", "-created_at"]
         indexes = [

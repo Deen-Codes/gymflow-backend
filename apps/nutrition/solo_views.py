@@ -75,6 +75,10 @@ def _entry_payload(entry: SoloFoodLogEntry) -> dict:
         # (LOG is for extra food only) while the macro hero still
         # sums them via the eaten totals computed below.
         "from_meal_plan": bool(entry.from_meal_plan),
+        # NUTRITION-V3 — back-reference to the MealTemplateItem
+        # this row represents. iOS uses this to rebuild the tick
+        # state on planned-meal cards across navigations.
+        "meal_template_item_id": entry.meal_template_item_id,
     }
 
 
@@ -272,6 +276,28 @@ def solo_nutrition_log_create(request):
     # user logging an extra food). LOG list filters these out;
     # macro hero still counts them.
     from_meal_plan = bool(data.get("from_meal_plan") or False)
+    # NUTRITION-V3 — back-reference so the iOS card can rebuild
+    # tick state across navigations and dedupe re-ticks.
+    meal_template_item_id = data.get("meal_template_item_id") or None
+    try:
+        meal_template_item_id = int(meal_template_item_id) if meal_template_item_id else None
+    except (TypeError, ValueError):
+        meal_template_item_id = None
+
+    # NUTRITION-V3 — when this is a planned-meal tick, idempotency
+    # matters. If the iOS card's local state was lost (e.g. the
+    # parent view was unmounted between taps), a re-tap of the
+    # same item on the same day would double-count macros. Short-
+    # circuit by returning the existing entry instead of creating
+    # a fresh row.
+    if from_meal_plan and meal_template_item_id:
+        existing = SoloFoodLogEntry.objects.filter(
+            user=request.user,
+            consumed_on=consumed_on,
+            meal_template_item_id=meal_template_item_id,
+        ).first()
+        if existing is not None:
+            return Response(_entry_payload(existing), status=status.HTTP_200_OK)
 
     food_id = data.get("food_id")
     if food_id:
@@ -298,6 +324,7 @@ def solo_nutrition_log_create(request):
             fats=food.fats * ratio,
             consumed_on=consumed_on,
             from_meal_plan=from_meal_plan,
+            meal_template_item_id=meal_template_item_id,
         )
     else:
         # Ad-hoc — user typed everything in.
@@ -317,6 +344,7 @@ def solo_nutrition_log_create(request):
             portion=portion, calories=calories, protein=protein,
             carbs=carbs, fats=fats, consumed_on=consumed_on,
             from_meal_plan=from_meal_plan,
+            meal_template_item_id=meal_template_item_id,
         )
     return Response(_entry_payload(entry), status=status.HTTP_201_CREATED)
 
