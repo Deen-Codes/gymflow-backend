@@ -440,12 +440,26 @@ def solo_nutrition_food_search(request):
     results = []
     for _, _, _, f in top:
         results.append({
+            # MealBuilder (T2.9) needs the catalog id to FK a
+            # MealTemplateItem to the food. Backwards-compat — the
+            # food-log path doesn't read this field, so adding it
+            # is a safe additive change.
+            "id":              f.id,
             "name":            f.name,
             "brand":           f.brand or "",
             "calories":        round(f.kcal_per_100g,    1),
             "protein":         round(f.protein_per_100g, 1),
             "carbs":           round(f.carbs_per_100g,   1),
             "fats":            round(f.fat_per_100g,     1),
+            # MealBuilder also reads the per-100g values directly so
+            # macros can scale with portion grams without re-fetching.
+            # Aliased keys — the food-log decoder uses the legacy
+            # `calories/protein/carbs/fats` shape above; the meal
+            # builder uses the explicit per-100g shape below.
+            "kcal_per_100g":    round(f.kcal_per_100g,    1),
+            "protein_per_100g": round(f.protein_per_100g, 1),
+            "carbs_per_100g":   round(f.carbs_per_100g,   1),
+            "fat_per_100g":     round(f.fat_per_100g,     1),
             "reference_grams": 100,
             "serving_grams":   f.serving_grams,
             "serving_label":   f.serving_label or "",
