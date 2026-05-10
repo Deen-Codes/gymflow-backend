@@ -375,6 +375,14 @@ class SoloFoodLogEntry(models.Model):
     consumed_on = models.DateField(db_index=True)
     created_at  = models.DateTimeField(auto_now_add=True)
 
+    # NUTRITION-V3 — true for entries written by the planned-meal
+    # tick path in `SoloPlannedMealCard`. The macro hero still sums
+    # them (so ticking a planned item updates kcal/P/C/F live), but
+    # the LOG list filters them out — the LOG is meant for
+    # "extra food outside meals", not the items the user already
+    # planned for.
+    from_meal_plan = models.BooleanField(default=False, db_index=True)
+
     class Meta:
         ordering = ["-consumed_on", "-created_at"]
         indexes = [

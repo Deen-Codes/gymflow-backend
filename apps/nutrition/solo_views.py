@@ -61,15 +61,20 @@ def _parse_date(raw):
 
 def _entry_payload(entry: SoloFoodLogEntry) -> dict:
     return {
-        "id":          entry.id,
-        "name":        entry.name,
-        "portion":     entry.portion,
-        "calories":    round(entry.calories, 1),
-        "protein":     round(entry.protein, 1),
-        "carbs":       round(entry.carbs, 1),
-        "fats":        round(entry.fats, 1),
-        "consumed_on": entry.consumed_on.isoformat(),
-        "food_id":     entry.food_id,
+        "id":             entry.id,
+        "name":           entry.name,
+        "portion":        entry.portion,
+        "calories":       round(entry.calories, 1),
+        "protein":        round(entry.protein, 1),
+        "carbs":          round(entry.carbs, 1),
+        "fats":           round(entry.fats, 1),
+        "consumed_on":    entry.consumed_on.isoformat(),
+        "food_id":        entry.food_id,
+        # NUTRITION-V3 — true for entries written by the
+        # planned-meal tick path. iOS LOG list filters these out
+        # (LOG is for extra food only) while the macro hero still
+        # sums them via the eaten totals computed below.
+        "from_meal_plan": bool(entry.from_meal_plan),
     }
 
 
@@ -262,6 +267,11 @@ def solo_nutrition_log_create(request):
 
     data = request.data or {}
     consumed_on = _parse_date(data.get("consumed_on"))
+    # NUTRITION-V3 — opt-in flag set by SoloPlannedMealCard when the
+    # entry is the result of ticking a planned-meal item (vs the
+    # user logging an extra food). LOG list filters these out;
+    # macro hero still counts them.
+    from_meal_plan = bool(data.get("from_meal_plan") or False)
 
     food_id = data.get("food_id")
     if food_id:
@@ -287,6 +297,7 @@ def solo_nutrition_log_create(request):
             carbs=food.carbs * ratio,
             fats=food.fats * ratio,
             consumed_on=consumed_on,
+            from_meal_plan=from_meal_plan,
         )
     else:
         # Ad-hoc — user typed everything in.
@@ -305,6 +316,7 @@ def solo_nutrition_log_create(request):
             user=request.user, food=None, name=name,
             portion=portion, calories=calories, protein=protein,
             carbs=carbs, fats=fats, consumed_on=consumed_on,
+            from_meal_plan=from_meal_plan,
         )
     return Response(_entry_payload(entry), status=status.HTTP_201_CREATED)
 
