@@ -22,6 +22,7 @@ from .solo_views import (
 )
 from .ai_pt_views import solo_ai_pt_chat
 from .ai_build_views import solo_ai_build_preview, solo_ai_build_assign
+from .ai_fuse_views import solo_ai_fuse_preview
 from .mutation_views import mutation_apply, mutation_decline
 from .checkin_ai_views import checkin_suggestions
 from .ai_diag_views import ai_diag
@@ -78,6 +79,11 @@ urlpatterns = [
         mutation_decline,
         name="solo-ai-pt-mutation-decline",
     ),
+
+    # T4.1 — Fused programme (workout + nutrition + supplements in
+    # one Anthropic call). Pro AI gated, burns one nutrition_build
+    # cap. Returns hydrated JSON to iOS for review; no commit yet.
+    path("solo/ai-fuse/", solo_ai_fuse_preview, name="solo-ai-fuse-preview"),
 
     # Phase C — CHECKIN-APPLIES (R7-4). After a check-in submission,
     # iOS POSTs here to get AI-generated proposals tied to that

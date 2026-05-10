@@ -130,6 +130,11 @@ def exercise_edit_view(request, exercise_id: int):
         "exercise_id": ex.id,
         "rest_seconds": ex.rest_seconds,
         "set_count": ex.sets.count(),
+        # T4.2 — sets/reps/rest edits don't rebalance the
+        # cross-domain ledger meaningfully on their own. Reserved
+        # field for future heavy-volume adjustments (e.g. doubling
+        # the set count on a leg day).
+        "chip": None,
     })
 
 
@@ -175,6 +180,11 @@ def exercise_swap_view(request, exercise_id: int):
         "exercise_id": ex.id,
         "name":         ex.name,
         "catalog_id":   catalog.id,
+        # T4.2 — pure swap (same slot in the day) doesn't shift the
+        # weekly volume / frequency. Returns chip=null. Same field
+        # shape as the patch / add endpoints so iOS can read this
+        # uniformly.
+        "chip": None,
     })
 
 
@@ -243,8 +253,16 @@ def workout_day_add_exercise_view(request, day_id: int):
         },
     )
 
-    return Response({
+    # T4.2 — adding an exercise alone doesn't shift weekly volume
+    # by enough to surface a cross-domain chip; it's the day-count
+    # changes (covered by future "add day" / "remove day" endpoints)
+    # and big macro shifts that trigger one. Returning the optional
+    # chip slot here so iOS doesn't need to switch on response shape
+    # between endpoints — `chip` is null for this path.
+    response_payload: dict = {
         "ok": True,
         "exercise_id": ex.id,
         "name":         ex.name,
-    }, status=status.HTTP_201_CREATED)
+        "chip":         None,
+    }
+    return Response(response_payload, status=status.HTTP_201_CREATED)

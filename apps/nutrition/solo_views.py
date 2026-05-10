@@ -139,6 +139,12 @@ def solo_macro_targets_update(request):
     if fats < 0 or fats > 250:
         return Response({"detail": "Fat target out of range."}, status=400)
 
+    # T4.2 — capture the previous kcal target so the cross-domain
+    # alignment helper can compare old vs new and surface a chip
+    # if the delta is meaningful (>= 300 kcal in either direction
+    # while training volume stays high or low).
+    old_calories = profile.target_calories or 0
+
     profile.target_calories = calories
     profile.target_protein  = protein
     profile.target_carbs    = carbs
@@ -147,8 +153,25 @@ def solo_macro_targets_update(request):
         "target_calories", "target_protein", "target_carbs", "target_fats",
     ])
 
+    # T4.2 — soft cross-domain chip. iOS renders it under the
+    # success toast; user taps to either fire the suggested action
+    # or open AI PT chat with a seed prompt.
+    chip = None
+    try:
+        from apps.users.cross_domain_alignment import (
+            alignment_chip_after_nutrition_change,
+        )
+        chip = alignment_chip_after_nutrition_change(
+            request.user,
+            old_calories=old_calories,
+            new_calories=calories,
+        )
+    except Exception:
+        pass
+
     return Response({
         "ok":            True,
+        "chip":          chip,
         "target_calories": profile.target_calories,
         "target_protein":  profile.target_protein,
         "target_carbs":    profile.target_carbs,
