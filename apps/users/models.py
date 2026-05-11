@@ -686,6 +686,64 @@ class MagicLoginToken(models.Model):
 
 
 # ====================================================================
+# EMAIL-EDIT — EmailChangeRequest
+#
+# Six-digit OTP code emailed to the user's NEW address. Verifies they
+# control the new inbox before rotating User.email. Picked OTP over
+# deep-link verification because:
+#   • No app-switching during a single in-app flow.
+#   • Same pattern users already know from banks / Apple ID.
+#   • Code is short enough to type by hand if mail client mangles it.
+#
+# TTL 15 min. Single-use. Old un-used codes for the same user are
+# invalidated when a new code is requested.
+# ====================================================================
+class EmailChangeRequest(models.Model):
+    DEFAULT_TTL_MINUTES = 15
+
+    user = models.ForeignKey(
+        "users.User",
+        on_delete=models.CASCADE,
+        related_name="email_change_requests",
+    )
+    new_email = models.EmailField()
+    # 6-digit zero-padded string; stored as text so leading zeros are
+    # preserved and so a future change to a longer code (e.g. 8) won't
+    # require a migration.
+    code = models.CharField(max_length=12, db_index=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    expires_at = models.DateTimeField()
+    used_at = models.DateTimeField(null=True, blank=True)
+    # Cosmetic — for the rare "I never asked for this" support case.
+    requested_ip = models.GenericIPAddressField(null=True, blank=True)
+
+    class Meta:
+        ordering = ["-created_at"]
+        verbose_name = "Email change request"
+        verbose_name_plural = "Email change requests"
+
+    def __str__(self):
+        state = "used" if self.used_at else ("expired" if self.is_expired else "live")
+        return f"{self.user.username} → {self.new_email} · {state}"
+
+    @property
+    def is_expired(self):
+        from django.utils import timezone
+        return self.expires_at <= timezone.now()
+
+    @property
+    def is_consumable(self):
+        return self.used_at is None and not self.is_expired
+
+    def save(self, *args, **kwargs):
+        if not self.expires_at:
+            from datetime import timedelta
+            from django.utils import timezone
+            self.expires_at = timezone.now() + timedelta(minutes=self.DEFAULT_TTL_MINUTES)
+        super().save(*args, **kwargs)
+
+
+# ====================================================================
 # T2.10 — RecentEditLog
 #
 # Lightweight log of user-side edits (workout swaps, sets/reps

@@ -12,6 +12,8 @@ from .views import (
     assign_workout_plan_view,
     magic_link_request_view,
     magic_link_verify_view,
+    email_change_request_view,
+    email_change_confirm_view,
 )
 from .sso_views import sso_apple_view, sso_google_view
 from .solo_views import (
@@ -52,6 +54,11 @@ urlpatterns = [
     # by design — they're how a logged-out user gets logged in.
     path("magic-link/request/", magic_link_request_view, name="magic-link-request"),
     path("magic-link/verify/", magic_link_verify_view, name="magic-link-verify"),
+
+    # EMAIL-EDIT — change-email flow. Authed; user enters a new
+    # address, gets a 6-digit OTP at that address, types it back.
+    path("me/email-change/request/", email_change_request_view, name="me-email-change-request"),
+    path("me/email-change/confirm/", email_change_confirm_view, name="me-email-change-confirm"),
 
     # SSO sign-in (task #44). iOS exchanges Apple/Google identity
     # tokens for a DRF auth token + user payload via these.

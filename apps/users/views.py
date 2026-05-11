@@ -552,6 +552,165 @@ def magic_link_verify_view(request):
     )
 
 
+# ====================================================================
+# EMAIL-EDIT — change-email flow
+#
+# Two endpoints:
+#   1. email_change_request_view — user types a new email, we send
+#      a 6-digit OTP to the NEW address.
+#   2. email_change_confirm_view — user enters the OTP, we rotate
+#      User.email and invalidate any other live codes.
+#
+# Why OTP not deep-link: keeps the user inside the iOS app (no
+# context switch to the email client + back). Same pattern as
+# Apple ID email change and most banking apps.
+# ====================================================================
+@csrf_exempt
+@api_view(["POST"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def email_change_request_view(request):
+    """Send a 6-digit verification code to a new email address.
+    Validates the address is well-formed and not already in use by
+    another account. Same-as-current is a no-op success."""
+    new_email = (request.data.get("new_email") or "").strip().lower()
+    if not new_email or "@" not in new_email or "." not in new_email.split("@")[1]:
+        return Response(
+            {"detail": "Enter a valid email address."},
+            status=status.HTTP_400_BAD_REQUEST,
+        )
+
+    # Same address — no-op success so the iOS UI doesn't have to
+    # special-case it before sending.
+    if new_email == (request.user.email or "").lower():
+        return Response(
+            {"detail": "That's already your current email.",
+             "status": "unchanged"},
+            status=status.HTTP_200_OK,
+        )
+
+    # Reject if another account is on this email. Generic message so
+    # we don't leak whether an account exists.
+    other = User.objects.filter(email__iexact=new_email).exclude(pk=request.user.pk).first()
+    if other is not None:
+        return Response(
+            {"detail": "That email isn't available."},
+            status=status.HTTP_400_BAD_REQUEST,
+        )
+
+    # Generate the OTP. 6 digits, zero-padded so leading-zero codes
+    # don't lose their digit count when displayed.
+    code = f"{secrets.randbelow(1_000_000):06d}"
+
+    # Invalidate any existing live codes for this user — if they
+    # re-request, only the latest works.
+    from .models import EmailChangeRequest
+    from django.utils import timezone
+    EmailChangeRequest.objects.filter(
+        user=request.user, used_at__isnull=True,
+    ).update(used_at=timezone.now())
+
+    record = EmailChangeRequest.objects.create(
+        user=request.user,
+        new_email=new_email,
+        code=code,
+        requested_ip=_client_ip(request),
+    )
+
+    try:
+        _send_email_change_otp(user=request.user, new_email=new_email, code=code)
+    except Exception:
+        import logging
+        logging.exception("Email change OTP send failed for %s → %s",
+                          request.user.username, new_email)
+
+    return Response(
+        {
+            "detail": f"Verification code sent to {new_email}. Expires in {EmailChangeRequest.DEFAULT_TTL_MINUTES} minutes.",
+            "status": "pending",
+            "pending_email": new_email,
+            "expires_at": record.expires_at.isoformat(),
+        },
+        status=status.HTTP_200_OK,
+    )
+
+
+@csrf_exempt
+@api_view(["POST"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def email_change_confirm_view(request):
+    """Confirm a 6-digit code and rotate User.email. Returns the
+    updated user so iOS can refresh `currentUser` in-place."""
+    code = (request.data.get("code") or "").strip()
+    if not code or len(code) != 6 or not code.isdigit():
+        return Response(
+            {"detail": "Enter the 6-digit code."},
+            status=status.HTTP_400_BAD_REQUEST,
+        )
+
+    from .models import EmailChangeRequest
+    from django.utils import timezone
+    record = (
+        EmailChangeRequest.objects
+        .filter(user=request.user, code=code, used_at__isnull=True)
+        .order_by("-created_at")
+        .first()
+    )
+    if record is None or record.is_expired:
+        return Response(
+            {"detail": "That code is expired or wrong. Request a new one."},
+            status=status.HTTP_400_BAD_REQUEST,
+        )
+
+    # Race-safe: stamp the record BEFORE rotating the email so a
+    # double-submit can't redeem twice.
+    record.used_at = timezone.now()
+    record.save(update_fields=["used_at"])
+
+    # Last sanity check — another account may have taken this email
+    # in the gap between request and confirm.
+    if User.objects.filter(email__iexact=record.new_email).exclude(pk=request.user.pk).exists():
+        return Response(
+            {"detail": "That email is no longer available. Try a different one."},
+            status=status.HTTP_400_BAD_REQUEST,
+        )
+
+    request.user.email = record.new_email
+    request.user.save(update_fields=["email"])
+
+    return Response(
+        {
+            "detail": "Email updated.",
+            "status": "ok",
+            "user": UserMeSerializer(request.user).data,
+        },
+        status=status.HTTP_200_OK,
+    )
+
+
+def _send_email_change_otp(user, new_email, code):
+    """Send the 6-digit OTP to the NEW address (where we're trying
+    to verify ownership). Plain text — no template needed; the
+    payload is tiny and the user reads it in the inbox preview."""
+    subject = "Your GymFlow verification code"
+    body = (
+        f"Hi,\n\n"
+        f"Your GymFlow email-change verification code is:\n\n"
+        f"    {code}\n\n"
+        f"This code expires in 15 minutes. If you didn't request this, "
+        f"you can ignore this email.\n\n"
+        f"— GymFlow"
+    )
+    msg = EmailMultiAlternatives(
+        subject=subject,
+        body=body,
+        from_email=getattr(settings, "DEFAULT_FROM_EMAIL", "GymFlow <hello@gymflow.app>"),
+        to=[new_email],
+    )
+    msg.send(fail_silently=False)
+
+
 def _send_magic_link_email(user, deep_link, web_link):
     """Render and send the magic-link email via Resend (handled by
     the existing custom email backend)."""
