@@ -244,7 +244,16 @@ def personal_details_for(user) -> dict:
     """Read-side helper. Returns the saved personal-details dict
     (sex/height/weight/goal/units) merged with the canonical fields
     we already have columns for. Used by the iOS Profile sheet to
-    pre-fill on open."""
+    pre-fill on open.
+
+    SYNC-EVERYTHING — the setup hub's body_stats step writes
+    height/weight/gender directly to SoloProfile columns (NOT to
+    notification_prefs), so we MUST fall back to SoloProfile when
+    notification_prefs doesn't have them. Without this, Personal
+    Details opens with blank height + sex even after the user just
+    filled them in via the setup hub. Same pattern as the existing
+    bodyweight fallback.
+    """
     out: dict = {}
     if user.first_name:
         out["full_name"] = (user.first_name + " " + (user.last_name or "")).strip()
@@ -255,11 +264,19 @@ def personal_details_for(user) -> dict:
     for k in PERSONAL_DETAILS_KEYS:
         if k in pd:
             out[k] = pd[k]
-    # Solo bodyweight wins over a possibly-stale notification_prefs
-    # value because compute_default_macro_targets writes to it.
+    # SoloProfile columns are the canonical source for height /
+    # weight / gender — they're what compute_default_macro_targets
+    # and the AI context block read. Fall back when notification_prefs
+    # didn't carry the value (which it won't, for users who filled
+    # body_stats via the setup hub instead of Personal Details).
     solo = getattr(user, "solo_profile", None)
-    if solo is not None and solo.bodyweight_kg is not None:
-        out["weight_kg"] = solo.bodyweight_kg
+    if solo is not None:
+        if solo.bodyweight_kg is not None:
+            out["weight_kg"] = solo.bodyweight_kg
+        if "height_cm" not in out and solo.height_cm:
+            out["height_cm"] = solo.height_cm
+        if "sex" not in out and solo.gender:
+            out["sex"] = solo.gender
     return out
 
 

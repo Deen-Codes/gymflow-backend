@@ -326,7 +326,14 @@ _STEP_TO_FIELD = {
 
 
 def _setup_progress_payload(profile, *, trophy_awarded_now: bool = False) -> dict:
-    """Build the wire shape consumed by the iOS SetupProgressStrip."""
+    """Build the wire shape consumed by the iOS SetupProgressStrip.
+
+    SYNC-EVERYTHING — also returns `current_values`: a snapshot of
+    the user's saved profile values so iOS can prefill each step's
+    form SYNCHRONOUSLY (no flash from defaults → real data). The
+    keys mirror what each step PATCHes back, so iOS just looks up
+    the same key it would write.
+    """
     steps = []
     done_count = 0
     for step_id, label, hint in SETUP_STEP_IDS:
@@ -339,12 +346,38 @@ def _setup_progress_payload(profile, *, trophy_awarded_now: bool = False) -> dic
             "hint":  hint,
             "done":  done,
         })
+
+    user = profile.user
+    prefs = (user.notification_prefs or {}).get("personal_details") or {}
+    current_values: dict = {}
+    if profile.bodyweight_kg is not None:
+        current_values["bodyweight_kg"] = float(profile.bodyweight_kg)
+    if profile.height_cm:
+        current_values["height_cm"] = int(profile.height_cm)
+    if profile.gender:
+        current_values["gender"] = profile.gender
+    if user.date_of_birth:
+        current_values["date_of_birth"] = user.date_of_birth.isoformat()
+    if profile.goals:
+        current_values["goals"] = list(profile.goals)
+    if prefs.get("primary_goal"):
+        current_values["primary_goal"] = prefs["primary_goal"]
+    if profile.experience:
+        current_values["experience"] = profile.experience
+    if profile.days_per_week:
+        current_values["days_per_week"] = int(profile.days_per_week)
+    if profile.dietary_pattern:
+        current_values["dietary_pattern"] = profile.dietary_pattern
+    if prefs.get("allergies"):
+        current_values["allergies"] = prefs["allergies"]
+
     return {
         "steps":           steps,
         "completed_count": done_count,
         "total":           len(steps),
         "complete":        done_count == len(steps),
         "trophy_awarded":  trophy_awarded_now,
+        "current_values":  current_values,
     }
 
 
@@ -433,6 +466,18 @@ def setup_progress_view(request):
                 if isinstance(raw, list):
                     profile.goals = [str(x) for x in raw][:8]
                     changed_fields.append("goals")
+            elif key == "primary_goal":
+                # SYNC-EVERYTHING — free-form goal text ("lose 5kg by
+                # July"). Lands in notification_prefs.personal_details
+                # so it surfaces in the Personal Details sheet AND
+                # feeds the AI context block.
+                if isinstance(raw, str) and raw.strip():
+                    prefs = request.user.notification_prefs or {}
+                    pd = dict(prefs.get("personal_details") or {})
+                    pd["primary_goal"] = raw.strip()[:500]
+                    prefs["personal_details"] = pd
+                    request.user.notification_prefs = prefs
+                    request.user.save(update_fields=["notification_prefs"])
             elif key == "experience":
                 if isinstance(raw, str):
                     profile.experience = raw[:20]
@@ -446,8 +491,23 @@ def setup_progress_view(request):
                 except (TypeError, ValueError):
                     pass
             elif key == "dietary_pattern":
-                if isinstance(raw, str):
-                    profile.dietary_pattern = raw[:32]
+                # SYNC-EVERYTHING — accept either a single token (legacy
+                # shape) or a list (new multi-select UI). Stored as a
+                # comma-joined string in the existing 32-char column so
+                # no migration is needed; downstream readers split on
+                # commas. Halal + Kosher are conflicting Abrahamic
+                # systems so we drop one if both arrive (defensive —
+                # iOS already enforces the mutex client-side).
+                value = None
+                if isinstance(raw, list):
+                    tokens = [str(x).strip() for x in raw if str(x).strip()]
+                    if "halal" in tokens and "kosher" in tokens:
+                        tokens = [t for t in tokens if t != "halal"]
+                    value = ",".join(tokens)[:32]
+                elif isinstance(raw, str):
+                    value = raw[:32]
+                if value is not None:
+                    profile.dietary_pattern = value
                     changed_fields.append("dietary_pattern")
             elif key == "allergies":
                 # Store free-text in notification_prefs JSON
