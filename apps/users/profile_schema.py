@@ -213,13 +213,33 @@ def apply_profile_update(user, payload):
         prefs["personal_details"] = pd
         user.notification_prefs = prefs
         applied.extend(extras_applied)
-        # If solo user provided weight_kg, also mirror to SoloProfile.
+        # HK-AUTOSYNC-TIMESTAMPS — mirror weight + height to
+        # SoloProfile with their per-field timestamps so the smart
+        # sync sees the latest in-app touch. Without this stamp,
+        # Apple Health (which has its own sample dates) would
+        # always look fresher and overwrite the user's typed input.
+        from django.utils import timezone
+        now = timezone.now()
         if "weight_kg" in extras:
             try:
                 solo = getattr(user, "solo_profile", None)
                 if solo is not None:
                     solo.bodyweight_kg = float(extras["weight_kg"])
-                    solo.save(update_fields=["bodyweight_kg"])
+                    solo.bodyweight_updated_at = now
+                    solo.save(update_fields=[
+                        "bodyweight_kg", "bodyweight_updated_at",
+                    ])
+            except (TypeError, ValueError):
+                pass
+        if "height_cm" in extras:
+            try:
+                solo = getattr(user, "solo_profile", None)
+                if solo is not None:
+                    solo.height_cm = int(float(extras["height_cm"]))
+                    solo.height_updated_at = now
+                    solo.save(update_fields=[
+                        "height_cm", "height_updated_at",
+                    ])
             except (TypeError, ValueError):
                 pass
 

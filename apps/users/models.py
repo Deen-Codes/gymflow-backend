@@ -266,6 +266,16 @@ class SoloProfile(models.Model):
     target_fats     = models.PositiveSmallIntegerField(default=0)  # grams
     bodyweight_kg   = models.FloatField(null=True, blank=True)
 
+    # HK-AUTOSYNC-TIMESTAMPS — per-field "last touched in-app" stamps.
+    # The Apple Health sync uses these to decide source-of-truth: if
+    # HK's most-recent sample's endDate is newer than the relevant
+    # stamp by more than ~1h, HK wins; otherwise the in-app value
+    # wins. Without these, the sync defaulted to overwriting fresh
+    # in-app input with stale Health data — fixed in HK-AUTOSYNC-TS.
+    # Set on every write through setup-progress and personal-details.
+    bodyweight_updated_at = models.DateTimeField(null=True, blank=True)
+    height_updated_at     = models.DateTimeField(null=True, blank=True)
+
     # DAILY-MEAL-PLAN — two top-level nutrition modes:
     #   "ad_hoc"     → log foods freely to hit macros (default)
     #   "meal_plan"  → fixed daily plan; the same set of MealTemplate

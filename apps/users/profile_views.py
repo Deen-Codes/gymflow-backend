@@ -354,6 +354,13 @@ def _setup_progress_payload(profile, *, trophy_awarded_now: bool = False) -> dic
         current_values["bodyweight_kg"] = float(profile.bodyweight_kg)
     if profile.height_cm:
         current_values["height_cm"] = int(profile.height_cm)
+    # HK-AUTOSYNC-TIMESTAMPS — surface the per-field stamps so iOS
+    # can compare them against HK sample endDates for proper smart-
+    # sync direction. Null when the field has never been set.
+    if profile.bodyweight_updated_at:
+        current_values["bodyweight_updated_at"] = profile.bodyweight_updated_at.isoformat()
+    if profile.height_updated_at:
+        current_values["height_updated_at"] = profile.height_updated_at.isoformat()
     if profile.gender:
         current_values["gender"] = profile.gender
     if user.date_of_birth:
@@ -445,17 +452,42 @@ def setup_progress_view(request):
     # allow-list so callers can't smuggle arbitrary writes.
     step_data = data.get("step_data") or {}
     if isinstance(step_data, dict):
+        # HK-AUTOSYNC-TIMESTAMPS — set the per-field "updated_at"
+        # stamps whenever the underlying value changes. The Apple
+        # Health smart sync reads these to decide source-of-truth:
+        # if Health's most-recent sample is newer than the stamp,
+        # Health wins; otherwise the in-app value wins.
+        #
+        # Important — the iOS sync also sends bodyweight_kg /
+        # height_cm during the PULL half (saving HK values into
+        # our backend). To avoid the bug where a PULL marks our
+        # value as "fresh" and then a subsequent compare always
+        # decides app-wins, the request can include
+        # `__skip_timestamps: true` in step_data — the smart sync
+        # uses this when persisting HK reads so the timestamp stays
+        # tied to the user's actual in-app input, not the HK pull.
+        skip_ts = bool(step_data.get("__skip_timestamps"))
+        from django.utils import timezone
+        now = timezone.now()
         for key, raw in step_data.items():
+            if key == "__skip_timestamps":
+                continue
             if key == "bodyweight_kg":
                 try:
                     profile.bodyweight_kg = float(raw)
                     changed_fields.append("bodyweight_kg")
+                    if not skip_ts:
+                        profile.bodyweight_updated_at = now
+                        changed_fields.append("bodyweight_updated_at")
                 except (TypeError, ValueError):
                     pass
             elif key == "height_cm":
                 try:
                     profile.height_cm = int(float(raw))
                     changed_fields.append("height_cm")
+                    if not skip_ts:
+                        profile.height_updated_at = now
+                        changed_fields.append("height_updated_at")
                 except (TypeError, ValueError):
                     pass
             elif key == "gender":
