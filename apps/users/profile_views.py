@@ -230,6 +230,11 @@ DEFAULT_NOTIFICATION_PREFS = {
     "quiet_hours_enabled":    False,
     "quiet_hours_start_min":  22 * 60,
     "quiet_hours_end_min":    7 * 60,
+    # NOTIFS-AUDIT — minutes-from-midnight for the daily workout-
+    # reminder local notification iOS schedules. Default 18:00 (early
+    # evening — most people decide whether to train around then).
+    # User configurable in ProfileNotificationsSheet.
+    "workout_reminder_time_min": 18 * 60,
 }
 
 
