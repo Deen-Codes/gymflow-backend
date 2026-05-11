@@ -58,14 +58,6 @@ class UserMeSerializer(serializers.ModelSerializer):
             "assigned_workout_plan_id",
             "member_since",
             "has_avatar",
-            # STAFF-GATE — surfaces Django's `is_staff` flag so iOS
-            # can conditionally show test / debug affordances (test
-            # notification button, future staff-only diagnostics)
-            # without hardcoding emails in the binary or relying on
-            # #if DEBUG (which doesn't exist in TestFlight / App
-            # Store builds). Flip in Django admin to grant or
-            # revoke per-account.
-            "is_staff",
         ]
 
     def get_member_since(self, obj):
