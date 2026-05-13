@@ -1,202 +1,88 @@
-"""Rolling 7-day "active streak" computation.
+"""Lifetime "active days" streak computation.
 
-Definition (Option A from the design discussion):
+Definition (May 2026 rewrite — STREAK-PHILOSOPHY-V2):
 
-    Streak = number of consecutive calendar days, ending today, where
-    the user's rolling 7-day window contained at least `weekly_target`
-    completed workouts.
+    Streak = total number of distinct local-calendar days on which
+    the user has logged at least one completed WorkoutSession.
 
-    `weekly_target` = number of training days in the user's currently-
-    assigned WorkoutPlan. A 5-day plan has target=5, a 3-day plan has
-    target=3, etc. Falls back to a default if the user has no plan.
+That is: a lifetime counter of days-trained-on-Marrow. It can only
+go up. Rest days are not "missed" — they simply don't add. There is
+no notion of "breaking" a streak. A user who trained 3 times last
+week, took a 10-day holiday, and trained today has streak = 4.
 
-This naturally handles rest days — they don't break the streak as long
-as the workout *frequency* over any 7-day window is on target. Swapping
-your rest day from Thursday to Wednesday is fine; skipping a session
-and not making it up within 7 days breaks the streak.
+Why we changed from rolling-window:
+  • The previous model (Option A — rolling 7-day window vs assigned
+    plan's weekly target, plus an optional DOW-aware variant) broke
+    for valid use cases: a brand-new ad-hoc user with 1 session on a
+    5-day plan saw streak = 0 because 1 < 5.
+  • Loss aversion (Duolingo-style "your streak will break!") can
+    encourage daily logins, but it also drives anxiety and creates
+    a cliff users fall off — once broken, the motivator vanishes
+    entirely. Loss-aversion streaks are ideal for products with a
+    daily-must-use rhythm (language learning); they are a poor fit
+    for fitness, where rest days are part of doing it right.
+  • A lifetime accumulation counter ("Days trained") behaves like
+    Apple Fitness rings + Strava milestones: every active day is
+    permanent, growing the number motivates continued use, and the
+    user is never punished for the necessary off-day.
+  • Constraint: "can only go up by one each day used" (Deen's
+    formulation) — multiple sessions on the same day still count
+    as one active day. This keeps the number honest.
 
-Used by both:
-  * The iOS Home stat tile (via /api/users/me/home-stats/)
-  * Trophy evaluators (`streak_days(N)` builder)
+Used by:
+  * iOS Home stat tile (via /api/users/me/home-stats/)
+  * Startup composite (_build_home_stats)
+  * Trophy evaluators (`streak_days(N)` builder) — the tile and the
+    streak trophies agree on the number.
 
-so the streak shown on Home is the same number used to award streak
-trophies — no risk of "the tile says 7 but I never got the 7-Day
-Streak trophy."
+Weekly target is no longer part of the computation — it is kept on
+the response payload for now so iOS doesn't have to re-version the
+home-stats decode, but it's no longer load-bearing. Future cleanup
+can drop the field.
 """
-from datetime import timedelta
-
 from django.utils import timezone
 
 
-# Sensible default when a user has no assigned plan yet (e.g. brand
-# new client who hasn't been onboarded). 3/week is the conventional
-# minimum for general fitness — we don't want to set the bar at 0 or
-# infinity.
-_DEFAULT_WEEKLY_TARGET = 3
 # Hard cap to prevent runaway loops if data ever gets weird (e.g.
-# session timestamps from the future). 5 years of streak is plenty.
+# session timestamps from the future). 5 years of distinct days is
+# plenty for any real user.
 _MAX_STREAK_DAYS = 365 * 5
 
 
 def weekly_target_for(user):
-    """Workouts/week the user should be hitting. Reads from the
-    currently-assigned plan; falls back to a sensible default."""
+    """Workouts/week the user should be hitting. No longer used by
+    streak computation; retained for the home-stats payload + any
+    callers that read it for display. Reads the assigned plan; falls
+    back to 3 when nothing is set."""
     profile = getattr(user, "client_profile", None)
     if profile is None:
-        return _DEFAULT_WEEKLY_TARGET
+        return 3
     plan = getattr(profile, "assigned_workout_plan", None)
     if plan is None:
-        return _DEFAULT_WEEKLY_TARGET
+        return 3
     target = plan.days.count()
-    return max(1, target) if target else _DEFAULT_WEEKLY_TARGET
+    return max(1, target) if target else 3
 
 
 def compute_active_streak(user, weekly_target=None):
-    """Number of consecutive days where the past-7-day window meets
-    the user's weekly workout target. Returns int >= 0.
+    """Distinct local-calendar days on which the user has logged a
+    completed WorkoutSession. Returns int >= 0.
 
-    STREAK-WIRING (May 2026): when SoloProfile.training_days is set
-    (e.g. ["mon","wed","fri"]), we use a day-of-week-aware streak
-    instead of the rolling-window. The DOW-aware streak counts
-    backwards from today: training-day requires a session that
-    day; rest-day requires nothing. Breaks on the first training-
-    day miss. This matches user intuition ("I worked out on every
-    day I was supposed to") and explains why a user who ran 2
-    sessions in their first week saw streak=0 under the old
-    rolling-window logic (window count 2 < target 4).
-
-    Falls back to the rolling-window logic when training_days
-    isn't configured (older users / pre-AI-build accounts).
-
-    Computation (rolling-window fallback):
-      1. Build a multiset (Counter-style dict) of session-counts per
-         calendar day.
-      2. Initialise a rolling window over the last 7 days ending today.
-      3. While the window count >= target, increment the streak and
-         slide the window back one day.
+    The `weekly_target` parameter is accepted for backwards
+    compatibility with older callers but is ignored — streak is now
+    a pure count, independent of any plan.
     """
     # Local import to avoid an apps.trophies → apps.workouts circular
-    # at module load time (workouts doesn't depend on us, but a side
-    # consumer might).
+    # at module load time.
     from apps.workouts.models import WorkoutSession
 
-    # STREAK-WIRING — DOW-aware streak when training_days is set.
-    profile = getattr(user, "client_profile", None)
-    training_days = getattr(profile, "training_days", None) if profile else None
-    if training_days:
-        return _compute_dow_aware_streak(user, training_days)
-
-    target = weekly_target if weekly_target is not None else weekly_target_for(user)
-
-    # Bucket session timestamps into local-calendar dates → count.
-    sessions_by_date = {}
-    for ts in WorkoutSession.objects.filter(
-        user=user, is_complete=True
-    ).values_list("completed_at", flat=True):
-        d = timezone.localtime(ts).date()
-        sessions_by_date[d] = sessions_by_date.get(d, 0) + 1
-
-    if not sessions_by_date:
-        return 0
-
-    today = timezone.localdate()
-    # Initial window: today and the 6 preceding days inclusive.
-    window_count = sum(
-        sessions_by_date.get(today - timedelta(days=i), 0) for i in range(7)
-    )
-
-    streak = 0
-    cursor = today
-    while window_count >= target:
-        streak += 1
-        if streak >= _MAX_STREAK_DAYS:
-            break
-        # Slide window back by 1 day:
-        #   - we drop the day at the FRONT of the window (cursor)
-        #   - we add the day at the new BACK of the window (cursor - 7)
-        old_front = cursor
-        cursor -= timedelta(days=1)
-        new_back = cursor - timedelta(days=6)
-        window_count -= sessions_by_date.get(old_front, 0)
-        window_count += sessions_by_date.get(new_back, 0)
-
-    return streak
-
-
-# Day-of-week names — Python's calendar.day_abbr is locale-aware so
-# we pin our own list to avoid surprises in non-English deployments.
-_DOW_KEYS = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
-
-
-def _compute_dow_aware_streak(user, training_days):
-    """Walk back from today. Streak counts every TRAINING day with at
-    least one logged session, plus every REST day in between. Breaks
-    the moment we hit a training day with no session.
-
-    Example — training_days=["mon","wed","fri"], user did Mon + Wed:
-      today = Wed → has session → streak = 1, walk to Tue
-      Tue is rest → streak = 2, walk to Mon
-      Mon → has session → streak = 3, walk to Sun
-      Sun is rest → streak = 4, walk to Sat
-      Sat is rest → streak = 5, walk to Fri
-      Fri → no session → STOP, return 5
-
-    Notably this DOES count rest days in the streak number, so the
-    user's streak grows daily as long as they nail their plan.
-
-    If today is a training day with no session yet, we still allow
-    that day in the streak — we don't break on "today not yet
-    completed" because the day isn't over. We start counting from
-    yesterday.
-    """
-    from apps.workouts.models import WorkoutSession
-
-    # Bucket completed sessions into local-calendar dates.
-    sessions_by_date = {}
+    distinct_days = set()
     for ts in WorkoutSession.objects.filter(
         user=user, is_complete=True,
     ).values_list("completed_at", flat=True):
         d = timezone.localtime(ts).date()
-        sessions_by_date[d] = sessions_by_date.get(d, 0) + 1
+        distinct_days.add(d)
+        if len(distinct_days) >= _MAX_STREAK_DAYS:
+            break
 
-    today = timezone.localdate()
-    # Normalise the training_days input — accept ["mon","wed",...]
-    # or full names; lower-case and trim to the first 3 chars.
-    training_set = set()
-    for d in training_days or []:
-        s = str(d).strip().lower()[:3]
-        if s in _DOW_KEYS:
-            training_set.add(s)
-
-    if not training_set:
-        return 0  # malformed — nothing to compute against.
-
-    streak = 0
-    cursor = today
-    # Special-case TODAY — if today is a training day and not yet
-    # logged, that's not a "miss"; the day isn't over. Skip today
-    # in the count and start from yesterday.
-    today_dow = _DOW_KEYS[today.weekday()]
-    if today_dow in training_set and today not in sessions_by_date:
-        cursor = today - timedelta(days=1)
-    else:
-        # Today is either a rest day OR a logged training day —
-        # count it.
-        streak += 1
-        cursor = today - timedelta(days=1)
-
-    # Walk backwards. Cap at _MAX_STREAK_DAYS as a safety net.
-    while streak < _MAX_STREAK_DAYS:
-        dow = _DOW_KEYS[cursor.weekday()]
-        if dow in training_set:
-            if cursor in sessions_by_date:
-                streak += 1
-            else:
-                # Missed a planned training day — streak ends.
-                break
-        else:
-            # Rest day — counts toward the streak unconditionally.
-            streak += 1
-        cursor -= timedelta(days=1)
-
-    return streak
+    return len(distinct_days)

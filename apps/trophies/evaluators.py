@@ -224,37 +224,15 @@ def _comeback(user):
 
 
 def _phoenix(user):
-    """Lost a 30+ day streak and rebuilt one. Walk session dates
-    looking for: a stretch where the rolling streak hit >=30, then
-    broke (gap or weekly-target miss), then re-built to >=30."""
-    target = weekly_target_for(user)
+    """Returned to training after a 30+ day gap. Repurposed under
+    STREAK-PHILOSOPHY-V2 — there's no longer a notion of "losing" a
+    streak (it's lifetime accumulation), so this trophy now rewards
+    bigger comebacks than the standard `comeback` trophy. Looks for
+    any pair of consecutive sessions whose gap is >= 30 days."""
     dates = sorted(set(timezone.localtime(d).date() for d in _all_session_dates(user)))
-    if not dates:
-        return (0, 1)
-    # Build per-day session count over the relevant range.
-    counts = defaultdict(int)
-    for d in (timezone.localtime(d2).date() for d2 in _all_session_dates(user)):
-        counts[d] += 1
-    # Sweep through every day from first to last + 30 days.
-    start = dates[0]
-    end = max(dates[-1], timezone.localdate())
-    cur = start
-    rolling = 0
-    has_been_above = False
-    has_dropped_after = False
-    while cur <= end:
-        # Window of past 7 days ending today.
-        win = sum(counts.get(cur - timedelta(days=i), 0) for i in range(7))
-        if win >= target:
-            rolling += 1
-        else:
-            if rolling >= 30:
-                has_been_above = True
-                has_dropped_after = True
-            rolling = 0
-        if has_dropped_after and rolling >= 30:
+    for i in range(1, len(dates)):
+        if (dates[i] - dates[i - 1]).days >= 30:
             return (1, 1)
-        cur += timedelta(days=1)
     return (0, 1)
 
 
