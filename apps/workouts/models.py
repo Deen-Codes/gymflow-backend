@@ -130,7 +130,19 @@ class ExerciseSetTarget(models.Model):
 
 class WorkoutSession(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    workout_day = models.ForeignKey(WorkoutDay, on_delete=models.CASCADE)
+    # V0-LIMIT-3 — nullable for ad-hoc (plan-less) sessions logged
+    # via the iOS as-you-go flow. SET_NULL preserves the session
+    # record if the source WorkoutDay is later deleted.
+    workout_day = models.ForeignKey(
+        WorkoutDay,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+    )
+    # V0-LIMIT-3 — display title for ad-hoc sessions. Plan-mode
+    # sessions can leave this blank; the workout_day.title is the
+    # source of truth for those.
+    title = models.CharField(max_length=255, blank=True, default="")
     completed_at = models.DateTimeField(auto_now_add=True)
     duration = models.IntegerField(default=0)
     is_complete = models.BooleanField(default=True)
@@ -160,7 +172,29 @@ class WorkoutSession(models.Model):
 
 class ExerciseSession(models.Model):
     workout_session = models.ForeignKey(WorkoutSession, on_delete=models.CASCADE, related_name="exercise_sessions")
-    exercise = models.ForeignKey(Exercise, on_delete=models.CASCADE)
+    # V0-LIMIT-3 — nullable for ad-hoc lifts that aren't tied to a
+    # planned Exercise row. SET_NULL preserves the historical
+    # record if the source Exercise is later deleted.
+    exercise = models.ForeignKey(
+        Exercise,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+    )
+    # V0-LIMIT-3 — display name captured at log-time so the
+    # historical row survives an Exercise rename / delete. Empty
+    # for plan-mode rows where exercise.name is the source.
+    name = models.CharField(max_length=255, blank=True, default="")
+    # V0-LIMIT-3 — optional FK to ExerciseCatalog when the ad-hoc
+    # lift was picked from the catalog picker. Lets the historical
+    # record link back to animation_url + form copy.
+    catalog = models.ForeignKey(
+        "ExerciseCatalog",
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name="exercise_sessions",
+    )
 
 
 class SetPerformance(models.Model):

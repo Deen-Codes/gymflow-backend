@@ -548,6 +548,93 @@ def solo_nutrition_food_search(request):
 
 
 # --------------------------------------------------------------------
+# FOOD-CATALOG-CACHE (#321) — full catalog dump for the iOS client.
+#
+# The iOS app maintains a local on-disk cache of the curated food
+# catalog so search is instant + properly ranked client-side (see
+# SEARCH_RANKING_RESEARCH.md). It fetches the entire catalog at
+# signed-in launch, replaces its local snapshot, and persists to
+# disk. Search after that runs purely in-memory against the cached
+# rows.
+#
+# Returns the same row shape as `solo_nutrition_food_search` (every
+# field iOS already knows how to decode) but without the q filter
+# and at a higher default limit. Region hint still respected so
+# iOS users see UK rows ranked before world-wide ones if the
+# client falls back to region-filtered subsets in the future.
+# --------------------------------------------------------------------
+@csrf_exempt
+@api_view(["GET"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def solo_nutrition_food_catalog(request):
+    """Bulk catalog dump.
+
+    Query: ?limit=20000&region=gb
+    Returns: { results: [<SearchHit shape>, ...] }
+
+    Notes:
+      • Limit hard-capped at 50,000 — generous headroom for the
+        ~10K current catalog with room to grow before pagination
+        becomes necessary.
+      • Region only affects sort order, not inclusion — every row
+        is returned. iOS does any further filtering client-side.
+      • No q filter. This endpoint is for cache hydration, not
+        per-query search; the search endpoint stays the right tool
+        for one-off lookups.
+    """
+    try:
+        limit = int(request.query_params.get("limit") or 20000)
+    except (TypeError, ValueError):
+        limit = 20000
+    limit = max(1, min(50000, limit))
+
+    region = (request.query_params.get("region") or "").strip().lower()[:8]
+
+    # Order: region-matched first when a region hint is provided,
+    # then by id for stable output. Region presence is detected by
+    # whether the row's `region_codes` CSV contains the user's
+    # region — same logic the search endpoint uses for its region
+    # bonus.
+    qs = CuratedFood.objects.all().order_by("id")
+    rows = list(qs[:limit])
+
+    if region:
+        def _region_match(food):
+            codes = (food.region_codes or "").lower()
+            return region in codes.split(",")
+        # Stable two-bucket sort: region-matched rows first, the
+        # rest after, each bucket keeping its id order.
+        rows.sort(key=lambda f: (0 if _region_match(f) else 1, f.id))
+
+    results = []
+    for f in rows:
+        results.append({
+            "id":               f.id,
+            "name":             f.name,
+            "brand":            f.brand or "",
+            "calories":         round(f.kcal_per_100g,    1),
+            "protein":          round(f.protein_per_100g, 1),
+            "carbs":            round(f.carbs_per_100g,   1),
+            "fats":             round(f.fat_per_100g,     1),
+            "kcal_per_100g":    round(f.kcal_per_100g,    1),
+            "protein_per_100g": round(f.protein_per_100g, 1),
+            "carbs_per_100g":   round(f.carbs_per_100g,   1),
+            "fat_per_100g":     round(f.fat_per_100g,     1),
+            "reference_grams":  100,
+            "serving_grams":    f.serving_grams,
+            "serving_label":    f.serving_label or "",
+            "tags":             f.tags or "",
+            "allergens":        f.allergens or "",
+            "source":           f.source,
+            "portion_unit":     f.portion_unit or "grams",
+            "unit_grams":       f.unit_grams,
+        })
+
+    return Response({"results": results})
+
+
+# --------------------------------------------------------------------
 # Custom food creation
 # --------------------------------------------------------------------
 @csrf_exempt

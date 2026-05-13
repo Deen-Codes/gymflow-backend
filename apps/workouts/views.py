@@ -16,6 +16,7 @@ from .models import (
     WorkoutPlan,
     WorkoutDay,
     Exercise,
+    ExerciseCatalog,
     WorkoutSession,
     ExerciseSession,
     SetPerformance,
@@ -295,6 +296,154 @@ def create_workout_session(request):
     # can reveal them in the same response — no extra round-trip.
     payload["newly_earned_trophies"] = newly_earned
     return Response(payload, status=status.HTTP_201_CREATED)
+
+
+# --------------------------------------------------------------------
+# V0-LIMIT-3 — ad-hoc (plan-less) workout session create.
+#
+# Mirrors `create_workout_session` but for the iOS as-you-go flow
+# where the user has no assigned plan + freely picked their lifts
+# from the catalog (or typed names). Stores:
+#   • WorkoutSession with workout_day=NULL + title=<free-form>
+#   • ExerciseSession rows with exercise=NULL, name=<lift name>,
+#     catalog=<optional FK to ExerciseCatalog>
+#   • SetPerformance rows for each set
+#
+# Trophy evaluation runs the same as the plan-mode endpoint, so
+# ad-hoc sessions count toward streak / volume / lifetime trophies.
+# --------------------------------------------------------------------
+@csrf_exempt
+@api_view(["POST"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def create_workout_session_adhoc(request):
+    """Save an ad-hoc workout session (no workout_day FK).
+
+    Expected payload:
+    {
+      "title": "Push session",
+      "duration": 1834,
+      "is_complete": true,
+      "exercises": [
+        {
+          "name": "Bench Press",
+          "catalog_id": 42,           // optional
+          "sets": [
+            {"set_number": 1, "weight": "60", "reps": "8"},
+            {"set_number": 2, "weight": "60", "reps": "8"}
+          ]
+        }
+      ]
+    }
+
+    Returns the same shape as `create_workout_session` (id +
+    newly_earned_trophies) so the iOS client can decode it with the
+    same `CreateWorkoutSessionResponse` model. workout_day_id is
+    null in the response for ad-hoc sessions.
+    """
+    user = request.user
+    data = request.data or {}
+
+    title = (data.get("title") or "").strip()[:255]
+    if not title:
+        title = "Today"  # sensible fallback if iOS sends an empty title
+
+    try:
+        duration = int(data.get("duration") or 0)
+    except (TypeError, ValueError):
+        duration = 0
+    duration = max(0, duration)
+
+    is_complete = bool(data.get("is_complete", True))
+    exercises = data.get("exercises") or []
+    if not isinstance(exercises, list):
+        return Response(
+            {"detail": "exercises must be a list."},
+            status=status.HTTP_400_BAD_REQUEST,
+        )
+
+    workout_session = WorkoutSession.objects.create(
+        user=user,
+        workout_day=None,
+        title=title,
+        completed_at=timezone.now(),
+        duration=duration,
+        is_complete=is_complete,
+        notes="",
+    )
+
+    for ex_data in exercises:
+        if not isinstance(ex_data, dict):
+            continue
+
+        ex_name = (ex_data.get("name") or "").strip()[:255]
+        if not ex_name:
+            # An ad-hoc lift must have a name. Skip silently rather
+            # than 400 the whole request — the rest of the session
+            # is still worth persisting.
+            continue
+
+        catalog = None
+        catalog_id = ex_data.get("catalog_id")
+        if catalog_id is not None:
+            try:
+                catalog = ExerciseCatalog.objects.filter(id=int(catalog_id)).first()
+            except (TypeError, ValueError):
+                catalog = None
+
+        exercise_session = ExerciseSession.objects.create(
+            workout_session=workout_session,
+            exercise=None,
+            name=ex_name,
+            catalog=catalog,
+        )
+
+        for set_data in ex_data.get("sets") or []:
+            if not isinstance(set_data, dict):
+                continue
+            try:
+                set_number = int(set_data.get("set_number") or 1)
+            except (TypeError, ValueError):
+                set_number = 1
+            SetPerformance.objects.create(
+                exercise_session=exercise_session,
+                set_number=set_number,
+                weight=str(set_data.get("weight") or "")[:20],
+                reps=str(set_data.get("reps") or "")[:20],
+            )
+
+    # Trophy evaluation — same lazy import + defensive try as the
+    # plan-mode endpoint. Ad-hoc sessions count for streak / volume
+    # / lifetime trophies just like plan sessions.
+    newly_earned = []
+    try:
+        from apps.trophies.services import evaluate_and_award
+        for trophy in evaluate_and_award(user):
+            newly_earned.append({
+                "code":     trophy.code,
+                "name":     trophy.name,
+                "rarity":   trophy.rarity,
+                "icon":     trophy.icon,
+                "category": trophy.category,
+            })
+    except Exception:
+        log.exception("trophies post-workout (ad-hoc) evaluation failed")
+
+    # Minimal response — matches the existing plan-mode shape so the
+    # iOS `CreateWorkoutSessionResponse` decoder works for both
+    # paths. workout_day_id is null because there isn't one.
+    return Response(
+        {
+            "id": workout_session.id,
+            "workout_day_id": None,
+            "title": workout_session.title,
+            "duration": workout_session.duration,
+            "is_complete": workout_session.is_complete,
+            "completed_at": workout_session.completed_at.isoformat(),
+            "newly_earned_trophies": newly_earned,
+        },
+        status=status.HTTP_201_CREATED,
+    )
 
 
 # WORKOUT-NOTES-POSTSESSION — PATCH endpoint that updates the

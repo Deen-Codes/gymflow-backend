@@ -101,9 +101,22 @@ class SetPerformanceSerializer(serializers.ModelSerializer):
 
 
 class ExerciseSessionSerializer(serializers.ModelSerializer):
-    exercise_id = serializers.IntegerField(source="exercise.id", read_only=True)
-    exercise_name = serializers.CharField(source="exercise.name", read_only=True)
+    # V0-LIMIT-3 — exercise FK is nullable for ad-hoc lifts that
+    # don't reference a planned Exercise row. The custom
+    # SerializerMethodField fallbacks pick `self.name` (the ad-hoc
+    # display name captured at log time) when exercise is None,
+    # and `exercise.name` when it isn't.
+    exercise_id = serializers.SerializerMethodField()
+    exercise_name = serializers.SerializerMethodField()
     sets = SetPerformanceSerializer(many=True, read_only=True)
+
+    def get_exercise_id(self, obj):
+        return obj.exercise.id if obj.exercise_id else None
+
+    def get_exercise_name(self, obj):
+        if obj.exercise_id:
+            return obj.exercise.name
+        return obj.name or ""
 
     class Meta:
         model = ExerciseSession

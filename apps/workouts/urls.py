@@ -5,6 +5,7 @@ from .views import (
     next_workout,
     latest_workout_session_for_day,
     create_workout_session,
+    create_workout_session_adhoc,
     update_workout_session_notes,
 )
 from .solo_catalog_views import (
@@ -27,6 +28,9 @@ urlpatterns = [
     path("next/", next_workout, name="next_workout"),
     path("days/<int:day_id>/latest-session/", latest_workout_session_for_day, name="latest_workout_session_for_day"),
     path("sessions/create/", create_workout_session, name="create_workout_session"),
+    # V0-LIMIT-3 — ad-hoc (plan-less) workout session create.
+    # Used by the iOS as-you-go flow when workoutDay.backendID is nil.
+    path("sessions/create-adhoc/", create_workout_session_adhoc, name="create_workout_session_adhoc"),
     path(
         "sessions/<int:session_id>/notes/",
         update_workout_session_notes,

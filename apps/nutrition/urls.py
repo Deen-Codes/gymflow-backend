@@ -9,6 +9,7 @@ from .solo_views import (
     solo_nutrition_log_create,
     solo_nutrition_log_delete,
     solo_nutrition_food_search,
+    solo_nutrition_food_catalog,
     solo_nutrition_food_create,
     solo_macro_targets_update,
     solo_nutrition_mode,
@@ -42,6 +43,12 @@ urlpatterns = [
     # Query: ?q=chicken&limit=25&region=gb
     # Internal-only — no external DB fallback.
     path("solo/foods/search/",           solo_nutrition_food_search,     name="solo-nutrition-food-search"),
+
+    # FOOD-CATALOG-CACHE (#321) — full bulk dump for the iOS local
+    # cache. Query: ?limit=20000&region=gb
+    # iOS hydrates ExerciseCatalogCache-style on signed-in launch
+    # so search + ranking runs client-side from then on.
+    path("solo/foods/catalog/",          solo_nutrition_food_catalog,    name="solo-nutrition-food-catalog"),
 
     path("solo/foods/",                  solo_nutrition_food_create,     name="solo-nutrition-food-create"),
 
