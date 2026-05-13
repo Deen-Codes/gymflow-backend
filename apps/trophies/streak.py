@@ -5,7 +5,7 @@ Definition (May 2026 rewrite — STREAK-PHILOSOPHY-V2):
     Streak = total number of distinct local-calendar days on which
     the user has logged at least one completed WorkoutSession.
 
-That is: a lifetime counter of days-trained-on-Marrow. It can only
+That is: a lifetime counter of days-trained-on-GymFlow. It can only
 go up. Rest days are not "missed" — they simply don't add. There is
 no notion of "breaking" a streak. A user who trained 3 times last
 week, took a 10-day holiday, and trained today has streak = 4.
