@@ -15,6 +15,7 @@ from .solo_catalog_views import (
 )
 from .exercise_catalog_views import exercise_catalog_search
 from .exercise_edit_views import (
+    exercise_delete_view,
     exercise_edit_view,
     exercise_swap_view,
     workout_day_add_exercise_view,
@@ -55,6 +56,11 @@ urlpatterns = [
     # user_edit + write a RecentEditLog row.
     path("exercise/<int:exercise_id>/swap/",       exercise_swap_view,
          name="exercise-swap"),
+    # QC-DELETE-EXERCISE — surgical "remove this lift from the day"
+    # endpoint. Distinct from the PATCH on /exercise/<id>/ which
+    # edits sets/reps/rest in-place.
+    path("exercise/<int:exercise_id>/delete/",     exercise_delete_view,
+         name="exercise-delete"),
     path("exercise/<int:exercise_id>/",            exercise_edit_view,
          name="exercise-edit"),
     path("days/<int:day_id>/exercises/",           workout_day_add_exercise_view,

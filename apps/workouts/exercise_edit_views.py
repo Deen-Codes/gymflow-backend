@@ -363,6 +363,62 @@ def workout_day_delete_view(request, day_id: int):
 
 
 # ----------------------------------------------------------------
+# QC-DELETE-EXERCISE — remove a single exercise from a day
+# ----------------------------------------------------------------
+@api_view(["DELETE"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def exercise_delete_view(request, exercise_id: int):
+    """Remove a single Exercise (and its ExerciseSetTargets) from the
+    user's assigned plan. Stamps provenance + writes a RecentEditLog
+    entry so the AI PT picks the change up on the next chat.
+
+    The Day-level DELETE handler (`workout_day_delete_view`) cascades
+    the day's exercises automatically; this endpoint is for the more
+    surgical "remove one lift, keep the day" case from the editor
+    sheet.
+
+    Re-numbers the remaining exercises so `Exercise.order` stays
+    contiguous from 1..N. Cheap (under ~20 rows per day) and keeps
+    the AI mutation handlers from having to reason about gaps in
+    the order sequence.
+    """
+    exercise = get_object_or_404(Exercise, pk=exercise_id)
+    if not _user_owns_exercise(request.user, exercise):
+        return Response(
+            {"detail": "Not your exercise."},
+            status=status.HTTP_403_FORBIDDEN,
+        )
+
+    day = exercise.workout_day
+    name = exercise.name
+
+    with transaction.atomic():
+        exercise.delete()
+        # Re-number the remaining exercises on this day.
+        remaining = list(
+            Exercise.objects.filter(workout_day=day).order_by("order"),
+        )
+        for new_idx, ex in enumerate(remaining, start=1):
+            if ex.order != new_idx:
+                ex.order = new_idx
+                ex.save(update_fields=["order"])
+
+    _log_edit(
+        request.user,
+        kind="workout_remove",
+        summary=f"-{name} from {day.title}",
+        payload={
+            "exercise_id":  exercise_id,
+            "exercise_name": name,
+            "day_id":       day.id,
+        },
+    )
+
+    return Response({"ok": True})
+
+
+# ----------------------------------------------------------------
 # QC-DRAGDROP-PERSIST — reorder exercises within a day
 # ----------------------------------------------------------------
 @api_view(["PATCH"])
