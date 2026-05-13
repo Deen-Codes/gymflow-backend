@@ -360,3 +360,97 @@ def workout_day_delete_view(request, day_id: int):
         "ok":   True,
         "chip": chip,
     })
+
+
+# ----------------------------------------------------------------
+# QC-DRAGDROP-PERSIST — reorder exercises within a day
+# ----------------------------------------------------------------
+@api_view(["PATCH"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def workout_day_reorder_exercises_view(request, day_id: int):
+    """Persist a new ordering of exercises within a day.
+
+    Body: {"ordered_exercise_ids": [12, 7, 33, 4]}
+
+    The list is the canonical new order — every exercise belonging
+    to the day must appear exactly once. We rewrite each exercise's
+    `order` field to its 1-based index in the list. Provenance is
+    stamped `user_edit` on every touched row + one RecentEditLog
+    entry covers the whole reorder.
+
+    Returns the updated ordering so iOS can confirm the server view
+    matches the client's.
+    """
+    day = get_object_or_404(WorkoutDay, pk=day_id)
+    if not _user_owns_day(request.user, day):
+        return Response(
+            {"detail": "Not your day."},
+            status=status.HTTP_403_FORBIDDEN,
+        )
+
+    body = request.data or {}
+    ordered_ids_raw = body.get("ordered_exercise_ids")
+    if not isinstance(ordered_ids_raw, list) or not ordered_ids_raw:
+        return Response(
+            {"detail": "ordered_exercise_ids must be a non-empty list."},
+            status=400,
+        )
+    try:
+        ordered_ids = [int(x) for x in ordered_ids_raw]
+    except (TypeError, ValueError):
+        return Response(
+            {"detail": "ordered_exercise_ids must contain integers."},
+            status=400,
+        )
+
+    # All-or-nothing: the payload must cover every exercise on the
+    # day, with no duplicates. Refusing partial reorders keeps the
+    # server's canonical order consistent — a partial payload would
+    # leave orphaned `order` values from the previous shape.
+    existing = list(Exercise.objects.filter(workout_day=day))
+    existing_ids = {ex.id for ex in existing}
+    payload_set = set(ordered_ids)
+    if payload_set != existing_ids or len(ordered_ids) != len(payload_set):
+        return Response(
+            {
+                "detail": (
+                    "ordered_exercise_ids must list every exercise on the "
+                    "day exactly once."
+                ),
+                "expected_ids": sorted(existing_ids),
+                "received_ids": ordered_ids,
+            },
+            status=400,
+        )
+
+    # Two-phase update to dodge the unique-together (workout_day,
+    # order) constraint if one exists on Exercise — bump into a
+    # safe high range, then assign final positions. Cheap enough
+    # for the row counts we deal with (under ~20 lifts/day).
+    by_id = {ex.id: ex for ex in existing}
+    with transaction.atomic():
+        for offset, ex_id in enumerate(ordered_ids):
+            ex = by_id[ex_id]
+            ex.order = 10000 + offset
+            ex.save(update_fields=["order"])
+        for new_idx, ex_id in enumerate(ordered_ids, start=1):
+            ex = by_id[ex_id]
+            ex.order = new_idx
+            ex.provenance = Exercise.PROVENANCE_USER
+            ex.save(update_fields=["order", "provenance"])
+
+    _log_edit(
+        request.user,
+        kind="workout_reorder",
+        summary=f"reordered {len(ordered_ids)} exercises on {day.title}",
+        payload={
+            "day_id":               day.id,
+            "ordered_exercise_ids": ordered_ids,
+        },
+    )
+
+    return Response({
+        "ok":                    True,
+        "ordered_exercise_ids":  ordered_ids,
+    })

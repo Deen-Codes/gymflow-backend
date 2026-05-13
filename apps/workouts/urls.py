@@ -20,6 +20,7 @@ from .exercise_edit_views import (
     workout_day_add_exercise_view,
     workout_day_add_view,
     workout_day_delete_view,
+    workout_day_reorder_exercises_view,
 )
 
 urlpatterns = [
@@ -66,4 +67,11 @@ urlpatterns = [
          name="workout-day-add"),
     path("days/<int:day_id>/",                     workout_day_delete_view,
          name="workout-day-delete"),
+
+    # QC-DRAGDROP-PERSIST — persist a new exercise order within a day.
+    # Body: {"ordered_exercise_ids": [12, 7, 33, 4]}.
+    # Rewrites every Exercise.order in the day in one transaction;
+    # stamps provenance=user_edit on touched rows.
+    path("days/<int:day_id>/reorder/",             workout_day_reorder_exercises_view,
+         name="workout-day-reorder"),
 ]
