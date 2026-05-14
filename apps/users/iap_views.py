@@ -64,7 +64,11 @@ PRODUCT_MAP = {
     "com.gymflow.solo.pro_ai.year":  (SoloProfile.TIER_PRO_AI, True,  365),
 }
 
-EXPECTED_BUNDLE_ID = getattr(settings, "APPLE_BUNDLE_ID", "com.gymflow.app")
+# Bundle ID was rebranded from com.gymflow.app → coach.gymflow.app
+# in the May 2026 App Store prep pass. The JWS bundleId check below
+# must match the iOS app's actual bundle ID or every IAP verification
+# will fail with "bundleId mismatch".
+EXPECTED_BUNDLE_ID = getattr(settings, "APPLE_BUNDLE_ID", "coach.gymflow.app")
 
 
 # --------------------------------------------------------------------
