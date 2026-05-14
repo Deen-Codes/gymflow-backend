@@ -18,6 +18,13 @@ urllib3==2.6.3
 uvicorn==0.39.0
 whitenoise==6.11.0
 Pillow>=10.0,<12
+# pillow-heif registers a HEIF/HEIC plugin into Pillow so the
+# progress-photo upload can decode iPhone's default HEIC images and
+# transcode them to JPEG server-side before storage. Without this,
+# Pillow can't read HEIC and the upload either falls back to the
+# original bytes (which downstream Vision callers refuse / corrupt)
+# or 415s the user. Bound below 1.0 to avoid breaking API changes.
+pillow-heif>=0.16,<1
 stripe>=10.0,<12
 # SSO — Apple + Google identity-token validation. PyJWT decodes the
 # JWTs; the [crypto] extra pulls in `cryptography` which we need for

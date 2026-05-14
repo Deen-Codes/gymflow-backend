@@ -97,3 +97,60 @@ def exercise_catalog_search(request):
         "limit":   limit,
         "offset":  offset,
     })
+
+
+# --------------------------------------------------------------------
+# EXERCISE-COPY-WHY — Detail endpoint
+# --------------------------------------------------------------------
+#
+# The picker / search endpoint above stays lean (no copy fields) so
+# the list payload is small enough to ship a big page in one round
+# trip. When the user opens the enlarged exercise view, iOS hits
+# this detail endpoint for the long-form copy: form description,
+# common mistakes, breathing cues, primary benefit, instructions.
+# Splitting list + detail keeps both fast and means we don't have
+# to ship multi-paragraph form copy on every picker query.
+
+@api_view(["GET"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def exercise_catalog_detail(request, catalog_id: int):
+    """Return the full ExerciseCatalog row for the enlarged view.
+
+    GET /api/workouts/catalog/<id>/
+
+    Response shape mirrors the search row plus the copy fields:
+        form_description, common_mistakes, breathing_cues,
+        primary_benefit, instructions.
+
+    Empty strings on missing copy — iOS hides the corresponding
+    section in the UI when the field is blank.
+    """
+    try:
+        r = ExerciseCatalog.objects.get(id=catalog_id, is_published=True)
+    except ExerciseCatalog.DoesNotExist:
+        return Response({"detail": "Exercise not found."}, status=404)
+
+    return Response({
+        "id":               r.id,
+        "name":             r.name,
+        "primary_muscle":   r.muscle_group,
+        "secondary":        [
+            m.strip() for m in (r.secondary_muscles or "").split(",") if m.strip()
+        ],
+        "equipment":        r.equipment,
+        "level":            r.level,
+        "mechanic":         r.mechanic,
+        "force":            r.force,
+        "category":         r.category,
+        "image_url":        r.image_url,
+        "animation_url":    r.animation_url,
+        "icon_priority":    r.icon_priority,
+
+        # The long-form copy.
+        "form_description": r.form_description or "",
+        "common_mistakes":  r.common_mistakes or "",
+        "breathing_cues":   r.breathing_cues or "",
+        "primary_benefit":  r.primary_benefit or "",
+        "instructions":     r.instructions or "",
+    })

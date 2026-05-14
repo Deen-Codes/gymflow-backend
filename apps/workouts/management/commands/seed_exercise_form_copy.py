@@ -130,8 +130,18 @@ class Command(BaseCommand):
                 skipped_eids.append(eid or name)
                 continue
 
-            # Skip if already populated and not overwriting
-            if not overwrite and (obj.form_description or obj.common_mistakes or obj.breathing_cues):
+            # Skip if already populated and not overwriting. `primary_
+            # benefit` joined the check so adding it to a YAML for a
+            # previously-populated row doesn't silently no-op — the
+            # whole entry counts as "needs update" if any field is
+            # present in YAML but missing on the catalog row.
+            already_has_all = bool(
+                obj.form_description
+                and obj.common_mistakes
+                and obj.breathing_cues
+                and obj.primary_benefit
+            )
+            if not overwrite and already_has_all:
                 would_skip += 1
                 continue
 
@@ -142,6 +152,8 @@ class Command(BaseCommand):
                 fields["common_mistakes"] = str(e["common_mistakes"]).strip()
             if "breathing_cues" in e:
                 fields["breathing_cues"] = str(e["breathing_cues"]).strip()
+            if "primary_benefit" in e:
+                fields["primary_benefit"] = str(e["primary_benefit"]).strip()
             if "instructions" in e:
                 fields["instructions"] = str(e["instructions"]).strip()
             plan.append((obj, fields))

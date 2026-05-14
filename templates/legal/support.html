@@ -1,0 +1,79 @@
+{% extends "legal/_legal_layout.html" %}
+
+{% block title %}Help & Support | GymFlow{% endblock %}
+
+{% block legal_content %}
+<div class="legal-eyebrow">Support</div>
+<h1>Help & Support</h1>
+<p class="legal-meta">We read every email. Usually back within a day.</p>
+
+<p>
+    Something not working the way you expect? Stuck on the app? Need to delete
+    your account or get a refund? Email us at
+    <a href="mailto:hello@gymflow.app">hello@gymflow.app</a> and we'll sort it.
+</p>
+
+<h2>Quick answers</h2>
+
+<h3>How do I cancel my subscription?</h3>
+<p>
+    Open GymFlow → Settings → Subscription → Manage. You'll get a secure
+    customer portal link emailed to you (this is how Apple requires it on iOS).
+    From the portal you can cancel, switch plans, or update payment.
+</p>
+
+<h3>I lost access to my email — how do I sign in?</h3>
+<p>
+    Email us at <a href="mailto:hello@gymflow.app">hello@gymflow.app</a> from a
+    second address you can prove you control (one you've used with us before),
+    and we'll help you recover the account. We can't reset accounts purely from
+    inside the app — that would defeat the magic-link sign-in.
+</p>
+
+<h3>How do I change my macros / workout plan / details?</h3>
+<p>
+    Inside the app: Nutrition tab → Edit macro goal for macros. Workout tab →
+    swap or rebuild your plan via AI coach. Profile → tap any field on the
+    "About you" sheet to update height, weight, goals, or training days per
+    week.
+</p>
+
+<h3>How do I delete my account?</h3>
+<p>
+    Settings → Account → Delete account. You'll get a confirmation step.
+    Deletion is permanent and removes every workout, food log, photo, and
+    measurement we hold on you. Stripe subscription records are kept for the
+    minimum period UK law requires for tax/audit purposes, then deleted.
+</p>
+
+<h3>Is my data safe?</h3>
+<p>
+    Short version: yes. We're UK GDPR compliant, your photos and check-ins are
+    private to you and your assigned trainer (if any), we don't sell or share
+    data with advertisers, and we never store passwords in plaintext. The full
+    detail lives in our
+    <a href="{% url 'legal-privacy' %}">Privacy Policy</a>.
+</p>
+
+<h3>How do I report a bug or request a feature?</h3>
+<p>
+    Same email — <a href="mailto:hello@gymflow.app">hello@gymflow.app</a>.
+    Screenshots help. If it's urgent, say so in the subject line.
+</p>
+
+<h3>Trainer accounts — how does payout work?</h3>
+<p>
+    GymFlow uses Stripe Connect. Once you've connected your Stripe account
+    (Settings → Stripe), client payments land in your Stripe balance and pay
+    out to your bank on your normal Stripe schedule. We take a 5% platform fee
+    per transaction; everything else is yours. Stripe's standard processing
+    fees apply on top.
+</p>
+
+<h2>Still stuck?</h2>
+<p>
+    Email <a href="mailto:hello@gymflow.app">hello@gymflow.app</a>. Tell us
+    your account email, the device you're on, and what you were trying to do
+    when it went wrong. A screenshot or screen recording is gold.
+</p>
+{% endblock %}

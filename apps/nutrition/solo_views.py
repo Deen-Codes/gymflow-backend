@@ -248,11 +248,25 @@ def solo_nutrition_today(request):
         "carbs":    profile.target_carbs,
         "fats":     profile.target_fats,
     }
+    # MACROS-EMPTY-STATE (May 2026, Deen QC) — iOS needs to know
+    # whether the targets above are user-chosen or just placeholder
+    # defaults. When false, iOS hides the progress bars + ring and
+    # shows a "Set macro goal" CTA only — no figures the user might
+    # confuse for committed numbers.
+    #
+    # The signal: SoloProfile.target_calories defaults to 0 (see the
+    # model comment around `target_calories`). The onboarding flow
+    # writes a real value via /api/nutrition/solo/macro-targets/
+    # only when the user picks an AI / manual / unsure path. So
+    # `target_calories > 0` is the canonical "user has committed"
+    # check — no new field or migration needed.
+    macros_explicitly_set = (profile.target_calories or 0) > 0
     return Response({
         "date":     target_date.isoformat(),
         "targets":  targets,
         "eaten":    eaten,
         "entries":  [_entry_payload(r) for r in rows],
+        "macros_explicitly_set": macros_explicitly_set,
     })
 
 
@@ -451,6 +465,30 @@ def solo_nutrition_food_search(request):
             )
     candidates = CuratedFood.objects.filter(qfilter)[:400]
 
+    # SEARCH-RANKING-FIX (May 2026, Deen QC) — query "milk" was
+    # surfacing "Milky Way Bar" before "Whole milk" because tier 1
+    # used a bare `name_n.startswith(q_norm)` check. "milky way
+    # bar" starts with "milk" too. The fix requires a word boundary
+    # after the matched prefix, and the multi-token whole-word tier
+    # checks against name-as-words instead of name-as-substring.
+    # Mirrors the iOS FoodCatalogCache ranker so server and client
+    # agree on order when the fallback path is hit.
+    def _word_boundary_after(s: str, pos: int) -> bool:
+        if pos >= len(s):
+            return True
+        return not s[pos].isalnum()
+
+    def _plural_equiv(a: str, b: str) -> bool:
+        return (
+            a + "s" == b or b + "s" == a
+            or a + "es" == b or b + "es" == a
+        )
+
+    def _whole_word_in(words: set[str], tok: str) -> bool:
+        if tok in words:
+            return True
+        return any(_plural_equiv(tok, w) for w in words)
+
     ranked = []
     for f in candidates:
         name_n = _normalise(f.name)
@@ -465,27 +503,43 @@ def solo_nutrition_food_search(request):
         if not all(tok in haystack for tok in q_tokens):
             continue
 
-        # Tier — best match shape wins:
-        #   0  exact name match
-        #   1  name starts with full query
+        name_words = set(name_n.split())
+
+        # Tier — best match shape wins. LOWER number ranks higher.
+        #   0  exact name match (or plural form of it)
+        #   1  first word in name equals query — i.e. name starts with
+        #      query AND query ends at a word boundary. Catches "Milk
+        #      chocolate" for "milk" but NOT "Milky Way Bar".
         #   2  brand starts with first token (Nando's, McDonald's, etc.)
-        #   3  every token matches the name
-        #   4  every token matches name+brand combo
-        #   5  brand + name combo (multi-token: brand starts AND name has rest)
-        #   6  name contains query phrase
+        #   3  every token is a whole word in the name (with plural
+        #      tolerance). Catches "Whole milk" / "Skimmed milk" for
+        #      "milk" and "scrambled eggs" for "egg".
+        #   4  every token matches name+brand combo (whole-word in
+        #      name+brand)
+        #   5  brand + name combo (multi-token: brand starts AND name
+        #      has rest as whole words)
+        #   6  name contains query phrase (substring fallback — catches
+        #      "Milky Way Bar" for "milk", lower priority by design)
         #   7  brand contains query
         #   8  tags
-        if name_n == q_norm:
+        if name_n == q_norm or _plural_equiv(name_n, q_norm):
             tier = 0
-        elif name_n.startswith(q_norm):
+        elif (
+            name_n.startswith(q_norm)
+            and _word_boundary_after(name_n, len(q_norm))
+        ):
             tier = 1
         elif brand_n.startswith(q_tokens[0]) and len(q_tokens) == 1:
             # Single-token brand-prefix search — pull up the whole brand
             tier = 2
-        elif all(tok in name_n for tok in q_tokens):
+        elif all(_whole_word_in(name_words, tok) for tok in q_tokens):
             tier = 3
-        elif brand_n.startswith(q_tokens[0]) and all(tok in name_n for tok in q_tokens[1:]):
-            # "nandos chicken" → brand matches first token, rest in name
+        elif (
+            brand_n.startswith(q_tokens[0])
+            and all(_whole_word_in(name_words, tok) for tok in q_tokens[1:])
+        ):
+            # "nandos chicken" → brand matches first token, rest are
+            # whole words in name
             tier = 5
         elif q_norm in name_n:
             tier = 6
@@ -497,15 +551,20 @@ def solo_nutrition_food_search(request):
         else:
             tier = 9
 
+        # Generic-food bonus — at the same tier, items with no brand
+        # rank above branded items. "Whole milk" (generic) beats
+        # "M&S Whole Milk" (branded) for the query "milk".
+        brand_bonus = 0 if (f.brand or "").strip() else -1
+
         # Region bonus — same tier but region-matched items rank
         # before world-wide items.
         region_bonus = 0
         if region and region in regions_l.split(","):
             region_bonus = -1  # negative pulls earlier in sort
 
-        ranked.append((tier, region_bonus, len(name_n), f))
+        ranked.append((tier, brand_bonus, region_bonus, len(name_n), f))
 
-    ranked.sort(key=lambda t: (t[0], t[1], t[2]))
+    ranked.sort(key=lambda t: (t[0], t[1], t[2], t[3]))
     top = ranked[:limit]
 
     results = []

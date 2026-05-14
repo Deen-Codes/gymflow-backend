@@ -13,7 +13,10 @@ from .solo_catalog_views import (
     solo_programmes_assign,
     solo_programmes_create_custom,
 )
-from .exercise_catalog_views import exercise_catalog_search
+from .exercise_catalog_views import (
+    exercise_catalog_search,
+    exercise_catalog_detail,
+)
 from .exercise_edit_views import (
     exercise_delete_view,
     exercise_edit_view,
@@ -50,6 +53,12 @@ urlpatterns = [
     # ?q=, ?muscle=, ?equipment=, ?level=.
     path("catalog/search/",                        exercise_catalog_search,
          name="exercise-catalog-search"),
+    # EXERCISE-COPY-WHY — Detail row with the long-form copy
+    # (form_description, common_mistakes, breathing_cues, primary_
+    # benefit, instructions). iOS hits this when the user opens the
+    # enlarged exercise view; the list endpoint above stays lean.
+    path("catalog/<int:catalog_id>/",              exercise_catalog_detail,
+         name="exercise-catalog-detail"),
 
     # T2.8 — User-side edit endpoints on an assigned programme.
     # Bypass the AI mutation propose/apply flow; stamp provenance=

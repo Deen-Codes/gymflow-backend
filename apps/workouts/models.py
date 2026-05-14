@@ -314,10 +314,17 @@ class ExerciseCatalog(models.Model):
     #   form_description   — paragraph on proper setup, key cues
     #   common_mistakes    — "Don't…" list (newline-delimited)
     #   breathing_cues     — when to inhale/exhale
+    #   primary_benefit    — short "why this exercise is worth doing"
+    #                        paragraph. Surfaced in the enlarged
+    #                        exercise view as a "Why this lift?"
+    #                        section so the user understands what
+    #                        the movement actually develops (and
+    #                        why their plan picked it).
     instructions = models.TextField(blank=True)
     form_description = models.TextField(blank=True)
     common_mistakes = models.TextField(blank=True)
     breathing_cues = models.TextField(blank=True)
+    primary_benefit = models.TextField(blank=True)
 
     video_url = models.URLField(blank=True)
     image_url = models.URLField(blank=True)

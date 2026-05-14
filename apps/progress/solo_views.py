@@ -286,11 +286,81 @@ def solo_progress_streak(request):
 # D.2.2 — Progress photos
 # --------------------------------------------------------------------
 import base64
+import io
+import logging
+
+from PIL import Image, UnidentifiedImageError
+
 from .models import ProgressPhoto
 
 
-MAX_PHOTO_BYTES = 4 * 1024 * 1024   # ~4MB after b64
+_photos_log = logging.getLogger(__name__)
+
+# PHOTOS-APPSTORE (May 2026, Deen QC) — bumped 4MB → 10MB to match
+# the iOS pre-shrink ceiling. Modern phones routinely produce 7-9MB
+# JPEGs and an unhelpful 413 on upload reads as "broken app". We
+# normalise the bytes server-side regardless of format (re-encoding
+# anything that isn't already JPEG/PNG), so the storage size stays
+# reasonable even at the higher accept-ceiling.
+MAX_PHOTO_BYTES = 10 * 1024 * 1024
 FREE_TIER_PHOTOS_PER_MONTH = 1
+
+# HEIC-CONVERSION — register pillow-heif so PIL can decode iPhone
+# default HEIC/HEIF captures. Older sessions left HEIC bytes in the
+# DB untouched, which broke the AI Vision call path (it expects
+# JPEG/PNG and the model-poisoning incident #M-PHOTO traced back to
+# malformed inputs). Server-side conversion eliminates that whole
+# class of failure — every stored photo is guaranteed JPEG.
+try:
+    import pillow_heif  # type: ignore[import-not-found]
+    pillow_heif.register_heif_opener()
+except Exception:  # noqa: BLE001 — optional dep; non-fatal at import
+    _photos_log.warning(
+        "pillow_heif not installed — HEIC uploads will fall back to "
+        "the original bytes if Pillow can't decode them natively.",
+    )
+
+
+def _normalise_image_to_jpeg(raw: bytes) -> bytes:
+    """Decode the uploaded bytes and re-encode as JPEG.
+
+    Why we re-encode unconditionally:
+      • iPhone default capture is HEIC, which most non-Apple downstream
+        consumers (Claude Vision, web previews, etc.) can't read.
+      • A successful round-trip through PIL strips EXIF orientation
+        ambiguities, embedded thumbnails, and any odd colour profiles
+        — the same kind of malformed-input that the model-poisoning
+        incident traced back to.
+      • Re-encoding at q=85 keeps the file under the storage cap
+        without visible quality loss on phone screens.
+
+    Raises ``UnidentifiedImageError`` if Pillow (with the HEIC opener
+    registered) can't make sense of the bytes — callers translate that
+    into a 400 with a friendly message. Falls back to the original
+    bytes only when Pillow itself isn't available, which shouldn't
+    happen in production.
+    """
+    img = Image.open(io.BytesIO(raw))
+    # Honour EXIF orientation so portrait-shot photos don't end up
+    # rotated when we strip the metadata.
+    try:
+        from PIL import ImageOps
+        img = ImageOps.exif_transpose(img)
+    except Exception:  # noqa: BLE001
+        pass
+    # JPEG can't carry alpha — flatten transparent PNG/HEIC over
+    # black so we don't blow up the encoder.
+    if img.mode in ("RGBA", "LA", "P"):
+        background = Image.new("RGB", img.size, (0, 0, 0))
+        if img.mode == "P":
+            img = img.convert("RGBA")
+        background.paste(img, mask=img.split()[-1] if img.mode in ("RGBA", "LA") else None)
+        img = background
+    elif img.mode != "RGB":
+        img = img.convert("RGB")
+    buf = io.BytesIO()
+    img.save(buf, format="JPEG", quality=85, optimize=True)
+    return buf.getvalue()
 
 
 def _photo_payload(p: ProgressPhoto, *, include_image: bool = False) -> dict:
@@ -364,7 +434,33 @@ def solo_progress_photo_create(request):
     except Exception:
         return Response({"detail": "image_base64 is not valid base64."}, status=400)
     if len(decoded) > MAX_PHOTO_BYTES:
-        return Response({"detail": "Image too large (4MB max)."}, status=413)
+        return Response(
+            {"detail": "Image too large. Keep it under 10 MB."},
+            status=413,
+        )
+
+    # PHOTOS-APPSTORE — server-side HEIC→JPEG conversion + EXIF strip.
+    # See `_normalise_image_to_jpeg` for the why. If Pillow can't
+    # decode the bytes at all we 400 with a calm message rather than
+    # the raw UnidentifiedImageError trace.
+    try:
+        normalised = _normalise_image_to_jpeg(decoded)
+    except UnidentifiedImageError:
+        return Response(
+            {"detail": "Couldn't read that image. Try a different one."},
+            status=400,
+        )
+    except Exception as exc:  # noqa: BLE001 — defensive net
+        _photos_log.exception("Photo normalisation failed: %s", exc)
+        return Response(
+            {"detail": "Server couldn't process the image. Try again."},
+            status=500,
+        )
+    # Re-encode to base64 for storage. iOS code path is unchanged —
+    # it still reads `image_base64` on the way back out and decodes
+    # to bytes. The only difference is that what we store is always
+    # JPEG, never HEIC.
+    image_b64 = base64.b64encode(normalised).decode("ascii")
 
     # Free tier: enforce monthly cap.
     if not profile.has_pro_access:

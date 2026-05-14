@@ -49,6 +49,16 @@ urlpatterns = [
     path("legal/terms/",
          TemplateView.as_view(template_name="legal/terms.html"),
          name="legal-terms"),
+    # SUPPORT-PAGE (May 2026, Deen QC #M14) — quick-answers + contact
+    # email surface for inside-app "Help & support" link and App Store
+    # support URL field. Same template family as the legal pages so
+    # the design matches.
+    path("legal/support/",
+         TemplateView.as_view(template_name="legal/support.html"),
+         name="legal-support"),
+    path("support/",
+         TemplateView.as_view(template_name="legal/support.html"),
+         name="support"),
 
     # Public PT landing pages — Phase 7. Mounted at /p/<slug>/ for now;
     # subdomain routing (jared.gymflow.com) is Phase 7.5.
