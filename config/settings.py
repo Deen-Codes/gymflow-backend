@@ -256,6 +256,31 @@ GOOGLE_OAUTH_IOS_CLIENT_ID = os.environ.get("GOOGLE_OAUTH_IOS_CLIENT_ID", "")
 
 
 # -------------------------------------------------------------------
+# APPLE-REVIEW-BYPASS — task #64
+#
+# App Store review reviewers cannot receive magic-link emails, so the
+# magic-link verify endpoint has a bypass: if the posted token equals
+# APPLE_REVIEW_TOKEN, sign in as the pre-seeded reviewer account.
+#
+# To enable on a deploy:
+#   1. Set APPLE_REVIEW_TOKEN to a long random secret in the deploy
+#      environment (Render → Environment Variables).
+#   2. Run `python manage.py seed_reviewer_account` once to provision
+#      reviewer@gymflow.coach on Pro AI tier.
+#   3. In App Store Connect → App Review Information → Notes, tell
+#      the reviewer to open
+#      https://gymflow.coach/magic/<APPLE_REVIEW_TOKEN>/ in Safari on
+#      the device. The web bridge handler deep-links the iOS app,
+#      which posts the token here, which the verify view recognises.
+#
+# Rotate APPLE_REVIEW_TOKEN after each review cycle so a captured
+# token doesn't grant long-lived access.
+# -------------------------------------------------------------------
+APPLE_REVIEW_TOKEN = os.environ.get("APPLE_REVIEW_TOKEN", "")
+APPLE_REVIEW_EMAIL = os.environ.get("APPLE_REVIEW_EMAIL", "reviewer@gymflow.coach")
+
+
+# -------------------------------------------------------------------
 # DRF — Phase 0: token auth becomes the primary mechanism for the iOS
 # app, while the Django dashboard continues to use the session cookie.
 #

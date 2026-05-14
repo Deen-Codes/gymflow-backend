@@ -513,12 +513,60 @@ def magic_link_request_view(request):
 def magic_link_verify_view(request):
     """Exchange a token for a DRF session. On success returns the
     same shape as `login_view` so iOS can drop it into
-    `currentUser` without translation."""
+    `currentUser` without translation.
+
+    APPLE-REVIEW-BYPASS (2026-05-15) — App Store review reviewers
+    cannot receive magic-link emails. To unblock review, set
+    `APPLE_REVIEW_TOKEN` and `APPLE_REVIEW_EMAIL` env vars on the
+    deploy. When a verify request arrives with that token, we issue
+    a DRF token for the pre-seeded reviewer account directly. The
+    reviewer is told (in App Store Connect → App Review Information
+    → Notes) to open `https://gymflow.coach/magic/<APPLE_REVIEW_TOKEN>/`
+    in Safari on the device. The existing web-bridge handler will
+    deep-link the iOS app, which posts the token here, which lands
+    us in this branch. No iOS code change needed. To revoke, just
+    unset the env var or rotate it.
+    """
     token_str = (request.data.get("token") or "").strip()
     if not token_str:
         return Response(
             {"detail": "Missing token."},
             status=status.HTTP_400_BAD_REQUEST,
+        )
+
+    # APPLE-REVIEW-BYPASS — checked BEFORE the DB lookup so a
+    # leaked-but-rotated token never accidentally matches a real
+    # MagicLoginToken row. Constant-time compare guards against
+    # timing oracles even though the value is treated as a shared
+    # secret rather than a per-user credential.
+    review_token = getattr(settings, "APPLE_REVIEW_TOKEN", None) or ""
+    review_email = getattr(settings, "APPLE_REVIEW_EMAIL", "reviewer@gymflow.coach")
+    if review_token and secrets.compare_digest(token_str, review_token):
+        reviewer = User.objects.filter(email__iexact=review_email).first()
+        if reviewer is None:
+            # Fail closed — if the reviewer account doesn't exist on
+            # this deploy, don't silently issue tokens. Log so the
+            # operator knows to run the seed_reviewer_account command.
+            log.error(
+                "APPLE-REVIEW-BYPASS: token matched but reviewer account "
+                "(%s) is missing. Run `python manage.py seed_reviewer_account` "
+                "on this deploy to provision it.",
+                review_email,
+            )
+            return Response(
+                {"detail": "This sign-in link expired or has already been used."},
+                status=status.HTTP_401_UNAUTHORIZED,
+            )
+        login(request, reviewer)
+        auth_token, _ = Token.objects.get_or_create(user=reviewer)
+        log.info("APPLE-REVIEW-BYPASS: reviewer signed in (user_id=%s)", reviewer.id)
+        return Response(
+            {
+                "message": "Magic link verified.",
+                "token": auth_token.key,
+                "user": UserMeSerializer(reviewer).data,
+            },
+            status=status.HTTP_200_OK,
         )
 
     record = MagicLoginToken.objects.filter(token=token_str).first()

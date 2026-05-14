@@ -46,11 +46,13 @@ services:
       # iOS Profile DEBUG panel can flip tier (free/pro/pro_ai)
       # and reset the AI-build preview flag server-side. Each
       # authenticated solo user can only mutate their own row.
-      # *** REMOVE OR SET TO "0" BEFORE APP STORE SUBMISSION ***
-      # — leaving this on lets a user upgrade themselves to
-      # Pro AI without paying through IAP.
+      # *** Set to "0" for App Store submission *** — leaving
+      # this on would let a user upgrade themselves to Pro AI
+      # without paying through IAP. Flipped to "0" on 2026-05-15
+      # for the App Store submission pass. Flip back to "1" only
+      # for local TestFlight debugging via a temporary override.
       - key: ENABLE_DEBUG_RESET
-        value: "1"
+        value: "0"
 
 databases:
   - name: gymflow-db
