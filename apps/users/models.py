@@ -823,3 +823,74 @@ class RecentEditLog(models.Model):
         except Exception:
             return None
 
+
+# --------------------------------------------------------------------
+# REPORT-A-BUG (May 2026, Deen QC)
+# --------------------------------------------------------------------
+
+class BugReport(models.Model):
+    """User-submitted bug reports.
+
+    Lives as its own model rather than a free-form Resend email so we
+    can triage later (most-reported flow, repro from a real user, etc.).
+    Resend still fires on create for the inbox notification — but the
+    DB row is the canonical record.
+
+    The `screenshot_base64` field is a TextField rather than an
+    ImageField for the same reason `User.avatar_base64` and
+    `ProgressPhoto.image_base64` are TextFields: zero external storage
+    infra, survives redeploys, easy to migrate to S3 later. Capped at
+    ~3 MB raw (≈ 4 MB after base64) — anything bigger gets rejected at
+    the endpoint with a friendly 413.
+    """
+    user = models.ForeignKey(
+        "users.User",
+        on_delete=models.CASCADE,
+        related_name="bug_reports",
+    )
+    what_happened = models.TextField()
+    expected = models.TextField(blank=True, default="")
+
+    # Auto-attached metadata, captured by iOS at submit time. Stored
+    # as plain text fields (not JSON) so admin / triage SQL queries
+    # stay readable — these are the keys we filter / sort by most.
+    app_version  = models.CharField(max_length=32, blank=True, default="")
+    app_build    = models.CharField(max_length=32, blank=True, default="")
+    os_version   = models.CharField(max_length=32, blank=True, default="")
+    device_model = models.CharField(max_length=64, blank=True, default="")
+
+    # Optional in-app trail: the last ~10 user actions before submit
+    # (e.g. ["opened nutrition", "tapped add food", "search 'milk'",
+    # "tap Whole milk", "tap Save"]). Free-form JSON list to keep the
+    # iOS side flexible about what counts as an "action".
+    recent_actions = models.JSONField(default=list, blank=True)
+
+    # Optional screenshot — base64-encoded image bytes. Empty string
+    # when the user didn't attach one.
+    screenshot_base64 = models.TextField(blank=True, default="")
+
+    # Triage state — moves "open" → "resolved" / "wontfix" / "dupe" in
+    # Django admin. Keeps the inbox digestible.
+    STATUS_OPEN     = "open"
+    STATUS_RESOLVED = "resolved"
+    STATUS_WONTFIX  = "wontfix"
+    STATUS_DUPE     = "dupe"
+    STATUS_CHOICES = [
+        (STATUS_OPEN,     "Open"),
+        (STATUS_RESOLVED, "Resolved"),
+        (STATUS_WONTFIX,  "Won't fix"),
+        (STATUS_DUPE,     "Duplicate"),
+    ]
+    status = models.CharField(
+        max_length=12, choices=STATUS_CHOICES, default=STATUS_OPEN, db_index=True,
+    )
+
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["-created_at"]
+
+    def __str__(self):
+        truncated = (self.what_happened or "")[:60]
+        return f"BugReport #{self.id} — {truncated}"
+

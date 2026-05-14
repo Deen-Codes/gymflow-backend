@@ -235,7 +235,21 @@ DEFAULT_NOTIFICATION_PREFS = {
     # evening — most people decide whether to train around then).
     # User configurable in ProfileNotificationsSheet.
     "workout_reminder_time_min": 18 * 60,
+
+    # THEME-LIGHT (May 2026, Deen QC) — user-selected app theme.
+    # One of "system" / "light" / "dark". `notification_prefs` is
+    # already the on-server bag for per-user settings that aren't
+    # important enough to deserve their own column; theme fits the
+    # same shape, and reusing the existing PATCH endpoint avoids a
+    # new route. iOS mirrors this to UserDefaults so the choice
+    # applies instantly + survives offline launches.
+    "theme": "system",
 }
+
+
+# THEME-LIGHT — accepted theme values. PATCH coerces anything else
+# back to "system" so a malformed iOS payload can't poison the field.
+_ALLOWED_THEMES = {"system", "light", "dark"}
 
 
 def _resolved_notification_prefs(user):
@@ -263,6 +277,11 @@ def notification_prefs_for_me(request):
     # Whitelist — never accept arbitrary keys.
     allowed_keys = set(DEFAULT_NOTIFICATION_PREFS.keys())
     cleaned = {k: v for k, v in incoming.items() if k in allowed_keys}
+    # THEME-LIGHT — coerce theme to the allowed set so a bad value
+    # (junk client, future-version client sending an unknown theme)
+    # falls back to "system" instead of corrupting the stored prefs.
+    if "theme" in cleaned and cleaned["theme"] not in _ALLOWED_THEMES:
+        cleaned["theme"] = "system"
     merged = {**(user.notification_prefs or {}), **cleaned}
     user.notification_prefs = merged
     user.save(update_fields=["notification_prefs"])

@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.utils import timezone
-from .models import User, TrainerProfile, ClientProfile, Changelog, CoachingTip
+from .models import User, TrainerProfile, ClientProfile, Changelog, CoachingTip, BugReport
 
 
 @admin.register(User)
@@ -77,3 +77,39 @@ class CoachingTipAdmin(admin.ModelAdmin):
         ("Categorisation", {"fields": ("category",)}),
         ("Publishing", {"fields": ("published", "published_at")}),
     )
+
+
+# REPORT-A-BUG (May 2026) — triage surface. List view shows the most
+# recent first with status + a short body preview; detail page lets
+# Deen flip status and read the full submission.
+@admin.register(BugReport)
+class BugReportAdmin(admin.ModelAdmin):
+    list_display    = ("id", "_short", "user", "app_version", "status", "created_at")
+    list_filter     = ("status", "app_version")
+    search_fields   = ("what_happened", "expected", "user__username", "user__email")
+    readonly_fields = (
+        "user", "what_happened", "expected",
+        "app_version", "app_build", "os_version", "device_model",
+        "recent_actions", "screenshot_base64",
+        "created_at",
+    )
+    fieldsets = (
+        ("Submission", {
+            "fields": ("user", "created_at", "status"),
+        }),
+        ("Report", {
+            "fields": ("what_happened", "expected", "recent_actions"),
+        }),
+        ("Environment", {
+            "fields": ("app_version", "app_build", "os_version", "device_model"),
+        }),
+        ("Screenshot", {
+            "classes": ("collapse",),
+            "fields": ("screenshot_base64",),
+            "description": "Base64-encoded — copy/paste into a viewer to inspect.",
+        }),
+    )
+
+    def _short(self, obj):
+        return (obj.what_happened or "")[:60]
+    _short.short_description = "Summary"

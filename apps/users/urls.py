@@ -41,6 +41,7 @@ from .profile_views import (
     delete_account_view,
     setup_progress_view,
 )
+from .bug_report_views import submit_bug_report
 
 urlpatterns = [
     path("login/", login_view, name="login"),
@@ -155,6 +156,12 @@ urlpatterns = [
     # ONBOARDING-QUICK-START — Home setup-strip progress.
     path("me/setup-progress/",      setup_progress_view,       name="me-setup-progress"),
     path("me/delete/",              delete_account_view,      name="me-delete"),
+
+    # REPORT-A-BUG (May 2026) — Profile → "Found a bug?" sheet posts
+    # here. Authenticated. Body shape documented at the top of
+    # `bug_report_views.py`.
+    path("bug-report/",             submit_bug_report,         name="bug-report"),
+
     path("clients/create/", create_client_view, name="create-client"),
     path("clients/", trainer_clients_view, name="trainer-clients"),
     path("clients/assign-workout-plan/", assign_workout_plan_view, name="assign-workout-plan"),
