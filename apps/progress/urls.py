@@ -15,6 +15,8 @@ from .solo_views import (
     solo_progress_photo_detail,
     solo_progress_photo_create,
     solo_progress_photo_delete,
+    solo_progress_entry_create,
+    solo_progress_entries_list,
 )
 from .photo_ai_views import analyze_progress_photo
 
@@ -40,4 +42,10 @@ urlpatterns = [
 
     # PHOTO-COACHING (#106) — Claude Vision commentary.
     path("solo/photos/<int:photo_id>/analyze/", analyze_progress_photo, name="solo-progress-photo-analyze"),
+
+    # MULTI-ANGLE-ENTRIES (May 2026, Deen QC) — multi-photo entry
+    # endpoints. Single POST creates 1-3 photos sharing taken_on +
+    # bodyweight; list returns photos grouped by date.
+    path("solo/entries/",        solo_progress_entries_list,   name="solo-progress-entries-list"),
+    path("solo/entries/upload/", solo_progress_entry_create,   name="solo-progress-entry-create"),
 ]

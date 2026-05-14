@@ -413,15 +413,93 @@ def solo_progress_photo_detail(request, photo_id: int):
     return Response(_photo_payload(p, include_image=True))
 
 
+# --------------------------------------------------------------------
+# Entry semantics
+# --------------------------------------------------------------------
+#
+# MULTI-ANGLE-ENTRIES (May 2026, Deen QC) — a "progress entry" is the
+# group of (at most three) photos a user captures on a single date,
+# one per angle (front / side / back). The DB schema doesn't model
+# this explicitly — each ProgressPhoto stays a standalone row keyed
+# by `taken_on` + `category` — so an "entry" is implicit: the set
+# of all of a user's photos that share the same `taken_on`. See
+# DECISIONS.md for why we picked this over a separate ProgressEntry
+# parent model (zero migration, simpler delete semantics, AI Vision
+# stays per-photo).
+#
+# Free-tier cap now counts entries (distinct dates), not photos.
+# A free user can upload all three angles on one day with no friction
+# but is gated when trying to create a second entry in the same
+# month.
+
+def _check_entry_cap(user, *, taken_on, profile) -> Response | None:
+    """Return a 402 Response if creating an entry for `taken_on` would
+    push the user over the free-tier monthly cap, else None.
+
+    The cap counts DISTINCT taken_on dates in the current month — so
+    adding photos to a day that's already an entry (e.g. user uploaded
+    front this morning, comes back to add side) is free even on Free
+    tier. Crossing into a new date in the same month requires Pro.
+    """
+    if profile.has_pro_access:
+        return None
+    month_start = timezone.localdate().replace(day=1)
+    existing_dates = set(
+        ProgressPhoto.objects
+        .filter(user=user, taken_on__gte=month_start)
+        .values_list("taken_on", flat=True)
+        .distinct()
+    )
+    # Already at cap AND the target date isn't part of an existing
+    # entry → block.
+    if len(existing_dates) >= FREE_TIER_PHOTOS_PER_MONTH and taken_on not in existing_dates:
+        return Response(
+            {
+                "detail": "Free tier allows one entry per month. Upgrade for unlimited entries.",
+                "upgrade_to": "pro",
+            },
+            status=status.HTTP_402_PAYMENT_REQUIRED,
+        )
+    return None
+
+
+def _normalise_for_storage(decoded: bytes):
+    """Wrap `_normalise_image_to_jpeg` with the standard error→Response
+    translation used by both the single-photo and multi-photo endpoints.
+
+    Returns either a base64 string ready for storage, or a `Response`
+    object the caller should return as-is.
+    """
+    try:
+        normalised = _normalise_image_to_jpeg(decoded)
+    except UnidentifiedImageError:
+        return Response(
+            {"detail": "Couldn't read that image. Try a different one."},
+            status=400,
+        )
+    except Exception as exc:  # noqa: BLE001
+        _photos_log.exception("Photo normalisation failed: %s", exc)
+        return Response(
+            {"detail": "Server couldn't process the image. Try again."},
+            status=500,
+        )
+    return base64.b64encode(normalised).decode("ascii")
+
+
 @csrf_exempt
 @api_view(["POST"])
 @authentication_classes([TokenAuthentication])
 @permission_classes([IsAuthenticated])
 @_solo_only
 def solo_progress_photo_create(request):
-    """Upload a new progress photo. Body:
+    """Upload a single progress photo. Body:
         { image_base64, category?, bodyweight_kg?, note?, taken_on? }
-    Free tier: capped at 1 photo per calendar month."""
+
+    Kept for backwards compat with iOS clients on older bundles —
+    new clients should POST to /solo/entries/ with the multi-angle
+    payload instead. The same cap semantics apply (one entry per
+    calendar month on Free).
+    """
     from apps.users.models import SoloProfile
 
     profile, _ = SoloProfile.objects.get_or_create(user=request.user)
@@ -439,42 +517,10 @@ def solo_progress_photo_create(request):
             status=413,
         )
 
-    # PHOTOS-APPSTORE — server-side HEIC→JPEG conversion + EXIF strip.
-    # See `_normalise_image_to_jpeg` for the why. If Pillow can't
-    # decode the bytes at all we 400 with a calm message rather than
-    # the raw UnidentifiedImageError trace.
-    try:
-        normalised = _normalise_image_to_jpeg(decoded)
-    except UnidentifiedImageError:
-        return Response(
-            {"detail": "Couldn't read that image. Try a different one."},
-            status=400,
-        )
-    except Exception as exc:  # noqa: BLE001 — defensive net
-        _photos_log.exception("Photo normalisation failed: %s", exc)
-        return Response(
-            {"detail": "Server couldn't process the image. Try again."},
-            status=500,
-        )
-    # Re-encode to base64 for storage. iOS code path is unchanged —
-    # it still reads `image_base64` on the way back out and decodes
-    # to bytes. The only difference is that what we store is always
-    # JPEG, never HEIC.
-    image_b64 = base64.b64encode(normalised).decode("ascii")
-
-    # Free tier: enforce monthly cap.
-    if not profile.has_pro_access:
-        today = timezone.localdate()
-        month_start = today.replace(day=1)
-        used = ProgressPhoto.objects.filter(
-            user=request.user, taken_on__gte=month_start,
-        ).count()
-        if used >= FREE_TIER_PHOTOS_PER_MONTH:
-            return Response(
-                {"detail": "Free tier allows 1 photo per month. Upgrade for unlimited.",
-                 "upgrade_to": "pro"},
-                status=status.HTTP_402_PAYMENT_REQUIRED,
-            )
+    normalised_or_response = _normalise_for_storage(decoded)
+    if isinstance(normalised_or_response, Response):
+        return normalised_or_response
+    image_b64 = normalised_or_response
 
     category = (request.data.get("category") or "front").lower()
     if category not in {c for c, _ in ProgressPhoto.CATEGORY_CHOICES}:
@@ -486,12 +532,233 @@ def solo_progress_photo_create(request):
         bw = None
     taken_on = _parse_date(request.data.get("taken_on"), timezone.localdate())
 
+    cap_response = _check_entry_cap(request.user, taken_on=taken_on, profile=profile)
+    if cap_response is not None:
+        return cap_response
+
     photo = ProgressPhoto.objects.create(
         user=request.user, category=category,
         image_base64=image_b64, bodyweight_kg=bw, note=note,
         taken_on=taken_on,
     )
     return Response(_photo_payload(photo), status=status.HTTP_201_CREATED)
+
+
+# --------------------------------------------------------------------
+# MULTI-ANGLE-ENTRIES — bulk upload + grouped read
+# --------------------------------------------------------------------
+
+@csrf_exempt
+@api_view(["POST"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+@_solo_only
+def solo_progress_entry_create(request):
+    """Upload a multi-angle progress entry — 1 to 3 photos in one POST.
+
+    Body:
+        {
+          "photos": [
+            {"angle": "front", "image_base64": "..."},
+            {"angle": "side",  "image_base64": "..."},
+            {"angle": "back",  "image_base64": "..."}
+          ],
+          "bodyweight_kg": 78.4,
+          "note": "",
+          "taken_on": "2026-05-14"
+        }
+
+    Validation:
+      • At least one photo, at most three.
+      • Each `angle` ∈ {front, side, back, other}; angles within an
+        entry must be unique (you can only have one "front" per entry).
+      • Each `image_base64` ≤ 10 MB raw decoded.
+      • Free tier: blocked when this would create a second entry
+        (distinct date) in the current month.
+
+    All photos are written in a single transaction — partial entries
+    don't land if any photo fails normalisation. Each created row
+    shares the same bodyweight / note / taken_on so the iOS gallery
+    can group them client-side without extra lookups.
+
+    Returns:
+        {
+          "taken_on": "2026-05-14",
+          "bodyweight_kg": 78.4,
+          "note": "",
+          "photos": [<photo payload>, ...]
+        }
+    """
+    from apps.users.models import SoloProfile
+    from django.db import transaction
+
+    profile, _ = SoloProfile.objects.get_or_create(user=request.user)
+
+    photos_payload = request.data.get("photos") or []
+    if not isinstance(photos_payload, list):
+        return Response({"detail": "`photos` must be a list."}, status=400)
+    if not (1 <= len(photos_payload) <= 3):
+        return Response(
+            {"detail": "An entry needs 1 to 3 photos."},
+            status=400,
+        )
+
+    # Validate + collect normalised bytes + angles before writing any
+    # row. This way an invalid third photo doesn't leave half an entry
+    # on disk.
+    valid_angles = {c for c, _ in ProgressPhoto.CATEGORY_CHOICES}
+    seen_angles: set[str] = set()
+    prepared: list[tuple[str, str]] = []  # (angle, base64_jpeg)
+
+    for idx, item in enumerate(photos_payload):
+        if not isinstance(item, dict):
+            return Response(
+                {"detail": f"Photo {idx + 1} must be an object with `angle` + `image_base64`."},
+                status=400,
+            )
+        angle = (item.get("angle") or "front").lower()
+        if angle not in valid_angles:
+            angle = "front"
+        if angle in seen_angles:
+            return Response(
+                {"detail": f"Two photos can't share the angle '{angle}'."},
+                status=400,
+            )
+        seen_angles.add(angle)
+
+        b64 = (item.get("image_base64") or "").strip()
+        if not b64:
+            return Response(
+                {"detail": f"Photo {idx + 1}: image_base64 is required."},
+                status=400,
+            )
+        try:
+            decoded = base64.b64decode(b64, validate=True)
+        except Exception:
+            return Response(
+                {"detail": f"Photo {idx + 1}: image_base64 is not valid base64."},
+                status=400,
+            )
+        if len(decoded) > MAX_PHOTO_BYTES:
+            return Response(
+                {"detail": f"Photo {idx + 1}: image too large. Keep it under 10 MB."},
+                status=413,
+            )
+
+        normalised_or_response = _normalise_for_storage(decoded)
+        if isinstance(normalised_or_response, Response):
+            return normalised_or_response
+        prepared.append((angle, normalised_or_response))
+
+    # Shared entry metadata.
+    note = (request.data.get("note") or "").strip()[:255]
+    try:
+        bw = float(request.data.get("bodyweight_kg")) if request.data.get("bodyweight_kg") else None
+    except (TypeError, ValueError):
+        bw = None
+    taken_on = _parse_date(request.data.get("taken_on"), timezone.localdate())
+
+    # Free-tier cap — counts entries (distinct dates), not photos.
+    cap_response = _check_entry_cap(request.user, taken_on=taken_on, profile=profile)
+    if cap_response is not None:
+        return cap_response
+
+    created: list[ProgressPhoto] = []
+    with transaction.atomic():
+        for angle, image_b64 in prepared:
+            # Upsert semantics on (user, taken_on, angle) — if a user
+            # is adding a side photo to an entry they already have
+            # for today, replace the prior side rather than 409. This
+            # makes the "tap × to clear, pick again, save" flow work
+            # cleanly on iOS.
+            ProgressPhoto.objects.filter(
+                user=request.user,
+                taken_on=taken_on,
+                category=angle,
+            ).delete()
+            created.append(
+                ProgressPhoto.objects.create(
+                    user=request.user,
+                    category=angle,
+                    image_base64=image_b64,
+                    bodyweight_kg=bw,
+                    note=note,
+                    taken_on=taken_on,
+                )
+            )
+
+    return Response(
+        {
+            "taken_on":      taken_on.isoformat(),
+            "bodyweight_kg": bw,
+            "note":          note,
+            "photos":        [_photo_payload(p) for p in created],
+        },
+        status=status.HTTP_201_CREATED,
+    )
+
+
+@csrf_exempt
+@api_view(["GET"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+@_solo_only
+def solo_progress_entries_list(request):
+    """List entries — photos grouped by `taken_on`.
+
+    Same data the `/solo/photos/` list returns, just rolled up:
+        {
+          "count": <number of entries>,
+          "entries": [
+            {
+              "taken_on": "...",
+              "bodyweight_kg": ...,
+              "note": "",
+              "photos": [<lightweight photo>, ...]
+            }, ...
+          ]
+        }
+
+    iOS uses this for the new entry-grouped gallery. Photos within an
+    entry are sorted front → side → back → other so the iOS row can
+    place each in its expected slot without re-sorting.
+    """
+    rows = list(
+        ProgressPhoto.objects
+        .filter(user=request.user)
+        .order_by("-taken_on", "category")
+    )
+    # Group by taken_on. iso8601 strings keep ordering trivial.
+    order = ["front", "side", "back", "other"]
+    grouped: dict[str, dict] = {}
+    for p in rows:
+        key = p.taken_on.isoformat()
+        bucket = grouped.setdefault(key, {
+            "taken_on":      key,
+            "bodyweight_kg": p.bodyweight_kg,
+            "note":          p.note,
+            "photos":        [],
+        })
+        # If the user uploaded each angle on different occasions with
+        # different bodyweights, surface the one from whichever photo
+        # has it (prefer non-null). The "entry" stays a logical group.
+        if bucket["bodyweight_kg"] is None and p.bodyweight_kg is not None:
+            bucket["bodyweight_kg"] = p.bodyweight_kg
+        if not bucket["note"] and p.note:
+            bucket["note"] = p.note
+        bucket["photos"].append(_photo_payload(p))
+
+    entries = list(grouped.values())
+    # Inside each entry, sort photos by canonical angle order so iOS
+    # never has to re-sort.
+    for e in entries:
+        e["photos"].sort(
+            key=lambda ph: order.index(ph["category"]) if ph["category"] in order else len(order),
+        )
+    # Entries themselves sorted descending by date (newest first) —
+    # `order_by("-taken_on")` above already did the heavy lifting; we
+    # just preserve insertion order on the grouped dict.
+    return Response({"count": len(entries), "entries": entries})
 
 
 @csrf_exempt
