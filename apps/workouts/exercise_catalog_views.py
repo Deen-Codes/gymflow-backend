@@ -51,11 +51,21 @@ def exercise_catalog_search(request):
     if level:
         qs = qs.filter(level__iexact=level)
 
+    # PICKER-POPULARITY-SORT (#340, May 2026) — surface common lifts
+    # first. The picker opens to an unfiltered list; users doing a
+    # quick free-session log shouldn't have to scroll past "2-Board
+    # Press" and "3/4 Sit-Up" to find Bench Press. Sort by
+    # `icon_priority` descending (so the curated staples float to the
+    # top), then name ascending as the stable tie-breaker. The
+    # client-side relevance ranker (SEARCH-RANKING #319) still wins
+    # once a query is typed.
+    qs = qs.order_by("-icon_priority", "name")
+
     total = qs.count()
     rows = list(qs.only(
         "id", "name", "muscle_group", "secondary_muscles", "equipment",
         "level", "mechanic", "force", "image_url", "animation_url",
-        "form_description",
+        "form_description", "icon_priority",
     )[offset:offset + limit])
 
     payload = [
@@ -73,6 +83,10 @@ def exercise_catalog_search(request):
             "image_url":        r.image_url,
             "animation_url":    r.animation_url,
             "has_form_copy":    bool(r.form_description),
+            # Surfaced so the iOS cache can preserve the priority sort
+            # after a disk-cache round-trip (the cache stores rows in
+            # its own array, not in the order they came off the wire).
+            "icon_priority":    r.icon_priority,
         }
         for r in rows
     ]
