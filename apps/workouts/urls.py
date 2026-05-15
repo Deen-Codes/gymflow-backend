@@ -7,6 +7,7 @@ from .views import (
     create_workout_session,
     create_workout_session_adhoc,
     update_workout_session_notes,
+    recent_workout_sessions,
 )
 from .solo_catalog_views import (
     solo_programmes_list,
@@ -36,6 +37,13 @@ urlpatterns = [
     # V0-LIMIT-3 — ad-hoc (plan-less) workout session create.
     # Used by the iOS as-you-go flow when workoutDay.backendID is nil.
     path("sessions/create-adhoc/", create_workout_session_adhoc, name="create_workout_session_adhoc"),
+    # WORKOUT-SESSION-HYDRATE — last-90-days session list used by
+    # iOS WorkoutLogStore on login to backfill the local cache from
+    # the server. Without this the Home stats hero + Progress
+    # calendar/curve would only ever show sessions logged on THIS
+    # device — a problem for new devices, App Store review test
+    # accounts, and seeded demo accounts.
+    path("sessions/recent/", recent_workout_sessions, name="recent_workout_sessions"),
     path(
         "sessions/<int:session_id>/notes/",
         update_workout_session_notes,

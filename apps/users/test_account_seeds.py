@@ -19,7 +19,7 @@ real user account by mistake.
 """
 import random
 from dataclasses import dataclass
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from typing import Optional
 
 from django.db import transaction
@@ -170,6 +170,28 @@ def _provision_user_and_profile(spec: TestAccountSpec) -> User:
     profile.tier = SoloProfile.TIER_PRO_AI
     profile.tier_active_until = None
     profile.trial_started_at = profile.trial_started_at or timezone.now()
+
+    # BODY-STATS-RESET (May 2026, Deen QC) — overwrite height /
+    # weight / DOB on every seed so a previous test session's
+    # answers (filled via the now-retired mandatory gate) don't
+    # leak into the polished reviewer demo. Generic placeholder
+    # values when history_mode is "full" or "single_day" (the
+    # accounts that need a complete-feeling profile for screens
+    # that read body stats), blank for cold-start accounts.
+    # NOTE: date_of_birth lives on User, not SoloProfile — handled
+    # below alongside the user.save() block.
+    if spec.history_mode in ("full", "single_day"):
+        profile.height_cm = 178
+        profile.bodyweight_kg = 78.0
+        dob_value = date(1995, 1, 1)
+    else:
+        profile.height_cm = None
+        profile.bodyweight_kg = None
+        dob_value = None
+
+    if user.date_of_birth != dob_value:
+        user.date_of_birth = dob_value
+        user.save(update_fields=["date_of_birth"])
 
     if spec.assign_programme:
         programme = WorkoutPlan.objects.filter(

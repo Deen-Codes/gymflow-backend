@@ -1,4 +1,6 @@
 import logging
+import uuid
+from datetime import timedelta
 
 from django.shortcuts import get_object_or_404
 from django.utils import timezone
@@ -10,6 +12,19 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 log = logging.getLogger(__name__)
+
+# WORKOUT-SESSION-HYDRATE — fixed namespace for converting backend
+# WorkoutSession PKs into deterministic UUIDs. Same PK → same UUID
+# every time, so re-hydrating doesn't duplicate sessions in the
+# iOS local store. The chosen namespace string is arbitrary but
+# fixed; never change it post-launch or all clients will lose
+# dedup continuity.
+_WORKOUT_SESSION_UUID_NS = uuid.UUID("c0a8f1a3-7e2b-4c8d-9f0e-1234567890ab")
+
+
+def _session_uuid_for(session_pk: int) -> str:
+    """Stable iOS-side UUID for a backend WorkoutSession row."""
+    return str(uuid.uuid5(_WORKOUT_SESSION_UUID_NS, f"ws-{session_pk}"))
 
 from apps.users.models import User
 from .models import (
@@ -519,3 +534,111 @@ def update_workout_session_notes(request, session_id):
         },
         status=status.HTTP_200_OK,
     )
+
+
+# WORKOUT-SESSION-HYDRATE (May 2026, Deen QC) — return the user's
+# recent WorkoutSessions in a shape iOS's WorkoutLogStore can hydrate
+# from. Previously WorkoutLogStore was purely local — backend-seeded
+# sessions (App Store review accounts, multi-device users, new
+# devices) were invisible to Home / Progress until iOS re-logged
+# them. This endpoint fixes that by giving iOS a single fetch path
+# to backfill the cache.
+#
+# Window: last 90 days. Older sessions are out of scope for the
+# current-month / weekly views that drive Home + Progress; a future
+# "browse history" view can paginate further.
+#
+# Shape mirrors what `WorkoutSessionRecord.swift` decodes locally:
+#   { "sessions": [
+#       { "id": "<uuid>",
+#         "workout_day_id": "<str>",
+#         "workout_day_title": "<str>",
+#         "completed_at": "<iso8601>",
+#         "duration_seconds": <int>,
+#         "exercises": [
+#           { "exercise_id": "<str>",
+#             "exercise_name": "<str>",
+#             "sets": [
+#               { "set_number": <int>, "weight": "<str>", "reps": "<str>" }
+#             ]
+#           }
+#         ]
+#       }
+#     ]
+#   }
+@csrf_exempt
+@api_view(["GET"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def recent_workout_sessions(request):
+    user = request.user
+    cutoff = timezone.now() - timedelta(days=90)
+
+    sessions = (
+        WorkoutSession.objects
+        .filter(user=user, completed_at__gte=cutoff)
+        .select_related("workout_day")
+        .prefetch_related("exercise_sessions__sets", "exercise_sessions__exercise")
+        .order_by("-completed_at")
+    )
+
+    out = []
+    for s in sessions:
+        # workout_day_id: backend int as string for plan-mode, or a
+        # synthetic "adhoc-<session_pk>" for ad-hoc rows so iOS can
+        # group / dedup deterministically.
+        if s.workout_day_id is not None:
+            workout_day_id = str(s.workout_day_id)
+        else:
+            workout_day_id = f"adhoc-{s.id}"
+
+        # workout_day_title: prefer the session's own captured title
+        # (ad-hoc + plan-mode both populate this on save), fall back
+        # to the linked WorkoutDay if available. Never null.
+        if s.title:
+            workout_day_title = s.title
+        elif s.workout_day is not None:
+            workout_day_title = s.workout_day.title
+        else:
+            workout_day_title = ""
+
+        exercises = []
+        for es in s.exercise_sessions.all():
+            ex_name = es.name
+            if not ex_name and es.exercise is not None:
+                ex_name = es.exercise.name
+
+            # exercise_id: backend Exercise PK as string for plan-mode,
+            # or a synthetic "adhoc-ex-<es_pk>" for ad-hoc lifts so
+            # iOS's `ExercisePerformanceRecord.exerciseID` stays a
+            # stable identifier across hydrations.
+            if es.exercise_id is not None:
+                exercise_id = str(es.exercise_id)
+            else:
+                exercise_id = f"adhoc-ex-{es.id}"
+
+            sets_out = [
+                {
+                    "set_number": sp.set_number,
+                    "weight":     sp.weight or "",
+                    "reps":       sp.reps or "",
+                }
+                for sp in es.sets.all().order_by("set_number")
+            ]
+
+            exercises.append({
+                "exercise_id":   exercise_id,
+                "exercise_name": ex_name or "",
+                "sets":          sets_out,
+            })
+
+        out.append({
+            "id":                _session_uuid_for(s.id),
+            "workout_day_id":    workout_day_id,
+            "workout_day_title": workout_day_title,
+            "completed_at":      s.completed_at.isoformat(),
+            "duration_seconds":  s.duration,
+            "exercises":         exercises,
+        })
+
+    return Response({"sessions": out}, status=status.HTTP_200_OK)
