@@ -55,7 +55,7 @@ MAX_SCREENSHOT_BYTES = 3 * 1024 * 1024
 # be tuned per environment without code changes (local dev → personal
 # inbox, prod → triage inbox).
 BUG_REPORT_INBOX = getattr(
-    settings, "BUG_REPORT_INBOX", "hello@gymflow.app",
+    settings, "BUG_REPORT_INBOX", "hello@gymflow.coach",
 )
 
 

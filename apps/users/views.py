@@ -753,7 +753,7 @@ def _send_email_change_otp(user, new_email, code):
     msg = EmailMultiAlternatives(
         subject=subject,
         body=body,
-        from_email=getattr(settings, "DEFAULT_FROM_EMAIL", "GymFlow <hello@gymflow.app>"),
+        from_email=getattr(settings, "DEFAULT_FROM_EMAIL", "GymFlow <hello@gymflow.coach>"),
         to=[new_email],
     )
     msg.send(fail_silently=False)
@@ -777,7 +777,7 @@ def _send_magic_link_email(user, deep_link, web_link):
     msg = EmailMultiAlternatives(
         subject=subject,
         body=text_body,
-        from_email=getattr(settings, "DEFAULT_FROM_EMAIL", "GymFlow <hello@gymflow.app>"),
+        from_email=getattr(settings, "DEFAULT_FROM_EMAIL", "GymFlow <hello@gymflow.coach>"),
         to=[user.email],
     )
     msg.attach_alternative(html_body, "text/html")
