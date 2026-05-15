@@ -1,110 +1,116 @@
-"""APPLE-REVIEW-BYPASS — provision the reviewer-only test account.
+"""APPLE-REVIEW-BYPASS + TEST-ACCOUNTS — provision the four test
+accounts used by App Store review AND by Deen's day-to-day QC.
 
-App Store review reviewers cannot receive magic-link emails, so the
-auth flow has a special bypass: when the magic-link verify endpoint
-receives a token equal to the `APPLE_REVIEW_TOKEN` env var, it signs
-in as a pre-seeded reviewer user. This command provisions that user.
+Four accounts, all seeded against today's date and all idempotent
+(running the command again wipes + re-seeds against the current day):
 
-Run once on the deploy that serves App Review traffic:
+  reviewer@gymflow.coach  — Pro AI tier, ~30 days of history. Used
+                            by App Store review reviewers.
+  day0@gymflow.coach      — Pro AI tier, NO history. The cold-start
+                            test account. Tests every empty state.
+  day1@gymflow.coach      — Pro AI tier, exactly ONE day of data
+                            (today). Tests "single data point" UI
+                            where comparisons aren't yet possible
+                            but data exists.
+  reset@gymflow.coach     — Pro AI tier, NO history. Same as day0,
+                            but the magic-link verify view wipes
+                            anything the user logged during a
+                            session BEFORE issuing the next token.
+                            Lets Deen test the new-user experience
+                            repeatedly without re-creating accounts.
+
+Run once on the deploy (and on every redeploy via build.sh):
 
     python manage.py seed_reviewer_account
 
-Idempotent — running it again refreshes the profile state without
-deleting any existing workout/nutrition logs the reviewer may have
-generated while exploring the app.
+Bypass route — each account has its own derived token from a single
+env var so reviewers + Deen don't need 4 separate secrets:
 
-Set these env vars on the deploy:
-  APPLE_REVIEW_TOKEN  — the secret token the reviewer pastes.
-                        Long, random, rotate after each review cycle.
-  APPLE_REVIEW_EMAIL  — defaults to reviewer@gymflow.coach. Override
-                        only if you want a different label.
+  reviewer:  APPLE_REVIEW_TOKEN
+  day0:      "{APPLE_REVIEW_TOKEN}-day0"
+  day1:      "{APPLE_REVIEW_TOKEN}-day1"
+  reset:     "{APPLE_REVIEW_TOKEN}-reset"
+
+Pasted into the magic-link verify endpoint, these resolve to the
+matching account. The reset variant also calls
+`wipe_test_account_history(user)` (in test_account_seeds.py) before
+issuing the token so the account starts fresh on every login.
+
+The command name is preserved (seed_reviewer_account) so the
+existing build.sh hook keeps working. Real user accounts are NEVER
+touched — every query is filtered by the test emails above.
 """
 from django.conf import settings
 from django.core.management.base import BaseCommand
-from django.utils import timezone
 
-from apps.users.models import User, SoloProfile
+from apps.users.test_account_seeds import (
+    TestAccountSpec,
+    provision_test_account,
+)
 
 
 REVIEWER_EMAIL_DEFAULT = "reviewer@gymflow.coach"
-REVIEWER_FIRST_NAME = "Apple"
-REVIEWER_LAST_NAME = "Reviewer"
 
 
 class Command(BaseCommand):
-    help = "Create or refresh the App Store review-only test account."
+    help = "Create / refresh the four App Store + QC test accounts."
 
     def handle(self, *args, **options):
-        email = getattr(settings, "APPLE_REVIEW_EMAIL", REVIEWER_EMAIL_DEFAULT)
+        reviewer_email = getattr(settings, "APPLE_REVIEW_EMAIL", REVIEWER_EMAIL_DEFAULT)
         token = getattr(settings, "APPLE_REVIEW_TOKEN", None)
 
         if not token:
             self.stderr.write(
-                "APPLE_REVIEW_TOKEN env var is unset on this deploy. "
-                "The reviewer account will be provisioned, but until you set "
-                "the env var the bypass route is closed."
+                "APPLE_REVIEW_TOKEN env var is unset on this deploy. The four "
+                "test accounts will be provisioned, but the bypass route is "
+                "closed until you set the env var."
             )
 
-        user, created = User.objects.get_or_create(
-            email=email,
-            defaults={
-                "username":   email,
-                "first_name": REVIEWER_FIRST_NAME,
-                "last_name":  REVIEWER_LAST_NAME,
-                "role":       User.SOLO,
-                "is_active":  True,
-            },
-        )
+        specs = [
+            TestAccountSpec(
+                email=reviewer_email,
+                first_name="Apple",
+                last_name="Reviewer",
+                history_mode="full",          # ~30 days of data
+                assign_programme="Starting Strength",
+                days_per_week=3,
+            ),
+            TestAccountSpec(
+                email="day0@gymflow.coach",
+                first_name="Day0",
+                last_name="Test",
+                history_mode="none",          # cold-start empty
+                assign_programme=None,        # no programme = "Pick a programme" CTA
+                days_per_week=3,
+            ),
+            TestAccountSpec(
+                email="day1@gymflow.coach",
+                first_name="Day1",
+                last_name="Test",
+                history_mode="single_day",    # 1 workout + 1 weight, both today
+                assign_programme="Starting Strength",
+                days_per_week=3,
+            ),
+            TestAccountSpec(
+                email="reset@gymflow.coach",
+                first_name="Reset",
+                last_name="Test",
+                history_mode="none",          # starts empty
+                assign_programme=None,
+                days_per_week=3,
+            ),
+        ]
 
-        if not created:
-            # Refresh identity fields in case they drifted, but keep the
-            # row stable so existing related data (workouts, photos)
-            # survives.
-            updated = False
-            if user.role != User.SOLO:
-                user.role = User.SOLO
-                updated = True
-            if not user.is_active:
-                user.is_active = True
-                updated = True
-            if updated:
-                user.save(update_fields=["role", "is_active"])
-
-        # Random unusable password — auth happens via the bypass token,
-        # not a password. set_unusable_password() puts the row into a
-        # state where check_password() always returns False.
-        if user.has_usable_password():
-            user.set_unusable_password()
-            user.save(update_fields=["password"])
-
-        # Provision (or refresh) the SoloProfile so the reviewer lands
-        # on a Pro-AI-tier account with realistic onboarding answers.
-        # Pro AI tier so the reviewer can exercise the whole feature
-        # surface, including Smart Assist, without hitting a paywall
-        # mid-review (which would block their checklist).
-        profile, _ = SoloProfile.objects.get_or_create(user=user)
-        profile.goals      = ["build_muscle", "get_stronger"]
-        profile.experience = "one_to_three"
-        profile.equipment  = "full_gym"
-        profile.days_per_week = 4
-        profile.gender     = "prefer_not"
-        profile.tier       = SoloProfile.TIER_PRO_AI
-        profile.tier_active_until = None  # active indefinitely for review
-        profile.trial_started_at  = profile.trial_started_at or timezone.now()
-        profile.save()
-
-        if created:
+        for spec in specs:
+            user, summary = provision_test_account(spec)
             self.stdout.write(self.style.SUCCESS(
-                f"Created reviewer account {email} (user_id={user.id}) on Pro AI tier."
-            ))
-        else:
-            self.stdout.write(self.style.SUCCESS(
-                f"Refreshed reviewer account {email} (user_id={user.id}) on Pro AI tier."
+                f"{spec.email} (user_id={user.id}): {summary}"
             ))
 
         if token:
-            self.stdout.write(
-                "Reviewer bypass route is OPEN. In App Store Connect → App "
-                "Review Information → Notes, tell the reviewer to open "
-                f"https://gymflow.coach/magic/{token}/ in Safari on the device."
-            )
+            self.stdout.write("")
+            self.stdout.write("Bypass URLs (paste into Safari on the test device):")
+            self.stdout.write(f"  reviewer: https://gymflow.coach/magic/{token}/")
+            self.stdout.write(f"  day0:     https://gymflow.coach/magic/{token}-day0/")
+            self.stdout.write(f"  day1:     https://gymflow.coach/magic/{token}-day1/")
+            self.stdout.write(f"  reset:    https://gymflow.coach/magic/{token}-reset/  (wipes on sign-in)")

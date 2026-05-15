@@ -506,6 +506,89 @@ def magic_link_request_view(request):
     )
 
 
+# ----------------------------------------------------------------------
+# APPLE-REVIEW-BYPASS + TEST-ACCOUNTS — helpers used by
+# magic_link_verify_view. Kept module-private to avoid cluttering the
+# import surface. See the docstring on magic_link_verify_view for the
+# full design rationale.
+# ----------------------------------------------------------------------
+_BYPASS_VARIANT_SUFFIXES = {
+    "reviewer": "",
+    "day0":     "-day0",
+    "day1":     "-day1",
+    "reset":    "-reset",
+}
+
+_BYPASS_VARIANT_EMAILS = {
+    "day0":  "day0@gymflow.coach",
+    "day1":  "day1@gymflow.coach",
+    "reset": "reset@gymflow.coach",
+    # "reviewer" uses settings.APPLE_REVIEW_EMAIL — resolved at call
+    # site so an operator override stays effective.
+}
+
+
+def _match_bypass_token(token_str: str, base_token: str) -> str | None:
+    """Return which bypass variant the posted token matches, or None.
+
+    Uses constant-time compare for each candidate so a timing oracle
+    can't be used to recover the base token byte-by-byte.
+    """
+    for variant, suffix in _BYPASS_VARIANT_SUFFIXES.items():
+        expected = f"{base_token}{suffix}"
+        if secrets.compare_digest(token_str, expected):
+            return variant
+    return None
+
+
+def _issue_bypass_signin(*, request, variant: str, reviewer_email: str):
+    """Run the bypass-signin path for a recognised variant.
+
+    Reviewer variant uses settings.APPLE_REVIEW_EMAIL. Day0/day1/reset
+    use the canonical addresses. Reset additionally wipes the
+    account's history BEFORE issuing the token so every sign-in lands
+    a fresh new-user state. If the matched account doesn't exist on
+    this deploy we fail closed and tell the operator (in logs) to run
+    `python manage.py seed_reviewer_account`.
+    """
+    if variant == "reviewer":
+        email = reviewer_email
+    else:
+        email = _BYPASS_VARIANT_EMAILS[variant]
+
+    user = User.objects.filter(email__iexact=email).first()
+    if user is None:
+        log.error(
+            "BYPASS: %s token matched but account (%s) is missing. Run "
+            "`python manage.py seed_reviewer_account` on this deploy.",
+            variant, email,
+        )
+        return Response(
+            {"detail": "This sign-in link expired or has already been used."},
+            status=status.HTTP_401_UNAUTHORIZED,
+        )
+
+    # RESET — wipe before issuing the token so the iOS app fetches a
+    # cold state on its first /api/users/solo/me/ call. Local import
+    # keeps test_account_seeds out of the normal-path import graph.
+    if variant == "reset":
+        from apps.users.test_account_seeds import wipe_test_account_history
+        wipe_test_account_history(user)
+        log.info("BYPASS: reset account history wiped (user_id=%s)", user.id)
+
+    login(request, user)
+    auth_token, _ = Token.objects.get_or_create(user=user)
+    log.info("BYPASS: %s signed in (user_id=%s)", variant, user.id)
+    return Response(
+        {
+            "message": "Magic link verified.",
+            "token": auth_token.key,
+            "user": UserMeSerializer(user).data,
+        },
+        status=status.HTTP_200_OK,
+    )
+
+
 @csrf_exempt
 @api_view(["POST"])
 @authentication_classes([])
@@ -515,17 +598,29 @@ def magic_link_verify_view(request):
     same shape as `login_view` so iOS can drop it into
     `currentUser` without translation.
 
-    APPLE-REVIEW-BYPASS (2026-05-15) — App Store review reviewers
-    cannot receive magic-link emails. To unblock review, set
-    `APPLE_REVIEW_TOKEN` and `APPLE_REVIEW_EMAIL` env vars on the
-    deploy. When a verify request arrives with that token, we issue
-    a DRF token for the pre-seeded reviewer account directly. The
-    reviewer is told (in App Store Connect → App Review Information
-    → Notes) to open `https://gymflow.coach/magic/<APPLE_REVIEW_TOKEN>/`
-    in Safari on the device. The existing web-bridge handler will
-    deep-link the iOS app, which posts the token here, which lands
-    us in this branch. No iOS code change needed. To revoke, just
-    unset the env var or rotate it.
+    APPLE-REVIEW-BYPASS + TEST-ACCOUNTS (2026-05-15) — App Store
+    reviewers cannot receive magic-link emails, and Deen needs
+    repeatable test accounts (Day 0 / Day 1 / reset-every-login)
+    for QC. Four bypass tokens are recognised, all derived from
+    a single APPLE_REVIEW_TOKEN env var:
+
+      APPLE_REVIEW_TOKEN              → reviewer@gymflow.coach
+                                        (Pro AI, ~30 days history)
+      APPLE_REVIEW_TOKEN + "-day0"    → day0@gymflow.coach
+                                        (Pro AI, empty cold-start)
+      APPLE_REVIEW_TOKEN + "-day1"    → day1@gymflow.coach
+                                        (Pro AI, 1 workout + 1 weight today)
+      APPLE_REVIEW_TOKEN + "-reset"   → reset@gymflow.coach
+                                        (Pro AI; wipes its own history
+                                         BEFORE issuing the token so every
+                                         sign-in lands a fresh new-user state)
+
+    Reviewer is told (in App Store Connect → App Review Information
+    → Notes) to open https://gymflow.coach/magic/<APPLE_REVIEW_TOKEN>/
+    in Safari on the device. The existing web-bridge handler deep-
+    links the iOS app, which posts the token here, which lands us in
+    this branch. No iOS code change needed. To revoke, just unset
+    the env var or rotate it.
     """
     token_str = (request.data.get("token") or "").strip()
     if not token_str:
@@ -534,40 +629,21 @@ def magic_link_verify_view(request):
             status=status.HTTP_400_BAD_REQUEST,
         )
 
-    # APPLE-REVIEW-BYPASS — checked BEFORE the DB lookup so a
-    # leaked-but-rotated token never accidentally matches a real
-    # MagicLoginToken row. Constant-time compare guards against
-    # timing oracles even though the value is treated as a shared
-    # secret rather than a per-user credential.
+    # APPLE-REVIEW-BYPASS + TEST-ACCOUNTS — checked BEFORE the DB
+    # lookup so a leaked-but-rotated token never accidentally matches
+    # a real MagicLoginToken row. Constant-time compare guards against
+    # timing oracles even though the values are shared secrets, not
+    # per-user credentials.
     review_token = getattr(settings, "APPLE_REVIEW_TOKEN", None) or ""
     review_email = getattr(settings, "APPLE_REVIEW_EMAIL", "reviewer@gymflow.coach")
-    if review_token and secrets.compare_digest(token_str, review_token):
-        reviewer = User.objects.filter(email__iexact=review_email).first()
-        if reviewer is None:
-            # Fail closed — if the reviewer account doesn't exist on
-            # this deploy, don't silently issue tokens. Log so the
-            # operator knows to run the seed_reviewer_account command.
-            log.error(
-                "APPLE-REVIEW-BYPASS: token matched but reviewer account "
-                "(%s) is missing. Run `python manage.py seed_reviewer_account` "
-                "on this deploy to provision it.",
-                review_email,
+    if review_token:
+        bypass_match = _match_bypass_token(token_str, review_token)
+        if bypass_match is not None:
+            return _issue_bypass_signin(
+                request=request,
+                variant=bypass_match,
+                reviewer_email=review_email,
             )
-            return Response(
-                {"detail": "This sign-in link expired or has already been used."},
-                status=status.HTTP_401_UNAUTHORIZED,
-            )
-        login(request, reviewer)
-        auth_token, _ = Token.objects.get_or_create(user=reviewer)
-        log.info("APPLE-REVIEW-BYPASS: reviewer signed in (user_id=%s)", reviewer.id)
-        return Response(
-            {
-                "message": "Magic link verified.",
-                "token": auth_token.key,
-                "user": UserMeSerializer(reviewer).data,
-            },
-            status=status.HTTP_200_OK,
-        )
 
     record = MagicLoginToken.objects.filter(token=token_str).first()
     if record is None or not record.is_consumable:
