@@ -180,6 +180,23 @@ def _provision_user_and_profile(spec: TestAccountSpec) -> User:
     else:
         profile.assigned_workout_plan = None
 
+    # SETUP-PROGRESS-FLAGS — reset the 5 booleans on every re-seed so
+    # a previous session's accidental clicks don't persist into the
+    # next QC run. Per-mode behaviour:
+    #
+    #   "full"        — reviewer: all 5 done. Strip is hidden. Reviewer
+    #                   sees the polished steady-state experience.
+    #   "single_day"  — day1: 3 done (body stats, goal, training). The
+    #                   strip will show 3/5 so the "partial setup" UI
+    #                   is still QC-able.
+    #   "none"        — day0 / reset: all 5 False. Strip shows 0/5.
+    #                   Day 0 cold-start experience.
+    profile.setup_apple_health_done    = (spec.history_mode == "full")
+    profile.setup_body_stats_done      = (spec.history_mode in ("full", "single_day"))
+    profile.setup_goal_done            = (spec.history_mode in ("full", "single_day"))
+    profile.setup_training_done        = (spec.history_mode in ("full", "single_day"))
+    profile.setup_nutrition_style_done = (spec.history_mode == "full")
+
     profile.save()
     return user
 
