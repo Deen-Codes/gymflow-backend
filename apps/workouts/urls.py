@@ -17,6 +17,7 @@ from .solo_catalog_views import (
 from .exercise_catalog_views import (
     exercise_catalog_search,
     exercise_catalog_detail,
+    exercise_catalog_form_copy_bulk,
 )
 from .exercise_edit_views import (
     exercise_delete_view,
@@ -61,6 +62,15 @@ urlpatterns = [
     # ?q=, ?muscle=, ?equipment=, ?level=.
     path("catalog/search/",                        exercise_catalog_search,
          name="exercise-catalog-search"),
+    # FORM-COPY-CACHE (May 2026, Deen QC) — bulk form-copy snapshot.
+    # iOS pulls this once per session, caches locally, then renders
+    # the detail sheet instantly from the cache instead of awaiting
+    # a per-row detail fetch.
+    # NOTE: must be declared BEFORE the catalog/<int:catalog_id>/
+    # pattern below — otherwise `form-copy` would be interpreted as
+    # an integer catalog_id and 404.
+    path("catalog/form-copy/",                     exercise_catalog_form_copy_bulk,
+         name="exercise-catalog-form-copy-bulk"),
     # EXERCISE-COPY-WHY — Detail row with the long-form copy
     # (form_description, common_mistakes, breathing_cues, primary_
     # benefit, instructions). iOS hits this when the user opens the

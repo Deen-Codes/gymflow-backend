@@ -154,3 +154,71 @@ def exercise_catalog_detail(request, catalog_id: int):
         "primary_benefit":  r.primary_benefit or "",
         "instructions":     r.instructions or "",
     })
+
+
+# --------------------------------------------------------------------
+# FORM-COPY-CACHE (May 2026, Deen QC) — bulk form-copy endpoint.
+# --------------------------------------------------------------------
+#
+# iOS caches the four form-copy fields locally so the detail sheet
+# renders instantly instead of flashing an empty state while the
+# per-row detail endpoint above resolves. Form copy is universal
+# (no per-user data) so the cache key is just the catalog row's id;
+# every signed-in user reads from the same local snapshot.
+#
+# Endpoint returns ALL published catalog rows' copy in one response.
+# Payload is ~1MB for the full ~1500-row catalogue (every row's
+# 4 copy fields gzip-compress to roughly that size). Cheap enough
+# to refresh in the background on every signed-in launch.
+
+@api_view(["GET"])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def exercise_catalog_form_copy_bulk(request):
+    """Return form copy for every published catalog row in one call.
+
+    GET /api/workouts/catalog/form-copy/
+
+    Response shape:
+        {
+          "results": [
+            {
+              "id": 42,
+              "form_description": "…",
+              "common_mistakes":  "…",
+              "breathing_cues":   "…",
+              "primary_benefit":  "…",
+              "muscle_group":     "chest"
+            },
+            …
+          ],
+          "total": 1520
+        }
+
+    Used by iOS `ExerciseDetailCache`. Skipped fields default to
+    empty strings on the wire so iOS can decode without conditionals
+    and hide empty sections in the UI.
+    """
+    rows = ExerciseCatalog.objects.filter(is_published=True).only(
+        "id",
+        "form_description",
+        "common_mistakes",
+        "breathing_cues",
+        "primary_benefit",
+        "muscle_group",
+    )
+    payload = [
+        {
+            "id":               r.id,
+            "form_description": r.form_description or "",
+            "common_mistakes":  r.common_mistakes or "",
+            "breathing_cues":   r.breathing_cues or "",
+            "primary_benefit":  r.primary_benefit or "",
+            "muscle_group":     r.muscle_group or "",
+        }
+        for r in rows
+    ]
+    return Response({
+        "results": payload,
+        "total":   len(payload),
+    })
