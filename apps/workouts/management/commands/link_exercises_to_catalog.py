@@ -10,15 +10,21 @@ user sees an empty sheet.
 
 This command walks every Exercise row where `catalog_item_id IS
 NULL`, looks up an ExerciseCatalog row whose `name` matches case-
-insensitively, and sets the FK. Idempotent: re-runs only touch
-rows that are still unlinked.
+insensitively, and sets the FK. With `--create-missing` (the
+default in build.sh), it ALSO creates a stub ExerciseCatalog row
+for any Exercise whose name has no match — guaranteeing 100%
+linkage. The YAML loader then populates the form-copy fields on
+the newly-created rows.
 
-Wired into `build.sh` after the YAML form-copy seed so any newly-
-imported catalog rows can pick up the missing back-links on every
-deploy.
+Idempotent: re-runs only touch rows that are still unlinked.
+
+Wired into `build.sh` between import_exercise_catalog and
+seed_exercise_form_copy so every catalog row exists with the right
+name BEFORE the YAML pass tries to write copy to it.
 
 Usage:
     python manage.py link_exercises_to_catalog
+    python manage.py link_exercises_to_catalog --create-missing
     python manage.py link_exercises_to_catalog --dry-run
 """
 from __future__ import annotations
@@ -38,9 +44,20 @@ class Command(BaseCommand):
             action="store_true",
             help="Show what would be linked, don't write.",
         )
+        parser.add_argument(
+            "--create-missing",
+            action="store_true",
+            help=(
+                "Create a stub ExerciseCatalog row for any Exercise whose "
+                "name has no match. Guarantees 100% linkage. The new rows "
+                "are tagged with source=gymflow and an `external_id` "
+                "derived from the slugified name so re-runs are idempotent."
+            ),
+        )
 
     def handle(self, *args, **opts):
         dry_run = opts["dry_run"]
+        create_missing = opts["create_missing"]
 
         # Pull every Exercise with no catalog link. Working set is
         # small (a few hundred at most for the SOLO programme library)
@@ -55,6 +72,7 @@ class Command(BaseCommand):
         self.stdout.write(f"Scanning {total} unlinked Exercise rows…")
 
         linked = 0
+        created_then_linked = 0
         no_match = 0
         no_match_names: list[str] = []
 
@@ -68,10 +86,28 @@ class Command(BaseCommand):
                 .first()
             )
             if cat is None:
-                no_match += 1
-                if len(no_match_names) < 20:
-                    no_match_names.append(ex.name)
-                continue
+                if create_missing and not dry_run:
+                    # Slug-style external_id keeps re-runs idempotent.
+                    ext_id = _slugify_for_external_id(ex.name)
+                    cat, _ = ExerciseCatalog.objects.get_or_create(
+                        source=ExerciseCatalog.SOURCE_GYMFLOW,
+                        external_id=ext_id,
+                        defaults={
+                            "name":         ex.name,
+                            "is_published": True,
+                        },
+                    )
+                    # If the row already existed (re-run after a name
+                    # tweak), update the display name to current.
+                    if cat.name != ex.name:
+                        cat.name = ex.name
+                        cat.save(update_fields=["name"])
+                    created_then_linked += 1
+                else:
+                    no_match += 1
+                    if len(no_match_names) < 20:
+                        no_match_names.append(ex.name)
+                    continue
             if not dry_run:
                 ex.catalog_item = cat
                 ex.save(update_fields=["catalog_item"])
@@ -79,11 +115,15 @@ class Command(BaseCommand):
 
         if dry_run:
             self.stdout.write(self.style.WARNING(
-                f"\nDRY RUN — {linked} would be linked, {no_match} have no catalog match."
+                f"\nDRY RUN — {linked} would be linked"
+                f"{f' (incl. {created_then_linked} via create-missing)' if create_missing else ''}, "
+                f"{no_match} have no catalog match."
             ))
         else:
             self.stdout.write(self.style.SUCCESS(
-                f"\nDone. Linked {linked}/{total}. Unmatched: {no_match}."
+                f"\nDone. Linked {linked}/{total}"
+                f"{f' (created {created_then_linked} new catalog rows)' if created_then_linked else ''}. "
+                f"Unmatched: {no_match}."
             ))
 
         if no_match_names:
@@ -92,6 +132,20 @@ class Command(BaseCommand):
             ))
             self.stdout.write(
                 "  Unmatched rows stay nil — iOS detail sheet falls back to "
-                "name + targets only for these. Add matching catalog rows to "
-                "fix."
+                "name + targets only for these. Pass --create-missing OR add "
+                "matching catalog rows to fix."
             )
+
+
+def _slugify_for_external_id(name: str) -> str:
+    """Stable external_id for a stub catalog row. Lowercase, alphanumeric
+    + underscores. Matches the shape used elsewhere in the GymFlow
+    catalog (e.g. `gymflow_back_squat`)."""
+    cleaned = "".join(
+        c.lower() if c.isalnum() else "_"
+        for c in name.strip()
+    )
+    # Collapse repeated underscores + trim.
+    while "__" in cleaned:
+        cleaned = cleaned.replace("__", "_")
+    return f"gymflow_{cleaned.strip('_')}"

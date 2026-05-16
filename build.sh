@@ -18,12 +18,26 @@ python manage.py import_exercise_catalog \
     --source=free_exercise_db \
     --path=apps/workouts/management/commands/data/free_exercise_db.json
 
+# LINK-EXERCISE-CATALOG (May 2026, Deen QC) — back-link every
+# Exercise row to its ExerciseCatalog entry by case-insensitive
+# name match. SOLO programmes seed Exercise rows without setting
+# catalog_item_id; without this link, iOS sees catalog_id=null on
+# the API response and the form-detail bottom sheet stays empty.
+# `--create-missing` ensures 100% linkage by creating a stub catalog
+# row for any Exercise whose name has no match — the YAML pass
+# below then populates form copy on those new rows.
+# Runs BEFORE the YAML seed so every catalog row exists with the
+# expected name when the form-copy loader runs.
+# Idempotent: rows already linked are skipped.
+python manage.py link_exercises_to_catalog --create-missing
+
 # FORM-COPY-SEED (May 2026, Deen QC) — load the hand-written form
 # copy YAMLs into the catalog. The command globs
 # apps/workouts/seed/form_copy/*.yaml by default and pulls in:
 #   • deen_priority_30.yaml — 30 priority lifts on Deen's PT plan
 #   • staples_push/pull/legs/core.yaml — staple movements per pattern
 #   • staples_extended.yaml — 44 common variations
+#   • solo_programme_canonical.yaml — 16 SOLO programme exact names
 #   • bulk_generated.yaml — 818 entries covering every remaining
 #     yuhonas catalog row (full coverage to 100%)
 # Hand-written + voice-matched static content. No runtime AI.
@@ -31,14 +45,6 @@ python manage.py import_exercise_catalog \
 # rows get topped up. Re-run with --overwrite to force a re-load
 # after a voice revision.
 python manage.py seed_exercise_form_copy
-
-# LINK-EXERCISE-CATALOG (May 2026, Deen QC) — back-link every
-# Exercise row to its ExerciseCatalog entry by case-insensitive
-# name match. SOLO programmes seed Exercise rows without setting
-# catalog_item_id; without this link, iOS sees catalog_id=null on
-# the API response and the form-detail bottom sheet stays empty.
-# Idempotent: rows already linked are skipped.
-python manage.py link_exercises_to_catalog
 # APPLE-REVIEW-BYPASS — provision (or refresh) the reviewer-only test
 # account. Idempotent; ensures reviewer@gymflow.coach exists on Pro AI
 # tier so the magic-link bypass route can sign them in. Set the env

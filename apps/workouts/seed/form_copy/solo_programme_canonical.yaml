@@ -1,0 +1,287 @@
+# SOLO programme canonical exercise names — form copy targeting the
+# specific name strings used by `seed_solo_programmes`. yuhonas's
+# imported rows often have qualifying suffixes ("- Medium Grip",
+# "Barbell Squat" vs "Back Squat"), which our programmes don't use.
+# These entries close the gap so every lift in every shipped solo
+# programme gets matched + populated by the loader.
+#
+# Voice: calm coach. UK gym vocabulary. Matches the
+# `deen_priority_30.yaml` reference.
+
+- name: Barbell Bench Press
+  form_description: |
+    Lie back with your eyes under the bar, plant your feet, and grip
+    just outside shoulder width. Pull the bar out of the rack and
+    lower it under control to the lower chest, elbows tucking to
+    around 45 degrees from the body. Press the bar up and slightly
+    back over the shoulder line — not straight up. Keep the upper
+    back tight against the bench the whole time.
+  common_mistakes: |
+    - Flaring the elbows out at 90 degrees and dumping load into the shoulder
+    - Pressing the bar straight up instead of slightly back, losing the chest line
+    - Losing the upper-back arch so the chest collapses and the shoulders take over
+    - Bouncing the bar off the chest for momentum
+  breathing_cues: |
+    Inhale as the bar comes down, exhale as you press it up and back over the shoulder.
+  primary_benefit: |
+    Builds chest, front delt and triceps together — the cleanest bilateral upper-body strength lift.
+
+- name: Bent-Over Row
+  form_description: |
+    Hinge at the hips with a soft knee bend so the torso angles to
+    about 45 degrees. Hold the bar with a shoulder-width overhand
+    grip and let it hang at arm's length. Pull the bar to the lower
+    chest by driving the elbows back, keeping the torso angle frozen.
+    Squeeze the upper back for a beat, then lower under control.
+  common_mistakes: |
+    - Standing up out of the hinge mid-rep to swing the bar up
+    - Pulling to the belly instead of the lower chest, missing the upper-back squeeze
+    - Rounding the lower back as fatigue sets in
+    - Letting the elbows flare wide, turning the row into a rear-delt-only pull
+  breathing_cues: |
+    Inhale at the bottom in the hang, exhale as you row the bar to the lower chest.
+  primary_benefit: |
+    Hits the entire back from lats to mid-traps — the foundation pull pattern for a balanced upper body.
+
+- name: Cable Fly
+  form_description: |
+    Set both pulleys to about head height and grab a handle in each
+    hand. Step forward with a soft knee bend and let the arms open
+    out behind you, elbows softly bent. Draw the hands together in
+    front of the chest using the pecs, not the arms, and squeeze for
+    a beat in the middle. Let the cables open the chest on the way
+    back without yanking the shoulder.
+  common_mistakes: |
+    - Bending the elbows mid-rep to turn it into a press
+    - Shrugging the shoulders up to assist the squeeze
+    - Letting the cables snap the arms open at the bottom and stress the joint
+    - Crossing the hands too far past midline and shifting tension off the chest
+  breathing_cues: |
+    Inhale as the arms open, exhale as you draw the hands together.
+  primary_benefit: |
+    Isolates the chest under constant cable tension — fills out the inner pec without overloading the shoulder.
+
+- name: Cable Pull-Through
+  form_description: |
+    Face away from a low pulley with a rope between your legs. Hinge
+    at the hips, pushing them back, and let the rope travel between
+    the thighs as the chest lowers. Drive the hips forward to stand
+    tall, finishing with the glutes squeezed hard and the rope at
+    hip height. Keep the spine neutral and the knees soft, not bent.
+  common_mistakes: |
+    - Squatting the rep down by bending the knees instead of hinging
+    - Hyperextending the lower back at the top instead of just standing tall
+    - Using the arms to pull — they're a hook, not a mover
+    - Cutting the hinge short so the glutes never lengthen properly
+  breathing_cues: |
+    Inhale as the hips push back, exhale as you stand tall and squeeze the glutes.
+  primary_benefit: |
+    Trains the hip hinge with light load — the safest way to teach glute drive without spinal load.
+
+- name: Cable Tricep Overhead
+  form_description: |
+    Stand facing away from a low pulley with a rope held overhead.
+    Keep the elbows close to the ears and pointed at the ceiling.
+    Extend the forearms forward and up until the arms are straight,
+    then bend at the elbow only to return. The upper arms stay still
+    the whole time — only the forearm moves.
+  common_mistakes: |
+    - Letting the elbows drift forward, turning the lift into a press
+    - Flaring the elbows out wide so the long head of the triceps disengages
+    - Using bodyweight to swing the rope through the rep
+    - Stopping short of full lockout, losing the bit that builds triceps mass
+  breathing_cues: |
+    Inhale as the rope lowers behind the head, exhale as you press the arms straight.
+  primary_benefit: |
+    Targets the long head of the triceps with overhead stretch — the head that builds visible arm size.
+
+- name: Deadlift
+  form_description: |
+    Stand with the bar over mid-foot and shins about an inch from it.
+    Hinge down to grip just outside the knees, chest up, lats locked
+    pulling the bar towards the body. Push the floor away through
+    the heels and stand the bar up close to the shins. At the top,
+    stand tall — no overextension. Lower with control by hinging
+    first, then bending the knees.
+  common_mistakes: |
+    - Rounding the upper back so the lats give up and the spine takes the load
+    - Yanking the bar off the floor instead of building tension first
+    - Hyperextending the lower back at lockout to "finish the rep"
+    - Letting the bar drift away from the shins, multiplying lower-back stress
+  breathing_cues: |
+    Inhale and brace before the pull, hold through the lift, exhale at lockout.
+  primary_benefit: |
+    Trains the whole posterior chain under maximal load — the single best lift for total-body strength.
+
+- name: Diamond Push-Up
+  form_description: |
+    Set up in a push-up position with the hands close together under
+    the chest, thumbs and index fingers forming a diamond. Brace the
+    core so the body holds a straight line from heels to head. Lower
+    the chest to touch the hands with elbows tracking close to the
+    sides. Press back up by squeezing the triceps, not flaring the
+    elbows out.
+  common_mistakes: |
+    - Letting the elbows flare wide, turning the move into a regular push-up
+    - Sagging the hips so the lower back takes the load
+    - Resting the chest on the hands at the bottom instead of pressing right back up
+    - Setting the hands too high under the face instead of under the lower chest
+  breathing_cues: |
+    Inhale as the chest lowers to the hands, exhale as you press back up.
+  primary_benefit: |
+    Hits the triceps and inner chest with bodyweight alone — high carryover to bench lockout strength.
+
+- name: Dumbbell Row
+  form_description: |
+    Brace one hand and one knee on a flat bench, the other foot
+    planted on the floor. Let the dumbbell hang at arm's length with
+    the shoulder relaxed down. Pull the dumbbell to the hip by
+    driving the elbow back, keeping the torso frozen square to the
+    floor. Squeeze the lat for a beat at the top, then lower under
+    control to full stretch.
+  common_mistakes: |
+    - Twisting the torso to throw the dumbbell up at the top
+    - Pulling with the bicep by leading with the hand instead of the elbow
+    - Shrugging the shoulder up to assist the row
+    - Cutting the stretch short at the bottom, losing range on the lat
+  breathing_cues: |
+    Inhale at the bottom in the stretch, exhale as you drive the elbow to the hip.
+  primary_benefit: |
+    One-sided lat builder that lets you train each side to full range — fixes left-right imbalance.
+
+- name: Incline Barbell Press
+  form_description: |
+    Set the bench between 30 and 45 degrees. Lie back, plant the feet,
+    and grip the bar just outside shoulder width. Lower the bar to
+    the upper chest with elbows tucking to about 45 degrees from the
+    body. Press the bar up and slightly back over the shoulder line
+    until the arms lock. Keep the upper back pinned to the bench the
+    whole time.
+  common_mistakes: |
+    - Setting the bench too steep, turning the lift into an overhead press
+    - Flaring the elbows out at 90 degrees and overloading the shoulder
+    - Bouncing the bar off the chest for momentum
+    - Pressing the bar straight up instead of slightly back, losing the chest line
+  breathing_cues: |
+    Inhale as the bar comes down to the upper chest, exhale as you press it up and back.
+  primary_benefit: |
+    Builds the upper chest where flat bench leaves a gap — fills out the visible shelf above the pec line.
+
+- name: Leg Curl
+  form_description: |
+    Set the machine so the pad sits just above the heels and the knee
+    pivot lines up with the cam. Lie face down, grip the handles, and
+    curl the heels towards the glutes by squeezing the hamstrings.
+    Hold the contracted position for a beat, then lower under control
+    until just short of full extension to keep tension on the muscle.
+  common_mistakes: |
+    - Yanking the pad up with momentum instead of curling it
+    - Lifting the hips off the pad at the top to assist the rep
+    - Letting the legs drop fast and bouncing the weight at the bottom
+    - Stopping at half range instead of curling to a hard hamstring squeeze
+  breathing_cues: |
+    Inhale as the legs extend, exhale as you curl the heels towards the glutes.
+  primary_benefit: |
+    Isolates the hamstrings under constant tension — the cleanest single-joint hamstring builder.
+
+- name: Lunge
+  form_description: |
+    Stand tall with the feet hip-width and the chest up. Step forward
+    with one leg into a long stride, then bend both knees until the
+    back knee hovers just above the floor. Drive through the front
+    heel to return to the start, keeping the torso vertical. Alternate
+    legs each rep or finish all reps on one side before swapping.
+  common_mistakes: |
+    - Stepping too short so the front knee shoots past the toes
+    - Leaning the torso forward to make the rep easier on the quads
+    - Crashing the back knee into the floor instead of stopping just above it
+    - Letting the front knee cave inward, putting the joint at risk
+  breathing_cues: |
+    Inhale as you step down into the lunge, exhale as you drive back to standing.
+  primary_benefit: |
+    Trains one leg at a time — fixes side-to-side imbalances flat squats hide.
+
+- name: Pike Push-Up
+  form_description: |
+    Set up in a downward-dog position with the hips piked high and
+    the head between the arms. Bend at the elbows to lower the crown
+    of the head towards the floor between the hands, elbows tracking
+    back. Press back up until the arms lock. The closer the hips
+    stack over the shoulders, the more the move loads the shoulders.
+  common_mistakes: |
+    - Letting the hips drop so the lift becomes a regular push-up
+    - Flaring the elbows wide instead of tracking back over the wrists
+    - Cutting the range short so the head never reaches the floor
+    - Looking up at the floor and crashing the neck into the surface
+  breathing_cues: |
+    Inhale as the head lowers towards the floor, exhale as you press back up.
+  primary_benefit: |
+    Trains the overhead press pattern with bodyweight — builds shoulder strength without a barbell.
+
+- name: Reverse Lunge
+  form_description: |
+    Stand tall with feet hip-width. Step one foot backwards into a
+    long stride, then bend both knees until the back knee hovers
+    just above the floor. Drive through the front heel to return to
+    the start. The front leg does most of the work; the back leg is
+    just the landing pad. Keep the torso vertical the whole time.
+  common_mistakes: |
+    - Stepping too short so the front knee shoots past the toes
+    - Pushing off the back foot to return, turning the rep into a calf raise
+    - Crashing the back knee into the floor instead of stopping just above it
+    - Leaning forward to make the front leg's job easier
+  breathing_cues: |
+    Inhale as you step back into the lunge, exhale as you drive back to standing.
+  primary_benefit: |
+    Front-leg dominant — same single-leg benefit as a forward lunge with less knee stress.
+
+- name: Single-Arm Row
+  form_description: |
+    Brace one hand and one knee on a flat bench, the other foot
+    planted. Let the dumbbell hang at arm's length, shoulder relaxed
+    down. Drive the elbow back to pull the dumbbell to the hip,
+    keeping the torso square to the floor. Squeeze the lat for a beat
+    at the top, then lower under control to full stretch.
+  common_mistakes: |
+    - Twisting the torso to throw the dumbbell up at the top
+    - Pulling with the bicep by leading with the hand instead of the elbow
+    - Shrugging the shoulder up to assist the row
+    - Resting at the bottom instead of staying tight under tension
+  breathing_cues: |
+    Inhale at the bottom in the stretch, exhale as the elbow drives to the hip.
+  primary_benefit: |
+    One-sided lat builder that lets you train each side to full range — fixes left-right imbalance.
+
+- name: Skull Crusher
+  form_description: |
+    Lie back on a flat bench holding a barbell or EZ-bar with a
+    shoulder-width grip. Press the bar up so the arms point straight
+    at the ceiling. Bend at the elbow only to lower the bar towards
+    the forehead, keeping the upper arms locked vertical. Extend the
+    arms back to straight by squeezing the triceps.
+  common_mistakes: |
+    - Letting the upper arms drift back so the move becomes a pullover
+    - Flaring the elbows wide and dumping the load into the shoulder
+    - Going too heavy and bouncing the bar off the forehead — calm coach says no
+    - Stopping short of lockout, missing the bit that builds triceps mass
+  breathing_cues: |
+    Inhale as the bar lowers towards the forehead, exhale as you extend the arms.
+  primary_benefit: |
+    Hits the long head of the triceps where pushdowns can't reach — the lift that builds visible arm size.
+
+- name: Tricep Pushdown
+  form_description: |
+    Face a high pulley with a rope or straight bar attached. Tuck the
+    elbows tight to the ribs and grip the attachment. Press the
+    forearms down until the arms lock by squeezing the triceps,
+    keeping the upper arms pinned to the body. Let the cable bring
+    the forearms back up under control to a 90-degree elbow.
+  common_mistakes: |
+    - Letting the elbows flare forward so the lift becomes a press
+    - Leaning the torso into the rep to add momentum
+    - Stopping short of lockout, missing the squeeze
+    - Hooking the rope ends so the wrists do the lockout instead of the triceps
+  breathing_cues: |
+    Inhale as the forearms come up, exhale as you press them down to lockout.
+  primary_benefit: |
+    Isolates the lateral and medial triceps under constant cable tension — the cleanest accessory for bench lockout.
