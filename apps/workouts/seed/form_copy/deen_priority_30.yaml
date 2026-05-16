@@ -30,6 +30,8 @@
     - Bouncing reps for momentum instead of squeezing the chest
   breathing_cues: |
     Inhale as the handles open, exhale as you squeeze them together.
+  primary_benefit: |
+    Isolates the chest under constant tension — the cleanest way to grow the inner pec line without overloading the shoulder.
 
 - name: Incline Machine Chest Press
   form_description: |
@@ -44,6 +46,8 @@
     - Locking out so hard the shoulders roll forward
   breathing_cues: |
     Inhale on the way down, exhale through the press.
+  primary_benefit: |
+    Builds the upper chest with a fixed bar path — easier to load heavy than the dumbbell incline.
 
 - name: Chest Supported T-Bar Row
   form_description: |
@@ -59,6 +63,8 @@
     - Cutting the bottom range short — let the lats stretch fully
   breathing_cues: |
     Inhale at the bottom stretch, exhale as you pull the handles in.
+  primary_benefit: |
+    Builds mid-back thickness with the lower back taken out — late-session row work without the fatigue tax.
 
 - name: Neutral Grip Lat Pulldown
   form_description: |
@@ -74,6 +80,8 @@
     - Stopping the bar at the chin instead of upper chest
   breathing_cues: |
     Inhale as the bar travels up, exhale as you pull it down.
+  primary_benefit: |
+    The neutral wrist position keeps the elbow happy under load — a lat builder that lasts long-term.
 
 - name: Torso Supported Lateral Raise
   form_description: |
@@ -90,6 +98,8 @@
       the side delt
   breathing_cues: |
     Inhale at the bottom, exhale as you raise the dumbbells.
+  primary_benefit: |
+    Pinning the chest to the pad strips out the body english — every rep lands on the side delt.
 
 - name: Shoulder Press Machine
   form_description: |
@@ -105,6 +115,8 @@
     - Pressing chin-forward instead of staying neutral
   breathing_cues: |
     Inhale on the descent, exhale through the press.
+  primary_benefit: |
+    Trains the overhead press pattern with a fixed bar path — useful for high-volume delt work without balance demands.
 
 - name: Cross Body Tricep Extension
   form_description: |
@@ -119,6 +131,8 @@
     - Yanking the cable with the lats
   breathing_cues: |
     Inhale at the top, exhale as you extend across the body.
+  primary_benefit: |
+    The cross-body line of pull loads the long head of the tricep under stretch — useful for arm thickness gains.
 
 - name: Dual Arm Cable Bicep Curl
   form_description: |
@@ -134,6 +148,8 @@
     - Letting the wrists curl under load
   breathing_cues: |
     Inhale at the bottom, exhale as you curl up.
+  primary_benefit: |
+    Loads the biceps under constant cable tension — easier to keep the elbows pinned than with free weight.
 
 - name: Dumbbell Skull Crusher
   form_description: |
@@ -150,6 +166,8 @@
     - Locking out so hard the elbows hyperextend
   breathing_cues: |
     Inhale on the way down, exhale through the extension.
+  primary_benefit: |
+    The neutral grip is kind to the elbows — a long-range tricep builder you can run high volume on without joint flare-ups.
 
 - name: Single Arm Dumbbell Preacher Curl
   form_description: |
@@ -165,6 +183,8 @@
     - Wrist curling at the top to add range with the forearm
   breathing_cues: |
     Inhale at the bottom stretch, exhale as you curl up.
+  primary_benefit: |
+    Loads the bicep in its longest position — the lengthened-bias variant that grows arms faster than standing curls.
 
 # ============================================================
 # Day 2 — Lower
@@ -184,6 +204,8 @@
     - Letting the knees drift inward under the pad
   breathing_cues: |
     Steady — inhale on the descent, exhale at the top squeeze.
+  primary_benefit: |
+    Targets the soleus — the deep calf muscle that adds lower-leg thickness most standing variants miss.
 
 - name: Lying Hamstring Curl
   form_description: |
@@ -199,6 +221,8 @@
     - Pad placed too high up the calf, working the achilles
   breathing_cues: |
     Inhale at the bottom, exhale as you curl up.
+  primary_benefit: |
+    Isolates the hamstrings at the knee — grows the lower-hamstring belly that RDLs alone leave behind.
 
 - name: Leg Extension
   form_description: |
@@ -213,6 +237,8 @@
     - Gripping the handles so hard you body-english the rep
   breathing_cues: |
     Inhale at the bottom, exhale as you extend.
+  primary_benefit: |
+    The only lift that loads the rectus femoris at full knee extension — fills out the front of the thigh.
 
 - name: Leg Press
   form_description: |
@@ -228,6 +254,8 @@
     - Pushing through the toes instead of mid-foot
   breathing_cues: |
     Inhale on the descent, exhale through the drive up.
+  primary_benefit: |
+    Loads the quads heavily without spinal compression — the workhorse leg builder for higher rep work.
 
 - name: Hack Squat
   form_description: |
@@ -243,6 +271,8 @@
     - Locking out and resting at the top
   breathing_cues: |
     Inhale at the top, brace through the descent, exhale on the drive up.
+  primary_benefit: |
+    Loads the quads at a forward angle the back squat cannot match — top builder for the lower quad sweep.
 
 - name: Dumbbell Bulgarian Split Squat
   form_description: |
@@ -258,6 +288,8 @@
     - Bending forward at the waist instead of staying upright
   breathing_cues: |
     Inhale on the descent, exhale on the drive up.
+  primary_benefit: |
+    Loads each leg through a deep front-leg stretch — the highest-output lift for glute and quad size per set.
 
 - name: Adductor Machine
   form_description: |
@@ -272,6 +304,8 @@
     - Going too heavy and using hip flexors / adductor magnus only
   breathing_cues: |
     Inhale as the legs open, exhale as you squeeze them together.
+  primary_benefit: |
+    Builds the inner thigh — the only direct loader of a muscle group most squat-and-deadlift programmes neglect.
 
 # ============================================================
 # Day 3 — Push (Incline Machine Chest Press shared with Day 1)
@@ -291,6 +325,8 @@
     - Letting the elbows flare wider than the line of the wrists
   breathing_cues: |
     Inhale on the descent, exhale through the press.
+  primary_benefit: |
+    Builds front delt mass with a deeper bottom stretch than the barbell version and corrects left-right imbalances.
 
 - name: Seated Machine Chest Press
   form_description: |
@@ -306,6 +342,8 @@
     - Half-repping — let the chest stretch open at the bottom
   breathing_cues: |
     Inhale on the descent, exhale through the press.
+  primary_benefit: |
+    The fixed bar path lets you push closer to failure than free weight — a high-volume chest builder.
 
 - name: Lying Cuffed Lateral Raise
   form_description: |
@@ -321,6 +359,8 @@
     - Yanking the cable from the bottom
   breathing_cues: |
     Inhale at the bottom, exhale as you raise the arm.
+  primary_benefit: |
+    The cable holds tension at the bottom where dumbbells go slack — the most efficient side delt builder per rep.
 
 - name: Cable Crossover
   form_description: |
@@ -336,6 +376,8 @@
     - Twisting the torso to bring the handles together
   breathing_cues: |
     Inhale as the handles open, exhale as you bring them together.
+  primary_benefit: |
+    Cable tension stays constant across the squeeze — grows the inner chest line better than any free-weight fly.
 
 - name: Machine Dip
   form_description: |
@@ -351,6 +393,8 @@
     - Bouncing reps off the bottom for momentum
   breathing_cues: |
     Inhale at the bottom, exhale as you press down.
+  primary_benefit: |
+    Loads the triceps through a long range without the bodyweight tax of a parallel bar dip — easier to scale set-to-set.
 
 - name: Single Arm Tricep Pushdown
   form_description: |
@@ -366,6 +410,8 @@
     - Leaning the torso over the handle to push the weight
   breathing_cues: |
     Inhale at the top, exhale as you press down.
+  primary_benefit: |
+    Each arm works on its own line — corrects left-right imbalances and lets the strong side push deeper to failure.
 
 # ============================================================
 # Day 4 — Pull
@@ -385,6 +431,8 @@
     - Yanking the cable with body english
   breathing_cues: |
     Inhale at the top stretch, exhale as you pull down and back.
+  primary_benefit: |
+    The reverse-bench angle stretches the lat through a longer arc than a standard pulldown — top builder for lat thickness.
 
 - name: Hammer Strength Low to High Row
   form_description: |
@@ -400,6 +448,8 @@
     - Shrugging the shoulders up at the top instead of squeezing back
   breathing_cues: |
     Inhale at the bottom, exhale as you pull up and back.
+  primary_benefit: |
+    The diagonal line of pull hits the upper-back fibres a flat row leaves underloaded — fills out the area between the shoulder blades.
 
 - name: Single Arm D-Handle Low Row
   form_description: |
@@ -415,6 +465,8 @@
     - Cutting the bottom range short
   breathing_cues: |
     Inhale at the stretch, exhale as you pull the handle in.
+  primary_benefit: |
+    Each lat works through its own full stretch — corrects left-right imbalances the bar version can hide.
 
 - name: EZ Bar Cable Bicep Curl
   form_description: |
@@ -430,6 +482,8 @@
     - Letting the wrists hyperextend under load
   breathing_cues: |
     Inhale at the bottom, exhale as you curl up.
+  primary_benefit: |
+    The angled grip is kinder to the wrists than a straight bar and the cable keeps tension constant — clean bicep volume.
 
 - name: Alternating Hammer Curl
   form_description: |
@@ -445,6 +499,8 @@
     - Cutting the bottom range short
   breathing_cues: |
     Inhale at the bottom, exhale as you curl each rep up.
+  primary_benefit: |
+    Builds the brachialis underneath the bicep — the muscle that pushes the bicep peak up and adds arm thickness.
 
 # ============================================================
 # Day 5 — Legs
@@ -465,6 +521,8 @@
     - Pad placed too low on the calf, putting the achilles under load
   breathing_cues: |
     Inhale at the top, exhale as you curl down.
+  primary_benefit: |
+    Loads the hamstrings at full stretch — produces more growth per set than the lying version for most lifters.
 
 - name: Glute Drive Machine
   form_description: |
@@ -482,3 +540,5 @@
     - Letting the knees cave inward
   breathing_cues: |
     Inhale at the bottom, exhale as you drive the hips up.
+  primary_benefit: |
+    The seated angle loads the glutes at peak contraction without the bar set-up tax of a hip thrust — easier to scale heavy.

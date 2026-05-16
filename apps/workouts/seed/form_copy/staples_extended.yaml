@@ -1,0 +1,626 @@
+# Extended staple lifts — variants used across Starting Strength,
+# StrongLifts, Push/Pull/Legs and Upper/Lower programmes that weren't
+# covered by the original staples_{push,pull,legs,core} sweep.
+#
+# Names match the yuhonas free-exercise-db canonical names (the seed
+# source) so the loader's name-iexact match lands on the right rows.
+#
+# Voice: calm coach. Setup → execution → finish. Active voice.
+# UK-leaning vocabulary. No exclamation marks. No "explosively",
+# "powerfully", "blast", "smash", "destroy", "crush".
+
+# ============================================================
+# Press variants
+# ============================================================
+
+- name: Close-Grip Bench Press
+  form_description: |
+    Set up like a normal bench but grip the bar inside shoulder-width, hands about a thumb's-distance apart. Pinch the shoulder blades and tuck the elbows in tight to your sides — much tighter than a regular bench. Lower the bar to the lower chest with the elbows brushing the ribs. Press up in a straight line over the shoulders.
+  common_mistakes: |
+    - Gripping too narrow and forcing the wrists to bend hard
+    - Letting the elbows flare out — turns it into a flat bench
+    - Bouncing the bar off the chest
+    - Cutting the lockout short
+  breathing_cues: |
+    Inhale at the top, hold through the descent, exhale through the press.
+  primary_benefit: |
+    Loads the triceps under heavy compound weight — the cleanest way to add pressing strength to the top half of the bench.
+
+- name: Decline Barbell Bench Press
+  form_description: |
+    Lock the feet in at the decline pads and lie back. Pinch the shoulder blades down and grip the bar slightly wider than a flat bench. Lower the bar to the lower chest under control. Press up in a straight line over the shoulders, not back over the face.
+  common_mistakes: |
+    - Letting the bar drift back over the face (off-balance lockout)
+    - Bouncing reps off the chest
+    - Pressing only with the triceps because the elbows flared too wide
+    - Cutting depth short — the bar should touch the lower chest
+  breathing_cues: |
+    Inhale at the top, hold through the descent, exhale through the press.
+  primary_benefit: |
+    Loads the lower chest in its strongest line — useful for adding pressing volume without front-delt overuse.
+
+- name: Floor Press
+  form_description: |
+    Lie on the floor under a low rack with the bar racked just above arm's reach. Knees bent or legs straight, hips planted. Grip slightly inside a normal bench width, unrack, and lower the bar until the back of the upper arms touch the floor. Pause for a beat, then press up.
+  common_mistakes: |
+    - Bouncing the elbows off the floor for momentum
+    - Flaring the elbows wide — keep them at 45° to the body
+    - Pressing the bar back over the face instead of straight up
+    - Rushing the pause at the bottom
+  breathing_cues: |
+    Inhale at the top, hold through the descent and pause, exhale through the press.
+  primary_benefit: |
+    Removes the bottom third of the bench and loads the triceps and front delts — useful for breaking through lockout sticking points.
+
+- name: Push Press
+  form_description: |
+    Take the same setup as a strict overhead press — bar at the front delts, feet hip-width, ribs braced. Dip the knees a few inches to load the legs, then drive up through the legs and finish the press with the shoulders. The leg drive only starts the bar — the upper body finishes it.
+  common_mistakes: |
+    - Dipping too deep (turns it into a jerk)
+    - Letting the knees cave on the dip
+    - Pressing the bar in front of the face instead of overhead
+    - Hyperextending the lower back at lockout
+  breathing_cues: |
+    Big breath at the top, brace through the dip and drive, exhale at lockout.
+  primary_benefit: |
+    Lets you load heavier than a strict press — builds overhead pressing strength and full-body coordination at once.
+
+- name: Arnold Press
+  form_description: |
+    Sit on a bench with back support, dumbbells held in front of the shoulders, palms facing you and elbows tucked in. As you press up, rotate the wrists so the palms finish forward at lockout. Reverse the path on the way down. The rotation happens through the press, not before it.
+  common_mistakes: |
+    - Rotating the wrists before the press starts (kills the smoothness)
+    - Flaring the elbows wide at lockout
+    - Arching the lower back to push the weight
+    - Smashing the dumbbells together at the top
+  breathing_cues: |
+    Inhale at the bottom, exhale through the press and rotation.
+  primary_benefit: |
+    The rotation hits the front and side delts in one rep — useful for hitting both heads on a tight schedule.
+
+- name: Paused Bench Press
+  form_description: |
+    Set up like a normal bench. Lower the bar to the chest under control and hold it motionless on the chest for a one-count — no bounce, no resting on the ribs. Then press up with no momentum. Picking the right weight matters; 80 to 85% of your usual bench is a sensible starting point.
+  common_mistakes: |
+    - Sinking the bar into the chest instead of pausing on top of it
+    - Losing the upper-back tightness during the pause
+    - Going too heavy and grinding the press
+    - Counting the pause as a tap not a hold
+  breathing_cues: |
+    Inhale at the top, hold through the descent and the pause, exhale through the press.
+  primary_benefit: |
+    Builds raw bench strength out of the bottom — the variant powerlifters use to clean up sticking points off the chest.
+
+# ============================================================
+# Pull variants
+# ============================================================
+
+- name: Chin-Up
+  form_description: |
+    Grip the bar with palms facing you, hands roughly shoulder-width. Hang with the arms fully extended and the shoulders pulled down — not loose-shrugged. Pull up by driving the elbows down towards the ribs until the chin clears the bar. Lower under control to a full hang.
+  common_mistakes: |
+    - Kipping the hips to swing up
+    - Cutting the bottom short — full extension every rep
+    - Letting the shoulders shrug up at the bottom
+    - Pulling with the biceps only instead of the back as well
+  breathing_cues: |
+    Exhale as you pull up, inhale on the lower.
+  primary_benefit: |
+    Builds the biceps and lats together in one compound — the highest-output bicep lift for serious lifters.
+
+- name: Wide-Grip Lat Pulldown
+  form_description: |
+    Set the thigh pad snug. Grip the bar wider than shoulder-width with palms forward. Lean back about 15° and pull the bar to the upper chest by driving the elbows down and back. Squeeze the lats at the bottom. Return to a full overhead stretch under control.
+  common_mistakes: |
+    - Pulling the bar behind the neck (rotator cuff stress)
+    - Leaning back hard and turning it into a row
+    - Gripping so wide the range is tiny
+    - Cutting the top stretch short
+  breathing_cues: |
+    Inhale at the top, exhale as you pull the bar to the chest.
+  primary_benefit: |
+    The wide grip biases the upper lat fibres — top builder for back width.
+
+- name: Close-Grip Front Lat Pulldown
+  form_description: |
+    Use a narrow neutral-grip handle (palms facing each other). Set the thigh pad snug, lean back about 15° and pull the handle to the upper chest by driving the elbows down. The narrower grip lets the elbows finish closer to the ribs and the lats fold a fraction harder at the bottom.
+  common_mistakes: |
+    - Pulling with the biceps instead of the lats
+    - Leaning back to make it a row
+    - Cutting the top stretch short
+    - Letting the shoulders shrug up at the start
+  breathing_cues: |
+    Inhale at the top, exhale as you pull down.
+  primary_benefit: |
+    The neutral grip lets the lats reach a deeper bottom contraction — builds lat thickness from the lower fibres up.
+
+- name: Bent Over Two-Dumbbell Row
+  form_description: |
+    Hold a dumbbell in each hand, hinge at the hips with a flat back until the torso is around 45°. Let the dumbbells hang straight down. Row both up to the hips by driving the elbows back, squeezing the shoulder blades at the top. Lower under control to a full stretch.
+  common_mistakes: |
+    - Standing too upright (turns it into a shrug)
+    - Rounding the lower back to chase range
+    - Rowing the dumbbells out wide instead of to the hip
+    - Yanking with momentum at the start
+  breathing_cues: |
+    Inhale at the bottom, exhale on the row.
+  primary_benefit: |
+    Each lat works through a longer stretch than a barbell row allows — builds back thickness without taxing the grip as hard.
+
+- name: T-Bar Row with Handle
+  form_description: |
+    Straddle the loaded T-bar with a V-handle hooked under the bar. Hinge at the hips with a flat back, knees soft. Pull the handle to the lower chest by driving the elbows back and squeezing the shoulder blades together. Lower under control to a full stretch.
+  common_mistakes: |
+    - Standing too upright — keep the torso around 45°
+    - Rounding the lower back at the bottom
+    - Cutting the bottom range short and missing the stretch
+    - Pulling with the biceps instead of leading with the elbows
+  breathing_cues: |
+    Inhale at the bottom, exhale on the pull.
+  primary_benefit: |
+    The fixed bar path lets you load the back heavier than a barbell row — the workhorse for thickness through the mid-back.
+
+- name: Inverted Row
+  form_description: |
+    Set a barbell in a rack at hip height. Lie under it and grip the bar with palms forward, body straight from heels to head. Pull the chest up to the bar by driving the elbows back. Keep the body rigid the whole way. Lower under control to a full hang.
+  common_mistakes: |
+    - Letting the hips sag through the rep
+    - Cutting the range short — the chest should touch the bar
+    - Shrugging the shoulders up at the start
+    - Bending the knees to make it easier without realising
+  breathing_cues: |
+    Inhale at the bottom, exhale as you pull the chest to the bar.
+  primary_benefit: |
+    A bodyweight back lift that scales with bar height — useful as a pull-up regression or as a finisher when the bar is unavailable.
+
+- name: Reverse Grip Bent-Over Rows
+  form_description: |
+    Grip the barbell underhand (palms forward), hands shoulder-width. Hinge at the hips with a flat back to roughly 45°. Pull the bar to the lower abs by driving the elbows back and down, keeping them tucked close to the ribs. Lower under control.
+  common_mistakes: |
+    - Standing too upright (turns into an upright row)
+    - Letting the elbows flare wide
+    - Rounding the lower back to chase the bar
+    - Pulling to the chest instead of the lower abs
+  breathing_cues: |
+    Inhale at the bottom, exhale on the row.
+  primary_benefit: |
+    The underhand grip puts the biceps in a stronger pulling line — useful for lifters who want to bias the lower lats.
+
+# ============================================================
+# Squat variants
+# ============================================================
+
+- name: Safety Bar Squat
+  form_description: |
+    Set the safety bar across the traps with the handles in front of the shoulders. Step out and adopt a normal squat stance. Brace and squat down and back, knees tracking over the toes. The bar's forward bias pulls the chest down, so drive the upper back hard into the bar through the descent.
+  common_mistakes: |
+    - Letting the chest collapse forward — drive the upper back into the bar
+    - Going too narrow on stance and losing depth
+    - Resting on the handles instead of using them for stability
+    - Heels lifting at the bottom
+  breathing_cues: |
+    Big breath at the top, hold through the descent, exhale on the way up.
+  primary_benefit: |
+    Easier on the shoulders than a back squat and trains the upper back hard — a useful squat for lifters with stiff shoulders.
+
+- name: Box Squat
+  form_description: |
+    Set a box behind you at a height that puts the hip crease just below the knee at the bottom. Bar across the traps, step out into a wide stance with toes turned out. Sit back onto the box by pushing the hips back, then sit fully — no bouncing — and stand up by driving the floor away.
+  common_mistakes: |
+    - Bouncing off the box instead of pausing
+    - Sitting too forward and losing the hip drive on the way up
+    - Knees caving in on the drive up
+    - Going onto the box with momentum instead of control
+  breathing_cues: |
+    Big breath at the top, hold through the descent and the sit, exhale on the way up.
+  primary_benefit: |
+    Trains the squat out of a dead-start position — the variant powerlifters use to build hip drive and clean up depth.
+
+- name: Paused Squat
+  form_description: |
+    Set up exactly like your usual back squat. Descend to your normal depth and hold the bottom position motionless for a one-count — no sinking, no bouncing. Stand up under control with no momentum off the pause.
+  common_mistakes: |
+    - Sinking deeper through the pause to fish for stretch reflex
+    - Tipping the chest forward at the bottom
+    - Counting the pause as a tap instead of a hold
+    - Going so heavy you grind through the stand-up
+  breathing_cues: |
+    Big breath at the top, hold through the descent and pause, exhale through the stand.
+  primary_benefit: |
+    Builds raw squat strength out of the bottom — the variant most useful for lifters who fail in the hole.
+
+- name: Smith Machine Squat
+  form_description: |
+    Set the bar on the Smith rails at upper-trap height. Step under, set the bar across the traps and step the feet slightly forward of the hips. Brace and squat down, knees tracking over the toes. Drive up through mid-foot. The fixed bar path means you have to find the foot position that lets the knees travel naturally.
+  common_mistakes: |
+    - Feet too far forward — the lower back lifts off the bar at the bottom
+    - Feet too far back — the knees crash forward of the toes
+    - Locking the bar out at the top by twisting the wrists hard
+    - Cutting depth short because the path feels unnatural
+  breathing_cues: |
+    Big breath at the top, hold through the descent, exhale on the way up.
+  primary_benefit: |
+    The fixed path removes balance from the lift — useful for high-rep quad work without the stabiliser tax.
+
+# ============================================================
+# Deadlift variants
+# ============================================================
+
+- name: Stiff-Legged Barbell Deadlift
+  form_description: |
+    Stand with the bar at mid-shin, hip-width stance. Knees very softly bent — almost straight. Hinge at the hips and grip the bar just outside the shins. Lift by extending the hips, keeping the knees nearly locked the whole way. Lower under control to mid-shin without bending the knees further.
+  common_mistakes: |
+    - Bending the knees through the lift (turns it into a regular deadlift)
+    - Rounding the lower back to reach the bar
+    - Lifting past lockout into a lean-back
+    - Going so heavy the hamstrings can't control the lower
+  breathing_cues: |
+    Big breath at the top, brace through the hinge, exhale at lockout.
+  primary_benefit: |
+    Loads the hamstrings under deep stretch — a brutal but unbeatable builder for hamstring size and strength.
+
+- name: Deficit Deadlift
+  form_description: |
+    Stand on a 1-2 inch platform with the bar over mid-foot. Hip-width stance, grip just outside the shins. The increased range means the hips sit lower at the start. Pull the slack out, push the floor away, and stand up. Don't compromise the start position to make the bar feel lighter.
+  common_mistakes: |
+    - Rounding the lower back to reach the bar from the deficit
+    - Hips shooting up first because the start position is too low for you
+    - Bar drifting forward at lift-off
+    - Using a deficit so high you lose the back position
+  breathing_cues: |
+    Big breath at the bottom, brace, hold through the lift, exhale at lockout.
+  primary_benefit: |
+    Trains the deadlift through a longer range — useful for lifters who fail at the floor or want to build off-the-deck strength.
+
+- name: Trap Bar Deadlift
+  form_description: |
+    Step inside the trap bar with feet hip-width, grip the handles at your sides. Hinge at the hips and bend the knees to drop down to the handles — the trap bar puts the load in line with the body so the back stays more upright than a barbell pull. Push the floor away and stand it up.
+  common_mistakes: |
+    - Squatting the lift instead of hinging — the bar is meant to load the posterior chain
+    - Rounding the lower back at lift-off
+    - Heels lifting at the start position
+    - Locking out with a hard lean-back
+  breathing_cues: |
+    Big breath at the bottom, brace, hold through the lift, exhale at lockout.
+  primary_benefit: |
+    Easier on the lower back than a conventional deadlift — the variant most coaches programme first for general-population lifters.
+
+- name: Snatch-Grip Deadlift
+  form_description: |
+    Take a very wide grip on the bar — hands roughly at the outer rings of the knurling. Hip-width stance, bar over mid-foot. The wide grip puts the hips lower and the chest higher at the start. Pull the slack out, push the floor away, lockout standing tall.
+  common_mistakes: |
+    - Grip slipping mid-rep (use straps once the weight gets serious)
+    - Rounding the upper back through the start
+    - Letting the bar drift forward at lift-off
+    - Treating it like a regular deadlift and starting with hips too high
+  breathing_cues: |
+    Big breath at the bottom, brace, hold through the lift, exhale at lockout.
+  primary_benefit: |
+    The wide grip pulls the upper back into the lift — builds trap, rhomboid and lat thickness in one heavy compound.
+
+- name: Rack Pull
+  form_description: |
+    Set the safety pins in the rack just below the knees. Bar resting on the pins, stance hip-width. Grip the bar, hinge at the hips and bend the knees to set position. Pull the slack out, push the floor away, and lockout standing tall. The shortened range lets you load heavy.
+  common_mistakes: |
+    - Rounding the upper back to chase weight
+    - Bouncing the bar off the pins between reps
+    - Setting the pins too low and just doing a deadlift with extra steps
+    - Hyperextending hard at lockout
+  breathing_cues: |
+    Big breath at the bottom, brace, hold through the pull, exhale at lockout.
+  primary_benefit: |
+    Loads the top half of the deadlift — useful for building trap and upper-back thickness with serious weight.
+
+- name: Single Leg Glute Bridge
+  form_description: |
+    Lie on your back, one foot planted flat with the shin nearly vertical. Lift the other leg straight up or hold it bent at 90°. Drive through the heel of the planted foot and lift the hips until the body forms a straight line from shoulder to knee. Squeeze the glutes at the top. Lower under control.
+  common_mistakes: |
+    - Driving with the lower back instead of the glutes
+    - Letting the planted foot drift forward (turns into a hamstring curl)
+    - Letting the hips tilt to one side at the top
+    - Rushing reps without squeezing at the top
+  breathing_cues: |
+    Inhale at the bottom, exhale and squeeze at the top.
+  primary_benefit: |
+    Loads each glute on its own — useful for correcting side-to-side imbalances and as a low-equipment warm-up for the hip thrust.
+
+# ============================================================
+# Calf + leg accessories
+# ============================================================
+
+- name: Donkey Calf Raises
+  form_description: |
+    Set up on a donkey calf machine or bend forward at the hips with a partner / pad loaded over the hips. Balls of the feet on the platform, heels hanging off. Drive up onto the toes and squeeze the calves at the top for a beat. Lower slowly into a deep heel-below-platform stretch.
+  common_mistakes: |
+    - Bouncing reps for tendon spring instead of calf work
+    - Cutting the bottom stretch short
+    - Bending the knees through the rep (turns it into a half-squat)
+    - Rushing the descent and missing the eccentric
+  breathing_cues: |
+    Exhale at the top squeeze, inhale on the descent.
+  primary_benefit: |
+    The hip-hinge position stretches the gastrocnemius further than a standing calf raise — builds the high calf belly.
+
+# ============================================================
+# Bicep variants
+# ============================================================
+
+- name: Preacher Curl
+  form_description: |
+    Set the preacher pad so your armpits rest firmly over the top edge. Grip the EZ bar with the angled sections, arms fully extended over the pad. Curl the bar up by flexing the biceps, keeping the upper arms glued to the pad. Lower under tight control through a full stretch.
+  common_mistakes: |
+    - Lifting the elbows off the pad to cheat
+    - Jerking out of the bottom instead of controlling the stretch
+    - Cutting the top range short
+    - Wrist-curling at the top to add forearm range
+  breathing_cues: |
+    Inhale at the bottom stretch, exhale as you curl up.
+  primary_benefit: |
+    Loads the biceps in the lengthened position — the lengthened-bias variant that grows arms faster than standing curls.
+
+- name: Dumbbell Preacher Curl
+  form_description: |
+    Set the preacher pad so your armpit sits firmly on the top edge. Hold a dumbbell with the working arm fully extended over the pad, palm up. Curl up by flexing the bicep, keeping the upper arm pinned to the pad. Lower under tight control to a full stretch. The other arm can support the body or rest.
+  common_mistakes: |
+    - Letting the elbow lift off the pad at the top
+    - Jerking out of the stretch
+    - Cutting the top contraction short
+    - Wrist-curling at the top instead of letting the bicep finish
+  breathing_cues: |
+    Inhale at the bottom stretch, exhale as you curl up.
+  primary_benefit: |
+    Loads each bicep through a deep stretch — corrects left-right imbalances and isolates the muscle hard.
+
+- name: Machine Preacher Curls
+  form_description: |
+    Sit with the chest braced against the pad and the upper arms resting fully on the lower pad. Grip the handles with palms up. Curl the handles up by flexing the biceps, keeping the upper arms glued to the pad. Lower under control. The machine's fixed line of pull lets you push closer to failure.
+  common_mistakes: |
+    - Coming off the pad mid-rep to use body english
+    - Half-repping at the top or bottom
+    - Yanking out of the bottom instead of controlling the stretch
+    - Gripping so hard the forearms take over
+  breathing_cues: |
+    Inhale at the bottom, exhale as you curl up.
+  primary_benefit: |
+    The fixed path makes it the easiest preacher variant to push to failure — high-output bicep volume late in a session.
+
+- name: Concentration Curls
+  form_description: |
+    Sit on the end of a bench, feet flat. Hold a dumbbell in one hand, resting the back of the upper arm against the inner thigh. Curl the dumbbell up by flexing the bicep, keeping the upper arm pinned to the thigh. Squeeze at the top, then lower under control to a full stretch.
+  common_mistakes: |
+    - Lifting the elbow off the thigh to cheat
+    - Swinging the torso to add momentum
+    - Cutting the top squeeze short
+    - Letting the wrist curl under load
+  breathing_cues: |
+    Inhale at the bottom, exhale as you curl up.
+  primary_benefit: |
+    Isolates the bicep with no shoulder involvement — the cleanest peak-contraction lift in the catalogue.
+
+- name: Incline Dumbbell Curl
+  form_description: |
+    Set a bench to about 60°. Sit back with a dumbbell in each hand, arms hanging straight down at your sides, palms forward. Curl one or both dumbbells up by flexing the biceps, keeping the upper arms vertical against the bench. Squeeze at the top, lower to a full stretch.
+  common_mistakes: |
+    - Letting the elbows drift forward to fold the weight up
+    - Swinging the dumbbells with shoulder movement
+    - Cutting the bottom stretch short
+    - Setting the bench too upright (kills the stretch)
+  breathing_cues: |
+    Inhale at the bottom stretch, exhale as you curl up.
+  primary_benefit: |
+    The incline puts the biceps in the deepest stretched position any bicep lift offers — the highest-output growth driver.
+
+- name: Spider Curl
+  form_description: |
+    Set a bench at a high incline (around 60°) and lie face-down on it, chest on the pad, arms hanging straight down. Hold a dumbbell in each hand, palms forward. Curl the dumbbells up by flexing the biceps, keeping the upper arms vertical. Squeeze at the top and lower to a full stretch.
+  common_mistakes: |
+    - Letting the upper arms drift forward
+    - Lifting the chest off the pad to swing the weight
+    - Half-repping at the top
+    - Going so heavy form breaks on rep one
+  breathing_cues: |
+    Inhale at the bottom, exhale as you curl up.
+  primary_benefit: |
+    Cable tension and the chest-down angle keep the biceps loaded through the whole rep — a clean isolated peak builder.
+
+- name: Bayesian Curl
+  form_description: |
+    Stand facing away from a low cable, single-handle attached, cable running between your arm and your side. Step forward so the cable pulls your arm slightly behind the body. Curl the handle up by flexing the bicep, keeping the elbow behind the line of the body. Squeeze, then lower to a full stretch.
+  common_mistakes: |
+    - Letting the elbow drift forward — the whole point is to keep it back
+    - Standing too close and losing tension at the bottom
+    - Twisting the torso to chase range
+    - Yanking the cable instead of controlling the stretch
+  breathing_cues: |
+    Inhale at the bottom stretch, exhale as you curl up.
+  primary_benefit: |
+    The elbow-behind-body position loads the long head of the bicep at a stretch nothing else can match — a top peak-stretch builder.
+
+# ============================================================
+# Tricep variants
+# ============================================================
+
+- name: Lying Triceps Press
+  form_description: |
+    Lie flat on a bench with an EZ bar held above the chest, arms extended. Keep the upper arms pointed roughly straight up and the elbows steady. Bend at the elbows to lower the bar towards the forehead — or just past it for more stretch. Extend back up by driving through the triceps.
+  common_mistakes: |
+    - Letting the upper arms drift back so the shoulders take over
+    - Flaring the elbows wide
+    - Bouncing the bar at the bottom
+    - Locking out so hard the elbows hyperextend
+  breathing_cues: |
+    Inhale on the descent, exhale on the extension.
+  primary_benefit: |
+    Loads the long head of the tricep under length — a classic mass-builder for the back of the arm.
+
+- name: Dips - Triceps Version
+  form_description: |
+    Set up on parallel bars with arms straight, body upright (not leaning forward). Lower under control by bending the elbows, keeping them tucked close to the ribs. Stop when the upper arms are roughly parallel to the floor. Press back up to lockout without slamming the joint.
+  common_mistakes: |
+    - Leaning the torso forward (turns it into a chest dip)
+    - Flaring the elbows wide
+    - Cutting the bottom range short and missing the stretch
+    - Locking out so hard the shoulders shrug up
+  breathing_cues: |
+    Inhale on the descent, exhale on the press up.
+  primary_benefit: |
+    The highest-output tricep mass builder going — uses bodyweight in the strongest pressing line for the arms.
+
+- name: Dips - Chest Version
+  form_description: |
+    Set up on parallel bars and lean the torso forward about 30° from vertical. Lower under control by bending the elbows out slightly — wider than tricep dips. Stop when you feel a strong chest stretch at the bottom. Press back up by squeezing the chest, keeping the forward lean throughout.
+  common_mistakes: |
+    - Staying upright (shifts the work onto the triceps)
+    - Going too deep and stressing the front delt
+    - Flaring the elbows so wide the shoulder feels pinched
+    - Locking out so hard the chest disengages
+  breathing_cues: |
+    Inhale on the descent, exhale on the press up.
+  primary_benefit: |
+    Loads the lower chest through a deeper stretch than any pressing variant — the most efficient bodyweight chest builder.
+
+- name: Bench Dips
+  form_description: |
+    Sit on the edge of a bench, hands gripping the edge just outside the hips. Slide the hips forward off the bench, legs straight or bent for an easier variant. Lower the hips by bending the elbows until the upper arms are parallel to the floor. Press back up.
+  common_mistakes: |
+    - Letting the hips drift forward away from the bench
+    - Flaring the elbows wide instead of straight back
+    - Cutting the range short
+    - Shrugging the shoulders up at the bottom
+  breathing_cues: |
+    Inhale on the descent, exhale on the press up.
+  primary_benefit: |
+    A scalable tricep lift with no equipment — useful for high-rep finishers or as a regression to parallel-bar dips.
+
+# ============================================================
+# Shoulder / delt variants
+# ============================================================
+
+- name: Front Plate Raise
+  form_description: |
+    Stand tall holding a weight plate with both hands at hip height, gripping at 3 and 9 o'clock. Keep a slight bend in the elbows. Raise the plate forward and up until the arms are level with the shoulders. Pause briefly, then lower under control.
+  common_mistakes: |
+    - Swinging the plate up with the lower back
+    - Going past shoulder height (the front delt has done its job by then)
+    - Locking the elbows straight and stressing the joint
+    - Letting the shoulders shrug up at the top
+  breathing_cues: |
+    Inhale at the bottom, exhale as you raise the plate.
+  primary_benefit: |
+    Directly loads the front delt — useful for lifters who under-build the front delt because their pressing volume is low.
+
+- name: Reverse Flyes
+  form_description: |
+    Hinge forward at the hips with a flat back, dumbbells hanging straight down. Keep a soft bend in the elbows. Raise the dumbbells out to the sides — leading with the elbows, not the hands — until the upper arms are roughly parallel to the floor. Squeeze the rear delts and shoulder blades briefly, lower under control.
+  common_mistakes: |
+    - Standing too upright (turns into a row)
+    - Using momentum to swing the weights up
+    - Lifting with the traps instead of the rear delts
+    - Locking the elbows straight under load
+  breathing_cues: |
+    Exhale as you raise, inhale as you lower.
+  primary_benefit: |
+    Isolates the rear delts and the muscles between the shoulder blades — the cheapest insurance against pressing-heavy shoulder pain.
+
+# ============================================================
+# Back / lat accessories
+# ============================================================
+
+- name: Bent-Arm Dumbbell Pullover
+  form_description: |
+    Lie across a bench with the upper back resting on it, hips dropped slightly below the bench. Hold one dumbbell with both hands cupping the top end, arms bent at about 90° over the chest. Lower the dumbbell back over the head until you feel a strong lat stretch. Pull it back over the chest by driving with the lats.
+  common_mistakes: |
+    - Straightening the arms to chase range (turns it into a different lift)
+    - Letting the hips lift up and out of the stretch
+    - Cutting the bottom stretch short
+    - Going so heavy the shoulders take over
+  breathing_cues: |
+    Inhale as you lower the dumbbell, exhale as you pull it back over the chest.
+  primary_benefit: |
+    Stretches the lats and lower chest in a way no row or pulldown can — a useful builder for the long lat insertion.
+
+- name: Barbell Shrug
+  form_description: |
+    Stand tall with a barbell at the front of the thighs, hands shoulder-width. Keep the arms straight. Shrug the shoulders straight up towards the ears as high as you can. Pause briefly at the top, then lower under control to a full stretch.
+  common_mistakes: |
+    - Rolling the shoulders forward (no extra benefit, irritates the joint)
+    - Bending the elbows to fold the weight up
+    - Cutting the top range short
+    - Using so much weight the bar barely moves
+  breathing_cues: |
+    Exhale as you shrug up, inhale as you lower.
+  primary_benefit: |
+    Direct loading for the upper traps — fills out the top of the shoulder line that pulling lifts alone often miss.
+
+- name: Dumbbell Shrug
+  form_description: |
+    Stand tall with a dumbbell in each hand at the sides, arms straight. Shrug the shoulders straight up towards the ears as high as you can. Pause briefly at the top, then lower under control to a full stretch.
+  common_mistakes: |
+    - Rolling the shoulders forward through the rep
+    - Bending the elbows to fold the weight up
+    - Letting the dumbbells drift forward instead of straight up
+    - Cutting the top range short
+  breathing_cues: |
+    Exhale as you shrug up, inhale as you lower.
+  primary_benefit: |
+    Slightly longer range than the barbell version — the variant most lifters feel the traps on cleanest.
+
+# ============================================================
+# Lower-back / posterior chain
+# ============================================================
+
+- name: Good Morning
+  form_description: |
+    Set the bar across the upper traps as in a back squat. Step out, feet hip-width. Soft bend in the knees. Hinge at the hips, pushing the hips back as the chest tips forward. Lower until you feel a strong hamstring stretch — usually around 45° of torso tilt. Drive the hips forward to stand.
+  common_mistakes: |
+    - Rounding the lower back at the bottom
+    - Bending the knees through the lift (turns it into a squat)
+    - Going too heavy and grinding the stand-up
+    - Cutting the range short before the hamstrings load
+  breathing_cues: |
+    Big breath at the top, brace through the hinge, exhale on the way up.
+  primary_benefit: |
+    Strengthens the lower back and hamstrings under load — a powerlifter staple for fixing weak hip drive on the squat.
+
+- name: Hyperextensions (Back Extensions)
+  form_description: |
+    Set the pads of the hyper bench so the hips can hinge over the front edge. Lock the feet under the pads. Cross the arms across the chest or hold a plate. Hinge forward at the hips with a flat back until you feel a strong hamstring stretch. Reverse the hinge by driving the hips into the pad until the body is straight.
+  common_mistakes: |
+    - Hyperextending past straight at the top (the name is misleading)
+    - Rounding the lower back to chase range at the bottom
+    - Using momentum on the way up
+    - Loading too heavy and turning it into a quarter-rep
+  breathing_cues: |
+    Inhale on the descent, exhale on the way up.
+  primary_benefit: |
+    Loads the hamstrings, glutes and spinal erectors together — the workhorse lift for posterior chain endurance.
+
+# ============================================================
+# Core
+# ============================================================
+
+- name: Sit-Up
+  form_description: |
+    Lie on your back, knees bent and feet flat on the floor or hooked under a pad. Cross the arms across the chest or hands behind the head. Curl the spine up off the floor until the torso is roughly upright, leading with the chest. Lower under control to the floor.
+  common_mistakes: |
+    - Yanking on the neck with the hands behind the head
+    - Using momentum to fold up
+    - Cutting the descent short and bouncing reps
+    - Lifting the hips off the floor instead of curling the spine
+  breathing_cues: |
+    Exhale as you curl up, inhale on the lower.
+  primary_benefit: |
+    The classic loaded ab lift — scales with weight on the chest and trains spinal flexion through a full range.
+
+- name: Decline Crunch
+  form_description: |
+    Lock the feet in at the top of a decline bench, knees bent. Lie back with the hands across the chest or behind the head. Curl the torso up by contracting the abs, leading with the chest — don't try to sit all the way up. Lower under control without losing tension.
+  common_mistakes: |
+    - Yanking on the neck with the hands behind the head
+    - Sitting up all the way (turns it into a hip flexor lift)
+    - Rushing the descent
+    - Going so steep the lower back arches under load
+  breathing_cues: |
+    Exhale as you crunch up, inhale on the lower.
+  primary_benefit: |
+    Loads the abs through a longer range than a floor crunch — and scales easily with a plate held across the chest.

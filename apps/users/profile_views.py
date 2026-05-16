@@ -236,20 +236,28 @@ DEFAULT_NOTIFICATION_PREFS = {
     # User configurable in ProfileNotificationsSheet.
     "workout_reminder_time_min": 18 * 60,
 
-    # THEME-LIGHT (May 2026, Deen QC) — user-selected app theme.
-    # One of "system" / "light" / "dark". `notification_prefs` is
-    # already the on-server bag for per-user settings that aren't
-    # important enough to deserve their own column; theme fits the
-    # same shape, and reusing the existing PATCH endpoint avoids a
-    # new route. iOS mirrors this to UserDefaults so the choice
-    # applies instantly + survives offline launches.
-    "theme": "system",
+    # THEME-ACCENT (May 2026, Deen QC) — user-selected accent colour.
+    # The light/dark theme picker was retired (app is dark only); the
+    # `theme` key is kept here for backwards-compatibility with older
+    # clients that may still PATCH it, but it is no longer read by
+    # iOS. The new `accent` key holds the chosen palette
+    # (lime / coral / rose / sky / violet / amber); iOS hydrates
+    # ThemeManager from it on login so the colour follows the user
+    # across devices.
+    "theme": "dark",
+    "accent": "lime",
 }
 
 
 # THEME-LIGHT — accepted theme values. PATCH coerces anything else
 # back to "system" so a malformed iOS payload can't poison the field.
+# Kept for back-compat; new clients ignore this key.
 _ALLOWED_THEMES = {"system", "light", "dark"}
+
+# THEME-ACCENT — accepted accent values. PATCH coerces anything else
+# back to "lime" (the default brand colour) so an out-of-vocabulary
+# client can't poison the field.
+_ALLOWED_ACCENTS = {"lime", "coral", "rose", "sky", "violet", "amber"}
 
 
 def _resolved_notification_prefs(user):
@@ -282,6 +290,9 @@ def notification_prefs_for_me(request):
     # falls back to "system" instead of corrupting the stored prefs.
     if "theme" in cleaned and cleaned["theme"] not in _ALLOWED_THEMES:
         cleaned["theme"] = "system"
+    # THEME-ACCENT — same coercion for the new accent palette key.
+    if "accent" in cleaned and cleaned["accent"] not in _ALLOWED_ACCENTS:
+        cleaned["accent"] = "lime"
     merged = {**(user.notification_prefs or {}), **cleaned}
     user.notification_prefs = merged
     user.save(update_fields=["notification_prefs"])

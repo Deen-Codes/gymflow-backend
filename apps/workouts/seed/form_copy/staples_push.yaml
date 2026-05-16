@@ -11,6 +11,8 @@
     - Asymmetric press (one side rises faster than the other)
   breathing_cues: |
     Big breath in at the top, hold through the descent and the bottom of the press, exhale once you're past the sticking point.
+  primary_benefit: |
+    The benchmark upper-body strength lift — builds chest, front delt and tricep mass in one movement.
 
 - name: Incline Bench Press
   form_description: |
@@ -21,6 +23,8 @@
     - Losing the upper-back arch
   breathing_cues: |
     Inhale at the top, hold through the lift, exhale at lockout.
+  primary_benefit: |
+    Builds the upper chest shelf — the area that fills out the collarbone and gives the chest its top edge.
 
 - name: Dumbbell Bench Press
   form_description: |
@@ -31,6 +35,8 @@
     - Pressing in a wide arc rather than over the chest
   breathing_cues: |
     Inhale on the descent, exhale on the press.
+  primary_benefit: |
+    Builds chest size with a deeper stretch than the barbell and forces each side to work alone.
 
 - name: Incline Dumbbell Press
   form_description: |
@@ -41,6 +47,8 @@
     - Bouncing reps
   breathing_cues: |
     Inhale down, exhale up.
+  primary_benefit: |
+    Hits the upper chest with a longer range than the incline barbell — the variant most lifters grow fastest on.
 
 - name: Push-Up
   form_description: |
@@ -52,6 +60,8 @@
     - Cutting depth short
   breathing_cues: |
     Inhale on the descent, exhale on the press.
+  primary_benefit: |
+    The chest, triceps and core in one no-equipment movement — and a useful diagnostic for total-body stability.
 
 - name: Cable Chest Fly
   form_description: |
@@ -62,6 +72,8 @@
     - Standing fully upright (less chest engagement)
   breathing_cues: |
     Inhale as you stretch, exhale as you bring the handles together.
+  primary_benefit: |
+    Isolates the chest under constant cable tension — the cleanest way to grow the inner pec line.
 
 - name: Overhead Press
   form_description: |
@@ -73,6 +85,8 @@
     - Letting the bar drift too far forward as you press up
   breathing_cues: |
     Big breath in and brace. Hold through the press, exhale at lockout.
+  primary_benefit: |
+    The benchmark for vertical pressing strength — builds front delt size and upper-back stability together.
 
 - name: Seated Dumbbell Press
   form_description: |
@@ -84,6 +98,8 @@
     - Arching the lower back excessively
   breathing_cues: |
     Inhale at the bottom, exhale on the press.
+  primary_benefit: |
+    Builds front delt mass with a deeper stretch than the barbell version, and the back pad takes the lower back out.
 
 - name: Lateral Raise
   form_description: |
@@ -95,6 +111,8 @@
     - Wrist tipping like pouring out a jug — rotate slightly so the pinky leads
   breathing_cues: |
     Exhale as you raise, inhale as you lower.
+  primary_benefit: |
+    The single most useful lift for shoulder width — grows the side delt that gives the shoulders their cap.
 
 - name: Cable Lateral Raise
   form_description: |
@@ -105,6 +123,8 @@
     - Yanking with the body
   breathing_cues: |
     Exhale up, inhale down.
+  primary_benefit: |
+    Loads the side delt at the bottom where dumbbells fall slack — better tension through the full range.
 
 - name: Rear Delt Fly
   form_description: |
@@ -115,6 +135,8 @@
     - Lifting more with the traps than the rear delts
   breathing_cues: |
     Exhale as you raise, inhale as you lower.
+  primary_benefit: |
+    Builds the rear delt that fills out the back of the shoulder and keeps the rotator cuff healthy under pressing volume.
 
 - name: Cable Tricep Pushdown
   form_description: |
@@ -125,6 +147,8 @@
     - Using too much weight and turning it into a half-rep
   breathing_cues: |
     Exhale on the push, inhale on the return.
+  primary_benefit: |
+    Isolates the lateral tricep head — the part that gives the arm its visible horseshoe shape.
 
 - name: Overhead Tricep Extension
   form_description: |
@@ -135,6 +159,8 @@
     - Arching the lower back as you extend
   breathing_cues: |
     Inhale on the way down, exhale on the extension.
+  primary_benefit: |
+    Stretches the long head of the tricep at full overhead — the variant that adds thickness to the back of the arm.
 
 - name: Skullcrusher
   form_description: |
@@ -145,3 +171,5 @@
     - Going too heavy and stalling reps
   breathing_cues: |
     Inhale on the descent, exhale on the extension.
+  primary_benefit: |
+    Loads the long head of the tricep through a long range — one of the highest-output tricep mass builders.

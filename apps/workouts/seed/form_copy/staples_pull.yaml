@@ -10,6 +10,8 @@
     - Pulling with the biceps instead of the lats
   breathing_cues: |
     Exhale as you pull up, inhale as you lower.
+  primary_benefit: |
+    The benchmark vertical pulling lift — builds lat width and grip strength faster than any machine substitute.
 
 - name: Lat Pulldown
   form_description: |
@@ -21,6 +23,8 @@
     - Pulling with the biceps instead of the lats
   breathing_cues: |
     Exhale as you pull, inhale as you return.
+  primary_benefit: |
+    Trains the same pattern as the pull-up at a load you can scale precisely — the workhorse for lat width.
 
 - name: Barbell Row
   form_description: |
@@ -32,6 +36,8 @@
     - Pulling to the throat instead of the lower chest
   breathing_cues: |
     Inhale at the bottom, exhale on the pull.
+  primary_benefit: |
+    Builds thickness through the mid-back and lats — the horizontal counter-balance to the bench press.
 
 - name: Single-Arm Dumbbell Row
   form_description: |
@@ -43,6 +49,8 @@
     - Not getting the full stretch at the bottom
   breathing_cues: |
     Inhale at the bottom, exhale on the pull.
+  primary_benefit: |
+    Lets each lat work through a deeper stretch than the bar version and corrects left-right imbalances.
 
 - name: Seated Cable Row
   form_description: |
@@ -54,6 +62,8 @@
     - Rounding the lower back
   breathing_cues: |
     Inhale at the front, exhale on the pull.
+  primary_benefit: |
+    Constant tension through the rowing pattern — easier on the lower back than barbell rows at similar loads.
 
 - name: Chest-Supported Row
   form_description: |
@@ -64,6 +74,8 @@
     - Cutting the stretch short
   breathing_cues: |
     Exhale on the row, inhale on the lower.
+  primary_benefit: |
+    Pure back work without lower-back fatigue — the cleanest row variant for late-session volume.
 
 - name: Face Pull
   form_description: |
@@ -75,6 +87,8 @@
     - Letting the elbows drop low
   breathing_cues: |
     Exhale as you pull, inhale as you return.
+  primary_benefit: |
+    Strengthens the rear delts and external rotators — the cheapest insurance policy against bench-press shoulder pain.
 
 - name: Barbell Curl
   form_description: |
@@ -86,6 +100,8 @@
     - Using too much wrist
   breathing_cues: |
     Exhale on the curl, inhale on the lower.
+  primary_benefit: |
+    The benchmark bicep mass-builder — loads both bicep heads under a long range with a stable bar path.
 
 - name: Dumbbell Curl
   form_description: |
@@ -97,6 +113,8 @@
     - Wrist bending forward instead of staying neutral
   breathing_cues: |
     Exhale on the curl, inhale on the lower.
+  primary_benefit: |
+    Allows each arm a deeper stretch than the bar and a wrist position that suits the joint.
 
 - name: Hammer Curl
   form_description: |
@@ -107,3 +125,5 @@
     - Elbows drifting forward
   breathing_cues: |
     Exhale up, inhale down.
+  primary_benefit: |
+    Builds the brachialis underneath the bicep — the muscle that pushes the bicep peak up and adds arm thickness.

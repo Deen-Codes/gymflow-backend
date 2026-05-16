@@ -219,6 +219,24 @@ def _provision_user_and_profile(spec: TestAccountSpec) -> User:
     profile.setup_training_done        = (spec.history_mode in ("full", "single_day"))
     profile.setup_nutrition_style_done = (spec.history_mode == "full")
 
+    # MACRO-SEED (May 2026, Deen QC) — pre-populated daily macro targets
+    # for accounts that should feel "set up" out of the gate so the
+    # reviewer / day1 demo never shows an empty Nutrition tab. Numbers
+    # are calibrated for the 178 cm / 78 kg / DOB 1995 male body stats
+    # we also seed (TDEE ~2,710 kcal via Mifflin-St Jeor + 1.5x activity,
+    # protein 1.8 g/kg for the build-muscle goal). day0 / reset stay at
+    # zero so the cold-start experience is still QC-able.
+    if spec.history_mode in ("full", "single_day"):
+        profile.target_calories = 2700
+        profile.target_protein  = 140
+        profile.target_carbs    = 310
+        profile.target_fats     = 69
+    else:
+        profile.target_calories = 0
+        profile.target_protein  = 0
+        profile.target_carbs    = 0
+        profile.target_fats     = 0
+
     profile.save()
     return user
 

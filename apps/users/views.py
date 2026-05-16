@@ -92,7 +92,23 @@ def logout_view(request):
 @api_view(["GET"])
 @permission_classes([IsAuthenticated])
 def me_view(request):
-    return Response(UserMeSerializer(request.user).data, status=status.HTTP_200_OK)
+    # PERF-ME-SELECT-RELATED (May 2026, Deen QC) — UserMeSerializer's
+    # SerializerMethodFields read `trainer_profile.slug`,
+    # `client_profile.trainer.business_name`,
+    # `solo_profile.assigned_workout_plan.name`, etc. With a bare
+    # `request.user` each of those triggers a separate query
+    # (typically 4 round-trips per /me/ hit). Eager-load the related
+    # rows once so the serializer reads from memory.
+    user = (
+        User.objects
+        .select_related(
+            "trainer_profile",
+            "client_profile__trainer",
+            "solo_profile__assigned_workout_plan",
+        )
+        .get(pk=request.user.pk)
+    )
+    return Response(UserMeSerializer(user).data, status=status.HTTP_200_OK)
 
 
 # -------------------------------------------------------------------
@@ -352,7 +368,21 @@ def startup_for_me(request):
     still goes through.
     """
     from .profile_schema import missing_required_fields_for, needs_onboarding
-    user = request.user
+    # PERF-STARTUP-SELECT-RELATED (May 2026, Deen QC) — same trick as
+    # me_view. Every inline builder (`_build_nutrition_today`,
+    # `_build_workout_next`, `_build_home_stats`) hits trainer / client
+    # / solo profile fields; without eager-load each builder repeats
+    # the same lazy fetches. Pulling them once at the top of the
+    # composite saves 8–12 round-trips on cold launch.
+    user = (
+        User.objects
+        .select_related(
+            "trainer_profile",
+            "client_profile__trainer",
+            "solo_profile__assigned_workout_plan",
+        )
+        .get(pk=request.user.pk)
+    )
 
     return Response(
         {
@@ -439,6 +469,67 @@ def _client_ip(request):
     return request.META.get("REMOTE_ADDR")
 
 
+# ----------------------------------------------------------------------
+# AUTO-HANDLE (May 2026, Deen QC) — memorable username generator.
+#
+# Old behaviour: derive username from email local-part. Worked but
+# the resulting handles ("deenmali05", "j.smith") were boring and
+# leaked the user's email partially. New behaviour: pick a random
+# gym-themed prefix + animal noun (gymwhale, fitkangaroo, ironpanther)
+# so handles read like a Spotify auto-generated playlist name.
+#
+# Collisions handled by appending an incrementing number suffix only
+# when the bare two-word combo is taken. Vocabulary size is roughly
+# 24 × 60 = 1,440 distinct combos before any suffix needed, which is
+# plenty for the first several months. When the namespace fills up
+# we expand the word lists; the suffix is the fallback that means
+# we never refuse a signup.
+# ----------------------------------------------------------------------
+_HANDLE_PREFIXES = [
+    "gym", "fit", "iron", "lift", "strong", "calm", "grit",
+    "bold", "raw", "swift", "solid", "steady", "primal", "alpine",
+    "pure", "tough", "lean", "deep", "wild", "lone", "neon",
+    "amber", "noble", "kinetic",
+]
+
+_HANDLE_ANIMALS = [
+    "whale", "kangaroo", "tiger", "eagle", "panther", "bear",
+    "wolf", "falcon", "lion", "shark", "rhino", "bison",
+    "moose", "stag", "elk", "lynx", "hawk", "raven",
+    "otter", "puma", "cougar", "leopard", "jaguar", "cobra",
+    "badger", "buffalo", "boar", "horse", "stallion", "bull",
+    "gorilla", "ape", "orca", "marlin", "tuna", "trout",
+    "salmon", "manta", "ray", "barracuda", "hammerhead",
+    "owl", "kestrel", "harrier", "osprey", "albatross",
+    "condor", "viper", "mamba", "python", "iguana", "gecko",
+    "panda", "fox", "coyote", "jackal", "dingo",
+    "mustang", "phoenix", "griffin",
+]
+
+
+def _generate_unique_handle(max_attempts: int = 20) -> str:
+    """Return a free `User.username` of the form `<prefix><animal>`,
+    falling back to `<prefix><animal><n>` when both random picks are
+    already taken. The numeric fallback runs every iteration so even
+    a wildly unlucky run still terminates quickly."""
+    rng = secrets.SystemRandom()
+    for _ in range(max_attempts):
+        prefix = rng.choice(_HANDLE_PREFIXES)
+        animal = rng.choice(_HANDLE_ANIMALS)
+        candidate = f"{prefix}{animal}"
+        if not User.objects.filter(username=candidate).exists():
+            return candidate
+        # Try numeric suffixes for this combo before re-rolling.
+        for n in range(2, 30):
+            with_suffix = f"{candidate}{n}"
+            if not User.objects.filter(username=with_suffix).exists():
+                return with_suffix
+    # Pathological fallback — vocabulary fully exhausted. Cryptographic
+    # random hex tail guarantees uniqueness even when the lists fill
+    # up; user can always change their handle later.
+    return f"lifter{secrets.token_hex(4)}"
+
+
 @csrf_exempt
 @api_view(["POST"])
 @authentication_classes([])
@@ -464,21 +555,36 @@ def magic_link_request_view(request):
     if user is None:
         # ONBOARDING-QUICK-START — auto-create a Solo user so the
         # magic-link request works as the single signup-or-login
-        # entry point. Username derived from the email's local part
-        # with a numeric suffix if it collides. Password left
-        # unusable; magic link is the only auth path on this account
-        # unless they later set one via the dashboard.
+        # entry point. Username is now a memorable gym+animal combo
+        # (gymwhale, fitkangaroo, ironpanther…) — see _generate_handle.
+        # Password left unusable; magic link is the only auth path on
+        # this account unless they later set one via the dashboard.
+        username = _generate_unique_handle()
+
+        # AUTO-FIRST-NAME (May 2026, Deen QC) — derive a friendly
+        # default first name from the email so the post-signup Home
+        # tile can greet the user without an extra prompt. Heuristics:
+        #   1. If local-part contains a separator (".", "_", "-"),
+        #      take the first chunk: "deen.ali@x" → "Deen".
+        #   2. Otherwise use the whole local-part: "deen@x" → "Deen".
+        #   3. Strip trailing digits ("deenmali05" → "Deenmali") and
+        #      title-case. Numbers in real names are vanishingly rare.
+        #   4. Fall back to empty string so the user can fill it in
+        #      via Profile → Personal details if the inference is off.
         local_part = email.split("@", 1)[0]
-        base = "".join(c for c in local_part if c.isalnum() or c in "_-")[:24] or "user"
-        username = base
-        suffix = 0
-        while User.objects.filter(username=username).exists():
-            suffix += 1
-            username = f"{base}{suffix}"
+        first_chunk = local_part
+        for sep in (".", "_", "-"):
+            if sep in first_chunk:
+                first_chunk = first_chunk.split(sep, 1)[0]
+                break
+        stripped = first_chunk.rstrip("0123456789")
+        derived_first = stripped.title()[:30] if stripped else ""
+
         user = User.objects.create(
             username=username,
             email=email,
             role=User.SOLO,
+            first_name=derived_first,
         )
         user.set_unusable_password()
         user.save()

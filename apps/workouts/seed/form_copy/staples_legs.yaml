@@ -13,6 +13,8 @@
     - Bar drifting onto the neck instead of sitting on the traps
   breathing_cues: |
     Take a big breath in at the top and brace before you descend. Hold the breath through the bottom and the hardest part of the lift, then exhale once you're past the sticking point.
+  primary_benefit: |
+    The benchmark lower-body strength lift — builds quad, glute and core mass with the heaviest loading the body can carry.
 
 - name: Front Squat
   form_description: |
@@ -24,6 +26,8 @@
     - Wrist pain from gripping too tight — the rack is shoulder support, not hand support
   breathing_cues: |
     Brace at the top, hold through the bottom, exhale on the way up.
+  primary_benefit: |
+    Shifts squat load onto the quads and forces an upright torso — kinder on the lower back than the back squat.
 
 - name: Goblet Squat
   form_description: |
@@ -35,6 +39,8 @@
     - Knees collapsing inward
   breathing_cues: |
     Inhale on the way down, exhale as you stand up.
+  primary_benefit: |
+    Teaches squat depth and an upright torso without barbell load — a clean way in for newer lifters.
 
 - name: Bulgarian Split Squat
   form_description: |
@@ -46,6 +52,8 @@
     - Torso too upright, which kills the glute stretch
   breathing_cues: |
     Inhale on the descent, exhale as you drive up.
+  primary_benefit: |
+    Loads the front leg through a deeper stretch than any bilateral squat — top builder for glute and quad size.
 
 - name: Walking Lunge
   form_description: |
@@ -57,6 +65,8 @@
     - Looking down (your torso follows your eyes)
   breathing_cues: |
     Inhale as you step and descend, exhale as you stand up.
+  primary_benefit: |
+    Trains each leg independently and adds a conditioning element — quads, glutes and stability in one move.
 
 - name: Conventional Deadlift
   form_description: |
@@ -69,6 +79,8 @@
     - Letting the chin tuck down or up; keep a neutral neck
   breathing_cues: |
     Big breath in at the bottom, brace, hold it through the lift, exhale only at the top.
+  primary_benefit: |
+    The benchmark posterior chain lift — builds the entire back of the body and teaches whole-body bracing.
 
 - name: Romanian Deadlift
   form_description: |
@@ -81,6 +93,8 @@
     - Not actually loading the hamstrings (looking for a stretch that isn't there)
   breathing_cues: |
     Inhale at the top and brace as you hinge down. Exhale on the way up.
+  primary_benefit: |
+    Trains the hamstrings and glutes under deep stretch — the cleanest hinge-pattern lift for posterior chain size.
 
 - name: Sumo Deadlift
   form_description: |
@@ -92,6 +106,8 @@
     - Pulling with the arms instead of pushing the floor away
   breathing_cues: |
     Inhale at the bottom, brace, hold through the pull, exhale at lockout.
+  primary_benefit: |
+    Shifts the pull onto the quads, glutes and adductors — easier on the lower back than the conventional pull.
 
 - name: Hip Thrust
   form_description: |
@@ -104,6 +120,8 @@
     - Letting the chin point at the ceiling
   breathing_cues: |
     Inhale at the bottom, exhale forcefully as you squeeze the glutes at the top.
+  primary_benefit: |
+    The highest-output glute builder — loads the muscle at peak contraction, where squats and deadlifts go slack.
 
 - name: Glute Bridge
   form_description: |
@@ -115,6 +133,8 @@
     - Rushing reps — slow and squeeze
   breathing_cues: |
     Inhale at the bottom, exhale and squeeze at the top.
+  primary_benefit: |
+    Teaches the glutes to fire through hip extension — the foundation pattern that scales up to the hip thrust.
 
 - name: Leg Press
   form_description: |
@@ -126,6 +146,8 @@
     - Going too deep and losing back contact with the seat
   breathing_cues: |
     Inhale on the descent, exhale on the press.
+  primary_benefit: |
+    Lets you load the quads heavily without spinal compression — the workhorse leg builder for higher rep work.
 
 - name: Leg Extension
   form_description: |
@@ -137,6 +159,8 @@
     - Lifting the bum off the seat
   breathing_cues: |
     Exhale as you extend, inhale as you lower.
+  primary_benefit: |
+    Isolates the quads through their full contraction — the only lift that loads the rectus femoris at full extension.
 
 - name: Lying Leg Curl
   form_description: |
@@ -147,6 +171,8 @@
     - Using momentum (kicking the legs up)
   breathing_cues: |
     Exhale on the curl, inhale on the lower.
+  primary_benefit: |
+    Isolates the hamstrings at the knee — the complement to RDLs that grows the lower-hamstring belly.
 
 - name: Seated Leg Curl
   form_description: |
@@ -157,6 +183,8 @@
     - Not getting full extension at the top
   breathing_cues: |
     Exhale on the curl, inhale on the return.
+  primary_benefit: |
+    Loads the hamstrings at full stretch — produces more growth per set than the lying version for most lifters.
 
 - name: Standing Calf Raise
   form_description: |
@@ -167,13 +195,5 @@
     - Bending the knees to use the quads
   breathing_cues: |
     Exhale on the way up, inhale on the way down.
-
-- name: Seated Calf Raise
-  form_description: |
-    Sit with knees bent 90 degrees and the pad just above your knees. Balls of the feet on the platform. Push up onto your toes, squeeze, and lower for a deep stretch. This loads the soleus more than standing variants.
-  common_mistakes: |
-    - Short range
-    - Pad too far forward — slips off the knees
-    - Rushing reps
-  breathing_cues: |
-    Exhale up, inhale down.
+  primary_benefit: |
+    Trains the gastrocnemius — the calf muscle that sits high on the leg and shapes the diamond look.

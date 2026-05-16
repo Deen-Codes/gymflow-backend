@@ -38,6 +38,12 @@ class UserMeSerializer(serializers.ModelSerializer):
     trainer_business_name = serializers.SerializerMethodField()
     trainer_id = serializers.SerializerMethodField()
     assigned_workout_plan_id = serializers.SerializerMethodField()
+    # PLAN-NAME-FIX (May 2026) — surface the assigned plan's display
+    # name so the iOS Home tile can render it instead of falling back
+    # to a hardcoded label. Solo users carry the plan on
+    # SoloProfile.assigned_workout_plan; clients on
+    # ClientProfile.assigned_workout_plan.
+    assigned_workout_plan_name = serializers.SerializerMethodField()
     display_name = serializers.SerializerMethodField()
     member_since = serializers.SerializerMethodField()
     has_avatar = serializers.SerializerMethodField()
@@ -56,6 +62,7 @@ class UserMeSerializer(serializers.ModelSerializer):
             "trainer_business_name",
             "trainer_id",
             "assigned_workout_plan_id",
+            "assigned_workout_plan_name",
             "member_since",
             "has_avatar",
         ]
@@ -120,6 +127,20 @@ class UserMeSerializer(serializers.ModelSerializer):
     def get_assigned_workout_plan_id(self, obj):
         if obj.role == User.CLIENT and hasattr(obj, "client_profile") and obj.client_profile.assigned_workout_plan:
             return obj.client_profile.assigned_workout_plan.id
+        if obj.role == User.SOLO and hasattr(obj, "solo_profile") and obj.solo_profile.assigned_workout_plan:
+            return obj.solo_profile.assigned_workout_plan.id
+        return None
+
+    def get_assigned_workout_plan_name(self, obj):
+        """Display name of the user's active programme. Solo accounts
+        carry the plan on `solo_profile.assigned_workout_plan`; clients
+        on `client_profile.assigned_workout_plan`. Returns None when
+        the user hasn't picked a programme yet — iOS substitutes a
+        generic label in that case."""
+        if obj.role == User.CLIENT and hasattr(obj, "client_profile") and obj.client_profile.assigned_workout_plan:
+            return obj.client_profile.assigned_workout_plan.name
+        if obj.role == User.SOLO and hasattr(obj, "solo_profile") and obj.solo_profile.assigned_workout_plan:
+            return obj.solo_profile.assigned_workout_plan.name
         return None
 
 

@@ -10,6 +10,8 @@
     - Looking up — neutral neck only, eyes at the floor a few inches in front of your hands
   breathing_cues: |
     Breathe shallow but steady through the diaphragm — don't hold your breath. Brace through your core continuously.
+  primary_benefit: |
+    Trains the core to brace under isometric load — the same skill that protects the spine on every heavy lift.
 
 - name: Hanging Leg Raise
   form_description: |
@@ -21,6 +23,8 @@
     - Shoulders shrugging up — keep them packed
   breathing_cues: |
     Exhale as you lift, inhale as you lower.
+  primary_benefit: |
+    Loads the lower abs through the longest range any ab lift can offer — and builds grip and shoulder stability as a bonus.
 
 - name: Cable Crunch
   form_description: |
@@ -32,6 +36,8 @@
     - Not staying in a stable kneeling position
   breathing_cues: |
     Exhale on the crunch, inhale on the return.
+  primary_benefit: |
+    Loads the abs heavily through spinal flexion — the only ab lift that scales like a barbell movement.
 
 - name: Dead Bug
   form_description: |
@@ -42,6 +48,8 @@
     - Holding breath
   breathing_cues: |
     Inhale at the centre, exhale slowly as you extend out.
+  primary_benefit: |
+    Teaches the core to brace while the limbs move — the foundation skill that transfers to every compound lift.
 
 - name: Bird Dog
   form_description: |
@@ -52,6 +60,8 @@
     - Speeding through the rep
   breathing_cues: |
     Exhale as you extend, inhale as you return.
+  primary_benefit: |
+    Trains anti-rotation and lower-back endurance — a useful warm-up for heavy hinge and squat days.
 
 - name: Pallof Press
   form_description: |
@@ -62,6 +72,8 @@
     - Pressing too fast
   breathing_cues: |
     Inhale before you press, exhale slowly through the press.
+  primary_benefit: |
+    Trains the obliques and deep core to resist rotation — the pattern that protects the spine under uneven loads.
 
 - name: Hollow Hold
   form_description: |
@@ -72,6 +84,8 @@
     - Holding breath
   breathing_cues: |
     Shallow steady breath through the diaphragm. Don't hold.
+  primary_benefit: |
+    Builds an iron-strong braced position — the gymnastics base that supports every overhead and pulling skill.
 
 - name: Russian Twist
   form_description: |
@@ -82,6 +96,8 @@
     - Going too fast (loses the brace)
   breathing_cues: |
     Steady breathing — exhale on each rotation.
+  primary_benefit: |
+    Trains rotational strength through the obliques — useful for any sport that throws or swings.
 
 - name: Side Plank
   form_description: |
@@ -93,3 +109,5 @@
     - Looking down at the floor — keep a neutral neck
   breathing_cues: |
     Steady breathing through the diaphragm. Don't hold.
+  primary_benefit: |
+    Builds lateral core endurance — the muscle group that keeps the pelvis level under a loaded carry or a single-leg lift.
