@@ -31,6 +31,14 @@ python manage.py import_exercise_catalog \
 # rows get topped up. Re-run with --overwrite to force a re-load
 # after a voice revision.
 python manage.py seed_exercise_form_copy
+
+# LINK-EXERCISE-CATALOG (May 2026, Deen QC) — back-link every
+# Exercise row to its ExerciseCatalog entry by case-insensitive
+# name match. SOLO programmes seed Exercise rows without setting
+# catalog_item_id; without this link, iOS sees catalog_id=null on
+# the API response and the form-detail bottom sheet stays empty.
+# Idempotent: rows already linked are skipped.
+python manage.py link_exercises_to_catalog
 # APPLE-REVIEW-BYPASS — provision (or refresh) the reviewer-only test
 # account. Idempotent; ensures reviewer@gymflow.coach exists on Pro AI
 # tier so the magic-link bypass route can sign them in. Set the env
