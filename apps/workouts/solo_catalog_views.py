@@ -325,6 +325,20 @@ def solo_programmes_create_custom(request):
                         rest_secs = rs
                 except (TypeError, ValueError):
                     pass
+                # SUPERSET-SUPPORT (May 2026, Deen QC) — first-
+                # session QC: "unable to put in supersets" when
+                # building from scratch. Accept an optional
+                # `superset_group` integer per exercise; iOS builder
+                # pairs consecutive exercises by assigning the same
+                # int. Defaults to None (no superset) so older
+                # clients keep working unchanged.
+                superset_group = None
+                if "superset_group" in ex_spec:
+                    try:
+                        sg = ex_spec.get("superset_group")
+                        superset_group = int(sg) if sg is not None else None
+                    except (TypeError, ValueError):
+                        superset_group = None
                 ex = Exercise.objects.create(
                     workout_day=day,
                     name=str(ex_spec.get("name", "Exercise"))[:255],
@@ -332,6 +346,7 @@ def solo_programmes_create_custom(request):
                     order=e_idx,
                     catalog_item=catalog_item,
                     rest_seconds=rest_secs,
+                    superset_group=superset_group,
                     provenance=Exercise.PROVENANCE_USER,
                 )
                 for s_idx, s in enumerate(ex_spec.get("sets") or []):

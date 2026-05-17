@@ -7,10 +7,10 @@ of the iOS Solo path; we use StoreKit 2 client-side, then validate
 the signed transaction on the backend before flipping the tier.
 
 Flow:
-  1. iOS: Product.products(for: ["com.gymflow.solo.pro_ai.month",
-                                 "com.gymflow.solo.pro_ai.year",
-                                 "com.gymflow.solo.pro.month",
-                                 "com.gymflow.solo.pro.year"])
+  1. iOS: Product.products(for: ["com.afletics.solo.pro_plus.month",
+                                 "com.afletics.solo.pro_plus.year",
+                                 "com.afletics.solo.pro.month",
+                                 "com.afletics.solo.pro.year"])
   2. iOS: user taps a tier → product.purchase()
   3. iOS: on .verified result, POST the JWS-signed transaction to
         /api/users/solo/iap/verify/  { "jws": "<…>" }
@@ -30,10 +30,10 @@ Verifying the JWS without dragging in app-store-server-library:
   • Trust `productId` to identify the tier.
 
 Product IDs (configure these in App Store Connect → IAP):
-  com.gymflow.solo.pro.month       → Pro monthly
-  com.gymflow.solo.pro.year        → Pro annual
-  com.gymflow.solo.pro_ai.month    → Pro AI monthly (with 7-day trial)
-  com.gymflow.solo.pro_ai.year     → Pro AI annual (with 7-day trial)
+  com.afletics.solo.pro.month       → Afletics Pro monthly
+  com.afletics.solo.pro.year        → Afletics Pro annual
+  com.afletics.solo.pro_plus.month  → Afletics Pro Plus monthly (with 14-day trial)
+  com.afletics.solo.pro_plus.year   → Afletics Pro Plus annual (with 14-day trial)
 """
 import base64
 import json
@@ -58,21 +58,21 @@ log = logging.getLogger(__name__)
 
 # Map Apple product ID → (tier, has_trial, period_days)
 PRODUCT_MAP = {
-    "com.gymflow.solo.pro.month":    (SoloProfile.TIER_PRO,    False, 30),
-    "com.gymflow.solo.pro.year":     (SoloProfile.TIER_PRO,    False, 365),
-    "com.gymflow.solo.pro_ai.month": (SoloProfile.TIER_PRO_AI, True,  30),
-    "com.gymflow.solo.pro_ai.year":  (SoloProfile.TIER_PRO_AI, True,  365),
+    "com.afletics.solo.pro.month":      (SoloProfile.TIER_PRO,    False, 30),
+    "com.afletics.solo.pro.year":       (SoloProfile.TIER_PRO,    False, 365),
+    "com.afletics.solo.pro_plus.month": (SoloProfile.TIER_PRO_AI, True,  30),
+    "com.afletics.solo.pro_plus.year":  (SoloProfile.TIER_PRO_AI, True,  365),
 }
 
 # AFLETICS-RENAME (May 2026, Deen QC) — bundle ID flipped from
 # coach.gymflow.app → com.afletics.app when the app was renamed from
 # GymFlow to Afletics. The JWS bundleId check below must match the
 # iOS app's actual bundle ID or every IAP verification will fail
-# with "bundleId mismatch". The IAP PRODUCT_MAP above intentionally
-# keeps the com.gymflow.solo.* product IDs — Apple lets a new bundle
-# register the same legacy product IDs in App Store Connect, and
-# preserving them means existing subscribers carry over cleanly.
-# Override via APPLE_BUNDLE_ID env var on Render if/when needed.
+# with "bundleId mismatch". Product IDs are also rebranded to
+# com.afletics.solo.* on the fresh ASC entry — no installed user base
+# to preserve, and keeping a "gymflow" prefix in user-facing receipt
+# emails would be confusing. Override via APPLE_BUNDLE_ID env var on
+# Render if/when needed.
 EXPECTED_BUNDLE_ID = getattr(settings, "APPLE_BUNDLE_ID", "com.afletics.app")
 
 

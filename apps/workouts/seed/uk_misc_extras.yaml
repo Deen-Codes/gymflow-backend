@@ -78,3 +78,17 @@
 - {external_id: gymflow_calf_raise_donkey, name: Donkey Calf Raise, muscle_group: calves, secondary_muscles: "", equipment: machine, level: intermediate, mechanic: isolation, force: push, category: strength}
 - {external_id: gymflow_seated_db_calf, name: Seated Dumbbell Calf Raise, muscle_group: calves, secondary_muscles: "", equipment: dumbbell, level: beginner, mechanic: isolation, force: push, category: strength}
 - {external_id: gymflow_single_leg_calf, name: Single-Leg Calf Raise, muscle_group: calves, secondary_muscles: "", equipment: body only, level: beginner, mechanic: isolation, force: push, category: strength}
+
+# QC-LAT-PULLDOWNS (May 2026, Deen QC) — first-session feedback in
+# the gym surfaced that "Neutral-Grip Lat Pulldown" was missing.
+# Backfilling the missing grip variants here so the catalog covers
+# every common lat-pulldown setup (the yuhonas dataset already ships
+# Wide-Grip, Close-Grip, V-Bar, One Arm, Underhand, and Behind-the-
+# Neck — we keep those + add the gaps below). Reverse-Grip + Close-
+# Grip already exist further up; only Neutral-Grip + V-Bar (curated
+# version) + Single-Arm need adding for full coverage.
+- {external_id: gymflow_neutral_grip_lat_pulldown, name: Neutral-Grip Lat Pulldown, muscle_group: lats, secondary_muscles: biceps,middle back, equipment: cable, level: beginner, mechanic: compound, force: pull, category: strength}
+- {external_id: gymflow_v_bar_lat_pulldown, name: V-Bar Lat Pulldown, muscle_group: lats, secondary_muscles: biceps,middle back, equipment: cable, level: beginner, mechanic: compound, force: pull, category: strength}
+- {external_id: gymflow_wide_grip_lat_pulldown, name: Wide-Grip Lat Pulldown, muscle_group: lats, secondary_muscles: middle back,biceps, equipment: cable, level: beginner, mechanic: compound, force: pull, category: strength}
+- {external_id: gymflow_single_arm_lat_pulldown, name: Single-Arm Lat Pulldown, muscle_group: lats, secondary_muscles: biceps,middle back, equipment: cable, level: intermediate, mechanic: compound, force: pull, category: strength}
+- {external_id: gymflow_lat_pulldown_behind_neck, name: Behind-the-Neck Lat Pulldown, muscle_group: lats, secondary_muscles: middle back,rear delts, equipment: cable, level: intermediate, mechanic: compound, force: pull, category: strength}
