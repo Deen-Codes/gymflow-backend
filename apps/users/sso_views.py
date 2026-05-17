@@ -19,6 +19,7 @@ Account-linking precedence:
 
 import json
 import logging
+import os
 import secrets
 from datetime import datetime, timezone
 
@@ -45,18 +46,23 @@ log = logging.getLogger(__name__)
 #
 # JWKS:        https://appleid.apple.com/auth/keys
 # Issuer:      https://appleid.apple.com
-# Audience:    bundle ID of the iOS app (our `coach.gymflow.app`)
+# Audience:    bundle ID of the iOS app (our `com.afletics.app`)
 # Algorithm:   RS256
 #
 # Apple sends the user's full name only on the FIRST sign-in. On
 # subsequent sign-ins the name is omitted from both the credential
 # and the ID token, so iOS includes any first-time name as a
 # separate `full_name` field on the request body.
+#
+# AFLETICS-RENAME (May 2026, Deen QC) — bundle ID flipped from
+# coach.gymflow.app → com.afletics.app. Apple's ID token `aud` claim
+# now carries the new bundle, so verify against the new value.
+# Override via APPLE_AUDIENCE env var on Render if needed.
 # ---------------------------------------------------------------------
 
 APPLE_JWKS_URL = "https://appleid.apple.com/auth/keys"
 APPLE_ISSUER = "https://appleid.apple.com"
-APPLE_AUDIENCE = "coach.gymflow.app"
+APPLE_AUDIENCE = os.environ.get("APPLE_AUDIENCE", "com.afletics.app")
 
 # JWKS cache — Apple/Google rotate keys but slowly. We cache the
 # fetched key set in-process for 6 hours; on cache miss we re-fetch.

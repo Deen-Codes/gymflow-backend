@@ -303,7 +303,13 @@ def _seed_workout_history(user: User) -> int:
             if session_date > today:
                 continue
             programme = SESSION_PROGRAMMES[programme_idx]
-            progression_factor = 1.0 + (week * 0.01)  # gentle 1%/week uptick
+            # VOLUME-CURVE-VARIANCE (May 2026, Deen QC) — was 1%/week
+            # which left the Progress volume chart reading as a flat
+            # line because 4 weeks of 1% gains is 3% total variance,
+            # invisible against the chart's auto-scaled Y axis.
+            # 5%/week gives a clean visible climb (≈22% over 4 weeks)
+            # that demos the curve's purpose to the App Store reviewer.
+            progression_factor = 1.0 + (week * 0.05)
             _seed_one_session(
                 user=user,
                 when=session_date,

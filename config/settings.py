@@ -25,7 +25,15 @@ DEBUG = os.environ.get("DEBUG", "False").lower() in ("true", "1", "yes")
 # Format: comma-separated list of hosts.
 #   ALLOWED_HOSTS=.gymflow.app,.onrender.com,localhost
 # -------------------------------------------------------------------
-_DEFAULT_ALLOWED_HOSTS = "localhost,127.0.0.1,.gymflow.coach,.gymflow.app,.onrender.com"
+#
+# AFLETICS-RENAME (May 2026, Deen QC) — the brand was renamed from
+# GymFlow → Afletics. The new primary apex is afletics.com. We keep
+# .gymflow.coach + .gymflow.app on this list transitionally so any
+# in-flight magic links, App Store webhooks, and Render custom
+# domains continue to resolve while DNS / email forwarding for
+# afletics.com is being set up. Drop the legacy entries once afletics
+# DNS is fully cut over and 30 days of magic-link expiry has elapsed.
+_DEFAULT_ALLOWED_HOSTS = "localhost,127.0.0.1,.afletics.com,.gymflow.coach,.gymflow.app,.onrender.com"
 ALLOWED_HOSTS = [
     h.strip()
     for h in os.environ.get("ALLOWED_HOSTS", _DEFAULT_ALLOWED_HOSTS).split(",")
@@ -48,6 +56,10 @@ ALLOWED_HOSTS = [
 # -------------------------------------------------------------------
 CSRF_TRUSTED_ORIGINS = [
     "https://gymflow-api-wxm9.onrender.com",
+    # AFLETICS-RENAME — afletics.com is the new apex; legacy
+    # gymflow.* entries stay until DNS cut-over completes.
+    "https://*.afletics.com",
+    "https://afletics.com",
     "https://*.gymflow.coach",
     "https://gymflow.coach",
     "https://*.gymflow.app",

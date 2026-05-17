@@ -64,11 +64,16 @@ PRODUCT_MAP = {
     "com.gymflow.solo.pro_ai.year":  (SoloProfile.TIER_PRO_AI, True,  365),
 }
 
-# Bundle ID was rebranded from com.gymflow.app → coach.gymflow.app
-# in the May 2026 App Store prep pass. The JWS bundleId check below
-# must match the iOS app's actual bundle ID or every IAP verification
-# will fail with "bundleId mismatch".
-EXPECTED_BUNDLE_ID = getattr(settings, "APPLE_BUNDLE_ID", "coach.gymflow.app")
+# AFLETICS-RENAME (May 2026, Deen QC) — bundle ID flipped from
+# coach.gymflow.app → com.afletics.app when the app was renamed from
+# GymFlow to Afletics. The JWS bundleId check below must match the
+# iOS app's actual bundle ID or every IAP verification will fail
+# with "bundleId mismatch". The IAP PRODUCT_MAP above intentionally
+# keeps the com.gymflow.solo.* product IDs — Apple lets a new bundle
+# register the same legacy product IDs in App Store Connect, and
+# preserving them means existing subscribers carry over cleanly.
+# Override via APPLE_BUNDLE_ID env var on Render if/when needed.
+EXPECTED_BUNDLE_ID = getattr(settings, "APPLE_BUNDLE_ID", "com.afletics.app")
 
 
 # --------------------------------------------------------------------

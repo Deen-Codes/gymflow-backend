@@ -61,7 +61,7 @@ Add these three (the webhook secret comes in the next batch):
 Optional:
 | Key                              | Default | Use when                     |
 |----------------------------------|---------|------------------------------|
-| `STRIPE_APPLICATION_FEE_PERCENT` | `5`     | tweak the GymFlow cut        |
+| `STRIPE_APPLICATION_FEE_PERCENT` | `5`     | tweak the Afletics cut        |
 | `STRIPE_OAUTH_REDIRECT_URI`      | (auto)  | running on a custom domain   |
 
 Save → Render will auto-redeploy with the new env.
@@ -80,7 +80,7 @@ and `payments.0001_initial` apply.
 3. Click **Connect with Stripe →**
 4. You'll bounce to Stripe — sign in (or sign up — Stripe walks you
    through creating a connected account)
-5. Authorise GymFlow when prompted
+5. Authorise Afletics when prompted
 6. You'll land back on Settings with a "Stripe connected" toast and
    the badge flips to **Connected** with your `acct_…` ID showing
 

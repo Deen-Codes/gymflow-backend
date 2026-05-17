@@ -9,7 +9,7 @@
     <link rel="canonical" href="{{ seo.page_url }}">
 
     <!-- Open Graph (no per-city OG image yet — falls back to a static
-         GymFlow card baked into the public_site_og_image route's
+         Afletics card baked into the public_site_og_image route's
          lookalike. M.2.x). -->
     <meta property="og:title" content="{{ seo.title }}">
     <meta property="og:description" content="{{ seo.description }}">
@@ -147,7 +147,7 @@
 
 <header class="pt-public-nav">
     <div class="pt-public-nav-brand">
-        <a href="/" style="color:inherit;text-decoration:none;">GymFlow</a>
+        <a href="/" style="color:inherit;text-decoration:none;">Afletics</a>
     </div>
     <a href="/cities/" class="pt-public-nav-cta">All cities →</a>
 </header>
@@ -157,7 +157,7 @@
     <h1 class="city-h1">{{ city_name }}</h1>
     <p class="city-lede">
         {{ cards|length }} coach{{ cards|length|pluralize:"es" }} in {{ city_name }} use
-        GymFlow to deliver programmes, nutrition coaching and weekly check-ins —
+        Afletics to deliver programmes, nutrition coaching and weekly check-ins —
         all in one app. Pick a trainer below to apply.
     </p>
 
@@ -184,7 +184,7 @@
 
     <div class="city-foot">
         Are you a trainer in {{ city_name }}?
-        <a href="/">Get your own GymFlow page →</a>
+        <a href="/">Get your own Afletics page →</a>
         <br><br>
         <a href="{% url 'legal-privacy' %}">Privacy</a>
         ·
