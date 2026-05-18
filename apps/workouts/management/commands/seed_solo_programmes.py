@@ -812,7 +812,7 @@ class Command(BaseCommand):
             username=SYSTEM_USERNAME,
             defaults={
                 "role":      User.TRAINER,
-                "email":     "system+catalog@gymflow.app",
+                "email":     "system+catalog@afletics.com",
                 "is_active": False,
                 "is_staff":  False,
             },

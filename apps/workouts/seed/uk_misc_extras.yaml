@@ -2,82 +2,82 @@
 # Plus extras: forearms, abs variations, sport-specific drills.
 
 # UK gym aliases (US name → UK name commonly used)
-- {external_id: gymflow_uk_press_up, name: Press-Up, muscle_group: chest, secondary_muscles: triceps,shoulders, equipment: body only, level: beginner, mechanic: compound, force: push, category: strength}
-- {external_id: gymflow_uk_chin_up, name: Chin-Up, muscle_group: biceps, secondary_muscles: lats,middle back, equipment: body only, level: intermediate, mechanic: compound, force: pull, category: strength}
-- {external_id: gymflow_uk_neutral_grip_pullup, name: Neutral-Grip Pull-Up, muscle_group: lats, secondary_muscles: biceps,middle back, equipment: body only, level: intermediate, mechanic: compound, force: pull, category: strength}
-- {external_id: gymflow_uk_tricep_dip, name: Bench Tricep Dip, muscle_group: triceps, secondary_muscles: chest,shoulders, equipment: body only, level: beginner, mechanic: compound, force: push, category: strength}
-- {external_id: gymflow_uk_bicep_curl_ezbar, name: EZ-Bar Bicep Curl, muscle_group: biceps, secondary_muscles: forearms, equipment: e-z curl bar, level: beginner, mechanic: isolation, force: pull, category: strength}
-- {external_id: gymflow_uk_reverse_curl, name: Reverse Curl, muscle_group: forearms, secondary_muscles: biceps, equipment: barbell, level: beginner, mechanic: isolation, force: pull, category: strength}
-- {external_id: gymflow_uk_wrist_curl, name: Wrist Curl, muscle_group: forearms, secondary_muscles: "", equipment: dumbbell, level: beginner, mechanic: isolation, force: pull, category: strength}
-- {external_id: gymflow_uk_reverse_wrist_curl, name: Reverse Wrist Curl, muscle_group: forearms, secondary_muscles: "", equipment: dumbbell, level: beginner, mechanic: isolation, force: pull, category: strength}
-- {external_id: gymflow_uk_farmers_walk, name: Farmer's Walk, muscle_group: forearms, secondary_muscles: traps,core,glutes, equipment: dumbbell, level: beginner, mechanic: compound, force: static, category: strongman}
-- {external_id: gymflow_uk_dead_lift_alt, name: Trap Bar Deadlift, muscle_group: glutes, secondary_muscles: hamstrings,quadriceps,traps, equipment: other, level: beginner, mechanic: compound, force: pull, category: strength}
-- {external_id: gymflow_uk_jefferson_lift, name: Jefferson Lift, muscle_group: glutes, secondary_muscles: hamstrings,quadriceps,core, equipment: barbell, level: expert, mechanic: compound, force: pull, category: powerlifting}
+- {external_id: afletics_uk_press_up, name: Press-Up, muscle_group: chest, secondary_muscles: triceps,shoulders, equipment: body only, level: beginner, mechanic: compound, force: push, category: strength}
+- {external_id: afletics_uk_chin_up, name: Chin-Up, muscle_group: biceps, secondary_muscles: lats,middle back, equipment: body only, level: intermediate, mechanic: compound, force: pull, category: strength}
+- {external_id: afletics_uk_neutral_grip_pullup, name: Neutral-Grip Pull-Up, muscle_group: lats, secondary_muscles: biceps,middle back, equipment: body only, level: intermediate, mechanic: compound, force: pull, category: strength}
+- {external_id: afletics_uk_tricep_dip, name: Bench Tricep Dip, muscle_group: triceps, secondary_muscles: chest,shoulders, equipment: body only, level: beginner, mechanic: compound, force: push, category: strength}
+- {external_id: afletics_uk_bicep_curl_ezbar, name: EZ-Bar Bicep Curl, muscle_group: biceps, secondary_muscles: forearms, equipment: e-z curl bar, level: beginner, mechanic: isolation, force: pull, category: strength}
+- {external_id: afletics_uk_reverse_curl, name: Reverse Curl, muscle_group: forearms, secondary_muscles: biceps, equipment: barbell, level: beginner, mechanic: isolation, force: pull, category: strength}
+- {external_id: afletics_uk_wrist_curl, name: Wrist Curl, muscle_group: forearms, secondary_muscles: "", equipment: dumbbell, level: beginner, mechanic: isolation, force: pull, category: strength}
+- {external_id: afletics_uk_reverse_wrist_curl, name: Reverse Wrist Curl, muscle_group: forearms, secondary_muscles: "", equipment: dumbbell, level: beginner, mechanic: isolation, force: pull, category: strength}
+- {external_id: afletics_uk_farmers_walk, name: Farmer's Walk, muscle_group: forearms, secondary_muscles: traps,core,glutes, equipment: dumbbell, level: beginner, mechanic: compound, force: static, category: strongman}
+- {external_id: afletics_uk_dead_lift_alt, name: Trap Bar Deadlift, muscle_group: glutes, secondary_muscles: hamstrings,quadriceps,traps, equipment: other, level: beginner, mechanic: compound, force: pull, category: strength}
+- {external_id: afletics_uk_jefferson_lift, name: Jefferson Lift, muscle_group: glutes, secondary_muscles: hamstrings,quadriceps,core, equipment: barbell, level: expert, mechanic: compound, force: pull, category: powerlifting}
 
 # More plyometrics
-- {external_id: gymflow_depth_jump, name: Depth Jump, muscle_group: quadriceps, secondary_muscles: glutes,calves, equipment: other, level: expert, mechanic: compound, force: push, category: plyometrics}
-- {external_id: gymflow_depth_drop, name: Depth Drop, muscle_group: quadriceps, secondary_muscles: glutes,calves, equipment: other, level: expert, mechanic: compound, force: static, category: plyometrics}
-- {external_id: gymflow_single_leg_box_jump, name: Single-Leg Box Jump, muscle_group: quadriceps, secondary_muscles: glutes,calves, equipment: other, level: expert, mechanic: compound, force: push, category: plyometrics}
-- {external_id: gymflow_lateral_box_jump, name: Lateral Box Jump, muscle_group: quadriceps, secondary_muscles: glutes,abductors, equipment: other, level: intermediate, mechanic: compound, force: push, category: plyometrics}
-- {external_id: gymflow_seated_box_jump, name: Seated Box Jump, muscle_group: quadriceps, secondary_muscles: glutes,calves, equipment: other, level: intermediate, mechanic: compound, force: push, category: plyometrics}
-- {external_id: gymflow_kettlebell_jump_squat, name: Kettlebell Goblet Jump Squat, muscle_group: quadriceps, secondary_muscles: glutes,calves, equipment: kettlebells, level: intermediate, mechanic: compound, force: push, category: plyometrics}
-- {external_id: gymflow_pogo_jump, name: Pogo Jump, muscle_group: calves, secondary_muscles: quadriceps, equipment: body only, level: beginner, mechanic: isolation, force: push, category: plyometrics}
-- {external_id: gymflow_single_leg_pogo, name: Single-Leg Pogo, muscle_group: calves, secondary_muscles: quadriceps, equipment: body only, level: intermediate, mechanic: isolation, force: push, category: plyometrics}
-- {external_id: gymflow_jump_to_box_step_down, name: Jump to Box, Step Down, muscle_group: quadriceps, secondary_muscles: glutes,calves, equipment: other, level: intermediate, mechanic: compound, force: push, category: plyometrics}
+- {external_id: afletics_depth_jump, name: Depth Jump, muscle_group: quadriceps, secondary_muscles: glutes,calves, equipment: other, level: expert, mechanic: compound, force: push, category: plyometrics}
+- {external_id: afletics_depth_drop, name: Depth Drop, muscle_group: quadriceps, secondary_muscles: glutes,calves, equipment: other, level: expert, mechanic: compound, force: static, category: plyometrics}
+- {external_id: afletics_single_leg_box_jump, name: Single-Leg Box Jump, muscle_group: quadriceps, secondary_muscles: glutes,calves, equipment: other, level: expert, mechanic: compound, force: push, category: plyometrics}
+- {external_id: afletics_lateral_box_jump, name: Lateral Box Jump, muscle_group: quadriceps, secondary_muscles: glutes,abductors, equipment: other, level: intermediate, mechanic: compound, force: push, category: plyometrics}
+- {external_id: afletics_seated_box_jump, name: Seated Box Jump, muscle_group: quadriceps, secondary_muscles: glutes,calves, equipment: other, level: intermediate, mechanic: compound, force: push, category: plyometrics}
+- {external_id: afletics_kettlebell_jump_squat, name: Kettlebell Goblet Jump Squat, muscle_group: quadriceps, secondary_muscles: glutes,calves, equipment: kettlebells, level: intermediate, mechanic: compound, force: push, category: plyometrics}
+- {external_id: afletics_pogo_jump, name: Pogo Jump, muscle_group: calves, secondary_muscles: quadriceps, equipment: body only, level: beginner, mechanic: isolation, force: push, category: plyometrics}
+- {external_id: afletics_single_leg_pogo, name: Single-Leg Pogo, muscle_group: calves, secondary_muscles: quadriceps, equipment: body only, level: intermediate, mechanic: isolation, force: push, category: plyometrics}
+- {external_id: afletics_jump_to_box_step_down, name: Jump to Box, Step Down, muscle_group: quadriceps, secondary_muscles: glutes,calves, equipment: other, level: intermediate, mechanic: compound, force: push, category: plyometrics}
 
 # More forearm / grip
-- {external_id: gymflow_dead_hang_grip, name: Dead Hang for Grip, muscle_group: forearms, secondary_muscles: lats,shoulders, equipment: body only, level: beginner, mechanic: isolation, force: static, category: strength}
-- {external_id: gymflow_plate_pinch, name: Plate Pinch, muscle_group: forearms, secondary_muscles: "", equipment: other, level: intermediate, mechanic: isolation, force: static, category: strongman}
-- {external_id: gymflow_towel_pull_up, name: Towel Pull-Up, muscle_group: lats, secondary_muscles: biceps,forearms, equipment: other, level: expert, mechanic: compound, force: pull, category: strength}
-- {external_id: gymflow_fat_grip_curl, name: Fat-Grip Curl, muscle_group: biceps, secondary_muscles: forearms, equipment: dumbbell, level: intermediate, mechanic: isolation, force: pull, category: strength}
-- {external_id: gymflow_grip_strength_holds, name: Grip Strength Holds, muscle_group: forearms, secondary_muscles: "", equipment: dumbbell, level: beginner, mechanic: isolation, force: static, category: strength}
+- {external_id: afletics_dead_hang_grip, name: Dead Hang for Grip, muscle_group: forearms, secondary_muscles: lats,shoulders, equipment: body only, level: beginner, mechanic: isolation, force: static, category: strength}
+- {external_id: afletics_plate_pinch, name: Plate Pinch, muscle_group: forearms, secondary_muscles: "", equipment: other, level: intermediate, mechanic: isolation, force: static, category: strongman}
+- {external_id: afletics_towel_pull_up, name: Towel Pull-Up, muscle_group: lats, secondary_muscles: biceps,forearms, equipment: other, level: expert, mechanic: compound, force: pull, category: strength}
+- {external_id: afletics_fat_grip_curl, name: Fat-Grip Curl, muscle_group: biceps, secondary_muscles: forearms, equipment: dumbbell, level: intermediate, mechanic: isolation, force: pull, category: strength}
+- {external_id: afletics_grip_strength_holds, name: Grip Strength Holds, muscle_group: forearms, secondary_muscles: "", equipment: dumbbell, level: beginner, mechanic: isolation, force: static, category: strength}
 
 # More olympic derivatives  
-- {external_id: gymflow_clean_complex, name: Clean Complex (Pull + Hang Clean + Front Squat), muscle_group: full body, secondary_muscles: glutes,traps,quadriceps, equipment: barbell, level: expert, mechanic: compound, force: push, category: olympic_weightlifting}
-- {external_id: gymflow_snatch_complex, name: Snatch Complex (Pull + Hang Snatch + OHS), muscle_group: full body, secondary_muscles: shoulders,glutes,quadriceps, equipment: barbell, level: expert, mechanic: compound, force: push, category: olympic_weightlifting}
-- {external_id: gymflow_muscle_clean, name: Muscle Clean, muscle_group: traps, secondary_muscles: glutes,shoulders, equipment: barbell, level: intermediate, mechanic: compound, force: pull, category: olympic_weightlifting}
-- {external_id: gymflow_muscle_snatch, name: Muscle Snatch, muscle_group: shoulders, secondary_muscles: traps,glutes, equipment: barbell, level: intermediate, mechanic: compound, force: pull, category: olympic_weightlifting}
-- {external_id: gymflow_dip_drive_press, name: Dip-Drive-Press, muscle_group: shoulders, secondary_muscles: triceps,quadriceps, equipment: barbell, level: intermediate, mechanic: compound, force: push, category: olympic_weightlifting}
-- {external_id: gymflow_jerk_recovery, name: Jerk Recovery, muscle_group: shoulders, secondary_muscles: quadriceps,core, equipment: barbell, level: intermediate, mechanic: compound, force: push, category: olympic_weightlifting}
+- {external_id: afletics_clean_complex, name: Clean Complex (Pull + Hang Clean + Front Squat), muscle_group: full body, secondary_muscles: glutes,traps,quadriceps, equipment: barbell, level: expert, mechanic: compound, force: push, category: olympic_weightlifting}
+- {external_id: afletics_snatch_complex, name: Snatch Complex (Pull + Hang Snatch + OHS), muscle_group: full body, secondary_muscles: shoulders,glutes,quadriceps, equipment: barbell, level: expert, mechanic: compound, force: push, category: olympic_weightlifting}
+- {external_id: afletics_muscle_clean, name: Muscle Clean, muscle_group: traps, secondary_muscles: glutes,shoulders, equipment: barbell, level: intermediate, mechanic: compound, force: pull, category: olympic_weightlifting}
+- {external_id: afletics_muscle_snatch, name: Muscle Snatch, muscle_group: shoulders, secondary_muscles: traps,glutes, equipment: barbell, level: intermediate, mechanic: compound, force: pull, category: olympic_weightlifting}
+- {external_id: afletics_dip_drive_press, name: Dip-Drive-Press, muscle_group: shoulders, secondary_muscles: triceps,quadriceps, equipment: barbell, level: intermediate, mechanic: compound, force: push, category: olympic_weightlifting}
+- {external_id: afletics_jerk_recovery, name: Jerk Recovery, muscle_group: shoulders, secondary_muscles: quadriceps,core, equipment: barbell, level: intermediate, mechanic: compound, force: push, category: olympic_weightlifting}
 
 # More core variations
-- {external_id: gymflow_oblique_v_up, name: Oblique V-Up, muscle_group: obliques, secondary_muscles: abdominals, equipment: body only, level: intermediate, mechanic: isolation, force: pull, category: strength}
-- {external_id: gymflow_side_bend_db, name: Dumbbell Side Bend, muscle_group: obliques, secondary_muscles: "", equipment: dumbbell, level: beginner, mechanic: isolation, force: pull, category: strength}
-- {external_id: gymflow_cable_side_bend, name: Cable Side Bend, muscle_group: obliques, secondary_muscles: "", equipment: cable, level: beginner, mechanic: isolation, force: pull, category: strength}
-- {external_id: gymflow_seated_oblique_twist, name: Seated Oblique Twist, muscle_group: obliques, secondary_muscles: abdominals, equipment: body only, level: beginner, mechanic: isolation, force: pull, category: strength}
-- {external_id: gymflow_kneeling_cable_crunch, name: Kneeling Cable Crunch, muscle_group: abdominals, secondary_muscles: "", equipment: cable, level: beginner, mechanic: isolation, force: pull, category: strength}
-- {external_id: gymflow_standing_cable_crunch, name: Standing Cable Crunch, muscle_group: abdominals, secondary_muscles: "", equipment: cable, level: beginner, mechanic: isolation, force: pull, category: strength}
-- {external_id: gymflow_roman_chair_situp, name: Roman Chair Sit-Up, muscle_group: abdominals, secondary_muscles: hip flexors, equipment: machine, level: intermediate, mechanic: isolation, force: pull, category: strength}
-- {external_id: gymflow_decline_bench_situp, name: Decline Bench Sit-Up, muscle_group: abdominals, secondary_muscles: hip flexors, equipment: other, level: intermediate, mechanic: isolation, force: pull, category: strength}
-- {external_id: gymflow_weighted_situp, name: Weighted Sit-Up, muscle_group: abdominals, secondary_muscles: hip flexors, equipment: dumbbell, level: intermediate, mechanic: isolation, force: pull, category: strength}
+- {external_id: afletics_oblique_v_up, name: Oblique V-Up, muscle_group: obliques, secondary_muscles: abdominals, equipment: body only, level: intermediate, mechanic: isolation, force: pull, category: strength}
+- {external_id: afletics_side_bend_db, name: Dumbbell Side Bend, muscle_group: obliques, secondary_muscles: "", equipment: dumbbell, level: beginner, mechanic: isolation, force: pull, category: strength}
+- {external_id: afletics_cable_side_bend, name: Cable Side Bend, muscle_group: obliques, secondary_muscles: "", equipment: cable, level: beginner, mechanic: isolation, force: pull, category: strength}
+- {external_id: afletics_seated_oblique_twist, name: Seated Oblique Twist, muscle_group: obliques, secondary_muscles: abdominals, equipment: body only, level: beginner, mechanic: isolation, force: pull, category: strength}
+- {external_id: afletics_kneeling_cable_crunch, name: Kneeling Cable Crunch, muscle_group: abdominals, secondary_muscles: "", equipment: cable, level: beginner, mechanic: isolation, force: pull, category: strength}
+- {external_id: afletics_standing_cable_crunch, name: Standing Cable Crunch, muscle_group: abdominals, secondary_muscles: "", equipment: cable, level: beginner, mechanic: isolation, force: pull, category: strength}
+- {external_id: afletics_roman_chair_situp, name: Roman Chair Sit-Up, muscle_group: abdominals, secondary_muscles: hip flexors, equipment: machine, level: intermediate, mechanic: isolation, force: pull, category: strength}
+- {external_id: afletics_decline_bench_situp, name: Decline Bench Sit-Up, muscle_group: abdominals, secondary_muscles: hip flexors, equipment: other, level: intermediate, mechanic: isolation, force: pull, category: strength}
+- {external_id: afletics_weighted_situp, name: Weighted Sit-Up, muscle_group: abdominals, secondary_muscles: hip flexors, equipment: dumbbell, level: intermediate, mechanic: isolation, force: pull, category: strength}
 
 # Sport / mobility extras
-- {external_id: gymflow_sledgehammer_swing, name: Sledgehammer Swing, muscle_group: lats, secondary_muscles: shoulders,core,obliques, equipment: other, level: intermediate, mechanic: compound, force: pull, category: cardio}
-- {external_id: gymflow_tire_flip, name: Tire Flip, muscle_group: glutes, secondary_muscles: lower back,quadriceps,traps, equipment: other, level: expert, mechanic: compound, force: pull, category: strongman}
-- {external_id: gymflow_atlas_stone, name: Atlas Stone Lift, muscle_group: glutes, secondary_muscles: lower back,traps,core, equipment: other, level: expert, mechanic: compound, force: pull, category: strongman}
-- {external_id: gymflow_log_press, name: Log Press, muscle_group: shoulders, secondary_muscles: triceps,core, equipment: other, level: expert, mechanic: compound, force: push, category: strongman}
-- {external_id: gymflow_axle_clean_press, name: Axle Clean & Press, muscle_group: shoulders, secondary_muscles: glutes,traps,forearms, equipment: barbell, level: expert, mechanic: compound, force: push, category: strongman}
-- {external_id: gymflow_keg_carry, name: Keg Carry, muscle_group: core, secondary_muscles: forearms,glutes,traps, equipment: other, level: intermediate, mechanic: compound, force: static, category: strongman}
-- {external_id: gymflow_zercher_carry, name: Zercher Carry, muscle_group: core, secondary_muscles: forearms,upper back, equipment: barbell, level: intermediate, mechanic: compound, force: static, category: strength}
-- {external_id: gymflow_sandbag_carry, name: Sandbag Bear Hug Carry, muscle_group: core, secondary_muscles: glutes,upper back, equipment: other, level: intermediate, mechanic: compound, force: static, category: strongman}
+- {external_id: afletics_sledgehammer_swing, name: Sledgehammer Swing, muscle_group: lats, secondary_muscles: shoulders,core,obliques, equipment: other, level: intermediate, mechanic: compound, force: pull, category: cardio}
+- {external_id: afletics_tire_flip, name: Tire Flip, muscle_group: glutes, secondary_muscles: lower back,quadriceps,traps, equipment: other, level: expert, mechanic: compound, force: pull, category: strongman}
+- {external_id: afletics_atlas_stone, name: Atlas Stone Lift, muscle_group: glutes, secondary_muscles: lower back,traps,core, equipment: other, level: expert, mechanic: compound, force: pull, category: strongman}
+- {external_id: afletics_log_press, name: Log Press, muscle_group: shoulders, secondary_muscles: triceps,core, equipment: other, level: expert, mechanic: compound, force: push, category: strongman}
+- {external_id: afletics_axle_clean_press, name: Axle Clean & Press, muscle_group: shoulders, secondary_muscles: glutes,traps,forearms, equipment: barbell, level: expert, mechanic: compound, force: push, category: strongman}
+- {external_id: afletics_keg_carry, name: Keg Carry, muscle_group: core, secondary_muscles: forearms,glutes,traps, equipment: other, level: intermediate, mechanic: compound, force: static, category: strongman}
+- {external_id: afletics_zercher_carry, name: Zercher Carry, muscle_group: core, secondary_muscles: forearms,upper back, equipment: barbell, level: intermediate, mechanic: compound, force: static, category: strength}
+- {external_id: afletics_sandbag_carry, name: Sandbag Bear Hug Carry, muscle_group: core, secondary_muscles: glutes,upper back, equipment: other, level: intermediate, mechanic: compound, force: static, category: strongman}
 
 # AI-PT favourites (commonly programmed)
-- {external_id: gymflow_chest_supported_t_bar, name: Chest-Supported T-Bar Row, muscle_group: middle back, secondary_muscles: lats,biceps, equipment: machine, level: beginner, mechanic: compound, force: pull, category: strength}
-- {external_id: gymflow_dead_stop_row, name: Dead-Stop Row, muscle_group: middle back, secondary_muscles: lats,biceps, equipment: barbell, level: intermediate, mechanic: compound, force: pull, category: strength}
-- {external_id: gymflow_inverted_row_low, name: Inverted Row (Low Bar), muscle_group: middle back, secondary_muscles: lats,biceps,core, equipment: body only, level: beginner, mechanic: compound, force: pull, category: strength}
-- {external_id: gymflow_one_arm_db_press, name: One-Arm Dumbbell Bench Press, muscle_group: chest, secondary_muscles: triceps,shoulders,core, equipment: dumbbell, level: intermediate, mechanic: compound, force: push, category: strength}
-- {external_id: gymflow_alternating_db_press, name: Alternating Dumbbell Bench Press, muscle_group: chest, secondary_muscles: triceps,shoulders,core, equipment: dumbbell, level: intermediate, mechanic: compound, force: push, category: strength}
-- {external_id: gymflow_neutral_grip_db_press, name: Neutral-Grip Dumbbell Press, muscle_group: chest, secondary_muscles: triceps,shoulders, equipment: dumbbell, level: beginner, mechanic: compound, force: push, category: strength}
-- {external_id: gymflow_low_incline_db_press, name: Low-Incline Dumbbell Press, muscle_group: chest, secondary_muscles: triceps,shoulders, equipment: dumbbell, level: beginner, mechanic: compound, force: push, category: strength}
-- {external_id: gymflow_decline_db_press, name: Decline Dumbbell Press, muscle_group: chest, secondary_muscles: triceps, equipment: dumbbell, level: intermediate, mechanic: compound, force: push, category: strength}
-- {external_id: gymflow_svend_press, name: Svend Press, muscle_group: chest, secondary_muscles: shoulders, equipment: other, level: beginner, mechanic: isolation, force: push, category: strength}
-- {external_id: gymflow_reverse_grip_pulldown, name: Reverse-Grip Pulldown, muscle_group: lats, secondary_muscles: biceps,middle back, equipment: cable, level: beginner, mechanic: compound, force: pull, category: strength}
-- {external_id: gymflow_close_grip_pulldown, name: Close-Grip Pulldown, muscle_group: lats, secondary_muscles: biceps,middle back, equipment: cable, level: beginner, mechanic: compound, force: pull, category: strength}
-- {external_id: gymflow_kneeling_one_arm_pulldown, name: Kneeling One-Arm Pulldown, muscle_group: lats, secondary_muscles: middle back,biceps, equipment: cable, level: intermediate, mechanic: compound, force: pull, category: strength}
-- {external_id: gymflow_db_shrug_lean, name: Lean-Forward Dumbbell Shrug, muscle_group: traps, secondary_muscles: rear delts, equipment: dumbbell, level: intermediate, mechanic: isolation, force: pull, category: strength}
-- {external_id: gymflow_calf_raise_donkey, name: Donkey Calf Raise, muscle_group: calves, secondary_muscles: "", equipment: machine, level: intermediate, mechanic: isolation, force: push, category: strength}
-- {external_id: gymflow_seated_db_calf, name: Seated Dumbbell Calf Raise, muscle_group: calves, secondary_muscles: "", equipment: dumbbell, level: beginner, mechanic: isolation, force: push, category: strength}
-- {external_id: gymflow_single_leg_calf, name: Single-Leg Calf Raise, muscle_group: calves, secondary_muscles: "", equipment: body only, level: beginner, mechanic: isolation, force: push, category: strength}
+- {external_id: afletics_chest_supported_t_bar, name: Chest-Supported T-Bar Row, muscle_group: middle back, secondary_muscles: lats,biceps, equipment: machine, level: beginner, mechanic: compound, force: pull, category: strength}
+- {external_id: afletics_dead_stop_row, name: Dead-Stop Row, muscle_group: middle back, secondary_muscles: lats,biceps, equipment: barbell, level: intermediate, mechanic: compound, force: pull, category: strength}
+- {external_id: afletics_inverted_row_low, name: Inverted Row (Low Bar), muscle_group: middle back, secondary_muscles: lats,biceps,core, equipment: body only, level: beginner, mechanic: compound, force: pull, category: strength}
+- {external_id: afletics_one_arm_db_press, name: One-Arm Dumbbell Bench Press, muscle_group: chest, secondary_muscles: triceps,shoulders,core, equipment: dumbbell, level: intermediate, mechanic: compound, force: push, category: strength}
+- {external_id: afletics_alternating_db_press, name: Alternating Dumbbell Bench Press, muscle_group: chest, secondary_muscles: triceps,shoulders,core, equipment: dumbbell, level: intermediate, mechanic: compound, force: push, category: strength}
+- {external_id: afletics_neutral_grip_db_press, name: Neutral-Grip Dumbbell Press, muscle_group: chest, secondary_muscles: triceps,shoulders, equipment: dumbbell, level: beginner, mechanic: compound, force: push, category: strength}
+- {external_id: afletics_low_incline_db_press, name: Low-Incline Dumbbell Press, muscle_group: chest, secondary_muscles: triceps,shoulders, equipment: dumbbell, level: beginner, mechanic: compound, force: push, category: strength}
+- {external_id: afletics_decline_db_press, name: Decline Dumbbell Press, muscle_group: chest, secondary_muscles: triceps, equipment: dumbbell, level: intermediate, mechanic: compound, force: push, category: strength}
+- {external_id: afletics_svend_press, name: Svend Press, muscle_group: chest, secondary_muscles: shoulders, equipment: other, level: beginner, mechanic: isolation, force: push, category: strength}
+- {external_id: afletics_reverse_grip_pulldown, name: Reverse-Grip Pulldown, muscle_group: lats, secondary_muscles: biceps,middle back, equipment: cable, level: beginner, mechanic: compound, force: pull, category: strength}
+- {external_id: afletics_close_grip_pulldown, name: Close-Grip Pulldown, muscle_group: lats, secondary_muscles: biceps,middle back, equipment: cable, level: beginner, mechanic: compound, force: pull, category: strength}
+- {external_id: afletics_kneeling_one_arm_pulldown, name: Kneeling One-Arm Pulldown, muscle_group: lats, secondary_muscles: middle back,biceps, equipment: cable, level: intermediate, mechanic: compound, force: pull, category: strength}
+- {external_id: afletics_db_shrug_lean, name: Lean-Forward Dumbbell Shrug, muscle_group: traps, secondary_muscles: rear delts, equipment: dumbbell, level: intermediate, mechanic: isolation, force: pull, category: strength}
+- {external_id: afletics_calf_raise_donkey, name: Donkey Calf Raise, muscle_group: calves, secondary_muscles: "", equipment: machine, level: intermediate, mechanic: isolation, force: push, category: strength}
+- {external_id: afletics_seated_db_calf, name: Seated Dumbbell Calf Raise, muscle_group: calves, secondary_muscles: "", equipment: dumbbell, level: beginner, mechanic: isolation, force: push, category: strength}
+- {external_id: afletics_single_leg_calf, name: Single-Leg Calf Raise, muscle_group: calves, secondary_muscles: "", equipment: body only, level: beginner, mechanic: isolation, force: push, category: strength}
 
 # QC-LAT-PULLDOWNS (May 2026, Deen QC) — first-session feedback in
 # the gym surfaced that "Neutral-Grip Lat Pulldown" was missing.
@@ -87,8 +87,8 @@
 # Neck — we keep those + add the gaps below). Reverse-Grip + Close-
 # Grip already exist further up; only Neutral-Grip + V-Bar (curated
 # version) + Single-Arm need adding for full coverage.
-- {external_id: gymflow_neutral_grip_lat_pulldown, name: Neutral-Grip Lat Pulldown, muscle_group: lats, secondary_muscles: biceps,middle back, equipment: cable, level: beginner, mechanic: compound, force: pull, category: strength}
-- {external_id: gymflow_v_bar_lat_pulldown, name: V-Bar Lat Pulldown, muscle_group: lats, secondary_muscles: biceps,middle back, equipment: cable, level: beginner, mechanic: compound, force: pull, category: strength}
-- {external_id: gymflow_wide_grip_lat_pulldown, name: Wide-Grip Lat Pulldown, muscle_group: lats, secondary_muscles: middle back,biceps, equipment: cable, level: beginner, mechanic: compound, force: pull, category: strength}
-- {external_id: gymflow_single_arm_lat_pulldown, name: Single-Arm Lat Pulldown, muscle_group: lats, secondary_muscles: biceps,middle back, equipment: cable, level: intermediate, mechanic: compound, force: pull, category: strength}
-- {external_id: gymflow_lat_pulldown_behind_neck, name: Behind-the-Neck Lat Pulldown, muscle_group: lats, secondary_muscles: middle back,rear delts, equipment: cable, level: intermediate, mechanic: compound, force: pull, category: strength}
+- {external_id: afletics_neutral_grip_lat_pulldown, name: Neutral-Grip Lat Pulldown, muscle_group: lats, secondary_muscles: biceps,middle back, equipment: cable, level: beginner, mechanic: compound, force: pull, category: strength}
+- {external_id: afletics_v_bar_lat_pulldown, name: V-Bar Lat Pulldown, muscle_group: lats, secondary_muscles: biceps,middle back, equipment: cable, level: beginner, mechanic: compound, force: pull, category: strength}
+- {external_id: afletics_wide_grip_lat_pulldown, name: Wide-Grip Lat Pulldown, muscle_group: lats, secondary_muscles: middle back,biceps, equipment: cable, level: beginner, mechanic: compound, force: pull, category: strength}
+- {external_id: afletics_single_arm_lat_pulldown, name: Single-Arm Lat Pulldown, muscle_group: lats, secondary_muscles: biceps,middle back, equipment: cable, level: intermediate, mechanic: compound, force: pull, category: strength}
+- {external_id: afletics_lat_pulldown_behind_neck, name: Behind-the-Neck Lat Pulldown, muscle_group: lats, secondary_muscles: middle back,rear delts, equipment: cable, level: intermediate, mechanic: compound, force: pull, category: strength}

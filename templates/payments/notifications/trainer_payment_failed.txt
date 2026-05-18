@@ -14,4 +14,4 @@ on the subscription panel that does it in one click:
 
 {{ client_detail_url }}
 
-— GymFlow
+— Afletics

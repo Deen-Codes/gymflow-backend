@@ -7,10 +7,10 @@ from .models import User, TrainerProfile, ClientProfile, Changelog, CoachingTip,
 @admin.register(User)
 class CustomUserAdmin(UserAdmin):
     fieldsets = UserAdmin.fieldsets + (
-        ("GymFlow", {"fields": ("role",)}),
+        ("Afletics", {"fields": ("role",)}),
     )
     add_fieldsets = UserAdmin.add_fieldsets + (
-        ("GymFlow", {"fields": ("role",)}),
+        ("Afletics", {"fields": ("role",)}),
     )
     list_display = ("username", "email", "role", "is_staff", "is_superuser")
 

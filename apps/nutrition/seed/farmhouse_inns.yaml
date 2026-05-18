@@ -1,7 +1,7 @@
 # farmhouse_inns.yaml — Farmhouse Inns (Greene King) pub menu.
 # 30 entries. Carvery-focused with a famous cake counter.
 # Source: farmhouseinns.co.uk allergen + nutrition.
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_fish_chips
   name: Fish & Chips
   brand: Farmhouse Inns
@@ -17,7 +17,7 @@
   dietary_compat: pescatarian
   allergens: fish,gluten,eggs
   unit_grams: 650
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_steak_pie
   name: Steak Pie
   brand: Farmhouse Inns
@@ -33,7 +33,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 550
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_carvery_beef
   name: 'Carvery: Roast Beef'
   brand: Farmhouse Inns
@@ -49,7 +49,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 750
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_carvery_pork
   name: 'Carvery: Roast Pork'
   brand: Farmhouse Inns
@@ -65,7 +65,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 750
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_carvery_turkey
   name: 'Carvery: Roast Turkey'
   brand: Farmhouse Inns
@@ -81,7 +81,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 750
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_carvery_gammon
   name: 'Carvery: Roast Gammon'
   brand: Farmhouse Inns
@@ -97,7 +97,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 750
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_carvery_3meat
   name: 'Carvery: 3 Meats'
   brand: Farmhouse Inns
@@ -113,7 +113,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 800
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_lasagne
   name: Beef Lasagne & Garlic Bread
   brand: Farmhouse Inns
@@ -129,7 +129,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_burger
   name: Farmhouse Beef Burger
   brand: Farmhouse Inns
@@ -145,7 +145,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 470
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_chicken_curry
   name: Chicken Curry
   brand: Farmhouse Inns
@@ -161,7 +161,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,celery,mustard
   unit_grams: 580
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_scampi
   name: Wholetail Scampi & Chips
   brand: Farmhouse Inns
@@ -177,7 +177,7 @@
   dietary_compat: pescatarian
   allergens: crustaceans,gluten,eggs
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_gammon_pineapple
   name: Gammon, Pineapple, Egg & Chips
   brand: Farmhouse Inns
@@ -193,7 +193,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: eggs
   unit_grams: 550
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_macaroni_cheese
   name: Macaroni Cheese
   brand: Farmhouse Inns
@@ -209,7 +209,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_jacket_cheese
   name: Jacket Potato with Cheese
   brand: Farmhouse Inns
@@ -225,7 +225,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_jacket_beans
   name: Jacket Potato with Beans
   brand: Farmhouse Inns
@@ -241,7 +241,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
   unit_grams: 420
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_chips
   name: Chips
   brand: Farmhouse Inns
@@ -257,7 +257,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_seasonal_veg
   name: Seasonal Vegetables
   brand: Farmhouse Inns
@@ -273,7 +273,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_yorkshire_pud
   name: Yorkshire Pudding
   brand: Farmhouse Inns
@@ -289,7 +289,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_stuffing
   name: Sage & Onion Stuffing
   brand: Farmhouse Inns
@@ -305,7 +305,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,celery
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_pigs_blankets
   name: Pigs in Blankets (3)
   brand: Farmhouse Inns
@@ -321,7 +321,7 @@
   dietary_compat: pescatarian
   allergens: sulphites
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_cake_chocolate_fudge
   name: Chocolate Fudge Cake
   brand: Farmhouse Inns
@@ -337,7 +337,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs,soy
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_cake_lemon
   name: Lemon Drizzle Cake
   brand: Farmhouse Inns
@@ -353,7 +353,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_cake_carrot
   name: Carrot Cake
   brand: Farmhouse Inns
@@ -369,7 +369,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,tree_nuts
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_cake_victoria
   name: Victoria Sandwich
   brand: Farmhouse Inns
@@ -385,7 +385,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 160
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_sticky_toffee
   name: Sticky Toffee Pudding
   brand: Farmhouse Inns
@@ -401,7 +401,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_apple_pie
   name: Apple Pie & Custard
   brand: Farmhouse Inns
@@ -417,7 +417,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_cheesecake_strawberry
   name: Strawberry Cheesecake
   brand: Farmhouse Inns
@@ -433,7 +433,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_ice_cream_2
   name: Ice Cream (2 scoops)
   brand: Farmhouse Inns
@@ -449,7 +449,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_breakfast_full
   name: Full English Breakfast
   brand: Farmhouse Inns
@@ -465,7 +465,7 @@
   dietary_compat: pescatarian
   allergens: gluten,eggs,sulphites
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: farmhouseinns_breakfast_veggie
   name: Veggie Breakfast
   brand: Farmhouse Inns

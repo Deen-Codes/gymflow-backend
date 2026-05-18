@@ -1,5 +1,5 @@
-Sign in to GymFlow
-==================
+Sign in to Afletics
+===================
 
 Tap this link on your iPhone to log in:
 
@@ -10,4 +10,4 @@ The link expires in {{ ttl_minutes }} minutes and works once.
 Didn't ask for this? Ignore the email — nothing changes.
 
 —
-Afletics · Coaching for trainers and clients
+Afletics · Workout tracker for people who lift

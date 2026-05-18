@@ -1,6 +1,6 @@
 # sushi_supermarket.yaml — Itsu pots (chicken teriyaki, ginger salmon, sushi packs), salmon sashimi, avocado maki; Tesco/M&S/Sainsbury's sushi packs (California, salmon, veggie, chicken katsu).
 
-- source: gymflow
+- source: afletics
   source_id: itsu_chicken_teriyaki_pot
   name: Itsu Chicken Teriyaki Rice Pot
   brand: Itsu
@@ -16,7 +16,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,celery
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: itsu_ginger_salmon_pot
   name: Itsu Ginger Salmon Bowl
   brand: Itsu
@@ -32,7 +32,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,soy,sesame
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: itsu_chicken_teriyaki_sushi_pack
   name: Itsu Chicken Teriyaki Sushi Pack
   brand: Itsu
@@ -48,7 +48,7 @@
   dietary_compat: pescatarian
   allergens: gluten,soy,eggs,sesame
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: itsu_salmon_sashimi_pack
   name: Itsu Salmon Sashimi Pack (per 100g)
   brand: Itsu
@@ -64,7 +64,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: itsu_avocado_maki_pack
   name: Itsu Avocado Maki Pack
   brand: Itsu
@@ -80,7 +80,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: soy,sesame
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: tesco_california_roll_pack
   name: Tesco California Roll Sushi Pack
   brand: Tesco
@@ -96,7 +96,7 @@
   dietary_compat: pescatarian
   allergens: crustaceans,fish,soy,eggs,sesame
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: tesco_salmon_sushi_pack
   name: Tesco Salmon Sushi Pack
   brand: Tesco
@@ -112,7 +112,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,soy,sesame
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: tesco_veggie_sushi_pack
   name: Tesco Vegetarian Sushi Pack
   brand: Tesco
@@ -128,7 +128,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: soy,sesame
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: mands_salmon_sushi_pack
   name: M&S Salmon Sushi Pack
   brand: M&S
@@ -144,7 +144,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,soy,sesame
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: mands_chicken_katsu_pack
   name: M&S Chicken Katsu Sushi Pack
   brand: M&S
@@ -160,7 +160,7 @@
   dietary_compat: pescatarian
   allergens: gluten,soy,eggs,sesame
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: mands_california_roll_pack
   name: M&S California Roll Pack
   brand: M&S
@@ -176,7 +176,7 @@
   dietary_compat: pescatarian
   allergens: crustaceans,fish,soy,eggs,sesame
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: sainsburys_california_roll
   name: Sainsbury's California Roll Sushi (1 pack)
   brand: Sainsbury's
@@ -192,7 +192,7 @@
   dietary_compat: pescatarian
   allergens: crustaceans,fish,soy,eggs,sesame
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: sainsburys_salmon_sushi
   name: Sainsbury's Salmon Sushi (1 pack)
   brand: Sainsbury's

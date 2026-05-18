@@ -1,6 +1,6 @@
 # bars_extra.yaml — Belvita variants (Soft Bake choc/berries/honey, Brunch, Crunchy), Nature Valley (Oats & Honey, Protein, Crunchy), Trek (Protein Flapjack, Power), Eat Natural (almond apricot, dark choc orange, protein packed), Special K bars, Nutri-Grain, Quaker Chewy, Nakd (cocoa orange/berry/cashew/mint), Alpen Light, KIND (Dark Choc Nuts, Caramel Almond), Cliff Bar, Fibre One brownies/lemon, Tracker, Boost.
 
-- source: gymflow
+- source: afletics
   source_id: belvita_choc_chip_4
   name: Belvita Soft Bake Choc Chip (4 biscuits)
   brand: Belvita
@@ -16,7 +16,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: belvita_berries_4
   name: Belvita Soft Bake Berries (4 biscuits)
   brand: Belvita
@@ -32,7 +32,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: belvita_breakfast_4
   name: Belvita Breakfast Honey & Nuts (4 biscuits)
   brand: Belvita
@@ -48,7 +48,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,tree_nuts,soy
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: belvita_brunch_bar
   name: Belvita Brunch Honey & Nuts (1 bar)
   brand: Belvita
@@ -64,7 +64,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,tree_nuts,soy
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: belvita_crunchy_30g
   name: Belvita Crunchy Mixed Berries (30g)
   brand: Belvita
@@ -80,7 +80,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: nature_valley_oats_honey
   name: Nature Valley Oats & Honey
   brand: Nature Valley
@@ -96,7 +96,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,soy
   unit_grams: 21
-- source: gymflow
+- source: afletics
   source_id: nature_valley_protein_choc
   name: Nature Valley Protein Salted Caramel
   brand: Nature Valley
@@ -112,7 +112,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,peanuts
   unit_grams: 40
-- source: gymflow
+- source: afletics
   source_id: nature_valley_chocolate_chip
   name: Nature Valley Crunchy Chocolate Chip
   brand: Nature Valley
@@ -128,7 +128,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 21
-- source: gymflow
+- source: afletics
   source_id: trek_protein_flapjack_choc
   name: Trek Protein Flapjack Chocolate
   brand: Trek
@@ -144,7 +144,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: trek_power_protein_bar
   name: Trek Power Bar Cocoa Coconut
   brand: Trek
@@ -160,7 +160,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy,tree_nuts
   unit_grams: 55
-- source: gymflow
+- source: afletics
   source_id: eat_natural_almond_apricot
   name: Eat Natural Almond, Apricot & Yogurt
   brand: Eat Natural
@@ -176,7 +176,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,tree_nuts
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: eat_natural_dark_choc_orange
   name: Eat Natural Dark Chocolate & Orange
   brand: Eat Natural
@@ -192,7 +192,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: tree_nuts,soy
   unit_grams: 45
-- source: gymflow
+- source: afletics
   source_id: eat_natural_protein_packed
   name: Eat Natural Protein Packed
   brand: Eat Natural
@@ -208,7 +208,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,tree_nuts
   unit_grams: 45
-- source: gymflow
+- source: afletics
   source_id: special_k_red_berries_bar
   name: Special K Red Berries Bar
   brand: Kellogg's
@@ -224,7 +224,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,milk,soy
   unit_grams: 22
-- source: gymflow
+- source: afletics
   source_id: special_k_chocolate_caramel_bar
   name: Special K Chocolate Caramel Bar
   brand: Kellogg's
@@ -240,7 +240,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 23
-- source: gymflow
+- source: afletics
   source_id: nutri_grain_strawberry
   name: Nutri-Grain Strawberry (1 bar)
   brand: Kellogg's
@@ -256,7 +256,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,milk,eggs,soy
   unit_grams: 37
-- source: gymflow
+- source: afletics
   source_id: nutri_grain_apple
   name: Nutri-Grain Apple (1 bar)
   brand: Kellogg's
@@ -272,7 +272,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,milk,eggs,soy
   unit_grams: 37
-- source: gymflow
+- source: afletics
   source_id: quaker_chewy_choc_chip
   name: Quaker Chewy Chocolate Chip
   brand: Quaker
@@ -288,7 +288,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,milk,soy
   unit_grams: 28
-- source: gymflow
+- source: afletics
   source_id: quaker_oats_so_simple_bar_apple
   name: Quaker Oat So Simple Bar Apple
   brand: Quaker
@@ -304,7 +304,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,milk,soy
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: nakd_cocoa_orange_alt
   name: Nakd Cocoa Orange (1 bar)
   brand: Nakd
@@ -320,7 +320,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: tree_nuts
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: nakd_berry_delight
   name: Nakd Berry Delight (1 bar)
   brand: Nakd
@@ -336,7 +336,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: tree_nuts
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: nakd_cashew_cookie
   name: Nakd Cashew Cookie (1 bar)
   brand: Nakd
@@ -352,7 +352,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: tree_nuts
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: nakd_cocoa_mint
   name: Nakd Cocoa Mint (1 bar)
   brand: Nakd
@@ -368,7 +368,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: tree_nuts
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: alpen_light_summer_fruits_bar
   name: Alpen Light Summer Fruits Bar
   brand: Alpen
@@ -384,7 +384,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,milk,soy
   unit_grams: 19
-- source: gymflow
+- source: afletics
   source_id: alpen_light_choc_orange_bar
   name: Alpen Light Chocolate Orange Bar
   brand: Alpen
@@ -400,7 +400,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,milk,soy
   unit_grams: 19
-- source: gymflow
+- source: afletics
   source_id: kind_dark_choc_nuts_sea_salt
   name: KIND Dark Chocolate Nuts & Sea Salt
   brand: KIND
@@ -416,7 +416,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: tree_nuts,peanuts,soy
   unit_grams: 40
-- source: gymflow
+- source: afletics
   source_id: kind_caramel_almond
   name: KIND Caramel Almond & Sea Salt
   brand: KIND
@@ -432,7 +432,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,tree_nuts,soy
   unit_grams: 40
-- source: gymflow
+- source: afletics
   source_id: cliff_bar_choc_chip
   name: Cliff Bar Chocolate Chip
   brand: Cliff Bar
@@ -448,7 +448,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy
   unit_grams: 68
-- source: gymflow
+- source: afletics
   source_id: fibre_one_brownies_choc
   name: Fibre One Chocolate Brownies
   brand: Fibre One
@@ -464,7 +464,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,milk,soy
   unit_grams: 24
-- source: gymflow
+- source: afletics
   source_id: fibre_one_lemon_drizzle
   name: Fibre One Lemon Drizzle
   brand: Fibre One
@@ -480,7 +480,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,milk,soy
   unit_grams: 24
-- source: gymflow
+- source: afletics
   source_id: tracker_original_bar
   name: Tracker Roasted Nut Original
   brand: Tracker
@@ -496,7 +496,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,peanuts,soy
   unit_grams: 26
-- source: gymflow
+- source: afletics
   source_id: tracker_choc_chip_bar
   name: Tracker Chocolate Chip
   brand: Tracker
@@ -512,7 +512,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 26
-- source: gymflow
+- source: afletics
   source_id: boost_glucose_30g
   name: Boost Glucose Bar (30g)
   brand: Boost

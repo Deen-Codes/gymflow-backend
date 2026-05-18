@@ -1,6 +1,6 @@
 # dominos.yaml — Domino's UK menu. 30 entries.
 # Source: dominos.co.uk/nutrition.
-- source: gymflow
+- source: afletics
   source_id: dominos_margherita_med_sl
   name: Margherita (med slice)
   brand: Domino's
@@ -16,7 +16,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 105
-- source: gymflow
+- source: afletics
   source_id: dominos_mighty_meaty_med_sl
   name: Mighty Meaty (med slice)
   brand: Domino's
@@ -32,7 +32,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 115
-- source: gymflow
+- source: afletics
   source_id: dominos_meateor_med_sl
   name: The Meateor (med slice)
   brand: Domino's
@@ -48,7 +48,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 120
-- source: gymflow
+- source: afletics
   source_id: dominos_texas_bbq_med_sl
   name: Texas BBQ (med slice)
   brand: Domino's
@@ -64,7 +64,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 115
-- source: gymflow
+- source: afletics
   source_id: dominos_tandoori_hot_med_sl
   name: Tandoori Hot (med slice)
   brand: Domino's
@@ -80,7 +80,7 @@
   dietary_compat: halal,pescatarian
   allergens: gluten,milk
   unit_grams: 115
-- source: gymflow
+- source: afletics
   source_id: dominos_hawaiian_med_sl
   name: Hawaiian (med slice)
   brand: Domino's
@@ -96,7 +96,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: dominos_chicken_feast_med_sl
   name: Chicken Feast (med slice)
   brand: Domino's
@@ -112,7 +112,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 115
-- source: gymflow
+- source: afletics
   source_id: dominos_vegi_classic_med_sl
   name: Vegi Classic (med slice)
   brand: Domino's
@@ -128,7 +128,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: dominos_vegan_garden_med_sl
   name: Vegan Vegi Supreme (med slice)
   brand: Domino's
@@ -144,7 +144,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sulphites
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: dominos_cheese_n_tomato_med_sl
   name: Cheese & Tomato (med slice)
   brand: Domino's
@@ -160,7 +160,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: dominos_meateor_med_whole
   name: The Meateor (whole medium)
   brand: Domino's
@@ -176,7 +176,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 960
-- source: gymflow
+- source: afletics
   source_id: dominos_margherita_med_whole
   name: Margherita (whole medium)
   brand: Domino's
@@ -192,7 +192,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 840
-- source: gymflow
+- source: afletics
   source_id: dominos_garlic_pizza_bread
   name: Garlic Pizza Bread
   brand: Domino's
@@ -208,7 +208,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: dominos_chicken_wings_7
   name: Chicken Wings (7)
   brand: Domino's
@@ -224,7 +224,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 245
-- source: gymflow
+- source: afletics
   source_id: dominos_chicken_strippers_4
   name: Chicken Strippers (4)
   brand: Domino's
@@ -240,7 +240,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: dominos_chicken_kickers_5
   name: Chicken Kickers (5)
   brand: Domino's
@@ -256,7 +256,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: dominos_potato_wedges
   name: Potato Wedges
   brand: Domino's
@@ -272,7 +272,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: dominos_garlic_dough_balls
   name: Garlic & Herb Dough Balls (8)
   brand: Domino's
@@ -288,7 +288,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: dominos_loaded_wedges
   name: Loaded Cheesy Wedges
   brand: Domino's
@@ -304,7 +304,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: dominos_garlic_herb_dip
   name: Garlic & Herb Dip
   brand: Domino's
@@ -320,7 +320,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs,milk,mustard
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: dominos_bbq_dip
   name: BBQ Dip
   brand: Domino's
@@ -336,7 +336,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: dominos_sweet_chilli_dip
   name: Sweet Chilli Dip
   brand: Domino's
@@ -352,7 +352,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: dominos_honey_mustard_dip
   name: Honey & Mustard Dip
   brand: Domino's
@@ -368,7 +368,7 @@
   dietary_compat: vegetarian,pescatarian,gluten_free
   allergens: eggs,milk,mustard
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: dominos_coke_bottle
   name: Coca-Cola (bottle)
   brand: Domino's
@@ -384,7 +384,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: dominos_diet_coke_bottle
   name: Diet Coke (bottle)
   brand: Domino's
@@ -400,7 +400,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: dominos_fanta_bottle
   name: Fanta Orange (bottle)
   brand: Domino's
@@ -416,7 +416,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: dominos_water_bottle
   name: Still Water (bottle)
   brand: Domino's
@@ -432,7 +432,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: dominos_chocolate_brownies
   name: Chocolate Brownies (6)
   brand: Domino's
@@ -448,7 +448,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs,soy
   unit_grams: 165
-- source: gymflow
+- source: afletics
   source_id: dominos_cinnamon_dough_balls
   name: Cinnamon Dough Balls
   brand: Domino's
@@ -464,7 +464,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: dominos_lotus_cookies
   name: Lotus Biscoff Cookies
   brand: Domino's

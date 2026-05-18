@@ -8,7 +8,7 @@ The URL surface:
 
 These pages are pure SEO plays: low-content, server-rendered, fully
 crawlable. They exist so a search like "personal trainer london"
-lands on a relevant GymFlow page rather than a competitor.
+lands on a relevant Afletics page rather than a competitor.
 
 Design notes:
     • The slug is derived from the trainer-typed `city` string at read

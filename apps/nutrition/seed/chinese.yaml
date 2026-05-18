@@ -1,6 +1,6 @@
 # chinese.yaml — UK takeaway Chinese (Cantonese, Sichuan, dim sum). Sweet & sour, chow mein, fried rice, kung pao, dim sum, BBQ pork.
 
-- source: gymflow
+- source: afletics
   source_id: cn_sweet_sour_chicken
   name: Sweet & Sour Chicken
   brand: ''
@@ -16,7 +16,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,soy,eggs
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: cn_sweet_sour_pork
   name: Sweet & Sour Pork
   brand: ''
@@ -32,7 +32,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy,eggs
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: cn_kung_pao_chicken
   name: Kung Pao Chicken
   brand: ''
@@ -48,7 +48,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: peanuts,soy,sesame
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: cn_general_tso_chicken
   name: General Tso's Chicken
   brand: ''
@@ -64,7 +64,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy,eggs
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: cn_chow_mein_chicken
   name: Chicken Chow Mein
   brand: ''
@@ -80,7 +80,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy,sesame,eggs
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: cn_chow_mein_beef
   name: Beef Chow Mein
   brand: ''
@@ -96,7 +96,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: cn_chow_mein_veg
   name: Vegetable Chow Mein
   brand: ''
@@ -112,7 +112,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: cn_singapore_noodles
   name: Singapore Noodles
   brand: ''
@@ -128,7 +128,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: crustaceans,gluten,eggs,soy,sesame
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: cn_egg_fried_rice
   name: Egg Fried Rice
   brand: ''
@@ -143,7 +143,7 @@
   tags: chinese,takeaway,grain
   dietary_compat: pescatarian,dairy_free
   allergens: eggs,soy,sesame
-- source: gymflow
+- source: afletics
   source_id: cn_special_fried_rice
   name: Special Fried Rice
   brand: ''
@@ -159,7 +159,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: crustaceans,eggs,soy,sesame
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: cn_boiled_rice
   name: Plain Boiled Rice
   brand: ''
@@ -174,7 +174,7 @@
   tags: chinese,takeaway,grain,vegan,low_fat
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: cn_kung_pao_prawns
   name: Kung Pao Prawns
   brand: ''
@@ -190,7 +190,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: crustaceans,peanuts,soy,sesame
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: cn_salt_pepper_chicken
   name: Salt & Pepper Chicken
   brand: ''
@@ -206,7 +206,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,soy,sesame
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: cn_salt_pepper_chips
   name: Salt & Pepper Chips
   brand: ''
@@ -222,7 +222,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: cn_szechuan_beef
   name: Szechuan Beef
   brand: ''
@@ -238,7 +238,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: cn_mongolian_beef
   name: Mongolian Beef
   brand: ''
@@ -254,7 +254,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: cn_crispy_duck_pancakes_4
   name: Crispy Duck Pancakes (4)
   brand: ''
@@ -270,7 +270,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: cn_spring_roll_meat_2
   name: Meat Spring Rolls (2)
   brand: ''
@@ -286,7 +286,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,soy,sesame
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: cn_spring_roll_veg_2
   name: Vegetable Spring Rolls (2)
   brand: ''
@@ -302,7 +302,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: cn_prawn_toast_4
   name: Prawn Toast (4)
   brand: ''
@@ -318,7 +318,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: crustaceans,gluten,eggs,sesame
   unit_grams: 20
-- source: gymflow
+- source: afletics
   source_id: cn_wonton_soup
   name: Wonton Soup
   brand: ''
@@ -334,7 +334,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,soy,crustaceans
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: cn_hot_sour_soup
   name: Hot & Sour Soup
   brand: ''
@@ -350,7 +350,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,soy,sesame
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: cn_egg_drop_soup
   name: Egg Drop Soup
   brand: ''
@@ -366,7 +366,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: eggs,soy
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: cn_bao_pork_2
   name: Pork Bao Buns (2)
   brand: ''
@@ -382,7 +382,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: cn_bao_chicken_2
   name: Chicken Bao Buns (2)
   brand: ''
@@ -398,7 +398,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: cn_bao_veg_2
   name: Vegetable Bao Buns (2)
   brand: ''
@@ -414,7 +414,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: cn_dim_sum_har_gow_4
   name: Har Gow (Prawn Dumplings, 4)
   brand: ''
@@ -430,7 +430,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: crustaceans,soy,sesame
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: cn_dim_sum_siu_mai_4
   name: Siu Mai (Pork Dumplings, 4)
   brand: ''
@@ -446,7 +446,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,crustaceans,eggs,soy,sesame
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: cn_char_siu_pork
   name: Char Siu (BBQ Pork, per 100g)
   brand: ''
@@ -461,7 +461,7 @@
   tags: chinese,whole
   dietary_compat: pescatarian,dairy_free
   allergens: soy,sulphites
-- source: gymflow
+- source: afletics
   source_id: cn_peking_duck_pancake_per_100
   name: Peking Duck (skin + meat, per 100g)
   brand: ''
@@ -476,7 +476,7 @@
   tags: chinese,whole
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: cn_mapo_tofu
   name: Mapo Tofu
   brand: ''
@@ -492,7 +492,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: soy,sesame
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: cn_aubergine_garlic_sauce
   name: Aubergine in Garlic Sauce
   brand: ''
@@ -508,7 +508,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: cn_cantonese_chicken_rice
   name: Cantonese Chicken & Rice
   brand: ''
@@ -524,7 +524,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: soy,sesame
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: cn_fortune_cookie
   name: Fortune Cookie
   brand: ''

@@ -1,7 +1,7 @@
 # chef_brewer.yaml — Chef & Brewer (Greene King) pub menu.
 # 40 entries. Mainstream gastropub menu.
 # Source: chefandbrewer.com.
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_fish_chips
   name: Beer-Battered Fish & Chips
   brand: Chef & Brewer
@@ -17,7 +17,7 @@
   dietary_compat: pescatarian
   allergens: fish,gluten,eggs
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_steak_pie
   name: Steak & Stilton Pie
   brand: Chef & Brewer
@@ -33,7 +33,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 540
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_chicken_pie
   name: Chicken & Bacon Pie
   brand: Chef & Brewer
@@ -49,7 +49,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 540
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_sunday_beef
   name: Roast Beef Sunday Lunch
   brand: Chef & Brewer
@@ -65,7 +65,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_sunday_chicken
   name: Roast Chicken Sunday Lunch
   brand: Chef & Brewer
@@ -81,7 +81,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_sunday_pork
   name: Roast Pork Sunday Lunch
   brand: Chef & Brewer
@@ -97,7 +97,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_sunday_lamb
   name: Slow-Roast Lamb Sunday Lunch
   brand: Chef & Brewer
@@ -113,7 +113,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_sunday_trio
   name: Roast Trio Sunday Lunch
   brand: Chef & Brewer
@@ -129,7 +129,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 750
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_burger
   name: Beef Brisket Burger
   brand: Chef & Brewer
@@ -145,7 +145,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 480
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_chicken_burger
   name: Chicken Burger
   brand: Chef & Brewer
@@ -161,7 +161,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 460
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_lamb_shank
   name: Slow-Cooked Lamb Shank
   brand: Chef & Brewer
@@ -177,7 +177,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: celery
   unit_grams: 480
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_seabass
   name: Pan-Fried Seabass
   brand: Chef & Brewer
@@ -193,7 +193,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish
   unit_grams: 430
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_salmon
   name: Salmon Fillet
   brand: Chef & Brewer
@@ -209,7 +209,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish
   unit_grams: 420
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_curry_chicken
   name: Chicken Tikka Masala
   brand: Chef & Brewer
@@ -225,7 +225,7 @@
   dietary_compat: halal,pescatarian
   allergens: milk,celery
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_lasagne
   name: Beef Lasagne
   brand: Chef & Brewer
@@ -241,7 +241,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 470
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_mac_cheese
   name: Truffle Mac & Cheese
   brand: Chef & Brewer
@@ -257,7 +257,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_veg_curry
   name: Vegetable Curry
   brand: Chef & Brewer
@@ -273,7 +273,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: celery
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_veg_burger
   name: Plant Burger
   brand: Chef & Brewer
@@ -289,7 +289,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten,sesame,soy
   unit_grams: 470
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_garlic_bread
   name: Garlic Ciabatta
   brand: Chef & Brewer
@@ -305,7 +305,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_buffalo_wings
   name: Buffalo Wings
   brand: Chef & Brewer
@@ -321,7 +321,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_brie_wedges
   name: Crispy Brie Wedges
   brand: Chef & Brewer
@@ -337,7 +337,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_calamari
   name: Salt & Pepper Squid
   brand: Chef & Brewer
@@ -353,7 +353,7 @@
   dietary_compat: pescatarian
   allergens: gluten,molluscs,eggs
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_prawn_cocktail
   name: Prawn Cocktail
   brand: Chef & Brewer
@@ -369,7 +369,7 @@
   dietary_compat: pescatarian
   allergens: crustaceans,eggs,mustard
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_soup_day
   name: Soup of the Day
   brand: Chef & Brewer
@@ -385,7 +385,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,celery
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_chips
   name: Chunky Chips
   brand: Chef & Brewer
@@ -401,7 +401,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_sweet_potato_fries
   name: Sweet Potato Fries
   brand: Chef & Brewer
@@ -417,7 +417,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_seasonal_veg
   name: Seasonal Vegetables
   brand: Chef & Brewer
@@ -433,7 +433,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_house_salad
   name: House Salad
   brand: Chef & Brewer
@@ -449,7 +449,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: mustard,sulphites
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_onion_rings
   name: Beer-Battered Onion Rings
   brand: Chef & Brewer
@@ -465,7 +465,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_sticky_toffee
   name: Sticky Toffee Pudding
   brand: Chef & Brewer
@@ -481,7 +481,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_chocolate_brownie
   name: Chocolate Brownie
   brand: Chef & Brewer
@@ -497,7 +497,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs,soy
   unit_grams: 160
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_apple_crumble
   name: Apple & Berry Crumble
   brand: Chef & Brewer
@@ -513,7 +513,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_cheesecake
   name: Vanilla Cheesecake
   brand: Chef & Brewer
@@ -529,7 +529,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_peppercorn_sauce
   name: Peppercorn Sauce
   brand: Chef & Brewer
@@ -545,7 +545,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_diane_sauce
   name: Diane Sauce
   brand: Chef & Brewer
@@ -561,7 +561,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_breakfast_full
   name: Full English
   brand: Chef & Brewer
@@ -577,7 +577,7 @@
   dietary_compat: pescatarian
   allergens: gluten,eggs,sulphites
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_breakfast_veggie
   name: Veggie Breakfast
   brand: Chef & Brewer
@@ -593,7 +593,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,eggs
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_breakfast_eggs_bacon
   name: Eggs Royale
   brand: Chef & Brewer
@@ -609,7 +609,7 @@
   dietary_compat: pescatarian
   allergens: gluten,eggs,fish
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_kids_chicken
   name: Kids' Chicken Goujons & Chips
   brand: Chef & Brewer
@@ -625,7 +625,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: chefbrewer_kids_pasta
   name: Kids' Pasta Bolognese
   brand: Chef & Brewer

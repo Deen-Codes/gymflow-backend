@@ -1,5 +1,5 @@
 """
-Lazy sync of GymFlow's PricingPlan rows → Stripe Products + Prices on
+Lazy sync of Afletics's PricingPlan rows → Stripe Products + Prices on
 the trainer's connected account.
 
 Why lazy: we only need the Stripe-side resources to exist when the
@@ -48,8 +48,8 @@ def get_or_create_price_for_plan(plan) -> Tuple[Optional[str], Optional[str]]:
                 name=plan.name,
                 description=plan.description or None,
                 metadata={
-                    "gymflow_plan_id":    plan.id,
-                    "gymflow_trainer_id": trainer.id,
+                    "afletics_plan_id":    plan.id,
+                    "afletics_trainer_id": trainer.id,
                 },
                 stripe_account=acct,
             )
@@ -64,7 +64,7 @@ def get_or_create_price_for_plan(plan) -> Tuple[Optional[str], Optional[str]]:
             "unit_amount": plan.price_pennies,
             "currency":    plan.currency.lower(),
             "stripe_account": acct,
-            "metadata": {"gymflow_plan_id": plan.id},
+            "metadata": {"afletics_plan_id": plan.id},
         }
         recurring = _INTERVAL_TO_STRIPE.get(plan.interval)
         if recurring is not None:

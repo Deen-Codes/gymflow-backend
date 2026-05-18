@@ -420,9 +420,9 @@ def startup_for_me(request):
 #       Exchanges a single-use token for a DRF auth token + user
 #       payload — same response shape as `login_view`.
 #
-# The link in the email is `gymflow://magic/<token>` (custom URL
-# scheme handled by `GymFlowApp.onOpenURL` on iOS) plus a
-# `https://gymflow.app/magic/<token>` web fallback for users
+# The link in the email is `afletics://magic/<token>` (custom URL
+# scheme handled by `AfleticsApp.onOpenURL` on iOS) plus a
+# `https://afletics.com/magic/<token>` web fallback for users
 # who tap from a desktop / non-iOS browser.
 # -------------------------------------------------------------------
 
@@ -430,31 +430,31 @@ def startup_for_me(request):
 def _magic_link_urls(token):
     """Return (deep_link, web_link) tuple for the email body.
 
-    `deep_link` opens the iOS app via the new `gymflow://` custom
-    scheme. The legacy `gymflow://` scheme is still registered on
+    `deep_link` opens the iOS app via the new `afletics://` custom
+    scheme. The legacy `afletics://` scheme is still registered on
     the iOS side for ~30 days so any in-flight emails from before
     the rebrand keep working — but every newly-issued link uses
-    `gymflow://` from now on.
+    `afletics://` from now on.
 
     `web_link` is a fallback for desktop browsers and the
     eventual Universal Links setup.
     """
-    # MAGIC-LINK-DOMAIN — our actual apex is gymflow.coach (the .app
+    # MAGIC-LINK-DOMAIN — our actual apex is afletics.com (the .app
     # one is owned by an unrelated party and 301-redirects to
     # elitehockeyhq.com, which 404'd every magic-link tap). The
     # bridge view at /magic/<token>/ is mounted on the Django
-    # backend (config/urls.py); gymflow.coach is already pointed at
-    # Render in DNS, so the same template + redirect-to-`gymflow://`
+    # backend (config/urls.py); afletics.com is already pointed at
+    # Render in DNS, so the same template + redirect-to-`afletics://`
     # flow works on the real apex.
     #
-    # Override via the `GYMFLOW_WEB_BASE_URL` env var on Render if
+    # Override via the `AFLETICS_WEB_BASE_URL` env var on Render if
     # we ever swap apex domains again — no rebuild required.
     web_base = getattr(
-        settings, "GYMFLOW_WEB_BASE_URL",
-        "https://gymflow.coach",
+        settings, "AFLETICS_WEB_BASE_URL",
+        "https://afletics.com",
     )
     return (
-        f"gymflow://magic/{token}",
+        f"afletics://magic/{token}",
         f"{web_base}/magic/{token}/",
     )
 
@@ -626,9 +626,9 @@ _BYPASS_VARIANT_SUFFIXES = {
 }
 
 _BYPASS_VARIANT_EMAILS = {
-    "day0":  "day0@gymflow.coach",
-    "day1":  "day1@gymflow.coach",
-    "reset": "reset@gymflow.coach",
+    "day0":  "day0@afletics.com",
+    "day1":  "day1@afletics.com",
+    "reset": "reset@afletics.com",
     # "reviewer" uses settings.APPLE_REVIEW_EMAIL — resolved at call
     # site so an operator override stays effective.
 }
@@ -710,19 +710,19 @@ def magic_link_verify_view(request):
     for QC. Four bypass tokens are recognised, all derived from
     a single APPLE_REVIEW_TOKEN env var:
 
-      APPLE_REVIEW_TOKEN              → reviewer@gymflow.coach
+      APPLE_REVIEW_TOKEN              → reviewer@afletics.com
                                         (Pro AI, ~30 days history)
-      APPLE_REVIEW_TOKEN + "-day0"    → day0@gymflow.coach
+      APPLE_REVIEW_TOKEN + "-day0"    → day0@afletics.com
                                         (Pro AI, empty cold-start)
-      APPLE_REVIEW_TOKEN + "-day1"    → day1@gymflow.coach
+      APPLE_REVIEW_TOKEN + "-day1"    → day1@afletics.com
                                         (Pro AI, 1 workout + 1 weight today)
-      APPLE_REVIEW_TOKEN + "-reset"   → reset@gymflow.coach
+      APPLE_REVIEW_TOKEN + "-reset"   → reset@afletics.com
                                         (Pro AI; wipes its own history
                                          BEFORE issuing the token so every
                                          sign-in lands a fresh new-user state)
 
     Reviewer is told (in App Store Connect → App Review Information
-    → Notes) to open https://gymflow.coach/magic/<APPLE_REVIEW_TOKEN>/
+    → Notes) to open https://afletics.com/magic/<APPLE_REVIEW_TOKEN>/
     in Safari on the device. The existing web-bridge handler deep-
     links the iOS app, which posts the token here, which lands us in
     this branch. No iOS code change needed. To revoke, just unset
@@ -741,7 +741,7 @@ def magic_link_verify_view(request):
     # timing oracles even though the values are shared secrets, not
     # per-user credentials.
     review_token = getattr(settings, "APPLE_REVIEW_TOKEN", None) or ""
-    review_email = getattr(settings, "APPLE_REVIEW_EMAIL", "reviewer@gymflow.coach")
+    review_email = getattr(settings, "APPLE_REVIEW_EMAIL", "reviewer@afletics.com")
     if review_token:
         bypass_match = _match_bypass_token(token_str, review_token)
         if bypass_match is not None:
@@ -923,19 +923,19 @@ def _send_email_change_otp(user, new_email, code):
     """Send the 6-digit OTP to the NEW address (where we're trying
     to verify ownership). Plain text — no template needed; the
     payload is tiny and the user reads it in the inbox preview."""
-    subject = "Your GymFlow verification code"
+    subject = "Your Afletics verification code"
     body = (
         f"Hi,\n\n"
-        f"Your GymFlow email-change verification code is:\n\n"
+        f"Your Afletics email-change verification code is:\n\n"
         f"    {code}\n\n"
         f"This code expires in 15 minutes. If you didn't request this, "
         f"you can ignore this email.\n\n"
-        f"— GymFlow"
+        f"— Afletics"
     )
     msg = EmailMultiAlternatives(
         subject=subject,
         body=body,
-        from_email=getattr(settings, "DEFAULT_FROM_EMAIL", "GymFlow <hello@gymflow.coach>"),
+        from_email=getattr(settings, "DEFAULT_FROM_EMAIL", "Afletics <hello@afletics.com>"),
         to=[new_email],
     )
     msg.send(fail_silently=False)
@@ -947,7 +947,7 @@ def _send_magic_link_email(user, deep_link, web_link):
     # Subject line follows the Linear / Slack pattern — "[Brand]
     # sign-in link". Easier to spot in a packed inbox than a
     # generic "your link" framing.
-    subject = "GymFlow sign-in link"
+    subject = "Afletics sign-in link"
     context = {
         "user": user,
         "deep_link": deep_link,
@@ -959,7 +959,7 @@ def _send_magic_link_email(user, deep_link, web_link):
     msg = EmailMultiAlternatives(
         subject=subject,
         body=text_body,
-        from_email=getattr(settings, "DEFAULT_FROM_EMAIL", "GymFlow <hello@gymflow.coach>"),
+        from_email=getattr(settings, "DEFAULT_FROM_EMAIL", "Afletics <hello@afletics.com>"),
         to=[user.email],
     )
     msg.attach_alternative(html_body, "text/html")
@@ -967,14 +967,14 @@ def _send_magic_link_email(user, deep_link, web_link):
 
 
 def magic_link_web_handler(request, token):
-    """Web-side handler for `https://gymflow.app/magic/<token>`.
+    """Web-side handler for `https://afletics.com/magic/<token>`.
 
     Three branches based on the token's owner:
       • TRAINER  — consume the token + create a Django session +
                    redirect straight to /dashboard. Trainers don't
                    have an iOS app, so the link IS the sign-in.
       • CLIENT on iOS — render a bridge page that meta-refreshes
-                   to `gymflow://magic/<token>` to open the app.
+                   to `afletics://magic/<token>` to open the app.
       • CLIENT elsewhere — friendly "open this on your phone"
                    page with App Store guidance.
 
@@ -1005,7 +1005,7 @@ def magic_link_web_handler(request, token):
         request,
         "users/magic_link_bridge.html",
         {
-            "deep_link": f"gymflow://magic/{token}",
+            "deep_link": f"afletics://magic/{token}",
             "is_ios": is_ios,
             "ttl_minutes": MagicLoginToken.DEFAULT_TTL_MINUTES,
         },

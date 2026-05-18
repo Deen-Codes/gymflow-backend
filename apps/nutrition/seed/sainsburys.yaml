@@ -1,7 +1,7 @@
 # sainsburys.yaml — Sainsbury's own-brand + Taste the Difference + Be Good To You.
 # 81 entries (incl 2 migrated).
 # Source: sainsburys.co.uk product pages.
-- source: gymflow
+- source: afletics
   source_id: sainsburys_plain_oats
   name: Sainsbury's Scottish Porridge Oats
   brand: Sainsbury's
@@ -16,7 +16,7 @@
   dietary_compat: vegan,vegetarian,halal,kosher
   allergens: gluten
   portion_unit: grams
-- source: gymflow
+- source: afletics
   source_id: sainsburys_skyr
   name: Sainsbury's Icelandic Style Natural Skyr 0% Fat
   brand: Sainsbury's
@@ -32,7 +32,7 @@
   allergens: milk
   portion_unit: pack
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: sainsburys_greek_yogurt_natural
   name: Sainsbury's Greek Style Natural Yogurt
   brand: Sainsbury's
@@ -48,7 +48,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: sainsburys_greek_yogurt_0pct
   name: Sainsbury's Greek Style 0% Yogurt
   brand: Sainsbury's
@@ -64,7 +64,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: sainsburys_skyr_natural
   name: Sainsbury's Natural Skyr
   brand: Sainsbury's
@@ -80,7 +80,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: sainsburys_milk_semi
   name: Sainsbury's Semi-skimmed Milk
   brand: Sainsbury's
@@ -95,7 +95,7 @@
   tags: supermarket,dairy
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: sainsburys_milk_whole
   name: Sainsbury's Whole Milk
   brand: Sainsbury's
@@ -110,7 +110,7 @@
   tags: supermarket,dairy
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: sainsburys_oat_drink
   name: Sainsbury's Oat Drink
   brand: Sainsbury's
@@ -125,7 +125,7 @@
   tags: supermarket,dairy_alternative,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: sainsburys_cheddar_mature
   name: Sainsbury's Mature Cheddar
   brand: Sainsbury's
@@ -141,7 +141,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: sainsburys_butter_unsalted
   name: Sainsbury's Unsalted Butter
   brand: Sainsbury's
@@ -157,7 +157,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: sainsburys_eggs_med_freerange
   name: Sainsbury's Free Range Medium Eggs
   brand: Sainsbury's
@@ -173,7 +173,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: sainsburys_eggs_lge_freerange
   name: Sainsbury's Free Range Large Eggs
   brand: Sainsbury's
@@ -189,7 +189,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: sainsburys_eggs_organic_lge
   name: Sainsbury's Organic Large Eggs
   brand: Sainsbury's
@@ -205,7 +205,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: sainsburys_white_med_bread
   name: Sainsbury's White Medium Bread
   brand: Sainsbury's
@@ -221,7 +221,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: sainsburys_wholemeal_bread
   name: Sainsbury's Wholemeal Bread
   brand: Sainsbury's
@@ -237,7 +237,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: sainsburys_seeded_bread
   name: Sainsbury's Seeded Bloomer
   brand: Sainsbury's
@@ -253,7 +253,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: sainsburys_50_50_bread
   name: Sainsbury's 50/50 Medium Bread
   brand: Sainsbury's
@@ -269,7 +269,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 36
-- source: gymflow
+- source: afletics
   source_id: sainsburys_brioche_buns
   name: Sainsbury's Brioche Burger Buns
   brand: Sainsbury's
@@ -285,7 +285,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: sainsburys_white_wraps
   name: Sainsbury's White Tortilla Wraps
   brand: Sainsbury's
@@ -301,7 +301,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 64
-- source: gymflow
+- source: afletics
   source_id: sainsburys_white_pitta
   name: Sainsbury's White Pitta Breads
   brand: Sainsbury's
@@ -317,7 +317,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: sainsburys_plain_bagels
   name: Sainsbury's Plain Bagels
   brand: Sainsbury's
@@ -333,7 +333,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 95
-- source: gymflow
+- source: afletics
   source_id: sainsburys_chicken_breast_fillets
   name: Sainsbury's British Chicken Breast Fillets
   brand: Sainsbury's
@@ -348,7 +348,7 @@
   tags: supermarket,meat,chicken,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sainsburys_chicken_thighs
   name: Sainsbury's Boneless Skinless Chicken Thighs
   brand: Sainsbury's
@@ -363,7 +363,7 @@
   tags: supermarket,meat,chicken,high_protein
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sainsburys_lean_beef_mince_5pct
   name: Sainsbury's Lean Beef Mince 5% Fat
   brand: Sainsbury's
@@ -378,7 +378,7 @@
   tags: supermarket,meat,high_protein,low_fat
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sainsburys_beef_mince_15pct
   name: Sainsbury's Beef Mince 15% Fat
   brand: Sainsbury's
@@ -393,7 +393,7 @@
   tags: supermarket,meat,high_protein
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sainsburys_steak_sirloin
   name: Sainsbury's Sirloin Steak
   brand: Sainsbury's
@@ -409,7 +409,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: sainsburys_pork_sausages
   name: Sainsbury's British Pork Sausages
   brand: Sainsbury's
@@ -425,7 +425,7 @@
   dietary_compat: pescatarian
   allergens: gluten,sulphites
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: sainsburys_bacon_back_smoked
   name: Sainsbury's Smoked Back Bacon
   brand: Sainsbury's
@@ -441,7 +441,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: sainsburys_streaky_bacon
   name: Sainsbury's Streaky Bacon
   brand: Sainsbury's
@@ -457,7 +457,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 12
-- source: gymflow
+- source: afletics
   source_id: sainsburys_ham_wafer_thin
   name: Sainsbury's Wafer Thin Ham
   brand: Sainsbury's
@@ -473,7 +473,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: sainsburys_chicken_breast_slices
   name: Sainsbury's Cooked Chicken Breast Slices
   brand: Sainsbury's
@@ -489,7 +489,7 @@
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: sainsburys_tuna_water
   name: Sainsbury's Tuna in Spring Water
   brand: Sainsbury's
@@ -505,7 +505,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: sainsburys_smoked_salmon
   name: Sainsbury's Smoked Scottish Salmon
   brand: Sainsbury's
@@ -521,7 +521,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: sainsburys_salmon_fillets
   name: Sainsbury's Salmon Fillets
   brand: Sainsbury's
@@ -537,7 +537,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: sainsburys_king_prawns_cooked
   name: Sainsbury's Cooked King Prawns
   brand: Sainsbury's
@@ -552,7 +552,7 @@
   tags: supermarket,seafood,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: crustaceans
-- source: gymflow
+- source: afletics
   source_id: sainsburys_porridge_oats
   name: Sainsbury's Porridge Oats
   brand: Sainsbury's
@@ -567,7 +567,7 @@
   tags: supermarket,cereal,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: sainsburys_corn_flakes
   name: Sainsbury's Corn Flakes
   brand: Sainsbury's
@@ -582,7 +582,7 @@
   tags: supermarket,cereal,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sainsburys_bran_flakes
   name: Sainsbury's Bran Flakes
   brand: Sainsbury's
@@ -597,7 +597,7 @@
   tags: supermarket,cereal,breakfast,fibre
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: sainsburys_granola_fruit_nut
   name: Sainsbury's Fruit & Nut Granola
   brand: Sainsbury's
@@ -612,7 +612,7 @@
   tags: supermarket,cereal,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: sainsburys_white_pasta
   name: Sainsbury's Penne Pasta (dry)
   brand: Sainsbury's
@@ -627,7 +627,7 @@
   tags: supermarket,grain,pasta
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: sainsburys_wholewheat_pasta
   name: Sainsbury's Wholewheat Pasta
   brand: Sainsbury's
@@ -642,7 +642,7 @@
   tags: supermarket,grain,pasta
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: sainsburys_basmati_rice
   name: Sainsbury's Basmati Rice (dry)
   brand: Sainsbury's
@@ -657,7 +657,7 @@
   tags: supermarket,grain,rice
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sainsburys_microwave_rice
   name: Sainsbury's Microwave Basmati Rice
   brand: Sainsbury's
@@ -673,7 +673,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: sainsburys_couscous
   name: Sainsbury's Couscous (dry)
   brand: Sainsbury's
@@ -688,7 +688,7 @@
   tags: supermarket,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: sainsburys_milk_chocolate_bar
   name: Sainsbury's Milk Chocolate Bar
   brand: Sainsbury's
@@ -704,7 +704,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: sainsburys_ready_salted_crisps
   name: Sainsbury's Ready Salted Crisps
   brand: Sainsbury's
@@ -720,7 +720,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: sainsburys_chocolate_chip_cookies
   name: Sainsbury's Chocolate Chip Cookies
   brand: Sainsbury's
@@ -736,7 +736,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 12
-- source: gymflow
+- source: afletics
   source_id: sainsburys_protein_bar_chocolate
   name: Sainsbury's Protein Bar Chocolate
   brand: Sainsbury's
@@ -752,7 +752,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: sainsburys_chicken_tikka_masala
   name: Sainsbury's Chicken Tikka Masala (ready meal)
   brand: Sainsbury's
@@ -768,7 +768,7 @@
   dietary_compat: pescatarian
   allergens: milk,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: sainsburys_lasagne_meal
   name: Sainsbury's Beef Lasagne (ready meal)
   brand: Sainsbury's
@@ -784,7 +784,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: sainsburys_thai_green_curry
   name: Sainsbury's Thai Green Chicken Curry
   brand: Sainsbury's
@@ -800,7 +800,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: sainsburys_cottage_pie_meal
   name: Sainsbury's Cottage Pie (ready meal)
   brand: Sainsbury's
@@ -816,7 +816,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: sainsburys_oven_chips
   name: Sainsbury's Oven Chips (frozen)
   brand: Sainsbury's
@@ -831,7 +831,7 @@
   tags: supermarket,frozen,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sainsburys_frozen_peas
   name: Sainsbury's Garden Peas (frozen)
   brand: Sainsbury's
@@ -846,7 +846,7 @@
   tags: supermarket,frozen,vegetable,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sainsburys_frozen_pizza_pepperoni
   name: Sainsbury's Pepperoni Pizza (frozen)
   brand: Sainsbury's
@@ -862,7 +862,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: sainsburys_vanilla_ice_cream
   name: Sainsbury's Vanilla Ice Cream
   brand: Sainsbury's
@@ -877,7 +877,7 @@
   tags: supermarket,frozen,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
-- source: gymflow
+- source: afletics
   source_id: sainsburys_tomato_ketchup
   name: Sainsbury's Tomato Ketchup
   brand: Sainsbury's
@@ -893,7 +893,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 17
-- source: gymflow
+- source: afletics
   source_id: sainsburys_mayonnaise
   name: Sainsbury's Real Mayonnaise
   brand: Sainsbury's
@@ -909,7 +909,7 @@
   dietary_compat: vegetarian,pescatarian,gluten_free
   allergens: eggs,mustard
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: sainsburys_pasta_sauce_tomato
   name: Sainsbury's Tomato & Basil Pasta Sauce
   brand: Sainsbury's
@@ -924,7 +924,7 @@
   tags: supermarket,condiment
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sainsburys_baked_beans
   name: Sainsbury's Baked Beans in Tomato Sauce
   brand: Sainsbury's
@@ -939,7 +939,7 @@
   tags: supermarket,canned,pulses
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sainsburys_chickpeas_canned
   name: Sainsbury's Chickpeas (canned, drained)
   brand: Sainsbury's
@@ -954,7 +954,7 @@
   tags: supermarket,canned,pulses,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sainsburys_kidney_beans
   name: Sainsbury's Kidney Beans (canned)
   brand: Sainsbury's
@@ -969,7 +969,7 @@
   tags: supermarket,canned,pulses,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sainsburys_olive_oil_evoo
   name: Sainsbury's Extra Virgin Olive Oil
   brand: Sainsbury's
@@ -985,7 +985,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: sainsburys_peanut_butter_smooth
   name: Sainsbury's Smooth Peanut Butter
   brand: Sainsbury's
@@ -1001,7 +1001,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: peanuts
   unit_grams: 16
-- source: gymflow
+- source: afletics
   source_id: sainsburys_orange_juice_smooth
   name: Sainsbury's Smooth Orange Juice
   brand: Sainsbury's
@@ -1016,7 +1016,7 @@
   tags: supermarket,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sainsburys_apple_juice
   name: Sainsbury's Apple Juice
   brand: Sainsbury's
@@ -1031,7 +1031,7 @@
   tags: supermarket,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sainsburys_water_still_500
   name: Sainsbury's Still Water
   brand: Sainsbury's
@@ -1047,7 +1047,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: sainsburys_smoothie_strawberry
   name: Sainsbury's Strawberry & Banana Smoothie
   brand: Sainsbury's
@@ -1063,7 +1063,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: sainsburys_bananas
   name: Sainsbury's Bananas
   brand: Sainsbury's
@@ -1079,7 +1079,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 118
-- source: gymflow
+- source: afletics
   source_id: sainsburys_apples_braeburn
   name: Sainsbury's Braeburn Apples
   brand: Sainsbury's
@@ -1095,7 +1095,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: sainsburys_avocados
   name: Sainsbury's Ripe Avocados
   brand: Sainsbury's
@@ -1111,7 +1111,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: sainsburys_blueberries
   name: Sainsbury's Blueberries
   brand: Sainsbury's
@@ -1127,7 +1127,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: sainsburys_strawberries
   name: Sainsbury's British Strawberries
   brand: Sainsbury's
@@ -1143,7 +1143,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: sainsburys_cherry_tomatoes
   name: Sainsbury's Cherry Tomatoes
   brand: Sainsbury's
@@ -1159,7 +1159,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: sainsburys_taste_chicken_breast
   name: Sainsbury's Taste the Difference Chicken Breast
   brand: Sainsbury's
@@ -1174,7 +1174,7 @@
   tags: supermarket,meat,chicken,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sainsburys_taste_steak_ribeye
   name: Sainsbury's Taste the Difference Ribeye
   brand: Sainsbury's
@@ -1190,7 +1190,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: sainsburys_be_good_chicken_curry
   name: Sainsbury's Be Good To You Chicken Curry
   brand: Sainsbury's
@@ -1206,7 +1206,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: sainsburys_be_good_lasagne
   name: Sainsbury's Be Good To You Lasagne
   brand: Sainsbury's
@@ -1222,7 +1222,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: sainsburys_chicken_caesar_wrap
   name: Sainsbury's Chicken Caesar Wrap
   brand: Sainsbury's
@@ -1238,7 +1238,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,fish
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: sainsburys_chicken_protein_pot
   name: Sainsbury's Chicken Protein Pot
   brand: Sainsbury's
@@ -1254,7 +1254,7 @@
   dietary_compat: pescatarian
   allergens: eggs,mustard
   unit_grams: 215
-- source: gymflow
+- source: afletics
   source_id: sainsburys_high_protein_yogurt
   name: Sainsbury's High Protein Yogurt Vanilla
   brand: Sainsbury's

@@ -1,7 +1,7 @@
 # lidl.yaml — Lidl own-brand staples + Deluxe.
 # 61 entries (incl 0 migrated).
 # Source: lidl.co.uk product pages.
-- source: gymflow
+- source: afletics
   source_id: lidl_milbona_greek_0pct
   name: Lidl Milbona Greek Style 0% Yogurt
   brand: Lidl
@@ -17,7 +17,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: lidl_milbona_skyr_vanilla
   name: Lidl Milbona Vanilla Skyr
   brand: Lidl
@@ -33,7 +33,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: lidl_milbona_skyr_strawberry
   name: Lidl Milbona Strawberry Skyr
   brand: Lidl
@@ -49,7 +49,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: lidl_milk_semi
   name: Lidl Milbona Semi-skimmed Milk
   brand: Lidl
@@ -64,7 +64,7 @@
   tags: supermarket,dairy
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: lidl_milk_whole
   name: Lidl Milbona Whole Milk
   brand: Lidl
@@ -79,7 +79,7 @@
   tags: supermarket,dairy
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: lidl_oat_drink
   name: Lidl Vemondo Oat Drink
   brand: Lidl
@@ -94,7 +94,7 @@
   tags: supermarket,dairy_alternative,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: lidl_almond_drink
   name: Lidl Vemondo Almond Drink
   brand: Lidl
@@ -109,7 +109,7 @@
   tags: supermarket,dairy_alternative,vegan,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: tree_nuts
-- source: gymflow
+- source: afletics
   source_id: lidl_deluxe_cheddar_mature
   name: Lidl Deluxe Mature Cheddar
   brand: Lidl
@@ -125,7 +125,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: lidl_butter_unsalted
   name: Lidl Milbona Unsalted Butter
   brand: Lidl
@@ -141,7 +141,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: lidl_eggs_free_range_lge
   name: Lidl Free Range Large Eggs
   brand: Lidl
@@ -157,7 +157,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: lidl_white_bread_medium
   name: Lidl Aspley Boulangerie White Medium
   brand: Lidl
@@ -173,7 +173,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: lidl_wholemeal_bread
   name: Lidl Aspley Boulangerie Wholemeal
   brand: Lidl
@@ -189,7 +189,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: lidl_seeded_bloomer
   name: Lidl Deluxe Seeded Bloomer
   brand: Lidl
@@ -205,7 +205,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: lidl_brioche_buns
   name: Lidl Brioche Burger Buns
   brand: Lidl
@@ -221,7 +221,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: lidl_white_wraps
   name: Lidl Tortilla Wraps
   brand: Lidl
@@ -237,7 +237,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 64
-- source: gymflow
+- source: afletics
   source_id: lidl_pitta_white
   name: Lidl White Pitta Breads
   brand: Lidl
@@ -253,7 +253,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: lidl_chicken_breast_birchwood
   name: Lidl Birchwood Chicken Breast Fillets
   brand: Lidl
@@ -268,7 +268,7 @@
   tags: supermarket,meat,chicken,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: lidl_chicken_thighs
   name: Lidl Birchwood Chicken Thigh Fillets
   brand: Lidl
@@ -283,7 +283,7 @@
   tags: supermarket,meat,chicken,high_protein
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: lidl_lean_beef_mince
   name: Lidl Birchwood Lean Beef Mince 5%
   brand: Lidl
@@ -298,7 +298,7 @@
   tags: supermarket,meat,high_protein,low_fat
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: lidl_pork_sausages_8
   name: Lidl Birchwood British Pork Sausages
   brand: Lidl
@@ -314,7 +314,7 @@
   dietary_compat: pescatarian
   allergens: gluten,sulphites
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: lidl_back_bacon_smoked
   name: Lidl Birchwood Smoked Back Bacon
   brand: Lidl
@@ -330,7 +330,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: lidl_ham_wafer
   name: Lidl Wafer Thin Ham
   brand: Lidl
@@ -346,7 +346,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: lidl_steak_sirloin_deluxe
   name: Lidl Deluxe Sirloin Steak
   brand: Lidl
@@ -362,7 +362,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: lidl_tuna_water
   name: Lidl Nixe Tuna in Spring Water
   brand: Lidl
@@ -378,7 +378,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: lidl_smoked_salmon
   name: Lidl Deluxe Smoked Salmon
   brand: Lidl
@@ -394,7 +394,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: lidl_salmon_fillets
   name: Lidl Deluxe Salmon Fillets
   brand: Lidl
@@ -410,7 +410,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: lidl_king_prawns_cooked
   name: Lidl Cooked King Prawns
   brand: Lidl
@@ -425,7 +425,7 @@
   tags: supermarket,seafood,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: crustaceans
-- source: gymflow
+- source: afletics
   source_id: lidl_porridge_oats
   name: Lidl Crownfield Porridge Oats
   brand: Lidl
@@ -440,7 +440,7 @@
   tags: supermarket,cereal,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: lidl_corn_flakes
   name: Lidl Crownfield Corn Flakes
   brand: Lidl
@@ -455,7 +455,7 @@
   tags: supermarket,cereal,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: lidl_bran_flakes
   name: Lidl Crownfield Bran Flakes
   brand: Lidl
@@ -470,7 +470,7 @@
   tags: supermarket,cereal,breakfast,fibre
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: lidl_granola_fruit_nut
   name: Lidl Deluxe Fruit & Nut Granola
   brand: Lidl
@@ -485,7 +485,7 @@
   tags: supermarket,cereal,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: lidl_wheat_biscuits
   name: Lidl Crownfield Wheat Biscuits
   brand: Lidl
@@ -501,7 +501,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 18.75
-- source: gymflow
+- source: afletics
   source_id: lidl_white_pasta_dry
   name: Lidl Combino Penne Pasta
   brand: Lidl
@@ -516,7 +516,7 @@
   tags: supermarket,grain,pasta
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: lidl_basmati_rice
   name: Lidl Worldwide Foods Basmati Rice
   brand: Lidl
@@ -531,7 +531,7 @@
   tags: supermarket,grain,rice
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: lidl_microwave_rice
   name: Lidl Microwave Basmati Rice
   brand: Lidl
@@ -547,7 +547,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: lidl_couscous
   name: Lidl Couscous
   brand: Lidl
@@ -562,7 +562,7 @@
   tags: supermarket,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: lidl_chocolate_milk_bar
   name: Lidl Fin Carre Milk Chocolate
   brand: Lidl
@@ -578,7 +578,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: lidl_ready_salted_crisps
   name: Lidl Snaktastic Ready Salted Crisps
   brand: Lidl
@@ -594,7 +594,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: lidl_salt_vinegar_crisps
   name: Lidl Snaktastic Salt & Vinegar Crisps
   brand: Lidl
@@ -610,7 +610,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: lidl_protein_bar_chocolate
   name: Lidl Crownfield Protein Bar Chocolate
   brand: Lidl
@@ -626,7 +626,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: lidl_chicken_tikka_masala
   name: Lidl Deluxe Chicken Tikka Masala
   brand: Lidl
@@ -642,7 +642,7 @@
   dietary_compat: pescatarian
   allergens: milk,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: lidl_lasagne
   name: Lidl Deluxe Beef Lasagne
   brand: Lidl
@@ -658,7 +658,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: lidl_cottage_pie
   name: Lidl Deluxe Cottage Pie
   brand: Lidl
@@ -674,7 +674,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: lidl_orange_juice
   name: Lidl Solevita Orange Juice
   brand: Lidl
@@ -689,7 +689,7 @@
   tags: supermarket,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: lidl_apple_juice
   name: Lidl Solevita Apple Juice
   brand: Lidl
@@ -704,7 +704,7 @@
   tags: supermarket,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: lidl_water_still_500
   name: Lidl Spring Water
   brand: Lidl
@@ -720,7 +720,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: lidl_cola_can
   name: Lidl Cola
   brand: Lidl
@@ -736,7 +736,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: lidl_oven_chips
   name: Lidl Harvest Basket Oven Chips
   brand: Lidl
@@ -751,7 +751,7 @@
   tags: supermarket,frozen,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: lidl_frozen_peas
   name: Lidl Harvest Basket Garden Peas
   brand: Lidl
@@ -766,7 +766,7 @@
   tags: supermarket,frozen,vegetable,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: lidl_frozen_pizza_pepperoni
   name: Lidl Pepperoni Pizza (frozen)
   brand: Lidl
@@ -782,7 +782,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: lidl_tomato_ketchup
   name: Lidl Kania Tomato Ketchup
   brand: Lidl
@@ -798,7 +798,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 17
-- source: gymflow
+- source: afletics
   source_id: lidl_mayonnaise
   name: Lidl Kania Real Mayonnaise
   brand: Lidl
@@ -814,7 +814,7 @@
   dietary_compat: vegetarian,pescatarian,gluten_free
   allergens: eggs,mustard
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: lidl_pasta_sauce
   name: Lidl Italiamo Tomato & Basil Pasta Sauce
   brand: Lidl
@@ -829,7 +829,7 @@
   tags: supermarket,condiment
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: lidl_baked_beans
   name: Lidl Newgate Baked Beans
   brand: Lidl
@@ -844,7 +844,7 @@
   tags: supermarket,canned,pulses
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: lidl_chickpeas_canned
   name: Lidl Chickpeas (canned, drained)
   brand: Lidl
@@ -859,7 +859,7 @@
   tags: supermarket,canned,pulses,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: lidl_peanut_butter_smooth
   name: Lidl Mister Choc Peanut Butter
   brand: Lidl
@@ -875,7 +875,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: peanuts
   unit_grams: 16
-- source: gymflow
+- source: afletics
   source_id: lidl_olive_oil
   name: Lidl Primadonna Extra Virgin Olive Oil
   brand: Lidl
@@ -891,7 +891,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: lidl_bananas
   name: Lidl Bananas
   brand: Lidl
@@ -907,7 +907,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 118
-- source: gymflow
+- source: afletics
   source_id: lidl_apples
   name: Lidl Braeburn Apples
   brand: Lidl
@@ -923,7 +923,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: lidl_avocados
   name: Lidl Ripen at Home Avocados
   brand: Lidl
@@ -939,7 +939,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: lidl_blueberries
   name: Lidl Blueberries
   brand: Lidl

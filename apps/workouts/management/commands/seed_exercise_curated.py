@@ -2,7 +2,7 @@
 
 Mirrors the `seed_popular_foods` pattern in nutrition: drop YAML
 files into `apps/workouts/seed/` and re-run. Idempotent — uses
-`(source=gymflow, external_id)` as the unique key.
+`(source=afletics, external_id)` as the unique key.
 
 Each YAML file is a list of exercise dicts. Required fields:
     external_id          (string, snake_case, unique within source)
@@ -183,7 +183,7 @@ class Command(BaseCommand):
                     "is_published":       True,
                 }
                 _, was_created = ExerciseCatalog.objects.update_or_create(
-                    source=ExerciseCatalog.SOURCE_GYMFLOW,
+                    source=ExerciseCatalog.SOURCE_AFLETICS,
                     external_id=str(e["external_id"]),
                     defaults=defaults,
                 )

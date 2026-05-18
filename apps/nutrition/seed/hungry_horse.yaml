@@ -1,5 +1,5 @@
 # hungry_horse.yaml — Hungry Horse (Greene King) value pub menu. 30 entries.
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_donkey_burger
   name: The Donkey (huge burger)
   brand: Hungry Horse
@@ -15,7 +15,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_classic_burger
   name: Classic Beef Burger
   brand: Hungry Horse
@@ -31,7 +31,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 470
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_chicken_burger
   name: Buttermilk Chicken Burger
   brand: Hungry Horse
@@ -47,7 +47,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 460
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_mixed_grill
   name: Mixed Grill
   brand: Hungry Horse
@@ -63,7 +63,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: sulphites,eggs
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_fish_chips
   name: Fish & Chips (large)
   brand: Hungry Horse
@@ -79,7 +79,7 @@
   dietary_compat: pescatarian
   allergens: fish,gluten,eggs
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_steak_pie
   name: Steak Pie
   brand: Hungry Horse
@@ -95,7 +95,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 540
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_sunday_beef
   name: Roast Beef Sunday Lunch
   brand: Hungry Horse
@@ -111,7 +111,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_sunday_chicken
   name: Roast Chicken Sunday Lunch
   brand: Hungry Horse
@@ -127,7 +127,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_sunday_3meats
   name: 3 Roast Meats Sunday Lunch
   brand: Hungry Horse
@@ -143,7 +143,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 800
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_gammon
   name: Gammon, Egg & Chips
   brand: Hungry Horse
@@ -159,7 +159,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: eggs
   unit_grams: 550
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_lasagne
   name: Beef Lasagne
   brand: Hungry Horse
@@ -175,7 +175,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 470
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_curry_chicken
   name: Chicken Curry & Rice
   brand: Hungry Horse
@@ -191,7 +191,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: celery
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_jacket_cheese
   name: Jacket Potato Cheese
   brand: Hungry Horse
@@ -207,7 +207,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk
   unit_grams: 420
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_jacket_beans
   name: Jacket Potato Beans
   brand: Hungry Horse
@@ -223,7 +223,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
   unit_grams: 420
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_kids_chicken_chips
   name: Kids' Chicken & Chips
   brand: Hungry Horse
@@ -239,7 +239,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 320
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_breakfast_full
   name: The Big Plate Breakfast
   brand: Hungry Horse
@@ -255,7 +255,7 @@
   dietary_compat: pescatarian
   allergens: gluten,eggs,sulphites
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_chips
   name: Chips
   brand: Hungry Horse
@@ -271,7 +271,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_garlic_bread
   name: Garlic Bread
   brand: Hungry Horse
@@ -287,7 +287,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_onion_rings
   name: Onion Rings
   brand: Hungry Horse
@@ -303,7 +303,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 120
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_loaded_chips
   name: Loaded Cheese & Bacon Chips
   brand: Hungry Horse
@@ -319,7 +319,7 @@
   dietary_compat: pescatarian
   allergens: milk,eggs
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_garlic_dough_balls
   name: Garlic Dough Balls
   brand: Hungry Horse
@@ -335,7 +335,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_chicken_wings
   name: Chicken Wings
   brand: Hungry Horse
@@ -351,7 +351,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_calamari
   name: Calamari
   brand: Hungry Horse
@@ -367,7 +367,7 @@
   dietary_compat: pescatarian
   allergens: gluten,molluscs,eggs
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_brie_bites
   name: Brie Bites
   brand: Hungry Horse
@@ -383,7 +383,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_sticky_toffee
   name: Sticky Toffee Pudding
   brand: Hungry Horse
@@ -399,7 +399,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_chocolate_brownie
   name: Chocolate Brownie Sundae
   brand: Hungry Horse
@@ -415,7 +415,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 160
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_apple_pie
   name: Apple Pie
   brand: Hungry Horse
@@ -431,7 +431,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_ice_cream_3
   name: Ice Cream (3 scoops)
   brand: Hungry Horse
@@ -447,7 +447,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_lager_pint
   name: Lager (pint)
   brand: Hungry Horse
@@ -463,7 +463,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: hungryhorse_cider_pint
   name: Cider (pint)
   brand: Hungry Horse

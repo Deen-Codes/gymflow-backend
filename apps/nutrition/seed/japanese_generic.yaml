@@ -1,6 +1,6 @@
 # japanese_generic.yaml — generic Japanese dishes not tied to Wagamama / Wasabi / Itsu. Ramen variants, donburi bowls, yakitori, onigiri, sushi, sashimi, mochi, sake, condiments.
 
-- source: gymflow
+- source: afletics
   source_id: jpn_ramen_tonkotsu
   name: Tonkotsu Ramen
   brand: ''
@@ -16,7 +16,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,soy
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: jpn_ramen_shoyu
   name: Shoyu Ramen
   brand: ''
@@ -32,7 +32,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,soy,fish
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: jpn_ramen_miso
   name: Miso Ramen
   brand: ''
@@ -48,7 +48,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,soy,fish
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: jpn_ramen_chicken
   name: Chicken Ramen
   brand: ''
@@ -64,7 +64,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,soy
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: jpn_ramen_vegan
   name: Vegan Ramen
   brand: ''
@@ -80,7 +80,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: jpn_tempura_prawn_3
   name: Prawn Tempura (3 pieces)
   brand: ''
@@ -96,7 +96,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: crustaceans,gluten,eggs,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: jpn_tempura_veg_3
   name: Vegetable Tempura (3)
   brand: ''
@@ -112,7 +112,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 33
-- source: gymflow
+- source: afletics
   source_id: jpn_tempura_chicken_3
   name: Chicken Karaage (3)
   brand: ''
@@ -128,7 +128,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy,sesame,eggs
   unit_grams: 43
-- source: gymflow
+- source: afletics
   source_id: jpn_tonkatsu
   name: Tonkatsu (Pork Cutlet)
   brand: ''
@@ -144,7 +144,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,soy
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: jpn_chicken_katsu
   name: Chicken Katsu
   brand: ''
@@ -160,7 +160,7 @@
   dietary_compat: halal,pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: jpn_donburi_gyudon
   name: Gyūdon (Beef Bowl)
   brand: ''
@@ -176,7 +176,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: jpn_donburi_oyakodon
   name: Oyakodon (Chicken & Egg Bowl)
   brand: ''
@@ -192,7 +192,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,soy
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: jpn_donburi_katsudon
   name: Katsudon (Pork Cutlet Bowl)
   brand: ''
@@ -208,7 +208,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,soy
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: jpn_donburi_unagi
   name: Unagi Don (Eel Rice Bowl)
   brand: ''
@@ -224,7 +224,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,gluten,soy,eggs
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: jpn_yakitori_chicken_skewer
   name: Chicken Yakitori Skewer
   brand: ''
@@ -240,7 +240,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: soy,sesame
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: jpn_yakitori_pork_skewer
   name: Pork Yakitori Skewer
   brand: ''
@@ -256,7 +256,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: soy,sesame
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: jpn_onigiri_salmon
   name: Onigiri Salmon
   brand: ''
@@ -272,7 +272,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,soy,sesame
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: jpn_onigiri_tuna_mayo
   name: Onigiri Tuna Mayo
   brand: ''
@@ -288,7 +288,7 @@
   dietary_compat: pescatarian
   allergens: fish,eggs,soy,sesame
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: jpn_onigiri_umeboshi
   name: Onigiri Umeboshi
   brand: ''
@@ -304,7 +304,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: jpn_takoyaki_6
   name: Takoyaki (6 balls)
   brand: ''
@@ -320,7 +320,7 @@
   dietary_compat: pescatarian
   allergens: gluten,molluscs,eggs,milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: jpn_okonomiyaki
   name: Okonomiyaki
   brand: ''
@@ -336,7 +336,7 @@
   dietary_compat: pescatarian
   allergens: gluten,eggs,milk,soy,fish
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: jpn_gyoza_pork_5
   name: Pork Gyoza (5)
   brand: ''
@@ -352,7 +352,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 26
-- source: gymflow
+- source: afletics
   source_id: jpn_gyoza_chicken_5
   name: Chicken Gyoza (5)
   brand: ''
@@ -368,7 +368,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 26
-- source: gymflow
+- source: afletics
   source_id: jpn_gyoza_veg_5
   name: Vegetable Gyoza (5)
   brand: ''
@@ -384,7 +384,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 26
-- source: gymflow
+- source: afletics
   source_id: jpn_sushi_nigiri_salmon_2
   name: Salmon Nigiri (2 pieces)
   brand: ''
@@ -400,7 +400,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: jpn_sushi_nigiri_tuna_2
   name: Tuna Nigiri (2 pieces)
   brand: ''
@@ -416,7 +416,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: jpn_sushi_nigiri_prawn_2
   name: Cooked Prawn Nigiri (2)
   brand: ''
@@ -432,7 +432,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: crustaceans
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: jpn_sushi_maki_salmon_avocado_8
   name: Salmon & Avocado Maki (8 pieces)
   brand: ''
@@ -448,7 +448,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish,sesame
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: jpn_sushi_maki_tuna_8
   name: Tuna Maki (8 pieces)
   brand: ''
@@ -464,7 +464,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: jpn_sashimi_assorted_9
   name: Assorted Sashimi (9 pieces)
   brand: ''
@@ -480,7 +480,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish
   unit_grams: 16
-- source: gymflow
+- source: afletics
   source_id: jpn_miso_soup_white
   name: Miso Soup (white miso)
   brand: ''
@@ -496,7 +496,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: soy,fish
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: jpn_edamame_steamed
   name: Edamame, Steamed (per 100g)
   brand: ''
@@ -512,7 +512,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: jpn_seaweed_salad
   name: Seaweed Salad
   brand: ''
@@ -528,7 +528,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: sesame
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: jpn_chirashi_bowl
   name: Chirashi Sushi Bowl
   brand: ''
@@ -544,7 +544,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish,sesame
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: jpn_mochi_2
   name: Mochi (2 pieces)
   brand: ''
@@ -560,7 +560,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: jpn_mochi_ice_cream_2
   name: Mochi Ice Cream (2 pieces)
   brand: ''
@@ -576,7 +576,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: jpn_dorayaki_pancakes
   name: Dorayaki (Red Bean Pancakes, 1)
   brand: ''
@@ -592,7 +592,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: jpn_taiyaki
   name: Taiyaki (Fish-shaped Pastry)
   brand: ''
@@ -608,7 +608,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: jpn_dashi_stock
   name: Dashi Stock (per 250ml)
   brand: ''
@@ -623,7 +623,7 @@
   tags: japanese,sauce,low_calorie
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish,soy
-- source: gymflow
+- source: afletics
   source_id: jpn_mirin_15ml
   name: Mirin (1 tbsp/15ml)
   brand: ''
@@ -639,7 +639,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: jpn_sake_25
   name: Sake (25ml shot)
   brand: ''
@@ -655,7 +655,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: jpn_sake_warm_180
   name: Sake (180ml warm)
   brand: ''
@@ -670,7 +670,7 @@
   tags: japanese,alcoholic,spirit
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: jpn_japanese_curry
   name: Japanese Curry (with rice)
   brand: ''
@@ -686,7 +686,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: jpn_chashu_pork
   name: Chashu Pork (per 50g)
   brand: ''
@@ -701,7 +701,7 @@
   tags: japanese,meat,high_protein
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy
-- source: gymflow
+- source: afletics
   source_id: jpn_ajitama_egg
   name: Ajitama (Soft Egg)
   brand: ''
@@ -717,7 +717,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy,eggs
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: jpn_furikake_seasoning_5g
   name: Furikake Seasoning (1 tsp/5g)
   brand: ''
@@ -733,7 +733,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,soy,sesame
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: jpn_panko_breadcrumbs_30g
   name: Panko Breadcrumbs (30g)
   brand: ''
@@ -748,7 +748,7 @@
   tags: japanese,pantry,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: jpn_pickled_ginger_15g
   name: Pickled Ginger / Gari (15g)
   brand: ''

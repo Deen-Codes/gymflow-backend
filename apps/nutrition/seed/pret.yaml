@@ -1,7 +1,7 @@
 # pret.yaml — Pret A Manger UK menu.
 # 31 entries (incl 7 migrated).
 # Source: pret.co.uk/en-GB/menu.
-- source: gymflow
+- source: afletics
   source_id: pret_chicken_caesar_baguette
   name: Pret Chicken Caesar & Bacon Baguette
   brand: Pret a Manger
@@ -17,7 +17,7 @@
   allergens: gluten,eggs,milk,fish,mustard
   portion_unit: piece
   unit_grams: 270
-- source: gymflow
+- source: afletics
   source_id: pret_chocolate_brownie
   name: Pret Chocolate Brownie
   brand: Pret a Manger
@@ -33,7 +33,7 @@
   allergens: gluten,eggs,milk,soy
   portion_unit: piece
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: pret_classic_super_club
   name: Pret a Manger Classic Super Club
   brand: Pret a Manger
@@ -49,7 +49,7 @@
   allergens: gluten,eggs,milk,mustard
   portion_unit: piece
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: pret_egg_avocado_protein_pot
   name: Pret a Manger Egg & Avocado Protein Pot
   brand: Pret a Manger
@@ -65,7 +65,7 @@
   allergens: eggs
   portion_unit: pack
   unit_grams: 165
-- source: gymflow
+- source: afletics
   source_id: pret_falafel_humous_wrap
   name: Pret Falafel & Humous Wrap
   brand: Pret a Manger
@@ -81,7 +81,7 @@
   allergens: gluten,sesame
   portion_unit: wrap
   unit_grams: 222
-- source: gymflow
+- source: afletics
   source_id: pret_porridge_oats_milk
   name: Pret Porridge with Milk
   brand: Pret a Manger
@@ -97,7 +97,7 @@
   allergens: gluten,milk
   portion_unit: pack
   unit_grams: 270
-- source: gymflow
+- source: afletics
   source_id: pret_thai_chicken_soup
   name: Pret Thai Chicken & Sweet Potato Soup
   brand: Pret a Manger
@@ -113,7 +113,7 @@
   allergens: celery
   portion_unit: pack
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: pret_chicken_avocado_baguette
   name: Chicken & Avocado Baguette
   brand: Pret A Manger
@@ -129,7 +129,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 245
-- source: gymflow
+- source: afletics
   source_id: pret_ham_cheese_baguette
   name: Ham & Cheese Baguette
   brand: Pret A Manger
@@ -145,7 +145,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 245
-- source: gymflow
+- source: afletics
   source_id: pret_mature_cheddar_pickle_baguette
   name: Mature Cheddar & Pickle Baguette
   brand: Pret A Manger
@@ -161,7 +161,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 245
-- source: gymflow
+- source: afletics
   source_id: pret_balsamic_chicken_avocado_salad
   name: Balsamic Chicken & Avocado Salad
   brand: Pret A Manger
@@ -177,7 +177,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: sulphites,mustard
   unit_grams: 320
-- source: gymflow
+- source: afletics
   source_id: pret_yogurt_granola_pot
   name: Yogurt & Granola Pot
   brand: Pret A Manger
@@ -193,7 +193,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,gluten,tree_nuts
   unit_grams: 230
-- source: gymflow
+- source: afletics
   source_id: pret_avocado_arugula_sandwich
   name: Avocado, Pine Nut & Arugula Sandwich
   brand: Pret A Manger
@@ -209,7 +209,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,tree_nuts
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: pret_egg_avocado_sandwich
   name: Egg & Avocado Sandwich
   brand: Pret A Manger
@@ -225,7 +225,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 215
-- source: gymflow
+- source: afletics
   source_id: pret_more_veg_less_meat_sandwich
   name: More Veg, Less Meat Sandwich
   brand: Pret A Manger
@@ -241,7 +241,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: pret_tuna_sweetcorn_baguette
   name: Tuna & Sweetcorn Baguette
   brand: Pret A Manger
@@ -257,7 +257,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,fish
   unit_grams: 230
-- source: gymflow
+- source: afletics
   source_id: pret_mac_cheese
   name: Mac & Cheese
   brand: Pret A Manger
@@ -273,7 +273,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 270
-- source: gymflow
+- source: afletics
   source_id: pret_butter_chicken_curry
   name: Butter Chicken Curry
   brand: Pret A Manger
@@ -289,7 +289,7 @@
   dietary_compat: pescatarian
   allergens: milk,celery
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: pret_dahl_curry
   name: Dahl Curry
   brand: Pret A Manger
@@ -305,7 +305,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: celery
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: pret_yogurt_berry_pot
   name: Yogurt & Berry Pot
   brand: Pret A Manger
@@ -321,7 +321,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: pret_chia_pudding
   name: Chia Pudding
   brand: Pret A Manger
@@ -337,7 +337,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: pret_overnight_oats
   name: Overnight Oats
   brand: Pret A Manger
@@ -353,7 +353,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: pret_super_kale_caesar
   name: Super Kale Caesar Bowl
   brand: Pret A Manger
@@ -369,7 +369,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,fish
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: pret_pomegranate_grain_bowl
   name: Pomegranate Grain Bowl
   brand: Pret A Manger
@@ -385,7 +385,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sulphites
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: pret_almond_croissant
   name: Almond Croissant
   brand: Pret A Manger
@@ -401,7 +401,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,tree_nuts
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: pret_pain_au_chocolat
   name: Pain au Chocolat
   brand: Pret A Manger
@@ -417,7 +417,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: pret_butter_croissant
   name: Butter Croissant
   brand: Pret A Manger
@@ -433,7 +433,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 75
-- source: gymflow
+- source: afletics
   source_id: pret_americano_med
   name: Americano (regular)
   brand: Pret A Manger
@@ -448,7 +448,7 @@
   tags: chain,coffee,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: pret_latte_med_semi
   name: Latte (regular, semi)
   brand: Pret A Manger
@@ -463,7 +463,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: pret_flat_white_semi
   name: Flat White (semi)
   brand: Pret A Manger
@@ -478,7 +478,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: pret_oat_latte
   name: Oat Milk Latte
   brand: Pret A Manger

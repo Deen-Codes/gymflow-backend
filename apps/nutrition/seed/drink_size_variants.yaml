@@ -1,5 +1,5 @@
 # drink_size_variants.yaml — Costa Primo/Massimo size variants for Latte/Americano/Cappuccino/Mocha/Hot Choc, Starbucks Short/Tall variants, McDonald's/KFC drink sizes (small/large), kids fries.
-- source: gymflow
+- source: afletics
   source_id: costa_latte_primo_semi
   name: Costa Latte Primo (small, semi)
   brand: Costa Coffee
@@ -14,7 +14,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: costa_latte_massimo_semi
   name: Costa Latte Massimo (extra large, semi)
   brand: Costa Coffee
@@ -29,7 +29,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: costa_americano_primo
   name: Costa Americano (small/primo)
   brand: Costa Coffee
@@ -44,7 +44,7 @@
   tags: chain,coffee,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: costa_americano_massimo
   name: Costa Americano (XL/massimo)
   brand: Costa Coffee
@@ -59,7 +59,7 @@
   tags: chain,coffee,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: costa_cappuccino_primo_semi
   name: Costa Cappuccino Primo (small, semi)
   brand: Costa Coffee
@@ -74,7 +74,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: costa_cappuccino_massimo_semi
   name: Costa Cappuccino Massimo (XL, semi)
   brand: Costa Coffee
@@ -89,7 +89,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: costa_mocha_primo_semi
   name: Costa Mocha Primo (small, semi)
   brand: Costa Coffee
@@ -104,7 +104,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
-- source: gymflow
+- source: afletics
   source_id: costa_hot_choc_primo
   name: Costa Hot Chocolate Primo (small, semi)
   brand: Costa Coffee
@@ -119,7 +119,7 @@
   tags: chain,drink
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
-- source: gymflow
+- source: afletics
   source_id: starbucks_latte_short_semi
   name: Starbucks Caffe Latte Short (semi)
   brand: Starbucks
@@ -134,7 +134,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: starbucks_latte_tall_semi
   name: Starbucks Caffe Latte Tall (semi)
   brand: Starbucks
@@ -149,7 +149,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: starbucks_americano_short
   name: Starbucks Americano Short
   brand: Starbucks
@@ -164,7 +164,7 @@
   tags: chain,coffee,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: starbucks_americano_tall
   name: Starbucks Americano Tall
   brand: Starbucks
@@ -179,7 +179,7 @@
   tags: chain,coffee,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: starbucks_cappuccino_short_semi
   name: Starbucks Cappuccino Short (semi)
   brand: Starbucks
@@ -194,7 +194,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: starbucks_cappuccino_tall_semi
   name: Starbucks Cappuccino Tall (semi)
   brand: Starbucks
@@ -209,7 +209,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: starbucks_mocha_tall_semi
   name: Starbucks Mocha Tall (semi)
   brand: Starbucks
@@ -224,7 +224,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
-- source: gymflow
+- source: afletics
   source_id: mcd_coke_small
   name: McDonald's Coca-Cola (small)
   brand: McDonald's
@@ -239,7 +239,7 @@
   tags: chain,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mcd_coke_large
   name: McDonald's Coca-Cola (large)
   brand: McDonald's
@@ -254,7 +254,7 @@
   tags: chain,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: kfc_pepsi_small
   name: KFC Pepsi (small)
   brand: KFC
@@ -269,7 +269,7 @@
   tags: chain,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: kfc_pepsi_large
   name: KFC Pepsi (large)
   brand: KFC
@@ -284,7 +284,7 @@
   tags: chain,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mcd_fries_kids
   name: McDonald's Kids' Fries
   brand: McDonald's

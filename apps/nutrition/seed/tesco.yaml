@@ -1,7 +1,7 @@
 # tesco.yaml — Tesco own-brand staples + Finest range.
 # 85 entries (incl 3 migrated).
 # Source: tesco.com/groceries product pages.
-- source: gymflow
+- source: afletics
   source_id: tesco_50_50_bread
   name: Tesco 50/50 Medium Sliced Bread
   brand: Tesco
@@ -17,7 +17,7 @@
   allergens: gluten,milk
   portion_unit: slice
   unit_grams: 36
-- source: gymflow
+- source: afletics
   source_id: tesco_chicken_breast_skinless
   name: Tesco British Chicken Breast Fillets
   brand: Tesco
@@ -30,7 +30,7 @@
   dietary_compat: halal_compatible,gluten_free,dairy_free
   allergens: ''
   portion_unit: grams
-- source: gymflow
+- source: afletics
   source_id: tesco_finest_skyr
   name: Tesco Finest Skyr Natural
   brand: Tesco
@@ -44,7 +44,7 @@
   allergens: milk
   portion_unit: pack
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: tesco_greek_yogurt_natural
   name: Tesco Greek Style Natural Yogurt
   brand: Tesco
@@ -60,7 +60,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: tesco_greek_yogurt_0pct
   name: Tesco Greek Style 0% Yogurt
   brand: Tesco
@@ -76,7 +76,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: tesco_skyr_natural
   name: Tesco Natural Skyr
   brand: Tesco
@@ -92,7 +92,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: tesco_milk_semi
   name: Tesco Semi-skimmed Milk
   brand: Tesco
@@ -107,7 +107,7 @@
   tags: supermarket,dairy
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: tesco_milk_whole
   name: Tesco Whole Milk
   brand: Tesco
@@ -122,7 +122,7 @@
   tags: supermarket,dairy
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: tesco_oat_drink
   name: Tesco Oat Drink
   brand: Tesco
@@ -137,7 +137,7 @@
   tags: supermarket,dairy_alternative,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: tesco_cheddar_mature
   name: Tesco Mature Cheddar
   brand: Tesco
@@ -153,7 +153,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: tesco_butter_unsalted
   name: Tesco Unsalted Butter
   brand: Tesco
@@ -169,7 +169,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: tesco_eggs_med_freerange
   name: Tesco Free Range Medium Eggs
   brand: Tesco
@@ -185,7 +185,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: tesco_eggs_lge_freerange
   name: Tesco Free Range Large Eggs
   brand: Tesco
@@ -201,7 +201,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: tesco_eggs_organic_lge
   name: Tesco Organic Large Eggs
   brand: Tesco
@@ -217,7 +217,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: tesco_white_med_bread
   name: Tesco White Medium Bread
   brand: Tesco
@@ -233,7 +233,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: tesco_wholemeal_bread
   name: Tesco Wholemeal Bread
   brand: Tesco
@@ -249,7 +249,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: tesco_seeded_bread
   name: Tesco Seeded Bloomer
   brand: Tesco
@@ -265,7 +265,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: tesco_brioche_buns
   name: Tesco Brioche Burger Buns
   brand: Tesco
@@ -281,7 +281,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: tesco_white_wraps
   name: Tesco White Tortilla Wraps
   brand: Tesco
@@ -297,7 +297,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 64
-- source: gymflow
+- source: afletics
   source_id: tesco_white_pitta
   name: Tesco White Pitta Breads
   brand: Tesco
@@ -313,7 +313,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: tesco_plain_bagels
   name: Tesco Plain Bagels
   brand: Tesco
@@ -329,7 +329,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 95
-- source: gymflow
+- source: afletics
   source_id: tesco_chicken_breast_fillets
   name: Tesco British Chicken Breast Fillets
   brand: Tesco
@@ -344,7 +344,7 @@
   tags: supermarket,meat,chicken,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tesco_chicken_thighs
   name: Tesco Boneless Skinless Chicken Thighs
   brand: Tesco
@@ -359,7 +359,7 @@
   tags: supermarket,meat,chicken,high_protein
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tesco_lean_beef_mince_5pct
   name: Tesco Lean Beef Mince 5% Fat
   brand: Tesco
@@ -374,7 +374,7 @@
   tags: supermarket,meat,high_protein,low_fat
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tesco_beef_mince_15pct
   name: Tesco Beef Mince 15% Fat
   brand: Tesco
@@ -389,7 +389,7 @@
   tags: supermarket,meat,high_protein
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tesco_steak_sirloin
   name: Tesco Sirloin Steak
   brand: Tesco
@@ -405,7 +405,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: tesco_pork_sausages
   name: Tesco British Pork Sausages
   brand: Tesco
@@ -421,7 +421,7 @@
   dietary_compat: pescatarian
   allergens: gluten,sulphites
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: tesco_bacon_back_smoked
   name: Tesco Smoked Back Bacon
   brand: Tesco
@@ -437,7 +437,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: tesco_streaky_bacon
   name: Tesco Streaky Bacon
   brand: Tesco
@@ -453,7 +453,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 12
-- source: gymflow
+- source: afletics
   source_id: tesco_ham_wafer_thin
   name: Tesco Wafer Thin Ham
   brand: Tesco
@@ -469,7 +469,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: tesco_chicken_breast_slices
   name: Tesco Cooked Chicken Breast Slices
   brand: Tesco
@@ -485,7 +485,7 @@
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: tesco_tuna_water
   name: Tesco Tuna in Spring Water
   brand: Tesco
@@ -501,7 +501,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: tesco_smoked_salmon
   name: Tesco Smoked Scottish Salmon
   brand: Tesco
@@ -517,7 +517,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: tesco_salmon_fillets
   name: Tesco Salmon Fillets
   brand: Tesco
@@ -533,7 +533,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: tesco_king_prawns_cooked
   name: Tesco Cooked King Prawns
   brand: Tesco
@@ -548,7 +548,7 @@
   tags: supermarket,seafood,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: crustaceans
-- source: gymflow
+- source: afletics
   source_id: tesco_porridge_oats
   name: Tesco Porridge Oats
   brand: Tesco
@@ -563,7 +563,7 @@
   tags: supermarket,cereal,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: tesco_corn_flakes
   name: Tesco Corn Flakes
   brand: Tesco
@@ -578,7 +578,7 @@
   tags: supermarket,cereal,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tesco_bran_flakes
   name: Tesco Bran Flakes
   brand: Tesco
@@ -593,7 +593,7 @@
   tags: supermarket,cereal,breakfast,fibre
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: tesco_granola_fruit_nut
   name: Tesco Fruit & Nut Granola
   brand: Tesco
@@ -608,7 +608,7 @@
   tags: supermarket,cereal,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: tesco_white_pasta
   name: Tesco Penne Pasta (dry)
   brand: Tesco
@@ -623,7 +623,7 @@
   tags: supermarket,grain,pasta
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: tesco_wholewheat_pasta
   name: Tesco Wholewheat Pasta
   brand: Tesco
@@ -638,7 +638,7 @@
   tags: supermarket,grain,pasta
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: tesco_basmati_rice
   name: Tesco Basmati Rice (dry)
   brand: Tesco
@@ -653,7 +653,7 @@
   tags: supermarket,grain,rice
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tesco_microwave_rice
   name: Tesco Microwave Basmati Rice
   brand: Tesco
@@ -669,7 +669,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: tesco_couscous
   name: Tesco Couscous (dry)
   brand: Tesco
@@ -684,7 +684,7 @@
   tags: supermarket,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: tesco_milk_chocolate_bar
   name: Tesco Milk Chocolate Bar
   brand: Tesco
@@ -700,7 +700,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: tesco_ready_salted_crisps
   name: Tesco Ready Salted Crisps
   brand: Tesco
@@ -716,7 +716,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: tesco_chocolate_chip_cookies
   name: Tesco Chocolate Chip Cookies
   brand: Tesco
@@ -732,7 +732,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 12
-- source: gymflow
+- source: afletics
   source_id: tesco_protein_bar_chocolate
   name: Tesco Protein Bar Chocolate
   brand: Tesco
@@ -748,7 +748,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: tesco_chicken_tikka_masala
   name: Tesco Chicken Tikka Masala (ready meal)
   brand: Tesco
@@ -764,7 +764,7 @@
   dietary_compat: pescatarian
   allergens: milk,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: tesco_lasagne_meal
   name: Tesco Beef Lasagne (ready meal)
   brand: Tesco
@@ -780,7 +780,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: tesco_thai_green_curry
   name: Tesco Thai Green Chicken Curry
   brand: Tesco
@@ -796,7 +796,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: tesco_cottage_pie_meal
   name: Tesco Cottage Pie (ready meal)
   brand: Tesco
@@ -812,7 +812,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: tesco_oven_chips
   name: Tesco Oven Chips (frozen)
   brand: Tesco
@@ -827,7 +827,7 @@
   tags: supermarket,frozen,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tesco_frozen_peas
   name: Tesco Garden Peas (frozen)
   brand: Tesco
@@ -842,7 +842,7 @@
   tags: supermarket,frozen,vegetable,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tesco_frozen_pizza_pepperoni
   name: Tesco Pepperoni Pizza (frozen)
   brand: Tesco
@@ -858,7 +858,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: tesco_vanilla_ice_cream
   name: Tesco Vanilla Ice Cream
   brand: Tesco
@@ -873,7 +873,7 @@
   tags: supermarket,frozen,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
-- source: gymflow
+- source: afletics
   source_id: tesco_tomato_ketchup
   name: Tesco Tomato Ketchup
   brand: Tesco
@@ -889,7 +889,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 17
-- source: gymflow
+- source: afletics
   source_id: tesco_mayonnaise
   name: Tesco Real Mayonnaise
   brand: Tesco
@@ -905,7 +905,7 @@
   dietary_compat: vegetarian,pescatarian,gluten_free
   allergens: eggs,mustard
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: tesco_pasta_sauce_tomato
   name: Tesco Tomato & Basil Pasta Sauce
   brand: Tesco
@@ -920,7 +920,7 @@
   tags: supermarket,condiment
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tesco_baked_beans
   name: Tesco Baked Beans in Tomato Sauce
   brand: Tesco
@@ -935,7 +935,7 @@
   tags: supermarket,canned,pulses
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tesco_chickpeas_canned
   name: Tesco Chickpeas (canned, drained)
   brand: Tesco
@@ -950,7 +950,7 @@
   tags: supermarket,canned,pulses,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tesco_kidney_beans
   name: Tesco Kidney Beans (canned)
   brand: Tesco
@@ -965,7 +965,7 @@
   tags: supermarket,canned,pulses,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tesco_olive_oil_evoo
   name: Tesco Extra Virgin Olive Oil
   brand: Tesco
@@ -981,7 +981,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: tesco_peanut_butter_smooth
   name: Tesco Smooth Peanut Butter
   brand: Tesco
@@ -997,7 +997,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: peanuts
   unit_grams: 16
-- source: gymflow
+- source: afletics
   source_id: tesco_orange_juice_smooth
   name: Tesco Smooth Orange Juice
   brand: Tesco
@@ -1012,7 +1012,7 @@
   tags: supermarket,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tesco_apple_juice
   name: Tesco Apple Juice
   brand: Tesco
@@ -1027,7 +1027,7 @@
   tags: supermarket,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tesco_water_still_500
   name: Tesco Still Water
   brand: Tesco
@@ -1043,7 +1043,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: tesco_smoothie_strawberry
   name: Tesco Strawberry & Banana Smoothie
   brand: Tesco
@@ -1059,7 +1059,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: tesco_bananas
   name: Tesco Bananas
   brand: Tesco
@@ -1075,7 +1075,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 118
-- source: gymflow
+- source: afletics
   source_id: tesco_apples_braeburn
   name: Tesco Braeburn Apples
   brand: Tesco
@@ -1091,7 +1091,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: tesco_avocados
   name: Tesco Ripe Avocados
   brand: Tesco
@@ -1107,7 +1107,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: tesco_blueberries
   name: Tesco Blueberries
   brand: Tesco
@@ -1123,7 +1123,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: tesco_strawberries
   name: Tesco British Strawberries
   brand: Tesco
@@ -1139,7 +1139,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: tesco_cherry_tomatoes
   name: Tesco Cherry Tomatoes
   brand: Tesco
@@ -1155,7 +1155,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: tesco_finest_skyr_natural
   name: Tesco Finest Natural Skyr
   brand: Tesco
@@ -1171,7 +1171,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: tesco_high_protein_yogurt_strawberry
   name: Tesco High Protein Yogurt Strawberry
   brand: Tesco
@@ -1187,7 +1187,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: tesco_finest_chicken_breast
   name: Tesco Finest British Chicken Breast
   brand: Tesco
@@ -1202,7 +1202,7 @@
   tags: supermarket,meat,chicken,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tesco_finest_steak_ribeye
   name: Tesco Finest Ribeye Steak
   brand: Tesco
@@ -1218,7 +1218,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: tesco_finest_beef_lasagne_meal
   name: Tesco Finest Beef Lasagne
   brand: Tesco
@@ -1234,7 +1234,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: tesco_chicken_caesar_wrap
   name: Tesco Chicken Caesar Wrap
   brand: Tesco
@@ -1250,7 +1250,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,fish,mustard
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: tesco_chicken_protein_pot
   name: Tesco Chicken Protein Pot
   brand: Tesco
@@ -1266,7 +1266,7 @@
   dietary_compat: pescatarian
   allergens: eggs,mustard
   unit_grams: 215
-- source: gymflow
+- source: afletics
   source_id: tesco_egg_protein_pot
   name: Tesco Egg & Spinach Protein Pot
   brand: Tesco
@@ -1282,7 +1282,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs,mustard
   unit_grams: 175
-- source: gymflow
+- source: afletics
   source_id: tesco_finest_dough_balls
   name: Tesco Finest Garlic Dough Balls
   brand: Tesco
@@ -1298,7 +1298,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: tesco_chicken_kievs_2
   name: Tesco Chicken Kievs
   brand: Tesco

@@ -1,6 +1,6 @@
 # cereals_extra.yaml — branded cereal variants beyond the base set: Kellogg's Special K/Crunchy Nut/Krave/Honey Loops/Fruit & Fibre, Nestlé Cheerios variants/Curiously Cinnamon/Cookie Crisp/Lucky Charms/Shreddies, Honey Monster, Jordans Country Crisp/muesli/Frusli, Dorset, Quaker sachets, Ready Brek, Bear, Lizi's, Tesco own.
 
-- source: gymflow
+- source: afletics
   source_id: kelloggs_special_k_red_berries_30g
   name: Kellogg's Special K Red Berries (30g)
   brand: Kellogg's
@@ -15,7 +15,7 @@
   tags: cereal,branded,breakfast
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,milk
-- source: gymflow
+- source: afletics
   source_id: kelloggs_crunchy_nut_honey_30g
   name: Kellogg's Crunchy Nut Honey & Nut Cornflakes (30g)
   brand: Kellogg's
@@ -30,7 +30,7 @@
   tags: cereal,branded,breakfast
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,tree_nuts,milk
-- source: gymflow
+- source: afletics
   source_id: kelloggs_crunchy_nut_chocolate_30g
   name: Kellogg's Crunchy Nut Chocolate (30g)
   brand: Kellogg's
@@ -45,7 +45,7 @@
   tags: cereal,branded,breakfast
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
-- source: gymflow
+- source: afletics
   source_id: kelloggs_coco_pops_chocos_30g
   name: Kellogg's Coco Pops Chocos (30g)
   brand: Kellogg's
@@ -60,7 +60,7 @@
   tags: cereal,branded,breakfast
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: kelloggs_frosted_mini_wheats_40g
   name: Kellogg's Frosted Mini-Wheats (40g)
   brand: Kellogg's
@@ -75,7 +75,7 @@
   tags: cereal,branded,breakfast,fibre
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: kelloggs_krave_chocolate_hazelnut_30g
   name: Kellogg's Krave Chocolate Hazelnut (30g)
   brand: Kellogg's
@@ -90,7 +90,7 @@
   tags: cereal,branded,breakfast
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: kelloggs_honey_loops_30g
   name: Kellogg's Honey Loops (30g)
   brand: Kellogg's
@@ -105,7 +105,7 @@
   tags: cereal,branded,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: kelloggs_fruit_fibre_45g
   name: Kellogg's Fruit & Fibre (45g)
   brand: Kellogg's
@@ -120,7 +120,7 @@
   tags: cereal,branded,breakfast,fibre
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: nestle_cheerios_honey_30g
   name: Nestlé Honey Cheerios (30g)
   brand: Nestlé
@@ -135,7 +135,7 @@
   tags: cereal,branded,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: nestle_cheerios_multigrain_30g
   name: Nestlé Multi-Grain Cheerios (30g)
   brand: Nestlé
@@ -150,7 +150,7 @@
   tags: cereal,branded,breakfast,fibre
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: nestle_curiously_cinnamon_30g
   name: Nestlé Curiously Cinnamon (30g)
   brand: Nestlé
@@ -165,7 +165,7 @@
   tags: cereal,branded,breakfast
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy
-- source: gymflow
+- source: afletics
   source_id: nestle_cookie_crisp_30g
   name: Nestlé Cookie Crisp (30g)
   brand: Nestlé
@@ -180,7 +180,7 @@
   tags: cereal,branded,breakfast
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,milk,soy
-- source: gymflow
+- source: afletics
   source_id: nestle_lucky_charms_30g
   name: Nestlé Lucky Charms (30g)
   brand: Nestlé
@@ -195,7 +195,7 @@
   tags: cereal,branded,breakfast
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: nestle_shreddies_honey_40g
   name: Nestlé Honey Shreddies (40g)
   brand: Nestlé
@@ -210,7 +210,7 @@
   tags: cereal,branded,breakfast,fibre
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: nestle_shreddies_coco_40g
   name: Nestlé Coco Shreddies (40g)
   brand: Nestlé
@@ -225,7 +225,7 @@
   tags: cereal,branded,breakfast,fibre
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,milk,soy
-- source: gymflow
+- source: afletics
   source_id: honey_monster_puffs_30g
   name: Honey Monster Puffs (30g)
   brand: Honey Monster
@@ -240,7 +240,7 @@
   tags: cereal,branded,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: jordans_country_crisp_strawberries_45g
   name: Jordans Country Crisp Strawberries (45g)
   brand: Jordans
@@ -255,7 +255,7 @@
   tags: cereal,branded,breakfast,granola
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: jordans_country_crisp_choc_45g
   name: Jordans Country Crisp Triple Choc (45g)
   brand: Jordans
@@ -270,7 +270,7 @@
   tags: cereal,branded,breakfast,granola
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,milk,soy
-- source: gymflow
+- source: afletics
   source_id: jordans_super_3_seeds_50g
   name: Jordans Super Muesli 3 Seeds (50g)
   brand: Jordans
@@ -285,7 +285,7 @@
   tags: cereal,branded,breakfast,muesli
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: jordans_frusli_choc_chip_30g
   name: Jordans Frusli Chocolate Chip (1 bar)
   brand: Jordans
@@ -301,7 +301,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: dorset_simply_delicious_50g
   name: Dorset Simply Delicious Muesli (50g)
   brand: Dorset Cereals
@@ -316,7 +316,7 @@
   tags: cereal,branded,breakfast,muesli
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: dorset_super_high_fibre_50g
   name: Dorset Super High Fibre Muesli (50g)
   brand: Dorset Cereals
@@ -331,7 +331,7 @@
   tags: cereal,branded,breakfast,muesli,fibre
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: dorset_classic_fruity_granola_45g
   name: Dorset Classic Fruity Granola (45g)
   brand: Dorset Cereals
@@ -346,7 +346,7 @@
   tags: cereal,branded,breakfast,granola
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: quaker_oat_so_simple_golden_syrup_36g
   name: Quaker Oat So Simple Golden Syrup (1 sachet)
   brand: Quaker
@@ -362,7 +362,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 36
-- source: gymflow
+- source: afletics
   source_id: quaker_oat_so_simple_chocolate_36g
   name: Quaker Oat So Simple Chocolate (1 sachet)
   brand: Quaker
@@ -378,7 +378,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,milk,soy
   unit_grams: 36
-- source: gymflow
+- source: afletics
   source_id: quaker_oat_so_simple_apple_cinnamon_33g
   name: Quaker Oat So Simple Apple & Cinnamon (1 sachet)
   brand: Quaker
@@ -394,7 +394,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 33
-- source: gymflow
+- source: afletics
   source_id: quaker_porridge_pot_30g
   name: Quaker Porridge Pot
   brand: Quaker
@@ -410,7 +410,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 57
-- source: gymflow
+- source: afletics
   source_id: ready_brek_30g
   name: Ready Brek Original (30g)
   brand: Ready Brek
@@ -425,7 +425,7 @@
   tags: cereal,branded,breakfast,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: bear_alphabites_choco_30g
   name: Bear Alphabites Choco (30g)
   brand: Bear
@@ -440,7 +440,7 @@
   tags: cereal,branded,breakfast,kids
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: lizis_low_sugar_granola_45g
   name: Lizi's Low Sugar Granola (45g)
   brand: Lizi's
@@ -455,7 +455,7 @@
   tags: cereal,branded,breakfast,granola,low_sugar
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: tesco_corn_flakes_30g
   name: Tesco Corn Flakes (30g)
   brand: Tesco
@@ -470,7 +470,7 @@
   tags: cereal,branded,breakfast,supermarket
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tesco_strawberry_crisp_45g
   name: Tesco Strawberry Crisp (45g)
   brand: Tesco
@@ -485,7 +485,7 @@
   tags: cereal,branded,breakfast,granola,supermarket
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: tesco_fruit_fibre_45g
   name: Tesco Fruit & Fibre (45g)
   brand: Tesco
@@ -500,7 +500,7 @@
   tags: cereal,branded,breakfast,fibre,supermarket
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: tesco_choco_hoops_30g
   name: Tesco Choco Hoops (30g)
   brand: Tesco
@@ -515,7 +515,7 @@
   tags: cereal,branded,breakfast,kids,supermarket
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tesco_honey_nut_corn_flakes_30g
   name: Tesco Honey Nut Corn Flakes (30g)
   brand: Tesco

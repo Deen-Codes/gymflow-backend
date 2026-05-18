@@ -1,6 +1,6 @@
 # rtd_drinks_more.yaml — RTD coffee, tea brands, kombucha, sports drinks, energy drinks,
 # branded plant milks, premium water.
-- source: gymflow
+- source: afletics
   source_id: rtd_starbucks_frappuccino_mocha_281
   name: Starbucks Frappuccino Mocha (281ml)
   brand: Starbucks
@@ -16,7 +16,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 281
-- source: gymflow
+- source: afletics
   source_id: rtd_starbucks_frappuccino_caramel_281
   name: Starbucks Frappuccino Caramel (281ml)
   brand: Starbucks
@@ -32,7 +32,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 281
-- source: gymflow
+- source: afletics
   source_id: rtd_starbucks_doubleshot_200
   name: Starbucks Doubleshot Espresso (200ml)
   brand: Starbucks
@@ -48,7 +48,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: rtd_costa_caramel_latte_250
   name: Costa Caramel Latte (250ml RTD)
   brand: Costa
@@ -64,7 +64,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: rtd_costa_americano_250
   name: Costa Americano (250ml RTD)
   brand: Costa
@@ -80,7 +80,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: rtd_jimmys_iced_coffee_275
   name: Jimmy's Iced Coffee (275ml)
   brand: Jimmy's
@@ -96,7 +96,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 275
-- source: gymflow
+- source: afletics
   source_id: rtd_emmi_caffe_latte_230
   name: Emmi Caffè Latte (230ml)
   brand: Emmi
@@ -112,7 +112,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 230
-- source: gymflow
+- source: afletics
   source_id: rtd_grenade_protein_coffee_330
   name: Grenade Protein Coffee (330ml)
   brand: Grenade
@@ -128,7 +128,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: tea_pg_tips_white
   name: PG Tips Tea with Milk (mug)
   brand: PG Tips
@@ -143,7 +143,7 @@
   tags: drink,tea,branded
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: tea_yorkshire_white
   name: Yorkshire Tea with Milk (mug)
   brand: Yorkshire Tea
@@ -158,7 +158,7 @@
   tags: drink,tea,branded
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: tea_twinings_earl_grey_black
   name: Twinings Earl Grey (mug, black)
   brand: Twinings
@@ -173,7 +173,7 @@
   tags: drink,tea,branded,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tea_twinings_english_breakfast_black
   name: Twinings English Breakfast (mug, black)
   brand: Twinings
@@ -188,7 +188,7 @@
   tags: drink,tea,branded,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tea_twinings_green_tea_black
   name: Twinings Pure Green Tea (mug)
   brand: Twinings
@@ -203,7 +203,7 @@
   tags: drink,tea,branded,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tea_twinings_peppermint
   name: Twinings Peppermint (mug)
   brand: Twinings
@@ -218,7 +218,7 @@
   tags: drink,tea,branded,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tea_pukka_three_fennel
   name: Pukka Three Fennel (mug)
   brand: Pukka
@@ -233,7 +233,7 @@
   tags: drink,tea,branded,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: hot_choc_cadbury_drinking
   name: Cadbury Drinking Chocolate (1 mug, made with milk)
   brand: Cadbury
@@ -248,7 +248,7 @@
   tags: drink,branded
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
-- source: gymflow
+- source: afletics
   source_id: hot_choc_galaxy_instant
   name: Galaxy Instant Hot Chocolate (1 sachet + water)
   brand: Galaxy
@@ -264,7 +264,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: kombucha_gts_original_473
   name: GT's Original Kombucha (473ml)
   brand: GT's
@@ -280,7 +280,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 473
-- source: gymflow
+- source: afletics
   source_id: kombucha_equinox_330
   name: Equinox Kombucha (330ml)
   brand: Equinox
@@ -296,7 +296,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: kombucha_remedy_250
   name: Remedy Kombucha Raspberry & Lemon (250ml)
   brand: Remedy
@@ -312,7 +312,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: kombucha_lo_bros_330
   name: Lo Bros Kombucha Ginger & Lemon (330ml)
   brand: Lo Bros
@@ -328,7 +328,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: sports_lucozade_sport_orange_500
   name: Lucozade Sport Orange (500ml)
   brand: Lucozade
@@ -344,7 +344,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: sports_lucozade_sport_raspberry_500
   name: Lucozade Sport Raspberry (500ml)
   brand: Lucozade
@@ -360,7 +360,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: sports_powerade_blue_500
   name: Powerade Blue Mountain Blast (500ml)
   brand: Powerade
@@ -376,7 +376,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: sports_gatorade_orange_500
   name: Gatorade Orange (500ml)
   brand: Gatorade
@@ -392,7 +392,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: sports_high5_isotonic_powder
   name: High5 Energy Drink Powder (1 scoop)
   brand: High5
@@ -408,7 +408,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 47
-- source: gymflow
+- source: afletics
   source_id: sports_sis_go_isotonic_47g
   name: SiS GO Isotonic Energy Gel
   brand: SiS
@@ -424,7 +424,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: energy_rockstar_500
   name: Rockstar Original (500ml)
   brand: Rockstar
@@ -440,7 +440,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: energy_relentless_500
   name: Relentless Origin (500ml)
   brand: Relentless
@@ -456,7 +456,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: energy_reign_total_body_500
   name: Reign Total Body Fuel (500ml)
   brand: Reign
@@ -472,7 +472,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: energy_bang_500
   name: Bang Energy (500ml)
   brand: Bang
@@ -488,7 +488,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: energy_prime_blue_raspberry_500
   name: Prime Hydration Blue Raspberry (500ml)
   brand: Prime
@@ -504,7 +504,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: water_volvic_500
   name: Volvic Still Water (500ml)
   brand: Volvic
@@ -520,7 +520,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: water_evian_500
   name: Evian Still Water (500ml)
   brand: Evian
@@ -536,7 +536,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: water_highland_spring_500
   name: Highland Spring Still Water (500ml)
   brand: Highland Spring
@@ -552,7 +552,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: water_san_pellegrino_750
   name: San Pellegrino Sparkling (750ml)
   brand: San Pellegrino
@@ -568,7 +568,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 750
-- source: gymflow
+- source: afletics
   source_id: water_perrier_330
   name: Perrier Sparkling (330ml)
   brand: Perrier
@@ -584,7 +584,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: water_dasani_500
   name: Dasani Still Water (500ml)
   brand: Dasani
@@ -600,7 +600,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: alpro_almond_no_sugar_250
   name: Alpro Almond Unsweetened (250ml)
   brand: Alpro
@@ -615,7 +615,7 @@
   tags: drink,branded,dairy_alternative,vegan,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: tree_nuts
-- source: gymflow
+- source: afletics
   source_id: alpro_oat_no_sugar_250
   name: Alpro Oat No Sugars (250ml)
   brand: Alpro
@@ -630,7 +630,7 @@
   tags: drink,branded,dairy_alternative,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: alpro_soya_unsweetened_250
   name: Alpro Soya Unsweetened (250ml)
   brand: Alpro
@@ -645,7 +645,7 @@
   tags: drink,branded,dairy_alternative,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
-- source: gymflow
+- source: afletics
   source_id: oatly_barista_250
   name: Oatly Barista (250ml)
   brand: Oatly
@@ -660,7 +660,7 @@
   tags: drink,branded,dairy_alternative,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: califia_oat_milk_250
   name: Califia Farms Oat Milk (250ml)
   brand: Califia Farms
@@ -675,7 +675,7 @@
   tags: drink,branded,dairy_alternative,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: vita_coco_pure_330
   name: Vita Coco Pure Coconut Water (330ml)
   brand: Vita Coco
@@ -691,7 +691,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: coco_libre_pure_500
   name: Coco Libre Coconut Water (500ml)
   brand: Coco Libre
@@ -707,7 +707,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: robinsons_orange_squash_diluted
   name: Robinsons Orange Squash (200ml diluted)
   brand: Robinsons
@@ -722,7 +722,7 @@
   tags: drink,branded,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: robinsons_apple_blackcurrant_diluted
   name: Robinsons Apple & Blackcurrant Squash (diluted)
   brand: Robinsons
@@ -737,7 +737,7 @@
   tags: drink,branded,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: vimto_squash_diluted
   name: Vimto Squash (diluted)
   brand: Vimto

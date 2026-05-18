@@ -1,7 +1,7 @@
 # asda.yaml — Asda own-brand + Extra Special.
 # 79 entries (incl 0 migrated).
 # Source: groceries.asda.com.
-- source: gymflow
+- source: afletics
   source_id: asda_greek_yogurt_natural
   name: Asda Greek Style Natural Yogurt
   brand: Asda
@@ -17,7 +17,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: asda_greek_yogurt_0pct
   name: Asda Greek Style 0% Yogurt
   brand: Asda
@@ -33,7 +33,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: asda_skyr_natural
   name: Asda Natural Skyr
   brand: Asda
@@ -49,7 +49,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: asda_milk_semi
   name: Asda Semi-skimmed Milk
   brand: Asda
@@ -64,7 +64,7 @@
   tags: supermarket,dairy
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: asda_milk_whole
   name: Asda Whole Milk
   brand: Asda
@@ -79,7 +79,7 @@
   tags: supermarket,dairy
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: asda_oat_drink
   name: Asda Oat Drink
   brand: Asda
@@ -94,7 +94,7 @@
   tags: supermarket,dairy_alternative,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: asda_cheddar_mature
   name: Asda Mature Cheddar
   brand: Asda
@@ -110,7 +110,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: asda_butter_unsalted
   name: Asda Unsalted Butter
   brand: Asda
@@ -126,7 +126,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: asda_eggs_med_freerange
   name: Asda Free Range Medium Eggs
   brand: Asda
@@ -142,7 +142,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: asda_eggs_lge_freerange
   name: Asda Free Range Large Eggs
   brand: Asda
@@ -158,7 +158,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: asda_eggs_organic_lge
   name: Asda Organic Large Eggs
   brand: Asda
@@ -174,7 +174,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: asda_white_med_bread
   name: Asda White Medium Bread
   brand: Asda
@@ -190,7 +190,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: asda_wholemeal_bread
   name: Asda Wholemeal Bread
   brand: Asda
@@ -206,7 +206,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: asda_seeded_bread
   name: Asda Seeded Bloomer
   brand: Asda
@@ -222,7 +222,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: asda_50_50_bread
   name: Asda 50/50 Medium Bread
   brand: Asda
@@ -238,7 +238,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 36
-- source: gymflow
+- source: afletics
   source_id: asda_brioche_buns
   name: Asda Brioche Burger Buns
   brand: Asda
@@ -254,7 +254,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: asda_white_wraps
   name: Asda White Tortilla Wraps
   brand: Asda
@@ -270,7 +270,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 64
-- source: gymflow
+- source: afletics
   source_id: asda_white_pitta
   name: Asda White Pitta Breads
   brand: Asda
@@ -286,7 +286,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: asda_plain_bagels
   name: Asda Plain Bagels
   brand: Asda
@@ -302,7 +302,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 95
-- source: gymflow
+- source: afletics
   source_id: asda_chicken_breast_fillets
   name: Asda British Chicken Breast Fillets
   brand: Asda
@@ -317,7 +317,7 @@
   tags: supermarket,meat,chicken,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: asda_chicken_thighs
   name: Asda Boneless Skinless Chicken Thighs
   brand: Asda
@@ -332,7 +332,7 @@
   tags: supermarket,meat,chicken,high_protein
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: asda_lean_beef_mince_5pct
   name: Asda Lean Beef Mince 5% Fat
   brand: Asda
@@ -347,7 +347,7 @@
   tags: supermarket,meat,high_protein,low_fat
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: asda_beef_mince_15pct
   name: Asda Beef Mince 15% Fat
   brand: Asda
@@ -362,7 +362,7 @@
   tags: supermarket,meat,high_protein
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: asda_steak_sirloin
   name: Asda Sirloin Steak
   brand: Asda
@@ -378,7 +378,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: asda_pork_sausages
   name: Asda British Pork Sausages
   brand: Asda
@@ -394,7 +394,7 @@
   dietary_compat: pescatarian
   allergens: gluten,sulphites
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: asda_bacon_back_smoked
   name: Asda Smoked Back Bacon
   brand: Asda
@@ -410,7 +410,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: asda_streaky_bacon
   name: Asda Streaky Bacon
   brand: Asda
@@ -426,7 +426,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 12
-- source: gymflow
+- source: afletics
   source_id: asda_ham_wafer_thin
   name: Asda Wafer Thin Ham
   brand: Asda
@@ -442,7 +442,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: asda_chicken_breast_slices
   name: Asda Cooked Chicken Breast Slices
   brand: Asda
@@ -458,7 +458,7 @@
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: asda_tuna_water
   name: Asda Tuna in Spring Water
   brand: Asda
@@ -474,7 +474,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: asda_smoked_salmon
   name: Asda Smoked Scottish Salmon
   brand: Asda
@@ -490,7 +490,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: asda_salmon_fillets
   name: Asda Salmon Fillets
   brand: Asda
@@ -506,7 +506,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: asda_king_prawns_cooked
   name: Asda Cooked King Prawns
   brand: Asda
@@ -521,7 +521,7 @@
   tags: supermarket,seafood,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: crustaceans
-- source: gymflow
+- source: afletics
   source_id: asda_porridge_oats
   name: Asda Porridge Oats
   brand: Asda
@@ -536,7 +536,7 @@
   tags: supermarket,cereal,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: asda_corn_flakes
   name: Asda Corn Flakes
   brand: Asda
@@ -551,7 +551,7 @@
   tags: supermarket,cereal,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: asda_bran_flakes
   name: Asda Bran Flakes
   brand: Asda
@@ -566,7 +566,7 @@
   tags: supermarket,cereal,breakfast,fibre
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: asda_granola_fruit_nut
   name: Asda Fruit & Nut Granola
   brand: Asda
@@ -581,7 +581,7 @@
   tags: supermarket,cereal,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: asda_white_pasta
   name: Asda Penne Pasta (dry)
   brand: Asda
@@ -596,7 +596,7 @@
   tags: supermarket,grain,pasta
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: asda_wholewheat_pasta
   name: Asda Wholewheat Pasta
   brand: Asda
@@ -611,7 +611,7 @@
   tags: supermarket,grain,pasta
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: asda_basmati_rice
   name: Asda Basmati Rice (dry)
   brand: Asda
@@ -626,7 +626,7 @@
   tags: supermarket,grain,rice
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: asda_microwave_rice
   name: Asda Microwave Basmati Rice
   brand: Asda
@@ -642,7 +642,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: asda_couscous
   name: Asda Couscous (dry)
   brand: Asda
@@ -657,7 +657,7 @@
   tags: supermarket,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: asda_milk_chocolate_bar
   name: Asda Milk Chocolate Bar
   brand: Asda
@@ -673,7 +673,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: asda_ready_salted_crisps
   name: Asda Ready Salted Crisps
   brand: Asda
@@ -689,7 +689,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: asda_chocolate_chip_cookies
   name: Asda Chocolate Chip Cookies
   brand: Asda
@@ -705,7 +705,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 12
-- source: gymflow
+- source: afletics
   source_id: asda_protein_bar_chocolate
   name: Asda Protein Bar Chocolate
   brand: Asda
@@ -721,7 +721,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: asda_chicken_tikka_masala
   name: Asda Chicken Tikka Masala (ready meal)
   brand: Asda
@@ -737,7 +737,7 @@
   dietary_compat: pescatarian
   allergens: milk,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: asda_lasagne_meal
   name: Asda Beef Lasagne (ready meal)
   brand: Asda
@@ -753,7 +753,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: asda_thai_green_curry
   name: Asda Thai Green Chicken Curry
   brand: Asda
@@ -769,7 +769,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: asda_cottage_pie_meal
   name: Asda Cottage Pie (ready meal)
   brand: Asda
@@ -785,7 +785,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: asda_oven_chips
   name: Asda Oven Chips (frozen)
   brand: Asda
@@ -800,7 +800,7 @@
   tags: supermarket,frozen,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: asda_frozen_peas
   name: Asda Garden Peas (frozen)
   brand: Asda
@@ -815,7 +815,7 @@
   tags: supermarket,frozen,vegetable,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: asda_frozen_pizza_pepperoni
   name: Asda Pepperoni Pizza (frozen)
   brand: Asda
@@ -831,7 +831,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: asda_vanilla_ice_cream
   name: Asda Vanilla Ice Cream
   brand: Asda
@@ -846,7 +846,7 @@
   tags: supermarket,frozen,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
-- source: gymflow
+- source: afletics
   source_id: asda_tomato_ketchup
   name: Asda Tomato Ketchup
   brand: Asda
@@ -862,7 +862,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 17
-- source: gymflow
+- source: afletics
   source_id: asda_mayonnaise
   name: Asda Real Mayonnaise
   brand: Asda
@@ -878,7 +878,7 @@
   dietary_compat: vegetarian,pescatarian,gluten_free
   allergens: eggs,mustard
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: asda_pasta_sauce_tomato
   name: Asda Tomato & Basil Pasta Sauce
   brand: Asda
@@ -893,7 +893,7 @@
   tags: supermarket,condiment
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: asda_baked_beans
   name: Asda Baked Beans in Tomato Sauce
   brand: Asda
@@ -908,7 +908,7 @@
   tags: supermarket,canned,pulses
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: asda_chickpeas_canned
   name: Asda Chickpeas (canned, drained)
   brand: Asda
@@ -923,7 +923,7 @@
   tags: supermarket,canned,pulses,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: asda_kidney_beans
   name: Asda Kidney Beans (canned)
   brand: Asda
@@ -938,7 +938,7 @@
   tags: supermarket,canned,pulses,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: asda_olive_oil_evoo
   name: Asda Extra Virgin Olive Oil
   brand: Asda
@@ -954,7 +954,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: asda_peanut_butter_smooth
   name: Asda Smooth Peanut Butter
   brand: Asda
@@ -970,7 +970,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: peanuts
   unit_grams: 16
-- source: gymflow
+- source: afletics
   source_id: asda_orange_juice_smooth
   name: Asda Smooth Orange Juice
   brand: Asda
@@ -985,7 +985,7 @@
   tags: supermarket,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: asda_apple_juice
   name: Asda Apple Juice
   brand: Asda
@@ -1000,7 +1000,7 @@
   tags: supermarket,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: asda_water_still_500
   name: Asda Still Water
   brand: Asda
@@ -1016,7 +1016,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: asda_smoothie_strawberry
   name: Asda Strawberry & Banana Smoothie
   brand: Asda
@@ -1032,7 +1032,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: asda_bananas
   name: Asda Bananas
   brand: Asda
@@ -1048,7 +1048,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 118
-- source: gymflow
+- source: afletics
   source_id: asda_apples_braeburn
   name: Asda Braeburn Apples
   brand: Asda
@@ -1064,7 +1064,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: asda_avocados
   name: Asda Ripe Avocados
   brand: Asda
@@ -1080,7 +1080,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: asda_blueberries
   name: Asda Blueberries
   brand: Asda
@@ -1096,7 +1096,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: asda_strawberries
   name: Asda British Strawberries
   brand: Asda
@@ -1112,7 +1112,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: asda_cherry_tomatoes
   name: Asda Cherry Tomatoes
   brand: Asda
@@ -1128,7 +1128,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: asda_extra_special_chicken_breast
   name: Asda Extra Special British Chicken Breast
   brand: Asda
@@ -1143,7 +1143,7 @@
   tags: supermarket,meat,chicken,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: asda_extra_special_steak_sirloin
   name: Asda Extra Special Sirloin Steak
   brand: Asda
@@ -1159,7 +1159,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: asda_high_protein_yogurt_vanilla
   name: Asda High Protein Yogurt Vanilla
   brand: Asda
@@ -1175,7 +1175,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: asda_chicken_caesar_wrap
   name: Asda Chicken Caesar Wrap
   brand: Asda
@@ -1191,7 +1191,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,fish
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: asda_chicken_tikka_meal
   name: Asda Chicken Tikka Masala (ready meal)
   brand: Asda
@@ -1207,7 +1207,7 @@
   dietary_compat: pescatarian
   allergens: milk,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: asda_protein_pot_chicken
   name: Asda Chicken Protein Pot
   brand: Asda
@@ -1223,7 +1223,7 @@
   dietary_compat: pescatarian
   allergens: eggs,mustard
   unit_grams: 215
-- source: gymflow
+- source: afletics
   source_id: asda_chicken_kievs_2
   name: Asda Chicken Kievs
   brand: Asda

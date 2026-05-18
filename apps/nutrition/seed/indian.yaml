@@ -1,6 +1,6 @@
 # indian.yaml — Indian curries (chicken/lamb/paneer/vegan), biryanis, breads (naan/chapati/paratha/poppadom), starters (samosa/bhaji/pakora), tandoori, sides (raita/chutney), desserts (gulab jamun/kheer/jalebi), drinks (chai/lassi).
 
-- source: gymflow
+- source: afletics
   source_id: in_chicken_tikka_masala
   name: Chicken Tikka Masala
   brand: ''
@@ -16,7 +16,7 @@
   dietary_compat: pescatarian
   allergens: milk,celery
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: in_chicken_korma
   name: Chicken Korma
   brand: ''
@@ -32,7 +32,7 @@
   dietary_compat: pescatarian
   allergens: milk,tree_nuts
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: in_chicken_madras
   name: Chicken Madras
   brand: ''
@@ -48,7 +48,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: in_chicken_jalfrezi
   name: Chicken Jalfrezi
   brand: ''
@@ -64,7 +64,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: in_chicken_vindaloo
   name: Chicken Vindaloo
   brand: ''
@@ -80,7 +80,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: in_chicken_balti
   name: Chicken Balti
   brand: ''
@@ -96,7 +96,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: milk
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: in_chicken_dhansak
   name: Chicken Dhansak
   brand: ''
@@ -112,7 +112,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: in_chicken_pasanda
   name: Chicken Pasanda
   brand: ''
@@ -128,7 +128,7 @@
   dietary_compat: pescatarian
   allergens: milk,tree_nuts
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: in_chicken_rogan_josh
   name: Chicken Rogan Josh
   brand: ''
@@ -144,7 +144,7 @@
   dietary_compat: halal,pescatarian,gluten_free
   allergens: milk
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: in_lamb_rogan_josh
   name: Lamb Rogan Josh
   brand: ''
@@ -160,7 +160,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free
   allergens: milk
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: in_lamb_madras
   name: Lamb Madras
   brand: ''
@@ -176,7 +176,7 @@
   dietary_compat: halal,kosher,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: in_lamb_bhuna
   name: Lamb Bhuna
   brand: ''
@@ -192,7 +192,7 @@
   dietary_compat: halal,kosher,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: in_paneer_tikka_masala
   name: Paneer Tikka Masala
   brand: ''
@@ -208,7 +208,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: in_paneer_butter_masala
   name: Paneer Butter Masala
   brand: ''
@@ -224,7 +224,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,tree_nuts
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: in_dhal_tarka
   name: Dhal Tarka (Lentil Curry)
   brand: ''
@@ -240,7 +240,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: in_chana_masala
   name: Chana Masala (Chickpea Curry)
   brand: ''
@@ -256,7 +256,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: in_aloo_gobi
   name: Aloo Gobi (Potato Cauliflower)
   brand: ''
@@ -272,7 +272,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: in_saag_paneer
   name: Saag Paneer (Spinach Cheese Curry)
   brand: ''
@@ -288,7 +288,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: in_saag_aloo
   name: Saag Aloo (Spinach Potato)
   brand: ''
@@ -304,7 +304,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: in_pilau_rice
   name: Pilau Rice (per 100g)
   brand: ''
@@ -319,7 +319,7 @@
   tags: indian,grain,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: in_basmati_rice_cooked
   name: Basmati Rice, Cooked (per 100g)
   brand: ''
@@ -334,7 +334,7 @@
   tags: indian,grain,vegan,low_fat
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: in_chicken_biryani
   name: Chicken Biryani
   brand: ''
@@ -350,7 +350,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: milk,tree_nuts
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: in_lamb_biryani
   name: Lamb Biryani
   brand: ''
@@ -366,7 +366,7 @@
   dietary_compat: halal,kosher,pescatarian,dairy_free
   allergens: milk,tree_nuts
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: in_veg_biryani
   name: Vegetable Biryani
   brand: ''
@@ -382,7 +382,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: tree_nuts
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: in_naan_plain
   name: Plain Naan
   brand: ''
@@ -398,7 +398,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: in_naan_garlic_coriander
   name: Garlic & Coriander Naan
   brand: ''
@@ -414,7 +414,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: in_naan_peshwari
   name: Peshwari Naan
   brand: ''
@@ -430,7 +430,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,tree_nuts
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: in_chapati
   name: Chapati
   brand: ''
@@ -446,7 +446,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: in_paratha_plain
   name: Plain Paratha
   brand: ''
@@ -462,7 +462,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: in_paratha_aloo
   name: Aloo Paratha
   brand: ''
@@ -478,7 +478,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: in_papadom
   name: Poppadom
   brand: ''
@@ -494,7 +494,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
   unit_grams: 7
-- source: gymflow
+- source: afletics
   source_id: in_samosa_meat
   name: Meat Samosa
   brand: ''
@@ -510,7 +510,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: in_samosa_veg
   name: Vegetable Samosa
   brand: ''
@@ -526,7 +526,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: in_onion_bhaji_3
   name: Onion Bhaji (3)
   brand: ''
@@ -542,7 +542,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 33
-- source: gymflow
+- source: afletics
   source_id: in_pakora_chicken_3
   name: Chicken Pakora (3)
   brand: ''
@@ -558,7 +558,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: ''
   unit_grams: 33
-- source: gymflow
+- source: afletics
   source_id: in_tandoori_chicken_breast
   name: Tandoori Chicken Breast (per 100g)
   brand: ''
@@ -574,7 +574,7 @@
   dietary_compat: halal,pescatarian,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: in_chicken_tikka_dry
   name: Chicken Tikka Dry (per 100g)
   brand: ''
@@ -590,7 +590,7 @@
   dietary_compat: halal,pescatarian,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: in_seekh_kebab_lamb
   name: Seekh Kebab Lamb (1 skewer)
   brand: ''
@@ -606,7 +606,7 @@
   dietary_compat: halal,kosher,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: in_raita_30g
   name: Raita Yogurt Sauce (30g)
   brand: ''
@@ -622,7 +622,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: in_mango_chutney_15g
   name: Mango Chutney (15g)
   brand: ''
@@ -638,7 +638,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: in_lime_pickle_15g
   name: Lime Pickle (15g)
   brand: ''
@@ -654,7 +654,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: mustard
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: in_mango_lassi_300
   name: Mango Lassi (300ml)
   brand: ''
@@ -669,7 +669,7 @@
   tags: indian,drink
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: in_masala_chai
   name: Masala Chai (mug, 250ml)
   brand: ''
@@ -684,7 +684,7 @@
   tags: indian,drink,tea
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: in_gulab_jamun_3
   name: Gulab Jamun (3)
   brand: ''
@@ -700,7 +700,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 33
-- source: gymflow
+- source: afletics
   source_id: in_jalebi_3
   name: Jalebi (3)
   brand: ''
@@ -716,7 +716,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten
   unit_grams: 33
-- source: gymflow
+- source: afletics
   source_id: in_kheer_rice_pudding
   name: Kheer (Rice Pudding)
   brand: ''
@@ -732,7 +732,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,tree_nuts
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: in_butter_chicken_jar_made
   name: Butter Chicken (made up, per 100g)
   brand: ''

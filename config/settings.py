@@ -18,22 +18,22 @@ DEBUG = os.environ.get("DEBUG", "False").lower() in ("true", "1", "yes")
 # ALLOWED_HOSTS — env var override with a sensible default that
 # already includes our production domains. Django interprets a
 # leading dot as "this domain and all its subdomains" — so
-# `.gymflow.app` matches both gymflow.app itself and every
-# trainer subdomain (deen.gymflow.app, etc.) without needing
+# `.afletics.com` matches both afletics.com itself and every
+# trainer subdomain (deen.afletics.com, etc.) without needing
 # a wildcard CNAME on the host header.
 #
 # Format: comma-separated list of hosts.
-#   ALLOWED_HOSTS=.gymflow.app,.onrender.com,localhost
+#   ALLOWED_HOSTS=.afletics.com,.onrender.com,localhost
 # -------------------------------------------------------------------
 #
 # AFLETICS-RENAME (May 2026, Deen QC) — the brand was renamed from
-# GymFlow → Afletics. The new primary apex is afletics.com. We keep
-# .gymflow.coach + .gymflow.app on this list transitionally so any
+# Afletics → Afletics. The new primary apex is afletics.com. We keep
+# .afletics.com + .afletics.com on this list transitionally so any
 # in-flight magic links, App Store webhooks, and Render custom
 # domains continue to resolve while DNS / email forwarding for
 # afletics.com is being set up. Drop the legacy entries once afletics
 # DNS is fully cut over and 30 days of magic-link expiry has elapsed.
-_DEFAULT_ALLOWED_HOSTS = "localhost,127.0.0.1,.afletics.com,.gymflow.coach,.gymflow.app,.onrender.com"
+_DEFAULT_ALLOWED_HOSTS = "localhost,127.0.0.1,.afletics.com,.afletics.com,.afletics.com,.onrender.com"
 ALLOWED_HOSTS = [
     h.strip()
     for h in os.environ.get("ALLOWED_HOSTS", _DEFAULT_ALLOWED_HOSTS).split(",")
@@ -55,15 +55,15 @@ ALLOWED_HOSTS = [
 # cookie + CSRF host-match logic gets confused.
 # -------------------------------------------------------------------
 CSRF_TRUSTED_ORIGINS = [
-    "https://gymflow-api-wxm9.onrender.com",
+    "https://afletics-api-wxm9.onrender.com",
     # AFLETICS-RENAME — afletics.com is the new apex; legacy
-    # gymflow.* entries stay until DNS cut-over completes.
+    # afletics.* entries stay until DNS cut-over completes.
     "https://*.afletics.com",
     "https://afletics.com",
-    "https://*.gymflow.coach",
-    "https://gymflow.coach",
-    "https://*.gymflow.app",
-    "https://gymflow.app",
+    "https://*.afletics.com",
+    "https://afletics.com",
+    "https://*.afletics.com",
+    "https://afletics.com",
 ]
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
@@ -135,7 +135,7 @@ INSTALLED_APPS = [
 #   STRIPE_CLIENT_ID        — ca_… (from Connect Settings, NOT API keys)
 #   STRIPE_WEBHOOK_SECRET   — whsec_…  (set when webhooks land next turn)
 #
-# Platform fee: 5% goes to GymFlow on every subscription. Tweak via
+# Platform fee: 5% goes to Afletics on every subscription. Tweak via
 # STRIPE_APPLICATION_FEE_PERCENT (decimal — 5 = 5%).
 # -------------------------------------------------------------------
 STRIPE_SECRET_KEY        = os.environ.get("STRIPE_SECRET_KEY",      "")
@@ -150,7 +150,7 @@ STRIPE_APPLICATION_FEE_PERCENT = float(
 # Must match a redirect URI registered in your Stripe Connect settings.
 STRIPE_OAUTH_REDIRECT_URI = os.environ.get(
     "STRIPE_OAUTH_REDIRECT_URI",
-    "https://gymflow-api-wxm9.onrender.com/payments/oauth/callback/",
+    "https://afletics-api-wxm9.onrender.com/payments/oauth/callback/",
 )
 
 
@@ -164,7 +164,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 
-    # Phase 7.5 — Rewrite `<slug>.gymflow.com` requests to /p/<slug>/
+    # Phase 7.5 — Rewrite `<slug>.afletics.com` requests to /p/<slug>/
     # so the existing public site routing serves them. No-op on the
     # apex, on reserved subdomains (www, api, app...), and locally
     # unless /etc/hosts has `<slug>.localhost` entries.
@@ -278,10 +278,10 @@ GOOGLE_OAUTH_IOS_CLIENT_ID = os.environ.get("GOOGLE_OAUTH_IOS_CLIENT_ID", "")
 #   1. Set APPLE_REVIEW_TOKEN to a long random secret in the deploy
 #      environment (Render → Environment Variables).
 #   2. Run `python manage.py seed_reviewer_account` once to provision
-#      reviewer@gymflow.coach on Pro AI tier.
+#      reviewer@afletics.com on Pro AI tier.
 #   3. In App Store Connect → App Review Information → Notes, tell
 #      the reviewer to open
-#      https://gymflow.coach/magic/<APPLE_REVIEW_TOKEN>/ in Safari on
+#      https://afletics.com/magic/<APPLE_REVIEW_TOKEN>/ in Safari on
 #      the device. The web bridge handler deep-links the iOS app,
 #      which posts the token here, which the verify view recognises.
 #
@@ -289,7 +289,7 @@ GOOGLE_OAUTH_IOS_CLIENT_ID = os.environ.get("GOOGLE_OAUTH_IOS_CLIENT_ID", "")
 # token doesn't grant long-lived access.
 # -------------------------------------------------------------------
 APPLE_REVIEW_TOKEN = os.environ.get("APPLE_REVIEW_TOKEN", "")
-APPLE_REVIEW_EMAIL = os.environ.get("APPLE_REVIEW_EMAIL", "reviewer@gymflow.coach")
+APPLE_REVIEW_EMAIL = os.environ.get("APPLE_REVIEW_EMAIL", "reviewer@afletics.com")
 
 
 # -------------------------------------------------------------------

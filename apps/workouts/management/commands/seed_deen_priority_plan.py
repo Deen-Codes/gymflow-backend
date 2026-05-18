@@ -145,7 +145,7 @@ class Command(BaseCommand):
                         mechanic=mechanic,
                         force=force,
                         category=category,
-                        source=ExerciseCatalog.SOURCE_GYMFLOW,
+                        source=ExerciseCatalog.SOURCE_AFLETICS,
                         external_id="deen_plan_" + normalise(name).replace(" ", "_")[:48],
                         icon_priority=ICON_PRIORITY,
                         is_published=True,
@@ -193,7 +193,7 @@ class Command(BaseCommand):
             protein_per_100g=p,
             carbs_per_100g=c,
             fat_per_100g=f,
-            source=CuratedFood.SOURCE_GYMFLOW,
+            source=CuratedFood.SOURCE_AFLETICS,
             source_id="deen_plan_" + normalise(name).replace(" ", "_")[:48],
             is_published=True,
         )

@@ -55,7 +55,7 @@ log = logging.getLogger(__name__)
 # separate `full_name` field on the request body.
 #
 # AFLETICS-RENAME (May 2026, Deen QC) — bundle ID flipped from
-# coach.gymflow.app → com.afletics.app. Apple's ID token `aud` claim
+# coach.afletics.com → com.afletics.app. Apple's ID token `aud` claim
 # now carries the new bundle, so verify against the new value.
 # Override via APPLE_AUDIENCE env var on Render if needed.
 # ---------------------------------------------------------------------

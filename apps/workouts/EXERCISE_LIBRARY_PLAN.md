@@ -26,7 +26,7 @@ each with:
 After pushing the schema + importer changes:
 
 ```bash
-cd ~/Documents/gymflow-backend
+cd ~/Documents/afletics-backend
 git add apps/workouts/ apps/nutrition/
 git commit -m "EXERCISE-LIB-1500 + SEARCH-FIX: schema migration, FreeExerciseDB import, apostrophe search fix"
 git push
@@ -49,7 +49,7 @@ Re-running the import is safe (idempotent on `(source, external_id)`).
 
 Free Exercise DB has gaps. Plan a phased curated push, mirroring the food-DB
 batch pattern (YAML batches loaded via a `seed_exercises` command, dedup by
-`(source=gymflow, external_id)`).
+`(source=afletics, external_id)`).
 
 Coverage gaps after the 873 import:
 

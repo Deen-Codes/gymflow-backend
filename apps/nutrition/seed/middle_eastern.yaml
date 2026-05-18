@@ -1,6 +1,6 @@
 # middle_eastern.yaml — Lebanese / Turkish / Middle Eastern. Doner kebab, shawarma, falafel, hummus, tabbouleh, manakish, kunafa, baklava.
 
-- source: gymflow
+- source: afletics
   source_id: me_doner_kebab_meat
   name: Lamb Doner Kebab Meat (per 100g)
   brand: ''
@@ -15,7 +15,7 @@
   tags: turkish,meat,high_protein
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: me_doner_kebab_pita
   name: Lamb Doner in Pita
   brand: ''
@@ -31,7 +31,7 @@
   dietary_compat: halal,pescatarian
   allergens: gluten
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: me_chicken_doner_pita
   name: Chicken Doner in Pita
   brand: ''
@@ -47,7 +47,7 @@
   dietary_compat: halal,pescatarian
   allergens: gluten
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: me_chicken_shish_skewer
   name: Chicken Shish Skewer
   brand: ''
@@ -63,7 +63,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: me_lamb_shish_skewer
   name: Lamb Shish Skewer
   brand: ''
@@ -79,7 +79,7 @@
   dietary_compat: halal,kosher,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: me_chicken_shawarma
   name: Chicken Shawarma Wrap
   brand: ''
@@ -95,7 +95,7 @@
   dietary_compat: halal,pescatarian
   allergens: gluten,milk,sesame
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: me_lamb_shawarma
   name: Lamb Shawarma Wrap
   brand: ''
@@ -111,7 +111,7 @@
   dietary_compat: halal,pescatarian
   allergens: gluten,milk,sesame
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: me_falafel_5
   name: Falafel (5)
   brand: ''
@@ -127,7 +127,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 20
-- source: gymflow
+- source: afletics
   source_id: me_falafel_wrap
   name: Falafel Wrap
   brand: ''
@@ -143,7 +143,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: me_hummus_50g
   name: Hummus (50g)
   brand: ''
@@ -159,7 +159,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: sesame
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: me_baba_ganoush_50g
   name: Baba Ganoush (50g)
   brand: ''
@@ -175,7 +175,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: sesame
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: me_tabouleh_100g
   name: Tabbouleh Salad (per 100g)
   brand: ''
@@ -190,7 +190,7 @@
   tags: lebanese,salad,vegan,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: me_fattoush_salad
   name: Fattoush Salad (per 100g)
   brand: ''
@@ -206,7 +206,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: me_fatteh
   name: Fatteh (Lebanese)
   brand: ''
@@ -222,7 +222,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,sesame
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: me_kibbeh_3
   name: Kibbeh (3)
   brand: ''
@@ -238,7 +238,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten
   unit_grams: 40
-- source: gymflow
+- source: afletics
   source_id: me_manakish_zaatar
   name: Manakish Zaatar
   brand: ''
@@ -254,7 +254,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: me_lebanese_lamb_pizza
   name: Lahmacun (Lamb Pizza)
   brand: ''
@@ -270,7 +270,7 @@
   dietary_compat: halal,kosher,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: me_borek_cheese
   name: Cheese Börek
   brand: ''
@@ -286,7 +286,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: me_borek_spinach
   name: Spinach Börek
   brand: ''
@@ -302,7 +302,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: me_pide_chicken
   name: Chicken Pide
   brand: ''
@@ -318,7 +318,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: me_baklava_pistachio
   name: Pistachio Baklava (1 piece)
   brand: ''
@@ -334,7 +334,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,tree_nuts
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: me_kunafa_slice
   name: Knafeh / Kunafa (1 slice)
   brand: ''
@@ -350,7 +350,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,tree_nuts
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: me_turkish_delight_30g
   name: Turkish Delight (30g)
   brand: ''
@@ -366,7 +366,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: tree_nuts
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: me_chicken_biryani_lebanese
   name: Lebanese Chicken Biryani
   brand: ''
@@ -382,7 +382,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: tree_nuts
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: me_lentil_soup_lebanese
   name: Lebanese Lentil Soup
   brand: ''
@@ -398,7 +398,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: me_kebab_kofta
   name: Kofta Kebab Skewer
   brand: ''
@@ -414,7 +414,7 @@
   dietary_compat: halal,kosher,pescatarian,dairy_free
   allergens: gluten,eggs
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: me_iskender_kebab
   name: Iskender Kebab
   brand: ''
@@ -430,7 +430,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: me_pilav_rice
   name: Turkish Pilav Rice (per 100g)
   brand: ''
@@ -445,7 +445,7 @@
   tags: turkish,grain,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: me_lebanese_garlic_sauce_15g
   name: Lebanese Garlic Sauce / Toum (15g)
   brand: ''
@@ -461,7 +461,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: me_chilli_sauce_lebanese_15g
   name: Lebanese Chilli Sauce (15g)
   brand: ''
@@ -477,7 +477,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: me_grilled_halloumi_pita
   name: Halloumi Pita Wrap
   brand: ''

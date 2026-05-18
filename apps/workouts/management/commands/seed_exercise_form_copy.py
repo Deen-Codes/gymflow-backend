@@ -13,7 +13,7 @@ Two match modes:
 
 YAML files live at `apps/workouts/seed/form_copy/*.yaml`. Each entry:
 
-    - external_id: gymflow_back_squat       # OR
+    - external_id: afletics_back_squat       # OR
       name: Back Squat                       # match by name (any source)
       form_description: |
         Multi-paragraph or single paragraph copy on setup, execution,

@@ -1,6 +1,6 @@
 # frozen_extra.yaml — Young's Chip Shop fish/Fish Bites/Admiral's Pie/Fish Cakes/Smoked Haddock, more Birds Eye (Wholegrain Cod, Chicken Grill Steaks, Beef Burgers), frozen prawns/calamari, Dr. Oetker Ristorante, Chicago Town pizzas, Charlie Bigham's/Cook ready meals, frozen sides (mash/wedges/Smiles), waffles/croissants/pain au choc, frozen veg variety (broccoli/cauliflower/spinach/stir fry).
 
-- source: gymflow
+- source: afletics
   source_id: youngs_chip_shop_cod_2
   name: Young's Chip Shop Cod (1 fillet)
   brand: Young's
@@ -16,7 +16,7 @@
   dietary_compat: pescatarian
   allergens: gluten,fish,milk,eggs
   unit_grams: 175
-- source: gymflow
+- source: afletics
   source_id: youngs_chip_shop_haddock_2
   name: Young's Chip Shop Haddock (1 fillet)
   brand: Young's
@@ -32,7 +32,7 @@
   dietary_compat: pescatarian
   allergens: gluten,fish,milk,eggs
   unit_grams: 175
-- source: gymflow
+- source: afletics
   source_id: youngs_battered_cod_2
   name: Young's Crispy Battered Cod (1 fillet)
   brand: Young's
@@ -48,7 +48,7 @@
   dietary_compat: pescatarian
   allergens: gluten,fish,milk,eggs
   unit_grams: 165
-- source: gymflow
+- source: afletics
   source_id: youngs_breaded_haddock_2
   name: Young's Breaded Haddock (1 fillet)
   brand: Young's
@@ -64,7 +64,7 @@
   dietary_compat: pescatarian
   allergens: gluten,fish,milk,eggs
   unit_grams: 165
-- source: gymflow
+- source: afletics
   source_id: youngs_fish_bites
   name: Young's Fish Bites (per 100g)
   brand: Young's
@@ -80,7 +80,7 @@
   dietary_compat: pescatarian
   allergens: gluten,fish,milk,eggs
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: youngs_admiral_pie
   name: Young's Admiral's Pie
   brand: Young's
@@ -96,7 +96,7 @@
   dietary_compat: pescatarian
   allergens: gluten,fish,milk,eggs
   unit_grams: 320
-- source: gymflow
+- source: afletics
   source_id: youngs_fish_cakes_2
   name: Young's Cod Fish Cakes (2)
   brand: Young's
@@ -112,7 +112,7 @@
   dietary_compat: pescatarian
   allergens: gluten,fish,milk,eggs
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: youngs_smoked_haddock_fillets
   name: Young's Smoked Haddock (1 fillet)
   brand: Young's
@@ -128,7 +128,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: birds_eye_wholegrain_cod_2
   name: Birds Eye Inspirations Wholegrain Cod (1 fillet)
   brand: Birds Eye
@@ -144,7 +144,7 @@
   dietary_compat: pescatarian
   allergens: gluten,fish,milk,eggs
   unit_grams: 165
-- source: gymflow
+- source: afletics
   source_id: birds_eye_chicken_grill_steaks_2
   name: Birds Eye Chicken Grill Steaks
   brand: Birds Eye
@@ -160,7 +160,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 113
-- source: gymflow
+- source: afletics
   source_id: birds_eye_chicken_quarter_pounders_2
   name: Birds Eye Chicken Quarter Pounders
   brand: Birds Eye
@@ -176,7 +176,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 113
-- source: gymflow
+- source: afletics
   source_id: birds_eye_beef_burgers_4
   name: Birds Eye Original Beef Burgers
   brand: Birds Eye
@@ -192,7 +192,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: milk
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: frozen_king_prawns_raw_per_100g
   name: Frozen King Prawns Raw (per 100g)
   brand: ''
@@ -207,7 +207,7 @@
   tags: frozen,seafood,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: crustaceans
-- source: gymflow
+- source: afletics
   source_id: frozen_tiger_prawns_cooked
   name: Frozen Tiger Prawns Cooked (per 100g)
   brand: ''
@@ -222,7 +222,7 @@
   tags: frozen,seafood,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: crustaceans
-- source: gymflow
+- source: afletics
   source_id: frozen_calamari_rings_per_100g
   name: Frozen Battered Calamari Rings (per 100g)
   brand: ''
@@ -237,7 +237,7 @@
   tags: frozen,seafood
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,molluscs,eggs
-- source: gymflow
+- source: afletics
   source_id: dr_oetker_ristorante_pepperoni
   name: Dr. Oetker Ristorante Pepperoni Pizza
   brand: Dr. Oetker
@@ -253,7 +253,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 320
-- source: gymflow
+- source: afletics
   source_id: dr_oetker_ristorante_funghi
   name: Dr. Oetker Ristorante Funghi Pizza
   brand: Dr. Oetker
@@ -269,7 +269,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 365
-- source: gymflow
+- source: afletics
   source_id: dr_oetker_ristorante_hawaii
   name: Dr. Oetker Ristorante Hawaii Pizza
   brand: Dr. Oetker
@@ -285,7 +285,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 355
-- source: gymflow
+- source: afletics
   source_id: chicago_town_4_cheese
   name: Chicago Town Takeaway 4 Cheese
   brand: Chicago Town
@@ -301,7 +301,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 320
-- source: gymflow
+- source: afletics
   source_id: chicago_town_meat_feast
   name: Chicago Town Takeaway Meat Feast
   brand: Chicago Town
@@ -317,7 +317,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: charlie_bighams_lasagne
   name: Charlie Bigham's Lasagne (per 100g)
   brand: Charlie Bigham's
@@ -333,7 +333,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: charlie_bighams_chicken_kiev_2
   name: Charlie Bigham's Chicken Kiev
   brand: Charlie Bigham's
@@ -349,7 +349,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: charlie_bighams_thai_green_curry
   name: Charlie Bigham's Thai Green Curry (per 100g)
   brand: Charlie Bigham's
@@ -365,7 +365,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,celery
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: cook_chicken_pie
   name: Cook! Chicken Pie
   brand: Cook!
@@ -381,7 +381,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 290
-- source: gymflow
+- source: afletics
   source_id: cook_cottage_pie
   name: Cook! Cottage Pie (per 100g)
   brand: Cook!
@@ -397,7 +397,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: aunt_bessies_mashed_potato_per_100
   name: Aunt Bessie's Mashed Potato (per 100g)
   brand: Aunt Bessie's
@@ -413,7 +413,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: mccain_potato_smiles_per_100
   name: McCain Smiles (per 100g)
   brand: McCain
@@ -428,7 +428,7 @@
   tags: frozen,branded,vegan,kids
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: mccain_lightly_spiced_wedges
   name: McCain Lightly Spiced Wedges (per 100g)
   brand: McCain
@@ -443,7 +443,7 @@
   tags: frozen,branded,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: birds_eye_potato_waffles_8
   name: Birds Eye Potato Waffles
   brand: Birds Eye
@@ -459,7 +459,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: frozen_waffles_breakfast_2
   name: Frozen Belgian Waffles Sweet (2)
   brand: ''
@@ -475,7 +475,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: frozen_pain_au_choc_4
   name: Frozen Pain au Chocolat
   brand: ''
@@ -491,7 +491,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: frozen_croissant_4
   name: Frozen Butter Croissant
   brand: ''
@@ -507,7 +507,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 75
-- source: gymflow
+- source: afletics
   source_id: frozen_apple_pie_per_100
   name: Frozen Apple Pie (per 100g)
   brand: ''
@@ -522,7 +522,7 @@
   tags: frozen,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
-- source: gymflow
+- source: afletics
   source_id: frozen_yorkie_pud_aunt_bessie_4
   name: Aunt Bessie's Yorkshire Puddings
   brand: Aunt Bessie's
@@ -538,7 +538,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: frozen_broccoli_florets_100g
   name: Frozen Broccoli Florets (per 100g)
   brand: ''
@@ -553,7 +553,7 @@
   tags: frozen,vegetable,vegan,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: frozen_cauliflower_florets_100g
   name: Frozen Cauliflower Florets (per 100g)
   brand: ''
@@ -568,7 +568,7 @@
   tags: frozen,vegetable,vegan,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: frozen_spinach_100g
   name: Frozen Spinach (per 100g)
   brand: ''
@@ -583,7 +583,7 @@
   tags: frozen,vegetable,vegan,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: frozen_stir_fry_veg_100g
   name: Frozen Stir Fry Vegetables (per 100g)
   brand: ''
@@ -598,7 +598,7 @@
   tags: frozen,vegetable,vegan,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: frozen_chargrilled_aubergine_100g
   name: Frozen Chargrilled Aubergine (per 100g)
   brand: ''

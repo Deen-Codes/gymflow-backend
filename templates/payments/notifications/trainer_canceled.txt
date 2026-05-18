@@ -11,4 +11,4 @@ plans you've assigned, but Stripe is no longer billing them.
 If you want to remove them entirely, do it from the client profile page:
 {{ client_detail_url }}
 
-— GymFlow
+— Afletics

@@ -1,7 +1,7 @@
 """
 Phase 7.5 — Subdomain routing for PT landing pages.
 
-When a request arrives on `<slug>.gymflow.com` (or any apex defined
+When a request arrives on `<slug>.afletics.com` (or any apex defined
 in `SUBDOMAIN_APEX_HOSTS`), and `<slug>` matches a TrainerProfile
 slug that isn't on the reserved list, we rewrite the request path
 to `/p/<slug>/...` and let the existing public site URL routing
@@ -20,7 +20,7 @@ to /etc/hosts:
     127.0.0.1   anothertrainer.localhost
 …then visit http://test-gym.localhost:8000/.
 
-Production: configure DNS so `*.gymflow.com` is an A/CNAME pointing
+Production: configure DNS so `*.afletics.com` is an A/CNAME pointing
 to the host running Django (Render's wildcard subdomain support
 covers this). For SSL, Cloudflare Universal SSL with the Advanced
 Certificate Manager add-on covers wildcard subdomains; or Let's
@@ -30,19 +30,19 @@ from django.utils.deprecation import MiddlewareMixin
 
 
 # Apex hosts where the next dotted segment is treated as a subdomain.
-# Add production hosts here when you go live (e.g. "gymflow.com").
+# Add production hosts here when you go live (e.g. "afletics.com").
 # `localhost` is included so /etc/hosts entries like
 # `test-gym.localhost` work in local dev.
 SUBDOMAIN_APEX_HOSTS = (
-    "gymflow.app",   # primary apex (production)
-    "gymflow.com",     # legacy / aspirational — kept so old links don't 404 if the domain is acquired later
-    "gymflow.app",
+    "afletics.com",   # primary apex (production)
+    "afletics.com",     # legacy / aspirational — kept so old links don't 404 if the domain is acquired later
+    "afletics.com",
     "localhost",
 )
 
 # Subdomains that must NEVER resolve to a trainer page. These are
-# reserved for app infrastructure (the dashboard at app.gymflow.com,
-# the API at api.gymflow.com, etc.). A trainer with one of these
+# reserved for app infrastructure (the dashboard at app.afletics.com,
+# the API at api.afletics.com, etc.). A trainer with one of these
 # slugs would still be reachable via /p/<slug>/.
 RESERVED_SUBDOMAINS = frozenset({
     "www",
@@ -60,7 +60,7 @@ RESERVED_SUBDOMAINS = frozenset({
     "support",
     "status",
     "cdn",
-    "billing",   # Stripe Customer Portal — billing.gymflow.app
+    "billing",   # Stripe Customer Portal — billing.afletics.com
 })
 
 
@@ -69,7 +69,7 @@ RESERVED_SUBDOMAINS = frozenset({
 # legal pages, admin, static files, the API, and Stripe routes still
 # work from any host (including subdomains, in case a footer link or
 # Stripe redirect lands there). Without this skip, a request like
-# `deen.gymflow.app/legal/privacy/` would rewrite to
+# `deen.afletics.com/legal/privacy/` would rewrite to
 # `/p/deen/legal/privacy/` and 404.
 GLOBAL_PATH_PREFIXES = (
     "/legal/",      # Privacy policy + Terms of service
@@ -100,13 +100,13 @@ def _extract_subdomain(host):
         if host.endswith(suffix):
             head = host[: -len(suffix)]
             # Only the FIRST segment is the subdomain — multi-level
-            # subdomains (foo.bar.gymflow.com) are treated as foo.
+            # subdomains (foo.bar.afletics.com) are treated as foo.
             return head.split(".")[0]
     return ""
 
 
 class SubdomainSiteMiddleware(MiddlewareMixin):
-    """Rewrites `host=<slug>.gymflow.com, path=/foo` → `path=/p/<slug>/foo`
+    """Rewrites `host=<slug>.afletics.com, path=/foo` → `path=/p/<slug>/foo`
     so the existing public site routing serves it. No-op for the apex
     domain, reserved subdomains, and unknown subdomains."""
 
@@ -119,7 +119,7 @@ class SubdomainSiteMiddleware(MiddlewareMixin):
         # Skip global paths — let them resolve normally. So the legal
         # pages, admin, API, Stripe webhooks, and static files all
         # still work even when the request arrives on a trainer
-        # subdomain like `deen.gymflow.app/legal/privacy/`.
+        # subdomain like `deen.afletics.com/legal/privacy/`.
         if request.path_info.startswith(GLOBAL_PATH_PREFIXES):
             return None
 

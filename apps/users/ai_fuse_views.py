@@ -70,7 +70,7 @@ ANTHROPIC_URL   = "https://api.anthropic.com/v1/messages"
 
 
 SYSTEM_PROMPT = """\
-You are GymFlow's AI personal trainer. The user has just opened
+You are Afletics's AI personal trainer. The user has just opened
 "Build my whole plan" — your job is to assemble a fused programme
 covering BOTH workouts AND nutrition (meals + supplement protocol)
 in a single response.

@@ -1,6 +1,6 @@
 # polish.yaml — Polish dishes available in UK Polski sklep + restaurants. Includes pierogi variants, kielbasa, soups, baked goods, drinks.
 
-- source: gymflow
+- source: afletics
   source_id: pol_pierogi_meat_5
   name: Pierogi z Mięsem (Meat Dumplings, 5)
   brand: ''
@@ -16,7 +16,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: pol_pierogi_potato_5
   name: Pierogi Ruskie (Potato & Cheese, 5)
   brand: ''
@@ -32,7 +32,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: pol_pierogi_cabbage_5
   name: Pierogi z Kapustą (Cabbage & Mushroom, 5)
   brand: ''
@@ -48,7 +48,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: pol_pierogi_blueberry_5
   name: Pierogi z Jagodami (Blueberry, 5)
   brand: ''
@@ -64,7 +64,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: pol_kielbasa_polska_cooked
   name: Kiełbasa Polska (cooked, per 100g)
   brand: ''
@@ -79,7 +79,7 @@
   tags: polish,meat,processed
   dietary_compat: pescatarian,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: pol_krakowska_slice
   name: Krakowska Sausage (1 slice)
   brand: ''
@@ -95,7 +95,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: sulphites
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: pol_kabanos_30g
   name: Kabanos (1 stick, 30g)
   brand: ''
@@ -111,7 +111,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: sulphites
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: pol_bigos
   name: Bigos (Hunter's Stew)
   brand: ''
@@ -127,7 +127,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: sulphites
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: pol_golabki_meat_2
   name: Gołąbki (Stuffed Cabbage Rolls, 2)
   brand: ''
@@ -143,7 +143,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten
   unit_grams: 175
-- source: gymflow
+- source: afletics
   source_id: pol_kotlet_schabowy
   name: Kotlet Schabowy (Pork Schnitzel)
   brand: ''
@@ -159,7 +159,7 @@
   dietary_compat: pescatarian
   allergens: gluten,eggs,milk
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: pol_kotlet_mielony
   name: Kotlet Mielony (Polish Meatball)
   brand: ''
@@ -175,7 +175,7 @@
   dietary_compat: pescatarian
   allergens: gluten,eggs
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: pol_zurek
   name: Żurek (Sour Rye Soup)
   brand: ''
@@ -191,7 +191,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: pol_barszcz_clear
   name: Barszcz Czerwony (Clear Beetroot Soup)
   brand: ''
@@ -207,7 +207,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: celery
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: pol_rosol
   name: Rosół (Chicken Soup)
   brand: ''
@@ -223,7 +223,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,celery
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: pol_placki_ziemniaczane_3
   name: Placki Ziemniaczane (Potato Pancakes, 3)
   brand: ''
@@ -239,7 +239,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: pol_kasza_gryczana_cooked
   name: Kasza Gryczana (Buckwheat, cooked, per 100g)
   brand: ''
@@ -254,7 +254,7 @@
   tags: polish,grain,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: pol_kasza_jeczmienna_cooked
   name: Kasza Jęczmienna (Pearl Barley, cooked, per 100g)
   brand: ''
@@ -269,7 +269,7 @@
   tags: polish,grain,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: pol_ogorki_kiszone
   name: Ogórki Kiszone (Pickled Cucumbers, per 100g)
   brand: ''
@@ -284,7 +284,7 @@
   tags: polish,fermented,low_calorie,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: pol_kapusta_kiszona
   name: Kapusta Kiszona (Sauerkraut, per 100g)
   brand: ''
@@ -299,7 +299,7 @@
   tags: polish,fermented,low_calorie,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: pol_mizeria
   name: Mizeria (Cucumber Salad)
   brand: ''
@@ -315,7 +315,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: pol_buraczki
   name: Buraczki (Beetroot Salad)
   brand: ''
@@ -331,7 +331,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: pol_oscypek_30g
   name: Oscypek (Smoked Sheep Cheese, 30g)
   brand: ''
@@ -347,7 +347,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: pol_kefir_polish_glass
   name: Polish Kefir (250ml)
   brand: ''
@@ -362,7 +362,7 @@
   tags: polish,dairy,fermented
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: pol_maslanka
   name: Maślanka (Buttermilk, 250ml)
   brand: ''
@@ -377,7 +377,7 @@
   tags: polish,dairy,fermented
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: pol_makowiec_slice
   name: Makowiec (Poppy Seed Roll, 1 slice)
   brand: ''
@@ -393,7 +393,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: pol_sernik_slice
   name: Sernik (Polish Cheesecake, 1 slice)
   brand: ''
@@ -409,7 +409,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: pol_paczek
   name: Pączek (Polish Doughnut)
   brand: ''
@@ -425,7 +425,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: pol_rogal_swietomarcinski
   name: Rogal Świętomarciński (Croissant, slice)
   brand: ''
@@ -441,7 +441,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,tree_nuts
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: pol_chleb_zytni_slice
   name: Chleb Żytni (Rye Bread, 1 slice)
   brand: ''
@@ -457,7 +457,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: pol_zapiekanka
   name: Zapiekanka (Polish Pizza Bread)
   brand: ''
@@ -473,7 +473,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: pol_tatar
   name: Tatar Wołowy (Steak Tartare)
   brand: ''
@@ -489,7 +489,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: eggs,mustard
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: pol_smalec_15g
   name: Smalec (Pork Lard Spread, 15g)
   brand: ''
@@ -505,7 +505,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: pol_zubrowka_25
   name: Żubrówka Vodka (25ml shot)
   brand: Żubrówka
@@ -521,7 +521,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: pol_tyskie_pint
   name: Tyskie Beer (pint)
   brand: Tyskie
@@ -537,7 +537,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: pol_zywiec_pint
   name: Żywiec Beer (pint)
   brand: Żywiec

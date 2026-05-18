@@ -1,6 +1,6 @@
 # toby_carvery.yaml — Toby Carvery (Mitchells & Butlers). 30 entries.
 # Macros are per-100g; the carvery plate average comes from M&B published data.
-- source: gymflow
+- source: afletics
   source_id: toby_full_carvery
   name: Full Toby Carvery (3 meats)
   brand: Toby Carvery
@@ -16,7 +16,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 800
-- source: gymflow
+- source: afletics
   source_id: toby_carvery_beef
   name: Carvery Beef Plate
   brand: Toby Carvery
@@ -32,7 +32,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: toby_carvery_chicken
   name: Carvery Chicken Plate
   brand: Toby Carvery
@@ -48,7 +48,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: toby_carvery_pork
   name: Carvery Pork Plate
   brand: Toby Carvery
@@ -64,7 +64,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: toby_carvery_turkey
   name: Carvery Turkey Plate
   brand: Toby Carvery
@@ -80,7 +80,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: toby_carvery_gammon
   name: Carvery Gammon Plate
   brand: Toby Carvery
@@ -96,7 +96,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: toby_carvery_kids
   name: Kids' Carvery Plate
   brand: Toby Carvery
@@ -112,7 +112,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: toby_yorkshire_pud_giant
   name: Giant Yorkshire Pudding (with carvery)
   brand: Toby Carvery
@@ -128,7 +128,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: toby_yorkshire_pud_small
   name: Yorkshire Pudding (small)
   brand: Toby Carvery
@@ -144,7 +144,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: toby_pigs_blankets_3
   name: Pigs in Blankets (3)
   brand: Toby Carvery
@@ -160,7 +160,7 @@
   dietary_compat: pescatarian
   allergens: sulphites
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: toby_stuffing
   name: Sage & Onion Stuffing
   brand: Toby Carvery
@@ -176,7 +176,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,celery
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: toby_roast_potatoes
   name: Roast Potatoes
   brand: Toby Carvery
@@ -192,7 +192,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: toby_seasonal_veg
   name: Seasonal Vegetables
   brand: Toby Carvery
@@ -208,7 +208,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: toby_cauliflower_cheese
   name: Cauliflower Cheese
   brand: Toby Carvery
@@ -224,7 +224,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: toby_braised_red_cabbage
   name: Braised Red Cabbage
   brand: Toby Carvery
@@ -240,7 +240,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: sulphites
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: toby_gravy
   name: Gravy (ladle)
   brand: Toby Carvery
@@ -256,7 +256,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: celery
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: toby_fish_chips
   name: Fish & Chips
   brand: Toby Carvery
@@ -272,7 +272,7 @@
   dietary_compat: pescatarian
   allergens: fish,gluten,eggs
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: toby_classic_burger
   name: Classic Beef Burger
   brand: Toby Carvery
@@ -288,7 +288,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 470
-- source: gymflow
+- source: afletics
   source_id: toby_chicken_burger
   name: Chicken Burger
   brand: Toby Carvery
@@ -304,7 +304,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 460
-- source: gymflow
+- source: afletics
   source_id: toby_lasagne
   name: Beef Lasagne
   brand: Toby Carvery
@@ -320,7 +320,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 470
-- source: gymflow
+- source: afletics
   source_id: toby_breakfast_full
   name: Full Breakfast
   brand: Toby Carvery
@@ -336,7 +336,7 @@
   dietary_compat: pescatarian
   allergens: gluten,eggs,sulphites
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: toby_breakfast_carvery
   name: Breakfast Carvery
   brand: Toby Carvery
@@ -352,7 +352,7 @@
   dietary_compat: pescatarian
   allergens: gluten,eggs,sulphites
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: toby_sticky_toffee
   name: Sticky Toffee Pudding
   brand: Toby Carvery
@@ -368,7 +368,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: toby_apple_crumble
   name: Apple Crumble & Custard
   brand: Toby Carvery
@@ -384,7 +384,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: toby_chocolate_brownie
   name: Chocolate Brownie Sundae
   brand: Toby Carvery
@@ -400,7 +400,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: toby_cheesecake
   name: Cheesecake
   brand: Toby Carvery
@@ -416,7 +416,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: toby_horseradish
   name: Horseradish Sauce
   brand: Toby Carvery
@@ -432,7 +432,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs,milk,mustard
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: toby_apple_sauce
   name: Apple Sauce
   brand: Toby Carvery
@@ -448,7 +448,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: toby_mint_sauce
   name: Mint Sauce
   brand: Toby Carvery
@@ -464,7 +464,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: sulphites
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: toby_cranberry_sauce
   name: Cranberry Sauce
   brand: Toby Carvery

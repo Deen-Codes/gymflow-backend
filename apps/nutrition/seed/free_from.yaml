@@ -1,6 +1,6 @@
 # free_from.yaml — gluten-free / Free From: Genius bread (white/seeded), Schar pasta/baguette/cookies/crackers, BFree wraps (white/multigrain), Newburn Bakehouse Tiger Loaf, Warburtons GF white/wraps, GF corn flakes, GF sausages, GF tomato sauce, GF breadcrumbs.
 
-- source: gymflow
+- source: afletics
   source_id: genius_white_bread_slice
   name: Genius Gluten Free White Bread (1 slice)
   brand: Genius
@@ -16,7 +16,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: genius_seeded_bread_slice
   name: Genius Gluten Free Seeded Bread (1 slice)
   brand: Genius
@@ -32,7 +32,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: sesame
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: schar_classic_pasta_per_100
   name: Schar Gluten Free Pasta, dry (per 100g)
   brand: Schar
@@ -47,7 +47,7 @@
   tags: pantry,branded,pasta,gluten_free
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: schar_baguette_2_pack
   name: Schar Gluten Free Baguette
   brand: Schar
@@ -63,7 +63,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 75
-- source: gymflow
+- source: afletics
   source_id: bfree_white_wraps
   name: BFree Gluten Free White Wraps
   brand: BFree
@@ -79,7 +79,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 56
-- source: gymflow
+- source: afletics
   source_id: bfree_multigrain_wraps
   name: BFree Multigrain Wraps
   brand: BFree
@@ -95,7 +95,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: sesame
   unit_grams: 56
-- source: gymflow
+- source: afletics
   source_id: newburn_bakehouse_white_loaf_slice
   name: Newburn Bakehouse Gluten Free Tiger Loaf (1 slice)
   brand: Newburn Bakehouse
@@ -111,7 +111,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: warburtons_gluten_free_white_loaf
   name: Warburtons Gluten Free White (1 slice)
   brand: Warburtons
@@ -127,7 +127,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: warburtons_gluten_free_wraps
   name: Warburtons Gluten Free Wraps
   brand: Warburtons
@@ -143,7 +143,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: free_from_corn_flakes_30g
   name: Gluten Free Corn Flakes (30g)
   brand: ''
@@ -158,7 +158,7 @@
   tags: cereal,gluten_free,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: schar_chocolate_cookies_pack
   name: Schar Gluten Free Chocolate Cookies (1 pack)
   brand: Schar
@@ -174,7 +174,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: schar_crackers_per_100
   name: Schar Gluten Free Crackers (per 100g)
   brand: Schar
@@ -190,7 +190,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: free_from_sausages_pork_4
   name: Gluten Free Pork Sausages
   brand: ''
@@ -206,7 +206,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: sulphites
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: free_from_pasta_sauce_tomato
   name: Gluten Free Tomato Pasta Sauce (per 100g)
   brand: ''
@@ -221,7 +221,7 @@
   tags: sauce,gluten_free,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: free_from_breadcrumbs_per_100
   name: Gluten Free Breadcrumbs (per 100g)
   brand: ''

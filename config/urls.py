@@ -15,7 +15,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
 
     # Magic-link web handler — the email's lime CTA points at
-    # gymflow://magic/<token> for direct app launch, but several
+    # afletics://magic/<token> for direct app launch, but several
     # email clients (Gmail in particular) rewrite custom schemes
     # to https:// for safety. This route catches those rewrites,
     # detects iOS, and redirects to the deep link so the app
@@ -29,8 +29,8 @@ urlpatterns = [
 
     # Programmatic city directory pages — task #42 / M.2. Mounted at
     # the project root (rather than under /p/) so the URL reads
-    # naturally for SEO: gymflow.app/cities/london/ ranks better
-    # than gymflow.app/p/cities/london/. Each page lists every
+    # naturally for SEO: afletics.com/cities/london/ ranks better
+    # than afletics.com/p/cities/london/. Each page lists every
     # trainer with that city set.
     path("cities/",                 cities_index,        name="cities-index"),
     path("cities/<slug:city_slug>/", city_directory_page, name="city-directory"),
@@ -61,7 +61,7 @@ urlpatterns = [
          name="support"),
 
     # Public PT landing pages — Phase 7. Mounted at /p/<slug>/ for now;
-    # subdomain routing (jared.gymflow.com) is Phase 7.5.
+    # subdomain routing (jared.afletics.com) is Phase 7.5.
     path("p/", include("apps.sites.public_urls")),
 
     # Dashboard pages + landing

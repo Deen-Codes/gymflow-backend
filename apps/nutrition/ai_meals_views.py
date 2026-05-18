@@ -68,7 +68,7 @@ ANTHROPIC_URL   = "https://api.anthropic.com/v1/messages"
 
 
 SYSTEM_PROMPT = """\
-You are GymFlow's nutrition coach. The user has saved macro targets;
+You are Afletics's nutrition coach. The user has saved macro targets;
 your job is to assemble 3–5 meals for the requested slots whose
 TOTAL macros land at or near the daily target. Use ONLY food rows
 from the CATALOG SLICE provided — every item you return must

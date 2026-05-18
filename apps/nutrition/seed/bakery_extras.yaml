@@ -2,7 +2,7 @@
 # hot cross buns, brioche, naan, chapati, roti, poppadoms, focaccia, ciabatta,
 # bagels variants, branded bread (Warburtons, Hovis, Kingsmill).
 
-- source: gymflow
+- source: afletics
   source_id: croissant_butter_60g
   name: Butter Croissant
   brand: ''
@@ -18,7 +18,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: pain_au_chocolat_70g
   name: Pain au Chocolat
   brand: ''
@@ -34,7 +34,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: pain_au_raisin_85g
   name: Pain au Raisins
   brand: ''
@@ -50,7 +50,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 85
-- source: gymflow
+- source: afletics
   source_id: cinnamon_swirl_85g
   name: Cinnamon Swirl
   brand: ''
@@ -66,7 +66,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 85
-- source: gymflow
+- source: afletics
   source_id: english_muffin_white
   name: English Muffin
   brand: ''
@@ -82,7 +82,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: crumpet
   name: Crumpet
   brand: ''
@@ -98,7 +98,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: hot_cross_bun
   name: Hot Cross Bun
   brand: ''
@@ -114,7 +114,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: teacake
   name: Teacake
   brand: ''
@@ -130,7 +130,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: brioche_loaf_slice
   name: Brioche Loaf (1 slice)
   brand: ''
@@ -146,7 +146,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: naan_plain_70g
   name: Plain Naan Bread
   brand: ''
@@ -162,7 +162,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: naan_garlic_coriander_70g
   name: Garlic & Coriander Naan
   brand: ''
@@ -178,7 +178,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: chapati_50g
   name: Chapati
   brand: ''
@@ -194,7 +194,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: roti_50g
   name: Roti
   brand: ''
@@ -210,7 +210,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: poppadom_baked
   name: Poppadom
   brand: ''
@@ -226,7 +226,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
   unit_grams: 7
-- source: gymflow
+- source: afletics
   source_id: focaccia_slice
   name: Focaccia (1 slice)
   brand: ''
@@ -242,7 +242,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: ciabatta_50g
   name: Ciabatta Roll
   brand: ''
@@ -258,7 +258,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: garlic_baguette_slice
   name: Garlic Baguette (1 slice)
   brand: ''
@@ -274,7 +274,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: baguette_french_50g
   name: French Baguette (1 slice)
   brand: ''
@@ -290,7 +290,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: dinner_roll_white
   name: White Dinner Roll
   brand: ''
@@ -306,7 +306,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 45
-- source: gymflow
+- source: afletics
   source_id: cinnamon_bagel_plain
   name: Cinnamon Bagel
   brand: ''
@@ -322,7 +322,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 95
-- source: gymflow
+- source: afletics
   source_id: plain_protein_bagel
   name: Protein Bagel
   brand: ''
@@ -338,7 +338,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: warburtons_thins_white
   name: Warburtons Thins White
   brand: Warburtons
@@ -354,7 +354,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: warburtons_thins_seeded
   name: Warburtons Thins Seeded
   brand: Warburtons
@@ -370,7 +370,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: hovis_seeded_batch_slice
   name: Hovis Seed Sensations Seven Seeds (1 slice)
   brand: Hovis
@@ -386,7 +386,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: hovis_granary_slice
   name: Hovis Granary (1 slice)
   brand: Hovis
@@ -402,7 +402,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: kingsmill_50_50_slice
   name: Kingsmill 50/50 (1 slice)
   brand: Kingsmill
@@ -418,7 +418,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 36
-- source: gymflow
+- source: afletics
   source_id: warburtons_toastie_white_slice
   name: Warburtons Toastie Thick White (1 slice)
   brand: Warburtons
@@ -434,7 +434,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 44
-- source: gymflow
+- source: afletics
   source_id: warburtons_medium_white_slice
   name: Warburtons Medium White (1 slice)
   brand: Warburtons
@@ -450,7 +450,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: warburtons_wholemeal_medium_slice
   name: Warburtons Wholemeal Medium (1 slice)
   brand: Warburtons
@@ -466,7 +466,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: warburtons_wholemeal_thick_slice
   name: Warburtons Wholemeal Thick (1 slice)
   brand: Warburtons
@@ -482,7 +482,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 44
-- source: gymflow
+- source: afletics
   source_id: warburtons_50_50_medium_slice
   name: Warburtons Half & Half Medium (1 slice)
   brand: Warburtons
@@ -498,7 +498,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 36
-- source: gymflow
+- source: afletics
   source_id: warburtons_50_50_thick_slice
   name: Warburtons Half & Half Thick (1 slice)
   brand: Warburtons
@@ -514,7 +514,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 42
-- source: gymflow
+- source: afletics
   source_id: warburtons_seeded_batch_slice
   name: Warburtons Seeded Batch (1 slice)
   brand: Warburtons
@@ -530,7 +530,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: warburtons_tiger_loaf_slice
   name: Warburtons Tiger Loaf (1 slice)
   brand: Warburtons
@@ -546,7 +546,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 40
-- source: gymflow
+- source: afletics
   source_id: warburtons_brioche_finger_rolls_4
   name: Warburtons Brioche Finger Rolls
   brand: Warburtons
@@ -562,7 +562,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: warburtons_seeded_batch_rolls
   name: Warburtons Seeded Batch Rolls
   brand: Warburtons
@@ -578,7 +578,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: warburtons_white_baps_4
   name: Warburtons White Baps
   brand: Warburtons
@@ -594,7 +594,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 67
-- source: gymflow
+- source: afletics
   source_id: warburtons_giant_white_wraps_4
   name: Warburtons Giant White Wraps
   brand: Warburtons
@@ -610,7 +610,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 64
-- source: gymflow
+- source: afletics
   source_id: warburtons_protein_wraps_2
   name: Warburtons Protein Wraps
   brand: Warburtons
@@ -626,7 +626,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: warburtons_thins_white_2
   name: Warburtons Sandwich Thins White
   brand: Warburtons
@@ -642,7 +642,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: warburtons_thins_seeded_2
   name: Warburtons Sandwich Thins Seeded
   brand: Warburtons
@@ -658,7 +658,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: warburtons_pittas_white_6
   name: Warburtons White Pittas
   brand: Warburtons
@@ -674,7 +674,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: warburtons_crumpets_6
   name: Warburtons Crumpets
   brand: Warburtons
@@ -690,7 +690,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: hovis_soft_white_thick_slice
   name: Hovis Soft White Thick (1 slice)
   brand: Hovis
@@ -706,7 +706,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 44
-- source: gymflow
+- source: afletics
   source_id: hovis_soft_white_medium_slice
   name: Hovis Soft White Medium (1 slice)
   brand: Hovis
@@ -722,7 +722,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: hovis_wholemeal_medium_slice
   name: Hovis Wholemeal Medium (1 slice)
   brand: Hovis
@@ -738,7 +738,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: hovis_best_of_both_slice
   name: Hovis Best of Both (1 slice)
   brand: Hovis
@@ -754,7 +754,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: hovis_50_50_slice
   name: Hovis 50/50 (1 slice)
   brand: Hovis
@@ -770,7 +770,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 36
-- source: gymflow
+- source: afletics
   source_id: hovis_seed_sensations_slice
   name: Hovis Seed Sensations (1 slice)
   brand: Hovis
@@ -786,7 +786,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: hovis_granary_slice_v2
   name: Hovis Granary (1 slice)
   brand: Hovis
@@ -802,7 +802,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: hovis_low_gi_slice
   name: Hovis Low GI Bread (1 slice)
   brand: Hovis
@@ -818,7 +818,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 42
-- source: gymflow
+- source: afletics
   source_id: kingsmill_great_everyday_white_slice
   name: Kingsmill Great Everyday White (1 slice)
   brand: Kingsmill
@@ -834,7 +834,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: kingsmill_50_50_slice_v2
   name: Kingsmill 50/50 (1 slice)
   brand: Kingsmill
@@ -850,7 +850,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 36
-- source: gymflow
+- source: afletics
   source_id: kingsmill_wholemeal_slice
   name: Kingsmill Wholemeal Medium (1 slice)
   brand: Kingsmill
@@ -866,7 +866,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: kingsmill_no_crusts_slice
   name: Kingsmill No Crusts White (1 slice)
   brand: Kingsmill
@@ -882,7 +882,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 32
-- source: gymflow
+- source: afletics
   source_id: kingsmill_little_big_loaf_slice
   name: Kingsmill Little Big Loaf (1 slice)
   brand: Kingsmill
@@ -898,7 +898,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 22
-- source: gymflow
+- source: afletics
   source_id: kingsmill_seeded_batch_slice
   name: Kingsmill Seeded Batch (1 slice)
   brand: Kingsmill
@@ -914,7 +914,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: kingsmill_burger_buns_4
   name: Kingsmill Skinny Burger Buns
   brand: Kingsmill
@@ -930,7 +930,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: bread_brown_medium_slice_alias
   name: Brown Bread, Medium Slice (generic)
   brand: ''
@@ -946,7 +946,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: bread_brown_thick_slice_alias
   name: Brown Bread, Thick Slice (generic)
   brand: ''
@@ -962,7 +962,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 44
-- source: gymflow
+- source: afletics
   source_id: bread_granary_slice
   name: Granary Bread (1 slice)
   brand: ''
@@ -978,7 +978,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 40
-- source: gymflow
+- source: afletics
   source_id: bread_multigrain_slice
   name: Multigrain Bread (1 slice)
   brand: ''
@@ -994,7 +994,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 40
-- source: gymflow
+- source: afletics
   source_id: bread_white_thick_slice_generic
   name: White Bread, Thick Slice (generic)
   brand: ''
@@ -1010,7 +1010,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 44
-- source: gymflow
+- source: afletics
   source_id: roberts_white_loaf_slice
   name: Roberts Bakery White (1 slice)
   brand: Roberts
@@ -1026,7 +1026,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: jacksons_yorkshire_white_slice
   name: Jackson's Yorkshire White (1 slice)
   brand: Jackson's
@@ -1042,7 +1042,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: mcgrains_irish_soda_slice
   name: Irish Soda Bread (1 slice)
   brand: ''
@@ -1058,7 +1058,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: soreen_original_malt_slice
   name: Soreen Original Malt Loaf (1 slice)
   brand: Soreen
@@ -1074,7 +1074,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: soreen_lunchbox_loaf
   name: Soreen Lunchbox Loaf
   brand: Soreen

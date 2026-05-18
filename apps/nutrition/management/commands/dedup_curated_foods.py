@@ -15,7 +15,7 @@ This command finds those clusters by:
 
 Strategy chosen for resolving:
   • If multiple sources cover the same food, KEEP the highest-
-    priority source (priority: gymflow > usda > fsa_uk > ausnut > ciqual).
+    priority source (priority: afletics > usda > fsa_uk > ausnut > ciqual).
   • Lower-priority dupes get a `tags` suffix `,duplicate_of:<id>`
     and are excluded from search by default. We don't delete —
     keeps the audit trail and lets us un-merge later.
@@ -39,7 +39,7 @@ from apps.nutrition.models import CuratedFood
 
 
 SOURCE_PRIORITY = {
-    CuratedFood.SOURCE_GYMFLOW: 5,
+    CuratedFood.SOURCE_AFLETICS: 5,
     CuratedFood.SOURCE_USDA:   4,
     CuratedFood.SOURCE_FSA_UK: 3,
     CuratedFood.SOURCE_AUSNUT: 2,

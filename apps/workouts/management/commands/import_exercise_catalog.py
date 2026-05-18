@@ -3,12 +3,12 @@ EXERCISE-DB — owned multi-source exercise catalog ingest.
 
 Mirrors the approach in `import_curated_foods` (NUTRITION-DB / #105):
 re-derive a clean owned catalog from public sources, with the
-GymFlow source for our own additions + branded animated pose stills.
+Afletics source for our own additions + branded animated pose stills.
 
 Usage:
 
     python manage.py import_exercise_catalog --source=free_exercise_db --path=/path/to/exercises.json
-    python manage.py import_exercise_catalog --source=gymflow --path=/path/to/gymflow_exercises.csv
+    python manage.py import_exercise_catalog --source=afletics --path=/path/to/afletics_exercises.csv
 
 Sources:
   • Free Exercise DB (yuhonas) — public domain, ~800 exercises with
@@ -16,7 +16,7 @@ Sources:
     Re-derive: we ingest the metadata + replace images with our own
     animated pose stills (sourced separately per
     `EXERCISE_ANIMATION_LIBRARY.md`).
-  • GymFlow                    — our own additions / curated overrides.
+  • Afletics                    — our own additions / curated overrides.
 
 Intentionally NOT ingested:
   • wger (AGPL/viral copyleft — would taint the catalog DB)
@@ -46,12 +46,12 @@ from apps.workouts.models import ExerciseCatalog
 
 SUPPORTED_SOURCES = {
     ExerciseCatalog.SOURCE_FREE_EXERCISE_DB,
-    ExerciseCatalog.SOURCE_GYMFLOW,
+    ExerciseCatalog.SOURCE_AFLETICS,
 }
 
 
 class Command(BaseCommand):
-    help = "Ingest exercises from a public source (Free Exercise DB) or the GymFlow-curated list."
+    help = "Ingest exercises from a public source (Free Exercise DB) or the Afletics-curated list."
 
     def add_arguments(self, parser):
         parser.add_argument(
@@ -117,17 +117,17 @@ class Command(BaseCommand):
 # --------------------------------------------------------------------
 # Per-source loaders — each yields dicts matching ExerciseCatalog
 # fields. The Free Exercise DB loader is REAL (the JSON file is
-# small and well-shaped); the GymFlow loader expects our own CSV.
+# small and well-shaped); the Afletics loader expects our own CSV.
 # --------------------------------------------------------------------
 
 
-#: Free Exercise DB external_ids that duplicate a GymFlow-curated
+#: Free Exercise DB external_ids that duplicate a Afletics-curated
 #: entry. We keep the curated name (UK-friendly + canonical) and
 #: skip the FreeDB equivalent so iOS doesn't show two "Goblet
 #: Squats" / "Bench Presses" / etc. Mapping is curated_name → list
 #: of FreeDB external_ids that mean the same thing. Re-derive this
 #: table when curated names change. (See EXERCISE_LIBRARY_PLAN.md)
-GYMFLOW_FREEDB_DUPES = {
+AFLETICS_FREEDB_DUPES = {
     # Squats
     "Back Squat":              ["Barbell_Squat"],
     "Front Squat":             ["Front_Barbell_Squat"],
@@ -190,7 +190,7 @@ GYMFLOW_FREEDB_DUPES = {
     "Cable Crunch":            ["Cable_Crunch"],
 }
 #: Flatten to a single set for fast lookup at import time.
-FREEDB_DUPE_IDS = {fid for ids in GYMFLOW_FREEDB_DUPES.values() for fid in ids}
+FREEDB_DUPE_IDS = {fid for ids in AFLETICS_FREEDB_DUPES.values() for fid in ids}
 
 
 def load_free_exercise_db(path: str) -> Iterable[dict]:
@@ -217,7 +217,7 @@ def load_free_exercise_db(path: str) -> Iterable[dict]:
     the image, it layers on top.
 
     Dedup: any FreeDB row whose `id` is in `FREEDB_DUPE_IDS` is
-    skipped — its GymFlow-curated equivalent is already in the
+    skipped — its Afletics-curated equivalent is already in the
     catalog with a UK-friendly canonical name.
     """
     with open(path, encoding="utf-8") as f:
@@ -284,8 +284,8 @@ def load_free_exercise_db(path: str) -> Iterable[dict]:
         }
 
 
-def load_gymflow(path: str) -> Iterable[dict]:
-    """GymFlow-curated CSV. Columns: external_id,name,muscle_group,
+def load_afletics(path: str) -> Iterable[dict]:
+    """Afletics-curated CSV. Columns: external_id,name,muscle_group,
     equipment,instructions,image_url,video_url,animation_url.
     Used for branded / overridden / newly-commissioned exercises.
     """
@@ -293,7 +293,7 @@ def load_gymflow(path: str) -> Iterable[dict]:
         reader = csv.DictReader(f)
         for row in reader:
             yield {
-                "source":        ExerciseCatalog.SOURCE_GYMFLOW,
+                "source":        ExerciseCatalog.SOURCE_AFLETICS,
                 "external_id":   row["external_id"].strip(),
                 "name":          row["name"].strip(),
                 "muscle_group":  (row.get("muscle_group") or "").strip(),
@@ -308,5 +308,5 @@ def load_gymflow(path: str) -> Iterable[dict]:
 
 LOADERS = {
     ExerciseCatalog.SOURCE_FREE_EXERCISE_DB: load_free_exercise_db,
-    ExerciseCatalog.SOURCE_GYMFLOW:           load_gymflow,
+    ExerciseCatalog.SOURCE_AFLETICS:           load_afletics,
 }

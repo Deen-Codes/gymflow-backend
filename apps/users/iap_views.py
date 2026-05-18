@@ -65,12 +65,12 @@ PRODUCT_MAP = {
 }
 
 # AFLETICS-RENAME (May 2026, Deen QC) — bundle ID flipped from
-# coach.gymflow.app → com.afletics.app when the app was renamed from
-# GymFlow to Afletics. The JWS bundleId check below must match the
+# coach.afletics.com → com.afletics.app when the app was renamed from
+# Afletics to Afletics. The JWS bundleId check below must match the
 # iOS app's actual bundle ID or every IAP verification will fail
 # with "bundleId mismatch". Product IDs are also rebranded to
 # com.afletics.solo.* on the fresh ASC entry — no installed user base
-# to preserve, and keeping a "gymflow" prefix in user-facing receipt
+# to preserve, and keeping a "afletics" prefix in user-facing receipt
 # emails would be confusing. Override via APPLE_BUNDLE_ID env var on
 # Render if/when needed.
 EXPECTED_BUNDLE_ID = getattr(settings, "APPLE_BUNDLE_ID", "com.afletics.app")

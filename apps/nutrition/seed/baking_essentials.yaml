@@ -1,7 +1,7 @@
 # baking_essentials.yaml — flours, sugars, oils, spices, herbs, baking aids,
 # nut butters, sweeteners.
 
-- source: gymflow
+- source: afletics
   source_id: flour_plain_white
   name: Plain White Flour (per 100g)
   brand: ''
@@ -16,7 +16,7 @@
   tags: pantry,baking,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: flour_self_raising
   name: Self-Raising Flour (per 100g)
   brand: ''
@@ -31,7 +31,7 @@
   tags: pantry,baking,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: flour_wholemeal
   name: Wholemeal Flour (per 100g)
   brand: ''
@@ -46,7 +46,7 @@
   tags: pantry,baking,grain,fibre
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: flour_strong_white_bread
   name: Strong White Bread Flour (per 100g)
   brand: ''
@@ -61,7 +61,7 @@
   tags: pantry,baking,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: flour_gluten_free
   name: Gluten-Free Plain Flour (per 100g)
   brand: ''
@@ -76,7 +76,7 @@
   tags: pantry,baking,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: flour_almond
   name: Ground Almonds / Almond Flour (per 100g)
   brand: ''
@@ -91,7 +91,7 @@
   tags: pantry,baking,low_carb
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: tree_nuts
-- source: gymflow
+- source: afletics
   source_id: flour_coconut
   name: Coconut Flour (per 100g)
   brand: ''
@@ -106,7 +106,7 @@
   tags: pantry,baking,low_carb
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sugar_white_caster_5g
   name: White Caster Sugar (1 tsp/5g)
   brand: ''
@@ -122,7 +122,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: sugar_brown_5g
   name: Brown Sugar (1 tsp/5g)
   brand: ''
@@ -138,7 +138,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: sugar_icing_5g
   name: Icing Sugar (1 tsp/5g)
   brand: ''
@@ -154,7 +154,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: sugar_demerara_5g
   name: Demerara Sugar (1 tsp/5g)
   brand: ''
@@ -170,7 +170,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: stevia_3g
   name: Stevia Sweetener (1 tsp/3g)
   brand: ''
@@ -186,7 +186,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 3
-- source: gymflow
+- source: afletics
   source_id: truvia_2g
   name: Truvia Sweetener (1 sachet/2g)
   brand: Truvia
@@ -202,7 +202,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 2
-- source: gymflow
+- source: afletics
   source_id: sweetener_canderel_1g
   name: Canderel Sweetener (1 sachet/1g)
   brand: Canderel
@@ -218,7 +218,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 1
-- source: gymflow
+- source: afletics
   source_id: oil_vegetable_15ml
   name: Vegetable Oil (1 tbsp)
   brand: ''
@@ -234,7 +234,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: oil_sunflower_15ml
   name: Sunflower Oil (1 tbsp)
   brand: ''
@@ -250,7 +250,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: oil_sesame_15ml
   name: Sesame Oil (1 tbsp)
   brand: ''
@@ -266,7 +266,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: sesame
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: oil_avocado_15ml
   name: Avocado Oil (1 tbsp)
   brand: ''
@@ -282,7 +282,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: oil_mct_15ml
   name: MCT Oil (1 tbsp)
   brand: ''
@@ -298,7 +298,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: crisp_n_dry_15ml
   name: Crisp 'n Dry Oil (1 tbsp)
   brand: Crisp 'n Dry
@@ -314,7 +314,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: spice_cumin_2g
   name: Ground Cumin (1 tsp/2g)
   brand: ''
@@ -330,7 +330,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 2
-- source: gymflow
+- source: afletics
   source_id: spice_paprika_2g
   name: Paprika (1 tsp/2g)
   brand: ''
@@ -346,7 +346,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 2
-- source: gymflow
+- source: afletics
   source_id: spice_smoked_paprika_2g
   name: Smoked Paprika (1 tsp/2g)
   brand: ''
@@ -362,7 +362,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 2
-- source: gymflow
+- source: afletics
   source_id: spice_turmeric_2g
   name: Ground Turmeric (1 tsp/2g)
   brand: ''
@@ -378,7 +378,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 2
-- source: gymflow
+- source: afletics
   source_id: spice_cinnamon_2g
   name: Ground Cinnamon (1 tsp/2g)
   brand: ''
@@ -394,7 +394,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 2
-- source: gymflow
+- source: afletics
   source_id: spice_garam_masala_2g
   name: Garam Masala (1 tsp/2g)
   brand: ''
@@ -410,7 +410,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 2
-- source: gymflow
+- source: afletics
   source_id: spice_chilli_powder_2g
   name: Chilli Powder (1 tsp/2g)
   brand: ''
@@ -426,7 +426,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 2
-- source: gymflow
+- source: afletics
   source_id: spice_ginger_ground_2g
   name: Ground Ginger (1 tsp/2g)
   brand: ''
@@ -442,7 +442,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 2
-- source: gymflow
+- source: afletics
   source_id: spice_garlic_powder_3g
   name: Garlic Powder (1 tsp/3g)
   brand: ''
@@ -458,7 +458,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 3
-- source: gymflow
+- source: afletics
   source_id: herbs_oregano_dried_1g
   name: Dried Oregano (1 tsp/1g)
   brand: ''
@@ -474,7 +474,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 1
-- source: gymflow
+- source: afletics
   source_id: herbs_basil_dried_1g
   name: Dried Basil (1 tsp/1g)
   brand: ''
@@ -490,7 +490,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 1
-- source: gymflow
+- source: afletics
   source_id: herbs_thyme_dried_1g
   name: Dried Thyme (1 tsp/1g)
   brand: ''
@@ -506,7 +506,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 1
-- source: gymflow
+- source: afletics
   source_id: herbs_mixed_dried_1g
   name: Dried Mixed Herbs (1 tsp/1g)
   brand: ''
@@ -522,7 +522,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 1
-- source: gymflow
+- source: afletics
   source_id: seasoning_black_pepper_1g
   name: Ground Black Pepper (1 tsp/1g)
   brand: ''
@@ -538,7 +538,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 1
-- source: gymflow
+- source: afletics
   source_id: seasoning_salt_1g
   name: Salt (1g)
   brand: ''
@@ -554,7 +554,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 1
-- source: gymflow
+- source: afletics
   source_id: baking_yeast_dry_5g
   name: Dry Yeast (1 sachet/7g)
   brand: ''
@@ -570,7 +570,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 7
-- source: gymflow
+- source: afletics
   source_id: baking_powder_3g
   name: Baking Powder (1 tsp/3g)
   brand: ''
@@ -586,7 +586,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 3
-- source: gymflow
+- source: afletics
   source_id: baking_soda_3g
   name: Bicarbonate of Soda (1 tsp/3g)
   brand: ''
@@ -602,7 +602,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 3
-- source: gymflow
+- source: afletics
   source_id: baking_cocoa_powder_5g
   name: Cocoa Powder (1 tbsp/5g)
   brand: ''
@@ -618,7 +618,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: baking_cornflour_5g
   name: Cornflour (1 tbsp/5g)
   brand: ''
@@ -634,7 +634,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: baking_chocolate_chips_dark_15g
   name: Dark Chocolate Chips (15g)
   brand: ''
@@ -650,7 +650,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: soy
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: baking_chocolate_chips_milk_15g
   name: Milk Chocolate Chips (15g)
   brand: ''
@@ -666,7 +666,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: baking_vanilla_extract_5ml
   name: Vanilla Extract (1 tsp/5ml)
   brand: ''
@@ -682,7 +682,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: honey_runny_15g
   name: Runny Honey (1 tbsp/15g)
   brand: ''
@@ -698,7 +698,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: maple_syrup_15ml
   name: Maple Syrup (1 tbsp)
   brand: ''
@@ -714,7 +714,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: agave_syrup_15ml
   name: Agave Syrup (1 tbsp)
   brand: ''
@@ -730,7 +730,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: golden_syrup_15g
   name: Golden Syrup (1 tbsp)
   brand: Lyle's
@@ -746,7 +746,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: nut_butter_almond_15g
   name: Almond Butter (1 tbsp/15g)
   brand: ''
@@ -762,7 +762,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: tree_nuts
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: nut_butter_cashew_15g
   name: Cashew Butter (1 tbsp/15g)
   brand: ''
@@ -778,7 +778,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: tree_nuts
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: nut_butter_peanut_crunchy_15g
   name: Crunchy Peanut Butter (1 tbsp/15g)
   brand: ''
@@ -794,7 +794,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: peanuts
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: nut_butter_meridian_smooth
   name: Meridian Smooth Peanut Butter (1 tbsp)
   brand: Meridian
@@ -810,7 +810,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: peanuts
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: nut_butter_pip_n_nut_almond
   name: Pip & Nut Almond Butter (1 tbsp)
   brand: Pip & Nut

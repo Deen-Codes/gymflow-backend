@@ -2,119 +2,119 @@
 # (rowing, ski erg, assault bike, sled, jump rope variants), interval
 # templates, and high-intensity circuits.
 
-- external_id: gymflow_treadmill_walk
+- external_id: afletics_treadmill_walk
   name: Treadmill Walk
   muscle_group: ""
   equipment: machine
   level: beginner
   category: cardio
 
-- external_id: gymflow_treadmill_incline_walk
+- external_id: afletics_treadmill_incline_walk
   name: Treadmill Incline Walk
   muscle_group: ""
   equipment: machine
   level: beginner
   category: cardio
 
-- external_id: gymflow_treadmill_jog
+- external_id: afletics_treadmill_jog
   name: Treadmill Jog
   muscle_group: ""
   equipment: machine
   level: beginner
   category: cardio
 
-- external_id: gymflow_treadmill_run
+- external_id: afletics_treadmill_run
   name: Treadmill Run
   muscle_group: ""
   equipment: machine
   level: intermediate
   category: cardio
 
-- external_id: gymflow_treadmill_sprint
+- external_id: afletics_treadmill_sprint
   name: Treadmill Sprint
   muscle_group: ""
   equipment: machine
   level: expert
   category: cardio
 
-- external_id: gymflow_treadmill_intervals
+- external_id: afletics_treadmill_intervals
   name: Treadmill Intervals
   muscle_group: ""
   equipment: machine
   level: intermediate
   category: cardio
 
-- external_id: gymflow_outdoor_walk
+- external_id: afletics_outdoor_walk
   name: Outdoor Walk
   muscle_group: ""
   equipment: body only
   level: beginner
   category: cardio
 
-- external_id: gymflow_outdoor_run
+- external_id: afletics_outdoor_run
   name: Outdoor Run
   muscle_group: ""
   equipment: body only
   level: intermediate
   category: cardio
 
-- external_id: gymflow_outdoor_sprint
+- external_id: afletics_outdoor_sprint
   name: Outdoor Sprint
   muscle_group: ""
   equipment: body only
   level: expert
   category: cardio
 
-- external_id: gymflow_hill_sprint
+- external_id: afletics_hill_sprint
   name: Hill Sprint
   muscle_group: ""
   equipment: body only
   level: expert
   category: cardio
 
-- external_id: gymflow_stationary_bike
+- external_id: afletics_stationary_bike
   name: Stationary Bike
   muscle_group: ""
   equipment: machine
   level: beginner
   category: cardio
 
-- external_id: gymflow_spin_bike
+- external_id: afletics_spin_bike
   name: Spin Bike
   muscle_group: ""
   equipment: machine
   level: intermediate
   category: cardio
 
-- external_id: gymflow_assault_bike
+- external_id: afletics_assault_bike
   name: Assault Bike
   muscle_group: ""
   equipment: machine
   level: intermediate
   category: cardio
 
-- external_id: gymflow_assault_bike_intervals
+- external_id: afletics_assault_bike_intervals
   name: Assault Bike Intervals
   muscle_group: ""
   equipment: machine
   level: expert
   category: cardio
 
-- external_id: gymflow_air_bike
+- external_id: afletics_air_bike
   name: Air Bike
   muscle_group: ""
   equipment: machine
   level: intermediate
   category: cardio
 
-- external_id: gymflow_outdoor_cycle
+- external_id: afletics_outdoor_cycle
   name: Outdoor Cycling
   muscle_group: ""
   equipment: body only
   level: beginner
   category: cardio
 
-- external_id: gymflow_rowing_machine
+- external_id: afletics_rowing_machine
   name: Rowing Machine
   muscle_group: ""
   secondary_muscles: lats,upper back,quadriceps
@@ -122,7 +122,7 @@
   level: beginner
   category: cardio
 
-- external_id: gymflow_rowing_intervals
+- external_id: afletics_rowing_intervals
   name: Rowing Intervals
   muscle_group: ""
   secondary_muscles: lats,upper back,quadriceps
@@ -130,7 +130,7 @@
   level: intermediate
   category: cardio
 
-- external_id: gymflow_ski_erg
+- external_id: afletics_ski_erg
   name: Ski Erg
   muscle_group: ""
   secondary_muscles: lats,triceps,core
@@ -138,14 +138,14 @@
   level: intermediate
   category: cardio
 
-- external_id: gymflow_elliptical
+- external_id: afletics_elliptical
   name: Elliptical Trainer
   muscle_group: ""
   equipment: machine
   level: beginner
   category: cardio
 
-- external_id: gymflow_stair_climber
+- external_id: afletics_stair_climber
   name: Stair Climber
   muscle_group: glutes
   secondary_muscles: quadriceps,calves
@@ -153,7 +153,7 @@
   level: beginner
   category: cardio
 
-- external_id: gymflow_stair_master
+- external_id: afletics_stair_master
   name: StairMaster
   muscle_group: glutes
   secondary_muscles: quadriceps,calves
@@ -161,7 +161,7 @@
   level: intermediate
   category: cardio
 
-- external_id: gymflow_stepmill
+- external_id: afletics_stepmill
   name: Stepmill
   muscle_group: glutes
   secondary_muscles: quadriceps,calves
@@ -169,7 +169,7 @@
   level: intermediate
   category: cardio
 
-- external_id: gymflow_jump_rope_basic
+- external_id: afletics_jump_rope_basic
   name: Jump Rope (Basic)
   muscle_group: calves
   secondary_muscles: shoulders,core
@@ -177,7 +177,7 @@
   level: beginner
   category: cardio
 
-- external_id: gymflow_jump_rope_double_under
+- external_id: afletics_jump_rope_double_under
   name: Double-Under Jump Rope
   muscle_group: calves
   secondary_muscles: shoulders,core
@@ -185,7 +185,7 @@
   level: expert
   category: cardio
 
-- external_id: gymflow_jump_rope_high_knees
+- external_id: afletics_jump_rope_high_knees
   name: Jump Rope High Knees
   muscle_group: calves
   secondary_muscles: hip flexors,core
@@ -193,7 +193,7 @@
   level: intermediate
   category: cardio
 
-- external_id: gymflow_jump_rope_boxer
+- external_id: afletics_jump_rope_boxer
   name: Jump Rope Boxer Step
   muscle_group: calves
   secondary_muscles: shoulders,core
@@ -201,7 +201,7 @@
   level: intermediate
   category: cardio
 
-- external_id: gymflow_sled_push
+- external_id: afletics_sled_push
   name: Sled Push
   muscle_group: quadriceps
   secondary_muscles: glutes,calves,core
@@ -209,7 +209,7 @@
   level: intermediate
   category: cardio
 
-- external_id: gymflow_sled_pull
+- external_id: afletics_sled_pull
   name: Sled Pull
   muscle_group: hamstrings
   secondary_muscles: glutes,lats,upper back
@@ -217,7 +217,7 @@
   level: intermediate
   category: cardio
 
-- external_id: gymflow_prowler_push
+- external_id: afletics_prowler_push
   name: Prowler Push
   muscle_group: quadriceps
   secondary_muscles: glutes,calves,core
@@ -225,7 +225,7 @@
   level: intermediate
   category: cardio
 
-- external_id: gymflow_battle_ropes
+- external_id: afletics_battle_ropes
   name: Battle Ropes
   muscle_group: shoulders
   secondary_muscles: core,lats
@@ -233,7 +233,7 @@
   level: intermediate
   category: cardio
 
-- external_id: gymflow_battle_rope_slams
+- external_id: afletics_battle_rope_slams
   name: Battle Rope Slams
   muscle_group: shoulders
   secondary_muscles: core,lats
@@ -241,7 +241,7 @@
   level: intermediate
   category: cardio
 
-- external_id: gymflow_battle_rope_alt_waves
+- external_id: afletics_battle_rope_alt_waves
   name: Battle Rope Alternating Waves
   muscle_group: shoulders
   secondary_muscles: core,lats
@@ -249,7 +249,7 @@
   level: intermediate
   category: cardio
 
-- external_id: gymflow_shadow_boxing
+- external_id: afletics_shadow_boxing
   name: Shadow Boxing
   muscle_group: shoulders
   secondary_muscles: core,calves
@@ -257,7 +257,7 @@
   level: beginner
   category: cardio
 
-- external_id: gymflow_heavy_bag_boxing
+- external_id: afletics_heavy_bag_boxing
   name: Heavy Bag Boxing
   muscle_group: shoulders
   secondary_muscles: core,calves,lats
@@ -265,7 +265,7 @@
   level: intermediate
   category: cardio
 
-- external_id: gymflow_speed_bag
+- external_id: afletics_speed_bag
   name: Speed Bag
   muscle_group: shoulders
   secondary_muscles: forearms
@@ -273,7 +273,7 @@
   level: intermediate
   category: cardio
 
-- external_id: gymflow_swimming_freestyle
+- external_id: afletics_swimming_freestyle
   name: Swimming (Freestyle)
   muscle_group: lats
   secondary_muscles: shoulders,core,quadriceps
@@ -281,7 +281,7 @@
   level: intermediate
   category: cardio
 
-- external_id: gymflow_swimming_breaststroke
+- external_id: afletics_swimming_breaststroke
   name: Swimming (Breaststroke)
   muscle_group: chest
   secondary_muscles: shoulders,core,glutes
@@ -289,7 +289,7 @@
   level: beginner
   category: cardio
 
-- external_id: gymflow_swimming_backstroke
+- external_id: afletics_swimming_backstroke
   name: Swimming (Backstroke)
   muscle_group: lats
   secondary_muscles: shoulders,core
@@ -297,7 +297,7 @@
   level: intermediate
   category: cardio
 
-- external_id: gymflow_swimming_butterfly
+- external_id: afletics_swimming_butterfly
   name: Swimming (Butterfly)
   muscle_group: lats
   secondary_muscles: shoulders,core,chest
@@ -305,21 +305,21 @@
   level: expert
   category: cardio
 
-- external_id: gymflow_steady_state_cardio
+- external_id: afletics_steady_state_cardio
   name: Steady State Cardio
   muscle_group: ""
   equipment: body only
   level: beginner
   category: cardio
 
-- external_id: gymflow_zone_2_cardio
+- external_id: afletics_zone_2_cardio
   name: Zone 2 Cardio
   muscle_group: ""
   equipment: body only
   level: beginner
   category: cardio
 
-- external_id: gymflow_hiit_cardio
+- external_id: afletics_hiit_cardio
   name: HIIT Cardio Session
   muscle_group: ""
   equipment: body only

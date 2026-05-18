@@ -74,7 +74,7 @@ urlpatterns = [
     path("portal/login/magic-link/", trainer_magic_link_request, name="trainer-magic-link-request"),
     path("portal/logout/", trainer_logout_page, name="trainer-logout-page"),
 
-    # Phase 10 — /dashboard/ is now the GymFlow Hub.
+    # Phase 10 — /dashboard/ is now the Afletics Hub.
     # Workouts has moved to /dashboard/workouts/ but keeps its original
     # url-name ("trainer-dashboard-home") so existing {% url %} refs
     # across templates resolve without a fleet-wide edit.

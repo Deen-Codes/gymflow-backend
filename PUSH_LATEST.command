@@ -3,11 +3,11 @@
 #
 # ──────────────────────────────────────────────────────────────────
 # FIRST-TIME SETUP (one terminal command — run once, ever):
-#   chmod +x ~/Documents/gymflow-backend/PUSH_LATEST.command
+#   chmod +x ~/Documents/afletics-backend/PUSH_LATEST.command
 # ──────────────────────────────────────────────────────────────────
 #
 # After that, double-click this file in Finder to:
-#   1. cd into ~/Documents/gymflow-backend
+#   1. cd into ~/Documents/afletics-backend
 #   2. Show what's pending (git status)
 #   3. If there are uncommitted changes, stage them all, commit
 #      with a timestamped message, and push
@@ -26,7 +26,7 @@ cd "$(dirname "$0")" || {
     exit 1
 }
 
-echo "── GymFlow backend ─────────────────────────────────────"
+echo "── Afletics backend ─────────────────────────────────────"
 echo "Working directory: $(pwd)"
 echo ""
 echo "Git status:"

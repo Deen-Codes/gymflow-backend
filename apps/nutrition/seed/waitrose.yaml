@@ -1,7 +1,7 @@
 # waitrose.yaml — Waitrose own-brand staples + No.1 + Essential ranges.
 # 71 entries (incl 1 migrated).
 # Source: waitrose.com product pages.
-- source: gymflow
+- source: afletics
   source_id: waitrose_essentials_eggs
   name: Waitrose Essential Free Range Eggs
   brand: Waitrose
@@ -17,7 +17,7 @@
   allergens: eggs
   portion_unit: egg
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: waitrose_essential_greek_natural
   name: Waitrose Essential Greek Natural Yogurt
   brand: Waitrose
@@ -33,7 +33,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: waitrose_essential_greek_0pct
   name: Waitrose Essential Greek 0% Yogurt
   brand: Waitrose
@@ -49,7 +49,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: waitrose_skyr_natural
   name: Waitrose Natural Skyr
   brand: Waitrose
@@ -65,7 +65,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: waitrose_skyr_vanilla
   name: Waitrose Vanilla Skyr
   brand: Waitrose
@@ -81,7 +81,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: waitrose_organic_milk_semi
   name: Waitrose Organic Semi-skimmed Milk
   brand: Waitrose
@@ -96,7 +96,7 @@
   tags: supermarket,dairy
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: waitrose_organic_milk_whole
   name: Waitrose Organic Whole Milk
   brand: Waitrose
@@ -111,7 +111,7 @@
   tags: supermarket,dairy
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: waitrose_oat_drink
   name: Waitrose Oat Drink
   brand: Waitrose
@@ -126,7 +126,7 @@
   tags: supermarket,dairy_alternative,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: waitrose_no1_cheddar_mature
   name: Waitrose No.1 Mature Cheddar
   brand: Waitrose
@@ -142,7 +142,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: waitrose_butter_unsalted
   name: Waitrose Unsalted Butter
   brand: Waitrose
@@ -158,7 +158,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: waitrose_cottage_cheese_low_fat
   name: Waitrose Cottage Cheese (low fat)
   brand: Waitrose
@@ -174,7 +174,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: waitrose_eggs_med_freerange
   name: Waitrose Free Range Medium Eggs
   brand: Waitrose
@@ -190,7 +190,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: waitrose_eggs_lge_freerange
   name: Waitrose Free Range Large Eggs
   brand: Waitrose
@@ -206,7 +206,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: waitrose_eggs_organic_lge
   name: Waitrose Organic Large Eggs
   brand: Waitrose
@@ -222,7 +222,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: waitrose_essential_white_med
   name: Waitrose Essential White Bread
   brand: Waitrose
@@ -238,7 +238,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: waitrose_essential_wholemeal
   name: Waitrose Essential Wholemeal Bread
   brand: Waitrose
@@ -254,7 +254,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: waitrose_seeded_loaf
   name: Waitrose No.1 Seeded Bloomer
   brand: Waitrose
@@ -270,7 +270,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: waitrose_sourdough_loaf
   name: Waitrose No.1 Sourdough
   brand: Waitrose
@@ -286,7 +286,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: waitrose_brioche_buns_4
   name: Waitrose Brioche Burger Buns
   brand: Waitrose
@@ -302,7 +302,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: waitrose_white_wraps
   name: Waitrose Tortilla Wraps
   brand: Waitrose
@@ -318,7 +318,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 64
-- source: gymflow
+- source: afletics
   source_id: waitrose_chicken_breast
   name: Waitrose Free Range Chicken Breast
   brand: Waitrose
@@ -333,7 +333,7 @@
   tags: supermarket,meat,chicken,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: waitrose_chicken_thighs_skinless
   name: Waitrose Free Range Boneless Chicken Thighs
   brand: Waitrose
@@ -348,7 +348,7 @@
   tags: supermarket,meat,chicken,high_protein
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: waitrose_chicken_mince
   name: Waitrose Chicken Mince
   brand: Waitrose
@@ -363,7 +363,7 @@
   tags: supermarket,meat,chicken,high_protein
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: waitrose_lean_beef_mince
   name: Waitrose Lean Beef Mince 5%
   brand: Waitrose
@@ -378,7 +378,7 @@
   tags: supermarket,meat,high_protein,low_fat
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: waitrose_no1_steak_sirloin
   name: Waitrose No.1 Aberdeen Angus Sirloin
   brand: Waitrose
@@ -394,7 +394,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 227
-- source: gymflow
+- source: afletics
   source_id: waitrose_pork_sausages_8
   name: Waitrose No.1 Pork Sausages
   brand: Waitrose
@@ -410,7 +410,7 @@
   dietary_compat: pescatarian
   allergens: gluten,sulphites
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: waitrose_smoked_back_bacon
   name: Waitrose Smoked Back Bacon
   brand: Waitrose
@@ -426,7 +426,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: waitrose_dry_cured_streaky
   name: Waitrose Dry Cured Streaky Bacon
   brand: Waitrose
@@ -442,7 +442,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 12
-- source: gymflow
+- source: afletics
   source_id: waitrose_ham_wafer
   name: Waitrose Wafer Thin Cooked Ham
   brand: Waitrose
@@ -458,7 +458,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: waitrose_tuna_water
   name: Waitrose Tuna in Spring Water
   brand: Waitrose
@@ -474,7 +474,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: waitrose_no1_smoked_salmon
   name: Waitrose No.1 Smoked Scottish Salmon
   brand: Waitrose
@@ -490,7 +490,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: waitrose_salmon_fillets
   name: Waitrose Salmon Fillets
   brand: Waitrose
@@ -506,7 +506,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: waitrose_cod_fillets
   name: Waitrose Cod Fillets
   brand: Waitrose
@@ -522,7 +522,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: waitrose_king_prawns_cooked
   name: Waitrose Cooked King Prawns
   brand: Waitrose
@@ -537,7 +537,7 @@
   tags: supermarket,seafood,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: crustaceans
-- source: gymflow
+- source: afletics
   source_id: waitrose_porridge_oats
   name: Waitrose Essential Porridge Oats
   brand: Waitrose
@@ -552,7 +552,7 @@
   tags: supermarket,cereal,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: waitrose_corn_flakes
   name: Waitrose Essential Corn Flakes
   brand: Waitrose
@@ -567,7 +567,7 @@
   tags: supermarket,cereal,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: waitrose_granola
   name: Waitrose No.1 Fruit & Nut Granola
   brand: Waitrose
@@ -582,7 +582,7 @@
   tags: supermarket,cereal,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: waitrose_muesli_swiss
   name: Waitrose Swiss Muesli
   brand: Waitrose
@@ -597,7 +597,7 @@
   tags: supermarket,cereal,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: waitrose_essential_white_pasta
   name: Waitrose Essential Penne Pasta
   brand: Waitrose
@@ -612,7 +612,7 @@
   tags: supermarket,grain,pasta
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: waitrose_basmati_rice_dry
   name: Waitrose Essential Basmati Rice
   brand: Waitrose
@@ -627,7 +627,7 @@
   tags: supermarket,grain,rice
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: waitrose_microwave_basmati
   name: Waitrose Microwave Basmati Rice
   brand: Waitrose
@@ -643,7 +643,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: waitrose_no1_chocolate_milk
   name: Waitrose No.1 Belgian Milk Chocolate
   brand: Waitrose
@@ -659,7 +659,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: waitrose_lightly_salted_crisps
   name: Waitrose Essential Lightly Salted Crisps
   brand: Waitrose
@@ -675,7 +675,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: waitrose_chocolate_chip_cookies
   name: Waitrose No.1 Belgian Chocolate Cookies
   brand: Waitrose
@@ -691,7 +691,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 12
-- source: gymflow
+- source: afletics
   source_id: waitrose_no1_chicken_tikka_masala
   name: Waitrose No.1 Chicken Tikka Masala
   brand: Waitrose
@@ -707,7 +707,7 @@
   dietary_compat: pescatarian
   allergens: milk,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: waitrose_no1_lasagne
   name: Waitrose No.1 Beef Lasagne
   brand: Waitrose
@@ -723,7 +723,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: waitrose_no1_thai_green_curry
   name: Waitrose No.1 Thai Green Chicken Curry
   brand: Waitrose
@@ -739,7 +739,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: waitrose_no1_cottage_pie
   name: Waitrose No.1 Cottage Pie
   brand: Waitrose
@@ -755,7 +755,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: waitrose_no1_macaroni_cheese
   name: Waitrose No.1 Macaroni Cheese
   brand: Waitrose
@@ -771,7 +771,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: waitrose_chicken_caesar_salad
   name: Waitrose Chicken Caesar Salad
   brand: Waitrose
@@ -787,7 +787,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,fish
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: waitrose_chicken_pesto_salad
   name: Waitrose Chicken & Pesto Pasta Salad
   brand: Waitrose
@@ -803,7 +803,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,tree_nuts
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: waitrose_super_grain_salad
   name: Waitrose Super Grain Salad
   brand: Waitrose
@@ -819,7 +819,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sulphites
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: waitrose_essential_orange_juice
   name: Waitrose Essential Orange Juice
   brand: Waitrose
@@ -834,7 +834,7 @@
   tags: supermarket,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: waitrose_apple_juice
   name: Waitrose Apple Juice
   brand: Waitrose
@@ -849,7 +849,7 @@
   tags: supermarket,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: waitrose_water_still_500
   name: Waitrose Spring Water
   brand: Waitrose
@@ -865,7 +865,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: waitrose_oven_chips
   name: Waitrose Essential Oven Chips
   brand: Waitrose
@@ -880,7 +880,7 @@
   tags: supermarket,frozen,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: waitrose_frozen_peas
   name: Waitrose Frozen Garden Peas
   brand: Waitrose
@@ -895,7 +895,7 @@
   tags: supermarket,frozen,vegetable,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: waitrose_no1_frozen_pizza
   name: Waitrose No.1 Pepperoni Pizza (frozen)
   brand: Waitrose
@@ -911,7 +911,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: waitrose_vanilla_ice_cream
   name: Waitrose Vanilla Ice Cream
   brand: Waitrose
@@ -926,7 +926,7 @@
   tags: supermarket,frozen,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
-- source: gymflow
+- source: afletics
   source_id: waitrose_essential_olive_oil
   name: Waitrose Essential Extra Virgin Olive Oil
   brand: Waitrose
@@ -942,7 +942,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: waitrose_tomato_ketchup
   name: Waitrose Tomato Ketchup
   brand: Waitrose
@@ -958,7 +958,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 17
-- source: gymflow
+- source: afletics
   source_id: waitrose_essential_mayo
   name: Waitrose Essential Mayonnaise
   brand: Waitrose
@@ -974,7 +974,7 @@
   dietary_compat: vegetarian,pescatarian,gluten_free
   allergens: eggs,mustard
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: waitrose_essential_baked_beans
   name: Waitrose Essential Baked Beans
   brand: Waitrose
@@ -989,7 +989,7 @@
   tags: supermarket,canned,pulses
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: waitrose_chickpeas_canned
   name: Waitrose Chickpeas (canned)
   brand: Waitrose
@@ -1004,7 +1004,7 @@
   tags: supermarket,canned,pulses,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: waitrose_peanut_butter
   name: Waitrose Smooth Peanut Butter
   brand: Waitrose
@@ -1020,7 +1020,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: peanuts
   unit_grams: 16
-- source: gymflow
+- source: afletics
   source_id: waitrose_almonds_30g
   name: Waitrose Whole Almonds
   brand: Waitrose
@@ -1035,7 +1035,7 @@
   tags: supermarket,nuts,fat
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: tree_nuts
-- source: gymflow
+- source: afletics
   source_id: waitrose_bananas
   name: Waitrose Bananas
   brand: Waitrose
@@ -1051,7 +1051,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 118
-- source: gymflow
+- source: afletics
   source_id: waitrose_apples_braeburn
   name: Waitrose Braeburn Apples
   brand: Waitrose
@@ -1067,7 +1067,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: waitrose_avocados
   name: Waitrose Avocados
   brand: Waitrose
@@ -1083,7 +1083,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: waitrose_blueberries
   name: Waitrose Blueberries
   brand: Waitrose
@@ -1099,7 +1099,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: waitrose_strawberries
   name: Waitrose Strawberries
   brand: Waitrose

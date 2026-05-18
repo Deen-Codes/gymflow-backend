@@ -1,6 +1,6 @@
 # sausages_branded.yaml — Richmond (Thick Pork, Irish Recipe, Meat Free), Wall's, Heck (Chicken Italia, Pork Chipolatas, Meatballs), The Black Farmer, Cumberland, Lincolnshire, cooking chorizo, Quorn sausages, fresh burgers (Heck, M&S Aberdeen Angus, Tesco), fresh chicken (M&S Oakham, Tesco Finest).
 
-- source: gymflow
+- source: afletics
   source_id: richmond_pork_thick_8
   name: Richmond Thick Pork Sausages
   brand: Richmond
@@ -16,7 +16,7 @@
   dietary_compat: pescatarian
   allergens: gluten,sulphites
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: richmond_irish_recipe_sausages
   name: Richmond Irish Recipe Sausages
   brand: Richmond
@@ -32,7 +32,7 @@
   dietary_compat: pescatarian
   allergens: gluten,sulphites
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: richmond_meat_free_8
   name: Richmond Meat Free Sausages
   brand: Richmond
@@ -48,7 +48,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: walls_pork_sausages_8
   name: Walls Classic Pork Sausages
   brand: Wall's
@@ -64,7 +64,7 @@
   dietary_compat: pescatarian
   allergens: gluten,sulphites
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: heck_chicken_italia_sausages
   name: Heck Chicken Italia Sausages
   brand: Heck
@@ -80,7 +80,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: heck_pork_chipolatas_12
   name: Heck Pork Chipolatas
   brand: Heck
@@ -96,7 +96,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: heck_meatballs_classic
   name: Heck Classic Pork Meatballs
   brand: Heck
@@ -112,7 +112,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 22
-- source: gymflow
+- source: afletics
   source_id: heck_chicken_italia_meatballs
   name: Heck Chicken Italia Meatballs
   brand: Heck
@@ -128,7 +128,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 22
-- source: gymflow
+- source: afletics
   source_id: the_black_farmer_sausages
   name: The Black Farmer Premium Pork Sausages
   brand: The Black Farmer
@@ -144,7 +144,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: cumberland_sausage_per_100
   name: Cumberland Sausage (per 100g)
   brand: ''
@@ -159,7 +159,7 @@
   tags: meat,processed
   dietary_compat: pescatarian
   allergens: gluten,sulphites
-- source: gymflow
+- source: afletics
   source_id: lincolnshire_sausages_per_100
   name: Lincolnshire Sausages (per 100g)
   brand: ''
@@ -174,7 +174,7 @@
   tags: meat,processed
   dietary_compat: pescatarian
   allergens: gluten,sulphites
-- source: gymflow
+- source: afletics
   source_id: chorizo_cooking_per_100
   name: Cooking Chorizo (per 100g)
   brand: ''
@@ -189,7 +189,7 @@
   tags: meat,charcuterie,processed
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: quorn_classic_sausages
   name: Quorn Classic Sausages
   brand: Quorn
@@ -205,7 +205,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: eggs,milk,gluten
   unit_grams: 42
-- source: gymflow
+- source: afletics
   source_id: heck_beef_burgers_4
   name: Heck 100% Beef Burgers
   brand: Heck
@@ -221,7 +221,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 113
-- source: gymflow
+- source: afletics
   source_id: mands_aberdeen_angus_burger
   name: M&S Aberdeen Angus Beef Burger
   brand: M&S
@@ -237,7 +237,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: tesco_beef_burgers_4
   name: Tesco British Beef Burgers
   brand: Tesco
@@ -253,7 +253,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 113
-- source: gymflow
+- source: afletics
   source_id: mands_oakham_chicken_breast
   name: M&S Oakham Chicken Breast Fillets (per 100g)
   brand: M&S
@@ -268,7 +268,7 @@
   tags: meat,chicken,high_protein,low_fat,low_carb,supermarket
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mands_oakham_chicken_thighs
   name: M&S Oakham Chicken Thighs (per 100g)
   brand: M&S
@@ -283,7 +283,7 @@
   tags: meat,chicken,high_protein,supermarket
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tesco_finest_chicken_breasts
   name: Tesco Finest British Chicken Breast (per 100g)
   brand: Tesco

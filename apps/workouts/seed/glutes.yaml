@@ -3,7 +3,7 @@
 # RDL variants, single-leg / B-stance variants, frog pumps, kickbacks,
 # fire hydrants, and donkey kicks.
 
-- external_id: gymflow_dumbbell_hip_thrust
+- external_id: afletics_dumbbell_hip_thrust
   name: Dumbbell Hip Thrust
   muscle_group: glutes
   secondary_muscles: hamstrings
@@ -13,7 +13,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_machine_hip_thrust
+- external_id: afletics_machine_hip_thrust
   name: Machine Hip Thrust
   muscle_group: glutes
   secondary_muscles: hamstrings
@@ -23,7 +23,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_smith_hip_thrust
+- external_id: afletics_smith_hip_thrust
   name: Smith Machine Hip Thrust
   muscle_group: glutes
   secondary_muscles: hamstrings
@@ -33,7 +33,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_b_stance_hip_thrust
+- external_id: afletics_b_stance_hip_thrust
   name: B-Stance Hip Thrust
   muscle_group: glutes
   secondary_muscles: hamstrings
@@ -43,7 +43,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_single_leg_hip_thrust
+- external_id: afletics_single_leg_hip_thrust
   name: Single-Leg Hip Thrust
   muscle_group: glutes
   secondary_muscles: hamstrings,core
@@ -53,7 +53,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_single_leg_hip_thrust_bench
+- external_id: afletics_single_leg_hip_thrust_bench
   name: Single-Leg Hip Thrust (Bench)
   muscle_group: glutes
   secondary_muscles: hamstrings,core
@@ -63,7 +63,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_banded_hip_thrust
+- external_id: afletics_banded_hip_thrust
   name: Banded Hip Thrust
   muscle_group: glutes
   secondary_muscles: hamstrings
@@ -73,7 +73,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_pause_hip_thrust
+- external_id: afletics_pause_hip_thrust
   name: Paused Hip Thrust
   muscle_group: glutes
   secondary_muscles: hamstrings
@@ -83,7 +83,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_frog_pump
+- external_id: afletics_frog_pump
   name: Frog Pump
   muscle_group: glutes
   secondary_muscles: ""
@@ -93,7 +93,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_dumbbell_frog_pump
+- external_id: afletics_dumbbell_frog_pump
   name: Dumbbell Frog Pump
   muscle_group: glutes
   secondary_muscles: ""
@@ -103,7 +103,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_glute_bridge_march
+- external_id: afletics_glute_bridge_march
   name: Glute Bridge March
   muscle_group: glutes
   secondary_muscles: core,hamstrings
@@ -113,7 +113,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_elevated_glute_bridge
+- external_id: afletics_elevated_glute_bridge
   name: Elevated Glute Bridge
   muscle_group: glutes
   secondary_muscles: hamstrings
@@ -123,7 +123,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_banded_glute_bridge
+- external_id: afletics_banded_glute_bridge
   name: Banded Glute Bridge
   muscle_group: glutes
   secondary_muscles: hamstrings
@@ -133,7 +133,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_dumbbell_rdl
+- external_id: afletics_dumbbell_rdl
   name: Dumbbell Romanian Deadlift
   muscle_group: glutes
   secondary_muscles: hamstrings,lower back
@@ -143,7 +143,7 @@
   force: pull
   category: strength
 
-- external_id: gymflow_single_leg_rdl
+- external_id: afletics_single_leg_rdl
   name: Single-Leg Romanian Deadlift
   muscle_group: glutes
   secondary_muscles: hamstrings,core
@@ -153,7 +153,7 @@
   force: pull
   category: strength
 
-- external_id: gymflow_kettlebell_rdl
+- external_id: afletics_kettlebell_rdl
   name: Kettlebell Romanian Deadlift
   muscle_group: glutes
   secondary_muscles: hamstrings,lower back
@@ -163,7 +163,7 @@
   force: pull
   category: strength
 
-- external_id: gymflow_b_stance_rdl
+- external_id: afletics_b_stance_rdl
   name: B-Stance Romanian Deadlift
   muscle_group: glutes
   secondary_muscles: hamstrings
@@ -173,7 +173,7 @@
   force: pull
   category: strength
 
-- external_id: gymflow_deficit_rdl
+- external_id: afletics_deficit_rdl
   name: Deficit Romanian Deadlift
   muscle_group: glutes
   secondary_muscles: hamstrings,lower back
@@ -183,7 +183,7 @@
   force: pull
   category: strength
 
-- external_id: gymflow_cable_pull_through
+- external_id: afletics_cable_pull_through
   name: Cable Pull-Through
   muscle_group: glutes
   secondary_muscles: hamstrings
@@ -193,7 +193,7 @@
   force: pull
   category: strength
 
-- external_id: gymflow_band_pull_through
+- external_id: afletics_band_pull_through
   name: Band Pull-Through
   muscle_group: glutes
   secondary_muscles: hamstrings
@@ -203,7 +203,7 @@
   force: pull
   category: strength
 
-- external_id: gymflow_kb_swing_glute
+- external_id: afletics_kb_swing_glute
   name: Kettlebell Swing
   muscle_group: glutes
   secondary_muscles: hamstrings,core,shoulders
@@ -213,7 +213,7 @@
   force: pull
   category: strength
 
-- external_id: gymflow_kb_american_swing
+- external_id: afletics_kb_american_swing
   name: American Kettlebell Swing
   muscle_group: glutes
   secondary_muscles: hamstrings,shoulders,core
@@ -223,7 +223,7 @@
   force: pull
   category: strength
 
-- external_id: gymflow_cable_kickback
+- external_id: afletics_cable_kickback
   name: Cable Glute Kickback
   muscle_group: glutes
   secondary_muscles: hamstrings
@@ -233,7 +233,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_machine_kickback
+- external_id: afletics_machine_kickback
   name: Glute Kickback Machine
   muscle_group: glutes
   secondary_muscles: hamstrings
@@ -243,7 +243,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_donkey_kick
+- external_id: afletics_donkey_kick
   name: Donkey Kick
   muscle_group: glutes
   secondary_muscles: ""
@@ -253,7 +253,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_banded_donkey_kick
+- external_id: afletics_banded_donkey_kick
   name: Banded Donkey Kick
   muscle_group: glutes
   secondary_muscles: ""
@@ -263,7 +263,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_fire_hydrant
+- external_id: afletics_fire_hydrant
   name: Fire Hydrant
   muscle_group: glutes
   secondary_muscles: abductors
@@ -273,7 +273,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_banded_fire_hydrant
+- external_id: afletics_banded_fire_hydrant
   name: Banded Fire Hydrant
   muscle_group: glutes
   secondary_muscles: abductors
@@ -283,7 +283,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_clamshell
+- external_id: afletics_clamshell
   name: Clamshell
   muscle_group: glutes
   secondary_muscles: abductors
@@ -293,7 +293,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_banded_clamshell
+- external_id: afletics_banded_clamshell
   name: Banded Clamshell
   muscle_group: glutes
   secondary_muscles: abductors
@@ -303,7 +303,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_lateral_band_walk
+- external_id: afletics_lateral_band_walk
   name: Lateral Band Walk
   muscle_group: glutes
   secondary_muscles: abductors
@@ -313,7 +313,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_monster_walk
+- external_id: afletics_monster_walk
   name: Monster Walk
   muscle_group: glutes
   secondary_muscles: abductors,quadriceps
@@ -323,7 +323,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_curtsy_lunge
+- external_id: afletics_curtsy_lunge
   name: Curtsy Lunge
   muscle_group: glutes
   secondary_muscles: quadriceps,abductors
@@ -333,7 +333,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_dumbbell_curtsy_lunge
+- external_id: afletics_dumbbell_curtsy_lunge
   name: Dumbbell Curtsy Lunge
   muscle_group: glutes
   secondary_muscles: quadriceps,abductors
@@ -343,7 +343,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_reverse_lunge_to_kick
+- external_id: afletics_reverse_lunge_to_kick
   name: Reverse Lunge to Kick
   muscle_group: glutes
   secondary_muscles: quadriceps,hamstrings
@@ -353,7 +353,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_step_up_glute
+- external_id: afletics_step_up_glute
   name: Glute-Focused Step-Up
   muscle_group: glutes
   secondary_muscles: quadriceps,hamstrings
@@ -363,7 +363,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_high_step_up
+- external_id: afletics_high_step_up
   name: High Step-Up
   muscle_group: glutes
   secondary_muscles: quadriceps,hamstrings
@@ -373,7 +373,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_box_step_up
+- external_id: afletics_box_step_up
   name: Box Step-Up
   muscle_group: glutes
   secondary_muscles: quadriceps,hamstrings,core
@@ -383,7 +383,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_lateral_step_up
+- external_id: afletics_lateral_step_up
   name: Lateral Step-Up
   muscle_group: glutes
   secondary_muscles: quadriceps,abductors
@@ -393,7 +393,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_hip_abduction_machine
+- external_id: afletics_hip_abduction_machine
   name: Hip Abduction Machine
   muscle_group: glutes
   secondary_muscles: abductors
@@ -403,7 +403,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_seated_hip_abduction
+- external_id: afletics_seated_hip_abduction
   name: Seated Hip Abduction
   muscle_group: glutes
   secondary_muscles: abductors
@@ -413,7 +413,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_cable_hip_abduction
+- external_id: afletics_cable_hip_abduction
   name: Cable Hip Abduction
   muscle_group: glutes
   secondary_muscles: abductors
@@ -423,7 +423,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_standing_glute_kickback
+- external_id: afletics_standing_glute_kickback
   name: Standing Glute Kickback
   muscle_group: glutes
   secondary_muscles: hamstrings
@@ -433,7 +433,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_glute_focused_back_extension
+- external_id: afletics_glute_focused_back_extension
   name: Glute-Focused Back Extension
   muscle_group: glutes
   secondary_muscles: hamstrings,lower back
@@ -443,7 +443,7 @@
   force: pull
   category: strength
 
-- external_id: gymflow_45_degree_back_extension
+- external_id: afletics_45_degree_back_extension
   name: 45-Degree Hip Extension
   muscle_group: glutes
   secondary_muscles: hamstrings,lower back
@@ -453,7 +453,7 @@
   force: pull
   category: strength
 
-- external_id: gymflow_reverse_hyperextension
+- external_id: afletics_reverse_hyperextension
   name: Reverse Hyperextension
   muscle_group: glutes
   secondary_muscles: hamstrings,lower back
@@ -463,7 +463,7 @@
   force: pull
   category: strength
 
-- external_id: gymflow_good_morning_glute
+- external_id: afletics_good_morning_glute
   name: Good Morning
   muscle_group: glutes
   secondary_muscles: hamstrings,lower back
@@ -473,7 +473,7 @@
   force: pull
   category: strength
 
-- external_id: gymflow_seated_good_morning
+- external_id: afletics_seated_good_morning
   name: Seated Good Morning
   muscle_group: glutes
   secondary_muscles: hamstrings,lower back
@@ -483,7 +483,7 @@
   force: pull
   category: strength
 
-- external_id: gymflow_zercher_squat_glute
+- external_id: afletics_zercher_squat_glute
   name: Zercher Squat
   muscle_group: glutes
   secondary_muscles: quadriceps,core,upper back
@@ -493,7 +493,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_belt_squat
+- external_id: afletics_belt_squat
   name: Belt Squat
   muscle_group: glutes
   secondary_muscles: quadriceps
@@ -503,7 +503,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_pendulum_squat
+- external_id: afletics_pendulum_squat
   name: Pendulum Squat
   muscle_group: glutes
   secondary_muscles: quadriceps
@@ -513,7 +513,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_sumo_squat
+- external_id: afletics_sumo_squat
   name: Sumo Squat
   muscle_group: glutes
   secondary_muscles: quadriceps,adductors
@@ -523,7 +523,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_sumo_kb_squat
+- external_id: afletics_sumo_kb_squat
   name: Kettlebell Sumo Squat
   muscle_group: glutes
   secondary_muscles: quadriceps,adductors
@@ -533,7 +533,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_glute_ham_raise
+- external_id: afletics_glute_ham_raise
   name: Glute Ham Raise
   muscle_group: glutes
   secondary_muscles: hamstrings,lower back
@@ -543,7 +543,7 @@
   force: pull
   category: strength
 
-- external_id: gymflow_nordic_curl_glute
+- external_id: afletics_nordic_curl_glute
   name: Nordic Hamstring Curl
   muscle_group: hamstrings
   secondary_muscles: glutes,calves
@@ -553,7 +553,7 @@
   force: pull
   category: strength
 
-- external_id: gymflow_kas_glute_bridge
+- external_id: afletics_kas_glute_bridge
   name: Kas Glute Bridge
   muscle_group: glutes
   secondary_muscles: hamstrings
@@ -563,7 +563,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_45_lunge_glute
+- external_id: afletics_45_lunge_glute
   name: 45-Degree Lunge
   muscle_group: glutes
   secondary_muscles: quadriceps,abductors
@@ -573,7 +573,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_skater_squat
+- external_id: afletics_skater_squat
   name: Skater Squat
   muscle_group: glutes
   secondary_muscles: quadriceps,abductors
@@ -583,7 +583,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_pistol_squat_glute
+- external_id: afletics_pistol_squat_glute
   name: Pistol Squat
   muscle_group: quadriceps
   secondary_muscles: glutes,core
@@ -593,7 +593,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_shrimp_squat
+- external_id: afletics_shrimp_squat
   name: Shrimp Squat
   muscle_group: quadriceps
   secondary_muscles: glutes,core
@@ -603,7 +603,7 @@
   force: push
   category: strength
 
-- external_id: gymflow_split_stance_dl
+- external_id: afletics_split_stance_dl
   name: Split Stance Deadlift
   muscle_group: glutes
   secondary_muscles: hamstrings,lower back

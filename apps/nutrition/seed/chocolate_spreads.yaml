@@ -1,5 +1,5 @@
 # chocolate_spreads.yaml — Cadbury Chocolate Spread, Lotus Biscoff smooth/crunchy, Hershey's, Whole Earth Hazelnut, Tesco own, Nutkao, Mr Organic.
-- source: gymflow
+- source: afletics
   source_id: cadbury_chocolate_spread_15g
   name: Cadbury Chocolate Spread (15g)
   brand: Cadbury
@@ -15,7 +15,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: lotus_biscoff_spread_smooth_15g
   name: Lotus Biscoff Spread Smooth (15g)
   brand: Lotus
@@ -31,7 +31,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: lotus_biscoff_spread_crunchy_15g
   name: Lotus Biscoff Spread Crunchy (15g)
   brand: Lotus
@@ -47,7 +47,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: hersheys_chocolate_spread_15g
   name: Hershey's Chocolate Spread (15g)
   brand: Hershey's
@@ -63,7 +63,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy,tree_nuts
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: whole_earth_hazelnut_spread_15g
   name: Whole Earth Hazelnut Spread (15g)
   brand: Whole Earth
@@ -79,7 +79,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: tree_nuts
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: tesco_chocolate_hazelnut_spread_15g
   name: Tesco Chocolate Hazelnut Spread (15g)
   brand: Tesco
@@ -95,7 +95,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy,tree_nuts
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: nutkao_milk_choc_spread_15g
   name: Nutkao Milk Chocolate Hazelnut Spread (15g)
   brand: Nutkao
@@ -111,7 +111,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy,tree_nuts
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: mr_organic_choc_hazelnut_15g
   name: Mr Organic Chocolate Hazelnut Spread (15g)
   brand: Mr Organic

@@ -155,9 +155,9 @@ def _handle_checkout_completed(event):
     session = _get(session, "object", session)
 
     metadata = _get(session, "metadata", {}) or {}
-    plan_id    = (metadata.get("gymflow_plan_id")    or "").strip()
-    trainer_id = (metadata.get("gymflow_trainer_id") or "").strip()
-    visitor_name = metadata.get("gymflow_visitor_name", "")
+    plan_id    = (metadata.get("afletics_plan_id")    or "").strip()
+    trainer_id = (metadata.get("afletics_trainer_id") or "").strip()
+    visitor_name = metadata.get("afletics_visitor_name", "")
 
     if not plan_id or not trainer_id:
         print(f"[Stripe webhook] Checkout completed without our metadata — ignoring")
@@ -236,8 +236,8 @@ def _handle_subscription_event(event, event_type):
         # We haven't seen this sub before. Try to derive trainer/plan from
         # the subscription's metadata (we set it when creating the Checkout).
         meta = _get(sub, "metadata", {}) or {}
-        plan_id = (meta.get("gymflow_plan_id") or "").strip()
-        trainer_id = (meta.get("gymflow_trainer_id") or "").strip()
+        plan_id = (meta.get("afletics_plan_id") or "").strip()
+        trainer_id = (meta.get("afletics_trainer_id") or "").strip()
         if not plan_id or not trainer_id:
             return
         try:

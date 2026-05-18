@@ -1,6 +1,6 @@
 # sweets_extra.yaml — Maoam Stripes/Pinballs/Kracher, Drumstick lolly/Squashies, Refreshers lemon/chew bar, Chewits, Love Hearts, Parma Violets, sherbet lemons, Werther's Original, Murray Mints, Mint Imperials, Tic Tacs, Sour Patch Kids, Jolly Rancher, Reese's, Tesco own (jelly beans, fizzy mix, strawberries & cream, milk bottles), more Haribo, Roses/Heroes/Milk Tray.
 
-- source: gymflow
+- source: afletics
   source_id: maoam_stripes_30g
   name: Maoam Stripes (30g)
   brand: Maoam
@@ -16,7 +16,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: maoam_pinballs_30g
   name: Maoam Pinballs (30g)
   brand: Maoam
@@ -32,7 +32,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: maoam_kracher_30g
   name: Maoam Kracher (30g)
   brand: Maoam
@@ -48,7 +48,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: drumstick_lolly
   name: Drumstick Lolly
   brand: Swizzels
@@ -64,7 +64,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 11
-- source: gymflow
+- source: afletics
   source_id: drumstick_chew_squashies_30g
   name: Drumstick Squashies (30g)
   brand: Swizzels
@@ -80,7 +80,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: refreshers_lemon_30g
   name: Refreshers Lemon (30g pack)
   brand: Swizzels
@@ -96,7 +96,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: refreshers_chew_bar
   name: Refreshers Chew Bar
   brand: Swizzels
@@ -112,7 +112,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: chewits_strawberry_pack
   name: Chewits Strawberry (1 pack)
   brand: Chewits
@@ -128,7 +128,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: chewits_xtreme_30g
   name: Chewits Xtreme Sour (30g)
   brand: Chewits
@@ -144,7 +144,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: love_hearts_pack
   name: Love Hearts (1 pack)
   brand: Swizzels
@@ -160,7 +160,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 39
-- source: gymflow
+- source: afletics
   source_id: parma_violets_pack
   name: Parma Violets (1 pack)
   brand: Swizzels
@@ -176,7 +176,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 21
-- source: gymflow
+- source: afletics
   source_id: sherbet_lemons_30g
   name: Sherbet Lemons (30g)
   brand: ''
@@ -192,7 +192,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: werthers_original_3
   name: Werther's Original (3 pieces)
   brand: Werther's
@@ -208,7 +208,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 6
-- source: gymflow
+- source: afletics
   source_id: murray_mints_3
   name: Murray Mints (3 pieces)
   brand: Murray
@@ -224,7 +224,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 7
-- source: gymflow
+- source: afletics
   source_id: mints_imperials_3
   name: Mint Imperials (3)
   brand: ''
@@ -240,7 +240,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 3
-- source: gymflow
+- source: afletics
   source_id: tic_tacs_30g
   name: Tic Tacs Mint (30g)
   brand: Tic Tac
@@ -256,7 +256,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: sour_patch_kids_30g
   name: Sour Patch Kids (30g)
   brand: Sour Patch
@@ -272,7 +272,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: jolly_rancher_30g
   name: Jolly Rancher Hard Candy (30g)
   brand: Jolly Rancher
@@ -288,7 +288,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: reeses_cup_2
   name: Reese's Peanut Butter Cup (2)
   brand: Reese's
@@ -304,7 +304,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,peanuts,soy
   unit_grams: 21
-- source: gymflow
+- source: afletics
   source_id: tesco_jelly_beans_30g
   name: Tesco Jelly Beans (30g)
   brand: Tesco
@@ -320,7 +320,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: tesco_fizzy_mix_30g
   name: Tesco Fizzy Mix (30g)
   brand: Tesco
@@ -336,7 +336,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: tesco_strawberries_cream_30g
   name: Tesco Strawberries & Cream (30g)
   brand: Tesco
@@ -352,7 +352,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: tesco_milk_bottles_30g
   name: Tesco Milk Bottles (30g)
   brand: Tesco
@@ -368,7 +368,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: tesco_kids_jelly_mix_30g
   name: Tesco Kids' Jelly Mix (30g)
   brand: Tesco
@@ -384,7 +384,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: haribo_super_mix_30g
   name: Haribo Super Mix (30g)
   brand: Haribo
@@ -400,7 +400,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: haribo_giant_strawbs_30g
   name: Haribo Giant Strawbs (30g)
   brand: Haribo
@@ -416,7 +416,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: haribo_cola_bottles_30g
   name: Haribo Cola Bottles (30g)
   brand: Haribo
@@ -432,7 +432,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: roses_chocolate_3
   name: Roses Chocolates (3)
   brand: Cadbury
@@ -448,7 +448,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,tree_nuts
   unit_grams: 10
-- source: gymflow
+- source: afletics
   source_id: heroes_chocolate_3
   name: Cadbury Heroes (3)
   brand: Cadbury
@@ -464,7 +464,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 10
-- source: gymflow
+- source: afletics
   source_id: milk_tray_3
   name: Cadbury Milk Tray (3)
   brand: Cadbury

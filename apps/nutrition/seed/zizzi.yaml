@@ -1,7 +1,7 @@
 # zizzi.yaml — Zizzi UK Italian menu.
 # 40 entries: pizzas (Romana), pasta, mains, salads, desserts, drinks.
 # Source: zizzi.co.uk/menu/allergens.
-- source: gymflow
+- source: afletics
   source_id: zizzi_antipasto_per_uno
   name: Antipasto Per Uno
   brand: Zizzi
@@ -17,7 +17,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites,mustard
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: zizzi_calamari
   name: Calamari
   brand: Zizzi
@@ -33,7 +33,7 @@
   dietary_compat: pescatarian
   allergens: gluten,molluscs,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: zizzi_garlic_bread
   name: Garlic Bread
   brand: Zizzi
@@ -49,7 +49,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: zizzi_garlic_bread_cheese
   name: Garlic Bread with Cheese
   brand: Zizzi
@@ -65,7 +65,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: zizzi_meatballs
   name: Meatballs Marinara
   brand: Zizzi
@@ -81,7 +81,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: zizzi_bruschetta_classic
   name: Bruschetta Classico
   brand: Zizzi
@@ -97,7 +97,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sulphites
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: zizzi_pizza_margherita
   name: Pizza Margherita
   brand: Zizzi
@@ -113,7 +113,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 360
-- source: gymflow
+- source: afletics
   source_id: zizzi_pizza_diavola
   name: Pizza Diavola
   brand: Zizzi
@@ -129,7 +129,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: zizzi_pizza_rustica
   name: Pizza Rustica
   brand: Zizzi
@@ -145,7 +145,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 410
-- source: gymflow
+- source: afletics
   source_id: zizzi_pizza_chicken_pesto
   name: Pizza Chicken & Pesto
   brand: Zizzi
@@ -161,7 +161,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,tree_nuts
   unit_grams: 410
-- source: gymflow
+- source: afletics
   source_id: zizzi_pizza_giardiniera
   name: Pizza Giardiniera (vegetarian)
   brand: Zizzi
@@ -177,7 +177,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: zizzi_pizza_vegan_giardiniera
   name: Vegan Giardiniera
   brand: Zizzi
@@ -193,7 +193,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: zizzi_pizza_quattro_formaggi
   name: Pizza Quattro Formaggi
   brand: Zizzi
@@ -209,7 +209,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: zizzi_carbonara
   name: Spaghetti Carbonara
   brand: Zizzi
@@ -225,7 +225,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: zizzi_bolognese
   name: Spaghetti Bolognese
   brand: Zizzi
@@ -241,7 +241,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,celery
   unit_grams: 480
-- source: gymflow
+- source: afletics
   source_id: zizzi_arrabbiata
   name: Penne Arrabbiata
   brand: Zizzi
@@ -257,7 +257,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: zizzi_lasagne_classico
   name: Lasagne Classico
   brand: Zizzi
@@ -273,7 +273,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: zizzi_chicken_pesto_pasta
   name: Chicken Pesto Linguine
   brand: Zizzi
@@ -289,7 +289,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,tree_nuts
   unit_grams: 480
-- source: gymflow
+- source: afletics
   source_id: zizzi_seafood_linguine
   name: Seafood Linguine
   brand: Zizzi
@@ -305,7 +305,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,crustaceans,molluscs,fish
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: zizzi_chicken_milanese
   name: Chicken Milanese
   brand: Zizzi
@@ -321,7 +321,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: zizzi_seabass
   name: Seabass Fillet
   brand: Zizzi
@@ -337,7 +337,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: zizzi_risotto_funghi
   name: Risotto Funghi
   brand: Zizzi
@@ -353,7 +353,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: zizzi_chicken_caesar
   name: Chicken Caesar Salad
   brand: Zizzi
@@ -369,7 +369,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,fish
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: zizzi_super_green_salad
   name: Super Green Salad
   brand: Zizzi
@@ -385,7 +385,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: sulphites,mustard
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: zizzi_rosemary_fries
   name: Rosemary Fries
   brand: Zizzi
@@ -401,7 +401,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: zizzi_truffle_fries
   name: Truffle & Parmesan Fries
   brand: Zizzi
@@ -417,7 +417,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: zizzi_house_salad
   name: House Salad
   brand: Zizzi
@@ -433,7 +433,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: mustard,sulphites
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: zizzi_dough_balls
   name: Dough Balls (8)
   brand: Zizzi
@@ -449,7 +449,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: zizzi_tiramisu
   name: Tiramisu
   brand: Zizzi
@@ -465,7 +465,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: zizzi_chocolate_torta
   name: Chocolate Torta
   brand: Zizzi
@@ -481,7 +481,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 140
-- source: gymflow
+- source: afletics
   source_id: zizzi_panna_cotta
   name: Vanilla Panna Cotta
   brand: Zizzi
@@ -497,7 +497,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: zizzi_lemon_torta
   name: Lemon Torta
   brand: Zizzi
@@ -513,7 +513,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 140
-- source: gymflow
+- source: afletics
   source_id: zizzi_gelato_2
   name: Gelato (2 scoops)
   brand: Zizzi
@@ -529,7 +529,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: zizzi_house_red_175
   name: House Red Wine (175 ml)
   brand: Zizzi
@@ -544,7 +544,7 @@
   tags: chain,italian,drink,alcoholic
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: zizzi_house_white_175
   name: House White Wine (175 ml)
   brand: Zizzi
@@ -559,7 +559,7 @@
   tags: chain,italian,drink,alcoholic
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: zizzi_prosecco_glass
   name: Prosecco (glass)
   brand: Zizzi
@@ -574,7 +574,7 @@
   tags: chain,italian,drink,alcoholic
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: zizzi_aperol_spritz
   name: Aperol Spritz
   brand: Zizzi
@@ -589,7 +589,7 @@
   tags: chain,italian,drink,alcoholic,cocktail
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: zizzi_americano_coffee
   name: Americano Coffee
   brand: Zizzi
@@ -604,7 +604,7 @@
   tags: chain,italian,drink,coffee
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: zizzi_cappuccino
   name: Cappuccino
   brand: Zizzi
@@ -619,7 +619,7 @@
   tags: chain,italian,drink,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: zizzi_espresso
   name: Espresso
   brand: Zizzi

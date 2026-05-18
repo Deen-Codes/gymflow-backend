@@ -1,7 +1,7 @@
 # mands.yaml — M&S Food own-brand + Count On Us + protein pots.
 # 86 entries (incl 2 migrated).
 # Source: marksandspencer.com/food product pages.
-- source: gymflow
+- source: afletics
   source_id: ms_count_chicken_breast
   name: M&S Count On Us Chicken Breast Fillets
   brand: M&S
@@ -14,7 +14,7 @@
   dietary_compat: halal_compatible,gluten_free,dairy_free
   allergens: ''
   portion_unit: grams
-- source: gymflow
+- source: afletics
   source_id: ms_protein_pot_chicken
   name: M&S Chicken Protein Pot
   brand: M&S
@@ -30,7 +30,7 @@
   allergens: milk
   portion_unit: pack
   unit_grams: 215
-- source: gymflow
+- source: afletics
   source_id: mands_greek_yogurt_natural
   name: M&S Greek Style Natural Yogurt
   brand: M&S
@@ -46,7 +46,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: mands_greek_yogurt_0pct
   name: M&S Greek Style 0% Yogurt
   brand: M&S
@@ -62,7 +62,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: mands_skyr_natural
   name: M&S Natural Skyr
   brand: M&S
@@ -78,7 +78,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: mands_milk_semi
   name: M&S Semi-skimmed Milk
   brand: M&S
@@ -93,7 +93,7 @@
   tags: supermarket,dairy
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: mands_milk_whole
   name: M&S Whole Milk
   brand: M&S
@@ -108,7 +108,7 @@
   tags: supermarket,dairy
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: mands_oat_drink
   name: M&S Oat Drink
   brand: M&S
@@ -123,7 +123,7 @@
   tags: supermarket,dairy_alternative,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: mands_cheddar_mature
   name: M&S Mature Cheddar
   brand: M&S
@@ -139,7 +139,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: mands_butter_unsalted
   name: M&S Unsalted Butter
   brand: M&S
@@ -155,7 +155,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: mands_eggs_med_freerange
   name: M&S Free Range Medium Eggs
   brand: M&S
@@ -171,7 +171,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: mands_eggs_lge_freerange
   name: M&S Free Range Large Eggs
   brand: M&S
@@ -187,7 +187,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: mands_eggs_organic_lge
   name: M&S Organic Large Eggs
   brand: M&S
@@ -203,7 +203,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: mands_white_med_bread
   name: M&S White Medium Bread
   brand: M&S
@@ -219,7 +219,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: mands_wholemeal_bread
   name: M&S Wholemeal Bread
   brand: M&S
@@ -235,7 +235,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: mands_seeded_bread
   name: M&S Seeded Bloomer
   brand: M&S
@@ -251,7 +251,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: mands_50_50_bread
   name: M&S 50/50 Medium Bread
   brand: M&S
@@ -267,7 +267,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 36
-- source: gymflow
+- source: afletics
   source_id: mands_brioche_buns
   name: M&S Brioche Burger Buns
   brand: M&S
@@ -283,7 +283,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: mands_white_wraps
   name: M&S White Tortilla Wraps
   brand: M&S
@@ -299,7 +299,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 64
-- source: gymflow
+- source: afletics
   source_id: mands_white_pitta
   name: M&S White Pitta Breads
   brand: M&S
@@ -315,7 +315,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: mands_plain_bagels
   name: M&S Plain Bagels
   brand: M&S
@@ -331,7 +331,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 95
-- source: gymflow
+- source: afletics
   source_id: mands_chicken_breast_fillets
   name: M&S British Chicken Breast Fillets
   brand: M&S
@@ -346,7 +346,7 @@
   tags: supermarket,meat,chicken,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mands_chicken_thighs
   name: M&S Boneless Skinless Chicken Thighs
   brand: M&S
@@ -361,7 +361,7 @@
   tags: supermarket,meat,chicken,high_protein
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mands_lean_beef_mince_5pct
   name: M&S Lean Beef Mince 5% Fat
   brand: M&S
@@ -376,7 +376,7 @@
   tags: supermarket,meat,high_protein,low_fat
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mands_beef_mince_15pct
   name: M&S Beef Mince 15% Fat
   brand: M&S
@@ -391,7 +391,7 @@
   tags: supermarket,meat,high_protein
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mands_steak_sirloin
   name: M&S Sirloin Steak
   brand: M&S
@@ -407,7 +407,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: mands_pork_sausages
   name: M&S British Pork Sausages
   brand: M&S
@@ -423,7 +423,7 @@
   dietary_compat: pescatarian
   allergens: gluten,sulphites
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: mands_bacon_back_smoked
   name: M&S Smoked Back Bacon
   brand: M&S
@@ -439,7 +439,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: mands_streaky_bacon
   name: M&S Streaky Bacon
   brand: M&S
@@ -455,7 +455,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 12
-- source: gymflow
+- source: afletics
   source_id: mands_ham_wafer_thin
   name: M&S Wafer Thin Ham
   brand: M&S
@@ -471,7 +471,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: mands_chicken_breast_slices
   name: M&S Cooked Chicken Breast Slices
   brand: M&S
@@ -487,7 +487,7 @@
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: mands_tuna_water
   name: M&S Tuna in Spring Water
   brand: M&S
@@ -503,7 +503,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: mands_smoked_salmon
   name: M&S Smoked Scottish Salmon
   brand: M&S
@@ -519,7 +519,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: mands_salmon_fillets
   name: M&S Salmon Fillets
   brand: M&S
@@ -535,7 +535,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: mands_king_prawns_cooked
   name: M&S Cooked King Prawns
   brand: M&S
@@ -550,7 +550,7 @@
   tags: supermarket,seafood,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: crustaceans
-- source: gymflow
+- source: afletics
   source_id: mands_porridge_oats
   name: M&S Porridge Oats
   brand: M&S
@@ -565,7 +565,7 @@
   tags: supermarket,cereal,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: mands_corn_flakes
   name: M&S Corn Flakes
   brand: M&S
@@ -580,7 +580,7 @@
   tags: supermarket,cereal,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mands_bran_flakes
   name: M&S Bran Flakes
   brand: M&S
@@ -595,7 +595,7 @@
   tags: supermarket,cereal,breakfast,fibre
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: mands_granola_fruit_nut
   name: M&S Fruit & Nut Granola
   brand: M&S
@@ -610,7 +610,7 @@
   tags: supermarket,cereal,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: mands_white_pasta
   name: M&S Penne Pasta (dry)
   brand: M&S
@@ -625,7 +625,7 @@
   tags: supermarket,grain,pasta
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: mands_wholewheat_pasta
   name: M&S Wholewheat Pasta
   brand: M&S
@@ -640,7 +640,7 @@
   tags: supermarket,grain,pasta
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: mands_basmati_rice
   name: M&S Basmati Rice (dry)
   brand: M&S
@@ -655,7 +655,7 @@
   tags: supermarket,grain,rice
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mands_microwave_rice
   name: M&S Microwave Basmati Rice
   brand: M&S
@@ -671,7 +671,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: mands_couscous
   name: M&S Couscous (dry)
   brand: M&S
@@ -686,7 +686,7 @@
   tags: supermarket,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: mands_milk_chocolate_bar
   name: M&S Milk Chocolate Bar
   brand: M&S
@@ -702,7 +702,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: mands_ready_salted_crisps
   name: M&S Ready Salted Crisps
   brand: M&S
@@ -718,7 +718,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: mands_chocolate_chip_cookies
   name: M&S Chocolate Chip Cookies
   brand: M&S
@@ -734,7 +734,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 12
-- source: gymflow
+- source: afletics
   source_id: mands_protein_bar_chocolate
   name: M&S Protein Bar Chocolate
   brand: M&S
@@ -750,7 +750,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: mands_chicken_tikka_masala
   name: M&S Chicken Tikka Masala (ready meal)
   brand: M&S
@@ -766,7 +766,7 @@
   dietary_compat: pescatarian
   allergens: milk,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: mands_lasagne_meal
   name: M&S Beef Lasagne (ready meal)
   brand: M&S
@@ -782,7 +782,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: mands_thai_green_curry
   name: M&S Thai Green Chicken Curry
   brand: M&S
@@ -798,7 +798,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: mands_cottage_pie_meal
   name: M&S Cottage Pie (ready meal)
   brand: M&S
@@ -814,7 +814,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: mands_oven_chips
   name: M&S Oven Chips (frozen)
   brand: M&S
@@ -829,7 +829,7 @@
   tags: supermarket,frozen,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mands_frozen_peas
   name: M&S Garden Peas (frozen)
   brand: M&S
@@ -844,7 +844,7 @@
   tags: supermarket,frozen,vegetable,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mands_frozen_pizza_pepperoni
   name: M&S Pepperoni Pizza (frozen)
   brand: M&S
@@ -860,7 +860,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: mands_vanilla_ice_cream
   name: M&S Vanilla Ice Cream
   brand: M&S
@@ -875,7 +875,7 @@
   tags: supermarket,frozen,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
-- source: gymflow
+- source: afletics
   source_id: mands_tomato_ketchup
   name: M&S Tomato Ketchup
   brand: M&S
@@ -891,7 +891,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 17
-- source: gymflow
+- source: afletics
   source_id: mands_mayonnaise
   name: M&S Real Mayonnaise
   brand: M&S
@@ -907,7 +907,7 @@
   dietary_compat: vegetarian,pescatarian,gluten_free
   allergens: eggs,mustard
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: mands_pasta_sauce_tomato
   name: M&S Tomato & Basil Pasta Sauce
   brand: M&S
@@ -922,7 +922,7 @@
   tags: supermarket,condiment
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mands_baked_beans
   name: M&S Baked Beans in Tomato Sauce
   brand: M&S
@@ -937,7 +937,7 @@
   tags: supermarket,canned,pulses
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mands_chickpeas_canned
   name: M&S Chickpeas (canned, drained)
   brand: M&S
@@ -952,7 +952,7 @@
   tags: supermarket,canned,pulses,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mands_kidney_beans
   name: M&S Kidney Beans (canned)
   brand: M&S
@@ -967,7 +967,7 @@
   tags: supermarket,canned,pulses,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mands_olive_oil_evoo
   name: M&S Extra Virgin Olive Oil
   brand: M&S
@@ -983,7 +983,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: mands_peanut_butter_smooth
   name: M&S Smooth Peanut Butter
   brand: M&S
@@ -999,7 +999,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: peanuts
   unit_grams: 16
-- source: gymflow
+- source: afletics
   source_id: mands_orange_juice_smooth
   name: M&S Smooth Orange Juice
   brand: M&S
@@ -1014,7 +1014,7 @@
   tags: supermarket,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mands_apple_juice
   name: M&S Apple Juice
   brand: M&S
@@ -1029,7 +1029,7 @@
   tags: supermarket,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mands_water_still_500
   name: M&S Still Water
   brand: M&S
@@ -1045,7 +1045,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: mands_smoothie_strawberry
   name: M&S Strawberry & Banana Smoothie
   brand: M&S
@@ -1061,7 +1061,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: mands_bananas
   name: M&S Bananas
   brand: M&S
@@ -1077,7 +1077,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 118
-- source: gymflow
+- source: afletics
   source_id: mands_apples_braeburn
   name: M&S Braeburn Apples
   brand: M&S
@@ -1093,7 +1093,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: mands_avocados
   name: M&S Ripe Avocados
   brand: M&S
@@ -1109,7 +1109,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: mands_blueberries
   name: M&S Blueberries
   brand: M&S
@@ -1125,7 +1125,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: mands_strawberries
   name: M&S British Strawberries
   brand: M&S
@@ -1141,7 +1141,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: mands_cherry_tomatoes
   name: M&S Cherry Tomatoes
   brand: M&S
@@ -1157,7 +1157,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: mands_count_chicken_breast
   name: M&S Count On Us British Chicken Breast
   brand: M&S
@@ -1172,7 +1172,7 @@
   tags: supermarket,meat,chicken,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mands_count_chicken_tikka
   name: M&S Count On Us Chicken Tikka Masala
   brand: M&S
@@ -1188,7 +1188,7 @@
   dietary_compat: pescatarian
   allergens: milk,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: mands_count_thai_green_curry
   name: M&S Count On Us Thai Green Curry
   brand: M&S
@@ -1204,7 +1204,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: mands_chicken_protein_pot
   name: M&S Chicken Protein Pot
   brand: M&S
@@ -1220,7 +1220,7 @@
   dietary_compat: pescatarian
   allergens: eggs,mustard
   unit_grams: 215
-- source: gymflow
+- source: afletics
   source_id: mands_egg_protein_pot
   name: M&S Egg White Protein Pot
   brand: M&S
@@ -1236,7 +1236,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs,mustard
   unit_grams: 165
-- source: gymflow
+- source: afletics
   source_id: mands_super_grain_salad
   name: M&S Super Grain Salad
   brand: M&S
@@ -1252,7 +1252,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sulphites
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: mands_chicken_caesar_salad
   name: M&S Chicken Caesar Salad
   brand: M&S
@@ -1268,7 +1268,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,fish
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: mands_super_seed_loaf
   name: M&S Super Seed Bloomer
   brand: M&S
@@ -1284,7 +1284,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: mands_protein_bites
   name: M&S Protein Mini Bites
   brand: M&S
@@ -1300,7 +1300,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: mands_chocolate_brownie
   name: M&S Belgian Chocolate Brownie
   brand: M&S
@@ -1316,7 +1316,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs,soy
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: mands_pasta_meal_chicken_pesto
   name: M&S Chicken Pesto Pasta
   brand: M&S
@@ -1332,7 +1332,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,tree_nuts
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: mands_finest_seabass_meal
   name: M&S Pan-Seared Seabass Meal
   brand: M&S

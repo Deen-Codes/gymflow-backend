@@ -1,6 +1,6 @@
 # caribbean.yaml — Jamaican / Caribbean foods commonly found in UK takeaways + supermarkets.
 
-- source: gymflow
+- source: afletics
   source_id: crb_jerk_chicken_breast
   name: Jerk Chicken Breast (cooked)
   brand: ''
@@ -16,7 +16,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: crb_jerk_chicken_thigh
   name: Jerk Chicken Thigh (cooked)
   brand: ''
@@ -32,7 +32,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: crb_brown_stew_chicken
   name: Brown Stew Chicken
   brand: ''
@@ -48,7 +48,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,celery
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: crb_curry_goat
   name: Curry Goat
   brand: ''
@@ -64,7 +64,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: crb_oxtail_stew
   name: Oxtail Stew
   brand: ''
@@ -80,7 +80,7 @@
   dietary_compat: halal,kosher,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: crb_curry_chicken
   name: Caribbean Curry Chicken
   brand: ''
@@ -96,7 +96,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: crb_rice_peas
   name: Rice and Peas
   brand: ''
@@ -111,7 +111,7 @@
   tags: caribbean,side,grain,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: crb_fried_plantain
   name: Fried Plantain
   brand: ''
@@ -126,7 +126,7 @@
   tags: caribbean,side,fruit
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: crb_boiled_plantain
   name: Boiled Plantain
   brand: ''
@@ -141,7 +141,7 @@
   tags: caribbean,side,fruit,low_fat
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: crb_ackee_saltfish
   name: Ackee and Saltfish
   brand: ''
@@ -157,7 +157,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: crb_callaloo_cooked
   name: Callaloo (cooked)
   brand: ''
@@ -172,7 +172,7 @@
   tags: caribbean,side,vegetable,vegan,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: crb_festival_dumpling
   name: Festival (Jamaican fried dumpling)
   brand: ''
@@ -188,7 +188,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: crb_fried_dumpling
   name: Fried Dumpling (Jamaican)
   brand: ''
@@ -204,7 +204,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: crb_hardo_bread
   name: Jamaican Hardo Bread (1 slice)
   brand: ''
@@ -220,7 +220,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: crb_jamaican_patty_beef
   name: Jamaican Beef Patty
   brand: ''
@@ -236,7 +236,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 140
-- source: gymflow
+- source: afletics
   source_id: crb_jamaican_patty_chicken
   name: Jamaican Chicken Patty
   brand: ''
@@ -252,7 +252,7 @@
   dietary_compat: halal,pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 140
-- source: gymflow
+- source: afletics
   source_id: crb_jamaican_patty_veg
   name: Jamaican Vegetable Patty
   brand: ''
@@ -268,7 +268,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 140
-- source: gymflow
+- source: afletics
   source_id: crb_escovitch_fish
   name: Escovitch Fish
   brand: ''
@@ -284,7 +284,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish,sulphites
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: crb_brown_stew_fish
   name: Brown Stew Fish
   brand: ''
@@ -300,7 +300,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: crb_saltfish_fritters_3
   name: Saltfish Fritters (3)
   brand: ''
@@ -316,7 +316,7 @@
   dietary_compat: pescatarian
   allergens: gluten,fish,eggs
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: crb_breadfruit_roasted
   name: Roasted Breadfruit (per 100g)
   brand: ''
@@ -331,7 +331,7 @@
   tags: caribbean,whole,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: crb_yam_boiled
   name: Boiled Yam (per 100g)
   brand: ''
@@ -346,7 +346,7 @@
   tags: caribbean,whole,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: crb_green_banana_boiled
   name: Boiled Green Banana (per 100g)
   brand: ''
@@ -361,7 +361,7 @@
   tags: caribbean,whole,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: crb_cornmeal_porridge
   name: Cornmeal Porridge (with milk)
   brand: ''
@@ -377,7 +377,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: crb_bun_n_cheese_slice
   name: Bun and Cheese (1 slice + cheese)
   brand: ''
@@ -393,7 +393,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: crb_easter_bun_slice
   name: Jamaican Easter Bun (1 slice)
   brand: ''
@@ -409,7 +409,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: crb_dunns_river_jerk_15g
   name: Dunn's River Jerk Seasoning (1 tsp/5g)
   brand: Dunn's River
@@ -425,7 +425,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: crb_walkerswood_jerk_15g
   name: Walkerswood Jerk Seasoning (1 tbsp/15g)
   brand: Walkerswood
@@ -441,7 +441,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: crb_grace_pepper_sauce_5g
   name: Grace Hot Pepper Sauce (1 tsp/5g)
   brand: Grace
@@ -457,7 +457,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: crb_grace_coconut_milk_100ml
   name: Grace Coconut Milk (100ml)
   brand: Grace
@@ -472,7 +472,7 @@
   tags: caribbean,branded
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: crb_sorrel_drink
   name: Jamaican Sorrel Drink
   brand: ''
@@ -487,7 +487,7 @@
   tags: caribbean,drink,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: crb_ginger_beer_jamaican
   name: Jamaican Ginger Beer (330ml)
   brand: ''
@@ -503,7 +503,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: crb_supermalt_330
   name: Supermalt (330ml)
   brand: Supermalt
@@ -519,7 +519,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: crb_ting_330
   name: Ting Jamaican Grapefruit Soda
   brand: Ting
@@ -535,7 +535,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: crb_grace_solomon_grundy
   name: Solomon Grundy / Pickled Mackerel (per 100g)
   brand: ''
@@ -550,7 +550,7 @@
   tags: caribbean,fish,high_protein
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish,sulphites
-- source: gymflow
+- source: afletics
   source_id: crb_macaroni_cheese_caribbean
   name: Caribbean Mac and Cheese (per 100g)
   brand: ''
@@ -565,7 +565,7 @@
   tags: caribbean,side
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
-- source: gymflow
+- source: afletics
   source_id: crb_potato_salad
   name: Caribbean Potato Salad (per 100g)
   brand: ''
@@ -580,7 +580,7 @@
   tags: caribbean,side,salad
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs,mustard
-- source: gymflow
+- source: afletics
   source_id: crb_coleslaw_caribbean
   name: Caribbean Coleslaw (per 100g)
   brand: ''
@@ -595,7 +595,7 @@
   tags: caribbean,side
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs,milk,mustard
-- source: gymflow
+- source: afletics
   source_id: crb_jerk_pork
   name: Jerk Pork (cooked)
   brand: ''
@@ -610,7 +610,7 @@
   tags: caribbean,whole,high_protein
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: crb_curry_chicken_drumsticks
   name: Curry Chicken Drumsticks (3)
   brand: ''

@@ -1,7 +1,7 @@
 # FOOD_DB_INGEST.md — how we populate the food catalog
 
 **Status:** shipped. Last updated 2026-05-09.
-**Predecessor:** the original multi-source ingest plan (USDA + OFF + AUSNUT + CIQUAL bulk loaders) is archived at `../GymFlow/_archive/docs_2026-05-09/FOOD_DB_INGEST_v1.md`. The decision to drop external sources is logged in `../GymFlow/DECISIONS.md`.
+**Predecessor:** the original multi-source ingest plan (USDA + OFF + AUSNUT + CIQUAL bulk loaders) is archived at `../Afletics/_archive/docs_2026-05-09/FOOD_DB_INGEST_v1.md`. The decision to drop external sources is logged in `../Afletics/DECISIONS.md`.
 
 ## Single source: hand-curated YAML
 
@@ -27,7 +27,7 @@ Every entry has the same shape:
   allergens: milk
 ```
 
-The `source` field on every entry is `gymflow`. We ingest no other DB.
+The `source` field on every entry is `afletics`. We ingest no other DB.
 
 ## Loader command
 
@@ -35,7 +35,7 @@ The `source` field on every entry is `gymflow`. We ingest no other DB.
 python manage.py seed_popular_foods
 ```
 
-- Idempotent: `CuratedFood.objects.update_or_create(source="gymflow", source_id=X, defaults=...)`
+- Idempotent: `CuratedFood.objects.update_or_create(source="afletics", source_id=X, defaults=...)`
 - Validates required fields before any write
 - Runs the macro-math sanity check `(p × 4) + (c × 4) + (f × 9)`; warns if the kcal value is off by more than 10% (alcohol items expected to warn)
 
@@ -78,4 +78,4 @@ No scraping. No user-generated edits. No community contributions. The DB only ch
 
 ## Path forward
 
-See `../GymFlow/NUTRITION_DB_DESIGN.md` §"Path forward — expanding to 1000+".
+See `../Afletics/NUTRITION_DB_DESIGN.md` §"Path forward — expanding to 1000+".

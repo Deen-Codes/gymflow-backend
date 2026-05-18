@@ -1,7 +1,7 @@
 # vegan_meats.yaml — meat alternatives: Quorn, Beyond Meat, THIS, Linda McCartney,
 # Oumph, Vivera, Moving Mountains, Plant Chef, generic seitan.
 
-- source: gymflow
+- source: afletics
   source_id: quorn_chicken_pieces
   name: Quorn Chicken-Style Pieces
   brand: Quorn
@@ -16,7 +16,7 @@
   tags: meat_alternative,branded,vegetarian,high_protein,low_fat
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: eggs,milk,gluten
-- source: gymflow
+- source: afletics
   source_id: quorn_vegan_pieces
   name: Quorn Vegan Pieces
   brand: Quorn
@@ -31,7 +31,7 @@
   tags: meat_alternative,branded,vegan,high_protein,low_fat
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: quorn_mince
   name: Quorn Mince
   brand: Quorn
@@ -46,7 +46,7 @@
   tags: meat_alternative,branded,vegetarian,high_protein,low_fat
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: eggs,milk,gluten
-- source: gymflow
+- source: afletics
   source_id: quorn_vegan_mince
   name: Quorn Vegan Mince
   brand: Quorn
@@ -61,7 +61,7 @@
   tags: meat_alternative,branded,vegan,high_protein,low_fat
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: quorn_sausages_2
   name: Quorn Sausages (2)
   brand: Quorn
@@ -77,7 +77,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: eggs,milk,gluten
   unit_grams: 42
-- source: gymflow
+- source: afletics
   source_id: quorn_chicken_nuggets_4
   name: Quorn Crispy Nuggets (4)
   brand: Quorn
@@ -93,7 +93,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: eggs,milk,gluten
   unit_grams: 20
-- source: gymflow
+- source: afletics
   source_id: quorn_chicken_burger_2
   name: Quorn Chicken Style Burgers (2)
   brand: Quorn
@@ -109,7 +109,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: eggs,milk,gluten
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: quorn_fillets_2
   name: Quorn Chicken-Style Fillets (2)
   brand: Quorn
@@ -125,7 +125,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: eggs,milk,gluten
   unit_grams: 88
-- source: gymflow
+- source: afletics
   source_id: quorn_meatballs
   name: Quorn Meatballs (per 100g)
   brand: Quorn
@@ -140,7 +140,7 @@
   tags: meat_alternative,branded,vegetarian
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: eggs,milk,gluten
-- source: gymflow
+- source: afletics
   source_id: beyond_burger_2
   name: Beyond Meat Burger (1 patty)
   brand: Beyond Meat
@@ -156,7 +156,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 113
-- source: gymflow
+- source: afletics
   source_id: beyond_mince_100g
   name: Beyond Meat Mince (per 100g)
   brand: Beyond Meat
@@ -171,7 +171,7 @@
   tags: meat_alternative,branded,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: beyond_sausages_classic
   name: Beyond Meat Sausages Classic
   brand: Beyond Meat
@@ -187,7 +187,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 76
-- source: gymflow
+- source: afletics
   source_id: this_isnt_chicken_pieces
   name: THIS Isn't Chicken Pieces (per 100g)
   brand: THIS
@@ -202,7 +202,7 @@
   tags: meat_alternative,branded,vegan,high_protein
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
-- source: gymflow
+- source: afletics
   source_id: this_isnt_bacon
   name: THIS Isn't Bacon (per 100g)
   brand: THIS
@@ -217,7 +217,7 @@
   tags: meat_alternative,branded,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
-- source: gymflow
+- source: afletics
   source_id: this_isnt_chicken_nuggets
   name: THIS Isn't Chicken Nuggets (per 100g)
   brand: THIS
@@ -232,7 +232,7 @@
   tags: meat_alternative,branded,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy
-- source: gymflow
+- source: afletics
   source_id: linda_mccartney_sausages_2
   name: Linda McCartney Sausages (2)
   brand: Linda McCartney
@@ -248,7 +248,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy
   unit_grams: 37.5
-- source: gymflow
+- source: afletics
   source_id: linda_mccartney_quarter_pounder
   name: Linda McCartney Vegetarian Quarter Pounder
   brand: Linda McCartney
@@ -264,7 +264,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy
   unit_grams: 113
-- source: gymflow
+- source: afletics
   source_id: oumph_chunks_pulled
   name: Oumph! The Chunk (per 100g)
   brand: Oumph!
@@ -279,7 +279,7 @@
   tags: meat_alternative,branded,vegan,high_protein
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
-- source: gymflow
+- source: afletics
   source_id: vivera_steak_2
   name: Vivera Plant Steak
   brand: Vivera
@@ -295,7 +295,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: vivera_chicken_pieces
   name: Vivera Veggie Chicken Pieces (per 100g)
   brand: Vivera
@@ -310,7 +310,7 @@
   tags: meat_alternative,branded,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
-- source: gymflow
+- source: afletics
   source_id: moving_mountains_burger
   name: Moving Mountains B12 Burger
   brand: Moving Mountains
@@ -326,7 +326,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
   unit_grams: 113
-- source: gymflow
+- source: afletics
   source_id: moving_mountains_hot_dog
   name: Moving Mountains Hot Dog
   brand: Moving Mountains
@@ -342,7 +342,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: seitan_per_100g
   name: Seitan / Wheat Gluten (per 100g)
   brand: ''
@@ -357,7 +357,7 @@
   tags: meat_alternative,vegan,high_protein,low_fat
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: plant_chef_pies_2
   name: Plant Chef Vegan Sausage Rolls (2)
   brand: Plant Chef

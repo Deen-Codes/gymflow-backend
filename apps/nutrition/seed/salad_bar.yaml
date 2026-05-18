@@ -1,6 +1,6 @@
 # salad_bar.yaml — salad bar items: mixed leaves, baby spinach, iceberg, potato/pasta/couscous/bulgur salads. Dressings: Caesar, balsamic vinaigrette, French, honey-mustard, blue cheese, thousand island, ranch, low-fat balsamic. Toppings: croutons, pickled onions/gherkins/beetroot/red cabbage.
 
-- source: gymflow
+- source: afletics
   source_id: salad_mixed_leaves_handful
   name: Mixed Leaves (1 handful/30g)
   brand: ''
@@ -15,7 +15,7 @@
   tags: whole,vegetable,salad,vegan,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: salad_baby_spinach_handful
   name: Baby Spinach (1 handful/30g)
   brand: ''
@@ -30,7 +30,7 @@
   tags: whole,vegetable,salad,vegan,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: salad_iceberg_handful
   name: Iceberg Lettuce (1 handful/40g)
   brand: ''
@@ -45,7 +45,7 @@
   tags: whole,vegetable,salad,vegan,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: salad_potato_homemade_per_100
   name: Potato Salad (per 100g)
   brand: ''
@@ -60,7 +60,7 @@
   tags: side,salad
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs,mustard
-- source: gymflow
+- source: afletics
   source_id: salad_pasta_salad_per_100
   name: Pasta Salad (per 100g)
   brand: ''
@@ -75,7 +75,7 @@
   tags: side,salad,pasta
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
-- source: gymflow
+- source: afletics
   source_id: salad_couscous_lemon_per_100
   name: Couscous Salad with Lemon (per 100g)
   brand: ''
@@ -90,7 +90,7 @@
   tags: side,salad,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: salad_bulgur_wheat_per_100
   name: Bulgur Wheat Salad (per 100g)
   brand: ''
@@ -105,7 +105,7 @@
   tags: side,salad,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: dressing_caesar_15ml
   name: Caesar Salad Dressing (15ml)
   brand: ''
@@ -121,7 +121,7 @@
   dietary_compat: pescatarian
   allergens: eggs,milk,fish,mustard
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: dressing_balsamic_15ml
   name: Balsamic Vinaigrette (15ml)
   brand: ''
@@ -137,7 +137,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: mustard,sulphites
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: dressing_french_15ml
   name: French Dressing (15ml)
   brand: ''
@@ -153,7 +153,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: mustard,sulphites
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: dressing_honey_mustard_15ml
   name: Honey & Mustard Dressing (15ml)
   brand: ''
@@ -169,7 +169,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs,mustard
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: dressing_blue_cheese_15ml
   name: Blue Cheese Dressing (15ml)
   brand: ''
@@ -185,7 +185,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs,milk,mustard
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: dressing_thousand_island_15ml
   name: Thousand Island Dressing (15ml)
   brand: ''
@@ -201,7 +201,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: eggs,milk,mustard
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: dressing_ranch_15ml
   name: Ranch Dressing (15ml)
   brand: ''
@@ -217,7 +217,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs,milk,mustard
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: dressing_low_fat_balsamic_15ml
   name: Low Fat Balsamic Dressing (15ml)
   brand: ''
@@ -233,7 +233,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: sulphites
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: salad_croutons_per_30g
   name: Croutons (30g)
   brand: ''
@@ -249,7 +249,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: salad_pickled_onions_per_50g
   name: Pickled Onions (50g)
   brand: ''
@@ -264,7 +264,7 @@
   tags: pantry,vegan,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: salad_pickled_gherkins_2
   name: Pickled Gherkins (2)
   brand: ''
@@ -280,7 +280,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 40
-- source: gymflow
+- source: afletics
   source_id: salad_pickled_beetroot_per_100
   name: Pickled Beetroot (per 100g)
   brand: ''
@@ -295,7 +295,7 @@
   tags: pantry,vegan,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: salad_pickled_red_cabbage_per_100
   name: Pickled Red Cabbage (per 100g)
   brand: ''

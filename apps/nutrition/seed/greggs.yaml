@@ -1,7 +1,7 @@
 # greggs.yaml — Greggs menu.
 # 30 entries (incl 6 migrated).
 # Source: greggs.co.uk/menu/nutritional-information.
-- source: gymflow
+- source: afletics
   source_id: greggs_bacon_roll
   name: Greggs Bacon Roll
   brand: Greggs
@@ -17,7 +17,7 @@
   allergens: gluten,milk
   portion_unit: piece
   unit_grams: 120
-- source: gymflow
+- source: afletics
   source_id: greggs_chicken_bake
   name: Greggs Chicken Bake
   brand: Greggs
@@ -33,7 +33,7 @@
   allergens: gluten,eggs,milk
   portion_unit: piece
   unit_grams: 155
-- source: gymflow
+- source: afletics
   source_id: greggs_glazed_doughnut
   name: Greggs Glazed Ring Doughnut
   brand: Greggs
@@ -49,7 +49,7 @@
   allergens: gluten,eggs,milk,soy
   portion_unit: piece
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: greggs_sausage_roll
   name: Greggs Sausage Roll
   brand: Greggs
@@ -65,7 +65,7 @@
   allergens: gluten,eggs,milk,mustard,sulphites
   portion_unit: piece
   unit_grams: 96
-- source: gymflow
+- source: afletics
   source_id: greggs_steak_bake
   name: Greggs Steak Bake
   brand: Greggs
@@ -81,7 +81,7 @@
   allergens: gluten,eggs,milk,sulphites
   portion_unit: piece
   unit_grams: 145
-- source: gymflow
+- source: afletics
   source_id: greggs_vegan_sausage_roll
   name: Greggs Vegan Sausage Roll
   brand: Greggs
@@ -97,7 +97,7 @@
   allergens: gluten,soy
   portion_unit: piece
   unit_grams: 96
-- source: gymflow
+- source: afletics
   source_id: greggs_chicken_bacon_baguette
   name: Chicken Salad Baguette
   brand: Greggs
@@ -113,7 +113,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: greggs_ham_cheese_baguette
   name: Ham & Cheese Baguette
   brand: Greggs
@@ -129,7 +129,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: greggs_tuna_crunch_baguette
   name: Tuna Crunch Baguette
   brand: Greggs
@@ -145,7 +145,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,fish
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: greggs_southern_fried_chicken_baguette
   name: Southern Fried Chicken Baguette
   brand: Greggs
@@ -161,7 +161,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 230
-- source: gymflow
+- source: afletics
   source_id: greggs_pizza_slice_pepperoni
   name: Pepperoni Pizza Slice
   brand: Greggs
@@ -177,7 +177,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 175
-- source: gymflow
+- source: afletics
   source_id: greggs_pizza_slice_margherita
   name: Margherita Pizza Slice
   brand: Greggs
@@ -193,7 +193,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 175
-- source: gymflow
+- source: afletics
   source_id: greggs_chicken_mushroom_slice
   name: Chicken & Mushroom Slice
   brand: Greggs
@@ -209,7 +209,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 145
-- source: gymflow
+- source: afletics
   source_id: greggs_cheese_onion_pasty
   name: Cheese & Onion Pasty
   brand: Greggs
@@ -225,7 +225,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: greggs_steak_bake_old
   name: Steak Bake (legacy)
   brand: Greggs
@@ -241,7 +241,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 145
-- source: gymflow
+- source: afletics
   source_id: greggs_corned_beef_pasty
   name: Corned Beef Pasty
   brand: Greggs
@@ -257,7 +257,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 175
-- source: gymflow
+- source: afletics
   source_id: greggs_yum_yum
   name: Yum Yum
   brand: Greggs
@@ -273,7 +273,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 65
-- source: gymflow
+- source: afletics
   source_id: greggs_iced_ring_pink
   name: Pink Iced Ring Doughnut
   brand: Greggs
@@ -289,7 +289,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: greggs_chocolate_eclair
   name: Chocolate Éclair
   brand: Greggs
@@ -305,7 +305,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: greggs_apple_danish
   name: Apple Danish
   brand: Greggs
@@ -321,7 +321,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: greggs_pain_au_chocolat
   name: Pain au Chocolat
   brand: Greggs
@@ -337,7 +337,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: greggs_chocolate_chunk_cookie
   name: Chocolate Chunk Cookie
   brand: Greggs
@@ -353,7 +353,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: greggs_porridge
   name: Porridge (Original)
   brand: Greggs
@@ -369,7 +369,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: greggs_breakfast_baguette_bacon
   name: Bacon Breakfast Baguette
   brand: Greggs
@@ -385,7 +385,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 175
-- source: gymflow
+- source: afletics
   source_id: greggs_breakfast_baguette_sausage
   name: Sausage Breakfast Baguette
   brand: Greggs
@@ -401,7 +401,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: greggs_americano
   name: Americano
   brand: Greggs
@@ -416,7 +416,7 @@
   tags: chain,bakery,coffee,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: greggs_latte_semi
   name: Latte (semi)
   brand: Greggs
@@ -431,7 +431,7 @@
   tags: chain,bakery,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: greggs_cappuccino_semi
   name: Cappuccino (semi)
   brand: Greggs
@@ -446,7 +446,7 @@
   tags: chain,bakery,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: greggs_hot_choc
   name: Hot Chocolate
   brand: Greggs
@@ -461,7 +461,7 @@
   tags: chain,bakery,drink
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
-- source: gymflow
+- source: afletics
   source_id: greggs_iced_latte
   name: Iced Latte (semi)
   brand: Greggs

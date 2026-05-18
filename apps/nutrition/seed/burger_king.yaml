@@ -1,7 +1,7 @@
 # burger_king.yaml — Burger King UK menu.
 # 30 entries (incl 2 migrated).
 # Source: burgerking.co.uk/menu/nutritional-information.
-- source: gymflow
+- source: afletics
   source_id: bk_chicken_royale
   name: Burger King Chicken Royale
   brand: Burger King
@@ -17,7 +17,7 @@
   allergens: gluten,milk,eggs
   portion_unit: piece
   unit_grams: 213
-- source: gymflow
+- source: afletics
   source_id: burger_king_whopper
   name: Burger King Whopper
   brand: Burger King
@@ -33,7 +33,7 @@
   allergens: gluten,eggs,milk,sesame
   portion_unit: piece
   unit_grams: 277
-- source: gymflow
+- source: afletics
   source_id: bk_double_whopper
   name: Double Whopper
   brand: Burger King
@@ -49,7 +49,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 360
-- source: gymflow
+- source: afletics
   source_id: bk_whopper_jr
   name: Whopper Jr
   brand: Burger King
@@ -65,7 +65,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 165
-- source: gymflow
+- source: afletics
   source_id: bk_bacon_double_xl
   name: Bacon Double XL
   brand: Burger King
@@ -81,7 +81,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 305
-- source: gymflow
+- source: afletics
   source_id: bk_cheeseburger
   name: Cheeseburger
   brand: Burger King
@@ -97,7 +97,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: bk_double_cheeseburger
   name: Double Cheeseburger
   brand: Burger King
@@ -113,7 +113,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 175
-- source: gymflow
+- source: afletics
   source_id: bk_chicken_burger
   name: Chicken Burger
   brand: Burger King
@@ -129,7 +129,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 165
-- source: gymflow
+- source: afletics
   source_id: bk_plant_based_whopper
   name: Plant-Based Whopper
   brand: Burger King
@@ -145,7 +145,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame,soy
   unit_grams: 270
-- source: gymflow
+- source: afletics
   source_id: bk_vegan_royale
   name: Vegan Royale
   brand: Burger King
@@ -161,7 +161,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame,soy
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: bk_fries_small
   name: Fries (small)
   brand: Burger King
@@ -177,7 +177,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 75
-- source: gymflow
+- source: afletics
   source_id: bk_fries_medium
   name: Fries (medium)
   brand: Burger King
@@ -193,7 +193,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 105
-- source: gymflow
+- source: afletics
   source_id: bk_fries_large
   name: Fries (large)
   brand: Burger King
@@ -209,7 +209,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 145
-- source: gymflow
+- source: afletics
   source_id: bk_onion_rings_med
   name: Onion Rings (medium)
   brand: Burger King
@@ -225,7 +225,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: bk_chicken_nuggets_6
   name: Chicken Nuggets (6)
   brand: Burger King
@@ -241,7 +241,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 95
-- source: gymflow
+- source: afletics
   source_id: bk_chicken_nuggets_9
   name: Chicken Nuggets (9)
   brand: Burger King
@@ -257,7 +257,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 145
-- source: gymflow
+- source: afletics
   source_id: bk_hash_browns
   name: Hash Browns
   brand: Burger King
@@ -273,7 +273,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: bk_breakfast_baker
   name: Bacon Breakfast Baker
   brand: Burger King
@@ -289,7 +289,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 175
-- source: gymflow
+- source: afletics
   source_id: bk_egg_muffin
   name: Egg & Cheese Muffin
   brand: Burger King
@@ -305,7 +305,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 145
-- source: gymflow
+- source: afletics
   source_id: bk_bacon_egg_muffin
   name: Bacon, Egg & Cheese Muffin
   brand: Burger King
@@ -321,7 +321,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 165
-- source: gymflow
+- source: afletics
   source_id: bk_coke_medium
   name: Coca-Cola (medium)
   brand: Burger King
@@ -336,7 +336,7 @@
   tags: chain,fast_food,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: bk_diet_coke_medium
   name: Diet Coke (medium)
   brand: Burger King
@@ -351,7 +351,7 @@
   tags: chain,fast_food,drink,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: bk_milkshake_chocolate_med
   name: Chocolate Milkshake (medium)
   brand: Burger King
@@ -366,7 +366,7 @@
   tags: chain,fast_food,drink
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: bk_milkshake_vanilla_med
   name: Vanilla Milkshake (medium)
   brand: Burger King
@@ -381,7 +381,7 @@
   tags: chain,fast_food,drink
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: bk_orange_juice
   name: Orange Juice
   brand: Burger King
@@ -396,7 +396,7 @@
   tags: chain,fast_food,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: bk_apple_pie
   name: Apple Pie
   brand: Burger King
@@ -412,7 +412,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 75
-- source: gymflow
+- source: afletics
   source_id: bk_chocolate_brownie
   name: Chocolate Brownie
   brand: Burger King
@@ -428,7 +428,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs,soy
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: bk_bbq_sauce
   name: BBQ Sauce (sachet)
   brand: Burger King
@@ -444,7 +444,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: bk_sweet_chilli_sauce
   name: Sweet Chilli (sachet)
   brand: Burger King
@@ -460,7 +460,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: bk_ranch_sauce
   name: Ranch (sachet)
   brand: Burger King

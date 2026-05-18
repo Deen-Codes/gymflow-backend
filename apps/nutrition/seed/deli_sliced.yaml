@@ -1,6 +1,6 @@
 # deli_sliced.yaml — deli counter sliced meats: Wiltshire/Honey Roast/Smoked/Black Forest ham, smoked turkey, peppered turkey, roast/tikka chicken, pastrami, corned beef, salami Milano/Napoli, bresaola, coppa, mortadella, Polish ham, pancetta cubes/slices, bacon lardons, pepperoni slices.
 
-- source: gymflow
+- source: afletics
   source_id: deli_wiltshire_ham_slice
   name: Wiltshire Cure Ham (1 slice)
   brand: ''
@@ -16,7 +16,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: deli_honey_roast_ham_slice
   name: Honey Roast Ham (1 slice)
   brand: ''
@@ -32,7 +32,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: deli_smoked_ham_slice
   name: Smoked Ham (1 slice)
   brand: ''
@@ -48,7 +48,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: deli_black_forest_ham_slice
   name: Black Forest Ham (1 slice)
   brand: ''
@@ -64,7 +64,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: deli_smoked_turkey_breast_slice
   name: Smoked Turkey Breast (1 slice)
   brand: ''
@@ -80,7 +80,7 @@
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: deli_peppered_turkey_slice
   name: Peppered Turkey (1 slice)
   brand: ''
@@ -96,7 +96,7 @@
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: deli_roast_chicken_slice
   name: Roast Chicken Breast Slices
   brand: ''
@@ -112,7 +112,7 @@
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: deli_tikka_chicken_slice
   name: Tikka Chicken Breast (1 slice)
   brand: ''
@@ -128,7 +128,7 @@
   dietary_compat: halal,pescatarian,gluten_free
   allergens: milk
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: deli_pastrami_slice
   name: Pastrami (1 slice)
   brand: ''
@@ -144,7 +144,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: sulphites
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: deli_corned_beef_slice
   name: Corned Beef (1 slice)
   brand: ''
@@ -160,7 +160,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: deli_salami_milano_slice
   name: Salami Milano (1 slice)
   brand: ''
@@ -176,7 +176,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: sulphites
   unit_grams: 8
-- source: gymflow
+- source: afletics
   source_id: deli_salami_napoli_slice
   name: Salami Napoli (1 slice)
   brand: ''
@@ -192,7 +192,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: sulphites
   unit_grams: 8
-- source: gymflow
+- source: afletics
   source_id: deli_bresaola_slice
   name: Bresaola (1 slice)
   brand: ''
@@ -208,7 +208,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 12
-- source: gymflow
+- source: afletics
   source_id: deli_coppa_slice
   name: Coppa (1 slice)
   brand: ''
@@ -224,7 +224,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 12
-- source: gymflow
+- source: afletics
   source_id: deli_mortadella_slice
   name: Mortadella (1 slice)
   brand: ''
@@ -240,7 +240,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: sulphites
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: deli_polish_ham_slice
   name: Polish Ham (1 slice)
   brand: ''
@@ -256,7 +256,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: deli_pancetta_cubes_per_30g
   name: Pancetta Cubes (30g)
   brand: ''
@@ -272,7 +272,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: deli_pancetta_slice
   name: Pancetta Slice
   brand: ''
@@ -288,7 +288,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 12
-- source: gymflow
+- source: afletics
   source_id: deli_bacon_lardons_per_50g
   name: Bacon Lardons (50g)
   brand: ''
@@ -304,7 +304,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: deli_pepperoni_slices_30g
   name: Pepperoni Slices (30g)
   brand: ''

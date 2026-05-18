@@ -1,5 +1,5 @@
 # drinks_extra.yaml — Monster variants (Pipeline Punch, Mango Loco, Ultra Sunrise/Paradise, Ripper, Assault), Bang variants (Cotton Candy, Star Blast, Blue Razz), Reign variants, Prime variants, tea brands (Tetley, Twinings Lady Grey/Chamomile/Lemon Ginger, Teapigs, Whittard, Clipper, Dragonfly), instant coffee (Nescafé Gold/Original/Azera, Douwe Egberts, Kenco, Lavazza, Jacobs, Yorkshire Gold), juice brands (Tropicana, Cawston Press, Drench, Naked).
-- source: gymflow
+- source: afletics
   source_id: monster_pipeline_punch
   name: Monster Pipeline Punch (500ml)
   brand: Monster
@@ -15,7 +15,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: monster_mango_loco
   name: Monster Mango Loco (500ml)
   brand: Monster
@@ -31,7 +31,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: monster_ultra_sunrise
   name: Monster Ultra Sunrise (500ml)
   brand: Monster
@@ -47,7 +47,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: monster_ultra_paradise
   name: Monster Ultra Paradise (500ml)
   brand: Monster
@@ -63,7 +63,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: monster_ripper_juiced
   name: Monster Ripper (500ml)
   brand: Monster
@@ -79,7 +79,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: monster_assault
   name: Monster Assault (500ml)
   brand: Monster
@@ -95,7 +95,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: bang_cotton_candy
   name: Bang Cotton Candy (500ml)
   brand: Bang
@@ -111,7 +111,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: bang_star_blast
   name: Bang Star Blast (500ml)
   brand: Bang
@@ -127,7 +127,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: bang_blue_razz
   name: Bang Blue Razz (500ml)
   brand: Bang
@@ -143,7 +143,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: reign_sour_apple
   name: Reign Sour Apple (500ml)
   brand: Reign
@@ -159,7 +159,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: reign_razzle_berry
   name: Reign Razzle Berry (500ml)
   brand: Reign
@@ -175,7 +175,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: reign_white_gummy
   name: Reign White Gummy Bear (500ml)
   brand: Reign
@@ -191,7 +191,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: prime_meta_moon
   name: Prime Hydration Meta Moon (500ml)
   brand: Prime
@@ -207,7 +207,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: prime_lemon_lime
   name: Prime Hydration Lemon Lime (500ml)
   brand: Prime
@@ -223,7 +223,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: prime_tropical_punch
   name: Prime Hydration Tropical Punch (500ml)
   brand: Prime
@@ -239,7 +239,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: tetley_tea_white
   name: Tetley Tea with Milk (mug)
   brand: Tetley
@@ -254,7 +254,7 @@
   tags: tea,branded
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: twinings_lady_grey
   name: Twinings Lady Grey (mug, black)
   brand: Twinings
@@ -269,7 +269,7 @@
   tags: tea,branded,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: twinings_chamomile
   name: Twinings Pure Chamomile (mug)
   brand: Twinings
@@ -284,7 +284,7 @@
   tags: tea,branded,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: twinings_lemon_ginger
   name: Twinings Lemon & Ginger (mug)
   brand: Twinings
@@ -299,7 +299,7 @@
   tags: tea,branded,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: teapigs_everyday_brew
   name: Teapigs Everyday Brew (mug, black)
   brand: Teapigs
@@ -314,7 +314,7 @@
   tags: tea,branded,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: teapigs_chai
   name: Teapigs Chai (mug, white)
   brand: Teapigs
@@ -329,7 +329,7 @@
   tags: tea,branded
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: whittard_english_breakfast
   name: Whittard English Breakfast (mug, black)
   brand: Whittard
@@ -344,7 +344,7 @@
   tags: tea,branded,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: clipper_organic_everyday
   name: Clipper Organic Everyday (mug, white)
   brand: Clipper
@@ -359,7 +359,7 @@
   tags: tea,branded
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: dragonfly_chai_red
   name: Dragonfly Tea Red Chai (mug, white)
   brand: Dragonfly
@@ -374,7 +374,7 @@
   tags: tea,branded
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: nescafe_gold_blend_2g
   name: Nescafé Gold Blend (1 mug, 1.7g + water)
   brand: Nescafé
@@ -389,7 +389,7 @@
   tags: coffee,branded,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: nescafe_original_2g
   name: Nescafé Original (1 mug, 1.7g + water)
   brand: Nescafé
@@ -404,7 +404,7 @@
   tags: coffee,branded,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: nescafe_azera_americano
   name: Nescafé Azera Americano (1 mug, white)
   brand: Nescafé
@@ -419,7 +419,7 @@
   tags: coffee,branded
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: douwe_egberts_pure_gold
   name: Douwe Egberts Pure Gold (1 mug, white)
   brand: Douwe Egberts
@@ -434,7 +434,7 @@
   tags: coffee,branded,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: kenco_smooth
   name: Kenco Smooth (1 mug, black)
   brand: Kenco
@@ -449,7 +449,7 @@
   tags: coffee,branded,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: lavazza_qualita_oro
   name: Lavazza Qualità Oro (1 mug, black)
   brand: Lavazza
@@ -464,7 +464,7 @@
   tags: coffee,branded,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: jacobs_kronung_white
   name: Jacobs Krönung (1 mug, white)
   brand: Jacobs
@@ -479,7 +479,7 @@
   tags: coffee,branded
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: taylors_yorkshire_gold
   name: Yorkshire Gold (1 mug, white)
   brand: Taylor's
@@ -494,7 +494,7 @@
   tags: tea,branded
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: tropicana_orange_smooth_300
   name: Tropicana Smooth Orange (300ml)
   brand: Tropicana
@@ -510,7 +510,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: tropicana_pure_juice_apple_300
   name: Tropicana Pure Apple Juice (300ml)
   brand: Tropicana
@@ -526,7 +526,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: cawston_press_apple_carrot_330
   name: Cawston Press Apple & Carrot (330ml)
   brand: Cawston Press
@@ -542,7 +542,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: drench_juicy_water_500
   name: Drench Juicy Water Apple (500ml)
   brand: Drench
@@ -558,7 +558,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: naked_blue_machine_smoothie
   name: Naked Blue Machine Smoothie (450ml)
   brand: Naked
@@ -574,7 +574,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: naked_green_machine_smoothie
   name: Naked Green Machine Smoothie (450ml)
   brand: Naked

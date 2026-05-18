@@ -1,6 +1,6 @@
 # pizza_hut.yaml — Pizza Hut UK menu. 30 entries.
 # Source: pizzahut.co.uk/menu/nutritional.
-- source: gymflow
+- source: afletics
   source_id: pizzahut_margherita_med_sl
   name: Margherita (med slice)
   brand: Pizza Hut
@@ -16,7 +16,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: pizzahut_pepperoni_feast_med_sl
   name: Pepperoni Feast (med slice)
   brand: Pizza Hut
@@ -32,7 +32,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 105
-- source: gymflow
+- source: afletics
   source_id: pizzahut_meat_feast_med_sl
   name: Meat Feast (med slice)
   brand: Pizza Hut
@@ -48,7 +48,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 115
-- source: gymflow
+- source: afletics
   source_id: pizzahut_veggie_supreme_med_sl
   name: Veggie Supreme (med slice)
   brand: Pizza Hut
@@ -64,7 +64,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,sulphites
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: pizzahut_supreme_med_sl
   name: Supreme (med slice)
   brand: Pizza Hut
@@ -80,7 +80,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 115
-- source: gymflow
+- source: afletics
   source_id: pizzahut_hawaiian_med_sl
   name: Hawaiian (med slice)
   brand: Pizza Hut
@@ -96,7 +96,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: pizzahut_bbq_americano_med_sl
   name: BBQ Americano (med slice)
   brand: Pizza Hut
@@ -112,7 +112,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 115
-- source: gymflow
+- source: afletics
   source_id: pizzahut_chicken_supreme_med_sl
   name: Chicken Supreme (med slice)
   brand: Pizza Hut
@@ -128,7 +128,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 115
-- source: gymflow
+- source: afletics
   source_id: pizzahut_vegan_jackfruit_med_sl
   name: Vegan Jack-N-Ch**se (med slice)
   brand: Pizza Hut
@@ -144,7 +144,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sulphites,soy
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: pizzahut_cheese_lovers_med_sl
   name: Cheese Lovers (med slice)
   brand: Pizza Hut
@@ -160,7 +160,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 105
-- source: gymflow
+- source: afletics
   source_id: pizzahut_margherita_med_whole
   name: Margherita (whole medium)
   brand: Pizza Hut
@@ -176,7 +176,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 800
-- source: gymflow
+- source: afletics
   source_id: pizzahut_pepperoni_med_whole
   name: Pepperoni Feast (whole medium)
   brand: Pizza Hut
@@ -192,7 +192,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 840
-- source: gymflow
+- source: afletics
   source_id: pizzahut_meat_feast_med_whole
   name: Meat Feast (whole medium)
   brand: Pizza Hut
@@ -208,7 +208,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 920
-- source: gymflow
+- source: afletics
   source_id: pizzahut_pepperoni_lge_sl
   name: Pepperoni Feast (large slice)
   brand: Pizza Hut
@@ -224,7 +224,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 145
-- source: gymflow
+- source: afletics
   source_id: pizzahut_meat_feast_lge_sl
   name: Meat Feast (large slice)
   brand: Pizza Hut
@@ -240,7 +240,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: pizzahut_stuffed_crust_pepperoni_med_sl
   name: Stuffed Crust Pepperoni (med slice)
   brand: Pizza Hut
@@ -256,7 +256,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: pizzahut_stuffed_crust_meat_feast_med_sl
   name: Stuffed Crust Meat Feast (med slice)
   brand: Pizza Hut
@@ -272,7 +272,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 135
-- source: gymflow
+- source: afletics
   source_id: pizzahut_garlic_bread
   name: Garlic Bread
   brand: Pizza Hut
@@ -288,7 +288,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: pizzahut_garlic_cheese_bread
   name: Cheesy Garlic Bread
   brand: Pizza Hut
@@ -304,7 +304,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: pizzahut_chicken_wings_8
   name: Chicken Wings (8)
   brand: Pizza Hut
@@ -320,7 +320,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: pizzahut_chicken_strips_5
   name: Chicken Strips (5)
   brand: Pizza Hut
@@ -336,7 +336,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: pizzahut_potato_tots
   name: Potato Tots
   brand: Pizza Hut
@@ -352,7 +352,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: pizzahut_loaded_potato_skins
   name: Loaded Potato Skins
   brand: Pizza Hut
@@ -368,7 +368,7 @@
   dietary_compat: pescatarian
   allergens: milk
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: pizzahut_jalapeno_poppers
   name: Jalapeño Poppers
   brand: Pizza Hut
@@ -384,7 +384,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 165
-- source: gymflow
+- source: afletics
   source_id: pizzahut_salad_bar_avg
   name: Salad Bar (avg plate)
   brand: Pizza Hut
@@ -400,7 +400,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs,mustard,sulphites
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: pizzahut_coke
   name: Coca-Cola
   brand: Pizza Hut
@@ -416,7 +416,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: pizzahut_diet_coke
   name: Diet Coke
   brand: Pizza Hut
@@ -432,7 +432,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: pizzahut_cookie_dough
   name: Cookie Dough Dessert
   brand: Pizza Hut
@@ -448,7 +448,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: pizzahut_chocolate_brownie
   name: Chocolate Brownie
   brand: Pizza Hut
@@ -464,7 +464,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs,soy
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: pizzahut_ice_cream_factory
   name: Ice Cream Factory (per 100 g)
   brand: Pizza Hut

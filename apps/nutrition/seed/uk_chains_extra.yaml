@@ -1,5 +1,5 @@
 # uk_chains_extra.yaml — chains we missed first time (Bill's, Côte, Wahaca, Frankie & Benny's, Bella Italia, Prezzo, Yo! Sushi, Honest Burgers, Patty & Bun, Pho, Krispy Kreme, Las Iguanas, Banana Tree, Busaba, Rosa's Thai, Tortilla, Chiquito, Patisserie Valerie, Hard Rock, more Greggs/Pret/Costa).
-- source: gymflow
+- source: afletics
   source_id: bills_buttermilk_chicken_burger
   name: Bill's Buttermilk Chicken Burger
   brand: Bill's
@@ -15,7 +15,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 470
-- source: gymflow
+- source: afletics
   source_id: bills_classic_burger
   name: Bill's Classic Burger
   brand: Bill's
@@ -31,7 +31,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 480
-- source: gymflow
+- source: afletics
   source_id: bills_fish_chips
   name: Bill's Fish & Chips
   brand: Bill's
@@ -47,7 +47,7 @@
   dietary_compat: pescatarian
   allergens: fish,gluten,eggs
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: bills_chicken_milanese
   name: Bill's Chicken Milanese
   brand: Bill's
@@ -63,7 +63,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: bills_pancakes_stack
   name: Bill's Pancakes Stack
   brand: Bill's
@@ -79,7 +79,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: bills_eggs_benedict
   name: Bill's Eggs Benedict
   brand: Bill's
@@ -95,7 +95,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: bills_full_english
   name: Bill's Full English
   brand: Bill's
@@ -111,7 +111,7 @@
   dietary_compat: pescatarian
   allergens: gluten,eggs,sulphites
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: bills_avocado_eggs
   name: Bill's Smashed Avo & Eggs
   brand: Bill's
@@ -127,7 +127,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,eggs
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: cote_steak_frites
   name: Côte Steak Frites
   brand: Côte
@@ -143,7 +143,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: cote_moules_frites
   name: Côte Moules Frites
   brand: Côte
@@ -159,7 +159,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: molluscs,gluten,sulphites
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: cote_chicken_lyonnaise
   name: Côte Chicken Lyonnaise
   brand: Côte
@@ -175,7 +175,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: milk
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: cote_french_onion_soup
   name: Côte French Onion Soup
   brand: Côte
@@ -191,7 +191,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,celery
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: cote_eggs_florentine
   name: Côte Eggs Florentine
   brand: Côte
@@ -207,7 +207,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: cote_creme_brulee
   name: Côte Crème Brûlée
   brand: Côte
@@ -223,7 +223,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: wahaca_chicken_burrito
   name: Wahaca Chicken Burrito
   brand: Wahaca
@@ -239,7 +239,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: wahaca_beef_burrito
   name: Wahaca Beef Burrito
   brand: Wahaca
@@ -255,7 +255,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: wahaca_chicken_taco_2
   name: Wahaca Chicken Tacos (2)
   brand: Wahaca
@@ -271,7 +271,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: wahaca_pork_pibil_taco_2
   name: Wahaca Pork Pibil Tacos (2)
   brand: Wahaca
@@ -287,7 +287,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: wahaca_grilled_steak_taco_2
   name: Wahaca Grilled Steak Tacos (2)
   brand: Wahaca
@@ -303,7 +303,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: wahaca_mushroom_taco_2
   name: Wahaca Mushroom Tacos (2)
   brand: Wahaca
@@ -319,7 +319,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: wahaca_quesadilla_chicken
   name: Wahaca Chicken Quesadilla
   brand: Wahaca
@@ -335,7 +335,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: wahaca_chargrilled_chicken
   name: Wahaca Chargrilled Chicken
   brand: Wahaca
@@ -351,7 +351,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: wahaca_nachos_full_meal
   name: Wahaca Loaded Nachos
   brand: Wahaca
@@ -367,7 +367,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,sulphites
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: wahaca_guacamole
   name: Wahaca Guacamole (per portion)
   brand: Wahaca
@@ -383,7 +383,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: fnb_classic_pepperoni_pizza
   name: F&B Classic Pepperoni Pizza
   brand: Frankie & Benny's
@@ -399,7 +399,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: fnb_meat_lovers_pizza
   name: F&B Meat Lovers Pizza
   brand: Frankie & Benny's
@@ -415,7 +415,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: fnb_classic_burger
   name: F&B Classic Burger
   brand: Frankie & Benny's
@@ -431,7 +431,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 480
-- source: gymflow
+- source: afletics
   source_id: fnb_chicken_milanese
   name: F&B Chicken Milanese
   brand: Frankie & Benny's
@@ -447,7 +447,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: fnb_lasagne
   name: F&B Lasagne Classico
   brand: Frankie & Benny's
@@ -463,7 +463,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: fnb_carbonara
   name: F&B Spaghetti Carbonara
   brand: Frankie & Benny's
@@ -479,7 +479,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: bella_pepperoni_pizza
   name: Bella Italia Pepperoni Pizza
   brand: Bella Italia
@@ -495,7 +495,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: bella_carbonara
   name: Bella Italia Carbonara
   brand: Bella Italia
@@ -511,7 +511,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: bella_chicken_milanese
   name: Bella Italia Chicken Milanese
   brand: Bella Italia
@@ -527,7 +527,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: bella_lasagne
   name: Bella Italia Lasagne al Forno
   brand: Bella Italia
@@ -543,7 +543,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: bella_pollo_funghi
   name: Bella Italia Pollo Funghi
   brand: Bella Italia
@@ -559,7 +559,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: prezzo_pepperoni_pizza
   name: Prezzo Pepperoni Pizza
   brand: Prezzo
@@ -575,7 +575,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: prezzo_carbonara
   name: Prezzo Carbonara
   brand: Prezzo
@@ -591,7 +591,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: prezzo_chicken_milanese
   name: Prezzo Chicken Milanese
   brand: Prezzo
@@ -607,7 +607,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: prezzo_lasagne
   name: Prezzo Lasagne al Forno
   brand: Prezzo
@@ -623,7 +623,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: yo_california_roll_4
   name: Yo! California Roll (4 pieces)
   brand: Yo! Sushi
@@ -639,7 +639,7 @@
   dietary_compat: pescatarian
   allergens: crustaceans,fish,soy,eggs,sesame
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: yo_salmon_nigiri_2
   name: Yo! Salmon Nigiri (2 pieces)
   brand: Yo! Sushi
@@ -655,7 +655,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: yo_chicken_katsu_curry
   name: Yo! Chicken Katsu Curry
   brand: Yo! Sushi
@@ -671,7 +671,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,celery
   unit_grams: 410
-- source: gymflow
+- source: afletics
   source_id: yo_chicken_teriyaki_donburi
   name: Yo! Chicken Teriyaki Donburi
   brand: Yo! Sushi
@@ -687,7 +687,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: yo_edamame_beans
   name: Yo! Edamame
   brand: Yo! Sushi
@@ -703,7 +703,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: yo_pork_gyoza_5
   name: Yo! Pork Gyoza (5)
   brand: Yo! Sushi
@@ -719,7 +719,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 26
-- source: gymflow
+- source: afletics
   source_id: honest_classic_burger
   name: Honest Burgers Classic
   brand: Honest Burgers
@@ -735,7 +735,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: honest_tribute_burger
   name: Honest Burgers Tribute
   brand: Honest Burgers
@@ -751,7 +751,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 420
-- source: gymflow
+- source: afletics
   source_id: honest_chicken_burger
   name: Honest Burgers Chicken
   brand: Honest Burgers
@@ -767,7 +767,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: honest_plant_burger
   name: Honest Burgers Plant
   brand: Honest Burgers
@@ -783,7 +783,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame,soy
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: honest_chips
   name: Honest Burgers Chips
   brand: Honest Burgers
@@ -799,7 +799,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: honest_rosemary_chips
   name: Honest Rosemary Chips
   brand: Honest Burgers
@@ -815,7 +815,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: patty_bun_ari_gold
   name: Patty & Bun Ari Gold
   brand: Patty & Bun
@@ -831,7 +831,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: patty_bun_smokey_robinson
   name: Patty & Bun Smokey Robinson
   brand: Patty & Bun
@@ -847,7 +847,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame,sulphites
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: patty_bun_chicken_burger
   name: Patty & Bun Coronation Chicken
   brand: Patty & Bun
@@ -863,7 +863,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: pho_chicken_pho
   name: Pho Chicken Pho
   brand: Pho
@@ -879,7 +879,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish,soy
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: pho_beef_pho
   name: Pho Beef Pho
   brand: Pho
@@ -895,7 +895,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish,soy
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: pho_summer_rolls_3
   name: Pho Summer Rolls (3)
   brand: Pho
@@ -911,7 +911,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: crustaceans,fish,soy,sesame
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: pho_banh_mi
   name: Pho Bánh Mì
   brand: Pho
@@ -927,7 +927,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,fish,soy,eggs
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: pho_chicken_curry
   name: Pho Chicken Curry
   brand: Pho
@@ -943,7 +943,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish,soy
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: kk_original_glazed
   name: Krispy Kreme Original Glazed
   brand: Krispy Kreme
@@ -959,7 +959,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 52
-- source: gymflow
+- source: afletics
   source_id: kk_chocolate_glazed
   name: Krispy Kreme Chocolate Iced Glazed
   brand: Krispy Kreme
@@ -975,7 +975,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: kk_strawberry_glazed
   name: Krispy Kreme Strawberry Iced
   brand: Krispy Kreme
@@ -991,7 +991,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: kk_original_filled
   name: Krispy Kreme Original Filled (Custard)
   brand: Krispy Kreme
@@ -1007,7 +1007,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 78
-- source: gymflow
+- source: afletics
   source_id: kk_lotus_biscoff
   name: Krispy Kreme Lotus Biscoff
   brand: Krispy Kreme
@@ -1023,7 +1023,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: iguanas_chicken_burrito
   name: Las Iguanas Chicken Burrito
   brand: Las Iguanas
@@ -1039,7 +1039,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: iguanas_chimichanga_chicken
   name: Las Iguanas Chicken Chimichanga
   brand: Las Iguanas
@@ -1055,7 +1055,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: iguanas_paella
   name: Las Iguanas Paella
   brand: Las Iguanas
@@ -1071,7 +1071,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: crustaceans,molluscs,sulphites
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: banana_tree_pad_thai
   name: Banana Tree Pad Thai Chicken
   brand: Banana Tree
@@ -1087,7 +1087,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,peanuts,fish,soy
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: busaba_pad_thai
   name: Busaba Pad Thai
   brand: Busaba
@@ -1103,7 +1103,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,peanuts,fish,soy
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: busaba_green_curry
   name: Busaba Green Curry Chicken
   brand: Busaba
@@ -1119,7 +1119,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,soy
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: rosas_thai_pad_kee_mao
   name: Rosa's Thai Pad Kee Mao Chicken
   brand: Rosa's Thai
@@ -1135,7 +1135,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,fish,soy
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: rosas_green_curry
   name: Rosa's Thai Green Curry Chicken
   brand: Rosa's Thai
@@ -1151,7 +1151,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,soy
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: rosas_thai_red_curry
   name: Rosa's Thai Red Curry Beef
   brand: Rosa's Thai
@@ -1167,7 +1167,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,soy
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: tortilla_chicken_burrito
   name: Tortilla Chicken Burrito
   brand: Tortilla
@@ -1183,7 +1183,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: tortilla_beef_burrito
   name: Tortilla Beef Burrito
   brand: Tortilla
@@ -1199,7 +1199,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: tortilla_naked_burrito_chicken
   name: Tortilla Naked Burrito Chicken
   brand: Tortilla
@@ -1215,7 +1215,7 @@
   dietary_compat: pescatarian
   allergens: milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: tortilla_quesadilla_chicken
   name: Tortilla Chicken Quesadilla
   brand: Tortilla
@@ -1231,7 +1231,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: chiquito_fajitas_chicken
   name: Chiquito Chicken Fajitas
   brand: Chiquito
@@ -1247,7 +1247,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: chiquito_burrito_chicken
   name: Chiquito Chicken Burrito
   brand: Chiquito
@@ -1263,7 +1263,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: chiquito_nachos_loaded
   name: Chiquito Loaded Nachos
   brand: Chiquito
@@ -1279,7 +1279,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,sulphites
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: patisserie_valerie_chocolate_cake
   name: Patisserie Valerie Chocolate Cake (slice)
   brand: Patisserie Valerie
@@ -1295,7 +1295,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: patisserie_valerie_red_velvet
   name: Patisserie Valerie Red Velvet (slice)
   brand: Patisserie Valerie
@@ -1311,7 +1311,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: hardrock_classic_burger
   name: Hard Rock Classic Burger
   brand: Hard Rock
@@ -1327,7 +1327,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 480
-- source: gymflow
+- source: afletics
   source_id: hardrock_chicken_sandwich
   name: Hard Rock Original Legendary Chicken Sandwich
   brand: Hard Rock
@@ -1343,7 +1343,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: greggs_belgian_bun
   name: Greggs Belgian Bun
   brand: Greggs
@@ -1359,7 +1359,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: greggs_iced_doughnut
   name: Greggs Iced Ring Doughnut
   brand: Greggs
@@ -1375,7 +1375,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: pret_oat_porridge_brown_sugar
   name: Pret Oat Porridge with Brown Sugar
   brand: Pret A Manger
@@ -1391,7 +1391,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 270
-- source: gymflow
+- source: afletics
   source_id: pret_chicken_pesto_pot
   name: Pret Chicken Pesto Pasta Pot
   brand: Pret A Manger
@@ -1407,7 +1407,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,tree_nuts
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: pret_smoked_salmon_avocado_box
   name: Pret Smoked Salmon & Avocado Box
   brand: Pret A Manger
@@ -1423,7 +1423,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: fish,milk,eggs,mustard
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: pret_crayfish_avocado_baguette
   name: Pret Crayfish & Avocado Baguette
   brand: Pret A Manger
@@ -1439,7 +1439,7 @@
   dietary_compat: pescatarian
   allergens: crustaceans,gluten,milk,eggs
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: costa_mocha_iced_med_oat
   name: Costa Iced Mocha (medium, oat)
   brand: Costa Coffee
@@ -1454,7 +1454,7 @@
   tags: chain,coffee,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy
-- source: gymflow
+- source: afletics
   source_id: costa_iced_caramel_macchiato
   name: Costa Iced Caramel Macchiato (medium)
   brand: Costa Coffee
@@ -1469,7 +1469,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: costa_chocolate_box
   name: Costa Chocolate Box Bar
   brand: Costa Coffee
@@ -1485,7 +1485,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs,soy
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: costa_tuna_sweetcorn_baguette
   name: Costa Tuna & Sweetcorn Baguette
   brand: Costa Coffee

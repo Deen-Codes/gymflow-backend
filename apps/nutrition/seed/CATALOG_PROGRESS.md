@@ -164,7 +164,7 @@
 ## Push commands
 
 ```bash
-cd ~/Documents/gymflow-backend
+cd ~/Documents/afletics-backend
 git add apps/nutrition/seed/
 git commit -m "FOOD-DB-V3-AUTO: 10K MVP complete (+5,899 entries across 64 new files)"
 git push

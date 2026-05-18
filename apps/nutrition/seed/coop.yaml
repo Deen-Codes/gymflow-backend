@@ -1,5 +1,5 @@
 # coop.yaml — Co-op own-brand items. 50 entries covering most-logged staples.
-- source: gymflow
+- source: afletics
   source_id: coop_greek_yogurt_natural_500
   name: Co-op Greek Style Natural Yogurt
   brand: Co-op
@@ -15,7 +15,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: coop_greek_yogurt_0pct
   name: Co-op Greek Style 0% Fat Yogurt
   brand: Co-op
@@ -31,7 +31,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: coop_skyr_vanilla
   name: Co-op Vanilla Skyr
   brand: Co-op
@@ -47,7 +47,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: coop_milk_semi
   name: Co-op British Semi-skimmed Milk
   brand: Co-op
@@ -62,7 +62,7 @@
   tags: supermarket,dairy
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: coop_milk_whole
   name: Co-op British Whole Milk
   brand: Co-op
@@ -77,7 +77,7 @@
   tags: supermarket,dairy
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: coop_cheddar_mature
   name: Co-op Mature Cheddar
   brand: Co-op
@@ -93,7 +93,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: coop_butter_unsalted
   name: Co-op Unsalted Butter
   brand: Co-op
@@ -109,7 +109,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: coop_eggs_free_range_med
   name: Co-op Free Range Medium Eggs
   brand: Co-op
@@ -125,7 +125,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: coop_eggs_free_range_lge
   name: Co-op Free Range Large Eggs
   brand: Co-op
@@ -141,7 +141,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: coop_loved_white_bread
   name: Co-op Loved by Us White Bread
   brand: Co-op
@@ -157,7 +157,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: coop_loved_wholemeal_bread
   name: Co-op Loved by Us Wholemeal Bread
   brand: Co-op
@@ -173,7 +173,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: coop_50_50_bread
   name: Co-op 50/50 Medium Bread
   brand: Co-op
@@ -189,7 +189,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 36
-- source: gymflow
+- source: afletics
   source_id: coop_seeded_bread
   name: Co-op Seeded Bloomer
   brand: Co-op
@@ -205,7 +205,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: coop_brioche_buns_4
   name: Co-op Brioche Buns
   brand: Co-op
@@ -221,7 +221,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: coop_white_wraps
   name: Co-op White Tortilla Wraps
   brand: Co-op
@@ -237,7 +237,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 64
-- source: gymflow
+- source: afletics
   source_id: coop_pitta_white_5
   name: Co-op White Pitta Breads
   brand: Co-op
@@ -253,7 +253,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: coop_chicken_breast_fillets
   name: Co-op British Chicken Breast Fillets
   brand: Co-op
@@ -268,7 +268,7 @@
   tags: supermarket,meat,chicken,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: coop_chicken_thighs
   name: Co-op British Chicken Thighs
   brand: Co-op
@@ -283,7 +283,7 @@
   tags: supermarket,meat,chicken,high_protein
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: coop_lean_beef_mince_5pct
   name: Co-op Lean Beef Mince 5% Fat
   brand: Co-op
@@ -298,7 +298,7 @@
   tags: supermarket,meat,high_protein,low_fat
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: coop_pork_sausages_8
   name: Co-op British Pork Sausages
   brand: Co-op
@@ -314,7 +314,7 @@
   dietary_compat: pescatarian
   allergens: gluten,sulphites
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: coop_bacon_smoked_back
   name: Co-op Smoked Back Bacon
   brand: Co-op
@@ -330,7 +330,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: coop_ham_wafer_thin
   name: Co-op Wafer Thin Ham
   brand: Co-op
@@ -346,7 +346,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: coop_tuna_chunks_water
   name: Co-op Tuna Chunks in Spring Water
   brand: Co-op
@@ -362,7 +362,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: coop_smoked_salmon
   name: Co-op Smoked Scottish Salmon
   brand: Co-op
@@ -378,7 +378,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: coop_salmon_fillets
   name: Co-op Salmon Fillets
   brand: Co-op
@@ -394,7 +394,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: coop_porridge_oats
   name: Co-op Porridge Oats
   brand: Co-op
@@ -409,7 +409,7 @@
   tags: supermarket,cereal,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: coop_corn_flakes
   name: Co-op Corn Flakes
   brand: Co-op
@@ -424,7 +424,7 @@
   tags: supermarket,cereal,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: coop_bran_flakes
   name: Co-op Bran Flakes
   brand: Co-op
@@ -439,7 +439,7 @@
   tags: supermarket,cereal,breakfast,fibre
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: coop_granola_fruit_nut
   name: Co-op Fruit & Nut Granola
   brand: Co-op
@@ -454,7 +454,7 @@
   tags: supermarket,cereal,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: coop_white_pasta_dry
   name: Co-op Penne Pasta (dry)
   brand: Co-op
@@ -469,7 +469,7 @@
   tags: supermarket,grain,pasta
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: coop_basmati_rice_dry
   name: Co-op Basmati Rice (dry)
   brand: Co-op
@@ -484,7 +484,7 @@
   tags: supermarket,grain,rice
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: coop_white_rice_microwave
   name: Co-op Microwave White Rice
   brand: Co-op
@@ -500,7 +500,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: coop_milk_chocolate_bar
   name: Co-op Milk Chocolate Bar
   brand: Co-op
@@ -516,7 +516,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 45
-- source: gymflow
+- source: afletics
   source_id: coop_chocolate_cookies
   name: Co-op Chocolate Chip Cookies
   brand: Co-op
@@ -532,7 +532,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 12
-- source: gymflow
+- source: afletics
   source_id: coop_ready_salted_crisps
   name: Co-op Ready Salted Crisps
   brand: Co-op
@@ -548,7 +548,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: coop_salt_vinegar_crisps
   name: Co-op Salt & Vinegar Crisps
   brand: Co-op
@@ -564,7 +564,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: coop_chicken_tikka_masala_meal
   name: Co-op Chicken Tikka Masala
   brand: Co-op
@@ -580,7 +580,7 @@
   dietary_compat: pescatarian
   allergens: milk,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: coop_lasagne_meal
   name: Co-op Beef Lasagne
   brand: Co-op
@@ -596,7 +596,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: coop_cottage_pie_meal
   name: Co-op Cottage Pie
   brand: Co-op
@@ -612,7 +612,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: coop_thai_green_curry_meal
   name: Co-op Thai Green Chicken Curry
   brand: Co-op
@@ -628,7 +628,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: coop_orange_juice_smooth
   name: Co-op Smooth Orange Juice
   brand: Co-op
@@ -643,7 +643,7 @@
   tags: supermarket,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: coop_apple_juice
   name: Co-op Apple Juice
   brand: Co-op
@@ -658,7 +658,7 @@
   tags: supermarket,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: coop_water_still_500
   name: Co-op Still Water
   brand: Co-op
@@ -674,7 +674,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: coop_frozen_chips
   name: Co-op Oven Chips (frozen)
   brand: Co-op
@@ -689,7 +689,7 @@
   tags: supermarket,frozen,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: coop_frozen_peas
   name: Co-op Garden Peas (frozen)
   brand: Co-op
@@ -704,7 +704,7 @@
   tags: supermarket,frozen,vegetable,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: coop_frozen_pizza_pepperoni
   name: Co-op Pepperoni Pizza (frozen)
   brand: Co-op
@@ -720,7 +720,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: coop_tomato_sauce
   name: Co-op Tomato Ketchup
   brand: Co-op
@@ -736,7 +736,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 17
-- source: gymflow
+- source: afletics
   source_id: coop_mayonnaise
   name: Co-op Real Mayonnaise
   brand: Co-op
@@ -752,7 +752,7 @@
   dietary_compat: vegetarian,pescatarian,gluten_free
   allergens: eggs,mustard
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: coop_pasta_sauce_tomato
   name: Co-op Tomato & Basil Pasta Sauce
   brand: Co-op
@@ -767,7 +767,7 @@
   tags: supermarket,condiment
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: coop_baked_beans
   name: Co-op Baked Beans in Tomato Sauce
   brand: Co-op
@@ -782,7 +782,7 @@
   tags: supermarket,canned,pulses
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: coop_chickpeas_canned
   name: Co-op Chickpeas (canned, drained)
   brand: Co-op
@@ -797,7 +797,7 @@
   tags: supermarket,canned,pulses,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: coop_peanut_butter_smooth
   name: Co-op Smooth Peanut Butter
   brand: Co-op
@@ -813,7 +813,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: peanuts
   unit_grams: 16
-- source: gymflow
+- source: afletics
   source_id: coop_almonds_30g
   name: Co-op Whole Almonds
   brand: Co-op

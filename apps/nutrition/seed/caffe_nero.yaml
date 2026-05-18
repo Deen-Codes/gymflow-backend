@@ -2,7 +2,7 @@
 # Coffees use ml (volumetric); food per piece.
 # Source: caffenero.com/uk/menu.
 
-- source: gymflow
+- source: afletics
   source_id: caffenero_espresso
   name: Espresso
   brand: Caffè Nero
@@ -17,7 +17,7 @@
   tags: chain,coffee,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: caffenero_double_espresso
   name: Double Espresso
   brand: Caffè Nero
@@ -32,7 +32,7 @@
   tags: chain,coffee,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: caffenero_americano
   name: Americano
   brand: Caffè Nero
@@ -47,7 +47,7 @@
   tags: chain,coffee,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: caffenero_flat_white_semi
   name: Flat White, semi-skimmed
   brand: Caffè Nero
@@ -62,7 +62,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: caffenero_flat_white_oat
   name: Flat White, oat milk
   brand: Caffè Nero
@@ -77,7 +77,7 @@
   tags: chain,coffee,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: caffenero_cappuccino_med_semi
   name: Cappuccino, regular, semi-skimmed
   brand: Caffè Nero
@@ -92,7 +92,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: caffenero_latte_med_semi
   name: Latte, regular, semi-skimmed
   brand: Caffè Nero
@@ -107,7 +107,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: caffenero_latte_med_oat
   name: Latte, regular, oat milk
   brand: Caffè Nero
@@ -122,7 +122,7 @@
   tags: chain,coffee,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: caffenero_mocha_med_semi
   name: Mocha, regular, semi-skimmed
   brand: Caffè Nero
@@ -137,7 +137,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
-- source: gymflow
+- source: afletics
   source_id: caffenero_hot_choc_med_semi
   name: Hot Chocolate, regular, semi-skimmed
   brand: Caffè Nero
@@ -152,7 +152,7 @@
   tags: chain,drink
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
-- source: gymflow
+- source: afletics
   source_id: caffenero_chai_latte_med_semi
   name: Chai Latte, regular, semi-skimmed
   brand: Caffè Nero
@@ -167,7 +167,7 @@
   tags: chain,drink
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: caffenero_iced_americano
   name: Iced Americano
   brand: Caffè Nero
@@ -182,7 +182,7 @@
   tags: chain,coffee,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: caffenero_iced_latte_semi
   name: Iced Latte, semi-skimmed
   brand: Caffè Nero
@@ -197,7 +197,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: caffenero_frappe_caramel
   name: Caramel Frappé
   brand: Caffè Nero
@@ -212,7 +212,7 @@
   tags: chain,coffee,drink
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: caffenero_panini_classic_chicken
   name: Classic Chicken Panini
   brand: Caffè Nero
@@ -228,7 +228,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: caffenero_panini_mozzarella_tomato
   name: Mozzarella & Tomato Panini
   brand: Caffè Nero
@@ -244,7 +244,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 215
-- source: gymflow
+- source: afletics
   source_id: caffenero_panini_ham_cheese
   name: Ham & Cheese Toastie
   brand: Caffè Nero
@@ -260,7 +260,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: caffenero_panini_tuna_melt
   name: Tuna Melt Panini
   brand: Caffè Nero
@@ -276,7 +276,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,fish
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: caffenero_sandwich_chicken_salad
   name: Chicken Salad Sandwich
   brand: Caffè Nero
@@ -292,7 +292,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,mustard
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: caffenero_sandwich_egg_mayo
   name: Egg Mayonnaise Sandwich
   brand: Caffè Nero
@@ -308,7 +308,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,mustard
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: caffenero_focaccia_chicken
   name: Chicken & Mediterranean Focaccia
   brand: Caffè Nero
@@ -324,7 +324,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: caffenero_chocolate_brownie
   name: Chocolate Brownie
   brand: Caffè Nero
@@ -340,7 +340,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs,soy
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: caffenero_almond_croissant
   name: Almond Croissant
   brand: Caffè Nero
@@ -356,7 +356,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,tree_nuts
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: caffenero_pain_au_chocolat
   name: Pain au Chocolat
   brand: Caffè Nero
@@ -372,7 +372,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: caffenero_lemon_drizzle
   name: Lemon Drizzle Cake
   brand: Caffè Nero
@@ -388,7 +388,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: caffenero_carrot_cake
   name: Carrot Cake
   brand: Caffè Nero
@@ -404,7 +404,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,tree_nuts
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: caffenero_belgian_waffle
   name: Belgian Waffle
   brand: Caffè Nero
@@ -420,7 +420,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: caffenero_porridge_oat
   name: Oat Porridge
   brand: Caffè Nero
@@ -436,7 +436,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: caffenero_breakfast_panini
   name: Bacon Breakfast Panini
   brand: Caffè Nero
@@ -452,7 +452,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: caffenero_smoothie_berry
   name: Berry Smoothie
   brand: Caffè Nero
@@ -467,7 +467,7 @@
   tags: chain,coffee,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: caffenero_orange_juice
   name: Fresh Orange Juice
   brand: Caffè Nero

@@ -1,5 +1,5 @@
 /* ============================================================
-   GymFlow Hub — front-page interactivity.
+   Afletics Hub — front-page interactivity.
 
    Job:
      • Count-up animation on every [data-count-to] element.
@@ -77,7 +77,7 @@
        once-and-done banners stay gone across reloads. Storage
        key is namespaced per dismiss-id (e.g. "setup-complete").
        --------------------------------------------------------- */
-    var DISMISS_KEY = "gymflow.hub.dismissed";
+    var DISMISS_KEY = "afletics.hub.dismissed";
 
     function getDismissed() {
         try {

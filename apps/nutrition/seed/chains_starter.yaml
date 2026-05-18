@@ -1,5 +1,5 @@
 # chains_starter.yaml — residual.
-- source: gymflow
+- source: afletics
   source_id: dominos_pepperoni_passion_med_slice
   name: Domino's Pepperoni Passion, Medium Pizza
   brand: Domino's

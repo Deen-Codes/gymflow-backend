@@ -1,6 +1,6 @@
 # african.yaml — Nigerian/West African + Ethiopian + South African + Moroccan + Ghanaian dishes.
 
-- source: gymflow
+- source: afletics
   source_id: afr_jollof_rice
   name: Jollof Rice
   brand: ''
@@ -16,7 +16,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: afr_jollof_chicken_meal
   name: Jollof Rice with Chicken
   brand: ''
@@ -32,7 +32,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: afr_egusi_soup
   name: Egusi Soup
   brand: ''
@@ -48,7 +48,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: afr_pepper_soup_chicken
   name: Pepper Soup (Chicken)
   brand: ''
@@ -64,7 +64,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: afr_efo_riro
   name: Efo Riro (Spinach Stew)
   brand: ''
@@ -80,7 +80,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: afr_okra_soup
   name: Okra Soup
   brand: ''
@@ -96,7 +96,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: afr_suya_beef
   name: Suya (Beef Skewer)
   brand: ''
@@ -112,7 +112,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: peanuts
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: afr_suya_chicken
   name: Chicken Suya Skewer
   brand: ''
@@ -128,7 +128,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: peanuts
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: afr_fufu_pounded_yam
   name: Pounded Yam / Fufu (per 100g)
   brand: ''
@@ -143,7 +143,7 @@
   tags: african,nigerian,grain,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: afr_eba_garri
   name: Eba (cooked Garri, per 100g)
   brand: ''
@@ -158,7 +158,7 @@
   tags: african,nigerian,grain,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: afr_amala
   name: Amala (yam flour, per 100g)
   brand: ''
@@ -173,7 +173,7 @@
   tags: african,nigerian,grain,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: afr_pounded_yam
   name: Pounded Yam (per 100g)
   brand: ''
@@ -188,7 +188,7 @@
   tags: african,nigerian,grain,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: afr_akara_3
   name: Akara (Bean Cakes, 3)
   brand: ''
@@ -204,7 +204,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: afr_moin_moin
   name: Moin Moin (Steamed Bean Cake)
   brand: ''
@@ -220,7 +220,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: afr_puff_puff_3
   name: Puff Puff (3)
   brand: ''
@@ -236,7 +236,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: afr_chin_chin_30g
   name: Chin Chin (30g)
   brand: ''
@@ -252,7 +252,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: afr_meat_pie
   name: Nigerian Meat Pie
   brand: ''
@@ -268,7 +268,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: afr_fried_rice_nigerian
   name: Nigerian Fried Rice
   brand: ''
@@ -284,7 +284,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy,eggs
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: afr_plantain_chips_30g
   name: Plantain Chips (30g)
   brand: ''
@@ -300,7 +300,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: afr_shawarma_chicken_nigerian
   name: Nigerian-Style Chicken Shawarma
   brand: ''
@@ -316,7 +316,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: afr_doro_wat
   name: Doro Wat (Ethiopian Chicken Stew)
   brand: ''
@@ -332,7 +332,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: eggs
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: afr_injera_50g
   name: Injera (1 piece)
   brand: ''
@@ -348,7 +348,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: afr_misir_wat
   name: Misir Wat (Lentil Stew)
   brand: ''
@@ -364,7 +364,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: afr_kitfo_lean
   name: Kitfo (Spiced Beef)
   brand: ''
@@ -380,7 +380,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: afr_shiro_wat
   name: Shiro Wat (Chickpea Stew)
   brand: ''
@@ -396,7 +396,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: afr_berbere_seasoning_5g
   name: Berbere Seasoning (1 tsp/5g)
   brand: ''
@@ -412,7 +412,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: afr_bobotie
   name: Bobotie (per 200g)
   brand: ''
@@ -428,7 +428,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: afr_boerewors_cooked
   name: Boerewors (cooked, per 100g)
   brand: ''
@@ -443,7 +443,7 @@
   tags: african,south_african,meat,branded
   dietary_compat: pescatarian,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: afr_pap_cooked
   name: Pap (Maize porridge, per 100g)
   brand: ''
@@ -458,7 +458,7 @@
   tags: african,south_african,grain,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: afr_chakalaka_relish
   name: Chakalaka (per 100g)
   brand: ''
@@ -473,7 +473,7 @@
   tags: african,south_african,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: afr_biltong_traditional_30g
   name: Traditional Biltong (30g)
   brand: ''
@@ -489,7 +489,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: afr_droewors_30g
   name: Droewors (30g)
   brand: ''
@@ -505,7 +505,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: afr_kelewele
   name: Kelewele (Spiced Plantain)
   brand: ''
@@ -521,7 +521,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: afr_red_red
   name: Red Red (Black-Eyed Beans Stew)
   brand: ''
@@ -537,7 +537,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: afr_kenkey_corn_dumpling
   name: Kenkey (Corn Dumpling)
   brand: ''
@@ -552,7 +552,7 @@
   tags: african,ghanaian,grain,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: afr_waakye
   name: Waakye (Rice & Beans)
   brand: ''
@@ -568,7 +568,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: afr_tagine_chicken
   name: Chicken Tagine
   brand: ''
@@ -584,7 +584,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: afr_tagine_lamb
   name: Lamb Tagine
   brand: ''
@@ -600,7 +600,7 @@
   dietary_compat: halal,kosher,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: afr_couscous_moroccan
   name: Moroccan Couscous (cooked, per 100g)
   brand: ''
@@ -615,7 +615,7 @@
   tags: african,north_african,grain,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: afr_harira_soup
   name: Harira (Moroccan Soup)
   brand: ''
@@ -631,7 +631,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,celery
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: afr_moroccan_lentil_soup
   name: Moroccan Lentil Soup
   brand: ''

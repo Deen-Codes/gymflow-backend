@@ -1,6 +1,6 @@
 # ice_cream_brands.yaml — Little Moons mochi (6 flavours), more Häagen-Dazs (Cookies & Cream, Salted Caramel, Strawberry, Pralines), more Ben & Jerry's (Half Baked, Caramel Chew Chew, Karamel Sutra, Choc Fudge Brownie), Magnum Mint/Caramel Billionaire/Dark, Wall's Soft Scoop, Carte D'Or, Mr Whippy, sorbets, Booja-Booja vegan, Mövenpick, Cornetto Strawberry/Mint.
 
-- source: gymflow
+- source: afletics
   source_id: little_moons_mango_passionfruit_6
   name: Little Moons Mango & Passionfruit (1 piece)
   brand: Little Moons
@@ -16,7 +16,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
   unit_grams: 32
-- source: gymflow
+- source: afletics
   source_id: little_moons_strawberry_6
   name: Little Moons Strawberry & Raspberry
   brand: Little Moons
@@ -32,7 +32,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
   unit_grams: 32
-- source: gymflow
+- source: afletics
   source_id: little_moons_chocolate_6
   name: Little Moons Belgian Chocolate
   brand: Little Moons
@@ -48,7 +48,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs,soy
   unit_grams: 32
-- source: gymflow
+- source: afletics
   source_id: little_moons_vanilla_6
   name: Little Moons Madagascan Vanilla
   brand: Little Moons
@@ -64,7 +64,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
   unit_grams: 32
-- source: gymflow
+- source: afletics
   source_id: little_moons_salted_caramel_6
   name: Little Moons Salted Caramel
   brand: Little Moons
@@ -80,7 +80,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
   unit_grams: 32
-- source: gymflow
+- source: afletics
   source_id: little_moons_pink_lemonade_6
   name: Little Moons Pink Lemonade Sorbet
   brand: Little Moons
@@ -96,7 +96,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 32
-- source: gymflow
+- source: afletics
   source_id: haagen_dazs_cookies_cream_100g
   name: Häagen-Dazs Cookies & Cream (per 100g)
   brand: Häagen-Dazs
@@ -111,7 +111,7 @@
   tags: frozen,branded,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
-- source: gymflow
+- source: afletics
   source_id: haagen_dazs_salted_caramel_100g
   name: Häagen-Dazs Salted Caramel (per 100g)
   brand: Häagen-Dazs
@@ -126,7 +126,7 @@
   tags: frozen,branded,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
-- source: gymflow
+- source: afletics
   source_id: haagen_dazs_strawberry_100g
   name: Häagen-Dazs Strawberries & Cream (per 100g)
   brand: Häagen-Dazs
@@ -141,7 +141,7 @@
   tags: frozen,branded,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
-- source: gymflow
+- source: afletics
   source_id: haagen_dazs_pralines_cream_100g
   name: Häagen-Dazs Pralines & Cream (per 100g)
   brand: Häagen-Dazs
@@ -156,7 +156,7 @@
   tags: frozen,branded,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs,tree_nuts,soy
-- source: gymflow
+- source: afletics
   source_id: ben_jerrys_half_baked_100g
   name: Ben & Jerry's Half Baked (per 100g)
   brand: Ben & Jerry's
@@ -171,7 +171,7 @@
   tags: frozen,branded,dessert
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs,soy
-- source: gymflow
+- source: afletics
   source_id: ben_jerrys_caramel_chew_100g
   name: Ben & Jerry's Caramel Chew Chew (per 100g)
   brand: Ben & Jerry's
@@ -186,7 +186,7 @@
   tags: frozen,branded,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
-- source: gymflow
+- source: afletics
   source_id: ben_jerrys_karamel_sutra_100g
   name: Ben & Jerry's Karamel Sutra (per 100g)
   brand: Ben & Jerry's
@@ -201,7 +201,7 @@
   tags: frozen,branded,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,eggs,soy
-- source: gymflow
+- source: afletics
   source_id: ben_jerrys_chocolate_fudge_100g
   name: Ben & Jerry's Chocolate Fudge Brownie (per 100g)
   brand: Ben & Jerry's
@@ -216,7 +216,7 @@
   tags: frozen,branded,dessert
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs,soy
-- source: gymflow
+- source: afletics
   source_id: magnum_mint_bar
   name: Magnum Mint (1 bar)
   brand: Magnum
@@ -232,7 +232,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,eggs,soy
   unit_grams: 79
-- source: gymflow
+- source: afletics
   source_id: magnum_caramel_billionaire_bar
   name: Magnum Caramel Billionaire (1 bar)
   brand: Magnum
@@ -248,7 +248,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 88
-- source: gymflow
+- source: afletics
   source_id: magnum_dark_chocolate_bar
   name: Magnum Dark Chocolate (1 bar)
   brand: Magnum
@@ -264,7 +264,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,eggs,soy
   unit_grams: 79
-- source: gymflow
+- source: afletics
   source_id: walls_soft_scoop_vanilla_100g
   name: Wall's Soft Scoop Vanilla (per 100g)
   brand: Wall's
@@ -279,7 +279,7 @@
   tags: frozen,branded,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
-- source: gymflow
+- source: afletics
   source_id: carte_dor_vanilla_100g
   name: Carte D'Or Vanilla (per 100g)
   brand: Carte D'Or
@@ -294,7 +294,7 @@
   tags: frozen,branded,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
-- source: gymflow
+- source: afletics
   source_id: carte_dor_chocolate_100g
   name: Carte D'Or Chocolate (per 100g)
   brand: Carte D'Or
@@ -309,7 +309,7 @@
   tags: frozen,branded,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,eggs,soy
-- source: gymflow
+- source: afletics
   source_id: mr_whippy_99_with_flake
   name: Mr Whippy 99 Cone with Flake
   brand: ''
@@ -325,7 +325,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: mr_whippy_plain_cone
   name: Mr Whippy Plain Cone
   brand: ''
@@ -341,7 +341,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: sorbet_lemon_100g
   name: Lemon Sorbet (per 100g)
   brand: ''
@@ -356,7 +356,7 @@
   tags: frozen,dessert,vegan,low_fat
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sorbet_mango_100g
   name: Mango Sorbet (per 100g)
   brand: ''
@@ -371,7 +371,7 @@
   tags: frozen,dessert,vegan,low_fat
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: booja_booja_chocolate_100g
   name: Booja-Booja Chocolate (per 100g)
   brand: Booja-Booja
@@ -386,7 +386,7 @@
   tags: frozen,branded,dessert,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: tree_nuts,soy
-- source: gymflow
+- source: afletics
   source_id: movenpick_swiss_chocolate_100g
   name: Mövenpick Swiss Chocolate (per 100g)
   brand: Mövenpick
@@ -401,7 +401,7 @@
   tags: frozen,branded,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,eggs,soy
-- source: gymflow
+- source: afletics
   source_id: cornetto_strawberry_cone
   name: Cornetto Strawberry
   brand: Cornetto
@@ -417,7 +417,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: cornetto_mint_cone
   name: Cornetto Mint
   brand: Cornetto

@@ -1,6 +1,6 @@
 # cheeses_extra.yaml — UK + European cheese variety: Red Leicester, Wensleydale + Cranberry, Lancashire, Cheshire, Double Gloucester, Edam, Gouda, Emmental, Manchego, Applewood smoked, goats cheese, Boursin, Laughing Cow, Dairylea, Mascarpone, Ricotta, Burrata, grated cheddar/mozzarella, Buffalo Mozzarella, paneer, halloumi, baked Brie/Camembert.
 
-- source: gymflow
+- source: afletics
   source_id: cheese_red_leicester_30g
   name: Red Leicester (30g)
   brand: ''
@@ -16,7 +16,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cheese_wensleydale_30g
   name: Wensleydale (30g)
   brand: ''
@@ -32,7 +32,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cheese_wensleydale_cranberry_30g
   name: Wensleydale & Cranberry (30g)
   brand: ''
@@ -48,7 +48,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cheese_double_gloucester_30g
   name: Double Gloucester (30g)
   brand: ''
@@ -64,7 +64,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cheese_lancashire_30g
   name: Lancashire Cheese (30g)
   brand: ''
@@ -80,7 +80,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cheese_cheshire_30g
   name: Cheshire Cheese (30g)
   brand: ''
@@ -96,7 +96,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cheese_edam_30g
   name: Edam (30g)
   brand: ''
@@ -112,7 +112,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cheese_gouda_30g
   name: Gouda (30g)
   brand: ''
@@ -128,7 +128,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cheese_emmental_30g
   name: Emmental (30g)
   brand: ''
@@ -144,7 +144,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cheese_manchego_30g
   name: Manchego (30g)
   brand: ''
@@ -160,7 +160,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cheese_smoked_applewood_30g
   name: Applewood Smoked Cheddar (30g)
   brand: Applewood
@@ -176,7 +176,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cheese_goats_soft_30g
   name: Soft Goats Cheese (30g)
   brand: ''
@@ -191,7 +191,7 @@
   tags: whole,dairy
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: cheese_goats_hard_30g
   name: Hard Goats Cheese (30g)
   brand: ''
@@ -207,7 +207,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cheese_boursin_garlic_30g
   name: Boursin Garlic & Herbs (30g)
   brand: Boursin
@@ -223,7 +223,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: cheese_laughing_cow_light_2
   name: Laughing Cow Light Triangles (2)
   brand: Laughing Cow
@@ -239,7 +239,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 17.5
-- source: gymflow
+- source: afletics
   source_id: cheese_laughing_cow_original_2
   name: Laughing Cow Original Triangles (2)
   brand: Laughing Cow
@@ -255,7 +255,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 17.5
-- source: gymflow
+- source: afletics
   source_id: cheese_dairylea_triangles_2
   name: Dairylea Triangles (2)
   brand: Dairylea
@@ -271,7 +271,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 18
-- source: gymflow
+- source: afletics
   source_id: cheese_dairylea_lunchables
   name: Dairylea Lunchables Ham (1 pack)
   brand: Dairylea
@@ -287,7 +287,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 75
-- source: gymflow
+- source: afletics
   source_id: cheese_mascarpone_30g
   name: Mascarpone (30g)
   brand: ''
@@ -303,7 +303,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: cheese_ricotta_30g
   name: Ricotta (30g)
   brand: ''
@@ -319,7 +319,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: cheese_burrata_60g
   name: Burrata (1 ball/60g)
   brand: ''
@@ -335,7 +335,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: cheese_grated_cheddar_30g
   name: Grated Mature Cheddar (30g)
   brand: ''
@@ -351,7 +351,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: cheese_grated_mozzarella_30g
   name: Grated Mozzarella (30g)
   brand: ''
@@ -367,7 +367,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: cheese_buffalo_mozzarella_125g
   name: Buffalo Mozzarella (per 100g)
   brand: ''
@@ -383,7 +383,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 125
-- source: gymflow
+- source: afletics
   source_id: cheese_paneer_30g
   name: Paneer (30g)
   brand: ''
@@ -398,7 +398,7 @@
   tags: whole,dairy,high_protein
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: cheese_haloumi_30g_alt
   name: Halloumi (30g)
   brand: ''
@@ -414,7 +414,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cheese_brie_baked_30g
   name: Baked Brie (30g)
   brand: ''
@@ -430,7 +430,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cheese_camembert_baked_30g
   name: Baked Camembert (30g)
   brand: ''

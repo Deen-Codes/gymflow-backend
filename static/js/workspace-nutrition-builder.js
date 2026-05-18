@@ -1,5 +1,5 @@
 /* ====================================================================
- * GymFlow — drag-drop nutrition builder
+ * Afletics — drag-drop nutrition builder
  * ====================================================================
  * Powers `templates/dashboard/dashboard_nutrition_plans.html`.
  *

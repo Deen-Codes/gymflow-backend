@@ -18,7 +18,7 @@ User-submitted bug reports from the iOS Profile sheet. One endpoint:
 
 Side-effects:
   • Creates a `BugReport` row.
-  • Fires a Resend email to the GymFlow inbox so reports show up in
+  • Fires a Resend email to the Afletics inbox so reports show up in
     Deen's mailbox without needing to open Django admin. Email is
     plain-text + an embedded screenshot when present.
 
@@ -55,7 +55,7 @@ MAX_SCREENSHOT_BYTES = 3 * 1024 * 1024
 # be tuned per environment without code changes (local dev → personal
 # inbox, prod → triage inbox).
 BUG_REPORT_INBOX = getattr(
-    settings, "BUG_REPORT_INBOX", "hello@gymflow.coach",
+    settings, "BUG_REPORT_INBOX", "hello@afletics.com",
 )
 
 
@@ -138,7 +138,7 @@ def _send_notification_email(report: BugReport, user, *, has_screenshot: bool) -
     client and Resend doesn't add render quirks on plain bodies.
     Screenshot bytes attach as an image/jpeg part when present.
     """
-    subject = f"[GymFlow bug] {report.what_happened[:60]}"
+    subject = f"[Afletics bug] {report.what_happened[:60]}"
     body_lines = [
         f"Bug report #{report.id}",
         "",

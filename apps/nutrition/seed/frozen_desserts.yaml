@@ -1,6 +1,6 @@
 # frozen_desserts.yaml — ice cream brands, lollies, low-calorie variants.
 
-- source: gymflow
+- source: afletics
   source_id: ice_cream_vanilla_generic
   name: Vanilla Ice Cream (per 100g)
   brand: ''
@@ -15,7 +15,7 @@
   tags: frozen,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
-- source: gymflow
+- source: afletics
   source_id: ice_cream_chocolate_generic
   name: Chocolate Ice Cream (per 100g)
   brand: ''
@@ -30,7 +30,7 @@
   tags: frozen,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,eggs,soy
-- source: gymflow
+- source: afletics
   source_id: ice_cream_strawberry_generic
   name: Strawberry Ice Cream (per 100g)
   brand: ''
@@ -45,7 +45,7 @@
   tags: frozen,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
-- source: gymflow
+- source: afletics
   source_id: ben_jerrys_phish_food_100g
   name: Ben & Jerry's Phish Food (per 100g)
   brand: Ben & Jerry's
@@ -60,7 +60,7 @@
   tags: frozen,branded,dessert
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs,soy
-- source: gymflow
+- source: afletics
   source_id: ben_jerrys_cookie_dough_100g
   name: Ben & Jerry's Cookie Dough (per 100g)
   brand: Ben & Jerry's
@@ -75,7 +75,7 @@
   tags: frozen,branded,dessert
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs,soy
-- source: gymflow
+- source: afletics
   source_id: ben_jerrys_chunky_monkey_100g
   name: Ben & Jerry's Chunky Monkey (per 100g)
   brand: Ben & Jerry's
@@ -90,7 +90,7 @@
   tags: frozen,branded,dessert
   dietary_compat: vegetarian,pescatarian
   allergens: milk,eggs,tree_nuts,soy
-- source: gymflow
+- source: afletics
   source_id: haagen_dazs_vanilla_100g
   name: Häagen-Dazs Vanilla (per 100g)
   brand: Häagen-Dazs
@@ -105,7 +105,7 @@
   tags: frozen,branded,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
-- source: gymflow
+- source: afletics
   source_id: haagen_dazs_choc_choc_chip_100g
   name: Häagen-Dazs Belgian Chocolate (per 100g)
   brand: Häagen-Dazs
@@ -120,7 +120,7 @@
   tags: frozen,branded,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs,soy
-- source: gymflow
+- source: afletics
   source_id: magnum_classic_bar
   name: Magnum Classic (1 bar)
   brand: Magnum
@@ -136,7 +136,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,eggs,soy
   unit_grams: 79
-- source: gymflow
+- source: afletics
   source_id: magnum_almond_bar
   name: Magnum Almond (1 bar)
   brand: Magnum
@@ -152,7 +152,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,eggs,tree_nuts,soy
   unit_grams: 86
-- source: gymflow
+- source: afletics
   source_id: magnum_white_bar
   name: Magnum White (1 bar)
   brand: Magnum
@@ -168,7 +168,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,eggs,soy
   unit_grams: 79
-- source: gymflow
+- source: afletics
   source_id: magnum_double_caramel_bar
   name: Magnum Double Caramel (1 bar)
   brand: Magnum
@@ -184,7 +184,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,eggs,soy
   unit_grams: 88
-- source: gymflow
+- source: afletics
   source_id: cornetto_classico
   name: Cornetto Classico (1 cone)
   brand: Cornetto
@@ -200,7 +200,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy,tree_nuts
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: twister_lolly
   name: Twister Lolly (1 piece)
   brand: Twister
@@ -216,7 +216,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: solero_exotic
   name: Solero Exotic (1 lolly)
   brand: Solero
@@ -232,7 +232,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: calippo_orange
   name: Calippo Orange (1 lolly)
   brand: Calippo
@@ -248,7 +248,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 105
-- source: gymflow
+- source: afletics
   source_id: fab_lolly
   name: FAB Strawberry Lolly
   brand: FAB
@@ -264,7 +264,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 58
-- source: gymflow
+- source: afletics
   source_id: mini_milk
   name: Mini Milk Lolly
   brand: Mini Milk
@@ -280,7 +280,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: feast_chocolate
   name: Feast Chocolate (1 lolly)
   brand: Feast
@@ -296,7 +296,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,eggs,soy
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: vienetta_vanilla_slice
   name: Vienetta Vanilla (1 slice/85g)
   brand: Vienetta
@@ -312,7 +312,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,eggs,soy
   unit_grams: 85
-- source: gymflow
+- source: afletics
   source_id: alpro_vanilla_vegan_ice_cream
   name: Alpro Vanilla Plant-Based Ice Cream (per 100g)
   brand: Alpro
@@ -327,7 +327,7 @@
   tags: frozen,branded,dessert,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
-- source: gymflow
+- source: afletics
   source_id: halo_top_choc_chip_100g
   name: Halo Top Chocolate Chip (per 100g)
   brand: Halo Top
@@ -342,7 +342,7 @@
   tags: frozen,branded,dessert,low_calorie,low_fat
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
-- source: gymflow
+- source: afletics
   source_id: oppo_vanilla_brownie_100g
   name: Oppo Brothers Vanilla Brownie (per 100g)
   brand: Oppo Brothers
@@ -357,7 +357,7 @@
   tags: frozen,branded,dessert,low_calorie
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
-- source: gymflow
+- source: afletics
   source_id: breyers_no_sugar_added_100g
   name: Breyers No Sugar Added Vanilla (per 100g)
   brand: Breyers

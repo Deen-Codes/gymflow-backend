@@ -6,7 +6,7 @@
 # popcorn/pretzels/rice cakes/trail mix/bombay mix, more fish (anchovies/kippers
 # /pollock/seabream), falafel, frozen berries.
 
-- source: gymflow
+- source: afletics
   source_id: chorizo_ring_per_100g
   name: Chorizo (sliced, per 100g)
   brand: ''
@@ -21,7 +21,7 @@
   tags: meat,charcuterie,processed,branded
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: chorizo_slice_5g
   name: Chorizo (1 slice)
   brand: ''
@@ -37,7 +37,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: sulphites
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: salami_slice
   name: Salami (1 slice)
   brand: ''
@@ -53,7 +53,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: sulphites
   unit_grams: 8
-- source: gymflow
+- source: afletics
   source_id: prosciutto_di_parma_slice
   name: Prosciutto di Parma (1 slice)
   brand: ''
@@ -69,7 +69,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 18
-- source: gymflow
+- source: afletics
   source_id: serrano_ham_slice
   name: Serrano Ham (1 slice)
   brand: ''
@@ -85,7 +85,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 18
-- source: gymflow
+- source: afletics
   source_id: parma_crisps_pack
   name: Parma Crisps (per 100g)
   brand: ''
@@ -101,7 +101,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: pepperoni_slice
   name: Pepperoni (1 slice)
   brand: ''
@@ -117,7 +117,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: sulphites
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: biltong_per_100g
   name: Biltong (per 100g)
   brand: ''
@@ -132,7 +132,7 @@
   tags: meat,charcuterie,high_protein,low_fat,low_carb
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: beef_jerky_per_30g
   name: Beef Jerky (1 pack/30g)
   brand: ''
@@ -148,7 +148,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: chicken_liver_cooked_100g
   name: Chicken Liver, Cooked (per 100g)
   brand: ''
@@ -163,7 +163,7 @@
   tags: meat,offal,high_protein
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: venison_steak_cooked_100g
   name: Venison Steak, Cooked (per 100g)
   brand: ''
@@ -179,7 +179,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: pasta_spaghetti_cooked
   name: Spaghetti, Cooked (per 100g)
   brand: ''
@@ -194,7 +194,7 @@
   tags: pantry,pasta,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,eggs
-- source: gymflow
+- source: afletics
   source_id: pasta_linguine_cooked
   name: Linguine, Cooked (per 100g)
   brand: ''
@@ -209,7 +209,7 @@
   tags: pantry,pasta,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,eggs
-- source: gymflow
+- source: afletics
   source_id: pasta_fettuccine_cooked
   name: Fettuccine, Cooked (per 100g)
   brand: ''
@@ -224,7 +224,7 @@
   tags: pantry,pasta,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,eggs
-- source: gymflow
+- source: afletics
   source_id: pasta_tagliatelle_cooked
   name: Tagliatelle, Cooked (per 100g)
   brand: ''
@@ -239,7 +239,7 @@
   tags: pantry,pasta,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,eggs
-- source: gymflow
+- source: afletics
   source_id: pasta_rigatoni_cooked
   name: Rigatoni, Cooked (per 100g)
   brand: ''
@@ -254,7 +254,7 @@
   tags: pantry,pasta,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,eggs
-- source: gymflow
+- source: afletics
   source_id: pasta_fusilli_cooked
   name: Fusilli, Cooked (per 100g)
   brand: ''
@@ -269,7 +269,7 @@
   tags: pantry,pasta,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,eggs
-- source: gymflow
+- source: afletics
   source_id: pasta_lasagne_sheets_cooked
   name: Lasagne Sheets, Cooked (per 100g)
   brand: ''
@@ -284,7 +284,7 @@
   tags: pantry,pasta,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,eggs
-- source: gymflow
+- source: afletics
   source_id: pasta_ravioli_meat_cooked
   name: Meat Ravioli, Cooked (per 100g)
   brand: ''
@@ -299,7 +299,7 @@
   tags: pantry,pasta,grain
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
-- source: gymflow
+- source: afletics
   source_id: pasta_tortellini_cheese
   name: Cheese Tortellini, Cooked (per 100g)
   brand: ''
@@ -314,7 +314,7 @@
   tags: pantry,pasta,grain
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
-- source: gymflow
+- source: afletics
   source_id: gnocchi_potato_cooked
   name: Potato Gnocchi, Cooked (per 100g)
   brand: ''
@@ -329,7 +329,7 @@
   tags: pantry,pasta,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,eggs
-- source: gymflow
+- source: afletics
   source_id: noodles_egg_cooked
   name: Egg Noodles, Cooked (per 100g)
   brand: ''
@@ -344,7 +344,7 @@
   tags: pantry,pasta,asian
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs
-- source: gymflow
+- source: afletics
   source_id: noodles_rice_cooked
   name: Rice Noodles, Cooked (per 100g)
   brand: ''
@@ -359,7 +359,7 @@
   tags: pantry,pasta,asian
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: noodles_udon_cooked
   name: Udon Noodles, Cooked (per 100g)
   brand: ''
@@ -374,7 +374,7 @@
   tags: pantry,pasta,asian
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: noodles_soba_cooked
   name: Soba (Buckwheat) Noodles, Cooked (per 100g)
   brand: ''
@@ -389,7 +389,7 @@
   tags: pantry,pasta,asian
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: noodles_glass_cooked
   name: Glass Noodles, Cooked (per 100g)
   brand: ''
@@ -404,7 +404,7 @@
   tags: pantry,pasta,asian,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: noodles_ramen_instant
   name: Instant Ramen Noodles (1 pack)
   brand: ''
@@ -420,7 +420,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy
   unit_grams: 85
-- source: gymflow
+- source: afletics
   source_id: mushroom_chestnut_raw
   name: Chestnut Mushrooms, Raw (per 100g)
   brand: ''
@@ -435,7 +435,7 @@
   tags: whole,vegetable,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mushroom_portobello_raw
   name: Portobello Mushroom, Raw
   brand: ''
@@ -451,7 +451,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: mushroom_shiitake_raw
   name: Shiitake Mushrooms, Raw (per 100g)
   brand: ''
@@ -466,7 +466,7 @@
   tags: whole,vegetable,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mushroom_oyster_raw
   name: Oyster Mushrooms, Raw (per 100g)
   brand: ''
@@ -481,7 +481,7 @@
   tags: whole,vegetable,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: herbs_basil_fresh_handful
   name: Fresh Basil (1 handful/10g)
   brand: ''
@@ -496,7 +496,7 @@
   tags: whole,herb,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: herbs_mint_fresh_handful
   name: Fresh Mint (1 handful/10g)
   brand: ''
@@ -511,7 +511,7 @@
   tags: whole,herb,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: herbs_coriander_fresh_handful
   name: Fresh Coriander (1 handful/10g)
   brand: ''
@@ -526,7 +526,7 @@
   tags: whole,herb,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: herbs_parsley_fresh_handful
   name: Fresh Parsley (1 handful/10g)
   brand: ''
@@ -541,7 +541,7 @@
   tags: whole,herb,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: veg_butternut_squash_cooked
   name: Butternut Squash, Cooked (per 100g)
   brand: ''
@@ -556,7 +556,7 @@
   tags: whole,vegetable,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: veg_pumpkin_cooked
   name: Pumpkin, Cooked (per 100g)
   brand: ''
@@ -571,7 +571,7 @@
   tags: whole,vegetable,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: veg_leek_cooked
   name: Leek, Cooked (per 100g)
   brand: ''
@@ -586,7 +586,7 @@
   tags: whole,vegetable,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: veg_celery_raw
   name: Celery, Raw (1 stick/40g)
   brand: ''
@@ -602,7 +602,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: celery
   unit_grams: 40
-- source: gymflow
+- source: afletics
   source_id: veg_rocket_handful
   name: Rocket / Arugula (1 handful/30g)
   brand: ''
@@ -617,7 +617,7 @@
   tags: whole,vegetable,low_calorie,salad
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: veg_radish_raw
   name: Radish, Raw (per 100g)
   brand: ''
@@ -632,7 +632,7 @@
   tags: whole,vegetable,low_calorie,salad
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: veg_beetroot_cooked
   name: Beetroot, Cooked (per 100g)
   brand: ''
@@ -647,7 +647,7 @@
   tags: whole,vegetable
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: veg_fennel_raw
   name: Fennel, Raw (1 bulb)
   brand: ''
@@ -663,7 +663,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 235
-- source: gymflow
+- source: afletics
   source_id: fruit_lemon
   name: Lemon (1 medium)
   brand: ''
@@ -679,7 +679,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: fruit_lime
   name: Lime (1 medium)
   brand: ''
@@ -695,7 +695,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 67
-- source: gymflow
+- source: afletics
   source_id: fruit_plum
   name: Plum (1 medium)
   brand: ''
@@ -711,7 +711,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 66
-- source: gymflow
+- source: afletics
   source_id: fruit_nectarine
   name: Nectarine (1 medium)
   brand: ''
@@ -727,7 +727,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 142
-- source: gymflow
+- source: afletics
   source_id: fruit_grapefruit_half
   name: Grapefruit (half)
   brand: ''
@@ -743,7 +743,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 123
-- source: gymflow
+- source: afletics
   source_id: fruit_pomegranate_seeds_100g
   name: Pomegranate Seeds (per 100g)
   brand: ''
@@ -758,7 +758,7 @@
   tags: whole,fruit
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: fruit_dates_medjool
   name: Medjool Date
   brand: ''
@@ -774,7 +774,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 24
-- source: gymflow
+- source: afletics
   source_id: fruit_raisins_30g
   name: Raisins (1 small box/30g)
   brand: ''
@@ -790,7 +790,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: fruit_dried_cranberries_30g
   name: Dried Cranberries (30g)
   brand: ''
@@ -805,7 +805,7 @@
   tags: whole,fruit,dried
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: fruit_dried_apricots_30g
   name: Dried Apricots (30g)
   brand: ''
@@ -820,7 +820,7 @@
   tags: whole,fruit,dried
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: fruit_prunes_30g
   name: Prunes / Dried Plums (30g)
   brand: ''
@@ -835,7 +835,7 @@
   tags: whole,fruit,dried
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: fruit_blackberries_100g
   name: Blackberries (per 100g)
   brand: ''
@@ -850,7 +850,7 @@
   tags: whole,fruit,berries,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: olives_green_pitted_30g
   name: Green Olives, Pitted (30g)
   brand: ''
@@ -865,7 +865,7 @@
   tags: whole,vegetable,fat,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: olives_black_pitted_30g
   name: Black Olives, Pitted (30g)
   brand: ''
@@ -880,7 +880,7 @@
   tags: whole,vegetable,fat,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: cheese_brie_30g
   name: Brie (30g)
   brand: ''
@@ -896,7 +896,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cheese_camembert_30g
   name: Camembert (30g)
   brand: ''
@@ -912,7 +912,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cheese_blue_stilton_30g
   name: Blue Stilton (30g)
   brand: ''
@@ -928,7 +928,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cheese_parmesan_grated_15g
   name: Parmesan, Grated (1 tbsp/15g)
   brand: ''
@@ -944,7 +944,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: cheese_halloumi_30g
   name: Halloumi (30g)
   brand: ''
@@ -960,7 +960,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cheese_babybel_original
   name: Babybel Original
   brand: Babybel
@@ -976,7 +976,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 20
-- source: gymflow
+- source: afletics
   source_id: cheese_strings_string
   name: Cheestrings
   brand: Cheestrings
@@ -992,7 +992,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 21
-- source: gymflow
+- source: afletics
   source_id: popcorn_propercorn_sweet_salt_70g
   name: Propercorn Sweet & Salty (70g bag)
   brand: Propercorn
@@ -1008,7 +1008,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: popcorn_metcalfe_sweet_salt_70g
   name: Metcalfe's Skinny Sweet & Salt (70g)
   brand: Metcalfe's
@@ -1024,7 +1024,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: popcorn_butterkist_toffee_75g
   name: Butterkist Toffee Popcorn (75g)
   brand: Butterkist
@@ -1040,7 +1040,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 75
-- source: gymflow
+- source: afletics
   source_id: snack_pretzels_50g
   name: Pretzels (50g)
   brand: ''
@@ -1056,7 +1056,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: snack_rice_cake_plain
   name: Rice Cake
   brand: ''
@@ -1072,7 +1072,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 9
-- source: gymflow
+- source: afletics
   source_id: snack_oat_cake
   name: Oat Cake
   brand: ''
@@ -1088,7 +1088,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 13
-- source: gymflow
+- source: afletics
   source_id: snack_trail_mix_30g
   name: Trail Mix (30g)
   brand: ''
@@ -1104,7 +1104,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: tree_nuts,peanuts
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: snack_bombay_mix_30g
   name: Bombay Mix (30g)
   brand: ''
@@ -1120,7 +1120,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: peanuts
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: fish_anchovies_canned
   name: Anchovies in Oil, Drained (per 100g)
   brand: ''
@@ -1135,7 +1135,7 @@
   tags: fish,canned,high_protein
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: fish
-- source: gymflow
+- source: afletics
   source_id: fish_kippers_smoked
   name: Kippers, Smoked (per 100g)
   brand: ''
@@ -1151,7 +1151,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: fish_pollock_cooked
   name: Pollock Fillet, Cooked (per 100g)
   brand: ''
@@ -1167,7 +1167,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: fish_seabream_cooked
   name: Seabream Fillet, Cooked (per 100g)
   brand: ''
@@ -1183,7 +1183,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: hummus_branded_pot_30g
   name: Hummus (30g)
   brand: ''
@@ -1199,7 +1199,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: sesame
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: chickpea_falafel_3
   name: Falafel (3 pieces)
   brand: ''
@@ -1215,7 +1215,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 20
-- source: gymflow
+- source: afletics
   source_id: frozen_blackberries_100g
   name: Frozen Blackberries (per 100g)
   brand: ''
@@ -1230,7 +1230,7 @@
   tags: frozen,fruit,vegan,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: frozen_raspberries_100g
   name: Frozen Raspberries (per 100g)
   brand: ''
@@ -1245,7 +1245,7 @@
   tags: frozen,fruit,berries,vegan,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: frozen_mango_chunks_100g
   name: Frozen Mango Chunks (per 100g)
   brand: ''

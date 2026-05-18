@@ -1,6 +1,6 @@
 # breakfast_combos.yaml — most-tracked breakfast items: scrambled/fried/boiled/poached eggs, omelettes (plain/cheese/ham/mushroom/egg-white), toast combinations (butter/jam/PB/avocado/eggs/beans), porridge variants (milk/water/oat milk/honey/banana-PB/protein), cereal-with-milk, pancakes/waffles/French toast/crêpes, smoothies (banana/berry/green/protein), full English variants, protein shakes (whey/casein/vegan), homemade meals (chicken+rice+broc, salmon+rice+veg, beef-mince+pasta, tuna pasta, Caesar, curry, chilli, shepherd's/cottage pie, lasagne, spag bol, toad-in-the-hole, bangers&mash), cottage cheese + quark.
 
-- source: gymflow
+- source: afletics
   source_id: egg_scrambled_with_butter_milk
   name: Scrambled Eggs (with butter & milk, 2 eggs)
   brand: ''
@@ -16,7 +16,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: egg_scrambled_plain_2
   name: Scrambled Eggs Plain (2 eggs, dry)
   brand: ''
@@ -32,7 +32,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: egg_fried_oil
   name: Fried Egg in Oil
   brand: ''
@@ -48,7 +48,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free,dairy_free
   allergens: eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: egg_fried_butter
   name: Fried Egg in Butter
   brand: ''
@@ -64,7 +64,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: egg_boiled_soft
   name: Soft Boiled Egg (1 large)
   brand: ''
@@ -80,7 +80,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free,dairy_free
   allergens: eggs
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: egg_boiled_hard
   name: Hard Boiled Egg (1 large)
   brand: ''
@@ -96,7 +96,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free,dairy_free
   allergens: eggs
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: egg_poached_1
   name: Poached Egg (1 large)
   brand: ''
@@ -112,7 +112,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free,dairy_free
   allergens: eggs
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: omelette_2_eggs_plain
   name: Omelette Plain (2 eggs)
   brand: ''
@@ -128,7 +128,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free,dairy_free
   allergens: eggs
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: omelette_3_eggs_cheese
   name: Cheese Omelette (3 eggs)
   brand: ''
@@ -144,7 +144,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: omelette_3_eggs_ham
   name: Ham Omelette (3 eggs)
   brand: ''
@@ -160,7 +160,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: eggs
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: omelette_3_eggs_mushroom
   name: Mushroom Omelette (3 eggs)
   brand: ''
@@ -176,7 +176,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free,dairy_free
   allergens: eggs
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: omelette_egg_white_3
   name: Egg White Omelette (3 whites)
   brand: ''
@@ -192,7 +192,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free,dairy_free
   allergens: eggs
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: toast_white_butter
   name: Toast (1 slice white) with Butter
   brand: ''
@@ -208,7 +208,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: toast_wholemeal_butter
   name: Toast (1 slice wholemeal) with Butter
   brand: ''
@@ -224,7 +224,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: toast_butter_jam
   name: Toast with Butter & Jam (1 slice)
   brand: ''
@@ -240,7 +240,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: toast_peanut_butter
   name: Toast with Peanut Butter (1 slice)
   brand: ''
@@ -256,7 +256,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,peanuts
   unit_grams: 55
-- source: gymflow
+- source: afletics
   source_id: toast_avocado
   name: Avocado on Toast (1 slice)
   brand: ''
@@ -272,7 +272,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: toast_eggs_scrambled
   name: Toast with Scrambled Eggs (1 slice + 2 eggs)
   brand: ''
@@ -288,7 +288,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: toast_baked_beans
   name: Toast with Baked Beans (1 slice + half tin)
   brand: ''
@@ -304,7 +304,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: porridge_milk_made
   name: Porridge made with Whole Milk (1 bowl)
   brand: ''
@@ -320,7 +320,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: porridge_semi_milk
   name: Porridge made with Semi-Skimmed Milk
   brand: ''
@@ -336,7 +336,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: porridge_oat_milk
   name: Porridge made with Oat Milk
   brand: ''
@@ -352,7 +352,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: porridge_water_with_honey
   name: Porridge with Water & Honey
   brand: ''
@@ -368,7 +368,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: porridge_with_banana_pb
   name: Porridge with Banana & Peanut Butter
   brand: ''
@@ -384,7 +384,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,peanuts
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: porridge_protein_chocolate
   name: Protein Porridge with Chocolate (1 scoop + oats + milk)
   brand: ''
@@ -400,7 +400,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: corn_flakes_with_semi_milk
   name: Corn Flakes with Semi-Skimmed Milk (1 bowl)
   brand: ''
@@ -416,7 +416,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: weetabix_2_with_milk
   name: Weetabix (2) with Semi-Skimmed Milk
   brand: ''
@@ -432,7 +432,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 240
-- source: gymflow
+- source: afletics
   source_id: granola_with_yogurt_berries
   name: Granola with Yogurt & Berries (bowl)
   brand: ''
@@ -448,7 +448,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,tree_nuts
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: pancakes_2_basic
   name: Pancakes (2, basic with milk/egg)
   brand: ''
@@ -464,7 +464,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: american_pancakes_3_stack
   name: American Pancakes (3 stack)
   brand: ''
@@ -480,7 +480,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: protein_pancakes_2_v2
   name: Protein Pancakes (2)
   brand: ''
@@ -496,7 +496,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: french_toast_2
   name: French Toast (2 slices)
   brand: ''
@@ -512,7 +512,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: crepes_2
   name: Crêpes (2 plain)
   brand: ''
@@ -528,7 +528,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: smoothie_banana_oats_pb
   name: Banana, Oats & Peanut Butter Smoothie
   brand: ''
@@ -543,7 +543,7 @@
   tags: breakfast,drink,smoothie,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,peanuts
-- source: gymflow
+- source: afletics
   source_id: smoothie_berry_yogurt
   name: Mixed Berry Yogurt Smoothie
   brand: ''
@@ -558,7 +558,7 @@
   tags: breakfast,drink,smoothie
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: smoothie_green_kale_apple
   name: Green Smoothie (Kale, Apple, Banana)
   brand: ''
@@ -573,7 +573,7 @@
   tags: breakfast,drink,smoothie,vegan,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: smoothie_strawberry_protein
   name: Strawberry Protein Smoothie (with milk + whey)
   brand: ''
@@ -588,7 +588,7 @@
   tags: breakfast,drink,smoothie,protein,high_protein
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: smoothie_chocolate_banana_protein
   name: Chocolate Banana Protein Shake
   brand: ''
@@ -603,7 +603,7 @@
   tags: breakfast,drink,smoothie,protein,high_protein
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
-- source: gymflow
+- source: afletics
   source_id: full_english_classic
   name: Full English Breakfast (classic plate)
   brand: ''
@@ -619,7 +619,7 @@
   dietary_compat: pescatarian
   allergens: gluten,eggs,sulphites
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: full_english_small
   name: Small Full English (3 items)
   brand: ''
@@ -635,7 +635,7 @@
   dietary_compat: pescatarian
   allergens: gluten,eggs,sulphites
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: vegetarian_breakfast
   name: Vegetarian Breakfast
   brand: ''
@@ -651,7 +651,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,eggs
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: breakfast_bagel_egg_bacon
   name: Bagel with Egg & Bacon
   brand: ''
@@ -667,7 +667,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: breakfast_burrito_eggs
   name: Breakfast Burrito (eggs, beans, cheese)
   brand: ''
@@ -683,7 +683,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: whey_shake_water_1_scoop
   name: Whey Protein Shake with Water (1 scoop)
   brand: ''
@@ -698,7 +698,7 @@
   tags: drink,supplement,protein,high_protein,low_fat,low_calorie
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: whey_shake_milk_1_scoop
   name: Whey Protein Shake with Milk (1 scoop + 250ml semi)
   brand: ''
@@ -713,7 +713,7 @@
   tags: drink,supplement,protein,high_protein
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: whey_shake_2_scoop
   name: Whey Protein Shake (2 scoops with water)
   brand: ''
@@ -728,7 +728,7 @@
   tags: drink,supplement,protein,high_protein,low_fat,low_calorie
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: vegan_protein_shake_water
   name: Vegan Protein Shake with Water (1 scoop)
   brand: ''
@@ -743,7 +743,7 @@
   tags: drink,supplement,protein,high_protein,vegan,low_fat
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
-- source: gymflow
+- source: afletics
   source_id: casein_shake_water
   name: Casein Shake with Water (1 scoop)
   brand: ''
@@ -758,7 +758,7 @@
   tags: drink,supplement,protein,high_protein,low_fat
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: chicken_breast_rice_broccoli
   name: Chicken Breast, Rice & Broccoli (basic meal)
   brand: ''
@@ -774,7 +774,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: chicken_breast_sweet_potato
   name: Chicken Breast & Sweet Potato
   brand: ''
@@ -790,7 +790,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: salmon_rice_veg
   name: Salmon, Rice & Vegetables
   brand: ''
@@ -806,7 +806,7 @@
   dietary_compat: halal,kosher,pescatarian,dairy_free,gluten_free
   allergens: fish
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: beef_mince_pasta
   name: Beef Mince & Pasta
   brand: ''
@@ -822,7 +822,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: tuna_pasta
   name: Tuna Pasta with Sweetcorn
   brand: ''
@@ -838,7 +838,7 @@
   dietary_compat: pescatarian
   allergens: fish,gluten,eggs
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: chicken_caesar_salad_homemade
   name: Chicken Caesar Salad (homemade)
   brand: ''
@@ -854,7 +854,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,fish
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: chicken_curry_rice
   name: Chicken Curry & Rice (homemade)
   brand: ''
@@ -870,7 +870,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: chilli_con_carne_homemade
   name: Chilli Con Carne with Rice (homemade)
   brand: ''
@@ -886,7 +886,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: shepherds_pie_homemade
   name: Shepherd's Pie (homemade)
   brand: ''
@@ -902,7 +902,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: cottage_pie_homemade
   name: Cottage Pie (homemade)
   brand: ''
@@ -918,7 +918,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: lasagne_homemade
   name: Beef Lasagne (homemade)
   brand: ''
@@ -934,7 +934,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: spag_bol_homemade
   name: Spaghetti Bolognese (homemade)
   brand: ''
@@ -950,7 +950,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: toad_in_the_hole
   name: Toad in the Hole
   brand: ''
@@ -966,7 +966,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: bangers_mash
   name: Bangers & Mash
   brand: ''
@@ -982,7 +982,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: rice_white_with_butter
   name: White Rice with Butter (1 portion)
   brand: ''
@@ -997,7 +997,7 @@
   tags: side,grain
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: rice_egg_fried_homemade
   name: Egg Fried Rice (homemade)
   brand: ''
@@ -1012,7 +1012,7 @@
   tags: side,grain
   dietary_compat: pescatarian,dairy_free
   allergens: eggs,soy
-- source: gymflow
+- source: afletics
   source_id: rice_coconut
   name: Coconut Rice
   brand: ''
@@ -1027,7 +1027,7 @@
   tags: side,grain,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: rice_pilau_homemade
   name: Pilau Rice (homemade)
   brand: ''
@@ -1042,7 +1042,7 @@
   tags: side,grain,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: cottage_cheese_pineapple
   name: Cottage Cheese with Pineapple (per 100g)
   brand: ''
@@ -1057,7 +1057,7 @@
   tags: snack,dairy,high_protein,low_fat
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: quark_natural_per_100g
   name: Quark, Natural (per 100g)
   brand: ''
@@ -1073,7 +1073,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: quark_strawberry_125
   name: Quark Strawberry (125g)
   brand: ''

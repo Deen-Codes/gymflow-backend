@@ -1,6 +1,6 @@
 # harvester.yaml — Harvester (Mitchells & Butlers) menu. 30 entries.
 # Source: harvester.co.uk/menu allergen + nutrition.
-- source: gymflow
+- source: afletics
   source_id: harvester_combo_grill
   name: Combo Grill
   brand: Harvester
@@ -16,7 +16,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: sulphites,eggs
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: harvester_rotisserie_chicken_half
   name: Rotisserie Chicken (half)
   brand: Harvester
@@ -32,7 +32,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 320
-- source: gymflow
+- source: afletics
   source_id: harvester_rotisserie_chicken_quarter
   name: Rotisserie Chicken (quarter)
   brand: Harvester
@@ -48,7 +48,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: harvester_simply_chicken
   name: Simply Chicken Breast
   brand: Harvester
@@ -64,7 +64,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: harvester_chicken_skewers_2
   name: Chicken Skewers (2)
   brand: Harvester
@@ -80,7 +80,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: sesame,soy
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: harvester_full_rack_ribs
   name: Full Rack BBQ Ribs
   brand: Harvester
@@ -96,7 +96,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: sulphites
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: harvester_half_rack_ribs
   name: Half Rack BBQ Ribs
   brand: Harvester
@@ -112,7 +112,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: sulphites
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: harvester_classic_burger
   name: Classic Beef Burger
   brand: Harvester
@@ -128,7 +128,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 470
-- source: gymflow
+- source: afletics
   source_id: harvester_chicken_burger
   name: Chicken Burger
   brand: Harvester
@@ -144,7 +144,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 460
-- source: gymflow
+- source: afletics
   source_id: harvester_fish_chips
   name: Fish & Chips
   brand: Harvester
@@ -160,7 +160,7 @@
   dietary_compat: pescatarian
   allergens: fish,gluten,eggs
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: harvester_gammon_egg
   name: Gammon, Egg & Chips
   brand: Harvester
@@ -176,7 +176,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: eggs
   unit_grams: 550
-- source: gymflow
+- source: afletics
   source_id: harvester_steak_8oz
   name: 8oz Sirloin Steak
   brand: Harvester
@@ -192,7 +192,7 @@
   dietary_compat: halal,kosher,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 227
-- source: gymflow
+- source: afletics
   source_id: harvester_lasagne
   name: Beef Lasagne
   brand: Harvester
@@ -208,7 +208,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 470
-- source: gymflow
+- source: afletics
   source_id: harvester_kids_chicken_chips
   name: Kids' Chicken & Chips
   brand: Harvester
@@ -224,7 +224,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 320
-- source: gymflow
+- source: afletics
   source_id: harvester_salad_bar_avg
   name: Salad Bar Plate (avg)
   brand: Harvester
@@ -240,7 +240,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs,mustard,sulphites
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: harvester_chips
   name: Chips
   brand: Harvester
@@ -256,7 +256,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: harvester_jacket_potato
   name: Jacket Potato
   brand: Harvester
@@ -272,7 +272,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: harvester_corn_cob
   name: Corn on the Cob
   brand: Harvester
@@ -288,7 +288,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: harvester_seasonal_veg
   name: Seasonal Vegetables
   brand: Harvester
@@ -304,7 +304,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: harvester_garlic_bread
   name: Garlic Bread
   brand: Harvester
@@ -320,7 +320,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: harvester_chicken_wings_8
   name: Chicken Wings (8)
   brand: Harvester
@@ -336,7 +336,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: harvester_calamari
   name: Calamari
   brand: Harvester
@@ -352,7 +352,7 @@
   dietary_compat: pescatarian
   allergens: gluten,molluscs,eggs
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: harvester_garlic_mushrooms
   name: Garlic Mushrooms
   brand: Harvester
@@ -368,7 +368,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: harvester_sticky_toffee
   name: Sticky Toffee Pudding
   brand: Harvester
@@ -384,7 +384,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: harvester_chocolate_brownie
   name: Chocolate Brownie Sundae
   brand: Harvester
@@ -400,7 +400,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: harvester_apple_pie
   name: Apple Pie
   brand: Harvester
@@ -416,7 +416,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: harvester_cheesecake
   name: Cheesecake
   brand: Harvester
@@ -432,7 +432,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: harvester_ice_cream_3
   name: Ice Cream (3 scoops)
   brand: Harvester
@@ -448,7 +448,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: harvester_pint_lager
   name: Lager (pint)
   brand: Harvester
@@ -464,7 +464,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: harvester_pint_cider
   name: Cider (pint)
   brand: Harvester

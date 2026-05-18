@@ -13,7 +13,7 @@
 # STEAKS
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: mc_sirloin_8oz
   name: 8oz Sirloin Steak
   brand: Miller & Carter
@@ -30,7 +30,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: mc_sirloin_10oz
   name: 10oz Sirloin Steak
   brand: Miller & Carter
@@ -47,7 +47,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: mc_ribeye_8oz
   name: 8oz Ribeye Steak
   brand: Miller & Carter
@@ -64,7 +64,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: mc_ribeye_12oz
   name: 12oz Ribeye Steak
   brand: Miller & Carter
@@ -81,7 +81,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: mc_fillet_8oz
   name: 8oz Fillet Steak
   brand: Miller & Carter
@@ -98,7 +98,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: mc_rump_8oz
   name: 8oz Rump Steak
   brand: Miller & Carter
@@ -115,7 +115,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: mc_t_bone_30oz
   name: 30oz T-Bone (sharing)
   brand: Miller & Carter
@@ -132,7 +132,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: mc_chateaubriand_16oz
   name: 16oz Chateaubriand (sharing)
   brand: Miller & Carter
@@ -153,7 +153,7 @@
 # NON-STEAK GRILL
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: mc_chicken_breast_grilled
   name: Grilled Chicken Breast
   brand: Miller & Carter
@@ -170,7 +170,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: mc_lamb_rump
   name: Lamb Rump
   brand: Miller & Carter
@@ -187,7 +187,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: mc_salmon
   name: Pan-Fried Salmon Fillet
   brand: Miller & Carter
@@ -208,7 +208,7 @@
 # BURGERS
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: mc_carter_burger
   name: The Carter Burger
   brand: Miller & Carter
@@ -225,7 +225,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
 
-- source: gymflow
+- source: afletics
   source_id: mc_chicken_burger
   name: Chicken Burger
   brand: Miller & Carter
@@ -246,7 +246,7 @@
 # SIDES
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: mc_seasoned_fries
   name: Seasoned Fries
   brand: Miller & Carter
@@ -263,7 +263,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: mc_truffle_chips
   name: Truffle & Parmesan Chips
   brand: Miller & Carter
@@ -280,7 +280,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
 
-- source: gymflow
+- source: afletics
   source_id: mc_lettuce_wedge
   name: Lettuce Wedge (signature)
   brand: Miller & Carter
@@ -297,7 +297,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs,mustard
 
-- source: gymflow
+- source: afletics
   source_id: mc_onion_loaf
   name: Onion Loaf
   brand: Miller & Carter
@@ -314,7 +314,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
 
-- source: gymflow
+- source: afletics
   source_id: mc_creamed_spinach
   name: Creamed Spinach
   brand: Miller & Carter
@@ -331,7 +331,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
 
-- source: gymflow
+- source: afletics
   source_id: mc_macaroni_cheese
   name: Macaroni Cheese
   brand: Miller & Carter
@@ -352,7 +352,7 @@
 # SAUCES
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: mc_peppercorn_sauce
   name: Peppercorn Sauce
   brand: Miller & Carter
@@ -369,7 +369,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
 
-- source: gymflow
+- source: afletics
   source_id: mc_bearnaise_sauce
   name: Béarnaise Sauce
   brand: Miller & Carter
@@ -386,7 +386,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
 
-- source: gymflow
+- source: afletics
   source_id: mc_garlic_butter
   name: Garlic Butter (steak topper)
   brand: Miller & Carter
@@ -407,7 +407,7 @@
 # STARTERS
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: mc_prawn_cocktail
   name: Prawn Cocktail
   brand: Miller & Carter
@@ -424,7 +424,7 @@
   dietary_compat: pescatarian
   allergens: crustaceans,eggs,mustard
 
-- source: gymflow
+- source: afletics
   source_id: mc_buffalo_wings
   name: Buffalo Chicken Wings
   brand: Miller & Carter
@@ -441,7 +441,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
 
-- source: gymflow
+- source: afletics
   source_id: mc_calamari
   name: Salt & Pepper Calamari
   brand: Miller & Carter
@@ -458,7 +458,7 @@
   dietary_compat: pescatarian
   allergens: gluten,molluscs,eggs
 
-- source: gymflow
+- source: afletics
   source_id: mc_garlic_dough_balls
   name: Garlic & Cheese Dough Balls
   brand: Miller & Carter
@@ -479,7 +479,7 @@
 # DESSERTS
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: mc_sticky_toffee
   name: Sticky Toffee Pudding
   brand: Miller & Carter
@@ -496,7 +496,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
 
-- source: gymflow
+- source: afletics
   source_id: mc_chocolate_brownie
   name: Chocolate Brownie
   brand: Miller & Carter
@@ -513,7 +513,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs
 
-- source: gymflow
+- source: afletics
   source_id: mc_creme_brulee
   name: Crème Brûlée
   brand: Miller & Carter

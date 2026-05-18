@@ -315,7 +315,7 @@ def _seo_context(request, trainer, site, pricing_plans):
     name = trainer.business_name or trainer.user.first_name or trainer.user.username
     bio = (site.bio or "").strip() if hasattr(site, "bio") and site.bio else ""
 
-    title = f"Train with {name} — Personal Trainer on GymFlow"
+    title = f"Train with {name} — Personal Trainer on Afletics"
     # 155 chars caps the meta description for clean Google previews.
     description = (
         bio if bio
@@ -377,7 +377,7 @@ def public_site_og_image(request, slug):
 
     Pure-Pillow render: brand-colour background, trainer's first
     initial in a centred lime disc + their full name underneath
-    + "GymFlow" wordmark. Works without any uploaded assets so
+    + "Afletics" wordmark. Works without any uploaded assets so
     every trainer gets a sharable preview the moment their site
     publishes.
     """
@@ -391,7 +391,7 @@ def public_site_og_image(request, slug):
     initial = name[:1].upper()
 
     W, H = 1200, 630
-    bg = (4, 7, 17)         # GymFlow deepest dark
+    bg = (4, 7, 17)         # Afletics deepest dark
     accent = (200, 255, 32) # lime
     img = Image.new("RGB", (W, H), bg)
     draw = ImageDraw.Draw(img)
@@ -427,8 +427,8 @@ def public_site_og_image(request, slug):
     nw = bbox[2] - bbox[0]
     draw.text((W // 2 - nw // 2, cy + disc_r + 28), name, fill=(255, 255, 255), font=font_name)
 
-    # "GYMFLOW" wordmark, faint, bottom-right
-    brand = "GYMFLOW"
+    # "AFLETICS" wordmark, faint, bottom-right
+    brand = "AFLETICS"
     bbox = draw.textbbox((0, 0), brand, font=font_brand)
     bw = bbox[2] - bbox[0]
     draw.text((W - bw - 36, H - 50), brand, fill=accent, font=font_brand)
@@ -494,10 +494,10 @@ def cities_index(request):
     cities = cities_with_counts()
     base = request.build_absolute_uri("/").rstrip("/")
     seo = {
-        "title": "Find a Personal Trainer by City — GymFlow",
+        "title": "Find a Personal Trainer by City — Afletics",
         "description": (
             "Browse personal trainers and online coaches by city. "
-            "GymFlow is the all-in-one platform trainers run their "
+            "Afletics is the all-in-one platform trainers run their "
             "business on — programmes, nutrition, check-ins."
         ),
         "page_url": f"{base}/cities/",
@@ -547,11 +547,11 @@ def city_directory_page(request, city_slug):
     ][:8]
 
     seo = {
-        "title": f"Personal Trainers in {city_name} — GymFlow",
+        "title": f"Personal Trainers in {city_name} — Afletics",
         "description": (
             f"{len(trainers)} personal trainer"
             f"{'s' if len(trainers) != 1 else ''} based in "
-            f"{city_name}, all using GymFlow to deliver coaching, "
+            f"{city_name}, all using Afletics to deliver coaching, "
             "nutrition and check-ins."
         )[:155],
         "page_url": f"{base}/cities/{city_slug}/",
@@ -592,8 +592,8 @@ def trainer_marketplace_page(request):
     cards = _trainer_marketplace_cards(city_filter=request.GET.get("city"))
     base = request.build_absolute_uri("/").rstrip("/")
     seo = {
-        "title":       "Find a Personal Trainer — GymFlow",
-        "description": "Browse coaches by city. Every coach below runs their business on GymFlow — programmes, nutrition, check-ins, in one app.",
+        "title":       "Find a Personal Trainer — Afletics",
+        "description": "Browse coaches by city. Every coach below runs their business on Afletics — programmes, nutrition, check-ins, in one app.",
         "page_url":    f"{base}/trainers/",
     }
     return render(request, "public/trainer_marketplace.html", {

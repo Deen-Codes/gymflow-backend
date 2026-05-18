@@ -72,9 +72,9 @@ def start_subscribe_checkout(request, slug, plan_id):
         "cancel_url":  cancel_url,
         "stripe_account": trainer.stripe_user_id,
         "metadata": {
-            "gymflow_plan_id":    str(plan.id),
-            "gymflow_trainer_id": str(trainer.id),
-            "gymflow_visitor_name": visitor_name or "",
+            "afletics_plan_id":    str(plan.id),
+            "afletics_trainer_id": str(trainer.id),
+            "afletics_visitor_name": visitor_name or "",
         },
     }
     if visitor_email:
@@ -85,8 +85,8 @@ def start_subscribe_checkout(request, slug, plan_id):
         session_kwargs["subscription_data"] = {
             "application_fee_percent": fee_pct,
             "metadata": {
-                "gymflow_plan_id":    str(plan.id),
-                "gymflow_trainer_id": str(trainer.id),
+                "afletics_plan_id":    str(plan.id),
+                "afletics_trainer_id": str(trainer.id),
             },
         }
     else:
@@ -95,8 +95,8 @@ def start_subscribe_checkout(request, slug, plan_id):
         session_kwargs["payment_intent_data"] = {
             "application_fee_amount": amount_fee,
             "metadata": {
-                "gymflow_plan_id":    str(plan.id),
-                "gymflow_trainer_id": str(trainer.id),
+                "afletics_plan_id":    str(plan.id),
+                "afletics_trainer_id": str(trainer.id),
             },
         }
 

@@ -1,6 +1,6 @@
 # thai.yaml — Thai curries (red/green/yellow/panang/massaman), pad thai variants, tom yum/tom kha, satay, papaya salad, fried rice, mango sticky rice.
 
-- source: gymflow
+- source: afletics
   source_id: th_pad_thai_chicken
   name: Pad Thai with Chicken
   brand: ''
@@ -16,7 +16,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,peanuts,fish,soy,sesame
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: th_pad_thai_prawn
   name: Pad Thai with Prawn
   brand: ''
@@ -32,7 +32,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: crustaceans,gluten,eggs,peanuts,fish
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: th_pad_thai_vegan
   name: Vegan Pad Thai
   brand: ''
@@ -48,7 +48,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,peanuts,sesame
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: th_green_curry_chicken
   name: Thai Green Curry with Chicken
   brand: ''
@@ -64,7 +64,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,soy
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: th_red_curry_chicken
   name: Thai Red Curry with Chicken
   brand: ''
@@ -80,7 +80,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,soy
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: th_red_curry_beef
   name: Thai Red Curry with Beef
   brand: ''
@@ -96,7 +96,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,soy
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: th_yellow_curry_chicken
   name: Thai Yellow Curry Chicken
   brand: ''
@@ -112,7 +112,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,soy
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: th_panang_curry_chicken
   name: Panang Curry Chicken
   brand: ''
@@ -128,7 +128,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: peanuts,fish,soy
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: th_massaman_curry_beef
   name: Massaman Curry Beef
   brand: ''
@@ -144,7 +144,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: peanuts,fish,soy
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: th_jungle_curry_chicken
   name: Jungle Curry Chicken
   brand: ''
@@ -160,7 +160,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish,soy
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: th_tom_yum_prawn
   name: Tom Yum Soup with Prawn
   brand: ''
@@ -176,7 +176,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: crustaceans,fish,soy
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: th_tom_kha_chicken
   name: Tom Kha Chicken Soup
   brand: ''
@@ -192,7 +192,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish,soy
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: th_thai_fried_rice_chicken
   name: Thai Fried Rice with Chicken
   brand: ''
@@ -208,7 +208,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: eggs,soy,fish,sesame
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: th_thai_fried_rice_prawn
   name: Thai Fried Rice with Prawn
   brand: ''
@@ -224,7 +224,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: crustaceans,eggs,soy,fish,sesame
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: th_pineapple_fried_rice
   name: Pineapple Fried Rice
   brand: ''
@@ -240,7 +240,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: eggs,soy,fish
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: th_thai_basil_chicken
   name: Thai Basil Chicken (Pad Krapow)
   brand: ''
@@ -256,7 +256,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: soy,fish
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: th_satay_chicken_4
   name: Chicken Satay (4 skewers)
   brand: ''
@@ -272,7 +272,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: peanuts,sesame,soy
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: th_satay_sauce_30g
   name: Satay Peanut Sauce (30g)
   brand: ''
@@ -288,7 +288,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: peanuts,sesame,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: th_thai_summer_rolls_3
   name: Thai Summer Rolls (3)
   brand: ''
@@ -304,7 +304,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: crustaceans,fish,soy,sesame
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: th_papaya_salad
   name: Som Tum (Papaya Salad)
   brand: ''
@@ -320,7 +320,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: crustaceans,fish,peanuts
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: th_thai_beef_salad
   name: Thai Beef Salad
   brand: ''
@@ -336,7 +336,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish,sesame,soy
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: th_chicken_pad_see_ew
   name: Pad See Ew Chicken
   brand: ''
@@ -352,7 +352,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,soy,sesame,fish
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: th_thai_sticky_rice_100g
   name: Thai Sticky Rice (per 100g)
   brand: ''
@@ -367,7 +367,7 @@
   tags: thai,grain,vegan,low_fat
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: th_mango_sticky_rice
   name: Mango Sticky Rice
   brand: ''
@@ -383,7 +383,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: th_thai_iced_tea
   name: Thai Iced Tea
   brand: ''

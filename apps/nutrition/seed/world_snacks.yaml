@@ -1,6 +1,6 @@
 # world_snacks.yaml — Pocky 3 flavours, Hi-Chew, Pepero choc/almond, Lotte Choco Pie, Honey Butter Chip, Calbee Shrimp Chips, Takis Fuego, Cheetos Flamin' Hot, Fritos, Seabrook, prawn crackers, Bombay mix, Chevda, Dukkah, instant noodles (Indomie Mi Goreng + Special Chicken, Nissin Cup Noodle Chicken/Curry, Mama Tom Yum, Shin Ramyun, Buldak 2x Spicy, Pot Noodle Chicken Mushroom + Bombay Bad Boy, Batchelors Super Noodles).
 
-- source: gymflow
+- source: afletics
   source_id: pocky_chocolate_pack
   name: Pocky Chocolate (1 pack)
   brand: Pocky
@@ -16,7 +16,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 40
-- source: gymflow
+- source: afletics
   source_id: pocky_strawberry_pack
   name: Pocky Strawberry (1 pack)
   brand: Pocky
@@ -32,7 +32,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 40
-- source: gymflow
+- source: afletics
   source_id: pocky_matcha_pack
   name: Pocky Matcha (1 pack)
   brand: Pocky
@@ -48,7 +48,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 40
-- source: gymflow
+- source: afletics
   source_id: hi_chew_pack
   name: Hi-Chew Mixed Pack
   brand: Hi-Chew
@@ -64,7 +64,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: pepero_chocolate_pack
   name: Pepero Chocolate (1 pack)
   brand: Pepero
@@ -80,7 +80,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: pepero_almond_pack
   name: Pepero Almond (1 pack)
   brand: Pepero
@@ -96,7 +96,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,tree_nuts,soy
   unit_grams: 32
-- source: gymflow
+- source: afletics
   source_id: choco_pie_korean_1
   name: Lotte Choco Pie (1 piece)
   brand: Lotte
@@ -112,7 +112,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 28
-- source: gymflow
+- source: afletics
   source_id: honey_butter_chip_60g
   name: Honey Butter Chip (60g)
   brand: Calbee
@@ -128,7 +128,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: calbee_shrimp_chips_30g
   name: Calbee Shrimp Chips (30g)
   brand: Calbee
@@ -144,7 +144,7 @@
   dietary_compat: pescatarian
   allergens: crustaceans,gluten
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: takis_fuego_30g
   name: Takis Fuego (30g)
   brand: Takis
@@ -160,7 +160,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: hot_cheetos_28g
   name: Cheetos Crunchy Flamin' Hot (28g)
   brand: Cheetos
@@ -176,7 +176,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,gluten
   unit_grams: 28
-- source: gymflow
+- source: afletics
   source_id: fritos_original_28g
   name: Fritos Original (28g)
   brand: Fritos
@@ -192,7 +192,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 28
-- source: gymflow
+- source: afletics
   source_id: seabrook_crinkle_cut
   name: Seabrook Crinkle Cut Crisps (25g)
   brand: Seabrook
@@ -208,7 +208,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: chinese_prawn_crackers_30g
   name: Prawn Crackers (30g)
   brand: ''
@@ -224,7 +224,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: crustaceans,gluten
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: bombay_mix_30g_extra
   name: Bombay Mix (30g)
   brand: ''
@@ -240,7 +240,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: peanuts
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: chevda_30g
   name: Chevda (30g)
   brand: ''
@@ -256,7 +256,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: peanuts
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: moroccan_dukkah_15g
   name: Dukkah (1 tbsp/15g)
   brand: ''
@@ -272,7 +272,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: tree_nuts,sesame
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: indomie_mi_goreng_pack
   name: Indomie Mi Goreng (1 pack)
   brand: Indomie
@@ -288,7 +288,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 85
-- source: gymflow
+- source: afletics
   source_id: indomie_special_chicken
   name: Indomie Special Chicken (1 pack)
   brand: Indomie
@@ -304,7 +304,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy,fish
   unit_grams: 75
-- source: gymflow
+- source: afletics
   source_id: nissin_cup_noodle_chicken
   name: Nissin Cup Noodle Chicken (1 cup)
   brand: Nissin
@@ -320,7 +320,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 75
-- source: gymflow
+- source: afletics
   source_id: nissin_cup_noodle_curry
   name: Nissin Cup Noodle Curry (1 cup)
   brand: Nissin
@@ -336,7 +336,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy,celery
   unit_grams: 75
-- source: gymflow
+- source: afletics
   source_id: mama_thai_tom_yum
   name: Mama Tom Yum Shrimp (1 pack)
   brand: Mama
@@ -352,7 +352,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: crustaceans,gluten,soy,fish
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: shin_ramyun_pack
   name: Shin Ramyun (1 pack)
   brand: Nongshim
@@ -368,7 +368,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy,fish
   unit_grams: 120
-- source: gymflow
+- source: afletics
   source_id: buldak_2x_spicy_pack
   name: Buldak 2x Spicy (1 pack)
   brand: Samyang
@@ -384,7 +384,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy
   unit_grams: 140
-- source: gymflow
+- source: afletics
   source_id: pot_noodle_chicken_mushroom
   name: Pot Noodle Chicken & Mushroom
   brand: Pot Noodle
@@ -400,7 +400,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,milk,soy
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: pot_noodle_bombay_bad_boy
   name: Pot Noodle Bombay Bad Boy
   brand: Pot Noodle
@@ -416,7 +416,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,milk,soy
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: super_noodles_chicken
   name: Batchelors Super Noodles Chicken (1 pack)
   brand: Batchelors
@@ -432,7 +432,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,milk,soy,celery
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: super_noodles_curry
   name: Batchelors Super Noodles Curry (1 pack)
   brand: Batchelors

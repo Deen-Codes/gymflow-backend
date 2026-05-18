@@ -1,6 +1,6 @@
 # uk_takeaway_generic.yaml — chip shop classics: fish & chips, cod/haddock & chips, chicken kebab, doner kebab, mixed kebab, chicken shish, battered sausage, saveloy, pickled egg, curry sauce, mushy peas, gravy, large chips, doner meat, garlic pizza bread, Chinese/Indian buffet plate.
 
-- source: gymflow
+- source: afletics
   source_id: takeaway_fish_chips_full
   name: Fish & Chips (chip shop)
   brand: ''
@@ -16,7 +16,7 @@
   dietary_compat: pescatarian
   allergens: fish,gluten,eggs
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: takeaway_cod_chips
   name: Cod & Chips (chip shop)
   brand: ''
@@ -32,7 +32,7 @@
   dietary_compat: pescatarian
   allergens: fish,gluten,eggs
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: takeaway_haddock_chips
   name: Haddock & Chips (chip shop)
   brand: ''
@@ -48,7 +48,7 @@
   dietary_compat: pescatarian
   allergens: fish,gluten,eggs
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: takeaway_chicken_kebab_pita
   name: Chicken Kebab in Pita (takeaway)
   brand: ''
@@ -64,7 +64,7 @@
   dietary_compat: halal,pescatarian
   allergens: gluten,milk
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: takeaway_doner_kebab_pita
   name: Doner Kebab in Pita (takeaway)
   brand: ''
@@ -80,7 +80,7 @@
   dietary_compat: halal,pescatarian
   allergens: gluten,milk
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: takeaway_mixed_kebab_meat
   name: Mixed Meat Kebab Plate
   brand: ''
@@ -96,7 +96,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: takeaway_chicken_shish
   name: Chicken Shish Skewer (takeaway)
   brand: ''
@@ -112,7 +112,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: takeaway_battered_sausage
   name: Battered Sausage (chip shop)
   brand: ''
@@ -128,7 +128,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: takeaway_saveloy
   name: Saveloy (chip shop)
   brand: ''
@@ -144,7 +144,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: sulphites
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: takeaway_pickled_egg
   name: Pickled Egg
   brand: ''
@@ -160,7 +160,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free,dairy_free
   allergens: eggs
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: takeaway_curry_sauce_chip_shop
   name: Chip Shop Curry Sauce (per 100g)
   brand: ''
@@ -176,7 +176,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,celery
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: takeaway_mushy_peas_chip_shop
   name: Chip Shop Mushy Peas (per 100g)
   brand: ''
@@ -192,7 +192,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: takeaway_gravy_chip_shop
   name: Chip Shop Gravy (per 100ml)
   brand: ''
@@ -207,7 +207,7 @@
   tags: takeaway,sauce,low_calorie
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,celery
-- source: gymflow
+- source: afletics
   source_id: takeaway_chip_shop_chips_large
   name: Chip Shop Chips (large)
   brand: ''
@@ -223,7 +223,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: takeaway_donner_meat_only_per_100
   name: Doner Meat (per 100g)
   brand: ''
@@ -238,7 +238,7 @@
   tags: takeaway,meat,turkish,high_protein
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: takeaway_garlic_pizza_bread_slice
   name: Garlic Pizza Bread (1 slice)
   brand: ''
@@ -254,7 +254,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: takeaway_chinese_buffet_plate
   name: Chinese Buffet (mixed plate)
   brand: ''
@@ -270,7 +270,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy,eggs,sesame
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: takeaway_indian_buffet_plate
   name: Indian Buffet (mixed plate)
   brand: ''

@@ -50,7 +50,7 @@ class NutritionPlan(models.Model):
 #   • UK FSA McCance & Widdowson's — UK, CC BY 4.0, ~3k staples
 #   • AUSNUT 2011-13               — AU/NZ, public, ~5.7k items
 #   • CIQUAL                       — EU/FR, open license, ~3.2k items
-#   • GymFlow-curated               — our own additions (branded items
+#   • Afletics-curated               — our own additions (branded items
 #                                    we add manually; pro-tier fields)
 #
 # No external runtime calls. All food data ships in CuratedFood and is
@@ -83,13 +83,13 @@ class CuratedFood(models.Model):
     SOURCE_FSA_UK = "fsa_uk"
     SOURCE_AUSNUT = "ausnut"
     SOURCE_CIQUAL = "ciqual"
-    SOURCE_GYMFLOW = "gymflow"
+    SOURCE_AFLETICS = "afletics"
     SOURCE_CHOICES = [
         (SOURCE_USDA,   "USDA FoodData Central"),
         (SOURCE_FSA_UK, "UK FSA McCance & Widdowson's"),
         (SOURCE_AUSNUT, "AUSNUT 2011-13"),
         (SOURCE_CIQUAL, "CIQUAL"),
-        (SOURCE_GYMFLOW, "GymFlow curated"),
+        (SOURCE_AFLETICS, "Afletics curated"),
     ]
 
     source     = models.CharField(max_length=12, choices=SOURCE_CHOICES, db_index=True)
@@ -243,18 +243,18 @@ class FoodLibraryItem(models.Model):
 
     Pre-NUTRITION-DB rows have `source="off"` (Open Food Facts snapshots
     from when we proxied that DB). Those rows still work; new snapshots
-    use `source="gymflow"`.
+    use `source="afletics"`.
     """
 
     SOURCE_CUSTOM   = "custom"
-    SOURCE_GYMFLOW  = "gymflow"
+    SOURCE_AFLETICS  = "afletics"
     # Legacy — pre-NUTRITION-DB rows snapshotted from Open Food Facts.
     # No new rows use this; kept in choices so existing data still
     # validates in admin.
     SOURCE_OFF      = "off"
     SOURCE_CHOICES = [
         (SOURCE_CUSTOM,  "Custom"),
-        (SOURCE_GYMFLOW, "GymFlow catalog"),
+        (SOURCE_AFLETICS, "Afletics catalog"),
         (SOURCE_OFF,     "Open Food Facts (legacy)"),
     ]
 

@@ -41,14 +41,14 @@ TROPHY_CATALOGUE = [
     ("million_kg_club",        "Million-Kilo Club",     "One million kilograms lifted across your career.",        "workout_volume", _L, "crown.fill",                150),
 
     # ----- Streaks (12) -----
-    ("streak_3",               "3 Days In",             "Three days trained on GymFlow.",                          "streaks", _C, "flame",                            10),
+    ("streak_3",               "3 Days In",             "Three days trained on Afletics.",                          "streaks", _C, "flame",                            10),
     ("streak_7",               "7 Days In",             "A full week of training.",                                "streaks", _C, "flame",                            20),
     ("streak_14",              "14 Days In",            "Two weeks of training logged.",                           "streaks", _U, "flame.fill",                       30),
     ("streak_30",              "30 Days In",            "A whole month of training.",                              "streaks", _R, "flame.fill",                       40),
     ("streak_60",              "60 Days In",            "Two months of training.",                                 "streaks", _R, "flame.fill",                       50),
     ("streak_100",             "100 Days In",           "A hundred days of training. Incredible discipline.",      "streaks", _E, "flame.fill",                       60),
     ("streak_200",             "200 Days In",           "200 days of training.",                                   "streaks", _E, "flame.fill",                       70),
-    ("streak_365",             "Year of Iron",          "365 days of training. A full year on GymFlow.",           "streaks", _L, "crown.fill",                       80),
+    ("streak_365",             "Year of Iron",          "365 days of training. A full year on Afletics.",           "streaks", _L, "crown.fill",                       80),
     ("comeback",               "Comeback",              "Returned to training after a 7+ day break.",              "streaks", _U, "arrow.uturn.right",                90),
     ("phoenix",                "Phoenix",               "Returned to training after a 30+ day break.",             "streaks", _R, "sparkles",                        100),
     ("weekend_warrior",        "Weekend Warrior",       "Trained every weekend for a month.",                      "streaks", _R, "calendar.badge.checkmark",        110),

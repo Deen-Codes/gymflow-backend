@@ -50,7 +50,7 @@ class Command(BaseCommand):
             help=(
                 "Create a stub ExerciseCatalog row for any Exercise whose "
                 "name has no match. Guarantees 100% linkage. The new rows "
-                "are tagged with source=gymflow and an `external_id` "
+                "are tagged with source=afletics and an `external_id` "
                 "derived from the slugified name so re-runs are idempotent."
             ),
         )
@@ -90,7 +90,7 @@ class Command(BaseCommand):
                     # Slug-style external_id keeps re-runs idempotent.
                     ext_id = _slugify_for_external_id(ex.name)
                     cat, _ = ExerciseCatalog.objects.get_or_create(
-                        source=ExerciseCatalog.SOURCE_GYMFLOW,
+                        source=ExerciseCatalog.SOURCE_AFLETICS,
                         external_id=ext_id,
                         defaults={
                             "name":         ex.name,
@@ -139,8 +139,8 @@ class Command(BaseCommand):
 
 def _slugify_for_external_id(name: str) -> str:
     """Stable external_id for a stub catalog row. Lowercase, alphanumeric
-    + underscores. Matches the shape used elsewhere in the GymFlow
-    catalog (e.g. `gymflow_back_squat`)."""
+    + underscores. Matches the shape used elsewhere in the Afletics
+    catalog (e.g. `afletics_back_squat`)."""
     cleaned = "".join(
         c.lower() if c.isalnum() else "_"
         for c in name.strip()
@@ -148,4 +148,4 @@ def _slugify_for_external_id(name: str) -> str:
     # Collapse repeated underscores + trim.
     while "__" in cleaned:
         cleaned = cleaned.replace("__", "_")
-    return f"gymflow_{cleaned.strip('_')}"
+    return f"afletics_{cleaned.strip('_')}"

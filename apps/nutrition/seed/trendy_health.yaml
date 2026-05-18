@@ -1,6 +1,6 @@
 # trendy_health.yaml — kefir, kombucha (more brands), açaí, kimchi varieties, sauerkraut, tempeh, nutritional yeast, chia pudding, overnight oats, Buddha/grain/poke bowls, Yopro/Arla Skyr/Chobani protein yogurts, Eat Real/Hippeas/Forest Feast healthy snacks, allplants/Mindful Chef ready meals, Press cold-press juices, more Huel, dairy-free yogurts (Coconut Collaborative, Alpro), protein pancakes/waffles, Ryvita.
 
-- source: gymflow
+- source: afletics
   source_id: kefir_natural_cup
   name: Kefir, Natural (250ml)
   brand: ''
@@ -15,7 +15,7 @@
   tags: dairy,fermented,probiotic
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: kefir_strawberry_cup
   name: Kefir, Strawberry (250ml)
   brand: ''
@@ -30,7 +30,7 @@
   tags: dairy,fermented,probiotic
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: biotiful_kefir_strawberry_300
   name: Biotiful Strawberry Kefir (300g)
   brand: Biotiful
@@ -46,7 +46,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: biotiful_kefir_natural_300
   name: Biotiful Natural Kefir (300g)
   brand: Biotiful
@@ -62,7 +62,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: acai_bowl_basic
   name: Açaí Bowl (basic, 350g)
   brand: ''
@@ -78,7 +78,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: acai_smoothie_300
   name: Açaí Smoothie (300ml)
   brand: ''
@@ -94,7 +94,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: kimchi_napa_per_100g
   name: Kimchi (Napa Cabbage, per 100g)
   brand: ''
@@ -109,7 +109,7 @@
   tags: fermented,vegan,low_calorie,korean
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: fish
-- source: gymflow
+- source: afletics
   source_id: kimchi_radish_per_100g
   name: Kkakdugi (Radish Kimchi, per 100g)
   brand: ''
@@ -124,7 +124,7 @@
   tags: fermented,vegan,low_calorie,korean
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sauerkraut_per_100g
   name: Sauerkraut, Plain (per 100g)
   brand: ''
@@ -139,7 +139,7 @@
   tags: fermented,vegan,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sauerkraut_apple_caraway
   name: Sauerkraut Apple & Caraway (100g)
   brand: ''
@@ -154,7 +154,7 @@
   tags: fermented,vegan,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tempeh_per_100g
   name: Tempeh, Plain (per 100g)
   brand: ''
@@ -169,7 +169,7 @@
   tags: plant_protein,vegan,fermented
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
-- source: gymflow
+- source: afletics
   source_id: tempeh_smoky_branded_100g
   name: Tempeh, Smoky (100g)
   brand: ''
@@ -184,7 +184,7 @@
   tags: plant_protein,vegan,fermented
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
-- source: gymflow
+- source: afletics
   source_id: nutritional_yeast_5g
   name: Nutritional Yeast (1 tbsp/5g)
   brand: ''
@@ -200,7 +200,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: chia_pudding_almond
   name: Chia Pudding, Almond Milk (per 100g)
   brand: ''
@@ -216,7 +216,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: tree_nuts
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: overnight_oats_basic
   name: Overnight Oats with Berries
   brand: ''
@@ -232,7 +232,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: buddha_bowl_quinoa
   name: Buddha Bowl, Quinoa & Vegetables
   brand: ''
@@ -248,7 +248,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: sesame,sulphites
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: grain_bowl_chicken_brown_rice
   name: Grain Bowl with Chicken
   brand: ''
@@ -264,7 +264,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: sesame,sulphites
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: poke_bowl_salmon
   name: Salmon Poke Bowl
   brand: ''
@@ -280,7 +280,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,soy,sesame
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: poke_bowl_tuna
   name: Tuna Poke Bowl
   brand: ''
@@ -296,7 +296,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,soy,sesame
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: poke_bowl_tofu_vegan
   name: Vegan Tofu Poke Bowl
   brand: ''
@@ -312,7 +312,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: soy,sesame
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: protein_yogurt_yopro_strawberry
   name: Yopro Protein Yogurt Strawberry
   brand: Yopro
@@ -328,7 +328,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 160
-- source: gymflow
+- source: afletics
   source_id: protein_yogurt_yopro_vanilla
   name: Yopro Protein Yogurt Vanilla
   brand: Yopro
@@ -344,7 +344,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 160
-- source: gymflow
+- source: afletics
   source_id: protein_yogurt_arla_skyr_strawberry
   name: Arla Skyr Strawberry
   brand: Arla
@@ -360,7 +360,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: protein_yogurt_chobani_natural
   name: Chobani Greek Natural
   brand: Chobani
@@ -376,7 +376,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: protein_yogurt_chobani_plain_low_fat
   name: Chobani Greek Low Fat Plain
   brand: Chobani
@@ -392,7 +392,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: eat_real_lentil_chips_30g
   name: Eat Real Lentil Chips (30g)
   brand: Eat Real
@@ -408,7 +408,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: eat_real_quinoa_chips_30g
   name: Eat Real Quinoa Chips (30g)
   brand: Eat Real
@@ -424,7 +424,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: hippeas_chickpea_puffs_22g
   name: Hippeas Chickpea Puffs (22g)
   brand: Hippeas
@@ -440,7 +440,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 22
-- source: gymflow
+- source: afletics
   source_id: graze_protein_bar_choc_orange
   name: Graze Protein Bar Chocolate Orange
   brand: Graze
@@ -456,7 +456,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: jolly_health_protein_bar
   name: Jolly Health Protein Bar
   brand: Jolly
@@ -472,7 +472,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: graze_punchy_protein_30g
   name: Graze Punchy Protein Mix (30g)
   brand: Graze
@@ -488,7 +488,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: tree_nuts,peanuts,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: forest_feast_dark_choc_almond_30g
   name: Forest Feast Dark Choc Almonds (30g)
   brand: Forest Feast
@@ -504,7 +504,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: tree_nuts,milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: allplants_thai_curry_400
   name: allplants Thai Curry (400g meal)
   brand: allplants
@@ -520,7 +520,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: allplants_chilli_400
   name: allplants Smoky Chilli (400g)
   brand: allplants
@@ -536,7 +536,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: mindful_chef_chicken_meal
   name: Mindful Chef Chicken Meal
   brand: Mindful Chef
@@ -552,7 +552,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: press_green_juice_250
   name: Press Green Juice (250ml)
   brand: Press
@@ -568,7 +568,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: press_beetroot_ginger_250
   name: Press Beetroot & Ginger (250ml)
   brand: Press
@@ -584,7 +584,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: jarr_kombucha_330
   name: Jarr Kombucha Original (330ml)
   brand: Jarr
@@ -600,7 +600,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: momo_kombucha_330
   name: Momo Kombucha Original (330ml)
   brand: Momo
@@ -616,7 +616,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: coconut_collab_natural_125
   name: Coconut Collaborative Natural Yogurt (125g)
   brand: Coconut Collaborative
@@ -632,7 +632,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 125
-- source: gymflow
+- source: afletics
   source_id: alpro_coconut_yogurt_125
   name: Alpro Coconut Yogurt (125g)
   brand: Alpro
@@ -648,7 +648,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
   unit_grams: 125
-- source: gymflow
+- source: afletics
   source_id: alpro_oat_yogurt_125
   name: Alpro Oat Yogurt (125g)
   brand: Alpro
@@ -664,7 +664,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy
   unit_grams: 125
-- source: gymflow
+- source: afletics
   source_id: huel_powder_v3_chocolate
   name: Huel Powder v3.1 Chocolate (1 scoop/100g)
   brand: Huel
@@ -680,7 +680,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,oats
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: huel_hot_savoury_thai_green
   name: Huel Hot & Savoury Thai Green Curry
   brand: Huel
@@ -696,7 +696,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,oats,soy
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: huel_complete_protein_chocolate
   name: Huel Complete Protein Chocolate
   brand: Huel
@@ -712,7 +712,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: frozen_yogurt_strawberry_100
   name: Frozen Yogurt, Strawberry (per 100g)
   brand: ''
@@ -727,7 +727,7 @@
   tags: frozen,dessert,low_fat
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: frozen_yogurt_chocolate_100
   name: Frozen Yogurt, Chocolate (per 100g)
   brand: ''
@@ -742,7 +742,7 @@
   tags: frozen,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
-- source: gymflow
+- source: afletics
   source_id: protein_pancakes_2
   name: Protein Pancakes (2)
   brand: ''
@@ -758,7 +758,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: protein_waffle_1
   name: Protein Waffle
   brand: ''
@@ -774,7 +774,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: ryvita_original_2
   name: Ryvita Original Crispbread (2)
   brand: Ryvita
@@ -790,7 +790,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 10
-- source: gymflow
+- source: afletics
   source_id: ryvita_dark_rye_2
   name: Ryvita Dark Rye Crispbread (2)
   brand: Ryvita
@@ -806,7 +806,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 10
-- source: gymflow
+- source: afletics
   source_id: ryvita_multi_seed_2
   name: Ryvita Multi-Seed Crispbread (2)
   brand: Ryvita
@@ -822,7 +822,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 11
-- source: gymflow
+- source: afletics
   source_id: innocent_super_kale_300
   name: Innocent Super Smoothie Energise (300ml)
   brand: Innocent
@@ -838,7 +838,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: innocent_strawberry_banana
   name: Innocent Strawberry & Banana Smoothie (250ml)
   brand: Innocent
@@ -854,7 +854,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: birds_eye_steamfresh_broccoli
   name: Birds Eye Steamfresh Broccoli (140g)
   brand: Birds Eye
@@ -870,7 +870,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 140
-- source: gymflow
+- source: afletics
   source_id: birds_eye_steamfresh_mixed_veg
   name: Birds Eye Steamfresh Mixed Veg (140g)
   brand: Birds Eye

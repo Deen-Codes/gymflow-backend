@@ -1,7 +1,7 @@
 # sizzling_pubs.yaml — Sizzling Pubs (Mitchells & Butlers).
 # 40 entries: signature sizzling skillets, mains, sides, drinks (pints + spirits).
 # Source: sizzlingpubs.co.uk allergen + nutrition.
-- source: gymflow
+- source: afletics
   source_id: sizzling_sizzling_steak
   name: Sizzling Steak Skillet
   brand: Sizzling Pubs
@@ -17,7 +17,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: sizzling_sizzling_chicken
   name: Sizzling Chicken Skillet
   brand: Sizzling Pubs
@@ -33,7 +33,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: sizzling_sizzling_fajita
   name: Sizzling Fajita Chicken
   brand: Sizzling Pubs
@@ -49,7 +49,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,sulphites
   unit_grams: 520
-- source: gymflow
+- source: afletics
   source_id: sizzling_fish_chips
   name: Fish & Chips
   brand: Sizzling Pubs
@@ -65,7 +65,7 @@
   dietary_compat: pescatarian
   allergens: fish,gluten,eggs
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: sizzling_steak_pie
   name: Steak Pie
   brand: Sizzling Pubs
@@ -81,7 +81,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 540
-- source: gymflow
+- source: afletics
   source_id: sizzling_burger_classic
   name: Sizzling Beef Burger
   brand: Sizzling Pubs
@@ -97,7 +97,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 470
-- source: gymflow
+- source: afletics
   source_id: sizzling_burger_chicken
   name: Chicken Burger
   brand: Sizzling Pubs
@@ -113,7 +113,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: sizzling_mixed_grill
   name: Mixed Grill
   brand: Sizzling Pubs
@@ -129,7 +129,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: sulphites,eggs
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: sizzling_gammon_egg
   name: Gammon, Egg & Chips
   brand: Sizzling Pubs
@@ -145,7 +145,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: eggs
   unit_grams: 550
-- source: gymflow
+- source: afletics
   source_id: sizzling_jacket_cheese_beans
   name: Jacket Potato Cheese & Beans
   brand: Sizzling Pubs
@@ -161,7 +161,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: sizzling_lasagne
   name: Beef Lasagne
   brand: Sizzling Pubs
@@ -177,7 +177,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 470
-- source: gymflow
+- source: afletics
   source_id: sizzling_curry_chicken
   name: Chicken Curry & Rice
   brand: Sizzling Pubs
@@ -193,7 +193,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: celery
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: sizzling_pasta_chicken
   name: Chicken & Bacon Pasta
   brand: Sizzling Pubs
@@ -209,7 +209,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 480
-- source: gymflow
+- source: afletics
   source_id: sizzling_kids_chicken_chips
   name: Kids' Chicken & Chips
   brand: Sizzling Pubs
@@ -225,7 +225,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 320
-- source: gymflow
+- source: afletics
   source_id: sizzling_kids_sausage_mash
   name: Kids' Sausage & Mash
   brand: Sizzling Pubs
@@ -241,7 +241,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 320
-- source: gymflow
+- source: afletics
   source_id: sizzling_breakfast_full
   name: Sizzling Breakfast
   brand: Sizzling Pubs
@@ -257,7 +257,7 @@
   dietary_compat: pescatarian
   allergens: gluten,eggs,sulphites
   unit_grams: 580
-- source: gymflow
+- source: afletics
   source_id: sizzling_chips
   name: Chips
   brand: Sizzling Pubs
@@ -273,7 +273,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: sizzling_garlic_bread
   name: Garlic Bread
   brand: Sizzling Pubs
@@ -289,7 +289,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: sizzling_onion_rings
   name: Onion Rings
   brand: Sizzling Pubs
@@ -305,7 +305,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 120
-- source: gymflow
+- source: afletics
   source_id: sizzling_seasonal_veg
   name: Seasonal Vegetables
   brand: Sizzling Pubs
@@ -321,7 +321,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: sizzling_side_salad
   name: Side Salad
   brand: Sizzling Pubs
@@ -337,7 +337,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: mustard,sulphites
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: sizzling_sweet_potato_fries
   name: Sweet Potato Fries
   brand: Sizzling Pubs
@@ -353,7 +353,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: sizzling_garlic_mushrooms
   name: Garlic Mushrooms
   brand: Sizzling Pubs
@@ -369,7 +369,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: sizzling_chicken_wings
   name: Chicken Wings
   brand: Sizzling Pubs
@@ -385,7 +385,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: sizzling_loaded_fries
   name: Loaded Cheese & Bacon Fries
   brand: Sizzling Pubs
@@ -401,7 +401,7 @@
   dietary_compat: pescatarian
   allergens: milk,eggs
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: sizzling_sticky_toffee
   name: Sticky Toffee Pudding
   brand: Sizzling Pubs
@@ -417,7 +417,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: sizzling_chocolate_fudge
   name: Chocolate Fudge Cake
   brand: Sizzling Pubs
@@ -433,7 +433,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs,soy
   unit_grams: 160
-- source: gymflow
+- source: afletics
   source_id: sizzling_apple_pie
   name: Apple Pie
   brand: Sizzling Pubs
@@ -449,7 +449,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: sizzling_ice_cream_2
   name: Ice Cream (2 scoops)
   brand: Sizzling Pubs
@@ -465,7 +465,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: sizzling_peppercorn_sauce
   name: Peppercorn Sauce
   brand: Sizzling Pubs
@@ -481,7 +481,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: sizzling_lager_pint
   name: Lager (pint)
   brand: Sizzling Pubs
@@ -497,7 +497,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: sizzling_ale_pint
   name: Ale (pint)
   brand: Sizzling Pubs
@@ -513,7 +513,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: sizzling_cider_pint
   name: Cider (pint)
   brand: Sizzling Pubs
@@ -529,7 +529,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: sizzling_house_red_175
   name: House Red Wine (175 ml)
   brand: Sizzling Pubs
@@ -544,7 +544,7 @@
   tags: chain,pub,drink,alcoholic
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: sizzling_house_white_175
   name: House White Wine (175 ml)
   brand: Sizzling Pubs
@@ -559,7 +559,7 @@
   tags: chain,pub,drink,alcoholic
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: sizzling_spirit_25
   name: Spirit (25 ml shot)
   brand: Sizzling Pubs
@@ -575,7 +575,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: sizzling_pepsi_pint
   name: Pepsi (pint)
   brand: Sizzling Pubs
@@ -591,7 +591,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: sizzling_diet_pepsi_pint
   name: Diet Pepsi (pint)
   brand: Sizzling Pubs
@@ -607,7 +607,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: sizzling_orange_juice
   name: Orange Juice
   brand: Sizzling Pubs
@@ -622,7 +622,7 @@
   tags: chain,pub,drink
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sizzling_lemonade_pint
   name: Lemonade (pint)
   brand: Sizzling Pubs

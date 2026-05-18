@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: gymflow-api
+    name: afletics-api
     runtime: python
     # Starter (paid) — free-tier services sleep after ~15 min of
     # inactivity, and the cold-start path takes 30-60s before any
@@ -36,14 +36,14 @@ services:
 
       # Comma-separated host list. Leading dot = match all subdomains.
       # AFLETICS-RENAME (May 2026, Deen QC) — `afletics.com` is the new
-      # apex after the brand rename. `.gymflow.coach` + `.gymflow.app`
+      # apex after the brand rename. `.afletics.com` + `.afletics.com`
       # stay on the list transitionally so any in-flight magic-link
       # emails, App Store webhooks, and Render custom-domain bindings
       # keep resolving while DNS for afletics.com is being set up.
       # Drop the legacy entries once afletics.com cut-over is complete
       # and ~30 days of magic-link expiry has elapsed.
       - key: ALLOWED_HOSTS
-        value: .afletics.com,.gymflow.coach,.gymflow.app,.onrender.com
+        value: .afletics.com,.afletics.com,.afletics.com,.onrender.com
 
       # Enables the /api/users/_debug/set-state/ endpoint so the
       # iOS Profile DEBUG panel can flip tier (free/pro/pro_ai)
@@ -58,5 +58,5 @@ services:
         value: "0"
 
 databases:
-  - name: gymflow-db
+  - name: afletics-db
     plan: free

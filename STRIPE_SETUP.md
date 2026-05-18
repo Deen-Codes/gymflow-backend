@@ -5,7 +5,7 @@ Stripe dashboard + Render env vars. ~15 minutes total.
 
 ## 1. Create a Stripe account (if you haven't)
 
-https://dashboard.stripe.com/register — use your gymflow business
+https://dashboard.stripe.com/register — use your afletics business
 details. Stay in **test mode** for now (toggle top-right of dashboard);
 flip to live mode after you've tested the full flow.
 
@@ -34,7 +34,7 @@ In the same Connect Settings page, find **Redirect URIs**. Click
 **Add URI** and paste:
 
 ```
-https://gymflow-api-wxm9.onrender.com/payments/oauth/callback/
+https://afletics-api-wxm9.onrender.com/payments/oauth/callback/
 ```
 
 Save.
@@ -49,7 +49,7 @@ https://dashboard.stripe.com/test/apikeys — copy:
 
 ## 6. Set Render env vars
 
-Go to your Render dashboard → gymflow-api service → **Environment**.
+Go to your Render dashboard → afletics-api service → **Environment**.
 Add these three (the webhook secret comes in the next batch):
 
 | Key                       | Value                              |
@@ -111,7 +111,7 @@ In Stripe dashboard → **Developers → Webhooks** → click **Add endpoint**.
 
 - **Endpoint URL:**
   ```
-  https://gymflow-api-wxm9.onrender.com/payments/webhooks/stripe/
+  https://afletics-api-wxm9.onrender.com/payments/webhooks/stripe/
   ```
 - **Listen to events on:** *Connected accounts* (NOT "Your account" —
   the events fire on the trainer's connected account).
@@ -141,7 +141,7 @@ Render will auto-redeploy with the new env. Done.
 ### 12. Test the full flow
 
 1. Make sure you've **connected Stripe** from your trainer Settings page.
-2. Open your public site at `gymflow.app/p/<your-slug>/`.
+2. Open your public site at `afletics.com/p/<your-slug>/`.
 3. Scroll to your Pricing section and click **Subscribe** on a tier.
 4. You'll be redirected to Stripe Checkout (test mode → use card
    `4242 4242 4242 4242`, any future expiry, any CVC, any postcode).
@@ -156,10 +156,10 @@ shows the response body — that's where any errors will surface.
 
 ---
 
-## Domain swap — gymflow.app (Phase 7.7.2)
+## Domain swap — afletics.com (Phase 7.7.2)
 
 Once Cloudflare DNS is live and Render has issued a TLS cert for
-`https://gymflow.app`, you need to repoint Stripe at the new domain
+`https://afletics.com`, you need to repoint Stripe at the new domain
 or OAuth + webhooks will keep firing at the Render URL.
 
 ### 13. Add the new redirect URI in Stripe Connect
@@ -167,20 +167,20 @@ or OAuth + webhooks will keep firing at the Render URL.
 Stripe → Settings → **Connect Settings** → Redirect URIs → **Add URI**:
 
 ```
-https://gymflow.app/payments/oauth/callback/
+https://afletics.com/payments/oauth/callback/
 ```
 
-Keep the old `https://gymflow-api-wxm9.onrender.com/payments/oauth/callback/`
+Keep the old `https://afletics-api-wxm9.onrender.com/payments/oauth/callback/`
 URI in the list for now — it doesn't hurt and gives you a fallback if
 DNS goes sideways.
 
 ### 14. Tell Render to redirect to the new URL
 
-Render dashboard → gymflow-api → Environment → add (or update):
+Render dashboard → afletics-api → Environment → add (or update):
 
 | Key                         | Value                                                |
 |-----------------------------|------------------------------------------------------|
-| `STRIPE_OAUTH_REDIRECT_URI` | `https://gymflow.app/payments/oauth/callback/`     |
+| `STRIPE_OAUTH_REDIRECT_URI` | `https://afletics.com/payments/oauth/callback/`     |
 
 Save → Render redeploys.
 
@@ -189,14 +189,14 @@ Save → Render redeploys.
 The old OAuth grant has the Render URL baked in. After step 14:
 1. Trainer dashboard → Settings → Stripe Connect → **Disconnect**.
 2. Click **Connect with Stripe →**.
-3. Complete the OAuth dance — you'll land back on `gymflow.app/dashboard/settings/`.
+3. Complete the OAuth dance — you'll land back on `afletics.com/dashboard/settings/`.
 4. Confirm the badge is back to "Connected" with the same `acct_…` ID.
 
 ### 16. Add the webhook destination on the new domain
 
 Stripe → Developers → **Webhooks** → **Add destination**:
 
-- **Endpoint URL:** `https://gymflow.app/payments/webhooks/stripe/`
+- **Endpoint URL:** `https://afletics.com/payments/webhooks/stripe/`
 - **Listen to events on:** Connected accounts
 - Same five events:
   - `checkout.session.completed`
@@ -211,12 +211,12 @@ new one is verified working.)
 
 ### 17. Update the iOS app
 
-`GymFlow/Services/APIConfig.swift` → set `localOverride` to nil (or to
-`"https://gymflow.app"`). Rebuild & install on your phone.
+`Afletics/Services/APIConfig.swift` → set `localOverride` to nil (or to
+`"https://afletics.com"`). Rebuild & install on your phone.
 
 ### 18. Smoke test the full flow
 
-1. Open `https://gymflow.app/p/<your-slug>/` in a browser.
+1. Open `https://afletics.com/p/<your-slug>/` in a browser.
 2. Subscribe → pay with `4242 4242 4242 4242`.
 3. Render logs should show the webhook hit on the new path.
 4. iOS app should still log in and load Home.

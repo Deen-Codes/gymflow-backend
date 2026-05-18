@@ -12,4 +12,4 @@ for them.
 Open their profile to get started:
 {{ client_detail_url }}
 
-— GymFlow
+— Afletics

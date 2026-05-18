@@ -1,5 +1,5 @@
 /* ====================================================================
- * GymFlow — PT site builder (Phase 7 v1)
+ * Afletics — PT site builder (Phase 7 v1)
  * ====================================================================
  * Powers `templates/dashboard/dashboard_site.html`.
  *

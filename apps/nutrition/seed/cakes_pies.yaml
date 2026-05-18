@@ -1,6 +1,6 @@
 # cakes_pies.yaml — Mr Kipling French Fancies/Angel Slice/Battenberg/Bakewell Tart/Country Slice/Apple Pies/Cherry Bakewells/Viennese Whirls, Cadbury Mini Rolls + Chocolate Fingers, McVitie's Jaffa Cakes/Choc Digestives/Caramel, Pukka Pies (Chicken & Mushroom, Steak & Kidney, Steak & Ale), Holland's Pies, Pieminister.
 
-- source: gymflow
+- source: afletics
   source_id: mr_kipling_french_fancies_2
   name: Mr Kipling French Fancies (2)
   brand: Mr Kipling
@@ -16,7 +16,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: mr_kipling_angel_slice_1
   name: Mr Kipling Angel Slice
   brand: Mr Kipling
@@ -32,7 +32,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 32
-- source: gymflow
+- source: afletics
   source_id: mr_kipling_battenberg_slice
   name: Mr Kipling Battenberg (1 slice)
   brand: Mr Kipling
@@ -48,7 +48,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,tree_nuts
   unit_grams: 33
-- source: gymflow
+- source: afletics
   source_id: mr_kipling_bakewell_tart
   name: Mr Kipling Bakewell Tart
   brand: Mr Kipling
@@ -64,7 +64,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,tree_nuts
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: mr_kipling_country_slice
   name: Mr Kipling Country Slice
   brand: Mr Kipling
@@ -80,7 +80,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: mr_kipling_apple_pies_6
   name: Mr Kipling Apple Pies
   brand: Mr Kipling
@@ -96,7 +96,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 65
-- source: gymflow
+- source: afletics
   source_id: mr_kipling_cherry_bakewells_6
   name: Mr Kipling Cherry Bakewells
   brand: Mr Kipling
@@ -112,7 +112,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,tree_nuts
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: mr_kipling_viennese_whirls
   name: Mr Kipling Viennese Whirls
   brand: Mr Kipling
@@ -128,7 +128,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 28
-- source: gymflow
+- source: afletics
   source_id: cadbury_mini_rolls_6
   name: Cadbury Mini Rolls
   brand: Cadbury
@@ -144,7 +144,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 27
-- source: gymflow
+- source: afletics
   source_id: cadbury_chocolate_fingers
   name: Cadbury Chocolate Fingers (1 pack)
   brand: Cadbury
@@ -160,7 +160,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: mcvities_jaffa_cake_pack
   name: McVitie's Jaffa Cakes (1 pack)
   brand: McVitie's
@@ -176,7 +176,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: mcvities_chocolate_digestives_pack
   name: McVitie's Milk Chocolate Digestives (1 pack)
   brand: McVitie's
@@ -192,7 +192,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: mcvities_caramel_digestives
   name: McVitie's Caramel Digestives (1 biscuit)
   brand: McVitie's
@@ -208,7 +208,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 18
-- source: gymflow
+- source: afletics
   source_id: pukka_chicken_mushroom_pie
   name: Pukka Chicken & Mushroom Pie
   brand: Pukka
@@ -224,7 +224,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 233
-- source: gymflow
+- source: afletics
   source_id: pukka_steak_kidney_pie
   name: Pukka Steak & Kidney Pie
   brand: Pukka
@@ -240,7 +240,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 233
-- source: gymflow
+- source: afletics
   source_id: pukka_steak_ale_pie
   name: Pukka Steak & Ale Pie
   brand: Pukka
@@ -256,7 +256,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 233
-- source: gymflow
+- source: afletics
   source_id: hollands_chicken_mushroom
   name: Holland's Chicken & Mushroom Pie
   brand: Holland's
@@ -272,7 +272,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: hollands_meat_potato_pie
   name: Holland's Meat & Potato Pie
   brand: Holland's
@@ -288,7 +288,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: pieminister_heidi_pie
   name: Pieminister Heidi Pie
   brand: Pieminister
@@ -304,7 +304,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 270
-- source: gymflow
+- source: afletics
   source_id: pieminister_moo_pie
   name: Pieminister Moo Pie
   brand: Pieminister

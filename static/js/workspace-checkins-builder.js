@@ -1,5 +1,5 @@
 /* ====================================================================
- * GymFlow — Check-Ins form builder
+ * Afletics — Check-Ins form builder
  * ====================================================================
  * Powers `templates/dashboard/dashboard_checkin_forms.html`.
  *

@@ -1,7 +1,7 @@
 # wetherspoons.yaml — JD Wetherspoon menu.
 # 37 entries (incl 2 migrated).
 # Source: jdwetherspoon.com/menu calorie + allergen PDFs.
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_full_english
   name: Wetherspoon's Traditional Breakfast
   brand: Wetherspoon's
@@ -17,7 +17,7 @@
   allergens: gluten,eggs,milk,sulphites
   portion_unit: meal
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: weths_classic_burger
   name: Wetherspoon's Classic Beef Burger & Chips
   brand: Wetherspoon's
@@ -33,7 +33,7 @@
   allergens: gluten,eggs,milk,sesame,sulphites
   portion_unit: meal
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_fish_chips
   name: Fish & Chips
   brand: Wetherspoon's
@@ -49,7 +49,7 @@
   dietary_compat: pescatarian
   allergens: fish,gluten,eggs
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_steak_ale_pie
   name: Steak & Ale Pie
   brand: Wetherspoon's
@@ -65,7 +65,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 540
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_chicken_burger_brioche
   name: Chicken Burger
   brand: Wetherspoon's
@@ -81,7 +81,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 460
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_mixed_grill
   name: Mixed Grill
   brand: Wetherspoon's
@@ -97,7 +97,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: sulphites,eggs
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_gammon_egg
   name: Gammon, Egg & Chips
   brand: Wetherspoon's
@@ -113,7 +113,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: eggs
   unit_grams: 550
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_chicken_tikka_masala
   name: Chicken Tikka Masala
   brand: Wetherspoon's
@@ -129,7 +129,7 @@
   dietary_compat: pescatarian
   allergens: milk,celery
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_thai_green_curry
   name: Thai Green Chicken Curry
   brand: Wetherspoon's
@@ -145,7 +145,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,celery
   unit_grams: 580
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_lasagne
   name: Beef Lasagne
   brand: Wetherspoon's
@@ -161,7 +161,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 470
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_chilli_con_carne
   name: Chilli Con Carne
   brand: Wetherspoon's
@@ -177,7 +177,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: celery
   unit_grams: 480
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_jacket_cheese_beans
   name: Jacket Potato Cheese & Beans
   brand: Wetherspoon's
@@ -193,7 +193,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_jacket_tuna_mayo
   name: Jacket Potato Tuna Mayo
   brand: Wetherspoon's
@@ -209,7 +209,7 @@
   dietary_compat: pescatarian
   allergens: eggs,fish,mustard
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_quesadilla_chicken
   name: Chicken Quesadilla
   brand: Wetherspoon's
@@ -225,7 +225,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_burger_classic
   name: Wetherspoon Beef Burger
   brand: Wetherspoon's
@@ -241,7 +241,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 470
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_vegan_burger
   name: Vegan Burger
   brand: Wetherspoon's
@@ -257,7 +257,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame,soy
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_sunday_beef
   name: Roast Beef Sunday Lunch
   brand: Wetherspoon's
@@ -273,7 +273,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_sunday_chicken
   name: Roast Chicken Sunday Lunch
   brand: Wetherspoon's
@@ -289,7 +289,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_small_breakfast
   name: Small Breakfast
   brand: Wetherspoon's
@@ -305,7 +305,7 @@
   dietary_compat: pescatarian
   allergens: gluten,eggs,sulphites
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_large_breakfast
   name: Large Breakfast
   brand: Wetherspoon's
@@ -321,7 +321,7 @@
   dietary_compat: pescatarian
   allergens: gluten,eggs,sulphites
   unit_grams: 750
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_eggs_benedict
   name: Eggs Benedict
   brand: Wetherspoon's
@@ -337,7 +337,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_avocado_toast
   name: Smashed Avocado on Toast
   brand: Wetherspoon's
@@ -353,7 +353,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_chips
   name: Chips
   brand: Wetherspoon's
@@ -369,7 +369,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_onion_rings
   name: Onion Rings
   brand: Wetherspoon's
@@ -385,7 +385,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_garlic_bread
   name: Garlic Bread
   brand: Wetherspoon's
@@ -401,7 +401,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_chicken_bites_5
   name: Chicken Bites (5)
   brand: Wetherspoon's
@@ -417,7 +417,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_nachos_sharing
   name: Nachos (sharing)
   brand: Wetherspoon's
@@ -433,7 +433,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,sulphites
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_sticky_toffee
   name: Sticky Toffee Pudding
   brand: Wetherspoon's
@@ -449,7 +449,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_chocolate_brownie
   name: Chocolate Brownie Sundae
   brand: Wetherspoon's
@@ -465,7 +465,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_cheesecake
   name: Vanilla Cheesecake
   brand: Wetherspoon's
@@ -481,7 +481,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_pint_lager
   name: Lager (pint)
   brand: Wetherspoon's
@@ -497,7 +497,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_pint_ale
   name: Ale (pint)
   brand: Wetherspoon's
@@ -513,7 +513,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_pint_cider
   name: Cider (pint)
   brand: Wetherspoon's
@@ -529,7 +529,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_house_red_175
   name: House Red Wine (175 ml)
   brand: Wetherspoon's
@@ -544,7 +544,7 @@
   tags: chain,pub,drink,alcoholic
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_house_white_175
   name: House White Wine (175 ml)
   brand: Wetherspoon's
@@ -559,7 +559,7 @@
   tags: chain,pub,drink,alcoholic
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_pepsi_pint
   name: Pepsi (pint)
   brand: Wetherspoon's
@@ -575,7 +575,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: wetherspoons_diet_pepsi_pint
   name: Diet Pepsi (pint)
   brand: Wetherspoon's

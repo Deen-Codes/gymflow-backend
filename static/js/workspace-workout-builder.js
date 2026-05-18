@@ -1,5 +1,5 @@
 /* ====================================================================
- * GymFlow — drag-drop workout builder (v2)
+ * Afletics — drag-drop workout builder (v2)
  * ====================================================================
  * Powers `templates/dashboard/dashboard_workouts.html`.
  *

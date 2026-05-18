@@ -1,6 +1,6 @@
 # fish_counter.yaml — fresh fish counter: whole sea bass/mackerel, sea bream, smoked mackerel/trout, dressed crab, crab claws, lobster tail, mussels, plaice, halibut, swordfish, kingfish, squid/calamari, octopus.
 
-- source: gymflow
+- source: afletics
   source_id: fish_sea_bass_whole_cooked
   name: Whole Sea Bass, cooked (per 100g)
   brand: ''
@@ -16,7 +16,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: fish_sea_bass_2_fillets
   name: Sea Bass Fillets (2)
   brand: ''
@@ -32,7 +32,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: fish_sea_bream_fillets
   name: Sea Bream Fillet, cooked
   brand: ''
@@ -48,7 +48,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: fish_whole_mackerel_cooked
   name: Whole Mackerel, cooked
   brand: ''
@@ -64,7 +64,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: fish_smoked_mackerel_fillet
   name: Smoked Mackerel Fillet
   brand: ''
@@ -80,7 +80,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: fish_smoked_trout_slice
   name: Smoked Trout Slice
   brand: ''
@@ -96,7 +96,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: fish_dressed_crab_per_100
   name: Dressed Crab (per 100g)
   brand: ''
@@ -112,7 +112,7 @@
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: crustaceans,eggs,mustard
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: fish_crab_claws_2_cooked
   name: Crab Claws, cooked (per 100g)
   brand: ''
@@ -127,7 +127,7 @@
   tags: fish,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: crustaceans
-- source: gymflow
+- source: afletics
   source_id: fish_lobster_tail_cooked
   name: Lobster Tail, cooked
   brand: ''
@@ -143,7 +143,7 @@
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: crustaceans
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: fish_mussels_cooked_pot
   name: Mussels in Shells, cooked (per 100g)
   brand: ''
@@ -159,7 +159,7 @@
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: molluscs
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: fish_plaice_fillet_cooked
   name: Plaice Fillet, cooked
   brand: ''
@@ -175,7 +175,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: fish_halibut_steak_cooked
   name: Halibut Steak, cooked
   brand: ''
@@ -191,7 +191,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: fish_swordfish_steak_cooked
   name: Swordfish Steak, cooked
   brand: ''
@@ -207,7 +207,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: fish_kingfish_cooked
   name: King Fish (Kingfish), cooked
   brand: ''
@@ -223,7 +223,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: fish_squid_calamari_per_100
   name: Squid (Calamari), cooked plain (per 100g)
   brand: ''
@@ -238,7 +238,7 @@
   tags: fish,high_protein
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: molluscs
-- source: gymflow
+- source: afletics
   source_id: fish_octopus_cooked_per_100
   name: Octopus, cooked (per 100g)
   brand: ''

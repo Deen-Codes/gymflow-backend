@@ -123,7 +123,7 @@ def _snapshot_food_into_library(trainer, payload):
     row so we don't grow the library on every drag.
 
     Replaces the old OFF-snapshot path (`source="off"`); new snapshots
-    use `source="gymflow"`. Legacy `source="off"` rows in the database
+    use `source="afletics"`. Legacy `source="off"` rows in the database
     keep working — `external_id` lookups still resolve them.
     """
     external_id = (payload.get("external_id") or "").strip()
@@ -147,7 +147,7 @@ def _snapshot_food_into_library(trainer, payload):
         fats=_safe_float(payload.get("fats")),
         portion_type=FoodLibraryItem.PORTION_GRAMS,
         unit_label="",
-        source=FoodLibraryItem.SOURCE_GYMFLOW,
+        source=FoodLibraryItem.SOURCE_AFLETICS,
         external_id=external_id,
     )
 

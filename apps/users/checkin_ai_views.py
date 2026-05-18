@@ -56,7 +56,7 @@ MAX_OUTPUT_TOKENS = 1200
 
 
 SYSTEM_PROMPT = """\
-You are GymFlow's AI coach reviewing a single weekly check-in
+You are Afletics's AI coach reviewing a single weekly check-in
 submission. The user has just answered a structured form about how
 their last week went. Your job: decide if their answers warrant
 ONE small adjustment to their programme — and if so, propose it

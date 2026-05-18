@@ -17,7 +17,7 @@
 # BURGERS — REGULAR (2 patties, ~120g each)
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_hamburger
   name: Hamburger
   brand: Five Guys
@@ -34,7 +34,7 @@
   dietary_compat: halal,kosher,pescatarian,dairy_free
   allergens: gluten,sesame
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_cheeseburger
   name: Cheeseburger
   brand: Five Guys
@@ -51,7 +51,7 @@
   dietary_compat: halal,kosher,pescatarian
   allergens: gluten,milk,sesame
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_bacon_burger
   name: Bacon Burger
   brand: Five Guys
@@ -68,7 +68,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,sesame
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_bacon_cheeseburger
   name: Bacon Cheeseburger
   brand: Five Guys
@@ -85,7 +85,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sesame
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_veggie_sandwich
   name: Veggie Sandwich
   brand: Five Guys
@@ -102,7 +102,7 @@
   dietary_compat: vegetarian,kosher,halal,pescatarian,dairy_free
   allergens: gluten,sesame
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_cheese_veggie_sandwich
   name: Cheese Veggie Sandwich
   brand: Five Guys
@@ -123,7 +123,7 @@
 # LITTLE BURGERS (single patty, ~60g)
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_little_hamburger
   name: Little Hamburger
   brand: Five Guys
@@ -140,7 +140,7 @@
   dietary_compat: halal,kosher,pescatarian,dairy_free
   allergens: gluten,sesame
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_little_cheeseburger
   name: Little Cheeseburger
   brand: Five Guys
@@ -157,7 +157,7 @@
   dietary_compat: halal,kosher,pescatarian
   allergens: gluten,milk,sesame
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_little_bacon_burger
   name: Little Bacon Burger
   brand: Five Guys
@@ -174,7 +174,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,sesame
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_little_bacon_cheeseburger
   name: Little Bacon Cheeseburger
   brand: Five Guys
@@ -195,7 +195,7 @@
 # HOT DOGS
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_hot_dog
   name: Hot Dog
   brand: Five Guys
@@ -212,7 +212,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,sesame
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_cheese_dog
   name: Cheese Dog
   brand: Five Guys
@@ -229,7 +229,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sesame
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_bacon_dog
   name: Bacon Dog
   brand: Five Guys
@@ -246,7 +246,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,sesame
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_bacon_cheese_dog
   name: Bacon Cheese Dog
   brand: Five Guys
@@ -267,7 +267,7 @@
 # FRIES
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_fries_little
   name: Little Fries
   brand: Five Guys
@@ -284,7 +284,7 @@
   dietary_compat: vegan,vegetarian,kosher,halal,pescatarian,dairy_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_fries_regular
   name: Regular Fries
   brand: Five Guys
@@ -301,7 +301,7 @@
   dietary_compat: vegan,vegetarian,kosher,halal,pescatarian,dairy_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_fries_large
   name: Large Fries
   brand: Five Guys
@@ -318,7 +318,7 @@
   dietary_compat: vegan,vegetarian,kosher,halal,pescatarian,dairy_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_cajun_fries_little
   name: Little Cajun Fries
   brand: Five Guys
@@ -335,7 +335,7 @@
   dietary_compat: vegan,vegetarian,kosher,halal,pescatarian,dairy_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_cajun_fries_regular
   name: Regular Cajun Fries
   brand: Five Guys
@@ -352,7 +352,7 @@
   dietary_compat: vegan,vegetarian,kosher,halal,pescatarian,dairy_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_cajun_fries_large
   name: Large Cajun Fries
   brand: Five Guys
@@ -373,7 +373,7 @@
 # MILKSHAKES — base shake, full size (~600 ml)
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_milkshake_vanilla
   name: Vanilla Milkshake
   brand: Five Guys
@@ -389,7 +389,7 @@
   dietary_compat: vegetarian,kosher,halal,pescatarian
   allergens: milk
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_milkshake_chocolate
   name: Chocolate Milkshake
   brand: Five Guys
@@ -405,7 +405,7 @@
   dietary_compat: vegetarian,kosher,halal,pescatarian
   allergens: milk
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_milkshake_strawberry
   name: Strawberry Milkshake
   brand: Five Guys
@@ -421,7 +421,7 @@
   dietary_compat: vegetarian,kosher,halal,pescatarian
   allergens: milk
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_milkshake_oreo
   name: Oreo Milkshake
   brand: Five Guys
@@ -437,7 +437,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: milk,gluten,soy
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_milkshake_salted_caramel
   name: Salted Caramel Milkshake
   brand: Five Guys
@@ -453,7 +453,7 @@
   dietary_compat: vegetarian,kosher,halal,pescatarian
   allergens: milk
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_milkshake_banana
   name: Banana Milkshake
   brand: Five Guys
@@ -469,7 +469,7 @@
   dietary_compat: vegetarian,kosher,halal,pescatarian
   allergens: milk
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_milkshake_peanut_butter
   name: Peanut Butter Milkshake
   brand: Five Guys
@@ -489,7 +489,7 @@
 # ADD-ONS / TOPPINGS
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_bacon_strip
   name: Bacon Strip (add-on)
   brand: Five Guys
@@ -506,7 +506,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: fiveguys_cheese_slice
   name: Cheese Slice (add-on)
   brand: Five Guys

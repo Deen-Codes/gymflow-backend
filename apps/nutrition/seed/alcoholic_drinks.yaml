@@ -2,7 +2,7 @@
 # Macros include alcohol kcal (7 kcal/g ethanol) so the (P×4)+(C×4)+(F×9) check
 # will under-shoot kcal — that is correct, NOT an error.
 
-- source: gymflow
+- source: afletics
   source_id: beer_carling_pint
   name: Carling (pint)
   brand: Carling
@@ -18,7 +18,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: beer_fosters_pint
   name: Foster's (pint)
   brand: Foster's
@@ -34,7 +34,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: beer_stella_330
   name: Stella Artois (330ml bottle)
   brand: Stella Artois
@@ -50,7 +50,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: beer_stella_pint
   name: Stella Artois (pint)
   brand: Stella Artois
@@ -66,7 +66,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: beer_heineken_330
   name: Heineken (330ml bottle)
   brand: Heineken
@@ -82,7 +82,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: beer_heineken_pint
   name: Heineken (pint)
   brand: Heineken
@@ -98,7 +98,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: beer_corona_330
   name: Corona Extra (330ml bottle)
   brand: Corona
@@ -114,7 +114,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: beer_madri_pint
   name: Madri Excepcional (pint)
   brand: Madri
@@ -130,7 +130,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: beer_peroni_330
   name: Peroni Nastro Azzurro (330ml)
   brand: Peroni
@@ -146,7 +146,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: beer_asahi_330
   name: Asahi Super Dry (330ml)
   brand: Asahi
@@ -162,7 +162,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: beer_san_miguel_pint
   name: San Miguel (pint)
   brand: San Miguel
@@ -178,7 +178,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: beer_tiger_330
   name: Tiger (330ml bottle)
   brand: Tiger
@@ -194,7 +194,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: beer_carlsberg_pint
   name: Carlsberg (pint)
   brand: Carlsberg
@@ -210,7 +210,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: beer_kronenbourg_pint
   name: Kronenbourg 1664 (pint)
   brand: Kronenbourg
@@ -226,7 +226,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: beer_birra_moretti_330
   name: Birra Moretti (330ml)
   brand: Birra Moretti
@@ -242,7 +242,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: beer_brewdog_punk_ipa_330
   name: BrewDog Punk IPA (330ml)
   brand: BrewDog
@@ -258,7 +258,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: beer_brewdog_hazy_jane_330
   name: BrewDog Hazy Jane (330ml)
   brand: BrewDog
@@ -274,7 +274,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: beer_brewdog_lost_lager_330
   name: BrewDog Lost Lager (330ml)
   brand: BrewDog
@@ -290,7 +290,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: beer_brewdog_nanny_state_330
   name: BrewDog Nanny State (alcohol-free, 330ml)
   brand: BrewDog
@@ -306,7 +306,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: beer_camden_hells_330
   name: Camden Hells Lager (330ml)
   brand: Camden Town
@@ -322,7 +322,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: beer_beavertown_neck_oil_330
   name: Beavertown Neck Oil (330ml)
   brand: Beavertown
@@ -338,7 +338,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: beer_guinness_pint
   name: Guinness Draught (pint)
   brand: Guinness
@@ -354,7 +354,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: beer_guinness_can_440
   name: Guinness Draught (440ml can)
   brand: Guinness
@@ -370,7 +370,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 440
-- source: gymflow
+- source: afletics
   source_id: beer_doom_bar_pint
   name: Doom Bar Cornish Ale (pint)
   brand: Sharp's
@@ -386,7 +386,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: beer_old_speckled_hen_pint
   name: Old Speckled Hen (pint)
   brand: Old Speckled Hen
@@ -402,7 +402,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: cider_strongbow_pint
   name: Strongbow (pint)
   brand: Strongbow
@@ -418,7 +418,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: cider_magners_500
   name: Magners Original (500ml)
   brand: Magners
@@ -434,7 +434,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: cider_bulmers_500
   name: Bulmers Original (500ml)
   brand: Bulmers
@@ -450,7 +450,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: cider_rekorderlig_strawberry_500
   name: Rekorderlig Strawberry & Lime (500ml)
   brand: Rekorderlig
@@ -466,7 +466,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: cider_old_mout_kiwi_lime_500
   name: Old Mout Kiwi & Lime (500ml)
   brand: Old Mout
@@ -482,7 +482,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: cider_aspall_dry_500
   name: Aspall Dry English Cyder (500ml)
   brand: Aspall
@@ -498,7 +498,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: cider_kopparberg_strawberry_lime_500
   name: Kopparberg Strawberry & Lime (500ml)
   brand: Kopparberg
@@ -514,7 +514,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: wine_red_175ml
   name: Red Wine (175ml glass)
   brand: ''
@@ -529,7 +529,7 @@
   tags: drink,alcoholic,wine
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: wine_red_125ml
   name: Red Wine (125ml glass)
   brand: ''
@@ -544,7 +544,7 @@
   tags: drink,alcoholic,wine
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: wine_red_250ml
   name: Red Wine (250ml large glass)
   brand: ''
@@ -559,7 +559,7 @@
   tags: drink,alcoholic,wine
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: wine_white_175ml
   name: White Wine (175ml glass)
   brand: ''
@@ -574,7 +574,7 @@
   tags: drink,alcoholic,wine
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: wine_white_125ml
   name: White Wine (125ml glass)
   brand: ''
@@ -589,7 +589,7 @@
   tags: drink,alcoholic,wine
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: wine_white_250ml
   name: White Wine (250ml large glass)
   brand: ''
@@ -604,7 +604,7 @@
   tags: drink,alcoholic,wine
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: wine_rose_175ml
   name: Rosé Wine (175ml glass)
   brand: ''
@@ -619,7 +619,7 @@
   tags: drink,alcoholic,wine
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: wine_prosecco_125ml
   name: Prosecco (125ml glass)
   brand: ''
@@ -634,7 +634,7 @@
   tags: drink,alcoholic,wine,sparkling
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: wine_champagne_125ml
   name: Champagne (125ml glass)
   brand: ''
@@ -649,7 +649,7 @@
   tags: drink,alcoholic,wine,sparkling
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: wine_dessert_75ml
   name: Dessert / Pudding Wine (75ml)
   brand: ''
@@ -664,7 +664,7 @@
   tags: drink,alcoholic,wine
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: spirit_vodka_25
   name: Vodka (25ml shot)
   brand: ''
@@ -680,7 +680,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: spirit_gin_25
   name: Gin (25ml shot)
   brand: ''
@@ -696,7 +696,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: spirit_whisky_25
   name: Whisky (25ml shot)
   brand: ''
@@ -712,7 +712,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: spirit_rum_25
   name: Rum (25ml shot)
   brand: ''
@@ -728,7 +728,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: spirit_tequila_25
   name: Tequila (25ml shot)
   brand: ''
@@ -744,7 +744,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: spirit_brandy_25
   name: Brandy (25ml shot)
   brand: ''
@@ -760,7 +760,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: spirit_baileys_50
   name: Baileys Irish Cream (50ml)
   brand: Baileys
@@ -776,7 +776,7 @@
   dietary_compat: vegetarian,pescatarian,kosher
   allergens: milk
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: spirit_jagermeister_25
   name: Jägermeister (25ml shot)
   brand: Jägermeister
@@ -792,7 +792,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: spirit_aperol_25
   name: Aperol (25ml shot)
   brand: Aperol
@@ -808,7 +808,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: spirit_campari_25
   name: Campari (25ml shot)
   brand: Campari
@@ -824,7 +824,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: cocktail_gin_tonic
   name: Gin & Tonic
   brand: ''
@@ -839,7 +839,7 @@
   tags: drink,alcoholic,cocktail
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: cocktail_vodka_lime_soda
   name: Vodka, Lime & Soda
   brand: ''
@@ -854,7 +854,7 @@
   tags: drink,alcoholic,cocktail,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: cocktail_mojito
   name: Mojito (generic)
   brand: ''
@@ -869,7 +869,7 @@
   tags: drink,alcoholic,cocktail
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: cocktail_margarita
   name: Margarita (generic)
   brand: ''
@@ -884,7 +884,7 @@
   tags: drink,alcoholic,cocktail
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: cocktail_old_fashioned
   name: Old Fashioned
   brand: ''
@@ -899,7 +899,7 @@
   tags: drink,alcoholic,cocktail
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: cocktail_negroni
   name: Negroni
   brand: ''
@@ -914,7 +914,7 @@
   tags: drink,alcoholic,cocktail
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: cocktail_bloody_mary
   name: Bloody Mary
   brand: ''
@@ -929,7 +929,7 @@
   tags: drink,alcoholic,cocktail
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: celery
-- source: gymflow
+- source: afletics
   source_id: seltzer_white_claw_330
   name: White Claw Hard Seltzer (330ml)
   brand: White Claw
@@ -945,7 +945,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: seltzer_white_claw_mango_330
   name: White Claw Mango (330ml)
   brand: White Claw
@@ -961,7 +961,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: seltzer_topo_chico_330
   name: Topo Chico Hard Seltzer (330ml)
   brand: Topo Chico
@@ -977,7 +977,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: beer_heineken_zero_330
   name: Heineken 0.0 (330ml)
   brand: Heineken
@@ -993,7 +993,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: beer_lucky_saint_330
   name: Lucky Saint Alcohol-Free (330ml)
   brand: Lucky Saint

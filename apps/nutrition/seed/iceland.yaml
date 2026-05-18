@@ -1,5 +1,5 @@
 # iceland.yaml — Iceland frozen-heavy own-brand. 50 entries.
-- source: gymflow
+- source: afletics
   source_id: iceland_chicken_tikka_masala
   name: Iceland Chicken Tikka Masala (frozen)
   brand: Iceland
@@ -15,7 +15,7 @@
   dietary_compat: pescatarian
   allergens: milk,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: iceland_chicken_korma
   name: Iceland Chicken Korma (frozen)
   brand: Iceland
@@ -31,7 +31,7 @@
   dietary_compat: pescatarian
   allergens: milk,tree_nuts
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: iceland_thai_green_curry
   name: Iceland Thai Green Chicken Curry (frozen)
   brand: Iceland
@@ -47,7 +47,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: iceland_lasagne
   name: Iceland Beef Lasagne (frozen)
   brand: Iceland
@@ -63,7 +63,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: iceland_spaghetti_bolognese
   name: Iceland Spaghetti Bolognese (frozen)
   brand: Iceland
@@ -79,7 +79,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: iceland_cottage_pie
   name: Iceland Cottage Pie (frozen)
   brand: Iceland
@@ -95,7 +95,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: iceland_shepherds_pie
   name: Iceland Shepherd's Pie (frozen)
   brand: Iceland
@@ -111,7 +111,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: iceland_chicken_chow_mein
   name: Iceland Chicken Chow Mein (frozen)
   brand: Iceland
@@ -127,7 +127,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,soy,sesame,eggs
   unit_grams: 375
-- source: gymflow
+- source: afletics
   source_id: iceland_sweet_sour_chicken
   name: Iceland Sweet & Sour Chicken (frozen)
   brand: Iceland
@@ -143,7 +143,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,soy,eggs
   unit_grams: 375
-- source: gymflow
+- source: afletics
   source_id: iceland_macaroni_cheese
   name: Iceland Macaroni Cheese (frozen)
   brand: Iceland
@@ -159,7 +159,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: iceland_sw_chicken_jalfrezi
   name: Iceland Slimming World Chicken Jalfrezi
   brand: Iceland
@@ -175,7 +175,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: celery,sulphites
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: iceland_sw_chilli_con_carne
   name: Iceland Slimming World Chilli Con Carne
   brand: Iceland
@@ -191,7 +191,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: celery
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: iceland_sw_lasagne
   name: Iceland Slimming World Lasagne
   brand: Iceland
@@ -207,7 +207,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: iceland_sw_thai_chicken
   name: Iceland Slimming World Thai Sweet Chilli Chicken
   brand: Iceland
@@ -223,7 +223,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,soy,sesame
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: iceland_pepperoni_pizza_frozen
   name: Iceland Pepperoni Pizza (frozen)
   brand: Iceland
@@ -239,7 +239,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: iceland_margherita_pizza_frozen
   name: Iceland Margherita Pizza (frozen)
   brand: Iceland
@@ -255,7 +255,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: iceland_meat_feast_pizza
   name: Iceland Meat Feast Pizza (frozen)
   brand: Iceland
@@ -271,7 +271,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: iceland_chicken_breast_fillets
   name: Iceland Chicken Breast Fillets (frozen)
   brand: Iceland
@@ -286,7 +286,7 @@
   tags: supermarket,frozen,meat,chicken,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: iceland_chicken_thighs_skinless
   name: Iceland Chicken Thighs Skinless (frozen)
   brand: Iceland
@@ -301,7 +301,7 @@
   tags: supermarket,frozen,meat,chicken,high_protein
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: iceland_breaded_chicken_4
   name: Iceland Breaded Chicken Breasts (frozen)
   brand: Iceland
@@ -317,7 +317,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: iceland_chicken_kievs_2
   name: Iceland Chicken Kievs (frozen)
   brand: Iceland
@@ -333,7 +333,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: iceland_chicken_nuggets_30
   name: Iceland Chicken Nuggets (frozen)
   brand: Iceland
@@ -349,7 +349,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 16
-- source: gymflow
+- source: afletics
   source_id: iceland_fish_fingers_10
   name: Iceland Fish Fingers (frozen)
   brand: Iceland
@@ -365,7 +365,7 @@
   dietary_compat: pescatarian
   allergens: gluten,fish,milk,eggs
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: iceland_battered_cod_2
   name: Iceland Battered Cod Fillets (frozen)
   brand: Iceland
@@ -381,7 +381,7 @@
   dietary_compat: pescatarian
   allergens: gluten,fish,milk,eggs
   unit_grams: 165
-- source: gymflow
+- source: afletics
   source_id: iceland_breaded_scampi
   name: Iceland Wholetail Scampi (frozen)
   brand: Iceland
@@ -397,7 +397,7 @@
   dietary_compat: pescatarian
   allergens: crustaceans,gluten,eggs
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: iceland_salmon_fillets_4
   name: Iceland Salmon Fillets (frozen)
   brand: Iceland
@@ -413,7 +413,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: iceland_oven_chips
   name: Iceland Oven Chips (frozen)
   brand: Iceland
@@ -428,7 +428,7 @@
   tags: supermarket,frozen,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: iceland_frozen_peas
   name: Iceland Garden Peas (frozen)
   brand: Iceland
@@ -443,7 +443,7 @@
   tags: supermarket,frozen,vegetable,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: iceland_frozen_sweetcorn
   name: Iceland Sweetcorn (frozen)
   brand: Iceland
@@ -458,7 +458,7 @@
   tags: supermarket,frozen,vegetable,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: iceland_mixed_veg
   name: Iceland Mixed Vegetables (frozen)
   brand: Iceland
@@ -473,7 +473,7 @@
   tags: supermarket,frozen,vegetable,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: iceland_potato_waffles_10
   name: Iceland Potato Waffles (frozen)
   brand: Iceland
@@ -489,7 +489,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: iceland_hash_browns
   name: Iceland Hash Browns (frozen)
   brand: Iceland
@@ -505,7 +505,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: iceland_vanilla_ice_cream
   name: Iceland Vanilla Ice Cream
   brand: Iceland
@@ -520,7 +520,7 @@
   tags: supermarket,frozen,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
-- source: gymflow
+- source: afletics
   source_id: iceland_chocolate_ice_cream
   name: Iceland Chocolate Ice Cream
   brand: Iceland
@@ -535,7 +535,7 @@
   tags: supermarket,frozen,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,eggs,soy
-- source: gymflow
+- source: afletics
   source_id: iceland_frozen_berries_mixed
   name: Iceland Mixed Berries (frozen)
   brand: Iceland
@@ -550,7 +550,7 @@
   tags: supermarket,frozen,fruit,vegan,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: iceland_lean_beef_mince_5pct
   name: Iceland Lean Beef Mince 5% Fat
   brand: Iceland
@@ -565,7 +565,7 @@
   tags: supermarket,meat,high_protein,low_fat
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: iceland_pork_sausages
   name: Iceland British Pork Sausages
   brand: Iceland
@@ -581,7 +581,7 @@
   dietary_compat: pescatarian
   allergens: gluten,sulphites
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: iceland_eggs_free_range_lge
   name: Iceland Free Range Large Eggs
   brand: Iceland
@@ -597,7 +597,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: iceland_milk_semi
   name: Iceland Semi-skimmed Milk
   brand: Iceland
@@ -612,7 +612,7 @@
   tags: supermarket,dairy
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: iceland_greek_yogurt_0pct
   name: Iceland Greek Style 0% Fat Yogurt
   brand: Iceland
@@ -628,7 +628,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: iceland_white_bread_medium
   name: Iceland White Medium Bread
   brand: Iceland
@@ -644,7 +644,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: iceland_milk_chocolate_bar
   name: Iceland Milk Chocolate
   brand: Iceland
@@ -660,7 +660,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 45
-- source: gymflow
+- source: afletics
   source_id: iceland_ready_salted_crisps
   name: Iceland Ready Salted Crisps
   brand: Iceland
@@ -676,7 +676,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: iceland_baked_beans
   name: Iceland Baked Beans
   brand: Iceland
@@ -691,7 +691,7 @@
   tags: supermarket,canned,pulses
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: iceland_tuna_water
   name: Iceland Tuna in Spring Water
   brand: Iceland
@@ -707,7 +707,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: iceland_greggs_sausage_rolls_4
   name: Greggs Sausage Rolls (Iceland frozen)
   brand: Iceland
@@ -723,7 +723,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 90
-- source: gymflow
+- source: afletics
   source_id: iceland_greggs_steak_bakes_4
   name: Greggs Steak Bakes (Iceland frozen)
   brand: Iceland
@@ -739,7 +739,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 145
-- source: gymflow
+- source: afletics
   source_id: iceland_greggs_chicken_bakes_4
   name: Greggs Chicken Bakes (Iceland frozen)
   brand: Iceland
@@ -755,7 +755,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 145
-- source: gymflow
+- source: afletics
   source_id: iceland_tgi_loaded_potato_skins
   name: TGI Loaded Potato Skins (Iceland frozen)
   brand: Iceland
@@ -771,7 +771,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: iceland_tgi_chicken_wings
   name: TGI BBQ Chicken Wings (Iceland frozen)
   brand: Iceland

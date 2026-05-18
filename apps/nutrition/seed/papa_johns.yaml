@@ -1,7 +1,7 @@
 # papa_johns.yaml — Papa John's UK pizza menu.
 # 40 entries. Macros per-slice (medium 8-slice; large 8-slice; XL 10-slice).
 # Source: papajohns.co.uk/nutrition.
-- source: gymflow
+- source: afletics
   source_id: papajohns_pepperoni_passion_med
   name: Pepperoni Passion (med slice)
   brand: Papa John's
@@ -17,7 +17,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 105
-- source: gymflow
+- source: afletics
   source_id: papajohns_hawaiian_med
   name: Hawaiian (med slice)
   brand: Papa John's
@@ -33,7 +33,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: papajohns_meatlovers_med
   name: The Meats (med slice)
   brand: Papa John's
@@ -49,7 +49,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 115
-- source: gymflow
+- source: afletics
   source_id: papajohns_garden_party_med
   name: Garden Party (med slice)
   brand: Papa John's
@@ -65,7 +65,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,sulphites
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: papajohns_chicken_club_med
   name: Chicken Club (med slice)
   brand: Papa John's
@@ -81,7 +81,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 115
-- source: gymflow
+- source: afletics
   source_id: papajohns_bbq_chicken_med
   name: BBQ Chicken Bacon (med slice)
   brand: Papa John's
@@ -97,7 +97,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 115
-- source: gymflow
+- source: afletics
   source_id: papajohns_works_med
   name: The Works (med slice)
   brand: Papa John's
@@ -113,7 +113,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites,fish
   unit_grams: 115
-- source: gymflow
+- source: afletics
   source_id: papajohns_cheese_only_med
   name: Cheese (med slice)
   brand: Papa John's
@@ -129,7 +129,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 95
-- source: gymflow
+- source: afletics
   source_id: papajohns_vegan_garden_med
   name: Vegan Garden (med slice)
   brand: Papa John's
@@ -145,7 +145,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sulphites
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: papajohns_vegan_meatless_med
   name: Vegan Meatless Meatball (med slice)
   brand: Papa John's
@@ -161,7 +161,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy,sulphites
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: papajohns_garlic_pizza_sticks
   name: Garlic Pizza Sticks
   brand: Papa John's
@@ -177,7 +177,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 165
-- source: gymflow
+- source: afletics
   source_id: papajohns_cheese_garlic_sticks
   name: Cheese & Garlic Sticks
   brand: Papa John's
@@ -193,7 +193,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 175
-- source: gymflow
+- source: afletics
   source_id: papajohns_chicken_dippers
   name: Chicken Dippers (6)
   brand: Papa John's
@@ -209,7 +209,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: papajohns_chicken_wings_8
   name: Chicken Wings (8)
   brand: Papa John's
@@ -225,7 +225,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: papajohns_garlic_dough_balls
   name: Garlic Dough Balls (12)
   brand: Papa John's
@@ -241,7 +241,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: papajohns_potato_tots
   name: Potato Tots
   brand: Papa John's
@@ -257,7 +257,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: papajohns_jalapenos
   name: Stuffed Jalapeños
   brand: Papa John's
@@ -273,7 +273,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 165
-- source: gymflow
+- source: afletics
   source_id: papajohns_garlic_dip
   name: Garlic Dipping Sauce
   brand: Papa John's
@@ -289,7 +289,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs,milk,mustard
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: papajohns_bbq_dip
   name: BBQ Dipping Sauce
   brand: Papa John's
@@ -305,7 +305,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: papajohns_sweet_chilli_dip
   name: Sweet Chilli Dipping Sauce
   brand: Papa John's
@@ -321,7 +321,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: papajohns_coke_bottle
   name: Coca-Cola (bottle)
   brand: Papa John's
@@ -337,7 +337,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: papajohns_diet_coke_bottle
   name: Diet Coke (bottle)
   brand: Papa John's
@@ -353,7 +353,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: papajohns_fanta_bottle
   name: Fanta Orange (bottle)
   brand: Papa John's
@@ -369,7 +369,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: papajohns_sprite_bottle
   name: Sprite (bottle)
   brand: Papa John's
@@ -385,7 +385,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: papajohns_water_bottle
   name: Still Water (bottle)
   brand: Papa John's
@@ -401,7 +401,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: papajohns_chocolate_brownie
   name: Chocolate Brownie
   brand: Papa John's
@@ -417,7 +417,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs,soy
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: papajohns_cinnamon_sticks
   name: Cinnamon Scrolls
   brand: Papa John's
@@ -433,7 +433,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: papajohns_cookies_choc_chip
   name: Choc Chip Cookies
   brand: Papa John's
@@ -449,7 +449,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 165
-- source: gymflow
+- source: afletics
   source_id: papajohns_pepperoni_passion_whole_med
   name: Pepperoni Passion (whole medium)
   brand: Papa John's
@@ -465,7 +465,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 840
-- source: gymflow
+- source: afletics
   source_id: papajohns_meats_whole_lge
   name: The Meats (whole large)
   brand: Papa John's
@@ -481,7 +481,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 1175
-- source: gymflow
+- source: afletics
   source_id: papajohns_works_whole_lge
   name: The Works (whole large)
   brand: Papa John's
@@ -497,7 +497,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites,fish
   unit_grams: 1175
-- source: gymflow
+- source: afletics
   source_id: papajohns_breakfast_pizza_med
   name: All Day Breakfast (med slice)
   brand: Papa John's
@@ -513,7 +513,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 115
-- source: gymflow
+- source: afletics
   source_id: papajohns_pepperoni_lge_slice
   name: Pepperoni Passion (large slice)
   brand: Papa John's
@@ -529,7 +529,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 145
-- source: gymflow
+- source: afletics
   source_id: papajohns_pepperoni_xl_slice
   name: Pepperoni Passion (XL slice)
   brand: Papa John's
@@ -545,7 +545,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 175
-- source: gymflow
+- source: afletics
   source_id: papajohns_pepperoni_sml_whole
   name: Pepperoni Passion (whole small)
   brand: Papa John's
@@ -561,7 +561,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 480
-- source: gymflow
+- source: afletics
   source_id: papajohns_cheese_sml_whole
   name: Cheese (whole small)
   brand: Papa John's
@@ -577,7 +577,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 425
-- source: gymflow
+- source: afletics
   source_id: papajohns_stuffed_crust_pep_med
   name: Stuffed Crust Pepperoni (med slice)
   brand: Papa John's
@@ -593,7 +593,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: papajohns_calzone_meats
   name: Meat Calzone
   brand: Papa John's
@@ -609,7 +609,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: papajohns_chicken_strips_8
   name: Chicken Strips (8)
   brand: Papa John's

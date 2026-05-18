@@ -1,5 +1,5 @@
 """
-Phase 10 — GymFlow Hub.
+Phase 10 — Afletics Hub.
 
 The hub is the new front page of `/dashboard/`. It exists to give the PT
 a single "is everything OK?" view — and to wow them on first impression.
@@ -285,7 +285,7 @@ TIPS = [
     {
         "icon":  "✦",
         "title": "Share your signup link daily",
-        "body":  "Drop your gymflow.app URL in your IG bio + every story. "
+        "body":  "Drop your afletics.com URL in your IG bio + every story. "
                  "Even one new application a week compounds.",
     },
     {
@@ -319,7 +319,7 @@ def _greeting(now):
 
 @trainer_required_view
 def trainer_hub_page(request):
-    """GET /dashboard/ — the GymFlow Hub."""
+    """GET /dashboard/ — the Afletics Hub."""
     context = dashboard_context(request, "Hub")
     trainer = request.user
     clients = context["clients"]
@@ -390,7 +390,7 @@ def trainer_hub_page(request):
             "title":   "Set up your public site",
             "body":    "Add your hero image, services, and pricing — "
                        "your /p/<slug>/ page is what clients see when "
-                       "you share GymFlow with them.",
+                       "you share Afletics with them.",
             "url":     reverse("trainer-site-page"),
             "url_cta": "Open Site editor →",
         }

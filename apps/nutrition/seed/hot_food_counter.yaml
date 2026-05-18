@@ -1,6 +1,6 @@
 # hot_food_counter.yaml — supermarket hot counter: Tesco/M&S/Asda/Sainsbury's rotisserie whole chicken + hot pieces (drumsticks/thighs/wings), pork ribs, hot Kievs, pork pies, sausage rolls, Scotch eggs.
 
-- source: gymflow
+- source: afletics
   source_id: tesco_rotisserie_whole_chicken_per_100
   name: Tesco Rotisserie Whole Chicken (per 100g)
   brand: Tesco
@@ -15,7 +15,7 @@
   tags: meat,branded,chicken,high_protein,supermarket
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: tesco_hot_chicken_drumstick
   name: Tesco Hot Chicken Drumstick
   brand: Tesco
@@ -31,7 +31,7 @@
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 75
-- source: gymflow
+- source: afletics
   source_id: tesco_hot_chicken_thigh
   name: Tesco Hot Chicken Thigh
   brand: Tesco
@@ -47,7 +47,7 @@
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: mands_rotisserie_whole_chicken
   name: M&S Rotisserie Whole Chicken (per 100g)
   brand: M&S
@@ -62,7 +62,7 @@
   tags: meat,branded,chicken,high_protein,supermarket
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mands_hot_chicken_pieces
   name: M&S Hot Chicken Pieces (per 100g)
   brand: M&S
@@ -77,7 +77,7 @@
   tags: meat,branded,chicken,high_protein,supermarket
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: asda_rotisserie_whole_chicken
   name: Asda Rotisserie Whole Chicken (per 100g)
   brand: Asda
@@ -92,7 +92,7 @@
   tags: meat,branded,chicken,high_protein,supermarket
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sainsburys_rotisserie_chicken
   name: Sainsbury's Rotisserie Whole Chicken (per 100g)
   brand: Sainsbury's
@@ -107,7 +107,7 @@
   tags: meat,branded,chicken,high_protein,supermarket
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sainsburys_hot_chicken_wings
   name: Sainsbury's Hot Chicken Wings (per 100g)
   brand: Sainsbury's
@@ -122,7 +122,7 @@
   tags: meat,branded,chicken,supermarket
   dietary_compat: halal,pescatarian,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: hot_food_pork_ribs_rack
   name: Hot Pork Ribs Rack (per 100g)
   brand: ''
@@ -137,7 +137,7 @@
   tags: meat,supermarket,high_protein
   dietary_compat: pescatarian,dairy_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: hot_food_chicken_kievs_2
   name: Hot Chicken Kievs
   brand: ''
@@ -153,7 +153,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: hot_food_pork_pie
   name: Pork Pie (1 small)
   brand: ''
@@ -169,7 +169,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 140
-- source: gymflow
+- source: afletics
   source_id: hot_food_sausage_roll_gourmet
   name: Sausage Roll (gourmet, large)
   brand: ''
@@ -185,7 +185,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: hot_food_scotch_egg
   name: Scotch Egg
   brand: ''

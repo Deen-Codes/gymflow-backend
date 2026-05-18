@@ -12,7 +12,7 @@ numbers come from this module so we can:
     floor, lean-mass-loss-rate cap)
   • Cite the literature in DECISIONS.md, not vibes
 
-References (also in `~/Documents/GymFlow/AI_PT_KNOWLEDGE_BASE.md`):
+References (also in `~/Documents/Afletics/AI_PT_KNOWLEDGE_BASE.md`):
   • Mifflin-St Jeor 1990 — BMR formula
   • Hall 2011 — Quantification of energy imbalance / bodyweight
   • Helms et al. 2014 — Evidence-based recommendations for

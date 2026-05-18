@@ -1,7 +1,7 @@
 # branded_pantry.yaml — branded items sold across multiple UK supermarkets.
 # Migrated from chains_starter to live separately from any single-supermarket YAML.
 
-- source: gymflow
+- source: afletics
   source_id: warburtons_toastie
   name: Warburtons Toastie Thick White
   brand: Warburtons
@@ -17,7 +17,7 @@
   allergens: gluten
   portion_unit: slice
   unit_grams: 44
-- source: gymflow
+- source: afletics
   source_id: hovis_seeded_batch
   name: Hovis Seed Sensations Seven Seeds
   brand: Hovis
@@ -33,7 +33,7 @@
   allergens: gluten,sesame
   portion_unit: slice
   unit_grams: 42
-- source: gymflow
+- source: afletics
   source_id: heinz_baked_beans
   name: Heinz Baked Beans
   brand: Heinz
@@ -49,7 +49,7 @@
   allergens: ''
   portion_unit: can
   unit_grams: 415
-- source: gymflow
+- source: afletics
   source_id: walkers_cheese_onion
   name: Walkers Cheese & Onion Crisps
   brand: Walkers
@@ -65,7 +65,7 @@
   allergens: milk
   portion_unit: pack
   unit_grams: 32
-- source: gymflow
+- source: afletics
   source_id: cadbury_dairy_milk
   name: Cadbury Dairy Milk
   brand: Cadbury
@@ -81,7 +81,7 @@
   allergens: milk,soy
   portion_unit: bar
   unit_grams: 45
-- source: gymflow
+- source: afletics
   source_id: innocent_smoothie_strawberry
   name: Innocent Strawberry & Banana Smoothie
   brand: Innocent
@@ -97,7 +97,7 @@
   allergens: ''
   portion_unit: bottle
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: lucozade_sport_orange
   name: Lucozade Sport Orange
   brand: Lucozade
@@ -113,7 +113,7 @@
   allergens: ''
   portion_unit: bottle
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: coca_cola_classic
   name: Coca-Cola Classic
   brand: Coca-Cola
@@ -129,7 +129,7 @@
   allergens: ''
   portion_unit: can
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: diet_coke
   name: Diet Coke
   brand: Coca-Cola
@@ -145,7 +145,7 @@
   allergens: ''
   portion_unit: can
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: nakd_cocoa_orange
   name: Nakd Cocoa Orange Bar
   brand: Nakd
@@ -161,7 +161,7 @@
   allergens: tree_nuts
   portion_unit: bar
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: graze_punchy_protein
   name: Graze Punchy Protein
   brand: Graze
@@ -177,7 +177,7 @@
   allergens: tree_nuts,peanuts,soy
   portion_unit: pack
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: huel_black_vanilla
   name: Huel Black Edition, Vanilla
   brand: Huel
@@ -193,7 +193,7 @@
   allergens: soy
   portion_unit: scoop
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: weetabix_2_biscuits
   name: Weetabix Original
   brand: Weetabix
@@ -209,7 +209,7 @@
   allergens: gluten
   portion_unit: pack
   unit_grams: 37.5
-- source: gymflow
+- source: afletics
   source_id: pizza_hut_margherita_med_slice
   name: Pizza Hut Margherita, Medium
   brand: Pizza Hut
@@ -225,7 +225,7 @@
   allergens: gluten,milk
   portion_unit: slice
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: mcvities_digestives
   name: McVitie's Digestives
   brand: McVitie's
@@ -241,7 +241,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: mcvities_dark_chocolate_digestives
   name: McVitie's Dark Chocolate Digestives
   brand: McVitie's
@@ -257,7 +257,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 17
-- source: gymflow
+- source: afletics
   source_id: mcvities_milk_chocolate_digestives
   name: McVitie's Milk Chocolate Digestives
   brand: McVitie's
@@ -273,7 +273,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 17
-- source: gymflow
+- source: afletics
   source_id: mcvities_hobnobs
   name: McVitie's Hobnobs
   brand: McVitie's
@@ -289,7 +289,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: mcvities_chocolate_hobnobs
   name: McVitie's Milk Chocolate Hobnobs
   brand: McVitie's
@@ -305,7 +305,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 18
-- source: gymflow
+- source: afletics
   source_id: mcvities_jaffa_cakes
   name: McVitie's Jaffa Cakes
   brand: McVitie's
@@ -321,7 +321,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 12
-- source: gymflow
+- source: afletics
   source_id: mcvities_rich_tea
   name: McVitie's Rich Tea
   brand: McVitie's
@@ -337,7 +337,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 9
-- source: gymflow
+- source: afletics
   source_id: mcvities_penguin_bar
   name: McVitie's Penguin Bar
   brand: McVitie's
@@ -353,7 +353,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 24
-- source: gymflow
+- source: afletics
   source_id: mcvities_club_orange
   name: McVitie's Club Orange
   brand: McVitie's
@@ -369,7 +369,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 23
-- source: gymflow
+- source: afletics
   source_id: cadbury_fingers
   name: Cadbury Fingers
   brand: Cadbury
@@ -385,7 +385,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 8
-- source: gymflow
+- source: afletics
   source_id: mcvities_custard_creams
   name: Custard Creams
   brand: McVitie's
@@ -401,7 +401,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 13
-- source: gymflow
+- source: afletics
   source_id: mcvities_bourbons
   name: Bourbon Creams
   brand: McVitie's
@@ -417,7 +417,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 13
-- source: gymflow
+- source: afletics
   source_id: mcvities_ginger_nuts
   name: Ginger Nuts
   brand: McVitie's
@@ -433,7 +433,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy
   unit_grams: 9
-- source: gymflow
+- source: afletics
   source_id: lotus_biscoff_2
   name: Lotus Biscoff (2-pack)
   brand: Lotus
@@ -449,7 +449,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy
   unit_grams: 6.2
-- source: gymflow
+- source: afletics
   source_id: oreos_2
   name: Oreo Cookies (2-pack)
   brand: Oreo
@@ -465,7 +465,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,soy
   unit_grams: 11
-- source: gymflow
+- source: afletics
   source_id: maryland_choc_chip_cookie
   name: Maryland Chocolate Chip Cookies
   brand: Maryland
@@ -481,7 +481,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 8
-- source: gymflow
+- source: afletics
   source_id: tunnocks_caramel_wafer
   name: Tunnock’s Caramel Wafer
   brand: Tunnock’s
@@ -497,7 +497,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: tunnocks_tea_cake
   name: Tunnock’s Tea Cake
   brand: Tunnock’s
@@ -513,7 +513,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 24
-- source: gymflow
+- source: afletics
   source_id: foxs_party_rings
   name: Fox's Party Rings
   brand: Fox's
@@ -529,7 +529,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 7.5
-- source: gymflow
+- source: afletics
   source_id: foxs_chunkie_choc_chip
   name: Fox's Chunkie Chocolate Chip
   brand: Fox's
@@ -545,7 +545,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 24
-- source: gymflow
+- source: afletics
   source_id: mcvities_wagon_wheel
   name: Wagon Wheel
   brand: McVitie's
@@ -561,7 +561,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 36
-- source: gymflow
+- source: afletics
   source_id: walkers_ready_salted
   name: Walkers Ready Salted
   brand: Walkers
@@ -577,7 +577,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: walkers_salt_vinegar
   name: Walkers Salt & Vinegar
   brand: Walkers
@@ -593,7 +593,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: walkers_prawn_cocktail
   name: Walkers Prawn Cocktail
   brand: Walkers
@@ -609,7 +609,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: crustaceans,milk
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: walkers_smoky_bacon
   name: Walkers Smoky Bacon
   brand: Walkers
@@ -625,7 +625,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: walkers_quavers_cheese
   name: Walkers Quavers Cheese
   brand: Walkers
@@ -641,7 +641,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk
   unit_grams: 16
-- source: gymflow
+- source: afletics
   source_id: walkers_wotsits_cheese
   name: Walkers Wotsits Cheese
   brand: Walkers
@@ -657,7 +657,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 16.5
-- source: gymflow
+- source: afletics
   source_id: walkers_monster_munch_pickled_onion
   name: Monster Munch Pickled Onion
   brand: Walkers
@@ -673,7 +673,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 22
-- source: gymflow
+- source: afletics
   source_id: walkers_sensations_lime_coriander
   name: Walkers Sensations Thai Sweet Chilli
   brand: Walkers
@@ -689,7 +689,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: walkers_baked_ready_salted
   name: Walkers Baked Ready Salted
   brand: Walkers
@@ -705,7 +705,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: doritos_chilli_heatwave
   name: Doritos Chilli Heatwave
   brand: Doritos
@@ -721,7 +721,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: doritos_cool_original
   name: Doritos Cool Original
   brand: Doritos
@@ -737,7 +737,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: doritos_tangy_cheese
   name: Doritos Tangy Cheese
   brand: Doritos
@@ -753,7 +753,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: pringles_original
   name: Pringles Original
   brand: Pringles
@@ -769,7 +769,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: pringles_sour_cream
   name: Pringles Sour Cream & Onion
   brand: Pringles
@@ -785,7 +785,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: pringles_cheese_onion
   name: Pringles Cheese & Onion
   brand: Pringles
@@ -801,7 +801,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: kettle_chips_sea_salt
   name: Kettle Chips Sea Salt
   brand: Kettle Chips
@@ -817,7 +817,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: kettle_chips_mature_cheddar
   name: Kettle Chips Mature Cheddar & Onion
   brand: Kettle Chips
@@ -833,7 +833,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: hula_hoops_original
   name: Hula Hoops Original
   brand: Hula Hoops
@@ -849,7 +849,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 24
-- source: gymflow
+- source: afletics
   source_id: mccoys_cheddar_onion
   name: McCoy's Cheddar & Onion
   brand: McCoy's
@@ -865,7 +865,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: mini_cheddars_original
   name: Mini Cheddars Original
   brand: Jacobs
@@ -881,7 +881,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: frazzles_smoky_bacon
   name: Smiths Frazzles Smoky Bacon
   brand: Smiths
@@ -897,7 +897,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 18
-- source: gymflow
+- source: afletics
   source_id: skips_prawn_cocktail
   name: Skips Prawn Cocktail
   brand: Skips
@@ -913,7 +913,7 @@
   dietary_compat: pescatarian
   allergens: crustaceans,gluten,milk
   unit_grams: 17
-- source: gymflow
+- source: afletics
   source_id: twiglets
   name: Twiglets
   brand: Jacobs
@@ -929,7 +929,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cadbury_dairy_milk_45g
   name: Cadbury Dairy Milk Bar 45g
   brand: Cadbury
@@ -945,7 +945,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 45
-- source: gymflow
+- source: afletics
   source_id: cadbury_dairy_milk_110g
   name: Cadbury Dairy Milk 110g
   brand: Cadbury
@@ -961,7 +961,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: cadbury_wispa
   name: Cadbury Wispa Bar
   brand: Cadbury
@@ -977,7 +977,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 36
-- source: gymflow
+- source: afletics
   source_id: cadbury_crunchie
   name: Cadbury Crunchie Bar
   brand: Cadbury
@@ -993,7 +993,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,eggs,soy
   unit_grams: 40
-- source: gymflow
+- source: afletics
   source_id: cadbury_twirl
   name: Cadbury Twirl
   brand: Cadbury
@@ -1009,7 +1009,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 21.5
-- source: gymflow
+- source: afletics
   source_id: cadbury_flake
   name: Cadbury Flake
   brand: Cadbury
@@ -1025,7 +1025,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 32
-- source: gymflow
+- source: afletics
   source_id: cadbury_boost
   name: Cadbury Boost Bar
   brand: Cadbury
@@ -1041,7 +1041,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 49
-- source: gymflow
+- source: afletics
   source_id: cadbury_freddo_milk
   name: Cadbury Freddo Milk
   brand: Cadbury
@@ -1057,7 +1057,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 18
-- source: gymflow
+- source: afletics
   source_id: cadbury_curly_wurly
   name: Cadbury Curly Wurly
   brand: Cadbury
@@ -1073,7 +1073,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 26
-- source: gymflow
+- source: afletics
   source_id: cadbury_caramel
   name: Cadbury Caramel Bar
   brand: Cadbury
@@ -1089,7 +1089,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 45
-- source: gymflow
+- source: afletics
   source_id: mars_bar
   name: Mars Bar
   brand: Mars
@@ -1105,7 +1105,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,eggs,soy
   unit_grams: 51
-- source: gymflow
+- source: afletics
   source_id: snickers_bar
   name: Snickers Bar
   brand: Snickers
@@ -1121,7 +1121,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,peanuts,soy
   unit_grams: 48
-- source: gymflow
+- source: afletics
   source_id: twix_bar
   name: Twix Bar
   brand: Twix
@@ -1137,7 +1137,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: bounty_bar
   name: Bounty Bar (2 fingers)
   brand: Bounty
@@ -1153,7 +1153,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 57
-- source: gymflow
+- source: afletics
   source_id: milky_way_bar
   name: Milky Way Bar
   brand: Milky Way
@@ -1169,7 +1169,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,eggs,soy
   unit_grams: 21.5
-- source: gymflow
+- source: afletics
   source_id: maltesers_25g
   name: Maltesers (25g pack)
   brand: Maltesers
@@ -1185,7 +1185,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,gluten,soy
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: maltesers_pouch_103g
   name: Maltesers Pouch 103g
   brand: Maltesers
@@ -1201,7 +1201,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,gluten,soy
   unit_grams: 103
-- source: gymflow
+- source: afletics
   source_id: mms_milk_45g
   name: M&M's Milk Chocolate 45g
   brand: M&M's
@@ -1217,7 +1217,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 45
-- source: gymflow
+- source: afletics
   source_id: mms_peanut_45g
   name: M&M's Peanut 45g
   brand: M&M's
@@ -1233,7 +1233,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,peanuts,soy
   unit_grams: 45
-- source: gymflow
+- source: afletics
   source_id: smarties_38g
   name: Smarties Tube 38g
   brand: Smarties
@@ -1249,7 +1249,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: kitkat_4_fingers
   name: KitKat 4 Fingers
   brand: KitKat
@@ -1265,7 +1265,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 41.5
-- source: gymflow
+- source: afletics
   source_id: kitkat_chunky
   name: KitKat Chunky
   brand: KitKat
@@ -1281,7 +1281,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 40
-- source: gymflow
+- source: afletics
   source_id: aero_milk_27g
   name: Aero Milk 27g
   brand: Aero
@@ -1297,7 +1297,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 27
-- source: gymflow
+- source: afletics
   source_id: toblerone_50g
   name: Toblerone 50g
   brand: Toblerone
@@ -1313,7 +1313,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,tree_nuts,soy
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: kinder_bueno_2
   name: Kinder Bueno (2 fingers)
   brand: Kinder
@@ -1329,7 +1329,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,tree_nuts,soy
   unit_grams: 43
-- source: gymflow
+- source: afletics
   source_id: lindt_lindor_4
   name: Lindt Lindor Truffles (4)
   brand: Lindt
@@ -1345,7 +1345,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy,tree_nuts
   unit_grams: 12.5
-- source: gymflow
+- source: afletics
   source_id: after_eight_3
   name: After Eight Mints (3 pieces)
   brand: After Eight
@@ -1361,7 +1361,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: soy
   unit_grams: 8
-- source: gymflow
+- source: afletics
   source_id: ferrero_rocher_3
   name: Ferrero Rocher (3 pieces)
   brand: Ferrero Rocher
@@ -1377,7 +1377,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,tree_nuts,soy
   unit_grams: 12.5
-- source: gymflow
+- source: afletics
   source_id: haribo_starmix_30g
   name: Haribo Starmix 30g
   brand: Haribo
@@ -1393,7 +1393,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: haribo_tangfastics_30g
   name: Haribo Tangfastics 30g
   brand: Haribo
@@ -1409,7 +1409,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: haribo_goldbears_25g
   name: Haribo Goldbears 25g
   brand: Haribo
@@ -1425,7 +1425,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: skittles_45g
   name: Skittles Fruits 45g
   brand: Skittles
@@ -1441,7 +1441,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 45
-- source: gymflow
+- source: afletics
   source_id: rowntrees_fruit_pastilles_50g
   name: Rowntree's Fruit Pastilles 50g
   brand: Rowntree's
@@ -1457,7 +1457,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: rowntrees_fruit_gums_43g
   name: Rowntree's Fruit Gums 43g
   brand: Rowntree's
@@ -1473,7 +1473,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 43
-- source: gymflow
+- source: afletics
   source_id: polo_mints_pack
   name: Polo Mints (1 pack)
   brand: Polo
@@ -1489,7 +1489,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 34
-- source: gymflow
+- source: afletics
   source_id: quality_street_3
   name: Quality Street (3 pieces)
   brand: Quality Street
@@ -1505,7 +1505,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,tree_nuts
   unit_grams: 9
-- source: gymflow
+- source: afletics
   source_id: celebrations_3
   name: Celebrations (3 pieces)
   brand: Celebrations
@@ -1521,7 +1521,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,peanuts,gluten
   unit_grams: 10
-- source: gymflow
+- source: afletics
   source_id: kelloggs_corn_flakes_30g
   name: Kellogg's Corn Flakes (30g)
   brand: Kellogg's
@@ -1536,7 +1536,7 @@
   tags: cereal,branded,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: kelloggs_frosties_30g
   name: Kellogg's Frosties (30g)
   brand: Kellogg's
@@ -1551,7 +1551,7 @@
   tags: cereal,branded,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: kelloggs_coco_pops_30g
   name: Kellogg's Coco Pops (30g)
   brand: Kellogg's
@@ -1566,7 +1566,7 @@
   tags: cereal,branded,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: kelloggs_crunchy_nut_30g
   name: Kellogg's Crunchy Nut Cornflakes (30g)
   brand: Kellogg's
@@ -1581,7 +1581,7 @@
   tags: cereal,branded,breakfast
   dietary_compat: vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: kelloggs_special_k_30g
   name: Kellogg's Special K (30g)
   brand: Kellogg's
@@ -1596,7 +1596,7 @@
   tags: cereal,branded,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: kelloggs_rice_krispies_30g
   name: Kellogg's Rice Krispies (30g)
   brand: Kellogg's
@@ -1611,7 +1611,7 @@
   tags: cereal,branded,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: kelloggs_all_bran_45g
   name: Kellogg's All-Bran (45g)
   brand: Kellogg's
@@ -1626,7 +1626,7 @@
   tags: cereal,branded,breakfast,fibre
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: nestle_cheerios_30g
   name: Nestlé Cheerios (30g)
   brand: Nestlé
@@ -1641,7 +1641,7 @@
   tags: cereal,branded,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: nestle_shreddies_40g
   name: Nestlé Shreddies (40g)
   brand: Nestlé
@@ -1656,7 +1656,7 @@
   tags: cereal,branded,breakfast,fibre
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: nestle_shredded_wheat_2
   name: Shredded Wheat (2 biscuits)
   brand: Nestlé
@@ -1672,7 +1672,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 22.5
-- source: gymflow
+- source: afletics
   source_id: weetabix_2_biscuits_v2
   name: Weetabix Original (2 biscuits)
   brand: Weetabix
@@ -1688,7 +1688,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 18.75
-- source: gymflow
+- source: afletics
   source_id: alpen_original_45g
   name: Alpen Original Muesli (45g)
   brand: Alpen
@@ -1703,7 +1703,7 @@
   tags: cereal,branded,breakfast
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: quaker_porridge_oats_40g
   name: Quaker Porridge Oats (40g dry)
   brand: Quaker
@@ -1718,7 +1718,7 @@
   tags: cereal,branded,breakfast,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: quaker_oats_so_simple_27g
   name: Quaker Oat So Simple Original (27g sachet)
   brand: Quaker
@@ -1734,7 +1734,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 27
-- source: gymflow
+- source: afletics
   source_id: pepsi_max_330
   name: Pepsi Max (330ml can)
   brand: Pepsi
@@ -1750,7 +1750,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: pepsi_330
   name: Pepsi (330ml can)
   brand: Pepsi
@@ -1766,7 +1766,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: coca_cola_zero_330
   name: Coca-Cola Zero (330ml can)
   brand: Coca-Cola
@@ -1782,7 +1782,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: fanta_orange_330
   name: Fanta Orange (330ml can)
   brand: Fanta
@@ -1798,7 +1798,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: fanta_lemon_330
   name: Fanta Lemon (330ml can)
   brand: Fanta
@@ -1814,7 +1814,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: sprite_330
   name: Sprite (330ml can)
   brand: Sprite
@@ -1830,7 +1830,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: seven_up_330
   name: 7Up (330ml can)
   brand: 7Up
@@ -1846,7 +1846,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: tango_orange_330
   name: Tango Orange (330ml can)
   brand: Tango
@@ -1862,7 +1862,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: dr_pepper_330
   name: Dr Pepper (330ml can)
   brand: Dr Pepper
@@ -1878,7 +1878,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: dr_pepper_zero_330
   name: Dr Pepper Zero (330ml can)
   brand: Dr Pepper
@@ -1894,7 +1894,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: lucozade_energy_orange_380
   name: Lucozade Energy Orange (380ml)
   brand: Lucozade
@@ -1910,7 +1910,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: lucozade_zero_380
   name: Lucozade Zero (380ml)
   brand: Lucozade
@@ -1926,7 +1926,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: robinsons_squash_orange
   name: Robinsons Orange Squash (200ml diluted)
   brand: Robinsons
@@ -1941,7 +1941,7 @@
   tags: drink,branded,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: vimto_330
   name: Vimto Original (330ml can)
   brand: Vimto
@@ -1957,7 +1957,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: ribena_blackcurrant_500
   name: Ribena Blackcurrant (500ml)
   brand: Ribena
@@ -1973,7 +1973,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: innocent_smoothie_apple_mango_300
   name: Innocent Smoothie Apple & Mango (300ml)
   brand: Innocent
@@ -1989,7 +1989,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: innocent_super_smoothie_300
   name: Innocent Super Smoothie Antioxidant (300ml)
   brand: Innocent
@@ -2005,7 +2005,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: j20_apple_mango_275
   name: J2O Apple & Mango (275ml)
   brand: J2O
@@ -2021,7 +2021,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 275
-- source: gymflow
+- source: afletics
   source_id: san_pellegrino_aranciata_330
   name: San Pellegrino Aranciata (330ml can)
   brand: San Pellegrino
@@ -2037,7 +2037,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: powerade_blue_500
   name: Powerade Blue Mountain Blast (500ml)
   brand: Powerade
@@ -2053,7 +2053,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: capri_sun_orange_200
   name: Capri-Sun Orange (200ml)
   brand: Capri-Sun
@@ -2069,7 +2069,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: yazoo_chocolate_400
   name: Yazoo Chocolate Milkshake (400ml)
   brand: Yazoo
@@ -2085,7 +2085,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: yazoo_strawberry_400
   name: Yazoo Strawberry Milkshake (400ml)
   brand: Yazoo
@@ -2101,7 +2101,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: actimel_strawberry_100
   name: Actimel Strawberry (100g)
   brand: Actimel
@@ -2117,7 +2117,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: yakult_65
   name: Yakult Original (65ml)
   brand: Yakult
@@ -2133,7 +2133,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 65
-- source: gymflow
+- source: afletics
   source_id: muller_corner_strawberry
   name: Müller Corner Strawberry
   brand: Müller
@@ -2149,7 +2149,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 135
-- source: gymflow
+- source: afletics
   source_id: muller_light_vanilla
   name: Müller Light Vanilla
   brand: Müller
@@ -2165,7 +2165,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: activia_natural
   name: Activia Natural Yogurt
   brand: Activia
@@ -2181,7 +2181,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 125
-- source: gymflow
+- source: afletics
   source_id: activia_strawberry
   name: Activia Strawberry
   brand: Activia
@@ -2197,7 +2197,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 125
-- source: gymflow
+- source: afletics
   source_id: yeo_valley_natural_organic
   name: Yeo Valley Natural Organic
   brand: Yeo Valley
@@ -2213,7 +2213,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: total_greek_2pct
   name: Total 2% Greek Yogurt
   brand: Fage Total
@@ -2229,7 +2229,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: total_greek_0pct
   name: Total 0% Greek Yogurt
   brand: Fage Total
@@ -2245,7 +2245,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: petit_filous_strawberry
   name: Petit Filous Strawberry
   brand: Petits Filous
@@ -2261,7 +2261,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 47
-- source: gymflow
+- source: afletics
   source_id: frubes_strawberry
   name: Frubes Strawberry (yogurt tube)
   brand: Frubes
@@ -2277,7 +2277,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 37
-- source: gymflow
+- source: afletics
   source_id: lurpak_spreadable
   name: Lurpak Spreadable
   brand: Lurpak
@@ -2293,7 +2293,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: anchor_butter
   name: Anchor Spreadable
   brand: Anchor
@@ -2309,7 +2309,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: flora_buttery
   name: Flora Buttery
   brand: Flora
@@ -2325,7 +2325,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: marmite_4g
   name: Marmite (4g serving)
   brand: Marmite
@@ -2341,7 +2341,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 4
-- source: gymflow
+- source: afletics
   source_id: nutella_15g
   name: Nutella (15g serving)
   brand: Nutella
@@ -2357,7 +2357,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,tree_nuts,soy
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: hartleys_strawberry_jam
   name: Hartley's Strawberry Jam (15g)
   brand: Hartley's
@@ -2373,7 +2373,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: marmalade_thick_cut_15g
   name: Robertson's Thick Cut Marmalade (15g)
   brand: Robertson's
@@ -2389,7 +2389,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: philadelphia_original
   name: Philadelphia Original (30g)
   brand: Philadelphia
@@ -2405,7 +2405,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: philadelphia_lightest
   name: Philadelphia Lightest (30g)
   brand: Philadelphia
@@ -2421,7 +2421,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: heinz_tomato_soup_can
   name: Heinz Cream of Tomato Soup (400g can)
   brand: Heinz
@@ -2437,7 +2437,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,celery
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: heinz_chicken_soup_can
   name: Heinz Cream of Chicken Soup (400g can)
   brand: Heinz
@@ -2453,7 +2453,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,celery
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: heinz_mushroom_soup_can
   name: Heinz Cream of Mushroom Soup (400g can)
   brand: Heinz
@@ -2469,7 +2469,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,celery
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: cup_a_soup_chicken
   name: Batchelors Cup a Soup Chicken (sachet)
   brand: Batchelors
@@ -2485,7 +2485,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,celery
   unit_grams: 22
-- source: gymflow
+- source: afletics
   source_id: covent_garden_chicken_soup
   name: Covent Garden Chicken & Vegetable (carton)
   brand: Covent Garden
@@ -2501,7 +2501,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: celery
   unit_grams: 300
-- source: gymflow
+- source: afletics
   source_id: dolmio_bolognese_jar
   name: Dolmio Original Bolognese Sauce (jar)
   brand: Dolmio
@@ -2517,7 +2517,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 165
-- source: gymflow
+- source: afletics
   source_id: loyd_grossman_tomato_basil
   name: Loyd Grossman Tomato & Basil (jar)
   brand: Loyd Grossman
@@ -2533,7 +2533,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 165
-- source: gymflow
+- source: afletics
   source_id: sacla_pesto_basil
   name: Sacla Classic Basil Pesto (190g)
   brand: Sacla
@@ -2549,7 +2549,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,tree_nuts
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: birds_eye_fish_fingers_10
   name: Birds Eye Fish Fingers (1 finger)
   brand: Birds Eye
@@ -2565,7 +2565,7 @@
   dietary_compat: pescatarian
   allergens: gluten,fish,milk,eggs
   unit_grams: 28
-- source: gymflow
+- source: afletics
   source_id: birds_eye_chicken_dippers
   name: Birds Eye Chicken Dippers (4)
   brand: Birds Eye
@@ -2581,7 +2581,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: birds_eye_garden_peas_80g
   name: Birds Eye Garden Peas (80g serving)
   brand: Birds Eye
@@ -2596,7 +2596,7 @@
   tags: frozen,branded,vegetable,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: aunt_bessies_yorkshire_4
   name: Aunt Bessie's Yorkshire Puddings (4)
   brand: Aunt Bessie's
@@ -2612,7 +2612,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: aunt_bessies_roast_potatoes
   name: Aunt Bessie's Roast Potatoes (175g serving)
   brand: Aunt Bessie's
@@ -2628,7 +2628,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 175
-- source: gymflow
+- source: afletics
   source_id: mccain_oven_chips
   name: McCain Home Chips (100g)
   brand: McCain
@@ -2643,7 +2643,7 @@
   tags: frozen,branded,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: mccain_french_fries
   name: McCain Quick Fries (100g)
   brand: McCain
@@ -2658,7 +2658,7 @@
   tags: frozen,branded,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: goodfellas_stonebaked_pepperoni
   name: Goodfella's Stonebaked Pepperoni Pizza
   brand: Goodfella's
@@ -2674,7 +2674,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 360
-- source: gymflow
+- source: afletics
   source_id: goodfellas_stonebaked_margherita
   name: Goodfella's Stonebaked Margherita Pizza
   brand: Goodfella's
@@ -2690,7 +2690,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 345
-- source: gymflow
+- source: afletics
   source_id: chicago_town_takeaway_pepperoni
   name: Chicago Town Takeaway Pepperoni Pizza
   brand: Chicago Town
@@ -2706,7 +2706,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 320
-- source: gymflow
+- source: afletics
   source_id: heinz_mayo_15g
   name: Heinz Seriously Good Mayonnaise (15g)
   brand: Heinz
@@ -2722,7 +2722,7 @@
   dietary_compat: vegetarian,pescatarian,gluten_free
   allergens: eggs,mustard
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: heinz_salad_cream_15g
   name: Heinz Salad Cream (15g)
   brand: Heinz
@@ -2738,7 +2738,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: eggs,mustard
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: hp_sauce_15g
   name: HP Sauce (15g)
   brand: HP
@@ -2754,7 +2754,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: sulphites
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: branston_pickle_15g
   name: Branston Original Pickle (15g)
   brand: Branston
@@ -2770,7 +2770,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sulphites
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: hellmanns_real_15g
   name: Hellmann's Real Mayo (15g)
   brand: Hellmann's
@@ -2786,7 +2786,7 @@
   dietary_compat: vegetarian,pescatarian,gluten_free
   allergens: eggs,mustard
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: hellmanns_lighter_15g
   name: Hellmann's Lighter Than Light Mayo (15g)
   brand: Hellmann's
@@ -2802,7 +2802,7 @@
   dietary_compat: vegetarian,pescatarian,gluten_free
   allergens: eggs,mustard
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: daddies_brown_sauce_15g
   name: Daddies Brown Sauce (15g)
   brand: Daddies
@@ -2818,7 +2818,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: sulphites
   unit_grams: 15
-- source: gymflow
+- source: afletics
   source_id: lea_perrins_worcestershire_5
   name: Lea & Perrins Worcestershire Sauce (5g)
   brand: Lea & Perrins
@@ -2834,7 +2834,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,sulphites
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: tabasco_5
   name: Tabasco Pepper Sauce (5ml)
   brand: Tabasco
@@ -2850,7 +2850,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: encona_west_indian_hot_5
   name: Encona West Indian Hot Pepper Sauce (5g)
   brand: Encona
@@ -2866,7 +2866,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: nature_valley_oats_honey_42
   name: Nature Valley Crunchy Oats & Honey
   brand: Nature Valley
@@ -2882,7 +2882,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,soy
   unit_grams: 21
-- source: gymflow
+- source: afletics
   source_id: tracker_roasted_nut
   name: Tracker Roasted Nut Bar
   brand: Tracker
@@ -2898,7 +2898,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,peanuts,soy
   unit_grams: 26
-- source: gymflow
+- source: afletics
   source_id: alpen_strawberry_yogurt_bar
   name: Alpen Strawberry & Yogurt Bar
   brand: Alpen
@@ -2914,7 +2914,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,soy
   unit_grams: 29
-- source: gymflow
+- source: afletics
   source_id: mrs_crimble_protein_oat_bar
   name: Mrs Crimble's Protein Oat Bar
   brand: Mrs Crimble's

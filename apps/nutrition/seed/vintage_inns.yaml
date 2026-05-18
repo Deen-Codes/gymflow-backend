@@ -1,7 +1,7 @@
 # vintage_inns.yaml — Vintage Inns (Mitchells & Butlers) pub menu.
 # 30 entries. Source: vintageinns.co.uk allergen + nutrition guides.
 # `meal` portion unit captures full plate-as-served (main + sides bundled).
-- source: gymflow
+- source: afletics
   source_id: vintageinns_fish_chips
   name: Fish & Chips
   brand: Vintage Inns
@@ -17,7 +17,7 @@
   dietary_compat: pescatarian
   allergens: fish,gluten,eggs
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: vintageinns_steak_ale_pie
   name: Steak & Ale Pie
   brand: Vintage Inns
@@ -33,7 +33,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: vintageinns_chicken_pie
   name: Chicken & Mushroom Pie
   brand: Vintage Inns
@@ -49,7 +49,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: vintageinns_sunday_beef
   name: Roast Beef Sunday Lunch
   brand: Vintage Inns
@@ -65,7 +65,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: vintageinns_sunday_chicken
   name: Roast Chicken Sunday Lunch
   brand: Vintage Inns
@@ -81,7 +81,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: vintageinns_sunday_pork
   name: Roast Pork Sunday Lunch
   brand: Vintage Inns
@@ -97,7 +97,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: vintageinns_sunday_lamb
   name: Roast Lamb Sunday Lunch
   brand: Vintage Inns
@@ -113,7 +113,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: vintageinns_burger_classic
   name: Classic Beef Burger
   brand: Vintage Inns
@@ -129,7 +129,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 480
-- source: gymflow
+- source: afletics
   source_id: vintageinns_chicken_burger
   name: Buttermilk Chicken Burger
   brand: Vintage Inns
@@ -145,7 +145,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 460
-- source: gymflow
+- source: afletics
   source_id: vintageinns_lasagne
   name: Beef Lasagne
   brand: Vintage Inns
@@ -161,7 +161,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: vintageinns_curry_chicken
   name: Chicken Curry & Rice
   brand: Vintage Inns
@@ -177,7 +177,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,celery,mustard
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: vintageinns_gammon_egg
   name: Gammon Steak with Egg & Chips
   brand: Vintage Inns
@@ -193,7 +193,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: eggs
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: vintageinns_sausage_mash
   name: Sausage & Mash
   brand: Vintage Inns
@@ -209,7 +209,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 550
-- source: gymflow
+- source: afletics
   source_id: vintageinns_seabass
   name: Pan Seared Seabass
   brand: Vintage Inns
@@ -225,7 +225,7 @@
   dietary_compat: pescatarian,dairy_free,gluten_free
   allergens: fish
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: vintageinns_veggie_burger
   name: Plant-Based Burger
   brand: Vintage Inns
@@ -241,7 +241,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten,sesame,soy
   unit_grams: 460
-- source: gymflow
+- source: afletics
   source_id: vintageinns_garlic_bread
   name: Garlic Bread
   brand: Vintage Inns
@@ -257,7 +257,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: vintageinns_calamari
   name: Salt & Pepper Calamari
   brand: Vintage Inns
@@ -273,7 +273,7 @@
   dietary_compat: pescatarian
   allergens: gluten,molluscs,eggs
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: vintageinns_brie_wedges
   name: Camembert Wedges
   brand: Vintage Inns
@@ -289,7 +289,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: vintageinns_prawn_cocktail
   name: Prawn Cocktail
   brand: Vintage Inns
@@ -305,7 +305,7 @@
   dietary_compat: pescatarian
   allergens: crustaceans,eggs,mustard
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: vintageinns_soup_day
   name: Soup of the Day
   brand: Vintage Inns
@@ -321,7 +321,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,celery
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: vintageinns_chips
   name: Chips
   brand: Vintage Inns
@@ -337,7 +337,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: vintageinns_sweet_potato_fries
   name: Sweet Potato Fries
   brand: Vintage Inns
@@ -353,7 +353,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: vintageinns_seasonal_veg
   name: Seasonal Vegetables
   brand: Vintage Inns
@@ -369,7 +369,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: vintageinns_onion_rings
   name: Onion Rings
   brand: Vintage Inns
@@ -385,7 +385,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: vintageinns_side_salad
   name: Side Salad
   brand: Vintage Inns
@@ -401,7 +401,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: mustard,sulphites
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: vintageinns_sticky_toffee
   name: Sticky Toffee Pudding
   brand: Vintage Inns
@@ -417,7 +417,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: vintageinns_apple_crumble
   name: Apple Crumble & Custard
   brand: Vintage Inns
@@ -433,7 +433,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: vintageinns_chocolate_brownie
   name: Chocolate Brownie Sundae
   brand: Vintage Inns
@@ -449,7 +449,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: vintageinns_cheesecake
   name: Vanilla Cheesecake
   brand: Vintage Inns
@@ -465,7 +465,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: vintageinns_ice_cream_3
   name: Ice Cream (3 scoops)
   brand: Vintage Inns

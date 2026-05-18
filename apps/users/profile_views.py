@@ -49,7 +49,7 @@ USERNAME_REGEX = re.compile(r"^[A-Za-z0-9_]{3,30}$")
 # Reserved usernames you can't claim — admin paths, public pages, etc.
 RESERVED_USERNAMES = {
     "admin", "root", "support", "help", "billing", "api",
-    "www", "mail", "test", "gymflow", "system",
+    "www", "mail", "test", "afletics", "system",
 }
 
 

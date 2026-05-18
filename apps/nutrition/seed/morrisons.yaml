@@ -1,7 +1,7 @@
 # morrisons.yaml — Morrisons own-brand + The Best.
 # 78 entries (incl 0 migrated).
 # Source: groceries.morrisons.com.
-- source: gymflow
+- source: afletics
   source_id: morrisons_greek_yogurt_natural
   name: Morrisons Greek Style Natural Yogurt
   brand: Morrisons
@@ -17,7 +17,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: morrisons_greek_yogurt_0pct
   name: Morrisons Greek Style 0% Yogurt
   brand: Morrisons
@@ -33,7 +33,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: morrisons_skyr_natural
   name: Morrisons Natural Skyr
   brand: Morrisons
@@ -49,7 +49,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: morrisons_milk_semi
   name: Morrisons Semi-skimmed Milk
   brand: Morrisons
@@ -64,7 +64,7 @@
   tags: supermarket,dairy
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: morrisons_milk_whole
   name: Morrisons Whole Milk
   brand: Morrisons
@@ -79,7 +79,7 @@
   tags: supermarket,dairy
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: morrisons_oat_drink
   name: Morrisons Oat Drink
   brand: Morrisons
@@ -94,7 +94,7 @@
   tags: supermarket,dairy_alternative,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: morrisons_cheddar_mature
   name: Morrisons Mature Cheddar
   brand: Morrisons
@@ -110,7 +110,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: morrisons_butter_unsalted
   name: Morrisons Unsalted Butter
   brand: Morrisons
@@ -126,7 +126,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: morrisons_eggs_med_freerange
   name: Morrisons Free Range Medium Eggs
   brand: Morrisons
@@ -142,7 +142,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: morrisons_eggs_lge_freerange
   name: Morrisons Free Range Large Eggs
   brand: Morrisons
@@ -158,7 +158,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: morrisons_eggs_organic_lge
   name: Morrisons Organic Large Eggs
   brand: Morrisons
@@ -174,7 +174,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: morrisons_white_med_bread
   name: Morrisons White Medium Bread
   brand: Morrisons
@@ -190,7 +190,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: morrisons_wholemeal_bread
   name: Morrisons Wholemeal Bread
   brand: Morrisons
@@ -206,7 +206,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 38
-- source: gymflow
+- source: afletics
   source_id: morrisons_seeded_bread
   name: Morrisons Seeded Bloomer
   brand: Morrisons
@@ -222,7 +222,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: morrisons_50_50_bread
   name: Morrisons 50/50 Medium Bread
   brand: Morrisons
@@ -238,7 +238,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 36
-- source: gymflow
+- source: afletics
   source_id: morrisons_brioche_buns
   name: Morrisons Brioche Burger Buns
   brand: Morrisons
@@ -254,7 +254,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: morrisons_white_wraps
   name: Morrisons White Tortilla Wraps
   brand: Morrisons
@@ -270,7 +270,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 64
-- source: gymflow
+- source: afletics
   source_id: morrisons_white_pitta
   name: Morrisons White Pitta Breads
   brand: Morrisons
@@ -286,7 +286,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: morrisons_plain_bagels
   name: Morrisons Plain Bagels
   brand: Morrisons
@@ -302,7 +302,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 95
-- source: gymflow
+- source: afletics
   source_id: morrisons_chicken_breast_fillets
   name: Morrisons British Chicken Breast Fillets
   brand: Morrisons
@@ -317,7 +317,7 @@
   tags: supermarket,meat,chicken,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: morrisons_chicken_thighs
   name: Morrisons Boneless Skinless Chicken Thighs
   brand: Morrisons
@@ -332,7 +332,7 @@
   tags: supermarket,meat,chicken,high_protein
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: morrisons_lean_beef_mince_5pct
   name: Morrisons Lean Beef Mince 5% Fat
   brand: Morrisons
@@ -347,7 +347,7 @@
   tags: supermarket,meat,high_protein,low_fat
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: morrisons_beef_mince_15pct
   name: Morrisons Beef Mince 15% Fat
   brand: Morrisons
@@ -362,7 +362,7 @@
   tags: supermarket,meat,high_protein
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: morrisons_steak_sirloin
   name: Morrisons Sirloin Steak
   brand: Morrisons
@@ -378,7 +378,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: morrisons_pork_sausages
   name: Morrisons British Pork Sausages
   brand: Morrisons
@@ -394,7 +394,7 @@
   dietary_compat: pescatarian
   allergens: gluten,sulphites
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: morrisons_bacon_back_smoked
   name: Morrisons Smoked Back Bacon
   brand: Morrisons
@@ -410,7 +410,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: morrisons_streaky_bacon
   name: Morrisons Streaky Bacon
   brand: Morrisons
@@ -426,7 +426,7 @@
   dietary_compat: pescatarian,gluten_free
   allergens: ''
   unit_grams: 12
-- source: gymflow
+- source: afletics
   source_id: morrisons_ham_wafer_thin
   name: Morrisons Wafer Thin Ham
   brand: Morrisons
@@ -442,7 +442,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: morrisons_chicken_breast_slices
   name: Morrisons Cooked Chicken Breast Slices
   brand: Morrisons
@@ -458,7 +458,7 @@
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: morrisons_tuna_water
   name: Morrisons Tuna in Spring Water
   brand: Morrisons
@@ -474,7 +474,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: morrisons_smoked_salmon
   name: Morrisons Smoked Scottish Salmon
   brand: Morrisons
@@ -490,7 +490,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: morrisons_salmon_fillets
   name: Morrisons Salmon Fillets
   brand: Morrisons
@@ -506,7 +506,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: fish
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: morrisons_king_prawns_cooked
   name: Morrisons Cooked King Prawns
   brand: Morrisons
@@ -521,7 +521,7 @@
   tags: supermarket,seafood,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: crustaceans
-- source: gymflow
+- source: afletics
   source_id: morrisons_porridge_oats
   name: Morrisons Porridge Oats
   brand: Morrisons
@@ -536,7 +536,7 @@
   tags: supermarket,cereal,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: morrisons_corn_flakes
   name: Morrisons Corn Flakes
   brand: Morrisons
@@ -551,7 +551,7 @@
   tags: supermarket,cereal,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: morrisons_bran_flakes
   name: Morrisons Bran Flakes
   brand: Morrisons
@@ -566,7 +566,7 @@
   tags: supermarket,cereal,breakfast,fibre
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: morrisons_granola_fruit_nut
   name: Morrisons Fruit & Nut Granola
   brand: Morrisons
@@ -581,7 +581,7 @@
   tags: supermarket,cereal,breakfast
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,tree_nuts
-- source: gymflow
+- source: afletics
   source_id: morrisons_white_pasta
   name: Morrisons Penne Pasta (dry)
   brand: Morrisons
@@ -596,7 +596,7 @@
   tags: supermarket,grain,pasta
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: morrisons_wholewheat_pasta
   name: Morrisons Wholewheat Pasta
   brand: Morrisons
@@ -611,7 +611,7 @@
   tags: supermarket,grain,pasta
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: morrisons_basmati_rice
   name: Morrisons Basmati Rice (dry)
   brand: Morrisons
@@ -626,7 +626,7 @@
   tags: supermarket,grain,rice
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: morrisons_microwave_rice
   name: Morrisons Microwave Basmati Rice
   brand: Morrisons
@@ -642,7 +642,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: morrisons_couscous
   name: Morrisons Couscous (dry)
   brand: Morrisons
@@ -657,7 +657,7 @@
   tags: supermarket,grain
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: morrisons_milk_chocolate_bar
   name: Morrisons Milk Chocolate Bar
   brand: Morrisons
@@ -673,7 +673,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: morrisons_ready_salted_crisps
   name: Morrisons Ready Salted Crisps
   brand: Morrisons
@@ -689,7 +689,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: morrisons_chocolate_chip_cookies
   name: Morrisons Chocolate Chip Cookies
   brand: Morrisons
@@ -705,7 +705,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 12
-- source: gymflow
+- source: afletics
   source_id: morrisons_protein_bar_chocolate
   name: Morrisons Protein Bar Chocolate
   brand: Morrisons
@@ -721,7 +721,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: morrisons_chicken_tikka_masala
   name: Morrisons Chicken Tikka Masala (ready meal)
   brand: Morrisons
@@ -737,7 +737,7 @@
   dietary_compat: pescatarian
   allergens: milk,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: morrisons_lasagne_meal
   name: Morrisons Beef Lasagne (ready meal)
   brand: Morrisons
@@ -753,7 +753,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: morrisons_thai_green_curry
   name: Morrisons Thai Green Chicken Curry
   brand: Morrisons
@@ -769,7 +769,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: fish,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: morrisons_cottage_pie_meal
   name: Morrisons Cottage Pie (ready meal)
   brand: Morrisons
@@ -785,7 +785,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: morrisons_oven_chips
   name: Morrisons Oven Chips (frozen)
   brand: Morrisons
@@ -800,7 +800,7 @@
   tags: supermarket,frozen,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: morrisons_frozen_peas
   name: Morrisons Garden Peas (frozen)
   brand: Morrisons
@@ -815,7 +815,7 @@
   tags: supermarket,frozen,vegetable,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: morrisons_frozen_pizza_pepperoni
   name: Morrisons Pepperoni Pizza (frozen)
   brand: Morrisons
@@ -831,7 +831,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: morrisons_vanilla_ice_cream
   name: Morrisons Vanilla Ice Cream
   brand: Morrisons
@@ -846,7 +846,7 @@
   tags: supermarket,frozen,dessert
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,eggs
-- source: gymflow
+- source: afletics
   source_id: morrisons_tomato_ketchup
   name: Morrisons Tomato Ketchup
   brand: Morrisons
@@ -862,7 +862,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 17
-- source: gymflow
+- source: afletics
   source_id: morrisons_mayonnaise
   name: Morrisons Real Mayonnaise
   brand: Morrisons
@@ -878,7 +878,7 @@
   dietary_compat: vegetarian,pescatarian,gluten_free
   allergens: eggs,mustard
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: morrisons_pasta_sauce_tomato
   name: Morrisons Tomato & Basil Pasta Sauce
   brand: Morrisons
@@ -893,7 +893,7 @@
   tags: supermarket,condiment
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: morrisons_baked_beans
   name: Morrisons Baked Beans in Tomato Sauce
   brand: Morrisons
@@ -908,7 +908,7 @@
   tags: supermarket,canned,pulses
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: morrisons_chickpeas_canned
   name: Morrisons Chickpeas (canned, drained)
   brand: Morrisons
@@ -923,7 +923,7 @@
   tags: supermarket,canned,pulses,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: morrisons_kidney_beans
   name: Morrisons Kidney Beans (canned)
   brand: Morrisons
@@ -938,7 +938,7 @@
   tags: supermarket,canned,pulses,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: morrisons_olive_oil_evoo
   name: Morrisons Extra Virgin Olive Oil
   brand: Morrisons
@@ -954,7 +954,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: morrisons_peanut_butter_smooth
   name: Morrisons Smooth Peanut Butter
   brand: Morrisons
@@ -970,7 +970,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: peanuts
   unit_grams: 16
-- source: gymflow
+- source: afletics
   source_id: morrisons_orange_juice_smooth
   name: Morrisons Smooth Orange Juice
   brand: Morrisons
@@ -985,7 +985,7 @@
   tags: supermarket,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: morrisons_apple_juice
   name: Morrisons Apple Juice
   brand: Morrisons
@@ -1000,7 +1000,7 @@
   tags: supermarket,drink
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: morrisons_water_still_500
   name: Morrisons Still Water
   brand: Morrisons
@@ -1016,7 +1016,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: morrisons_smoothie_strawberry
   name: Morrisons Strawberry & Banana Smoothie
   brand: Morrisons
@@ -1032,7 +1032,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: morrisons_bananas
   name: Morrisons Bananas
   brand: Morrisons
@@ -1048,7 +1048,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 118
-- source: gymflow
+- source: afletics
   source_id: morrisons_apples_braeburn
   name: Morrisons Braeburn Apples
   brand: Morrisons
@@ -1064,7 +1064,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: morrisons_avocados
   name: Morrisons Ripe Avocados
   brand: Morrisons
@@ -1080,7 +1080,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: morrisons_blueberries
   name: Morrisons Blueberries
   brand: Morrisons
@@ -1096,7 +1096,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: morrisons_strawberries
   name: Morrisons British Strawberries
   brand: Morrisons
@@ -1112,7 +1112,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: morrisons_cherry_tomatoes
   name: Morrisons Cherry Tomatoes
   brand: Morrisons
@@ -1128,7 +1128,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: morrisons_thebest_chicken_breast
   name: Morrisons The Best Chicken Breast
   brand: Morrisons
@@ -1143,7 +1143,7 @@
   tags: supermarket,meat,chicken,high_protein,low_fat,low_carb
   dietary_compat: halal,pescatarian,gluten_free,dairy_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: morrisons_thebest_steak_ribeye
   name: Morrisons The Best Ribeye Steak
   brand: Morrisons
@@ -1159,7 +1159,7 @@
   dietary_compat: halal,kosher,pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: morrisons_chicken_tikka_meal
   name: Morrisons Chicken Tikka Masala (ready meal)
   brand: Morrisons
@@ -1175,7 +1175,7 @@
   dietary_compat: pescatarian
   allergens: milk,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: morrisons_chicken_caesar_wrap
   name: Morrisons Chicken Caesar Wrap
   brand: Morrisons
@@ -1191,7 +1191,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,fish
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: morrisons_protein_pot_chicken
   name: Morrisons Chicken Protein Pot
   brand: Morrisons
@@ -1207,7 +1207,7 @@
   dietary_compat: pescatarian
   allergens: eggs,mustard
   unit_grams: 215
-- source: gymflow
+- source: afletics
   source_id: morrisons_high_protein_yogurt
   name: Morrisons High Protein Yogurt Vanilla
   brand: Morrisons

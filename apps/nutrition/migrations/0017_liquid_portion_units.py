@@ -3,7 +3,7 @@
 Background — `CuratedFood.portion_unit` was added in 0011 with a
 default of "grams" because most foods are weighed. That default
 silently propagated to every existing row including the milks,
-juices, coffees, and other drinks in the GymFlow-curated seed.
+juices, coffees, and other drinks in the Afletics-curated seed.
 Result in the picker: "Whole milk" offered 50g/100g/150g/200g/250g
 chips with a "g" suffix, when nobody on Earth measures milk in
 grams. The macro math still worked (kcal/100g × grams) but the UX
@@ -23,7 +23,7 @@ cake = a pastry, beer batter = a coating, etc.). We don't touch
 rows that aren't currently portion_unit="grams" so manual edits
 or future overrides are preserved.
 
-Scope — runs against the GymFlow-curated seed. We're building our
+Scope — runs against the Afletics-curated seed. We're building our
 own catalog from scratch (no USDA/FSA/AUSNUT/CIQUAL ingest), so
 every future row will be added with portion_unit set correctly
 at write time. This migration is a one-time fix-up for the existing

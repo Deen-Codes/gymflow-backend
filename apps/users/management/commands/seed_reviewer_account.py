@@ -4,15 +4,15 @@ accounts used by App Store review AND by Deen's day-to-day QC.
 Four accounts, all seeded against today's date and all idempotent
 (running the command again wipes + re-seeds against the current day):
 
-  reviewer@gymflow.coach  — Pro AI tier, ~30 days of history. Used
+  reviewer@afletics.com  — Pro AI tier, ~30 days of history. Used
                             by App Store review reviewers.
-  day0@gymflow.coach      — Pro AI tier, NO history. The cold-start
+  day0@afletics.com      — Pro AI tier, NO history. The cold-start
                             test account. Tests every empty state.
-  day1@gymflow.coach      — Pro AI tier, exactly ONE day of data
+  day1@afletics.com      — Pro AI tier, exactly ONE day of data
                             (today). Tests "single data point" UI
                             where comparisons aren't yet possible
                             but data exists.
-  reset@gymflow.coach     — Pro AI tier, NO history. Same as day0,
+  reset@afletics.com     — Pro AI tier, NO history. Same as day0,
                             but the magic-link verify view wipes
                             anything the user logged during a
                             session BEFORE issuing the next token.
@@ -49,7 +49,7 @@ from apps.users.test_account_seeds import (
 )
 
 
-REVIEWER_EMAIL_DEFAULT = "reviewer@gymflow.coach"
+REVIEWER_EMAIL_DEFAULT = "reviewer@afletics.com"
 
 
 class Command(BaseCommand):
@@ -76,7 +76,7 @@ class Command(BaseCommand):
                 days_per_week=3,
             ),
             TestAccountSpec(
-                email="day0@gymflow.coach",
+                email="day0@afletics.com",
                 first_name="Day0",
                 last_name="Test",
                 history_mode="none",          # cold-start empty
@@ -84,7 +84,7 @@ class Command(BaseCommand):
                 days_per_week=3,
             ),
             TestAccountSpec(
-                email="day1@gymflow.coach",
+                email="day1@afletics.com",
                 first_name="Day1",
                 last_name="Test",
                 history_mode="single_day",    # 1 workout + 1 weight, both today
@@ -92,7 +92,7 @@ class Command(BaseCommand):
                 days_per_week=3,
             ),
             TestAccountSpec(
-                email="reset@gymflow.coach",
+                email="reset@afletics.com",
                 first_name="Reset",
                 last_name="Test",
                 history_mode="none",          # starts empty
@@ -110,7 +110,7 @@ class Command(BaseCommand):
         if token:
             self.stdout.write("")
             self.stdout.write("Bypass URLs (paste into Safari on the test device):")
-            self.stdout.write(f"  reviewer: https://gymflow.coach/magic/{token}/")
-            self.stdout.write(f"  day0:     https://gymflow.coach/magic/{token}-day0/")
-            self.stdout.write(f"  day1:     https://gymflow.coach/magic/{token}-day1/")
-            self.stdout.write(f"  reset:    https://gymflow.coach/magic/{token}-reset/  (wipes on sign-in)")
+            self.stdout.write(f"  reviewer: https://afletics.com/magic/{token}/")
+            self.stdout.write(f"  day0:     https://afletics.com/magic/{token}-day0/")
+            self.stdout.write(f"  day1:     https://afletics.com/magic/{token}-day1/")
+            self.stdout.write(f"  reset:    https://afletics.com/magic/{token}-reset/  (wipes on sign-in)")

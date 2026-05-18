@@ -1,7 +1,7 @@
 # nandos.yaml — Nando's UK menu.
 # 31 entries (incl 7 migrated).
 # Source: nandos.co.uk/eat/menu allergen guide.
-- source: gymflow
+- source: afletics
   source_id: nandos_chicken_thigh_butterfly
   name: Nando's Chicken Thigh, Butterfly
   brand: Nando's
@@ -17,7 +17,7 @@
   allergens: ''
   portion_unit: piece
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: nandos_chips_regular
   name: Nando's Chips, Regular
   brand: Nando's
@@ -33,7 +33,7 @@
   allergens: ''
   portion_unit: pack
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: nandos_garlic_bread
   name: Nando's Garlic Bread
   brand: Nando's
@@ -49,7 +49,7 @@
   allergens: gluten,milk
   portion_unit: piece
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: nandos_halloumi_sticks
   name: Nando's Halloumi Sticks & Dip
   brand: Nando's
@@ -65,7 +65,7 @@
   allergens: milk,gluten,eggs
   portion_unit: pack
   unit_grams: 95
-- source: gymflow
+- source: afletics
   source_id: nandos_peri_chips
   name: Nando's Peri-Salted Chips
   brand: Nando's
@@ -81,7 +81,7 @@
   allergens: ''
   portion_unit: pack
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: nandos_quarter_chicken
   name: Nando's 1/4 Chicken (breast)
   brand: Nando's
@@ -97,7 +97,7 @@
   allergens: ''
   portion_unit: piece
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: nandos_spicy_rice
   name: Nando's Spicy Rice
   brand: Nando's
@@ -113,7 +113,7 @@
   allergens: ''
   portion_unit: pack
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: nandos_whole_chicken
   name: Whole Chicken
   brand: Nando's
@@ -129,7 +129,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: nandos_half_chicken
   name: Half Chicken
   brand: Nando's
@@ -145,7 +145,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 320
-- source: gymflow
+- source: afletics
   source_id: nandos_chicken_breast_fillet
   name: Chicken Breast Fillet
   brand: Nando's
@@ -161,7 +161,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: nandos_chicken_thighs_3
   name: 3 Chicken Thighs (no bone)
   brand: Nando's
@@ -177,7 +177,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 195
-- source: gymflow
+- source: afletics
   source_id: nandos_chicken_wings_5
   name: 5 Chicken Wings
   brand: Nando's
@@ -193,7 +193,7 @@
   dietary_compat: halal,pescatarian,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: nandos_chicken_pitta
   name: Chicken Pitta
   brand: Nando's
@@ -209,7 +209,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 240
-- source: gymflow
+- source: afletics
   source_id: nandos_chicken_wrap
   name: Chicken Wrap
   brand: Nando's
@@ -225,7 +225,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: gluten,sesame
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: nandos_chicken_burger
   name: Chicken Butterfly Burger
   brand: Nando's
@@ -241,7 +241,7 @@
   dietary_compat: halal,pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: nandos_double_chicken_burger
   name: Double Chicken Burger
   brand: Nando's
@@ -257,7 +257,7 @@
   dietary_compat: halal,pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 320
-- source: gymflow
+- source: afletics
   source_id: nandos_veggie_burger
   name: The Veggie Burger
   brand: Nando's
@@ -273,7 +273,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,sesame
   unit_grams: 270
-- source: gymflow
+- source: afletics
   source_id: nandos_great_imitator
   name: The Great Imitator (vegan)
   brand: Nando's
@@ -289,7 +289,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,sesame,soy
   unit_grams: 270
-- source: gymflow
+- source: afletics
   source_id: nandos_chicken_thigh_burger
   name: Boneless Chicken Thigh Burger
   brand: Nando's
@@ -305,7 +305,7 @@
   dietary_compat: halal,pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: nandos_caesar_salad
   name: Caesar Salad with Chicken
   brand: Nando's
@@ -321,7 +321,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,fish
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: nandos_supergrain_salad
   name: Supergrain Bowl with Chicken
   brand: Nando's
@@ -337,7 +337,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,sesame,sulphites
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: nandos_corn_cob
   name: Corn on the Cob
   brand: Nando's
@@ -353,7 +353,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: nandos_macho_peas
   name: Macho Peas
   brand: Nando's
@@ -369,7 +369,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 165
-- source: gymflow
+- source: afletics
   source_id: nandos_coleslaw
   name: Coleslaw
   brand: Nando's
@@ -385,7 +385,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs,milk,mustard,sulphites
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: nandos_chargrilled_veg
   name: Chargrilled Veg
   brand: Nando's
@@ -401,7 +401,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: nandos_mash_potato
   name: Mashed Potato
   brand: Nando's
@@ -417,7 +417,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: nandos_creamy_mash_potato
   name: Creamy Mashed Potato
   brand: Nando's
@@ -433,7 +433,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: nandos_cake_chocolate
   name: Chocolate Cake
   brand: Nando's
@@ -449,7 +449,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: nandos_cheesecake_naughty
   name: Naughty Natas (Portuguese cheesecake)
   brand: Nando's
@@ -465,7 +465,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: nandos_bottomless_drink_diet
   name: Bottomless Diet Coke (refill)
   brand: Nando's
@@ -480,7 +480,7 @@
   tags: chain,drink,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: nandos_bottomless_drink_full
   name: Bottomless Coca-Cola
   brand: Nando's

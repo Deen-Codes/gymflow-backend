@@ -1,7 +1,7 @@
 # slug_lettuce.yaml — Slug & Lettuce (Stonegate) bar/restaurant menu.
 # 40 entries: cocktails, mains, brunch, sharing platters.
 # Source: slugandlettuce.co.uk allergen + nutrition.
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_calamari
   name: Salt & Pepper Calamari
   brand: Slug & Lettuce
@@ -17,7 +17,7 @@
   dietary_compat: pescatarian
   allergens: gluten,molluscs,eggs
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_chicken_wings
   name: Buffalo Chicken Wings
   brand: Slug & Lettuce
@@ -33,7 +33,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_loaded_fries
   name: Cheesy Bacon Fries
   brand: Slug & Lettuce
@@ -49,7 +49,7 @@
   dietary_compat: pescatarian
   allergens: milk,eggs
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_halloumi_fries
   name: Halloumi Fries
   brand: Slug & Lettuce
@@ -65,7 +65,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_nachos
   name: Loaded Nachos
   brand: Slug & Lettuce
@@ -81,7 +81,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,sulphites
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_classic_burger
   name: Classic Beef Burger
   brand: Slug & Lettuce
@@ -97,7 +97,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 470
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_chicken_burger
   name: Buttermilk Chicken Burger
   brand: Slug & Lettuce
@@ -113,7 +113,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
   unit_grams: 460
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_vegan_burger
   name: Vegan Burger
   brand: Slug & Lettuce
@@ -129,7 +129,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten,sesame,soy
   unit_grams: 450
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_fish_chips
   name: Fish & Chips
   brand: Slug & Lettuce
@@ -145,7 +145,7 @@
   dietary_compat: pescatarian
   allergens: fish,gluten,eggs
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_chicken_pasta
   name: Cajun Chicken Pasta
   brand: Slug & Lettuce
@@ -161,7 +161,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 480
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_thai_chicken
   name: Thai Green Chicken Curry
   brand: Slug & Lettuce
@@ -177,7 +177,7 @@
   dietary_compat: halal,pescatarian,dairy_free
   allergens: fish,celery
   unit_grams: 580
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_paella
   name: Chicken & Chorizo Paella
   brand: Slug & Lettuce
@@ -193,7 +193,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: crustaceans,molluscs,sulphites
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_jackfruit_curry
   name: Jackfruit Curry
   brand: Slug & Lettuce
@@ -209,7 +209,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: ''
   unit_grams: 580
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_buddha_bowl
   name: Buddha Bowl
   brand: Slug & Lettuce
@@ -225,7 +225,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: sesame,sulphites
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_sharer_meat
   name: Meat Sharer
   brand: Slug & Lettuce
@@ -241,7 +241,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sulphites
   unit_grams: 700
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_sharer_veg
   name: Veggie Sharer
   brand: Slug & Lettuce
@@ -257,7 +257,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,sesame
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_caesar_chicken
   name: Chicken Caesar Salad
   brand: Slug & Lettuce
@@ -273,7 +273,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,fish
   unit_grams: 380
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_superfood_salad
   name: Superfood Salad
   brand: Slug & Lettuce
@@ -289,7 +289,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: sesame,mustard
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_breakfast_full
   name: Full English
   brand: Slug & Lettuce
@@ -305,7 +305,7 @@
   dietary_compat: pescatarian
   allergens: gluten,eggs,sulphites
   unit_grams: 600
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_eggs_benedict
   name: Eggs Benedict
   brand: Slug & Lettuce
@@ -321,7 +321,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 350
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_avocado_toast
   name: Smashed Avocado on Toast
   brand: Slug & Lettuce
@@ -337,7 +337,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_chips
   name: Chips
   brand: Slug & Lettuce
@@ -353,7 +353,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_sweet_potato_fries
   name: Sweet Potato Fries
   brand: Slug & Lettuce
@@ -369,7 +369,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_onion_rings
   name: Onion Rings
   brand: Slug & Lettuce
@@ -385,7 +385,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_garlic_bread
   name: Garlic Bread
   brand: Slug & Lettuce
@@ -401,7 +401,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_pornstar_martini
   name: Pornstar Martini
   brand: Slug & Lettuce
@@ -416,7 +416,7 @@
   tags: chain,pub,drink,alcoholic,cocktail
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_espresso_martini
   name: Espresso Martini
   brand: Slug & Lettuce
@@ -431,7 +431,7 @@
   tags: chain,pub,drink,alcoholic,cocktail
   dietary_compat: vegetarian,pescatarian,gluten_free
   allergens: milk,sulphites
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_aperol_spritz
   name: Aperol Spritz
   brand: Slug & Lettuce
@@ -446,7 +446,7 @@
   tags: chain,pub,drink,alcoholic,cocktail
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_mojito
   name: Mojito
   brand: Slug & Lettuce
@@ -461,7 +461,7 @@
   tags: chain,pub,drink,alcoholic,cocktail
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_cosmopolitan
   name: Cosmopolitan
   brand: Slug & Lettuce
@@ -476,7 +476,7 @@
   tags: chain,pub,drink,alcoholic,cocktail
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_lager_pint
   name: Lager (pint)
   brand: Slug & Lettuce
@@ -492,7 +492,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free
   allergens: gluten
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_cider_pint
   name: Cider (pint)
   brand: Slug & Lettuce
@@ -508,7 +508,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
   unit_grams: 568
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_house_red_175
   name: House Red Wine (175 ml)
   brand: Slug & Lettuce
@@ -523,7 +523,7 @@
   tags: chain,pub,drink,alcoholic
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_house_white_175
   name: House White Wine (175 ml)
   brand: Slug & Lettuce
@@ -538,7 +538,7 @@
   tags: chain,pub,drink,alcoholic
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_prosecco_glass
   name: Prosecco (glass)
   brand: Slug & Lettuce
@@ -553,7 +553,7 @@
   tags: chain,pub,drink,alcoholic
   dietary_compat: vegan,vegetarian,pescatarian,dairy_free,gluten_free
   allergens: sulphites
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_brownie_sundae
   name: Brownie Sundae
   brand: Slug & Lettuce
@@ -569,7 +569,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_sticky_toffee
   name: Sticky Toffee Pudding
   brand: Slug & Lettuce
@@ -585,7 +585,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 170
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_cheesecake
   name: Vanilla Cheesecake
   brand: Slug & Lettuce
@@ -601,7 +601,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_peppercorn_sauce
   name: Peppercorn Sauce
   brand: Slug & Lettuce
@@ -617,7 +617,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: sluglettuce_garlic_butter
   name: Garlic Butter
   brand: Slug & Lettuce

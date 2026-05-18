@@ -46,7 +46,7 @@ python manage.py link_exercises_to_catalog --create-missing
 # after a voice revision.
 python manage.py seed_exercise_form_copy
 # APPLE-REVIEW-BYPASS — provision (or refresh) the reviewer-only test
-# account. Idempotent; ensures reviewer@gymflow.coach exists on Pro AI
+# account. Idempotent; ensures reviewer@afletics.com exists on Pro AI
 # tier so the magic-link bypass route can sign them in. Set the env
 # var APPLE_REVIEW_TOKEN to a secret value to actually open the
 # bypass route; without it the route stays closed.

@@ -1,9 +1,9 @@
 """EXERCISE-LIB-1500 — one-shot dedup cleanup.
 
 After the initial Free Exercise DB import, the catalog has 873
-freedb rows + 43 GymFlow-curated rows, with ~40 duplicates (e.g.
+freedb rows + 43 Afletics-curated rows, with ~40 duplicates (e.g.
 "Goblet Squat" exists in both sources). This command deletes the
-freedb duplicates so the GymFlow-curated entry is the canonical
+freedb duplicates so the Afletics-curated entry is the canonical
 one (UK-friendly naming).
 
 Idempotent — safe to run multiple times. Deletes nothing if the
@@ -17,13 +17,13 @@ from django.core.management.base import BaseCommand
 
 from apps.workouts.models import ExerciseCatalog
 from apps.workouts.management.commands.import_exercise_catalog import (
-    GYMFLOW_FREEDB_DUPES,
+    AFLETICS_FREEDB_DUPES,
     FREEDB_DUPE_IDS,
 )
 
 
 class Command(BaseCommand):
-    help = "Delete Free Exercise DB rows that duplicate GymFlow-curated entries."
+    help = "Delete Free Exercise DB rows that duplicate Afletics-curated entries."
 
     def add_arguments(self, parser):
         parser.add_argument(
@@ -43,7 +43,7 @@ class Command(BaseCommand):
 
         self.stdout.write(
             f"Found {count} Free Exercise DB rows that duplicate "
-            f"GymFlow-curated entries."
+            f"Afletics-curated entries."
         )
 
         if count == 0:
@@ -51,8 +51,8 @@ class Command(BaseCommand):
             return
 
         # Show the mapping so it's reviewable
-        self.stdout.write("\nMapping (GymFlow-curated kept, FreeDB rows deleted):")
-        for canonical, dupe_ids in sorted(GYMFLOW_FREEDB_DUPES.items()):
+        self.stdout.write("\nMapping (Afletics-curated kept, FreeDB rows deleted):")
+        for canonical, dupe_ids in sorted(AFLETICS_FREEDB_DUPES.items()):
             for fid in dupe_ids:
                 row = qs.filter(external_id=fid).first()
                 if row:

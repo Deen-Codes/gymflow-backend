@@ -8,4 +8,4 @@ link below — view past invoices, update your card, or cancel:
 The link is single-use and expires in 24 hours. If you didn't request
 this, you can ignore this email.
 
-— Powered by GymFlow
+— Powered by Afletics

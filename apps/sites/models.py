@@ -27,7 +27,7 @@ class TrainerSite(models.Model):
     # so trainers can edit privately before going live.
     is_published = models.BooleanField(default=False)
 
-    # Brand colour (hex). Falls back to the GymFlow accent if blank.
+    # Brand colour (hex). Falls back to the Afletics accent if blank.
     brand_color = models.CharField(max_length=7, blank=True, default="")
 
     created_at = models.DateTimeField(auto_now_add=True)

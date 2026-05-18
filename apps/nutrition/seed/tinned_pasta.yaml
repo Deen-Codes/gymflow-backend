@@ -1,5 +1,5 @@
 # tinned_pasta.yaml — Heinz Spaghetti Bolognese + Macaroni Cheese + Ravioli + Lasagne, Five Beanz, No Added Sugar Beans, chilli con carne, Napolina, Uncle Ben's + Tilda Express rice, more soups (Heinz lentil/minestrone/oxtail/chicken noodle, Crosse & Blackwell, Campbells).
-- source: gymflow
+- source: afletics
   source_id: heinz_spaghetti_bolognese_400
   name: Heinz Spaghetti Bolognese (per 100g)
   brand: Heinz
@@ -15,7 +15,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: heinz_macaroni_cheese_400
   name: Heinz Macaroni Cheese (per 100g)
   brand: Heinz
@@ -31,7 +31,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: heinz_ravioli_400
   name: Heinz Ravioli in Tomato Sauce (per 100g)
   brand: Heinz
@@ -47,7 +47,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,eggs,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: heinz_lasagne_400
   name: Heinz Lasagne (per 100g)
   brand: Heinz
@@ -63,7 +63,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: heinz_baked_beans_xl
   name: Heinz Baked Beans Big Tin (415g)
   brand: Heinz
@@ -79,7 +79,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 415
-- source: gymflow
+- source: afletics
   source_id: heinz_5_beanz
   name: Heinz Five Beanz (per 100g)
   brand: Heinz
@@ -95,7 +95,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 415
-- source: gymflow
+- source: afletics
   source_id: heinz_no_added_sugar_beans
   name: Heinz No Added Sugar Beans (per 100g)
   brand: Heinz
@@ -111,7 +111,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 415
-- source: gymflow
+- source: afletics
   source_id: heinz_chilli_con_carne_can
   name: Heinz Chilli Con Carne (per 100g)
   brand: Heinz
@@ -127,7 +127,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: celery,sulphites
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: napolina_macaroni_cheese
   name: Napolina Macaroni Cheese (per 100g)
   brand: Napolina
@@ -143,7 +143,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: uncle_bens_express_basmati
   name: Uncle Ben's Express Basmati Rice (per 100g)
   brand: Uncle Ben's
@@ -159,7 +159,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: uncle_bens_express_pilau_rice
   name: Uncle Ben's Express Pilau Rice (per 100g)
   brand: Uncle Ben's
@@ -175,7 +175,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: uncle_bens_express_egg_fried
   name: Uncle Ben's Express Egg Fried Rice (per 100g)
   brand: Uncle Ben's
@@ -191,7 +191,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: eggs,soy,sesame
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: tilda_basmati_express
   name: Tilda Steamed Basmati Rice (per 100g)
   brand: Tilda
@@ -207,7 +207,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: tilda_pilau_express
   name: Tilda Pilau Rice (per 100g)
   brand: Tilda
@@ -223,7 +223,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: heinz_lentil_soup_can
   name: Heinz Lentil Soup (per 100g)
   brand: Heinz
@@ -239,7 +239,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: heinz_minestrone_soup
   name: Heinz Minestrone Soup (per 100g)
   brand: Heinz
@@ -255,7 +255,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: heinz_oxtail_soup
   name: Heinz Oxtail Soup (per 100g)
   brand: Heinz
@@ -271,7 +271,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: heinz_chicken_noodle_soup
   name: Heinz Chicken Noodle Soup (per 100g)
   brand: Heinz
@@ -287,7 +287,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,celery,eggs
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: crosse_blackwell_oxtail
   name: Crosse & Blackwell Oxtail Soup (per 100g)
   brand: Crosse & Blackwell
@@ -303,7 +303,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten,celery
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: campbells_chicken_mushroom
   name: Campbells Cream of Chicken & Mushroom (per 100g)
   brand: Campbells

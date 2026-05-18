@@ -1,7 +1,7 @@
 # subway.yaml — Subway UK menu.
 # 29 entries (incl 3 migrated).
 # Source: subway.com/en-gb/menunutrition.
-- source: gymflow
+- source: afletics
   source_id: subway_6inch_chicken_breast
   name: Subway 6" Chicken Breast Sub
   brand: Subway
@@ -17,7 +17,7 @@
   allergens: gluten,milk,mustard,sulphites
   portion_unit: piece
   unit_grams: 230
-- source: gymflow
+- source: afletics
   source_id: subway_6inch_meatball_marinara
   name: Subway 6" Meatball Marinara
   brand: Subway
@@ -33,7 +33,7 @@
   allergens: gluten,milk,eggs,soy,sulphites
   portion_unit: piece
   unit_grams: 245
-- source: gymflow
+- source: afletics
   source_id: subway_6inch_tuna
   name: Subway 6" Tuna
   brand: Subway
@@ -49,7 +49,7 @@
   allergens: gluten,eggs,fish,milk,soy
   portion_unit: piece
   unit_grams: 235
-- source: gymflow
+- source: afletics
   source_id: subway_6inch_italian_bmt
   name: Italian B.M.T. (6")
   brand: Subway
@@ -65,7 +65,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 230
-- source: gymflow
+- source: afletics
   source_id: subway_6inch_steak_cheese
   name: Steak & Cheese (6")
   brand: Subway
@@ -81,7 +81,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 240
-- source: gymflow
+- source: afletics
   source_id: subway_6inch_turkey_breast
   name: Turkey Breast (6")
   brand: Subway
@@ -97,7 +97,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten
   unit_grams: 220
-- source: gymflow
+- source: afletics
   source_id: subway_6inch_turkey_ham
   name: Turkey & Ham (6")
   brand: Subway
@@ -113,7 +113,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: gluten
   unit_grams: 225
-- source: gymflow
+- source: afletics
   source_id: subway_6inch_veggie_delite
   name: Veggie Delite (6")
   brand: Subway
@@ -129,7 +129,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 165
-- source: gymflow
+- source: afletics
   source_id: subway_6inch_veggie_patty
   name: Veggie Patty (6")
   brand: Subway
@@ -145,7 +145,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 230
-- source: gymflow
+- source: afletics
   source_id: subway_6inch_chicken_teriyaki
   name: Chicken Teriyaki (6")
   brand: Subway
@@ -161,7 +161,7 @@
   dietary_compat: pescatarian
   allergens: gluten,soy,sesame
   unit_grams: 245
-- source: gymflow
+- source: afletics
   source_id: subway_6inch_chicken_tikka
   name: Chicken Tikka (6")
   brand: Subway
@@ -177,7 +177,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,mustard
   unit_grams: 240
-- source: gymflow
+- source: afletics
   source_id: subway_footlong_italian_bmt
   name: Italian B.M.T. (Footlong)
   brand: Subway
@@ -193,7 +193,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sulphites
   unit_grams: 460
-- source: gymflow
+- source: afletics
   source_id: subway_footlong_chicken_teriyaki
   name: Chicken Teriyaki (Footlong)
   brand: Subway
@@ -209,7 +209,7 @@
   dietary_compat: pescatarian
   allergens: gluten,soy,sesame
   unit_grams: 490
-- source: gymflow
+- source: afletics
   source_id: subway_footlong_steak_cheese
   name: Steak & Cheese (Footlong)
   brand: Subway
@@ -225,7 +225,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 480
-- source: gymflow
+- source: afletics
   source_id: subway_wrap_chicken_teriyaki
   name: Chicken Teriyaki Wrap
   brand: Subway
@@ -241,7 +241,7 @@
   dietary_compat: pescatarian
   allergens: gluten,soy,sesame
   unit_grams: 270
-- source: gymflow
+- source: afletics
   source_id: subway_wrap_veggie
   name: Veggie Wrap
   brand: Subway
@@ -257,7 +257,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 230
-- source: gymflow
+- source: afletics
   source_id: subway_salad_chicken_teriyaki
   name: Chicken Teriyaki Salad
   brand: Subway
@@ -273,7 +273,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: soy,sesame
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: subway_salad_turkey
   name: Turkey Breast Salad
   brand: Subway
@@ -289,7 +289,7 @@
   dietary_compat: pescatarian,dairy_free
   allergens: ''
   unit_grams: 260
-- source: gymflow
+- source: afletics
   source_id: subway_breakfast_egg_cheese_6
   name: Egg & Cheese Breakfast Sub (6")
   brand: Subway
@@ -305,7 +305,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: subway_breakfast_bacon_egg_cheese_6
   name: Bacon, Egg & Cheese (6")
   brand: Subway
@@ -321,7 +321,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 215
-- source: gymflow
+- source: afletics
   source_id: subway_chicken_strips_6
   name: Chicken Strips (6)
   brand: Subway
@@ -337,7 +337,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: subway_hash_browns_3
   name: Hash Browns (3)
   brand: Subway
@@ -353,7 +353,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 130
-- source: gymflow
+- source: afletics
   source_id: subway_cookie_choc_chip
   name: Choc Chip Cookie
   brand: Subway
@@ -369,7 +369,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 45
-- source: gymflow
+- source: afletics
   source_id: subway_cookie_double_choc
   name: Double Choc Cookie
   brand: Subway
@@ -385,7 +385,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 45
-- source: gymflow
+- source: afletics
   source_id: subway_cookie_white_choc
   name: White Choc Macadamia Cookie
   brand: Subway
@@ -401,7 +401,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,tree_nuts,soy
   unit_grams: 45
-- source: gymflow
+- source: afletics
   source_id: subway_cookie_oat_raisin
   name: Oat & Raisin Cookie
   brand: Subway
@@ -417,7 +417,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 45
-- source: gymflow
+- source: afletics
   source_id: subway_coke_can
   name: Coca-Cola (can)
   brand: Subway
@@ -433,7 +433,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: subway_water_bottle
   name: Still Water
   brand: Subway

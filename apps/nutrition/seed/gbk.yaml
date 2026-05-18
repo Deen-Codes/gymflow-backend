@@ -12,7 +12,7 @@
 # CLASSIC BURGERS
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: gbk_classic
   name: The Classic
   brand: GBK
@@ -29,7 +29,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
 
-- source: gymflow
+- source: afletics
   source_id: gbk_cheese
   name: The Cheese
   brand: GBK
@@ -46,7 +46,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
 
-- source: gymflow
+- source: afletics
   source_id: gbk_bacon_cheese
   name: Bacon & Cheese
   brand: GBK
@@ -63,7 +63,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
 
-- source: gymflow
+- source: afletics
   source_id: gbk_blue_cheese_bacon
   name: Blue Cheese & Bacon
   brand: GBK
@@ -80,7 +80,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
 
-- source: gymflow
+- source: afletics
   source_id: gbk_kiwi_burger
   name: Kiwiburger (egg + beetroot)
   brand: GBK
@@ -97,7 +97,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
 
-- source: gymflow
+- source: afletics
   source_id: gbk_mushroom_swiss
   name: Mushroom & Swiss
   brand: GBK
@@ -114,7 +114,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs,sesame
 
-- source: gymflow
+- source: afletics
   source_id: gbk_avocado_chilli
   name: Avocado & Chilli
   brand: GBK
@@ -135,7 +135,7 @@
 # CHICKEN BURGERS
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: gbk_buttermilk_chicken
   name: Buttermilk Fried Chicken
   brand: GBK
@@ -152,7 +152,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
 
-- source: gymflow
+- source: afletics
   source_id: gbk_chargrilled_chicken
   name: Chargrilled Chicken Burger
   brand: GBK
@@ -169,7 +169,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,sesame
 
-- source: gymflow
+- source: afletics
   source_id: gbk_buffalo_chicken
   name: Buffalo Chicken
   brand: GBK
@@ -190,7 +190,7 @@
 # VEGGIE / VEGAN
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: gbk_vegan_burger
   name: GBK Vegan Burger
   brand: GBK
@@ -207,7 +207,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,kosher,halal,dairy_free
   allergens: gluten,sesame,soy
 
-- source: gymflow
+- source: afletics
   source_id: gbk_falafel_burger
   name: Falafel Burger
   brand: GBK
@@ -224,7 +224,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,sesame
 
-- source: gymflow
+- source: afletics
   source_id: gbk_halloumi_burger
   name: Halloumi Burger
   brand: GBK
@@ -245,7 +245,7 @@
 # SIDES
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: gbk_skinny_fries
   name: Skinny Fries
   brand: GBK
@@ -262,7 +262,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,kosher,halal,dairy_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: gbk_sweet_potato_fries
   name: Sweet Potato Fries
   brand: GBK
@@ -279,7 +279,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,kosher,halal,dairy_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: gbk_onion_rings
   name: Onion Rings
   brand: GBK
@@ -296,7 +296,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
 
-- source: gymflow
+- source: afletics
   source_id: gbk_coleslaw
   name: Coleslaw
   brand: GBK
@@ -313,7 +313,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs,milk,mustard,sulphites
 
-- source: gymflow
+- source: afletics
   source_id: gbk_house_salad
   name: House Salad
   brand: GBK
@@ -330,7 +330,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: mustard,sulphites
 
-- source: gymflow
+- source: afletics
   source_id: gbk_chicken_wings_6
   name: Chicken Wings (6 wings)
   brand: GBK
@@ -351,7 +351,7 @@
 # HOT DOGS
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: gbk_classic_dog
   name: Classic Hot Dog
   brand: GBK
@@ -368,7 +368,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,sesame
 
-- source: gymflow
+- source: afletics
   source_id: gbk_chilli_cheese_dog
   name: Chilli Cheese Dog
   brand: GBK
@@ -389,7 +389,7 @@
 # MILKSHAKES
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: gbk_shake_vanilla
   name: Vanilla Shake
   brand: GBK
@@ -405,7 +405,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk
 
-- source: gymflow
+- source: afletics
   source_id: gbk_shake_chocolate
   name: Chocolate Shake
   brand: GBK
@@ -421,7 +421,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk
 
-- source: gymflow
+- source: afletics
   source_id: gbk_shake_strawberry
   name: Strawberry Shake
   brand: GBK
@@ -437,7 +437,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk
 
-- source: gymflow
+- source: afletics
   source_id: gbk_shake_oreo
   name: Oreo Shake
   brand: GBK
@@ -457,7 +457,7 @@
 # DESSERTS
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: gbk_brownie
   name: Chocolate Brownie
   brand: GBK
@@ -474,7 +474,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs,soy
 
-- source: gymflow
+- source: afletics
   source_id: gbk_cheesecake
   name: Cheesecake (slice)
   brand: GBK
@@ -495,7 +495,7 @@
 # DRINKS — non-shake
 # ============================================================
 
-- source: gymflow
+- source: afletics
   source_id: gbk_coke
   name: Coca-Cola (regular)
   brand: GBK
@@ -512,7 +512,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: gbk_diet_coke
   name: Diet Coke
   brand: GBK
@@ -529,7 +529,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ""
 
-- source: gymflow
+- source: afletics
   source_id: gbk_lemonade
   name: Lemonade
   brand: GBK

@@ -1,7 +1,7 @@
 # protein_supplements.yaml — gym + protein supplements.
 # 35 entries: powders (scoop), bars (bar), RTDs (bottle), creatine, BCAAs, pre-workout.
 # Sources: brand product pages.
-- source: gymflow
+- source: afletics
   source_id: myprotein_impact_whey_chocolate
   name: Impact Whey, Chocolate
   brand: Myprotein
@@ -17,7 +17,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: myprotein_impact_whey_vanilla
   name: Impact Whey, Vanilla
   brand: Myprotein
@@ -33,7 +33,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: myprotein_impact_whey_strawberry
   name: Impact Whey, Strawberry
   brand: Myprotein
@@ -49,7 +49,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: myprotein_impact_whey_cookies_cream
   name: Impact Whey, Cookies & Cream
   brand: Myprotein
@@ -65,7 +65,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,gluten
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: myprotein_clear_whey_apple
   name: Clear Whey Isolate, Apple
   brand: Myprotein
@@ -81,7 +81,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 28
-- source: gymflow
+- source: afletics
   source_id: myprotein_pro_whey_chocolate
   name: Pro Whey, Chocolate
   brand: Myprotein
@@ -97,7 +97,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: myprotein_vegan_blend_chocolate
   name: Vegan Protein Blend, Chocolate
   brand: Myprotein
@@ -113,7 +113,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: on_gold_standard_chocolate
   name: Gold Standard 100% Whey, Chocolate
   brand: Optimum Nutrition
@@ -129,7 +129,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: on_gold_standard_vanilla
   name: Gold Standard 100% Whey, Vanilla
   brand: Optimum Nutrition
@@ -145,7 +145,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: on_serious_mass_chocolate
   name: Serious Mass, Chocolate (mass gainer)
   brand: Optimum Nutrition
@@ -161,7 +161,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,gluten,eggs
   unit_grams: 334
-- source: gymflow
+- source: afletics
   source_id: bulk_pure_whey_chocolate
   name: Pure Whey Protein, Chocolate
   brand: Bulk
@@ -177,7 +177,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: bulk_complete_lean_mass
   name: Complete Lean Mass Gainer
   brand: Bulk
@@ -193,7 +193,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,gluten
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: myprotein_slow_release_casein
   name: Slow-Release Casein, Vanilla
   brand: Myprotein
@@ -209,7 +209,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: grenade_carb_killa_white_chocolate
   name: Carb Killa Bar, White Chocolate Cookie
   brand: Grenade
@@ -225,7 +225,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: grenade_carb_killa_caramel_chaos
   name: Carb Killa Bar, Caramel Chaos
   brand: Grenade
@@ -241,7 +241,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: grenade_carb_killa_choc_chip
   name: Carb Killa Bar, Chocolate Chip
   brand: Grenade
@@ -257,7 +257,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: barebells_protein_bar_caramel
   name: Barebells Protein Bar, Caramel
   brand: Barebells
@@ -273,7 +273,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 55
-- source: gymflow
+- source: afletics
   source_id: barebells_protein_bar_choc_dough
   name: Barebells Protein Bar, Chocolate Dough
   brand: Barebells
@@ -289,7 +289,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 55
-- source: gymflow
+- source: afletics
   source_id: fulfil_protein_bar_choc_caramel
   name: Fulfil Bar, Chocolate Caramel
   brand: Fulfil
@@ -305,7 +305,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,eggs,tree_nuts
   unit_grams: 55
-- source: gymflow
+- source: afletics
   source_id: fulfil_protein_bar_choc_brownie
   name: Fulfil Bar, Chocolate Brownie
   brand: Fulfil
@@ -321,7 +321,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,eggs,tree_nuts
   unit_grams: 55
-- source: gymflow
+- source: afletics
   source_id: myprotein_layered_bar_chocolate
   name: Myprotein Layered Bar, Chocolate Caramel
   brand: Myprotein
@@ -337,7 +337,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: eat_natural_protein_bar
   name: Eat Natural Protein Packed Bar
   brand: Eat Natural
@@ -353,7 +353,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,tree_nuts
   unit_grams: 45
-- source: gymflow
+- source: afletics
   source_id: trek_protein_flapjack_chocolate
   name: Trek Protein Flapjack, Chocolate
   brand: Trek
@@ -369,7 +369,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,soy
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: quest_bar_choc_chip
   name: Quest Bar, Choc Chip Cookie
   brand: Quest
@@ -385,7 +385,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: grenade_protein_shake_chocolate
   name: Grenade Carb Killa Shake, Chocolate
   brand: Grenade
@@ -401,7 +401,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: myprotein_clear_protein_drink
   name: Myprotein Clear Whey RTD
   brand: Myprotein
@@ -417,7 +417,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: huel_ready_to_drink
   name: Huel Ready-to-Drink, Chocolate
   brand: Huel
@@ -433,7 +433,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten,oats
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: myprotein_creatine_monohydrate
   name: Creatine Monohydrate
   brand: Myprotein
@@ -449,7 +449,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: on_micronised_creatine
   name: Micronised Creatine, ON
   brand: Optimum Nutrition
@@ -465,7 +465,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: myprotein_bcaa_4_1_1
   name: BCAA 4:1:1
   brand: Myprotein
@@ -481,7 +481,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: myprotein_glutamine
   name: L-Glutamine
   brand: Myprotein
@@ -497,7 +497,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: myprotein_thepre
   name: THE Pre-Workout
   brand: Myprotein
@@ -513,7 +513,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 17
-- source: gymflow
+- source: afletics
   source_id: myprotein_diet_whey_chocolate
   name: Diet Whey, Chocolate
   brand: Myprotein
@@ -529,7 +529,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: phd_diet_whey_belgian_chocolate
   name: PhD Diet Whey, Belgian Chocolate
   brand: PhD
@@ -545,7 +545,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: warrior_crunch_white_chocolate
   name: Warrior Crunch Bar, White Chocolate
   brand: Warrior
@@ -561,7 +561,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,eggs
   unit_grams: 64
-- source: gymflow
+- source: afletics
   source_id: usn_pure_protein_100_whey_choc
   name: USN Pure Protein 100% Whey, Chocolate
   brand: USN
@@ -577,7 +577,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: usn_pure_protein_100_whey_vanilla
   name: USN Pure Protein 100% Whey, Vanilla
   brand: USN
@@ -593,7 +593,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: usn_pure_protein_100_whey_strawberry
   name: USN Pure Protein 100% Whey, Strawberry
   brand: USN
@@ -609,7 +609,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: usn_pure_protein_gf1_choc
   name: USN Pure Protein GF-1, Chocolate
   brand: USN
@@ -625,7 +625,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: usn_bluelab_100_whey_choc
   name: USN BlueLab 100% Whey, Chocolate
   brand: USN
@@ -641,7 +641,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: usn_diet_whey_chocolate
   name: USN Diet Whey IsoLean, Chocolate
   brand: USN
@@ -657,7 +657,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: usn_hyperbolic_mass_choc
   name: USN Hyperbolic Mass, Chocolate (mass gainer)
   brand: USN
@@ -673,7 +673,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,gluten,eggs
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: usn_anabolic_mass_choc
   name: USN Anabolic Mass, Chocolate
   brand: USN
@@ -689,7 +689,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,gluten,eggs
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: usn_micronised_creatine
   name: USN Micronised Creatine
   brand: USN
@@ -705,7 +705,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: usn_qhush_protein_bar_choc
   name: USN Qhush Protein Bar, Chocolate Caramel
   brand: USN
@@ -721,7 +721,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: usn_trust_protein_bar_choc
   name: USN Trust Protein Bar, Chocolate Brownie
   brand: USN
@@ -737,7 +737,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,eggs
   unit_grams: 55
-- source: gymflow
+- source: afletics
   source_id: usn_vooma_pre_workout_blue
   name: USN Vooma Pre-Workout, Blue Raspberry
   brand: USN
@@ -753,7 +753,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 12
-- source: gymflow
+- source: afletics
   source_id: usn_diet_protein_shake_rtd
   name: USN Diet Protein Shake (RTD)
   brand: USN
@@ -769,7 +769,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 310
-- source: gymflow
+- source: afletics
   source_id: maximuscle_promax_chocolate
   name: Maximuscle Promax, Chocolate
   brand: Maximuscle
@@ -785,7 +785,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: maximuscle_promax_vanilla
   name: Maximuscle Promax, Vanilla
   brand: Maximuscle
@@ -801,7 +801,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: maximuscle_cyclone_chocolate
   name: Maximuscle Cyclone, Chocolate
   brand: Maximuscle
@@ -817,7 +817,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: maximuscle_recovermax_orange
   name: Maximuscle Recovermax, Orange
   brand: Maximuscle
@@ -833,7 +833,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 75
-- source: gymflow
+- source: afletics
   source_id: maximuscle_creatamax
   name: Maximuscle Creatamax
   brand: Maximuscle
@@ -849,7 +849,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: maximuscle_promax_bar_choc
   name: Maximuscle Promax Bar, Chocolate
   brand: Maximuscle
@@ -865,7 +865,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: maximuscle_promax_diet_chocolate
   name: Maximuscle Promax Diet, Chocolate
   brand: Maximuscle
@@ -881,7 +881,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: phd_pharma_whey_choc
   name: PhD Pharma Whey HT+, Chocolate
   brand: PhD
@@ -897,7 +897,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: phd_smart_protein_bar_choc
   name: PhD Smart Protein Bar, Chocolate Brownie
   brand: PhD
@@ -913,7 +913,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,eggs
   unit_grams: 64
-- source: gymflow
+- source: afletics
   source_id: phd_smart_protein_bar_caramel
   name: PhD Smart Protein Bar, Salted Caramel
   brand: PhD
@@ -929,7 +929,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,eggs
   unit_grams: 64
-- source: gymflow
+- source: afletics
   source_id: phd_diet_whey_bar_choc
   name: PhD Diet Whey Bar, Chocolate
   brand: PhD
@@ -945,7 +945,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,eggs
   unit_grams: 65
-- source: gymflow
+- source: afletics
   source_id: phd_diet_meal_replacement_choc
   name: PhD Diet Meal Replacement, Chocolate
   brand: PhD
@@ -961,7 +961,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,oats,gluten
   unit_grams: 55
-- source: gymflow
+- source: afletics
   source_id: reflex_one_stop_choc
   name: Reflex One Stop, Chocolate
   brand: Reflex
@@ -977,7 +977,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy,eggs
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: reflex_micro_whey_choc
   name: Reflex Micro Whey, Chocolate
   brand: Reflex
@@ -993,7 +993,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: reflex_diet_protein_choc
   name: Reflex Diet Protein, Chocolate
   brand: Reflex
@@ -1009,7 +1009,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: scimx_pro_2_go_rtd_choc
   name: Sci-MX Pro 2 Go RTD, Chocolate
   brand: Sci-MX
@@ -1025,7 +1025,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 310
-- source: gymflow
+- source: afletics
   source_id: scimx_omni_mx_choc
   name: Sci-MX Omni-MX, Chocolate
   brand: Sci-MX
@@ -1041,7 +1041,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,gluten
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: tpw_whey_80_choc
   name: TPW Whey Protein 80, Chocolate
   brand: The Protein Works
@@ -1057,7 +1057,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: tpw_diet_meal_replacement
   name: TPW Diet Meal Replacement, Vanilla
   brand: The Protein Works
@@ -1073,7 +1073,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,oats,gluten
   unit_grams: 55
-- source: gymflow
+- source: afletics
   source_id: premier_protein_shake_choc
   name: Premier Protein Shake, Chocolate
   brand: Premier Protein
@@ -1089,7 +1089,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 325
-- source: gymflow
+- source: afletics
   source_id: premier_protein_shake_vanilla
   name: Premier Protein Shake, Vanilla
   brand: Premier Protein
@@ -1105,7 +1105,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 325
-- source: gymflow
+- source: afletics
   source_id: premier_protein_bar_choc
   name: Premier Protein Bar, Chocolate Peanut Butter
   brand: Premier Protein
@@ -1121,7 +1121,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,peanuts
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: mars_protein_bar
   name: Mars Protein Bar
   brand: Mars
@@ -1137,7 +1137,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,eggs
   unit_grams: 51
-- source: gymflow
+- source: afletics
   source_id: snickers_protein_bar
   name: Snickers Hi-Protein Bar
   brand: Snickers
@@ -1153,7 +1153,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,peanuts
   unit_grams: 57
-- source: gymflow
+- source: afletics
   source_id: snickers_hi_protein_shake
   name: Snickers Hi-Protein Shake
   brand: Snickers
@@ -1169,7 +1169,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy,peanuts
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: mars_hi_protein_shake
   name: Mars Hi-Protein Shake
   brand: Mars
@@ -1185,7 +1185,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: milky_way_protein_shake
   name: Milky Way Hi-Protein Shake
   brand: Milky Way
@@ -1201,7 +1201,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: twix_hi_protein_shake
   name: Twix Hi-Protein Shake
   brand: Twix
@@ -1217,7 +1217,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: bounty_hi_protein_bar
   name: Bounty Hi-Protein Bar
   brand: Bounty
@@ -1233,7 +1233,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,eggs
   unit_grams: 52
-- source: gymflow
+- source: afletics
   source_id: yazoo_protein_chocolate
   name: Yazoo Protein Chocolate (RTD)
   brand: Yazoo
@@ -1249,7 +1249,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 400
-- source: gymflow
+- source: afletics
   source_id: innermost_lean_protein_choc
   name: Innermost The Lean Protein, Chocolate
   brand: Innermost
@@ -1265,7 +1265,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: innermost_strong_protein_choc
   name: Innermost The Strong Protein, Chocolate
   brand: Innermost
@@ -1281,7 +1281,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: pulsin_pea_protein_choc
   name: Pulsin Pea Protein, Chocolate
   brand: Pulsin
@@ -1297,7 +1297,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: pulsin_brown_rice_protein
   name: Pulsin Brown Rice Protein
   brand: Pulsin
@@ -1313,7 +1313,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: vega_sport_protein_choc
   name: Vega Sport Protein, Chocolate
   brand: Vega
@@ -1329,7 +1329,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
   unit_grams: 35
-- source: gymflow
+- source: afletics
   source_id: misfits_chocolate_bar
   name: Misfits Plant-Based Bar, Salted Caramel
   brand: Misfits
@@ -1345,7 +1345,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: soy,tree_nuts
   unit_grams: 45
-- source: gymflow
+- source: afletics
   source_id: bsc_high_protein_bar
   name: BSC Hi-Protein Bar, Chocolate
   brand: BSC
@@ -1361,7 +1361,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: foodspring_whey_choc
   name: Foodspring Whey, Chocolate
   brand: Foodspring
@@ -1377,7 +1377,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: foodspring_protein_bar
   name: Foodspring Protein Bar, Caramel
   brand: Foodspring
@@ -1393,7 +1393,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,eggs
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: battle_bites_choc_caramel
   name: Battle Bites, Chocolate Caramel
   brand: Battle Bites
@@ -1409,7 +1409,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,eggs
   unit_grams: 62
-- source: gymflow
+- source: afletics
   source_id: naked_whey_protein_powder
   name: Naked Whey Protein Powder
   brand: Naked Nutrition
@@ -1425,7 +1425,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: cellucor_c4_original_fruit
   name: Cellucor C4 Original, Fruit Punch
   brand: Cellucor
@@ -1441,7 +1441,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 6
-- source: gymflow
+- source: afletics
   source_id: on_amino_energy_orange
   name: ON Amino Energy, Fruit Fusion
   brand: Optimum Nutrition
@@ -1457,7 +1457,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 9
-- source: gymflow
+- source: afletics
   source_id: bulk_pre_workout_lemon
   name: Bulk Complete Pre-Workout, Lemon
   brand: Bulk
@@ -1473,7 +1473,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 12
-- source: gymflow
+- source: afletics
   source_id: on_amino_energy_grape
   name: ON Amino Energy, Grape
   brand: Optimum Nutrition
@@ -1489,7 +1489,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 9
-- source: gymflow
+- source: afletics
   source_id: xtend_bcaa_watermelon
   name: Scivation Xtend BCAA, Watermelon
   brand: Scivation
@@ -1505,7 +1505,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 14
-- source: gymflow
+- source: afletics
   source_id: bulk_eaa_powder
   name: Bulk EAA Powder, Fruit Punch
   brand: Bulk
@@ -1521,7 +1521,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 10
-- source: gymflow
+- source: afletics
   source_id: bulk_creapure_creatine
   name: Bulk Creapure Creatine Monohydrate
   brand: Bulk
@@ -1537,7 +1537,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: myprotein_creatine_hcl
   name: Myprotein Creatine HCL
   brand: Myprotein
@@ -1553,7 +1553,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 3
-- source: gymflow
+- source: afletics
   source_id: pulsin_brownie_choc_orange
   name: Pulsin Brownie, Chocolate Orange
   brand: Pulsin
@@ -1569,7 +1569,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: tree_nuts,soy
   unit_grams: 50
-- source: gymflow
+- source: afletics
   source_id: myprotein_collagen_powder
   name: Myprotein Collagen Peptides
   brand: Myprotein
@@ -1585,7 +1585,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 10
-- source: gymflow
+- source: afletics
   source_id: bulk_collagen_powder
   name: Bulk Collagen Peptides
   brand: Bulk
@@ -1601,7 +1601,7 @@
   dietary_compat: pescatarian,gluten_free,dairy_free
   allergens: ''
   unit_grams: 10
-- source: gymflow
+- source: afletics
   source_id: on_gold_standard_casein_choc
   name: ON Gold Standard Casein, Chocolate
   brand: Optimum Nutrition
@@ -1617,7 +1617,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 33
-- source: gymflow
+- source: afletics
   source_id: on_pro_gainer_choc
   name: ON Pro Gainer, Chocolate
   brand: Optimum Nutrition
@@ -1633,7 +1633,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy,gluten
   unit_grams: 165
-- source: gymflow
+- source: afletics
   source_id: myprotein_electrolyte_powder
   name: Myprotein Electrolyte Plus, Orange
   brand: Myprotein
@@ -1649,7 +1649,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 5
-- source: gymflow
+- source: afletics
   source_id: redbull_can
   name: Red Bull Energy Drink (can)
   brand: Red Bull
@@ -1665,7 +1665,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: redbull_sugarfree_can
   name: Red Bull Sugar Free (can)
   brand: Red Bull
@@ -1681,7 +1681,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 250
-- source: gymflow
+- source: afletics
   source_id: monster_original_500
   name: Monster Energy (500ml)
   brand: Monster
@@ -1697,7 +1697,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: monster_ultra_zero_500
   name: Monster Ultra Zero (500ml)
   brand: Monster
@@ -1713,7 +1713,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 500
-- source: gymflow
+- source: afletics
   source_id: grenade_energy_drink_can
   name: Grenade Energy (can)
   brand: Grenade
@@ -1729,7 +1729,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 330
-- source: gymflow
+- source: afletics
   source_id: built_bar_double_chocolate
   name: Built Bar, Double Chocolate
   brand: Built
@@ -1745,7 +1745,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 55
-- source: gymflow
+- source: afletics
   source_id: rxbar_chocolate_sea_salt
   name: RxBar, Chocolate Sea Salt
   brand: RxBar
@@ -1761,7 +1761,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: eggs,tree_nuts
   unit_grams: 52
-- source: gymflow
+- source: afletics
   source_id: slimfast_meal_shake_choc
   name: SlimFast Meal Shake, Chocolate (RTD)
   brand: SlimFast
@@ -1777,7 +1777,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk,soy
   unit_grams: 325
-- source: gymflow
+- source: afletics
   source_id: larabar_choc_chip_brownie
   name: Larabar, Chocolate Chip Brownie
   brand: Larabar
@@ -1793,7 +1793,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: tree_nuts
   unit_grams: 45
-- source: gymflow
+- source: afletics
   source_id: myprotein_milk_protein_smooth
   name: Myprotein Milk Protein Smooth
   brand: Myprotein
@@ -1809,7 +1809,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 30
-- source: gymflow
+- source: afletics
   source_id: phd_diet_whey_strawberry
   name: PhD Diet Whey, Strawberry
   brand: PhD
@@ -1825,7 +1825,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
   unit_grams: 25
-- source: gymflow
+- source: afletics
   source_id: phd_smart_protein_white_choc
   name: PhD Smart Bar Plant, White Chocolate
   brand: PhD

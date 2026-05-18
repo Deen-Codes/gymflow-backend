@@ -1,6 +1,6 @@
 # yogurt_brands.yaml — Onken natural/strawberry, Liberté Greek/strawberry, The Collective, Yeo Valley natural/strawberry, Rachel's Organic, Alpro plant yogurts, Coconut Collaborative, Actimel, Benecol, Yakult Light, Elmlea creams, soured cream.
 
-- source: gymflow
+- source: afletics
   source_id: onken_natural_500
   name: Onken Natural Yogurt (per 100g)
   brand: Onken
@@ -16,7 +16,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: onken_strawberry_pot
   name: Onken Strawberry Yogurt (450g pot per 100g)
   brand: Onken
@@ -32,7 +32,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: liberte_greek_natural
   name: Liberté Greek Natural (per 100g)
   brand: Liberté
@@ -48,7 +48,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: liberte_strawberry_175
   name: Liberté Strawberry (175g)
   brand: Liberté
@@ -64,7 +64,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 175
-- source: gymflow
+- source: afletics
   source_id: the_collective_dairy_natural
   name: The Collective Natural (per 100g)
   brand: The Collective
@@ -80,7 +80,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: the_collective_strawberry_pomegranate
   name: The Collective Strawberry & Pomegranate (per 100g)
   brand: The Collective
@@ -96,7 +96,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: yeo_valley_natural_500
   name: Yeo Valley Natural Greek Style (per 100g)
   brand: Yeo Valley
@@ -112,7 +112,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: yeo_valley_strawberry_4_pack
   name: Yeo Valley Strawberry (1 pot/120g)
   brand: Yeo Valley
@@ -128,7 +128,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 120
-- source: gymflow
+- source: afletics
   source_id: rachels_organic_greek_500
   name: Rachel's Organic Greek (per 100g)
   brand: Rachel's Organic
@@ -144,7 +144,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: rachels_organic_low_fat_natural
   name: Rachel's Organic Low Fat Natural (per 100g)
   brand: Rachel's Organic
@@ -160,7 +160,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: alpro_plain_no_sugar_500
   name: Alpro Plain No Sugars (per 100g)
   brand: Alpro
@@ -176,7 +176,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
   unit_grams: 150
-- source: gymflow
+- source: afletics
   source_id: alpro_strawberry_yogurt_125
   name: Alpro Strawberry Yogurt (125g)
   brand: Alpro
@@ -192,7 +192,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: soy
   unit_grams: 125
-- source: gymflow
+- source: afletics
   source_id: coconut_collab_strawberry_125
   name: Coconut Collaborative Strawberry (125g)
   brand: Coconut Collaborative
@@ -208,7 +208,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
   unit_grams: 125
-- source: gymflow
+- source: afletics
   source_id: actimel_strawberry_4_pack
   name: Actimel Strawberry (1 bottle/100g)
   brand: Actimel
@@ -224,7 +224,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: actimel_blueberry_4_pack
   name: Actimel Blueberry (1 bottle/100g)
   brand: Actimel
@@ -240,7 +240,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: benecol_yogurt_drink_70
   name: Benecol Yogurt Drink (70ml)
   brand: Benecol
@@ -256,7 +256,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 70
-- source: gymflow
+- source: afletics
   source_id: yakult_light_pack_5
   name: Yakult Light (1 bottle/65ml)
   brand: Yakult
@@ -272,7 +272,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
   unit_grams: 65
-- source: gymflow
+- source: afletics
   source_id: elmlea_double_cream_300
   name: Elmlea Double (per 100ml)
   brand: Elmlea
@@ -287,7 +287,7 @@
   tags: dairy,branded
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: elmlea_single_cream
   name: Elmlea Single (per 100ml)
   brand: Elmlea
@@ -302,7 +302,7 @@
   tags: dairy,branded
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: soured_cream_30g
   name: Soured Cream (30g)
   brand: ''

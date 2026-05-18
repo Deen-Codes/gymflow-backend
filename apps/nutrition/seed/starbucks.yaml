@@ -1,7 +1,7 @@
 # starbucks.yaml — Starbucks UK menu.
 # 28 entries (incl 4 migrated).
 # Source: starbucks.co.uk/menu.
-- source: gymflow
+- source: afletics
   source_id: starbucks_caffe_latte_grande_semi
   name: Starbucks Caffe Latte, Grande, Semi-skimmed
   brand: Starbucks
@@ -16,7 +16,7 @@
   dietary_compat: vegetarian,halal,kosher
   allergens: milk
   portion_unit: ml
-- source: gymflow
+- source: afletics
   source_id: starbucks_cappuccino_grande_semi
   name: Starbucks Cappuccino, Grande, Semi-skimmed
   brand: Starbucks
@@ -31,7 +31,7 @@
   dietary_compat: vegetarian,halal,kosher
   allergens: milk
   portion_unit: ml
-- source: gymflow
+- source: afletics
   source_id: starbucks_caramel_frappuccino_grande
   name: Starbucks Caramel Frappuccino, Grande
   brand: Starbucks
@@ -46,7 +46,7 @@
   dietary_compat: vegetarian
   allergens: milk
   portion_unit: ml
-- source: gymflow
+- source: afletics
   source_id: starbucks_flat_white_grande_semi
   name: Starbucks Flat White, Grande, Semi-skimmed
   brand: Starbucks
@@ -61,7 +61,7 @@
   dietary_compat: vegetarian,halal,kosher
   allergens: milk
   portion_unit: ml
-- source: gymflow
+- source: afletics
   source_id: sb_caffe_latte_grande_oat
   name: Caffe Latte Grande, oat
   brand: Starbucks
@@ -76,7 +76,7 @@
   tags: chain,coffee,vegan
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
-- source: gymflow
+- source: afletics
   source_id: sb_caffe_latte_venti_semi
   name: Caffe Latte Venti, semi
   brand: Starbucks
@@ -91,7 +91,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: sb_americano_grande
   name: Americano Grande
   brand: Starbucks
@@ -106,7 +106,7 @@
   tags: chain,coffee,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sb_espresso
   name: Espresso
   brand: Starbucks
@@ -121,7 +121,7 @@
   tags: chain,coffee,low_calorie
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free,gluten_free
   allergens: ''
-- source: gymflow
+- source: afletics
   source_id: sb_mocha_grande_semi
   name: Caffe Mocha Grande, semi
   brand: Starbucks
@@ -136,7 +136,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
-- source: gymflow
+- source: afletics
   source_id: sb_hot_choc_grande_semi
   name: Hot Chocolate Grande, semi
   brand: Starbucks
@@ -151,7 +151,7 @@
   tags: chain,drink
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
-- source: gymflow
+- source: afletics
   source_id: sb_chai_latte_grande_semi
   name: Chai Tea Latte Grande, semi
   brand: Starbucks
@@ -166,7 +166,7 @@
   tags: chain,drink
   dietary_compat: vegetarian,pescatarian,halal,kosher,gluten_free
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: sb_pumpkin_spice_latte_grande
   name: Pumpkin Spice Latte Grande, semi
   brand: Starbucks
@@ -181,7 +181,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,eggs
-- source: gymflow
+- source: afletics
   source_id: sb_iced_caramel_macchiato
   name: Iced Caramel Macchiato Grande
   brand: Starbucks
@@ -196,7 +196,7 @@
   tags: chain,coffee
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk
-- source: gymflow
+- source: afletics
   source_id: sb_frappuccino_mocha_grande
   name: Mocha Frappuccino Grande
   brand: Starbucks
@@ -211,7 +211,7 @@
   tags: chain,coffee,drink
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: milk,soy
-- source: gymflow
+- source: afletics
   source_id: sb_egg_bacon_brioche
   name: Egg & Bacon Brioche
   brand: Starbucks
@@ -227,7 +227,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 145
-- source: gymflow
+- source: afletics
   source_id: sb_panini_mozzarella_tomato
   name: Mozzarella & Tomato Panini
   brand: Starbucks
@@ -243,7 +243,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk
   unit_grams: 215
-- source: gymflow
+- source: afletics
   source_id: sb_panini_chicken_pesto
   name: Chicken Pesto Panini
   brand: Starbucks
@@ -259,7 +259,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs,tree_nuts
   unit_grams: 215
-- source: gymflow
+- source: afletics
   source_id: sb_sandwich_chicken_avocado
   name: Chicken & Avocado Sandwich
   brand: Starbucks
@@ -275,7 +275,7 @@
   dietary_compat: pescatarian
   allergens: gluten,milk,eggs
   unit_grams: 200
-- source: gymflow
+- source: afletics
   source_id: sb_sandwich_egg_cress
   name: Egg & Cress Sandwich
   brand: Starbucks
@@ -291,7 +291,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,mustard
   unit_grams: 180
-- source: gymflow
+- source: afletics
   source_id: sb_porridge_oat
   name: Oat Porridge
   brand: Starbucks
@@ -307,7 +307,7 @@
   dietary_compat: vegan,vegetarian,pescatarian,halal,kosher,dairy_free
   allergens: gluten
   unit_grams: 280
-- source: gymflow
+- source: afletics
   source_id: sb_chocolate_brownie
   name: Chocolate Brownie
   brand: Starbucks
@@ -323,7 +323,7 @@
   dietary_compat: vegetarian,pescatarian
   allergens: gluten,milk,eggs,soy
   unit_grams: 80
-- source: gymflow
+- source: afletics
   source_id: sb_almond_croissant
   name: Almond Croissant
   brand: Starbucks
@@ -339,7 +339,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,tree_nuts
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: sb_butter_croissant
   name: Butter Croissant
   brand: Starbucks
@@ -355,7 +355,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 75
-- source: gymflow
+- source: afletics
   source_id: sb_lemon_loaf_cake
   name: Lemon Loaf Cake
   brand: Starbucks
@@ -371,7 +371,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: sb_carrot_cake
   name: Carrot Cake
   brand: Starbucks
@@ -387,7 +387,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,tree_nuts
   unit_grams: 100
-- source: gymflow
+- source: afletics
   source_id: sb_chocolate_chip_cookie
   name: Chocolate Chip Cookie
   brand: Starbucks
@@ -403,7 +403,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs,soy
   unit_grams: 60
-- source: gymflow
+- source: afletics
   source_id: sb_blueberry_muffin
   name: Blueberry Muffin
   brand: Starbucks
@@ -419,7 +419,7 @@
   dietary_compat: vegetarian,pescatarian,halal,kosher
   allergens: gluten,milk,eggs
   unit_grams: 110
-- source: gymflow
+- source: afletics
   source_id: sb_birthday_cake_pop
   name: Birthday Cake Pop
   brand: Starbucks
